@@ -1,6 +1,5 @@
 import Image from "apps/website/components/Image.tsx";
-import Video from "apps/website/components/Video.tsx";
-import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 import { useState, useEffect } from "preact/hooks";
 import Icon from "site/components/ui/Icon.tsx";
 
@@ -38,8 +37,8 @@ interface Tabs {
         alt?: string;
     };
     /**
- * @default false
- */
+     * @default false
+     */
     highlight?: boolean;
     title?: TabsTitle;
     textContent?: TabsTextContent;
@@ -54,10 +53,15 @@ interface Tabs {
         heightDesktop?: number;
     };
     /**
-* @default false
-*/
+     * @default false
+     * @description Deixe ativo caso queira que o botão de vídeo apareça
+     */
     videoOn?: boolean;
-    video?: VideoWidget;
+    /**
+* @title URL do vídeo
+* @description É importante que a URL do vídeo seja a versão EMBED
+*/
+    videoUrl?: string;
 }
 
 interface TabsTitle {
@@ -85,27 +89,30 @@ interface TabsTextContent {
 function HeroWithTime({ title, subTitle, tabs }: Props) {
     const [activeTab, setActiveTab] = useState(0);
     const [progress, setProgress] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [currentVideoUrl, setCurrentVideoUrl] = useState<string | null>(null);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
 
     const nextTab = () => {
         setActiveTab((prev) => (prev + 1) % (tabs?.length || 1));
     };
 
     useEffect(() => {
-        // Reseta o progresso ao mudar de tab
         setProgress(0);
 
-        // Inicia o progresso
         const interval = setInterval(() => {
             setProgress((prev) => {
                 if (prev >= 100) {
                     nextTab();
-                    return 0; // Reseta o progresso ao completar
+                    return 0;
                 }
-                return prev + 1; // Incrementa o progresso
+                return prev + 1;
             });
-        }, 100); // Atualiza a cada 100ms (10 segundos para completar 100%)
+        }, 100);
 
-        return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente ou mudar de tab
+        return () => clearInterval(interval);
     }, [activeTab, tabs]);
 
     return (
@@ -147,7 +154,7 @@ function HeroWithTime({ title, subTitle, tabs }: Props) {
                     )}
                 </div>
                 <div>
-                    <ul class="relative flex flex-col gap-6">
+                    <ul class="relative flex flex-col gap-6 min-h-[600px]">
                         {tabs?.map((tab, index) => (
                             <li
                                 key={index}
@@ -177,7 +184,8 @@ function HeroWithTime({ title, subTitle, tabs }: Props) {
                                         <div class="flex flex-col-reverse">
                                             {tab.title?.desktop && (
                                                 <span
-                                                    class={`hidden lg:block ${activeTab !== index ? 'opacity-50' : ''}`}
+                                                    class={`hidden lg:block ${activeTab !== index ? "opacity-50" : ""
+                                                        }`}
                                                     dangerouslySetInnerHTML={{
                                                         __html: tab.title?.desktop,
                                                     }}
@@ -193,7 +201,16 @@ function HeroWithTime({ title, subTitle, tabs }: Props) {
                                                 ></span>
                                             )}
 
-                                            {tab.highlight && <span class={`text-[#866300] ${activeTab === index ? 'bg-[#FFE6A0]' : 'background-df'} px-3 py-[2px] font-bold rounded-[200px] w-fit text-xs`}>Beta</span>}
+                                            {tab.highlight && (
+                                                <span
+                                                    class={`text-[#866300] ${activeTab === index
+                                                        ? "bg-[#FFE6A0]"
+                                                        : "background-df"
+                                                        } px-3 py-[2px] font-bold rounded-[200px] w-fit text-xs`}
+                                                >
+                                                    Beta
+                                                </span>
+                                            )}
                                         </div>
                                     </div>
                                     {activeTab === index && (
@@ -215,25 +232,44 @@ function HeroWithTime({ title, subTitle, tabs }: Props) {
                                                 ></span>
                                             )}
 
-                                            {tab.videoOn && <button class="mt-4 mb-6 bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 flex items-center gap-[18px] h-[48px] w-[160px]"> <Icon class="" size={40} id="PlayButton" strokeWidth={3} /> <span class="text-[#22454B] font-bold text-[17px] text-center">Ver demo</span></button>}
+                                            {tab.videoOn && (
+                                                <button class="mt-4 mb-6 bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 flex items-center gap-[18px] h-[48px] w-[160px]" onClick={() => {
+                                                    setCurrentVideoUrl(tab.videoUrl || "");
+                                                    openModal();
+                                                }}>
+                                                    {" "}
+                                                    <Icon
+                                                        class=""
+                                                        size={40}
+                                                        id="PlayButton"
+                                                        strokeWidth={3}
+                                                    />{" "}
+                                                    <span class="text-[#22454B] font-bold text-[17px] text-center">
+                                                        Ver demo
+                                                    </span>
+                                                </button>
+                                            )}
                                         </div>
                                     )}
                                 </div>
                                 {activeTab === index && (
-                                    <><Image
-                                        src={tab.tabImage?.imageDesktop || ""}
-                                        alt={tab.tabImage?.altDesktop || ""}
-                                        height={tab.tabImage?.heightDesktop || 685}
-                                        width={tab.tabImage?.widthDesktop || 606}
-                                        style={{ minHeight: tab.tabImage?.heightDesktop || 685 }}
-                                        className="min-1180:absolute right-0 top-0 hidden lg:block h-full" />
+                                    <>
+                                        <Image
+                                            src={tab.tabImage?.imageDesktop || ""}
+                                            alt={tab.tabImage?.altDesktop || ""}
+                                            height={tab.tabImage?.heightDesktop || 685}
+                                            width={tab.tabImage?.widthDesktop || 606}
+                                            style={{ minHeight: tab.tabImage?.heightDesktop || 685 }}
+                                            className="min-1180:absolute right-0 top-0 hidden lg:block h-full"
+                                        />
                                         <Image
                                             src={tab.tabImage?.image || ""}
                                             alt={tab.tabImage?.alt || ""}
                                             height={tab.tabImage?.height || 351}
                                             width={tab.tabImage?.width || 337}
                                             style={{ minHeight: tab.tabImage?.height || 351 }}
-                                            class="lg:hidden" />
+                                            class="lg:hidden"
+                                        />
                                         <div className="w-full h-[1px] background-bar">
                                             <div
                                                 className="h-full bg-[#D9D9D9] transition-all ease-linear"
@@ -241,11 +277,32 @@ function HeroWithTime({ title, subTitle, tabs }: Props) {
                                                     width: `${progress}%`,
                                                 }}
                                             ></div>
-                                        </div></>
+                                        </div>
+                                    </>
                                 )}
                             </li>
                         ))}
                     </ul>
+                    {isModalOpen && currentVideoUrl && (
+                        <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+                            <div class="bg-white p-4 rounded-lg relative w-[90%] max-w-[800px]">
+                                <button
+                                    class="absolute top-[-25px] right-0 text-black font-bold text-xs bg-primary-content rounded-lg p-2 rounded-br-none hover:transform-none"
+                                    onClick={closeModal}
+                                >
+                                    Fechar
+                                </button>
+                                <iframe
+                                    width="100%"
+                                    height="450"
+                                    src={currentVideoUrl}
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                ></iframe>
+
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

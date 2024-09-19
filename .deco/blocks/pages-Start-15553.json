@@ -3,12 +3,620 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "site/sections/ItWorks.tsx",
-      "name": "<p>It Works!</p>",
-      "count": 1
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Header.tsx",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0e25a02e-5d49-4ebe-8e53-b8cca04ce669/Logo-li-migracao.svg",
+        "alt": "Logotipo loja integrada",
+        "buttonText": "Fazer login",
+        "backgroundImage": {
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/20b60aec-1e72-4842-aebe-9c8753662523/Group-21462605-(3).png",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fa825a5f-5b43-414e-addd-722f311f8941/Group-21462605-(2).png"
+        },
+        "textContent": {
+          "desktop": "<p style=\"text-align: center\"><span style=\"color: #fcfcfc; font-size: 60pt\">Na dúvida sobre qual plataforma </span></p><p style=\"text-align: center\"><span style=\"color: #fcfcfc; font-size: 60pt\">migrar, escolha quem aposta em </span></p><p style=\"text-align: center\"><span style=\"color: #28c3c3; font-size: 60pt\">Dados &amp; Automação</span></p>",
+          "mobile": "<p style=\"text-align: center\"><span style=\"color: #ffffff; font-size: 22pt\">Na dúvida sobre qual plataforma </span></p><p style=\"text-align: center\"><span style=\"color: #ffffff; font-size: 22pt\">migrar, escolha quem aposta em </span></p><p style=\"text-align: center\"><span style=\"color: #28c3c3; font-size: 22pt\">Dados &amp; Automação</span></p>"
+        },
+        "buttons": {
+          "login": "Fazer Login",
+          "goin": "Migre já",
+          "knowmore": "Saiba mais"
+        },
+        "initialButtons": [
+          {
+            "text": "Ver planos"
+          },
+          {
+            "text": "Falar com um especialista",
+            "changeType": true
+          }
+        ],
+        "finalButtons": [
+          {
+            "text": "Migre já"
+          },
+          {
+            "text": "Saiba mais",
+            "changeType": true
+          }
+        ],
+        "labelText": "Assista vídeo exclusivo"
+      }
     },
     {
-      "__resolveType": "Footer"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/HeroWithTime.tsx",
+        "subTitle": {
+          "mobile": "<p><span style=\"color: #ffffff; font-size: 37pt\">Explore</span><span style=\"font-size: 37pt\"> </span><em><span style=\"color: #71dbd4; font-size: 37pt\">diferentes</span></em></p><p><em><span style=\"color: #71dbd4; font-size: 37pt\">oportunidades</span></em></p><p style=\"text-align: justify\"><span style=\"color: #ffffff; font-size: 37pt\">de conversão nativas</span></p>",
+          "desktop": "<p><span style=\"color: #fcfcfc; font-size: 75pt\">Explore </span><em><span style=\"color: rgb(113, 219, 212); font-size: 75pt\">diferentes</span></em></p><p><em><span style=\"color: rgb(113, 219, 212); font-size: 75pt\">oportunidades</span></em></p><p><span style=\"color: #ffffff; font-size: 75pt\">de conversão nativas</span></p>"
+        },
+        "title": {
+          "desktop": "<p><span style=\"color: #71dbd4; font-size: 18pt\">Venda mais com a LI</span></p>",
+          "mobile": "<p><span style=\"color: rgb(113, 219, 212); font-size: 18pt\">Venda mais com a LI</span></p>"
+        },
+        "tabs": [
+          {
+            "icon": {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8b748f-60f3-42de-b747-db8ec800a1f6/Frame-1000002272.png",
+              "alt": "Tab icon"
+            },
+            "title": {
+              "0": "R",
+              "1": "e",
+              "2": "c",
+              "3": "u",
+              "4": "p",
+              "5": "e",
+              "6": "r",
+              "7": "e",
+              "8": " ",
+              "9": "v",
+              "10": "e",
+              "11": "n",
+              "12": "d",
+              "13": "a",
+              "14": "s",
+              "15": " ",
+              "16": "p",
+              "17": "e",
+              "18": "r",
+              "19": "d",
+              "20": "i",
+              "21": "d",
+              "22": "a",
+              "23": "s",
+              "desktop": "<p><span style=\"color: #ffffff; font-size: 21pt\">Recupere vendas perdidas</span></p>",
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Recupere vendas perdidas</span></p>"
+            },
+            "textContent": {
+              "0": "c",
+              "1": "o",
+              "2": "m",
+              "3": " ",
+              "4": "g",
+              "5": "a",
+              "6": "t",
+              "7": "i",
+              "8": "l",
+              "9": "h",
+              "10": "o",
+              "11": "s",
+              "12": " ",
+              "13": "d",
+              "14": "e",
+              "15": " ",
+              "16": "m",
+              "17": "a",
+              "18": "r",
+              "19": "k",
+              "20": "e",
+              "21": "t",
+              "22": "i",
+              "23": "n",
+              "24": "g",
+              "25": " ",
+              "26": "q",
+              "27": "u",
+              "28": "e",
+              "29": " ",
+              "30": "p",
+              "31": "o",
+              "32": "d",
+              "33": "e",
+              "34": "m",
+              "35": " ",
+              "36": "s",
+              "37": "e",
+              "38": "r",
+              "39": " ",
+              "40": "c",
+              "41": "o",
+              "42": "n",
+              "43": "f",
+              "44": "i",
+              "45": "g",
+              "46": "u",
+              "47": "r",
+              "48": "a",
+              "49": "d",
+              "50": "o",
+              "51": "s",
+              "52": " ",
+              "53": "d",
+              "54": "i",
+              "55": "r",
+              "56": "e",
+              "57": "t",
+              "58": "o",
+              "59": " ",
+              "60": "d",
+              "61": "a",
+              "62": " ",
+              "63": "p",
+              "64": "l",
+              "65": "a",
+              "66": "t",
+              "67": "a",
+              "68": "f",
+              "69": "o",
+              "70": "r",
+              "71": "m",
+              "72": "a",
+              "73": " ",
+              "74": "d",
+              "75": "e",
+              "76": " ",
+              "77": "e",
+              "78": "c",
+              "79": "o",
+              "80": "m",
+              "81": "m",
+              "82": "e",
+              "83": "r",
+              "84": "c",
+              "85": "e",
+              "86": ":",
+              "87": " ",
+              "88": "c",
+              "89": "a",
+              "90": "r",
+              "91": "r",
+              "92": "i",
+              "93": "n",
+              "94": "h",
+              "95": "o",
+              "96": " ",
+              "97": "e",
+              "98": " ",
+              "99": "p",
+              "100": "r",
+              "101": "o",
+              "102": "d",
+              "103": "u",
+              "104": "t",
+              "105": "o",
+              "106": " ",
+              "107": "a",
+              "108": "b",
+              "109": "a",
+              "110": "n",
+              "111": "d",
+              "112": "o",
+              "113": "n",
+              "114": "a",
+              "115": "d",
+              "116": "o",
+              "117": "s",
+              "118": ",",
+              "119": " ",
+              "120": "c",
+              "121": "o",
+              "122": "m",
+              "123": "p",
+              "124": "r",
+              "125": "a",
+              "126": "s",
+              "127": " ",
+              "128": "c",
+              "129": "a",
+              "130": "n",
+              "131": "c",
+              "132": "e",
+              "133": "l",
+              "134": "a",
+              "135": "d",
+              "136": "a",
+              "137": "s",
+              "138": ",",
+              "139": " ",
+              "140": "r",
+              "141": "e",
+              "142": "c",
+              "143": "o",
+              "144": "m",
+              "145": "e",
+              "146": "n",
+              "147": "d",
+              "148": "a",
+              "149": "ç",
+              "150": "ã",
+              "151": "o",
+              "152": " ",
+              "153": "d",
+              "154": "e",
+              "155": " ",
+              "156": "p",
+              "157": "r",
+              "158": "o",
+              "159": "d",
+              "160": "u",
+              "161": "t",
+              "162": "o",
+              "163": ".",
+              "mobile": "<p><span style=\"color: #ffffff\">com gatilhos de marketing que podem ser configurados direto da plataforma de ecommerce: carrinho e produto abandonados, compras canceladas, recomendação de produto.</span></p>",
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Deixa que a gente te ajuda a ganhar tempo com estratégias de marketing digital: Ative e teste os gatilhos para recuperação de vendas perdidas.  </span></p><p></p><p><strong><span style=\"color: rgb(255, 255, 255)\">Carrinho e produto abandonados</span></strong><span style=\"color: rgb(255, 255, 255)\">: envie mensagens para compradores que navegaram por uma página de produto ou montaram o carrinho de compras e não finalizaram o pedido.</span></p>"
+            },
+            "tabImage": {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b9025486-3f21-49b9-bd15-92ab49990a6e/img--recupere-vendas.png",
+              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f3ab187f-ec5f-4d3d-8b82-81b8579a7643/img--recupere-vendas.png"
+            },
+            "videoOn": true
+          },
+          {
+            "textContent": {
+              "desktop": "<p><span style=\"color: #ffffff\">recomende produtos semelhantes ao buscado na página de navegação e inclua sugestões complementares em vitrines de recomendações e&nbsp; disparos de e-mails</span></p>",
+              "mobile": "<p><span style=\"color: #ffffff\">recomende produtos semelhantes ao buscado na página de navegação e inclua sugestões complementares em vitrines de recomendações e&nbsp; disparos de e-mails</span></p>"
+            },
+            "icon": {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/21d998d4-e11e-44ae-9e80-75933af85151/Frame-1000002272.png"
+            },
+            "title": {
+              "mobile": "<p><span style=\"color: #ffffff; font-size: 13pt\">Recomendação de produto</span></p>",
+              "desktop": "<p><span style=\"color: #ffffff; font-size: 21pt\">Recomendação de produto</span></p>"
+            },
+            "tabImage": {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7b589737-cc2e-4ddf-9802-7c1ccfbb04c9/Frame-482512.png",
+              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/deab9338-0ff7-443f-bd67-41d3e0c20913/Frame-482512.png"
+            },
+            "highlight": true
+          },
+          {
+            "textContent": {
+              "desktop": "<p><span style=\"color: #ffffff\">Recupere vendas enviando gatilhos para pedidos cancelados de forma automática</span></p>",
+              "mobile": "<p><span style=\"color: #ffffff\">Recupere vendas enviando gatilhos para pedidos cancelados de forma automática</span></p>"
+            },
+            "icon": {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/21d998d4-e11e-44ae-9e80-75933af85151/Frame-1000002272.png"
+            },
+            "title": {
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Recuperação de vendas canceladas</span></p>",
+              "mobile": "<p><span style=\"color: #ffffff; font-size: 13pt\">Recuperação de vendas canceladas</span></p><p></p>"
+            },
+            "tabImage": {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c1d2c4c2-6818-45c3-893c-29174d6b422b/Frame-482512-(1).png",
+              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f2c617fd-96b6-4582-8163-6ba6a63842a0/Frame-482512-(1).png"
+            },
+            "highlight": true
+          },
+          {
+            "textContent": {
+              "desktop": "<p><span style=\"color: #ffffff\">Disponível no módulo promocional, crie promoções com mais de um produto, definindo valores de desconto progressivos de acordo com as suas estratégias de venda.</span></p>",
+              "mobile": "<p>Disponível no módulo promocional, crie promoções com mais de um produto, definindo valores de desconto progressivos de acordo com as suas estratégias de venda.</p>"
+            },
+            "title": {
+              "desktop": "<p><span style=\"color: #ffffff; font-size: 21pt\">Desconto progressivo</span></p>",
+              "mobile": "<p><span style=\"color: #ffffff; font-size: 13pt\">Desconto progressivo</span></p>"
+            },
+            "icon": {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ada72279-ec48-496c-817d-0222f87a91e0/Frame-1000002272.png"
+            },
+            "tabImage": {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9878ab85-bc53-4c71-8ed8-5becfcb78da3/Frame-482512-(1).png",
+              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9f034c6e-3639-46e6-843d-3bdac10e65a3/Frame-482512-(1).png"
+            },
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/HeroTab.tsx",
+        "title": {
+          "desktop": "<p><strong><span style=\"color: #28c3c3; font-size: 18pt\">Operação eficiente</span></strong></p>",
+          "mobile": "<p><strong><span style=\"color: #28c3c3; font-size: 18pt\">Operação eficiente</span></strong></p>"
+        },
+        "subTitle": {
+          "mobile": "<p><em><span style=\"color: #71dbd4; font-size: 37pt\">Ganhe tempo</span></em><span style=\"font-size: 37pt\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 37pt\">se</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 37pt\">alavancando do</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 37pt\">nosso ecossistema</span></p>",
+          "desktop": "<p><em><span style=\"color: #71dbd4; font-size: 75pt\">Ganhe tempo</span></em><span style=\"font-size: 75pt\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 75pt\">se alavancando</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 75pt\">do nosso ecossistema</span></p>"
+        },
+        "buttons": [
+          {
+            "text": "Pagali",
+            "background": "#ffffff",
+            "content": "<p><strong><span style=\"color: #ffffff; font-size: 18pt\">Pagali</span></strong></p><p><span style=\"color: #ffffff\">com gatilhos de marketing que podem ser configurados direto da plataforma de ecommerce: carrinho e produto abandonados, compras canceladas, recomendação de produto.</span></p>",
+            "highlight": true
+          },
+          {
+            "text": "Enviali",
+            "content": "<p><strong><span style=\"color: #ffffff; font-size: 18pt\">Enviali</span></strong></p><p><span style=\"color: #ffffff; font-size: 12pt\">Lorem Ipsum</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Partners.tsx",
+        "title": "Meios de pagamentos parceiros",
+        "images": [
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/46cc3280-cade-40f0-9a4a-f20f5d67f01b/cielo-logo-9-1-(1).svg",
+            "width": 71,
+            "height": 24,
+            "alt": "Cielo Logotipo"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/32fbc834-ee5c-45c7-a143-52ace217bd8d/Frame-1000002216.svg",
+            "alt": "Appmax Logotipo",
+            "width": 120,
+            "height": 25
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9bd34847-153e-438e-b94e-57379836329f/1655978863paypal-logo-white-1.svg",
+            "width": 103,
+            "height": 25,
+            "alt": "PayPal Logotipo"
+          }
+        ],
+        "imagesDesktop": [
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d6b79d87-34e4-4df2-8bcc-48906ee72146/cielo-logo-9-1.svg",
+            "width": 109,
+            "height": 38,
+            "alt": "Cielo Logotipo"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c82f60a2-890e-4c9e-9e06-d9a4563a5003/download-1.png",
+            "width": 185,
+            "height": 39,
+            "alt": "Appmax Logotipo"
+          },
+          {
+            "width": 159,
+            "height": 39,
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5cdd01e5-c0c7-48a0-be2e-5d05be373ec2/1655978863paypal-logo-white-1.svg",
+            "alt": "PayPal Logotipo"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Prices.tsx",
+        "subTitle": {
+          "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 37pt\">Escolha a plataforma que aposta em dados e automação</span></p>",
+          "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">Escolha a plataforma que aposta </span></p><p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">em dados e automação</span></p>"
+        },
+        "title": {
+          "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 18pt\">Está na hora de migrar</span></p>",
+          "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">Está na hora de migrar</span></p>"
+        },
+        "cards": [
+          {
+            "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Gratuito</span></strong></p>",
+            "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$0</span></strong></p>",
+            "textContent": "<p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">Pra você sentir</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">o gostinho de</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">como é vender</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">online</span></p>"
+          },
+          {
+            "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Crescimento</span></strong></p>",
+            "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$59</span></strong></p>",
+            "textContent": "<p><span style=\"color: #003037\">Pra você</span></p><p><span style=\"color: #003037\">começar</span></p><p><span style=\"color: #003037\">com tudo que</span></p><p><span style=\"color: #003037\">precisa!</span></p>"
+          },
+          {
+            "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Aceleração</span></strong></p>",
+            "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$99</span></strong></p>",
+            "textContent": "<p><span style=\"color: #003037\">Pra ter mais</span></p><p><span style=\"color: #003037\">recursos e acelerar</span></p><p><span style=\"color: #003037\">suas vendas!</span></p>",
+            "highlight": true
+          },
+          {
+            "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Expansão</span></strong></p>",
+            "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$239</span></strong></p>",
+            "textContent": "<p><span style=\"color: #003037\">Pra você que tem</span></p><p><span style=\"color: #003037\">muitos produtos!</span></p>"
+          },
+          {
+            "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Elite</span></strong></p>",
+            "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$1999</span></strong></p>",
+            "textContent": "<p><span style=\"color: #003037\">Para você que</span></p><p><span style=\"color: #003037\">não quer ter</span></p><p><span style=\"color: #003037\">limites!</span></p>"
+          }
+        ],
+        "finalButtons": [
+          {
+            "text": "Migre já",
+            "link": "/"
+          },
+          {
+            "text": "Saiba mais",
+            "link": "/",
+            "changeType": true
+          }
+        ],
+        "backgroundImage": {
+          "0": "h",
+          "1": "t",
+          "2": "t",
+          "3": "p",
+          "4": "s",
+          "5": ":",
+          "6": "/",
+          "7": "/",
+          "8": "d",
+          "9": "e",
+          "10": "c",
+          "11": "o",
+          "12": "-",
+          "13": "s",
+          "14": "i",
+          "15": "t",
+          "16": "e",
+          "17": "s",
+          "18": "-",
+          "19": "a",
+          "20": "s",
+          "21": "s",
+          "22": "e",
+          "23": "t",
+          "24": "s",
+          "25": ".",
+          "26": "s",
+          "27": "3",
+          "28": ".",
+          "29": "s",
+          "30": "a",
+          "31": "-",
+          "32": "e",
+          "33": "a",
+          "34": "s",
+          "35": "t",
+          "36": "-",
+          "37": "1",
+          "38": ".",
+          "39": "a",
+          "40": "m",
+          "41": "a",
+          "42": "z",
+          "43": "o",
+          "44": "n",
+          "45": "a",
+          "46": "w",
+          "47": "s",
+          "48": ".",
+          "49": "c",
+          "50": "o",
+          "51": "m",
+          "52": "/",
+          "53": "l",
+          "54": "o",
+          "55": "j",
+          "56": "a",
+          "57": "i",
+          "58": "n",
+          "59": "t",
+          "60": "e",
+          "61": "g",
+          "62": "r",
+          "63": "a",
+          "64": "d",
+          "65": "a",
+          "66": "r",
+          "67": "/",
+          "68": "0",
+          "69": "4",
+          "70": "9",
+          "71": "6",
+          "72": "d",
+          "73": "2",
+          "74": "d",
+          "75": "7",
+          "76": "-",
+          "77": "3",
+          "78": "f",
+          "79": "9",
+          "80": "1",
+          "81": "-",
+          "82": "4",
+          "83": "b",
+          "84": "e",
+          "85": "1",
+          "86": "-",
+          "87": "b",
+          "88": "8",
+          "89": "0",
+          "90": "d",
+          "91": "-",
+          "92": "1",
+          "93": "9",
+          "94": "f",
+          "95": "8",
+          "96": "3",
+          "97": "e",
+          "98": "4",
+          "99": "b",
+          "100": "b",
+          "101": "4",
+          "102": "d",
+          "103": "1",
+          "104": "/",
+          "105": "g",
+          "106": "r",
+          "107": "a",
+          "108": "d",
+          "109": "i",
+          "110": "e",
+          "111": "n",
+          "112": "t",
+          "113": "-",
+          "114": "b",
+          "115": "g",
+          "116": ".",
+          "117": "p",
+          "118": "n",
+          "119": "g",
+          "firstBackground": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/39eeee7c-99b4-41d1-be4f-4be9a6590ed1/gradient-bg.png",
+          "secondBackground": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/737eb087-fb58-4688-aa7f-412cb6d2b500/bg-circles.png"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Accordion.tsx",
+        "questions": [
+          {
+            "question": "Como funciona a migração de plataforma para a Loja Integrada?",
+            "answer": "Lorem ipsum"
+          },
+          {
+            "answer": "Lorem ipsum",
+            "question": "Quais são os benefícios de migrar para a Loja Integrada?"
+          },
+          {
+            "question": "O que acontece com o tagueamento da minha loja?",
+            "answer": "Lorem ipsum"
+          },
+          {
+            "question": "Qual é o investimento que preciso fazer para migrar minha loja?",
+            "answer": "Lorem ipsum"
+          },
+          {
+            "question": "Posso migrar meus produtos por ERPs?",
+            "answer": "Lorem ipsum"
+          },
+          {
+            "question": "Quais são os riscos da migração para Loja Integrada?",
+            "answer": "Lorem ipsum"
+          },
+          {
+            "question": "Quais os passos para realizar uma migração de plataforma de e-commerce bem-sucedida?",
+            "answer": "Lorem ipsum"
+          },
+          {
+            "question": "Cobram comissão sobre vendas? Como funciona?",
+            "answer": "Lorem ipsum"
+          },
+          {
+            "question": "Vou perder tudo do meu tráfego ao migrar de plataforma?",
+            "answer": "Lorem ipsum"
+          }
+        ],
+        "button": {
+          "buttonText": "Saiba mais aqui",
+          "buttonLink": "/"
+        }
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

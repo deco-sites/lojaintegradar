@@ -3,27 +3,35 @@
 @tailwind utilities;
 
 @layer base {
-
   /* Allow changing font family via CMS */
   html {
     font-family: var(--font-family);
   }
 
+  button:hover {
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   /** Remove default styles from input[type=number] */
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
 
-  input[type=number] {
+  input[type="number"] {
     -moz-appearance: textfield;
     appearance: textfield;
   }
 }
 
 @layer components {
-
   /** Prevent scroll when modal is open */
   .no-scroll {
     overflow: hidden;
@@ -32,7 +40,6 @@
 }
 
 @layer utilities {
-
   /** Remove scrollbar from overflow-auto */
   .scrollbar-none {
     scrollbar-width: none;
@@ -41,5 +48,26 @@
 
   .scrollbar-none::-webkit-scrollbar {
     display: none;
+  }
+
+  .customContainer {
+    max-width: 1256px;
+    margin: 0 auto;
+  }
+
+  .text-shadow-in p {
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .background-df {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .background-df2 {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .background-bar {
+    background-color: rgba(217, 217, 217, 0.1);
   }
 }

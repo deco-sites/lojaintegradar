@@ -1,6 +1,6 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-
+import { CSS } from '../static/css.ts'
 interface Props {
     backgroundImage?: {
         mobile?: ImageWidget;
@@ -126,9 +126,10 @@ function Header({
                 )}
 
                 <div class="gap-5 relative z-10 w-full items-center justify-center mt-[35px] flex">
-                    <label class="">
+                    <style dangerouslySetInnerHTML={{ __html: CSS }}></style>
+                    <label class="w-full">
                         {labelText && (
-                            <p class="background-df border-[1px] border-solid border-[rgba(255, 255, 255, 0.16)] rounded-tl-xl rounded-tr-xl py-1.5 px-5 text-base font-bold text-primary-content inline-block">
+                            <p class="backgroundHeroTimeButton videoHeaderBorder rounded-tl-xl rounded-tr-xl py-1.5 px-5 text-base font-bold text-primary-content flex mx-auto w-full max-w-[611px] text-center justify-center">
                                 {labelText}
                             </p>
                         )}

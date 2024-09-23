@@ -99,4 +99,18 @@ display: none;
 .hs-error-msg.hs-main-font-element {
 color: red;
 }
+
+.submitted-message {
+    width: 100%;
+    max-width: 611px;
+    margin: 0 auto;
+    background: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 16px;
+    color: #737376;
+}
+
 `;

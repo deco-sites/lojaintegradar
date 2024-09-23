@@ -79,7 +79,7 @@ function Prices({ title, subTitle, cards, finalButtons, backgroundImage }: Props
                 class="absolute top-0 left-2/4 translate-x-[-50%] lg:rounded-xl z-10 h-full"
             />
             }
-            <div className="relative z-20 placeholder:flex flex-col gap-4 mb-[60px] px-[10px]">
+            <div className="relative z-20 placeholder:flex flex-col gap-4 mb-11 px-[10px]">
                 {title?.desktop && (
                     <span
                         className="hidden lg:block mb-4"
@@ -115,7 +115,7 @@ function Prices({ title, subTitle, cards, finalButtons, backgroundImage }: Props
                 )}
             </div>
             <div class="relative z-20 px-4 2xl:px-0">
-                <Slider class="carousel carousel-center sm:carousel-end gap-2 lg:gap-6 2xl:justify-center w-full items-center">
+                <Slider class="carousel sm:carousel-end gap-2 lg:gap-6 lg:justify-center w-full items-center pt-4">
                     {cards?.map((card, index) => (
                         <Slider.Item
                             index={index}
@@ -125,7 +125,7 @@ function Prices({ title, subTitle, cards, finalButtons, backgroundImage }: Props
                                 class={`relative z-20 flex flex-col items-center justify-center ${card.highlight ? "bg-primary-content" : "background-df2"
                                     } rounded-xl p-[34px] pt-[27px]`}
                             >
-                                {card.highlight && <span className="bg-neutral-content text-xs text-primary-content rounded-[200px] text-center mb-2 px-3 mt-1 block w-fit absolute top-[-20px] left-2/4 translate-x-[-50%]">
+                                {card.highlight && <span className="bg-neutral-content text-xs text-primary-content rounded-[200px] text-center mb-2 px-3 mt-1 block w-max py-[6px] absolute top-[-20px] left-2/4 translate-x-[-50%]">
                                     Mais vantajoso
                                 </span>}
                                 {card.title && (

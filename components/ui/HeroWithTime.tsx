@@ -7,6 +7,7 @@ export interface Props {
     title?: Title;
     subTitle?: Subtitle;
     tabs?: Tabs[];
+    background?: Background;
 }
 
 interface Title {
@@ -62,6 +63,10 @@ interface Tabs {
 * @description É importante que a URL do vídeo seja a versão EMBED
 */
     videoUrl?: string;
+    button?: {
+        buttonText?: string;
+        buttonLink?: string;
+    }
 }
 
 interface TabsTitle {
@@ -86,7 +91,21 @@ interface TabsTextContent {
     mobile?: string;
 }
 
-function HeroWithTime({ title, subTitle, tabs }: Props) {
+interface Background {
+    type: 'solid' | 'gradient';
+    color?: string;
+    gradient?: {
+        type: 'linear' | 'radial';
+        angle?: number;
+        shape?: 'circle' | 'ellipse';
+        stops?: {
+            color?: string;
+            position?: number;
+        }[];
+    };
+}
+
+function HeroWithTime({ title, subTitle, tabs, background }: Props) {
     const [activeTab, setActiveTab] = useState(0);
     const [progress, setProgress] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -115,8 +134,35 @@ function HeroWithTime({ title, subTitle, tabs }: Props) {
         return () => clearInterval(interval);
     }, [activeTab, tabs]);
 
+
+    const getBackgroundStyle = () => {
+        if (!background) return {};
+
+        if (background.type === 'solid') {
+            return { backgroundColor: background.color };
+        }
+
+        if (background.type === 'gradient' && background.gradient) {
+            const { type, stops, angle, shape } = background.gradient;
+            const colorStops = stops?.map(stop => `${stop.color} ${stop.position}%`).join(', ');
+
+            if (type === 'linear') {
+                return {
+                    backgroundImage: `linear-gradient(${angle || 0}deg, ${colorStops})`
+                };
+            } else if (type === 'radial') {
+                return {
+                    backgroundImage: `radial-gradient(${shape || 'circle'}, ${colorStops})`
+                };
+            }
+        }
+
+        return {};
+    };
+
+
     return (
-        <div className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
+        <div style={getBackgroundStyle()} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
             <div className="customContainer">
                 <div className="flex flex-col gap-4 mb-[60px]">
                     {title?.desktop && (
@@ -232,7 +278,7 @@ function HeroWithTime({ title, subTitle, tabs }: Props) {
                                                 ></span>
                                             )}
 
-                                            {tab.videoOn && (
+                                            <div class="flex items-center gap-[10px]">  {tab.videoOn && (
                                                 <button class="mt-4 mb-6 bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 flex items-center gap-[18px] h-[48px] w-[160px]" onClick={() => {
                                                     setCurrentVideoUrl(tab.videoUrl || "");
                                                     openModal();
@@ -249,6 +295,15 @@ function HeroWithTime({ title, subTitle, tabs }: Props) {
                                                     </span>
                                                 </button>
                                             )}
+
+                                                {tab.button?.buttonText && (
+                                                    <button class="mt-4 mb-6 backgroundHeroTimeButton rounded-lg p-1 flex items-center justify-center gap-[18px] h-[48px] w-[160px]">
+                                                        <a href={tab.button.buttonLink} class="text-primary-content font-bold text-[17px] text-center">
+                                                            {tab.button.buttonText}
+                                                        </a>
+                                                    </button>
+                                                )}
+                                            </div>
                                         </div>
                                     )}
                                 </div>
@@ -260,7 +315,7 @@ function HeroWithTime({ title, subTitle, tabs }: Props) {
                                             height={tab.tabImage?.heightDesktop || 685}
                                             width={tab.tabImage?.widthDesktop || 606}
                                             style={{ minHeight: tab.tabImage?.heightDesktop || 685 }}
-                                            className="min-1180:absolute right-0 top-0 hidden lg:block h-full"
+                                            className="min-1180:absolute right-0 top-0 hidden lg:block h-full hoverScale"
                                         />
                                         <Image
                                             src={tab.tabImage?.image || ""}

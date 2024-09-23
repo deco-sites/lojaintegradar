@@ -31,6 +31,7 @@ interface Text {
     mobile?: string;
 }
 
+
 function Header({
     backgroundImage,
     image,
@@ -39,7 +40,7 @@ function Header({
     height,
     textContent,
     initialButtons,
-    labelText
+    labelText,
 }: Props) {
     return (
         <header class="customContainer pt-[36px] min-h-[416px] max-h-[416px] lg:min-h-[800px] flex flex-col items-center justify-normal">
@@ -51,6 +52,7 @@ function Header({
                         height={height || 416}
                         width={width || 375}
                         class="w-full absolute top-0 left-0 max-h-[416px] lg:hidden"
+                        loading={"eager"}
                     />
                     <Image
                         src={backgroundImage.desktop || ""}
@@ -58,6 +60,7 @@ function Header({
                         height={height || 800}
                         width={width || 1920}
                         class="absolute top-0 left-0 hidden lg:block lg:min-h-[800px]"
+                        loading={"eager"}
                     />
                 </>
             )}
@@ -129,17 +132,16 @@ function Header({
                                 {labelText}
                             </p>
                         )}
-                        <div
-                            dangerouslySetInnerHTML={{
-                                __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                   <script>
-                    hbspt.forms.create({
-                         region: "na1",
-                         portalId: "7112881",
-                         formId: "f95ea2e2-27b0-4c24-877c-f7d24e19a5f0"
-                     });
-                   </script>
-                    `}} />
+                        <script
+                            charset="utf-8"
+                            type="text/javascript"
+                            src="//js.hsforms.net/forms/embed/v2.js"
+                        ></script>
+                        <script
+                            charset="utf-8"
+                            type="text/javascript"
+                            src="/headerSnippet.js"
+                        ></script>
                     </label>
                 </div>
             </div>

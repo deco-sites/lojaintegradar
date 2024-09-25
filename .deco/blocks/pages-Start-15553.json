@@ -260,7 +260,9 @@
             },
             "videoOn": true,
             "videoUrl": "https://www.youtube.com/embed/AVVdFT6CTZQ?si=DTVeHvCq8sFHyuPr?controls=0",
-            "button": {}
+            "button": {
+              "buttonText": "Quero testar"
+            }
           },
           {
             "textContent": {
@@ -278,7 +280,10 @@
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/11e55ae2-9a97-43f9-8684-ebe80e7c5c0d/img-recomendacao-produtos.png",
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/11e55ae2-9a97-43f9-8684-ebe80e7c5c0d/img-recomendacao-produtos.png"
             },
-            "highlight": true
+            "highlight": true,
+            "button": {
+              "buttonText": "Quero testar"
+            }
           },
           {
             "textContent": {
@@ -296,7 +301,10 @@
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c7920389-97a5-4086-add4-7e3cd2b72795/img-recuperacao-vendas-canceladas.png",
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c7920389-97a5-4086-add4-7e3cd2b72795/img-recuperacao-vendas-canceladas.png"
             },
-            "highlight": true
+            "highlight": true,
+            "button": {
+              "buttonText": "Quero testar"
+            }
           },
           {
             "textContent": {
@@ -314,7 +322,10 @@
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/977d5dd9-f394-44f5-ab7b-c7bff1027c3c/imagem_2024-09-24_161433635.png",
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/977d5dd9-f394-44f5-ab7b-c7bff1027c3c/imagem_2024-09-24_161433635.png"
             },
-            "highlight": true
+            "highlight": true,
+            "button": {
+              "buttonText": "Quero testar"
+            }
           }
         ],
         "background": {
@@ -358,7 +369,7 @@
               "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">Ferramenta de avaliação</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">e busca atualizada</span></p>"
             },
             "button": {
-              "buttonText": "Criar loja",
+              "buttonText": "Ativar agora",
               "buttonLink": "/"
             }
           },
@@ -378,7 +389,7 @@
               "mobile": "<p style=\"text-align: justify\"><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">Segmente o preço do seus produtos de acordo com a região do seu cliente</span></p>"
             },
             "button": {
-              "buttonText": "Criar loja",
+              "buttonText": "Ativar agora",
               "buttonLink": "/"
             }
           }
@@ -416,7 +427,10 @@
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4590f8ac-2238-4e67-b6cb-db32ade42137/img--Marketplace-VTEX-e-Magalu-(1).png",
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4590f8ac-2238-4e67-b6cb-db32ade42137/img--Marketplace-VTEX-e-Magalu-(1).png"
             },
-            "videoUrl": "https://www.youtube.com/embed/D7vd1Y0AlC0?si=J0BH_P4N-sWy_a_T"
+            "videoUrl": "https://www.youtube.com/embed/D7vd1Y0AlC0?si=J0BH_P4N-sWy_a_T",
+            "button": {
+              "buttonText": "Quero testar"
+            }
           },
           {
             "highlight": false,
@@ -435,6 +449,9 @@
             "tabImage": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e91ad5f5-6ca3-4d11-b698-d2a53d74cc6c/img--enriqueca-seu-catalogo.png",
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e91ad5f5-6ca3-4d11-b698-d2a53d74cc6c/img--enriqueca-seu-catalogo.png"
+            },
+            "button": {
+              "buttonText": "Integrar agora"
             }
           },
           {
@@ -454,6 +471,9 @@
             "tabImage": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/673b94b8-7907-49cd-878e-a4e5edd9cd09/img--carrinho-compartilhavel.png",
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/673b94b8-7907-49cd-878e-a4e5edd9cd09/img--carrinho-compartilhavel.png"
+            },
+            "button": {
+              "buttonText": "Criar agora"
             }
           }
         ],
@@ -479,49 +499,14 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/HeroCard.tsx",
-        "subTitle": {
-          "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 10pt\">Entre na lista de avaliação</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 10pt\">do </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 10pt\">Bollico e Loja Integrada,</span></strong></p><p><strong><span style=\"color: rgb(255, 255, 255); font-size: 10pt\">e investimos até 12 mil na</span></strong></p><p><span style=\"color: rgb(255, 255, 255); font-size: 10pt\">sua migração</span></p>",
-          "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Entre na lista de avaliação do </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Bollico e Loja Integrada,</span></strong></p><p><strong><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">e investimos até 12 mil na </span></strong><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">sua migração*.</span></p>"
-        },
-        "cardBackgroundImage": {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42701e7b-a91d-4f84-a676-ebc48c860396/bg-oferta.png",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a95b3bb0-0a47-4894-933b-6ef1b65374ab/bg-oferta-elite-mobile.png"
-        },
-        "plan": {
-          "title": "Plano Elite",
-          "discount": "50% OFF"
-        },
-        "button": {
-          "buttonText": "Avalie seu negócio",
-          "buttonUrl": "/"
-        },
-        "extraText": "*Válido para clientes com faturamento mensal acima de 100k no e-commerce mediante a comprovante.",
-        "title": {
-          "mobile": "<p><span style=\"color: #ffffff; font-size: 30pt\">Nós</span><span style=\"font-size: 30pt\"> </span><em><span style=\"color: #71dbd4; font-size: 30pt\">investimos na</span></em></p><p><em><span style=\"color: #71dbd4; font-size: 30pt\">sua migração.</span></em></p><p><span style=\"color: #ffffff; font-size: 30pt\">Literalmente.</span></p>",
-          "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 70pt\">Nós</span><span style=\"font-size: 70pt\"> </span><em><span style=\"color: rgb(113, 219, 212); font-size: 70pt\">investimos na sua</span></em></p><p><em><span style=\"color: rgb(113, 219, 212); font-size: 70pt\">migração. </span></em><span style=\"color: rgb(255, 255, 255); font-size: 70pt\">Literalmente.</span></p>"
-        },
-        "backgroundColors": {
-          "color1": "#170C24",
-          "color2": "#003037"
-        },
-        "secondImage": {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/381f3492-afca-4ccb-9afc-1757c2ce1086/Bollico-.png",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9035f5a3-f2ec-4d43-80fd-a6c5bc3de6ee/Bollico-desk.png"
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/HeroTab.tsx",
-        "title": {
-          "desktop": "<p><strong><span style=\"color: rgb(40, 195, 195); font-size: 18pt\">Operação eficiente</span></strong></p>",
-          "mobile": "<p><strong><span style=\"color: rgb(40, 195, 195); font-size: 18pt\">Operação eficiente</span></strong></p>"
-        },
         "subTitle": {
           "mobile": "<p><em><span style=\"color: rgb(113, 219, 212); font-size: 37pt\">Ganhe tempo</span></em><span style=\"font-size: 37pt\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 37pt\">se</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 37pt\">alavancando das nossas soluções de logística e meio de pagamento</span></p>",
           "desktop": "<p><em><span style=\"color: rgb(113, 219, 212); font-size: 75pt\">Ganhe tempo</span></em><span style=\"font-size: 75pt\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 75pt\">se alavancando</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 75pt\">das nossas soluções de logística e meio de pagamento</span></p>"
+        },
+        "title": {
+          "mobile": "<p><strong><span style=\"color: rgb(40, 195, 195); font-size: 18pt\">Operação eficiente</span></strong></p>",
+          "desktop": "<p><strong><span style=\"color: rgb(40, 195, 195); font-size: 18pt\">Operação eficiente</span></strong></p>"
         },
         "buttons": [
           {
@@ -590,227 +575,6 @@
             "alt": "PayPal Logotipo"
           }
         ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Prices.tsx",
-        "subTitle": {
-          "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 37pt\">Escolha a plataforma que aposta em dados e automação</span></p>",
-          "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">Escolha a plataforma que aposta </span></p><p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">em dados e automação</span></p>"
-        },
-        "title": {
-          "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 18pt\">Está na hora de migrar</span></p>",
-          "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">Está na hora de migrar</span></p>"
-        },
-        "cards": [
-          {
-            "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Gratuito</span></strong></p>",
-            "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$0</span></strong></p>",
-            "textContent": "<p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">Pra você sentir</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">o gostinho de</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">como é vender</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">online</span></p>"
-          },
-          {
-            "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Crescimento</span></strong></p>",
-            "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$59</span></strong></p>",
-            "textContent": "<p><span style=\"color: #003037\">Pra você</span></p><p><span style=\"color: #003037\">começar</span></p><p><span style=\"color: #003037\">com tudo que</span></p><p><span style=\"color: #003037\">precisa!</span></p>"
-          },
-          {
-            "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Aceleração</span></strong></p>",
-            "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$99</span></strong></p>",
-            "textContent": "<p><span style=\"color: #003037\">Pra ter mais</span></p><p><span style=\"color: #003037\">recursos e acelerar</span></p><p><span style=\"color: #003037\">suas vendas!</span></p>",
-            "highlight": true
-          },
-          {
-            "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Expansão</span></strong></p>",
-            "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$239</span></strong></p>",
-            "textContent": "<p><span style=\"color: #003037\">Pra você que tem</span></p><p><span style=\"color: #003037\">muitos produtos!</span></p>"
-          },
-          {
-            "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Elite</span></strong></p>",
-            "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$1999</span></strong></p>",
-            "textContent": "<p><span style=\"color: #003037\">Para você que</span></p><p><span style=\"color: #003037\">não quer ter</span></p><p><span style=\"color: #003037\">limites!</span></p>"
-          }
-        ],
-        "finalButtons": [
-          {
-            "text": "Compare planos",
-            "link": "https://lojaintegrada.com.br/planos",
-            "changeType": true
-          }
-        ],
-        "backgroundImage": {
-          "0": "h",
-          "1": "t",
-          "2": "t",
-          "3": "p",
-          "4": "s",
-          "5": ":",
-          "6": "/",
-          "7": "/",
-          "8": "d",
-          "9": "e",
-          "10": "c",
-          "11": "o",
-          "12": "-",
-          "13": "s",
-          "14": "i",
-          "15": "t",
-          "16": "e",
-          "17": "s",
-          "18": "-",
-          "19": "a",
-          "20": "s",
-          "21": "s",
-          "22": "e",
-          "23": "t",
-          "24": "s",
-          "25": ".",
-          "26": "s",
-          "27": "3",
-          "28": ".",
-          "29": "s",
-          "30": "a",
-          "31": "-",
-          "32": "e",
-          "33": "a",
-          "34": "s",
-          "35": "t",
-          "36": "-",
-          "37": "1",
-          "38": ".",
-          "39": "a",
-          "40": "m",
-          "41": "a",
-          "42": "z",
-          "43": "o",
-          "44": "n",
-          "45": "a",
-          "46": "w",
-          "47": "s",
-          "48": ".",
-          "49": "c",
-          "50": "o",
-          "51": "m",
-          "52": "/",
-          "53": "l",
-          "54": "o",
-          "55": "j",
-          "56": "a",
-          "57": "i",
-          "58": "n",
-          "59": "t",
-          "60": "e",
-          "61": "g",
-          "62": "r",
-          "63": "a",
-          "64": "d",
-          "65": "a",
-          "66": "r",
-          "67": "/",
-          "68": "0",
-          "69": "4",
-          "70": "9",
-          "71": "6",
-          "72": "d",
-          "73": "2",
-          "74": "d",
-          "75": "7",
-          "76": "-",
-          "77": "3",
-          "78": "f",
-          "79": "9",
-          "80": "1",
-          "81": "-",
-          "82": "4",
-          "83": "b",
-          "84": "e",
-          "85": "1",
-          "86": "-",
-          "87": "b",
-          "88": "8",
-          "89": "0",
-          "90": "d",
-          "91": "-",
-          "92": "1",
-          "93": "9",
-          "94": "f",
-          "95": "8",
-          "96": "3",
-          "97": "e",
-          "98": "4",
-          "99": "b",
-          "100": "b",
-          "101": "4",
-          "102": "d",
-          "103": "1",
-          "104": "/",
-          "105": "g",
-          "106": "r",
-          "107": "a",
-          "108": "d",
-          "109": "i",
-          "110": "e",
-          "111": "n",
-          "112": "t",
-          "113": "-",
-          "114": "b",
-          "115": "g",
-          "116": ".",
-          "117": "p",
-          "118": "n",
-          "119": "g",
-          "firstBackground": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/39eeee7c-99b4-41d1-be4f-4be9a6590ed1/gradient-bg.png",
-          "secondBackground": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/737eb087-fb58-4688-aa7f-412cb6d2b500/bg-circles.png"
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Accordion.tsx",
-        "questions": [
-          {
-            "question": "Como funciona a migração de plataforma para a Loja Integrada?",
-            "answer": "Existem 4 caminhos para você migrar de plataforma de maneira segura. Para todas, indicamos que o primeiro passo seja conversar com o nosso time de especialistas para que eles possam indicar a melhor alternativa. Não precisa se preocupar, pois nosso time irá acompanhar todo o processo, desde a definição até a conclusão. Um dos caminhos mais utilizados é a migração via ERP. Estando este integrado com a Loja Integrada, deverá ocorrer de forma rápida e segura. O nosso time também poderá criar uma proposta de migração segura e completa, sem custos adicionais, por isso, sendo feito 100% pelo time da Loja Integrada. Por fim, é possível ainda fazer a migração da loja virtual com nossos parceiros e agências. Nosso time poderá recomendar, uma vez identificada, a melhor alternativa a ser seguida."
-          },
-          {
-            "answer": "Além do suporte completo durante a migração, na Loja Integrada seu negócio cresce de verdade. Somos uma plataforma robusta desenvolvida por especialistas, fácil de usar e com um time de suporte premiado. Aqui você encontra ferramentas nativas, utilizadas por grandes empresas para crescer no ticket médio, reduzir custos com anúncios e incrementar a logística. Além disso, basta comparar os custos de operação e manutenção de outras plataformas com a nossa, e você verá uma economia considerável, sem perder em qualidade de produto.  Na Loja Integrada, focamos no seu crescimento e na eficiência das suas vendas, acreditamos que o seu sucesso é o nosso. Por isso, todas as nossas decisões são focadas em aumentar sua capacidade de faturar. Migre para a Loja Integrada e veja seu faturamento decolar.",
-            "question": "Quais são os benefícios de migrar para a Loja Integrada?"
-          },
-          {
-            "question": "O que acontece com o tagueamento da minha loja?",
-            "answer": "Quando falamos de tagueamento GTM, tudo o que você precisa fazer é instalar o app do GTM (temos um nativo) para que o script seja injetado utilizando o mesmo código da sua loja atual. Isso faz com que o seu tagueamento atual seja o mesmo no novo site. Vale reforçar que, para tagueamentos personalizados, sempre recomendamos a validação dos eventos e tags do novo site."
-          },
-          {
-            "question": "Qual é o investimento que preciso fazer para migrar minha loja?",
-            "answer": "Os valores podem variar de acordo com o tamanho do seu negócio e sua demanda por personalização. Na Loja Integrada, colocamos à sua disposição nosso time de especialistas dedicado ao processo de migração, sem custos adicionais. É a forma mais segura e eficiente de importar as informações de produto, envio, fotos, meta tag, categoria e manter as URLs atuais minimizando qualquer impacto na performance. Lojistas que contratam o Plano Elite possuem o serviço de migração incluído no plano, ou seja, fazemos todo o processo de migração sem cobrar nada a mais por isso. Ademais do Plano Elite, nosso time avalia os cenários e presta o suporte necessário."
-          },
-          {
-            "question": "Posso migrar meus produtos por ERPs?",
-            "answer": "Sim, essa é uma das formas mais utilizadas para uma migração tranquila e segura. Aqui na Loja Integrada temos integração com ERPs que vão facilitar o processo de migração da sua loja para a LI. E, você ainda pode contar com o apoio do nosso time de especialistas para tirar suas dúvidas e te ajudar durante todo o processo."
-          },
-          {
-            "question": "Quais são os riscos da migração para Loja Integrada?",
-            "answer": "Não há riscos na migração para a Loja Integrada. Além do time de suporte especializado, sua migração pode ser 100% monitorada e acompanhada para garantir a velocidade e tranquilidade no processo. Recomendamos sempre que liste suas dúvidas e compartilhe com nosso time comercial."
-          },
-          {
-            "question": "Quais os passos para realizar uma migração de plataforma de e-commerce bem-sucedida?",
-            "answer": "É possível seguir dois caminhos: o primeiro é preencher o formulário na página, que irá informar ao time de forma que quando entrarem em contato, já terão as informações iniciais para o seu processo de migração, tirando suas principais dúvidas e oferecendo apoio em todo o processo. O segundo é você já começar, a partir da criação da sua loja, escolhendo seu plano ideal e iniciar o processo de migração, podendo ser por ERPs, planilha ou manualmente. Com seu catálogo ativo na Loja Integrada, tudo o que você precisa fazer é escolher o melhor tema para sua loja e começar a vender. E não se esqueça, você pode acionar nosso time durante todo o processo."
-          },
-          {
-            "question": "Cobram comissão sobre vendas? Como funciona?",
-            "answer": "A Loja Integrada possui uma tarifa sob transações realizadas em outros meios de pagamento que não o Pagali. Sendo assim, não são todas as transações que são tarifadas, somente aquelas realizadas via meios de pagamento terceiros, pagamento na retirada, transferência bancária e boleto via PagHiper. Transações PIX e boleto no Pagali não são tarifadas, assim como transações via marketplace."
-          },
-          {
-            "question": "Vou perder tudo do meu tráfego ao migrar de plataforma?",
-            "answer": "Não, o impacto existente será minimizado. Aqui na Loja Integrada conseguimos importar suas URLs atuais para sua loja na LI. Dessa forma, reduzimos o impacto no processo de migração do tráfego do seu site."
-          }
-        ],
-        "button": {
-          "buttonText": "Saiba mais aqui",
-          "buttonLink": "https://ajuda.lojaintegrada.com.br/pt-BR/collections/3312938-como-iniciar-minha-loja-na-li#migrando-para-loja-integrada"
-        }
       }
     },
     {

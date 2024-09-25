@@ -315,7 +315,7 @@ function HeroWithTime({ title, subTitle, tabs, background }: Props) {
                                             height={tab.tabImage?.heightDesktop || 685}
                                             width={tab.tabImage?.widthDesktop || 606}
                                             style={{ minHeight: tab.tabImage?.heightDesktop || 685 }}
-                                            className="min-1180:absolute right-0 top-0 hidden lg:block h-full hoverScale"
+                                            className="min-1180:absolute right-0 top-0 hidden lg:block h-full hoverScale shadow-md"
                                         />
                                         <Image
                                             src={tab.tabImage?.image || ""}
@@ -323,7 +323,7 @@ function HeroWithTime({ title, subTitle, tabs, background }: Props) {
                                             height={tab.tabImage?.height || 351}
                                             width={tab.tabImage?.width || 337}
                                             style={{ minHeight: tab.tabImage?.height || 351 }}
-                                            class="lg:hidden"
+                                            class="lg:hidden shadow-md pb-[24px] lg:pb-0"
                                         />
                                         <div className="w-full h-[1px] background-bar">
                                             <div

@@ -109,7 +109,7 @@ function Header({
                 </div>
                 {textContent?.desktop && (
                     <span
-                        className="hidden lg:block font-instrument leading-[66px] text-shadow-in"
+                        className="hidden lg:block font-instrument leading-[66px]"
                         dangerouslySetInnerHTML={{
                             __html: textContent?.desktop,
                         }}

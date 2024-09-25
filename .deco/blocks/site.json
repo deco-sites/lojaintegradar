@@ -13,6 +13,12 @@
   "global": [
     {
       "__resolveType": "htmx/sections/htmx.tsx"
+    },
+    {
+      "__resolveType": "website/sections/Analytics/Analytics.tsx",
+      "trackingIds": [
+        "GTM-5ZPJ4T"
+      ]
     }
   ],
   "routes": [
@@ -30,5 +36,14 @@
   "firstByteThresholdMS": true,
   "theme": {
     "__resolveType": "Neutral"
+  },
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    }
+  },
+  "flavor": {
+    "framework": "fresh"
   }
 }

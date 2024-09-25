@@ -33,26 +33,56 @@ interface Buttons {
     highlight?: boolean;
     text?: string;
     /**
-  * @format rich-text
-  * @title Conteúdo do botão
-  * @description Conteúdo a ser exibido quando o botão for clicado
-  */
+     * @format rich-text
+     * @title Conteúdo do botão
+     * @description Conteúdo a ser exibido quando o botão for clicado
+     */
     content?: string;
+    /**
+     * @format rich-text
+     */
+    magicNumbers?: string;
+    /**
+     * @format rich-text
+     */
+    secondMagicNumbers?: string;
+    /**
+     * @format rich-text
+     */
+    magicNumbersMobile?: string;
+    /**
+     * @format rich-text
+     */
+    secondMagicNumbersMobile?: string;
     image?: ImageWidget;
-
+    imageMobile?: ImageWidget;
 }
 
 function HeroTab({ title, subTitle, buttons }: Props) {
-    // Estado para armazenar o conteúdo do botão clicado
     const [activeContent, setActiveContent] = useState<string | null>(null);
     const [isHighlight, setIsHighlight] = useState<boolean>(false);
     const [activeImage, setActiveImage] = useState<ImageWidget | null>(null);
+    const [activeImageMobile, setActiveImageMobile] = useState<ImageWidget | null>(null);
+    const [activeMagicNumbers, setActiveMagicNumbers] = useState<string | null>(
+        null
+    );
+    const [activeMagicNumbersMobile, setActiveMagicNumbersMobile] = useState<string | null>(null);
+    const [activeMagicNumbersTwo, setActiveMagicNumbersTwo] = useState<string | null>(null);
+    const [activeMagicNumbersTwoMobile, setActiveMagicNumbersTwoMobile] = useState<string | null>(null);
+
+
 
     useEffect(() => {
         if (buttons && buttons.length > 0) {
             setActiveContent(buttons[0].content || "");
             setIsHighlight(!!buttons[0].highlight);
             setActiveImage(buttons[0].image || null);
+            setActiveImageMobile(buttons[0].imageMobile || null);
+            setActiveMagicNumbers(buttons[0].magicNumbers || null);
+            setActiveMagicNumbersMobile(buttons[0].magicNumbersMobile || null);
+            setActiveMagicNumbersTwo(buttons[0].secondMagicNumbers || null);
+            setActiveMagicNumbersTwoMobile(buttons[0].secondMagicNumbersMobile || null);
+
         }
     }, [buttons]);
 
@@ -107,9 +137,15 @@ function HeroTab({ title, subTitle, buttons }: Props) {
                                 setActiveContent(button.content || "");
                                 setIsHighlight(!!button.highlight);
                                 setActiveImage(button.image || null);
+                                setActiveImageMobile(button.imageMobile || null);
+                                setActiveMagicNumbers(button.magicNumbers || null);
+                                setActiveMagicNumbersMobile(button.magicNumbersMobile || null);
+                                setActiveMagicNumbersTwo(button.secondMagicNumbers || null);
+                                setActiveMagicNumbersTwoMobile(button.secondMagicNumbersMobile || null);
                             }}
-                        >{button.text}</button>
-
+                        >
+                            {button.text}
+                        </button>
                     ))}
                 </div>
 
@@ -121,29 +157,74 @@ function HeroTab({ title, subTitle, buttons }: Props) {
                     )}
 
                     {activeContent && (
-                        <div className="mb-[21px] lg:mb-20">
-                            <span dangerouslySetInnerHTML={{ __html: activeContent }} />
+                        <div
+                            className={`mb-[21px] lg:mb-20 max-w-[1070px] ${activeMagicNumbers
+                                ? "flex items-center justify-between flex-col lg:flex-row"
+                                : ""
+                                }`}
+                        >
+                            <span
+                                class={`${activeMagicNumbers ? "max-w-[611px]" : ""}`}
+                                dangerouslySetInnerHTML={{ __html: activeContent }}
+                            />
+                            <div class="flex gap-6 items-center mt-6 lg:mt-0">
+                                {activeMagicNumbers && (
+                                    <span
+                                        className="font-instrument leading-[30px] hidden lg:block"
+                                        dangerouslySetInnerHTML={{ __html: activeMagicNumbers }}
+                                    />
+                                )}
+                                {activeMagicNumbersMobile && (
+                                    <span
+                                        className="font-instrument leading-[30px] lg:hidden"
+                                        dangerouslySetInnerHTML={{ __html: activeMagicNumbersMobile }}
+                                    />
+                                )}
+                                {activeMagicNumbersTwo && (
+                                    <span
+                                        className="font-instrument leading-[30px] hidden lg:block"
+                                        dangerouslySetInnerHTML={{ __html: activeMagicNumbersTwo }}
+                                    />
+                                )}
+                                {activeMagicNumbersTwoMobile && (
+                                    <span
+                                        className="font-instrument leading-[30px] lg:hidden"
+                                        dangerouslySetInnerHTML={{ __html: activeMagicNumbersTwoMobile }}
+                                    />
+                                )}
+                            </div>
                         </div>
                     )}
-                    <div class="relative">
-                        <img alt="Imagem seção hero tab" class="lg:hidden relative left-2/4 translate-x-[-50%] z-20" src="/rounded-img.png" />
-                        <img alt="Imagem seção hero tab" class="hidden lg:block relative left-2/4 translate-x-[-50%] z-20" src="/rounded-img-desk.png" />
-                        {activeImage && (
-                            <><Image
-                                src={activeImage}
-                                alt="Imagem seção hero tab"
-                                height={585}
-                                width={1192}
-                                className="w-full absolute z-30 top-3 left-2/4 translate-x-[-50%] max-w-[930px] hidden lg:block rounded-lg" /><Image
+                    <div class="relative flex justify-end mr-[-22px] lg:block lg:mr-0">
+                        {activeImage && activeImageMobile && (
+                            <>
+                                <Image
                                     src={activeImage}
                                     alt="Imagem seção hero tab"
                                     height={585}
                                     width={1192}
-                                    className="w-full absolute z-30 top-[9px] left-2/4 translate-x-[-50%] max-w-[301px] min-h-[264px] lg:hidden rounded-lg" /></>
+                                    className="w-full relative z-30 top-[5%] left-2/4 translate-x-[-50%] max-w-[930px] hidden lg:block rounded-lg"
+                                />
+
+                                <Image
+                                    src={activeImageMobile}
+                                    alt="Imagem seção hero tab"
+                                    height={320}
+                                    width={337}
+                                    className="w-full relative z-30 max-w-[337px] min-h-[264px] lg:hidden rounded-lg"
+                                />
+                            </>
                         )}
+
                     </div>
-                    <img class="absolute bottom-0 right-0 z-10 lg:hidden" src="/bg-rounded-effect.png" />
-                    <img class="absolute bottom-0 right-0 z-10 hidden lg:block" src="/bg-rounded-effect-desk.png" />
+                    <img
+                        class="absolute bottom-0 right-0 z-10 lg:hidden"
+                        src="/bg-rounded-effect.png"
+                    />
+                    <img
+                        class="absolute bottom-0 right-0 z-10 hidden lg:block"
+                        src="/bg-rounded-effect-desk.png"
+                    />
                 </div>
             </div>
         </div>

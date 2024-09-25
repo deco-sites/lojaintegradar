@@ -1,7 +1,7 @@
-import { useState, useEffect } from "preact/hooks";
+import { useState } from "preact/hooks";
 import Image from "apps/website/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
-import { CSS } from "../../static/herocss.ts"
+import { HEROCSS } from "../../static/herocss.ts"
 
 export interface Props {
     cardBackgroundImage?: {
@@ -71,7 +71,7 @@ function HeroCard({
     return (
         <div style={bgStyle} class="bg-base-300 py-20">
             <div class="customContainer">
-                <div class="w-full relative max-w-[363px] lg:max-w-[1256px] mx-auto px-[10px]">
+                <div class="w-full relative max-w-[420px] lg:max-w-[1256px] mx-auto px-[10px]">
                     {cardBackgroundImage?.desktop && (
                         <Image
                             src={cardBackgroundImage?.desktop}
@@ -87,8 +87,8 @@ function HeroCard({
                             src={cardBackgroundImage?.mobile}
                             alt={"card background"}
                             height={342}
-                            width={353}
-                            class="relative mx-auto lg:hidden"
+                            width={420}
+                            class="relative mx-auto lg:hidden rounded-lg"
                             style={{ minHeight: 353 }}
                         />
                     )}
@@ -97,9 +97,9 @@ function HeroCard({
                         <Image
                             src={secondImage?.desktop}
                             alt={"gradient background"}
-                            height={580}
+                            height={680}
                             width={500}
-                            class="mx-auto hidden lg:block absolute bottom-0 right-0 w-[500px] h-[580px]"
+                            class="mx-auto hidden lg:block absolute bottom-0 right-0 w-[500px] h-[640px]"
                         />
                     )}
                     {secondImage?.mobile && (
@@ -113,7 +113,7 @@ function HeroCard({
                         />
                     )}
 
-                    <div class="flex flex-col gap-[10px] lg:gap-[40px] absolute top-3 lg:top-[50px] left-2 lg:left-[50px] min-w-[265px] px-[10px] xl:px-0">
+                    <div class="flex flex-col gap-[10px] lg:gap-[40px] absolute top-3 lg:top-[50px] left-2 lg:left-[50px] min-w-[280px] px-[10px] xl:px-0">
                         <div class="flex gap-1">
                             <span class="text-base font-semibold text-primary-content">
                                 {plan.title}
@@ -162,10 +162,9 @@ function HeroCard({
             </div>
 
             {isModalOpen && (
-
-                <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <style dangerouslySetInnerHTML={{ __html: CSS }}></style>
-                    <div class="bg-white p-6 rounded-lg relative w-full max-w-2xl">
+                <div class="heroCard fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <style dangerouslySetInnerHTML={{ __html: HEROCSS }}></style>
+                    <div class="bg-white p-6 rounded-lg relative w-full max-w-[501px] mx-3 md:mx-0">
                         <button
                             class="absolute top-2 right-2 text-black"
                             onClick={() => setIsModalOpen(false)}

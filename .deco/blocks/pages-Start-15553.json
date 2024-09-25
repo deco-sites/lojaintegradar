@@ -282,15 +282,15 @@
           },
           {
             "textContent": {
-              "desktop": "<p><span style=\"color: #ffffff\">Recupere vendas enviando gatilhos para pedidos cancelados de forma automática</span></p>",
-              "mobile": "<p><span style=\"color: #ffffff\">Recupere vendas enviando gatilhos para pedidos cancelados de forma automática</span></p>"
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Recupere vendas enviando gatilhos para pedidos cancelados de forma automática</span></p>",
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Recupere vendas enviando gatilhos para pedidos cancelados de forma automática</span></p>"
             },
             "icon": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/21d998d4-e11e-44ae-9e80-75933af85151/Frame-1000002272.png"
             },
             "title": {
               "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Recuperação de vendas canceladas</span></p>",
-              "mobile": "<p><span style=\"color: #ffffff; font-size: 13pt\">Recuperação de vendas canceladas</span></p><p></p>"
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Recuperação de vendas canceladas</span></p><p></p>"
             },
             "tabImage": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c7920389-97a5-4086-add4-7e3cd2b72795/img-recuperacao-vendas-canceladas.png",
@@ -300,8 +300,8 @@
           },
           {
             "textContent": {
-              "desktop": "<p><span style=\"color: #ffffff\">Disponível no módulo promocional, crie promoções com mais de um produto, definindo valores de desconto progressivos de acordo com as suas estratégias de venda.</span></p>",
-              "mobile": "<p>Disponível no módulo promocional, crie promoções com mais de um produto, definindo valores de desconto progressivos de acordo com as suas estratégias de venda.</p>"
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Disponível no módulo promocional, crie promoções com mais de um produto, definindo valores de desconto progressivos de acordo com as suas estratégias de venda.</span></p>",
+              "mobile": "<p><span style=\"color: #ffffff\">Disponível no módulo promocional, crie promoções com mais de um produto, definindo valores de desconto progressivos de acordo com as suas estratégias de venda.</span></p>"
             },
             "title": {
               "desktop": "<p><span style=\"color: #ffffff; font-size: 21pt\">Desconto progressivo</span></p>",
@@ -340,7 +340,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/HeroInfo.tsx",
-        "title": "<p><span style=\"color: #71dbd4; font-size: 24pt\">Mais</span><span style=\"font-size: 24pt\"> </span><span style=\"color: #ffffff; font-size: 24pt\">lançamentos</span></p>",
+        "title": "<p><span style=\"color: rgb(113, 219, 212); font-size: 24pt\">Mais</span><span style=\"font-size: 24pt\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 24pt\">lançamentos</span></p><p></p>",
         "cards": [
           {
             "textContent": {
@@ -348,7 +348,7 @@
               "mobile": "<p style=\"text-align: justify\"><span style=\"color: #ffffff; font-size: 10pt\">Inclua avaliações dos seus clientes nas páginas de produto, aumentando a confiabilidade da compra, além de aumentar as chances do comprador encontrar o que procura e efetuar a compra com a busca atualizada.</span></p>"
             },
             "image": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7de8f178-e9bf-46f6-8837-9c4de24aa924/img-ferramenta-avaliacao-ebusca.png"
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5f22944f-9a3c-41dd-bf61-5480bfb23072/img-ferramenta-avaliacao-ebusca.png"
             },
             "icon": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c0630e9-70d4-4225-a02e-573b04803a07/Frame-1000002272.png"
@@ -358,7 +358,7 @@
               "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">Ferramenta de avaliação</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">e busca atualizada</span></p>"
             },
             "button": {
-              "buttonText": "Ativar agora",
+              "buttonText": "Criar loja",
               "buttonLink": "/"
             }
           },
@@ -368,7 +368,7 @@
               "mobile": "<p><span style=\"color: #ffffff; font-size: 10pt\">Aumente sua margem de ganho com a segmentação de preço por CEP. Defina diferentes preços para diferentes regiões do Brasil.</span></p>"
             },
             "image": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4f21b103-2454-4a5f-a413-f03165693586/img-segmento-preco-por-cep.png"
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/70dc68a9-ca42-4498-a849-e0857d594b50/img-segmento-preco-por-cep.png"
             },
             "icon": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c0630e9-70d4-4225-a02e-573b04803a07/Frame-1000002272.png"
@@ -378,7 +378,7 @@
               "mobile": "<p style=\"text-align: justify\"><span style=\"color: #ffffff; font-size: 15pt\">Segmente o preço do seus produtos de acordo com a região do seu cliente</span></p>"
             },
             "button": {
-              "buttonText": "Ativar agora",
+              "buttonText": "Criar loja",
               "buttonLink": "/"
             }
           }

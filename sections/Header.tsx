@@ -5,8 +5,8 @@ import HeaderInitialButtons from "site/islands/HeaderInitialButtons.tsx";
 interface Props {
     backgroundType: "image" | "video";
     /**
- * @description Só preencha os dados de tamanho caso seja necessário, senão, deixar vazio
- */
+     * @description Só preencha os dados de tamanho caso seja necessário, senão, deixar vazio
+     */
     backgroundVideo?: {
         video?: VideoWidget;
         desktopMinimumHeight?: number;
@@ -81,23 +81,39 @@ function Header({
                 )}
                 {backgroundType === "video" && (
                     <>
+                        <style
+                            dangerouslySetInnerHTML={{
+                                __html: `
+                        #headerVideo {
+                         max-height: ${backgroundVideo?.mobileMaximumHeight};
+                         min-height: ${backgroundVideo?.mobileMinimumHeight};
+                        }
+
+                        @media screen and (min-width: 1024px) {
+                        #headerVideo {
+                         max-height: ${backgroundVideo?.desktopMaximumHeight};
+                         min-height: ${backgroundVideo?.desktopMinimumHeight};
+                        }
+                        }
+                        `,
+                            }}
+                        ></style>
                         <video
-                            style={{ minHeight: backgroundVideo?.desktopMinimumHeight, maxHeight: backgroundVideo?.desktopMaximumHeight }}
-                            autoplay
+                            loading="eager"
+                            autoPlay
                             muted
                             loop
-                            class="w-full max-w-full object-cover absolute top-0 left-0 min-h-[416px] max-h-[416px] lg:max-h-[800px] lg:min-h-[800px] hidden lg:block"
+                            id="headerVideo"
+                            className="w-full max-w-full object-cover absolute top-0 left-0 min-h-[416px] max-h-[416px] lg:max-h-[800px] lg:min-h-[800px]"
                         >
-                            <source src={backgroundVideo?.video}></source>
-                        </video>
-                        <video
-                            style={{ minHeight: backgroundVideo?.mobileMinimumHeight, maxHeight: backgroundVideo?.mobileMaximumHeight }}
-                            autoplay
-                            muted
-                            loop
-                            class="w-full max-w-full object-cover absolute top-0 left-0 min-h-[416px] max-h-[416px] lg:max-h-[800px] lg:min-h-[800px] lg:hidden"
-                        >
-                            <source src={backgroundVideo?.video}></source>
+                            <source
+                                src={backgroundVideo?.video}
+                                media="(min-width: 1024px)"
+                            />
+                            <source
+                                src={backgroundVideo?.video}
+                                media="(max-width: 1023px)"
+                            />
                         </video>
                     </>
                 )}

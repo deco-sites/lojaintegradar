@@ -1,6 +1,3 @@
-import CreateStoreModal from "site/components/ui/CreateStoreModal.tsx";
-import { useState } from "preact/hooks";
-
 interface Props {
     highlight?: boolean;
     buttonText?: string;

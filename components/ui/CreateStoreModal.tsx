@@ -253,11 +253,19 @@ const CreateStoreModal = () => {
                             async
                             defer
                         ></script>
+                        <script dangerouslySetInnerHTML={{
+                            __html: `
+                            function onSubmitModal(token) {
+                                document.getElementById('modal-no-check').submit();
+                            }
+
+                            `}}></script>
                         <button
                             id="input-form-modal_no_check"
                             className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha"
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
+                            data-callback="onSubmitModal"
                         >
                             Abrir minha loja agora
                         </button>

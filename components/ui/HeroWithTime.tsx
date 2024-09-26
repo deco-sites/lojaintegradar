@@ -1,5 +1,5 @@
 import Image from "apps/website/components/Image.tsx";
-import { ImageWidget } from "apps/admin/widgets.ts";
+import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import { useState, useEffect } from "preact/hooks";
 import Icon from "site/components/ui/Icon.tsx";
 
@@ -62,7 +62,7 @@ interface Tabs {
 * @title URL do vídeo
 * @description É importante que a URL do vídeo seja a versão EMBED
 */
-    videoUrl?: string;
+    videoUrl?: VideoWidget;
     button?: {
         buttonText?: string;
         buttonLink?: string;

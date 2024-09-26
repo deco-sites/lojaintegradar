@@ -1,7 +1,19 @@
-import { ImageWidget } from "apps/admin/widgets.ts";
+import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { CSS } from '../static/css.ts'
+import { CSS } from "../static/css.ts";
+import HeaderInitialButtons from "site/islands/HeaderInitialButtons.tsx";
 interface Props {
+    backgroundType: "image" | "video";
+    /**
+ * @description Só preencha os dados de tamanho caso seja necessário, senão, deixar vazio
+ */
+    backgroundVideo?: {
+        video?: VideoWidget;
+        desktopMinimumHeight?: number;
+        desktopMaximumHeight?: number;
+        mobileMinimumHeight?: number;
+        mobileMaximumHeight?: number;
+    };
     backgroundImage?: {
         mobile?: ImageWidget;
         desktop?: ImageWidget;
@@ -16,6 +28,7 @@ interface Props {
         text?: string;
         link?: string;
         changeType?: boolean;
+        openForm?: boolean;
     }[];
     labelText?: string;
 }
@@ -31,8 +44,9 @@ interface Text {
     mobile?: string;
 }
 
-
 function Header({
+    backgroundType = "image",
+    backgroundVideo,
     backgroundImage,
     image,
     alt,
@@ -44,26 +58,50 @@ function Header({
 }: Props) {
     return (
         <header class="customContainer pt-[36px] min-h-[416px] max-h-[416px] lg:min-h-[800px] flex flex-col items-center justify-normal">
-            {backgroundImage && (
-                <>
-                    <Image
-                        src={backgroundImage.mobile || ""}
-                        alt={alt || ""}
-                        height={height || 416}
-                        width={width || 375}
-                        class="w-full absolute top-0 left-0 max-h-[416px] lg:hidden"
-                        loading={"eager"}
-                    />
-                    <Image
-                        src={backgroundImage.desktop || ""}
-                        alt={alt || ""}
-                        height={height || 800}
-                        width={width || 1920}
-                        class="absolute top-0 left-0 hidden lg:block lg:min-h-[800px]"
-                        loading={"eager"}
-                    />
-                </>
-            )}
+            <>
+                {backgroundType === "image" && (
+                    <>
+                        <Image
+                            src={backgroundImage?.mobile || ""}
+                            alt={alt || ""}
+                            height={height || 416}
+                            width={width || 375}
+                            class="w-full absolute top-0 left-0 max-h-[416px] lg:hidden"
+                            loading={"eager"}
+                        />
+                        <Image
+                            src={backgroundImage?.desktop || ""}
+                            alt={alt || ""}
+                            height={height || 800}
+                            width={width || 1920}
+                            class="absolute top-0 left-0 hidden lg:block lg:min-h-[800px]"
+                            loading={"eager"}
+                        />
+                    </>
+                )}
+                {backgroundType === "video" && (
+                    <>
+                        <video
+                            style={{ minHeight: backgroundVideo?.desktopMinimumHeight, maxHeight: backgroundVideo?.desktopMaximumHeight }}
+                            autoplay
+                            muted
+                            loop
+                            class="w-full max-w-full object-cover absolute top-0 left-0 min-h-[416px] max-h-[416px] lg:max-h-[800px] lg:min-h-[800px] hidden lg:block"
+                        >
+                            <source src={backgroundVideo?.video}></source>
+                        </video>
+                        <video
+                            style={{ minHeight: backgroundVideo?.mobileMinimumHeight, maxHeight: backgroundVideo?.mobileMaximumHeight }}
+                            autoplay
+                            muted
+                            loop
+                            class="w-full max-w-full object-cover absolute top-0 left-0 min-h-[416px] max-h-[416px] lg:max-h-[800px] lg:min-h-[800px] lg:hidden"
+                        >
+                            <source src={backgroundVideo?.video}></source>
+                        </video>
+                    </>
+                )}
+            </>
             <div class="w-full justify-center lg:justify-between hidden lg:flex relative z-10">
                 {" "}
                 {image && (
@@ -76,20 +114,10 @@ function Header({
                     />
                 )}
                 <div class="flex items-center gap-[30px]">
-                    {initialButtons?.map((button) =>
-                        button.changeType ? (
-                            <button class="background-df border-[1px] border-solid border-primary-content w-full min-w-[281px] rounded-lg text-center font-bold text-[18px] text-primary-content h-[48px]">
-                                <a href={button.link}> {button?.text}</a>
-                            </button>
-                        ) : (
-                            <button class="bg-primary-content w-full rounded-lg text-center font-bold text-[18px] text-base-300 h-[48px] min-w-[157px]">
-                                <a href={button.link}> {button?.text}</a>
-                            </button>
-                        )
-                    )}
+                    <HeaderInitialButtons initialButtons={initialButtons} />
                 </div>
             </div>
-            <div class="flex flex-col items-center justify-center relative z-10 lg:min-h-[715px]">
+            <div class="flex flex-col items-center justify-center relative z-[5] lg:min-h-[715px]">
                 <div class="w-full flex justify-center lg:justify-between lg:hidden">
                     {" "}
                     {image && (
@@ -125,7 +153,7 @@ function Header({
                     ></span>
                 )}
 
-                <div class="gap-5 relative z-10 w-full items-center justify-center mt-[35px] flex">
+                <div class="gap-5 relative z-10 w-full items-center justify-center mt-[35px] flex px-[10px] lg:px-0">
                     <style dangerouslySetInnerHTML={{ __html: CSS }}></style>
                     <label class="w-full">
                         {labelText && (

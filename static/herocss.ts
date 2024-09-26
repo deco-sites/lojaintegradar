@@ -15,7 +15,7 @@ align-items: center;
 }
 
 .heroCard .input {
-border: 1px solid #828CA0;
+border: 1px solid #828CA0 !important;
 border-radius: 8px;
 max-width: 375px;
 width: 100%;
@@ -45,6 +45,31 @@ height: 48px;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+
+.heroCard input {
+height: 100%;
+}
+
+.heroCard .hs-email .input {
+    max-height: 48px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.heroCard .hs-email .input input {
+max-height: 48px;
+    height: 48px;
+}
+
+.hs_seu_negocio_tem_uma_loja_virtual_ .input{
+    padding: 0;
+    border: none !important;
+}
+
+.hs_seu_negocio_tem_uma_loja_virtual_ select{
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (min-width: 640px) {

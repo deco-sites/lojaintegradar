@@ -1,7 +1,7 @@
 import { useState } from "preact/hooks";
 import Image from "apps/website/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
-import { HEROCSS } from "../../static/herocss.ts"
+import TalkModal from "site/components/ui/TalkModal.tsx";
 
 export interface Props {
     cardBackgroundImage?: {
@@ -162,27 +162,7 @@ function HeroCard({
             </div>
 
             {isModalOpen && (
-                <div class="heroCard fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <style dangerouslySetInnerHTML={{ __html: HEROCSS }}></style>
-                    <div class="bg-white p-6 rounded-lg relative w-full max-w-[501px] mx-3 md:mx-0">
-                        <button
-                            class="absolute top-2 right-2 text-black"
-                            onClick={() => setIsModalOpen(false)}
-                        >
-                            X
-                        </button>
-                        <script
-                            charset="utf-8"
-                            type="text/javascript"
-                            src="//js.hsforms.net/forms/embed/v2.js"
-                        ></script>
-                        <script
-                            charset="utf-8"
-                            type="text/javascript"
-                            src="/heroCardForm.js"
-                        ></script>
-                    </div>
-                </div>
+                <TalkModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
             )}
         </div>
     );

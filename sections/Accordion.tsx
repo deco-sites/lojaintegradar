@@ -7,7 +7,13 @@ interface Props {
 }
 
 interface Questions {
+    /**
+ * @format rich-text
+ */
     question?: string;
+    /**
+ * @format rich-text
+ */
     answer?: string;
 }
 
@@ -22,10 +28,12 @@ function Accordion({ questions, button }: Props) {
                 {questions?.map((list, index) => (
                     <div className="collapse collapse-arrow join-item border-[#E8E8E8] border-b-[1px] border-solid">
                         <input type="radio" name="my-accordion-4" defaultChecked={index === 0} />
-                        <div className="collapse-title text-primary-content text-base md:text-[18px] font-bold">{list.question}</div>
-                        <div className="collapse-content">
-                            <p className="text-primary-content text-sm md:text-base">{list.answer}</p>
-                        </div>
+                        {list.question && <div className="collapse-title text-primary-content text-base md:text-[18px] font-bold" dangerouslySetInnerHTML={{ __html: list.question }}
+                        ></div>}
+                        {list.answer && <div className="collapse-content">
+                            <p className="text-primary-content text-sm md:text-base" dangerouslySetInnerHTML={{ __html: list.answer }}
+                            ></p>
+                        </div>}
                     </div>
                 ))}
                 <div className="flex flex-col gap-[40px] w-full justify-center !mt-12 lg:!mt-[81px]">

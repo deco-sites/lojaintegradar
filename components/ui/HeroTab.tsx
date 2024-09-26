@@ -203,7 +203,7 @@ function HeroTab({ title, subTitle, buttons }: Props) {
                                     alt="Imagem seção hero tab"
                                     height={585}
                                     width={1192}
-                                    className="w-full relative z-30 top-[5%] left-2/4 translate-x-[-50%] max-w-[930px] hidden lg:block rounded-lg"
+                                    className="w-full relative z-[5] top-[5%] left-2/4 translate-x-[-50%] max-w-[930px] hidden lg:block rounded-lg"
                                 />
 
                                 <Image
@@ -211,18 +211,18 @@ function HeroTab({ title, subTitle, buttons }: Props) {
                                     alt="Imagem seção hero tab"
                                     height={320}
                                     width={337}
-                                    className="w-full relative z-30 max-w-[337px] min-h-[264px] lg:hidden rounded-lg"
+                                    className="w-full relative z-[5] max-w-[337px] min-h-[264px] lg:hidden rounded-lg"
                                 />
                             </>
                         )}
 
                     </div>
                     <img
-                        class="absolute bottom-0 right-0 z-10 lg:hidden"
+                        class="absolute bottom-0 right-0 z-[4] lg:hidden"
                         src="/bg-rounded-effect.png"
                     />
                     <img
-                        class="absolute bottom-0 right-0 z-10 hidden lg:block"
+                        class="absolute bottom-0 right-0 z-[4] hidden lg:block"
                         src="/bg-rounded-effect-desk.png"
                     />
                 </div>

@@ -100,8 +100,8 @@ export default function Hero({
         <div class="max-w-[555px]">
           <AnimateOnShow divClass="text-5xl font-semibold hidden lg:block" animation="animate-fade-left">{title}</AnimateOnShow>
           <AnimateOnShow divClass="text-2xl mt-2.5 font-semibold hidden lg:block" delay={100} animation="animate-fade-left">{caption}</AnimateOnShow>
-          <AnimateOnShow divClass="text-base font-normal leading-normal text-base-300 mt-5" delay={200} animation="animate-fade-left">{description}</AnimateOnShow>
-          {bulletpoints && <AnimateOnShow divClass="mt-7 text-base-300 text-base flex flex-col gap-2.5" animation="animate-fade-left" delay={300}>
+          <AnimateOnShow divClass="text-base font-normal leading-normal text-neutral-content mt-5" delay={200} animation="animate-fade-left">{description}</AnimateOnShow>
+          {bulletpoints && <AnimateOnShow divClass="mt-7 text-neutral-content text-base flex flex-col gap-2.5" animation="animate-fade-left" delay={300}>
             {bulletpoints.items?.map((item) => (
               <p class="flex gap-2.5">
                 {bulletpoints.bulletPointsIcon?.src && <Image
@@ -118,11 +118,11 @@ export default function Hero({
             {bigNumbers?.map((bigNumber) =>
               <div class="w-1/3 px-3 mt-10">
                 <p class="text-xl sm:text-2xl lg:text-[34px] leading-[120%] font-bold">{bigNumber.text}</p>
-                <p class="text-base-300 text-xs sm:text-sm mt-2">{bigNumber.caption}</p>
+                <p class="text-neutral-content text-xs sm:text-sm mt-2">{bigNumber.caption}</p>
               </div>
             )}
           </AnimateOnShow>
-          {ctaTitle && <p class="text-base-300 text-base mb-5 mt-7">{ctaTitle}</p>}
+          {ctaTitle && <p class="text-neutral-content text-base mb-5 mt-7">{ctaTitle}</p>}
           <AnimateOnShow divClass="flex flex-wrap items-center gap-7 mt-5" animation="animate-fade-up" delay={500}>
             {cta.map((button) =>
               <a

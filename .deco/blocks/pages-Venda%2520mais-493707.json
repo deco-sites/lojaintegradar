@@ -142,7 +142,6 @@
     },
     {
       "__resolveType": "site/sections/Testimonials.tsx",
-      "arrows": false,
       "slides": [
         {
           "content": {
@@ -161,6 +160,7 @@
           }
         }
       ],
+      "arrows": false,
       "dots": false
     },
     {
@@ -4961,18 +4961,7 @@
         {
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
-            "cta": [
-              {
-                "text": "Ver plano Aceleração ",
-                "href": "#",
-                "style": "button"
-              }
-            ],
             "title": "Compre Junto",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e1976be0-b8c1-441d-bfb6-8de773198dea/hero-1-image-mobile.svg",
-              "alt": "hero image"
-            },
             "caption": "Venda mais sem gastar com anúncios pagos",
             "description": "Potencialize a capacidade do seu negócio de vender mais para o mesmo cliente. Com o “Compre Junto”, aumentamos até 31% do seu faturamento oferecendo um produto complementar ao seu usuário no momento da compra.",
             "bigNumbers": [
@@ -4989,6 +4978,18 @@
                 "caption": "já utilizaram a ferramenta"
               }
             ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e1976be0-b8c1-441d-bfb6-8de773198dea/hero-1-image-mobile.svg",
+              "alt": "hero image"
+            },
+            "placement": "left",
+            "cta": [
+              {
+                "text": "Ver plano Aceleração ",
+                "href": "#",
+                "style": "button"
+              }
+            ],
             "links": [
               {
                 "textBefore": "Já tem uma loja?",
@@ -5000,7 +5001,6 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/94d5a22d-6783-411d-8035-00cbfd929774/Ellipse-62-(1).svg",
               "alt": "background gradiente"
             },
-            "placement": "left",
             "use": "image"
           },
           "rule": {
@@ -5011,18 +5011,7 @@
         {
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
-            "cta": [
-              {
-                "text": "Ver plano Aceleração ",
-                "href": "#",
-                "style": "button"
-              }
-            ],
             "title": "Venda mais sem gastar com anúncios pagos",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4d2a4a59-bf70-4c3b-850c-e11e59ef5e5a/hero1-image.svg",
-              "alt": "hero image"
-            },
             "caption": "Conheça o “Compre Junto”, nossa  ferramenta nativa",
             "description": "Potencialize a capacidade do seu negócio de vender mais para o mesmo cliente. Com o “Compre Junto”, aumentamos até 31% do seu faturamento oferecendo um produto complementar ao seu usuário no momento da compra.",
             "bigNumbers": [
@@ -5037,6 +5026,17 @@
               {
                 "text": "+ 8.6k pedidos",
                 "caption": "convertidos em vendas no 1º Tri de 2024"
+              }
+            ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4d2a4a59-bf70-4c3b-850c-e11e59ef5e5a/hero1-image.svg",
+              "alt": "hero image"
+            },
+            "cta": [
+              {
+                "text": "Ver plano Aceleração ",
+                "href": "#",
+                "style": "button"
               }
             ],
             "links": [
@@ -5162,19 +5162,508 @@
       ]
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetails2.tsx",
+            "title": "Acelere o seu negócio",
+            "planTag": {
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
+              },
+              "text": "Plano Aceleração"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4c9f864e-51e2-469e-a56b-5f02c2af1b6a/aceleracao-background.svg",
+              "alt": "background "
+            },
+            "useBackground": "video",
+            "slides": [
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
+              }
+            ],
+            "showArrows": true,
+            "color3": "#003037",
+            "color1": "#8c00a8",
+            "color2": "#FAFAF5",
+            "imageText": "<p style=\"font-weight: 200;\" data-mce-style=\"font-weight: 200;\"><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">Tudo </strong>o que seu<br>negócio precisa<br>para <strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">vender mais</strong></p>",
+            "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9edb7b17-43b7-4a33-b55d-11a6188f5324/video-dobra-aceleracao-mobile.webm",
+            "useContent": "video",
+            "contentImage": {},
+            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
+            "annualValues": {
+              "title": "Anual",
+              "tag": "20% OFF",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>",
+              "saving": "⚡️ Economize R$ 240 no plano anual"
+            },
+            "montlyValues": {
+              "title": "Mensal",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+              "cta": {
+                "href": "#",
+                "text": "Assinar plano",
+                "outline": false
+              },
+              "link": {
+                "textBefore": "Já tem uma loja?",
+                "text": " Ativar recursos",
+                "href": "#"
+              }
+            },
+            "color4": "#FFE6A0",
+            "cta": {
+              "href": "#",
+              "outline": false,
+              "text": "Assinar plano"
+            },
+            "link": {
+              "textBefore": "Já tem uma loja? ",
+              "href": "#",
+              "text": "Ativar recursos"
+            },
+            "color6": "#FFE6A0",
+            "color7": "#ffffff",
+            "color8": "#003037",
+            "color5": "#ffffff"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetails2.tsx",
+            "title": "Acelere o seu negócio",
+            "planTag": {
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
+              },
+              "text": "Plano Aceleração"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4c9f864e-51e2-469e-a56b-5f02c2af1b6a/aceleracao-background.svg",
+              "alt": "background "
+            },
+            "useBackground": "video",
+            "slides": [
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
+              }
+            ],
+            "showArrows": true,
+            "color3": "#003037",
+            "color1": "#8c00a8",
+            "color2": "#FAFAF5",
+            "imageText": "<p style=\"font-weight: 200;\" data-mce-style=\"font-weight: 200;\"><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">Tudo </strong>o que seu<br>negócio precisa<br>para <strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">vender mais</strong></p>",
+            "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8fd3818a-e988-426b-9f8b-6c6c8dffa479/video-dobra-aceleracao.webm",
+            "useContent": "video",
+            "contentImage": {},
+            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
+            "annualValues": {
+              "title": "Anual",
+              "tag": "20% OFF",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>",
+              "saving": "⚡️ Economize R$ 240 no plano anual"
+            },
+            "montlyValues": {
+              "title": "Mensal",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+              "cta": {
+                "href": "#",
+                "text": "Assinar plano",
+                "outline": false
+              },
+              "link": {
+                "textBefore": "Já tem uma loja?",
+                "text": " Ativar recursos",
+                "href": "#"
+              }
+            },
+            "color4": "#FFE6A0",
+            "cta": {
+              "href": "#",
+              "outline": false,
+              "text": "Assinar plano"
+            },
+            "link": {
+              "textBefore": "Já tem uma loja? ",
+              "href": "#",
+              "text": "Ativar recursos"
+            },
+            "color5": "#FAFAF5",
+            "color6": "#FFE6A0",
+            "color7": "#ffffff",
+            "color8": "#003037"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetails2.tsx",
+            "title": "Viva a Expansão ",
+            "planTag": {
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
+              },
+              "text": "Plano Expansão "
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8b776af1-aa93-4033-84bd-a46e4afd01a2/expancao-background-mobile.png",
+              "alt": "background ",
+              "width": 600,
+              "height": 1700
+            },
+            "useBackground": "video",
+            "slides": [
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
+              }
+            ],
+            "showArrows": true,
+            "color3": "#371E55",
+            "color1": "#8c00a8",
+            "color2": "#ffffff",
+            "imageText": "<p style=\"font-weight: 200;\" data-mce-style=\"font-weight: 200;\"><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">Recursos</strong>,<br>ferramentas <br>e um <strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">ecossistema</strong><br>completo para<br><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">impulsionar</strong><br>suas vendas&nbsp;</p>",
+            "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fa240ee4-3357-4af1-b54c-a80a64c592d1/video-dobra-expansao-mobile.webm",
+            "useContent": "video",
+            "contentImage": {},
+            "caption": "Para quem já possui um negócio e quer crescer com eficiência, acompanhamento e mais rentabilidade.",
+            "annualValues": {
+              "title": "Anual",
+              "tag": "20% OFF",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>",
+              "saving": "⚡️ Economize R$ 240 no plano anual"
+            },
+            "montlyValues": {
+              "title": "Mensal",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+              "cta": {
+                "href": "#",
+                "text": "Assinar plano",
+                "outline": false
+              },
+              "link": {
+                "textBefore": "Já tem uma loja?",
+                "text": " Ativar recursos",
+                "href": "#"
+              }
+            },
+            "color4": "#FFE6A0",
+            "cta": {
+              "href": "#",
+              "outline": false,
+              "text": "Assinar plano"
+            },
+            "link": {
+              "textBefore": "Já tem uma loja? ",
+              "href": "#",
+              "text": "Ativar recursos"
+            },
+            "color5": "#371E55",
+            "color6": "#5F6E82",
+            "color7": "#371E55",
+            "color8": "#ffffff"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetails2.tsx",
+            "title": "Viva a Expansão ",
+            "planTag": {
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
+              },
+              "text": "Plano Expansão "
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/58549232-283c-4d1c-9bc4-9a5fca149158/expancao-background.png",
+              "alt": "background ",
+              "width": 2800,
+              "height": 1800
+            },
+            "useBackground": "video",
+            "slides": [
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
+              }
+            ],
+            "showArrows": true,
+            "color3": "#371E55",
+            "color1": "#8c00a8",
+            "color2": "#ffffff",
+            "imageText": "<p style=\"font-weight: 200;\" data-mce-style=\"font-weight: 200;\"><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">Recursos</strong>,<br>ferramentas <br>e um <strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">ecossistema</strong><br>completo para<br><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">impulsionar</strong><br>suas vendas&nbsp;</p>",
+            "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/11926add-083a-4916-abf5-0f4d3f4e6378/video-dobra-expansao.webm",
+            "useContent": "video",
+            "contentImage": {},
+            "caption": "Para quem já possui um negócio e quer crescer com eficiência, acompanhamento e mais rentabilidade.",
+            "annualValues": {
+              "title": "Anual",
+              "tag": "20% OFF",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>",
+              "saving": "⚡️ Economize R$ 240 no plano anual"
+            },
+            "montlyValues": {
+              "title": "Mensal",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+              "cta": {
+                "href": "#",
+                "text": "Assinar plano",
+                "outline": false
+              },
+              "link": {
+                "textBefore": "Já tem uma loja?",
+                "text": " Ativar recursos",
+                "href": "#"
+              }
+            },
+            "color4": "#FFE6A0",
+            "cta": {
+              "href": "#",
+              "outline": false,
+              "text": "Assinar plano"
+            },
+            "link": {
+              "textBefore": "Já tem uma loja? ",
+              "href": "#",
+              "text": "Ativar recursos"
+            },
+            "color5": "#371E55",
+            "color6": "#5F6E82",
+            "color7": "#371E55",
+            "color8": "#ffffff"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/PlanDetails.tsx",
       "title": "Para quem já possui um negócio e quer crescer com ",
-      "titleTypingColor": "#28C3C3",
-      "titleTyping": [
-        "eficiência",
-        "acompanhamento",
-        "mais rentabilidade"
-      ],
-      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/46cd14c5-bcc4-4d2d-aa5f-f229f245f292/video-dobra-elite.webm",
       "planTag": {
         "icon": {
-          "alt": "crown icon",
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/880a5336-717a-4f28-ae0e-747b4cb6069d/coroa-1-(1).svg"
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/880a5336-717a-4f28-ae0e-747b4cb6069d/coroa-1-(1).svg",
+          "alt": "crown icon"
         },
         "text": "Plano Elite"
       },
@@ -5234,46 +5723,40 @@
             }
           },
           "title": "Para você lucrar"
-        },
-        {
-          "bulletPoints": {
-            "items": [
-              "Importador de produtos e URL ",
-              "Suporte Premiado",
-              "29 dias (em média) para migração da plataforma"
-            ],
-            "bulletPointsIcon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
-            }
-          },
-          "title": "Para você migrar"
         }
       ],
       "showArrows": true,
-      "slidesTitle": "As melhores taxas, os melhores recursos e o melhor rendimento para seu negócio!",
-      "slidesTitleIcon": {
-        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/dcef1aac-4d4d-4ad3-befd-005a6b833bfd/white-stonks-arrow.png"
-      },
       "color3": "#28C3C3",
       "annualValues": {
         "title": "Anual",
         "tag": "20% OFF",
-        "saving": "⚡️ Economize R$ 240 no plano anual",
-        "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>"
+        "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>",
+        "saving": "⚡️ Economize R$ 240 no plano anual"
       },
       "montlyValues": {
+        "title": "Mensal",
+        "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
         "cta": {
           "text": "Fazer parte",
           "href": "#",
           "outline": false
         },
-        "title": "Mensal",
-        "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
         "link": {
           "textBefore": "Já tem uma loja?",
           "text": " Ative agora",
           "href": "#"
         }
+      },
+      "titleTypingColor": "#28C3C3",
+      "titleTyping": [
+        "eficiência",
+        "acompanhamento",
+        "mais rentabilidade"
+      ],
+      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/46cd14c5-bcc4-4d2d-aa5f-f229f245f292/video-dobra-elite.webm",
+      "slidesTitle": "As melhores taxas, os melhores recursos e o melhor rendimento para seu negócio!",
+      "slidesTitleIcon": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/dcef1aac-4d4d-4ad3-befd-005a6b833bfd/white-stonks-arrow.png"
       },
       "bottomBackground": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a921d8c9-b6e5-4718-bae3-7e1ec2faebc6/bottom-background.svg"
@@ -5496,55 +5979,166 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Footer"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Theme/Theme.tsx",
-      "mainColors": {
-        "base-100": "#ffffff",
-        "primary": "#371E55",
-        "secondary": "#fcfcfc",
-        "tertiary": "#C6B3CE",
-        "neutral": "#CCC4CF",
-        "success": "#008060",
-        "warning": "#F1EEFF",
-        "error": "#F57E77",
-        "info": "#FFE6A0"
-      },
-      "complementaryColors": {
-        "base-200": "#EBEBEB",
-        "base-300": "#5F6E82",
-        "base-content": "#000000",
-        "primary-content": "#ffffff",
-        "secondary-content": "#F1EAF4",
-        "tertiary-content": "#A1ABBC",
-        "neutral-content": "#828CA0",
-        "success-content": "#D2C7FE",
-        "warning-content": "#825AB4",
-        "error-content": "#BB95D7",
-        "info-content": "#EAE0EE"
-      },
-      "otherStyles": {
-        "--rounded-box": "1rem",
-        "--rounded-badge": "1.9rem",
-        "--animation-input": "0.2s",
-        "--tab-border": "1px",
-        "--tab-radius": "0.5rem"
-      },
-      "font": {
-        "__resolveType": "website/loaders/fonts/googleFonts.ts",
-        "fonts": [
-          {
-            "variations": [],
-            "family": "Inter"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetails2.tsx",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d20efb42-545b-49e0-9acc-e12f5b6e0541/crescimento-background-mobile.svg"
+            },
+            "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f68f0cae-2879-4a82-95a1-85fc54ef8b68/video-dobra-crescimento.webm",
+            "useContent": "video",
+            "title": "Comece pagando menos",
+            "planTag": {
+              "text": "Plano Crescimento",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
+              }
+            },
+            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
+            "showArrows": true,
+            "slides": [
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
+              }
+            ],
+            "annualValues": {
+              "title": "Anual",
+              "tag": "20% OFF",
+              "saving": "⚡️ Economize R$ 240 no plano anual",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano qweqw</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>"
+            },
+            "montlyValues": {
+              "title": "Mensal",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p>"
+            },
+            "cta": {
+              "href": "#",
+              "text": "Assinar plano"
+            },
+            "link": {
+              "textBefore": "Já tem uma loja?",
+              "text": " Ative agora",
+              "href": "#"
+            },
+            "color1": "#dd0808",
+            "color2": "#ffffff",
+            "color3": "#003037",
+            "color4": "#FFE6A0",
+            "color5": "#003037",
+            "color6": "#5F6E82",
+            "color7": "#003037",
+            "color8": "#ffffff"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
           }
-        ]
-      },
-      "mode": "light",
-      "colorScheme": "any"
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetails2.tsx",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f0ef7f54-f95f-4358-bf93-9882a6e34a4f/crescimento-background.svg"
+            },
+            "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f68f0cae-2879-4a82-95a1-85fc54ef8b68/video-dobra-crescimento.webm",
+            "useContent": "video",
+            "title": "Comece pagando menos",
+            "planTag": {
+              "text": "Plano Crescimento",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
+              }
+            },
+            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
+            "showArrows": true,
+            "slides": [
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
+              }
+            ],
+            "annualValues": {
+              "title": "Anual",
+              "tag": "20% OFF",
+              "saving": "⚡️ Economize R$ 240 no plano anual",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano qweqw</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>"
+            },
+            "montlyValues": {
+              "title": "Mensal",
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p>"
+            },
+            "cta": {
+              "href": "#",
+              "text": "Assinar plano"
+            },
+            "link": {
+              "textBefore": "Já tem uma loja?",
+              "text": " Ative agora",
+              "href": "#"
+            },
+            "color1": "#dd0808",
+            "color2": "#ffffff",
+            "color3": "#003037",
+            "color4": "#FFE6A0",
+            "color5": "#003037",
+            "color6": "#5F6E82",
+            "color7": "#003037",
+            "color8": "#ffffff"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     }
   ],
   "seo": {

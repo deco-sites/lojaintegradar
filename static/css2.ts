@@ -22,8 +22,16 @@ ul {
   box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
 }
 
+.main-hero-form .hs-form-private {
+  flex-wrap: nowrap;
+}
+
 .hs-input {
   width: 50%;
+}
+
+.main-hero-form .hs-input {
+  width: 100%;
 }
 
 .actions {

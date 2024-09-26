@@ -389,13 +389,13 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/HeroWithTime.tsx",
-        "subTitle": {
-          "desktop": "<p><em><span style=\"color: rgb(170, 130, 200); font-size: 75pt\">Envie seu catálogo </span></em><span style=\"color: rgb(255, 255, 255); font-size: 75pt\">de forma inteligente</span></p>",
-          "mobile": "<p><em><span style=\"color: rgb(170, 130, 200); font-size: 37pt\">Envie seu catálogo</span></em><span style=\"font-size: 37pt\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 37pt\">de forma inteligente</span></p>"
-        },
         "title": {
           "desktop": "<p><strong><span style=\"color: #aa82c8; font-size: 18pt\">Distribuição otimizada</span></strong></p>",
           "mobile": "<p><strong><span style=\"color: rgb(170, 130, 200); font-size: 18pt\">Distribuição otimizada</span></strong></p>"
+        },
+        "subTitle": {
+          "desktop": "<p><em><span style=\"color: rgb(170, 130, 200); font-size: 75pt\">Envie seu catálogo </span></em><span style=\"color: rgb(255, 255, 255); font-size: 75pt\">de forma inteligente</span></p>",
+          "mobile": "<p><em><span style=\"color: rgb(170, 130, 200); font-size: 37pt\">Envie seu catálogo</span></em><span style=\"font-size: 37pt\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 37pt\">de forma inteligente</span></p>"
         },
         "tabs": [
           {
@@ -484,6 +484,10 @@
           "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 10pt\">Entre na lista de avaliação</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 10pt\">do </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 10pt\">Bollico e Loja Integrada,</span></strong></p><p><strong><span style=\"color: rgb(255, 255, 255); font-size: 10pt\">e investimos até 12 mil na</span></strong></p><p><span style=\"color: rgb(255, 255, 255); font-size: 10pt\">sua migração</span></p>",
           "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Entre na lista de avaliação do </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Bollico e Loja Integrada,</span></strong></p><p><strong><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">e investimos até 12 mil na </span></strong><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">sua migração*.</span></p>"
         },
+        "title": {
+          "mobile": "<p><span style=\"color: #ffffff; font-size: 30pt\">Nós</span><span style=\"font-size: 30pt\"> </span><em><span style=\"color: #71dbd4; font-size: 30pt\">investimos na</span></em></p><p><em><span style=\"color: #71dbd4; font-size: 30pt\">sua migração.</span></em></p><p><span style=\"color: #ffffff; font-size: 30pt\">Literalmente.</span></p>",
+          "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 70pt\">Nós</span><span style=\"font-size: 70pt\"> </span><em><span style=\"color: rgb(113, 219, 212); font-size: 70pt\">investimos na sua</span></em></p><p><em><span style=\"color: rgb(113, 219, 212); font-size: 70pt\">migração. </span></em><span style=\"color: rgb(255, 255, 255); font-size: 70pt\">Literalmente.</span></p>"
+        },
         "cardBackgroundImage": {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42701e7b-a91d-4f84-a676-ebc48c860396/bg-oferta.png",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a95b3bb0-0a47-4894-933b-6ef1b65374ab/bg-oferta-elite-mobile.png"
@@ -497,10 +501,6 @@
           "buttonUrl": "/"
         },
         "extraText": "*Válido para clientes com faturamento mensal acima de 100k no e-commerce mediante a comprovante.",
-        "title": {
-          "mobile": "<p><span style=\"color: #ffffff; font-size: 30pt\">Nós</span><span style=\"font-size: 30pt\"> </span><em><span style=\"color: #71dbd4; font-size: 30pt\">investimos na</span></em></p><p><em><span style=\"color: #71dbd4; font-size: 30pt\">sua migração.</span></em></p><p><span style=\"color: #ffffff; font-size: 30pt\">Literalmente.</span></p>",
-          "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 70pt\">Nós</span><span style=\"font-size: 70pt\"> </span><em><span style=\"color: rgb(113, 219, 212); font-size: 70pt\">investimos na sua</span></em></p><p><em><span style=\"color: rgb(113, 219, 212); font-size: 70pt\">migração. </span></em><span style=\"color: rgb(255, 255, 255); font-size: 70pt\">Literalmente.</span></p>"
-        },
         "backgroundColors": {
           "color1": "#170C24",
           "color2": "#003037"
@@ -596,13 +596,13 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Prices.tsx",
-        "subTitle": {
-          "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 37pt\">Escolha a plataforma que aposta em dados e automação</span></p>",
-          "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">Escolha a plataforma que aposta </span></p><p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">em dados e automação</span></p>"
-        },
         "title": {
           "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 18pt\">Está na hora de migrar</span></p>",
           "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">Está na hora de migrar</span></p>"
+        },
+        "subTitle": {
+          "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 37pt\">Escolha a plataforma que aposta em dados e automação</span></p>",
+          "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">Escolha a plataforma que aposta </span></p><p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">em dados e automação</span></p>"
         },
         "cards": [
           {

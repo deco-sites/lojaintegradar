@@ -2,7 +2,7 @@ import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts
 import Image from "apps/website/components/Image.tsx";
 import { useScript } from "deco/hooks/useScript.ts";
 import { useId } from "site/sdk/useId.ts";
-import Slider from "../components/ui/Slider2.tsx";
+import Slider from "../components/ui/Slider3.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 
 const onLoad = (rootId: string, words: string[], wordDelay: number, letterDelay: number) => {
@@ -118,7 +118,7 @@ function SliderItem(
     return (
         <div
             id={id}
-            class="relative w-full px-5 text-primary"
+            class="relative w-full px-5 lg:pr-10 lg:pl-0 text-primary"
         >
             <div class="bg-primary-content text-primary min-h-[215px] rounded-3xl py-5 px-8 h-full">
                 <h3 class="text-xl font-semibold">{title}</h3>
@@ -253,7 +253,7 @@ export default function PlanDetails({ title, titleTyping = [], color3, letterDel
                     class="absolute w-full h-full object-cover object-right -z-20"
                 />}
                 <div class="max-w-[1200px] s1800:max-w-[1365px] mx-auto pb-[72px]">
-                    <AnimateOnShow animation="animate-fade-up50" divClass="flex flex-wrap xl:flex-nowrap items-start lg:items-end" delay={300}>
+                    <AnimateOnShow animation="animate-fade-up50" divClass="flex flex-wrap xl:flex-nowrap items-start xl:items-end relative" delay={300}>
                         <div
                             id={carouselId}
                             class="min-h-min flex flex-col w-full lg:w-[600px] mt-[-20px] lg:mt-[-130px]"
@@ -303,7 +303,7 @@ export default function PlanDetails({ title, titleTyping = [], color3, letterDel
                         {montlyValues?.title && <div class="ml-5 pb-[70px] mt-6">
                             <h3 class="text-2xl font-semibold">{montlyValues.title}</h3>
                             {montlyValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: montlyValues.text }} />}
-                            <div class="mt-3 hidden lg:flex flex-wrap lg:flex-nowrap items-start lg:items-center gap-5">
+                            <div class="mt-3 hidden xl:flex flex-wrap lg:flex-nowrap items-start lg:items-center gap-5">
                                 {montlyValues.cta?.text && <a
                                     href={montlyValues.cta?.href ?? "#"}
                                     target={montlyValues.cta?.href.includes("http") ? "_blank" : "_self"}
@@ -324,7 +324,7 @@ export default function PlanDetails({ title, titleTyping = [], color3, letterDel
                                 </a>}
                             </div>
                         </div>}
-                        {montlyValues?.title && <div class="mt-3 px-5 flex lg:hidden flex-wrap lg:flex-nowrap items-start lg:items-center gap-5">
+                        {montlyValues?.title && <div class="mt-3 px-5 flex xl:hidden flex-wrap lg:flex-nowrap items-start lg:items-center gap-5">
                             {montlyValues.cta?.text && <a
                                 href={montlyValues.cta?.href ?? "#"}
                                 target={montlyValues.cta?.href.includes("http") ? "_blank" : "_self"}

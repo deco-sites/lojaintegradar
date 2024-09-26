@@ -33,7 +33,7 @@ export default function MainHero({ title, caption = "", inputLabel, backgroundIm
                 <p class="text-base-300 text-lg md:text-[32px] font-normal" dangerouslySetInnerHTML={{ __html: caption }} />
                 <label class="md:pt-7">
                     {inputLabel && <p class="bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 px-5 text-base text-primary hidden md:inline-block">{inputLabel}</p>}
-                    <div dangerouslySetInnerHTML={{
+                    <div class="main-hero-form" dangerouslySetInnerHTML={{
                         __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                     <script>
                     hbspt.forms.create({

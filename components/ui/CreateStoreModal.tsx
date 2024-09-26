@@ -1,6 +1,10 @@
 import { useState, useEffect, useCallback } from "preact/hooks";
 
-const useMutationObserver = (domNodeSelector: string, observerOptions: MutationObserverInit, cb: MutationCallback) => {
+const useMutationObserver = (
+    domNodeSelector: string,
+    observerOptions: MutationObserverInit,
+    cb: MutationCallback
+) => {
     useEffect(() => {
         const targetNode = document.querySelector(domNodeSelector);
         if (!targetNode) {
@@ -17,9 +21,8 @@ const useMutationObserver = (domNodeSelector: string, observerOptions: MutationO
     }, [domNodeSelector, observerOptions, cb]);
 };
 
-
 const CreateStoreModal = () => {
-    const [getPlanId, setGetPlanId] = useState('');
+    const [getPlanId, setGetPlanId] = useState("");
 
     const [formData, setFormData] = useState({
         nome: "",
@@ -55,7 +58,7 @@ const CreateStoreModal = () => {
             setErrors({ ...errors, email: "" });
         }
 
-        if (name === 'senha') {
+        if (name === "senha") {
             const hasMinLength = value.length >= 8;
             const hasUpperCase = /[A-Z]/.test(value);
             const hasLowerCase = /[a-z]/.test(value);
@@ -64,10 +67,11 @@ const CreateStoreModal = () => {
             if (!hasMinLength || !hasUpperCase || !hasLowerCase || !hasNumber) {
                 setErrors({
                     ...errors,
-                    senha: 'A senha deve ter pelo menos 8 caracteres, incluindo um número, uma letra maiúscula e uma letra minúscula.'
+                    senha:
+                        "A senha deve ter pelo menos 8 caracteres, incluindo um número, uma letra maiúscula e uma letra minúscula.",
                 });
             } else {
-                setErrors({ ...errors, senha: '' });
+                setErrors({ ...errors, senha: "" });
             }
         }
 
@@ -84,42 +88,64 @@ const CreateStoreModal = () => {
             getModal.classList.add("hidden");
             getModal.classList.remove("flex");
         }
-    }
+    };
 
     const handler = useCallback((mutationsList: MutationRecord[]) => {
         for (const mutation of mutationsList) {
-            if (mutation.type === 'attributes' && mutation.attributeName === 'data-planid') {
+            if (
+                mutation.type === "attributes" &&
+                mutation.attributeName === "data-planid"
+            ) {
                 const modal = document.getElementById("createStoreModal");
-                const newPlanId = modal?.getAttribute("data-planid") || '';
+                const newPlanId = modal?.getAttribute("data-planid") || "";
                 setGetPlanId(newPlanId);
                 break;
             }
         }
     }, []);
 
-    useMutationObserver('#createStoreModal', { attributes: true, attributeFilter: ['data-planid'] }, handler);
+    useMutationObserver(
+        "#createStoreModal",
+        { attributes: true, attributeFilter: ["data-planid"] },
+        handler
+    );
 
     const validateForm = () => {
         const { nome, email, senha, confirmacao_senha } = formData;
         let hasError = false;
 
         if (nome.length < 3) {
-            setErrors(prev => ({ ...prev, nome: "Seu nome precisa ser maior que 2 caracteres" }));
+            setErrors((prev) => ({
+                ...prev,
+                nome: "Seu nome precisa ser maior que 2 caracteres",
+            }));
             hasError = true;
         }
 
         if (!/\S+@\S+\.\S+/.test(email)) {
-            setErrors(prev => ({ ...prev, email: "Preencha um e-mail válido" }));
+            setErrors((prev) => ({ ...prev, email: "Preencha um e-mail válido" }));
             hasError = true;
         }
 
-        if (senha.length < 8 || !/[A-Z]/.test(senha) || !/[a-z]/.test(senha) || !/\d/.test(senha)) {
-            setErrors(prev => ({ ...prev, senha: 'A senha deve ter pelo menos 8 caracteres, incluindo um número, uma letra maiúscula e uma letra minúscula.' }));
+        if (
+            senha.length < 8 ||
+            !/[A-Z]/.test(senha) ||
+            !/[a-z]/.test(senha) ||
+            !/\d/.test(senha)
+        ) {
+            setErrors((prev) => ({
+                ...prev,
+                senha:
+                    "A senha deve ter pelo menos 8 caracteres, incluindo um número, uma letra maiúscula e uma letra minúscula.",
+            }));
             hasError = true;
         }
 
         if (confirmacao_senha !== senha) {
-            setErrors(prev => ({ ...prev, confirmacao_senha: "As senhas não coincidem" }));
+            setErrors((prev) => ({
+                ...prev,
+                confirmacao_senha: "As senhas não coincidem",
+            }));
             hasError = true;
         }
 
@@ -131,12 +157,17 @@ const CreateStoreModal = () => {
         if (validateForm()) {
             e.target.submit();
         } else {
-            console.error("Erros de validação encontrados, o formulário não será enviado.");
+            console.error(
+                "Erros de validação encontrados, o formulário não será enviado."
+            );
         }
     };
 
     return (
-        <div id="createStoreModal" className="hidden fixed z-30 inset-0 bg-black bg-opacity-50 items-center justify-center z-5">
+        <div
+            id="createStoreModal"
+            className="hidden fixed z-30 inset-0 bg-black bg-opacity-50 items-center justify-center z-5"
+        >
             <div className="relative flex flex-col items-center p-6 w-full max-w-[550px] mx-auto bg-white rounded-xl shadow-md overflow-hidden">
                 <button
                     className="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
@@ -204,7 +235,10 @@ const CreateStoreModal = () => {
                             placeholder="Senha"
                             required
                         />
-                        <p className={`text-gray-500 text-xs mt-1 ${errors.senha && "text-red-500"}`}>
+                        <p
+                            className={`text-gray-500 text-xs mt-1 ${errors.senha && "text-red-500"
+                                }`}
+                        >
                             Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e
                             uma letra minúscula
                         </p>
@@ -232,7 +266,12 @@ const CreateStoreModal = () => {
 
                     <div className="mt-4 w-full max-w-[450px]">
                         <label className="flex items-center">
-                            <input type="checkbox" className="form-checkbox" name="termos" required />
+                            <input
+                                type="checkbox"
+                                className="form-checkbox"
+                                name="termos"
+                                required
+                            />
                             <span className="ml-2 text-xs text-gray-600">
                                 Ao clicar, você concorda com os{" "}
                                 <a href="#" className="text-[#0C9898] font-bold">
@@ -249,18 +288,22 @@ const CreateStoreModal = () => {
 
                     <div className="w-full max-w-[450px] mt-6">
                         <script
-                            src="https://www.google.com/recaptcha/api.js?v=1723036362098"
+                            src="https://www.google.com/recaptcha/api.js?render=6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
                             async
                             defer
                         ></script>
-                        <script dangerouslySetInnerHTML={{
-                            __html: `
+                        <script
+                            dangerouslySetInnerHTML={{
+                                __html: `
                             function onSubmitModal(token) {
                                 document.getElementById('modal-no-check').submit();
                             }
 
-                            `}}></script>
+                            `,
+                            }}
+                        ></script>
                         <button
+                            onClick={() => grecaptcha.execute('6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18', { action: 'submit' })}
                             id="input-form-modal_no_check"
                             className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha"
                             type="submit"

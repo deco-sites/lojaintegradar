@@ -303,7 +303,7 @@ const CreateStoreModal = () => {
                             }}
                         ></script>
                         <button
-                            onClick={() => grecaptcha.execute('6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18', { action: 'submit' })}
+                            onClick={(e) => { e.preventDefault(); grecaptcha.execute('6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18', { action: 'submit' }).then((data) => console.log(data, "aa")) }}
                             id="input-form-modal_no_check"
                             className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha"
                             type="submit"
@@ -314,8 +314,8 @@ const CreateStoreModal = () => {
                         </button>
                     </div>
                 </form>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 

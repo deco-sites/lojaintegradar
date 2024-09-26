@@ -258,7 +258,6 @@ const CreateStoreModal = () => {
                             className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha"
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
-                            data-callback="onSubmitModalNoCheck"
                         >
                             Abrir minha loja agora
                         </button>

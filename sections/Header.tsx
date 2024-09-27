@@ -2,6 +2,7 @@ import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { CSS } from "../static/css.ts";
 import HeaderInitialButtons from "site/islands/HeaderInitialButtons.tsx";
+import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 interface Props {
     backgroundType: "image" | "video";
     /**
@@ -151,23 +152,25 @@ function Header({
                         </button>
                     ))}
                 </div>
-                {textContent?.desktop && (
-                    <span
-                        className="hidden lg:block font-instrument leading-[66px]"
-                        dangerouslySetInnerHTML={{
-                            __html: textContent?.desktop,
-                        }}
-                    ></span>
-                )}
+                <AnimateOnShow>
+                    {textContent?.desktop && (
+                        <span
+                            className="hidden lg:block font-instrument leading-[66px]"
+                            dangerouslySetInnerHTML={{
+                                __html: textContent?.desktop,
+                            }}
+                        ></span>
+                    )}
 
-                {textContent?.mobile && (
-                    <span
-                        className="lg:hidden font-instrument"
-                        dangerouslySetInnerHTML={{
-                            __html: textContent?.mobile,
-                        }}
-                    ></span>
-                )}
+                    {textContent?.mobile && (
+                        <span
+                            className="lg:hidden font-instrument"
+                            dangerouslySetInnerHTML={{
+                                __html: textContent?.mobile,
+                            }}
+                        ></span>
+                    )}
+                </AnimateOnShow>
 
                 <div class="gap-5 relative z-10 w-full items-center justify-center mt-[35px] flex px-[10px] lg:px-0">
                     <style dangerouslySetInnerHTML={{ __html: CSS }}></style>

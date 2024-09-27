@@ -2,12 +2,14 @@ import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { CSS } from "../static/css.ts";
 import HeaderInitialButtons from "site/islands/HeaderInitialButtons.tsx";
+import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 interface Props {
     backgroundType: "image" | "video";
     /**
      * @description Só preencha os dados de tamanho caso seja necessário, senão, deixar vazio
      */
     backgroundVideo?: {
+        disableOnMobile?: boolean;
         video?: VideoWidget;
         desktopMinimumHeight?: number;
         desktopMaximumHeight?: number;
@@ -104,7 +106,7 @@ function Header({
                             muted
                             loop
                             id="headerVideo"
-                            className="w-full max-w-full object-cover absolute top-0 left-0 min-h-[416px] max-h-[416px] lg:max-h-[800px] lg:min-h-[800px]"
+                            className={`w-full max-w-full object-cover absolute top-0 left-0 min-h-[416px] max-h-[416px] lg:max-h-[800px] lg:min-h-[800px] ${backgroundVideo?.disableOnMobile ? "hidden lg:block" : ''}`}
                         >
                             <source
                                 src={backgroundVideo?.video}
@@ -115,6 +117,16 @@ function Header({
                                 media="(max-width: 1023px)"
                             />
                         </video>
+                        {backgroundVideo?.disableOnMobile &&
+                            <Image
+                                src={backgroundImage?.mobile || ""}
+                                alt={alt || ""}
+                                height={height || 416}
+                                width={width || 375}
+                                class="w-full absolute top-0 left-0 max-h-[416px] lg:hidden"
+                                loading={"eager"}
+                            />
+                        }
                     </>
                 )}
             </>
@@ -151,23 +163,25 @@ function Header({
                         </button>
                     ))}
                 </div>
-                {textContent?.desktop && (
-                    <span
-                        className="hidden lg:block font-instrument leading-[66px]"
-                        dangerouslySetInnerHTML={{
-                            __html: textContent?.desktop,
-                        }}
-                    ></span>
-                )}
+                <AnimateOnShow>
+                    {textContent?.desktop && (
+                        <span
+                            className="hidden lg:block font-instrument leading-[66px]"
+                            dangerouslySetInnerHTML={{
+                                __html: textContent?.desktop,
+                            }}
+                        ></span>
+                    )}
 
-                {textContent?.mobile && (
-                    <span
-                        className="lg:hidden font-instrument"
-                        dangerouslySetInnerHTML={{
-                            __html: textContent?.mobile,
-                        }}
-                    ></span>
-                )}
+                    {textContent?.mobile && (
+                        <span
+                            className="lg:hidden font-instrument"
+                            dangerouslySetInnerHTML={{
+                                __html: textContent?.mobile,
+                            }}
+                        ></span>
+                    )}
+                </AnimateOnShow>
 
                 <div class="gap-5 relative z-10 w-full items-center justify-center mt-[35px] flex px-[10px] lg:px-0">
                     <style dangerouslySetInnerHTML={{ __html: CSS }}></style>

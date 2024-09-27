@@ -4,7 +4,7 @@
   "sections": [
     {
       "__resolveType": "site/sections/Header.tsx",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0e25a02e-5d49-4ebe-8e53-b8cca04ce669/Logo-li-migracao.svg",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e47bad3a-c5cd-4266-93b0-d5b04b9d6400/Logo-li-migracao.svg",
       "alt": "Logotipo loja integrada",
       "buttonText": "Fazer login",
       "backgroundImage": {
@@ -13,7 +13,7 @@
       },
       "textContent": {
         "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(252, 252, 252); font-size: 60pt\">O futuro do e-commerce é inteligente.</span><br><span style=\"color: rgb(252, 252, 252); font-size: 60pt\">Escolha </span><em><span style=\"color: rgb(40, 195, 195); font-size: 60pt\">Dados &amp; Automação</span></em></p>",
-        "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 22pt\">O futuro do e-commerce é inteligente. Escolha </span><span style=\"color: rgb(40, 195, 195); font-size: 22pt\">Dados &amp; Automação</span></p>"
+        "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 22pt\">O futuro do e-commerce </span><br><span style=\"color: rgb(255, 255, 255); font-size: 22pt\">é inteligente. Escolha</span><br><em><span style=\"color: rgb(40, 195, 195); font-size: 22pt\">Dados &amp; Automação</span></em></p>"
       },
       "buttons": {
         "login": "Fazer Login",
@@ -35,7 +35,127 @@
           "changeType": true
         }
       ],
-      "labelText": "⚡ Assista vídeo exclusivo"
+      "labelText": "⚡ Assista vídeo exclusivo",
+      "backgroundType": "video",
+      "backgroundVideo": {
+        "0": "h",
+        "1": "t",
+        "2": "t",
+        "3": "p",
+        "4": "s",
+        "5": ":",
+        "6": "/",
+        "7": "/",
+        "8": "d",
+        "9": "e",
+        "10": "c",
+        "11": "o",
+        "12": "-",
+        "13": "s",
+        "14": "i",
+        "15": "t",
+        "16": "e",
+        "17": "s",
+        "18": "-",
+        "19": "a",
+        "20": "s",
+        "21": "s",
+        "22": "e",
+        "23": "t",
+        "24": "s",
+        "25": ".",
+        "26": "s",
+        "27": "3",
+        "28": ".",
+        "29": "s",
+        "30": "a",
+        "31": "-",
+        "32": "e",
+        "33": "a",
+        "34": "s",
+        "35": "t",
+        "36": "-",
+        "37": "1",
+        "38": ".",
+        "39": "a",
+        "40": "m",
+        "41": "a",
+        "42": "z",
+        "43": "o",
+        "44": "n",
+        "45": "a",
+        "46": "w",
+        "47": "s",
+        "48": ".",
+        "49": "c",
+        "50": "o",
+        "51": "m",
+        "52": "/",
+        "53": "l",
+        "54": "o",
+        "55": "j",
+        "56": "a",
+        "57": "i",
+        "58": "n",
+        "59": "t",
+        "60": "e",
+        "61": "g",
+        "62": "r",
+        "63": "a",
+        "64": "d",
+        "65": "a",
+        "66": "r",
+        "67": "/",
+        "68": "a",
+        "69": "1",
+        "70": "e",
+        "71": "7",
+        "72": "6",
+        "73": "8",
+        "74": "3",
+        "75": "f",
+        "76": "-",
+        "77": "9",
+        "78": "d",
+        "79": "f",
+        "80": "7",
+        "81": "-",
+        "82": "4",
+        "83": "0",
+        "84": "d",
+        "85": "b",
+        "86": "-",
+        "87": "9",
+        "88": "0",
+        "89": "7",
+        "90": "a",
+        "91": "-",
+        "92": "f",
+        "93": "e",
+        "94": "d",
+        "95": "9",
+        "96": "b",
+        "97": "7",
+        "98": "0",
+        "99": "f",
+        "100": "6",
+        "101": "2",
+        "102": "a",
+        "103": "a",
+        "104": "/",
+        "105": "b",
+        "106": "g",
+        "107": "-",
+        "108": "s",
+        "109": "i",
+        "110": "t",
+        "111": "e",
+        "112": ".",
+        "113": "m",
+        "114": "p",
+        "115": "4",
+        "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4"
+      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -52,7 +172,7 @@
         "tabs": [
           {
             "icon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8b748f-60f3-42de-b747-db8ec800a1f6/Frame-1000002272.png",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg",
               "alt": "Tab icon"
             },
             "title": {
@@ -80,7 +200,7 @@
               "21": "d",
               "22": "a",
               "23": "s",
-              "desktop": "<p><span style=\"color: #ffffff; font-size: 21pt\">Recupere vendas perdidas</span></p>",
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Recupere vendas perdidas</span></p>",
               "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Recupere vendas perdidas</span></p>"
             },
             "textContent": {
@@ -248,26 +368,27 @@
               "161": "t",
               "162": "o",
               "163": ".",
-              "mobile": "<p><span style=\"color: #ffffff\">Deixa que a gente te ajuda a ganhar tempo com estratégias de marketing digital: </span><strong><span style=\"color: #ffffff\">Ative e teste os gatilhos</span></strong><span style=\"color: #ffffff\"> para recuperação de vendas perdidas.</span></p><p></p><p><strong><span style=\"color: #ffffff\">Carrinho e produto abandonados: </span></strong><span style=\"color: #ffffff\">envie mensagens para compradores que navegaram por uma página de produto ou montaram o carrinho de compras e não finalizaram o pedido.</span></p>",
-              "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Deixa que a gente te ajuda a ganhar tempo com estratégias de marketing digital: </span><strong><span style=\"color: rgb(255, 255, 255)\">Ative e teste os gatilhos</span></strong><span style=\"color: rgb(255, 255, 255)\"> para recuperação de vendas perdidas.</span></p><p></p><p><strong><span style=\"color: rgb(255, 255, 255)\">Carrinho e produto abandonados</span></strong><span style=\"color: rgb(255, 255, 255)\">: envie mensagens para compradores que navegaram por uma página de produto ou montaram o carrinho de compras e não finalizaram o pedido.</span></p>"
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Deixa que a gente te ajuda a ganhar tempo com estratégias de marketing digital: </span><strong><span style=\"color: rgb(255, 255, 255)\">Ative e teste os gatilhos</span></strong><span style=\"color: rgb(255, 255, 255)\"> para recuperação de vendas perdidas.</span></p><p><br></p><p><strong><span style=\"color: rgb(255, 255, 255)\">Carrinho e produto abandonados: </span></strong><span style=\"color: rgb(255, 255, 255)\">envie mensagens para compradores que navegaram por uma página de produto ou montaram o carrinho de compras e não finalizaraam o pedido.</span></p>",
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Deixa que a gente te ajuda a ganhar tempo com estratégias de marketing digital: Ative e teste os gatilhos para recuperação de vendas perdidas.</span></p><p><br></p><p><strong><span style=\"color: rgb(255, 255, 255)\">Carrinho e produto abandonados: </span></strong><span style=\"color: rgb(255, 255, 255)\">envie mensagens para compradores que navegaram por uma página de produto aou montaram o carrinho de compras e não finalizaram o pedido.</span></p>"
             },
             "tabImage": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fff82cb8-5a3e-4a44-bb99-b4f029c4a6f5/img--recupere-vendas.png",
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fff82cb8-5a3e-4a44-bb99-b4f029c4a6f5/img--recupere-vendas.png"
             },
             "videoOn": true,
-            "videoUrl": "https://www.youtube.com/embed/AVVdFT6CTZQ?si=DTVeHvCq8sFHyuPr?controls=0",
+            "videoUrl": "https://www.youtube.com/embed/bua_AY6xEjk?si=vRUtQ5jDYuqWpHJR",
             "button": {
-              "buttonText": "Quero testar"
+              "buttonText": "Quero testar",
+              "buttonLink": "https://app.lojaintegrada.com.br/painel/login"
             }
           },
           {
             "textContent": {
-              "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">recomende produtos semelhantes ao buscado na página de navegação e inclua sugestões complementares em vitrines de recomendações e&nbsp; disparos de e-mails</span></p>",
-              "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">recomende produtos semelhantes ao buscado na página de navegação e inclua sugestões complementares em vitrines de recomendações e&nbsp; disparos de e-mails</span></p>"
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Recomende produtos semelhantes ao buscado na página de navegação e inclua sugestões complementares em vitrines de recomendações e&nbsp; disparos de e-mails.</span></p>",
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Recomende produtos semelhantes ao buscado na página de navegação e inclua sugestões complementares em vitrines de recomendações e&nbsp; disparos de e-mails.</span></p>"
             },
             "icon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/21d998d4-e11e-44ae-9e80-75933af85151/Frame-1000002272.png"
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
             },
             "title": {
               "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Recomendação de produto</span></p>",
@@ -279,16 +400,17 @@
             },
             "highlight": true,
             "button": {
-              "buttonText": "Quero testar"
+              "buttonText": "Quero testar",
+              "buttonLink": "https://app.lojaintegrada.com.br/painel/login"
             }
           },
           {
             "textContent": {
-              "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Recupere vendas enviando gatilhos para pedidos cancelados de forma automática</span></p>",
-              "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Recupere vendas enviando gatilhos para pedidos cancelados de forma automática</span></p>"
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Recupere vendas enviando gatilhos para pedidos cancelados de forma </span><br><span style=\"color: rgb(255, 255, 255)\">automática.</span></p>",
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Recupere vendas enviando gatilhos para pedidos cancelados de forma automática.</span></p>"
             },
             "icon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/21d998d4-e11e-44ae-9e80-75933af85151/Frame-1000002272.png"
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
             },
             "title": {
               "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Recuperação de vendas canceladas</span></p>",
@@ -300,20 +422,21 @@
             },
             "highlight": true,
             "button": {
-              "buttonText": "Quero testar"
+              "buttonText": "Quero testar",
+              "buttonLink": "https://app.lojaintegrada.com.br/painel/login"
             }
           },
           {
             "textContent": {
               "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Disponível no módulo promocional, crie promoções com mais de um produto, definindo valores de desconto progressivos de acordo com as suas estratégias de venda.</span></p>",
-              "mobile": "<p><span style=\"color: #ffffff\">Disponível no módulo promocional, crie promoções com mais de um produto, definindo valores de desconto progressivos de acordo com as suas estratégias de venda.</span></p>"
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Disponível no módulo promocional, crie promoções com mais de um produto, definindo valores de desconto progressivos de acordo com as suas estratégias de venda.</span></p>"
             },
             "title": {
-              "desktop": "<p><span style=\"color: #ffffff; font-size: 21pt\">Desconto progressivo</span></p>",
-              "mobile": "<p><span style=\"color: #ffffff; font-size: 13pt\">Desconto progressivo</span></p>"
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Desconto progressivo</span></p>",
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Desconto progressivo</span></p>"
             },
             "icon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ada72279-ec48-496c-817d-0222f87a91e0/Frame-1000002272.png"
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
             },
             "tabImage": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/977d5dd9-f394-44f5-ab7b-c7bff1027c3c/imagem_2024-09-24_161433635.png",
@@ -321,7 +444,8 @@
             },
             "highlight": true,
             "button": {
-              "buttonText": "Quero testar"
+              "buttonText": "Quero testar",
+              "buttonLink": "https://app.lojaintegrada.com.br/painel/login"
             }
           }
         ],
@@ -352,22 +476,22 @@
         "cards": [
           {
             "textContent": {
-              "desktop": "<p><span style=\"color: #ffffff\">Inclua avaliações dos seus clientes nas páginas de produto, aumentando a confiabilidade da compra, além de aumentar as chances do comprador encontrar o que procura e efetuar a compra com a busca atualizada.</span></p>",
-              "mobile": "<p style=\"text-align: justify\"><span style=\"color: #ffffff; font-size: 10pt\">Inclua avaliações dos seus clientes nas páginas de produto, aumentando a confiabilidade da compra, além de aumentar as chances do comprador encontrar o que procura e efetuar a compra com a busca atualizada.</span></p>"
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Inclua avaliações dos seus clientes nas páginas de produto, aumentando a confiabilidade da compra, além de aumentar as chances do comprador encontrar o que procura e efetuar a compra com a busca atualizada.</span></p>",
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 10pt\">Inclua avaliações dos seus clientes nas páginas de produto, aumentando a confiabilidade da compra, além de aumentar as chances do comprador encontrar o que procura e efetuar a compra com a busca atualizada.</span></p>"
             },
             "image": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5f22944f-9a3c-41dd-bf61-5480bfb23072/img-ferramenta-avaliacao-ebusca.png"
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b9603689-703a-4845-88b3-7d3eb87c4045/img-ferramenta-avaliacao-ebusca.png"
             },
             "icon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c0630e9-70d4-4225-a02e-573b04803a07/Frame-1000002272.png"
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
             },
             "title": {
-              "desktop": "<p><span style=\"color: #ffffff; font-size: 21pt\">Ferramenta de avaliação e busca</span></p><p><span style=\"color: #ffffff; font-size: 21pt\">atualizada</span></p>",
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Ferramenta de avaliação e busca</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">atualizada</span></p>",
               "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">Ferramenta de avaliação</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">e busca atualizada</span></p>"
             },
             "button": {
               "buttonText": "Ativar agora",
-              "buttonLink": "/"
+              "buttonLink": "https://app.lojaintegrada.com.br/painel/login"
             }
           },
           {
@@ -379,15 +503,15 @@
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/70dc68a9-ca42-4498-a849-e0857d594b50/img-segmento-preco-por-cep.png"
             },
             "icon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c0630e9-70d4-4225-a02e-573b04803a07/Frame-1000002272.png"
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
             },
             "title": {
               "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Segmente o preço do seus produtos de acordo com a região do seu cliente</span></p>",
               "mobile": "<p style=\"text-align: justify\"><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">Segmente o preço do seus produtos de acordo com a região do seu cliente</span></p>"
             },
             "button": {
-              "buttonText": "Ativar agora",
-              "buttonLink": "/"
+              "buttonLink": "https://app.lojaintegrada.com.br/painel/login",
+              "buttonText": "Ativar agora"
             }
           }
         ]
@@ -414,11 +538,11 @@
               "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Tenha o seu catálogo preenchido e ajustado automaticamente de acordo com os requisitos de cada canal e alcance novos clientes rapidamente.</span></p>"
             },
             "icon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c0630e9-70d4-4225-a02e-573b04803a07/Frame-1000002272.png"
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
             },
             "title": {
-              "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Envie produtos de forma automatizada</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">para diferentes marketplaces em instantes.</span></p>",
-              "mobile": "<p><span style=\"color: #ffffff\">Envie produtos de forma</span></p><p><span style=\"color: #ffffff\">automatizada</span></p>"
+              "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Otimize seu catálogo para diversos marketplaces em instantes</span></p>",
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Otimize seu catálogo para diversos marketplaces em instantes</span></p>"
             },
             "tabImage": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4590f8ac-2238-4e67-b6cb-db32ade42137/img--Marketplace-VTEX-e-Magalu-(1).png",
@@ -426,7 +550,8 @@
             },
             "videoUrl": "https://www.youtube.com/embed/D7vd1Y0AlC0?si=J0BH_P4N-sWy_a_T",
             "button": {
-              "buttonText": "Quero testar"
+              "buttonText": "Quero testar",
+              "buttonLink": "https://app.lojaintegrada.com.br/painel/login"
             }
           },
           {
@@ -437,7 +562,7 @@
               "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Cadastre produtos com textos otimizados para SEO e enriqueça seu catálogo com inteligência artificial por meio da integração com </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Indexa.AI\"><span style=\"color: rgb(255, 255, 255)\">Indexa.AI</span></a><span style=\"color: rgb(255, 255, 255)\">.</span></p>"
             },
             "icon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c0630e9-70d4-4225-a02e-573b04803a07/Frame-1000002272.png"
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
             },
             "title": {
               "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Enriqueça seu catálogo</span></p>",
@@ -448,7 +573,8 @@
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e91ad5f5-6ca3-4d11-b698-d2a53d74cc6c/img--enriqueca-seu-catalogo.png"
             },
             "button": {
-              "buttonText": "Integrar agora"
+              "buttonText": "integrar agora",
+              "buttonLink": "https://app.lojaintegrada.com.br/painel/login"
             }
           },
           {
@@ -459,7 +585,7 @@
               "mobile": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Link de carrinho compartilhável:</span></strong><span style=\"color: rgb(255, 255, 255)\"> crie um carrinho e envie o link com itens desejados para os seus clientes em qualquer canal de atendimento(Whatsapp, Instagram, TikTok).</span></p>"
             },
             "icon": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c0630e9-70d4-4225-a02e-573b04803a07/Frame-1000002272.png"
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
             },
             "title": {
               "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Link de carrinho compartilhável</span></p>",
@@ -470,7 +596,8 @@
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/673b94b8-7907-49cd-878e-a4e5edd9cd09/img--carrinho-compartilhavel.png"
             },
             "button": {
-              "buttonText": "Criar agora"
+              "buttonText": "Criar agora",
+              "buttonLink": "https://app.lojaintegrada.com.br/painel/login"
             }
           }
         ],
@@ -509,7 +636,7 @@
           {
             "text": "Pagali",
             "background": "#ffffff",
-            "content": "<p><strong><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Pagali</span></strong></p><p><span style=\"color: rgb(255, 255, 255)\">O Pagali é a solução nativa de meio de pagamento da Loja Integrada.  </span></p><p><span style=\"color: rgb(255, 255, 255)\">Gerencie seus pagamentoscem um único lugar.</span></p>",
+            "content": "<p><strong><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Pagali</span></strong></p><p><br><span style=\"color: rgb(255, 255, 255)\">O Pagali é a solução nativa de meio de pagamento da Loja Integrada.  </span></p><p><span style=\"color: rgb(255, 255, 255)\">Gerencie seus pagamentoscem um único lugar.</span></p>",
             "highlight": false,
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/3066ca50-9c66-413f-943b-99cf13371f55/img--pagali.png",
             "magicNumbers": "<p style=\"text-align: center\"><span style=\"color: rgb(40, 195, 195); font-size: 69pt\">+</span><span style=\"color: rgb(255, 255, 255); font-size: 69pt\">10M</span></p><p style=\"text-align: center\"><span style=\"color: rgb(40, 195, 195); font-size: 15pt\">de transações</span><span style=\"font-size: 15pt\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">realizadas</span></p>",
@@ -520,7 +647,7 @@
           },
           {
             "text": "Enviali",
-            "content": "<p><strong><span style=\"color: #ffffff; font-size: 18pt\">Enviali</span></strong></p><p><span style=\"color: #ffffff; font-size: 12pt\">Economize tempo gasto com logística usando o Enviali, a solução nativa da Loja Integrada para emissão</span></p><p><span style=\"color: #ffffff; font-size: 12pt\">de etiquetas e envio de pedidos. </span></p><p><span style=\"color: #ffffff; font-size: 12pt\">“Otimizamos tempo na geração das etiquetas e melhoramos a experiência do nosso cliente com a disponibilização do rastreio automático nos pedidos. A solução agrega muito, principalmente por concentrarmos a gestão em uma mesma tela (navegador) para tudo, e também o preço do frete competitivo que nos traz muitas vendas.”– </span><strong><span style=\"color: #ffffff; font-size: 12pt\">Marina Bonita Store</span></strong></p>",
+            "content": "<p><strong><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Enviali</span></strong></p><p><br><span style=\"color: #ffffff; font-size: 12pt\">Economize tempo gasto com logística usando o Enviali, a solução nativa da Loja Integrada</span> </p><p><span style=\"color: #ffffff; font-size: 12pt\">para emissão de etiquetas e envio de pedidos. </span></p><p><span style=\"color: #ffffff; font-size: 12pt; font-style: italic;\">“Otimizamos tempo na geração das etiquetas e melhoramos a experiência do nosso cliente com a <br>disponibilização do rastreio automático nos pedidos. A solução agrega muito, principalmente por <br> concentrarmos a gestão em uma mesma tela (navegador) para tudo, e também o preço do frete <br> competitivo que nos traz muitas vendas.”– </span><strong><span style=\"color: #ffffff; font-size: 12pt; font-style: italic;\">Marina Bonita Store</span></strong></p>",
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0a776b7b-fba1-4c59-8d34-66c9fcad4780/img-enviali.png",
             "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1b609566-f450-430f-bbd4-c743d49b4074/imagem_2024-09-24_204952465.png"
           }
@@ -598,7 +725,7 @@
             },
             "button": {
               "buttonText": "Conhecer",
-              "buttonUrl": "/"
+              "buttonUrl": "https://lojaintegrada.com.br/hub/"
             }
           },
           {
@@ -617,40 +744,40 @@
             },
             "button": {
               "buttonText": "Conhecer",
-              "buttonUrl": "/"
+              "buttonUrl": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
             }
           }
         ],
         "logoImage": {
           "width": 231,
           "height": 36,
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/697ff523-51e3-4a7e-acc0-ae3d9c2c0f44/Logo-li-migracao.svg",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e47bad3a-c5cd-4266-93b0-d5b04b9d6400/Logo-li-migracao.svg",
           "extraText": "Mais venda, mais eficiência <br/> Com quem entende disso."
         },
         "socials": [
           {
             "image": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2f616a24-41bb-49dc-9bc7-b4b5ba254d93/linkedin.svg",
-              "link": "/"
+              "link": "https://br.linkedin.com/company/lojaintegrada"
             }
           },
           {
             "image": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a6a3290d-621b-4089-9199-fd14f91e5220/instagram.svg",
-              "link": "/"
+              "link": "https://www.instagram.com/lojaintegrada/"
             }
           },
           {
             "image": {
               "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/581da8e8-c3de-49ad-bc3a-5aa547c8aa9d/tik-tok.svg",
-              "link": "/"
+              "link": "https://www.instagram.com/lojaintegrada/"
             }
           }
         ],
         "policies": [
           {
             "policies": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/\"><span style=\"color: #ffffff; font-size: 10pt\">Conheça nossa comunidade</span></a></p>",
-            "text": "<p><span style=\"color: #ffffff\">Conheça nossa comunidade</span></p>"
+            "text": "<p><span style=\"color: rgb(255, 255, 255)\">Conheça nossa comunidade</span></p>"
           },
           {
             "policies": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/\"><span style=\"color: #ffffff; font-size: 10pt\">Central de ajuda</span></a></p>",
@@ -668,12 +795,12 @@
       }
     }
   ],
-  "__resolveType": "website/pages/Page.tsx",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "title": "Loja Integrada | Escolha dados e automação ",
-    "description": "O futuro do e-commerce é inteligente, escolha dados e automação ",
     "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/92453a09-1a8b-4ba4-8861-b84939dde7d3/favicon-li.png",
-    "image": ""
-  }
+    "image": "",
+    "title": "Loja Integrada | Dados e Automação",
+    "description": "O futuro do e-commerce é inteligente, escolha dados e automação "
+  },
+  "__resolveType": "website/pages/Page.tsx"
 }

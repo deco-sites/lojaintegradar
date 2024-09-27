@@ -6,6 +6,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $CreateStoreModal from "./islands/CreateStoreModal.tsx";
 import * as $HeaderInitialButtons from "./islands/HeaderInitialButtons.tsx";
 import * as $HeroCard from "./islands/HeroCard.tsx";
+import * as $HeroInfoButton from "./islands/HeroInfoButton.tsx";
 import * as $HeroTab from "./islands/HeroTab.tsx";
 import * as $HeroWithTime from "./islands/HeroWithTime.tsx";
 import * as $PricesButtons from "./islands/PricesButtons.tsx";
@@ -20,6 +21,7 @@ const manifest = {
     "./islands/CreateStoreModal.tsx": $CreateStoreModal,
     "./islands/HeaderInitialButtons.tsx": $HeaderInitialButtons,
     "./islands/HeroCard.tsx": $HeroCard,
+    "./islands/HeroInfoButton.tsx": $HeroInfoButton,
     "./islands/HeroTab.tsx": $HeroTab,
     "./islands/HeroWithTime.tsx": $HeroWithTime,
     "./islands/PricesButtons.tsx": $PricesButtons,

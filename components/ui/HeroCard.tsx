@@ -1,55 +1,8 @@
 import { useState } from "preact/hooks";
 import Image from "apps/website/components/Image.tsx";
-import { ImageWidget } from "apps/admin/widgets.ts";
 import TalkModal from "site/components/ui/TalkModal.tsx";
+import type { Props } from "../../sections/HeroCard.tsx";
 
-export interface Props {
-    cardBackgroundImage?: {
-        desktop?: ImageWidget;
-        mobile?: ImageWidget;
-    };
-    secondImage?: {
-        desktop?: ImageWidget;
-        mobile?: ImageWidget;
-    };
-    plan: {
-        title?: string;
-        discount?: string;
-    };
-
-    title?: Title;
-    subTitle?: Subtitle;
-    button?: {
-        buttonText?: string;
-    };
-    extraText?: string;
-    backgroundColors?: {
-        color1: string;
-        color2: string;
-    };
-}
-
-interface Title {
-    /**
-     * @format rich-text
-     */
-    desktop?: string;
-    /**
-     * @format rich-text
-     */
-    mobile?: string;
-}
-
-interface Subtitle {
-    /**
-     * @format rich-text
-     */
-    desktop?: string;
-    /**
-     * @format rich-text
-     */
-    mobile?: string;
-}
 
 function HeroCard({
     cardBackgroundImage,
@@ -59,17 +12,11 @@ function HeroCard({
     subTitle,
     button,
     extraText,
-    backgroundColors,
 }: Props) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const bgStyle = {
-        background: `linear-gradient(to bottom, ${backgroundColors?.color1 || "#ffffff"
-            } 50%, ${backgroundColors?.color2 || "#ffffff"} 50%)`,
-    };
-
     return (
-        <div style={bgStyle} class="bg-base-300 py-20">
+        <>
             <div class="customContainer">
                 <div class="w-full relative max-w-[420px] lg:max-w-[1256px] mx-auto px-[10px]">
                     {cardBackgroundImage?.desktop && (
@@ -108,7 +55,7 @@ function HeroCard({
                             alt={"card background"}
                             height={500}
                             width={360}
-                            class="lg:hidden absolute bottom-0 right-0 w-[160px] h-[300px] pr-[10px]"
+                            class="lg:hidden absolute bottom-0 right-0 w-[250px] h-[300px] pr-[10px]"
                             style={{ minHeight: 300 }}
                         />
                     )}
@@ -147,7 +94,7 @@ function HeroCard({
                             ></span>
                         )}
                         <button
-                            class="rounded-lg bg-primary-content py-3 w-full max-w-[156px] lg:max-w-[225px]"
+                            class="rounded-lg bg-primary-content py-3 w-full min-w-[172px] max-w-[172px] lg:max-w-[225px]"
                             onClick={() => setIsModalOpen(true)}
                         >
                             <span class="text-base lg:text-[18px] font-bold text-center text-[#003037]">
@@ -164,7 +111,7 @@ function HeroCard({
             {isModalOpen && (
                 <TalkModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
             )}
-        </div>
+        </>
     );
 }
 

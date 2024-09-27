@@ -1,6 +1,7 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
+import HeroInfoButton from "site/islands/HeroInfoButton.tsx";
 
 interface Props {
     /**
@@ -24,10 +25,8 @@ interface Card {
     };
     title?: Title;
     textContent?: TextContent;
-    button?: {
-        buttonText?: string;
-        buttonLink?: string;
-    };
+    buttonText?: string;
+    buttonPlanId?: string;
 }
 
 interface Title {
@@ -114,9 +113,7 @@ function HeroInfo({ title, cards }: Props) {
                                             }}
                                         />
                                     )}
-                                    <button class="bg-primary-content py-3 w-full max-w-[156px] rounded-lg">
-                                        <a class="text-[#003037] text-base text-center font-bold" href={card.button?.buttonLink}>{card.button?.buttonText}</a>
-                                    </button>
+                                    <HeroInfoButton buttonPlanId={card?.buttonPlanId} buttonText={card?.buttonText} />
                                 </div>
                             </li>
                         ))}

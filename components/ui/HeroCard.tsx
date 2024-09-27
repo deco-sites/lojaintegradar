@@ -94,7 +94,7 @@ function HeroCard({
                             ></span>
                         )}
                         <button
-                            class="rounded-lg bg-primary-content py-3 w-full min-w-[156px] max-w-[156px] lg:max-w-[225px]"
+                            class="rounded-lg bg-primary-content py-3 w-full min-w-[172px] max-w-[172px] lg:max-w-[225px]"
                             onClick={() => setIsModalOpen(true)}
                         >
                             <span class="text-base lg:text-[18px] font-bold text-center text-[#003037]">

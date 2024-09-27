@@ -20,7 +20,6 @@ export interface Props {
         text?: string;
         link?: string;
         changeType?: boolean;
-        maxWidth?: number;
     }[];
 }
 
@@ -204,8 +203,7 @@ function Prices({
                 {finalButtons?.map((button) =>
                     button.changeType ? (
                         <button
-                            style={{ maxWidth: button.maxWidth }}
-                            class="background-df border-[1px] border-solid border-primary-content w-full max-w-[157px] rounded-lg h-[48px]"
+                            class="background-df border-[1px] border-solid border-primary-content w-fit px-[14px] rounded-lg h-[48px]"
                         >
                             <a
                                 class="text-center font-bold text-[18px] text-primary-content "
@@ -216,8 +214,7 @@ function Prices({
                         </button>
                     ) : (
                         <button
-                            style={{ maxWidth: button.maxWidth }}
-                            class="bg-primary-content w-full max-w-[157px] rounded-lg h-[48px]"
+                            class="bg-primary-content w-fit px-[14px] rounded-lg h-[48px]"
                         >
                             <a
                                 class="text-center font-bold text-[18px] text-base-300 "

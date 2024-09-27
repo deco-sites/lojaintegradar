@@ -208,8 +208,8 @@ export default function PlanDetails({ title, titleTyping = [], color3, letterDel
                     </div>
                 </div>}
                 {useBackground == 'video' && backgroundVideo && <video
-                    width="730"
-                    height="553"
+                    width="1440"
+                    height="618"
                     autoPlay
                     playsInline
                     muted

@@ -5,15 +5,16 @@ import { useId } from "../sdk/useId.ts";
 import { useScript } from "deco/hooks/useScript.ts";
 import { CSS } from "../static/css2.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
+import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
-const openPopUpForm = (rootId: string) => {
+const openTalkToSpecialist = (rootId: string) => {
     event!.preventDefault();
     const parent = document.getElementById(rootId) as HTMLElement;
     const popUpForm = parent.querySelector("#" + rootId + "popUpForm");
     popUpForm?.classList.remove("hidden"); 
 }
 
-const closePopUpForm = (rootId: string) => {
+const closeTalkToSpecialist = (rootId: string) => {
     event!.preventDefault();
     const parent = document.getElementById(rootId) as HTMLElement;
     const popUpForm = parent.querySelector("#" + rootId + "popUpForm");
@@ -248,18 +249,18 @@ function Carousel(props: Props) {
                     ))}
                 </Slider>
                 {cta && <AnimateOnShow animation="animate-fade-up" divClass="flex flex-wrap justify-center gap-7 mt-4">
-                    {cta.map((item) => (
-                        <a
+                    {cta.map((item) => {
+                        if (item.href == '/talkToSpecialist') return <TalkToSpecialistCta text={item.text} ctaClass={`btn btn-primary ${item.outline ? "btn-outline" : ""} font-bold px-7 hover:scale-110 text-lg`}/>
+                        return <a
                             key={item?.id}
                             id={item?.id}
                             href={item?.href ?? "#"}
                             target={item?.href.includes("http") ? "_blank" : "_self"}
                             class={`btn btn-primary ${item.outline ? "btn-outline" : ""} font-bold px-7 hover:scale-110 text-lg`}
-                            hx-on:click={item.href == '/talkToSpecialist' && useScript(openPopUpForm, id)} 
                         >
                             {item?.text}
                         </a>
-                    ))}
+                    })}
                 </AnimateOnShow>}
                 {links && <div class="mt-5 text-primary flex flex-wrap justify-center gap-5">
                     {links.map(link => (
@@ -280,7 +281,7 @@ function Carousel(props: Props) {
                 <div id={id + "popUpForm"} class="fixed top-0 left-0 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-50 talkToSpecialistForm overflow-auto hidden">
                     <style dangerouslySetInnerHTML={{ __html: CSS }} />
                     <div class="max-w-[550px] min-h-[600px] bg-primary-content rounded-xl lg:p-12 animate-pop-up relative pt-12" style={{animationDuration: "0.3s"}}>
-                        <button class="text-primary font-black p-2.5 absolute top-2 right-2" hx-on:click={useScript(closePopUpForm, id)}>X</button>
+                        <button class="text-primary font-black p-2.5 absolute top-2 right-2" hx-on:click={useScript(closeTalkToSpecialist, id)}>X</button>
                         <div dangerouslySetInnerHTML={{
                             __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                                                                 <script>

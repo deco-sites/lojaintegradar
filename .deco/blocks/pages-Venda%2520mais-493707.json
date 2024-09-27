@@ -5175,8 +5175,10 @@
               "text": "Plano Aceleração"
             },
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4c9f864e-51e2-469e-a56b-5f02c2af1b6a/aceleracao-background.svg",
-              "alt": "background "
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d43a9ff2-c072-4944-acd6-8df60d705a7f/aceleracao-background-mobile.png",
+              "alt": "background ",
+              "width": 410,
+              "height": 1229
             },
             "useBackground": "video",
             "slides": [
@@ -6025,6 +6027,33 @@
                   }
                 },
                 "title": "Para você lucrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
               }
             ],
             "annualValues": {
@@ -6104,6 +6133,33 @@
                   }
                 },
                 "title": "Para você lucrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Importador de produtos e URL ",
+                    "Suporte Premiado",
+                    "29 dias (em média) para migração da plataforma"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você migrar"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    "Taxa de 4,29% no cartão de crédito com Pagali",
+                    "Pagali a partir de R$0,99 no PIX",
+                    "Fretes 70% mais baratos com Enviali",
+                    "Prioridade no atendimento"
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                  }
+                },
+                "title": "Para você lucrar"
               }
             ],
             "annualValues": {
@@ -6139,6 +6195,104 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/Footer2.tsx",
+      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/14f03500-2d05-4be8-8b68-ceef7e392022/video-dobra-comunidade.webm",
+      "backgroundImage": {},
+      "color1": "#371E55",
+      "color2": "#FFFFFF",
+      "cards": [
+        {
+          "cardIcon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
+          },
+          "title": "Conheça nosso Blog",
+          "text": "Informação, insights e muito, muito conteúdo de valor para seu negócio crescer.",
+          "CTA": {
+            "text": "Conhecer",
+            "href": "#"
+          }
+        },
+        {
+          "cardIcon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
+            "alt": "youtube green icon"
+          },
+          "title": "Conheça nosso canal no Youtube",
+          "text": "Debates, conversas e muito, muito aprendizado para quem  quer impulsionar suas vendas.",
+          "CTA": {
+            "text": "Conhecer",
+            "href": "#"
+          }
+        }
+      ],
+      "color3": "#EBEBEB",
+      "useBackground": "video",
+      "title": "Estamos com você em toda a sua jornada de crescimento!",
+      "logoCaption": "Mais venda, mais eficiência Com quem entende disso.",
+      "logo": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
+      },
+      "showForm": true,
+      "emailForm": {
+        "inputName": "email",
+        "inputLabel": "Junte-se a mais de  2,5 milhões de lojistas",
+        "inputPlaceHolder": "Digite seu email aqui",
+        "submitText": "Fazer parte"
+      },
+      "socialLinks": [
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
+            "alt": "linkein icon"
+          },
+          "href": "http://linkedin.com"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
+            "alt": "instgram icon"
+          },
+          "href": "https://instagram.com"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
+          },
+          "href": "https://tiktok.com"
+        }
+      ],
+      "color4": "#d4d4d4",
+      "bottomLinks": [
+        {
+          "href": "https://comunidade.lojaintegrada.com.br/",
+          "text": "Conheça nossa comunidade"
+        },
+        {
+          "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
+          "text": "Central de ajuda"
+        },
+        {
+          "text": "Fale com especialista",
+          "href": "/talkToSpecialist"
+        },
+        {
+          "href": "https://lojaintegrada.com.br/termos-de-uso",
+          "text": "Termos de uso"
+        },
+        {
+          "href": "https://lojaintegrada.com.br/privacidade",
+          "text": "Privacidade"
+        },
+        {
+          "href": "#",
+          "text": "Comece pelo grátis"
+        }
+      ],
+      "bottomBackground": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
+      }
     }
   ],
   "seo": {

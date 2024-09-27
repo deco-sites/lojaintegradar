@@ -18,6 +18,7 @@ function HeroTab({ title, subTitle, buttons }: Props) {
         }
     }, [activeIndex, buttons]);
 
+    console.log("quantas vezes")
     const renderResponsiveContent = (
         desktop: string | undefined,
         mobile: string | undefined,
@@ -50,7 +51,7 @@ function HeroTab({ title, subTitle, buttons }: Props) {
     return (
         <>
             <div className="customContainer">
-                <div className="flex flex-col gap-4 mb-[60px]">
+                <div data-aos="zoom-in" className="flex flex-col gap-4 mb-[60px]">
                     {renderResponsiveContent(
                         title?.desktop,
                         title?.mobile,

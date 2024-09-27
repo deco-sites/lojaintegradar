@@ -163,7 +163,7 @@ function Header({
                         </button>
                     ))}
                 </div>
-                <AnimateOnShow>
+                <AnimateOnShow animation="animate-pop-up" animationDuration="1.1s">
                     {textContent?.desktop && (
                         <span
                             className="hidden lg:block font-instrument leading-[66px]"

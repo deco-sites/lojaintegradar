@@ -37,7 +37,7 @@ function HeroWithTime({ title, subTitle, tabs, background }: Props) {
     return (
         <>
             <div className="customContainer">
-                <div className="flex flex-col gap-4 mb-[60px]">
+                <div data-aos="zoom-in" className="flex flex-col gap-4 mb-[60px]">
 
                     {title?.desktop && (
                         <span
@@ -184,6 +184,7 @@ function HeroWithTime({ title, subTitle, tabs, background }: Props) {
                                 {activeTab === index && (
                                     <>
                                         <Image
+                                            data-aos="fade-up"
                                             src={tab.tabImage?.imageDesktop || ""}
                                             alt={tab.tabImage?.altDesktop || ""}
                                             height={tab.tabImage?.heightDesktop || 665}
@@ -192,6 +193,7 @@ function HeroWithTime({ title, subTitle, tabs, background }: Props) {
                                             className="min-1180:absolute right-0 top-0 hidden lg:block h-full hoverScale shadow-md"
                                         />
                                         <Image
+                                            data-aos="fade-up"
                                             src={tab.tabImage?.image || ""}
                                             alt={tab.tabImage?.alt || ""}
                                             height={tab.tabImage?.height || 351}

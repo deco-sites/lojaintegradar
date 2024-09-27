@@ -62,63 +62,63 @@ function HeroInfo({ title, cards }: Props) {
                         }}
                     />
                 )}
-                <AnimateOnShow>
-                    <ul class="flex flex-col lg:flex-row gap-10 mt-10">
-                        {cards?.map((card) => (
-                            <li class="flex flex-col lg:w-[50%]">
-                                <Image
-                                    src={card.image?.image || ""}
-                                    alt={card.image?.alt || ""}
-                                    height={card.image?.height || 454}
-                                    width={card.image?.width || 606}
-                                    class="mb-[30px]"
-                                />
-                                <Image
-                                    src={card.icon?.image || ""}
-                                    alt={"Ícone do card de mais lançamentos"}
-                                    height={card.icon?.height || 52}
-                                    width={card.icon?.width || 52}
-                                    class="mb-[30px]"
-                                />
-                                <div class="flex flex-col gap-5">
-                                    {card.title?.desktop && (
-                                        <span
-                                            class="hidden lg:block"
-                                            dangerouslySetInnerHTML={{
-                                                __html: card.title?.desktop,
-                                            }}
-                                        />
-                                    )}
-                                    {card.title?.mobile && (
-                                        <span
-                                            class="lg:hidden"
-                                            dangerouslySetInnerHTML={{
-                                                __html: card.title?.mobile,
-                                            }}
-                                        />
-                                    )}
-                                    {card.textContent?.desktop && (
-                                        <span
-                                            class="hidden lg:block"
-                                            dangerouslySetInnerHTML={{
-                                                __html: card.textContent?.desktop,
-                                            }}
-                                        />
-                                    )}
-                                    {card.textContent?.mobile && (
-                                        <span
-                                            class="lg:hidden"
-                                            dangerouslySetInnerHTML={{
-                                                __html: card.textContent?.mobile,
-                                            }}
-                                        />
-                                    )}
-                                    <HeroInfoButton buttonPlanId={card?.buttonPlanId} buttonText={card?.buttonText} />
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
-                </AnimateOnShow>
+                <ul class="flex flex-col lg:flex-row gap-10 mt-10">
+                    {cards?.map((card) => (
+                        <li class="flex flex-col lg:w-[50%]">
+                            <Image
+                                data-aos="fade-up"
+                                src={card.image?.image || ""}
+                                alt={card.image?.alt || ""}
+                                height={card.image?.height || 454}
+                                width={card.image?.width || 606}
+                                class="mb-[30px]"
+                            />
+                            <Image
+                                data-aos="fade-up"
+                                src={card.icon?.image || ""}
+                                alt={"Ícone do card de mais lançamentos"}
+                                height={card.icon?.height || 52}
+                                width={card.icon?.width || 52}
+                                class="mb-[30px]"
+                            />
+                            <div data-aos="zoom-in" class="flex flex-col gap-5">
+                                {card.title?.desktop && (
+                                    <span
+                                        class="hidden lg:block"
+                                        dangerouslySetInnerHTML={{
+                                            __html: card.title?.desktop,
+                                        }}
+                                    />
+                                )}
+                                {card.title?.mobile && (
+                                    <span
+                                        class="lg:hidden"
+                                        dangerouslySetInnerHTML={{
+                                            __html: card.title?.mobile,
+                                        }}
+                                    />
+                                )}
+                                {card.textContent?.desktop && (
+                                    <span
+                                        class="hidden lg:block"
+                                        dangerouslySetInnerHTML={{
+                                            __html: card.textContent?.desktop,
+                                        }}
+                                    />
+                                )}
+                                {card.textContent?.mobile && (
+                                    <span
+                                        class="lg:hidden"
+                                        dangerouslySetInnerHTML={{
+                                            __html: card.textContent?.mobile,
+                                        }}
+                                    />
+                                )}
+                                <HeroInfoButton buttonPlanId={card?.buttonPlanId} buttonText={card?.buttonText} />
+                            </div>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>
     );

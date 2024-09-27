@@ -57,9 +57,7 @@ function HeroCards(props: Props) {
 
     return (
         <div style={bgStyle} class="bg-base-300 py-20">
-            <AnimateOnShow animation="animate-pop-up">
-                <HeroCard {...props} />
-            </AnimateOnShow>
+            <HeroCard {...props} />
         </div>
     )
 }

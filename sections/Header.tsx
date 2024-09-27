@@ -9,6 +9,7 @@ interface Props {
      * @description Só preencha os dados de tamanho caso seja necessário, senão, deixar vazio
      */
     backgroundVideo?: {
+        disableOnMobile?: boolean;
         video?: VideoWidget;
         desktopMinimumHeight?: number;
         desktopMaximumHeight?: number;
@@ -105,7 +106,7 @@ function Header({
                             muted
                             loop
                             id="headerVideo"
-                            className="w-full max-w-full object-cover absolute top-0 left-0 min-h-[416px] max-h-[416px] lg:max-h-[800px] lg:min-h-[800px]"
+                            className={`w-full max-w-full object-cover absolute top-0 left-0 min-h-[416px] max-h-[416px] lg:max-h-[800px] lg:min-h-[800px] ${backgroundVideo?.disableOnMobile ? "hidden lg:block" : ''}`}
                         >
                             <source
                                 src={backgroundVideo?.video}
@@ -116,6 +117,16 @@ function Header({
                                 media="(max-width: 1023px)"
                             />
                         </video>
+                        {backgroundVideo?.disableOnMobile &&
+                            <Image
+                                src={backgroundImage?.mobile || ""}
+                                alt={alt || ""}
+                                height={height || 416}
+                                width={width || 375}
+                                class="w-full absolute top-0 left-0 max-h-[416px] lg:hidden"
+                                loading={"eager"}
+                            />
+                        }
                     </>
                 )}
             </>

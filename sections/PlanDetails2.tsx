@@ -280,7 +280,7 @@ export default function PlanDetails2({ color1, color2, color3, color4, color5, c
                         href={cta?.href ?? "#"}
                         target={cta?.href?.includes("http") ? "_blank" : "_self"}
                         class={`btn font-bold px-7 hover:scale-110 text-lg`}
-                        style={{ backgroundColor: color7, color: color8 }}
+                        style={{ backgroundColor: color7, color: color8, borderColor: color7 }}
                     >
                         {cta.text}
                     </a>}

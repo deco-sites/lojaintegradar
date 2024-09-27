@@ -89,7 +89,7 @@ function HeroTab({ title, subTitle, buttons }: Props) {
                         )}
 
                         {activeButton.content && (
-                            <div className={`mb-[21px] lg:mb-20 max-w-[1070px] ${activeButton.magicNumbers ? "flex items-center justify-between flex-col lg:flex-row" : ""}`}>
+                            <div className={`mb-[21px] lg:mb-20 max-w-[1070px] ${activeButton.magicNumbers ? "flex items-center lg:items-end lg:min-h-[138px] justify-between flex-col lg:flex-row" : ""}`}>
                                 <span
                                     className={`${activeButton.magicNumbers ? "max-w-[611px]" : ""} heightParagraph`}
                                     dangerouslySetInnerHTML={{ __html: activeButton.content }}

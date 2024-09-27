@@ -9,12 +9,24 @@ export interface Props {
 }
 
 interface Title {
+    /**
+  * @format rich-text
+  */
     desktop?: string;
+    /**
+  * @format rich-text
+  */
     mobile?: string;
 }
 
 interface Subtitle {
+    /**
+  * @format rich-text
+  */
     desktop?: string;
+    /**
+  * @format rich-text
+  */
     mobile?: string;
 }
 

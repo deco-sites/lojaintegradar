@@ -43,12 +43,39 @@
     "__resolveType": "website/loaders/fonts/googleFonts.ts",
     "fonts": [
       {
-        "variations": [],
+        "variations": [
+          {
+            "weight": "400"
+          },
+          {
+            "weight": "600"
+          },
+          {
+            "weight": "700"
+          },
+          {
+            "weight": "800"
+          },
+          {
+            "weight": "900"
+          }
+        ],
         "family": "Inter"
       },
       {
         "variations": [],
         "family": "Instrument Serif"
+      },
+      {
+        "variations": [
+          {
+            "weight": "700"
+          },
+          {
+            "weight": "800"
+          }
+        ],
+        "family": "Roboto"
       }
     ]
   }

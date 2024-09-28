@@ -27,9 +27,10 @@ import * as $$$$$$18 from "./sections/PlanDetails.tsx";
 import * as $$$$$$19 from "./sections/PlanDetails2.tsx";
 import * as $$$$$$20 from "./sections/Plans.tsx";
 import * as $$$$$$21 from "./sections/Prices.tsx";
-import * as $$$$$$22 from "./sections/TcoCalculator.tsx";
-import * as $$$$$$23 from "./sections/Testimonials.tsx";
-import * as $$$$$$24 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$22 from "./sections/TalkToAnExpert.tsx";
+import * as $$$$$$23 from "./sections/TcoCalculator.tsx";
+import * as $$$$$$24 from "./sections/Testimonials.tsx";
+import * as $$$$$$25 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -55,9 +56,10 @@ const manifest = {
     "site/sections/PlanDetails2.tsx": $$$$$$19,
     "site/sections/Plans.tsx": $$$$$$20,
     "site/sections/Prices.tsx": $$$$$$21,
-    "site/sections/TcoCalculator.tsx": $$$$$$22,
-    "site/sections/Testimonials.tsx": $$$$$$23,
-    "site/sections/Theme/Theme.tsx": $$$$$$24,
+    "site/sections/TalkToAnExpert.tsx": $$$$$$22,
+    "site/sections/TcoCalculator.tsx": $$$$$$23,
+    "site/sections/Testimonials.tsx": $$$$$$24,
+    "site/sections/Theme/Theme.tsx": $$$$$$25,
   },
   "actions": {
     "site/actions/sendTcoUserData.ts": $$$$$$$$$0,

@@ -217,6 +217,65 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/CalculateYourCosts.tsx",
+      "title": "Custo Total de Propriedade (TCO) de um ecommerce",
+      "titleColor": "#1B1525",
+      "subtitle": "O TCO é a soma de todos os custos relacionados à implementação, operação e manutenção de uma loja virtual ao longo de sua vida útil. Por considerar um ciclo de vida completo, o TCO mostra quanto seu ecommerce realmente custa para o seu bolso.",
+      "subtitleColor": "#1B1525",
+      "backgroundColor": {
+        "startColor": "#A482F966",
+        "endColor": "#fdfdff",
+        "middleColor": "#DED2FD"
+      },
+      "decorativeImage": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/381da9c0-e12a-4878-8271-85a59039c571/Layer_1.webp",
+        "alt": "Coins",
+        "width": 232,
+        "height": 208
+      },
+      "cards": [
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/84e1294b-445f-4a6d-91cd-0c58eac93926/Vector.svg",
+            "width": 17,
+            "height": 25
+          },
+          "title": "Negócio",
+          "description": "Compare seus custos mensais de plataforma e comissão versus sua receita.",
+          "titleColor": "#1B1525",
+          "descriptionColor": "#1B1525"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e864ef68-733a-49f3-bfc3-471fa8f47051/Vector.svg",
+            "width": 25,
+            "height": 25
+          },
+          "title": "Pagamento",
+          "description": "Analise seus custos com tarifas de cartão de crédito, pix, boleto e ferramentas antifraude.",
+          "titleColor": "#1B1525",
+          "descriptionColor": "#1B1525"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4e4541a9-c7dc-4e14-b7c4-3a3118d266d1/start-up-1.svg",
+            "width": 25,
+            "height": 25
+          },
+          "title": "Envio",
+          "description": "Leve em consideração todos os custos que sua loja possui com o envio de produtos.",
+          "titleColor": "#1B1525",
+          "descriptionColor": "#1B1525"
+        }
+      ],
+      "button": {
+        "text": "Calcule seus custos e compare",
+        "color": "#ffffff",
+        "url": "#",
+        "backgroundColor": "#371E55"
+      }
     }
   ],
   "seo": {

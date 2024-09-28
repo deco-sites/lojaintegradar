@@ -20,13 +20,14 @@ const closeTalkToSpecialist = (rootId: string) => {
 export interface Props {
     text?: string;
     ctaClass?: string;
+    divClass?: string;
     key?: string;
 }
 
-export default function TalkToSpecialistCta({ctaClass, key, text}: Props) {
+export default function TalkToSpecialistCta({ctaClass, key, text, divClass}: Props) {
     const rootId = useId();
 
-    return <div id={rootId}>
+    return <div id={rootId} class={divClass}>
         <a
             key={key}
             class={ctaClass}

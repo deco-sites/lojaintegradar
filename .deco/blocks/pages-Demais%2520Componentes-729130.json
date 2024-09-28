@@ -154,6 +154,69 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "title": "O Monstro da Indecisão ainda te deixa com medo de mudar?",
+            "titleColor": "#371E55",
+            "subtitle": "Então talvez esteja na hora de você tirar algumas dúvidas.",
+            "subtitleColor": "#371E55",
+            "button": {
+              "label": "Fale com um especialista",
+              "url": "#",
+              "textColor": "#FFFFFF",
+              "backgroundColor": "#371E55"
+            },
+            "backgroundColor": "#ffc19f",
+            "leftImage": {},
+            "rightImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/32ca6214-fa9a-48ee-b221-36a2f853649d/Render-Test_16-9-4-2-(2)-(1).webp",
+              "alt": "Imagem da direita",
+              "width": 239,
+              "height": 310
+            },
+            "__resolveType": "site/sections/TalkToAnExpert.tsx"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "title": "O Monstro da Indecisão ainda te deixa com medo de mudar?",
+            "titleColor": "#371E55",
+            "subtitle": "Então talvez esteja na hora de você tirar algumas dúvidas.",
+            "subtitleColor": "#371E55",
+            "button": {
+              "label": "Fale com um especialista",
+              "url": "#",
+              "textColor": "#FFFFFF",
+              "backgroundColor": "#371E55"
+            },
+            "backgroundColor": "#ffc19f",
+            "leftImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8abed8d5-7d72-45f8-98b0-b1c9c88cdf72/9d0c10564c7321b11ed2b5f9731eed92-(2).webp",
+              "alt": "Imagem da esquerda",
+              "width": 571,
+              "height": 451
+            },
+            "rightImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/68532480-597b-428a-91dc-72cdd176ba1a/Render-Test_16-9-4-2-(1).webp",
+              "alt": "Imagem da direita",
+              "width": 315,
+              "height": 310
+            },
+            "__resolveType": "site/sections/TalkToAnExpert.tsx"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     }
   ],
   "seo": {

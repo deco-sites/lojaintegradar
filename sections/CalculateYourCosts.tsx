@@ -134,6 +134,22 @@ interface Props {
    * @title botão
    */
   button?: Button;
+  /**
+   * @title Espaçamento superior desktop
+   */
+  spacingTop?: number;
+  /**
+   * @title Espaçamento inferior desktop
+   */
+  spacingBottom?: number;
+  /**
+   * @title Espaçamento superior mobile
+   */
+  spacingTopMobile?: number;
+  /**
+   * @title Espaçamento inferior mobile
+   */
+  spacingBottomMobile?: number;
 }
 
 export default function CalculateYourCosts({
@@ -197,13 +213,21 @@ export default function CalculateYourCosts({
     color: "#ffffff",
     url: "#",
   },
+  spacingTop = 80,
+  spacingBottom = 80,
+  spacingTopMobile = 16,
+  spacingBottomMobile = 16,
 }: Props) {
   return (
     <div
-      class="px-8 py-10 md:px-24 md:py-20 overflow-clip"
+      class="px-8 py-10 md:px-24 md:py-20 overflow-clip mt-[--spacing-top-mobile] mb-[--spacing-bottom-mobile] md:mt-[--spacing-top-desktop] md:mb-[--spacing-bottom-desktop]"
       style={{
+        "--spacing-top-desktop": `${spacingTop}px`,
+        "--spacing-top-mobile": `${spacingTopMobile}px`,
+        "--spacing-bottom-desktop": `${spacingBottom}px`,
+        "--spacing-bottom-mobile": `${spacingBottomMobile}px`,
         backgroundImage:
-          `linear-gradient(142.86deg, ${backgroundColor.startColor} 3.14%, ${backgroundColor.middleColor} 21.82%, ${backgroundColor.endColor} 52.7%)`,
+          `linear-gradient(160deg, ${backgroundColor.startColor} 3.14%, ${backgroundColor.middleColor} 21.82%, ${backgroundColor.endColor} 52.7%)`,
         color: titleColor,
       }}
     >

@@ -1,6 +1,7 @@
-import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
+import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 
 export interface IImage {
     src?: ImageWidget;
@@ -65,7 +66,7 @@ export interface Props {
 export default function Footer2({ title, backgroundImage, backgroundVideo, useBackground, cards = [], logo, logoCaption, formCaption, socialLinks, bottomLinks, emailForm, color1, color2, color3, color4, showForm, bottomBackground }: Props) {
     const backgroundColor = useBackground ? "transparent" : color1;
     return <footer class="text-primary" style={{ color: color1 }}>
-        <div class={`relative w-full h-[42vw] flex justify-center items-center ${!useBackground && "bg-primary"}`} style={{ backgroundColor: backgroundColor }}>
+        <div class={`relative w-full h-[56vw] lg:h-[42vw] flex justify-center items-end  ${!useBackground && "bg-primary"}`} style={{ backgroundColor: backgroundColor }}>
             {useBackground == "video" && backgroundVideo && <video
                 width="1440"
                 height="611"
@@ -88,7 +89,9 @@ export default function Footer2({ title, backgroundImage, backgroundVideo, useBa
                 alt={backgroundImage.alt || "background image"}
                 class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10"
             />}
-            <h2 class="text-center text-[40px] leading-[120%] font-medium max-w-[576px] text-primary-content" style={{ color: color2 }}>{title}</h2>
+            <AnimateOnShow animation="animate-fade-down50">
+                <h2 class="pb-14 lg:pb-[14vw] text-center text-2xl lg:text-[40px] leading-[120%] font-medium max-w-[576px] text-primary-content" style={{ color: color2 }}>{title}</h2>
+            </AnimateOnShow>
         </div>
         <div class="relative pb-32">
             {bottomBackground?.src && <Image
@@ -98,20 +101,20 @@ export default function Footer2({ title, backgroundImage, backgroundVideo, useBa
                 alt={bottomBackground.alt || "footer bottom background image"}
                 class="absolute h-full w-full top-0 left-0 object-fill -z-50"
             />}
-            <div class="max-w-[1042px] mx-auto -mt-28 flex flex-wrap justify-center gap-[42px]">
+            <AnimateOnShow divClass="max-w-[1070px] pl-7 py-9 lg:p-0 lg:mx-auto -mt-[68px] lg:-mt-28 flex lg:flex-wrap overflow-auto lg:overflow-visible lg:justify-center gap-2.5 lg:gap-[42px]" animation="animate-fade-up">
                 {cards.length > 0 && cards.map((card) => (
-                    <div class="flex-grow max-w-[500px] rounded-[30px] bg-primary-content py-10 px-14 shadow-spreaded3" style={{ backgroundColor: color2 }}>
-                        <div class="flex gap-5">
+                    <div class="flex-grow min-w-[78vw] lg:min-w-0 lg:max-w-[500px] rounded-[30px] bg-primary-content py-7 lg:py-10 px-12 lg:px-14 shadow-spreaded3" style={{ backgroundColor: color2 }}>
+                        <div class="flex gap-2.5 lg:gap-5 items-center">
                             {card.cardIcon?.src && <Image
                                 width={card.cardIcon.width || 40}
                                 height={card.cardIcon.height || 40}
                                 src={card.cardIcon.src}
                                 alt={card.cardIcon.alt || "card icon"}
-                                class="object-contain"
+                                class="object-contain h-7 lg:h-10 w-7 lg:w-10"
                             />}
-                            <h3 class="text-xl font-semibold leading-[120%]">{card.title}</h3>
+                            <h3 class="text-base lg:text-xl font-semibold leading-[120%]">{card.title}</h3>
                         </div>
-                        <p class="text-base font-normal leading-normal mt-2.5 py-2.5">{card.text}</p>
+                        <p class="text-sm lg:text-base font-normal leading-normal mt-2.5 py-2.5">{card.text}</p>
                         {card.CTA?.text && <a
                             href={card.CTA?.href ?? "#"}
                             target={card.CTA?.href.includes("http") ? "_blank" : "_self"}
@@ -125,9 +128,9 @@ export default function Footer2({ title, backgroundImage, backgroundVideo, useBa
                         </a>}
                     </div>
                 ))}
-            </div>
-            <div class="max-w-[1240px] mx-auto flex gap-4 justify-between items-center mt-20">
-                <div class="max-w-[193px]">
+            </AnimateOnShow>
+            <div class="max-w-[1240px] mx-auto flex flex-col lg:flex-row gap-4 justify-between items-center mt-9 lg:mt-20">
+                <AnimateOnShow divClass="max-w-[193px] order-1 lg:-order-none" animation="animate-fade-up" delay={100}>
                     {logo?.src && <Image
                         width={logo.width || 193}
                         height={logo.height || 31}
@@ -136,40 +139,42 @@ export default function Footer2({ title, backgroundImage, backgroundVideo, useBa
                         class="object-contain mb-4"
                     />}
                     <p class="text-sm font-normal leading-normal">{logoCaption}</p>
-                </div>
+                </AnimateOnShow>
 
-                {showForm && <form class="flex gap-5 items-center" action={emailForm?.action}>
-                    {emailForm?.inputLabel && <p class="text-base font-semibold max-w-[173px]">{emailForm?.inputLabel}</p>}
-                    <div class={`bg-primary-content flex justify-between py-1.5 pr-1.5 text-base text-primary border border-base-200 rounded-xl shadow-spreaded h-[63px] `} style={{ borderColor: color3 }}>
-                        <input
-                            type="email"
-                            required
-                            class="w-1/2 md:w-auto md:flex-grow h-[47px] pl-2 md:pl-7 focus:outline-none text-sm md:text-base"
-                            placeholder={emailForm?.inputPlaceHolder}
-                        />
-                        <button type="submit" class="btn btn-primary font-bold px-7 hover:scale-110 text-lg" style={{ backgroundColor: color1, borderColor: color1 }}>
-                            {emailForm?.submitText}
-                        </button>
-                    </div>
-                </form>}
+                <AnimateOnShow animation="animate-fade-up" delay={250} animationDuration="animate-fade-up">
+                    {showForm && <form class="flex flex-wrap gap-5 items-center justify-center" action={emailForm?.action}>
+                        {emailForm?.inputLabel && <p class="text-base font-semibold max-w-[173px]">{emailForm?.inputLabel}</p>}
+                        <div class={`bg-primary-content flex justify-between py-1.5 pr-1.5 text-base text-primary border border-base-200 rounded-xl shadow-spreaded h-[63px] `} style={{ borderColor: color3 }}>
+                            <input
+                                type="email"
+                                required
+                                class="w-1/2 md:w-auto md:flex-grow h-[47px] pl-2 md:pl-7 focus:outline-none text-sm md:text-base"
+                                placeholder={emailForm?.inputPlaceHolder}
+                            />
+                            <button type="submit" class="btn btn-primary font-bold px-7 hover:scale-110 text-lg" style={{ backgroundColor: color1, borderColor: color1 }}>
+                                {emailForm?.submitText}
+                            </button>
+                        </div>
+                    </form>}
+                </AnimateOnShow>
 
-                <div class="flex gap-5">
+                <AnimateOnShow divClass="flex gap-5 order-3" delay={400} animation="animate-fade-up">
                     {socialLinks?.map((link) => (
                         <a href={link.href} target="_blank">
                             <Image width={link.icon.width || 21} height={link.icon.height || 21} src={link.icon.src || ""} alt={link.icon.alt || "social media icon"} class="object-contain" />
                         </a>
                     ))}
-                </div>
+                </AnimateOnShow>
 
             </div>
 
-            <div class="mt-20 mx-auto pt-7 border-t border-t-base-200 max-w-[1240px] flex flex-wrap gap-y-7 gap-7" style={{ borderColor: color4 }}>
+            <div class="mt-20 mx-auto pt-7 border-t border-t-base-200 max-w-[1240px] flex flex-col lg:flex-row flex-wrap gap-y-5 gap-7" style={{ borderColor: color4 }}>
                 {bottomLinks?.map((link) => {
-                    if (link.href == '/talkToSpecialist') return <TalkToSpecialistCta text={link.text} ctaClass="text-sm font-normal leading-normal cursor-pointer" />
+                    if (link.href == '/talkToSpecialist') return <TalkToSpecialistCta text={link.text} ctaClass="text-sm font-normal leading-normal cursor-pointer text-center mx-auto" divClass="text-center" />
                     return <a
                         href={link.href}
                         target={link.href.includes("http") ? "_blank" : "_self"}
-                        class="text-sm font-normal leading-normal cursor-pointer"
+                        class="text-sm font-normal leading-normal cursor-pointer text-center"
                     >
                         {link.text}
                     </a>

@@ -4,6 +4,7 @@ import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useScript } from "@deco/deco/hooks";
+
 const onClick = (rootId: string) => {
     const parent = document.getElementById(rootId) as HTMLElement;
     console.log(parent);
@@ -13,6 +14,7 @@ const onClick = (rootId: string) => {
     fullBulletPoints?.classList.remove("hidden");
     fullBulletPoints.classList.add("flex");
 };
+
 const onChange = (rootId: string) => {
     const element = event!.currentTarget as HTMLInputElement;
     const parent = document.getElementById(rootId) as HTMLElement;
@@ -33,6 +35,7 @@ const onChange = (rootId: string) => {
         annualLabel?.removeAttribute("disabled");
     }
 };
+
 export interface IImage {
     src?: ImageWidget;
     alt?: string;
@@ -69,7 +72,9 @@ export interface Plan {
     bulletPoints?: BulletPoints;
     seeMoreButtonText?: string;
 }
+
 export interface Props {
+    id?: string;
     title?: string;
     caption?: string;
     montlyLabel?: string;
@@ -85,6 +90,7 @@ export interface Props {
     bottomTitle?: string;
     bottomButton?: CTA;
 }
+
 function InfoIcon({ theme }: {
     theme: 'dark' | 'light';
 }) {
@@ -94,6 +100,7 @@ function InfoIcon({ theme }: {
         </g>
     </svg>;
 }
+
 function SliderItem({ slide, id }: {
     slide: Plan;
     id: string;
@@ -191,11 +198,12 @@ function Buttons() {
         </div>);
 }
 function Plans(props: Props) {
-    const id = useId();
+    const carouselId = useId();
+    const id = props.id || carouselId;
     const { title, caption, slides, montlyLabel, annualLabel, annualTag, arrows, bottomCaption, bottomTitle, bottomButton } = { ...props };
-    return (<div id="plansCarousel">
+    return (<div id={id}>
 
-            <div id={id} class="min-h-min flex flex-col items-center lg:container md:max-w-[1500px] lg:mx-auto pt-7 lg:pt-[90px]">
+            <div id={carouselId} class="min-h-min flex flex-col items-center lg:container md:max-w-[1500px] lg:mx-auto pt-7 lg:pt-[90px]">
                 <AnimateOnShow animation="animate-fade-down">
                     <p class="text-lg lg:text-2xl text-neutral-content font-semibold leading-tight">{caption}</p>
                 </AnimateOnShow>
@@ -216,9 +224,9 @@ function Plans(props: Props) {
                 </div>
 
                 <AnimateOnShow animation="animate-pop-up" divClass="w-full" delay={400}>
-                    <Slider class="carousel carousel-center lg:px-[30px] py-9 w-full" rootId={id} infinite>
+                    <Slider class="carousel carousel-center lg:px-[30px] py-9 w-full" rootId={carouselId} infinite>
                         {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-[90%] lg:w-1/3">
-                                <SliderItem slide={slide} id={`${id}-${index}`}/>
+                                <SliderItem slide={slide} id={`${carouselId}-${index}`}/>
                             </Slider.Item>))}
                     </Slider>
 

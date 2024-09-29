@@ -9,6 +9,7 @@ export interface IImage {
 }
 
 export interface Props {
+    id?: string;
     title: string,
     caption?: HTMLWidget,
     inputLabel?: string;
@@ -16,8 +17,8 @@ export interface Props {
     backgroundImage?: IImage
 }
 
-export default function MainHero({ title, caption = "", inputLabel, backgroundImage, image }: Props) {
-    return <div class="flex min-h-96 pt-40 relative overflow-hidden">
+export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, image }: Props) {
+    return <div id={id} class="flex min-h-96 pt-40 relative overflow-hidden">
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
         {backgroundImage?.src && <Image
             width={1440}

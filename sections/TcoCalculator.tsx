@@ -27,6 +27,7 @@ export interface Plan {
 }
 
 export interface Props {
+    sectionId?: string;
     title?: string;
     caption?: string;
     plans: Plan[];
@@ -38,10 +39,11 @@ export interface Props {
 
 function TcoCalculator(props: Props) {
     const id = useId();
-    const { title, caption, page1, page2, page3, page4, plans } = { ...props };
+    const { sectionId, title, caption, page1, page2, page3, page4, plans } = { ...props };
 
     return (
         <div
+            id={sectionId}
             class="min-h-min flex flex-col lg:container md:max-w-[1332px] lg:mx-auto lg:pt-[123px]"
         >
             {caption && <h3 class="text-center text-neutral text-2xl font-semibold hidden lg:block">{caption}</h3>}

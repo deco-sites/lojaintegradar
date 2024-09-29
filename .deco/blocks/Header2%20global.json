@@ -4,85 +4,122 @@
     "links": [
       {
         "label": "Abra sua Loja na LI",
-        "url": "#"
+        "url": "#",
+        "textColor": "#371E55",
+        "textHoverColor": "#C6B3CE"
       },
       {
         "label": "Nosso ecossistema",
-        "url": "#"
+        "url": "#nossoecossistema",
+        "textColor": "#371E55",
+        "textHoverColor": "#C6B3CE"
       },
       {
         "label": "Recursos e Ferramentas",
-        "url": "#"
+        "url": "#",
+        "textColor": "#371E55"
       },
       {
         "label": "Faça parte da Elite",
-        "url": "#"
+        "url": "#",
+        "textColor": "#371E55"
       },
       {
         "label": "Planos",
-        "url": "#"
+        "url": "#plans section",
+        "textColor": "#371E55"
       },
       {
         "label": "Compre Junto e Carrinho Abandonado",
-        "url": "#"
+        "url": "#",
+        "textColor": "#371E55"
       },
       {
         "label": "Plano Aceleração",
-        "url": "#"
+        "url": "#planoaceleracao",
+        "textColor": "#371E55"
       },
       {
         "label": "Plano Expansão ",
-        "url": "#"
+        "url": "#planoexpancao",
+        "textColor": "#371E55"
       },
       {
         "label": "Plano Elite",
-        "url": "#"
+        "url": "#planoelite",
+        "textColor": "#371E55"
       },
       {
         "label": "Pagali e Enviali",
-        "url": "#"
+        "url": "#pagali",
+        "textColor": "#371E55"
       },
       {
         "label": "Plano Crescimento",
-        "url": "#"
+        "url": "#planocrescimento",
+        "textColor": "#371E55"
       },
       {
         "label": "Ecossistema de conteúdo",
-        "url": "#"
+        "url": "#",
+        "textColor": "#371E55"
       }
     ],
     "buttons": [
       {
         "href": "#",
-        "text": "Criar loja"
+        "text": "Criar loja",
+        "ctaStyle": "button",
+        "backgroundColor": "#371E55",
+        "textColor": "#ffffff",
+        "borderColor": "#371E55"
       },
       {
         "text": "Acessar minha loja",
-        "href": "#",
-        "outline": true
+        "href": "https://app.lojaintegrada.com.br/painel/login",
+        "outline": true,
+        "ctaStyle": "button",
+        "backgroundColor": "Transparent",
+        "textColor": "#371E55"
       }
     ],
     "mobileButtons": [
       {
         "href": "#",
-        "text": "Ver planos"
+        "text": "Ver planos",
+        "ctaStyle": "button"
       }
     ],
     "asideMenuButtons": [
       {
         "text": "Abrir loja virtual",
-        "href": "#"
+        "href": "#plans section",
+        "ctaStyle": "button",
+        "backgroundColor": "#371E55",
+        "textColor": "#ffffff",
+        "borderColor": "#371E55"
       },
       {
         "text": "Fazer Login",
-        "href": "#",
-        "outline": true
+        "href": "https://app.lojaintegrada.com.br/painel/login",
+        "outline": true,
+        "ctaStyle": "button",
+        "backgroundColor": "Transparent",
+        "textColor": "#371E55",
+        "borderColor": "#371E55"
       }
     ],
-    "sideMenuButtons": []
+    "sideMenuButtons": [],
+    "linksBorderColor": "#CCC4CF",
+    "textHoverColor": "#C6B3CE",
+    "textColor": "#371E55"
   },
   "logo": {
     "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12380/089daad4-d996-4911-9340-e227552948de"
   },
-  "initialButtons": []
+  "initialButtons": [],
+  "backgroundColor": "#ffffff",
+  "barsColor": "#371E55",
+  "asideMenuTopBackgroundColor": "#C6B3CE",
+  "asideMenuBackgroundColor": "#ffffff"
 }

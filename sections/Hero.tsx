@@ -34,6 +34,7 @@ export interface BigNumber {
 }
 
 export interface Props {
+  id?: string;
   title?: string;
   caption?: string;
   description?: string;
@@ -51,6 +52,7 @@ export interface Props {
 
 
 export default function Hero({
+  id,
   title,
   caption,
   description,
@@ -66,7 +68,7 @@ export default function Hero({
   backgroundImage,
 }: Props) {
   return (
-    <div class={`flex flex-col lg:flex-row w-full mt-48 text-primary leading-[120%] ${placement == "left" ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
+    <div id={id} class={`flex flex-col lg:flex-row w-full mt-48 text-primary leading-[120%] ${placement == "left" ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
       <AnimateOnShow divClass={`relative lg:w-1/2 flex flex-col lg:flex-row ${placement == "left" ? 'justify-start' : 'justify-end'}`} animation="animate-fade-right">
         {backgroundImage?.src && <Image
           src={backgroundImage.src}

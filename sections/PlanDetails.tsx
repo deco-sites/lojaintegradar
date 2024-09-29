@@ -4,6 +4,7 @@ import { useId } from "site/sdk/useId.ts";
 import Slider from "../components/ui/Slider3.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useScript } from "@deco/deco/hooks";
+
 const onLoad = (rootId: string, words: string[], wordDelay: number, letterDelay: number) => {
     const typingSpan = document.getElementById(rootId + 'typingSpan') as HTMLElement | null;
     if (typingSpan) {
@@ -78,6 +79,7 @@ export interface Slide {
     bulletPoints?: BulletPoints;
 }
 export interface Props {
+    id?: string;
     backgroundVideo?: VideoWidget;
     backgroundImage?: IImage;
     useBackground?: 'video' | 'image';
@@ -158,11 +160,11 @@ function Buttons() {
         </div>
     </div>);
 }
-export default function PlanDetails({ title, titleTyping = [], color3, letterDelay, wordDelay, backgroundVideo, backgroundImage, useBackground, planTag, slidesTitle, slidesTitleIcon, slides, showArrows = true, annualValues, montlyValues, bottomBackground }: Props) {
-    const id = useId();
-    const carouselId = `${id}carousel`;
-    return (<div class={`overflow-hidden ${!useBackground && 'bg-primary'} leading-[120%] text-primary-content`}>
-        <div class="relative flex justify-center items-center w-full h-[86vw] lg:h-[43vw]">
+export default function PlanDetails({ id, title, titleTyping = [], color3, letterDelay, wordDelay, backgroundVideo, backgroundImage, useBackground, planTag, slidesTitle, slidesTitleIcon, slides, showArrows = true, annualValues, montlyValues, bottomBackground }: Props) {
+
+    const carouselId = useId();
+    return (<div id={id} class={`overflow-hidden ${!useBackground && 'bg-primary'} leading-[120%] text-primary-content`}>
+        <div id={carouselId} class="relative flex justify-center items-center w-full h-[86vw] lg:h-[43vw]">
             {planTag?.text && <div class="absolute w-full top-0 left-0">
                 <div class="w-full max-w-[1200px] mx-auto mt-">
                     <AnimateOnShow divClass="py-2 px-4 ml-7 mt-20 lg:mt-24 bg-primary rounded-[20px] inline-flex gap-2.5" animation="animate-pop-up">
@@ -187,10 +189,10 @@ export default function PlanDetails({ title, titleTyping = [], color3, letterDel
                 </object>
             </video>}
             {useBackground == "image" && backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 618} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top w-full absolute top-0 left-0 -z-10" />}
-            <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id, titleTyping, wordDelay || 3000, letterDelay || 100) }} />
+            <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, carouselId, titleTyping, wordDelay || 3000, letterDelay || 100) }} />
             <AnimateOnShow animation="animate-fade-down" divClass="text-2xl lg:text-5xl px-7 lg:px-0 text-center font-semibold max-w-[870px] leading-[120%]">
                 {title}
-                {titleTyping.length > 0 && <span id={id + 'typingSpan'} style={{ color: color3 }}>
+                {titleTyping.length > 0 && <span id={carouselId + 'typingSpan'} style={{ color: color3 }}>
                     {titleTyping[0]}
                 </span>}
                 {titleTyping.length > 0 && <span class="animate-blink" style={{ color: color3 }}>|</span>}

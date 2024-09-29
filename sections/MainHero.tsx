@@ -1,10 +1,12 @@
 
-import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
 export interface IImage {
-    src: ImageWidget;
+    src?: ImageWidget;
     alt?: string;
+    width?: number;
+    height?: number;
 }
 
 export interface Props {
@@ -18,7 +20,9 @@ export interface Props {
     inputLabelColor?: string;
     /** @format color-input */
     inputLabelBackgroundColor?: string;
-    image: IImage;
+    image?: IImage;
+    video?: VideoWidget;
+    use?: "image" | "video";
     backgroundImage?: IImage
     /** @format color-input */
     hubspotFormButtonColor?: string;
@@ -28,7 +32,7 @@ export interface Props {
     hubspotErrorMessageColor?: string;
 }
 
-export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, image, titleColor, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor }: Props) {
+export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, image, titleColor, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use }: Props) {
     return <div id={id} class="flex min-h-96 pt-40 relative overflow-hidden">
         {backgroundImage?.src && <Image
             width={1440}
@@ -69,13 +73,28 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
         </div>
 
         <div class="flex-grow hidden md:flex justify-end w-1/2">
-            <Image
-                width={697}
-                height={592}
+            {use == "image" && image?.src && <Image
+                width={image.width || 697}
+                height={image.height || 592}
                 src={image.src}
                 alt={image.src || ""}
                 class="h-[697px] object-contain"
-            />
+            />}
+            {use == "video" && video && <video
+                width="697"
+                height="592"
+                autoPlay
+                playsInline
+                muted
+                loading="lazy"
+                loop
+                class="w-full xl:w-auto max-w-[809px] object-contain"
+            >
+                <source src={video} type="video/mp4" />
+                <object data="" width="697" height="592">
+                    <embed width="697" height="592" src={video} />
+                </object>
+            </video>}
         </div>
 
 

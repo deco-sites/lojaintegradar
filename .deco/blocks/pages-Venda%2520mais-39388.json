@@ -27,8 +27,10 @@
             "inputLabelBackgroundColor": "#EAE0EE",
             "inputLabelColor": "#371E55",
             "titleColor": "#371E55",
-            "hubspotFormButtonColor": "#00ff40",
-            "hubspotFormButtonTextColor": "#124cfd"
+            "hubspotFormButtonColor": "#371E55",
+            "hubspotFormButtonTextColor": "#ffffff",
+            "hubspotErrorMessageColor": "#F57E77",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -57,7 +59,8 @@
             "inputLabelBackgroundColor": "#EAE0EE",
             "hubspotFormButtonColor": "#371E55",
             "hubspotFormButtonTextColor": "#ffffff",
-            "hubspotErrorMessageColor": "#F57E77"
+            "hubspotErrorMessageColor": "#F57E77",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

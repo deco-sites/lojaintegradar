@@ -23,7 +23,12 @@
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/da9060c9-9708-4d08-b57d-e038c769434f/background-image.webp",
               "alt": "background image"
-            }
+            },
+            "inputLabelBackgroundColor": "#EAE0EE",
+            "inputLabelColor": "#371E55",
+            "titleColor": "#371E55",
+            "hubspotFormButtonColor": "#00ff40",
+            "hubspotFormButtonTextColor": "#124cfd"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -46,7 +51,13 @@
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/da9060c9-9708-4d08-b57d-e038c769434f/background-image.webp",
               "alt": "background image"
-            }
+            },
+            "titleColor": "#371E55",
+            "inputLabelColor": "#371E55",
+            "inputLabelBackgroundColor": "#EAE0EE",
+            "hubspotFormButtonColor": "#371E55",
+            "hubspotFormButtonTextColor": "#ffffff",
+            "hubspotErrorMessageColor": "#F57E77"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

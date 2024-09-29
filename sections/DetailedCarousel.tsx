@@ -2,7 +2,6 @@ import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts
 import Image from "apps/website/components/Image.tsx";
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
-import { CSS } from "../static/css2.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 

@@ -1,4 +1,4 @@
-import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 import { useId } from "../sdk/useId.ts";
 import TcoCalculatorPage1 from "site/components/TcoCalculatorPage1.tsx";
 import TcoCalculatorPage2 from "site/components/TcoCalculatorPage2.tsx";
@@ -9,7 +9,6 @@ import { Page1 } from "site/components/TcoCalculatorPage1.tsx";
 import { Page2 } from "site/components/TcoCalculatorPage2.tsx";
 import { Page3 } from "site/components/TcoCalculatorPage3.tsx"
 import { Page4 } from "site/components/TcoCalculatorPage4.tsx";
-import { CSS } from "../static/css2.ts"
 
 export interface IImage {
     src: ImageWidget;

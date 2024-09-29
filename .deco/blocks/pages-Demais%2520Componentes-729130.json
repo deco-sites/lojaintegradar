@@ -1,0 +1,286 @@
+{
+  "name": "Demais Componentes",
+  "path": "/demais-componentes",
+  "sections": [
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/MigrateToUs.tsx",
+            "header": {
+              "title": "Como a Loja Integrada pode fazer seu dinheiro render mais?",
+              "subtitleColor": "",
+              "titleColor": "#371E55",
+              "description": "Por aqui, você potencializa suas vendas\ne economiza os gastos da sua operação com nossas soluções nativas",
+              "descriptionColor": "#828CA0"
+            },
+            "features": [
+              {
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+                  "alt": "feature",
+                  "width": 335,
+                  "height": 198
+                },
+                "title": "Tráfego qualificado",
+                "description": "Aumente seu tráfego através de campanhas de mídia paga com altíssimo retorno (ROAS), através de integrações nativas com Google Shopping, TikTok, Meta e Whatsapp.",
+                "titleColor": "#371E55",
+                "descriptionColor": "#828CA0",
+                "url": "#",
+                "urlColor": "#371E55"
+              },
+              {
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+                  "alt": "feature",
+                  "width": 335,
+                  "height": 198
+                },
+                "title": "Ticket médio",
+                "description": "Gere mais receita por usuário com baixo esforço, aumentando seu ticket médio com ferramentas nativas como: Promoções, cupons, Carrinho Abandonado e Compre Junto.",
+                "titleColor": "#371E55",
+                "descriptionColor": "#828CA0",
+                "url": "#",
+                "urlColor": "#371E55"
+              },
+              {
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+                  "alt": "feature",
+                  "width": 335,
+                  "height": 198
+                },
+                "title": "Taxa de conversão",
+                "description": "Recupere vendas sem gastar com anúncios pagos, reengajando visitantes que mostraram carrinho e não concluíram suas compras, com a solução nativa do Carrinho Abandonado.",
+                "titleColor": "#371E55",
+                "descriptionColor": "#828CA0",
+                "url": "#",
+                "urlColor": "#371E55"
+              },
+              {
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+                  "alt": "feature",
+                  "width": 335,
+                  "height": 198
+                },
+                "title": "Relacionamento com cliente",
+                "description": "Fale com seus clientes via Whatsapp e converta mais vendas com o aplicativo Conectall.",
+                "titleColor": "#371E55",
+                "descriptionColor": "#828CA0",
+                "url": "#",
+                "urlColor": "#371E55"
+              }
+            ],
+            "button": {
+              "textColor": "",
+              "backgroundColor": ""
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/MigrateToUs.tsx",
+            "header": {
+              "subtitle": "Planos",
+              "title": "Como a Loja Integrada pode fazer seu dinheiro render mais",
+              "subtitleColor": "#828CA0",
+              "titleColor": "#371E55"
+            },
+            "features": [
+              {
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+                  "alt": "feature",
+                  "width": 292,
+                  "height": 240
+                },
+                "title": "Tráfego qualificado",
+                "description": "Aumente seu tráfego através de campanhas de mídia paga com altíssimo retorno (ROAS), através de integrações nativas com Google Shopping, TikTok, Meta e Whatsapp.",
+                "titleColor": "#371E55",
+                "descriptionColor": "#485565"
+              },
+              {
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+                  "alt": "feature",
+                  "width": 292,
+                  "height": 240
+                },
+                "title": "Ticket médio",
+                "description": "Gere mais receita por usuário com baixo esforço, aumentando seu ticket médio com ferramentas nativas como: Promoções, cupons, Carrinho Abandonado e Compre Junto.",
+                "titleColor": "#371E55",
+                "descriptionColor": "#485565"
+              },
+              {
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+                  "alt": "feature",
+                  "width": 292,
+                  "height": 240
+                },
+                "title": "Taxa de conversão",
+                "description": "Recupere vendas sem gastar com anúncios pagos, reengajando visitantes que mostraram carrinho e não concluíram suas compras, com a solução nativa do Carrinho Abandonado.",
+                "titleColor": "#371E55",
+                "descriptionColor": "#485565"
+              },
+              {
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+                  "alt": "feature",
+                  "width": 292,
+                  "height": 240
+                },
+                "title": "Relacionamento com cliente",
+                "description": "Fale com seus clientes via Whatsapp e converta mais vendas com o aplicativo Conectall.",
+                "titleColor": "#371E55",
+                "descriptionColor": "#485565"
+              }
+            ],
+            "button": {
+              "text": "Migre para a Loja Integrada",
+              "url": "#",
+              "textColor": "#ffffff",
+              "backgroundColor": "#371E55"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/CalculateYourCosts.tsx",
+      "title": "Custo Total de Propriedade (TCO) de um ecommerce",
+      "titleColor": "#1B1525",
+      "subtitle": "O TCO é a soma de todos os custos relacionados à implementação, operação e manutenção de uma loja virtual ao longo de sua vida útil. Por considerar um ciclo de vida completo, o TCO mostra quanto seu ecommerce realmente custa para o seu bolso.",
+      "subtitleColor": "#1B1525",
+      "backgroundColor": {
+        "startColor": "#A482F966",
+        "middleColor": "#DED2FD",
+        "endColor": "#fdfdff"
+      },
+      "decorativeImage": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/381da9c0-e12a-4878-8271-85a59039c571/Layer_1.webp",
+        "alt": "Coins",
+        "width": 232,
+        "height": 208
+      },
+      "cards": [
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/84e1294b-445f-4a6d-91cd-0c58eac93926/Vector.svg",
+            "width": 17,
+            "height": 25
+          },
+          "title": "Negócio",
+          "description": "Compare seus custos mensais de plataforma e comissão versus sua receita.",
+          "titleColor": "#1B1525",
+          "descriptionColor": "#1B1525"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e864ef68-733a-49f3-bfc3-471fa8f47051/Vector.svg",
+            "width": 25,
+            "height": 25
+          },
+          "title": "Pagamento",
+          "description": "Analise seus custos com tarifas de cartão de crédito, pix, boleto e ferramentas antifraude.",
+          "titleColor": "#1B1525",
+          "descriptionColor": "#1B1525"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4e4541a9-c7dc-4e14-b7c4-3a3118d266d1/start-up-1.svg",
+            "width": 25,
+            "height": 25
+          },
+          "title": "Envio",
+          "description": "Leve em consideração todos os custos que sua loja possui com o envio de produtos.",
+          "titleColor": "#1B1525",
+          "descriptionColor": "#1B1525"
+        }
+      ],
+      "button": {
+        "text": "Calcule seus custos e compare",
+        "color": "#ffffff",
+        "url": "#",
+        "backgroundColor": "#371E55"
+      },
+      "spacingTop": 32
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "title": "O Monstro da Indecisão ainda te deixa com medo de mudar?",
+            "titleColor": "#371E55",
+            "subtitle": "Então talvez esteja na hora de você tirar algumas dúvidas.",
+            "subtitleColor": "#371E55",
+            "button": {
+              "label": "Fale com um especialista",
+              "url": "#",
+              "textColor": "#FFFFFF",
+              "backgroundColor": "#371E55"
+            },
+            "backgroundColor": "#ffc19f",
+            "leftImage": {},
+            "rightImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/32ca6214-fa9a-48ee-b221-36a2f853649d/Render-Test_16-9-4-2-(2)-(1).webp",
+              "alt": "Imagem da direita",
+              "width": 239,
+              "height": 310
+            },
+            "__resolveType": "site/sections/TalkToAnExpert.tsx"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "title": "O Monstro da Indecisão ainda te deixa com medo de mudar?",
+            "titleColor": "#371E55",
+            "subtitle": "Então talvez esteja na hora de você tirar algumas dúvidas.",
+            "subtitleColor": "#371E55",
+            "button": {
+              "label": "Fale com um especialista",
+              "url": "#",
+              "textColor": "#FFFFFF",
+              "backgroundColor": "#371E55"
+            },
+            "backgroundColor": "#ffc19f",
+            "leftImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8abed8d5-7d72-45f8-98b0-b1c9c88cdf72/9d0c10564c7321b11ed2b5f9731eed92-(2).webp",
+              "alt": "Imagem da esquerda",
+              "width": 571,
+              "height": 451
+            },
+            "rightImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/68532480-597b-428a-91dc-72cdd176ba1a/Render-Test_16-9-4-2-(1).webp",
+              "alt": "Imagem da direita",
+              "width": 315,
+              "height": 310
+            },
+            "__resolveType": "site/sections/TalkToAnExpert.tsx"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

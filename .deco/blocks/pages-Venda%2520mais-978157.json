@@ -5985,6 +5985,170 @@
       "variants": [
         {
           "value": {
+            "__resolveType": "site/sections/BigImageHero.tsx",
+            "title": "Encante seu cliente",
+            "titleColor": "#371E55",
+            "caption": "Tenha um visual profissional em poucos cliques!",
+            "captionColor": "#371E55",
+            "features": [
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
+                },
+                "title": "Funcionalidades extras",
+                "titleColor": "#371E55",
+                "text": "Potencializa ainda mais sua loja com recursos exclusivos"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
+                },
+                "title": "Contratação vitalícia",
+                "titleColor": "#371E55",
+                "text": "Contrate uma vez e use por quanto tempo quiser",
+                "textColor": "#371E55"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
+                },
+                "title": "Suporte Estendido",
+                "titleColor": "#371E55",
+                "text": "Um ano de suporte com nossos parceiros",
+                "textColor": "#371E55"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
+                },
+                "title": "100% editável ",
+                "titleColor": "#371E55",
+                "text": "Personalize de acordo com seu segmento, código aberto para edição livre",
+                "textColor": "#371E55"
+              }
+            ],
+            "cta": [
+              {
+                "href": "/talkToSpecialist",
+                "text": "Ver planos ",
+                "backgroundColor": "t",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button",
+                "showIcon": false
+              },
+              {
+                "href": "#",
+                "text": "Já tem uma loja?",
+                "backgroundColor": "",
+                "textColor": "#371E55",
+                "borderColor": "",
+                "underlineText": "Ative agora",
+                "ctaStyle": "link",
+                "showIcon": true
+              }
+            ],
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
+            },
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb8a0a0-826d-49a8-9c4f-87204f15ce0b/moda-tema-mobile-1.svg"
+            },
+            "use": "image",
+            "bottomFloatingImage": {}
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/BigImageHero.tsx",
+            "title": "Personalização e visuais",
+            "titleColor": "#371E55",
+            "caption": "Uma loja de temas e serviços para seu negócio ficar incrível",
+            "captionColor": "#371E55",
+            "features": [
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
+                },
+                "title": "Funcionalidades extras",
+                "titleColor": "#371E55",
+                "text": "Potencializa ainda mais sua loja com recursos exclusivos"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
+                },
+                "title": "Contratação vitalícia",
+                "titleColor": "#371E55",
+                "text": "Contrate uma vez e use por quanto tempo quiser",
+                "textColor": "#371E55"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
+                },
+                "title": "Suporte Estendido",
+                "titleColor": "#371E55",
+                "text": "Um ano de suporte com nossos parceiros",
+                "textColor": "#371E55"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
+                },
+                "title": "100% editável ",
+                "titleColor": "#371E55",
+                "text": "Personalize de acordo com seu segmento, código aberto para edição livre",
+                "textColor": "#371E55"
+              }
+            ],
+            "cta": [
+              {
+                "href": "/talkToSpecialist",
+                "text": "Ver planos ",
+                "backgroundColor": "t",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button",
+                "showIcon": false
+              },
+              {
+                "href": "#",
+                "text": "Já tem uma loja?",
+                "backgroundColor": "",
+                "textColor": "#371E55",
+                "borderColor": "",
+                "underlineText": "Ative agora",
+                "ctaStyle": "link",
+                "showIcon": true
+              }
+            ],
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
+            },
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4db6d41b-a78e-45da-834d-1458bc900f19/big-image-hero-image.gif"
+            },
+            "use": "image",
+            "bottomFloatingImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c36230b-5d85-4f99-af96-67f513e7c7d8/floating-bottom-image.svg"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
             "__resolveType": "site/sections/PlanDetails2.tsx",
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d20efb42-545b-49e0-9acc-e12f5b6e0541/crescimento-background-mobile.svg"
@@ -6087,7 +6251,7 @@
               "title": "Anual",
               "tag": "20% OFF",
               "saving": "⚡️ Economize R$ 240 no plano anual",
-              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano qweqw</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>"
+              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>"
             },
             "montlyValues": {
               "title": "Mensal",
@@ -6224,102 +6388,7 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Footer2.tsx",
-      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/14f03500-2d05-4be8-8b68-ceef7e392022/video-dobra-comunidade.webm",
-      "backgroundImage": {},
-      "color1": "#371E55",
-      "color2": "#FFFFFF",
-      "cards": [
-        {
-          "cardIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
-          },
-          "title": "Conheça nosso Blog",
-          "text": "Informação, insights e muito, muito conteúdo de valor para seu negócio crescer.",
-          "CTA": {
-            "text": "Conhecer",
-            "href": "#"
-          }
-        },
-        {
-          "cardIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
-            "alt": "youtube green icon"
-          },
-          "title": "Conheça nosso canal no Youtube",
-          "text": "Debates, conversas e muito, muito aprendizado para quem  quer impulsionar suas vendas.",
-          "CTA": {
-            "text": "Conhecer",
-            "href": "#"
-          }
-        }
-      ],
-      "color3": "#EBEBEB",
-      "useBackground": "video",
-      "title": "Estamos com você em toda a sua jornada de crescimento!",
-      "logoCaption": "Mais venda, mais eficiência Com quem entende disso.",
-      "logo": {
-        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
-      },
-      "showForm": true,
-      "emailForm": {
-        "inputName": "email",
-        "inputLabel": "Junte-se a mais de  2,5 milhões de lojistas",
-        "inputPlaceHolder": "Digite seu email aqui",
-        "submitText": "Fazer parte"
-      },
-      "socialLinks": [
-        {
-          "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
-            "alt": "linkein icon"
-          },
-          "href": "http://linkedin.com"
-        },
-        {
-          "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
-            "alt": "instgram icon"
-          },
-          "href": "https://instagram.com"
-        },
-        {
-          "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
-          },
-          "href": "https://tiktok.com"
-        }
-      ],
-      "color4": "#d4d4d4",
-      "bottomLinks": [
-        {
-          "href": "https://comunidade.lojaintegrada.com.br/",
-          "text": "Conheça nossa comunidade"
-        },
-        {
-          "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
-          "text": "Central de ajuda"
-        },
-        {
-          "text": "Fale com especialista",
-          "href": "/talkToSpecialist"
-        },
-        {
-          "href": "https://lojaintegrada.com.br/termos-de-uso",
-          "text": "Termos de uso"
-        },
-        {
-          "href": "https://lojaintegrada.com.br/privacidade",
-          "text": "Privacidade"
-        },
-        {
-          "href": "#",
-          "text": "Comece pelo grátis"
-        }
-      ],
-      "bottomBackground": {
-        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
-      }
+      "__resolveType": "Footer2 global"
     }
   ],
   "seo": {

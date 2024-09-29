@@ -1,4 +1,3 @@
-import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
 import HeroWithTime from "../islands/HeroWithTime.tsx";
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 
@@ -134,9 +133,7 @@ function HeroWithTimer(props: Props) {
 
     return (
         <div style={getBackgroundStyle()} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
-            <AnimateOnShow animation="animate-fade-right">
-                <HeroWithTime {...props} />
-            </AnimateOnShow>
+            <HeroWithTime {...props} />
         </div>
     )
 }

@@ -17,7 +17,7 @@ function HeroCard({
 
     return (
         <>
-            <div class="customContainer">
+            <div data-aos="fade-up" class="customContainer">
                 <div class="w-full relative max-w-[420px] lg:max-w-[1256px] mx-auto px-[10px]">
                     {cardBackgroundImage?.desktop && (
                         <Image

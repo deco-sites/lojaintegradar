@@ -143,7 +143,7 @@ function Carousel(props: Props) {
     const { title, slides, interval, backgroundImage, cta, links } = { ...props };
     return (<div id="detailedCarousel" class="relative mt-16">
         {backgroundImage && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={1440} height={1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-fill" /></div>}
-        <div id={id} class="min-h-min flex items-center flex-col lg:container md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24">
+        <div id={id} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24">
 
             {title && <AnimateOnShow divClass="max-w-[307px] md:max-w-full text-2xl md:text-5xl text-primary text-center font-semibold leading-snug pb-7 md:pb-12 lg:pb-16">
                 {title}

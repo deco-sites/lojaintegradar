@@ -184,7 +184,7 @@ export default function PlanDetails2({ color1, color2, color3, color4, color5, c
             height={backgroundImage.height || 950}
             src={backgroundImage.src}
             alt={backgroundImage.alt || "background image"}
-            class="object-cover absolute h-full w-full top-0 left-0 -z-50"
+            class="object-cover object-top absolute h-full w-full top-0 left-0 -z-50"
         />}
         <div class="max-w-[1244px] mx-auto flex flex-wrap lg:flex-nowrap justify-center gap-[18px] lg:gap-[100px]">
             <AnimateOnShow animation="animate-fade-right" divClass="w-full xl:w-auto px-6 lg:px-0">

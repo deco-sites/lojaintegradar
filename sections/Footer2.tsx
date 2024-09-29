@@ -1,6 +1,7 @@
-import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
+import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 
 export interface IImage {
     src?: ImageWidget;
@@ -88,7 +89,9 @@ export default function Footer2({ title, backgroundImage, backgroundVideo, useBa
                 alt={backgroundImage.alt || "background image"}
                 class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10"
             />}
-            <h2 class="pb-14 lg:pb-[14vw] text-center text-2xl lg:text-[40px] leading-[120%] font-medium max-w-[576px] text-primary-content" style={{ color: color2 }}>{title}</h2>
+            <AnimateOnShow animation="animate-fade-down50">
+                <h2 class="pb-14 lg:pb-[14vw] text-center text-2xl lg:text-[40px] leading-[120%] font-medium max-w-[576px] text-primary-content" style={{ color: color2 }}>{title}</h2>
+            </AnimateOnShow>
         </div>
         <div class="relative pb-32">
             {bottomBackground?.src && <Image
@@ -98,7 +101,7 @@ export default function Footer2({ title, backgroundImage, backgroundVideo, useBa
                 alt={bottomBackground.alt || "footer bottom background image"}
                 class="absolute h-full w-full top-0 left-0 object-fill -z-50"
             />}
-            <div class="max-w-[1070px] pl-7 py-9 lg:p-0 lg:mx-auto -mt-[68px] lg:-mt-28 flex lg:flex-wrap overflow-auto lg:overflow-visible lg:justify-center gap-2.5 lg:gap-[42px]">
+            <AnimateOnShow divClass="max-w-[1070px] pl-7 py-9 lg:p-0 lg:mx-auto -mt-[68px] lg:-mt-28 flex lg:flex-wrap overflow-auto lg:overflow-visible lg:justify-center gap-2.5 lg:gap-[42px]" animation="animate-fade-up">
                 {cards.length > 0 && cards.map((card) => (
                     <div class="flex-grow min-w-[78vw] lg:min-w-0 lg:max-w-[500px] rounded-[30px] bg-primary-content py-7 lg:py-10 px-12 lg:px-14 shadow-spreaded3" style={{ backgroundColor: color2 }}>
                         <div class="flex gap-2.5 lg:gap-5 items-center">
@@ -125,9 +128,9 @@ export default function Footer2({ title, backgroundImage, backgroundVideo, useBa
                         </a>}
                     </div>
                 ))}
-            </div>
+            </AnimateOnShow>
             <div class="max-w-[1240px] mx-auto flex flex-col lg:flex-row gap-4 justify-between items-center mt-9 lg:mt-20">
-                <div class="max-w-[193px] order-1 lg:-order-none">
+                <AnimateOnShow divClass="max-w-[193px] order-1 lg:-order-none" animation="animate-fade-up" delay={100}>
                     {logo?.src && <Image
                         width={logo.width || 193}
                         height={logo.height || 31}
@@ -136,30 +139,32 @@ export default function Footer2({ title, backgroundImage, backgroundVideo, useBa
                         class="object-contain mb-4"
                     />}
                     <p class="text-sm font-normal leading-normal">{logoCaption}</p>
-                </div>
+                </AnimateOnShow>
 
-                {showForm && <form class="flex flex-wrap gap-5 items-center justify-center" action={emailForm?.action}>
-                    {emailForm?.inputLabel && <p class="text-base font-semibold max-w-[173px]">{emailForm?.inputLabel}</p>}
-                    <div class={`bg-primary-content flex justify-between py-1.5 pr-1.5 text-base text-primary border border-base-200 rounded-xl shadow-spreaded h-[63px] `} style={{ borderColor: color3 }}>
-                        <input
-                            type="email"
-                            required
-                            class="w-1/2 md:w-auto md:flex-grow h-[47px] pl-2 md:pl-7 focus:outline-none text-sm md:text-base"
-                            placeholder={emailForm?.inputPlaceHolder}
-                        />
-                        <button type="submit" class="btn btn-primary font-bold px-7 hover:scale-110 text-lg" style={{ backgroundColor: color1, borderColor: color1 }}>
-                            {emailForm?.submitText}
-                        </button>
-                    </div>
-                </form>}
+                <AnimateOnShow animation="animate-fade-up" delay={250} animationDuration="animate-fade-up">
+                    {showForm && <form class="flex flex-wrap gap-5 items-center justify-center" action={emailForm?.action}>
+                        {emailForm?.inputLabel && <p class="text-base font-semibold max-w-[173px]">{emailForm?.inputLabel}</p>}
+                        <div class={`bg-primary-content flex justify-between py-1.5 pr-1.5 text-base text-primary border border-base-200 rounded-xl shadow-spreaded h-[63px] `} style={{ borderColor: color3 }}>
+                            <input
+                                type="email"
+                                required
+                                class="w-1/2 md:w-auto md:flex-grow h-[47px] pl-2 md:pl-7 focus:outline-none text-sm md:text-base"
+                                placeholder={emailForm?.inputPlaceHolder}
+                            />
+                            <button type="submit" class="btn btn-primary font-bold px-7 hover:scale-110 text-lg" style={{ backgroundColor: color1, borderColor: color1 }}>
+                                {emailForm?.submitText}
+                            </button>
+                        </div>
+                    </form>}
+                </AnimateOnShow>
 
-                <div class="flex gap-5 order-3">
+                <AnimateOnShow divClass="flex gap-5 order-3" delay={400} animation="animate-fade-up">
                     {socialLinks?.map((link) => (
                         <a href={link.href} target="_blank">
                             <Image width={link.icon.width || 21} height={link.icon.height || 21} src={link.icon.src || ""} alt={link.icon.alt || "social media icon"} class="object-contain" />
                         </a>
                     ))}
-                </div>
+                </AnimateOnShow>
 
             </div>
 

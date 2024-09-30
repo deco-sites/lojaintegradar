@@ -363,9 +363,12 @@
                     "Aniversariantes do mês ",
                     "Newsletter ",
                     "E muito mais..."
-                  ]
+                  ],
+                  "textColor": "#371E55",
+                  "bulletPointsTitle": "ste"
                 },
-                "time": 3
+                "time": 3,
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -385,8 +388,10 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  }
-                }
+                  },
+                  "textColor": "#371E55"
+                },
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -408,8 +413,10 @@
                     "Pedidos Manuais",
                     "API da META",
                     "+80 aplicativos extras"
-                  ]
-                }
+                  ],
+                  "textColor": "#371E55"
+                },
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -427,9 +434,11 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+30 Serviços de parceiros recomendados "
+                "title": "+30 Serviços de parceiros recomendados ",
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -448,9 +457,11 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+7 Formas de pagamento "
+                "title": "+7 Formas de pagamento ",
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -472,9 +483,11 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+10 Formas de envio"
+                "title": "+10 Formas de envio",
+                "titleColor": "#371E55"
               }
             ],
             "arrows": true,
@@ -488,16 +501,26 @@
             "cta": [
               {
                 "text": "Ver planos",
+                "href": "#",
+                "ctaStyle": "button",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55"
+              },
+              {
+                "ctaStyle": "link",
+                "text": "Já tem uma loja?",
+                "underlineText": " Ative agora",
+                "showIcon": true,
+                "textColor": "#371E55",
                 "href": "#"
               }
             ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja?",
-                "text": " Ative agora",
-                "href": "#"
-              }
-            ]
+            "links": [],
+            "progressBarBackgroundColor": "#b21515",
+            "titleColor": "#371E55",
+            "arrowsColor": "#371E55",
+            "dotsColor": "#371E55"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -527,11 +550,13 @@
                     "Aniversariantes do mês ",
                     "Newsletter ",
                     "E muito mais..."
-                  ]
+                  ],
+                  "textColor": "#371E55"
                 },
                 "time": 3,
                 "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/2014ce37-ca95-449b-8498-8d66dec23865/Developer-Coding-Background.mp4",
-                "use": "image"
+                "use": "image",
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -551,8 +576,10 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  }
-                }
+                  },
+                  "textColor": "#371E55"
+                },
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -574,8 +601,10 @@
                     "Pedidos Manuais",
                     "API da META",
                     "+80 aplicativos extras"
-                  ]
-                }
+                  ],
+                  "textColor": "#371E55"
+                },
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -593,9 +622,11 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+30 Serviços de parceiros recomendados "
+                "title": "+30 Serviços de parceiros recomendados ",
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -614,9 +645,11 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+7 Formas de pagamento "
+                "title": "+7 Formas de pagamento ",
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -638,12 +671,14 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+10 Formas de envio"
+                "title": "+10 Formas de envio",
+                "titleColor": "#371E55"
               }
             ],
-            "arrows": true,
+            "arrows": false,
             "title": "Um ecossistema de recursos",
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/46f543f0-e203-4ed6-b206-835381812669/detailed-carousel-background.jpg",
@@ -654,15 +689,27 @@
             "cta": [
               {
                 "text": "Ver planos",
-                "href": "#"
+                "href": "#",
+                "ctaStyle": "button",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff"
               },
               {
                 "text": "Falar com Especialista ",
                 "href": "/talkToSpecialist",
-                "outline": true
+                "outline": true,
+                "ctaStyle": "button",
+                "backgroundColor": "tRANSPARENT",
+                "textColor": "#371E55",
+                "borderColor": "#371E55"
               }
             ],
-            "links": []
+            "links": [],
+            "titleColor": "#371E55",
+            "arrowsColor": "#371E55",
+            "dotsColor": "#371E55",
+            "progressBarBackgroundColor": "#2caf53"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

@@ -22,7 +22,6 @@ export interface BulletPoints {
 /** @title {{title}} */
 export interface CarouselItem {
     title: string;
-    titleColor?: string;
     caption: HTMLWidget;
     /** @format color-input */
     textColor?: string;

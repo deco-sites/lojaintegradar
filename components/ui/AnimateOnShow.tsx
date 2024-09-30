@@ -29,10 +29,11 @@ export interface Props {
     delay?: number;
     animation?: string;
     animationDuration?: string;
+    id?: string;
 }
 
-export default function FadeDown({ children, divClass = "", delay = 0, animationDuration, animation = 'animate-fade-down' }: Props) {
-    const id = useId();
+export default function FadeDown({ id, children, divClass = "", delay = 0, animationDuration, animation = 'animate-fade-down' }: Props) {
+    if (!id) id = useId();
     return <div id={id} class={divClass} style={{ animationDuration }}>
         <script
             type="module"

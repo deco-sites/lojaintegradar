@@ -201,7 +201,7 @@
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/fb4a2731-809a-46cd-8925-fed7e3ec1023/purple-stonks-arrow.png",
             "alt": "purple arrow"
           },
-          "textColor": "Dark",
+          "textColor": "#371E55",
           "useBackground": "image",
           "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/2014ce37-ca95-449b-8498-8d66dec23865/Developer-Coding-Background.mp4"
         },
@@ -217,7 +217,7 @@
           "backgroundImage": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/b229cb86-1e0d-4853-a4f6-c2e30eeec939/carousel-image-2.png"
           },
-          "textColor": "Light",
+          "textColor": "#ffffff",
           "bulletPoints": {
             "bulletPointsTitle": "Usamos seu E-mai de forma 100% segura para:",
             "items": [
@@ -234,7 +234,7 @@
           "useBackground": "image"
         },
         {
-          "textColor": "Dark",
+          "textColor": "#371E55",
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
@@ -252,7 +252,7 @@
           "useBackground": "image"
         },
         {
-          "textColor": "Light",
+          "textColor": "#ffffff",
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
@@ -270,7 +270,7 @@
           "useBackground": "image"
         },
         {
-          "textColor": "Dark",
+          "textColor": "#371E55",
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
@@ -288,7 +288,7 @@
           "useBackground": "image"
         },
         {
-          "textColor": "Light",
+          "textColor": "#ffffff",
           "textPlacement": "Bottom",
           "icon": {
             "placement": "Top right",
@@ -314,16 +314,27 @@
       "cta": [
         {
           "href": "/",
-          "text": "Ver planos"
+          "text": "Ver planos",
+          "backgroundColor": "#371E55",
+          "textColor": "#fff5f5",
+          "borderColor": "#371E55",
+          "ctaStyle": "button"
         },
         {
           "text": "Ver recursos",
           "href": "/",
-          "outline": true
+          "outline": true,
+          "backgroundColor": "#ffffff",
+          "textColor": "#371E55",
+          "borderColor": "#371E55",
+          "ctaStyle": "button"
         }
       ],
       "interval": 0,
-      "id": "nossoecossistema"
+      "id": "nossoecossistema",
+      "titleColor": "#371E55",
+      "captionColor": "#371E55",
+      "arrowsColor": "#371E55"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

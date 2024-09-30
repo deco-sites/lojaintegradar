@@ -704,13 +704,13 @@
     },
     {
       "__resolveType": "site/sections/Prices.tsx",
-      "subTitle": {
-        "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 37pt\">Escolha a plataforma que aposta em dados e automação</span></p>",
-        "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">Escolha a plataforma que aposta </span></p><p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">em dados e automação</span></p>"
-      },
       "title": {
         "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 18pt\">Está na hora de migrar</span></p>",
         "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">Está na hora de migrar</span></p>"
+      },
+      "subTitle": {
+        "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 37pt\">Escolha a plataforma que aposta em dados e automação</span></p>",
+        "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">Escolha a plataforma que aposta </span></p><p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">em dados e automação</span></p>"
       },
       "cards": [
         {
@@ -1010,6 +1010,23 @@
           "text": "<p><span style=\"color: #ffffff\">Privacidade</span></p>"
         }
       ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/TcoCalculator.tsx",
+        "title": "Calculadora TCO",
+        "plans": [
+          {
+            "title": "Teste",
+            "montlyFee": 3,
+            "cardFee": 3,
+            "boletoFee": 3,
+            "pixFee": 3,
+            "comission": 3
+          }
+        ]
+      }
     }
   ],
   "seo": {

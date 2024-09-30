@@ -6,15 +6,22 @@ import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 /**
  * @titleBy alt
  */
+
+export interface Content {
+  description?: HTMLWidget;
+  avatar?: ImageWidget;
+  /** @description Image's alt text */
+  alt?: string;
+  name?: HTMLWidget;
+  position?: string;
+  /** @format color-input */
+  nameIconColor?: string;
+  /** @format color-input */
+  quoteIconColor?: string;
+}
+
 export interface Testimonial {
-  content?: {
-    description?: HTMLWidget;
-    avatar?: ImageWidget;
-    /** @description Image's alt text */
-    alt?: string;
-    name?: HTMLWidget;
-    position?: string;
-  };
+  content?: Content;
 }
 export interface Props {
   title?: string;
@@ -97,7 +104,7 @@ function SliderItem({ slide, id }: {
     <div class="flex flex-col justify-end rounded-[32px] h-full shadow-spreaded2 overflow-hidden pt-7">
 
       <div class="px-6 md:pl-12 md:pr-7">
-        <svg width="31" height="22" viewBox="0 0 31 22" class="text-primary fill-current" xmlns="http://www.w3.org/2000/svg">
+        <svg width="31" height="22" viewBox="0 0 31 22" class="text-primary fill-current" xmlns="http://www.w3.org/2000/svg" style={{ color: content?.quoteIconColor }}>
           <path d="M6.54688 21.7734C4.71354 21.7734 3.2526 21.1576 2.16406 19.9258C1.10417 18.6654 0.574219 17.0326 0.574219 15.0273C0.574219 12.1341 1.30469 9.34115 2.76562 6.64844C4.25521 3.95573 6.0026 1.75 8.00781 0.03125L12.6914 2.30859C11.0013 4.11328 9.71224 5.91797 8.82422 7.72266C7.96484 9.52734 7.53516 11.1029 7.53516 12.4492H12.6914V16.6172C12.6914 17.849 12.1185 19.0234 10.9727 20.1406C9.85547 21.2292 8.38021 21.7734 6.54688 21.7734ZM24.293 21.7734C22.4596 21.7734 20.9987 21.1576 19.9102 19.9258C18.8503 18.6654 18.3203 17.0326 18.3203 15.0273C18.3203 12.1341 19.0508 9.34115 20.5117 6.64844C21.9727 3.95573 23.7057 1.75 25.7109 0.03125L30.3945 2.30859C28.7044 4.11328 27.4154 5.91797 26.5273 7.72266C25.668 9.52734 25.2383 11.1029 25.2383 12.4492H30.3945V16.6172C30.3945 17.849 29.8216 19.0234 28.6758 20.1406C27.5586 21.2292 26.0977 21.7734 24.293 21.7734Z" />
         </svg>
 
@@ -109,7 +116,7 @@ function SliderItem({ slide, id }: {
         </div>
         <div class="flex flex-col">
           <div class="mt-5 flex items-center gap-1">
-            <svg height="16px" width="16px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="text-primary fill-current" viewBox="0 0 512 512" xml:space="preserve">
+            <svg height="16px" width="16px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="text-primary fill-current" viewBox="0 0 512 512" style={{ color: content?.nameIconColor }}>
               <g>
                 <g>
                   <path d="M256,0C114.62,0,0,114.62,0,256s114.62,256,256,256s256-114.62,256-256S397.38,0,256,0z M172.211,41.609 c-24.934,27.119-44.68,66.125-56.755,111.992H49.749C75.179,102.741,118.869,62.524,172.211,41.609z M25.6,256 c0-26.999,5.077-52.727,13.662-76.8h70.494c-4.608,24.294-7.356,49.963-7.356,76.8s2.748,52.506,7.347,76.8H39.262 C30.677,308.727,25.6,283,25.6,256z M49.749,358.4h65.707c12.083,45.867,31.821,84.872,56.755,111.991 C118.869,449.476,75.179,409.259,49.749,358.4z M243.2,485.188c-43.81-8.252-81.877-58.24-101.359-126.788H243.2V485.188z M243.2,332.8H135.74c-4.924-24.166-7.74-49.997-7.74-76.8s2.816-52.634,7.74-76.8H243.2V332.8z M243.2,153.6H141.841 C161.323,85.052,199.39,35.063,243.2,26.812V153.6z M462.251,153.6h-65.707c-12.083-45.867-31.821-84.873-56.755-111.992 C393.131,62.524,436.821,102.741,462.251,153.6z M268.8,26.812c43.81,8.252,81.877,58.24,101.359,126.788H268.8V26.812z M268.8,179.2h107.46c4.924,24.166,7.74,49.997,7.74,76.8s-2.816,52.634-7.74,76.8H268.8V179.2z M268.8,485.188V358.4h101.359 C350.677,426.948,312.61,476.937,268.8,485.188z M339.789,470.391c24.934-27.127,44.672-66.125,56.755-111.991h65.707 C436.821,409.259,393.131,449.476,339.789,470.391z M402.244,332.8c4.608-24.294,7.356-49.963,7.356-76.8 s-2.748-52.506-7.347-76.8h70.494c8.576,24.073,13.653,49.801,13.653,76.8c0,27-5.077,52.727-13.662,76.8H402.244z" />

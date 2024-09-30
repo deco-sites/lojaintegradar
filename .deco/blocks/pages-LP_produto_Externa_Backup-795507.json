@@ -627,6 +627,23 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/TcoCalculator.tsx",
+        "title": "Calculadora TCO",
+        "plans": [
+          {
+            "title": "Teste",
+            "montlyFee": 3,
+            "cardFee": 3,
+            "boletoFee": 3,
+            "pixFee": 3,
+            "comission": 3
+          }
+        ]
+      }
+    },
+    {
       "__resolveType": "site/sections/HeroTab.tsx",
       "title": {
         "desktop": "<p><strong><span style=\"color: rgb(40, 195, 195); font-size: 18pt\">Operação eficiente</span></strong></p>",
@@ -1010,23 +1027,6 @@
           "text": "<p><span style=\"color: #ffffff\">Privacidade</span></p>"
         }
       ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/TcoCalculator.tsx",
-        "title": "Calculadora TCO",
-        "plans": [
-          {
-            "title": "Teste",
-            "montlyFee": 3,
-            "cardFee": 3,
-            "boletoFee": 3,
-            "pixFee": 3,
-            "comission": 3
-          }
-        ]
-      }
     }
   ],
   "seo": {

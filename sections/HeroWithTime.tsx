@@ -134,7 +134,7 @@ function HeroWithTimer(props: Props) {
     };
 
     return (
-        <div style={getBackgroundStyle()} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
+        <div id="heroTimeSection" style={getBackgroundStyle()} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
             <HeroWithTime {...props} />
         </div>
     )

@@ -18,7 +18,7 @@ interface Questions {
 
 function Accordion({ questions, buttons }: Props) {
     return (
-        <div className="bg-base-300">
+        <div id="accordionSection" className="bg-base-300">
             <div className="join join-vertical w-full px-4 flex mx-auto xl:px-0 py-[60px] lg:py-40 max-w-[768px]">
                 <div data-aos="zoom-in" className="flex flex-col mb-12 md:mb-20">
                     <span className="text-primary-content text-[50px] md:text-[80px] font-normal font-instrument max-w-[215px] md:max-w-[unset] text-center mx-auto">Perguntas frequentes</span>

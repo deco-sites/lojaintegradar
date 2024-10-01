@@ -66,7 +66,7 @@ export interface Buttons {
 
 function HeroTabs(props: Props) {
   return (
-    <div class="bg-base-300 px-[10px] py-[60px] lg:pb-[124px] lg:pt-[160px]">
+    <div id="heroTabSection" class="bg-base-300 px-[10px] py-[60px] lg:pb-[124px] lg:pt-[160px]">
       <HeroTab {...props} />
     </div>
   )

@@ -55,7 +55,7 @@ function Header({
     labelText,
 }: Props) {
     return (
-        <header class="customContainer pt-[36px] min-h-[455px] max-h-[455px] lg:min-h-[800px] flex flex-col items-center justify-normal">
+        <header id="headerSection" class="customContainer pt-[36px] min-h-[455px] max-h-[455px] lg:min-h-[800px] flex flex-col items-center justify-normal">
             <>
                 {backgroundType === "image" && (
                     <>

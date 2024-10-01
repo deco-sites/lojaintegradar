@@ -50,7 +50,7 @@ interface TextContent {
 
 function HeroInfo({ title, cards }: Props) {
     return (
-        <div class="bg-base-300 px-[10px] pb-[60px] lg:pb-[160px]">
+        <div id="heroInfoSection" class="bg-base-300 px-[10px] pb-[60px] lg:pb-[160px]">
             <div class="customContainer">
                 {title && (
                     <span class=""

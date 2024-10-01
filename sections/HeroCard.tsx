@@ -34,6 +34,10 @@ interface Plan {
      * @format rich-text
      */
     title?: string;
+    /**
+     * @format rich-text
+     */
+    titleDesktop?: string;
     discount?: string;
 }
 

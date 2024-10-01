@@ -28,7 +28,7 @@ interface Props {
 function Partners({ title, images, imagesDesktop }: Props) {
     return (
         <div class="bg-base-300 px-4">
-            <div class="customContainer flex flex-col lg:flex-row gap-10 justify-between items-center lg:pt-[60px] pb-[60px] lg:pb-[124px]">
+            <div class="customContainer flex flex-col lg:flex-row gap-10 justify-between items-center lg:pt-0 pb-[60px] lg:pb-[124px]">
                 <span data-aos="fade-down" class="text-2xl text-primary-content font-light text-left">{title}</span>
                 <div data-aos="fade-down" class="flex flex-wrap gap-7">
                     {images?.map((img) => (

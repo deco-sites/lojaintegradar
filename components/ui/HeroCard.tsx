@@ -52,14 +52,18 @@ function HeroCard({
                             alt={"card background"}
                             height={secondImage.heightMobile || 226}
                             width={secondImage.widthMobile || 261}
-                            class="lg:hidden absolute bottom-0 right-2/4 translate-x-1/2 pr-[10px]"
+                            class="lg:hidden absolute bottom-0 right-2/4 translate-x-1/2"
                             style={{ minHeight: secondImage.heightMobile || 226 }}
                         />
                     )}
 
-                    <div class="flex flex-col w-[97%] lg:w-[unset] gap-[10px] lg:gap-[40px] absolute top-3 lg:top-[50px] left-2 lg:left-[50px] min-w-[280px] px-[10px] xl:px-0">
+                    <div class="flex flex-col w-[97%] lg:w-[unset] gap-6 lg:gap-[40px] absolute top-3 lg:top-[50px] left-2 lg:left-[50px] min-w-[280px] px-[10px] xl:px-0">
                         <div class="flex gap-1">
-                            {plan.title && <span dangerouslySetInnerHTML={{ __html: plan.title }} class="w-full text-base font-semibold text-primary-content">
+                            {plan.title && <span dangerouslySetInnerHTML={{ __html: plan.title }} class="w-full text-base font-semibold text-primary-content lg:hidden">
+
+                            </span>
+                            }
+                            {plan.titleDesktop && <span dangerouslySetInnerHTML={{ __html: plan.titleDesktop }} class="hidden lg:block w-full text-base font-semibold text-primary-content">
 
                             </span>
                             }

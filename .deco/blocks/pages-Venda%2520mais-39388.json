@@ -169,7 +169,8 @@
             "alt": "m camicado",
             "quoteIconColor": "#371E55",
             "nameIconColor": "#371E55",
-            "nameBackgroundColor": "#F1EAF4"
+            "nameBackgroundColor": "#F1EAF4",
+            "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
           }
         },
         {
@@ -180,7 +181,8 @@
             "alt": "m camicado",
             "nameIconColor": "#371E55",
             "quoteIconColor": "#371E55",
-            "nameBackgroundColor": "#F1EAF4"
+            "nameBackgroundColor": "#F1EAF4",
+            "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
           }
         }
       ],
@@ -1102,14 +1104,6 @@
                   }
                 },
                 "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1999</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes",
-                  "href": "#"
-                },
                 "bulletPoints": {
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/93355d06-53de-4455-bfcf-cff173d1cf9a/check-icon.svg"
@@ -1150,14 +1144,6 @@
                 }
               },
               {
-                "theme": "light",
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes"
-                },
                 "bulletPoints": {
                   "items": [
                     {
@@ -1196,15 +1182,6 @@
                 "seeMoreButtonText": "Ver mais"
               },
               {
-                "theme": "dark",
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes",
-                  "href": "#"
-                },
                 "bulletPoints": {
                   "items": [
                     {
@@ -1266,7 +1243,6 @@
             "__resolveType": "site/sections/Plans.tsx",
             "slides": [
               {
-                "theme": "dark",
                 "title": "Aceleração ",
                 "tag": {
                   "text": "🚀 Mais popular "
@@ -1307,14 +1283,39 @@
                     {
                       "text": "Envio pelos Correios com até 70% de desconto com Enviali"
                     }
-                  ]
+                  ],
+                  "itemsTextColor": "#FAFAF5",
+                  "tooltipTextColor": "#371E55",
+                  "tooltipBackgroundColor": "#ffffff"
                 },
                 "annualMontlyFeeFee": 79,
                 "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">79</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês<br></span></p>",
                 "cutedMontlyFee": "de R$99/mês ",
                 "annualSaving": "Economia de R$240 no anual",
                 "seeMoreTag": "Ver mais",
-                "seeMoreButtonText": "Ver mais"
+                "seeMoreButtonText": "Ver mais",
+                "backgroundColor": "linear-gradient(153deg, #372158 7.7%, #170C24 83.32%)",
+                "tagColor": "#FAFAF5",
+                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
+                "titleColor": "#FAFAF5",
+                "cutedMontlyFeeColor": "#FAFAF5",
+                "annualSavingColor": "#FAFAF5",
+                "cta": [
+                  {
+                    "ctaStyle": "button",
+                    "href": "#",
+                    "text": "Assinar",
+                    "textColor": "#371E55",
+                    "backgroundColor": "#ffffff",
+                    "borderColor": "#ffffff"
+                  },
+                  {
+                    "ctaStyle": "link",
+                    "href": "#",
+                    "underlineText": "Ver detalhes",
+                    "textColor": "#ffffff"
+                  }
+                ]
               },
               {
                 "theme": "light",
@@ -1352,15 +1353,38 @@
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg",
                     "alt": "bullet points icon"
-                  }
+                  },
+                  "itemsTextColor": "#371E55",
+                  "tooltipTextColor": "#ffffff",
+                  "tooltipBackgroundColor": "#371E55"
                 },
                 "tag": {},
                 "title": "Expansão ",
-                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<span style=\"font-size: 48px;\"><b>239</b></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+                "montlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>239</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                 "cutedMontlyFee": "de R$ 239/mês",
-                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>191</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+                "annualMontlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>191</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                 "annualSaving": "Economia de R$576 no anual",
-                "seeMoreButtonText": "Ver mais"
+                "seeMoreButtonText": "Ver mais",
+                "cta": [
+                  {
+                    "ctaStyle": "button",
+                    "href": "#",
+                    "text": "Assinar",
+                    "textColor": "#ffffff",
+                    "backgroundColor": "#371E55",
+                    "borderColor": "#371E55"
+                  },
+                  {
+                    "ctaStyle": "link",
+                    "href": "#",
+                    "underlineText": "Ver detalhes",
+                    "textColor": "#371E55"
+                  }
+                ],
+                "backgroundColor": "#ffffff",
+                "titleColor": "#371E55",
+                "cutedMontlyFeeColor": "#371E55",
+                "annualSavingColor": "#371E55"
               },
               {
                 "theme": "light",
@@ -1401,7 +1425,10 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
-                  }
+                  },
+                  "itemsTextColor": "#371E55",
+                  "tooltipTextColor": "#ffffff",
+                  "tooltipBackgroundColor": "#371E55"
                 },
                 "tag": {
                   "text": "Para quem fatura +100k",
@@ -1411,14 +1438,36 @@
                   }
                 },
                 "title": "Elite",
-                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1999</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+                "montlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1999</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                 "cutedMontlyFee": "de R$ 1999 /mês",
-                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1599</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+                "annualMontlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1599</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                 "annualSaving": "Economia de R$500 no anual",
                 "topImage": {
                   "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
                 },
-                "seeMoreButtonText": "Ver mais"
+                "seeMoreButtonText": "Ver mais",
+                "backgroundColor": "#ffffff",
+                "tagColor": "#371E55",
+                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
+                "titleColor": "#371E55",
+                "cutedMontlyFeeColor": "#371E55",
+                "annualSavingColor": "#371E55",
+                "cta": [
+                  {
+                    "ctaStyle": "button",
+                    "href": "#",
+                    "text": "Assinar",
+                    "backgroundColor": "#371E55",
+                    "textColor": "#ffffff",
+                    "borderColor": "#371E55"
+                  },
+                  {
+                    "ctaStyle": "link",
+                    "underlineText": "Ver detalhes",
+                    "href": "#",
+                    "textColor": "#371E55"
+                  }
+                ]
               }
             ],
             "title": " Escolha seu plano e garanta mais eficiência para o seu negócio",
@@ -1433,7 +1482,33 @@
               "text": "Começar no grátis",
               "href": "#"
             },
-            "id": "plans section"
+            "id": "plans section",
+            "titleColor": "#371E55",
+            "captionColor": "#828CA0",
+            "labelColor": "#371E55",
+            "disabledLabelColor": "#828CA0",
+            "annualTagColor": "#FFE6A0",
+            "annualTagDisabledColor": "#EBEBEB",
+            "bottomButtons": [
+              {
+                "ctaStyle": "button",
+                "href": "#",
+                "text": "Começar no grátis",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55"
+              },
+              {
+                "ctaStyle": "button",
+                "href": "#",
+                "text": "Começar no grátis",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55"
+              }
+            ],
+            "bottomCaptionColor": "#828CA0",
+            "bottomTitleColor": "#371E55"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

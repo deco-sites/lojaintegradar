@@ -278,7 +278,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                     <label class={labeClass} style={{ animationDuration: "0.3s" }}> 
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}>
                             <p>{cardShare.caption}</p>
-                            <div class="tooltip tooltip-primary tooltip-left" data-tip={cardShare.tooltipMessage}>
+                            <div class="tooltip tooltip-primary tooltip-left" data-tip={cardShare.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>
@@ -288,7 +288,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                     <label class={labeClass} style={{ animationDuration: "0.3s", animationDelay: "0.1s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}>
                             <p>{cardFee.caption}</p>
-                            <div class="tooltip tooltip-primary tooltip-left" data-tip={cardFee.tooltipMessage}>
+                            <div class="tooltip tooltip-primary tooltip-left" data-tip={cardFee.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>
@@ -298,7 +298,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                     <label class={labeClass} style={{ animationDuration: "0.3s", animationDelay: "0.2s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}> 
                             <p>{boletoShare.caption}</p>
-                            <div class="tooltip tooltip-primary tooltip-left" data-tip={boletoShare.tooltipMessage}>
+                            <div class="tooltip tooltip-primary tooltip-left" data-tip={boletoShare.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>
@@ -308,7 +308,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                     <label class={labeClass} style={{ animationDuration: "0.3s", animationDelay: "0.3s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}>
                             <p>{boletoFee.caption}</p>
-                            <div class="tooltip tooltip-primary tooltip-left" data-tip={boletoFee.tooltipMessage}>
+                            <div class="tooltip tooltip-primary tooltip-left" data-tip={boletoFee.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>
@@ -318,7 +318,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                     <label class={labeClass} style={{ animationDuration: "0.3s", animationDelay: "0.4s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}> 
                             <p>{pixShare.caption}</p>
-                            <div class="tooltip tooltip-primary tooltip-left" data-tip={pixShare.tooltipMessage}>
+                            <div class="tooltip tooltip-primary tooltip-left" data-tip={pixShare.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>
@@ -328,7 +328,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                     <label class={labeClass} style={{ animationDuration: "0.3s", animationDelay: "0.5s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}>
                             <p>{pixFee.caption}</p>
-                            <div class="tooltip tooltip-primary tooltip-left" data-tip={pixFee.tooltipMessage}>
+                            <div class="tooltip tooltip-primary tooltip-left" data-tip={pixFee.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>
@@ -339,7 +339,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                         <label class="w-full">
                             <div class={inputCaptionClass} style={{color: inputsTextColor}}>
                                 <p>{antiFraudCosts.caption}</p>
-                                <div class="tooltip tooltip-primary tooltip-left" data-tip={antiFraudCosts.tooltipMessage}>
+                                <div class="tooltip tooltip-primary tooltip-left" data-tip={antiFraudCosts.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                     <InfoIcon />
                                 </div>
                             </div>
@@ -349,7 +349,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                         <label class="w-full">
                             <div class={inputCaptionClass} style={{color: inputsTextColor}}>
                                 <p>{processingCosts.caption}</p>
-                                <div class="tooltip tooltip-primary tooltip-left" data-tip={processingCosts.tooltipMessage}>
+                                <div class="tooltip tooltip-primary tooltip-left" data-tip={processingCosts.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                     <InfoIcon />
                                 </div>
                             </div>

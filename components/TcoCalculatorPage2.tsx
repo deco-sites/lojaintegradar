@@ -144,7 +144,7 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor }}>
                             <p>{averageMonthlyRevenue.caption}</p>
-                            <div class="tooltip tooltip-primary tooltip-left" data-tip={averageMonthlyRevenue.tooltipMessage}>
+                            <div class="tooltip tooltip-left" data-tip={averageMonthlyRevenue.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>
@@ -154,7 +154,7 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s", animationDelay: "0.1s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor }}>
                             <p>{currentPlatform.caption}</p>
-                            <div class="tooltip tooltip-primary tooltip-left" data-tip={currentPlatform.tooltipMessage}>
+                            <div class="tooltip tooltip-primary tooltip-left" data-tip={currentPlatform.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>
@@ -165,7 +165,7 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s", animationDelay: "0.2s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor }}>
                             <p>{currentPlatformMonthlyFee.caption}</p>
-                            <div class="tooltip tooltip-primary tooltip-left" data-tip={currentPlatformMonthlyFee.tooltipMessage}>
+                            <div class="tooltip tooltip-primary tooltip-left" data-tip={currentPlatformMonthlyFee.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>
@@ -175,7 +175,7 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s", animationDelay: "0.3s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor }}>
                             <p>{currentPlatformComission.caption}</p>
-                            <div class="tooltip tooltip-primary tooltip-left" data-tip={currentPlatformComission.tooltipMessage}>
+                            <div class="tooltip tooltip-primary tooltip-left" data-tip={currentPlatformComission.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>
@@ -185,7 +185,7 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s", animationDelay: "0.4s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor }}>
                             <p>{MontlyOrders.caption}</p>
-                            <div class="tooltip tooltip-primary tooltip-left" data-tip={MontlyOrders.tooltipMessage}>
+                            <div class="tooltip tooltip-primary tooltip-left" data-tip={MontlyOrders.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>

@@ -70,6 +70,8 @@ max-height: 48px;
 .hs_seu_negocio_tem_uma_loja_virtual_ select{
     width: 100%;
     height: 100%;
+    border: 1px solid #828CA0;
+    border-radius: 8px;
 }
 
 @media screen and (min-width: 640px) {

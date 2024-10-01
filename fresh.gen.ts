@@ -3,14 +3,13 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $CloseButtonModal from "./islands/CloseButtonModal.tsx";
 import * as $CreateStoreModal from "./islands/CreateStoreModal.tsx";
-import * as $HeaderInitialButtons from "./islands/HeaderInitialButtons.tsx";
+import * as $FlexibleButtons from "./islands/FlexibleButtons.tsx";
 import * as $HeroCard from "./islands/HeroCard.tsx";
-import * as $HeroInfoButton from "./islands/HeroInfoButton.tsx";
 import * as $HeroTab from "./islands/HeroTab.tsx";
 import * as $HeroWithTime from "./islands/HeroWithTime.tsx";
 import * as $PricesButtons from "./islands/PricesButtons.tsx";
-import * as $TalkModal from "./islands/TalkModal.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -18,14 +17,13 @@ const manifest = {
     "./routes/_app.tsx": $_app,
   },
   islands: {
+    "./islands/CloseButtonModal.tsx": $CloseButtonModal,
     "./islands/CreateStoreModal.tsx": $CreateStoreModal,
-    "./islands/HeaderInitialButtons.tsx": $HeaderInitialButtons,
+    "./islands/FlexibleButtons.tsx": $FlexibleButtons,
     "./islands/HeroCard.tsx": $HeroCard,
-    "./islands/HeroInfoButton.tsx": $HeroInfoButton,
     "./islands/HeroTab.tsx": $HeroTab,
     "./islands/HeroWithTime.tsx": $HeroWithTime,
     "./islands/PricesButtons.tsx": $PricesButtons,
-    "./islands/TalkModal.tsx": $TalkModal,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

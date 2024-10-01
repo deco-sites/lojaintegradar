@@ -1,23 +1,13 @@
 import { HEROCSS } from "site/static/herocss.ts";
+import CloseButtonModal from "site/islands/CloseButtonModal.tsx";
 
-export interface Props {
-    isModalOpen: boolean;
-    setIsModalOpen: (open: boolean) => void;
-}
-
-function TalkModal({ isModalOpen, setIsModalOpen }: Props) {
-    if (!isModalOpen) return null;
+function TalkModal() {
 
     return (
-        <div class="heroCard fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div id="talkModal" class="hidden w-screen heroCard fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50">
             <style dangerouslySetInnerHTML={{ __html: HEROCSS }}></style>
             <div class="bg-white p-6 rounded-lg relative w-full max-w-[501px] mx-3 md:mx-0">
-                <button
-                    class="absolute top-2 right-2 text-black"
-                    onClick={() => setIsModalOpen(false)}
-                >
-                    X
-                </button>
+                <CloseButtonModal />
                 <script
                     charset="utf-8"
                     type="text/javascript"

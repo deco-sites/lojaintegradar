@@ -1,10 +1,11 @@
 import HeroWithTime from "../islands/HeroWithTime.tsx";
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
-
+import { Button } from "site/types/types.ts";
 export interface Props {
     title?: Title;
     subTitle?: Subtitle;
     tabs?: Tabs[];
+    finalButtons?: Button[];
     background?: Background;
 }
 
@@ -102,6 +103,7 @@ interface Background {
         }[];
     };
 }
+
 
 
 function HeroWithTimer(props: Props) {

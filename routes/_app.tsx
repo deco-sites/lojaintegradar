@@ -1,7 +1,9 @@
 import { asset, Head } from "$fresh/runtime.ts";
 import { defineApp } from "$fresh/server.ts";
+import TalkModal from "site/components/ui/TalkModal.tsx";
 import Theme from "../sections/Theme/Theme.tsx";
 import { Context } from "@deco/deco";
+import CreateStoreModal from "site/islands/CreateStoreModal.tsx";
 export default defineApp(async (_req, ctx) => {
   const revision = await Context.active().release?.revision();
   return (<>
@@ -24,6 +26,8 @@ export default defineApp(async (_req, ctx) => {
 
     {/* Rest of Preact tree */}
     <ctx.Component />
+    <TalkModal />
+    <CreateStoreModal />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script dangerouslySetInnerHTML={{
       __html: `

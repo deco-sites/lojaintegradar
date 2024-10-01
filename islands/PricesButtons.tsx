@@ -1,20 +1,28 @@
 interface Props {
+    type: "createStoreForm" | "ctaForm";
     highlight?: boolean;
     buttonText?: string;
     planId?: string;
 }
 
-function PricesButtons({ highlight, buttonText, planId }: Props) {
+function PricesButtons({ type, highlight, buttonText, planId }: Props) {
 
     const handleClick = () => {
-        const getModal = document.getElementById("createStoreModal");
-
-        if (getModal) {
-            getModal.classList.add("flex");
-            getModal.classList.remove("hidden");
-            getModal.setAttribute("data-planId", planId ?? '');
+        if (type === "createStoreForm") {
+            const getModal = document.getElementById("createStoreModal");
+            if (getModal) {
+                getModal.classList.add("flex");
+                getModal.classList.remove("hidden");
+                getModal.setAttribute("data-planId", planId ?? "");
+            }
+        } else if (type === "ctaForm") {
+            const getTalkModal = document.getElementById("talkModal");
+            if (getTalkModal) {
+                getTalkModal.classList.add("flex");
+                getTalkModal.classList.remove("hidden");
+            }
         }
-    }
+    };
 
     return (
         <>
@@ -26,6 +34,7 @@ function PricesButtons({ highlight, buttonText, planId }: Props) {
             >
                 {buttonText ?? "Assinar Plano"}
             </button>
+
         </>
     )
 }

@@ -1,11 +1,8 @@
-import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
-
+import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
+import { Button } from "site/types/types.ts";
 interface Props {
     questions?: Questions[]
-    button?: {
-        buttonText?: string;
-        buttonLink?: string;
-    }
+    buttons?: Button[]
 }
 
 interface Questions {
@@ -19,7 +16,7 @@ interface Questions {
     answer?: string;
 }
 
-function Accordion({ questions, button }: Props) {
+function Accordion({ questions, buttons }: Props) {
     return (
         <div className="bg-base-300">
             <div className="join join-vertical w-full px-4 flex mx-auto xl:px-0 py-[60px] lg:py-40 max-w-[768px]">
@@ -40,7 +37,9 @@ function Accordion({ questions, button }: Props) {
                 ))}
                 <div className="flex flex-col gap-[40px] w-full justify-center !mt-12 lg:!mt-[81px]">
                     <span className="text-2xl font-semibold text-primary-content text-center">Ainda tem dúvidas?</span>
-                    <button className="bg-primary-content w-full mx-auto rounded-lg text-center font-bold text-[18px] text-base-300 h-[48px] min-w-[169px] max-w-[169px]"><a href={button?.buttonLink}>{button?.buttonText}</a></button>
+                    <div class="flex items-center justify-center gap-4 flex-wrap">  {buttons?.map((button, index) => (
+                        <FlexibleButtons key={index} {...button} />
+                    ))}</div>
                 </div>
             </div>
         </div>

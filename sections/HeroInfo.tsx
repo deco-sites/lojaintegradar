@@ -1,8 +1,7 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
-import HeroInfoButton from "site/islands/HeroInfoButton.tsx";
-
+import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
+import { Button } from "site/types/types.ts";
 interface Props {
     /**
      * @format rich-text
@@ -25,10 +24,8 @@ interface Card {
     };
     title?: Title;
     textContent?: TextContent;
-    buttonText?: string;
-    buttonPlanId?: string;
+    buttons?: Button[];
 }
-
 interface Title {
     /**
      * @format rich-text
@@ -114,7 +111,9 @@ function HeroInfo({ title, cards }: Props) {
                                         }}
                                     />
                                 )}
-                                <HeroInfoButton buttonPlanId={card?.buttonPlanId} buttonText={card?.buttonText} />
+                                <div class="flex items-center gap-4 flex-wrap">  {card.buttons?.map((button, index) => (
+                                    <FlexibleButtons key={index} {...button} />
+                                ))}</div>
                             </div>
                         </li>
                     ))}

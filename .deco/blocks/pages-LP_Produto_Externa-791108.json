@@ -388,7 +388,7 @@
             "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fff82cb8-5a3e-4a44-bb99-b4f029c4a6f5/img--recupere-vendas.png"
           },
           "videoOn": true,
-          "videoUrl": "https://www.youtube.com/embed/bua_AY6xEjk?si=vRUtQ5jDYuqWpHJR",
+          "videoUrl": "https://youtu.be/DXXbMOvAElQ?feature=shared",
           "button": {}
         },
         {
@@ -467,11 +467,6 @@
         {
           "type": "ctaForm",
           "text": "Avalie seu negócio"
-        },
-        {
-          "type": "ctaForm",
-          "text": "Saiba mais",
-          "changeType": true
         }
       ]
     },
@@ -567,7 +562,7 @@
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4590f8ac-2238-4e67-b6cb-db32ade42137/img--Marketplace-VTEX-e-Magalu-(1).png",
             "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4590f8ac-2238-4e67-b6cb-db32ade42137/img--Marketplace-VTEX-e-Magalu-(1).png"
           },
-          "videoUrl": "https://www.youtube.com/embed/D7vd1Y0AlC0?si=J0BH_P4N-sWy_a_T"
+          "videoUrl": "https://youtu.be/LNCNuQeaLGw?feature=shared"
         },
         {
           "highlight": false,
@@ -629,11 +624,6 @@
         {
           "type": "ctaForm",
           "text": "Avalie seu negócio"
-        },
-        {
-          "type": "ctaForm",
-          "text": "Saiba mais",
-          "changeType": true
         }
       ]
     },
@@ -766,14 +756,16 @@
           "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$0</span></strong></p>",
           "textContent": "<p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">Pra você sentir</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">o gostinho de</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">como é vender</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">online</span></p>",
           "planId": "172",
-          "buttonType": "ctaForm"
+          "buttonType": "ctaForm",
+          "buttonText": "Saiba mais"
         },
         {
           "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Crescimento</span></strong></p>",
           "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$59</span></strong></p>",
           "textContent": "<p><span style=\"color: #003037\">Pra você</span></p><p><span style=\"color: #003037\">começar</span></p><p><span style=\"color: #003037\">com tudo que</span></p><p><span style=\"color: #003037\">precisa!</span></p>",
           "planId": "173",
-          "buttonType": "ctaForm"
+          "buttonType": "ctaForm",
+          "buttonText": "Saiba mais"
         },
         {
           "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Aceleração</span></strong></p>",
@@ -781,20 +773,23 @@
           "textContent": "<p><span style=\"color: #003037\">Pra ter mais</span></p><p><span style=\"color: #003037\">recursos e acelerar</span></p><p><span style=\"color: #003037\">suas vendas!</span></p>",
           "highlight": true,
           "planId": "174",
-          "buttonType": "ctaForm"
+          "buttonType": "ctaForm",
+          "buttonText": "Saiba mais"
         },
         {
           "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Expansão</span></strong></p>",
           "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$239</span></strong></p>",
           "textContent": "<p><span style=\"color: #003037\">Pra você que tem</span></p><p><span style=\"color: #003037\">muitos produtos!</span></p>",
           "planId": "176",
-          "buttonType": "ctaForm"
+          "buttonType": "ctaForm",
+          "buttonText": "Saiba mais"
         },
         {
           "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Elite</span></strong></p>",
           "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$1999</span></strong></p>",
           "textContent": "<p><span style=\"color: #003037\">Para você que</span></p><p><span style=\"color: #003037\">não quer ter</span></p><p><span style=\"color: #003037\">limites!</span></p>",
-          "buttonType": "ctaForm"
+          "buttonType": "ctaForm",
+          "buttonText": "Saiba mais"
         }
       ],
       "finalButtons": [
@@ -977,7 +972,7 @@
       "buttons": [
         {
           "type": "ctaForm",
-          "text": "Saiba mais aqui"
+          "text": "Receba um contato"
         }
       ]
     },

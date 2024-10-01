@@ -12,6 +12,7 @@ const onClickStart = (rootId: string) => {
 export interface Page1 {
     title: string;
     caption: string;
+    asideTextColor?: string;
     benefits?: Benefit[];
     mobileStartBanner: IImage;
     mobileStartButtonText: string;
@@ -20,8 +21,8 @@ export default function TcoCalculatorMobileStartPage({ page1, rootId }: {
     page1: Page1;
     rootId: string;
 }) {
-    const { title, caption, benefits, mobileStartBanner, mobileStartButtonText } = page1;
-    return <div class="lg:hidden relative text-sm text-primary-content font-normal py-10 px-4 w-full min-h-[155px]">
+    const { title, caption, benefits, mobileStartBanner, mobileStartButtonText, asideTextColor } = page1;
+    return <div class="lg:hidden relative text-sm text-primary-content font-normal py-10 px-4 w-full min-h-[155px]" style={{color: asideTextColor}}>
         {mobileStartBanner && <Image width={430} height={755} alt={mobileStartBanner.alt || "background image"} src={mobileStartBanner.src} class="absolute w-full h-full top-0 left-0 object-cover object-top -z-10"/>}
         <p class="text-2xl font-semibold pr-20">{title}</p>
         <p class="mt-[26px]">{caption}</p>
@@ -29,9 +30,9 @@ export default function TcoCalculatorMobileStartPage({ page1, rootId }: {
             {benefits && benefits.map((benefit) => (<div class="mt-5 py-2.5 pl-3.5 pr-2 border border-secondary-content rounded-[10px] min-h[122px] max-w-[219px] backdrop-blur-[2px] bg-base-content bg-opacity-25">
                     <div class="flex ">
                         <Image height={17} width={17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} class="mr-2.5"/>
-                        <p class="text-secondary-content">{benefit.title}</p>
+                        <p class="text-secondary-content" style={{color: benefit.titleColor}}>{benefit.title}</p>
                     </div>
-                    <p class="mt-2.5">{benefit.caption}</p>
+                    <p class="mt-2.5" style={{color: benefit.captionColor}}>{benefit.caption}</p>
                 </div>))}
         </div>
 

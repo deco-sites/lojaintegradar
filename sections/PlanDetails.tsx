@@ -164,7 +164,7 @@ export default function PlanDetails({ id, title, titleTyping = [], color3, lette
 
     const carouselId = useId();
     return (<div id={id} class={`overflow-hidden ${!useBackground && 'bg-primary'} leading-[120%] text-primary-content`}>
-        <div id={carouselId} class="relative flex justify-center items-center w-full h-[86vw] lg:h-[43vw]">
+        <div class="relative flex justify-center items-center w-full h-[86vw] lg:h-[43vw]">
             {planTag?.text && <div class="absolute w-full top-0 left-0">
                 <div class="w-full max-w-[1200px] mx-auto mt-">
                     <AnimateOnShow divClass="py-2 px-4 ml-7 mt-20 lg:mt-24 bg-primary rounded-[20px] inline-flex gap-2.5" animation="animate-pop-up">
@@ -202,8 +202,8 @@ export default function PlanDetails({ id, title, titleTyping = [], color3, lette
         <div class={`${!bottomBackground?.src && 'bg-primary'} min-h-[340px] relative`}>
             {bottomBackground?.src && <Image width={bottomBackground.width || 1440} height={bottomBackground.height || 340} src={bottomBackground.src} alt={bottomBackground.alt || "bottom background image"} class="absolute w-full h-full object-cover object-right -z-20" />}
             <div class="max-w-[1200px] s1800:max-w-[1365px] mx-auto pb-[72px]">
-                <AnimateOnShow animation="animate-fade-up50" divClass="flex flex-wrap xl:flex-nowrap items-start xl:items-end relative" delay={300}>
-                    <div id={carouselId} class="min-h-min flex flex-col w-full lg:w-[600px] mt-[-20px] lg:mt-[-130px]">
+                <AnimateOnShow animation="animate-fade-up50" divClass="flex flex-wrap xl:flex-nowrap items-start xl:items-end" delay={300}>
+                    <div id={carouselId} class="min-h-min flex flex-col w-full lg:w-[600px] mt-[-20px] lg:mt-[-130px] relative">
                         <div class="mb-6 hidden lg:flex gap-7">
                             {slidesTitleIcon && slidesTitleIcon.src && <Image width={slidesTitleIcon.width || 36} height={slidesTitleIcon.height || 24} src={slidesTitleIcon.src} alt={slidesTitleIcon.alt || "slides title icon"} class="object-contain" />}
                             {slidesTitle && <h2 class="text-lg font-semibold">{slidesTitle}</h2>}

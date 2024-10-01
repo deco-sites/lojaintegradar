@@ -120,7 +120,7 @@ function Dots({ slides, interval = 0, dotsColor }: Props) {
                                 <div class="h-0 w-11 opacity-0 md:opacity-100 md:h-auto md:w-auto">
                                     <p class="text-lg text-primary font-semibold opacity-30 group-disabled:opacity-100" style={{ color: dotsColor }}>{slide.title}</p>
                                 </div>
-                                <div class="h-1 mt-2 rounded-full dot overflow-hidden bg-accent-content" >
+                                <div class="h-1 mt-2 rounded-full dot overflow-hidden bg-accent-content" style={{ backgroundColor: '#A1ABBC' }}>
                                     <div class="h-full w-0 bg-primary group-disabled:animate-progress" style={{ animationDuration: `${interval}s`, backgroundColor: dotsColor }} />
                                 </div>
                             </div>

@@ -13,6 +13,8 @@ export interface Content {
   /** @description Image's alt text */
   alt?: string;
   name?: HTMLWidget;
+  /** @format color-input */
+  nameBackgroundColor?: string;
   position?: string;
   /** @format color-input */
   nameIconColor?: string;
@@ -110,7 +112,7 @@ function SliderItem({ slide, id }: {
 
         <div class="text-base text-primary md:text-lg mt-3.5" dangerouslySetInnerHTML={{ __html: content?.description || "" }} />
       </div>
-      <div class="flex gap-4 md:gap-5 mt-5 md:mt-11 bg-secondary-content px-6 md:pl-12 md:pr-7 min-h-[86px]">
+      <div class="flex gap-4 md:gap-5 mt-5 md:mt-11 bg-secondary-content px-6 md:pl-12 md:pr-7 min-h-[86px]" style={{ backgroundColor: content?.nameBackgroundColor }}>
         <div class="h-[72px] md:h-24 w-[72px] md:w-24 min-w-[72px] bg-primary-content rounded-full overflow-hidden mt-[-14px] md:mt-[-26px] border border-secondary-content">
           <Image class="object-contain h-full" alt={content?.alt} src={content?.avatar || ""} width={97} />
         </div>

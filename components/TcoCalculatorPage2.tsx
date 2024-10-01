@@ -1,6 +1,7 @@
 import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useScript } from "@deco/deco/hooks";
+import { Benefit } from "site/components/TcoCalculatorPage1.tsx";
 const moneyInputOnKeyUp = () => {
     const element = event!.currentTarget as HTMLInputElement;
     let valor = element.value;
@@ -50,11 +51,7 @@ export interface IImage {
     alt?: string;
 }
 /** @title {{title}} */
-export interface IBenefit {
-    title: string;
-    caption: string;
-    icon: IImage;
-}
+
 export interface IInput {
     caption: string;
     placeholder: string;
@@ -68,10 +65,14 @@ export interface IDropdown {
 export interface Page1 {
     title: string;
     caption: string;
-    benefits?: IBenefit[];
+    benefits?: Benefit[];
+    /** @format color-input */
+    asideTextColor?: string;
     contentTitle: HTMLWidget;
     contentTitleIcon?: IImage;
     contentCaption?: string;
+    /** @format color-input */
+    contentCaptionColor?: string;
     asideBackground?: IImage;
     asideTopIcon?: IImage;
     contentBackground?: IImage;
@@ -84,8 +85,14 @@ export interface Page2 {
     currentPlatformMonthlyFee: IInput;
     currentPlatformComission: IInput;
     MontlyOrders: IInput;
+    /** @format color-input */
+    inputsTextColor?: string;
+    /** @format color-input */
+    inputsBorderColor?: string;
     nextButtonText: string;
     backButtonText: string;
+    /** @format color-input */
+    buttonsTextColor?: string;
 }
 function InfoIcon() {
     return <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,29 +104,29 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
     page2: Page2;
     rootId: string;
 }) {
-    const { title, caption, benefits, contentTitle, contentTitleIcon, contentCaption, contentBackground, asideBackground, asideTopIcon, mobileTopBanner } = page1;
-    const { progressImage, averageMonthlyRevenue, currentPlatform, currentPlatformMonthlyFee, currentPlatformComission, MontlyOrders, nextButtonText, backButtonText } = page2;
+    const { title, caption, benefits, contentTitle, contentTitleIcon, contentCaption, contentBackground, asideBackground, asideTopIcon, mobileTopBanner, asideTextColor, contentCaptionColor } = page1;
+    const { progressImage, averageMonthlyRevenue, currentPlatform, currentPlatformMonthlyFee, currentPlatformComission, MontlyOrders, nextButtonText, backButtonText, inputsTextColor, inputsBorderColor, buttonsTextColor } = page2;
     const inputCaptionClass = "text-base text-primary flex justify-between items-center";
     const inputClass = "bg-transparent min-h-[38px] w-full rounded-lg border border-primary px-4 mt-2.5";
     return (<div class="relative flex flex-wrap lg:flex-nowrap w-full min-h-[971px] lg:rounded-[30px] overflow-hidden hidden">
 
-            <div class={`relative w-full lg:max-w-[437px] pt-[121px] px-11 ${!asideBackground && 'bg-primary'} text-primary-content hidden lg:block`}>
+            <div class={`relative w-full lg:max-w-[437px] pt-[121px] px-11 ${!asideBackground && 'bg-primary'} text-primary-content hidden lg:block`} style={{color: asideTextColor}}>
                 {asideTopIcon && <Image width={133} height={119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10"/>}
                 {asideBackground && <Image width={813} height={971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
                 <h2 class="text-[32px] leading-[130%]">{title}</h2>
                 <p class="text-sm mt-5 leading-[120%]">{caption}</p>
                 <div class="mt-[60px]">
                     {benefits && benefits.map((benefit) => (<div class="mt-[30px]">
-                            <div class="flex">
+                        <div class="flex">
                                 <Image height={17} width={17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} class="mr-2.5"/>
-                                <p>{benefit.title}</p>
+                                <p style={{color: benefit.titleColor}}>{benefit.title}</p>
                             </div>
-                            <p class="mt-2.5 text-sm">{benefit.caption}</p>
+                            <p class="mt-2.5 text-sm" style={{color: benefit.captionColor}}>{benefit.caption}</p>
                         </div>))}
                 </div>
             </div>
 
-            <div class="lg:hidden relative text-2xl text-secondary-content font-semibold py-10 px-4 w-full min-h-[155px]">
+            <div class="lg:hidden relative text-2xl text-secondary-content font-semibold py-10 px-4 w-full min-h-[155px]" style={{color: asideTextColor}}>
                     {mobileTopBanner && <Image width={430} height={155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10"/>}
                     <p>{title}</p>
             </div>
@@ -130,71 +137,71 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                     {contentTitleIcon && <Image src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={14} height={14}/>}
                     <div dangerouslySetInnerHTML={{ __html: contentTitle }}/>
                 </div>
-                {contentCaption && <p class="mt-2.5">{contentCaption}</p>}
+                {contentCaption && <p class="mt-2.5" style={{color: contentCaptionColor}}>{contentCaption}</p>}
                 {progressImage && <div class="mt-7"><Image width={590} height={70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left"/></div>}
 
                 <form class="flex flex-col gap-[18px] mt-14 max-w-[375px]" hx-on:submit={useScript(onClickNext, rootId)}>
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s" }}>
-                        <div class={inputCaptionClass}>
+                        <div class={inputCaptionClass} style={{color: inputsTextColor }}>
                             <p>{averageMonthlyRevenue.caption}</p>
                             <div class="tooltip tooltip-primary tooltip-left" data-tip={averageMonthlyRevenue.tooltipMessage}>
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} hx-on:keyup={useScript(moneyInputOnKeyUp)} type="text" placeholder={averageMonthlyRevenue.placeholder} required id={rootId + "gmvInput"}>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(moneyInputOnKeyUp)} type="text" placeholder={averageMonthlyRevenue.placeholder} required id={rootId + "gmvInput"}>
                         </input>
                     </label>
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s", animationDelay: "0.1s", opacity: "0", animationFillMode: "forwards" }}>
-                        <div class={inputCaptionClass}>
+                        <div class={inputCaptionClass} style={{color: inputsTextColor }}>
                             <p>{currentPlatform.caption}</p>
                             <div class="tooltip tooltip-primary tooltip-left" data-tip={currentPlatform.tooltipMessage}>
                                 <InfoIcon />
                             </div>
                         </div>
-                        <select class={inputClass} id={rootId + "currentPlatformInput"}>
+                        <select class={inputClass} style={{borderColor: inputsBorderColor}} id={rootId + "currentPlatformInput"}>
                             {currentPlatform.options.map(option => (<option>{option}</option>))}
                         </select>
                     </label>
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s", animationDelay: "0.2s", opacity: "0", animationFillMode: "forwards" }}>
-                        <div class={inputCaptionClass}>
+                        <div class={inputCaptionClass} style={{color: inputsTextColor }}>
                             <p>{currentPlatformMonthlyFee.caption}</p>
                             <div class="tooltip tooltip-primary tooltip-left" data-tip={currentPlatformMonthlyFee.tooltipMessage}>
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input name="test" class={inputClass} hx-on:keyup={useScript(moneyInputOnKeyUp)} type="text" placeholder={currentPlatformMonthlyFee.placeholder} required id={rootId + 'montlyFeeInput'}>
+                        <input name="test" class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(moneyInputOnKeyUp)} type="text" placeholder={currentPlatformMonthlyFee.placeholder} required id={rootId + 'montlyFeeInput'}>
                         </input>
                     </label>
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s", animationDelay: "0.3s", opacity: "0", animationFillMode: "forwards" }}>
-                        <div class={inputCaptionClass}>
+                        <div class={inputCaptionClass} style={{color: inputsTextColor }}>
                             <p>{currentPlatformComission.caption}</p>
                             <div class="tooltip tooltip-primary tooltip-left" data-tip={currentPlatformComission.tooltipMessage}>
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} hx-on:keyup={useScript(percentageInputOnKeyUp)} type="text" placeholder={currentPlatformComission.placeholder} id={rootId + 'comissionInput'} required>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp)} type="text" placeholder={currentPlatformComission.placeholder} id={rootId + 'comissionInput'} required>
                         </input>
                     </label>
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s", animationDelay: "0.4s", opacity: "0", animationFillMode: "forwards" }}>
-                        <div class={inputCaptionClass}>
+                        <div class={inputCaptionClass} style={{color: inputsTextColor }}>
                             <p>{MontlyOrders.caption}</p>
                             <div class="tooltip tooltip-primary tooltip-left" data-tip={MontlyOrders.tooltipMessage}>
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} type="number" placeholder={MontlyOrders.placeholder} required id={rootId + 'montlyOrdersInput'}>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} type="number" placeholder={MontlyOrders.placeholder} required id={rootId + 'montlyOrdersInput'}>
                         </input>
                     </label>
                     <div class="flex justify-end gap-10">
-                        <button class="flex items-center gap-1 font-bold hover:scale-110 text-lg transition-transform text-primary" hx-on:click={useScript(onClickBack, rootId)}>
-                            <svg width="17" height="17" class="text-primary fill-current rotate-180" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                        <button class="flex items-center gap-1 font-bold hover:scale-110 text-lg transition-transform text-primary" hx-on:click={useScript(onClickBack, rootId)} style={{color: buttonsTextColor}}>
+                            <svg width="17" height="17" class=" fill-current rotate-180" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.5 0.910645C6.97338 0.910645 5.48104 1.36334 4.2117 2.21149C2.94235 3.05964 1.95302 4.26514 1.36881 5.67556C0.784594 7.08597 0.631737 8.63796 0.929567 10.1352C1.2274 11.6325 1.96254 13.0079 3.04202 14.0874C4.12151 15.1669 5.49686 15.902 6.99415 16.1998C8.49144 16.4977 10.0434 16.3448 11.4538 15.7606C12.8643 15.1764 14.0698 14.187 14.9179 12.9177C15.7661 11.6484 16.2188 10.156 16.2188 8.62939C16.2166 6.58292 15.4027 4.62088 13.9556 3.1738C12.5085 1.72672 10.5465 0.912806 8.5 0.910645ZM11.8888 9.04947L9.51383 11.4245C9.40242 11.5359 9.25131 11.5985 9.09375 11.5985C8.93619 11.5985 8.78509 11.5359 8.67368 11.4245C8.56226 11.3131 8.49967 11.162 8.49967 11.0044C8.49967 10.8468 8.56226 10.6957 8.67368 10.5843L10.0356 9.22314H5.53125C5.37378 9.22314 5.22276 9.16059 5.11141 9.04924C5.00006 8.93789 4.9375 8.78687 4.9375 8.62939C4.9375 8.47192 5.00006 8.3209 5.11141 8.20955C5.22276 8.0982 5.37378 8.03564 5.53125 8.03564H10.0356L8.67368 6.67447C8.56226 6.56306 8.49967 6.41195 8.49967 6.25439C8.49967 6.09683 8.56226 5.94573 8.67368 5.83432C8.78509 5.7229 8.93619 5.66031 9.09375 5.66031C9.25131 5.66031 9.40242 5.7229 9.51383 5.83432L11.8888 8.20932C11.944 8.26446 11.9878 8.32994 12.0177 8.40202C12.0476 8.4741 12.063 8.55137 12.063 8.62939C12.063 8.70742 12.0476 8.78469 12.0177 8.85677C11.9878 8.92885 11.944 8.99433 11.8888 9.04947Z"/>
                             </svg>
                             {backButtonText}
                         </button>
-                        <button class="flex items-center gap-1 font-bold hover:scale-110 text-lg transition-transform text-primary" type="submit">
+                        <button class="flex items-center gap-1 font-bold hover:scale-110 text-lg transition-transform text-primary" type="submit" style={{color: buttonsTextColor}}>
                             {nextButtonText}
-                            <svg width="17" height="17" class="text-primary fill-current" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="17" height="17" class=" fill-current" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.5 0.910645C6.97338 0.910645 5.48104 1.36334 4.2117 2.21149C2.94235 3.05964 1.95302 4.26514 1.36881 5.67556C0.784594 7.08597 0.631737 8.63796 0.929567 10.1352C1.2274 11.6325 1.96254 13.0079 3.04202 14.0874C4.12151 15.1669 5.49686 15.902 6.99415 16.1998C8.49144 16.4977 10.0434 16.3448 11.4538 15.7606C12.8643 15.1764 14.0698 14.187 14.9179 12.9177C15.7661 11.6484 16.2188 10.156 16.2188 8.62939C16.2166 6.58292 15.4027 4.62088 13.9556 3.1738C12.5085 1.72672 10.5465 0.912806 8.5 0.910645ZM11.8888 9.04947L9.51383 11.4245C9.40242 11.5359 9.25131 11.5985 9.09375 11.5985C8.93619 11.5985 8.78509 11.5359 8.67368 11.4245C8.56226 11.3131 8.49967 11.162 8.49967 11.0044C8.49967 10.8468 8.56226 10.6957 8.67368 10.5843L10.0356 9.22314H5.53125C5.37378 9.22314 5.22276 9.16059 5.11141 9.04924C5.00006 8.93789 4.9375 8.78687 4.9375 8.62939C4.9375 8.47192 5.00006 8.3209 5.11141 8.20955C5.22276 8.0982 5.37378 8.03564 5.53125 8.03564H10.0356L8.67368 6.67447C8.56226 6.56306 8.49967 6.41195 8.49967 6.25439C8.49967 6.09683 8.56226 5.94573 8.67368 5.83432C8.78509 5.7229 8.93619 5.66031 9.09375 5.66031C9.25131 5.66031 9.40242 5.7229 9.51383 5.83432L11.8888 8.20932C11.944 8.26446 11.9878 8.32994 12.0177 8.40202C12.0476 8.4741 12.063 8.55137 12.063 8.62939C12.063 8.70742 12.0476 8.78469 12.0177 8.85677C11.9878 8.92885 11.944 8.99433 11.8888 9.04947Z"/>
                             </svg>
                         </button>

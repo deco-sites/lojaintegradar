@@ -168,7 +168,8 @@
             "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
             "alt": "m camicado",
             "quoteIconColor": "#371E55",
-            "nameIconColor": "#371E55"
+            "nameIconColor": "#371E55",
+            "nameBackgroundColor": "#F1EAF4"
           }
         },
         {
@@ -178,7 +179,8 @@
             "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
             "alt": "m camicado",
             "nameIconColor": "#371E55",
-            "quoteIconColor": "#371E55"
+            "quoteIconColor": "#371E55",
+            "nameBackgroundColor": "#F1EAF4"
           }
         }
       ],
@@ -729,7 +731,9 @@
               "alt": "calculator icon"
             },
             "title": "Negócio",
-            "caption": "Compare seus custos mensais de plataforma e comissão versus sua receita."
+            "caption": "Compare seus custos mensais de plataforma e comissão versus sua receita.",
+            "titleColor": "#D2C7FE",
+            "captionColor": "#ffffff"
           },
           {
             "icon": {
@@ -737,7 +741,9 @@
               "alt": "hand payment icon"
             },
             "title": "Pagamento",
-            "caption": "Analise seus custos com tarifas de cartão de crédito, pix, boleto e ferramentas antifraude."
+            "caption": "Analise seus custos com tarifas de cartão de crédito, pix, boleto e ferramentas antifraude.",
+            "titleColor": "#D2C7FE",
+            "captionColor": "#ffffff"
           },
           {
             "icon": {
@@ -745,10 +751,12 @@
               "alt": "rocket icon"
             },
             "title": "Envio",
-            "caption": "Leve em consideração todos os custos que sua loja possui com o envio de produtos."
+            "caption": "Leve em consideração todos os custos que sua loja possui com o envio de produtos.",
+            "titleColor": "#D2C7FE",
+            "captionColor": "#ffffff"
           }
         ],
-        "contentTitle": "<p>É rapidinho <strong>1 min</strong></p>",
+        "contentTitle": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">É rapidinho <strong>1 min</strong></span></p>",
         "contentTitleIcon": {
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/b355f7b9-d26f-48eb-b075-832fd8ea1435/clock-icon.svg",
           "alt": "clock icon"
@@ -802,7 +810,16 @@
           "alt": "mobile start screen background",
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/7bb388f3-cdd3-4873-9705-250ea560571c/mobile-start-banner2.svg"
         },
-        "mobileStartButtonText": "Iniciar cálculo TCO"
+        "mobileStartButtonText": "Iniciar cálculo TCO",
+        "asideTextColor": "#ffffff",
+        "contentCaptionColor": "#5F6E82",
+        "objectivesCaptionColor": "linear-gradient(99deg, #825AB4 49.14%, #BB95D7 79.44%)",
+        "emailCaptionColor": "linear-gradient(99deg, #825AB4 49.14%, #BB95D7 79.44%)",
+        "objectivesTextColor": "#371E55",
+        "hubspotButtonColor": "#371E55",
+        "hubspotButtonTextColor": "#ffffff",
+        "hubspotErrorMessageColor": "#F57E77",
+        "objectivesBorderColor": "#371E55"
       },
       "title": "Calcule a eficiência da sua operação",
       "caption": "Cálculo de TCO",
@@ -856,7 +873,11 @@
           "tooltipMessage": "Quantos pedidos sua loja recebe em média por mês?"
         },
         "nextButtonText": "Próximo",
-        "backButtonText": "Voltar"
+        "backButtonText": "Voltar",
+        "inputsTextColor": "#371E55",
+        "inputsBorderColor": "#371E55",
+        "buttonsBackgroundColor": "",
+        "buttonsTextColor": "#371E55"
       },
       "page3": {
         "progressImage": {
@@ -904,7 +925,14 @@
           "tooltipMessage": "Custos destinados a processamento de transações"
         },
         "nextButtonText": "Ver resultado",
-        "backButtonText": "Voltar"
+        "backButtonText": "Voltar",
+        "inputsTextColor": "#371E55",
+        "inputsBorderColor": "#371E55",
+        "buttonsTextColor": "#ffffff",
+        "buttonsBackgroundColor": "#371E55",
+        "nextButtonTextColor": "#ffffff",
+        "nextButtonBackgroundColor": "#371E55",
+        "backButtonTextColor": "#371E55"
       },
       "page4": {
         "progressImage": {
@@ -930,7 +958,10 @@
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/daceb68e-0a01-481c-a0f5-8f64df952d19/wpp-icon-white.svg",
             "alt": "whatsapp icon"
           },
-          "outline": false
+          "outline": false,
+          "textColor": "#ffffff",
+          "backgroundColor": "#371E55",
+          "borderColor": "#371E55"
         },
         "saving": {
           "textBefore": "Economize",
@@ -939,21 +970,24 @@
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/20ee682c-2405-4b9c-92e7-453ee5cf43e6/savings-bg-png.png",
             "alt": "savings background"
           },
-          "indicatedPlanSavingLabel": "Economia de"
+          "indicatedPlanSavingLabel": "Economia de",
+          "textColor": "#371E55"
         },
         "benefit1": {
           "text": "Aumente suas vendas e economize na sua operação com as nossas soluções nativas",
           "image": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4d16431e-e7c8-479c-a615-2a4f891e3f46/benefit1-bg.svg",
             "alt": "background"
-          }
+          },
+          "textColor": "#371E55"
         },
         "benefit2": {
           "text": "Atendimento prioritário",
           "image": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a91d5483-1158-4a8f-b2de-90fb07612429/benefit2-bg.svg",
             "alt": "background"
-          }
+          },
+          "textColor": "#371E55"
         },
         "result": {
           "montlyFeeLabel": "Mensalidade",
@@ -968,7 +1002,12 @@
           "migrateCta": {
             "href": "https://api.whatsapp.com/send/?phone=%2B5511971694777&text=Ol%C3%A1%2C+fiz+o+meu+calculo+TCO+e+quero+saber+mais+sobre+a+minha+proposta+personalizada.&type=phone_number&app_absent=0",
             "text": "Migre agora",
-            "outline": false
+            "outline": false,
+            "ctaStyle": "button",
+            "backgroundColor": "#ffffff",
+            "textColor": "#371E55",
+            "borderColor": "#371E55",
+            "showIcon": false
           },
           "montlyFeeLojaIntegrada": "R$ 259,00"
         },
@@ -976,15 +1015,39 @@
           "text": "Atendimento personalizado com gerente de performance dedicado à sua conta",
           "image": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/5bf710f8-0e2f-4a41-81f6-04efe77d7d47/extra-benefit-2-background-image.png"
-          }
+          },
+          "textColor": "#371E55"
         },
         "negativeScreenExtraBenefit1": {
           "text": "Smartcheckout: checkout sem senha, baseado no smartcheckout da VTEX",
           "image": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ffa82a75-e6b5-4115-a166-79a2f43d4dc9/extra-benefit-1-background-image.png"
-          }
+          },
+          "textColor": "#371E55"
         },
-        "negativeScreenAsideTitle": "Por que migrar para a Loja Integrada?"
+        "negativeScreenAsideTitle": "Por que migrar para a Loja Integrada?",
+        "resultTableColors": {
+          "textColor1": "#5F6E82",
+          "textColor2": "#ffffff",
+          "textColor3": "#371E55",
+          "resultValuesBackgroundColor": "#371E55",
+          "divisionLineColor": "linear-gradient(90deg, rgba(62, 37, 85, 0.02) 0%, rgba(62, 37, 85, 0.20) 18.97%, rgba(62, 37, 85, 0.00) 74.4%);"
+        },
+        "lessVantageText": "😥  menos vantajoso",
+        "moreVantageText": "🚀 mais vantajoso",
+        "lojaIntegradaText": "Loja Integrada",
+        "indicatedPlanSavingLabel": "Economia de",
+        "indicatedPlanSavingLabelTextColor": "#371E55",
+        "indicatedPlanSavingLabelBackgroundColor": "#EBD0FF",
+        "lessVantageTextColor": "#371E55",
+        "lessVantageBackgroundColor": "#E8E4F6",
+        "moreVantageTextColor": "#371E55",
+        "moreVantageBackgroundColor": "#F2E6FF",
+        "lojaIntegradaTextColor": "#ffffff",
+        "whatsappTextColor": "#371E55",
+        "whatsappInputTextColor": "#371E55",
+        "whatsappInputBorderColor": "#828CA0",
+        "asideContentBackgroundColor": "#F1EEFF"
       },
       "plans": [
         {

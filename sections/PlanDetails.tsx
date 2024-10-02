@@ -4,6 +4,7 @@ import { useId } from "site/sdk/useId.ts";
 import Slider from "../components/ui/Slider3.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useScript } from "@deco/deco/hooks";
+import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
 const onLoad = (rootId: string, words: string[], wordDelay: number, letterDelay: number) => {
     const typingSpan = document.getElementById(rootId + 'typingSpan') as HTMLElement | null;
@@ -37,10 +38,19 @@ const onLoad = (rootId: string, words: string[], wordDelay: number, letterDelay:
         }, letterDelay);
     }
 };
+/** @title {{text}} {{underlineText}} */
 export interface CTA {
     href: string;
-    text: string;
-    outline?: boolean;
+    text?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle: "button" | "link";
+    showIcon?: boolean;
 }
 export interface Link {
     textBefore?: string;
@@ -55,6 +65,10 @@ export interface IImage {
 }
 export interface PlanTag {
     text?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    backgroundColor?: string;
     icon?: IImage;
 }
 export interface BulletPoints {
@@ -63,15 +77,23 @@ export interface BulletPoints {
 }
 export interface AnnualValues {
     title?: string;
+    /** @format color-input */
+    titleColor?: string;
     tag?: string;
+    /** @format color-input */
+    tagTextColor?: string;
+    /** @format color-input */
+    tagBackgroundColor?: string;
     text?: HTMLWidget;
     saving?: string;
+    /** @format color-input */
+    savingColor?: string;
 }
 export interface MontlyValues {
     title?: string;
+    /** @format color-input */
+    titleColor?: string;
     text?: HTMLWidget;
-    cta?: CTA;
-    link?: Link;
 }
 /** @title {{title}} */
 export interface Slide {
@@ -85,20 +107,27 @@ export interface Props {
     useBackground?: 'video' | 'image';
     planTag?: PlanTag;
     title: string;
+    /** @format color-input */
+    titleColor?: string;
     titleTyping?: string[];
+    /** @format color-input */
+    titleTypingColor?: string;
     /** @description Time in milisseconds that takes to type and erase a letter */
     letterDelay?: number;
     /** @description Time in milisseconds that a word should stay on screen */
     wordDelay?: number;
     slidesTitle?: string;
+    /** @format color-input */
+    slidesTitleColor?: string;
     slidesTitleIcon?: IImage;
     slides?: Slide[];
     showArrows?: boolean;
+    /** @format color-input */
+    arrowsColor?: string;
     annualValues?: AnnualValues;
     montlyValues?: MontlyValues;
+    cta?: CTA[];
     bottomBackground?: IImage;
-    /** @format color-input */
-    color3?: string;
 }
 function SliderItem({ slide, id }: {
     slide: Slide;
@@ -142,32 +171,32 @@ function Dots({ slides, interval = 0 }: {
         </ul>
     </>);
 }
-function Buttons() {
+function Buttons({ arrowsColor }: { arrowsColor?: string }) {
     return (<div class="flex gap-4 ml-5 lg:ml-0">
         <div class="flex items-center justify-center z-10 ">
             <Slider.PrevButton class="flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 50 50" class="text-primary-content fill-current rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 50 50" class="text-primary-content fill-current rotate-180" style={{ color: arrowsColor }}>
                     <path d="M25.3835 4.67773C21.4279 4.67773 17.5611 5.85071 14.2721 8.04834C10.9831 10.246 8.41969 13.3695 6.90593 17.0241C5.39218 20.6786 4.99611 24.6999 5.76782 28.5795C6.53952 32.4592 8.44434 36.0228 11.2414 38.8199C14.0384 41.6169 17.6021 43.5217 21.4817 44.2934C25.3613 45.0651 29.3827 44.6691 33.0372 43.1553C36.6917 41.6416 39.8153 39.0781 42.0129 35.7891C44.2105 32.5002 45.3835 28.6334 45.3835 24.6777C45.3779 19.3751 43.269 14.2913 39.5195 10.5418C35.77 6.79227 30.6861 4.68333 25.3835 4.67773ZM31.0874 25.7662L23.3951 33.4585C23.2521 33.6014 23.0824 33.7148 22.8957 33.7922C22.7089 33.8695 22.5087 33.9094 22.3066 33.9094C22.1045 33.9094 21.9043 33.8695 21.7175 33.7922C21.5308 33.7148 21.3611 33.6014 21.2181 33.4585C21.0752 33.3156 20.9618 33.1459 20.8845 32.9591C20.8071 32.7724 20.7673 32.5722 20.7673 32.37C20.7673 32.1679 20.8071 31.9677 20.8845 31.781C20.9618 31.5942 21.0752 31.4245 21.2181 31.2816L27.8239 24.6777L21.2181 18.0739C20.9295 17.7852 20.7673 17.3937 20.7673 16.9854C20.7673 16.5772 20.9295 16.1856 21.2181 15.897C21.5068 15.6083 21.8983 15.4461 22.3066 15.4461C22.7149 15.4461 23.1064 15.6083 23.3951 15.897L31.0874 23.5893C31.2304 23.7322 31.3439 23.9018 31.4213 24.0886C31.4987 24.2754 31.5386 24.4756 31.5386 24.6777C31.5386 24.8799 31.4987 25.0801 31.4213 25.2669C31.3439 25.4536 31.2304 25.6233 31.0874 25.7662Z" />
                 </svg>
             </Slider.PrevButton>
         </div>
         <div class="flex items-center justify-center z-10 ">
             <Slider.NextButton class="flex items-center justify-center ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 50 50" class="text-primary-content fill-current">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 50 50" class="text-primary-content fill-current" style={{ color: arrowsColor }}>
                     <path d="M25.3835 4.67773C21.4279 4.67773 17.5611 5.85071 14.2721 8.04834C10.9831 10.246 8.41969 13.3695 6.90593 17.0241C5.39218 20.6786 4.99611 24.6999 5.76782 28.5795C6.53952 32.4592 8.44434 36.0228 11.2414 38.8199C14.0384 41.6169 17.6021 43.5217 21.4817 44.2934C25.3613 45.0651 29.3827 44.6691 33.0372 43.1553C36.6917 41.6416 39.8153 39.0781 42.0129 35.7891C44.2105 32.5002 45.3835 28.6334 45.3835 24.6777C45.3779 19.3751 43.269 14.2913 39.5195 10.5418C35.77 6.79227 30.6861 4.68333 25.3835 4.67773ZM31.0874 25.7662L23.3951 33.4585C23.2521 33.6014 23.0824 33.7148 22.8957 33.7922C22.7089 33.8695 22.5087 33.9094 22.3066 33.9094C22.1045 33.9094 21.9043 33.8695 21.7175 33.7922C21.5308 33.7148 21.3611 33.6014 21.2181 33.4585C21.0752 33.3156 20.9618 33.1459 20.8845 32.9591C20.8071 32.7724 20.7673 32.5722 20.7673 32.37C20.7673 32.1679 20.8071 31.9677 20.8845 31.781C20.9618 31.5942 21.0752 31.4245 21.2181 31.2816L27.8239 24.6777L21.2181 18.0739C20.9295 17.7852 20.7673 17.3937 20.7673 16.9854C20.7673 16.5772 20.9295 16.1856 21.2181 15.897C21.5068 15.6083 21.8983 15.4461 22.3066 15.4461C22.7149 15.4461 23.1064 15.6083 23.3951 15.897L31.0874 23.5893C31.2304 23.7322 31.3439 23.9018 31.4213 24.0886C31.4987 24.2754 31.5386 24.4756 31.5386 24.6777C31.5386 24.8799 31.4987 25.0801 31.4213 25.2669C31.3439 25.4536 31.2304 25.6233 31.0874 25.7662Z" />
                 </svg>
             </Slider.NextButton>
         </div>
     </div>);
 }
-export default function PlanDetails({ id, title, titleTyping = [], color3, letterDelay, wordDelay, backgroundVideo, backgroundImage, useBackground, planTag, slidesTitle, slidesTitleIcon, slides, showArrows = true, annualValues, montlyValues, bottomBackground }: Props) {
+export default function PlanDetails({ id, title, titleColor, titleTyping = [], titleTypingColor, letterDelay, wordDelay, backgroundVideo, backgroundImage, useBackground, planTag, slidesTitle, slidesTitleColor, slidesTitleIcon, slides, showArrows = true, arrowsColor, annualValues, montlyValues, bottomBackground, cta = [] }: Props) {
 
     const carouselId = useId();
     return (<div id={id} class={`overflow-hidden ${!useBackground && 'bg-primary'} leading-[120%] text-primary-content`}>
         <div class="relative flex justify-center items-center w-full h-[86vw] lg:h-[43vw]">
             {planTag?.text && <div class="absolute w-full top-0 left-0">
                 <div class="w-full max-w-[1200px] mx-auto mt-">
-                    <AnimateOnShow divClass="py-2 px-4 ml-7 mt-20 lg:mt-24 bg-primary rounded-[20px] inline-flex gap-2.5" animation="animate-pop-up">
+                    <AnimateOnShow divClass="py-2 px-4 ml-7 mt-20 lg:mt-24 bg-primary rounded-[20px] inline-flex gap-2.5" animation="animate-pop-up" style={{ color: planTag.textColor, background: planTag.backgroundColor }}>
                         {planTag.icon?.src && <Image width={planTag.icon.width || 20} height={planTag.icon.height || 20} src={planTag.icon.src} alt={planTag.icon.alt || "plan tag icon"} />}
                         {planTag.text}
                     </AnimateOnShow>
@@ -191,11 +220,11 @@ export default function PlanDetails({ id, title, titleTyping = [], color3, lette
             {useBackground == "image" && backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 618} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top w-full absolute top-0 left-0 -z-10" />}
             <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, carouselId, titleTyping, wordDelay || 3000, letterDelay || 100) }} />
             <AnimateOnShow animation="animate-fade-down" divClass="text-2xl lg:text-5xl px-7 lg:px-0 text-center font-semibold max-w-[870px] leading-[120%]">
-                {title}
-                {titleTyping.length > 0 && <span id={carouselId + 'typingSpan'} style={{ color: color3 }}>
+                <span style={{ color: titleColor }}>{title}</span>
+                {titleTyping.length > 0 && <span id={carouselId + 'typingSpan'} style={{ color: titleTypingColor }}>
                     {titleTyping[0]}
                 </span>}
-                {titleTyping.length > 0 && <span class="animate-blink" style={{ color: color3 }}>|</span>}
+                {titleTyping.length > 0 && <span class="animate-blink" style={{ color: titleTypingColor }}>|</span>}
             </AnimateOnShow>
         </div>
         <div class="h-[-20px] lg:h-[130px] mt-[-20px] lg:mt-[-130px]" />
@@ -206,7 +235,7 @@ export default function PlanDetails({ id, title, titleTyping = [], color3, lette
                     <div id={carouselId} class="min-h-min flex flex-col w-full lg:w-[600px] mt-[-20px] lg:mt-[-130px] relative">
                         <div class="mb-6 hidden lg:flex gap-7">
                             {slidesTitleIcon && slidesTitleIcon.src && <Image width={slidesTitleIcon.width || 36} height={slidesTitleIcon.height || 24} src={slidesTitleIcon.src} alt={slidesTitleIcon.alt || "slides title icon"} class="object-contain" />}
-                            {slidesTitle && <h2 class="text-lg font-semibold">{slidesTitle}</h2>}
+                            {slidesTitle && <h2 class="text-lg font-semibold" style={{ color: slidesTitleColor }}>{slidesTitle}</h2>}
                         </div>
                         <Slider class="carousel carousel-center w-full col-span-full row-span-full" rootId={carouselId} interval={0 && 0 * 1e3} infinite>
                             {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-[80%] lg:w-1/2">
@@ -216,45 +245,71 @@ export default function PlanDetails({ id, title, titleTyping = [], color3, lette
 
                         <div class="flex pr-[22px] mt-6">
                             {/* {props.dots && <Dots slides={slides} interval={interval} />}{" "} */}
-                            {showArrows && <Buttons />}
+                            {showArrows && <Buttons arrowsColor={arrowsColor} />}
                         </div>
                     </div>
-                    {annualValues?.title && <div class="max-w-40 pb-[70px] mt-6 lg:mt-0 ml-5 lg:ml-0">
-                        <h3 class="text-2xl font-semibold flex flex-wrap items-center">
-                            {annualValues.title}
-                            {annualValues.tag && <span class="text-primary text-xs py-1 px-4 ml-1.5 bg-info rounded-[20px]">{annualValues.tag}</span>}
-                        </h3>
-                        {annualValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: annualValues.text }} />}
-                        {annualValues.saving && <p class="mt-3" style={{ color: color3 }}>{annualValues.saving}</p>}
-                    </div>}
-                    {montlyValues?.title && <div class="ml-5 pb-[70px] mt-6">
-                        <h3 class="text-2xl font-semibold">{montlyValues.title}</h3>
-                        {montlyValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: montlyValues.text }} />}
-                        <div class="mt-3 hidden xl:flex flex-wrap lg:flex-nowrap items-start lg:items-center gap-5">
-                            {montlyValues.cta?.text && <a href={montlyValues.cta?.href ?? "#"} target={montlyValues.cta?.href.includes("http") ? "_blank" : "_self"} class={`btn  ${montlyValues.cta.outline ? "bg-primary text-primary-content" : "bg-primary-content text-primary"} font-bold px-7 hover:scale-110 text-lg`}>
-                                {montlyValues?.cta.text}
-                            </a>}
-                            {montlyValues.link?.text && <a href={montlyValues?.link.href ?? "#"} target={montlyValues?.link.href.includes("http") ? "_blank" : "_self"} class={`text-primary-content font-bold hover:scale-110 text-lg transition-transform min-w-[270px]`}>
-                                {montlyValues?.link.textBefore}
-                                <span class="underline">{montlyValues.link.text}</span>
-                                <svg width="19" height="20" viewBox="0 0 19 20" class="fill-current inline" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.8441 5.71091V13.4297C14.8441 13.5871 14.7815 13.7382 14.6702 13.8495C14.5588 13.9609 14.4078 14.0234 14.2503 14.0234C14.0929 14.0234 13.9418 13.9609 13.8305 13.8495C13.7191 13.7382 13.6566 13.5871 13.6566 13.4297V7.14407L5.17041 15.631C5.059 15.7424 4.90789 15.805 4.75033 15.805C4.59277 15.805 4.44166 15.7424 4.33025 15.631C4.21884 15.5196 4.15625 15.3685 4.15625 15.2109C4.15625 15.0533 4.21884 14.9022 4.33025 14.7908L12.8172 6.30466H6.53158C6.37411 6.30466 6.22309 6.2421 6.11174 6.13075C6.00039 6.0194 5.93783 5.86838 5.93783 5.71091C5.93783 5.55343 6.00039 5.40241 6.11174 5.29106C6.22309 5.17971 6.37411 5.11716 6.53158 5.11716H14.2503C14.4078 5.11716 14.5588 5.17971 14.6702 5.29106C14.7815 5.40241 14.8441 5.55343 14.8441 5.71091Z" />
-                                </svg>
-                            </a>}
-                        </div>
-                    </div>}
-                    {montlyValues?.title && <div class="mt-3 px-5 flex xl:hidden flex-wrap lg:flex-nowrap items-start lg:items-center gap-5">
-                        {montlyValues.cta?.text && <a href={montlyValues.cta?.href ?? "#"} target={montlyValues.cta?.href.includes("http") ? "_blank" : "_self"} class={`btn  ${montlyValues.cta.outline ? "bg-primary text-primary-content" : "bg-primary-content text-primary"} font-bold px-7 hover:scale-110 text-lg`}>
-                            {montlyValues?.cta.text}
-                        </a>}
-                        {montlyValues.link?.text && <a href={montlyValues?.link.href ?? "#"} target={montlyValues?.link.href.includes("http") ? "_blank" : "_self"} class={`text-primary-content font-bold hover:scale-110 text-lg transition-transform min-w-[270px]`}>
-                            {montlyValues?.link.textBefore}
-                            <span class="underline">{montlyValues.link.text}</span>
-                            <svg width="19" height="20" viewBox="0 0 19 20" class="fill-current inline" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.8441 5.71091V13.4297C14.8441 13.5871 14.7815 13.7382 14.6702 13.8495C14.5588 13.9609 14.4078 14.0234 14.2503 14.0234C14.0929 14.0234 13.9418 13.9609 13.8305 13.8495C13.7191 13.7382 13.6566 13.5871 13.6566 13.4297V7.14407L5.17041 15.631C5.059 15.7424 4.90789 15.805 4.75033 15.805C4.59277 15.805 4.44166 15.7424 4.33025 15.631C4.21884 15.5196 4.15625 15.3685 4.15625 15.2109C4.15625 15.0533 4.21884 14.9022 4.33025 14.7908L12.8172 6.30466H6.53158C6.37411 6.30466 6.22309 6.2421 6.11174 6.13075C6.00039 6.0194 5.93783 5.86838 5.93783 5.71091C5.93783 5.55343 6.00039 5.40241 6.11174 5.29106C6.22309 5.17971 6.37411 5.11716 6.53158 5.11716H14.2503C14.4078 5.11716 14.5588 5.17971 14.6702 5.29106C14.7815 5.40241 14.8441 5.55343 14.8441 5.71091Z" />
-                            </svg>
-                        </a>}
-                    </div>}
+                    <div class="flex mt-6 pb-12">
+                        {annualValues?.title && <div class="max-w-40 lg:mt-0 ml-5 lg:ml-0">
+                            <h3 class="text-2xl font-semibold flex flex-wrap items-center">
+                                <span style={{ color: annualValues.titleColor }}>{annualValues.title}</span>
+                                {annualValues.tag && <span class="text-primary text-xs py-1 px-4 ml-1.5 bg-info rounded-[20px]" style={{ collor: annualValues.tagTextColor, background: annualValues.tagBackgroundColor }}>{annualValues.tag}</span>}
+                            </h3>
+                            {annualValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: annualValues.text }} />}
+                            {annualValues.saving && <p class="mt-3" style={{ color: annualValues.savingColor }}>{annualValues.saving}</p>}
+                        </div>}
+                        {montlyValues?.title && <div class="ml-5">
+                            <h3 class="text-2xl font-semibold" style={{ color: montlyValues.titleColor }}>{montlyValues.title}</h3>
+                            {montlyValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: montlyValues.text }} />}
+                            {/** pc cta div */}
+                            <div class="mt-3 hidden xl:flex flex-wrap items-start lg:items-center gap-5">
+                                {cta.map((button) => {
+                                    if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
+                                        showIcon={button.showIcon}
+                                        underlineText={button.underlineText}
+                                        text={button.text}
+                                        ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                                        style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                                    />
+                                    return <a
+                                        href={button?.href ?? "#"}
+                                        target={button?.href.includes("http") ? "_blank" : "_self"}
+                                        class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                                        style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                                    >
+                                        {button?.text}
+                                        {button.underlineText && <span class="underline">{button.underlineText}</span>}
+                                        {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z" />
+                                        </svg>}
+                                    </a>
+                                })}
+                            </div>
+                        </div>}
+                    </div>
+                    {/** mobile cta div */}
+                    <div class="mt-3 px-5 md:px-0 flex xl:hidden flex-wrap lg:flex-nowrap items-start lg:items-center gap-5">
+                        {cta.map((button) => {
+                            if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
+                                showIcon={button.showIcon}
+                                underlineText={button.underlineText}
+                                text={button.text}
+                                ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer max-h-12`}
+                                style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                            />
+                            return <a
+                                href={button?.href ?? "#"}
+                                target={button?.href.includes("http") ? "_blank" : "_self"}
+                                class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg whitespace-nowrap`}
+                                style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                            >
+                                {button?.text}
+                                {button.underlineText && <span class="underline whitespace-nowrap">{button.underlineText}</span>}
+                                {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z" />
+                                </svg>}
+                            </a>
+                        })}
+                    </div>
                 </AnimateOnShow>
             </div>
         </div>

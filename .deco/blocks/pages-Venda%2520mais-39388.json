@@ -6096,7 +6096,9 @@
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/880a5336-717a-4f28-ae0e-747b4cb6069d/coroa-1-(1).svg",
           "alt": "crown icon"
         },
-        "text": "Plano Elite"
+        "text": "Plano Elite",
+        "textColor": "#ffffff",
+        "backgroundColor": "#201131"
       },
       "backgroundImage": {},
       "useBackground": "video",
@@ -6162,7 +6164,11 @@
         "title": "Anual",
         "tag": "20% OFF",
         "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>",
-        "saving": "⚡️ Economize R$ 240 no plano anual"
+        "saving": "⚡️ Economize R$ 240 no plano anual",
+        "titleColor": "#FAFAF5",
+        "tagTextColor": "#371E55",
+        "tagBackgroundColor": "#FFE6A0",
+        "savingColor": "#28C3C3"
       },
       "montlyValues": {
         "title": "Mensal",
@@ -6176,7 +6182,8 @@
           "textBefore": "Já tem uma loja?",
           "text": " Ative agora",
           "href": "#"
-        }
+        },
+        "titleColor": "#FAFAF5"
       },
       "titleTypingColor": "#28C3C3",
       "titleTyping": [
@@ -6192,7 +6199,28 @@
       "bottomBackground": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a921d8c9-b6e5-4718-bae3-7e1ec2faebc6/bottom-background.svg"
       },
-      "id": "planoelite"
+      "id": "planoelite",
+      "titleColor": "#ffffff",
+      "slidesTitleColor": "#ffffff",
+      "arrowsColor": "#fafafa",
+      "cta": [
+        {
+          "ctaStyle": "button",
+          "href": "#",
+          "text": "Fazer parte",
+          "backgroundColor": "#ffffff",
+          "textColor": "#371E55",
+          "borderColor": "#fcfcfc"
+        },
+        {
+          "ctaStyle": "link",
+          "href": "#",
+          "text": "Já tem uma loja?",
+          "underlineText": "Ative agora",
+          "showIcon": true,
+          "textColor": "#ffffff"
+        }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

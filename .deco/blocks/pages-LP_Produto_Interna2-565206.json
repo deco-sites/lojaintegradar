@@ -568,7 +568,7 @@
       },
       "tabs": [
         {
-          "highlight": false,
+          "highlight": true,
           "videoOn": true,
           "textContent": {
             "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Ficou mais fácil otimizar seu portfólio e incluir em diversos marketplaces. O Hub de Canais conta com recursos facilitados por IA, que ajudam a preencher catálogos de produtos, que são ajustados automaticamente, de acordo com os requisitos de cada canal.</span></p>",
@@ -587,7 +587,10 @@
             "widthDesktop": 606,
             "heightDesktop": 600
           },
-          "videoUrl": "https://www.youtube.com/embed/LNCNuQeaLGw?si=3V8UKSbw-Xy4VMkJ"
+          "videoUrl": "https://www.youtube.com/embed/LNCNuQeaLGw?si=3V8UKSbw-Xy4VMkJ",
+          "button": {
+            "buttonText": "Quero testar"
+          }
         },
         {
           "highlight": false,
@@ -608,6 +611,9 @@
             "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cf0a2ede-2e01-476b-98d5-dd82b01f0455/img--enriqueca-seu-catalogo.png",
             "widthDesktop": 606,
             "heightDesktop": 600
+          },
+          "button": {
+            "buttonText": "Integrar agora"
           }
         },
         {
@@ -629,6 +635,9 @@
             "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6138e5a2-b844-4962-8448-5d68df1a622d/img--carrinho-compartilhavel.png",
             "widthDesktop": 606,
             "heightDesktop": 600
+          },
+          "button": {
+            "buttonText": "Quero testar"
           }
         }
       ],
@@ -649,61 +658,17 @@
           ]
         }
       },
-      "finalButtons": [
-        {
-          "type": "ctaForm",
-          "text": "Avalie seu negócio"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/HeroCard.tsx",
-      "subTitle": {
-        "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 15px\">Entre na lista de avaliação do </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 15px\">Bollico e Loja</span></strong></p><p style=\"text-align: center\"><strong><span style=\"color: rgb(255, 255, 255); font-size: 15px\">Integrada</span></strong><span style=\"color: rgb(255, 255, 255); font-size: 15px\">, e </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 15px\">investimos até 12 mil na</span></strong></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 15px\">sua migração</span></p>",
-        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">Solicite a avaliação de valor do seu negócio. Você pode receber </span><span style=\"font-size: 15pt\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">um </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">investimento de até R$ 12 mil para migrar.</span></strong><span style=\"font-size: 15pt\"><br></span></p>"
-      },
-      "title": {
-        "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 25pt\">Nós </span><em><span style=\"color: rgb(113, 219, 212); font-size: 25pt\">investimos na</span></em></p><p style=\"text-align: center\"><em><span style=\"color: rgb(113, 219, 212); font-size: 25pt\">sua migração</span><span style=\"color: rgb(255, 255, 255); font-size: 25pt\">.</span></em><span style=\"font-size: 25pt\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 25pt\">Literalmente</span><em><span style=\"color: rgb(255, 255, 255); font-size: 25pt\">.</span></em></p>",
-        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 52pt\">Loja Integrada e Bollico<br>investem na sua migração.</span><span style=\"font-size: 52pt\"><br></span><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt\">Literalmente.</span></em></p>"
-      },
-      "cardBackgroundImage": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f33f28c2-b36a-4643-b664-34ca0c41e82f/bg-Bollico-desktop.png",
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8bbf709f-3863-4ce3-9925-36219de1d857/bg-mob.png",
-        "heightDesktop": 647
-      },
-      "plan": {
-        "title": "<p style=\"text-align: center\">Comece <span style=\"color: rgb(113, 219, 212)\">2025</span> com mais inteligência</p>",
-        "titleDesktop": "<p>Comece <span style=\"color: rgb(113, 219, 212)\">2025</span> com mais inteligência</p>"
-      },
-      "button": {
-        "buttonText": "Consultar agora",
-        "buttonUrl": "/"
-      },
-      "extraText": "*Atendidos os critérios de avaliação dos especialistas.",
-      "backgroundColors": {
-        "color1": "#170C24",
-        "color2": "#003037"
-      },
-      "secondImage": {
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1302de89-163a-4b63-bf16-df88358ec141/gab-mob.png",
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9035f5a3-f2ec-4d43-80fd-a6c5bc3de6ee/Bollico-desk.png"
-      },
-      "buttons": [
-        {
-          "type": "ctaForm",
-          "text": "Avalie seu negócio"
-        }
-      ]
+      "finalButtons": []
     },
     {
       "__resolveType": "site/sections/HeroTab.tsx",
-      "title": {
-        "desktop": "<p><span style=\"color: rgb(40, 195, 195); font-size: 18pt\">Tecnologias para ganhar eficiência</span></p>",
-        "mobile": "<p><span style=\"color: rgb(40, 195, 195); font-size: 14pt\">Tecnologias para ganhar eficiência</span></p>"
-      },
       "subTitle": {
         "mobile": "<p><em><span style=\"color: rgb(113, 219, 212); font-size: 32pt\">As melhores </span></em><span style=\"color: rgb(255, 255, 255); font-size: 32pt\">soluções de logística e pagamentos nativas</span></p>",
         "desktop": "<p><em><span style=\"color: rgb(113, 219, 212); font-size: 75pt\">As melhores </span></em><span style=\"color: rgb(255, 255, 255); font-size: 75pt\">soluções de logística </span><br><span style=\"color: rgb(255, 255, 255); font-size: 75pt\">e pagamentos nativas</span></p>"
+      },
+      "title": {
+        "mobile": "<p><span style=\"color: rgb(40, 195, 195); font-size: 14pt\">Tecnologias para ganhar eficiência</span></p>",
+        "desktop": "<p><span style=\"color: rgb(40, 195, 195); font-size: 18pt\">Tecnologias para ganhar eficiência</span></p>"
       },
       "buttons": [
         {
@@ -728,8 +693,9 @@
       ],
       "finalButtons": [
         {
-          "type": "ctaForm",
-          "text": "Avalie seu negócio"
+          "type": "link",
+          "text": "Testar novidades na loja",
+          "link": "https://app.lojaintegrada.com.br/painel/login"
         }
       ]
     },

@@ -1,8 +1,9 @@
 import { useState, useEffect } from "preact/hooks";
 import Image from "apps/website/components/Image.tsx";
 import type { Props, Buttons } from "../../sections/HeroTab.tsx";
+import FlexibleButton from "site/islands/FlexibleButtons.tsx";
 
-function HeroTab({ title, subTitle, buttons }: Props) {
+function HeroTab({ title, subTitle, buttons, finalButtons }: Props) {
     const [activeIndex, setActiveIndex] = useState(0);
     const [activeButton, setActiveButton] = useState<Buttons | null>(null);
 
@@ -18,7 +19,6 @@ function HeroTab({ title, subTitle, buttons }: Props) {
         }
     }, [activeIndex, buttons]);
 
-    console.log("quantas vezes")
     const renderResponsiveContent = (
         desktop: string | undefined,
         mobile: string | undefined,
@@ -76,7 +76,7 @@ function HeroTab({ title, subTitle, buttons }: Props) {
                                 }`}
                             onClick={() => handleTabClick(index)}
                         >
-                            {button.text}
+                            <span dangerouslySetInnerHTML={{ __html: button.text ?? '' }} />
                         </button>
                     ))}
                 </div>
@@ -143,6 +143,9 @@ function HeroTab({ title, subTitle, buttons }: Props) {
                         />
                     </div>
                 )}
+                <div class="flex items-center justify-center gap-4 flex-wrap mt-[124px]">  {finalButtons?.map((button, index) => (
+                    <FlexibleButton key={index} {...button} />
+                ))}</div>
             </div>
         </>
     );

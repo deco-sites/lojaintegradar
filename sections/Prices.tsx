@@ -4,10 +4,9 @@ import Icon from "../components/ui/Icon.tsx";
 import { clx } from "../sdk/clx.ts";
 import Image from "apps/website/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
-import CreateStoreModal from "site/islands/CreateStoreModal.tsx";
 import PricesButtons from "site/islands/PricesButtons.tsx";
-import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
-
+import { Button } from "site/types/types.ts";
+import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 export interface Props {
     backgroundImage?: {
         firstBackground?: ImageWidget;
@@ -16,11 +15,7 @@ export interface Props {
     title?: Title;
     subTitle?: Subtitle;
     cards?: Card[];
-    finalButtons?: {
-        text?: string;
-        link?: string;
-        changeType?: boolean;
-    }[];
+    finalButtons?: Button[]
 }
 
 interface Card {
@@ -37,6 +32,7 @@ interface Card {
      * @format rich-text
      */
     textContent?: string;
+    buttonType: "createStoreForm" | "ctaForm";
     buttonText?: string;
     /**
      * @title ID do plano
@@ -175,7 +171,7 @@ function Prices({
                                         }}
                                     ></span>
                                 )}
-                                <PricesButtons planId={card.planId} highlight={card.highlight} buttonText={card.buttonText} />
+                                <PricesButtons type={card.buttonType} planId={card.planId} highlight={card.highlight} buttonText={card.buttonText} />
                             </div>
                         </Slider.Item>
                     ))}
@@ -193,35 +189,11 @@ function Prices({
                     </Slider.NextButton>
                 </div>
             </div>
-            <CreateStoreModal />
             <Slider.JS rootId={id} initial={0} />
             <div class="gap-5 relative z-10 w-full items-center justify-center mt-2 lg:mt-20 flex">
-                {finalButtons?.map((button) =>
-                    button.changeType ? (
-                        <button
-                            class="background-df border-[1px] border-solid border-primary-content w-fit px-[14px] rounded-lg h-[48px]"
-                        >
-                            <a
-                                class="text-center font-bold text-[18px] text-primary-content "
-                                href={button.link}
-                            >
-                                {button?.text}
-                            </a>
-                        </button>
-                    ) : (
-                        <button
-                            class="bg-primary-content w-fit px-[14px] rounded-lg h-[48px]"
-                        >
-                            <a
-                                class="text-center font-bold text-[18px] text-base-300 "
-                                href={button.link}
-                            >
-                                {" "}
-                                {button?.text}
-                            </a>
-                        </button>
-                    )
-                )}
+                <div class="flex items-center justify-center gap-4 flex-wrap">  {finalButtons?.map((button, index) => (
+                    <FlexibleButtons key={index} {...button} />
+                ))}</div>
             </div>
         </div>
     );

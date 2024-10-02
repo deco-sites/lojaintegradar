@@ -72,6 +72,7 @@ interface Policies {
 function Footer({ cards, logoImage, newsletter, socials, policies }: Props) {
   return (
     <div
+      id="footerSection"
       style="background-image: url('/bg-footer.png'); background-repeat: no-repeat; background-size: 100% 100%;"
       class="bg-base-300 pt-[93px] px-[10px] pb-[40px]"
     >

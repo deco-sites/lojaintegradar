@@ -1,10 +1,11 @@
 import HeroWithTime from "../islands/HeroWithTime.tsx";
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
-
+import { Button } from "site/types/types.ts";
 export interface Props {
     title?: Title;
     subTitle?: Subtitle;
     tabs?: Tabs[];
+    finalButtons?: Button[];
     background?: Background;
 }
 
@@ -104,6 +105,7 @@ interface Background {
 }
 
 
+
 function HeroWithTimer(props: Props) {
 
     const getBackgroundStyle = () => {
@@ -132,7 +134,7 @@ function HeroWithTimer(props: Props) {
     };
 
     return (
-        <div style={getBackgroundStyle()} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
+        <div id="heroTimeSection" style={getBackgroundStyle()} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
             <HeroWithTime {...props} />
         </div>
     )

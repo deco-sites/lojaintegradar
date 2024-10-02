@@ -30,7 +30,8 @@ max-width: 611px;
     height: 60px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .hs-email .input input:focus {

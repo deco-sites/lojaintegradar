@@ -2,8 +2,9 @@ import Image from "apps/website/components/Image.tsx";
 import { useState, useEffect } from "preact/hooks";
 import Icon from "site/components/ui/Icon.tsx";
 import type { Props } from "../../sections/HeroWithTime.tsx";
+import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 
-function HeroWithTime({ title, subTitle, tabs, background }: Props) {
+function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props) {
     const [activeTab, setActiveTab] = useState(0);
     const [progress, setProgress] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,8 +32,6 @@ function HeroWithTime({ title, subTitle, tabs, background }: Props) {
 
         return () => clearInterval(interval);
     }, [activeTab, tabs]);
-
-
 
     return (
         <>
@@ -235,6 +234,9 @@ function HeroWithTime({ title, subTitle, tabs, background }: Props) {
                         </div>
                     )}
                 </div>
+                <div class="flex items-center justify-center gap-4 flex-wrap mt-[60px] lg:mt-[154px]">  {finalButtons?.map((button, index) => (
+                    <FlexibleButtons key={index} {...button} />
+                ))}</div>
             </div>
         </>
     );

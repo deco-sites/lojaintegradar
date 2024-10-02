@@ -1,8 +1,9 @@
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { CSS } from "../static/css.ts";
-import HeaderInitialButtons from "site/islands/HeaderInitialButtons.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
+import FlexibleButton from "site/islands/FlexibleButtons.tsx";
+import { Button } from "site/types/types.ts";
 interface Props {
     backgroundType: "image" | "video";
     /**
@@ -26,12 +27,7 @@ interface Props {
     height?: number;
 
     textContent?: Text;
-    initialButtons?: {
-        text?: string;
-        link?: string;
-        changeType?: boolean;
-        openForm?: boolean;
-    }[];
+    buttons?: Button[];
     labelText?: string;
 }
 
@@ -55,20 +51,20 @@ function Header({
     width,
     height,
     textContent,
-    initialButtons,
+    buttons,
     labelText,
 }: Props) {
     return (
-        <header class="customContainer pt-[36px] min-h-[416px] max-h-[416px] lg:min-h-[800px] flex flex-col items-center justify-normal">
+        <header id="headerSection" class="customContainer pt-[36px] min-h-[455px] max-h-[455px] lg:min-h-[800px] flex flex-col items-center justify-normal">
             <>
                 {backgroundType === "image" && (
                     <>
                         <Image
                             src={backgroundImage?.mobile || ""}
                             alt={alt || ""}
-                            height={height || 416}
+                            height={height || 460}
                             width={width || 375}
-                            class="w-full absolute top-0 left-0 max-h-[416px] lg:hidden"
+                            class="w-full absolute top-0 left-0 max-h-[460px] lg:hidden"
                             loading={"eager"}
                         />
                         <Image
@@ -106,7 +102,7 @@ function Header({
                             muted
                             loop
                             id="headerVideo"
-                            className={`w-full max-w-full object-cover absolute top-0 left-0 min-h-[416px] max-h-[416px] lg:max-h-[800px] lg:min-h-[800px] ${backgroundVideo?.disableOnMobile ? "hidden lg:block" : ''}`}
+                            className={`w-full max-w-full object-cover absolute top-0 left-0 min-h-[455px] max-h-[455px] lg:max-h-[800px] lg:min-h-[800px] ${backgroundVideo?.disableOnMobile ? "hidden lg:block" : ''}`}
                         >
                             <source
                                 src={backgroundVideo?.video}
@@ -121,9 +117,9 @@ function Header({
                             <Image
                                 src={backgroundImage?.mobile || ""}
                                 alt={alt || ""}
-                                height={height || 416}
+                                height={height || 460}
                                 width={width || 375}
-                                class="w-full absolute top-0 left-0 max-h-[416px] lg:hidden"
+                                class="w-full absolute top-0 left-0 max-h-[460px] lg:hidden"
                                 loading={"eager"}
                             />
                         }
@@ -142,7 +138,9 @@ function Header({
                     />
                 )}
                 <div class="flex items-center gap-[30px]">
-                    <HeaderInitialButtons initialButtons={initialButtons} />
+                    {buttons?.map((button, index) => (
+                        <FlexibleButton key={index} {...button} />
+                    ))}
                 </div>
             </div>
             <div class="flex flex-col items-center justify-center relative z-[5] lg:min-h-[715px]">
@@ -157,11 +155,9 @@ function Header({
                             class="mb-16"
                         />
                     )}
-                    {initialButtons?.map((button) => (
-                        <button class="bg-primary-content w-full max-w-[157px] rounded-lg text-center font-bold text-[18px] text-base-300 h-[48px] hidden lg:block">
-                            {button?.text}
-                        </button>
-                    ))}
+                    {/* {buttons?.map((button, index) => (
+                        <FlexibleButton key={index} {...button} />
+                    ))} */}
                 </div>
                 <AnimateOnShow animation="animate-pop-up" animationDuration="1.1s">
                     {textContent?.desktop && (

@@ -1,8 +1,6 @@
-import { useState } from "preact/hooks";
 import Image from "apps/website/components/Image.tsx";
-import TalkModal from "site/components/ui/TalkModal.tsx";
 import type { Props } from "../../sections/HeroCard.tsx";
-
+import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 
 function HeroCard({
     cardBackgroundImage,
@@ -10,33 +8,32 @@ function HeroCard({
     plan,
     title,
     subTitle,
-    button,
+    buttons,
     extraText,
 }: Props) {
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <>
             <div data-aos="fade-up" class="customContainer">
-                <div class="w-full relative max-w-[420px] lg:max-w-[1256px] mx-auto px-[10px]">
+                <div class="w-full relative max-w-[637px] lg:max-w-[1256px] mx-auto px-[10px]">
                     {cardBackgroundImage?.desktop && (
                         <Image
                             src={cardBackgroundImage?.desktop}
                             alt={"gradient background"}
-                            height={579}
-                            width={1256}
+                            height={cardBackgroundImage.heightDesktop || 579}
+                            width={cardBackgroundImage.widthDesktop || 1256}
                             class="relative mx-auto hidden lg:block"
-                            style={{ minHeight: 579 }}
+                            style={{ minHeight: cardBackgroundImage.heightDesktop || 579 }}
                         />
                     )}
                     {cardBackgroundImage?.mobile && (
                         <Image
                             src={cardBackgroundImage?.mobile}
                             alt={"card background"}
-                            height={342}
-                            width={420}
-                            class="relative mx-auto lg:hidden rounded-lg"
-                            style={{ minHeight: 353 }}
+                            height={cardBackgroundImage.heightMobile || 637}
+                            width={cardBackgroundImage.widthMobile || 420}
+                            class="relative w-full mx-auto lg:hidden rounded-lg"
+                            style={{ minHeight: cardBackgroundImage.heightMobile || 637, maxHeight: cardBackgroundImage.heightMobile || 637 }}
                         />
                     )}
 
@@ -44,30 +41,36 @@ function HeroCard({
                         <Image
                             src={secondImage?.desktop}
                             alt={"gradient background"}
-                            height={680}
-                            width={500}
-                            class="mx-auto hidden lg:block absolute bottom-0 right-0 w-[500px] h-[640px]"
+                            height={secondImage.heightDesktop || 680}
+                            width={secondImage.widthDesktop || 500}
+                            class="mx-auto hidden lg:block absolute bottom-0 right-0 min-w-[500px] min-h-[640px]"
                         />
                     )}
                     {secondImage?.mobile && (
                         <Image
                             src={secondImage?.mobile}
                             alt={"card background"}
-                            height={500}
-                            width={360}
-                            class="lg:hidden absolute bottom-0 right-0 w-[250px] h-[300px] pr-[10px]"
-                            style={{ minHeight: 300 }}
+                            height={secondImage.heightMobile || 226}
+                            width={secondImage.widthMobile || 261}
+                            class="lg:hidden absolute bottom-0 right-2/4 translate-x-1/2"
+                            style={{ minHeight: secondImage.heightMobile || 226 }}
                         />
                     )}
 
-                    <div class="flex flex-col gap-[10px] lg:gap-[40px] absolute top-3 lg:top-[50px] left-2 lg:left-[50px] min-w-[280px] px-[10px] xl:px-0">
+                    <div class="flex flex-col w-[97%] lg:w-[unset] gap-6 lg:gap-[40px] absolute top-3 lg:top-[50px] left-2 lg:left-[50px] min-w-[280px] px-[10px] xl:px-0">
                         <div class="flex gap-1">
-                            <span class="text-base font-semibold text-primary-content">
-                                {plan.title}
+                            {plan.title && <span dangerouslySetInnerHTML={{ __html: plan.title }} class="w-full text-base font-semibold text-primary-content lg:hidden">
+
                             </span>
-                            <span class="flex items-center bg-[#AA82C8] text-[#371E55] text-xs font-semibold px-[7px] py-[1px] rounded-[122px]">
+                            }
+                            {plan.titleDesktop && <span dangerouslySetInnerHTML={{ __html: plan.titleDesktop }} class="hidden lg:block w-full text-base font-semibold text-primary-content">
+
+                            </span>
+                            }
+                            {plan.discount && <span class="flex items-center bg-[#AA82C8] text-[#371E55] text-xs font-semibold px-[7px] py-[1px] rounded-[122px]">
                                 {plan.discount}
                             </span>
+                            }
                         </div>
                         {title?.desktop && (
                             <span
@@ -93,24 +96,15 @@ function HeroCard({
                                 dangerouslySetInnerHTML={{ __html: subTitle?.mobile }}
                             ></span>
                         )}
-                        <button
-                            class="rounded-lg bg-primary-content py-3 w-full min-w-[172px] max-w-[172px] lg:max-w-[225px]"
-                            onClick={() => setIsModalOpen(true)}
-                        >
-                            <span class="text-base lg:text-[18px] font-bold text-center text-[#003037]">
-                                {button?.buttonText}
-                            </span>
-                        </button>
+                        <div class="flex items-center justify-center lg:justify-normal gap-4 flex-wrap">  {buttons?.map((button, index) => (
+                            <FlexibleButtons key={index} {...button} />
+                        ))}</div>
                         <span class="text-sm text-primary-content hidden lg:block">
                             {extraText}
                         </span>
                     </div>
                 </div>
             </div>
-
-            {isModalOpen && (
-                <TalkModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
-            )}
         </>
     );
 }

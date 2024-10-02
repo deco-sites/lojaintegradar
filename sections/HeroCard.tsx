@@ -1,30 +1,44 @@
-import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
 import HeroCard from "../islands/HeroCard.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
+import { Button } from "site/types/types.ts";
 export interface Props {
     cardBackgroundImage?: {
         desktop?: ImageWidget;
+        widthDesktop?: number;
+        heightDesktop?: number;
         mobile?: ImageWidget;
+        widthMobile?: number;
+        heightMobile?: number;
     };
     secondImage?: {
         desktop?: ImageWidget;
+        widthDesktop?: number;
+        heightDesktop?: number;
         mobile?: ImageWidget;
+        widthMobile?: number;
+        heightMobile?: number;
     };
-    plan: {
-        title?: string;
-        discount?: string;
-    };
-
+    plan: Plan;
     title?: Title;
     subTitle?: Subtitle;
-    button?: {
-        buttonText?: string;
-    };
+    buttons?: Button[];
     extraText?: string;
     backgroundColors?: {
         color1: string;
         color2: string;
     };
+}
+
+interface Plan {
+    /**
+     * @format rich-text
+     */
+    title?: string;
+    /**
+     * @format rich-text
+     */
+    titleDesktop?: string;
+    discount?: string;
 }
 
 interface Title {
@@ -56,7 +70,7 @@ function HeroCards(props: Props) {
     };
 
     return (
-        <div style={bgStyle} class="bg-base-300 py-20">
+        <div id="heroCardSection" style={bgStyle} class="bg-base-300 py-20">
             <HeroCard {...props} />
         </div>
     )

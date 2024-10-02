@@ -1,6 +1,6 @@
 {
-  "name": "LP_Produto_Externa",
-  "path": "/escolha-dados-e-automacao",
+  "name": "LP_Produto_Interna",
+  "path": "/dados-e-automacao",
   "sections": [
     {
       "__resolveType": "site/sections/Header.tsx",
@@ -12,8 +12,8 @@
         "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fa825a5f-5b43-414e-addd-722f311f8941/Group-21462605-(2).png"
       },
       "textContent": {
-        "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(252, 252, 252); font-size: 60pt\">Na dúvida sobre qual plataforma</span></p><p style=\"text-align: center\"><span style=\"color: rgb(252, 252, 252); font-size: 60pt\">migrar, escolha quem investe em</span><br><em><span style=\"color: rgb(40, 195, 195); font-size: 60pt\">Dados &amp; Automação</span></em></p>",
-        "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 22pt\">Na dúvida sobre qual plataforma </span><br><span style=\"color: rgb(255, 255, 255); font-size: 22pt\">migrar, escolha quem investe em </span><br><span style=\"color: rgb(255, 255, 255); font-size: 22pt\"> </span><em><span style=\"color: rgb(40, 195, 195); font-size: 22pt\">Dados &amp; Automação</span></em></p>"
+        "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(252, 252, 252); font-size: 60pt\">O futuro do e-commerce é inteligente.</span><br><span style=\"color: rgb(252, 252, 252); font-size: 60pt\"> Escolha  </span><em><span style=\"color: rgb(40, 195, 195); font-size: 60pt\">Dados &amp; Automação</span></em></p>",
+        "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 22pt\">O futuro do e-commerce é inteligente.</span><br><span style=\"color: rgb(255, 255, 255); font-size: 22pt\">Escolha </span><em><span style=\"color: rgb(40, 195, 195); font-size: 22pt\">Dados &amp; Automação</span></em></p>"
       },
       "buttons": [
         {
@@ -212,8 +212,8 @@
             "21": "d",
             "22": "a",
             "23": "s",
-            "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Carrinho e Produto Abandonado</span></p>",
-            "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Carrinho e Produto Abandonado</span></p>"
+            "desktop": "<p style=\"text-align: justify\"><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Produto Abandonado</span></p>",
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Produto Abandonado</span></p>"
           },
           "textContent": {
             "0": "c",
@@ -380,8 +380,8 @@
             "161": "t",
             "162": "o",
             "163": ".",
-            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Ative gatilhos que ajudam a recuperar vendas que escaparam por pouco. Recupere clientes que deixaram produtos em seus carrinhos e também aqueles que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação.</span></p>",
-            "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Ative gatilhos que ajudam a recuperar vendas que escaparam por pouco. Recupere clientes que deixaram produtos em seus carrinhos e também aqueles que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação.</span></p>"
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Ative gatilhos que ajudam a recuperar vendas que escaparam por pouco. Além do carrinho abandonado, agora é possível recuperar também aqueles clientes que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação.</span></p>",
+            "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Ative gatilhos que ajudam a recuperar vendas que escaparam por pouco. Além do carrinho abandonado, agora é possível recuperar também aqueles clientes que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação.</span></p>"
           },
           "tabImage": {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fff82cb8-5a3e-4a44-bb99-b4f029c4a6f5/img--recupere-vendas.png",
@@ -391,7 +391,10 @@
           },
           "videoOn": true,
           "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
-          "button": {}
+          "button": {
+            "buttonText": "Quero testar",
+            "buttonLink": "https://app.lojaintegrada.com.br/painel/login"
+          }
         },
         {
           "textContent": {
@@ -411,7 +414,11 @@
             "widthDesktop": 606,
             "heightDesktop": 665
           },
-          "highlight": false
+          "highlight": true,
+          "button": {
+            "buttonText": "Quero testar",
+            "buttonLink": "https://app.lojaintegrada.com.br/painel/login"
+          }
         },
         {
           "textContent": {
@@ -431,7 +438,11 @@
             "widthDesktop": 606,
             "heightDesktop": 665
           },
-          "highlight": false
+          "highlight": true,
+          "button": {
+            "buttonText": "Quero testar",
+            "buttonLink": "https://app.lojaintegrada.com.br/painel/login"
+          }
         },
         {
           "textContent": {
@@ -451,7 +462,11 @@
             "widthDesktop": 606,
             "heightDesktop": 665
           },
-          "highlight": false
+          "highlight": true,
+          "videoOn": true,
+          "button": {
+            "buttonText": "Ativar"
+          }
         }
       ],
       "background": {
@@ -471,12 +486,7 @@
           ]
         }
       },
-      "finalButtons": [
-        {
-          "type": "ctaForm",
-          "text": "Avalie seu negócio"
-        }
-      ]
+      "finalButtons": []
     },
     {
       "__resolveType": "site/sections/HeroInfo.tsx",
@@ -505,8 +515,8 @@
           "buttonPlanId": "173",
           "buttons": [
             {
-              "type": "ctaForm",
-              "text": "Avalie seu negócio",
+              "type": "link",
+              "text": "Experimentar agora",
               "openForm": true
             }
           ]
@@ -534,8 +544,8 @@
           "buttonPlanId": "172",
           "buttons": [
             {
-              "type": "ctaForm",
-              "text": "Avalie seu negócio"
+              "type": "link",
+              "text": "Veja na sua loja"
             }
           ]
         }
@@ -553,7 +563,7 @@
       },
       "tabs": [
         {
-          "highlight": false,
+          "highlight": true,
           "videoOn": true,
           "textContent": {
             "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Ficou mais fácil otimizar seu portfólio e incluir em diversos marketplaces. O Hub de Canais conta com recursos facilitados por IA, que ajudam a preencher catálogos de produtos, que são ajustados automaticamente, de acordo com os requisitos de cada canal.</span></p>",
@@ -572,7 +582,10 @@
             "widthDesktop": 606,
             "heightDesktop": 600
           },
-          "videoUrl": "https://www.youtube.com/embed/LNCNuQeaLGw?si=3V8UKSbw-Xy4VMkJ"
+          "videoUrl": "https://www.youtube.com/embed/LNCNuQeaLGw?si=3V8UKSbw-Xy4VMkJ",
+          "button": {
+            "buttonText": "Quero testar"
+          }
         },
         {
           "highlight": false,
@@ -593,11 +606,14 @@
             "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cf0a2ede-2e01-476b-98d5-dd82b01f0455/img--enriqueca-seu-catalogo.png",
             "widthDesktop": 606,
             "heightDesktop": 600
+          },
+          "button": {
+            "buttonText": "Integrar agora"
           }
         },
         {
           "highlight": false,
-          "videoOn": false,
+          "videoOn": true,
           "textContent": {
             "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Vender pelas redes sociais ficou mais prático. Monte um carrinho com os os itens desejados pelo cliente, acrescente descontos e envie em qualquer canal de atendimento (Whatsapp, Instagram, TikTok e mais).</span></p>",
             "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Vender pelas redes sociais ficou mais prático. Monte um carrinho com os os itens desejados pelo cliente, acrescente descontos e envie em qualquer canal de atendimento (Whatsapp, Instagram, TikTok e mais).</span></p>"
@@ -614,6 +630,9 @@
             "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6138e5a2-b844-4962-8448-5d68df1a622d/img--carrinho-compartilhavel.png",
             "widthDesktop": 606,
             "heightDesktop": 600
+          },
+          "button": {
+            "buttonText": "Quero testar"
           }
         }
       ],
@@ -634,61 +653,17 @@
           ]
         }
       },
-      "finalButtons": [
-        {
-          "type": "ctaForm",
-          "text": "Avalie seu negócio"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/HeroCard.tsx",
-      "subTitle": {
-        "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 15px\">Entre na lista de avaliação do </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 15px\">Bollico e Loja</span></strong></p><p style=\"text-align: center\"><strong><span style=\"color: rgb(255, 255, 255); font-size: 15px\">Integrada</span></strong><span style=\"color: rgb(255, 255, 255); font-size: 15px\">, e </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 15px\">investimos até 12 mil na</span></strong></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 15px\">sua migração</span></p>",
-        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">Solicite a avaliação de valor do seu negócio. Você pode receber </span><span style=\"font-size: 15pt\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">um </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 15pt\">investimento de até R$ 12 mil para migrar.</span></strong><span style=\"font-size: 15pt\"><br></span></p>"
-      },
-      "title": {
-        "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 25pt\">Nós </span><em><span style=\"color: rgb(113, 219, 212); font-size: 25pt\">investimos na</span></em></p><p style=\"text-align: center\"><em><span style=\"color: rgb(113, 219, 212); font-size: 25pt\">sua migração</span><span style=\"color: rgb(255, 255, 255); font-size: 25pt\">.</span></em><span style=\"font-size: 25pt\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 25pt\">Literalmente</span><em><span style=\"color: rgb(255, 255, 255); font-size: 25pt\">.</span></em></p>",
-        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 52pt\">Loja Integrada e Bollico<br>investem na sua migração.</span><span style=\"font-size: 52pt\"><br></span><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt\">Literalmente.</span></em></p>"
-      },
-      "cardBackgroundImage": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f33f28c2-b36a-4643-b664-34ca0c41e82f/bg-Bollico-desktop.png",
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8bbf709f-3863-4ce3-9925-36219de1d857/bg-mob.png",
-        "heightDesktop": 647
-      },
-      "plan": {
-        "title": "<p style=\"text-align: center\">Comece <span style=\"color: rgb(113, 219, 212)\">2025</span> com mais inteligência</p>",
-        "titleDesktop": "<p>Comece <span style=\"color: rgb(113, 219, 212)\">2025</span> com mais inteligência</p>"
-      },
-      "button": {
-        "buttonText": "Consultar agora",
-        "buttonUrl": "/"
-      },
-      "extraText": "*Atendidos os critérios de avaliação dos especialistas.",
-      "backgroundColors": {
-        "color1": "#170C24",
-        "color2": "#003037"
-      },
-      "secondImage": {
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1302de89-163a-4b63-bf16-df88358ec141/gab-mob.png",
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9035f5a3-f2ec-4d43-80fd-a6c5bc3de6ee/Bollico-desk.png"
-      },
-      "buttons": [
-        {
-          "type": "ctaForm",
-          "text": "Avalie seu negócio"
-        }
-      ]
+      "finalButtons": []
     },
     {
       "__resolveType": "site/sections/HeroTab.tsx",
-      "title": {
-        "desktop": "<p><span style=\"color: rgb(40, 195, 195); font-size: 18pt\">Tecnologias para ganhar eficiência</span></p>",
-        "mobile": "<p><span style=\"color: rgb(40, 195, 195); font-size: 14pt\">Tecnologias para ganhar eficiência</span></p>"
-      },
       "subTitle": {
         "mobile": "<p><em><span style=\"color: rgb(113, 219, 212); font-size: 32pt\">As melhores </span></em><span style=\"color: rgb(255, 255, 255); font-size: 32pt\">soluções de logística e pagamentos nativas</span></p>",
         "desktop": "<p><em><span style=\"color: rgb(113, 219, 212); font-size: 75pt\">As melhores </span></em><span style=\"color: rgb(255, 255, 255); font-size: 75pt\">soluções de logística </span><br><span style=\"color: rgb(255, 255, 255); font-size: 75pt\">e pagamentos nativas</span></p>"
+      },
+      "title": {
+        "mobile": "<p><span style=\"color: rgb(40, 195, 195); font-size: 14pt\">Tecnologias para ganhar eficiência</span></p>",
+        "desktop": "<p><span style=\"color: rgb(40, 195, 195); font-size: 18pt\">Tecnologias para ganhar eficiência</span></p>"
       },
       "buttons": [
         {
@@ -713,8 +688,9 @@
       ],
       "finalButtons": [
         {
-          "type": "ctaForm",
-          "text": "Avalie seu negócio"
+          "type": "link",
+          "text": "Testar novidades na loja",
+          "link": "https://app.lojaintegrada.com.br/painel/login"
         }
       ]
     },
@@ -763,248 +739,13 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Prices.tsx",
-      "subTitle": {
-        "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 37pt\">Escolha a plataforma que investe em </span><em><span style=\"color: rgb(250, 250, 245); font-size: 37pt\">dados e automação</span></em></p>",
-        "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245); font-size: 52pt\">Escolha a plataforma que investe</span></p><p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245); font-size: 52pt\">em </span><em><span style=\"color: rgb(250, 250, 245); font-size: 52pt\">dados e automação</span></em></p>"
-      },
-      "title": {
-        "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">Planos acessíveis para migrar</span></p>",
-        "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 16pt\">Planos acessíveis para migrar</span></p>"
-      },
-      "cards": [
-        {
-          "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Gratuito</span></strong></p>",
-          "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$0</span></strong></p>",
-          "textContent": "<p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">Pra sentir</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">o gostinho de</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">como é vender</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">online</span></p>",
-          "planId": "172",
-          "buttonType": "ctaForm",
-          "buttonText": "Saiba mais"
-        },
-        {
-          "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Crescimento</span></strong></p>",
-          "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$59</span></strong></p>",
-          "textContent": "<p><span style=\"color: rgb(0, 48, 55)\">Seu negócio</span></p><p><span style=\"color: rgb(0, 48, 55)\">está crescendo</span></p><p><span style=\"color: rgb(0, 48, 55)\">e a gente</span></p><p><span style=\"color: rgb(0, 48, 55)\">acompanha</span></p>",
-          "planId": "173",
-          "buttonType": "ctaForm",
-          "buttonText": "Saiba mais"
-        },
-        {
-          "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Aceleração</span></strong></p>",
-          "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$99</span></strong></p>",
-          "textContent": "<p><span style=\"color: rgb(0, 48, 55)\">Mais recursos</span></p><p><span style=\"color: rgb(0, 48, 55)\">para escalar</span></p><p><span style=\"color: rgb(0, 48, 55)\">suas vendas</span><br><span style=\"color: rgb(0, 48, 55)\">de vez</span></p>",
-          "highlight": true,
-          "planId": "174",
-          "buttonType": "ctaForm",
-          "buttonText": "Saiba mais"
-        },
-        {
-          "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Expansão</span></strong></p>",
-          "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$239</span></strong></p>",
-          "textContent": "<p><span style=\"color: rgb(0, 48, 55)\">Seu catálogo</span><br><span style=\"color: rgb(0, 48, 55)\">expandiu?</span><br><span style=\"color: rgb(0, 48, 55)\">conte com</span><br><span style=\"color: rgb(0, 48, 55)\">a gente</span><br></p>",
-          "planId": "176",
-          "buttonType": "ctaForm",
-          "buttonText": "Saiba mais"
-        },
-        {
-          "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Elite</span></strong></p>",
-          "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$1999</span></strong></p>",
-          "textContent": "<p><span style=\"color: rgb(0, 48, 55)\">Para vender </span><br><span style=\"color: rgb(0, 48, 55)\">sem limtes</span><br><span style=\"color: rgb(0, 48, 55)\">e com</span><br><span style=\"color: rgb(0, 48, 55)\">acompanhamento</span></p>",
-          "buttonType": "ctaForm",
-          "buttonText": "Saiba mais"
-        }
-      ],
-      "finalButtons": [
-        {
-          "text": "Compare planos",
-          "link": "https://lojaintegrada.com.br/planos",
-          "changeType": true,
-          "type": "link"
-        }
-      ],
-      "backgroundImage": {
-        "0": "h",
-        "1": "t",
-        "2": "t",
-        "3": "p",
-        "4": "s",
-        "5": ":",
-        "6": "/",
-        "7": "/",
-        "8": "d",
-        "9": "e",
-        "10": "c",
-        "11": "o",
-        "12": "-",
-        "13": "s",
-        "14": "i",
-        "15": "t",
-        "16": "e",
-        "17": "s",
-        "18": "-",
-        "19": "a",
-        "20": "s",
-        "21": "s",
-        "22": "e",
-        "23": "t",
-        "24": "s",
-        "25": ".",
-        "26": "s",
-        "27": "3",
-        "28": ".",
-        "29": "s",
-        "30": "a",
-        "31": "-",
-        "32": "e",
-        "33": "a",
-        "34": "s",
-        "35": "t",
-        "36": "-",
-        "37": "1",
-        "38": ".",
-        "39": "a",
-        "40": "m",
-        "41": "a",
-        "42": "z",
-        "43": "o",
-        "44": "n",
-        "45": "a",
-        "46": "w",
-        "47": "s",
-        "48": ".",
-        "49": "c",
-        "50": "o",
-        "51": "m",
-        "52": "/",
-        "53": "l",
-        "54": "o",
-        "55": "j",
-        "56": "a",
-        "57": "i",
-        "58": "n",
-        "59": "t",
-        "60": "e",
-        "61": "g",
-        "62": "r",
-        "63": "a",
-        "64": "d",
-        "65": "a",
-        "66": "r",
-        "67": "/",
-        "68": "0",
-        "69": "4",
-        "70": "9",
-        "71": "6",
-        "72": "d",
-        "73": "2",
-        "74": "d",
-        "75": "7",
-        "76": "-",
-        "77": "3",
-        "78": "f",
-        "79": "9",
-        "80": "1",
-        "81": "-",
-        "82": "4",
-        "83": "b",
-        "84": "e",
-        "85": "1",
-        "86": "-",
-        "87": "b",
-        "88": "8",
-        "89": "0",
-        "90": "d",
-        "91": "-",
-        "92": "1",
-        "93": "9",
-        "94": "f",
-        "95": "8",
-        "96": "3",
-        "97": "e",
-        "98": "4",
-        "99": "b",
-        "100": "b",
-        "101": "4",
-        "102": "d",
-        "103": "1",
-        "104": "/",
-        "105": "g",
-        "106": "r",
-        "107": "a",
-        "108": "d",
-        "109": "i",
-        "110": "e",
-        "111": "n",
-        "112": "t",
-        "113": "-",
-        "114": "b",
-        "115": "g",
-        "116": ".",
-        "117": "p",
-        "118": "n",
-        "119": "g",
-        "firstBackground": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/39eeee7c-99b4-41d1-be4f-4be9a6590ed1/gradient-bg.png",
-        "secondBackground": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/737eb087-fb58-4688-aa7f-412cb6d2b500/bg-circles.png"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Accordion.tsx",
-      "questions": [
-        {
-          "question": "<p>Como faço a migração de plataforma para a Loja Integrada?</p>",
-          "answer": "<p><span style=\"color: rgb(255, 255, 255)\">Existem 4 formas seguras de migrar para a Loja Integrada. Recomendamos conversar primeiro com nosso time de especialistas para identificar a melhor opção. Eles acompanharão todo o processo, da definição à conclusão.</span><br><br></p><p><span style=\"color: rgb(255, 255, 255)\">Uma das formas mais comuns é a migração via ERP, que, se integrado à Loja Integrada, ocorre de forma rápida e segura. Também oferecemos uma proposta de migração completa e gratuita, conduzida 100% pela nossa equipe.</span></p>"
-        },
-        {
-          "answer": "<p><span style=\"color: rgb(255, 255, 255)\">Outra opção é realizar a migração com nossos parceiros e agências, que podemos recomendar conforme sua necessidade.</span><br><br></p><p><span style=\"color: rgb(255, 255, 255)\">Além do suporte completo durante a migração, a Loja Integrada oferece uma plataforma robusta, fácil de usar e com suporte premiado. Você terá acesso a ferramentas nativas que ajudam a aumentar o ticket médio, reduzir custos com anúncios e otimizar a logística. Nossos custos operacionais são competitivos, proporcionando economia sem perda de qualidade.</span><br><br></p><p><span style=\"color: rgb(255, 255, 255)\">Acreditamos que o seu sucesso é o nosso. Focamos no crescimento e eficiência das suas vendas, sempre visando o aumento do seu faturamento. Migre para a Loja Integrada e veja seu negócio crescer.</span></p><p></p>",
-          "question": "Quais são os benefícios de migrar para a Loja Integrada?"
-        },
-        {
-          "question": "<p>O que acontece com o tagueamento da minha loja?</p>",
-          "answer": "<p><span style=\"color: rgb(255, 255, 255)\">Para manter o tagueamento GTM (Google Tag Manager), basta instalar nosso aplicativo nativo do GTM. Ele injetará o script usando o mesmo código da sua loja atual, garantindo que o tagueamento permaneça inalterado no novo site.</span><br><br></p><p><span style=\"color: rgb(255, 255, 255)\">Para tagueamentos personalizados, recomendamos sempre validar os eventos e tags no novo site.</span></p><p></p>"
-        },
-        {
-          "question": "<p>Qual é o investimento necessário para migrar minha loja?</p>",
-          "answer": "<p><span style=\"color: rgb(255, 255, 255)\">Os valores variam conforme o tamanho do seu negócio e a demanda por personalização. Na Loja Integrada, nosso time de especialistas realiza a migração sem custos adicionais, garantindo a importação segura das informações de produtos, envios, fotos, meta tags e categorias, além de manter as URLs atuais para minimizar impactos na performance.</span><br><br></p><p><span style=\"color: rgb(255, 255, 255)\">Para lojistas no Plano Elite, o serviço de migração está incluído, sem custo extra. Para outros planos, nossa equipe avalia cada cenário e oferece o suporte necessário.</span></p>"
-        },
-        {
-          "question": "Posso migrar meus produtos por ERPs?",
-          "answer": "<p><span style=\"color: rgb(255, 255, 255)\">Sim, essa é uma das formas mais comuns para uma migração tranquila e segura. A Loja Integrada oferece integração com ERPs para facilitar o processo. Além disso, nosso time de especialistas está disponível para esclarecer dúvidas e ajudar durante toda a migração.</span></p>"
-        },
-        {
-          "question": "Quais são os riscos da migração para Loja Integrada?",
-          "answer": "<p><span style=\"color: rgb(255, 255, 255)\">Não há riscos na migração para a Loja Integrada. Com o suporte de nossa equipe especializada, você pode monitorar e acompanhar todo o processo, garantindo rapidez e tranquilidade. Recomendamos que liste suas dúvidas e as compartilhe com nosso time comercial.</span></p>"
-        },
-        {
-          "question": "Quais os passos para realizar uma migração de plataforma de e-commerce bem-sucedida?",
-          "answer": "<p><span style=\"color: rgb(255, 255, 255)\">Quais os passos para realizar uma migração de plataforma de e-commerce bem-sucedida?</span><br><br></p><p><span style=\"color: rgb(255, 255, 255)\">Existem dois caminhos para uma migração bem-sucedida:</span><br><br></p><p><span style=\"color: rgb(255, 255, 255)\">1. Preencha o formulário na nossa página. Assim, nossa equipe terá suas informações iniciais e poderá entrar em contato para esclarecer dúvidas e oferecer apoio durante todo o processo.</span><br><br></p><p><span style=\"color: rgb(255, 255, 255)\">2. Comece criando sua loja, escolhendo o plano ideal e iniciando a migração por ERPs, planilhas ou manualmente. Com seu catálogo ativo na Loja Integrada, basta escolher o tema da sua loja e começar a vender. Lembre-se de que nosso time está disponível para ajudar em todas as etapas.</span></p><p></p>"
-        },
-        {
-          "question": "Cobram comissão sobre vendas? Como funciona?",
-          "answer": "<p><span style=\"color: rgb(255, 255, 255)\">A Loja Integrada cobra uma tarifa apenas sobre transações realizadas por meios de pagamento que não sejam o Pagali. As tarifas se aplicam apenas a pagamentos feitos via meios de pagamento de terceiros, pagamento na retirada, transferência bancária e boleto via PagHiper. Transações realizadas via Pix, boleto no Pagali e vendas em marketplaces não são tarifadas.</span></p>"
-        },
-        {
-          "question": "<p>Vou perder todo o meu tráfego ao migrar de plataforma?</p>",
-          "answer": "<p><span style=\"color: rgb(255, 255, 255)\">Não, o impacto será minimizado. Na Loja Integrada, importamos suas URLs atuais, reduzindo o efeito da migração no tráfego do seu site.</span></p>"
-        }
-      ],
-      "button": {
-        "buttonText": "Saiba mais aqui",
-        "buttonLink": "https://ajuda.lojaintegrada.com.br/pt-BR/collections/3312938-como-iniciar-minha-loja-na-li#migrando-para-loja-integrada"
-      },
-      "buttons": [
-        {
-          "type": "ctaForm",
-          "text": "Receba um contato"
-        }
-      ]
-    },
-    {
       "__resolveType": "site/sections/Footer.tsx",
-      "newsletter": {
-        "title": "Junte-se a mais de <br/> 2,5 milhões de lojistas"
-      },
       "cards": [
         {
+          "title": {
+            "desktop": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 15pt\">Conheça</span></strong></p><p><strong><span style=\"color: rgb(55, 30, 85); font-size: 15pt\">nosso Blog</span></strong></p>",
+            "mobile": "<p><strong><span style=\"color: #371e55\">Conheça</span></strong></p><p><strong><span style=\"color: #371e55\">nosso Blog</span></strong></p>"
+          },
           "textContent": {
             "desktop": "<p><span style=\"color: #371e55\">Informação, insights e muito, muito conteúdo de valor para seu negócio crescer.</span></p>",
             "mobile": "<p><span style=\"color: #371e55; font-size: 10pt\">Informação, insights e muito, muito conteúdo de valor para seu negócio crescer.</span></p>"
@@ -1014,16 +755,16 @@
             "width": 28,
             "height": 27
           },
-          "title": {
-            "desktop": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 15pt\">Conheça</span></strong></p><p><strong><span style=\"color: rgb(55, 30, 85); font-size: 15pt\">nosso Blog</span></strong></p>",
-            "mobile": "<p><strong><span style=\"color: #371e55\">Conheça</span></strong></p><p><strong><span style=\"color: #371e55\">nosso Blog</span></strong></p>"
-          },
           "button": {
             "buttonText": "Conhecer",
             "buttonUrl": "https://lojaintegrada.com.br/hub/"
           }
         },
         {
+          "title": {
+            "desktop": "<p><strong><span style=\"color: #371e55; font-size: 15pt\">Conheça nosso canal</span></strong></p><p><strong><span style=\"color: #371e55; font-size: 15pt\">no Youtube</span></strong></p>",
+            "mobile": "<p><strong><span style=\"color: #371e55\">Conheça nosso canal</span></strong></p><p><strong><span style=\"color: #371e55\">no Youtube</span></strong></p>"
+          },
           "textContent": {
             "desktop": "<p><span style=\"color: #371e55\">Debates, conversas e muito, muito aprendizado para quem  quer impulsionar suas vendas.</span></p>",
             "mobile": "<p><span style=\"color: #371e55; font-size: 10pt\">Debates, conversas e muito, muito aprendizado para quem  quer impulsionar suas vendas.</span></p>"
@@ -1033,16 +774,15 @@
             "width": 27,
             "height": 18
           },
-          "title": {
-            "desktop": "<p><strong><span style=\"color: #371e55; font-size: 15pt\">Conheça nosso canal</span></strong></p><p><strong><span style=\"color: #371e55; font-size: 15pt\">no Youtube</span></strong></p>",
-            "mobile": "<p><strong><span style=\"color: #371e55\">Conheça nosso canal</span></strong></p><p><strong><span style=\"color: #371e55\">no Youtube</span></strong></p>"
-          },
           "button": {
             "buttonText": "Conhecer",
             "buttonUrl": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
           }
         }
       ],
+      "newsletter": {
+        "title": "Junte-se a mais de <br/> 2,5 milhões de lojistas"
+      },
       "logoImage": {
         "width": 231,
         "height": 36,
@@ -1087,24 +827,10 @@
           "text": "<p><span style=\"color: #ffffff\">Privacidade</span></p>"
         }
       ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/TcoCalculator.tsx",
-        "title": "Calculado CO",
-        "plans": [
-          {}
-        ]
-      }
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "title": "Loja Integrada | Escolha dados e automomação",
-    "description": "Automatize suas vendas, otimize e tome decisões baseadas em dados para impulsionar o crescimento do seu negócio. Experimente uma solução que transforma seu potencial em resultados concretos. Junte-se a nós e leve sua loja online para o próximo nível!",
-    "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/92453a09-1a8b-4ba4-8861-b84939dde7d3/favicon-li.png",
-    "image": ""
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

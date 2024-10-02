@@ -1,11 +1,15 @@
-import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
 import HeroTab from "../islands/HeroTab.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
+import { Button } from "site/types/types.ts";
 
 export interface Props {
   title?: Title;
   subTitle?: Subtitle;
+  /**
+   * @title Botões dos tabs
+   */
   buttons?: Buttons[];
+  finalButtons?: Button[];
 }
 
 interface Title {
@@ -32,11 +36,29 @@ interface Subtitle {
 
 export interface Buttons {
   highlight?: boolean;
+  /**
+* @format rich-text
+*/
   text?: string;
+  /**
+* @format rich-text
+*/
   content?: string;
+  /**
+* @format rich-text
+*/
   magicNumbers?: string;
+  /**
+* @format rich-text
+*/
   secondMagicNumbers?: string;
+  /**
+* @format rich-text
+*/
   magicNumbersMobile?: string;
+  /**
+* @format rich-text
+*/
   secondMagicNumbersMobile?: string;
   image?: ImageWidget;
   imageMobile?: ImageWidget;
@@ -44,7 +66,7 @@ export interface Buttons {
 
 function HeroTabs(props: Props) {
   return (
-    <div class="bg-base-300 px-[10px] py-[60px] lg:pb-[124px] lg:pt-[160px]">
+    <div id="heroTabSection" class="bg-base-300 px-[10px] py-[60px] lg:pb-[124px] lg:pt-[160px]">
       <HeroTab {...props} />
     </div>
   )

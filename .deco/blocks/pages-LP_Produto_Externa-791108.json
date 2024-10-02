@@ -765,18 +765,18 @@
     {
       "__resolveType": "site/sections/Prices.tsx",
       "subTitle": {
-        "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 37pt\">Escolha a plataforma que aposta em dados e automação</span></p>",
-        "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">Escolha a plataforma que aposta </span></p><p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 75pt\">em dados e automação</span></p>"
+        "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 37pt\">Escolha a plataforma que investe em </span><em><span style=\"color: rgb(250, 250, 245); font-size: 37pt\">dados e automação</span></em></p>",
+        "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245); font-size: 75pt\">Escolha a plataforma que investe</span></p><p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245); font-size: 75pt\">em </span><em><span style=\"color: rgb(250, 250, 245); font-size: 75pt\">dados e automação</span></em></p>"
       },
       "title": {
-        "desktop": "<p style=\"text-align: center\"><span style=\"color: #fafaf5; font-size: 18pt\">Está na hora de migrar</span></p>",
-        "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">Está na hora de migrar</span></p>"
+        "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">Planos acessíveis para migrar</span></p>",
+        "mobile": "<p><span style=\"color: rgb(250, 250, 245); font-size: 16pt\">Planos acessíveis para migrar</span></p>"
       },
       "cards": [
         {
           "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Gratuito</span></strong></p>",
           "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$0</span></strong></p>",
-          "textContent": "<p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">Pra você sentir</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">o gostinho de</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">como é vender</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">online</span></p>",
+          "textContent": "<p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">Pra sentir</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">o gostinho de</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">como é vender</span></p><p style=\"text-align: justify\"><span style=\"color: rgb(0, 48, 55)\">online</span></p>",
           "planId": "172",
           "buttonType": "ctaForm",
           "buttonText": "Saiba mais"
@@ -784,7 +784,7 @@
         {
           "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Crescimento</span></strong></p>",
           "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$59</span></strong></p>",
-          "textContent": "<p><span style=\"color: #003037\">Pra você</span></p><p><span style=\"color: #003037\">começar</span></p><p><span style=\"color: #003037\">com tudo que</span></p><p><span style=\"color: #003037\">precisa!</span></p>",
+          "textContent": "<p><span style=\"color: rgb(0, 48, 55)\">Seu negócio</span></p><p><span style=\"color: rgb(0, 48, 55)\">está crescendo</span></p><p><span style=\"color: rgb(0, 48, 55)\">e a gente</span></p><p><span style=\"color: rgb(0, 48, 55)\">acompanha</span></p>",
           "planId": "173",
           "buttonType": "ctaForm",
           "buttonText": "Saiba mais"
@@ -792,7 +792,7 @@
         {
           "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Aceleração</span></strong></p>",
           "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$99</span></strong></p>",
-          "textContent": "<p><span style=\"color: #003037\">Pra ter mais</span></p><p><span style=\"color: #003037\">recursos e acelerar</span></p><p><span style=\"color: #003037\">suas vendas!</span></p>",
+          "textContent": "<p><span style=\"color: rgb(0, 48, 55)\">Mais recursos</span></p><p><span style=\"color: rgb(0, 48, 55)\">para escalar</span></p><p><span style=\"color: rgb(0, 48, 55)\">suas vendas</span><br><span style=\"color: rgb(0, 48, 55)\">de vez</span></p>",
           "highlight": true,
           "planId": "174",
           "buttonType": "ctaForm",
@@ -801,7 +801,7 @@
         {
           "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Expansão</span></strong></p>",
           "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$239</span></strong></p>",
-          "textContent": "<p><span style=\"color: #003037\">Pra você que tem</span></p><p><span style=\"color: #003037\">muitos produtos!</span></p>",
+          "textContent": "<p><span style=\"color: rgb(0, 48, 55)\">Seu catálogo</span><br><span style=\"color: rgb(0, 48, 55)\">expandiu?</span><br><span style=\"color: rgb(0, 48, 55)\">conte com</span><br><span style=\"color: rgb(0, 48, 55)\">a gente</span><br></p>",
           "planId": "176",
           "buttonType": "ctaForm",
           "buttonText": "Saiba mais"
@@ -809,7 +809,7 @@
         {
           "title": "<p><strong><span style=\"color: rgb(55, 30, 85)\">Elite</span></strong></p>",
           "price": "<p><strong><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$1999</span></strong></p>",
-          "textContent": "<p><span style=\"color: #003037\">Para você que</span></p><p><span style=\"color: #003037\">não quer ter</span></p><p><span style=\"color: #003037\">limites!</span></p>",
+          "textContent": "<p><span style=\"color: rgb(0, 48, 55)\">Para vender </span><br><span style=\"color: rgb(0, 48, 55)\">sem limtes</span><br><span style=\"color: rgb(0, 48, 55)\">e com</span><br><span style=\"color: rgb(0, 48, 55)\">acompanhamento</span></p>",
           "buttonType": "ctaForm",
           "buttonText": "Saiba mais"
         }

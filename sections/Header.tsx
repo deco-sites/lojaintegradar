@@ -19,7 +19,11 @@ interface Props {
     };
     backgroundImage?: {
         mobile?: ImageWidget;
+        mobileWidth?: number;
+        mobileHeight?: number;
         desktop?: ImageWidget;
+        desktopWidth?: number;
+        desktopHeight?: number;
     };
     image?: ImageWidget;
     alt?: string;
@@ -55,24 +59,37 @@ function Header({
     labelText,
 }: Props) {
     return (
-        <header id="headerSection" class="customContainer pt-[36px] min-h-[455px] max-h-[455px] lg:min-h-[800px] flex flex-col items-center justify-normal">
+        <header id="headerSection" class="customContainer headerMinHeight pt-[36px] flex flex-col items-center justify-normal">
+            <style dangerouslySetInnerHTML={{
+                __html: `
+                .headerMinHeight {
+                min-height: ${backgroundImage?.mobileHeight ? backgroundImage.mobileHeight : '460'}px;
+                max-height: ${backgroundImage?.mobileHeight ? backgroundImage.mobileHeight : '460'}px;
+                }
+                @media screen and (min-width: 1024px) {
+                .headerMinHeight {
+                min-height: ${backgroundImage?.desktopHeight ? backgroundImage.desktopHeight : '800'}px;
+                max-height: ${backgroundImage?.desktopHeight ? backgroundImage.desktopHeight : '800'}px;
+                }
+                }
+                `}} />
             <>
                 {backgroundType === "image" && (
                     <>
                         <Image
                             src={backgroundImage?.mobile || ""}
                             alt={alt || ""}
-                            height={height || 460}
-                            width={width || 375}
-                            class="w-full absolute top-0 left-0 max-h-[460px] lg:hidden"
+                            height={backgroundImage?.mobileHeight || 460}
+                            width={backgroundImage?.mobileWidth || 375}
+                            class="headerMinHeight w-full absolute top-0 left-0 lg:hidden"
                             loading={"eager"}
                         />
                         <Image
                             src={backgroundImage?.desktop || ""}
                             alt={alt || ""}
-                            height={height || 800}
-                            width={width || 1920}
-                            class="absolute top-0 left-0 hidden lg:block lg:min-h-[800px]"
+                            height={backgroundImage?.desktopHeight || 800}
+                            width={backgroundImage?.desktopWidth || 1920}
+                            class="headerMinHeight absolute top-0 left-0 hidden lg:block lg:min-h-[800px]"
                             loading={"eager"}
                         />
                     </>
@@ -83,14 +100,14 @@ function Header({
                             dangerouslySetInnerHTML={{
                                 __html: `
                         #headerVideo {
-                         max-height: ${backgroundVideo?.mobileMaximumHeight};
-                         min-height: ${backgroundVideo?.mobileMinimumHeight};
+                         max-height: ${backgroundVideo?.mobileMaximumHeight ? backgroundVideo.mobileMaximumHeight : '455'}px;
+                         min-height: ${backgroundVideo?.mobileMinimumHeight ? backgroundVideo.mobileMinimumHeight : '455'}px;
                         }
 
                         @media screen and (min-width: 1024px) {
                         #headerVideo {
-                         max-height: ${backgroundVideo?.desktopMaximumHeight};
-                         min-height: ${backgroundVideo?.desktopMinimumHeight};
+                         max-height: ${backgroundVideo?.desktopMaximumHeight ? backgroundVideo.desktopMaximumHeight : '800'}px;
+                         min-height: ${backgroundVideo?.desktopMinimumHeight ? backgroundVideo.desktopMaximumHeight : '800'}px;
                         }
                         }
                         `,
@@ -102,7 +119,7 @@ function Header({
                             muted
                             loop
                             id="headerVideo"
-                            className={`w-full max-w-full object-cover absolute top-0 left-0 min-h-[455px] max-h-[455px] lg:max-h-[800px] lg:min-h-[800px] ${backgroundVideo?.disableOnMobile ? "hidden lg:block" : ''}`}
+                            className={`w-full max-w-full object-cover absolute top-0 left-0 ${backgroundVideo?.disableOnMobile ? "hidden lg:block" : ''}`}
                         >
                             <source
                                 src={backgroundVideo?.video}
@@ -119,7 +136,7 @@ function Header({
                                 alt={alt || ""}
                                 height={height || 460}
                                 width={width || 375}
-                                class="w-full absolute top-0 left-0 max-h-[460px] lg:hidden"
+                                class="headerMinHeight w-full absolute top-0 left-0 lg:hidden"
                                 loading={"eager"}
                             />
                         }
@@ -152,7 +169,7 @@ function Header({
                             alt={alt || ""}
                             height={height || 40}
                             width={width || 257}
-                            class="mb-16"
+                            class="mb-10"
                         />
                     )}
                     {/* {buttons?.map((button, index) => (
@@ -171,7 +188,7 @@ function Header({
 
                     {textContent?.mobile && (
                         <span
-                            className="lg:hidden font-instrument"
+                            className="lg:hidden font-instrument leading-[30px]"
                             dangerouslySetInnerHTML={{
                                 __html: textContent?.mobile,
                             }}
@@ -183,7 +200,7 @@ function Header({
                     <style dangerouslySetInnerHTML={{ __html: CSS }}></style>
                     <label class="w-full">
                         {labelText && (
-                            <p class="backgroundHeroTimeButton videoHeaderBorder rounded-tl-xl rounded-tr-xl py-1.5 px-5 text-base font-bold text-primary-content flex mx-auto w-full max-w-[611px] text-center justify-center">
+                            <p class="backgroundHeroTimeButton videoHeaderBorder rounded-tl-xl rounded-tr-xl py-1.5 px-3 lg:px-5 text-sm lg:text-base font-bold text-primary-content flex mx-auto w-full max-w-[611px] text-center justify-center">
                                 {labelText}
                             </p>
                         )}

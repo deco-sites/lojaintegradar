@@ -106,7 +106,7 @@ function Prices({
                 )}
                 {title?.mobile && (
                     <span
-                        className="lg:hidden mb-4"
+                        className="block lg:hidden mb-4"
                         dangerouslySetInnerHTML={{
                             __html: title?.mobile,
                         }}
@@ -130,12 +130,12 @@ function Prices({
                     ></span>
                 )}
             </div>
-            <div data-aos="zoom-in" id={id} class="relative z-20 px-4 2xl:px-0">
+            <div data-aos="zoom-in" id={id} class="relative z-20 px-[10px] 2xl:px-0">
                 <Slider class="carousel sm:carousel-end gap-2 lg:gap-6 lg:justify-center w-full items-center pt-4">
                     {cards?.map((card, index) => (
                         <Slider.Item
                             index={index}
-                            class={clx("carousel-item max-w-[199px] w-full flex flex-col")}
+                            class={clx(`carousel-item ${card.highlight ? 'max-w-[199px]' : 'max-w-[184px]'}  w-full flex flex-col`)}
                         >
                             <div
                                 class={`relative z-0 flex flex-col items-center justify-center ${card.highlight ? "bg-primary-content" : "background-df2"

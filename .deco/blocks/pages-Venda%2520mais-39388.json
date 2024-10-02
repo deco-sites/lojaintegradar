@@ -23,7 +23,14 @@
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/da9060c9-9708-4d08-b57d-e038c769434f/background-image.webp",
               "alt": "background image"
-            }
+            },
+            "inputLabelBackgroundColor": "#EAE0EE",
+            "inputLabelColor": "#371E55",
+            "titleColor": "#371E55",
+            "hubspotFormButtonColor": "#371E55",
+            "hubspotFormButtonTextColor": "#ffffff",
+            "hubspotErrorMessageColor": "#F57E77",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -46,7 +53,14 @@
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/da9060c9-9708-4d08-b57d-e038c769434f/background-image.webp",
               "alt": "background image"
-            }
+            },
+            "titleColor": "#371E55",
+            "inputLabelColor": "#371E55",
+            "inputLabelBackgroundColor": "#EAE0EE",
+            "hubspotFormButtonColor": "#371E55",
+            "hubspotFormButtonTextColor": "#ffffff",
+            "hubspotErrorMessageColor": "#F57E77",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -91,7 +105,9 @@
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
                 "altText": "+Mu logo"
               }
-            ]
+            ],
+            "titleColor": "#371E55",
+            "captionColor": "#371E55"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -132,7 +148,9 @@
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
                 "altText": "+Mu logo"
               }
-            ]
+            ],
+            "titleColor": "#371E55",
+            "captionColor": "#371E55"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -148,7 +166,11 @@
             "description": "<p>\"Depois que migramos para a Loja Integrada, <em><strong>aumentamos nosso ticket médio em 15% e reduzimos nossos custos operacionais em 9 mil reais.</strong></em> Viemos pela fácil integração com a VTEX, em busca de redução de custo e uma plataforma mais fácil de usar e foi exatamente isso que encontramos\".</p>",
             "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
             "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
-            "alt": "m camicado"
+            "alt": "m camicado",
+            "quoteIconColor": "#371E55",
+            "nameIconColor": "#371E55",
+            "nameBackgroundColor": "#F1EAF4",
+            "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
           }
         },
         {
@@ -156,12 +178,18 @@
             "description": "<p><em><strong>Logo no primeiro mês pós migração, vi um aumento</strong></em><br><em><strong>na taxa de conversão de 60%.</strong></em><br>Vim pela necessidade de otimizar meu investimento, em busca de uma plataforma fácil de usar. Encontrei ambos e ainda um time próximo, o que é muito bom\".</p>",
             "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
             "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
-            "alt": "m camicado"
+            "alt": "m camicado",
+            "nameIconColor": "#371E55",
+            "quoteIconColor": "#371E55",
+            "nameBackgroundColor": "#F1EAF4",
+            "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
           }
         }
       ],
       "arrows": false,
-      "dots": false
+      "dots": false,
+      "titleColor": "#371E55",
+      "arrowsColor": ""
     },
     {
       "__resolveType": "site/sections/Carousel.tsx",
@@ -177,7 +205,7 @@
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/fb4a2731-809a-46cd-8925-fed7e3ec1023/purple-stonks-arrow.png",
             "alt": "purple arrow"
           },
-          "textColor": "Dark",
+          "textColor": "#371E55",
           "useBackground": "image",
           "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/2014ce37-ca95-449b-8498-8d66dec23865/Developer-Coding-Background.mp4"
         },
@@ -193,7 +221,7 @@
           "backgroundImage": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/b229cb86-1e0d-4853-a4f6-c2e30eeec939/carousel-image-2.png"
           },
-          "textColor": "Light",
+          "textColor": "#ffffff",
           "bulletPoints": {
             "bulletPointsTitle": "Usamos seu E-mai de forma 100% segura para:",
             "items": [
@@ -210,7 +238,7 @@
           "useBackground": "image"
         },
         {
-          "textColor": "Dark",
+          "textColor": "#371E55",
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
@@ -228,7 +256,7 @@
           "useBackground": "image"
         },
         {
-          "textColor": "Light",
+          "textColor": "#ffffff",
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
@@ -246,7 +274,7 @@
           "useBackground": "image"
         },
         {
-          "textColor": "Dark",
+          "textColor": "#371E55",
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
@@ -264,7 +292,7 @@
           "useBackground": "image"
         },
         {
-          "textColor": "Light",
+          "textColor": "#ffffff",
           "textPlacement": "Bottom",
           "icon": {
             "placement": "Top right",
@@ -289,16 +317,28 @@
       },
       "cta": [
         {
-          "href": "/",
-          "text": "Ver planos"
+          "href": "#plans section",
+          "text": "Ver planos",
+          "backgroundColor": "#371E55",
+          "textColor": "#fff5f5",
+          "borderColor": "#371E55",
+          "ctaStyle": "button"
         },
         {
           "text": "Ver recursos",
           "href": "/",
-          "outline": true
+          "outline": true,
+          "backgroundColor": "#ffffff",
+          "textColor": "#371E55",
+          "borderColor": "#371E55",
+          "ctaStyle": "button"
         }
       ],
-      "interval": 0
+      "interval": 0,
+      "id": "nossoecossistema",
+      "titleColor": "#371E55",
+      "captionColor": "#371E55",
+      "arrowsColor": "#371E55"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -327,9 +367,12 @@
                     "Aniversariantes do mês ",
                     "Newsletter ",
                     "E muito mais..."
-                  ]
+                  ],
+                  "textColor": "#371E55",
+                  "bulletPointsTitle": "ste"
                 },
-                "time": 3
+                "time": 3,
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -349,8 +392,10 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  }
-                }
+                  },
+                  "textColor": "#371E55"
+                },
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -372,8 +417,10 @@
                     "Pedidos Manuais",
                     "API da META",
                     "+80 aplicativos extras"
-                  ]
-                }
+                  ],
+                  "textColor": "#371E55"
+                },
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -391,9 +438,11 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+30 Serviços de parceiros recomendados "
+                "title": "+30 Serviços de parceiros recomendados ",
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -412,9 +461,11 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+7 Formas de pagamento "
+                "title": "+7 Formas de pagamento ",
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -436,9 +487,11 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+10 Formas de envio"
+                "title": "+10 Formas de envio",
+                "titleColor": "#371E55"
               }
             ],
             "arrows": true,
@@ -452,16 +505,26 @@
             "cta": [
               {
                 "text": "Ver planos",
+                "href": "#",
+                "ctaStyle": "button",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55"
+              },
+              {
+                "ctaStyle": "link",
+                "text": "Já tem uma loja?",
+                "underlineText": " Ative agora",
+                "showIcon": true,
+                "textColor": "#371E55",
                 "href": "#"
               }
             ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja?",
-                "text": " Ative agora",
-                "href": "#"
-              }
-            ]
+            "links": [],
+            "progressBarBackgroundColor": "#b21515",
+            "titleColor": "#371E55",
+            "arrowsColor": "#371E55",
+            "dotsColor": "#371E55"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -491,11 +554,13 @@
                     "Aniversariantes do mês ",
                     "Newsletter ",
                     "E muito mais..."
-                  ]
+                  ],
+                  "textColor": "#371E55"
                 },
                 "time": 3,
                 "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/2014ce37-ca95-449b-8498-8d66dec23865/Developer-Coding-Background.mp4",
-                "use": "image"
+                "use": "image",
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -515,8 +580,10 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  }
-                }
+                  },
+                  "textColor": "#371E55"
+                },
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -538,8 +605,10 @@
                     "Pedidos Manuais",
                     "API da META",
                     "+80 aplicativos extras"
-                  ]
-                }
+                  ],
+                  "textColor": "#371E55"
+                },
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -557,9 +626,11 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+30 Serviços de parceiros recomendados "
+                "title": "+30 Serviços de parceiros recomendados ",
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -578,9 +649,11 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+7 Formas de pagamento "
+                "title": "+7 Formas de pagamento ",
+                "titleColor": "#371E55"
               },
               {
                 "image": {
@@ -602,12 +675,14 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  }
+                  },
+                  "textColor": "#371E55"
                 },
-                "title": "+10 Formas de envio"
+                "title": "+10 Formas de envio",
+                "titleColor": "#371E55"
               }
             ],
-            "arrows": true,
+            "arrows": false,
             "title": "Um ecossistema de recursos",
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/46f543f0-e203-4ed6-b206-835381812669/detailed-carousel-background.jpg",
@@ -618,15 +693,27 @@
             "cta": [
               {
                 "text": "Ver planos",
-                "href": "#"
+                "href": "#",
+                "ctaStyle": "button",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff"
               },
               {
                 "text": "Falar com Especialista ",
                 "href": "/talkToSpecialist",
-                "outline": true
+                "outline": true,
+                "ctaStyle": "button",
+                "backgroundColor": "tRANSPARENT",
+                "textColor": "#371E55",
+                "borderColor": "#371E55"
               }
             ],
-            "links": []
+            "links": [],
+            "titleColor": "#371E55",
+            "arrowsColor": "#371E55",
+            "dotsColor": "#371E55",
+            "progressBarBackgroundColor": "#2caf53"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -646,7 +733,9 @@
               "alt": "calculator icon"
             },
             "title": "Negócio",
-            "caption": "Compare seus custos mensais de plataforma e comissão versus sua receita."
+            "caption": "Compare seus custos mensais de plataforma e comissão versus sua receita.",
+            "titleColor": "#D2C7FE",
+            "captionColor": "#ffffff"
           },
           {
             "icon": {
@@ -654,7 +743,9 @@
               "alt": "hand payment icon"
             },
             "title": "Pagamento",
-            "caption": "Analise seus custos com tarifas de cartão de crédito, pix, boleto e ferramentas antifraude."
+            "caption": "Analise seus custos com tarifas de cartão de crédito, pix, boleto e ferramentas antifraude.",
+            "titleColor": "#D2C7FE",
+            "captionColor": "#ffffff"
           },
           {
             "icon": {
@@ -662,10 +753,12 @@
               "alt": "rocket icon"
             },
             "title": "Envio",
-            "caption": "Leve em consideração todos os custos que sua loja possui com o envio de produtos."
+            "caption": "Leve em consideração todos os custos que sua loja possui com o envio de produtos.",
+            "titleColor": "#D2C7FE",
+            "captionColor": "#ffffff"
           }
         ],
-        "contentTitle": "<p>É rapidinho <strong>1 min</strong></p>",
+        "contentTitle": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">É rapidinho <strong>1 min</strong></span></p>",
         "contentTitleIcon": {
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/b355f7b9-d26f-48eb-b075-832fd8ea1435/clock-icon.svg",
           "alt": "clock icon"
@@ -719,7 +812,16 @@
           "alt": "mobile start screen background",
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/7bb388f3-cdd3-4873-9705-250ea560571c/mobile-start-banner2.svg"
         },
-        "mobileStartButtonText": "Iniciar cálculo TCO"
+        "mobileStartButtonText": "Iniciar cálculo TCO",
+        "asideTextColor": "#ffffff",
+        "contentCaptionColor": "#5F6E82",
+        "objectivesCaptionColor": "linear-gradient(99deg, #825AB4 49.14%, #BB95D7 79.44%)",
+        "emailCaptionColor": "linear-gradient(99deg, #825AB4 49.14%, #BB95D7 79.44%)",
+        "objectivesTextColor": "#371E55",
+        "hubspotButtonColor": "#371E55",
+        "hubspotButtonTextColor": "#ffffff",
+        "hubspotErrorMessageColor": "#F57E77",
+        "objectivesBorderColor": "#371E55"
       },
       "title": "Calcule a eficiência da sua operação",
       "caption": "Cálculo de TCO",
@@ -773,7 +875,11 @@
           "tooltipMessage": "Quantos pedidos sua loja recebe em média por mês?"
         },
         "nextButtonText": "Próximo",
-        "backButtonText": "Voltar"
+        "backButtonText": "Voltar",
+        "inputsTextColor": "#371E55",
+        "inputsBorderColor": "#371E55",
+        "buttonsBackgroundColor": "",
+        "buttonsTextColor": "#371E55"
       },
       "page3": {
         "progressImage": {
@@ -821,7 +927,14 @@
           "tooltipMessage": "Custos destinados a processamento de transações"
         },
         "nextButtonText": "Ver resultado",
-        "backButtonText": "Voltar"
+        "backButtonText": "Voltar",
+        "inputsTextColor": "#371E55",
+        "inputsBorderColor": "#371E55",
+        "buttonsTextColor": "#ffffff",
+        "buttonsBackgroundColor": "#371E55",
+        "nextButtonTextColor": "#ffffff",
+        "nextButtonBackgroundColor": "#371E55",
+        "backButtonTextColor": "#371E55"
       },
       "page4": {
         "progressImage": {
@@ -847,7 +960,10 @@
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/daceb68e-0a01-481c-a0f5-8f64df952d19/wpp-icon-white.svg",
             "alt": "whatsapp icon"
           },
-          "outline": false
+          "outline": false,
+          "textColor": "#ffffff",
+          "backgroundColor": "#371E55",
+          "borderColor": "#371E55"
         },
         "saving": {
           "textBefore": "Economize",
@@ -856,21 +972,24 @@
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/20ee682c-2405-4b9c-92e7-453ee5cf43e6/savings-bg-png.png",
             "alt": "savings background"
           },
-          "indicatedPlanSavingLabel": "Economia de"
+          "indicatedPlanSavingLabel": "Economia de",
+          "textColor": "#371E55"
         },
         "benefit1": {
           "text": "Aumente suas vendas e economize na sua operação com as nossas soluções nativas",
           "image": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4d16431e-e7c8-479c-a615-2a4f891e3f46/benefit1-bg.svg",
             "alt": "background"
-          }
+          },
+          "textColor": "#371E55"
         },
         "benefit2": {
           "text": "Atendimento prioritário",
           "image": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a91d5483-1158-4a8f-b2de-90fb07612429/benefit2-bg.svg",
             "alt": "background"
-          }
+          },
+          "textColor": "#371E55"
         },
         "result": {
           "montlyFeeLabel": "Mensalidade",
@@ -885,7 +1004,12 @@
           "migrateCta": {
             "href": "https://api.whatsapp.com/send/?phone=%2B5511971694777&text=Ol%C3%A1%2C+fiz+o+meu+calculo+TCO+e+quero+saber+mais+sobre+a+minha+proposta+personalizada.&type=phone_number&app_absent=0",
             "text": "Migre agora",
-            "outline": false
+            "outline": false,
+            "ctaStyle": "button",
+            "backgroundColor": "#ffffff",
+            "textColor": "#371E55",
+            "borderColor": "#371E55",
+            "showIcon": false
           },
           "montlyFeeLojaIntegrada": "R$ 259,00"
         },
@@ -893,15 +1017,39 @@
           "text": "Atendimento personalizado com gerente de performance dedicado à sua conta",
           "image": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/5bf710f8-0e2f-4a41-81f6-04efe77d7d47/extra-benefit-2-background-image.png"
-          }
+          },
+          "textColor": "#371E55"
         },
         "negativeScreenExtraBenefit1": {
           "text": "Smartcheckout: checkout sem senha, baseado no smartcheckout da VTEX",
           "image": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ffa82a75-e6b5-4115-a166-79a2f43d4dc9/extra-benefit-1-background-image.png"
-          }
+          },
+          "textColor": "#371E55"
         },
-        "negativeScreenAsideTitle": "Por que migrar para a Loja Integrada?"
+        "negativeScreenAsideTitle": "Por que migrar para a Loja Integrada?",
+        "resultTableColors": {
+          "textColor1": "#5F6E82",
+          "textColor2": "#ffffff",
+          "textColor3": "#371E55",
+          "resultValuesBackgroundColor": "#371E55",
+          "divisionLineColor": "linear-gradient(90deg, rgba(62, 37, 85, 0.02) 0%, rgba(62, 37, 85, 0.20) 18.97%, rgba(62, 37, 85, 0.00) 74.4%);"
+        },
+        "lessVantageText": "😥  menos vantajoso",
+        "moreVantageText": "🚀 mais vantajoso",
+        "lojaIntegradaText": "Loja Integrada",
+        "indicatedPlanSavingLabel": "Economia de",
+        "indicatedPlanSavingLabelTextColor": "#371E55",
+        "indicatedPlanSavingLabelBackgroundColor": "#EBD0FF",
+        "lessVantageTextColor": "#371E55",
+        "lessVantageBackgroundColor": "#E8E4F6",
+        "moreVantageTextColor": "#371E55",
+        "moreVantageBackgroundColor": "#F2E6FF",
+        "lojaIntegradaTextColor": "#ffffff",
+        "whatsappTextColor": "#371E55",
+        "whatsappInputTextColor": "#371E55",
+        "whatsappInputBorderColor": "#828CA0",
+        "asideContentBackgroundColor": "#F1EEFF"
       },
       "plans": [
         {
@@ -936,7 +1084,9 @@
           "comission": 0.5,
           "pixFee": 1.99
         }
-      ]
+      ],
+      "titleColor": "#371E55",
+      "captionColor": "#828CA0"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -946,7 +1096,6 @@
             "__resolveType": "site/sections/Plans.tsx",
             "slides": [
               {
-                "theme": "dark",
                 "title": "Elite",
                 "tag": {
                   "text": "Premium",
@@ -955,7 +1104,7 @@
                     "alt": "crown icon"
                   }
                 },
-                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1999</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+                "montlyFee": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1999</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                 "chooseCta": {
                   "text": "Assinar",
                   "href": "#"
@@ -966,7 +1115,7 @@
                 },
                 "bulletPoints": {
                   "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/93355d06-53de-4455-bfcf-cff173d1cf9a/check-icon.svg"
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d6343390-f98c-49d1-bf50-7da7dabdc4dd/check-icon.svg"
                   },
                   "items": [
                     {
@@ -993,18 +1142,43 @@
                     {
                       "text": "Negociação direta com meios de pagamento selecionados"
                     }
-                  ]
+                  ],
+                  "itemsTextColor": "#ffffff",
+                  "tooltipTextColor": "#371E55",
+                  "tooltipBackgroundColor": "#ffffff"
                 },
-                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1599</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+                "annualMontlyFee": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1599</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                 "cutedMontlyFee": "de R$ 1999 /mês",
                 "annualSaving": "Economia de R$500 no anual",
                 "seeMoreButtonText": "Ver mais",
+                "backgroundColor": "#371E55",
+                "tagColor": "#ffffff",
+                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
+                "titleColor": "#ffffff",
+                "cutedMontlyFeeColor": "#ffffff",
+                "annualSavingColor": "#ffffff",
+                "cta": [
+                  {
+                    "ctaStyle": "button",
+                    "href": "#",
+                    "text": "Escolher",
+                    "textColor": "#371E55",
+                    "backgroundColor": "#ffffff",
+                    "borderColor": "#371E55"
+                  },
+                  {
+                    "ctaStyle": "link",
+                    "href": "#",
+                    "underlineText": "Ver detalhes",
+                    "textColor": "#ffffff"
+                  }
+                ],
+                "theme": "light",
                 "topImage": {
                   "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
                 }
               },
               {
-                "theme": "light",
                 "chooseCta": {
                   "text": "Assinar",
                   "href": "#"
@@ -1039,18 +1213,41 @@
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg",
                     "alt": "bullet points icon"
-                  }
+                  },
+                  "itemsTextColor": "#371E55",
+                  "tooltipTextColor": "#ffffff",
+                  "tooltipBackgroundColor": "#371E55"
                 },
                 "tag": {},
                 "title": "Expansão ",
-                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<span style=\"font-size: 48px;\"><b>239</b></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+                "montlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>239</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                 "cutedMontlyFee": "de R$ 239/mês",
-                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>191</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+                "annualMontlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>191</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                 "annualSaving": "Economia de R$576 no anual",
-                "seeMoreButtonText": "Ver mais"
+                "seeMoreButtonText": "Ver mais",
+                "cta": [
+                  {
+                    "ctaStyle": "button",
+                    "href": "#",
+                    "text": "Escolher",
+                    "textColor": "#ffffff",
+                    "backgroundColor": "#371E55",
+                    "borderColor": "#371E55"
+                  },
+                  {
+                    "ctaStyle": "link",
+                    "href": "#",
+                    "underlineText": "Ver detalhes",
+                    "textColor": "#371E55"
+                  }
+                ],
+                "backgroundColor": "#ffffff",
+                "titleColor": "#371E55",
+                "cutedMontlyFeeColor": "#371E55",
+                "annualSavingColor": "#371E55",
+                "theme": "light"
               },
               {
-                "theme": "dark",
                 "chooseCta": {
                   "text": "Assinar",
                   "href": "#"
@@ -1083,195 +1280,47 @@
                       "text": "Envio pelos Correios com até 70% de desconto com Enviali"
                     }
                   ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
-                  }
-                },
-                "tag": {
-                  "text": "🚀 Mais popular "
-                },
-                "title": "Aceleração ",
-                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">99</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
-                "cutedMontlyFee": "de R$99/mês ",
-                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">79</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
-                "annualSaving": "Economia de R$240 no anual",
-                "seeMoreButtonText": "Ver mais",
-                "annualFee": 79,
-                "annualMontlyFeeFee": 79,
-                "seeMoreTag": "Ver mais"
-              }
-            ],
-            "title": "+2.5 milhões de lojistas já escolheram um plano ideal. Escolha o seu também!",
-            "caption": "Plans",
-            "annualLabel": "Anual",
-            "montlyLabel": "Mensal",
-            "annualTag": "-20% OFF",
-            "dots": false,
-            "arrows": true
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Plans.tsx",
-            "slides": [
-              {
-                "theme": "dark",
-                "title": "Aceleração ",
-                "tag": {
-                  "text": "🚀 Mais popular "
-                },
-                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">99</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
-                "annualFee": 79,
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes",
-                  "href": "#"
-                },
-                "bulletPoints": {
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
                   },
-                  "items": [
-                    {
-                      "text": "500 produtos ativos"
-                    },
-                    {
-                      "text": "50.000 visitas por mês"
-                    },
-                    {
-                      "text": "5 Visuais profissionais Inclusos"
-                    },
-                    {
-                      "text": "Mais conversão com Checkout sem Senha baseado na VTEX"
-                    },
-                    {
-                      "text": "Aumento de ticket médio em até 31% com Promoções e Compre Junto"
-                    },
-                    {
-                      "text": "Tarifa por transação gratuita com Pagali"
-                    },
-                    {
-                      "text": "Envio pelos Correios com até 70% de desconto com Enviali"
-                    }
-                  ]
-                },
-                "annualMontlyFeeFee": 79,
-                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">79</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês<br></span></p>",
-                "cutedMontlyFee": "de R$99/mês ",
-                "annualSaving": "Economia de R$240 no anual",
-                "seeMoreTag": "Ver mais",
-                "seeMoreButtonText": "Ver mais"
-              },
-              {
-                "theme": "light",
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes"
-                },
-                "bulletPoints": {
-                  "items": [
-                    {
-                      "text": "Tudo do Plano Aceleração +"
-                    },
-                    {
-                      "text": "Produtos ativos ilimitados"
-                    },
-                    {
-                      "text": "300.000 visitas por mês"
-                    },
-                    {
-                      "text": "7 Visuais Profissionais Inclusos"
-                    },
-                    {
-                      "text": "Relatório de performance e diário de bordo"
-                    },
-                    {
-                      "text": "Mais conversão com customização de e-mails de transação e Carrinho Abandonado"
-                    },
-                    {
-                      "text": "Atendimento prioritário em chat, e-mail e WhatsApp"
-                    }
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg",
-                    "alt": "bullet points icon"
-                  }
-                },
-                "tag": {},
-                "title": "Expansão ",
-                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<span style=\"font-size: 48px;\"><b>239</b></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
-                "cutedMontlyFee": "de R$ 239/mês",
-                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>191</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
-                "annualSaving": "Economia de R$576 no anual",
-                "seeMoreButtonText": "Ver mais"
-              },
-              {
-                "theme": "light",
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes",
-                  "href": "#"
-                },
-                "bulletPoints": {
-                  "items": [
-                    {
-                      "text": "Tudo do Plano Expansão +"
-                    },
-                    {
-                      "text": "Produtos ativos ilimitados"
-                    },
-                    {
-                      "text": "Visitas ilimitadas"
-                    },
-                    {
-                      "text": "Suporte e atendimento por ligação e vídeo"
-                    },
-                    {
-                      "text": "Migração 100% assistida e sem custos adicionais"
-                    },
-                    {
-                      "text": "Especialista de e-commerce dedicado ao seu negócio"
-                    },
-                    {
-                      "text": "Negociação direta com meios de pagamento selecionados"
-                    },
-                    {
-                      "text": "Negociação direta com meios de pagamento selecionados"
-                    }
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
-                  }
+                  "itemsTextColor": "#FAFAF5",
+                  "tooltipTextColor": "#371E55",
+                  "tooltipBackgroundColor": "#ffffff"
                 },
                 "tag": {
-                  "text": "Para quem fatura +100k",
-                  "icon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/5cc30ad5-f8a1-4ea4-b7e7-a37f25023f91/coroa-1.svg",
-                    "alt": "crown icon"
+                  "text": "🚀 Mais popular "
+                },
+                "title": "Aceleração ",
+                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">99</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+                "cutedMontlyFee": "de R$99/mês ",
+                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">79</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês<br></span></p>",
+                "annualSaving": "Economia de R$240 no anual",
+                "seeMoreButtonText": "Ver mais",
+                "backgroundColor": "linear-gradient(153deg, #372158 7.7%, #170C24 83.32%)",
+                "titleColor": "#FAFAF5",
+                "cutedMontlyFeeColor": "#FAFAF5",
+                "annualSavingColor": "#FAFAF5",
+                "cta": [
+                  {
+                    "ctaStyle": "button",
+                    "href": "#",
+                    "text": "Escolher",
+                    "backgroundColor": "#ffffff",
+                    "textColor": "#371E55",
+                    "borderColor": "#ffffff"
+                  },
+                  {
+                    "ctaStyle": "link",
+                    "underlineText": "Ver detalhes",
+                    "href": "#",
+                    "textColor": "#ffffff"
                   }
-                },
-                "title": "Elite",
-                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1999</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
-                "cutedMontlyFee": "de R$ 1999 /mês",
-                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1599</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
-                "annualSaving": "Economia de R$500 no anual",
-                "topImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
-                },
-                "seeMoreButtonText": "Ver mais"
+                ],
+                "annualFee": 79,
+                "annualMontlyFeeFee": 79,
+                "seeMoreTag": "Ver mais",
+                "tagColor": "#FAFAF5",
+                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)"
               }
             ],
             "title": " Escolha seu plano e garanta mais eficiência para o seu negócio",
@@ -1285,7 +1334,295 @@
             "bottomButton": {
               "text": "Começar no grátis",
               "href": "#"
-            }
+            },
+            "id": "plans section",
+            "titleColor": "#371E55",
+            "captionColor": "#828CA0",
+            "labelColor": "#371E55",
+            "disabledLabelColor": "#828CA0",
+            "annualTagColor": "#FFE6A0",
+            "annualTagDisabledColor": "#EBEBEB",
+            "bottomButtons": [
+              {
+                "ctaStyle": "button",
+                "href": "#",
+                "text": "Começar no grátis",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55"
+              }
+            ],
+            "bottomCaptionColor": "#828CA0",
+            "bottomTitleColor": "#371E55"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Plans.tsx",
+            "slides": [
+              {
+                "title": "Aceleração ",
+                "tag": {
+                  "text": "🚀 Mais popular "
+                },
+                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">99</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
+                "annualFee": 79,
+                "chooseCta": {
+                  "text": "Assinar",
+                  "href": "#"
+                },
+                "detailsCta": {
+                  "text": "Ver detalhes",
+                  "href": "#"
+                },
+                "bulletPoints": {
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  },
+                  "items": [
+                    {
+                      "text": "500 produtos ativos"
+                    },
+                    {
+                      "text": "50.000 visitas por mês"
+                    },
+                    {
+                      "text": "5 Visuais profissionais Inclusos"
+                    },
+                    {
+                      "text": "Mais conversão com Checkout sem Senha baseado na VTEX"
+                    },
+                    {
+                      "text": "Aumento de ticket médio em até 31% com Promoções e Compre Junto"
+                    },
+                    {
+                      "text": "Tarifa por transação gratuita com Pagali"
+                    },
+                    {
+                      "text": "Envio pelos Correios com até 70% de desconto com Enviali"
+                    }
+                  ],
+                  "itemsTextColor": "#FAFAF5",
+                  "tooltipTextColor": "#371E55",
+                  "tooltipBackgroundColor": "#ffffff"
+                },
+                "annualMontlyFeeFee": 79,
+                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">79</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês<br></span></p>",
+                "cutedMontlyFee": "de R$99/mês ",
+                "annualSaving": "Economia de R$240 no anual",
+                "seeMoreTag": "Ver mais",
+                "seeMoreButtonText": "Ver mais",
+                "backgroundColor": "linear-gradient(153deg, #372158 7.7%, #170C24 83.32%)",
+                "tagColor": "#FAFAF5",
+                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
+                "titleColor": "#FAFAF5",
+                "cutedMontlyFeeColor": "#FAFAF5",
+                "annualSavingColor": "#FAFAF5",
+                "cta": [
+                  {
+                    "ctaStyle": "button",
+                    "href": "#",
+                    "text": "Assinar",
+                    "textColor": "#371E55",
+                    "backgroundColor": "#ffffff",
+                    "borderColor": "#ffffff"
+                  },
+                  {
+                    "ctaStyle": "link",
+                    "href": "#",
+                    "underlineText": "Ver detalhes",
+                    "textColor": "#ffffff"
+                  }
+                ]
+              },
+              {
+                "theme": "light",
+                "chooseCta": {
+                  "text": "Assinar",
+                  "href": "#"
+                },
+                "detailsCta": {
+                  "text": "Ver detalhes"
+                },
+                "bulletPoints": {
+                  "items": [
+                    {
+                      "text": "Tudo do Plano Aceleração +"
+                    },
+                    {
+                      "text": "Produtos ativos ilimitados"
+                    },
+                    {
+                      "text": "300.000 visitas por mês"
+                    },
+                    {
+                      "text": "7 Visuais Profissionais Inclusos"
+                    },
+                    {
+                      "text": "Relatório de performance e diário de bordo"
+                    },
+                    {
+                      "text": "Mais conversão com customização de e-mails de transação e Carrinho Abandonado"
+                    },
+                    {
+                      "text": "Atendimento prioritário em chat, e-mail e WhatsApp"
+                    }
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg",
+                    "alt": "bullet points icon"
+                  },
+                  "itemsTextColor": "#371E55",
+                  "tooltipTextColor": "#ffffff",
+                  "tooltipBackgroundColor": "#371E55"
+                },
+                "tag": {},
+                "title": "Expansão ",
+                "montlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>239</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
+                "cutedMontlyFee": "de R$ 239/mês",
+                "annualMontlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>191</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
+                "annualSaving": "Economia de R$576 no anual",
+                "seeMoreButtonText": "Ver mais",
+                "cta": [
+                  {
+                    "ctaStyle": "button",
+                    "href": "#",
+                    "text": "Assinar",
+                    "textColor": "#ffffff",
+                    "backgroundColor": "#371E55",
+                    "borderColor": "#371E55"
+                  },
+                  {
+                    "ctaStyle": "link",
+                    "href": "#",
+                    "underlineText": "Ver detalhes",
+                    "textColor": "#371E55"
+                  }
+                ],
+                "backgroundColor": "#ffffff",
+                "titleColor": "#371E55",
+                "cutedMontlyFeeColor": "#371E55",
+                "annualSavingColor": "#371E55"
+              },
+              {
+                "theme": "light",
+                "chooseCta": {
+                  "text": "Assinar",
+                  "href": "#"
+                },
+                "detailsCta": {
+                  "text": "Ver detalhes",
+                  "href": "#"
+                },
+                "bulletPoints": {
+                  "items": [
+                    {
+                      "text": "Tudo do Plano Expansão +"
+                    },
+                    {
+                      "text": "Produtos ativos ilimitados"
+                    },
+                    {
+                      "text": "Visitas ilimitadas"
+                    },
+                    {
+                      "text": "Suporte e atendimento por ligação e vídeo"
+                    },
+                    {
+                      "text": "Migração 100% assistida e sem custos adicionais"
+                    },
+                    {
+                      "text": "Especialista de e-commerce dedicado ao seu negócio"
+                    },
+                    {
+                      "text": "Negociação direta com meios de pagamento selecionados"
+                    },
+                    {
+                      "text": "Negociação direta com meios de pagamento selecionados"
+                    }
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                  },
+                  "itemsTextColor": "#371E55",
+                  "tooltipTextColor": "#ffffff",
+                  "tooltipBackgroundColor": "#371E55"
+                },
+                "tag": {
+                  "text": "Para quem fatura +100k",
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/5cc30ad5-f8a1-4ea4-b7e7-a37f25023f91/coroa-1.svg",
+                    "alt": "crown icon"
+                  }
+                },
+                "title": "Elite",
+                "montlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1999</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
+                "cutedMontlyFee": "de R$ 1999 /mês",
+                "annualMontlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1599</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
+                "annualSaving": "Economia de R$500 no anual",
+                "topImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
+                },
+                "seeMoreButtonText": "Ver mais",
+                "backgroundColor": "#ffffff",
+                "tagColor": "#371E55",
+                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
+                "titleColor": "#371E55",
+                "cutedMontlyFeeColor": "#371E55",
+                "annualSavingColor": "#371E55",
+                "cta": [
+                  {
+                    "ctaStyle": "button",
+                    "href": "#",
+                    "text": "Assinar",
+                    "backgroundColor": "#371E55",
+                    "textColor": "#ffffff",
+                    "borderColor": "#371E55"
+                  },
+                  {
+                    "ctaStyle": "link",
+                    "underlineText": "Ver detalhes",
+                    "href": "#",
+                    "textColor": "#371E55"
+                  }
+                ]
+              }
+            ],
+            "title": " Escolha seu plano e garanta mais eficiência para o seu negócio",
+            "caption": "Plans",
+            "annualLabel": "Anual",
+            "montlyLabel": "Mensal",
+            "annualTag": "-20% OFF",
+            "dots": false,
+            "bottomCaption": "Ainda em dúvida?",
+            "bottomTitle": "Comece pelo plano gratuito",
+            "bottomButton": {
+              "text": "Começar no grátis",
+              "href": "#"
+            },
+            "id": "plans section",
+            "titleColor": "#371E55",
+            "captionColor": "#828CA0",
+            "labelColor": "#371E55",
+            "disabledLabelColor": "#828CA0",
+            "annualTagColor": "#FFE6A0",
+            "annualTagDisabledColor": "#EBEBEB",
+            "bottomButtons": [
+              {
+                "ctaStyle": "button",
+                "href": "#",
+                "text": "Começar no grátis",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55"
+              }
+            ],
+            "bottomCaptionColor": "#828CA0",
+            "bottomTitleColor": "#371E55"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -4953,7 +5290,11 @@
             }
           ]
         }
-      ]
+      ],
+      "captionColor": "#828CA0",
+      "titleColor": "#371E55",
+      "collapsesTextColor": "#371E55",
+      "collapsesBorderColor": "#EBEBEB"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -4967,15 +5308,21 @@
             "bigNumbers": [
               {
                 "text": "+ 31% de aumento",
-                "caption": "no ticket médio"
+                "caption": "no ticket médio",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 900 lojas",
-                "caption": "usando a ferramenta"
+                "caption": "usando a ferramenta",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               },
               {
                 "text": "+ 2 mil lojistas",
-                "caption": "já utilizaram a ferramenta"
+                "caption": "já utilizaram a ferramenta",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               }
             ],
             "image": {
@@ -4986,8 +5333,19 @@
             "cta": [
               {
                 "text": "Ver plano Aceleração ",
+                "href": "#planoaceleracao",
+                "style": "button",
+                "ctaStyle": "button",
+                "backgroundColor": "#371E55",
+                "borderColor": "#0000371E550",
+                "textColor": "#ffffff"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "style": "button"
+                "text": "Já tem uma loja?",
+                "underlineText": "Ative agora",
+                "textColor": "#371E55"
               }
             ],
             "links": [
@@ -5001,7 +5359,10 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/94d5a22d-6783-411d-8035-00cbfd929774/Ellipse-62-(1).svg",
               "alt": "background gradiente"
             },
-            "use": "image"
+            "use": "image",
+            "descriptionColor": "#5F6E82",
+            "titleColor": "#371E55",
+            "captionColor": "#371E55"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5017,15 +5378,21 @@
             "bigNumbers": [
               {
                 "text": "+ 31% de aumento",
-                "caption": "no ticket médio"
+                "caption": "no ticket médio",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 2.5k lojistas",
-                "caption": "usando a ferramenta"
+                "caption": "usando a ferramenta",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 8.6k pedidos",
-                "caption": "convertidos em vendas no 1º Tri de 2024"
+                "caption": "convertidos em vendas no 1º Tri de 2024",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
             "image": {
@@ -5035,8 +5402,20 @@
             "cta": [
               {
                 "text": "Ver plano Aceleração ",
+                "href": "#planoaceleracao",
+                "style": "button",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "style": "button"
+                "textColor": "#371E55",
+                "text": "Já tem uma loja?",
+                "underlineText": " Ative agora",
+                "showIcon": true
               }
             ],
             "links": [
@@ -5051,7 +5430,10 @@
               "alt": "background gradiente"
             },
             "placement": "left",
-            "use": "image"
+            "use": "image",
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "descriptionColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -5071,15 +5453,21 @@
             "bigNumbers": [
               {
                 "text": "+ R$ 14 milhões",
-                "caption": "em vendas recuperadas"
+                "caption": "em vendas recuperadas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 45 mil pedidos",
-                "caption": "recuperados com estratégia"
+                "caption": "recuperados com estratégia",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 2 mil lojistas",
-                "caption": "já utilizaram a ferramenta"
+                "caption": "já utilizaram a ferramenta",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               }
             ],
             "image": {
@@ -5089,7 +5477,19 @@
             "cta": [
               {
                 "text": "Ver plano Aceleração ",
-                "href": "#"
+                "href": "#planoaceleracao",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "href": "#",
+                "text": "Já tem uma loja? ",
+                "underlineText": "Ative agora",
+                "showIcon": true,
+                "textColor": "#371E55"
               }
             ],
             "links": [
@@ -5104,7 +5504,11 @@
               "alt": "green elipse",
               "width": 797,
               "height": 1227
-            }
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "descriptionColor": "#5F6E82",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5120,15 +5524,21 @@
             "bigNumbers": [
               {
                 "text": "+ R$ 14 milhões",
-                "caption": "em vendas recuperadas"
+                "caption": "em vendas recuperadas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 45 mil pedidos",
-                "caption": "recuperados com estratégia"
+                "caption": "recuperados com estratégia",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               },
               {
                 "text": "+ 2 mil lojistas",
-                "caption": "já utilizaram a ferramenta"
+                "caption": "já utilizaram a ferramenta",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               }
             ],
             "image": {
@@ -5137,7 +5547,19 @@
             "cta": [
               {
                 "text": "Ver plano Aceleração ",
-                "href": "#"
+                "href": "#planoaceleracao",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "href": "#",
+                "text": "Já tem uma loja? ",
+                "underlineText": "Ative agora",
+                "textColor": "#371E55",
+                "showIcon": true
               }
             ],
             "links": [
@@ -5153,7 +5575,10 @@
               "width": 797,
               "height": 1227
             },
-            "placement": "right"
+            "placement": "right",
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "descriptionColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -5280,7 +5705,8 @@
             "color6": "#FFE6A0",
             "color7": "#ffffff",
             "color8": "#003037",
-            "color5": "#ffffff"
+            "color5": "#ffffff",
+            "id": "planoaceleracao"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5401,7 +5827,8 @@
             "color5": "#FAFAF5",
             "color6": "#FFE6A0",
             "color7": "#ffffff",
-            "color8": "#003037"
+            "color8": "#003037",
+            "id": "planoaceleracao"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -5528,7 +5955,8 @@
             "color5": "#371E55",
             "color6": "#5F6E82",
             "color7": "#371E55",
-            "color8": "#ffffff"
+            "color8": "#ffffff",
+            "id": "planoexpancao"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5651,7 +6079,8 @@
             "color5": "#371E55",
             "color6": "#5F6E82",
             "color7": "#371E55",
-            "color8": "#ffffff"
+            "color8": "#ffffff",
+            "id": "planoexpancao"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -5667,7 +6096,9 @@
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/880a5336-717a-4f28-ae0e-747b4cb6069d/coroa-1-(1).svg",
           "alt": "crown icon"
         },
-        "text": "Plano Elite"
+        "text": "Plano Elite",
+        "textColor": "#ffffff",
+        "backgroundColor": "#201131"
       },
       "backgroundImage": {},
       "useBackground": "video",
@@ -5733,7 +6164,11 @@
         "title": "Anual",
         "tag": "20% OFF",
         "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 948</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>",
-        "saving": "⚡️ Economize R$ 240 no plano anual"
+        "saving": "⚡️ Economize R$ 240 no plano anual",
+        "titleColor": "#FAFAF5",
+        "tagTextColor": "#371E55",
+        "tagBackgroundColor": "#FFE6A0",
+        "savingColor": "#28C3C3"
       },
       "montlyValues": {
         "title": "Mensal",
@@ -5747,7 +6182,8 @@
           "textBefore": "Já tem uma loja?",
           "text": " Ative agora",
           "href": "#"
-        }
+        },
+        "titleColor": "#FAFAF5"
       },
       "titleTypingColor": "#28C3C3",
       "titleTyping": [
@@ -5762,7 +6198,29 @@
       },
       "bottomBackground": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a921d8c9-b6e5-4718-bae3-7e1ec2faebc6/bottom-background.svg"
-      }
+      },
+      "id": "planoelite",
+      "titleColor": "#ffffff",
+      "slidesTitleColor": "#ffffff",
+      "arrowsColor": "#fafafa",
+      "cta": [
+        {
+          "ctaStyle": "button",
+          "href": "#",
+          "text": "Fazer parte",
+          "backgroundColor": "#ffffff",
+          "textColor": "#371E55",
+          "borderColor": "#fcfcfc"
+        },
+        {
+          "ctaStyle": "link",
+          "href": "#",
+          "text": "Já tem uma loja?",
+          "underlineText": "Ative agora",
+          "showIcon": true,
+          "textColor": "#ffffff"
+        }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -5775,22 +6233,40 @@
             "bigNumbers": [
               {
                 "text": "+ R$ 1,8 bilhão",
-                "caption": "transacionados"
+                "caption": "transacionados",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 12 mil lojistas",
-                "caption": "ativos no Pagali"
+                "caption": "ativos no Pagali",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               },
               {
                 "text": "+ 8,6 milhões ",
-                "caption": "de transações pagas"
+                "caption": "de transações pagas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
             "ctaTitle": "Disponível em todos os planos",
             "cta": [
               {
+                "href": "#plans section",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "text": "Ver planos"
+                "text": "Já tem uma loja?",
+                "underlineText": "Ative agora",
+                "textColor": "#371E55",
+                "showIcon": true
               }
             ],
             "links": [
@@ -5816,8 +6292,13 @@
                 "Liquidez instantânea ",
                 "Sem taxa extra para transações com outros meios de pagamento.",
                 "Fácil configuração  "
-              ]
-            }
+              ],
+              "itemsTextColor": "#5F6E82"
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "descriptionColor": "#5F6E82",
+            "textBelowColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5832,22 +6313,39 @@
             "bigNumbers": [
               {
                 "text": "+ R$ 1,8 bilhão",
-                "caption": "transacionados"
+                "caption": "transacionados",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 12 mil lojistas",
-                "caption": "ativos no Pagali"
+                "caption": "ativos no Pagali",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 8,6 milhões ",
-                "caption": "de transações pagas"
+                "caption": "de transações pagas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
             "ctaTitle": "Disponível em todos os planos",
             "cta": [
               {
+                "href": "#plans section",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "text": "Ver planos"
+                "text": "Já tem uma loja?",
+                "underlineText": "Ative agora",
+                "textColor": "#371E55"
               }
             ],
             "links": [
@@ -5873,8 +6371,14 @@
                 "Gestão financeira unificada ",
                 "Sem taxa sob valor de cada transação: só no Pagali",
                 "Fácil configuração  "
-              ]
-            }
+              ],
+              "itemsTextColor": "#5F6E82"
+            },
+            "id": "pagali",
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "descriptionColor": "#5F6E82",
+            "textBelowColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -5893,22 +6397,39 @@
             "bigNumbers": [
               {
                 "text": "Fretes 70%  ",
-                "caption": "mais baratos"
+                "caption": "mais baratos",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 2 mil pontos",
-                "caption": "de coletas para envios"
+                "caption": "de coletas para envios",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               },
               {
                 "text": "+ 2,5 mil veículos",
-                "caption": "de entregas"
+                "caption": "de entregas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
             "ctaTitle": "Tenha acesso a tabelas de preço mais competitivas com os Correios e com a transportadora Jadlog e aumente sua conversão. Os melhores valores de frete já negociados pelo Enviali para você vender mais. Disponível em todos os planos",
             "cta": [
               {
+                "href": "#plans section",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "text": "Ver planos"
+                "text": "Já tem uma loja?",
+                "underlineText": "Ativar recursos",
+                "textColor": "#371E55"
               }
             ],
             "links": [
@@ -5925,7 +6446,10 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/37ad2c84-9ed1-438c-bb7c-d0f1ac8eaed4/Ellipse-63.png",
               "width": 430,
               "height": 690
-            }
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "textBelowColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5940,22 +6464,40 @@
             "bigNumbers": [
               {
                 "text": "Fretes 70%  ",
-                "caption": "mais baratos"
+                "caption": "mais baratos",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 2 mil pontos",
-                "caption": "de coletas para envios"
+                "caption": "de coletas para envios",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 2,5 mil veículos",
-                "caption": "de entregas"
+                "caption": "de entregas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
             "ctaTitle": "Tenha acesso a tabelas de preço mais competitivas com os Correios e com a transportadora Jadlog e aumente sua conversão. Os melhores valores de frete já negociados pelo Enviali para você vender mais. Disponível em todos os planos",
             "cta": [
               {
+                "href": "#plans section",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "text": "Ver planos"
+                "text": "Já tem uma loja?",
+                "underlineText": "Ativar recursos",
+                "textColor": "#371E55",
+                "showIcon": true
               }
             ],
             "links": [
@@ -5972,7 +6514,10 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/21ead906-16be-442f-a3ca-814d04e5561a/Ellipse-67.png",
               "width": 880,
               "height": 1295
-            }
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "textBelowColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6031,7 +6576,7 @@
               {
                 "href": "/talkToSpecialist",
                 "text": "Ver planos ",
-                "backgroundColor": "t",
+                "backgroundColor": "#371E55",
                 "textColor": "#ffffff",
                 "borderColor": "#371E55",
                 "ctaStyle": "button",
@@ -6110,7 +6655,7 @@
               {
                 "href": "/talkToSpecialist",
                 "text": "Ver planos ",
-                "backgroundColor": "t",
+                "backgroundColor": "#371E55",
                 "textColor": "#ffffff",
                 "borderColor": "#371E55",
                 "ctaStyle": "button",
@@ -6273,7 +6818,8 @@
             "color5": "#003037",
             "color6": "#5F6E82",
             "color7": "#003037",
-            "color8": "#ffffff"
+            "color8": "#ffffff",
+            "id": "planocrescimento"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6379,7 +6925,8 @@
             "color5": "#003037",
             "color6": "#5F6E82",
             "color7": "#003037",
-            "color8": "#ffffff"
+            "color8": "#ffffff",
+            "id": "planocrescimento"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6389,6 +6936,15 @@
     },
     {
       "__resolveType": "Footer2 global"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/BackToTopButton.tsx",
+        "text": "Voltar ao topo",
+        "textColor": "#FAFAF5",
+        "backgroundColor": "#371E55"
+      }
     }
   ],
   "seo": {

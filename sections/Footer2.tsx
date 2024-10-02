@@ -39,6 +39,7 @@ export interface emailForm {
 }
 
 export interface Props {
+    id?: string;
     title?: string;
     backgroundVideo?: VideoWidget;
     backgroundImage?: IImage;
@@ -63,9 +64,9 @@ export interface Props {
     /** @format color-input */
 }
 
-export default function Footer2({ title, backgroundImage, backgroundVideo, useBackground, cards = [], logo, logoCaption, formCaption, socialLinks, bottomLinks, emailForm, color1, color2, color3, color4, showForm, bottomBackground }: Props) {
+export default function Footer2({ id, title, backgroundImage, backgroundVideo, useBackground, cards = [], logo, logoCaption, formCaption, socialLinks, bottomLinks, emailForm, color1, color2, color3, color4, showForm, bottomBackground }: Props) {
     const backgroundColor = useBackground ? "transparent" : color1;
-    return <footer class="text-primary" style={{ color: color1 }}>
+    return <footer id={id} class="text-primary" style={{ color: color1 }}>
         <div class={`relative w-full h-[56vw] lg:h-[42vw] flex justify-center items-end  ${!useBackground && "bg-primary"}`} style={{ backgroundColor: backgroundColor }}>
             {useBackground == "video" && backgroundVideo && <video
                 width="1440"

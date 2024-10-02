@@ -1,6 +1,5 @@
 import { useScript } from "deco/hooks/useScript.ts";
 import { useId } from "site/sdk/useId.ts";
-import { CSS } from "../static/css2.ts";
 import { JSX } from 'preact';
 
 
@@ -46,7 +45,7 @@ export default function TalkToSpecialistCta({ctaClass, key, text, divClass, styl
                         </svg>}
         </a>
         <div id={rootId + "popUpForm"} class="fixed top-0 left-0 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-50 talkToSpecialistForm overflow-auto hidden">
-                        <style dangerouslySetInnerHTML={{ __html: CSS }} />
+                        {/* <style dangerouslySetInnerHTML={{ __html: CSS }} /> */}
                         <div class="max-w-[550px] min-h-[600px] bg-primary-content rounded-xl lg:p-12 animate-pop-up relative pt-12" style={{animationDuration: "0.3s"}}>
                             <button class="text-primary font-black p-2.5 absolute top-2 right-2" hx-on:click={useScript(closeTalkToSpecialist, rootId)}>X</button>
                             <div dangerouslySetInnerHTML={{
@@ -61,5 +60,94 @@ export default function TalkToSpecialistCta({ctaClass, key, text, divClass, styl
                             `}} />
                         </div>
                     </div>
+        <style dangerouslySetInnerHTML={{__html: `
+            .talkToSpecialistForm .hs-form-private {
+            position: relative;
+            background-color: var(--color-primary-content); /* bg-primary-content */
+            display: flex; /* flex */
+            flex-wrap: wrap;
+            justify-content: space-between; /* justify-between */
+            padding-top: 0.375rem; /* py-1.5 */
+            padding-bottom: 0.375rem; /* py-1.5 */
+            padding-right: 0.375rem; /* pr-1.5 */
+            font-size: 1rem; /* text-base */
+            color: var(--color-primary); /* text-primary */
+            border-width: 1px;
+            --tw-border-opacity: 1;
+            border-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
+            border-radius: 0 0.75rem 0.75rem 0.75rem; /* rounded-xl */
+            box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
+            }
+
+            .talkToSpecialistForm .hs-form-private {
+            justify-content: center;
+            border: none;
+            background-color: transparent;
+            padding: 10px;
+            }
+
+            .talkToSpecialistForm .hs-form-field {
+            width: 100%;
+            margin-bottom: 30px;
+            }
+            .talkToSpecialistForm .hs-button {
+                --tw-bg-opacity: 1;
+                background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
+                --tw-text-opacity: 1;
+                color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
+                cursor:pointer;
+                transition: transform 0.2s ease-in-out;
+                height: 100%;
+                padding: 0px 30px 0px 30px;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                border-radius: 8px;
+            }
+            .talkToSpecialistForm .hs-button:hover {
+            transform: scale(1.15);
+            }
+
+            .talkToSpecialistForm .hs-input {
+            padding-left: 0.5rem; /* 2 * 0.25rem */
+            outline: none;
+            font-size: 0.875rem; /* text-sm */
+            }
+
+            .talkToSpecialistForm .input {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid;
+            --tw-border-opacity: 1;
+                border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
+            }
+
+            .talkToSpecialistForm .hs-form-private {
+            justify-content: center;
+            border: none;
+            background-color: transparent;
+            padding: 10px;
+            }
+
+.talkToSpecialistForm .hs-form-field {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.talkToSpecialistForm .input {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid;
+  --tw-border-opacity: 1;
+    border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
+}
+
+            `}} />
     </div>
 }

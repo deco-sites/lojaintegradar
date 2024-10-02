@@ -23,25 +23,51 @@ export interface IImage {
 /** @title {{title}} */
 export interface Benefit {
     title: string;
-    caption: string;
+    /** @format color-input */
+    titleColor?: string;
+    caption?: string;
+    /** @format color-input */
+    captionColor?: string;
     icon: IImage;
 }
 /** @title {{title}} */
 export interface Objective {
     title: string;
+    titleColor?: string;
     icon: IImage;
 }
 export interface Page1 {
     title: string;
     caption: string;
+    /** 
+     * @format color-input
+     * @title Title and caption color
+     */
+    asideTextColor?: string;
     benefits?: Benefit[];
     contentTitle: HTMLWidget;
     contentTitleIcon?: IImage;
     contentCaption?: string;
+    /** @format color-input */
+    contentCaptionColor?: string;
     progressImage?: IImage;
     objectivesCaption: string;
+    /** @format color-input */
+    objectivesCaptionColor?: string;
     objectives: Objective[];
+    /** @format color-input */
+    objectivesTextColor?: string;
+    /** @format color-input */
+    objectivesBorderColor?: string;
     emailCaption: string;
+    /** @format color-input */
+    emailCaptionColor?: string;
+    /** @format color-input */
+    hubspotButtonColor?: string;
+    /** @format color-input */
+    hubspotButtonTextColor?: string;
+    /** @format color-input */
+    hubspotErrorMessageColor?: string;
     emailPlaceHolder: string;
     emailButtonText: string;
     asideBackground?: IImage;
@@ -55,9 +81,9 @@ function TcoCalculatorPage1({ page1, rootId }: {
     page1: Page1;
     rootId: string;
 }) {
-    const { title, caption, benefits, contentTitle, contentTitleIcon, contentCaption, progressImage, objectivesCaption, objectives, emailCaption, emailPlaceHolder, emailButtonText, contentBackground, asideBackground, asideTopIcon, mobileTopBanner } = page1;
+    const { title, caption, benefits, contentTitle, contentTitleIcon, contentCaption, progressImage, objectivesCaption, objectives, emailCaption, emailPlaceHolder, emailButtonText, contentBackground, asideBackground, asideTopIcon, mobileTopBanner, asideTextColor, contentCaptionColor, objectivesCaptionColor, emailCaptionColor, objectivesTextColor, hubspotButtonColor, hubspotButtonTextColor, hubspotErrorMessageColor, objectivesBorderColor } = page1;
     return (<div class="relative flex flex-wrap lg:flex-nowrap justify-center w-full min-h-[971px] lg:rounded-[30px] overflow-hidden hidden lg:flex">
-            <div class={`relative w-full lg:max-w-[437px] pt-[121px] px-11 ${!asideBackground && 'bg-primary'} text-primary-content hidden lg:block`}>
+            <div class={`relative w-full lg:max-w-[437px] pt-[121px] px-11 ${!asideBackground && 'bg-primary'} text-primary-content hidden lg:block`} style={{color: asideTextColor}}>
                 {asideTopIcon && <Image width={133} height={119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10"/>}
                 {asideBackground && <Image width={813} height={971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
                 <h2 class="text-[32px] leading-[130%]">{title}</h2>
@@ -66,14 +92,14 @@ function TcoCalculatorPage1({ page1, rootId }: {
                     {benefits && benefits.map((benefit) => (<div class="mt-[30px]">
                             <div class="flex">
                                 <Image height={17} width={17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} class="mr-2.5"/>
-                                <p>{benefit.title}</p>
+                                <p style={{color: benefit.titleColor}}>{benefit.title}</p>
                             </div>
-                            <p class="mt-2.5 text-sm">{benefit.caption}</p>
+                            <p class="mt-2.5 text-sm" style={{color: benefit.captionColor}}>{benefit.caption}</p>
                         </div>))}
                 </div>
             </div>
 
-            <div class="lg:hidden relative text-2xl text-secondary-content font-semibold py-10 px-4 w-full min-h-[155px]">
+            <div class="lg:hidden relative text-2xl text-secondary-content font-semibold py-10 px-4 w-full min-h-[155px]" style={{color: asideTextColor}} >
                     {mobileTopBanner && <Image width={430} height={155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10"/>}
                     <p>{title}</p>
             </div>
@@ -84,16 +110,16 @@ function TcoCalculatorPage1({ page1, rootId }: {
                     {contentTitleIcon && <Image src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={14} height={14}/>}
                     <div dangerouslySetInnerHTML={{ __html: contentTitle }}/>
                 </div>
-                {contentCaption && <p class="mt-2.5">{contentCaption}</p>}
+                {contentCaption && <p class="mt-2.5" style={{color: contentCaptionColor}}>{contentCaption}</p>}
                 {progressImage && <div class="mt-7"><Image width={590} height={70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left"/></div>}
-                <p class="mt-[117px] text-transparent bg-gradient-to-r from-warning-content to-error-content bg-clip-text text-xl text-center font-semibold">{objectivesCaption}</p>
+                <p class="mt-[117px] text-transparent  bg-clip-text text-xl text-center font-semibold" style={{background: objectivesCaptionColor, backgroundClip: "text"}}>{objectivesCaption}</p>
                 <div class="flex flex-wrap justify-center lg:justify-between mt-7 px-10">
-                    {objectives.map((objective, index) => (<button hx-on:click={useScript(objectiveOnClick)} class="p-6 flex flex-col items-center justify-between w-[154px] min-h-32 border border-neutral hover:border-primary disabled:border-primary rounded-[10px] bg-primary-content group" disabled={index == 0}>
+                    {objectives.map((objective, index) => (<button hx-on:click={useScript(objectiveOnClick)} class="p-6 flex flex-col items-center justify-between w-[154px] min-h-32 border border-neutral hover:border-primary disabled:border-primary rounded-[10px] bg-primary-content group" disabled={index == 0} style={{borderColor: objectivesBorderColor}}>
                             <div class="min-h-[26px]"><Image height={26} width={26} src={objective.icon.src} alt={objective.icon.alt || "objective icon"} class="h-full opacity-50 group-hover:opacity-100 group-disabled:opacity-100"/></div>
-                            <p class="text-center text-primary opacity-50 group-hover:opacity-100 group-disabled:opacity-100 text-lg font-semibold leading-[120%]">{objective.title}</p>
+                            <p class="text-center text-primary opacity-50 group-hover:opacity-100 group-disabled:opacity-100 text-lg font-semibold leading-[120%]" style={{color: objectivesTextColor}}>{objective.title}</p>
                         </button>))}
                 </div>
-                <p class="text-center text-xl font-semibold mt-[60px] text-transparent bg-gradient-to-r from-warning-content to-error-content bg-clip-text">{emailCaption}</p>
+                <p class="text-center text-xl font-semibold mt-[60px] text-transparent bg-clip-text" style={{background: emailCaptionColor, backgroundClip: "text"}} >{emailCaption}</p>
                 <div class="tcoEmailForm mt-7" dangerouslySetInnerHTML={{ __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                     <script>
                     hbspt.forms.create({
@@ -128,6 +154,101 @@ function TcoCalculatorPage1({ page1, rootId }: {
                     </input>
                 </form>
             </div>
+            <style dangerouslySetInnerHTML={{__html: `
+                .tcoEmailForm .hs-form-private {
+                    position: relative;
+                    background-color: var(--color-primary-content); /* bg-primary-content */
+                    display: flex; /* flex */
+                    justify-content: space-between; /* justify-between */
+                    padding-top: 0.375rem; /* py-1.5 */
+                    padding-bottom: 0.375rem; /* py-1.5 */
+                    padding-right: 0.375rem; /* pr-1.5 */
+                    font-size: 1rem; /* text-base */
+                    color: var(--color-primary); /* text-primary */
+                    border-width: 1px;
+                    --tw-border-opacity: 1;
+                    border-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
+                    border-radius: 0 0.75rem 0.75rem 0.75rem; /* rounded-xl */
+                    box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
+                    --tw-bg-opacity: 1;
+                    background-color: var(--fallback-pc,oklch(var(--pc)/var(--tw-bg-opacity)));
+                    border: none;
+                    border-radius: 10px;
+                    flex-wrap: nowrap;
+                }
+                    .tcoEmailForm .hs-input {
+                    width: 100%;
+                    }
+
+                    .tcoEmailForm .hs-button {
+                        background-color: ${hubspotButtonColor};
+                        color: ${hubspotButtonTextColor};
+                        cursor:pointer;
+                        transition: transform 0.2s ease-in-out;
+                        height: 100%;
+                        padding: 0px 30px 0px 30px;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        border-radius: 8px;
+                    }
+
+                    .tcoEmailForm .actions {
+                    height: 47px;
+                    }
+
+                    .tcoEmailForm  .hs-button:hover {
+                    transform: scale(1.15);
+                    }
+
+                    .tcoEmailForm  .hs-input {
+                    padding-left: 0.5rem; /* 2 * 0.25rem */
+                    outline: none;
+                    font-size: 0.875rem; /* text-sm */
+                    }
+
+                    .tcoEmailForm  .hs-input:focus {
+                    outline: none;
+                    }
+
+                    .tcoEmailForm  .hs-error-msg {
+                        color: ${hubspotErrorMessageColor};
+                    }
+
+                    .tcoEmailForm  .submitted-message {
+                    text-align: center;
+                    }
+
+
+                    .tcoEmailForm .input {
+                    border-radius: 10px;
+                    }
+
+
+                    .tcoEmailForm .hs-error-msg {
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    width: 200%;
+                    }
+
+                    .tcoEmailForm .hs_error_rollup {
+                    display: none;
+                    }
+
+                    .tcoEmailForm .hs-error-msg {
+                    position: absolute;
+                    top: 65px;
+                    left: 0;
+                    width: 200%;
+                    }
+
+                    .tcoEmailForm .hs_error_rollup {
+                    display: none;
+                    }
+
+
+                `}} />
         </div>);
 }
 export default TcoCalculatorPage1;

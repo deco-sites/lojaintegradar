@@ -21,7 +21,10 @@ export default defineApp(async (_req, ctx) => {
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+      <style dangerouslySetInnerHTML={{
+        __html: `html {
+          scroll-behavior: smooth;
+      }`}} />
     </Head>
 
     {/* Rest of Preact tree */}

@@ -1,6 +1,7 @@
 import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
+import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 
 export interface IImage {
     src?: ImageWidget;
@@ -52,7 +53,7 @@ export interface Props {
 }
 
 export default function BigHeroImage({ title, titleColor, caption, captionColor, image, video, use, features, cta = [], backgroundImage, bottomFloatingImage }: Props) {
-    return <div class="relative text-primary mb-[157px] mt-[110px] px-7 lg:px-0">
+    return <div class={`relative text-primary ${bottomFloatingImage?.src && 'mb-[157px]'} mt-[110px] px-7 lg:px-0`}>
         {backgroundImage?.src && <Image
             width={backgroundImage.width || 1440}
             height={backgroundImage.height || 960}
@@ -67,12 +68,28 @@ export default function BigHeroImage({ title, titleColor, caption, captionColor,
             alt={image.alt || "section main image"}
             class="absolute h-full max-w-[60vw] right-0 bottom-0 object-contain -z-40 object-bottom hidden lg:block"
         />}
+        {use == "video" && video && <video
+            width="1154"
+            height="308"
+            autoPlay
+            playsInline
+            muted
+            loading="lazy"
+            loop
+            class="absolute h-full max-w-[60vw] right-0 bottom-0 object-contain -z-40 object-bottom hidden lg:block"
+        >
+            <source src={video} type="video/mp4" />
+            <object data="" width="1154" height="1000">
+                <embed width="1154" height="1000" src={video} />
+            </object>
+        </video>}
+
         <div class="max-w-[1250px] mx-auto py-[76px]">
-            <h2 class="text-2xl lg:text-5xl font-semibold leading-[120%] max-w-[470px]" style={{ color: titleColor }}>{title}</h2>
-            <p class="text-lg lg:text-2xl font-semibold leading-[120%] max-w-[437px] mt-4" style={{ color: captionColor }}>{caption}</p>
-            <div class="mt-11 flex lg:flex-col gap-7 overflow-auto">
-                {features?.map((feature) => (
-                    <div class="min-w-[239px] w-[239px]">
+            <AnimateOnShow divClass="text-2xl lg:text-5xl font-semibold leading-[120%] max-w-[470px]" style={{ color: titleColor }} animation="animate-fade-right">{title}</AnimateOnShow>
+            <AnimateOnShow divClass="text-lg lg:text-2xl font-semibold leading-[120%] max-w-[437px] mt-4" style={{ color: captionColor }} animation="animate-fade-right" delay={100}>{caption}</AnimateOnShow>
+            <div class="mt-11 flex lg:flex-col gap-7 overflow-auto lg:overflow-visible">
+                {features?.map((feature, index) => (
+                    <AnimateOnShow divClass="min-w-[239px] w-[239px]" animation="animate-fade-right" delay={index * 100}>
                         <div class="flex gap-2.5">
                             {feature.icon?.src && <Image
                                 width={feature.icon.width || 20}
@@ -85,10 +102,10 @@ export default function BigHeroImage({ title, titleColor, caption, captionColor,
                         <p class="mt-2.5 text-base font-normal leading-normal" style={{ color: feature.textColor }}>
                             {feature.text}
                         </p>
-                    </div>
+                    </AnimateOnShow>
                 ))}
             </div>
-            {cta.length > 1 && <div class="mt-11 flex flex-col gap-y-7">
+            {cta.length > 1 && <AnimateOnShow divClass="mt-11 flex flex-col gap-y-7" animation="animate-fade-right">
                 {cta?.map((button) => {
                     if (button.href == "/talkToSpecialist") return <TalkToSpecialistCta
                         text={button.text}
@@ -111,7 +128,7 @@ export default function BigHeroImage({ title, titleColor, caption, captionColor,
                         </svg>}
                     </a>
                 })}
-            </div>}
+            </AnimateOnShow>}
         </div>
         {use == "image" && image?.src && <Image
             width={image.width || 428}
@@ -120,6 +137,21 @@ export default function BigHeroImage({ title, titleColor, caption, captionColor,
             alt={image.alt || "section main image"}
             class="object-contain object-bottom lg:hidden"
         />}
+        {use == "video" && video && <video
+            width="428"
+            height="308"
+            autoPlay
+            playsInline
+            muted
+            loading="lazy"
+            loop
+            class="object-contain object-bottom lg:hidden"
+        >
+            <source src={video} type="video/mp4" />
+            <object data="" width="428" height="308">
+                <embed width="428" height="308" src={video} />
+            </object>
+        </video>}
         <div class="absolute w-full -bottom-28 left-0">
             <div class="max-w-[1250px] flex justify-center lg:justify-start mx-auto">
                 {bottomFloatingImage?.src && <Image

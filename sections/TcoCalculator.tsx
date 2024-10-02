@@ -1,4 +1,4 @@
-import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 import { useId } from "../sdk/useId.ts";
 import TcoCalculatorPage1 from "site/components/TcoCalculatorPage1.tsx";
 import TcoCalculatorPage2 from "site/components/TcoCalculatorPage2.tsx";
@@ -9,7 +9,6 @@ import { Page1 } from "site/components/TcoCalculatorPage1.tsx";
 import { Page2 } from "site/components/TcoCalculatorPage2.tsx";
 import { Page3 } from "site/components/TcoCalculatorPage3.tsx"
 import { Page4 } from "site/components/TcoCalculatorPage4.tsx";
-import { CSS } from "../static/css2.ts"
 
 export interface IImage {
     src: ImageWidget;
@@ -27,8 +26,13 @@ export interface Plan {
 }
 
 export interface Props {
+    sectionId?: string;
     title?: string;
+    /** @format color-input */
+    titleColor?: string;
     caption?: string;
+    /** @format color-input */
+    captionColor?: string;
     plans: Plan[];
     page1: Page1;
     page2: Page2;
@@ -38,14 +42,15 @@ export interface Props {
 
 function TcoCalculator(props: Props) {
     const id = useId();
-    const { title, caption, page1, page2, page3, page4, plans } = { ...props };
+    const { sectionId, title, caption, page1, page2, page3, page4, plans, titleColor, captionColor } = { ...props };
 
     return (
         <div
+            id={sectionId}
             class="min-h-min flex flex-col lg:container md:max-w-[1332px] lg:mx-auto lg:pt-[123px]"
         >
-            {caption && <h3 class="text-center text-neutral text-2xl font-semibold hidden lg:block">{caption}</h3>}
-            {title && <h2 class="mt-3 text-center text-primary text-5xl font-semibold hidden lg:block">{title}</h2>}
+            {caption && <h3 class="text-center text-neutral text-2xl font-semibold hidden lg:block" style={{ color: captionColor }}>{caption}</h3>}
+            {title && <h2 class="mt-3 text-center text-primary text-5xl font-semibold hidden lg:block" style={{ color: titleColor }}>{title}</h2>}
             <div
                 class="w-full gap-9 lg:pt-[116px] lg:px-9"
                 id={id}

@@ -51,6 +51,7 @@ export interface Slide {
 }
 
 export interface Props {
+    id?: string;
     backgroundImage?: IImage;
     contentVideo?: VideoWidget;
     contentImage?: IImage;
@@ -171,14 +172,14 @@ function Buttons({ buttonColor }: { buttonColor?: string }) {
     );
 }
 
-export default function PlanDetails2({ color1, color2, color3, color4, color5, color6, color7, color8, title, useContent, cta, link, backgroundImage, planTag, imageText, contentImage, contentVideo, caption, slides, showArrows, annualValues, montlyValues }: Props) {
+export default function PlanDetails2({ id, color1, color2, color3, color4, color5, color6, color7, color8, title, useContent, cta, link, backgroundImage, planTag, imageText, contentImage, contentVideo, caption, slides, showArrows, annualValues, montlyValues }: Props) {
     const backgroundColor = backgroundImage?.src ? "transparent" : color1;
     const contentBackgroundColor = useContent ? "transparent" : color1;
 
-    const id = useId();
-    const carouselId = `${id}carousel`;
 
-    return <div class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-[118px] text-primary" style={{ backgroundColor, color: color2 }}>
+    const carouselId = useId();
+
+    return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-[118px] text-primary" style={{ backgroundColor, color: color2 }}>
         {backgroundImage?.src && <Image
             width={backgroundImage.width || 1440}
             height={backgroundImage.height || 950}

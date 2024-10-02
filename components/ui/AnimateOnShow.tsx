@@ -1,6 +1,7 @@
 import { useScript } from "deco/hooks/useScript.ts";
 import type { ComponentChildren } from "preact";
 import { useId } from "site/sdk/useId.ts";
+import { JSX } from 'preact';
 
 const onLoad = (rootId: string, delay: number, animation: string) => {
     const element = document.getElementById(rootId) as HTMLElement;
@@ -29,11 +30,13 @@ export interface Props {
     delay?: number;
     animation?: string;
     animationDuration?: string;
+    id?: string;
+    style?: JSX.CSSProperties;
 }
 
-export default function FadeDown({ children, divClass = "", delay = 0, animationDuration, animation = 'animate-fade-down' }: Props) {
-    const id = useId();
-    return <div id={id} class={divClass} style={{ animationDuration }}>
+export default function FadeDown({ id, children, divClass = "", delay = 0, animationDuration, animation = 'animate-fade-down', style }: Props) {
+    if (!id) id = useId();
+    return <div id={id} class={divClass} style={{ animationDuration, ...style }}>
         <script
             type="module"
             dangerouslySetInnerHTML={{ __html: useScript(onLoad, id, delay, animation) }}

@@ -1,22 +1,27 @@
 import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import Image from "apps/website/components/Image.tsx";
+import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
-/** @title {{textBefore}} {{text}} */
-export interface Link {
-  textBefore?: string;
-  text: string;
-  href: string;
-}
-
-/** @title {{text}} */
+/** @title {{text}} {{underlineText}} */
 export interface CTA {
   href: string;
-  text: string;
+  text?: string;
+  underlineText?: string;
+  /** @format color-input */
+  backgroundColor?: string;
+  /** @format color-input */
+  textColor?: string;
+  /** @format color-input */
+  borderColor?: string;
+  ctaStyle: "button" | "link";
+  showIcon?: boolean;
 }
 
 export interface BulletPoints {
   items?: string[];
+  /** @format color-input */
+  itemsTextColor?: string;
   bulletPointsIcon?: IImage;
 }
 
@@ -30,23 +35,35 @@ export interface IImage {
 /** @title {{text}} */
 export interface BigNumber {
   text: string;
+  /** @format color-input */
+  textColor?: string;
   caption?: string;
+  /** @format color-input */
+  captionColor?: string;
 }
 
 export interface Props {
   id?: string;
   title?: string;
+  /** @format color-input */
+  titleColor?: string;
   caption?: string;
+  /** @format color-input */
+  captionColor?: string;
   description?: string;
+  /** @format color-input */
+  descriptionColor?: string;
   bulletpoints?: BulletPoints;
   bigNumbers?: BigNumber[];
   image?: IImage;
   video?: VideoWidget;
   use?: 'image' | 'video';
   placement?: "left" | "right";
+  /** @title Text Below */
   ctaTitle?: string;
+  /** @format color-input */
+  textBelowColor?: string;
   cta?: CTA[];
-  links?: Link[];
   backgroundImage?: IImage;
 }
 
@@ -54,8 +71,11 @@ export interface Props {
 export default function Hero({
   id,
   title,
+  titleColor,
   caption,
+  captionColor,
   description,
+  descriptionColor,
   bulletpoints,
   bigNumbers,
   image,
@@ -63,8 +83,8 @@ export default function Hero({
   use = 'image',
   placement = 'left',
   ctaTitle,
+  textBelowColor,
   cta = [],
-  links = [],
   backgroundImage,
 }: Props) {
   return (
@@ -100,12 +120,12 @@ export default function Hero({
       </AnimateOnShow>
       <div class={`lg:w-1/2 flex px-7 justify-center ${placement == "left" ? 'lg:justify-start' : 'lg:justify-end'}`}>
         <div class="max-w-[555px]">
-          <AnimateOnShow divClass="text-5xl font-semibold hidden lg:block" animation="animate-fade-left">{title}</AnimateOnShow>
-          <AnimateOnShow divClass="text-2xl mt-2.5 font-semibold hidden lg:block" delay={100} animation="animate-fade-left">{caption}</AnimateOnShow>
-          <AnimateOnShow divClass="text-base font-normal leading-normal text-neutral-content mt-5" delay={200} animation="animate-fade-left">{description}</AnimateOnShow>
+          <AnimateOnShow divClass="text-5xl font-semibold hidden lg:block" animation="animate-fade-left" style={{ color: titleColor }}>{title}</AnimateOnShow>
+          <AnimateOnShow divClass="text-2xl mt-2.5 font-semibold hidden lg:block" delay={100} animation="animate-fade-left" style={{ color: captionColor }}>{caption}</AnimateOnShow>
+          <AnimateOnShow divClass="text-base font-normal leading-normal text-neutral-content mt-5" delay={200} animation="animate-fade-left" style={{ color: descriptionColor }}>{description}</AnimateOnShow>
           {bulletpoints && <AnimateOnShow divClass="mt-7 text-neutral-content text-base flex flex-col gap-2.5" animation="animate-fade-left" delay={300}>
             {bulletpoints.items?.map((item) => (
-              <p class="flex gap-2.5">
+              <p class="flex gap-2.5" style={{ color: bulletpoints.itemsTextColor }}>
                 {bulletpoints.bulletPointsIcon?.src && <Image
                   height={bulletpoints.bulletPointsIcon?.height || 16}
                   width={bulletpoints.bulletPointsIcon?.width || 16}
@@ -119,35 +139,34 @@ export default function Hero({
           <AnimateOnShow divClass="flex flex-wrap" delay={400} animation="animate-fade-left">
             {bigNumbers?.map((bigNumber) =>
               <div class="w-1/3 px-3 mt-10">
-                <p class="text-xl sm:text-2xl lg:text-[34px] leading-[120%] font-bold">{bigNumber.text}</p>
-                <p class="text-neutral-content text-xs sm:text-sm mt-2">{bigNumber.caption}</p>
+                <p class="text-xl sm:text-2xl lg:text-[34px] leading-[120%] font-bold" style={{ color: bigNumber.textColor }}>{bigNumber.text}</p>
+                <p class="text-neutral-content text-xs sm:text-sm mt-2" style={{ color: bigNumber.captionColor }}>{bigNumber.caption}</p>
               </div>
             )}
           </AnimateOnShow>
-          {ctaTitle && <p class="text-neutral-content text-base mb-5 mt-7">{ctaTitle}</p>}
+          {ctaTitle && <p class="text-neutral-content text-base mb-5 mt-7" style={{ color: textBelowColor }}>{ctaTitle}</p>}
           <AnimateOnShow divClass="flex flex-wrap items-center gap-7 mt-5" animation="animate-fade-up" delay={500}>
-            {cta.map((button) =>
-              <a
+            {cta.map((button) => {
+              if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
+                showIcon={button.showIcon}
+                underlineText={button.underlineText}
+                text={button.text}
+                ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+              />
+              return <a
                 href={button?.href ?? "#"}
-                target={button?.href.includes("http") ? "_blank" : "_self"}
-                class={`btn btn-primary font-bold px-7 hover:scale-110 text-lg`}
+                target={button?.href.includes("http") ? "_blank" : ""}
+                class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
               >
                 {button?.text}
+                {button.underlineText && <span class="underline">{button.underlineText}</span>}
+                {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z" />
+                </svg>}
               </a>
-            )}
-            {links.map((link) =>
-              <a
-                href={link?.href ?? "#"}
-                target={link?.href.includes("http") ? "_blank" : "_self"}
-                class={`text-primary font-bold hover:scale-110 text-lg transition-transform`}
-              >
-                {link.textBefore}
-                <span class="underline" >{link.text}</span>
-                <svg width="19" height="20" viewBox="0 0 19 20" class="fill-current inline" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.8441 5.71091V13.4297C14.8441 13.5871 14.7815 13.7382 14.6702 13.8495C14.5588 13.9609 14.4078 14.0234 14.2503 14.0234C14.0929 14.0234 13.9418 13.9609 13.8305 13.8495C13.7191 13.7382 13.6566 13.5871 13.6566 13.4297V7.14407L5.17041 15.631C5.059 15.7424 4.90789 15.805 4.75033 15.805C4.59277 15.805 4.44166 15.7424 4.33025 15.631C4.21884 15.5196 4.15625 15.3685 4.15625 15.2109C4.15625 15.0533 4.21884 14.9022 4.33025 14.7908L12.8172 6.30466H6.53158C6.37411 6.30466 6.22309 6.2421 6.11174 6.13075C6.00039 6.0194 5.93783 5.86838 5.93783 5.71091C5.93783 5.55343 6.00039 5.40241 6.11174 5.29106C6.22309 5.17971 6.37411 5.11716 6.53158 5.11716H14.2503C14.4078 5.11716 14.5588 5.17971 14.6702 5.29106C14.7815 5.40241 14.8441 5.55343 14.8441 5.71091Z" />
-                </svg>
-              </a>
-            )}
+            })}
           </AnimateOnShow>
         </div>
       </div>

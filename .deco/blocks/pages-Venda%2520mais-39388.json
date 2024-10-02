@@ -317,7 +317,7 @@
       },
       "cta": [
         {
-          "href": "/",
+          "href": "#plans section",
           "text": "Ver planos",
           "backgroundColor": "#371E55",
           "textColor": "#fff5f5",
@@ -5308,15 +5308,21 @@
             "bigNumbers": [
               {
                 "text": "+ 31% de aumento",
-                "caption": "no ticket médio"
+                "caption": "no ticket médio",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 900 lojas",
-                "caption": "usando a ferramenta"
+                "caption": "usando a ferramenta",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               },
               {
                 "text": "+ 2 mil lojistas",
-                "caption": "já utilizaram a ferramenta"
+                "caption": "já utilizaram a ferramenta",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               }
             ],
             "image": {
@@ -5327,8 +5333,19 @@
             "cta": [
               {
                 "text": "Ver plano Aceleração ",
+                "href": "#planoaceleracao",
+                "style": "button",
+                "ctaStyle": "button",
+                "backgroundColor": "#371E55",
+                "borderColor": "#0000371E550",
+                "textColor": "#ffffff"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "style": "button"
+                "text": "Já tem uma loja?",
+                "underlineText": "Ative agora",
+                "textColor": "#371E55"
               }
             ],
             "links": [
@@ -5342,7 +5359,10 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/94d5a22d-6783-411d-8035-00cbfd929774/Ellipse-62-(1).svg",
               "alt": "background gradiente"
             },
-            "use": "image"
+            "use": "image",
+            "descriptionColor": "#5F6E82",
+            "titleColor": "#371E55",
+            "captionColor": "#371E55"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5358,15 +5378,21 @@
             "bigNumbers": [
               {
                 "text": "+ 31% de aumento",
-                "caption": "no ticket médio"
+                "caption": "no ticket médio",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 2.5k lojistas",
-                "caption": "usando a ferramenta"
+                "caption": "usando a ferramenta",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 8.6k pedidos",
-                "caption": "convertidos em vendas no 1º Tri de 2024"
+                "caption": "convertidos em vendas no 1º Tri de 2024",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
             "image": {
@@ -5376,8 +5402,20 @@
             "cta": [
               {
                 "text": "Ver plano Aceleração ",
+                "href": "#planoaceleracao",
+                "style": "button",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "style": "button"
+                "textColor": "#371E55",
+                "text": "Já tem uma loja?",
+                "underlineText": " Ative agora",
+                "showIcon": true
               }
             ],
             "links": [
@@ -5392,7 +5430,10 @@
               "alt": "background gradiente"
             },
             "placement": "left",
-            "use": "image"
+            "use": "image",
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "descriptionColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -5412,15 +5453,21 @@
             "bigNumbers": [
               {
                 "text": "+ R$ 14 milhões",
-                "caption": "em vendas recuperadas"
+                "caption": "em vendas recuperadas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 45 mil pedidos",
-                "caption": "recuperados com estratégia"
+                "caption": "recuperados com estratégia",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 2 mil lojistas",
-                "caption": "já utilizaram a ferramenta"
+                "caption": "já utilizaram a ferramenta",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               }
             ],
             "image": {
@@ -5430,7 +5477,19 @@
             "cta": [
               {
                 "text": "Ver plano Aceleração ",
-                "href": "#"
+                "href": "#planoaceleracao",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "href": "#",
+                "text": "Já tem uma loja? ",
+                "underlineText": "Ative agora",
+                "showIcon": true,
+                "textColor": "#371E55"
               }
             ],
             "links": [
@@ -5445,7 +5504,11 @@
               "alt": "green elipse",
               "width": 797,
               "height": 1227
-            }
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "descriptionColor": "#5F6E82",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5461,15 +5524,21 @@
             "bigNumbers": [
               {
                 "text": "+ R$ 14 milhões",
-                "caption": "em vendas recuperadas"
+                "caption": "em vendas recuperadas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 45 mil pedidos",
-                "caption": "recuperados com estratégia"
+                "caption": "recuperados com estratégia",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               },
               {
                 "text": "+ 2 mil lojistas",
-                "caption": "já utilizaram a ferramenta"
+                "caption": "já utilizaram a ferramenta",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               }
             ],
             "image": {
@@ -5478,7 +5547,19 @@
             "cta": [
               {
                 "text": "Ver plano Aceleração ",
-                "href": "#"
+                "href": "#planoaceleracao",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "href": "#",
+                "text": "Já tem uma loja? ",
+                "underlineText": "Ative agora",
+                "textColor": "#371E55",
+                "showIcon": true
               }
             ],
             "links": [
@@ -5494,7 +5575,10 @@
               "width": 797,
               "height": 1227
             },
-            "placement": "right"
+            "placement": "right",
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "descriptionColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6121,22 +6205,40 @@
             "bigNumbers": [
               {
                 "text": "+ R$ 1,8 bilhão",
-                "caption": "transacionados"
+                "caption": "transacionados",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 12 mil lojistas",
-                "caption": "ativos no Pagali"
+                "caption": "ativos no Pagali",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               },
               {
                 "text": "+ 8,6 milhões ",
-                "caption": "de transações pagas"
+                "caption": "de transações pagas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
             "ctaTitle": "Disponível em todos os planos",
             "cta": [
               {
+                "href": "#plans section",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "text": "Ver planos"
+                "text": "Já tem uma loja?",
+                "underlineText": "Ative agora",
+                "textColor": "#371E55",
+                "showIcon": true
               }
             ],
             "links": [
@@ -6162,9 +6264,13 @@
                 "Liquidez instantânea ",
                 "Sem taxa extra para transações com outros meios de pagamento.",
                 "Fácil configuração  "
-              ]
+              ],
+              "itemsTextColor": "#5F6E82"
             },
-            "id": "pagali"
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "descriptionColor": "#5F6E82",
+            "textBelowColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6179,22 +6285,39 @@
             "bigNumbers": [
               {
                 "text": "+ R$ 1,8 bilhão",
-                "caption": "transacionados"
+                "caption": "transacionados",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 12 mil lojistas",
-                "caption": "ativos no Pagali"
+                "caption": "ativos no Pagali",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 8,6 milhões ",
-                "caption": "de transações pagas"
+                "caption": "de transações pagas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
             "ctaTitle": "Disponível em todos os planos",
             "cta": [
               {
+                "href": "#plans section",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "text": "Ver planos"
+                "text": "Já tem uma loja?",
+                "underlineText": "Ative agora",
+                "textColor": "#371E55"
               }
             ],
             "links": [
@@ -6220,9 +6343,14 @@
                 "Gestão financeira unificada ",
                 "Sem taxa sob valor de cada transação: só no Pagali",
                 "Fácil configuração  "
-              ]
+              ],
+              "itemsTextColor": "#5F6E82"
             },
-            "id": "pagali"
+            "id": "pagali",
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "descriptionColor": "#5F6E82",
+            "textBelowColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6241,22 +6369,39 @@
             "bigNumbers": [
               {
                 "text": "Fretes 70%  ",
-                "caption": "mais baratos"
+                "caption": "mais baratos",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 2 mil pontos",
-                "caption": "de coletas para envios"
+                "caption": "de coletas para envios",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               },
               {
                 "text": "+ 2,5 mil veículos",
-                "caption": "de entregas"
+                "caption": "de entregas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
             "ctaTitle": "Tenha acesso a tabelas de preço mais competitivas com os Correios e com a transportadora Jadlog e aumente sua conversão. Os melhores valores de frete já negociados pelo Enviali para você vender mais. Disponível em todos os planos",
             "cta": [
               {
+                "href": "#plans section",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "text": "Ver planos"
+                "text": "Já tem uma loja?",
+                "underlineText": "Ativar recursos",
+                "textColor": "#371E55"
               }
             ],
             "links": [
@@ -6273,7 +6418,10 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/37ad2c84-9ed1-438c-bb7c-d0f1ac8eaed4/Ellipse-63.png",
               "width": 430,
               "height": 690
-            }
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "textBelowColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6288,22 +6436,40 @@
             "bigNumbers": [
               {
                 "text": "Fretes 70%  ",
-                "caption": "mais baratos"
+                "caption": "mais baratos",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 2 mil pontos",
-                "caption": "de coletas para envios"
+                "caption": "de coletas para envios",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
                 "text": "+ 2,5 mil veículos",
-                "caption": "de entregas"
+                "caption": "de entregas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
             "ctaTitle": "Tenha acesso a tabelas de preço mais competitivas com os Correios e com a transportadora Jadlog e aumente sua conversão. Os melhores valores de frete já negociados pelo Enviali para você vender mais. Disponível em todos os planos",
             "cta": [
               {
+                "href": "#plans section",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
                 "href": "#",
-                "text": "Ver planos"
+                "text": "Já tem uma loja?",
+                "underlineText": "Ativar recursos",
+                "textColor": "#371E55",
+                "showIcon": true
               }
             ],
             "links": [
@@ -6320,7 +6486,10 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/21ead906-16be-442f-a3ca-814d04e5561a/Ellipse-67.png",
               "width": 880,
               "height": 1295
-            }
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "textBelowColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

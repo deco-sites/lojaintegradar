@@ -67,6 +67,21 @@ export default function BigHeroImage({ title, titleColor, caption, captionColor,
             alt={image.alt || "section main image"}
             class="absolute h-full max-w-[60vw] right-0 bottom-0 object-contain -z-40 object-bottom hidden lg:block"
         />}
+        {use == "video" && video && <video
+            width="1154"
+            height="308"
+            autoPlay
+            playsInline
+            muted
+            loading="lazy"
+            loop
+            class="absolute h-full max-w-[60vw] right-0 bottom-0 object-contain -z-40 object-bottom hidden lg:block"
+        >
+            <source src={video} type="video/mp4" />
+            <object data="" width="1154" height="1000">
+                <embed width="1154" height="1000" src={video} />
+            </object>
+        </video>}
         <div class="max-w-[1250px] mx-auto py-[76px]">
             <h2 class="text-2xl lg:text-5xl font-semibold leading-[120%] max-w-[470px]" style={{ color: titleColor }}>{title}</h2>
             <p class="text-lg lg:text-2xl font-semibold leading-[120%] max-w-[437px] mt-4" style={{ color: captionColor }}>{caption}</p>
@@ -120,6 +135,21 @@ export default function BigHeroImage({ title, titleColor, caption, captionColor,
             alt={image.alt || "section main image"}
             class="object-contain object-bottom lg:hidden"
         />}
+        {use == "video" && video && <video
+            width="428"
+            height="308"
+            autoPlay
+            playsInline
+            muted
+            loading="lazy"
+            loop
+            class="object-contain object-bottom lg:hidden"
+        >
+            <source src={video} type="video/mp4" />
+            <object data="" width="428" height="308">
+                <embed width="428" height="308" src={video} />
+            </object>
+        </video>}
         <div class="absolute w-full -bottom-28 left-0">
             <div class="max-w-[1250px] flex justify-center lg:justify-start mx-auto">
                 {bottomFloatingImage?.src && <Image

@@ -19,7 +19,6 @@ function HeroTab({ title, subTitle, buttons, finalButtons }: Props) {
         }
     }, [activeIndex, buttons]);
 
-    console.log("quantas vezes")
     const renderResponsiveContent = (
         desktop: string | undefined,
         mobile: string | undefined,
@@ -77,7 +76,7 @@ function HeroTab({ title, subTitle, buttons, finalButtons }: Props) {
                                 }`}
                             onClick={() => handleTabClick(index)}
                         >
-                            {button.text}
+                            <span dangerouslySetInnerHTML={{ __html: button.text ?? '' }} />
                         </button>
                     ))}
                 </div>

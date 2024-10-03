@@ -3,6 +3,225 @@
   "path": "/demais-componentes",
   "sections": [
     {
+      "__resolveType": "site/sections/Header2.tsx",
+      "navigation": {
+        "links": [
+          {
+            "label": "Abra sua Loja na LI",
+            "url": "#",
+            "textColor": "#371E55",
+            "textHoverColor": "#C6B3CE"
+          },
+          {
+            "label": "Nosso ecossistema",
+            "url": "#nossoecossistema",
+            "textColor": "#371E55",
+            "textHoverColor": "#C6B3CE"
+          },
+          {
+            "label": "Recursos e Ferramentas",
+            "url": "#",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Faça parte da Elite",
+            "url": "#",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Planos",
+            "url": "#plans section",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Compre Junto e Carrinho Abandonado",
+            "url": "#",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Plano Aceleração",
+            "url": "#planoaceleracao",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Plano Expansão ",
+            "url": "#planoexpancao",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Plano Elite",
+            "url": "#planoelite",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Pagali e Enviali",
+            "url": "#pagali",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Plano Crescimento",
+            "url": "#planocrescimento",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Ecossistema de conteúdo",
+            "url": "#",
+            "textColor": "#371E55"
+          }
+        ],
+        "buttons": [
+          {
+            "href": "#",
+            "text": "Criar loja",
+            "ctaStyle": "button",
+            "backgroundColor": "#371E55",
+            "textColor": "#ffffff",
+            "borderColor": "#371E55"
+          },
+          {
+            "text": "Acessar minha loja",
+            "href": "https://app.lojaintegrada.com.br/painel/login",
+            "outline": true,
+            "ctaStyle": "button",
+            "backgroundColor": "Transparent",
+            "textColor": "#371E55",
+            "borderColor": "#371E55"
+          }
+        ],
+        "mobileButtons": [
+          {
+            "href": "#",
+            "text": "Ver planos",
+            "ctaStyle": "button"
+          }
+        ],
+        "asideMenuButtons": [
+          {
+            "text": "Abrir loja virtual",
+            "href": "#plans section",
+            "ctaStyle": "button",
+            "backgroundColor": "#371E55",
+            "textColor": "#ffffff",
+            "borderColor": "#371E55"
+          },
+          {
+            "text": "Fazer Login",
+            "href": "https://app.lojaintegrada.com.br/painel/login",
+            "outline": true,
+            "ctaStyle": "button",
+            "backgroundColor": "Transparent",
+            "textColor": "#371E55",
+            "borderColor": "#371E55"
+          }
+        ],
+        "sideMenuButtons": [],
+        "linksBorderColor": "#CCC4CF",
+        "textHoverColor": "#C6B3CE",
+        "textColor": "#371E55"
+      },
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12380/089daad4-d996-4911-9340-e227552948de"
+      },
+      "initialButtons": [],
+      "backgroundColor": "#ffffff",
+      "barsColor": "#371E55",
+      "asideMenuTopBackgroundColor": "#C6B3CE",
+      "asideMenuBackgroundColor": "#ffffff",
+      "asideMenuCloseIconColor": "#371E55",
+      "headerMessage": {
+        "show": true,
+        "text": "🔥 Aumente sua capacidade de venda! Conheça nossos planos a partir de R$ 54/mês",
+        "textColor": "#ffffff",
+        "backgroundColor": "#371E55",
+        "cta": [
+          {
+            "ctaStyle": "link",
+            "href": "#plans section",
+            "textColor": "#FFC19F",
+            "underlineText": "Ver planos"
+          }
+        ]
+      },
+      "campaignTimer": {
+        "show": true,
+        "expiresAt": "2024-10-03T20:30:00.000Z",
+        "backgroundColor": "#FFC19F",
+        "labels": {
+          "days": "Dias",
+          "hours": "Horas",
+          "minutes": "Minutos",
+          "seconds": "Segundos"
+        },
+        "numbersColor": "#371E55",
+        "labelsColor": "#371E55",
+        "textColor": "#371E55",
+        "text": "ÚLTIMAS CHANCES, A OFERTA ACABA EM:"
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/MainHero.tsx",
+            "title": "Reduza seus custos e venda com mais eficiência",
+            "caption": "<p><span style=\"font-size: 14pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 14pt; color: rgb(95, 110, 130);\">Conheça o ecossistema Loja Integrada e <strong><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">ganhe até 20% OFF</span></strong> na assinatura anual</span></p>",
+            "inputPlaceHolder": "Digite seu email aqui para ganhar",
+            "inputButtonText": "Aproveitar",
+            "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ ",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a5138fc3-9cef-49db-9369-6ed4f896b5ee/img-topo.png",
+              "alt": "top image"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/da9060c9-9708-4d08-b57d-e038c769434f/background-image.webp",
+              "alt": "background image"
+            },
+            "inputLabelBackgroundColor": "#EAE0EE",
+            "inputLabelColor": "#371E55",
+            "titleColor": "#371E55",
+            "hubspotFormButtonColor": "#371E55",
+            "hubspotFormButtonTextColor": "#ffffff",
+            "hubspotErrorMessageColor": "#F57E77",
+            "use": "image"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true,
+            "tablet": false
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/MainHero.tsx",
+            "title": "Suporte e economia na hora de migrar",
+            "caption": "<p><span style=\"font-size: 24pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 24pt; color: rgb(95, 110, 130);\">Redução média de R$ 90.000/ano com custos de manutenção da plataforma</span><br></p>",
+            "inputPlaceHolder": "Digite seu email aqui para ganhar",
+            "inputButtonText": "Aproveitar",
+            "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ ",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a5138fc3-9cef-49db-9369-6ed4f896b5ee/img-topo.png",
+              "alt": "top image"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/da9060c9-9708-4d08-b57d-e038c769434f/background-image.webp",
+              "alt": "background image"
+            },
+            "titleColor": "#371E55",
+            "inputLabelColor": "#371E55",
+            "inputLabelBackgroundColor": "#EAE0EE",
+            "hubspotFormButtonColor": "#371E55",
+            "hubspotFormButtonTextColor": "#ffffff",
+            "hubspotErrorMessageColor": "#F57E77",
+            "use": "image"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {

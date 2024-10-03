@@ -1,7 +1,9 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "../components/ui/Icon.tsx";
 import { useScript } from "@deco/deco/hooks";
+import CampaignTimer from "../components/CampaignTimer.tsx";
+
 const onLoad = (backgroundColor?: string) => {
   globalThis.addEventListener("scroll", () => {
     const headerContainer = document.querySelector("#headerContainer") as HTMLElement;
@@ -17,6 +19,7 @@ const onLoad = (backgroundColor?: string) => {
     }
   });
 };
+
 /** @title {{text}} {{underlineText}} */
 export interface CTA {
   href: string;
@@ -41,6 +44,36 @@ export interface HeaderMessage {
   /** @format color-input */
   backgroundColor?: string;
   cta?: CTA[];
+}
+
+export interface CampaignTimer {
+  show?: boolean;
+  /** @format color-input */
+  backgroundColor?: string;
+  /**
+   * @title Text
+   * @default Time left for a campaign to end with a link
+   */
+  text?: string;
+  /** @format color-input */
+  textColor?: string;
+
+  expiredText?: HTMLWidget;
+  /**
+   * @title Expires at date
+   * @format datetime
+   */
+  expiresAt?: string;
+  labels?: {
+      days?: string;
+      hours?: string;
+      minutes?: string;
+      seconds?: string;
+  };
+  /** @format color-input */
+  labelsColor?: string;
+  /** @format color-input */
+  numbersColor?: string;
 }
 
 export interface Link {
@@ -77,13 +110,14 @@ export interface Nav {
   asideMenuBackgroundColor?: string;
   /** @format color-input */
   asideMenuCloseIconColor?: string;
-  headerMessage: HeaderMessage;
+  headerMessage?: HeaderMessage;
+  campaignTimer?: CampaignTimer;
 }
 export default function Header2({ logo = {
   src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
   alt: "Logo",
 },
-  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, backgroundColor, asideMenuCloseIconColor, headerMessage,
+  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, backgroundColor, asideMenuCloseIconColor, headerMessage, campaignTimer,
   navigation = {
     links: [
       { label: "Home", url: "/" },
@@ -99,10 +133,11 @@ export default function Header2({ logo = {
   }, }: Nav) {
   return (
   <header>
-    {headerMessage.show && <div class="h-16" />}
+    {headerMessage?.show && <div class="h-16" />}
+    {campaignTimer?.show && <div class="h-[76px]" />}
     <div class="fixed top-0 left-0 w-full z-50 justify-center ">
       
-      {headerMessage.show && <div class="min-h-16 w-full bg-primary text-primary-content px-11 py-2 flex items-center justify-center gap-4" style={{background: headerMessage.backgroundColor, color: headerMessage.textColor}}>
+      {headerMessage?.show && <div class="min-h-16 w-full bg-primary text-primary-content px-11 py-2 flex items-center justify-center gap-4" style={{background: headerMessage?.backgroundColor, color: headerMessage?.textColor}}>
         <p class="text-xs lg:text-base text-center font-semibold leading-[120%]">
           {headerMessage.text}
           {headerMessage.cta?.map((button) => (<a
@@ -118,6 +153,13 @@ export default function Header2({ logo = {
                 </svg>}
               </a>))}
         </p>
+      </div>}
+
+      {campaignTimer?.show && <div class="min-h-[76px] bg-primary text-primary-content py-2 flex items-center justify-center gap-7" style={{background: campaignTimer.backgroundColor}}>
+        {campaignTimer.text && <p class="text-base text-primary-content font-semibold leading-[120%]" style={{color: campaignTimer.textColor}}>
+          {campaignTimer.text}
+        </p>}
+        <CampaignTimer {...campaignTimer} labelsColor={campaignTimer.labelsColor} numbersColor={campaignTimer.numbersColor} />
       </div>}
 
       <nav id="headerContainer" class="drawer drawer-end top-0 left-0 bg-primary-content bg-opacity-0 transition-all duration-300 ease-in-out pt-9 pb-5 ">

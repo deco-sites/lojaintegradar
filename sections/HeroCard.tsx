@@ -70,7 +70,7 @@ function HeroCards(props: Props) {
     };
 
     return (
-        <div id="heroCardSection" style={bgStyle} class="bg-base-300 py-20">
+        <div id="heroCardSection" style={bgStyle} class="bg-base-300">
             <HeroCard {...props} />
         </div>
     )

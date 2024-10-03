@@ -57,7 +57,7 @@ function HeroCard({
                         />
                     )}
 
-                    <div class="flex flex-col w-[97%] lg:w-[unset] gap-6 lg:gap-[40px] absolute top-3 lg:top-[50px] left-2 lg:left-[50px] min-w-[280px] px-[10px] xl:px-0">
+                    <div class="flex flex-col w-[97%] lg:w-[unset] gap-6 lg:gap-[40px] absolute top-5 lg:top-[50px] left-2 lg:left-[50px] min-w-[280px] px-[10px] xl:px-0">
                         <div class="flex gap-1">
                             {plan.title && <span dangerouslySetInnerHTML={{ __html: plan.title }} class="w-full text-base font-semibold text-primary-content lg:hidden">
 

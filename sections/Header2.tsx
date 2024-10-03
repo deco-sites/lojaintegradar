@@ -102,13 +102,13 @@ export default function Header2({ logo = {
     {headerMessage.show && <div class="h-16" />}
     <div class="fixed top-0 left-0 w-full z-50 justify-center ">
       
-      {headerMessage.show && <div class="min-h-16 w-full bg-primary text-primary-content py-2 flex items-center justify-center gap-4" style={{background: headerMessage.backgroundColor, color: headerMessage.textColor}}>
-        <p class="text-base text-center font-semibold leading-[120%]">
+      {headerMessage.show && <div class="min-h-16 w-full bg-primary text-primary-content px-11 py-2 flex items-center justify-center gap-4" style={{background: headerMessage.backgroundColor, color: headerMessage.textColor}}>
+        <p class="text-xs lg:text-base text-center font-semibold leading-[120%]">
           {headerMessage.text}
           {headerMessage.cta?.map((button) => (<a
                 href={button?.href ?? "#"}
                 target={button?.href.includes("http") ? "_blank" : "_self"}
-                class={`ml-1 ${button.ctaStyle != "link" && 'btn btn-primary px-7 ml-4'} inline-flex  items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                class={`ml-1 ${button.ctaStyle != "link" && 'btn btn-primary px-7 ml-4'} inline-flex  items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-xs lg:text-base`}
                 style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
               >
                 {button?.text}

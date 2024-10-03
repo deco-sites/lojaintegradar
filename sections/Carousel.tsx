@@ -156,7 +156,7 @@ function Carousel(props: Props) {
     const carouselId = useId();
     return (<div id={id} >
         {/* <input type="text" value="0" /> */}
-        <div id={carouselId} class="min-h-min flex flex-col items-center w-full pt-7 lg:pt-14">
+        <div id={carouselId} class="min-h-min flex flex-col items-center w-full pt-7 lg:pt-14 relative">
             {backgroundImage && <div class="absolute hidden md:block -z-50 top-0 left-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "background image"} height={780} width={460} class="h-full object-contain" /></div>}
 
             <AnimateOnShow >

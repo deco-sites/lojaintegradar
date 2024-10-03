@@ -134,7 +134,7 @@ const onClickNext = (rootId: string, plans: Plan[]) => {
     //envia os dados para o hubspot
     const fields = {
         email: emailInput,
-        gmv: gmvInput.replace(/[^\d,]/g, ""), // Remove todos os caracteres não numéricos e não vírgula,
+        gmv: gmvInput.replace(/[^\d,]/g, "").replace(",","."), // Remove todos os caracteres não numéricos e não vírgula, e depois troca virgula por .
         plataforma: currentPlatformInput,
         mensalidade: montlyFeeInput,
         comissao: comissionInput,

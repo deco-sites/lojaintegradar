@@ -640,19 +640,21 @@
                   "items": [
                     "Pagali (Melhores taxas e Integração Nativa)",
                     "PayPal Plus",
+                    "PayPal",
+                    "Cielo",
                     "Mercado Pago",
                     "Pagamento na Entrega ",
                     "Pagar.me V4",
                     "PagBank",
                     "PagHiper",
-                    "PayPal"
+                    "Appmax"
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
                   },
                   "textColor": "#371E55"
                 },
-                "title": "+7 Formas de pagamento ",
+                "title": "+9 Formas de pagamento ",
                 "titleColor": "#371E55"
               },
               {
@@ -1441,7 +1443,6 @@
                 ]
               },
               {
-                "theme": "light",
                 "chooseCta": {
                   "text": "Assinar",
                   "href": "#"
@@ -1507,7 +1508,8 @@
                 "backgroundColor": "#ffffff",
                 "titleColor": "#371E55",
                 "cutedMontlyFeeColor": "#371E55",
-                "annualSavingColor": "#371E55"
+                "annualSavingColor": "#371E55",
+                "theme": "light"
               },
               {
                 "theme": "light",
@@ -1565,13 +1567,8 @@
                 "cutedMontlyFee": "de R$ 1999 /mês",
                 "annualMontlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1599</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                 "annualSaving": "Economia de R$500 no anual",
-                "topImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
-                },
                 "seeMoreButtonText": "Ver mais",
                 "backgroundColor": "#ffffff",
-                "tagColor": "#371E55",
-                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
                 "titleColor": "#371E55",
                 "cutedMontlyFeeColor": "#371E55",
                 "annualSavingColor": "#371E55",
@@ -1590,7 +1587,12 @@
                     "href": "#",
                     "textColor": "#371E55"
                   }
-                ]
+                ],
+                "topImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
+                },
+                "tagColor": "#371E55",
+                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)"
               }
             ],
             "title": " Escolha seu plano e garanta mais eficiência para o seu negócio",

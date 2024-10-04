@@ -1,5 +1,6 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
 interface ImageProps {
   /**
@@ -18,24 +19,6 @@ interface ImageProps {
    * @title Altura
    */
   height?: number;
-}
-
-interface Gradient {
-  /**
-   * @title Cor de início
-   * @format color-input
-   */
-  startColor?: string;
-  /**
-   * @title Cor de transição
-   * @format color-input
-   */
-  middleColor?: string;
-  /**
-   * @title Cor de fim
-   * @format color-input
-   */
-  endColor?: string;
 }
 
 interface Icon {
@@ -79,22 +62,19 @@ interface Card {
   descriptionColor?: string;
 }
 
-interface Button {
-  /**
-   * @title Texto do botão
-   */
+/** @title {{text}} {{underlineText}} */
+export interface CTA {
+  href: string;
   text?: string;
-  /**
-   * @title Cor do Texto
-   * @format color-input
-   */
-  color?: string;
-  /**
-   * @title Cor do fundo
-   * @format color-input
-   */
+  underlineText?: string;
+  /** @format color-input */
   backgroundColor?: string;
-  url?: string;
+  /** @format color-input */
+  textColor?: string;
+  /** @format color-input */
+  borderColor?: string;
+  ctaStyle: "button" | "link";
+  showIcon?: boolean;
 }
 
 interface Props {
@@ -120,7 +100,7 @@ interface Props {
   /**
    * @title Cor de fundo
    */
-  backgroundColor?: Gradient;
+  backgroundColor?: string;
   /**
    * @title Imagem decorativa
    * @description A imagem decorativa no canto superior direito
@@ -130,109 +110,27 @@ interface Props {
    * @title Cards
    */
   cards?: Card[];
-  /**
-   * @title botão
-   */
-  button?: Button;
-  /**
-   * @title Espaçamento superior desktop
-   */
-  spacingTop?: number;
-  /**
-   * @title Espaçamento inferior desktop
-   */
-  spacingBottom?: number;
-  /**
-   * @title Espaçamento superior mobile
-   */
-  spacingTopMobile?: number;
-  /**
-   * @title Espaçamento inferior mobile
-   */
-  spacingBottomMobile?: number;
+  cta?: CTA[];
+  /** @format color-input */
 }
 
 export default function CalculateYourCosts({
-  title = "Custo Total de Propriedade (TCO) de um ecommerce",
-  titleColor = "#1B1525",
-  subtitle =
-    "O TCO é a soma de todos os custos relacionados à implementação, operação e manutenção de uma loja virtual ao longo de sua vida útil. Por considerar um ciclo de vida completo, o TCO mostra quanto seu ecommerce realmente custa para o seu bolso.",
-  subtitleColor = "#1B1525",
-  backgroundColor = {
-    startColor: "#A482F966",
-    middleColor: "#DED2FD",
-    endColor: "#fdfdff",
-  },
-  decorativeImage = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
-    alt: "Decorative",
-    width: 232,
-    height: 208,
-  },
-  cards = [{
-    icon: {
-      src:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
-      width: 17,
-      height: 25,
-    },
-    title: "Negócio",
-    description:
-      "Compare seus custos mensais de plataforma e comissão versus sua receita.",
-    titleColor: "#1B1525",
-    descriptionColor: "#1B1525",
-  }, {
-    icon: {
-      src:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
-      width: 17,
-      height: 25,
-    },
-    title: "Pagamento",
-    description:
-      "Analise seus custos com tarifas de cartão de crédito, pix, boleto e ferramentas antifraude.",
-    titleColor: "#1B1525",
-    descriptionColor: "#1B1525",
-  }, {
-    icon: {
-      src:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
-      width: 17,
-      height: 25,
-    },
-    title: "Envio",
-    description:
-      "Leve em consideração todos os custos que sua loja possui com o envio de produtos.",
-    titleColor: "#1B1525",
-    descriptionColor: "#1B1525",
-  }],
-  button = {
-    text: "Calcule seus custos e compare",
-    backgroundColor: "#1B1525",
-    color: "#ffffff",
-    url: "#",
-  },
-  spacingTop = 80,
-  spacingBottom = 80,
-  spacingTopMobile = 16,
-  spacingBottomMobile = 16,
+  title,
+  titleColor,
+  subtitle,
+  subtitleColor,
+  decorativeImage,
+  cards = [],
+  cta = [],
+  backgroundColor,
 }: Props) {
   return (
     <div
       class="px-8 py-10 md:px-24 md:py-20 overflow-clip mt-[--spacing-top-mobile] mb-[--spacing-bottom-mobile] md:mt-[--spacing-top-desktop] md:mb-[--spacing-bottom-desktop]"
-      style={{
-        "--spacing-top-desktop": `${spacingTop}px`,
-        "--spacing-top-mobile": `${spacingTopMobile}px`,
-        "--spacing-bottom-desktop": `${spacingBottom}px`,
-        "--spacing-bottom-mobile": `${spacingBottomMobile}px`,
-        backgroundImage:
-          `linear-gradient(160deg, ${backgroundColor.startColor} 3.14%, ${backgroundColor.middleColor} 21.82%, ${backgroundColor.endColor} 52.7%)`,
-        color: titleColor,
-      }}
+      style={{ background: backgroundColor }}
     >
       <div class="container 2xl:max-w-[1536px] mx-auto relative">
-        {decorativeImage.src && (
+        {decorativeImage?.src && (
           <Image
             src={decorativeImage.src}
             width={decorativeImage.width || 232}
@@ -276,18 +174,29 @@ export default function CalculateYourCosts({
             );
           })}
         </div>
-        {button.text && (
-          <a
-            href={button.url}
-            class="px-5 flex justify-center items-center h-12 rounded-lg w-fit mt-12"
-            style={{
-              backgroundColor: button.backgroundColor,
-              color: button.color,
-            }}
-          >
-            {button.text}
-          </a>
-        )}
+        <div class="flex gap-4 flex-wrap mt-12">
+          {cta.map((button) => {
+            if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
+              showIcon={button.showIcon}
+              underlineText={button.underlineText}
+              text={button.text}
+              ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+              style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+            />
+            return <a
+              href={button?.href ?? "#"}
+              target={button?.href.includes("http") ? "_blank" : ""}
+              class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+              style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+            >
+              {button?.text}
+              {button.underlineText && <span class="underline">{button.underlineText}</span>}
+              {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z" />
+              </svg>}
+            </a>
+          })}
+        </div>
       </div>
     </div>
   );

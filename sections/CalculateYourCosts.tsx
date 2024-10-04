@@ -126,7 +126,7 @@ export default function CalculateYourCosts({
 }: Props) {
   return (
     <div
-      class="px-8 py-10 md:px-24 md:py-20 overflow-clip mt-[--spacing-top-mobile] mb-[--spacing-bottom-mobile] md:mt-[--spacing-top-desktop] md:mb-[--spacing-bottom-desktop]"
+      class="px-8 py-10 md:px-24 md:py-20 min-h-[663px] overflow-clip mt-[--spacing-top-mobile] mb-[--spacing-bottom-mobile] md:mt-[--spacing-top-desktop] md:mb-[--spacing-bottom-desktop]"
       style={{ background: backgroundColor }}
     >
       <div class="container 2xl:max-w-[1536px] mx-auto relative">

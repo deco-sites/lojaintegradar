@@ -155,8 +155,8 @@ export default function Header2({ logo = {
         </p>
       </div>}
 
-      {campaignTimer?.show && <div class="min-h-[76px] bg-primary text-primary-content py-2 flex items-center justify-center gap-7" style={{background: campaignTimer.backgroundColor}}>
-        {campaignTimer.text && <p class="text-base text-primary-content font-semibold leading-[120%]" style={{color: campaignTimer.textColor}}>
+      {campaignTimer?.show && <div class="min-h-[76px] bg-primary text-primary-content py-2 flex flex-wrap items-center justify-center gap-2.5 lg:gap-7" style={{background: campaignTimer.backgroundColor}}>
+        {campaignTimer.text && <p class="text-xs lg:text-base text-primary-content font-semibold leading-[120%]" style={{color: campaignTimer.textColor}}>
           {campaignTimer.text}
         </p>}
         <CampaignTimer {...campaignTimer} labelsColor={campaignTimer.labelsColor} numbersColor={campaignTimer.numbersColor} />

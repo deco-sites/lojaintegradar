@@ -172,7 +172,7 @@ function Carousel(props: Props) {
                     <SliderItem slide={slide} id={`${id}::${index}`} />
                 </Slider.Item>))}
             </Slider>
-            {cta && <AnimateOnShow animation="animate-fade-up" divClass="flex flex-wrap items-center justify-center gap-7 mt-4">
+            {cta && <AnimateOnShow animation="animate-fade-up" divClass="flex flex-wrap items-center justify-center gap-7 mt-4 px-7">
                 {cta.map((button) => {
                     if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                         showIcon={button.showIcon}

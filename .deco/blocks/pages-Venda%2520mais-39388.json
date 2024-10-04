@@ -512,12 +512,13 @@
                 "borderColor": "#371E55"
               },
               {
-                "ctaStyle": "link",
-                "text": "Já tem uma loja?",
-                "underlineText": " Ative agora",
-                "showIcon": true,
+                "ctaStyle": "button",
+                "text": "Falar com Especialista ",
+                "showIcon": false,
                 "textColor": "#371E55",
-                "href": "#"
+                "href": "/talkToSpecialist",
+                "backgroundColor": "Transparent",
+                "borderColor": "#371E55"
               }
             ],
             "links": [],

@@ -82,6 +82,7 @@ export interface CTA {
     ctaStyle: "button" | "link";
     showIcon?: boolean;
 }
+
 export interface Tag {
     text?: string;
     icon?: IImage;

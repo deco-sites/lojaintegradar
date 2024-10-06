@@ -1,6 +1,7 @@
 import HeroWithTime from "../islands/HeroWithTime.tsx";
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import { Button } from "site/types/types.ts";
+import { ButtonProps } from "../islands/HeroTimeButtons.tsx";
 export interface Props {
     title?: Title;
     subTitle?: Subtitle;
@@ -62,10 +63,7 @@ interface Tabs {
 * @description É importante que a URL do vídeo seja a versão EMBED
 */
     videoUrl?: VideoWidget;
-    button?: {
-        buttonText?: string;
-        buttonLink?: string;
-    }
+    buttons?: ButtonProps[];
 }
 
 interface TabsTitle {

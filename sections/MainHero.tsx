@@ -154,8 +154,10 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             font-size: 0.875rem; /* text-sm */
             }
 
-            .main-hero-form .hs-input {
-            outline: none;
+            .main-hero-form .input  {
+                outline: none; /* Remove a borda padrão */
+                border: none;
+                box-shadow: none; /* Remove qualquer sombra */
             }
 
             .main-hero-form .hs-error-msg {

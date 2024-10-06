@@ -200,7 +200,7 @@ export default function Header2({ logo = {
                 </a>
               </div>))}
               <label htmlFor="mobile-drawer-nav" class="flex btn btn-ghost drawer-button px-0">
-                <Icon id="Bars3" size={25} strokeWidth={0.1} class="text-primary fill-current" />
+                <Icon id="Bars3" size={25} strokeWidth={0.1} class="text-primary fill-current" style={{color: barsColor}} />
               </label>
             </ul>
             <ul class="hidden md:flex justify-end gap-7">

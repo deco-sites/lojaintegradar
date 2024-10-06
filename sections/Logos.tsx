@@ -47,7 +47,7 @@ export default function Logos({ title, caption, logos = IMG_PLACEHODLER, titleCo
       </div>);
     })}
   </div>);
-  return (<div class="lg:container md:max-w-[1260px] lg:mx-auto px-7 md:px-0 pt-14 xl:pt-0 mt-10">
+  return (<div class="lg:container md:max-w-[1260px] lg:mx-auto px-7 md:px-0">
     <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad) }} />
     <div class="flex flex-col gap-10">
       <div id="logosTitleAndCaption">

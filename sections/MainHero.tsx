@@ -33,11 +33,11 @@ export interface Props {
 }
 
 export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, image, titleColor, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use }: Props) {
-    return <div id={id} class="flex min-h-96 pt-40 relative overflow-hidden pb-12">
+    return <div id={id} class="flex min-h-96 pt-[92px] lg:pt-40 relative overflow-hidden pb-12">
         {backgroundImage?.src && <Image
-            width={1440}
-            height={926}
-            class="w-full h-screen absolute object-fill top-0 left-0 -z-50"
+            width={backgroundImage.width || 1440}
+            height={backgroundImage.height || 926}
+            class="w-full h-full absolute object-fill top-0 left-0 -z-50"
             // style={{ objectPosition: "top right" }}
             alt={backgroundImage?.alt || "background image"}
             src={backgroundImage.src}
@@ -154,7 +154,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             font-size: 0.875rem; /* text-sm */
             }
 
-            .main-hero-form .hs-input:focus {
+            .main-hero-form .hs-input {
             outline: none;
             }
 

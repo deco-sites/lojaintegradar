@@ -86,9 +86,10 @@
     ],
     "mobileButtons": [
       {
-        "href": "#",
+        "href": "#plans section",
         "text": "Ver planos",
-        "ctaStyle": "button"
+        "ctaStyle": "button",
+        "textColor": "#371E55"
       }
     ],
     "asideMenuButtons": [
@@ -137,5 +138,8 @@
         "underlineText": "Ver planos"
       }
     ]
+  },
+  "campaignTimer": {
+    "text": "Time left for a campaign to end with a link"
   }
 }

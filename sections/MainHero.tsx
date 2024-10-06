@@ -33,7 +33,7 @@ export interface Props {
 }
 
 export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, image, titleColor, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use }: Props) {
-    return <div id={id} class="flex min-h-96 pt-40 relative overflow-hidden">
+    return <div id={id} class="flex min-h-96 pt-40 relative overflow-hidden pb-12">
         {backgroundImage?.src && <Image
             width={1440}
             height={926}
@@ -47,7 +47,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                 <h2 class="text-primary text-2xl md:text-[56px] font-semibold md:font-bold max-w-[575px] leading-[120%]" style={{ color: titleColor }}>{title}</h2>
                 <p class="text-base-300 text-lg md:text-[32px] font-normal" dangerouslySetInnerHTML={{ __html: caption }} />
                 <label class="md:pt-7">
-                    {inputLabel && <p class="bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 px-5 text-base text-primary hidden md:inline-block" style={{ color: inputLabelColor, backgroundColor: inputLabelBackgroundColor }}>{inputLabel}</p>}
+                    {inputLabel && <p class="bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 px-5 text-base text-primary inline-block" style={{ color: inputLabelColor, backgroundColor: inputLabelBackgroundColor }}>{inputLabel}</p>}
                     <div class="main-hero-form" dangerouslySetInnerHTML={{
                         __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                     <script>
@@ -111,10 +111,11 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                 font-size: 1rem; /* text-base */
                 border: 1px solid #EBEBEB;
                 --tw-border-opacity: 1;
-                border-radius: 0 0.75rem 0.75rem 0.75rem; /* rounded-xl */
+                border-radius: ${inputLabel ? '0 0.75rem 0.75rem 0.75rem' : '0.75rem'};
                 box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
                 --tw-bg-opacity: 1;
                 flex-wrap: nowrap;
+                background-color: white;
             }
 
             .main-hero-form .hs-form-private {
@@ -123,6 +124,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
 
             .main-hero-form .hs-input {
             width: 100%;
+            margin-top: 10px;
             }
 
             .main-hero-form .actions {
@@ -167,9 +169,9 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
 
             .main-hero-form .hs-error-msg {
             position: absolute;
-            top: 30px;
+            top: 60px;
             left: 24px;
-            width: 200%;
+            max-width: 50%;
             color: ${hubspotErrorMessageColor}
             }
 

@@ -29,7 +29,8 @@
             "hubspotFormButtonColor": "#371E55",
             "hubspotFormButtonTextColor": "#ffffff",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image"
+            "use": "image",
+            "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ "
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -504,7 +505,7 @@
             "cta": [
               {
                 "text": "Ver planos",
-                "href": "#",
+                "href": "#plans section",
                 "ctaStyle": "button",
                 "backgroundColor": "#371E55",
                 "textColor": "#ffffff",
@@ -695,7 +696,7 @@
             "cta": [
               {
                 "text": "Ver planos",
-                "href": "#",
+                "href": "#plans section",
                 "ctaStyle": "button",
                 "backgroundColor": "#371E55",
                 "borderColor": "#371E55",
@@ -6941,13 +6942,11 @@
       "__resolveType": "Footer2 global"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/BackToTopButton.tsx",
-        "text": "Voltar ao topo",
-        "textColor": "#FAFAF5",
-        "backgroundColor": "#371E55"
-      }
+      "__resolveType": "site/sections/BackToTopButton.tsx",
+      "text": "Voltar ao topo",
+      "textColor": "#FAFAF5",
+      "backgroundColor": "#371E55",
+      "appearAt": 1500
     }
   ],
   "seo": {

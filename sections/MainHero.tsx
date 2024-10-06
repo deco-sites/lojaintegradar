@@ -45,7 +45,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
         <div class="flex-grow flex justify-center xl:justify-end items-center w-full xl:w-1/2 px-7 md:px-0 border-base">
             <div class="flex-grow flex flex-col gap-5 md:gap-7 max-w-[630px] z-10">
                 <h2 class="text-primary text-2xl md:text-[56px] font-semibold md:font-bold max-w-[575px] leading-[120%]" style={{ color: titleColor }}>{title}</h2>
-                <p class="text-base-300 text-lg md:text-[32px] font-normal" dangerouslySetInnerHTML={{ __html: caption }} />
+                <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[130%]" dangerouslySetInnerHTML={{ __html: caption }} />
                 <label class="md:pt-7">
                     {inputLabel && <p class="bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 px-5 text-base text-primary inline-block" style={{ color: inputLabelColor, backgroundColor: inputLabelBackgroundColor }}>{inputLabel}</p>}
                     <div class="main-hero-form" dangerouslySetInnerHTML={{

@@ -100,23 +100,21 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
 
         <style dangerouslySetInnerHTML={{
             __html: `
-            .main-hero-form .hs-form-private {
-            position: relative;
-            display: flex; /* flex */
-            flex-wrap: wrap;
-            justify-content: space-between; /* justify-between */
-            padding-top: 0.375rem; /* py-1.5 */
-            padding-bottom: 0.375rem; /* py-1.5 */
-            padding-right: 0.375rem; /* pr-1.5 */
-            font-size: 1rem; /* text-base */
-            border-width: 1px;
-            --tw-border-opacity: 1;
-            border-radius: 0 0.75rem 0.75rem 0.75rem; /* rounded-xl */
-            box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
-            --tw-bg-opacity: 1;
-            border: none;
-            border-radius: 10px;
-            flex-wrap: nowrap;
+                .main-hero-form .hs-form-private {
+                position: relative;
+                display: flex; /* flex */
+                flex-wrap: wrap;
+                justify-content: space-between; /* justify-between */
+                padding-top: 0.375rem; /* py-1.5 */
+                padding-bottom: 0.375rem; /* py-1.5 */
+                padding-right: 0.375rem; /* pr-1.5 */
+                font-size: 1rem; /* text-base */
+                border: 1px solid #EBEBEB;
+                --tw-border-opacity: 1;
+                border-radius: 0 0.75rem 0.75rem 0.75rem; /* rounded-xl */
+                box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
+                --tw-bg-opacity: 1;
+                flex-wrap: nowrap;
             }
 
             .main-hero-form .hs-form-private {

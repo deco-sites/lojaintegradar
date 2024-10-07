@@ -414,7 +414,13 @@
           "highlight": true,
           "button": {
             "buttonText": "Quero testar"
-          }
+          },
+          "buttons": [
+            {
+              "type": "one",
+              "text": "Quero testar"
+            }
+          ]
         },
         {
           "textContent": {
@@ -437,7 +443,13 @@
           "highlight": true,
           "button": {
             "buttonText": "Quero testar"
-          }
+          },
+          "buttons": [
+            {
+              "type": "one",
+              "text": "Quero testar"
+            }
+          ]
         },
         {
           "textContent": {
@@ -506,13 +518,9 @@
           },
           "buttonText": "Criar loja",
           "buttonPlanId": "173",
-          "buttons": [
-            {
-              "type": "link",
-              "text": "Como ativar ",
-              "openForm": true
-            }
-          ]
+          "buttons": [],
+          "videoOn": true,
+          "videoUrl": "https://www.youtube.com/embed/L4h9hgVqykA?si=29phPmqdCPzTMiZ2"
         },
         {
           "textContent": {
@@ -535,12 +543,9 @@
           },
           "buttonText": "Criar loja",
           "buttonPlanId": "172",
-          "buttons": [
-            {
-              "type": "link",
-              "text": "Como ativar"
-            }
-          ]
+          "buttons": [],
+          "videoOn": true,
+          "videoUrl": "https://www.youtube.com/embed/laN-mZ1vXnI?si=WyhloNKvNZ5TsfrR"
         }
       ]
     },
@@ -578,7 +583,13 @@
           "videoUrl": "https://www.youtube.com/embed/LNCNuQeaLGw?si=3V8UKSbw-Xy4VMkJ",
           "button": {
             "buttonText": "Quero testar"
-          }
+          },
+          "buttons": [
+            {
+              "type": "two",
+              "text": "Quero testar"
+            }
+          ]
         },
         {
           "highlight": false,

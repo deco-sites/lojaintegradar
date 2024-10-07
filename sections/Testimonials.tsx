@@ -24,6 +24,7 @@ export interface Content {
   quoteIconColor?: string;
 }
 
+/** @title {{content.name}} */
 export interface Testimonial {
   content?: Content;
 }

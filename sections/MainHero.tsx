@@ -33,11 +33,11 @@ export interface Props {
 }
 
 export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, image, titleColor, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use }: Props) {
-    return <div id={id} class="flex min-h-96 pt-40 relative overflow-hidden pb-12">
+    return <div id={id} class="flex min-h-96 pt-[92px] lg:pt-40 relative overflow-hidden pb-12">
         {backgroundImage?.src && <Image
-            width={1440}
-            height={926}
-            class="w-full h-screen absolute object-fill top-0 left-0 -z-50"
+            width={backgroundImage.width || 1440}
+            height={backgroundImage.height || 926}
+            class="w-full h-full absolute object-fill top-0 left-0 -z-50"
             // style={{ objectPosition: "top right" }}
             alt={backgroundImage?.alt || "background image"}
             src={backgroundImage.src}
@@ -45,7 +45,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
         <div class="flex-grow flex justify-center xl:justify-end items-center w-full xl:w-1/2 px-7 md:px-0 border-base">
             <div class="flex-grow flex flex-col gap-5 md:gap-7 max-w-[630px] z-10">
                 <h2 class="text-primary text-2xl md:text-[56px] font-semibold md:font-bold max-w-[575px] leading-[120%]" style={{ color: titleColor }}>{title}</h2>
-                <p class="text-base-300 text-lg md:text-[32px] font-normal" dangerouslySetInnerHTML={{ __html: caption }} />
+                <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[130%]" dangerouslySetInnerHTML={{ __html: caption }} />
                 <label class="md:pt-7">
                     {inputLabel && <p class="bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 px-5 text-base text-primary inline-block" style={{ color: inputLabelColor, backgroundColor: inputLabelBackgroundColor }}>{inputLabel}</p>}
                     <div class="main-hero-form" dangerouslySetInnerHTML={{
@@ -154,8 +154,10 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             font-size: 0.875rem; /* text-sm */
             }
 
-            .main-hero-form .hs-input:focus {
-            outline: none;
+            .main-hero-form .input  {
+                outline: none; /* Remove a borda padrão */
+                border: none;
+                box-shadow: none; /* Remove qualquer sombra */
             }
 
             .main-hero-form .hs-error-msg {

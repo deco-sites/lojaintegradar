@@ -86,9 +86,12 @@
     ],
     "mobileButtons": [
       {
-        "href": "#",
-        "text": "Ver planos",
-        "ctaStyle": "button"
+        "href": "#plans section",
+        "text": "Abrir loja virtual",
+        "ctaStyle": "button",
+        "textColor": "#371E55",
+        "backgroundColor": "#ffffff",
+        "borderColor": "#ffffff"
       }
     ],
     "asideMenuButtons": [
@@ -113,7 +116,12 @@
     "sideMenuButtons": [],
     "linksBorderColor": "#CCC4CF",
     "textHoverColor": "#C6B3CE",
-    "textColor": "#371E55"
+    "textColor": "#371E55",
+    "mobileButtonsOnScrollColors": {
+      "textColor": "#ffffff",
+      "backgroundColor": "#371E55",
+      "borderColor": "#371E55"
+    }
   },
   "logo": {
     "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12380/089daad4-d996-4911-9340-e227552948de"
@@ -137,5 +145,8 @@
         "underlineText": "Ver planos"
       }
     ]
+  },
+  "campaignTimer": {
+    "text": "Time left for a campaign to end with a link"
   }
 }

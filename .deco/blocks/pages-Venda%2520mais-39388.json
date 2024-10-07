@@ -20,8 +20,10 @@
               "alt": "top image"
             },
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/da9060c9-9708-4d08-b57d-e038c769434f/background-image.webp",
-              "alt": "background image"
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c1a799c-a832-44c0-aa82-ff4cf75eb48d/main-hero-mobile-background-image.png",
+              "alt": "background image",
+              "width": 430,
+              "height": 341
             },
             "inputLabelBackgroundColor": "#EAE0EE",
             "inputLabelColor": "#371E55",
@@ -159,37 +161,86 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Testimonials.tsx",
-      "slides": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "content": {
-            "description": "<p>\"Depois que migramos para a Loja Integrada, <em><strong>aumentamos nosso ticket médio em 15% e reduzimos nossos custos operacionais em 9 mil reais.</strong></em> Viemos pela fácil integração com a VTEX, em busca de redução de custo e uma plataforma mais fácil de usar e foi exatamente isso que encontramos\".</p>",
-            "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
-            "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
-            "alt": "m camicado",
-            "quoteIconColor": "#371E55",
-            "nameIconColor": "#371E55",
-            "nameBackgroundColor": "#F1EAF4",
-            "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
+          "value": {
+            "__resolveType": "site/sections/Testimonials.tsx",
+            "slides": [
+              {
+                "content": {
+                  "description": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">\"Depois que migramos para a Loja Integrada, <em><strong>aumentamos nosso ticket médio em 15% e reduzimos nossos custos operacionais em 9 mil reais.</strong></em> Viemos pela fácil integração com a VTEX, em busca de redução de custo e uma plataforma mais fácil de usar e foi exatamente isso que encontramos\".<span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">﻿</span></span></span></p>",
+                  "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
+                  "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
+                  "alt": "m camicado",
+                  "quoteIconColor": "#371E55",
+                  "nameIconColor": "#371E55",
+                  "nameBackgroundColor": "#F1EAF4",
+                  "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
+                }
+              },
+              {
+                "content": {
+                  "description": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><em><strong>Logo no primeiro mês pós migração, vi um aumento</strong></em></span><br><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><em><strong>na taxa de conversão de 60%.</strong></em></span><br><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Vim pela necessidade de otimizar meu investimento, em busca de uma plataforma fácil de usar. Encontrei ambos e ainda um time próximo, o que é muito bom\".</span></p>",
+                  "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
+                  "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
+                  "alt": "m camicado",
+                  "nameIconColor": "#371E55",
+                  "quoteIconColor": "#371E55",
+                  "nameBackgroundColor": "#F1EAF4",
+                  "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
+                }
+              }
+            ],
+            "arrows": true,
+            "dots": false,
+            "titleColor": "#371E55",
+            "arrowsColor": "#371E55"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
           }
         },
         {
-          "content": {
-            "description": "<p><em><strong>Logo no primeiro mês pós migração, vi um aumento</strong></em><br><em><strong>na taxa de conversão de 60%.</strong></em><br>Vim pela necessidade de otimizar meu investimento, em busca de uma plataforma fácil de usar. Encontrei ambos e ainda um time próximo, o que é muito bom\".</p>",
-            "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
-            "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
-            "alt": "m camicado",
-            "nameIconColor": "#371E55",
-            "quoteIconColor": "#371E55",
-            "nameBackgroundColor": "#F1EAF4",
-            "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
+          "value": {
+            "__resolveType": "site/sections/Testimonials.tsx",
+            "slides": [
+              {
+                "content": {
+                  "description": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">\"Depois que migramos para a Loja Integrada, <em><strong>aumentamos nosso ticket médio em 15% e reduzimos nossos custos operacionais em 9 mil reais.</strong></em> Viemos pela fácil integração com a VTEX, em busca de redução de custo e uma plataforma mais fácil de usar e foi exatamente isso que encontramos\".<span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">﻿</span></span></span></p>",
+                  "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
+                  "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
+                  "alt": "m camicado",
+                  "quoteIconColor": "#371E55",
+                  "nameIconColor": "#371E55",
+                  "nameBackgroundColor": "#F1EAF4",
+                  "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
+                }
+              },
+              {
+                "content": {
+                  "description": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><em><strong>Logo no primeiro mês pós migração, vi um aumento</strong></em></span><br><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><em><strong>na taxa de conversão de 60%.</strong></em></span><br><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Vim pela necessidade de otimizar meu investimento, em busca de uma plataforma fácil de usar. Encontrei ambos e ainda um time próximo, o que é muito bom\".</span></p>",
+                  "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
+                  "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
+                  "alt": "m camicado",
+                  "nameIconColor": "#371E55",
+                  "quoteIconColor": "#371E55",
+                  "nameBackgroundColor": "#F1EAF4",
+                  "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
+                }
+              }
+            ],
+            "arrows": false,
+            "dots": false,
+            "titleColor": "#371E55",
+            "arrowsColor": ""
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
         }
-      ],
-      "arrows": false,
-      "dots": false,
-      "titleColor": "#371E55",
-      "arrowsColor": ""
+      ]
     },
     {
       "__resolveType": "site/sections/Carousel.tsx",
@@ -505,7 +556,7 @@
             "cta": [
               {
                 "text": "Ver planos",
-                "href": "#",
+                "href": "#plans section",
                 "ctaStyle": "button",
                 "backgroundColor": "#371E55",
                 "textColor": "#ffffff",
@@ -696,7 +747,7 @@
             "cta": [
               {
                 "text": "Ver planos",
-                "href": "#",
+                "href": "#plans section",
                 "ctaStyle": "button",
                 "backgroundColor": "#371E55",
                 "borderColor": "#371E55",
@@ -6942,13 +6993,11 @@
       "__resolveType": "Footer2 global"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/BackToTopButton.tsx",
-        "text": "Voltar ao topo",
-        "textColor": "#FAFAF5",
-        "backgroundColor": "#371E55"
-      }
+      "__resolveType": "site/sections/BackToTopButton.tsx",
+      "text": "Voltar ao topo",
+      "textColor": "#FAFAF5",
+      "backgroundColor": "#371E55",
+      "appearAt": 1500
     }
   ],
   "seo": {

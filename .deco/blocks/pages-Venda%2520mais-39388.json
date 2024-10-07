@@ -62,7 +62,38 @@
             "hubspotFormButtonColor": "#371E55",
             "hubspotFormButtonTextColor": "#ffffff",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image"
+            "use": "image",
+            "modal": {
+              "title": "Obrigado por se inscrever para receber nossa oferta especial!",
+              "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+              "titleColor": "#371E55",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55",
+                  "showIcon": false
+                },
+                {
+                  "ctaStyle": "button",
+                  "text": "Ver planos",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#371E55",
+                  "borderColor": "#371E55",
+                  "href": "#plans"
+                }
+              ]
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -368,7 +399,7 @@
       },
       "cta": [
         {
-          "href": "#plans section",
+          "href": "#plans",
           "text": "Ver planos",
           "backgroundColor": "#371E55",
           "textColor": "#fff5f5",
@@ -556,7 +587,7 @@
             "cta": [
               {
                 "text": "Ver planos",
-                "href": "#plans section",
+                "href": "#plans",
                 "ctaStyle": "button",
                 "backgroundColor": "#371E55",
                 "textColor": "#ffffff",
@@ -747,7 +778,7 @@
             "cta": [
               {
                 "text": "Ver planos",
-                "href": "#plans section",
+                "href": "#plans",
                 "ctaStyle": "button",
                 "backgroundColor": "#371E55",
                 "borderColor": "#371E55",
@@ -1390,7 +1421,7 @@
               "text": "Começar no grátis",
               "href": "#"
             },
-            "id": "plans section",
+            "id": "plans",
             "titleColor": "#371E55",
             "captionColor": "#828CA0",
             "labelColor": "#371E55",
@@ -1659,7 +1690,7 @@
               "text": "Começar no grátis",
               "href": "#"
             },
-            "id": "plans section",
+            "id": "plans",
             "titleColor": "#371E55",
             "captionColor": "#828CA0",
             "labelColor": "#371E55",
@@ -6308,7 +6339,7 @@
             "ctaTitle": "Disponível em todos os planos",
             "cta": [
               {
-                "href": "#plans section",
+                "href": "#plans",
                 "text": "Ver planos",
                 "backgroundColor": "#371E55",
                 "borderColor": "#371E55",
@@ -6388,7 +6419,7 @@
             "ctaTitle": "Disponível em todos os planos",
             "cta": [
               {
-                "href": "#plans section",
+                "href": "#plans",
                 "text": "Ver planos",
                 "backgroundColor": "#371E55",
                 "borderColor": "#371E55",
@@ -6472,7 +6503,7 @@
             "ctaTitle": "Tenha acesso a tabelas de preço mais competitivas com os Correios e com a transportadora Jadlog e aumente sua conversão. Os melhores valores de frete já negociados pelo Enviali para você vender mais. Disponível em todos os planos",
             "cta": [
               {
-                "href": "#plans section",
+                "href": "#plans",
                 "text": "Ver planos",
                 "backgroundColor": "#371E55",
                 "textColor": "#ffffff",
@@ -6539,7 +6570,7 @@
             "ctaTitle": "Tenha acesso a tabelas de preço mais competitivas com os Correios e com a transportadora Jadlog e aumente sua conversão. Os melhores valores de frete já negociados pelo Enviali para você vender mais. Disponível em todos os planos",
             "cta": [
               {
-                "href": "#plans section",
+                "href": "#plans",
                 "text": "Ver planos",
                 "backgroundColor": "#371E55",
                 "borderColor": "#371E55",

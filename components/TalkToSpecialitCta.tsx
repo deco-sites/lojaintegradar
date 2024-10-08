@@ -4,14 +4,12 @@ import { JSX } from 'preact';
 
 
 const openTalkToSpecialist = (rootId: string) => {
-    event!.preventDefault();
     const parent = document.getElementById(rootId) as HTMLElement;
     const popUpForm = parent.querySelector("#" + rootId + "popUpForm");
     popUpForm?.classList.remove("hidden"); 
 }
 
 const closeTalkToSpecialist = (rootId: string) => {
-    event!.preventDefault();
     const parent = document.getElementById(rootId) as HTMLElement;
     const popUpForm = parent.querySelector("#" + rootId + "popUpForm");
     popUpForm?.classList.add("hidden"); 
@@ -46,7 +44,7 @@ export default function TalkToSpecialistCta({ctaClass, key, text, divClass, styl
         </a>
         <div id={rootId + "popUpForm"} class="fixed top-0 left-0 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-[60] talkToSpecialistForm overflow-auto hidden">
             <div class="max-w-[550px] min-h-[600px] bg-primary-content rounded-xl lg:p-12 animate-pop-up relative pt-12" style={{animationDuration: "0.3s"}}>
-                <button class="text-primary font-black p-2.5 absolute top-2 right-2" hx-on:click={useScript(closeTalkToSpecialist, rootId)}>X</button>
+                <button class="text-[#371E55] font-black p-2.5 absolute top-2 right-2" hx-on:click={useScript(closeTalkToSpecialist, rootId)}>X</button>
                 <div dangerouslySetInnerHTML={{
                     __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                                                                     <script>
@@ -62,7 +60,7 @@ export default function TalkToSpecialistCta({ctaClass, key, text, divClass, styl
         <style dangerouslySetInnerHTML={{__html: `
             .talkToSpecialistForm .hs-form-private {
             position: relative;
-            background-color: var(--color-primary-content); /* bg-primary-content */
+            background-color: white;
             display: flex; /* flex */
             flex-wrap: wrap;
             justify-content: space-between; /* justify-between */
@@ -70,12 +68,11 @@ export default function TalkToSpecialistCta({ctaClass, key, text, divClass, styl
             padding-bottom: 0.375rem; /* py-1.5 */
             padding-right: 0.375rem; /* pr-1.5 */
             font-size: 1rem; /* text-base */
-            color: var(--color-primary); /* text-primary */
+            color: #371E55;
             border-width: 1px;
             --tw-border-opacity: 1;
-            border-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
+            border-color: #371E55;
             border-radius: 0 0.75rem 0.75rem 0.75rem; /* rounded-xl */
-            box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
             }
 
             .talkToSpecialistForm .hs-form-private {
@@ -91,9 +88,9 @@ export default function TalkToSpecialistCta({ctaClass, key, text, divClass, styl
             }
             .talkToSpecialistForm .hs-button {
                 --tw-bg-opacity: 1;
-                background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
+                background-color: #371E55;
                 --tw-text-opacity: 1;
-                color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
+                color: white;
                 cursor:pointer;
                 transition: transform 0.2s ease-in-out;
                 height: 100%;
@@ -107,10 +104,18 @@ export default function TalkToSpecialistCta({ctaClass, key, text, divClass, styl
             transform: scale(1.15);
             }
 
+            .talkToSpecialistForm span {
+                color: #371E55
+            }
+
             .talkToSpecialistForm .hs-input {
             padding-left: 0.5rem; /* 2 * 0.25rem */
             outline: none;
             font-size: 0.875rem; /* text-sm */
+            }
+
+            .talkToSpecialistForm .actions {
+            height: 47px;
             }
 
             .talkToSpecialistForm .input {
@@ -144,7 +149,7 @@ export default function TalkToSpecialistCta({ctaClass, key, text, divClass, styl
   border-radius: 10px;
   border: 1px solid;
   --tw-border-opacity: 1;
-    border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
+    border-color: #371E55;
 }
 
             `}} />

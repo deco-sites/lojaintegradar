@@ -5,6 +5,7 @@ import Slider from "../components/ui/Slider3.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useScript } from "@deco/deco/hooks";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
 const onLoad = (rootId: string, words: string[], wordDelay: number, letterDelay: number) => {
     const typingSpan = document.getElementById(rootId + 'typingSpan') as HTMLElement | null;
@@ -52,6 +53,21 @@ export interface CTA {
     ctaStyle: "button" | "link";
     showIcon?: boolean;
 }
+
+export interface CreateStoreWithPlanCTA {
+    planId: string;
+    text?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle: "button" | "link";
+    showIcon?: boolean;
+}
+
 export interface Link {
     textBefore?: string;
     text: string;
@@ -74,6 +90,8 @@ export interface PlanTag {
 export interface BulletPoints {
     items?: string[];
     bulletPointsIcon?: IImage;
+    /** @format color-input */
+    textColor?: string;
 }
 export interface AnnualValues {
     title?: string;
@@ -126,6 +144,7 @@ export interface Props {
     arrowsColor?: string;
     annualValues?: AnnualValues;
     montlyValues?: MontlyValues;
+    createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     bottomBackground?: IImage;
 }
@@ -136,11 +155,11 @@ function SliderItem({ slide, id }: {
     const { title, bulletPoints = { items: [] } } = slide;
     return (<div id={id} class="relative w-full px-5 lg:pr-10 lg:pl-0 text-primary">
         <div class="bg-primary-content text-primary min-h-[215px] rounded-3xl py-5 px-8 h-full">
-            <h3 class="text-xl font-semibold">{title}</h3>
+            <h3 class="text-xl font-semibold" style={{ color: bulletPoints.textColor }}>{title}</h3>
             <div class="mt-2.5 text-sm font-normal flex flex-col gap-2.5">
                 {bulletPoints.items && bulletPoints.items.length > 0 && bulletPoints.items.map((item) => (<div class="flex gap-2 items-center">
                     {bulletPoints.bulletPointsIcon?.src && <Image width={bulletPoints.bulletPointsIcon.width || 12} height={bulletPoints.bulletPointsIcon.height || 12} src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bulletpoint icon"} />}
-                    {item}
+                    <p class="text-[13px] font-normal leading-normal" style={{ color: bulletPoints.textColor }}>{item}</p>
                 </div>))}
             </div>
         </div>
@@ -189,7 +208,7 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
         </div>
     </div>);
 }
-export default function PlanDetails({ id, title, titleColor, titleTyping = [], titleTypingColor, letterDelay, wordDelay, backgroundVideo, backgroundImage, useBackground, planTag, slidesTitle, slidesTitleColor, slidesTitleIcon, slides, showArrows = true, arrowsColor, annualValues, montlyValues, bottomBackground, cta = [] }: Props) {
+export default function PlanDetails({ id, title, titleColor, titleTyping = [], titleTypingColor, letterDelay, wordDelay, backgroundVideo, backgroundImage, useBackground, planTag, slidesTitle, slidesTitleColor, slidesTitleIcon, slides, showArrows = true, arrowsColor, annualValues, montlyValues, bottomBackground, cta = [], createStoreCta }: Props) {
 
     const carouselId = useId();
     return (<div id={id} class={`overflow-hidden ${!useBackground && 'bg-primary'} leading-[120%] text-primary-content`}>
@@ -262,6 +281,15 @@ export default function PlanDetails({ id, title, titleColor, titleTyping = [], t
                             {montlyValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: montlyValues.text }} />}
                             {/** pc cta div */}
                             <div class="mt-3 hidden xl:flex flex-wrap items-start lg:items-center gap-5">
+                                {createStoreCta?.text && <CreateStoreCta
+                                    period="anual"
+                                    text={createStoreCta.text}
+                                    planId={createStoreCta.planId}
+                                    showIcon={createStoreCta.showIcon}
+                                    underlineText={createStoreCta.underlineText}
+                                    ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                                    style={createStoreCta.ctaStyle == "button" ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor } : { color: createStoreCta.textColor }}
+                                />}
                                 {cta.map((button) => {
                                     if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                                         showIcon={button.showIcon}
@@ -287,7 +315,16 @@ export default function PlanDetails({ id, title, titleColor, titleTyping = [], t
                         </div>}
                     </div>
                     {/** mobile cta div */}
-                    <div class="mt-3 px-5 md:px-0 flex xl:hidden flex-wrap lg:flex-nowrap items-start lg:items-center gap-5">
+                    <div class="mt-3 px-5 md:px-0 flex xl:hidden flex-wrap lg:flex-nowrap items-center gap-5">
+                        {createStoreCta?.text && <CreateStoreCta
+                            period="anual"
+                            text={createStoreCta.text}
+                            planId={createStoreCta.planId}
+                            showIcon={createStoreCta.showIcon}
+                            underlineText={createStoreCta.underlineText}
+                            ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                            style={createStoreCta.ctaStyle == "button" ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor } : { color: createStoreCta.textColor }}
+                        />}
                         {cta.map((button) => {
                             if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                                 showIcon={button.showIcon}

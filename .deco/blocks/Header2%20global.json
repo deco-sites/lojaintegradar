@@ -67,33 +67,16 @@
     ],
     "buttons": [
       {
-        "href": "#",
-        "text": "Criar loja",
-        "ctaStyle": "button",
-        "backgroundColor": "#371E55",
-        "textColor": "#ffffff",
-        "borderColor": "#371E55"
-      },
-      {
-        "text": "Acessar minha loja",
         "href": "https://app.lojaintegrada.com.br/painel/login",
-        "outline": true,
+        "text": "Acessar minha loja",
         "ctaStyle": "button",
         "backgroundColor": "Transparent",
         "textColor": "#371E55",
-        "borderColor": "#371E55"
+        "borderColor": "#371E55",
+        "outline": true
       }
     ],
-    "mobileButtons": [
-      {
-        "href": "#plans",
-        "text": "Abrir loja virtual",
-        "ctaStyle": "button",
-        "textColor": "#371E55",
-        "backgroundColor": "#ffffff",
-        "borderColor": "#ffffff"
-      }
-    ],
+    "mobileButtons": [],
     "asideMenuButtons": [
       {
         "text": "Abrir loja virtual",
@@ -121,6 +104,29 @@
       "textColor": "#ffffff",
       "backgroundColor": "#371E55",
       "borderColor": "#371E55"
+    },
+    "createStoreCta": {
+      "ctaStyle": "button",
+      "planId": "172",
+      "backgroundColor": "#371E55",
+      "textColor": "#ffffff",
+      "borderColor": "#371E55",
+      "text": "Criar loja",
+      "showIcon": false
+    },
+    "createStoreCtaMobile": {
+      "ctaStyle": "button",
+      "planId": "172",
+      "text": "Abrir loja virtual",
+      "backgroundColor": "#ffffff",
+      "textColor": "#371E55",
+      "borderColor": "#ffffff",
+      "showIcon": false
+    },
+    "createStoreCtaMobileOnScrollColors": {
+      "backgroundColor": "#371E55",
+      "borderColor": "#371E55",
+      "textColor": "#ffffff"
     }
   },
   "logo": {

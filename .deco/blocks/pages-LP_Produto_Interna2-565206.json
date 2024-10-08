@@ -18,14 +18,9 @@
       "buttons": [
         {
           "type": "link",
-          "text": "Ver planos",
-          "changeType": false,
-          "link": "#pricesSection"
-        },
-        {
-          "type": "ctaForm",
-          "text": "Fale com um especialista",
-          "changeType": true
+          "text": "voltar para o painel",
+          "changeType": true,
+          "link": "https://app.lojaintegrada.com.br/painel/login"
         }
       ],
       "initialButtons": [
@@ -418,7 +413,8 @@
           "buttons": [
             {
               "type": "one",
-              "text": "Quero testar"
+              "text": "Quero testar",
+              "changeType": true
             }
           ]
         },
@@ -447,7 +443,8 @@
           "buttons": [
             {
               "type": "one",
-              "text": "Quero testar"
+              "text": "Quero testar",
+              "changeType": true
             }
           ]
         },
@@ -471,7 +468,9 @@
           },
           "highlight": true,
           "videoOn": true,
-          "button": {}
+          "button": {},
+          "buttons": [],
+          "videoUrl": "https://www.youtube.com/embed/ZvQAJpnLPTU?si=UY-JwQhELVBXsMmN"
         }
       ],
       "background": {

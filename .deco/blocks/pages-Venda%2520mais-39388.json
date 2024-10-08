@@ -64,6 +64,38 @@
                 }
               ]
             }
+            "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ ",
+            "modal": {
+              "title": "Obrigado por se inscrever para receber nossa oferta especial!",
+              "titleColor": "#371E55",
+              "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55",
+                  "showIcon": false
+                },
+                {
+                  "ctaStyle": "button",
+                  "text": "Ver planos",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#371E55",
+                  "borderColor": "#371E55",
+                  "href": "#plans"
+                }
+              ]
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -139,7 +171,7 @@
           "value": {
             "__resolveType": "site/sections/Logos.tsx",
             "title": "Dos R$100 mil aos R$10 milhões!",
-            "caption": "Descubra quem já faz parte da nossa história 🚀 ",
+            "caption": "Descubra quem já faz parte da nossa história ",
             "logos": [
               {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
@@ -1215,15 +1247,11 @@
             "__resolveType": "site/sections/Plans.tsx",
             "slides": [
               {
-                "title": "Elite",
+                "title": "Aceleração ",
                 "tag": {
-                  "text": "Premium",
-                  "icon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/5cc30ad5-f8a1-4ea4-b7e7-a37f25023f91/coroa-1.svg",
-                    "alt": "crown icon"
-                  }
+                  "text": "🚀 Mais popular "
                 },
-                "montlyFee": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1999</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
+                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">99</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
                 "chooseCta": {
                   "text": "Assinar",
                   "href": "#"
@@ -1234,48 +1262,45 @@
                 },
                 "bulletPoints": {
                   "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d6343390-f98c-49d1-bf50-7da7dabdc4dd/check-icon.svg"
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
                   },
                   "items": [
                     {
-                      "text": "Tudo do Plano Expansão +"
+                      "text": "500 produtos ativos"
                     },
                     {
-                      "text": "Produtos ativos ilimitados"
+                      "text": "50.000 visitas por mês"
                     },
                     {
-                      "text": "Visitas ilimitadas"
+                      "text": "5 Visuais profissionais Inclusos"
                     },
                     {
-                      "text": "Suporte e atendimento por ligação e vídeo"
+                      "text": "Mais conversão com Checkout sem Senha baseado na VTEX"
                     },
                     {
-                      "text": "Migração 100% assistida e sem custos adicionais"
+                      "text": "Aumento de ticket médio em até 31% com Promoções e Compre Junto"
                     },
                     {
-                      "text": "Especialista de e-commerce dedicado ao seu negócio"
+                      "text": "Tarifa por transação gratuita com Pagali"
                     },
                     {
-                      "text": "Negociação direta com meios de pagamento selecionados"
-                    },
-                    {
-                      "text": "Negociação direta com meios de pagamento selecionados"
+                      "text": "Envio pelos Correios com até 70% de desconto com Enviali"
                     }
                   ],
-                  "itemsTextColor": "#ffffff",
+                  "itemsTextColor": "#FAFAF5",
                   "tooltipTextColor": "#371E55",
                   "tooltipBackgroundColor": "#ffffff"
                 },
-                "annualMontlyFee": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1599</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
-                "cutedMontlyFee": "de R$ 1999 /mês",
-                "annualSaving": "Economia de R$500 no anual",
+                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">79</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês<br></span></p>",
+                "cutedMontlyFee": "de R$99/mês ",
+                "annualSaving": "Economia de R$240 no anual",
                 "seeMoreButtonText": "Ver mais",
-                "backgroundColor": "#371E55",
-                "tagColor": "#ffffff",
+                "backgroundColor": "linear-gradient(153deg, #372158 7.7%, #170C24 83.32%)",
+                "tagColor": "#FAFAF5",
                 "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
-                "titleColor": "#ffffff",
-                "cutedMontlyFeeColor": "#ffffff",
-                "annualSavingColor": "#ffffff",
+                "titleColor": "#FAFAF5",
+                "cutedMontlyFeeColor": "#FAFAF5",
+                "annualSavingColor": "#FAFAF5",
                 "cta": [
                   {
                     "ctaStyle": "link",
@@ -1378,67 +1403,75 @@
                 "bulletPoints": {
                   "items": [
                     {
-                      "text": "500 produtos ativos"
+                      "text": "Tudo do Plano Expansão +"
                     },
                     {
-                      "text": "50.000 visitas por mês"
+                      "text": "Produtos ativos ilimitados"
                     },
                     {
-                      "text": "5 Visuais profissionais Inclusos"
+                      "text": "Visitas ilimitadas"
                     },
                     {
-                      "text": "Mais conversão com Checkout sem Senha baseado na VTEX"
+                      "text": "Suporte e atendimento por ligação e vídeo"
                     },
                     {
-                      "text": "Aumento de ticket médio em até 31% com Promoções e Compre Junto"
+                      "text": "Migração 100% assistida e sem custos adicionais"
                     },
                     {
-                      "text": "Tarifa por transação gratuita com Pagali"
+                      "text": "Especialista de e-commerce dedicado ao seu negócio"
                     },
                     {
-                      "text": "Envio pelos Correios com até 70% de desconto com Enviali"
+                      "text": "Negociação direta com meios de pagamento selecionados"
+                    },
+                    {
+                      "text": "Negociação direta com meios de pagamento selecionados"
                     }
                   ],
                   "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d6343390-f98c-49d1-bf50-7da7dabdc4dd/check-icon.svg"
                   },
-                  "itemsTextColor": "#FAFAF5",
+                  "itemsTextColor": "#ffffff",
                   "tooltipTextColor": "#371E55",
                   "tooltipBackgroundColor": "#ffffff"
                 },
                 "tag": {
-                  "text": "🚀 Mais popular "
+                  "text": "Premium",
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/5cc30ad5-f8a1-4ea4-b7e7-a37f25023f91/coroa-1.svg",
+                    "alt": "crown icon"
+                  }
                 },
-                "title": "Aceleração ",
-                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">99</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
-                "cutedMontlyFee": "de R$99/mês ",
-                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">79</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês<br></span></p>",
-                "annualSaving": "Economia de R$240 no anual",
+                "title": "Elite",
+                "montlyFee": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1999</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
+                "cutedMontlyFee": "de R$ 1999 /mês",
+                "annualMontlyFee": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1599</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
+                "annualSaving": "Economia de R$500 no anual",
                 "seeMoreButtonText": "Ver mais",
-                "backgroundColor": "linear-gradient(153deg, #372158 7.7%, #170C24 83.32%)",
-                "titleColor": "#FAFAF5",
-                "cutedMontlyFeeColor": "#FAFAF5",
-                "annualSavingColor": "#FAFAF5",
+                "backgroundColor": "#371E55",
+                "titleColor": "#ffffff",
+                "cutedMontlyFeeColor": "#ffffff",
+                "annualSavingColor": "#ffffff",
                 "cta": [
                   {
+                    "ctaStyle": "button",
+                    "href": "https://api.whatsapp.com/send/?phone=%2B551197046726&text=Quero+saber+mais+informa%C3%A7%C3%B5es+sobre+o+plano+Elite.+Pode+me+ajudar%3F&type=phone_number&app_absent=0",
+                    "textColor": "#371E55",
+                    "text": "Escolher",
+                    "backgroundColor": "#ffffff",
+                    "borderColor": "#371E55"
+                  },
+                  {
                     "ctaStyle": "link",
-                    "href": "#planoaceleracao",
-                    "textColor": "#ffffff",
-                    "underlineText": "Ver detalhes"
+                    "href": "#planoelite",
+                    "underlineText": "Ver detalhes",
+                    "textColor": "#ffffff"
                   }
                 ],
-                "annualFee": 79,
-                "annualMontlyFeeFee": 79,
-                "seeMoreTag": "Ver mais",
-                "tagColor": "#FAFAF5",
+                "theme": "light",
+                "tagColor": "#ffffff",
                 "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
-                "createStoreWithPlanCta": {
-                  "planId": "174",
-                  "text": "Escolher",
-                  "ctaStyle": "button",
-                  "backgroundColor": "#ffffff",
-                  "textColor": "#371E55",
-                  "borderColor": "#ffffff"
+                "topImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
                 }
               }
             ],
@@ -5440,8 +5473,8 @@
         {
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
-            "title": "Compre Junto",
-            "caption": "Venda mais sem gastar com anúncios pagos",
+            "title": "Venda mais sem gastar com anúncios pagos",
+            "caption": "Conheça o “Compre Junto”, nossa ferramenta nativa",
             "description": "Potencialize a capacidade do seu negócio de vender mais para o mesmo cliente. Com o “Compre Junto”, aumentamos até 31% do seu faturamento oferecendo um produto complementar ao seu usuário no momento da compra.",
             "bigNumbers": [
               {
@@ -5464,7 +5497,7 @@
               }
             ],
             "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e1976be0-b8c1-441d-bfb6-8de773198dea/hero-1-image-mobile.svg",
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/08e64f92-3e0f-4d4a-8581-63a62cd5a65c/img-Compre-junto-mobile.png",
               "alt": "hero image"
             },
             "placement": "left",
@@ -5475,7 +5508,7 @@
                 "style": "button",
                 "ctaStyle": "button",
                 "backgroundColor": "#371E55",
-                "borderColor": "#0000371E550",
+                "borderColor": "#371E55",
                 "textColor": "#ffffff"
               },
               {
@@ -5500,7 +5533,8 @@
             "use": "image",
             "descriptionColor": "#5F6E82",
             "titleColor": "#371E55",
-            "captionColor": "#371E55"
+            "captionColor": "#371E55",
+            "textBelowColor": "#000000"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

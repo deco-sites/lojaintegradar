@@ -1470,7 +1470,17 @@
               }
             ],
             "bottomCaptionColor": "#828CA0",
-            "bottomTitleColor": "#371E55"
+            "bottomTitleColor": "#371E55",
+            "bottomCreateStoreCta": {
+              "planId": "172",
+              "text": "Começar no grátis",
+              "backgroundColor": "#371E55",
+              "textColor": "#ffffff",
+              "borderColor": "#371E55",
+              "ctaStyle": "button"
+            },
+            "arrows": true,
+            "arrowsColor": "#371E55"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1739,7 +1749,15 @@
               }
             ],
             "bottomCaptionColor": "#828CA0",
-            "bottomTitleColor": "#371E55"
+            "bottomTitleColor": "#371E55",
+            "bottomCreateStoreCta": {
+              "text": "Começar no grátis",
+              "ctaStyle": "button",
+              "backgroundColor": "#371E55",
+              "textColor": "#ffffff",
+              "borderColor": "#371E55",
+              "planId": "172"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

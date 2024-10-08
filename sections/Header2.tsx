@@ -212,8 +212,11 @@ export default function Header2({ logo = {
             <ul class="flex md:hidden justify-end gap-7" >
             <div class="flex items-center gap-4">
               {navigation?.createStoreCtaMobile?.text && <CreateStoreCta 
+                period="anual"
                 planId={navigation.createStoreCtaMobile.planId}
                 text={navigation.createStoreCtaMobile.text}
+                showIcon={navigation.createStoreCtaMobile.showIcon}
+                underlineText={navigation.createStoreCtaMobile.underlineText}
                 ctaClass={` font-bold text-primary px-4 py-1.5 rounded-md transition-all hover:scale-110 text-xs bg-primary-content bg-opacity-60 border createStoreMobile`}
                 style={navigation.createStoreCtaMobile.ctaStyle == "button" ? { background: navigation.createStoreCtaMobile.backgroundColor, color: navigation.createStoreCtaMobile.textColor, borderColor: navigation.createStoreCtaMobile.borderColor } : { color: navigation.createStoreCtaMobile.textColor }}
               />}
@@ -238,8 +241,11 @@ export default function Header2({ logo = {
             </ul>
             <ul class="hidden md:flex justify-end gap-7">
               {navigation?.createStoreCta?.text && <CreateStoreCta 
+                period="anual"
                 planId={navigation.createStoreCta.planId}
+                showIcon={navigation.createStoreCta.showIcon}
                 text={navigation.createStoreCta.text}
+                underlineText={navigation.createStoreCta.underlineText}
                 ctaClass={`${navigation.createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
                 style={navigation.createStoreCta.ctaStyle == "button" ? { backgroundColor: navigation.createStoreCta.backgroundColor, createStoreCta: navigation.createStoreCta.textColor, borderColor: navigation.createStoreCta.borderColor } : { color: navigation.createStoreCta.textColor }}
               />}

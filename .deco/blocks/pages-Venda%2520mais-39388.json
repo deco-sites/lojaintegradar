@@ -32,7 +32,38 @@
             "hubspotFormButtonTextColor": "#ffffff",
             "hubspotErrorMessageColor": "#F57E77",
             "use": "image",
-            "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ "
+            "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ ",
+            "modal": {
+              "title": "Obrigado por se inscrever para receber nossa oferta especial!",
+              "titleColor": "#371E55",
+              "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55",
+                  "showIcon": false
+                },
+                {
+                  "ctaStyle": "button",
+                  "text": "Ver planos",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#371E55",
+                  "borderColor": "#371E55",
+                  "href": "#plans"
+                }
+              ]
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

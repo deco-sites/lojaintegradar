@@ -3,6 +3,7 @@ import { useState, useEffect } from "preact/hooks";
 import Icon from "site/components/ui/Icon.tsx";
 import type { Props } from "../../sections/HeroWithTime.tsx";
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
+import HeroTimeButtons from "site/islands/HeroTimeButtons.tsx";
 
 function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props) {
     const [activeTab, setActiveTab] = useState(0);
@@ -151,8 +152,8 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
                                                 ></span>
                                             )}
 
-                                            <div class="flex items-center gap-[10px]">  {tab.videoOn && (
-                                                <button class="mt-4 mb-6 bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 flex items-center gap-[18px] h-[48px] w-[160px]" onClick={() => {
+                                            <div class="flex items-center mt-4 mb-6 gap-[10px]">  {tab.videoOn && (
+                                                <button class="bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 flex items-center gap-[18px] h-[48px] w-[160px]" onClick={() => {
                                                     setCurrentVideoUrl(tab.videoUrl || "");
                                                     openModal();
                                                 }}>
@@ -169,13 +170,9 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
                                                 </button>
                                             )}
 
-                                                {tab.button?.buttonText && (
-                                                    <button class="mt-4 mb-6 backgroundHeroTimeButton rounded-lg p-1 flex items-center justify-center gap-[18px] h-[48px] w-[160px]">
-                                                        <a href={tab.button.buttonLink} class="text-primary-content font-bold text-[17px] text-center">
-                                                            {tab.button.buttonText}
-                                                        </a>
-                                                    </button>
-                                                )}
+                                                {tab.buttons?.map((button, index) => (
+                                                    <HeroTimeButtons key={index} {...button} />
+                                                ))}
                                             </div>
                                         </div>
                                     )}

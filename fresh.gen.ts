@@ -7,7 +7,9 @@ import * as $CloseButtonModal from "./islands/CloseButtonModal.tsx";
 import * as $CreateStoreModal from "./islands/CreateStoreModal.tsx";
 import * as $FlexibleButtons from "./islands/FlexibleButtons.tsx";
 import * as $HeroCard from "./islands/HeroCard.tsx";
+import * as $HeroInfo from "./islands/HeroInfo.tsx";
 import * as $HeroTab from "./islands/HeroTab.tsx";
+import * as $HeroTimeButtons from "./islands/HeroTimeButtons.tsx";
 import * as $HeroWithTime from "./islands/HeroWithTime.tsx";
 import * as $PricesButtons from "./islands/PricesButtons.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -21,7 +23,9 @@ const manifest = {
     "./islands/CreateStoreModal.tsx": $CreateStoreModal,
     "./islands/FlexibleButtons.tsx": $FlexibleButtons,
     "./islands/HeroCard.tsx": $HeroCard,
+    "./islands/HeroInfo.tsx": $HeroInfo,
     "./islands/HeroTab.tsx": $HeroTab,
+    "./islands/HeroTimeButtons.tsx": $HeroTimeButtons,
     "./islands/HeroWithTime.tsx": $HeroWithTime,
     "./islands/PricesButtons.tsx": $PricesButtons,
   },

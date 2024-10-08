@@ -418,7 +418,8 @@
           "buttons": [
             {
               "type": "one",
-              "text": "Quero testar"
+              "text": "Quero testar",
+              "changeType": true
             }
           ]
         },
@@ -447,7 +448,8 @@
           "buttons": [
             {
               "type": "one",
-              "text": "Quero testar"
+              "text": "Quero testar",
+              "changeType": true
             }
           ]
         },
@@ -471,7 +473,8 @@
           },
           "highlight": true,
           "videoOn": true,
-          "button": {}
+          "button": {},
+          "buttons": []
         }
       ],
       "background": {

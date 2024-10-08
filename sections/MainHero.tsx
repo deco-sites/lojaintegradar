@@ -3,6 +3,7 @@ import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts
 import Image from "apps/website/components/Image.tsx";
 import { useScript } from "deco/hooks/useScript.ts";
 import { useId } from "site/sdk/useId.ts";
+import PricesButtons from "site/islands/PricesButtons.tsx";
 
 const openModal = (modalId: string) => {
     event!.preventDefault();
@@ -141,8 +142,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                 </object>
             </video>}
         </div>
-
-
+        
         <style dangerouslySetInnerHTML={{
             __html: `
                 .main-hero-form .hs-form-private {
@@ -264,5 +264,6 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                 </div>
             </div>
         </div>
+
     </div>
 }

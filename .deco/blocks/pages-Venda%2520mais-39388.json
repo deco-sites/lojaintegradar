@@ -1246,7 +1246,7 @@
                 "cta": [
                   {
                     "ctaStyle": "button",
-                    "href": "#",
+                    "href": "https://api.whatsapp.com/send/?phone=%2B551197046726&text=Quero+saber+mais+informa%C3%A7%C3%B5es+sobre+o+plano+Elite.+Pode+me+ajudar%3F&type=phone_number&app_absent=0",
                     "text": "Escolher",
                     "textColor": "#371E55",
                     "backgroundColor": "#ffffff",
@@ -1313,25 +1313,25 @@
                 "seeMoreButtonText": "Ver mais",
                 "cta": [
                   {
-                    "ctaStyle": "button",
-                    "href": "#",
-                    "text": "Escolher",
-                    "textColor": "#ffffff",
-                    "backgroundColor": "#371E55",
-                    "borderColor": "#371E55"
-                  },
-                  {
                     "ctaStyle": "link",
                     "href": "#planoexpancao",
-                    "underlineText": "Ver detalhes",
-                    "textColor": "#371E55"
+                    "textColor": "#371E55",
+                    "underlineText": "Ver detalhes"
                   }
                 ],
                 "backgroundColor": "#ffffff",
                 "titleColor": "#371E55",
                 "cutedMontlyFeeColor": "#371E55",
                 "annualSavingColor": "#371E55",
-                "theme": "light"
+                "theme": "light",
+                "createStoreWithPlanCta": {
+                  "planId": "176",
+                  "text": "Escolher",
+                  "ctaStyle": "button",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55"
+                }
               },
               {
                 "chooseCta": {
@@ -1388,25 +1388,25 @@
                 "annualSavingColor": "#FAFAF5",
                 "cta": [
                   {
-                    "ctaStyle": "button",
-                    "href": "#",
-                    "text": "Escolher",
-                    "backgroundColor": "#ffffff",
-                    "textColor": "#371E55",
-                    "borderColor": "#ffffff"
-                  },
-                  {
                     "ctaStyle": "link",
-                    "underlineText": "Ver detalhes",
                     "href": "#planoaceleracao",
-                    "textColor": "#ffffff"
+                    "textColor": "#ffffff",
+                    "underlineText": "Ver detalhes"
                   }
                 ],
                 "annualFee": 79,
                 "annualMontlyFeeFee": 79,
                 "seeMoreTag": "Ver mais",
                 "tagColor": "#FAFAF5",
-                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)"
+                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
+                "createStoreWithPlanCta": {
+                  "planId": "174",
+                  "text": "Escolher",
+                  "ctaStyle": "button",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#371E55",
+                  "borderColor": "#ffffff"
+                }
               }
             ],
             "title": " Escolha seu plano e garanta mais eficiência para o seu negócio",
@@ -1510,20 +1510,20 @@
                 "annualSavingColor": "#FAFAF5",
                 "cta": [
                   {
-                    "ctaStyle": "button",
-                    "href": "#",
-                    "text": "Assinar",
-                    "textColor": "#371E55",
-                    "backgroundColor": "#ffffff",
-                    "borderColor": "#ffffff"
-                  },
-                  {
                     "ctaStyle": "link",
                     "href": "#planoaceleracao",
-                    "underlineText": "Ver detalhes",
-                    "textColor": "#ffffff"
+                    "textColor": "#ffffff",
+                    "underlineText": "Ver detalhes"
                   }
-                ]
+                ],
+                "createStoreWithPlanCta": {
+                  "planId": "174",
+                  "text": "Assinar",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#371E55",
+                  "ctaStyle": "button",
+                  "borderColor": "#ffffff"
+                }
               },
               {
                 "chooseCta": {
@@ -1574,25 +1574,25 @@
                 "seeMoreButtonText": "Ver mais",
                 "cta": [
                   {
-                    "ctaStyle": "button",
-                    "href": "#",
-                    "text": "Assinar",
-                    "textColor": "#ffffff",
-                    "backgroundColor": "#371E55",
-                    "borderColor": "#371E55"
-                  },
-                  {
                     "ctaStyle": "link",
                     "href": "#planoexpancao",
-                    "underlineText": "Ver detalhes",
-                    "textColor": "#371E55"
+                    "textColor": "#371E55",
+                    "underlineText": "Ver detalhes"
                   }
                 ],
                 "backgroundColor": "#ffffff",
                 "titleColor": "#371E55",
                 "cutedMontlyFeeColor": "#371E55",
                 "annualSavingColor": "#371E55",
-                "theme": "light"
+                "theme": "light",
+                "createStoreWithPlanCta": {
+                  "planId": "176",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55",
+                  "ctaStyle": "button",
+                  "text": "Assinar"
+                }
               },
               {
                 "theme": "light",
@@ -1658,7 +1658,7 @@
                 "cta": [
                   {
                     "ctaStyle": "button",
-                    "href": "#",
+                    "href": "https://api.whatsapp.com/send/?phone=%2B551197046726&text=Quero+saber+mais+informa%C3%A7%C3%B5es+sobre+o+plano+Elite.+Pode+me+ajudar%3F&type=phone_number&app_absent=0",
                     "text": "Assinar",
                     "backgroundColor": "#371E55",
                     "textColor": "#ffffff",

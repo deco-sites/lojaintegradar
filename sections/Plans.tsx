@@ -5,6 +5,7 @@ import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useScript } from "@deco/deco/hooks";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
 const onClick = (rootId: string) => {
     const parent = document.getElementById(rootId) as HTMLElement;
@@ -83,6 +84,20 @@ export interface CTA {
     showIcon?: boolean;
 }
 
+export interface CreateStoreWithPlanCTA {
+    planId: string;
+    text?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle: "button" | "link";
+    showIcon?: boolean;
+}
+
 export interface Tag {
     text?: string;
     icon?: IImage;
@@ -108,6 +123,7 @@ export interface Plan {
     annualSaving?: string;
     /** @format color-input */
     annualSavingColor?: string;
+    createStoreWithPlanCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     bulletPoints?: BulletPoints;
     seeMoreButtonText?: string;
@@ -159,7 +175,7 @@ function SliderItem({ slide, id }: {
     slide: Plan;
     id: string;
 }) {
-    const { title, tag, montlyFee, cutedMontlyFee, annualMontlyFee, annualSaving, cta = [], bulletPoints, topImage, seeMoreButtonText, backgroundColor, titleColor, tagColor, tagBackgroundColor, cutedMontlyFeeColor, annualSavingColor } = slide;
+    const { title, tag, montlyFee, cutedMontlyFee, annualMontlyFee, annualSaving, cta = [], bulletPoints, topImage, seeMoreButtonText, backgroundColor, titleColor, tagColor, tagBackgroundColor, cutedMontlyFeeColor, annualSavingColor, createStoreWithPlanCta } = slide;
     return (<div id={id} class={`px-1 lg:px-4 w-full ${!topImage?.src && 'pt-[73px]'}`}>
             <div class={`relative w-full h-full lg:min-h-[864px] rounded-3xl shadow-spreaded3 overflow-hidden bg-primary text-primary-content`} style={{background: backgroundColor}}>
                 
@@ -184,6 +200,14 @@ function SliderItem({ slide, id }: {
                     </div>
 
                     <div class="mt-9 flex flex-wrap gap-[18px] items-center">
+                    {createStoreWithPlanCta?.text && <CreateStoreCta 
+                        text={createStoreWithPlanCta.text} 
+                        planId={createStoreWithPlanCta.planId}
+                        showIcon={createStoreWithPlanCta.showIcon}
+                        underlineText={createStoreWithPlanCta.underlineText}
+                        ctaClass={`${createStoreWithPlanCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                        style={createStoreWithPlanCta.ctaStyle == "button" ? { backgroundColor: createStoreWithPlanCta.backgroundColor, color: createStoreWithPlanCta.textColor, borderColor: createStoreWithPlanCta.borderColor } : { color: createStoreWithPlanCta.textColor }}
+                    />}
                     {cta.map((button) => {
                     if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                         showIcon={button.showIcon}

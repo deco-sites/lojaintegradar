@@ -229,7 +229,7 @@ export default function PlanDetails({ id, title, titleColor, titleTyping = [], t
         </div>
         <div class="h-[-20px] lg:h-[130px] mt-[-20px] lg:mt-[-130px]" />
         <div class={`${!bottomBackground?.src && 'bg-primary'} min-h-[340px] relative`}>
-            {bottomBackground?.src && <Image width={bottomBackground.width || 1440} height={bottomBackground.height || 340} src={bottomBackground.src} alt={bottomBackground.alt || "bottom background image"} class="absolute w-full h-full object-cover object-right -z-20" />}
+            {bottomBackground?.src && <Image width={bottomBackground.width || 1440} height={bottomBackground.height || 340} src={bottomBackground.src} alt={bottomBackground.alt || "bottom background image"} class="absolute w-full h-full mt-[-1px] object-cover object-right -z-20" />}
             <div class="max-w-[1200px] s1800:max-w-[1365px] mx-auto pb-[72px]">
                 <AnimateOnShow animation="animate-fade-up50" divClass="flex flex-wrap xl:flex-nowrap items-start xl:items-end" delay={300}>
                     <div id={carouselId} class="min-h-min flex flex-col w-full lg:w-[600px] mt-[-20px] lg:mt-[-130px] relative">

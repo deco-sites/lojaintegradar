@@ -3,22 +3,6 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import { useScript } from "@deco/deco/hooks";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 
-const onLoad = () => {
-  document.getElementById('logosTitleAndCaption')?.classList.add("opacity-0");
-  document.getElementById('logosSliderContent')?.classList.add("opacity-0");
-  document.addEventListener('DOMContentLoaded', () => {
-    const fadeUp = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-fade-up");
-          entry.target.classList.remove("opacity-0");
-        }
-      });
-    });
-    fadeUp.observe(document.getElementById('logosTitleAndCaption') as HTMLElement);
-    fadeUp.observe(document.getElementById('logosSliderContent') as HTMLElement);
-  });
-};
 /** @title {{altText}} */
 export interface Logo {
   src?: ImageWidget;
@@ -48,7 +32,6 @@ export default function Logos({ title, caption, logos = IMG_PLACEHODLER, titleCo
     })}
   </div>);
   return (<div class="lg:container md:max-w-[1260px] lg:mx-auto px-7 md:px-0">
-    <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad) }} />
     <div class="flex flex-col gap-10">
       <div id="logosTitleAndCaption">
         <AnimateOnShow animation="animate-fade-up">

@@ -45,11 +45,10 @@ export default function TalkToSpecialistCta({ctaClass, key, text, divClass, styl
                         </svg>}
         </a>
         <div id={rootId + "popUpForm"} class="fixed top-0 left-0 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-[60] talkToSpecialistForm overflow-auto hidden">
-                        {/* <style dangerouslySetInnerHTML={{ __html: CSS }} /> */}
-                        <div class="max-w-[550px] min-h-[600px] bg-primary-content rounded-xl lg:p-12 animate-pop-up relative pt-12" style={{animationDuration: "0.3s"}}>
-                            <button class="text-primary font-black p-2.5 absolute top-2 right-2" hx-on:click={useScript(closeTalkToSpecialist, rootId)}>X</button>
-                            <div dangerouslySetInnerHTML={{
-                                __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+            <div class="max-w-[550px] min-h-[600px] bg-primary-content rounded-xl lg:p-12 animate-pop-up relative pt-12" style={{animationDuration: "0.3s"}}>
+                <button class="text-primary font-black p-2.5 absolute top-2 right-2" hx-on:click={useScript(closeTalkToSpecialist, rootId)}>X</button>
+                <div dangerouslySetInnerHTML={{
+                    __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                                                                     <script>
                                                                     hbspt.forms.create({
                                                                         region: "na1",
@@ -57,9 +56,9 @@ export default function TalkToSpecialistCta({ctaClass, key, text, divClass, styl
                                                                         formId: "06d3df52-7c37-4749-aa27-5c7744917d89"
                                                                     });
                                                                     </script>
-                            `}} />
-                        </div>
-                    </div>
+                `}}/>
+            </div>
+        </div>
         <style dangerouslySetInnerHTML={{__html: `
             .talkToSpecialistForm .hs-form-private {
             position: relative;

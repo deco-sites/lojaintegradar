@@ -98,8 +98,8 @@ export default function Hero({
           class={`absolute object-fill h-full lg:h-[140%] w-full lg:w-[130%] top-[-25%] ${placement == "left" ? 'left-0' : 'right-0'} -z-50`}
         />}
         <div class="px-7 mb-10 lg:hidden">
-          <h2 class="text-2xl font-semibold">{title}</h2>
-          <p class="text-lg  mt-2.5 font-semibold">{caption}</p>
+          <h2 class="text-2xl font-semibold" style={{ color: titleColor }}>{title}</h2>
+          <p class="text-lg  mt-2.5 font-semibold" style={{ color: captionColor }}>{caption}</p>
         </div>
         {use == "image" && image?.src && <Image src={image.src} alt={image.alt || "hero image"} width={image.width || 809} height={image.height || 675} class="w-full xl:w-auto max-w-[809px] object-contain" />}
         {use == 'video' && video && <video

@@ -4,7 +4,6 @@ import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
-import { colors } from "$fresh/src/server/deps.ts";
 
 /** @title {{text}} */
 export interface CTA {
@@ -178,7 +177,7 @@ function Carousel(props: Props) {
                         showIcon={button.showIcon}
                         underlineText={button.underlineText}
                         text={button.text}
-                        ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                        ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
                         style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
                     />
                     return <a

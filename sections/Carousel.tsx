@@ -33,7 +33,7 @@ export interface CarouselItem {
     useBackground?: 'image' | 'video';
     bulletPoints?: BulletPoints;
 }
-/** @title {{text}} */
+/** @title {{text}} {{underlineText}} */
 export interface CTA {
     href: string;
     text?: string;
@@ -181,7 +181,7 @@ function Carousel(props: Props) {
                 {/* {props.dots && <Dots slides={slides} interval={interval} />}{" "} */}
                 {props.arrows && <Buttons arrowsColor={arrowsColor} />}
             </AnimateOnShow >
-            {cta && <div id="carouselButtons" class="flex flex-wrap justify-center gap-7 mt-4 px-7">
+            {cta && <div id="carouselButtons" class="flex flex-wrap justify-center items-center gap-7 mt-4 px-7">
                 {cta.map((button) => {
                     if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                         showIcon={button.showIcon}

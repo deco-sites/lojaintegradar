@@ -438,13 +438,14 @@
           "ctaStyle": "button"
         },
         {
-          "text": "Falar com Especialista ",
           "href": "/talkToSpecialist",
           "outline": true,
           "backgroundColor": "#ffffff",
           "textColor": "#371E55",
           "borderColor": "#371E55",
-          "ctaStyle": "button"
+          "ctaStyle": "link",
+          "showIcon": true,
+          "underlineText": "Falar com Especialista "
         }
       ],
       "interval": 0,
@@ -625,13 +626,13 @@
                 "borderColor": "#371E55"
               },
               {
-                "ctaStyle": "button",
-                "text": "Falar com Especialista ",
-                "showIcon": false,
+                "ctaStyle": "link",
+                "showIcon": true,
                 "textColor": "#371E55",
                 "href": "/talkToSpecialist",
                 "backgroundColor": "Transparent",
-                "borderColor": "#371E55"
+                "borderColor": "#371E55",
+                "underlineText": "Falar com Especialista "
               }
             ],
             "links": [],
@@ -816,13 +817,14 @@
                 "textColor": "#ffffff"
               },
               {
-                "text": "Falar com Especialista ",
                 "href": "/talkToSpecialist",
                 "outline": true,
-                "ctaStyle": "button",
+                "ctaStyle": "link",
                 "backgroundColor": "tRANSPARENT",
                 "textColor": "#371E55",
-                "borderColor": "#371E55"
+                "borderColor": "#371E55",
+                "underlineText": "Falar com Especialista ",
+                "showIcon": true
               }
             ],
             "links": [],
@@ -5827,11 +5829,15 @@
               }
             },
             "color4": "#FFE6A0",
-            "cta": {
-              "href": "#",
-              "outline": false,
-              "text": "Assinar plano"
-            },
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "underlineText": "Falar com especialista",
+                "showIcon": true,
+                "textColor": "#ffffff"
+              }
+            ],
             "link": {
               "textBefore": "Já tem uma loja? ",
               "href": "#",
@@ -5841,7 +5847,15 @@
             "color7": "#ffffff",
             "color8": "#003037",
             "color5": "#ffffff",
-            "id": "planoaceleracao"
+            "id": "planoaceleracao",
+            "createStoreCta": {
+              "planId": "174",
+              "text": "Assinar",
+              "textColor": "#003037",
+              "ctaStyle": "button",
+              "borderColor": "#ffffff",
+              "backgroundColor": "#ffffff"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5949,11 +5963,15 @@
               }
             },
             "color4": "#FFE6A0",
-            "cta": {
-              "href": "#",
-              "outline": false,
-              "text": "Assinar plano"
-            },
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "textColor": "#ffffff",
+                "underlineText": "Falar com especialista",
+                "showIcon": true
+              }
+            ],
             "link": {
               "textBefore": "Já tem uma loja? ",
               "href": "#",
@@ -5963,7 +5981,15 @@
             "color6": "#FFE6A0",
             "color7": "#ffffff",
             "color8": "#003037",
-            "id": "planoaceleracao"
+            "id": "planoaceleracao",
+            "createStoreCta": {
+              "planId": "174",
+              "text": "Assinar plano",
+              "backgroundColor": "#ffffff",
+              "borderColor": "#ffffff",
+              "textColor": "#003037",
+              "ctaStyle": "button"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6077,11 +6103,15 @@
               }
             },
             "color4": "#FFE6A0",
-            "cta": {
-              "href": "#",
-              "outline": false,
-              "text": "Assinar plano"
-            },
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "underlineText": "Falar com especialista",
+                "textColor": "#371E55",
+                "showIcon": true
+              }
+            ],
             "link": {
               "textBefore": "Já tem uma loja? ",
               "href": "#",
@@ -6091,7 +6121,15 @@
             "color6": "#5F6E82",
             "color7": "#371E55",
             "color8": "#ffffff",
-            "id": "planoexpancao"
+            "id": "planoexpancao",
+            "createStoreCta": {
+              "planId": "176",
+              "ctaStyle": "button",
+              "text": "Assinar",
+              "backgroundColor": "#371E55",
+              "borderColor": "#371E55",
+              "textColor": "#ffffff"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6201,11 +6239,15 @@
               }
             },
             "color4": "#FFE6A0",
-            "cta": {
-              "href": "#",
-              "outline": false,
-              "text": "Assinar plano"
-            },
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "underlineText": "Falar com especialista",
+                "href": "/talkToSpecialist",
+                "textColor": "#371E55",
+                "showIcon": true
+              }
+            ],
             "link": {
               "textBefore": "Já tem uma loja? ",
               "href": "#",
@@ -6215,7 +6257,15 @@
             "color6": "#5F6E82",
             "color7": "#371E55",
             "color8": "#ffffff",
-            "id": "planoexpancao"
+            "id": "planoexpancao",
+            "createStoreCta": {
+              "planId": "176",
+              "text": "Assinar plano",
+              "ctaStyle": "button",
+              "textColor": "#ffffff",
+              "backgroundColor": "#371E55",
+              "borderColor": "#371E55"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6247,7 +6297,8 @@
             ],
             "bulletPointsIcon": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
-            }
+            },
+            "textColor": "#371E55"
           },
           "title": "Para você migrar"
         },
@@ -6261,9 +6312,11 @@
             ],
             "bulletPointsIcon": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
-            }
+            },
+            "textColor": "#371E55"
           },
-          "title": "Para você lucrar"
+          "title": "Para você lucrar",
+          "textColor": "#371E55"
         },
         {
           "bulletPoints": {
@@ -6274,7 +6327,8 @@
             ],
             "bulletPointsIcon": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
-            }
+            },
+            "textColor": "#371E55"
           },
           "title": "Para você migrar"
         },
@@ -6288,7 +6342,8 @@
             ],
             "bulletPointsIcon": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02491b5e-9374-4f35-8a14-36d6fcf10054/green-check-icon.svg"
-            }
+            },
+            "textColor": "#371E55"
           },
           "title": "Para você lucrar"
         }
@@ -6341,7 +6396,7 @@
       "cta": [
         {
           "ctaStyle": "button",
-          "href": "#",
+          "href": "https://api.whatsapp.com/send/?phone=%2B551197046726&text=Quero+saber+mais+informa%C3%A7%C3%B5es+sobre+o+plano+Elite.+Pode+me+ajudar%3F&type=phone_number&app_absent=0",
           "text": "Fazer parte",
           "backgroundColor": "#ffffff",
           "textColor": "#371E55",
@@ -6937,10 +6992,15 @@
               "title": "Mensal",
               "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p>"
             },
-            "cta": {
-              "href": "#",
-              "text": "Assinar plano"
-            },
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "textColor": "#003037",
+                "underlineText": "Falar com especialista",
+                "showIcon": true
+              }
+            ],
             "link": {
               "textBefore": "Já tem uma loja?",
               "text": " Ative agora",
@@ -6954,7 +7014,15 @@
             "color6": "#5F6E82",
             "color7": "#003037",
             "color8": "#ffffff",
-            "id": "planocrescimento"
+            "id": "planocrescimento",
+            "createStoreCta": {
+              "planId": "173",
+              "text": "Assinar",
+              "backgroundColor": "#003037",
+              "borderColor": "#003037",
+              "textColor": "#ffffff",
+              "ctaStyle": "button"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -7044,10 +7112,15 @@
               "title": "Mensal",
               "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p>"
             },
-            "cta": {
-              "href": "#",
-              "text": "Assinar plano"
-            },
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "underlineText": "Falar com especialista",
+                "textColor": "#003037",
+                "showIcon": true
+              }
+            ],
             "link": {
               "textBefore": "Já tem uma loja?",
               "text": " Ative agora",
@@ -7061,7 +7134,15 @@
             "color6": "#5F6E82",
             "color7": "#003037",
             "color8": "#ffffff",
-            "id": "planocrescimento"
+            "id": "planocrescimento",
+            "createStoreCta": {
+              "planId": "173",
+              "text": "Assinar plano",
+              "textColor": "#ffffff",
+              "backgroundColor": "#003037",
+              "borderColor": "#003037",
+              "ctaStyle": "button"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

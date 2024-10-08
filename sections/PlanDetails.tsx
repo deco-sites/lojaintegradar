@@ -74,6 +74,8 @@ export interface PlanTag {
 export interface BulletPoints {
     items?: string[];
     bulletPointsIcon?: IImage;
+    /** @format color-input */
+    textColor?: string;
 }
 export interface AnnualValues {
     title?: string;
@@ -136,11 +138,11 @@ function SliderItem({ slide, id }: {
     const { title, bulletPoints = { items: [] } } = slide;
     return (<div id={id} class="relative w-full px-5 lg:pr-10 lg:pl-0 text-primary">
         <div class="bg-primary-content text-primary min-h-[215px] rounded-3xl py-5 px-8 h-full">
-            <h3 class="text-xl font-semibold">{title}</h3>
+            <h3 class="text-xl font-semibold" style={{ color: bulletPoints.textColor }}>{title}</h3>
             <div class="mt-2.5 text-sm font-normal flex flex-col gap-2.5">
                 {bulletPoints.items && bulletPoints.items.length > 0 && bulletPoints.items.map((item) => (<div class="flex gap-2 items-center">
                     {bulletPoints.bulletPointsIcon?.src && <Image width={bulletPoints.bulletPointsIcon.width || 12} height={bulletPoints.bulletPointsIcon.height || 12} src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bulletpoint icon"} />}
-                    {item}
+                    <p class="text-[13px] font-normal leading-normal" style={{ color: bulletPoints.textColor }}>{item}</p>
                 </div>))}
             </div>
         </div>

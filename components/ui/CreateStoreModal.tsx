@@ -20,6 +20,7 @@ const useMutationObserver = (domNodeSelector: string, observerOptions: MutationO
 
 const CreateStoreModal = () => {
     const [getPlanId, setGetPlanId] = useState('');
+    const [getPeriod, setGetPeriod] = useState('');
 
     const [formData, setFormData] = useState({
         nome: "",
@@ -91,7 +92,9 @@ const CreateStoreModal = () => {
             if (mutation.type === 'attributes' && mutation.attributeName === 'data-planid') {
                 const modal = document.getElementById("createStoreModal");
                 const newPlanId = modal?.getAttribute("data-planid") || '';
+                const newPeriod = modal?.getAttribute("data-period") || 'anual';
                 setGetPlanId(newPlanId);
+                setGetPeriod(newPeriod);
                 break;
             }
         }
@@ -146,7 +149,7 @@ const CreateStoreModal = () => {
                 </button>
 
                 <form
-                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=anual&amp;plano_id=${getPlanId}`}
+                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${getPeriod}&amp;plano_id=${getPlanId}`}
                     id="modal-no-check"
                     data-gtm-form-interact-id="0"
                     method="POST"

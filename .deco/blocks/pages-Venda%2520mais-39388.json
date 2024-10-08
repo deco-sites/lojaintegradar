@@ -1278,23 +1278,23 @@
                 "annualSavingColor": "#ffffff",
                 "cta": [
                   {
-                    "ctaStyle": "button",
-                    "href": "https://api.whatsapp.com/send/?phone=%2B551197046726&text=Quero+saber+mais+informa%C3%A7%C3%B5es+sobre+o+plano+Elite.+Pode+me+ajudar%3F&type=phone_number&app_absent=0",
-                    "text": "Escolher",
-                    "textColor": "#371E55",
-                    "backgroundColor": "#ffffff",
-                    "borderColor": "#371E55"
-                  },
-                  {
                     "ctaStyle": "link",
                     "href": "#planoelite",
-                    "underlineText": "Ver detalhes",
-                    "textColor": "#ffffff"
+                    "textColor": "#ffffff",
+                    "underlineText": "Ver detalhes"
                   }
                 ],
                 "theme": "light",
                 "topImage": {
                   "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
+                },
+                "createStoreWithPlanCta": {
+                  "planId": "180",
+                  "text": "Escolher",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#371E55",
+                  "borderColor": "#ffffff",
+                  "ctaStyle": "button"
                 }
               },
               {
@@ -1700,25 +1700,25 @@
                 "annualSavingColor": "#371E55",
                 "cta": [
                   {
-                    "ctaStyle": "button",
-                    "href": "https://api.whatsapp.com/send/?phone=%2B551197046726&text=Quero+saber+mais+informa%C3%A7%C3%B5es+sobre+o+plano+Elite.+Pode+me+ajudar%3F&type=phone_number&app_absent=0",
-                    "text": "Assinar",
-                    "backgroundColor": "#371E55",
-                    "textColor": "#ffffff",
-                    "borderColor": "#371E55"
-                  },
-                  {
                     "ctaStyle": "link",
-                    "underlineText": "Ver detalhes",
                     "href": "#planoelite",
-                    "textColor": "#371E55"
+                    "textColor": "#371E55",
+                    "underlineText": "Ver detalhes"
                   }
                 ],
                 "topImage": {
                   "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
                 },
                 "tagColor": "#371E55",
-                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)"
+                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
+                "createStoreWithPlanCta": {
+                  "planId": "180",
+                  "text": "Assinar",
+                  "ctaStyle": "button",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55"
+                }
               }
             ],
             "title": " Escolha seu plano e garanta mais eficiência para o seu negócio",
@@ -1759,7 +1759,8 @@
               "textColor": "#ffffff",
               "borderColor": "#371E55",
               "planId": "172"
-            }
+            },
+            "arrowsColor": "#000000"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

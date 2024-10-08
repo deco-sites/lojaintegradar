@@ -327,9 +327,9 @@ function Plans(props: Props) {
                     <label className="label cursor-pointer gap-5">
                         {montlyLabel && <button className="text-lg text-primary font-semibold leading-tight disabled:text-neutral-content" disabled style={{color: disabledLabelColor}}>{montlyLabel}</button>}
                         <input type="checkbox" className={`toggle border-primary-content bg-primary-content [--tglbg:purple] hover:bg-primary-content`} style={`--tglbg: ${labelColor}`} defaultChecked hx-on:click={useScript(onChange, id, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor)}/>
-                        {annualLabel && <button className="relative flex text-lg text-primary font-semibold leading-tight disabled:text-neutral-content group">
+                        {annualLabel && <button className="relative flex text-lg text-primary font-semibold leading-tight disabled:text-neutral-content group" style={{color: labelColor}}>
                             {annualLabel}
-                            {annualTag && <p class="lg:absolute text-nowrap left-full top-0 text-base px-2 py-0.5 bg-info group-disabled:bg-base-200 ml-2.5 rounded-[3px] " style={{backgroundColor: annualTagColor}}>{annualTag}</p>}
+                            {annualTag && <p class="lg:absolute text-nowrap left-full top-0 text-base px-2 py-0.5 bg-info group-disabled:bg-base-200 ml-2.5 rounded-[3px] " style={{background: annualTagColor}}>{annualTag}</p>}
                         </button>}
                     </label>
                 </div>

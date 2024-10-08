@@ -25,11 +25,15 @@ const onChange = (rootId: string, labelColor?: string, disabledLabelColor?: stri
     const annualTag = annualLabel.querySelector("p") as HTMLElement;
     const montlyValues = parent.querySelectorAll(".montlyValues");
     const annualValues = parent.querySelectorAll(".annualValues");
+    const montlyCreateStoreButtons = parent.querySelectorAll(".montlyCreateStoreButton");
+    const annualCreateStoreButtons = parent.querySelectorAll(".annualCreateStoreButton");
 
     console.log(annualTag);
     if (!element.checked) {
         montlyValues.forEach((value) => value.classList.remove("hidden"));
         annualValues.forEach((value) => value.classList.add("hidden"));
+        montlyCreateStoreButtons.forEach((value) => value.classList.remove("hidden"));
+        annualCreateStoreButtons.forEach((value) => value.classList.add("hidden"));
         // annualLabel?.setAttribute("disabled", "");
         // montlyLabel?.removeAttribute("disabled");
         annualLabel.style.color = disabledLabelColor || "#828CA0";
@@ -39,6 +43,8 @@ const onChange = (rootId: string, labelColor?: string, disabledLabelColor?: stri
     else {
         montlyValues.forEach((value) => value.classList.add("hidden"));
         annualValues.forEach((value) => value.classList.remove("hidden"));
+        montlyCreateStoreButtons.forEach((value) => value.classList.add("hidden"));
+        annualCreateStoreButtons.forEach((value) => value.classList.remove("hidden"));
         // montlyLabel?.setAttribute("disabled", "");
         // annualLabel?.removeAttribute("disabled");
         annualLabel.style.color = labelColor || "#371E55";
@@ -201,6 +207,18 @@ function SliderItem({ slide, id }: {
 
                     <div class="mt-9 flex flex-wrap gap-[18px] items-center">
                     {createStoreWithPlanCta?.text && <CreateStoreCta 
+                        period="anual"
+                        divClass="annualCreateStoreButton"
+                        text={createStoreWithPlanCta.text} 
+                        planId={createStoreWithPlanCta.planId}
+                        showIcon={createStoreWithPlanCta.showIcon}
+                        underlineText={createStoreWithPlanCta.underlineText}
+                        ctaClass={`${createStoreWithPlanCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                        style={createStoreWithPlanCta.ctaStyle == "button" ? { backgroundColor: createStoreWithPlanCta.backgroundColor, color: createStoreWithPlanCta.textColor, borderColor: createStoreWithPlanCta.borderColor } : { color: createStoreWithPlanCta.textColor }}
+                    />}
+                    {createStoreWithPlanCta?.text && <CreateStoreCta 
+                        divClass="montlyCreateStoreButton hidden"
+                        period="mensal"
                         text={createStoreWithPlanCta.text} 
                         planId={createStoreWithPlanCta.planId}
                         showIcon={createStoreWithPlanCta.showIcon}

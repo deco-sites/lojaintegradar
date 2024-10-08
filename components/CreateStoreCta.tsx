@@ -2,12 +2,13 @@ import { useScript } from "deco/hooks/useScript.ts";
 import { JSX } from 'preact';
 
 
-const openCreateStore = (planId: string) => {
+const openCreateStore = (planId: string, period?: string) => {
     const getModal = document.getElementById("createStoreModal");
     if (getModal) {
         getModal.classList.add("flex");
         getModal.classList.remove("hidden");
         getModal.setAttribute("data-planId", planId ?? "");
+        if (period) getModal.setAttribute("data-period", period);
     }
 }
 
@@ -21,15 +22,16 @@ export interface Props {
     style?: JSX.CSSProperties;
     showIcon?: boolean;
     planId: string;
+    period?: string;
 }
 
-export default function CreateStoreCta({ctaClass, key, text, divClass, style, underlineText, showIcon, planId}: Props) {
+export default function CreateStoreCta({ctaClass, key, text, divClass, style, underlineText, showIcon, planId, period}: Props) {
 
     return <div class={divClass}>
         <a
             key={key}
             class={ctaClass}
-            hx-on:click={useScript(openCreateStore, planId)} 
+            hx-on:click={useScript(openCreateStore, planId, period)} 
             style={style}
         >
             {text}

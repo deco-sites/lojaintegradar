@@ -283,6 +283,7 @@ export default function Header2({ logo = {
               </label>
               {navigation?.asideMenuButtons?.map((button) => (<a
                 href={button?.href ?? "#"}
+                hx-on:click="document.getElementById('mobile-drawer-nav').checked = false;"
                 target={button?.href.includes("http") ? "_blank" : "_self"}
                 class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
                 style={button.ctaStyle == "button" ? { background: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}

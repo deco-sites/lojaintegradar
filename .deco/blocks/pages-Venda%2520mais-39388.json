@@ -6396,22 +6396,22 @@
       "arrowsColor": "#fafafa",
       "cta": [
         {
-          "ctaStyle": "button",
-          "href": "https://api.whatsapp.com/send/?phone=%2B551197046726&text=Quero+saber+mais+informa%C3%A7%C3%B5es+sobre+o+plano+Elite.+Pode+me+ajudar%3F&type=phone_number&app_absent=0",
-          "text": "Fazer parte",
-          "backgroundColor": "#ffffff",
-          "textColor": "#371E55",
-          "borderColor": "#fcfcfc"
-        },
-        {
           "ctaStyle": "link",
           "href": "#",
           "text": "Já tem uma loja?",
+          "textColor": "#ffffff",
           "underlineText": "Ative agora",
-          "showIcon": true,
-          "textColor": "#ffffff"
+          "showIcon": true
         }
-      ]
+      ],
+      "createStoreCta": {
+        "planId": "180",
+        "text": "Fazer parte",
+        "ctaStyle": "button",
+        "backgroundColor": "#ffffff",
+        "borderColor": "#ffffff",
+        "textColor": "#371E55"
+      }
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

@@ -208,22 +208,20 @@ function SliderItem({ slide, id }: {
                     <div class="mt-9 flex flex-wrap gap-[18px] items-center">
                     {createStoreWithPlanCta?.text && <CreateStoreCta 
                         period="anual"
-                        divClass="annualCreateStoreButton"
                         text={createStoreWithPlanCta.text} 
                         planId={createStoreWithPlanCta.planId}
                         showIcon={createStoreWithPlanCta.showIcon}
                         underlineText={createStoreWithPlanCta.underlineText}
-                        ctaClass={`${createStoreWithPlanCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                        ctaClass={`${createStoreWithPlanCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer annualCreateStoreButton`}
                         style={createStoreWithPlanCta.ctaStyle == "button" ? { backgroundColor: createStoreWithPlanCta.backgroundColor, color: createStoreWithPlanCta.textColor, borderColor: createStoreWithPlanCta.borderColor } : { color: createStoreWithPlanCta.textColor }}
                     />}
                     {createStoreWithPlanCta?.text && <CreateStoreCta 
-                        divClass="montlyCreateStoreButton hidden"
                         period="mensal"
                         text={createStoreWithPlanCta.text} 
                         planId={createStoreWithPlanCta.planId}
                         showIcon={createStoreWithPlanCta.showIcon}
                         underlineText={createStoreWithPlanCta.underlineText}
-                        ctaClass={`${createStoreWithPlanCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                        ctaClass={`${createStoreWithPlanCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer montlyCreateStoreButton hidden`}
                         style={createStoreWithPlanCta.ctaStyle == "button" ? { backgroundColor: createStoreWithPlanCta.backgroundColor, color: createStoreWithPlanCta.textColor, borderColor: createStoreWithPlanCta.borderColor } : { color: createStoreWithPlanCta.textColor }}
                     />}
                     {cta.map((button) => {

@@ -241,7 +241,7 @@ export default function PlanDetails2({ id, color1, color2, color3, color4, color
                             {planTag?.text && <p class="inline-block">{planTag.text}</p>}
                         </div>}
                     </div>
-                    <div class="text-primary text-2xl lg:text-[32px] leading-[120%]" style={{ color: color2 }} dangerouslySetInnerHTML={{ __html: imageText || "" }} />
+                    <div class="text-primary text-2xl lg:text-[32px] leading-[120%] font-extralight" style={{ color: color2 }} dangerouslySetInnerHTML={{ __html: imageText || "" }} />
                 </div>
             </AnimateOnShow>
             <div class="max-w-[613px] w-full" style={{ color: color5 }} >

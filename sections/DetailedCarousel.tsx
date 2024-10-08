@@ -5,7 +5,7 @@ import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
-/** @title {{text}} */
+/** @title {{text}} {{underlineText}} */
 export interface CTA {
     href: string;
     text?: string;

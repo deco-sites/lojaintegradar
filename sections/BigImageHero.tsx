@@ -10,7 +10,7 @@ export interface IImage {
     height?: number;
 }
 
-/** @title {{text}} */
+/** @title {{text}} {{underlineText}} */
 export interface CTA {
     href: string;
     text?: string;
@@ -105,16 +105,18 @@ export default function BigHeroImage({ title, titleColor, caption, captionColor,
                     </AnimateOnShow>
                 ))}
             </div>
-            {cta.length > 1 && <AnimateOnShow divClass="mt-11 flex flex-col gap-y-7" animation="animate-fade-right">
+            <AnimateOnShow divClass="mt-11 flex flex-col gap-y-7" animation="animate-fade-right">
                 {cta?.map((button) => {
-                    if (button.href == "/talkToSpecialist") return <TalkToSpecialistCta
-                        text={button.text}
-                        ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center  gap-1 border-primary font-bold hover:scale-110 transition-transform cursor-pointer text-lg`}
-                        divClass="self-start"
-                        style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
-                        underlineText={button.underlineText}
-                        showIcon={button.showIcon}
-                    />
+                    if (button.href == "/talkToSpecialist") {
+                        return <TalkToSpecialistCta
+                            text={button.text}
+                            ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center  gap-1 border-primary font-bold hover:scale-110 transition-transform cursor-pointer text-lg`}
+                            divClass="self-start"
+                            style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                            underlineText={button.underlineText}
+                            showIcon={button.showIcon}
+                        />
+                    }
                     return <a
                         href={button?.href ?? "#"}
                         target={button?.href.includes("http") ? "_blank" : "_self"}
@@ -128,7 +130,7 @@ export default function BigHeroImage({ title, titleColor, caption, captionColor,
                         </svg>}
                     </a>
                 })}
-            </AnimateOnShow>}
+            </AnimateOnShow>
         </div>
         {use == "image" && image?.src && <Image
             width={image.width || 428}

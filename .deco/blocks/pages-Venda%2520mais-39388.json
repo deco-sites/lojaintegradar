@@ -5480,10 +5480,10 @@
               },
               {
                 "ctaStyle": "link",
-                "href": "#",
-                "text": "Já tem uma loja?",
-                "underlineText": "Ative agora",
-                "textColor": "#371E55"
+                "underlineText": "Falar com Especialista ",
+                "textColor": "#371E55",
+                "href": "/talkToSpecialist",
+                "showIcon": true
               }
             ],
             "links": [
@@ -5549,10 +5549,9 @@
               },
               {
                 "ctaStyle": "link",
-                "href": "#",
+                "href": "/talkToSpecialist",
                 "textColor": "#371E55",
-                "text": "Já tem uma loja?",
-                "underlineText": " Ative agora",
+                "underlineText": "Falar com Especialista ",
                 "showIcon": true
               }
             ],
@@ -5623,11 +5622,10 @@
               },
               {
                 "ctaStyle": "link",
-                "href": "#",
-                "text": "Já tem uma loja? ",
-                "underlineText": "Ative agora",
+                "underlineText": "Falar com Especialista ",
                 "showIcon": true,
-                "textColor": "#371E55"
+                "textColor": "#371E55",
+                "href": "/talkToSpecialist"
               }
             ],
             "links": [
@@ -5693,11 +5691,10 @@
               },
               {
                 "ctaStyle": "link",
-                "href": "#",
-                "text": "Já tem uma loja? ",
-                "underlineText": "Ative agora",
+                "underlineText": "Falar com Especialista ",
                 "textColor": "#371E55",
-                "showIcon": true
+                "showIcon": true,
+                "href": "/talkToSpecialist"
               }
             ],
             "links": [
@@ -6397,11 +6394,10 @@
       "cta": [
         {
           "ctaStyle": "link",
-          "href": "#",
-          "text": "Já tem uma loja?",
           "textColor": "#ffffff",
-          "underlineText": "Ative agora",
-          "showIcon": true
+          "underlineText": "Falar com Especialista ",
+          "showIcon": true,
+          "href": "/talkToSpecialist"
         }
       ],
       "createStoreCta": {
@@ -6453,9 +6449,8 @@
               },
               {
                 "ctaStyle": "link",
-                "href": "#",
-                "text": "Já tem uma loja?",
-                "underlineText": "Ative agora",
+                "href": "/talkToSpecialist",
+                "underlineText": "Falar com especialista",
                 "textColor": "#371E55",
                 "showIcon": true
               }
@@ -6533,10 +6528,10 @@
               },
               {
                 "ctaStyle": "link",
-                "href": "#",
-                "text": "Já tem uma loja?",
-                "underlineText": "Ative agora",
-                "textColor": "#371E55"
+                "underlineText": " Falar com especialista",
+                "textColor": "#371E55",
+                "href": "/talkToSpecialist",
+                "showIcon": true
               }
             ],
             "links": [
@@ -6617,10 +6612,10 @@
               },
               {
                 "ctaStyle": "link",
-                "href": "#",
-                "text": "Já tem uma loja?",
-                "underlineText": "Ativar recursos",
-                "textColor": "#371E55"
+                "underlineText": " Falar com especialista",
+                "textColor": "#371E55",
+                "href": "/talkToSpecialist",
+                "showIcon": true
               }
             ],
             "links": [
@@ -6684,11 +6679,10 @@
               },
               {
                 "ctaStyle": "link",
-                "href": "#",
-                "text": "Já tem uma loja?",
-                "underlineText": "Ativar recursos",
+                "underlineText": " Falar com especialista",
                 "textColor": "#371E55",
-                "showIcon": true
+                "showIcon": true,
+                "href": "/talkToSpecialist"
               }
             ],
             "links": [
@@ -6765,7 +6759,7 @@
             ],
             "cta": [
               {
-                "href": "/talkToSpecialist",
+                "href": "#plans",
                 "text": "Ver planos ",
                 "backgroundColor": "#371E55",
                 "textColor": "#ffffff",
@@ -6774,14 +6768,13 @@
                 "showIcon": false
               },
               {
-                "href": "#",
-                "text": "Já tem uma loja?",
-                "backgroundColor": "",
+                "href": "/talkToSpecialist",
                 "textColor": "#371E55",
-                "borderColor": "",
-                "underlineText": "Ative agora",
+                "underlineText": " Falar com especialista",
                 "ctaStyle": "link",
-                "showIcon": true
+                "showIcon": true,
+                "backgroundColor": "",
+                "borderColor": ""
               }
             ],
             "backgroundImage": {
@@ -6844,7 +6837,7 @@
             ],
             "cta": [
               {
-                "href": "/talkToSpecialist",
+                "href": "#plans",
                 "text": "Ver planos ",
                 "backgroundColor": "#371E55",
                 "textColor": "#ffffff",
@@ -6853,14 +6846,13 @@
                 "showIcon": false
               },
               {
-                "href": "#",
-                "text": "Já tem uma loja?",
                 "backgroundColor": "",
                 "textColor": "#371E55",
                 "borderColor": "",
-                "underlineText": "Ative agora",
+                "underlineText": " Falar com especialista",
                 "ctaStyle": "link",
-                "showIcon": true
+                "showIcon": true,
+                "href": "/talkToSpecialist"
               }
             ],
             "backgroundImage": {
@@ -7023,7 +7015,8 @@
               "borderColor": "#003037",
               "textColor": "#ffffff",
               "ctaStyle": "button"
-            }
+            },
+            "imageText": "<p><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">Tenha recursos&nbsp;</strong>básicos</p><p>para o&nbsp;<strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">crescimento do </strong></p><p><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">seu negócio</strong></p>"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -7143,7 +7136,8 @@
               "backgroundColor": "#003037",
               "borderColor": "#003037",
               "ctaStyle": "button"
-            }
+            },
+            "imageText": "<p><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">Tenha recursos&nbsp;</strong>básicos</p><p>para o&nbsp;<strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">crescimento do </strong></p><p><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">seu negócio</strong></p>"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

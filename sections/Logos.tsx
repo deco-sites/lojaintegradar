@@ -1,6 +1,5 @@
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import { useScript } from "@deco/deco/hooks";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 
 /** @title {{altText}} */
@@ -26,9 +25,9 @@ export default function Logos({ title, caption, logos = IMG_PLACEHODLER, titleCo
   logos = [...logos, ...logos];
   const slideContent = (<div id="logosSliderContent" class="flex items-center gap-7 md:gap-16">
     {logos?.map((logo) => {
-      return (<div class="w-28 md:w-[156px]">
+      return (<AnimateOnShow animation="animate-fade-up" divClass="w-28 md:w-[156px]">
         <Image src={logo.src || ""} alt={logo.altText || ""} width={300} class="h-full w-full object-contain" />
-      </div>);
+      </AnimateOnShow>);
     })}
   </div>);
   return (<div class="lg:container md:max-w-[1260px] lg:mx-auto px-7 md:px-0">
@@ -42,9 +41,9 @@ export default function Logos({ title, caption, logos = IMG_PLACEHODLER, titleCo
         </AnimateOnShow>
       </div>
       <div class="relative w-full overflow-hidden h-20">
-        <AnimateOnShow animation="animate-fade-up" delay={400} divClass="animate-sliding absolute top-0 left-0 flex flex-nowrap h-full">
+        <div class="animate-sliding absolute top-0 left-0 flex flex-nowrap h-full">
           {slideContent}
-        </AnimateOnShow>
+        </div>
       </div>
     </div>
   </div>);

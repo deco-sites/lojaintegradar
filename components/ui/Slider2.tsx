@@ -34,9 +34,9 @@ const setup = ({ rootId, scroll, interval, infinite }: Props) => {
         return element.width;
     };
     // as any are ok in typeguard functions
-    const isHTMLElement = (x: Element): x is HTMLElement => 
-    // deno-lint-ignore no-explicit-any
-    typeof (x as any).offsetLeft === "number";
+    const isHTMLElement = (x: Element): x is HTMLElement =>
+        // deno-lint-ignore no-explicit-any
+        typeof (x as any).offsetLeft === "number";
     const root = document.getElementById(rootId);
     const slider = root?.querySelector(`[${ATTRIBUTES["data-slider"]}]`);
     const items = root?.querySelectorAll(`[${ATTRIBUTES["data-slider-item"]}]`);
@@ -81,10 +81,10 @@ const setup = ({ rootId, scroll, interval, infinite }: Props) => {
         const pageIndex = Math.floor(indices[indices.length - 1] / itemsPerPage);
         //goToItem(isShowingFirst ? items.length - 1 : (pageIndex - 1) * itemsPerPage);
         if (itemsPerPage > 2) {
-            goToItem(isShowingFirst ? items.length - 1 : indices[0] - 1);
+            goToItem(indices[0] - 1);
         }
         else {
-            goToItem(isShowingFirst ? items.length - 1 : (pageIndex - 1) * itemsPerPage);
+            goToItem((pageIndex - 1) * itemsPerPage);
         }
     };
     const onClickNext = () => {
@@ -95,12 +95,27 @@ const setup = ({ rootId, scroll, interval, infinite }: Props) => {
         const pageIndex = Math.floor(indices[0] / itemsPerPage);
         //goToItem(isShowingLast ? 0 : (pageIndex + 1) * itemsPerPage);
         if (itemsPerPage > 2) {
-            goToItem(isShowingLast ? 0 : indices[itemsPerPage - 2]);
+            goToItem(indices[itemsPerPage - 2]);
         }
         else {
-            goToItem(isShowingLast ? 0 : (pageIndex + 1) * itemsPerPage);
+            goToItem((pageIndex + 1) * itemsPerPage);
         }
     };
+
+    const intervalNextItem = () => {
+        const indices = getElementsInsideContainer();
+        // Wow! items per page is how many elements are being displayed inside the container!!
+        const itemsPerPage = indices.length;
+        const isShowingLast = indices[indices.length - 1] === items.length - 1;
+        const pageIndex = Math.floor(indices[0] / itemsPerPage);
+        goToItem(isShowingLast ? 0 : (pageIndex + 1) * itemsPerPage);
+        // if (itemsPerPage > 2) {
+        //   goToItem(isShowingLast ? 0 : indices[itemsPerPage - 2]);
+        // } else {
+        //   goToItem(isShowingLast ? 0 : (pageIndex + 1) * itemsPerPage);
+        // }
+    };
+
     const observer = new IntersectionObserver((elements) => elements.forEach((item) => {
         const index = Number(item.target.getAttribute("data-slider-item")) || 0;
         const dot = dots?.item(index);
@@ -137,7 +152,7 @@ const setup = ({ rootId, scroll, interval, infinite }: Props) => {
     next?.addEventListener("click", onClickNext);
     let timeout: number | undefined;
     function startInterval() {
-        timeout = interval && setInterval(onClickNext, interval);
+        timeout = interval && setInterval(intervalNextItem, interval);
     }
     startInterval();
     function resetInterval() {
@@ -157,10 +172,10 @@ const setup = ({ rootId, scroll, interval, infinite }: Props) => {
 };
 function Slider({ rootId, scroll = "smooth", interval, infinite = false, ...props }: JSX.IntrinsicElements["ul"] & Props) {
     return (<>
-      <ul data-slider {...props}/>
-      <script type="module" dangerouslySetInnerHTML={{
+        <ul data-slider {...props} />
+        <script type="module" dangerouslySetInnerHTML={{
             __html: useScript(setup, { rootId, scroll, interval, infinite }),
-        }}/>
+        }} />
     </>);
 }
 function Dot({ index, children }: {
@@ -168,19 +183,19 @@ function Dot({ index, children }: {
     children: ComponentChildren;
 }) {
     return (<button data-dot={index} aria-label={`go to slider item ${index}`} class="focus:outline-none group">
-      {children}
+        {children}
     </button>);
 }
 function Item({ index, ...props }: JSX.IntrinsicElements["li"] & {
     index: number;
 }) {
-    return <li data-slider-item={index} {...props}/>;
+    return <li data-slider-item={index} {...props} />;
 }
 function NextButton(props: JSX.IntrinsicElements["button"]) {
-    return <button data-slide="next" aria-label="Next item" {...props}/>;
+    return <button data-slide="next" aria-label="Next item" {...props} />;
 }
 function PrevButton(props: JSX.IntrinsicElements["button"]) {
-    return <button data-slide="prev" aria-label="Previous item" {...props}/>;
+    return <button data-slide="prev" aria-label="Previous item" {...props} />;
 }
 Slider.Dot = Dot;
 Slider.Item = Item;

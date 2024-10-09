@@ -23,10 +23,7 @@ export default defineApp(async (_req, ctx) => {
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-      <style dangerouslySetInnerHTML={{
-        __html: `html {
-          scroll-behavior: smooth;
-      }`}} />
+
     </Head>
 
     {/* Rest of Preact tree */}
@@ -41,27 +38,5 @@ export default defineApp(async (_req, ctx) => {
       AOS.init({startEvent: 'load'});
       `}}>
     </script>
-
-    <script dangerouslySetInnerHTML={{
-      __html: `
-    document.addEventListener("DOMContentLoaded", function() {
-    // Função para rolar suavemente até o elemento alvo
-    function scrollToHash() {
-        const hash = window.location.hash;
-        if (hash) {
-            const targetElement = document.querySelector(hash);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: "smooth"
-                });
-            }
-        }
-    }
-
-    // Chama a função ao carregar a página
-    scrollToHash();
-    });
-    `}} />
   </>);
 });

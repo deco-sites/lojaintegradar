@@ -52,8 +52,7 @@ export default defineApp(async (_req, ctx) => {
             const targetElement = document.querySelector(hash);
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: "smooth"
+                    targetElement.scrollIntoView();
                 });
             }
         }

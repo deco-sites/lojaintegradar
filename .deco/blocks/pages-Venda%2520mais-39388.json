@@ -6460,7 +6460,6 @@
                 "captionColor": "#5F6E82"
               }
             ],
-            "ctaTitle": "Disponível em todos os planos",
             "cta": [
               {
                 "href": "#plans",
@@ -6495,7 +6494,7 @@
             "placement": "right",
             "bulletpoints": {
               "bulletPointsIcon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png"
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
               },
               "items": [
                 "Gestão financeira unificada",
@@ -6601,8 +6600,8 @@
         {
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
-            "title": "Enviali",
-            "caption": "Reduza os custos e a complexidade da sua operação logística e venda mais",
+            "title": "Reduza seus custos com frete e aumente suas vendas",
+            "caption": "Ofereça fretes mais competitivos com o Enviali",
             "bigNumbers": [
               {
                 "text": "Fretes 70%  ",
@@ -6623,7 +6622,6 @@
                 "captionColor": "#5F6E82"
               }
             ],
-            "ctaTitle": "Tenha acesso a tabelas de preço mais competitivas com os Correios e com a transportadora Jadlog e aumente sua conversão. Os melhores valores de frete já negociados pelo Enviali para você vender mais. Disponível em todos os planos",
             "cta": [
               {
                 "href": "#plans",
@@ -6658,7 +6656,8 @@
             },
             "titleColor": "#371E55",
             "captionColor": "#371E55",
-            "textBelowColor": "#5F6E82"
+            "textBelowColor": "#5F6E82",
+            "description": "Acesse as tabelas de frete mais vantajosas com Correios e Jadlog, negociadas pelo Enviali para maximizar suas conversões. Disponível em todos os planos."
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

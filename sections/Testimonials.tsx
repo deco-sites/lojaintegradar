@@ -19,7 +19,6 @@ const refreshArrowsVisibility = () => {
           if (currentTarget) {
               const carousel = currentTarget.querySelector(".carousel") as HTMLElement;
               const carouselItems = currentTarget.querySelectorAll(".carousel-item") as NodeListOf<Element>;
-              
               const startDistance = carousel.getBoundingClientRect().left - carouselItems[0].getBoundingClientRect().left;
               const endDistance = carouselItems[carouselItems.length - 1].getBoundingClientRect().right - carousel.getBoundingClientRect().right;
               const prevButton = currentTarget.querySelector(".prev-button") as HTMLElement | null | undefined;

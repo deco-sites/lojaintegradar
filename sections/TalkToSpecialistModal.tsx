@@ -8,7 +8,7 @@ const closeTalkToSpecialist = () => {
 export default function TalkToSpecialistModal() {
 
     return <div>
-        <div id="talkToSpecialistPopUpForm" class="fixed top-0 left-0 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-[60] talkToSpecialistForm overflow-auto hidden">
+        <div id="talkToSpecialistPopUpForm" class="fixed top-0 left-0 px-12 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-[60] talkToSpecialistForm overflow-auto hidden">
             <div class="max-w-[550px] min-h-[600px] bg-primary-content rounded-xl lg:p-12 animate-pop-up relative pt-12" style={{animationDuration: "0.3s"}}>
                 <button class="text-[#371E55] font-black p-2.5 absolute top-2 right-2" hx-on:click={useScript(closeTalkToSpecialist)}>X</button>
                 <div dangerouslySetInnerHTML={{

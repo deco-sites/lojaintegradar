@@ -196,7 +196,7 @@ export default function Header2({ logo = {
           <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, navigation) }} />
 
           <a href="/" class="min-w-32 h-5 md:min-w-64 md:h-10">
-            <Image src={logo.src || ""} width={257} height={40} alt={logo.alt} class="h-full w-full" />
+            <Image src={logo.src || ""} width={257} height={40} alt={logo.alt || "header logo"} class="h-full w-full" />
           </a>
 
           {/* <div class="hidden items-center justify-between lg:flex w-full"> */}
@@ -297,7 +297,7 @@ export default function Header2({ logo = {
             </ul>
 
             <ul class="menu carousel px-8">
-              <div class="flex flex-col">
+              <ul class="flex flex-col">
 
                 {navigation?.links.map((link) => (<li class="border-b border-neutral last:border-none" style={{ borderColor: navigation.linksBorderColor }} hx-on={`mouseleave: this.children[0].style.color='${navigation.textColor}'`} >
                   <a href={link.url} aria-label={link.label} class="text-primary hover:text-accent hover:bg-transparent  text-base font-semibold flex justify-between py-6 rounded-none" style={{ color: navigation.textColor }} hx-on={`mouseenter: this.style.color='${navigation.textHoverColor}'`} >
@@ -309,7 +309,7 @@ export default function Header2({ logo = {
                     </div>
                   </a>
                 </li>))}
-              </div>
+              </ul>
             </ul>
 
           </div>

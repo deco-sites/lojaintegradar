@@ -7,6 +7,8 @@ export interface Logo {
   src?: ImageWidget;
   /** @description text alternative */
   altText?: string;
+  width?: number;
+  height?: number;
 }
 export interface Props {
   title?: string;
@@ -26,7 +28,7 @@ export default function Logos({ title, caption, logos = IMG_PLACEHODLER, titleCo
   const slideContent = (<div id="logosSliderContent" class="flex items-center gap-7 md:gap-16">
     {logos?.map((logo) => {
       return (<AnimateOnShow animation="animate-fade-up" divClass="w-28 md:w-[156px]">
-        <Image src={logo.src || ""} alt={logo.altText || ""} width={300} class="h-full w-full object-contain" />
+        <Image src={logo.src || ""} alt={logo.altText || ""} width={logo.width || 300} height={logo.height || 100} class="h-full w-full object-contain" />
       </AnimateOnShow>);
     })}
   </div>);

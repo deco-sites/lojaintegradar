@@ -22,7 +22,6 @@ const refreshArrowsVisibility = () => {
               
               const startDistance = carousel.getBoundingClientRect().left - carouselItems[0].getBoundingClientRect().left;
               const endDistance = carouselItems[carouselItems.length - 1].getBoundingClientRect().right - carousel.getBoundingClientRect().right;
-              console.log(endDistance);
               const prevButton = currentTarget.querySelector(".prev-button") as HTMLElement | null | undefined;
               const nextButton = currentTarget.querySelector(".next-button") as HTMLElement | null | undefined;
   
@@ -51,6 +50,8 @@ export interface Content {
   avatar?: ImageWidget;
   /** @description Image's alt text */
   alt?: string;
+  avatarWidth?: number;
+  avatarHeight?: number;
   /** @format color-input */
   avaterBorderColor?: string;
   name?: HTMLWidget;
@@ -63,7 +64,7 @@ export interface Content {
   quoteIconColor?: string;
 }
 
-/** @title {{content.name}} */
+/** @title {{content.alt}} */
 export interface Testimonial {
   content?: Content;
 }
@@ -156,7 +157,7 @@ function SliderItem({ slide, id }: {
       </div>
       <div class="flex gap-4 md:gap-5 mt-5 md:mt-11 bg-secondary-content px-6 md:pl-12 md:pr-7 min-h-[86px]" style={{ backgroundColor: content?.nameBackgroundColor }}>
         <div class="h-[72px] md:h-24 w-[72px] md:w-24 min-w-[72px] bg-primary-content rounded-full overflow-hidden mt-[-14px] md:mt-[-26px] border border-secondary-content" style={{ borderColor: content?.avaterBorderColor }}>
-          <Image class="object-contain h-full" alt={content?.alt} src={content?.avatar || ""} width={97} />
+          <Image class="object-contain h-full" alt={content?.alt} src={content?.avatar || ""} width={content?.avatarWidth || 188} height={content?.avatarHeight || 68} />
         </div>
         <div class="flex flex-col">
           <div class="mt-5 flex items-center gap-1">

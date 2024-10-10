@@ -113,6 +113,8 @@ function SliderItem({ slide, id }: {
     id: string;
 }) {
     const { title, image, bulletPoints, video, use = 'image', titleColor } = slide;
+    const leftColumnBulletPoints = bulletPoints?.items?.filter((_item, index) => index % 2 == 0);
+    const rightColumnBulletPoints = bulletPoints?.items?.filter((_item, index) => index % 2 != 0);
     return (<AnimateOnShow animation="animate-fade-in" delay={150}>
         <div id={id} class="relative flex flex-col md:flex-row gap-[84px] md:gap-10 w-full min-h-[292px]">
             <div class="max-w-[730px] flex-grow bg-primary-content bg-opacity-30 rounded-[30px] flex items-center overflow-hidden">
@@ -126,9 +128,25 @@ function SliderItem({ slide, id }: {
             </div>
 
             <div class="flex flex-col gap-7 md:max-w-[396px]">
-                <h2 class="text-primary text-xl md:text-[40px] font-bold leading-[120%]" style={{ color: titleColor }}>{title}</h2>
-                <div class="flex flex-wrap gap-1 md:flex-col justify-between">
-                    {bulletPoints?.items?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] w-5/12 md:w-auto">
+                <h2 class="text-primary text-xl md:text-[40px] font-bold leading-[120%] flex" style={{ color: titleColor }}>{title}</h2>
+                {/* mobile bullet points div */}
+                <div class="flex gap-1 justify-between lg:hidden">
+                    <div class="flex flex-col  w-5/12 lg:w-auto">
+                        {leftColumnBulletPoints?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] w-full">
+                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain" /></div>}
+                            <p class="text-sm md:text-lg font-normal" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
+                        </div>))}
+                    </div>
+                    <div class="flex flex-col  w-5/12 lg:w-auto">
+                        {rightColumnBulletPoints?.map((bulletPoint) => ( <div class="flex gap-[15px] md:gap-5 mt-[10px] w-full">
+                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain" /></div>}
+                            <p class="text-sm md:text-lg font-normal" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
+                        </div>))}
+                    </div>
+                </div>
+                {/* desktop bullet points div */}
+                <div>
+                    {bulletPoints?.items?.map((bulletPoint) => (<div class="hidden lg:flex gap-[15px] md:gap-5 mt-[10px] w-5/12 md:w-auto">
                         {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain" /></div>}
                         <p class="text-sm md:text-lg font-semibold" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
                     </div>))}

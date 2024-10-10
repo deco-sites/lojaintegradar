@@ -35,6 +35,11 @@ interface Card {
      */
     videoOn?: boolean;
     /**
+* @title Texto botão de vídeo
+* @description Insira o texto desejado par o botão de vídeo
+*/
+    videoText?: string;
+    /**
      * @title URL do vídeo
      * @description É importante que a URL do vídeo seja a versão EMBED
      */
@@ -152,7 +157,7 @@ function HeroInfo({ title, cards }: Props) {
                                             strokeWidth={3}
                                         />{" "}
                                         <span class="text-[#22454B] font-bold text-[17px] text-center">
-                                            Como ativar
+                                            {card.videoText}
                                         </span>
                                     </button>
                                     }

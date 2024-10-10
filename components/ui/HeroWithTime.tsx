@@ -165,7 +165,7 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
                                                         strokeWidth={3}
                                                     />{" "}
                                                     <span class="text-[#22454B] font-bold text-[17px] text-center">
-                                                        Ver demo
+                                                        {tab.videoText}
                                                     </span>
                                                 </button>
                                             )}

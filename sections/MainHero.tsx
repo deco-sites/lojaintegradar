@@ -237,7 +237,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             `
         }} />
 
-        <div id={modalId} class="fixed top-0 left-0 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-[60] overflow-auto hidden">            
+        <div id={modalId} class="fixed top-0 left-0 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-[60] overflow-auto hidden px-12">            
             <div class="max-w-[700px] bg-primary-content lg:rounded-[30px] p-7 lg:p-12 animate-pop-up relative pt-12" style={{animationDuration: "0.3s"}}>
                 <button class="text-primary font-black p-2.5 absolute top-2.5 right-[19px]" hx-on:click={useScript(closeModal, modalId)}>
                     <svg width="20" height="20" viewBox="0 0 19 19" class="text-primary fill-current" style={{color: modal?.titleColor}} xmlns="http://www.w3.org/2000/svg">

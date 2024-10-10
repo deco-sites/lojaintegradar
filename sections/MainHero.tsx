@@ -81,6 +81,8 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             // style={{ objectPosition: "top right" }}
             alt={backgroundImage?.alt || "background image"}
             src={backgroundImage.src}
+            loading={"eager"}
+            preload={true}
         />}
         <div class="flex-grow flex justify-center xl:justify-end items-center w-full xl:w-1/2 px-7 md:px-0 border-base">
             <script dangerouslySetInnerHTML={{__html: useScript(openModal, modalId)}} />

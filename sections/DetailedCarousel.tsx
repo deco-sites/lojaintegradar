@@ -126,7 +126,7 @@ function SliderItem({ slide, id }: {
             </div>
 
             <div class="flex flex-col gap-7 md:max-w-[396px]">
-                <h2 class="text-primary text-xl text-center md:text-[40px] font-bold leading-[120%]" style={{ color: titleColor }}>{title}</h2>
+                <h2 class="text-primary text-xl md:text-[40px] font-bold leading-[120%]" style={{ color: titleColor }}>{title}</h2>
                 <div class="flex flex-wrap gap-1 md:flex-col justify-between">
                     {bulletPoints?.items?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] w-5/12 md:w-auto">
                         {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain" /></div>}

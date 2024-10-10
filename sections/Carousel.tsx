@@ -20,7 +20,6 @@ const refreshArrowsVisibility = () => {
                 
                 const startDistance = carousel.getBoundingClientRect().left - carouselItems[0].getBoundingClientRect().left;
                 const endDistance = carouselItems[carouselItems.length - 1].getBoundingClientRect().right - carousel.getBoundingClientRect().right;
-                console.log(endDistance);
                 const prevButton = currentTarget.querySelector(".prev-button") as HTMLElement | null | undefined;
                 const nextButton = currentTarget.querySelector(".next-button") as HTMLElement | null | undefined;
     

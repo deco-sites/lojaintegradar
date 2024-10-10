@@ -20,7 +20,6 @@ const refreshArrowsVisibility = () => {
                 
                 const startDistance = carousel.getBoundingClientRect().left - carouselItems[0].getBoundingClientRect().left;
                 const endDistance = carouselItems[carouselItems.length - 1].getBoundingClientRect().right - carousel.getBoundingClientRect().right;
-                console.log(endDistance);
                 const prevButton = currentTarget.querySelector(".prev-button") as HTMLElement | null | undefined;
                 const nextButton = currentTarget.querySelector(".next-button") as HTMLElement | null | undefined;
     
@@ -99,6 +98,7 @@ export interface Props {
      * @description show dots to navigate through the images
      */
     dots?: boolean;
+    dotsProgressBarPlacement?: "above" | "below";
     /** @format color-input */
     dotsColor?: string;
     /**
@@ -114,6 +114,8 @@ function SliderItem({ slide, id }: {
     id: string;
 }) {
     const { title, image, bulletPoints, video, use = 'image', titleColor } = slide;
+    const leftColumnBulletPoints = bulletPoints?.items?.filter((_item, index) => index % 2 == 0);
+    const rightColumnBulletPoints = bulletPoints?.items?.filter((_item, index) => index % 2 != 0);
     return (<AnimateOnShow animation="animate-fade-in" delay={150}>
         <div id={id} class="relative flex flex-col md:flex-row gap-[84px] md:gap-10 w-full min-h-[292px]">
             <div class="max-w-[730px] flex-grow bg-primary-content bg-opacity-30 rounded-[30px] flex items-center overflow-hidden">
@@ -127,9 +129,25 @@ function SliderItem({ slide, id }: {
             </div>
 
             <div class="flex flex-col gap-7 md:max-w-[396px]">
-                <h2 class="text-primary text-xl text-center md:text-[40px] font-bold leading-[120%]" style={{ color: titleColor }}>{title}</h2>
-                <div class="flex flex-wrap gap-1 md:flex-col justify-between">
-                    {bulletPoints?.items?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] w-5/12 md:w-auto">
+                <h2 class="text-primary text-xl md:text-[40px] font-bold leading-[120%] flex" style={{ color: titleColor }}>{title}</h2>
+                {/* mobile bullet points div */}
+                <div class="flex gap-1 justify-between lg:hidden">
+                    <div class="flex flex-col  w-5/12 lg:w-auto">
+                        {leftColumnBulletPoints?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] w-full">
+                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain" /></div>}
+                            <p class="text-sm md:text-lg font-normal" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
+                        </div>))}
+                    </div>
+                    <div class="flex flex-col  w-5/12 lg:w-auto">
+                        {rightColumnBulletPoints?.map((bulletPoint) => ( <div class="flex gap-[15px] md:gap-5 mt-[10px] w-full">
+                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain" /></div>}
+                            <p class="text-sm md:text-lg font-normal" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
+                        </div>))}
+                    </div>
+                </div>
+                {/* desktop bullet points div */}
+                <div>
+                    {bulletPoints?.items?.map((bulletPoint) => (<div class="hidden lg:flex gap-[15px] md:gap-5 mt-[10px] w-5/12 md:w-auto">
                         {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain" /></div>}
                         <p class="text-sm md:text-lg font-semibold" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
                     </div>))}
@@ -138,7 +156,7 @@ function SliderItem({ slide, id }: {
         </div>
     </AnimateOnShow>);
 }
-function Dots({ slides, interval = 0, dotsColor }: Props) {
+function Dots({ slides, interval = 0, dotsColor, dotsProgressBarPlacement = "below"}: Props) {
     return (<>
         <style dangerouslySetInnerHTML={{
             __html: `
@@ -154,9 +172,9 @@ function Dots({ slides, interval = 0, dotsColor }: Props) {
                 <ul class="flex gap-1 md:gap-6 z-10">
                     {slides?.map((slide, index) => (<li class="w-11 md:w-auto">
                         <Slider.Dot index={index}>
-                            <div class="py-5 h-full">
+                            <div class={`py-5 h-full flex ${dotsProgressBarPlacement == "above" ? 'flex-col-reverse' : 'flex-col'}`}>
                                 <div class="h-0 w-11 opacity-0 md:opacity-100 md:h-auto md:w-auto">
-                                    <p class="text-lg text-primary font-semibold opacity-30 group-disabled:opacity-100" style={{ color: dotsColor }}>{slide.title}</p>
+                                    <p class="text-lg text-primary text-left font-semibold opacity-30 group-disabled:opacity-100" style={{ color: dotsColor }}>{slide.title}</p>
                                 </div>
                                 <div class="h-1 mt-2 rounded-full dot overflow-hidden bg-accent-content" style={{ backgroundColor: '#A1ABBC' }}>
                                     <div class="h-full w-0 bg-primary group-disabled:animate-progress" style={{ animationDuration: `${interval}s`, backgroundColor: dotsColor }} />
@@ -189,7 +207,7 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
 }
 function Carousel(props: Props) {
     const id = useId();
-    const { title, slides, interval, backgroundImage, cta, titleColor, arrowsColor, dotsColor } = { ...props };
+    const { title, slides, interval, backgroundImage, cta, titleColor, arrowsColor, dotsColor, dotsProgressBarPlacement } = { ...props };
     return (<div id="detailedCarousel" class="relative mt-16">
         {backgroundImage && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={1440} height={1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-fill" /></div>}
         <div id={id} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
@@ -203,7 +221,7 @@ function Carousel(props: Props) {
                     {props.arrows && <Buttons arrowsColor={arrowsColor} />}
                 </div>
             </div>
-            {props.dots && <Dots slides={slides} interval={interval} dotsColor={dotsColor} />}{" "}
+            {props.dots && <Dots slides={slides} interval={interval} dotsColor={dotsColor}  dotsProgressBarPlacement={dotsProgressBarPlacement} />}{" "}
 
             <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-0 md:py-9 md:px-9" rootId={id} interval={interval && interval * 1e3} infinite>
                 {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full">

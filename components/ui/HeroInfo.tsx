@@ -143,7 +143,7 @@ function HeroInfo({ title, cards }: Props) {
                                 <div class="flex items-center gap-4 flex-wrap">
                                     {" "}
                                     {card.videoOn && <button
-                                        class="bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 flex items-center gap-[18px] h-[48px]"
+                                        class="bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 pr-[18px] flex items-center gap-[18px] h-[48px]"
                                         onClick={() => {
                                             setCurrentVideoUrl(card.videoUrl || "");
                                             openModal();

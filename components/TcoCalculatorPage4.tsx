@@ -29,6 +29,8 @@ const sendWhatsapp = (rootId: string) => {
 export interface IImage {
     src: ImageWidget;
     alt?: string;
+    width?: number;
+    height?: number;
 }
 /** @title {{title}} */
 export interface IBenefit {
@@ -242,21 +244,21 @@ function TcoCalculatorPage4({ page1, rootId, page4 }: {
                         <div class="flex flex-col gap-y-5">
                             <div id={rootId + "negativeScreenExtraBenefit1"} class="relative max-w-[226px] min-h-[125px] px-2 py-5 hidden">
                                 <p class="text-center text-sm font-semibold relative z-10" style={{color: negativeScreenExtraBenefit1.textColor}}>{negativeScreenExtraBenefit1.text}</p>
-                                {negativeScreenExtraBenefit1.image && <Image src={negativeScreenExtraBenefit1.image.src} alt={negativeScreenExtraBenefit1.image.alt || "background"} width={226} class="h-full w-full object-fill absolute top-0 left-0"/>}
+                                {negativeScreenExtraBenefit1.image && <Image src={negativeScreenExtraBenefit1.image.src} alt={negativeScreenExtraBenefit1.image.alt || "background"} width={negativeScreenExtraBenefit1.image.width || 226} height={negativeScreenExtraBenefit1.image.height || 125} class="h-full w-full object-fill absolute top-0 left-0"/>}
                             </div>
                             <div class="relative max-w-[226px] min-h-[238px] px-2 py-5">
                                 <p class="text-center text-sm font-semibold relative z-10" style={{color: benefit1.textColor}}>{benefit1.text}</p>
-                                {benefit1.image && <Image src={benefit1.image.src} alt={benefit1.image.alt || "background"} width={226} class="h-full w-full object-fill absolute top-0 left-0"/>}
+                                {benefit1.image && <Image src={benefit1.image.src} alt={benefit1.image.alt || "background"} width={benefit1.image.width || 226} height={benefit1.image.height || 238} class="h-full w-full object-fill absolute top-0 left-0"/>}
                             </div>
                         </div>
                         <div class="flex flex-col justify-end gap-y-5">
                             <div class="relative max-w-[140px] min-h-[163px] px-2 py-5">
                                 <p class="text-center text-sm font-semibold relative z-10" style={{color: benefit2.textColor}}>{benefit2.text}</p>
-                                {benefit2.image && <Image src={benefit2.image.src} alt={benefit2.image.alt || "background"} width={140} class="h-full w-full object-fill absolute top-0 left-0"/>}
+                                {benefit2.image && <Image src={benefit2.image.src} alt={benefit2.image.alt || "background"} width={benefit2.image.width || 140} height={benefit2.image.height || 163} class="h-full w-full object-fill absolute top-0 left-0"/>}
                             </div>
                             <div id={rootId + "negativeScreenExtraBenefit2"} class="relative max-w-[140px] min-h-[191px] h-full px-2 py-5 hidden">
                                 <p class="text-center text-sm font-semibold relative z-10" style={{color: negativeScreenExtraBenefit2.textColor}}>{negativeScreenExtraBenefit2.text}</p>
-                                {negativeScreenExtraBenefit2.image && <Image src={negativeScreenExtraBenefit2.image.src} alt={negativeScreenExtraBenefit2.image.alt || "background"} width={140} class="h-full w-full object-fill absolute top-0 left-0"/>}
+                                {negativeScreenExtraBenefit2.image && <Image src={negativeScreenExtraBenefit2.image.src} alt={negativeScreenExtraBenefit2.image.alt || "background"} width={negativeScreenExtraBenefit2.image.width || 140} height={negativeScreenExtraBenefit2.image.height || 191} class="h-full w-full object-fill absolute top-0 left-0"/>}
                             </div>
                         </div>
                     </div>

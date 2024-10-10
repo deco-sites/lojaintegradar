@@ -119,16 +119,16 @@ export interface Navigation {
   links: Link[];
   /** @format color-input */
   linksBorderColor?: string;
+  /** @format color-input */
+  textColor?: string;
+  /** @format color-input */
+  textHoverColor?: string;
   createStoreCta?: CreateStoreWithPlanCTA;
   buttons: CTA[];
   createStoreCtaMobile?: CreateStoreWithPlanCTA;
   createStoreCtaMobileOnScrollColors?: CTAColors;
   mobileButtons: CTA[];
   asideMenuButtons?: CTA[];
-  /** @format color-input */
-  textColor?: string;
-  /** @format color-input */
-  textHoverColor?: string;
 }
 
 export interface Nav {

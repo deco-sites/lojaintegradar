@@ -468,9 +468,14 @@
             "heightDesktop": 665
           },
           "highlight": true,
-          "videoOn": true,
+          "videoOn": false,
           "button": {},
-          "buttons": [],
+          "buttons": [
+            {
+              "type": "one",
+              "text": "Quero testar"
+            }
+          ],
           "videoUrl": "https://www.youtube.com/embed/ZvQAJpnLPTU?si=UY-JwQhELVBXsMmN",
           "videoText": "Como ativar"
         }

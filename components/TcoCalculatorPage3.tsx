@@ -6,7 +6,7 @@ import { Plan } from "site/sections/TcoCalculator.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { Benefit } from "site/components/TcoCalculatorPage1.tsx";
 
-const moneyInputOnKeyUp = () => {
+const moneyInputOnKeyUp = (inputsBorderColor?: string) => {
     const element = event!.currentTarget as HTMLInputElement;
     let valor = element.value;
     valor = valor.replace(/[^\d,]/g, ""); // Remove todos os caracteres não numéricos e não vírgula
@@ -18,8 +18,12 @@ const moneyInputOnKeyUp = () => {
     element.value = "R$ " + valor;
     if (element.value.toLowerCase().includes('nan') || element.value.length == 3)
         element.value = "";
+
+    //limpa mensagem de erro
+    element.parentElement?.querySelector(".text-error")?.classList.add("hidden");
+    element.style.borderColor = inputsBorderColor || "#371E55";
 };
-const percentageInputOnKeyUp = () => {
+const percentageInputOnKeyUp = (inputsBorderColor?: string) => {
     const element = event!.currentTarget as HTMLInputElement;
     const keyEvent = event as KeyboardEvent;
     let valor = element.value;
@@ -32,33 +36,19 @@ const percentageInputOnKeyUp = () => {
     element.value = valor + "%"; // Adiciona o símbolo de porcentagem
     if (element.value == "%")
         element.value = "";
+
+    //limpa mensagem de erro
+    element.parentElement?.querySelector(".text-error")?.classList.add("hidden");
+    element.style.borderColor = inputsBorderColor || "#371E55";
 };
-const onClickNext = (rootId: string, plans: Plan[]) => {
+const onClickNext = (rootId: string, plans: Plan[], inputsErrorMessageColor?: string) => {
     const parent = document.getElementById(rootId);
-    let negativeResult = false;
+    const form = parent?.querySelector(".page3form");
+    const fields = form?.querySelectorAll("label");
     event?.preventDefault();
-    if (parent) {
-        Array.from(parent.children)[2].classList.add("hidden");
-        Array.from(parent.children)[3].classList.remove("hidden");
-    }
-    const moneyToNumber = (value: string): number => parseFloat(value.replace('R$', '').replace(/\./g, '').replace(',', '.').trim());
-    const percentToNumber = (value: string): number => parseFloat(value.replace('%', '').replace(',', '.').trim());
-    //pega os valores digitados pelo usuario
-    const emailInput = (parent?.querySelector("#" + rootId + 'emailInput') as HTMLInputElement).value;
-    const currentPlatformInput = (parent?.querySelector("#" + rootId + 'currentPlatformInput') as HTMLSelectElement).value;
-    const montlyFeeInput = (parent?.querySelector("#" + rootId + 'montlyFeeInput') as HTMLInputElement).value;
-    const comissionInput = (parent?.querySelector("#" + rootId + "comissionInput") as HTMLInputElement).value;
-    const gmvInput = (parent?.querySelector("#" + rootId + "gmvInput") as HTMLInputElement).value;
-    const cardShareInput = (parent?.querySelector("#" + rootId + "cardShareInput") as HTMLInputElement).value;
-    const cardFeeInput = (parent?.querySelector("#" + rootId + "cardFeeInput") as HTMLInputElement).value;
-    const boletoShareInput = (parent?.querySelector("#" + rootId + "boletoShareInput") as HTMLInputElement).value;
-    const boletoFeeInput = (parent?.querySelector("#" + rootId + "boletoFeeInput") as HTMLInputElement).value;
-    const montlyOrdersInput = (parent?.querySelector("#" + rootId + "montlyOrdersInput") as HTMLInputElement).value;
-    const pixShareInput = (parent?.querySelector("#" + rootId + "pixShareInput") as HTMLInputElement).value;
-    const pixFeeInput = (parent?.querySelector("#" + rootId + "pixFeeInput") as HTMLInputElement).value;
-    // console.log("gmvInput="+gmvInput);
-    // console.log("cardShareInput="+cardShareInput);
-    // console.log("cardFeeInput="+cardFeeInput);
+    let validated = true;
+    let negativeResult = false;
+
     function calculateTco(montlyFee: number, gmv: number, comission: number, MontlyOrders: number, cardShare: number, cardFee: number, boletoShare: number, boletoFee: number, pixShare: number, pixFee: number) {
         const platformTotal = montlyFee + (gmv * comission / 100);
         const cardShareGmv = cardShare * gmv / 100;
@@ -71,98 +61,137 @@ const onClickNext = (rootId: string, plans: Plan[]) => {
         const totalMoney = totalPaymentMoney + platformTotal;
         return { platformTotal, cardFeeMoney, boletoFeeMoney, pixFeeMoney, totalPaymentMoney, totalMoney, totalTco: totalMoney / gmv * 100 };
     }
-    //calcula o tco da plataforma atual do usuario
-    const currentPlatformTco = calculateTco(moneyToNumber(montlyFeeInput), moneyToNumber(gmvInput), percentToNumber(comissionInput), Number(montlyOrdersInput), percentToNumber(cardShareInput), percentToNumber(cardFeeInput), percentToNumber(boletoShareInput), moneyToNumber(boletoFeeInput), percentToNumber(pixShareInput), percentToNumber(pixFeeInput));
-    // console.log("monteyToNumberGmv="+moneyToNumber(gmvInput));
-    // console.log("percentageToNumberCardShare="+percentToNumber(cardShareInput));
-    // console.log("moneyToNumberCardFee="+moneyToNumber(cardFeeInput));
-    //manda o resultado do calculo tco da plataforma atual do cliente para a última página
-    (parent?.querySelector("#" + rootId + 'currentPlatform') as HTMLElement).textContent = currentPlatformInput;
-    (parent?.querySelector("#" + rootId + 'montlyFee') as HTMLElement).textContent = montlyFeeInput;
-    (parent?.querySelector("#" + rootId + 'comission') as HTMLElement).textContent = comissionInput;
-    (parent?.querySelector("#" + rootId + 'platformTotal') as HTMLElement).textContent = currentPlatformTco.platformTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + "cardFeeMoney") as HTMLElement).textContent = currentPlatformTco.cardFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + "boletoFeeMoney") as HTMLElement).textContent = currentPlatformTco.boletoFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + "pixFeeMoney") as HTMLElement).textContent = currentPlatformTco.pixFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + "totalPaymentMoney") as HTMLElement).textContent = currentPlatformTco.totalPaymentMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + "totalMoney") as HTMLElement).textContent = currentPlatformTco.totalMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + "totalTco") as HTMLElement).textContent = (currentPlatformTco.totalTco.toFixed(2) + "%").toString().replace(".", ",");
-    //calcula o tco dos planos da loja integrada
-    plans.sort((a, b) => a.montlyFee - b.montlyFee);
-    const plansTco = plans.map((plan) => calculateTco(plan.montlyFee, moneyToNumber(gmvInput), plan.comission, Number(montlyOrdersInput), percentToNumber(cardShareInput), percentToNumber(cardFeeInput), percentToNumber(boletoShareInput), plan.boletoFee, percentToNumber(pixShareInput), plan.pixFee));
-    //calcula quanto economisa com cada plano
-    const savings = plansTco.map((plan) => currentPlatformTco.totalMoney - plan.totalMoney);
-    //escolhe o plano indicado
-    let indicatedPlan = 0;
-    for (let i = 0; i < plans.length; i++) {
-        if (plans[i].montlyFee <= moneyToNumber(montlyFeeInput)) {
-            indicatedPlan = i;
+
+    //checa se todos os campos foram preenchidos
+    fields?.forEach((field) => {
+        const input = field.querySelector("input");
+        if (input && input.value == "") {
+             validated = false;
+            field.querySelector(".text-error")?.classList.remove("hidden"); //mostra mensagem de erro
+            input.style.borderColor = inputsErrorMessageColor || "#F57E77";
         }
+     });
+
+    //se todos os campos foram preenchidos manda para a proxima pagina e realiza o calculo
+    if (validated) {
+        if (parent) {
+            Array.from(parent.children)[2].classList.add("hidden");
+            Array.from(parent.children)[3].classList.remove("hidden");
+        }
+        const moneyToNumber = (value: string): number => parseFloat(value.replace('R$', '').replace(/\./g, '').replace(',', '.').trim());
+        const percentToNumber = (value: string): number => parseFloat(value.replace('%', '').replace(',', '.').trim());
+        //pega os valores digitados pelo usuario
+        const emailInput = (parent?.querySelector("#" + rootId + 'emailInput') as HTMLInputElement).value;
+        const currentPlatformInput = (parent?.querySelector("#" + rootId + 'currentPlatformInput') as HTMLSelectElement).value;
+        const montlyFeeInput = (parent?.querySelector("#" + rootId + 'montlyFeeInput') as HTMLInputElement).value;
+        const comissionInput = (parent?.querySelector("#" + rootId + "comissionInput") as HTMLInputElement).value;
+        const gmvInput = (parent?.querySelector("#" + rootId + "gmvInput") as HTMLInputElement).value;
+        const cardShareInput = (parent?.querySelector("#" + rootId + "cardShareInput") as HTMLInputElement).value;
+        const cardFeeInput = (parent?.querySelector("#" + rootId + "cardFeeInput") as HTMLInputElement).value;
+        const boletoShareInput = (parent?.querySelector("#" + rootId + "boletoShareInput") as HTMLInputElement).value;
+        const boletoFeeInput = (parent?.querySelector("#" + rootId + "boletoFeeInput") as HTMLInputElement).value;
+        const montlyOrdersInput = (parent?.querySelector("#" + rootId + "montlyOrdersInput") as HTMLInputElement).value;
+        const pixShareInput = (parent?.querySelector("#" + rootId + "pixShareInput") as HTMLInputElement).value;
+        const pixFeeInput = (parent?.querySelector("#" + rootId + "pixFeeInput") as HTMLInputElement).value;
+        // console.log("gmvInput="+gmvInput);
+        // console.log("cardShareInput="+cardShareInput);
+        // console.log("cardFeeInput="+cardFeeInput);
+        
+        //calcula o tco da plataforma atual do usuario
+        const currentPlatformTco = calculateTco(moneyToNumber(montlyFeeInput), moneyToNumber(gmvInput), percentToNumber(comissionInput), Number(montlyOrdersInput), percentToNumber(cardShareInput), percentToNumber(cardFeeInput), percentToNumber(boletoShareInput), moneyToNumber(boletoFeeInput), percentToNumber(pixShareInput), percentToNumber(pixFeeInput));
+        // console.log("monteyToNumberGmv="+moneyToNumber(gmvInput));
+        // console.log("percentageToNumberCardShare="+percentToNumber(cardShareInput));
+        // console.log("moneyToNumberCardFee="+moneyToNumber(cardFeeInput));
+        //manda o resultado do calculo tco da plataforma atual do cliente para a última página
+        (parent?.querySelector("#" + rootId + 'currentPlatform') as HTMLElement).textContent = currentPlatformInput;
+        (parent?.querySelector("#" + rootId + 'montlyFee') as HTMLElement).textContent = montlyFeeInput;
+        (parent?.querySelector("#" + rootId + 'comission') as HTMLElement).textContent = comissionInput;
+        (parent?.querySelector("#" + rootId + 'platformTotal') as HTMLElement).textContent = currentPlatformTco.platformTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + "cardFeeMoney") as HTMLElement).textContent = currentPlatformTco.cardFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + "boletoFeeMoney") as HTMLElement).textContent = currentPlatformTco.boletoFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + "pixFeeMoney") as HTMLElement).textContent = currentPlatformTco.pixFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + "totalPaymentMoney") as HTMLElement).textContent = currentPlatformTco.totalPaymentMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + "totalMoney") as HTMLElement).textContent = currentPlatformTco.totalMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + "totalTco") as HTMLElement).textContent = (currentPlatformTco.totalTco.toFixed(2) + "%").toString().replace(".", ",");
+        //calcula o tco dos planos da loja integrada
+        plans.sort((a, b) => a.montlyFee - b.montlyFee);
+        const plansTco = plans.map((plan) => calculateTco(plan.montlyFee, moneyToNumber(gmvInput), plan.comission, Number(montlyOrdersInput), percentToNumber(cardShareInput), percentToNumber(cardFeeInput), percentToNumber(boletoShareInput), plan.boletoFee, percentToNumber(pixShareInput), plan.pixFee));
+        //calcula quanto economisa com cada plano
+        const savings = plansTco.map((plan) => currentPlatformTco.totalMoney - plan.totalMoney);
+        //escolhe o plano indicado
+        let indicatedPlan = 0;
+        for (let i = 0; i < plans.length; i++) {
+            if (plans[i].montlyFee <= moneyToNumber(montlyFeeInput)) {
+                indicatedPlan = i;
+            }
+        }
+        if (savings[indicatedPlan] <= 0) {
+            negativeResult = true;
+        }
+        const indicatedPlanTco = plansTco[indicatedPlan];
+        //manda o calculo do tco do plano indicado para a última página
+        (parent?.querySelector("#" + rootId + 'montlyFeeIndicatedPlan') as HTMLElement).textContent = plans[indicatedPlan].montlyFee.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + 'comissionIndicatedPlan') as HTMLElement).textContent = (plans[indicatedPlan].comission + "%").replace(".", ",");
+        (parent?.querySelector("#" + rootId + 'platformTotalIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.platformTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + 'cardFeeMoneyIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.cardFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + 'boletoFeeMoneyIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.boletoFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + 'pixFeeMoneyIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.pixFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + 'totalPaymentMoneyIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.totalPaymentMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + 'totalMoneyIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.totalMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        (parent?.querySelector("#" + rootId + 'totalTcoIndicatedPlan') as HTMLElement).textContent = (indicatedPlanTco.totalTco.toFixed(2) + "%").toString().replace(".", ",");
+        //calcula a economia anual com o plano indicado
+        const saving = (currentPlatformTco.totalMoney - indicatedPlanTco.totalMoney) * 12;
+        //manda a economia com o plano indicado para a última página
+        (parent?.querySelector("#" + rootId + "savingAside") as HTMLElement).textContent = saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).split(',')[0];
+        (parent?.querySelector("#" + rootId + "indicatedPlanLabelSaving") as HTMLElement).textContent = saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).split(',')[0];
+        (parent?.querySelector("#" + rootId + "indicatedPlanName") as HTMLElement).textContent = plans[indicatedPlan].title;
+        //caso o plano indicado não ofereça economia transforma a tela final na tela negativa
+        if (negativeResult) {
+            parent?.querySelector("#" + rootId + "resultAsideContentDiv")?.classList.add("flex-col-reverse");
+            parent?.querySelector("#" + rootId + "negativeScreenAsideTitle")?.classList.remove("hidden");
+            parent?.querySelector("#" + rootId + "savingDiv")?.classList.add("hidden");
+            parent?.querySelector("#" + rootId + "currentPlanLabel")?.classList.add("hidden");
+            parent?.querySelector("#" + rootId + "indicatedPlanLabel")?.classList.add("hidden");
+            (parent?.querySelector("#" + rootId + "indicatedPlanLabelSaving")?.parentElement?.parentElement as HTMLElement).classList.add("hidden");
+            parent?.querySelector("#" + rootId + "negativeScreenExtraBenefit1")?.classList.remove("hidden");
+            parent?.querySelector("#" + rootId + "negativeScreenExtraBenefit2")?.classList.remove("hidden");
+            parent?.querySelector("#" + rootId + "negativeScreenAsideTopIcon")?.classList.remove("hidden");
+        }
+        //envia os dados para o hubspot
+        const fields = {
+            email: emailInput,
+            gmv_: gmvInput.replace(/[^\d,]/g, ""), // Remove todos os caracteres não numéricos e não vírgula.
+            plataforma: currentPlatformInput,
+            mensalidade: montlyFeeInput,
+            comissao: comissionInput,
+            pedidos: montlyOrdersInput,
+            share_cartao: cardShareInput,
+            tarifa_cartao: cardFeeInput,
+            share_pix: pixShareInput,
+            tarifa_pix: pixFeeInput,
+            share_boleto: boletoShareInput,
+            tarifa_boleto: boletoFeeInput,
+            tco_atual: currentPlatformTco.totalTco.toFixed(2).toString(),
+            tco_li: plansTco[indicatedPlan].totalTco.toFixed(2).toString(),
+            plano_li: plans[indicatedPlan].title.toString(),
+            economia: saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        };
+    
+        //envia os dados para a hubspot
+        // invoke.site.actions.sendTcoUserData({fields, formGuid: '7ed4157b-6a66-425a-aebd-b66f51c1f0c8', portalId: '7112881'});
+        const hutk = document.cookie.replace(/(?:(?:^|.;\s)hubspotutk\s=\s([^;]).$)|^.*$/, "$1");
+        const context = {
+            "hutk": hutk,
+            "pageUri": window.location.href,
+            "pageName": document.title
+        };
+        fetch('/live/invoke/site/actions/sendTcoUserData.ts', {
+            body: JSON.stringify({ fields, formGuid: '7ed4157b-6a66-425a-aebd-b66f51c1f0c8', portalId: '7112881', context: context }),
+            method: 'POST',
+            headers: { 'content-type': 'application/json' }
+        }).then((r) => r.json()).then((r) => console.log(r));
+
     }
-    if (savings[indicatedPlan] <= 0) {
-        negativeResult = true;
-    }
-    const indicatedPlanTco = plansTco[indicatedPlan];
-    //manda o calculo do tco do plano indicado para a última página
-    (parent?.querySelector("#" + rootId + 'montlyFeeIndicatedPlan') as HTMLElement).textContent = plans[indicatedPlan].montlyFee.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + 'comissionIndicatedPlan') as HTMLElement).textContent = (plans[indicatedPlan].comission + "%").replace(".", ",");
-    (parent?.querySelector("#" + rootId + 'platformTotalIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.platformTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + 'cardFeeMoneyIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.cardFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + 'boletoFeeMoneyIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.boletoFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + 'pixFeeMoneyIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.pixFeeMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + 'totalPaymentMoneyIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.totalPaymentMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + 'totalMoneyIndicatedPlan') as HTMLElement).textContent = indicatedPlanTco.totalMoney.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    (parent?.querySelector("#" + rootId + 'totalTcoIndicatedPlan') as HTMLElement).textContent = (indicatedPlanTco.totalTco.toFixed(2) + "%").toString().replace(".", ",");
-    //calcula a economia anual com o plano indicado
-    const saving = (currentPlatformTco.totalMoney - indicatedPlanTco.totalMoney) * 12;
-    //manda a economia com o plano indicado para a última página
-    (parent?.querySelector("#" + rootId + "savingAside") as HTMLElement).textContent = saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).split(',')[0];
-    (parent?.querySelector("#" + rootId + "indicatedPlanLabelSaving") as HTMLElement).textContent = saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).split(',')[0];
-    (parent?.querySelector("#" + rootId + "indicatedPlanName") as HTMLElement).textContent = plans[indicatedPlan].title;
-    //caso o plano indicado não ofereça economia transforma a tela final na tela negativa
-    if (negativeResult) {
-        parent?.querySelector("#" + rootId + "resultAsideContentDiv")?.classList.add("flex-col-reverse");
-        parent?.querySelector("#" + rootId + "negativeScreenAsideTitle")?.classList.remove("hidden");
-        parent?.querySelector("#" + rootId + "savingDiv")?.classList.add("hidden");
-        parent?.querySelector("#" + rootId + "currentPlanLabel")?.classList.add("hidden");
-        parent?.querySelector("#" + rootId + "indicatedPlanLabel")?.classList.add("hidden");
-        (parent?.querySelector("#" + rootId + "indicatedPlanLabelSaving")?.parentElement?.parentElement as HTMLElement).classList.add("hidden");
-        parent?.querySelector("#" + rootId + "negativeScreenExtraBenefit1")?.classList.remove("hidden");
-        parent?.querySelector("#" + rootId + "negativeScreenExtraBenefit2")?.classList.remove("hidden");
-        parent?.querySelector("#" + rootId + "negativeScreenAsideTopIcon")?.classList.remove("hidden");
-    }
-    //envia os dados para o hubspot
-    const fields = {
-        email: emailInput,
-        gmv_: gmvInput.replace(/[^\d,]/g, ""), // Remove todos os caracteres não numéricos e não vírgula.
-        plataforma: currentPlatformInput,
-        mensalidade: montlyFeeInput,
-        comissao: comissionInput,
-        pedidos: montlyOrdersInput,
-        share_cartao: cardShareInput,
-        tarifa_cartao: cardFeeInput,
-        share_pix: pixShareInput,
-        tarifa_pix: pixFeeInput,
-        share_boleto: boletoShareInput,
-        tarifa_boleto: boletoFeeInput,
-        tco_atual: currentPlatformTco.totalTco.toString(),
-        tco_li: plansTco[indicatedPlan].totalTco.toString(),
-        plano_li: plans[indicatedPlan].title.toString(),
-        economia: saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
-    };
-    //envia os dados para a hubspot
-    // invoke.site.actions.sendTcoUserData({fields, formGuid: '7ed4157b-6a66-425a-aebd-b66f51c1f0c8', portalId: '7112881'});
-    const hutk = document.cookie.replace(/(?:(?:^|.;\s)hubspotutk\s=\s([^;]).$)|^.*$/, "$1");
-    const context = {
-        "hutk": hutk,
-        "pageUri": window.location.href,
-        "pageName": document.title
-    };
-    fetch('/live/invoke/site/actions/sendTcoUserData.ts', {
-        body: JSON.stringify({ fields, formGuid: '7ed4157b-6a66-425a-aebd-b66f51c1f0c8', portalId: '7112881', context: context }),
-        method: 'POST',
-        headers: { 'content-type': 'application/json' }
-    }).then((r) => r.json()).then((r) => console.log(r));
 };
 const onClickBack = (rootId: string) => {
     const parent = document.getElementById(rootId);
@@ -217,6 +246,9 @@ export interface Page3 {
     inputsTextColor?: string;
     /** @format color-input */
     inputsBorderColor?: string;
+    inputsNoFillErrorMessage?: string;
+    /** @format color-input */
+    inputsErrorMessageColor?: string;
     nextButtonText: string;
     /** @format color-input */
     nextButtonTextColor?: string;
@@ -239,7 +271,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
     plans: Plan[];
 }) {
     const { title, caption, benefits, contentTitle, contentTitleIcon, contentCaption, contentBackground, asideBackground, asideTopIcon, mobileTopBanner, asideTextColor, contentCaptionColor } = page1;
-    const { progressImage, cardShare, cardFee, boletoShare, boletoFee, pixFee, pixShare, antiFraudCosts, processingCosts, nextButtonText, backButtonText, inputsTextColor, inputsBorderColor, backButtonTextColor, nextButtonBackgroundColor, nextButtonTextColor } = page3;
+    const { progressImage, cardShare, cardFee, boletoShare, boletoFee, pixFee, pixShare, antiFraudCosts, processingCosts, nextButtonText, backButtonText, inputsTextColor, inputsBorderColor, backButtonTextColor, nextButtonBackgroundColor, nextButtonTextColor, inputsNoFillErrorMessage, inputsErrorMessageColor } = page3;
     const labeClass = "w-full md:w-[40%] lg:w-[195px] animate-fade-right";
     const inputCaptionClass = "text-base text-primary flex justify-between items-center";
     const inputClass = "bg-transparent min-h-[38px] w-full rounded-lg border border-primary px-4 mt-2.5";
@@ -274,7 +306,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                 {contentCaption && <p class="mt-2.5" style={{color: contentCaptionColor}}>{contentCaption}</p>}
                 {progressImage && <div class="mt-7"><Image width={590} height={70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left"/></div>}
 
-                <form class="flex flex-wrap gap-[38px] mt-14 w-full" hx-on:submit={useScript(onClickNext, rootId, plans)}>
+                <form class="flex flex-wrap gap-[38px] mt-14 w-full page3form">
                     <label class={labeClass} style={{ animationDuration: "0.3s" }}> 
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}>
                             <p>{cardShare.caption}</p>
@@ -282,8 +314,9 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp)} type="text" placeholder={cardShare.placeholder} required id={rootId + "cardShareInput"}>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp, inputsBorderColor)} type="text" placeholder={cardShare.placeholder} required id={rootId + "cardShareInput"}>
                         </input>
+                        <p class="text-error mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{inputsNoFillErrorMessage || "Preencha esse campo obrigatório."}</p>
                     </label>
                     <label class={labeClass} style={{ animationDuration: "0.3s", animationDelay: "0.1s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}>
@@ -292,8 +325,9 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp)} type="text" placeholder={cardFee.placeholder} required id={rootId + "cardFeeInput"}>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp, inputsBorderColor)} type="text" placeholder={cardFee.placeholder} required id={rootId + "cardFeeInput"}>
                         </input>
+                        <p class="text-error mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{inputsNoFillErrorMessage || "Preencha esse campo obrigatório."}</p>
                     </label>
                     <label class={labeClass} style={{ animationDuration: "0.3s", animationDelay: "0.2s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}> 
@@ -302,8 +336,9 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp)} type="text" placeholder={boletoShare.placeholder} required id={rootId + "boletoShareInput"}>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp, inputsBorderColor)} type="text" placeholder={boletoShare.placeholder} required id={rootId + "boletoShareInput"}>
                         </input>
+                        <p class="text-error mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{inputsNoFillErrorMessage || "Preencha esse campo obrigatório."}</p>
                     </label>
                     <label class={labeClass} style={{ animationDuration: "0.3s", animationDelay: "0.3s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}>
@@ -312,8 +347,9 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(moneyInputOnKeyUp)} type="text" placeholder={boletoFee.placeholder} required id={rootId + "boletoFeeInput"}>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(moneyInputOnKeyUp, inputsBorderColor)} type="text" placeholder={boletoFee.placeholder} required id={rootId + "boletoFeeInput"}>
                         </input>
+                        <p class="text-error mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{inputsNoFillErrorMessage || "Preencha esse campo obrigatório."}</p>
                     </label>
                     <label class={labeClass} style={{ animationDuration: "0.3s", animationDelay: "0.4s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}> 
@@ -322,8 +358,9 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp)} type="text" placeholder={pixShare.placeholder} required id={rootId + "pixShareInput"}>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp, inputsBorderColor)} type="text" placeholder={pixShare.placeholder} required id={rootId + "pixShareInput"}>
                         </input>
+                        <p class="text-error mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{inputsNoFillErrorMessage || "Preencha esse campo obrigatório."}</p>
                     </label>
                     <label class={labeClass} style={{ animationDuration: "0.3s", animationDelay: "0.5s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor}}>
@@ -332,10 +369,11 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp)} type="text" placeholder={pixFee.placeholder} required id={rootId + "pixFeeInput"}>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp, inputsBorderColor)} type="text" placeholder={pixFee.placeholder} required id={rootId + "pixFeeInput"}>
                         </input>
+                        <p class="text-error mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{inputsNoFillErrorMessage || "Preencha esse campo obrigatório."}</p>
                     </label>
-                    <div class="w-[375px] flex flex-col gap-y-[18px] hidden">
+                    {/* <div class="w-[375px] flex flex-col gap-y-[18px] hidden">
                         <label class="w-full">
                             <div class={inputCaptionClass} style={{color: inputsTextColor}}>
                                 <p>{antiFraudCosts.caption}</p>
@@ -356,7 +394,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                             <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(moneyInputOnKeyUp)} type="text" placeholder={processingCosts.placeholder}>
                             </input>
                         </label>
-                    </div>
+                    </div> */}
                 <div class="flex justify-center w-full gap-10">
                     <button class="flex items-center gap-1 font-bold hover:scale-110 text-lg transition-transform text-primary" hx-on:click={useScript(onClickBack, rootId)} style={{color: backButtonTextColor}}>
                         <svg width="17" height="17" class="fill-current rotate-180" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
@@ -364,7 +402,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                         </svg>
                         {backButtonText}
                     </button>
-                    <button class="flex items-center gap-2.5 font-bold hover:scale-110 text-lg transition-transform text-secondary-content bg-primary rounded-lg py-2.5 px-[30px]" type="submit" style={{backgroundColor: nextButtonBackgroundColor, color: nextButtonTextColor}}>
+                    <button class="flex items-center gap-2.5 font-bold hover:scale-110 text-lg transition-transform text-secondary-content bg-primary rounded-lg py-2.5 px-[30px]" hx-on:click={useScript(onClickNext, rootId, plans)} style={{backgroundColor: nextButtonBackgroundColor, color: nextButtonTextColor}}>
                         {nextButtonText}
                         <svg width="16" height="16" viewBox="0 0 16 16" class="fill-current" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.71875 0.410645C6.19213 0.410645 4.69979 0.863341 3.43045 1.71149C2.1611 2.55964 1.17177 3.76514 0.587558 5.17556C0.00334442 6.58597 -0.149513 8.13796 0.148317 9.63525C0.446147 11.1325 1.18129 12.5079 2.26077 13.5874C3.34026 14.6669 4.71561 15.402 6.2129 15.6998C7.71019 15.9977 9.26217 15.8448 10.6726 15.2606C12.083 14.6764 13.2885 13.687 14.1367 12.4177C14.9848 11.1484 15.4375 9.65602 15.4375 8.1294C15.4353 6.08292 14.6214 4.12088 13.1743 2.6738C11.7273 1.22672 9.76523 0.412806 7.71875 0.410645ZM11.1076 8.54947L8.73258 10.9245C8.62117 11.0359 8.47006 11.0985 8.3125 11.0985C8.15494 11.0985 8.00384 11.0359 7.89243 10.9245C7.78101 10.8131 7.71842 10.662 7.71842 10.5044C7.71842 10.3468 7.78101 10.1957 7.89243 10.0843L9.25434 8.72315H4.75C4.59253 8.72315 4.44151 8.66059 4.33016 8.54924C4.21881 8.43789 4.15625 8.28687 4.15625 8.1294C4.15625 7.97192 4.21881 7.8209 4.33016 7.70955C4.44151 7.5982 4.59253 7.53565 4.75 7.53565H9.25434L7.89243 6.17447C7.78101 6.06306 7.71842 5.91195 7.71842 5.7544C7.71842 5.59684 7.78101 5.44573 7.89243 5.33432C8.00384 5.22291 8.15494 5.16032 8.3125 5.16032C8.47006 5.16032 8.62117 5.22291 8.73258 5.33432L11.1076 7.70932C11.1628 7.76446 11.2066 7.82994 11.2365 7.90202C11.2663 7.9741 11.2817 8.05137 11.2817 8.1294C11.2817 8.20742 11.2663 8.28469 11.2365 8.35677C11.2066 8.42885 11.1628 8.49433 11.1076 8.54947Z"/>

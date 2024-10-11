@@ -49,7 +49,7 @@ export interface Modal {
 
 export interface Props {
     id?: string;
-    title: string,
+    title: HTMLWidget,
     /** @format color-input */
     titleColor?: string;
     caption?: HTMLWidget,
@@ -87,7 +87,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
         <div class="flex-grow flex justify-center xl:justify-end items-center w-full xl:w-1/2 px-7 md:px-0 border-base">
             <script dangerouslySetInnerHTML={{__html: useScript(openModal, modalId)}} />
             <div class="flex-grow flex flex-col gap-5 md:gap-7 max-w-[630px] z-10">
-                <h2 class="text-primary text-2xl md:text-[56px] font-semibold md:font-bold max-w-[575px] leading-[120%]" style={{ color: titleColor }}>{title}</h2>
+                <div class="text-primary text-2xl md:text-[56px] font-semibold md:font-bold max-w-[575px] leading-[120%]" style={{ color: titleColor }} dangerouslySetInnerHTML={{__html: title}}/>
                 <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[130%]" dangerouslySetInnerHTML={{ __html: caption }} />
                 <label class="md:pt-7">
                     {inputLabel && <p class="bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 px-5 text-base text-primary inline-block" style={{ color: inputLabelColor, backgroundColor: inputLabelBackgroundColor }}>{inputLabel}</p>}
@@ -237,7 +237,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             `
         }} />
 
-        <div id={modalId} class="fixed top-0 left-0 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-[60] overflow-auto hidden px-12">            
+        <div id={modalId} class="fixed top-0 left-0 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-[60] overflow-auto hidden px-6">            
             <div class="max-w-[700px] bg-primary-content lg:rounded-[30px] p-7 lg:p-12 animate-pop-up relative pt-12" style={{animationDuration: "0.3s"}}>
                 <button class="text-primary font-black p-2.5 absolute top-2.5 right-[19px]" hx-on:click={useScript(closeModal, modalId)}>
                     <svg width="20" height="20" viewBox="0 0 19 19" class="text-primary fill-current" style={{color: modal?.titleColor}} xmlns="http://www.w3.org/2000/svg">

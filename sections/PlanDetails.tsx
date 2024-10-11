@@ -190,7 +190,7 @@ function SliderItem({ slide, id }: {
     id: string;
 }) {
     const { title, bulletPoints = { items: [] } } = slide;
-    return (<div id={id} class="relative w-full px-5 lg:pr-10 lg:pl-0 text-primary">
+    return (<div id={id} class="relative w-full px-5 lg:pl-0 text-primary">
         <div class="bg-primary-content text-primary min-h-[215px] rounded-3xl py-5 px-8 h-full">
             <h3 class="text-xl font-semibold" style={{ color: bulletPoints.textColor }}>{title}</h3>
             <div class="mt-2.5 text-sm font-normal flex flex-col gap-2.5">

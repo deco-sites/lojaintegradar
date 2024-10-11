@@ -6,23 +6,20 @@
       "__resolveType": "Header2 global"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/FloatingButtons.tsx",
-        "buttons": [
-          {
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
-              "alt": "Whatsapp icon"
-            },
-            "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero&type=phone_number&app_absent=0",
-            "size": 57
-          }
-        ],
-        "distanceFromRightEnd": 34,
-        "distanceFromBottom": 120,
-        "distanceBetweenButtons": 20
-      }
+      "__resolveType": "site/sections/FloatingButtons.tsx",
+      "buttons": [
+        {
+          "image": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
+            "alt": "Whatsapp icon"
+          },
+          "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero&type=phone_number&app_absent=0",
+          "size": 57
+        }
+      ],
+      "distanceFromRightEnd": 34,
+      "distanceFromBottom": 120,
+      "distanceBetweenButtons": 20
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -1038,7 +1035,9 @@
         "inputsTextColor": "#371E55",
         "inputsBorderColor": "#371E55",
         "buttonsBackgroundColor": "",
-        "buttonsTextColor": "#371E55"
+        "buttonsTextColor": "#371E55",
+        "inputsNoFillErrorMessage": "Preencha esse campo obrigatório.",
+        "inputsErrorMessageColor": "#F57E77"
       },
       "page3": {
         "progressImage": {
@@ -1093,7 +1092,9 @@
         "buttonsBackgroundColor": "#371E55",
         "nextButtonTextColor": "#ffffff",
         "nextButtonBackgroundColor": "#371E55",
-        "backButtonTextColor": "#371E55"
+        "backButtonTextColor": "#371E55",
+        "inputsNoFillErrorMessage": "Preencha esse campo obrigatório.",
+        "inputsErrorMessageColor": "#F57E77"
       },
       "page4": {
         "progressImage": {
@@ -5535,8 +5536,10 @@
               }
             ],
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/94d5a22d-6783-411d-8035-00cbfd929774/Ellipse-62-(1).svg",
-              "alt": "background gradiente"
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c599270-8b52-436d-a57d-1eb07092c562/carrinho-abandonado-after.webp",
+              "alt": "background gradiente",
+              "width": 818,
+              "height": 1395
             },
             "titleColor": "#371E55",
             "captionColor": "#371E55",
@@ -5776,10 +5779,10 @@
               "text": "Plano Aceleração"
             },
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d43a9ff2-c072-4944-acd6-8df60d705a7f/aceleracao-background-mobile.png",
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b3686d4f-c7c4-4a58-b5db-a6dd6ed51fc3/aceleracao-background-mobile-2.png",
               "alt": "background ",
-              "width": 410,
-              "height": 1229
+              "width": 600,
+              "height": 1700
             },
             "useBackground": "video",
             "slides": [

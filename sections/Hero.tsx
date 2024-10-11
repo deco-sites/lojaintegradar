@@ -88,14 +88,14 @@ export default function Hero({
   backgroundImage,
 }: Props) {
   return (
-    <div id={id} class={`flex flex-col lg:flex-row w-full mt-48 text-primary leading-[120%] ${placement == "left" ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
-      <AnimateOnShow divClass={`relative lg:w-1/2 flex flex-col lg:flex-row ${placement == "left" ? 'justify-start' : 'justify-end'}`} animation="animate-fade-right">
+    <div id={id} class={`relative flex flex-col lg:flex-row w-full mt-48 text-primary leading-[120%] ${placement == "left" ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
+      <AnimateOnShow divClass={`lg:relative lg:w-1/2 flex flex-col lg:flex-row ${placement == "left" ? 'justify-start' : 'justify-end'}`} animation="animate-fade-right">
         {backgroundImage?.src && <Image
           src={backgroundImage.src}
           alt={backgroundImage.alt || "background image"}
           width={backgroundImage.width || 1018}
           height={backgroundImage.height || 1237}
-          class={`absolute object-fill h-full lg:h-[140%] w-full lg:w-[130%] top-[-25%] ${placement == "left" ? 'left-0' : 'right-0'} -z-50`}
+          class={`absolute object-fill h-[140%] w-full lg:w-[130%] top-[-25%] ${placement == "left" ? 'left-0' : 'right-0'} -z-50`}
         />}
         <div class="px-7 mb-10 lg:hidden">
           <h2 class="text-2xl font-semibold" style={{ color: titleColor }}>{title}</h2>

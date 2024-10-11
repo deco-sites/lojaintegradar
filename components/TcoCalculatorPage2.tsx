@@ -2,7 +2,7 @@ import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { Benefit } from "site/components/TcoCalculatorPage1.tsx";
-const moneyInputOnKeyUp = () => {
+const moneyInputOnKeyUp = (inputsBorderColor?: string) => {
     const element = event!.currentTarget as HTMLInputElement;
     let valor = element.value;
     valor = valor.replace(/[^\d,]/g, ""); // Remove todos os caracteres não numéricos e não vírgula
@@ -14,8 +14,12 @@ const moneyInputOnKeyUp = () => {
     element.value = "R$ " + valor;
     if (element.value.toLowerCase().includes('nan') || element.value.length == 3)
         element.value = "";
+
+    //limpa mensagem de erro
+    element.parentElement?.querySelector(".text-error")?.classList.add("hidden");
+    element.style.borderColor = inputsBorderColor || "#371E55";
 };
-const percentageInputOnKeyUp = () => {
+const percentageInputOnKeyUp = (inputsBorderColor?: string) => {
     const element = event!.currentTarget as HTMLInputElement;
     const keyEvent = event as KeyboardEvent;
     let valor = element.value;
@@ -28,15 +32,45 @@ const percentageInputOnKeyUp = () => {
     element.value = valor + "%"; // Adiciona o símbolo de porcentagem
     if (element.value == "%")
         element.value = "";
+
+    //limpa mensagem de erro
+    element.parentElement?.querySelector(".text-error")?.classList.add("hidden");
+    element.style.borderColor = inputsBorderColor || "#371E55";
 };
-const onClickNext = (rootId: string) => {
+const numberInputOnKeyUp = (inputsBorderColor?: string) => {
+    const element = event!.currentTarget as HTMLInputElement;
+
+    //limpa mensagem de erro
+    element.parentElement?.querySelector(".text-error")?.classList.add("hidden");
+    element.style.borderColor = inputsBorderColor || "#371E55";
+}
+const onClickNext = (rootId: string, inputsErrorMessageColor?: string) => {
+    event!.preventDefault();
     const parent = document.getElementById(rootId);
-    event?.preventDefault();
-    if (parent) {
-        Array.from(parent.children)[1].classList.add("hidden");
-        Array.from(parent.children)[2].classList.remove("hidden");
+    const form = parent?.querySelector(".page2form");
+    let validated = true;
+
+    const fields = form?.querySelectorAll("label");
+
+    //checa se todos os campos foram preenchidos
+    fields?.forEach((field) => {
+       const input = field.querySelector("input");
+       if (input?.value == "") {
+            validated = false;
+           field.querySelector(".text-error")?.classList.remove("hidden"); //mostra mensagem de erro
+           input.style.borderColor = inputsErrorMessageColor || "#F57E77";
+       }
+    });
+
+    //se todos os campos foram preenchidos manda para a proxima pagina
+    if (validated) {
+        if (parent) {
+            Array.from(parent.children)[1].classList.add("hidden");
+            Array.from(parent.children)[2].classList.remove("hidden");
+        }
     }
 };
+
 const onClickBack = (rootId: string) => {
     const parent = document.getElementById(rootId);
     event?.preventDefault();
@@ -89,6 +123,9 @@ export interface Page2 {
     inputsTextColor?: string;
     /** @format color-input */
     inputsBorderColor?: string;
+    inputsNoFillErrorMessage?: string;
+    /** @format color-input */
+    inputsErrorMessageColor?: string;
     nextButtonText: string;
     backButtonText: string;
     /** @format color-input */
@@ -105,7 +142,7 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
     rootId: string;
 }) {
     const { title, caption, benefits, contentTitle, contentTitleIcon, contentCaption, contentBackground, asideBackground, asideTopIcon, mobileTopBanner, asideTextColor, contentCaptionColor } = page1;
-    const { progressImage, averageMonthlyRevenue, currentPlatform, currentPlatformMonthlyFee, currentPlatformComission, MontlyOrders, nextButtonText, backButtonText, inputsTextColor, inputsBorderColor, buttonsTextColor } = page2;
+    const { progressImage, averageMonthlyRevenue, currentPlatform, currentPlatformMonthlyFee, currentPlatformComission, MontlyOrders, nextButtonText, backButtonText, inputsTextColor, inputsBorderColor, buttonsTextColor, inputsNoFillErrorMessage, inputsErrorMessageColor } = page2;
     const inputCaptionClass = "text-base text-primary flex justify-between items-center";
     const inputClass = "bg-transparent min-h-[38px] w-full rounded-lg border border-primary px-4 mt-2.5";
     return (<div class="relative flex flex-wrap lg:flex-nowrap w-full min-h-[971px] lg:rounded-[30px] overflow-hidden hidden">
@@ -140,7 +177,7 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                 {contentCaption && <p class="mt-2.5" style={{color: contentCaptionColor}}>{contentCaption}</p>}
                 {progressImage && <div class="mt-7"><Image width={590} height={70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left"/></div>}
 
-                <form class="flex flex-col gap-[18px] mt-14 max-w-[375px]" hx-on:submit={useScript(onClickNext, rootId)}>
+                <form class="flex flex-col gap-[18px] mt-14 max-w-[375px] page2form">
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor }}>
                             <p>{averageMonthlyRevenue.caption}</p>
@@ -148,8 +185,9 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(moneyInputOnKeyUp)} type="text" placeholder={averageMonthlyRevenue.placeholder} required id={rootId + "gmvInput"}>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(moneyInputOnKeyUp, inputsBorderColor)} type="text" placeholder={averageMonthlyRevenue.placeholder} required id={rootId + "gmvInput"}>
                         </input>
+                        <p class="text-error mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{inputsNoFillErrorMessage || "Preencha esse campo obrigatório."}</p>
                     </label>
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s", animationDelay: "0.1s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor }}>
@@ -169,8 +207,9 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input name="test" class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(moneyInputOnKeyUp)} type="text" placeholder={currentPlatformMonthlyFee.placeholder} required id={rootId + 'montlyFeeInput'}>
+                        <input name="test" class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(moneyInputOnKeyUp, inputsBorderColor)} type="text" placeholder={currentPlatformMonthlyFee.placeholder} required id={rootId + 'montlyFeeInput'}>
                         </input>
+                        <p class="text-error mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{inputsNoFillErrorMessage || "Preencha esse campo obrigatório."}</p>
                     </label>
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s", animationDelay: "0.3s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor }}>
@@ -179,8 +218,9 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp)} type="text" placeholder={currentPlatformComission.placeholder} id={rootId + 'comissionInput'} required>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(percentageInputOnKeyUp, inputsBorderColor)} type="text" placeholder={currentPlatformComission.placeholder} id={rootId + 'comissionInput'} required>
                         </input>
+                        <p class="text-error mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{inputsNoFillErrorMessage || "Preencha esse campo obrigatório."}</p>
                     </label>
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s", animationDelay: "0.4s", opacity: "0", animationFillMode: "forwards" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor }}>
@@ -189,8 +229,9 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} style={{borderColor: inputsBorderColor}} type="number" placeholder={MontlyOrders.placeholder} required id={rootId + 'montlyOrdersInput'}>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(numberInputOnKeyUp, inputsBorderColor)} type="number" placeholder={MontlyOrders.placeholder} required id={rootId + 'montlyOrdersInput'}>
                         </input>
+                        <p class="text-error mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{inputsNoFillErrorMessage || "Preencha esse campo obrigatório."}</p>
                     </label>
                     <div class="flex justify-end gap-10">
                         <button class="flex items-center gap-1 font-bold hover:scale-110 text-lg transition-transform text-primary" hx-on:click={useScript(onClickBack, rootId)} style={{color: buttonsTextColor}}>
@@ -199,7 +240,7 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
                             </svg>
                             {backButtonText}
                         </button>
-                        <button class="flex items-center gap-1 font-bold hover:scale-110 text-lg transition-transform text-primary" type="submit" style={{color: buttonsTextColor}}>
+                        <button class="flex items-center gap-1 font-bold hover:scale-110 text-lg transition-transform text-primary"  hx-on:click={useScript(onClickNext, rootId, inputsErrorMessageColor)} style={{color: buttonsTextColor}}>
                             {nextButtonText}
                             <svg width="17" height="17" class=" fill-current" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.5 0.910645C6.97338 0.910645 5.48104 1.36334 4.2117 2.21149C2.94235 3.05964 1.95302 4.26514 1.36881 5.67556C0.784594 7.08597 0.631737 8.63796 0.929567 10.1352C1.2274 11.6325 1.96254 13.0079 3.04202 14.0874C4.12151 15.1669 5.49686 15.902 6.99415 16.1998C8.49144 16.4977 10.0434 16.3448 11.4538 15.7606C12.8643 15.1764 14.0698 14.187 14.9179 12.9177C15.7661 11.6484 16.2188 10.156 16.2188 8.62939C16.2166 6.58292 15.4027 4.62088 13.9556 3.1738C12.5085 1.72672 10.5465 0.912806 8.5 0.910645ZM11.8888 9.04947L9.51383 11.4245C9.40242 11.5359 9.25131 11.5985 9.09375 11.5985C8.93619 11.5985 8.78509 11.5359 8.67368 11.4245C8.56226 11.3131 8.49967 11.162 8.49967 11.0044C8.49967 10.8468 8.56226 10.6957 8.67368 10.5843L10.0356 9.22314H5.53125C5.37378 9.22314 5.22276 9.16059 5.11141 9.04924C5.00006 8.93789 4.9375 8.78687 4.9375 8.62939C4.9375 8.47192 5.00006 8.3209 5.11141 8.20955C5.22276 8.0982 5.37378 8.03564 5.53125 8.03564H10.0356L8.67368 6.67447C8.56226 6.56306 8.49967 6.41195 8.49967 6.25439C8.49967 6.09683 8.56226 5.94573 8.67368 5.83432C8.78509 5.7229 8.93619 5.66031 9.09375 5.66031C9.25131 5.66031 9.40242 5.7229 9.51383 5.83432L11.8888 8.20932C11.944 8.26446 11.9878 8.32994 12.0177 8.40202C12.0476 8.4741 12.063 8.55137 12.063 8.62939C12.063 8.70742 12.0476 8.78469 12.0177 8.85677C11.9878 8.92885 11.944 8.99433 11.8888 9.04947Z"/>

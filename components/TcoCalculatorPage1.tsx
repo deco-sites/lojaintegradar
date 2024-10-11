@@ -113,7 +113,7 @@ function TcoCalculatorPage1({ page1, rootId }: {
                 {contentCaption && <p class="mt-2.5" style={{color: contentCaptionColor}}>{contentCaption}</p>}
                 {progressImage && <div class="mt-7"><Image width={590} height={70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left"/></div>}
                 <p class="mt-[117px] text-transparent  bg-clip-text text-xl text-center font-semibold" style={{background: objectivesCaptionColor, backgroundClip: "text"}}>{objectivesCaption}</p>
-                <div class="flex flex-wrap justify-center lg:justify-between mt-7 px-10">
+                <div class="flex flex-wrap gap-y-6 justify-center lg:justify-between mt-7 px-10">
                     {objectives.map((objective, index) => (<button hx-on:click={useScript(objectiveOnClick)} class="p-6 flex flex-col items-center justify-between w-[154px] min-h-32 border border-neutral hover:border-primary disabled:border-primary rounded-[10px] bg-primary-content group" disabled={index == 0} style={{borderColor: objectivesBorderColor}}>
                             <div class="min-h-[26px]"><Image height={26} width={26} src={objective.icon.src} alt={objective.icon.alt || "objective icon"} class="h-full opacity-50 group-hover:opacity-100 group-disabled:opacity-100"/></div>
                             <p class="text-center text-primary opacity-50 group-hover:opacity-100 group-disabled:opacity-100 text-lg font-semibold leading-[120%]" style={{color: objectivesTextColor}}>{objective.title}</p>

@@ -391,8 +391,8 @@
         },
         {
           "textContent": {
-            "desktop": "<p><span style=\"color: #ffffff\">Ofereça produtos semelhantes ao que seus clientes estão buscando, enquanto eles navegam em sua loja.</span><br><span style=\"color: #ffffff\"><br>Ative as sugestões complementares em vitrines de recomendações e envie e-mails personalizados com dicas de produtos que combinam perfeitamente com cada escolha.</span></p>",
-            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Ofereça produtos semelhantes ao que seus clientes estão buscando, enquanto eles navegam em sua loja.</span><br><span style=\"color: rgb(255, 255, 255)\"><br>Ative as sugestões complementares em vitrines de recomendações e envie e-mails personalizados com dicas de produtos que combinam perfeitamente com cada escolha.</span></p>"
+            "desktop": "<p><span style=\"color: #ffffff\">Ofereça produtos semelhantes ao que seus clientes estão buscando, enquanto eles navegam em sua loja.</span><span style=\"color: #ffffff\"><br><br>Ative as sugestões complementares em vitrines de recomendações e em e-mails personalizados por clientes de forma automatizada, com dicas que combinam perfeitamente com cada escolha.</span><br><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: #ffffff; font-size: 12pt\">combinam perfeitamente com cada escolha.</span></p>",
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Ofereça produtos semelhantes ao que seus clientes estão buscando, enquanto eles navegam em sua loja.</span><br><span style=\"color: rgb(255, 255, 255)\"><br>Ative as sugestões complementares em vitrines de recomendações e em e-mails personalizados por clientes de forma automatizada, com dicas que combinam perfeitamente com cada escolha.</span></p>"
           },
           "icon": {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
@@ -468,15 +468,9 @@
             "heightDesktop": 665
           },
           "highlight": true,
-          "videoOn": false,
+          "videoOn": true,
           "button": {},
-          "buttons": [
-            {
-              "type": "one",
-              "text": "Quero testar",
-              "changeType": true
-            }
-          ],
+          "buttons": [],
           "videoUrl": "https://www.youtube.com/embed/ZvQAJpnLPTU?si=UY-JwQhELVBXsMmN",
           "videoText": "Como ativar"
         }

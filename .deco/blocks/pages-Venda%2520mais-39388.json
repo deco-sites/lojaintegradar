@@ -7231,7 +7231,12 @@
       "text": "Voltar ao topo",
       "textColor": "#FAFAF5",
       "backgroundColor": "#371E55",
-      "appearAt": 1500
+      "appearAt": 1500,
+      "position": {
+        "distanceFromScreenBottom": 20,
+        "distanceFromScreenRightEnd": 20
+      },
+      "size": 84
     },
     {
       "__resolveType": "site/sections/ScrollOnLoadScript.tsx"

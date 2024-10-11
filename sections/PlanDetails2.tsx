@@ -152,7 +152,7 @@ function SliderItem(
     return (
         <div
             id={id}
-            class="relative w-full px-6 py-7 text-primary"
+            class="relative w-full px-2.5 py-7 text-primary"
         >
             <div class="bg-primary-content text-primary min-h-[215px] rounded-3xl py-5 px-8 h-full shadow-tinyspread" style={{ backgroundColor, color: textColor }}>
                 <h3 class="text-xl font-semibold">{title}</h3>
@@ -256,9 +256,6 @@ export default function PlanDetails2({ id, color1, color2, color3, color4, color
                         class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10"
                     >
                         <source src={contentVideo} type="video/mp4" />
-                        <object data="" width="532" height="747">
-                            <embed width="532" height="747" src={contentVideo} />
-                        </object>
                     </video>}
                     {useContent == "image" && contentImage?.src && <Image
                         width={contentImage.width || 532}
@@ -288,7 +285,7 @@ export default function PlanDetails2({ id, color1, color2, color3, color4, color
                 <AnimateOnShow animation="animate-fade-up50" divClass="items-start xl:items-end w-full relative" delay={300}>
                     <div
                         id={carouselId}
-                        class="min-h-min flex flex-col w-full lg:w-[600px] lg:-ml-6"
+                        class="min-h-min flex flex-col w-full lg:w-[600px] lg:-ml-2.5"
                         hx-on:click={useScript(refreshArrowsVisibility)} 
                         hx-on:touchend={useScript(refreshArrowsVisibility)}
                     >
@@ -313,7 +310,7 @@ export default function PlanDetails2({ id, color1, color2, color3, color4, color
                             ))}
                         </Slider>
 
-                        <div class="lg:ml-6 flex pr-[22px]">
+                        <div class="lg:ml-2.5 flex pr-[22px]">
                             {/* {props.dots && <Dots slides={slides} interval={interval} />}{" "} */}
                             {showArrows && <Buttons buttonColor={color5} />}
                         </div>

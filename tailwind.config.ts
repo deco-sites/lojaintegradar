@@ -59,7 +59,7 @@ export default {
         },
       },
       boxShadow: {
-        "tinyspread": "0px 0px 20px rgba(204, 204, 204, 0.4)",
+        "tinyspread": "0px 0px 10px rgba(204, 204, 204, 0.4)",
         "spreaded": "0px 5.563px 31.72px 0px rgba(0, 72, 82, 0.09)",
         "spreaded2": "0px 4px 44px 0px rgba(0, 0, 0, 0.13)",
         "spreaded3": "11px 4px 44px 0px rgba(29, 26, 26, 0.15)",

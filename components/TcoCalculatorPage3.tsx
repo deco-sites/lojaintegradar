@@ -145,11 +145,12 @@ const onClickNext = (rootId: string, plans: Plan[]) => {
         tarifa_pix: pixFeeInput,
         share_boleto: boletoShareInput,
         tarifa_boleto: boletoFeeInput,
-        tco_atual: currentPlatformTco.totalTco.toString(),
-        tco_li: plansTco[indicatedPlan].totalTco.toString(),
+        tco_atual: currentPlatformTco.totalTco.toFixed(2).toString(),
+        tco_li: plansTco[indicatedPlan].totalTco.toFixed(2).toString(),
         plano_li: plans[indicatedPlan].title.toString(),
         economia: saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
     };
+
     //envia os dados para a hubspot
     // invoke.site.actions.sendTcoUserData({fields, formGuid: '7ed4157b-6a66-425a-aebd-b66f51c1f0c8', portalId: '7112881'});
     const hutk = document.cookie.replace(/(?:(?:^|.;\s)hubspotutk\s=\s([^;]).$)|^.*$/, "$1");
@@ -158,11 +159,11 @@ const onClickNext = (rootId: string, plans: Plan[]) => {
         "pageUri": window.location.href,
         "pageName": document.title
     };
-    fetch('/live/invoke/site/actions/sendTcoUserData.ts', {
-        body: JSON.stringify({ fields, formGuid: '7ed4157b-6a66-425a-aebd-b66f51c1f0c8', portalId: '7112881', context: context }),
-        method: 'POST',
-        headers: { 'content-type': 'application/json' }
-    }).then((r) => r.json()).then((r) => console.log(r));
+    // fetch('/live/invoke/site/actions/sendTcoUserData.ts', {
+    //     body: JSON.stringify({ fields, formGuid: '7ed4157b-6a66-425a-aebd-b66f51c1f0c8', portalId: '7112881', context: context }),
+    //     method: 'POST',
+    //     headers: { 'content-type': 'application/json' }
+    // }).then((r) => r.json()).then((r) => console.log(r));
 };
 const onClickBack = (rootId: string) => {
     const parent = document.getElementById(rootId);

@@ -59,6 +59,11 @@ interface Tabs {
      */
     videoOn?: boolean;
     /**
+* @title Texto botão de vídeo
+* @description Insira o texto desejado par o botão de vídeo
+*/
+    videoText?: string;
+    /**
 * @title URL do vídeo
 * @description É importante que a URL do vídeo seja a versão EMBED
 */

@@ -35,6 +35,11 @@ interface Card {
      */
     videoOn?: boolean;
     /**
+* @title Texto botão de vídeo
+* @description Insira o texto desejado par o botão de vídeo
+*/
+    videoText?: string;
+    /**
      * @title URL do vídeo
      * @description É importante que a URL do vídeo seja a versão EMBED
      */
@@ -138,7 +143,7 @@ function HeroInfo({ title, cards }: Props) {
                                 <div class="flex items-center gap-4 flex-wrap">
                                     {" "}
                                     {card.videoOn && <button
-                                        class="bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 flex items-center gap-[18px] h-[48px] w-[180px]"
+                                        class="bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 pr-[18px] flex items-center gap-[18px] h-[48px]"
                                         onClick={() => {
                                             setCurrentVideoUrl(card.videoUrl || "");
                                             openModal();
@@ -152,7 +157,7 @@ function HeroInfo({ title, cards }: Props) {
                                             strokeWidth={3}
                                         />{" "}
                                         <span class="text-[#22454B] font-bold text-[17px] text-center">
-                                            Como ativar
+                                            {card.videoText}
                                         </span>
                                     </button>
                                     }

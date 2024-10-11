@@ -386,7 +386,8 @@
           },
           "videoOn": true,
           "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
-          "button": {}
+          "button": {},
+          "videoText": "Ver demo"
         },
         {
           "textContent": {
@@ -467,10 +468,17 @@
             "heightDesktop": 665
           },
           "highlight": true,
-          "videoOn": true,
+          "videoOn": false,
           "button": {},
-          "buttons": [],
-          "videoUrl": "https://www.youtube.com/embed/ZvQAJpnLPTU?si=UY-JwQhELVBXsMmN"
+          "buttons": [
+            {
+              "type": "one",
+              "text": "Quero testar",
+              "changeType": true
+            }
+          ],
+          "videoUrl": "https://www.youtube.com/embed/ZvQAJpnLPTU?si=UY-JwQhELVBXsMmN",
+          "videoText": "Como ativar"
         }
       ],
       "background": {
@@ -519,7 +527,8 @@
           "buttonPlanId": "173",
           "buttons": [],
           "videoOn": true,
-          "videoUrl": "https://www.youtube.com/embed/L4h9hgVqykA?si=29phPmqdCPzTMiZ2"
+          "videoUrl": "https://www.youtube.com/embed/L4h9hgVqykA?si=29phPmqdCPzTMiZ2",
+          "videoText": "Como ativar"
         },
         {
           "textContent": {
@@ -544,7 +553,8 @@
           "buttonPlanId": "172",
           "buttons": [],
           "videoOn": true,
-          "videoUrl": "https://www.youtube.com/embed/laN-mZ1vXnI?si=WyhloNKvNZ5TsfrR"
+          "videoUrl": "https://www.youtube.com/embed/laN-mZ1vXnI?si=WyhloNKvNZ5TsfrR",
+          "videoText": "Como ativar"
         }
       ]
     },
@@ -634,7 +644,8 @@
             "heightDesktop": 600
           },
           "button": {},
-          "videoUrl": "https://www.youtube.com/embed/BPKgnaa1ABQ?si=YaBrO0xuuN9agcLk"
+          "videoUrl": "https://www.youtube.com/embed/BPKgnaa1ABQ?si=YaBrO0xuuN9agcLk",
+          "videoText": "Como ativar"
         }
       ],
       "background": {

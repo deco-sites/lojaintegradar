@@ -23,7 +23,7 @@ export interface Props {
 }
 
 export default function FloatingButtons({ buttons = [], distanceFromBottom, distanceFromRightEnd, distanceBetweenButtons }: Props) {
-    return <div class="fixed right-16 bottom-16 z-40 flex flex-col" style={{ bottom: distanceFromBottom, right: distanceFromRightEnd, gap: distanceBetweenButtons }}>
+    return <div class="fixed right-16 bottom-16 z-40 flex flex-col items-center" style={{ bottom: distanceFromBottom, right: distanceFromRightEnd, gap: distanceBetweenButtons }}>
         {buttons.map((button) => <a
             href={button.href}
             target={button?.href.includes("http") ? "_blank" : ""}

@@ -1388,7 +1388,39 @@
         "buttonsBackgroundColor": "",
         "buttonsTextColor": "#371E55",
         "inputsNoFillErrorMessage": "Preencha esse campo obrigatório.",
-        "inputsErrorMessageColor": "#F57E77"
+        "inputsErrorMessageColor": "#F57E77",
+        "asideBackground": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/57be7317-24e1-4bf1-8375-6de6cff74aab/tco-calculator-v2-page-2-aside-background.svg"
+        },
+        "benefits": [
+          {
+            "icon": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b494fcf-f06a-4155-bd92-ecd726bb9c94/calculadora-3.svg"
+            },
+            "title": "Negócio",
+            "titleColor": "#71DBD4",
+            "caption": "Compare seus custos mensais de plataforma e comissão versus sua receita.",
+            "captionColor": "#ffffff"
+          },
+          {
+            "icon": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0cd9ef44-69dd-44f1-b50c-c7b7783b5b00/hand-coins.svg"
+            },
+            "title": "Pagamento",
+            "titleColor": "#71DBD4",
+            "captionColor": "#ffffff",
+            "caption": "Analise seus custos com tarifas de cartão de crédito, pix, boleto e ferramentas antifraude."
+          },
+          {
+            "icon": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cd8f092-59d2-425d-91af-a5fa94b2b2a4/rocket-2.svg"
+            },
+            "title": "Envio",
+            "titleColor": "#71DBD4",
+            "caption": "Leve em consideração todos os custos que sua loja possui com o envio de produtos.",
+            "captionColor": "#ffffff"
+          }
+        ]
       },
       "page3": {
         "progressImage": {

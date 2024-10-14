@@ -17,7 +17,7 @@ const objectiveOnClick = () => {
     element.setAttribute("disabled", "");
 };
 export interface IImage {
-    src: ImageWidget;
+    src?: ImageWidget;
     alt?: string;
     width?: number;
     height?: number;
@@ -92,8 +92,8 @@ function TcoCalculatorPage1({ page1, rootId }: {
     const { title, caption, text, benefits, contentTitle, textWithIcon, contentTitleIcon, asideBottomText, contentCaption, progressImage, objectivesCaption, objectives, emailCaption, emailPlaceHolder, emailButtonText, contentBackground, asideBackground, asideTopIcon, mobileTopBanner, asideTextColor, contentCaptionColor, objectivesCaptionColor, emailCaptionColor, objectivesTextColor, hubspotButtonColor, hubspotButtonTextColor, hubspotErrorMessageColor, objectivesBorderColor } = page1;
     return (<div class="relative flex flex-wrap lg:flex-nowrap justify-center w-full min-h-[971px] lg:rounded-[30px] overflow-hidden hidden lg:flex">
             <div class={`relative w-full lg:max-w-[437px] pt-[71px] px-11 ${!asideBackground && 'bg-primary'} text-primary-content hidden lg:block`} style={{color: asideTextColor}}>
-                {asideTopIcon && <Image width={asideTopIcon.width || 133} height={asideTopIcon.width || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10"/>}
-                {asideBackground && <Image width={asideBackground.width || 813} height={asideBackground.height || 971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover object-top"/>}
+                {asideTopIcon?.src && <Image width={asideTopIcon.width || 133} height={asideTopIcon.width || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10"/>}
+                {asideBackground?.src && <Image width={asideBackground.width || 813} height={asideBackground.height || 971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover object-top"/>}
                 <h2 class="text-[32px] leading-[130%] font-bold">{title}</h2>
                 <p class="text-sm mt-5 leading-[120%] font-normal">{caption}</p>
                 <div class="text-[42px] leading-[120%] font-instrument font-normal mt-5" dangerouslySetInnerHTML={{__html: text || ""}}/>
@@ -109,7 +109,7 @@ function TcoCalculatorPage1({ page1, rootId }: {
                 <div class="mt-[60px]">
                     {benefits && benefits.map((benefit) => (<div class="mt-[30px]">
                             <div class="flex">
-                                <Image height={benefit.icon.height || 17} width={benefit.icon.width || 17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} class="mr-2.5"/>
+                                {benefit.icon.src && <Image height={benefit.icon.height || 17} width={benefit.icon.width || 17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} class="mr-2.5"/>}
                                 <p style={{color: benefit.titleColor}}>{benefit.title}</p>
                             </div>
                             <p class="mt-2.5 text-sm" style={{color: benefit.captionColor}}>{benefit.caption}</p>
@@ -119,22 +119,22 @@ function TcoCalculatorPage1({ page1, rootId }: {
             </div>
 
             <div class="lg:hidden relative text-2xl text-secondary-content font-semibold py-10 px-4 w-full min-h-[155px]" style={{color: asideTextColor}} >
-                    {mobileTopBanner && <Image width={mobileTopBanner.width || 430} height={mobileTopBanner.height || 155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10"/>}
+                    {mobileTopBanner.src && <Image width={mobileTopBanner.width || 430} height={mobileTopBanner.height || 155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10"/>}
                     <p>{title}</p>
             </div>
             
             <div class="py-14 px-3.5 md:px-14 xl:px-28 relative w-full">
-                {contentBackground && <Image width={contentBackground.width || 813} height={contentBackground.height || 971} src={contentBackground.src} alt={contentBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
+                {contentBackground?.src && <Image width={contentBackground.width || 813} height={contentBackground.height || 971} src={contentBackground.src} alt={contentBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
                 <div class="flex gap-2">
-                    {contentTitleIcon && <Image src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={contentTitleIcon.width || 14} height={contentTitleIcon.height || 14}/>}
+                    {contentTitleIcon?.src && <Image src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={contentTitleIcon.width || 14} height={contentTitleIcon.height || 14}/>}
                     <div dangerouslySetInnerHTML={{ __html: contentTitle }}/>
                 </div>
                 {contentCaption && <p class="mt-2.5" style={{color: contentCaptionColor}}>{contentCaption}</p>}
-                {progressImage && <div class="mt-7"><Image width={progressImage.width || 590} height={progressImage.height || 70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left"/></div>}
+                {progressImage?.src && <div class="mt-7"><Image width={progressImage.width || 590} height={progressImage.height || 70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left"/></div>}
                 <p class="mt-[117px] text-transparent  bg-clip-text text-xl text-center font-semibold" style={{background: objectivesCaptionColor, backgroundClip: "text"}}>{objectivesCaption}</p>
                 <div class="flex flex-wrap gap-y-6 justify-center lg:justify-between mt-7 px-10">
                     {objectives.map((objective, index) => (<button hx-on:click={useScript(objectiveOnClick)} class="p-6 flex flex-col items-center justify-between w-[154px] min-h-32 border border-neutral hover:border-primary disabled:border-primary rounded-[10px] bg-primary-content group" disabled={index == 0} style={{borderColor: objectivesBorderColor}}>
-                            <div class="min-h-[26px]"><Image height={objective.icon.height || 26} width={objective.icon.width || 26} src={objective.icon.src} alt={objective.icon.alt || "objective icon"} class="h-full opacity-50 group-hover:opacity-100 group-disabled:opacity-100"/></div>
+                            <div class="min-h-[26px]">{objective.icon.src && <Image height={objective.icon.height || 26} width={objective.icon.width || 26} src={objective.icon.src} alt={objective.icon.alt || "objective icon"} class="h-full opacity-50 group-hover:opacity-100 group-disabled:opacity-100"/>}</div>
                             <p class="text-center text-primary opacity-50 group-hover:opacity-100 group-disabled:opacity-100 text-lg font-semibold leading-[120%]" style={{color: objectivesTextColor}}>{objective.title}</p>
                         </button>))}
                 </div>

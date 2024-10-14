@@ -1,10 +1,10 @@
 import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
-import { invoke } from "../runtime.ts";
+import { invoke } from "../../runtime.ts";
 import Image from "apps/website/components/Image.tsx";
 import { HtmlEscaped } from "@hono/hono/utils/html";
 import { Plan } from "site/sections/TcoCalculator.tsx";
 import { useScript } from "@deco/deco/hooks";
-import { Benefit } from "site/components/TcoCalculatorPage1.tsx";
+import { Benefit } from "./TcoCalculatorPage1.tsx";
 
 const moneyInputOnKeyUp = (inputsBorderColor?: string) => {
     const element = event!.currentTarget as HTMLInputElement;
@@ -276,6 +276,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
     const inputCaptionClass = "text-base text-primary flex justify-between items-center";
     const inputClass = "bg-transparent min-h-[38px] w-full rounded-lg border border-primary px-4 mt-2.5";
     return (<div class="relative flex flex-wrap lg:flex-nowrap w-full min-h-[971px] lg:rounded-[30px] overflow-hidden hidden">
+        V2
             <div class={`relative w-full lg:max-w-[437px] pt-[121px] px-11 ${!asideBackground && 'bg-primary'} text-primary-content hidden lg:block`} style={{color: asideTextColor}}>
                 {asideTopIcon && <Image width={133} height={119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10"/>}
                 {asideBackground && <Image width={813} height={971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}

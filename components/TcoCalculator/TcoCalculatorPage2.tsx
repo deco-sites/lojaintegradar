@@ -1,7 +1,7 @@
 import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useScript } from "@deco/deco/hooks";
-import { Benefit } from "site/components/TcoCalculatorPage1.tsx";
+import { Benefit } from "./TcoCalculatorPage1.tsx";
 const moneyInputOnKeyUp = (inputsBorderColor?: string) => {
     const element = event!.currentTarget as HTMLInputElement;
     let valor = element.value;

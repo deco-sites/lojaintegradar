@@ -1,5 +1,5 @@
 import Image from "apps/website/components/Image.tsx";
-import { Benefit, IImage } from "site/components/TcoCalculatorPage1.tsx";
+import { Benefit, IImage } from "./TcoCalculatorPage1.tsx";
 import { useScript } from "@deco/deco/hooks";
 const onClickStart = (rootId: string) => {
     event?.preventDefault();
@@ -23,6 +23,7 @@ export default function TcoCalculatorMobileStartPage({ page1, rootId }: {
 }) {
     const { title, caption, benefits, mobileStartBanner, mobileStartButtonText, asideTextColor } = page1;
     return <div class="lg:hidden relative text-sm text-primary-content font-normal py-10 px-4 w-full min-h-[155px]" style={{color: asideTextColor}}>
+        V2
         {mobileStartBanner && <Image width={430} height={755} alt={mobileStartBanner.alt || "background image"} src={mobileStartBanner.src} class="absolute w-full h-full top-0 left-0 object-cover object-top -z-10"/>}
         <p class="text-2xl font-semibold pr-20">{title}</p>
         <p class="mt-[26px]">{caption}</p>

@@ -1,14 +1,14 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { useId } from "../sdk/useId.ts";
-import TcoCalculatorPage1 from "site/components/TcoCalculator/TcoCalculatorPage1.tsx";
-import TcoCalculatorPage2 from "site/components/TcoCalculator/TcoCalculatorPage2.tsx";
-import TcoCalculatorPage3 from "site/components/TcoCalculator/TcoCalculatorPage3.tsx";
-import TcoCalculatorPage4 from "site/components/TcoCalculator/TcoCalculatorPage4.tsx";
-import TcoCalculatorMobileStartPage from "site/components/TcoCalculator/TcoCalculatorMobileStartPage.tsx";
-import { Page1 } from "site/components/TcoCalculator/TcoCalculatorPage1.tsx";
-import { Page2 } from "site/components/TcoCalculator/TcoCalculatorPage2.tsx";
-import { Page3 } from "site/components/TcoCalculator/TcoCalculatorPage3.tsx"
-import { Page4 } from "site/components/TcoCalculator/TcoCalculatorPage4.tsx";
+import TcoCalculatorPage1 from "site/components/TcoCalculatorV2/TcoCalculatorPage1.tsx";
+import TcoCalculatorPage2 from "site/components/TcoCalculatorV2/TcoCalculatorPage2.tsx";
+import TcoCalculatorPage3 from "site/components/TcoCalculatorV2/TcoCalculatorPage3.tsx";
+import TcoCalculatorPage4 from "site/components/TcoCalculatorV2/TcoCalculatorPage4.tsx";
+import TcoCalculatorMobileStartPage from "site/components/TcoCalculatorV2/TcoCalculatorMobileStartPage.tsx";
+import { Page1 } from "site/components/TcoCalculatorV2/TcoCalculatorPage1.tsx";
+import { Page2 } from "site/components/TcoCalculatorV2/TcoCalculatorPage2.tsx";
+import { Page3 } from "site/components/TcoCalculatorV2/TcoCalculatorPage3.tsx"
+import { Page4 } from "site/components/TcoCalculatorV2/TcoCalculatorPage4.tsx";
 
 export interface IImage {
     src: ImageWidget;

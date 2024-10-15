@@ -167,11 +167,11 @@ function TcoCalculatorPage1({ page1, rootId }: {
                     <input type="submit" class="btn btn-primary font-bold px-7 hover:scale-110 text-lg min-h-10 lg:min-h-12 h-auto hidden btnStart" style={{background: hubspotButtonColor, color: hubspotButtonTextColor}} value={emailButtonText} hx-on:click={useScript(onClickStart, rootId)}/>
                 </div>
                 
-                {/* <form class={`bg-primary-content flex justify-between py-1.5 pr-1.5 mt-7 text-base text-primary border border-base-200 rounded-xl shadow-spreaded hidden`} hx-on:submit={useScript(onClickStart, rootId)}>
+                <form class={`bg-primary-content flex justify-between py-1.5 pr-1.5 mt-7 text-base text-primary border border-base-200 rounded-xl shadow-spreaded hidden`} hx-on:submit={useScript(onClickStart, rootId)}>
                     <input id={rootId + 'emailInput'} type="email" class="w-1/2 md:w-auto md:flex-grow pl-2 md:pl-7 focus:outline-none text-sm md:text-base text-primary" placeholder={emailPlaceHolder} required/>
                     <input type="submit" class="btn btn-primary font-bold px-7 hover:scale-110 text-lg min-h-10 lg:min-h-12 h-auto" value={emailButtonText}>
                     </input>
-                </form> */}
+                </form>
             </div>
             <style dangerouslySetInnerHTML={{__html: `
                 .tcoEmailForm .hs-form-private {

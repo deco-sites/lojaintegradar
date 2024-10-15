@@ -1512,11 +1512,13 @@
           "textBefore": "Economize",
           "textAfter": "no plano",
           "background": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/20ee682c-2405-4b9c-92e7-453ee5cf43e6/savings-bg-png.png",
-            "alt": "savings background"
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fd87e045-5866-45c3-9aa9-b6d53b64f292/Rectangle-5.png",
+            "alt": "savings background",
+            "width": 279,
+            "height": 125
           },
           "indicatedPlanSavingLabel": "Economia de",
-          "textColor": "#371E55"
+          "textColor": "#ffffff"
         },
         "benefit1": {
           "text": "Aumente suas vendas e economize na sua operação com as nossas soluções nativas",
@@ -1592,7 +1594,26 @@
         "whatsappTextColor": "#371E55",
         "whatsappInputTextColor": "#371E55",
         "whatsappInputBorderColor": "#828CA0",
-        "asideContentBackgroundColor": "#F1EEFF"
+        "asideContentBackgroundColor": "",
+        "topSellerFeedback": {
+          "text": "<p style=\"font-family: Inter; font-size: 20px; font-weight: 600;\" data-mce-style=\"font-family: Inter; font-size: 20px; font-weight: 600;\">⚡️ Oferta</p><p style=\"letter-spacing: -1.26px;\" data-mce-style=\"letter-spacing: -1.26px;\"><span style=\"color: rgb(113, 219, 212);\" data-mce-style=\"color: rgb(113, 219, 212);\"><em>Investimos até R$ 12 mil</em></span>&nbsp; na sua migração<br>para a Loja Integrada</p><p style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\" data-mce-style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\">É isso mesmo que você leu! Estamos prontos para te ajudar a dar o próximo passo. Preencha seus dados e receba uma oferta personalizada:</p>",
+          "cta": {
+            "href": "#",
+            "ctaStyle": "button",
+            "text": "Receba proposta",
+            "backgroundColor": "#ffffff",
+            "textColor": "#371E55",
+            "borderColor": "#ffffff"
+          },
+          "textBellow": "<p>*Oferta válida para </p><p>lojistas&nbsp;com faturamento </p><p>mensal&nbsp;igual ou superior&nbsp;</p><p>a&nbsp;R$ 100 mil.</p>",
+          "textBellowColor": "#ffffff"
+        },
+        "longTailFeedback": {
+          "text": "<p style=\"font-family: Inter; font-size: 20px; font-weight: 600;\" data-mce-style=\"font-family: Inter; font-size: 20px; font-weight: 600;\">⚡️ Oferta personalizada</p><p style=\"letter-spacing: -1.26px;\" data-mce-style=\"letter-spacing: -1.26px;\"><span style=\"color: rgb(113, 219, 212);\" data-mce-style=\"color: rgb(113, 219, 212);\"><em>Cresça seu e-commerce</em></span>&nbsp; com economia<br>e recursos exclusivos!</p><p style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\" data-mce-style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\">Assine o plano Aceleração e <strong>garanta isenção* de tarifas por transações durante 6 meses.</strong></p>"
+        },
+        "midTailFeedback": {
+          "text": "<p style=\"font-family: Inter; font-size: 20px; font-weight: 600;\" data-mce-style=\"font-family: Inter; font-size: 20px; font-weight: 600;\">⚡️ Oferta personalizada</p><p style=\"letter-spacing: -1.26px;\" data-mce-style=\"letter-spacing: -1.26px;\"><span style=\"color: rgb(113, 219, 212);\" data-mce-style=\"color: rgb(113, 219, 212);\"><em>Potencialize suas vendas </em></span>com economia<br>e recursos exclusivos!</p><p style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\" data-mce-style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\"><strong>Garanta 40% OFF*</strong> ao assinar o Plano Expansão anual. <strong>Ganhe também 40% de desconto</strong> em temas e serviços.</p>"
+        }
       },
       "plans": [
         {
@@ -1601,7 +1622,8 @@
           "cardFee": 4.59,
           "boletoFee": 2.39,
           "pixFee": 1,
-          "comission": 0.99
+          "comission": 0.99,
+          "planId": "173"
         },
         {
           "title": "Aceleração",
@@ -1609,7 +1631,8 @@
           "cardFee": 4.49,
           "boletoFee": 2.39,
           "pixFee": 1,
-          "comission": 0.9
+          "comission": 0.9,
+          "planId": "174"
         },
         {
           "title": "Expansão",
@@ -1617,7 +1640,8 @@
           "cardFee": 4.29,
           "boletoFee": 2.39,
           "pixFee": 1,
-          "comission": 0.7
+          "comission": 0.7,
+          "planId": "176"
         },
         {
           "title": "Elite",
@@ -1625,7 +1649,8 @@
           "cardFee": 3.59,
           "boletoFee": 1.99,
           "comission": 0.5,
-          "pixFee": 1.99
+          "pixFee": 1.99,
+          "planId": "180"
         }
       ],
       "titleColor": "#371E55",

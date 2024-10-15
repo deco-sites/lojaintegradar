@@ -17,6 +17,7 @@ export interface IImage {
 
 /** @title {{title}} */
 export interface Plan {
+    planId: string;
     title: string;
     montlyFee: number;
     cardFee: number;
@@ -74,10 +75,12 @@ function TcoCalculator(props: Props) {
                 <TcoCalculatorPage4
                     page1={page1}
                     page4={page4}
+                    plans={plans}
                     rootId={id}
                 />
                 <TcoCalculatorMobileStartPage
                     page1={page1}
+                    page2={page2}
                     rootId={id}
                 />
             </div>

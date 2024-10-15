@@ -27,7 +27,6 @@ const onChange = (rootId: string, labelColor?: string, disabledLabelColor?: stri
     const montlyCreateStoreButtons = parent.querySelectorAll(".montlyCreateStoreButton");
     const annualCreateStoreButtons = parent.querySelectorAll(".annualCreateStoreButton");
 
-    console.log(annualTag);
     if (!element.checked) {
         montlyValues.forEach((value) => value.classList.remove("hidden"));
         annualValues.forEach((value) => value.classList.add("hidden"));

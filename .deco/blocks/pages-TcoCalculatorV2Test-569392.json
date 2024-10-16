@@ -1309,7 +1309,9 @@
         },
         "mobileStartBanner": {
           "alt": "mobile start screen background",
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/7bb388f3-cdd3-4873-9705-250ea560571c/mobile-start-banner2.svg"
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/292ea0d5-26b9-439a-b71c-0caa0dd2ab87/gabriel-bollico-background.svg",
+          "height": 971,
+          "width": 430
         },
         "mobileStartButtonText": "Iniciar cálculo TCO",
         "asideTextColor": "#ffffff",
@@ -1609,10 +1611,27 @@
           "textBellowColor": "#ffffff"
         },
         "longTailFeedback": {
-          "text": "<p style=\"font-family: Inter; font-size: 20px; font-weight: 600;\" data-mce-style=\"font-family: Inter; font-size: 20px; font-weight: 600;\">⚡️ Oferta personalizada</p><p style=\"letter-spacing: -1.26px;\" data-mce-style=\"letter-spacing: -1.26px;\"><span style=\"color: rgb(113, 219, 212);\" data-mce-style=\"color: rgb(113, 219, 212);\"><em>Cresça seu e-commerce</em></span>&nbsp; com economia<br>e recursos exclusivos!</p><p style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\" data-mce-style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\">Assine o plano Aceleração e <strong>garanta isenção* de tarifas por transações durante 6 meses.</strong></p>"
+          "text": "<p style=\"font-family: Inter; font-size: 20px; font-weight: 600;\" data-mce-style=\"font-family: Inter; font-size: 20px; font-weight: 600;\">⚡️ Oferta personalizada</p><p style=\"letter-spacing: -1.26px;\" data-mce-style=\"letter-spacing: -1.26px;\"><span style=\"color: rgb(113, 219, 212);\" data-mce-style=\"color: rgb(113, 219, 212);\"><em>Cresça seu e-commerce</em></span>&nbsp; com economia<br>e recursos exclusivos!</p><p style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\" data-mce-style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\">Assine o plano Aceleração e <strong>garanta isenção* de tarifas por transações durante 6 meses.</strong></p>",
+          "cta": {
+            "text": "Assinar agora",
+            "ctaStyle": "button",
+            "backgroundColor": "#ffffff",
+            "textColor": "#371E55",
+            "borderColor": "#ffffff"
+          },
+          "textBellow": "<p>*Oferta válida para</p><p>lojistas com faturamento</p><p>mensal de até R$ 10 mil.</p>"
         },
         "midTailFeedback": {
-          "text": "<p style=\"font-family: Inter; font-size: 20px; font-weight: 600;\" data-mce-style=\"font-family: Inter; font-size: 20px; font-weight: 600;\">⚡️ Oferta personalizada</p><p style=\"letter-spacing: -1.26px;\" data-mce-style=\"letter-spacing: -1.26px;\"><span style=\"color: rgb(113, 219, 212);\" data-mce-style=\"color: rgb(113, 219, 212);\"><em>Potencialize suas vendas </em></span>com economia<br>e recursos exclusivos!</p><p style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\" data-mce-style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\"><strong>Garanta 40% OFF*</strong> ao assinar o Plano Expansão anual. <strong>Ganhe também 40% de desconto</strong> em temas e serviços.</p>"
+          "text": "<p style=\"font-family: Inter; font-size: 20px; font-weight: 600;\" data-mce-style=\"font-family: Inter; font-size: 20px; font-weight: 600;\">⚡️ Oferta personalizada</p><p style=\"letter-spacing: -1.26px;\" data-mce-style=\"letter-spacing: -1.26px;\"><span style=\"color: rgb(113, 219, 212);\" data-mce-style=\"color: rgb(113, 219, 212);\"><em>Potencialize suas vendas </em></span>com economia<br>e recursos exclusivos!</p><p style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\" data-mce-style=\"font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-top: 10px;\"><strong>Garanta 40% OFF*</strong> ao assinar o Plano Expansão anual. <strong>Ganhe também 40% de desconto</strong> em temas e serviços.</p>",
+          "cta": {
+            "text": "Assinar agora",
+            "backgroundColor": "#ffffff",
+            "ctaStyle": "button",
+            "textColor": "#371E55",
+            "borderColor": "#ffffff",
+            "coupon": "BF2024"
+          },
+          "textBellow": "<p>*Oferta válida para </p><p>lojistas com faturamento </p><p>mensal de até R$ 99 mil.</p>"
         }
       },
       "plans": [

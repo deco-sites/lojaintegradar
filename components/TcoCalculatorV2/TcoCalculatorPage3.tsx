@@ -143,17 +143,24 @@ const onClickNext = (rootId: string, plans: Plan[], inputsErrorMessageColor: str
         //manda a economia com o plano indicado para a última página
         (parent?.querySelector("#" + rootId + "savingAside") as HTMLElement).textContent = saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).split(',')[0];
         (parent?.querySelector("#" + rootId + "indicatedPlanLabelSaving") as HTMLElement).textContent = saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).split(',')[0];
-        (parent?.querySelector("#" + rootId + "indicatedPlanName") as HTMLElement).textContent = plans[indicatedPlan].title;
+        // (parent?.querySelector("#" + rootId + "indicatedPlanName") as HTMLElement).textContent = plans[indicatedPlan].title;
         
         //mostra o botão de migrar para o plano indicado pela calculadora
-        const migrateCta = (parent?.querySelector("#" + rootId + "migrateCta") as HTMLElement).querySelector(".migrateTo"+plans[indicatedPlan].planId);
-        migrateCta?.classList.remove("hidden");
+        if (moneyToNumber(gmvInput) < 100000) {
+            const migrateCta = (parent?.querySelector("#" + rootId + "migrateCta") as HTMLElement).querySelector(".migrateTo"+plans[indicatedPlan].planId);
+            migrateCta?.classList.remove("hidden");
+        }
 
         //seleciona a devolutiva baseado no faturamento mensal
         const topSellerFeedback = (parent?.querySelector("#" + rootId + "topSellerFeedback") as HTMLElement);
         const midTailFeedback = (parent?.querySelector("#" + rootId + "midTailFeedback") as HTMLElement);
         const longTailFeedback = (parent?.querySelector("#" + rootId + "longTailFeedback") as HTMLElement);
-        if (moneyToNumber(gmvInput) >= 100000) topSellerFeedback.classList.remove("hidden");
+        console.log(moneyToNumber(gmvInput));
+        if (moneyToNumber(gmvInput) >= 100000) {
+            topSellerFeedback.classList.remove("hidden");
+            const migrateCta = (parent?.querySelector("#" + rootId + "migrateCta") as HTMLElement).querySelector(".migrateToTalk");
+            migrateCta?.classList.remove("hidden");
+        }
         else if (moneyToNumber(gmvInput) >= 10000) midTailFeedback.classList.remove("hidden");
         else longTailFeedback.classList.remove("hidden");
 

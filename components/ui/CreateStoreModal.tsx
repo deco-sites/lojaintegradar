@@ -21,6 +21,7 @@ const useMutationObserver = (domNodeSelector: string, observerOptions: MutationO
 const CreateStoreModal = () => {
     const [getPlanId, setGetPlanId] = useState('');
     const [getPeriod, setGetPeriod] = useState('');
+    const [getCoupon, setGetCoupon] = useState('');
 
     const [formData, setFormData] = useState({
         nome: "",
@@ -93,8 +94,10 @@ const CreateStoreModal = () => {
                 const modal = document.getElementById("createStoreModal");
                 const newPlanId = modal?.getAttribute("data-planid") || '';
                 const newPeriod = modal?.getAttribute("data-period") || 'anual';
+                const newCoupon = modal?.getAttribute("data-coupon") || '';
                 setGetPlanId(newPlanId);
                 setGetPeriod(newPeriod);
+                setGetCoupon(newCoupon);
                 break;
             }
         }
@@ -149,7 +152,7 @@ const CreateStoreModal = () => {
                 </button>
 
                 <form
-                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${getPeriod}&amp;plano_id=${getPlanId}`}
+                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${getPeriod}&amp;plano_id=${getPlanId}${getCoupon && `&cupom=${getCoupon}`}`}
                     id="modal-no-check"
                     data-gtm-form-interact-id="0"
                     method="POST"

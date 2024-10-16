@@ -4,6 +4,7 @@ import { useScript } from "@deco/deco/hooks";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 import { Plan } from "../../sections/TcoCalculatorV2.tsx";
 import Plans from "site/sections/Plans.tsx";
+import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
 export interface IImage {
     src?: ImageWidget;
@@ -49,6 +50,20 @@ export interface CTA {
     showIcon?: boolean;
 }
 
+export interface FeedbackCTA {
+    text?: string;
+    coupon?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle: "button" | "link";
+    showIcon?: boolean;
+}
+
 export interface ResultTableColors {
     /** @format color-input */
     textColor1?: string;
@@ -71,6 +86,7 @@ export interface Page1 {
     /** @format color-input */
     asideTextColor?: string;
     asideTopIcon?: IImage;
+    asideBottomText?: HTMLWidget;
     mobileTopBanner: IImage;
 }
 export interface Result {
@@ -88,7 +104,6 @@ export interface Result {
 
 export interface Saving {
     textBefore: string;
-    textAfter: string;
     background: IImage;
     /** @format color-input */
     textColor?: string;
@@ -103,7 +118,7 @@ export interface Benefit {
 
 export interface Feedback {
     text?: HTMLWidget;
-    cta?: CTA;
+    cta?: FeedbackCTA;
     textBellow?: HTMLWidget;
 }
 
@@ -163,19 +178,19 @@ function TcoCalculatorPage4({ page1, rootId, page4, plans }: {
     plans: Plan[];
     rootId: string;
 }) {
-    const { contentTitle, asideBackground, contentTitleIcon, contentCaption, asideTopIcon, mobileTopBanner, title, contentCaptionColor, asideTextColor } = page1;
+    const { contentTitle, asideBackground, contentTitleIcon, contentCaption, asideTopIcon, mobileTopBanner, title, contentCaptionColor, asideTextColor, asideBottomText } = page1;
     const { progressImage, contentBackground, saving, result, resultTableColors, topSellerFeedback, midTailFeedback, longTailFeedback, lessVantageText, moreVantageText, lojaIntegradaText, indicatedPlanSavingLabel, indicatedPlanSavingLabelTextColor, indicatedPlanSavingLabelBackgroundColor, moreVantageBackgroundColor, moreVantageTextColor, lessVantageBackgroundColor, lessVantageTextColor, lojaIntegradaTextColor, asideContentBackgroundColor } = page4;
     const inputCaptionClass = "text-base text-primary font-bold flex justify-between items-center";
     const inputClass = "bg-transparent min-h-[38px] w-full rounded-lg border border-neutral-content px-4 mt-1";
-    return (<div class="relative flex flex-wrap xl:flex-nowrap w-full min-h-[971px] xl:rounded-[30px] overflow-hidden">
-        <div class={`relative w-full xl:max-w-[437px] pt-[70px] px-7 pb-16 xl:pb-0 text-primary order-last xl:order-none`} style={{ backgroundColor: asideContentBackgroundColor }}>
+    return (<div class="relative flex flex-wrap xl:flex-nowrap w-full min-h-[971px] xl:rounded-[30px] overflow-hidden hidden">
+        <div class={`relative w-full xl:max-w-[437px] min-h-[971px] pt-[70px] px-7 pb-16 xl:pb-0 text-primary order-last xl:order-none`} style={{ backgroundColor: asideContentBackgroundColor }}>
             {asideTopIcon?.src && <Image id={rootId + "negativeScreenAsideTopIcon"} width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10 hidden" />}
             {asideBackground?.src && <Image width={asideBackground.width || 813} height={asideBackground.height || 971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover object-top" />}
             <div id={rootId + "savingDiv"} class="px-7 py-[14px] relative max-w-[242px]" style={{ color: saving.textColor }}>
                 <div class="relative z-10">
-                    <p class="text-xl font-semibold pr-9">{saving.textBefore}</p>
+                    <p class="text-xl font-semibold text-center">{saving.textBefore}</p>
                     <p id={rootId + "savingAside"} class="bg-transparent text-[40px] font-semibold" />
-                    <p class="text-xl font-semibold">{saving.textAfter} <span id={rootId + "indicatedPlanName"} /></p>
+                    {/* <p class="text-xl font-semibold">{saving.textAfter} <span id={rootId + "indicatedPlanName"} /></p> */}
                 </div>
                 {saving.background.src && <Image width={saving.background.width || 242} height={saving.background.height || 125} src={saving.background.src} alt={saving.background.alt || "background"} class="w-full h-full absolute top-0 left-0 object-fill" />}
                 {asideTopIcon?.src && <Image width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-[-30px] right-[-60px] w-[133px] h-[119px] object-contain z-10" />}
@@ -184,28 +199,55 @@ function TcoCalculatorPage4({ page1, rootId, page4, plans }: {
                 {topSellerFeedback.text && <div class="text-[42px] leading-[120%] font-instrument font-normal mt-7" style={{ color: saving.textColor }} dangerouslySetInnerHTML={{ __html: topSellerFeedback.text }} />}
                 {(topSellerFeedback.cta?.text || topSellerFeedback.cta?.text) &&
                     <div class="mt-7">
-                        <a
-                            href={topSellerFeedback.cta?.href ?? "#"}
-                            target={topSellerFeedback.cta?.href.includes("http") ? "_blank" : ""}
-                            class={`${topSellerFeedback.cta.ctaStyle != "link" && 'btn btn-primary px-2.5'} inline-flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base`}
+                        <TalkToSpecialistCta
+                            showIcon={topSellerFeedback.cta.showIcon}
+                            underlineText={topSellerFeedback.cta.underlineText}
+                            text={topSellerFeedback.cta.text}
+                            ctaClass={`${topSellerFeedback.cta.ctaStyle != "link" && 'btn btn-primary px-2.5'} inline-flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base`}
                             style={topSellerFeedback.cta.ctaStyle == "button" ? { backgroundColor: topSellerFeedback.cta.backgroundColor, color: topSellerFeedback.cta.textColor, borderColor: topSellerFeedback.cta.borderColor } : { color: topSellerFeedback.cta.textColor }}
-                        >
-                            {topSellerFeedback.cta?.text}
-                            {topSellerFeedback.cta.underlineText && <span class="underline">{topSellerFeedback.cta.underlineText}</span>}
-                            {topSellerFeedback.cta.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z" />
-                            </svg>}
-                        </a>
+                        />
                     </div>
                 }
                 {topSellerFeedback.textBellow && <div class="text-sm font-normal leading-normal mt-7" style={{ color: saving.textColor }} dangerouslySetInnerHTML={{ __html: topSellerFeedback.textBellow }} />}
             </div>
             <div id={rootId + "midTailFeedback"} class="hidden">
-                MidTail
+                {midTailFeedback.text && <div class="text-[42px] leading-[120%] font-instrument font-normal mt-7" style={{ color: saving.textColor }} dangerouslySetInnerHTML={{ __html: midTailFeedback.text }} />}
+                {(midTailFeedback.cta?.text || midTailFeedback.cta?.text) &&
+                    <div class="mt-7">
+                        <CreateStoreCta
+                            planId="176"
+                            period="anual"
+                            coupon={midTailFeedback.cta.coupon}
+                            showIcon={midTailFeedback.cta.showIcon}
+                            underlineText={midTailFeedback.cta.underlineText}
+                            text={midTailFeedback.cta.text}
+                            ctaClass={`${midTailFeedback.cta.ctaStyle != "link" && 'btn btn-primary px-2.5'} inline-flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base`}
+                            style={midTailFeedback.cta.ctaStyle == "button" ? { backgroundColor: midTailFeedback.cta.backgroundColor, color: midTailFeedback.cta.textColor, borderColor: midTailFeedback.cta.borderColor } : { color: midTailFeedback.cta.textColor }}
+                        />
+                    </div>
+                }
+                {midTailFeedback.textBellow && <div class="text-sm font-normal leading-normal mt-7" style={{ color: saving.textColor }} dangerouslySetInnerHTML={{ __html: midTailFeedback.textBellow }} />}
             </div>
             <div id={rootId + "longTailFeedback"} class="hidden">
-                LongTail
+                {longTailFeedback.text && <div class="text-[42px] leading-[120%] font-instrument font-normal mt-7" style={{ color: saving.textColor }} dangerouslySetInnerHTML={{ __html: longTailFeedback.text }} />}
+                {(longTailFeedback.cta?.text || longTailFeedback.cta?.text) &&
+                    <div class="mt-7">
+                        <CreateStoreCta
+                            planId="174"
+                            period="anual"
+                            coupon={longTailFeedback.cta.coupon}
+                            showIcon={longTailFeedback.cta.showIcon}
+                            underlineText={longTailFeedback.cta.underlineText}
+                            text={longTailFeedback.cta.text}
+                            ctaClass={`${longTailFeedback.cta.ctaStyle != "link" && 'btn btn-primary px-2.5'} inline-flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base`}
+                            style={longTailFeedback.cta.ctaStyle == "button" ? { backgroundColor: longTailFeedback.cta.backgroundColor, color: longTailFeedback.cta.textColor, borderColor: longTailFeedback.cta.borderColor } : { color: longTailFeedback.cta.textColor }}
+                        />
+                    </div>
+                }
+                {longTailFeedback.textBellow && <div class="text-sm font-normal leading-normal mt-7" style={{ color: saving.textColor }} dangerouslySetInnerHTML={{ __html: longTailFeedback.textBellow }} />}
             </div>
+
+            <div dangerouslySetInnerHTML={{ __html: asideBottomText || "" }} class="font-bold leading-[130%] absolute left-6 bottom-6 text-white" />
         </div>
 
         <div class="xl:hidden relative text-2xl text-secondary-content font-semibold py-10 px-4 w-full min-h-[155px]" style={{ color: asideTextColor }}>
@@ -261,7 +303,6 @@ function TcoCalculatorPage4({ page1, rootId, page4, plans }: {
             <div class="flex gap-2.5">
                 <div class="w-[68%] 2xl:w-[390px]" />
                 <div id={rootId + "migrateCta"} class="flex justify-center bg-primary py-[18px] sm:px-3 max-w-[193px] w-[32%] 2xl:w-full rounded-bl-[20px] rounded-br-[20px]" style={{ backgroundColor: resultTableColors?.resultValuesBackgroundColor }}>
-
                     {plans.map((plan) => (
                         <CreateStoreCta
                             period="anual"
@@ -273,6 +314,13 @@ function TcoCalculatorPage4({ page1, rootId, page4, plans }: {
                             style={result.migrateCta.ctaStyle == "button" ? { backgroundColor: result.migrateCta.backgroundColor, color: result.migrateCta.textColor, borderColor: result.migrateCta.borderColor } : { color: result.migrateCta.textColor }}
                         />
                     ))}
+                    <TalkToSpecialistCta
+                        text={result.migrateCta.text}
+                        showIcon={result.migrateCta.showIcon}
+                        underlineText={result.migrateCta.underlineText}
+                        ctaClass={`${result.migrateCta.ctaStyle != "link" && 'btn btn-primary px-6'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg hidden migrateToTalk whitespace-nowrap`}
+                        style={result.migrateCta.ctaStyle == "button" ? { backgroundColor: result.migrateCta.backgroundColor, color: result.migrateCta.textColor, borderColor: result.migrateCta.borderColor } : { color: result.migrateCta.textColor }}
+                    />
                 </div>
             </div>
         </div>

@@ -35,8 +35,9 @@ import * as $$$$$$26 from "./sections/ScrollOnLoadScript.tsx";
 import * as $$$$$$27 from "./sections/TalkToAnExpert.tsx";
 import * as $$$$$$28 from "./sections/TalkToSpecialistModal.tsx";
 import * as $$$$$$29 from "./sections/TcoCalculator.tsx";
-import * as $$$$$$30 from "./sections/Testimonials.tsx";
-import * as $$$$$$31 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$30 from "./sections/TcoCalculatorV2.tsx";
+import * as $$$$$$31 from "./sections/Testimonials.tsx";
+import * as $$$$$$32 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -70,8 +71,9 @@ const manifest = {
     "site/sections/TalkToAnExpert.tsx": $$$$$$27,
     "site/sections/TalkToSpecialistModal.tsx": $$$$$$28,
     "site/sections/TcoCalculator.tsx": $$$$$$29,
-    "site/sections/Testimonials.tsx": $$$$$$30,
-    "site/sections/Theme/Theme.tsx": $$$$$$31,
+    "site/sections/TcoCalculatorV2.tsx": $$$$$$30,
+    "site/sections/Testimonials.tsx": $$$$$$31,
+    "site/sections/Theme/Theme.tsx": $$$$$$32,
   },
   "actions": {
     "site/actions/sendTcoUserData.ts": $$$$$$$$$0,

@@ -1,10 +1,9 @@
 import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
-import { invoke } from "../runtime.ts";
+import { invoke } from "../../runtime.ts";
 import Image from "apps/website/components/Image.tsx";
-import { HtmlEscaped } from "@hono/hono/utils/html";
-import { Plan } from "site/sections/TcoCalculator.tsx";
-import { useScript } from "@deco/deco/hooks";
-import { Benefit } from "site/components/TcoCalculatorPage1.tsx";
+import { Plan } from "site/sections/TcoCalculatorV2.tsx";
+import { useScript } from "deco/hooks/useScript.ts";
+import { Benefit } from "./TcoCalculatorPage1.tsx";
 
 const moneyInputOnKeyUp = (inputsBorderColor?: string) => {
     const element = event!.currentTarget as HTMLInputElement;
@@ -41,7 +40,7 @@ const percentageInputOnKeyUp = (inputsBorderColor?: string) => {
     element.parentElement?.querySelector(".text-error")?.classList.add("hidden");
     element.style.borderColor = inputsBorderColor || "#371E55";
 };
-const onClickNext = (rootId: string, plans: Plan[], inputsErrorMessageColor?: string) => {
+const onClickNext = (rootId: string, plans: Plan[], inputsErrorMessageColor: string) => {
     const parent = document.getElementById(rootId);
     const form = parent?.querySelector(".page3form");
     const fields = form?.querySelectorAll("label");
@@ -68,7 +67,7 @@ const onClickNext = (rootId: string, plans: Plan[], inputsErrorMessageColor?: st
         if (input && input.value == "") {
              validated = false;
             field.querySelector(".text-error")?.classList.remove("hidden"); //mostra mensagem de erro
-            input.style.borderColor = inputsErrorMessageColor || "#F57E77";
+            input.style.borderColor = inputsErrorMessageColor;
         }
      });
 
@@ -144,19 +143,27 @@ const onClickNext = (rootId: string, plans: Plan[], inputsErrorMessageColor?: st
         //manda a economia com o plano indicado para a última página
         (parent?.querySelector("#" + rootId + "savingAside") as HTMLElement).textContent = saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).split(',')[0];
         (parent?.querySelector("#" + rootId + "indicatedPlanLabelSaving") as HTMLElement).textContent = saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).split(',')[0];
-        (parent?.querySelector("#" + rootId + "indicatedPlanName") as HTMLElement).textContent = plans[indicatedPlan].title;
-        //caso o plano indicado não ofereça economia transforma a tela final na tela negativa
-        if (negativeResult) {
-            parent?.querySelector("#" + rootId + "resultAsideContentDiv")?.classList.add("flex-col-reverse");
-            parent?.querySelector("#" + rootId + "negativeScreenAsideTitle")?.classList.remove("hidden");
-            parent?.querySelector("#" + rootId + "savingDiv")?.classList.add("hidden");
-            parent?.querySelector("#" + rootId + "currentPlanLabel")?.classList.add("hidden");
-            parent?.querySelector("#" + rootId + "indicatedPlanLabel")?.classList.add("hidden");
-            (parent?.querySelector("#" + rootId + "indicatedPlanLabelSaving")?.parentElement?.parentElement as HTMLElement).classList.add("hidden");
-            parent?.querySelector("#" + rootId + "negativeScreenExtraBenefit1")?.classList.remove("hidden");
-            parent?.querySelector("#" + rootId + "negativeScreenExtraBenefit2")?.classList.remove("hidden");
-            parent?.querySelector("#" + rootId + "negativeScreenAsideTopIcon")?.classList.remove("hidden");
+        // (parent?.querySelector("#" + rootId + "indicatedPlanName") as HTMLElement).textContent = plans[indicatedPlan].title;
+        
+        //mostra o botão de migrar para o plano indicado pela calculadora
+        if (moneyToNumber(gmvInput) < 100000) {
+            const migrateCta = (parent?.querySelector("#" + rootId + "migrateCta") as HTMLElement).querySelector(".migrateTo"+plans[indicatedPlan].planId);
+            migrateCta?.classList.remove("hidden");
         }
+
+        //seleciona a devolutiva baseado no faturamento mensal
+        const topSellerFeedback = (parent?.querySelector("#" + rootId + "topSellerFeedback") as HTMLElement);
+        const midTailFeedback = (parent?.querySelector("#" + rootId + "midTailFeedback") as HTMLElement);
+        const longTailFeedback = (parent?.querySelector("#" + rootId + "longTailFeedback") as HTMLElement);
+        console.log(moneyToNumber(gmvInput));
+        if (moneyToNumber(gmvInput) >= 100000) {
+            topSellerFeedback.classList.remove("hidden");
+            const migrateCta = (parent?.querySelector("#" + rootId + "migrateCta") as HTMLElement).querySelector(".migrateToTalk");
+            migrateCta?.classList.remove("hidden");
+        }
+        else if (moneyToNumber(gmvInput) >= 10000) midTailFeedback.classList.remove("hidden");
+        else longTailFeedback.classList.remove("hidden");
+
         //envia os dados para o hubspot
         const fields = {
             email: emailInput,
@@ -190,7 +197,15 @@ const onClickNext = (rootId: string, plans: Plan[], inputsErrorMessageColor?: st
             method: 'POST',
             headers: { 'content-type': 'application/json' }
         }).then((r) => r.json()).then((r) => console.log(r));
-
+        
+        //caso o plano indicado não ofereça economia transforma a tela final na tela negativa
+        if (negativeResult) {
+            parent?.querySelector("#" + rootId + "savingDiv")?.classList.add("hidden");
+            parent?.querySelector("#" + rootId + "currentPlanLabel")?.classList.add("hidden");
+            parent?.querySelector("#" + rootId + "indicatedPlanLabel")?.classList.add("hidden");
+            (parent?.querySelector("#" + rootId + "indicatedPlanLabelSaving")?.parentElement?.parentElement as HTMLElement).classList.add("hidden");
+            parent?.querySelector("#" + rootId + "negativeScreenAsideTopIcon")?.classList.remove("hidden");
+        }
     }
 };
 const onClickBack = (rootId: string) => {
@@ -201,9 +216,12 @@ const onClickBack = (rootId: string) => {
         Array.from(parent.children)[2].classList.add("hidden");
     }
 };
+
 export interface IImage {
-    src: ImageWidget;
+    src?: ImageWidget;
     alt?: string;
+    width?: number;
+    height?: number;
 }
 
 export interface IInput {
@@ -221,16 +239,18 @@ export interface Page1 {
     caption: string;
     /** @format color-input */
     asideTextColor?: string;
-    benefits?: Benefit[];
     contentTitle: HTMLWidget;
     contentTitleIcon?: IImage;
     contentCaption?: string;
     /** @format color-input */
     contentCaptionColor?: string;
-    asideBackground?: IImage;
     asideTopIcon?: IImage;
     contentBackground?: IImage;
     mobileTopBanner: IImage;
+}
+export interface Page2 {
+    benefits?: Benefit[];
+    asideBackground?: IImage;
 }
 export interface Page3 {
     progressImage?: IImage;
@@ -257,34 +277,37 @@ export interface Page3 {
     backButtonText: string;
     /** @format color-input */
     backButtonTextColor?: string;
-    
 }
+
 function InfoIcon() {
     return <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M4.35294 0.00439453C3.49201 0.00439453 2.65042 0.275646 1.93458 0.783847C1.21874 1.29205 0.660814 2.01437 0.33135 2.85948C0.00188606 3.70459 -0.0843167 4.63452 0.0836425 5.53169C0.251602 6.42885 0.666179 7.25294 1.27495 7.89976C1.88372 8.54658 2.65934 8.98707 3.50373 9.16552C4.34811 9.34398 5.22334 9.25239 6.01874 8.90234C6.81414 8.55228 7.49397 7.95948 7.97228 7.1989C8.45059 6.43833 8.70588 5.54413 8.70588 4.62939C8.70466 3.40317 8.24566 2.22753 7.42959 1.36046C6.61352 0.493381 5.50704 0.00568945 4.35294 0.00439453ZM4.35294 8.54285C3.62446 8.54285 2.91234 8.31333 2.30663 7.88332C1.70093 7.4533 1.22883 6.8421 0.950056 6.12701C0.671279 5.41192 0.598338 4.62505 0.740458 3.86592C0.882577 3.10678 1.23337 2.40947 1.74849 1.86216C2.2636 1.31485 2.91989 0.942131 3.63437 0.791129C4.34886 0.640127 5.08944 0.717627 5.76246 1.01383C6.43549 1.31003 7.01074 1.81163 7.41546 2.45519C7.82018 3.09876 8.0362 3.85538 8.0362 4.62939C8.03509 5.66695 7.64668 6.66167 6.95617 7.39533C6.26567 8.12899 5.32946 8.54168 4.35294 8.54285ZM5.02262 6.76401C5.02262 6.85836 4.98735 6.94886 4.92455 7.01558C4.86176 7.0823 4.77659 7.11978 4.68778 7.11978C4.51017 7.11978 4.33984 7.04481 4.21425 6.91137C4.08866 6.77793 4.0181 6.59695 4.0181 6.40824V4.62939C3.9293 4.62939 3.84413 4.59191 3.78133 4.52519C3.71854 4.45847 3.68326 4.36798 3.68326 4.27362C3.68326 4.17927 3.71854 4.08878 3.78133 4.02206C3.84413 3.95534 3.9293 3.91786 4.0181 3.91786C4.19571 3.91786 4.36605 3.99282 4.49164 4.12626C4.61723 4.2597 4.68778 4.44068 4.68778 4.62939V6.40824C4.77659 6.40824 4.86176 6.44572 4.92455 6.51244C4.98735 6.57916 5.02262 6.66965 5.02262 6.76401ZM3.68326 2.67266C3.68326 2.56712 3.71272 2.46394 3.76791 2.37618C3.82309 2.28842 3.90154 2.22002 3.99331 2.17963C4.08509 2.13924 4.18608 2.12867 4.28351 2.14926C4.38094 2.16985 4.47043 2.22068 4.54067 2.29531C4.61092 2.36995 4.65875 2.46503 4.67813 2.56855C4.69751 2.67207 4.68757 2.77937 4.64955 2.87688C4.61154 2.9744 4.54716 3.05774 4.46456 3.11638C4.38197 3.17502 4.28486 3.20632 4.18552 3.20632C4.05231 3.20632 3.92456 3.15009 3.83037 3.05001C3.73618 2.94993 3.68326 2.8142 3.68326 2.67266Z" fill="#371E55"/>
     </svg>;
 }
-function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
+function TcoCalculatorPage3({ page1, page2, rootId, page3, plans }: {
     page1: Page1;
+    page2: Page2;
     page3: Page3;
     rootId: string;
     plans: Plan[];
 }) {
-    const { title, caption, benefits, contentTitle, contentTitleIcon, contentCaption, contentBackground, asideBackground, asideTopIcon, mobileTopBanner, asideTextColor, contentCaptionColor } = page1;
+    const { title, caption, contentTitle, contentTitleIcon, contentCaption, contentBackground, asideTopIcon, mobileTopBanner, asideTextColor, contentCaptionColor } = page1;
+    const { benefits, asideBackground } = page2;
     const { progressImage, cardShare, cardFee, boletoShare, boletoFee, pixFee, pixShare, antiFraudCosts, processingCosts, nextButtonText, backButtonText, inputsTextColor, inputsBorderColor, backButtonTextColor, nextButtonBackgroundColor, nextButtonTextColor, inputsNoFillErrorMessage, inputsErrorMessageColor } = page3;
+
     const labeClass = "w-full md:w-[40%] lg:w-[195px] animate-fade-right";
     const inputCaptionClass = "text-base text-primary flex justify-between items-center";
     const inputClass = "bg-transparent min-h-[38px] w-full rounded-lg border border-primary px-4 mt-2.5";
     return (<div class="relative flex flex-wrap lg:flex-nowrap w-full min-h-[971px] lg:rounded-[30px] overflow-hidden hidden">
             <div class={`relative w-full lg:max-w-[437px] pt-[121px] px-11 ${!asideBackground && 'bg-primary'} text-primary-content hidden lg:block`} style={{color: asideTextColor}}>
-                {asideTopIcon && <Image width={133} height={119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10"/>}
-                {asideBackground && <Image width={813} height={971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
+                {asideTopIcon?.src && <Image width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10"/>}
+                {asideBackground?.src && <Image width={asideBackground.width || 813} height={asideBackground.height || 971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
                 <h2 class="text-[32px] leading-[130%]">{title}</h2>
                 <p class="text-sm mt-5 leading-[120%]">{caption}</p>
                 <div class="mt-[60px]">
                     {benefits && benefits.map((benefit) => (<div class="mt-[30px]">
                         <div class="flex">
-                                <Image height={17} width={17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} class="mr-2.5"/>
+                                {benefit.icon.src && <Image height={benefit.icon.height || 17} width={17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} class="mr-2.5"/>}
                                 <p style={{color: benefit.titleColor}}>{benefit.title}</p>
                             </div>
                             <p class="mt-2.5 text-sm" style={{color: benefit.captionColor}}>{benefit.caption}</p>
@@ -293,18 +316,18 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
             </div>
 
             <div class="lg:hidden relative text-2xl text-secondary-content font-semibold py-10 px-4 w-full min-h-[155px]" style={{color: asideTextColor}}>
-                    {mobileTopBanner && <Image width={430} height={155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10"/>}
+                    {mobileTopBanner.src && <Image width={mobileTopBanner.width || 430} height={mobileTopBanner.height || 155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10"/>}
                     <p>{title}</p>
             </div>
 
             <div class="py-14 px-3.5 lg:px-28 relative w-full">
-                {contentBackground && <Image width={813} height={971} src={contentBackground.src} alt={contentBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
+                {contentBackground?.src && <Image width={contentBackground.width || 813} height={contentBackground.height || 971} src={contentBackground.src} alt={contentBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
                 <div class="flex gap-2">
-                    {contentTitleIcon && <Image src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={14} height={14}/>}
+                    {contentTitleIcon?.src && <Image src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={contentTitleIcon.width || 14} height={contentTitleIcon.height || 14}/>}
                     <div dangerouslySetInnerHTML={{ __html: contentTitle }}/>
                 </div>
                 {contentCaption && <p class="mt-2.5" style={{color: contentCaptionColor}}>{contentCaption}</p>}
-                {progressImage && <div class="mt-7"><Image width={590} height={70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left"/></div>}
+                {progressImage?.src && <div class="mt-7"><Image width={progressImage.width || 590} height={progressImage.height || 70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left"/></div>}
 
                 <form class="flex flex-wrap gap-[38px] mt-14 w-full page3form">
                     <label class={labeClass} style={{ animationDuration: "0.3s" }}> 
@@ -402,7 +425,7 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
                         </svg>
                         {backButtonText}
                     </button>
-                    <button class="flex items-center gap-2.5 font-bold hover:scale-110 text-lg transition-transform text-secondary-content bg-primary rounded-lg py-2.5 px-[30px]" hx-on:click={useScript(onClickNext, rootId, plans)} style={{backgroundColor: nextButtonBackgroundColor, color: nextButtonTextColor}}>
+                    <button class="flex items-center gap-2.5 font-bold hover:scale-110 text-lg transition-transform text-secondary-content bg-primary rounded-lg py-2.5 px-[30px]" hx-on:click={useScript(onClickNext, rootId, plans, inputsErrorMessageColor || "#F57E77")} style={{backgroundColor: nextButtonBackgroundColor, color: nextButtonTextColor}}>
                         {nextButtonText}
                         <svg width="16" height="16" viewBox="0 0 16 16" class="fill-current" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.71875 0.410645C6.19213 0.410645 4.69979 0.863341 3.43045 1.71149C2.1611 2.55964 1.17177 3.76514 0.587558 5.17556C0.00334442 6.58597 -0.149513 8.13796 0.148317 9.63525C0.446147 11.1325 1.18129 12.5079 2.26077 13.5874C3.34026 14.6669 4.71561 15.402 6.2129 15.6998C7.71019 15.9977 9.26217 15.8448 10.6726 15.2606C12.083 14.6764 13.2885 13.687 14.1367 12.4177C14.9848 11.1484 15.4375 9.65602 15.4375 8.1294C15.4353 6.08292 14.6214 4.12088 13.1743 2.6738C11.7273 1.22672 9.76523 0.412806 7.71875 0.410645ZM11.1076 8.54947L8.73258 10.9245C8.62117 11.0359 8.47006 11.0985 8.3125 11.0985C8.15494 11.0985 8.00384 11.0359 7.89243 10.9245C7.78101 10.8131 7.71842 10.662 7.71842 10.5044C7.71842 10.3468 7.78101 10.1957 7.89243 10.0843L9.25434 8.72315H4.75C4.59253 8.72315 4.44151 8.66059 4.33016 8.54924C4.21881 8.43789 4.15625 8.28687 4.15625 8.1294C4.15625 7.97192 4.21881 7.8209 4.33016 7.70955C4.44151 7.5982 4.59253 7.53565 4.75 7.53565H9.25434L7.89243 6.17447C7.78101 6.06306 7.71842 5.91195 7.71842 5.7544C7.71842 5.59684 7.78101 5.44573 7.89243 5.33432C8.00384 5.22291 8.15494 5.16032 8.3125 5.16032C8.47006 5.16032 8.62117 5.22291 8.73258 5.33432L11.1076 7.70932C11.1628 7.76446 11.2066 7.82994 11.2365 7.90202C11.2663 7.9741 11.2817 8.05137 11.2817 8.1294C11.2817 8.20742 11.2663 8.28469 11.2365 8.35677C11.2066 8.42885 11.1628 8.49433 11.1076 8.54947Z"/>

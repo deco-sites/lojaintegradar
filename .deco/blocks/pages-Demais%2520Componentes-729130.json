@@ -164,8 +164,8 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "Reduza seus custos e venda com mais eficiência",
-            "caption": "<p><span style=\"font-size: 14pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 14pt; color: rgb(95, 110, 130);\">Conheça o ecossistema Loja Integrada e <strong><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">ganhe até 20% OFF</span></strong> na assinatura anual</span></p>",
+            "title": "O futuro do e-commerce é inteligente",
+            "caption": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><font color=\"#5f6e82\"><span style=\"font-size: 18.6667px;\">Faça parte! Escolha a plataforma que investe em dados e automação e veja seu faturamento disparar﻿</span></font></span></p>",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
             "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ ",
@@ -174,8 +174,10 @@
               "alt": "top image"
             },
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/da9060c9-9708-4d08-b57d-e038c769434f/background-image.webp",
-              "alt": "background image"
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c1a799c-a832-44c0-aa82-ff4cf75eb48d/main-hero-mobile-background-image.png",
+              "alt": "background image",
+              "width": 430,
+              "height": 341
             },
             "inputLabelBackgroundColor": "#EAE0EE",
             "inputLabelColor": "#371E55",
@@ -183,7 +185,38 @@
             "hubspotFormButtonColor": "#371E55",
             "hubspotFormButtonTextColor": "#ffffff",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image"
+            "use": "image",
+            "modal": {
+              "title": "Obrigado por se inscrever para receber nossa oferta especial!",
+              "titleColor": "#371E55",
+              "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55",
+                  "showIcon": false
+                },
+                {
+                  "ctaStyle": "button",
+                  "text": "Ver planos",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#371E55",
+                  "borderColor": "#371E55",
+                  "href": "#plans"
+                }
+              ]
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -194,8 +227,8 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "Suporte e economia na hora de migrar",
-            "caption": "<p><span style=\"font-size: 24pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 24pt; color: rgb(95, 110, 130);\">Redução média de R$ 90.000/ano com custos de manutenção da plataforma</span><br></p>",
+            "title": "<p><span style=\"font-size: 35pt;\" data-mce-style=\"font-size: 35pt;\">O futuro do e-commerce é inteligente</span></p>",
+            "caption": "<p style=\"line-height: 1.2;\" data-mce-style=\"line-height: 1.2;\"><span style=\"font-size: 24pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 24pt; color: rgb(95, 110, 130);\">Faça parte! Escolha a plataforma que investe em </span><span style=\"font-size: 24pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 24pt; color: rgb(95, 110, 130);\">dados e automação e veja seu faturamento disparar</span></p>",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
             "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ ",
@@ -213,7 +246,38 @@
             "hubspotFormButtonColor": "#371E55",
             "hubspotFormButtonTextColor": "#ffffff",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image"
+            "use": "image",
+            "modal": {
+              "title": "Obrigado por se inscrever para receber nossa oferta especial!",
+              "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+              "titleColor": "#371E55",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55",
+                  "showIcon": false
+                },
+                {
+                  "ctaStyle": "button",
+                  "text": "Ver planos",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#371E55",
+                  "borderColor": "#371E55",
+                  "href": "#plans"
+                }
+              ]
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

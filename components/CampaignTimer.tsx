@@ -90,12 +90,12 @@ function CampaignTimer({
         { id, label, time, labelsColor, numbersColor },
     ) => (
         <div class="flex flex-col items-center">
-            <span class="text-[8px] leading-none text-base-content font-thin" style={{ color: labelsColor }}>
+            <span class="text-[8px] leading-none text-base-content font-normal" style={{ color: labelsColor }}>
                 {label || ""}
             </span>
             <span class="countdown font-normal text-xl lg:text-2xl">
                 <span
-                    class="text-[30px] leading-none font-thin text-primary-content tracking-[-3px] px-1"
+                    class="text-[30px] leading-none font-normal text-primary-content tracking-[-3px] px-1"
                     id={`${id}::${time}`}
                     style={{ color: numbersColor }}
                 />

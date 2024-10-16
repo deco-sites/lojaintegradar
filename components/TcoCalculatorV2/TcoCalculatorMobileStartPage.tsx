@@ -13,8 +13,8 @@ const onClickStart = (rootId: string) => {
 export interface Page1 {
     title: string;
     caption: string;
-    text: HTMLWidget;
-    asideBottomText: HTMLWidget;
+    text?: HTMLWidget;
+    asideBottomText?: HTMLWidget;
     asideTextColor?: string;
     mobileStartBanner: IImage;
     mobileStartButtonText: string;

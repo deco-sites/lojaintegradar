@@ -129,7 +129,7 @@
       "asideMenuBackgroundColor": "#ffffff",
       "asideMenuCloseIconColor": "#371E55",
       "headerMessage": {
-        "show": true,
+        "show": false,
         "text": "🔥 Aumente sua capacidade de venda! Conheça nossos planos a partir de R$ 54/mês",
         "textColor": "#ffffff",
         "backgroundColor": "#371E55",
@@ -143,7 +143,7 @@
         ]
       },
       "campaignTimer": {
-        "show": true,
+        "show": false,
         "expiresAt": "2024-11-25T20:30:00.000Z",
         "backgroundColor": "#FFC19F",
         "labels": {
@@ -5825,6 +5825,137 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/CardsHero.tsx",
+              "leftColumn": {
+                "cards": [
+                  {
+                    "title": "Tráfego qualificado",
+                    "titleColor": "#371E55",
+                    "text": "<p><span style=\"color: rgb(55, 30, 85); font-size: 15px;\" data-mce-style=\"color: rgb(55, 30, 85); font-size: 15px;\">Aumente seu tráfego através de</span></p><p><span style=\"color: rgb(55, 30, 85); font-size: 15px;\" data-mce-style=\"color: rgb(55, 30, 85); font-size: 15px;\">campanhas de mídia paga com altíssimo</span></p><p><span style=\"color: rgb(55, 30, 85); font-size: 15px;\" data-mce-style=\"color: rgb(55, 30, 85); font-size: 15px;\">retorno (ROAS), através de integrações</span></p><p><span style=\"color: rgb(55, 30, 85); font-size: 15px;\" data-mce-style=\"color: rgb(55, 30, 85); font-size: 15px;\">nativas com Google Shopping, TikTok,</span></p><p><span style=\"color: rgb(55, 30, 85); font-size: 15px;\" data-mce-style=\"color: rgb(55, 30, 85); font-size: 15px;\">Meta e Whatsapp;</span></p>",
+                    "minHeight": 518,
+                    "borderColor": "#ECEAEA",
+                    "backgroundImage": {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1d064676-00fc-4dda-bc3b-ef9c20864f97/cards-hero-card-1-background-mobile.png",
+                      "width": 756,
+                      "height": 1048
+                    },
+                    "useBackground": "image"
+                  }
+                ]
+              },
+              "invertColumns": false,
+              "rightColumn": {
+                "cards": [
+                  {
+                    "useBackground": "image",
+                    "title": "Ticket médio",
+                    "titleColor": "#371E55",
+                    "borderColor": "#ECEAEA",
+                    "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Gere mais receita por usuário com baixo esforço, aumentando seu ticket médio com ferramentas nativas como: Promoções, cupons, Carrinho Abandonado e Compre Junto;</span></p>",
+                    "minHeight": 211
+                  },
+                  {
+                    "useBackground": "image",
+                    "title": "Relacionamento com cliente",
+                    "titleColor": "#371E55",
+                    "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Fale com seus clientes via Whatsapp e converta mais vendas com o aplicativo Conectali.</span></p>",
+                    "minHeight": 211
+                  },
+                  {
+                    "useBackground": "image",
+                    "title": "Taxa de conversão",
+                    "titleColor": "#371E55",
+                    "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Recupere vendas sem gastar com anúncios pagos, reengajando visitantes que montaram carrinhos e não concluíram suas compras, com a solução nativa do Carrinho Abandonado;</span></p><div style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\" data-mce-style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\"><p>Aumento de taxa</p><p>de conversão em 60%</p><p>depois da migração</p></div>",
+                    "cta": [
+                      {
+                        "ctaStyle": "link",
+                        "href": "#",
+                        "text": "Saiba mais do caso da L.Florence ",
+                        "textColor": "#371E55",
+                        "showIcon": true
+                      }
+                    ],
+                    "minHeight": 412
+                  }
+                ]
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/CardsHero.tsx",
+              "leftColumn": {
+                "cards": [
+                  {
+                    "title": "Tráfego qualificado",
+                    "titleColor": "#371E55",
+                    "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Aumente seu tráfego através de campanhas de</span></p><p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">mídia paga com altíssimo retorno (ROAS), através</span></p><p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">de integrações nativas com Google Shopping,</span></p><p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">TikTok, Meta e Whatsapp;</span></p>",
+                    "minHeight": 876,
+                    "borderColor": "#ECEAEA",
+                    "backgroundImage": {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/18aeeb1c-633b-4a0d-ac8c-e1e19aca600f/cards-hero-card-1-background.png",
+                      "width": 1194,
+                      "height": 1752
+                    },
+                    "useBackground": "image"
+                  }
+                ]
+              },
+              "invertColumns": false,
+              "rightColumn": {
+                "cards": [
+                  {
+                    "useBackground": "image",
+                    "title": "Ticket médio",
+                    "titleColor": "#371E55",
+                    "borderColor": "#ECEAEA",
+                    "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Gere mais receita por usuário com baixo esforço, aumentando seu ticket médio com ferramentas nativas como: Promoções, cupons, Carrinho Abandonado e Compre Junto;</span></p>",
+                    "minHeight": 211
+                  },
+                  {
+                    "useBackground": "image",
+                    "title": "Relacionamento com cliente",
+                    "titleColor": "#371E55",
+                    "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Fale com seus clientes via Whatsapp e converta mais vendas com o aplicativo Conectali.</span></p>",
+                    "minHeight": 211
+                  },
+                  {
+                    "useBackground": "image",
+                    "title": "Taxa de conversão",
+                    "titleColor": "#371E55",
+                    "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Recupere vendas sem gastar com anúncios pagos, reengajando visitantes que montaram carrinhos e não concluíram suas compras, com a solução nativa do Carrinho Abandonado;</span></p><div style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\" data-mce-style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\"><p>Aumento de taxa</p><p>de conversão em 60%</p><p>depois da migração</p></div>",
+                    "cta": [
+                      {
+                        "ctaStyle": "link",
+                        "href": "#",
+                        "text": "Saiba mais do caso da L.Florence ",
+                        "textColor": "#371E55",
+                        "showIcon": true
+                      }
+                    ],
+                    "minHeight": 412
+                  }
+                ]
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
+          }
+        ]
+      }
     }
   ],
   "seo": {

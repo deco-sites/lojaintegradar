@@ -63,6 +63,7 @@ export default {
         "spreaded": "0px 5.563px 31.72px 0px rgba(0, 72, 82, 0.09)",
         "spreaded2": "0px 4px 44px 0px rgba(0, 0, 0, 0.13)",
         "spreaded3": "11px 4px 44px 0px rgba(29, 26, 26, 0.15)",
+        "spreaded4": "0px 4px 24px 0px rgba(0, 0, 0, 0.06)",
       },
       animation: {
         sliding: "sliding 30s linear infinite",

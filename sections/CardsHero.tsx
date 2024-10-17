@@ -41,8 +41,8 @@ export interface Card {
 
 export function CardColumn({ cards = [] }: { cards?: Card[] }) {
     return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow">
-        {cards.map((card) => (
-            <div class="relative rounded-md border py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 overflow-hidden" style={{ borderColor: card.borderColor, minHeight: card.minHeight }}>
+        {cards.map((card, index) => (
+            <AnimateOnShow animation="animate-fade-up50" divClass="relative rounded-md border py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 overflow-hidden" style={{ borderColor: card.borderColor, minHeight: card.minHeight }} delay={100 * index}>
                 {card.title && <h2 class="text-2xl text-primary font-semibold leading-[120%]" style={{ color: card.titleColor }}>{card.title}</h2>}
                 <div dangerouslySetInnerHTML={{ __html: card.text || "" }} class="mt-2.5 text-base font-normal leading-normal" />
                 <div class="flex flex-wrap gap-7 mt-5">
@@ -80,7 +80,7 @@ export function CardColumn({ cards = [] }: { cards?: Card[] }) {
                 >
                     <source src={card.backgroundVideo} type="video/mp4" />
                 </video>}
-            </div>
+            </AnimateOnShow>
         ))}
     </div>
 }

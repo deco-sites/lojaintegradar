@@ -6068,6 +6068,66 @@
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/31b5e1e9-0458-4085-be1b-5d5e23de2bb5/depoimentos.svg"
             },
+            "useBackground": "image",
+            "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8fd0634d-265f-46c6-b006-2b75aa39d895/video-dobra-comunidade.mp4",
+            "sectionHeight": "39.82vw"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/SimpleHero.tsx",
+            "text": "<p style=\"background: linear-gradient(99deg, rgb(130, 90, 180) 13.02%, rgb(210, 175, 237) 79.44%) text; color: transparent; text-align: center;\" data-mce-style=\"background: linear-gradient(99deg, rgb(130, 90, 180) 13.02%, rgb(210, 175, 237) 79.44%) text; color: transparent; text-align: center;\">Junte-se as + 700 lojas <br>que escolheram migrar</p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">para a Loja Integrada nos</span><br><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">últimos 6 meses</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Migrar minha loja",
+                "textColor": "#1B1525",
+                "backgroundColor": "#ffffff",
+                "borderColor": "#ffffff"
+              }
+            ],
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fa8074db-380f-4c1e-8da8-e2e512e44e3a/mobile-background.svg",
+              "width": 430,
+              "height": 449
+            },
+            "useBackground": "image",
+            "sectionHeight": "104vw"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/SimpleHero.tsx",
+            "sectionHeight": "52vw",
+            "text": "<p style=\"background: linear-gradient(99deg, rgb(130, 90, 180) 13.02%, rgb(210, 175, 237) 79.44%) text; color: transparent; text-align: center;\" data-mce-style=\"background: linear-gradient(99deg, rgb(130, 90, 180) 13.02%, rgb(210, 175, 237) 79.44%) text; color: transparent; text-align: center;\">Junte-se as + 700 lojas <br>que escolheram migrar</p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">para a Loja Integrada nos</span><br><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">últimos 6 meses</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Migrar minha loja",
+                "textColor": "#1B1525",
+                "backgroundColor": "#ffffff",
+                "borderColor": "#ffffff"
+              }
+            ],
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5407b818-765c-4145-a24b-bd9cfb100ee7/Junte-se-a-(1).png",
+              "width": 1440,
+              "height": 744
+            },
             "useBackground": "image"
           },
           "rule": {

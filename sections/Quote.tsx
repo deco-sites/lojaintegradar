@@ -1,5 +1,6 @@
 import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 
 export interface IImage {
     src?: ImageWidget;
@@ -42,11 +43,13 @@ export default function Quote({ title, titleColor, quote, image, imageCaption, b
         >
             <source src={backgroundVideo} type="video/mp4" />
         </video>}
-        {title && <h2 class="text-center text-2xl lg:text-lg font-semibold leading-[120%]" style={{ color: titleColor }}>{title}</h2>}
-        {quote && <div class="text-lg lg:text-[40px] text-center font-normal lg:font-medium leading-none lg:leading-[120%] max-w-[858px]" dangerouslySetInnerHTML={{ __html: quote }} />}
-        <div class="flex flex-col gap-4 items-center">
+        <AnimateOnShow animation="animate-fade-up">
+            {title && <h2 class="text-center text-2xl lg:text-lg font-semibold leading-[120%]" style={{ color: titleColor }}>{title}</h2>}
+            {quote && <div class="text-lg lg:text-[40px] text-center font-normal lg:font-medium leading-none lg:leading-[120%] max-w-[858px]" dangerouslySetInnerHTML={{ __html: quote }} />}
+        </AnimateOnShow>
+        <AnimateOnShow divClass="flex flex-col gap-4 items-center">
             {image?.src && <Image src={image.src} alt={image.alt || "quoted person picture"} width={image.width || 56} height={image.height || 56} />}
             {imageCaption && <div class="text-base font-normal leading-normal" dangerouslySetInnerHTML={{ __html: imageCaption }} />}
-        </div>
+        </AnimateOnShow>
     </div>
 }

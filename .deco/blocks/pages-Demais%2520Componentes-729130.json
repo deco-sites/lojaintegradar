@@ -396,7 +396,7 @@
             "description": "<p><em><strong>Logo no primeiro mês pós migração, vi um aumento</strong></em><br><em><strong>na taxa de conversão de 60%.</strong></em><br>Vim pela necessidade de otimizar meu investimento, em busca de uma plataforma fácil de usar. Encontrei ambos e ainda um time próximo, o que é muito bom\".</p>",
             "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
             "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
-            "alt": "m camicado",
+            "alt": "liv",
             "nameIconColor": "#371E55",
             "quoteIconColor": "#371E55",
             "nameBackgroundColor": "#F1EAF4",
@@ -6029,6 +6029,50 @@
           "backgroundColor": "#ffffff",
           "textColor": "#371E55",
           "borderColor": "#ffffff"
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Quote.tsx",
+            "title": "A opinião de quem já tá otimizando seus custos",
+            "titleColor": "#371E55",
+            "quote": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">“A Loja Integrada chamava atenção pelo que ela oferecia e pelo preço. Dá para ver que tem alguém ali pensando realmente no que o cliente precisa para crescer.”</span></p>",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/40976a63-ce7b-4a08-a231-efb7d9e8a153/Avatar-Image.png"
+            },
+            "imageCaption": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Priscila Torres,</span></strong></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Sócia da loja O Queijólatra</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/13262e36-0971-43cb-a09c-c6e378e698fb/1.svg"
+            },
+            "useBackground": "image"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Quote.tsx",
+            "title": "A opinião de quem já tá otimizando seus custos",
+            "titleColor": "#371E55",
+            "quote": "<div style=\"background: linear-gradient(280deg, #825AB4 22.98%, #1B1525 79.04%); background-clip: text; color: transparent;\" data-mce-style=\"background: linear-gradient(280deg, #825AB4 22.98%, #1B1525 79.04%); background-clip: text; color: transparent;\"><p>“A Loja Integrada chamava atenção pelo que ela oferecia e pelo preço. Dá para ver que tem alguém ali pensando realmente no que o cliente precisa para crescer.”</p></div>",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/40976a63-ce7b-4a08-a231-efb7d9e8a153/Avatar-Image.png"
+            },
+            "imageCaption": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Priscila Torres,</span></strong></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Sócia da loja O Queijólatra</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/31b5e1e9-0458-4085-be1b-5d5e23de2bb5/depoimentos.svg"
+            },
+            "useBackground": "image"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
         }
       ]
     }

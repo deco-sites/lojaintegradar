@@ -33,13 +33,14 @@ import * as $$$$$$24 from "./sections/PlanDetails.tsx";
 import * as $$$$$$25 from "./sections/PlanDetails2.tsx";
 import * as $$$$$$26 from "./sections/Plans.tsx";
 import * as $$$$$$27 from "./sections/Prices.tsx";
-import * as $$$$$$28 from "./sections/ScrollOnLoadScript.tsx";
-import * as $$$$$$29 from "./sections/TalkToAnExpert.tsx";
-import * as $$$$$$30 from "./sections/TalkToSpecialistModal.tsx";
-import * as $$$$$$31 from "./sections/TcoCalculator.tsx";
-import * as $$$$$$32 from "./sections/TcoCalculatorV2.tsx";
-import * as $$$$$$33 from "./sections/Testimonials.tsx";
-import * as $$$$$$34 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$28 from "./sections/Quote.tsx";
+import * as $$$$$$29 from "./sections/ScrollOnLoadScript.tsx";
+import * as $$$$$$30 from "./sections/TalkToAnExpert.tsx";
+import * as $$$$$$31 from "./sections/TalkToSpecialistModal.tsx";
+import * as $$$$$$32 from "./sections/TcoCalculator.tsx";
+import * as $$$$$$33 from "./sections/TcoCalculatorV2.tsx";
+import * as $$$$$$34 from "./sections/Testimonials.tsx";
+import * as $$$$$$35 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -71,13 +72,14 @@ const manifest = {
     "site/sections/PlanDetails2.tsx": $$$$$$25,
     "site/sections/Plans.tsx": $$$$$$26,
     "site/sections/Prices.tsx": $$$$$$27,
-    "site/sections/ScrollOnLoadScript.tsx": $$$$$$28,
-    "site/sections/TalkToAnExpert.tsx": $$$$$$29,
-    "site/sections/TalkToSpecialistModal.tsx": $$$$$$30,
-    "site/sections/TcoCalculator.tsx": $$$$$$31,
-    "site/sections/TcoCalculatorV2.tsx": $$$$$$32,
-    "site/sections/Testimonials.tsx": $$$$$$33,
-    "site/sections/Theme/Theme.tsx": $$$$$$34,
+    "site/sections/Quote.tsx": $$$$$$28,
+    "site/sections/ScrollOnLoadScript.tsx": $$$$$$29,
+    "site/sections/TalkToAnExpert.tsx": $$$$$$30,
+    "site/sections/TalkToSpecialistModal.tsx": $$$$$$31,
+    "site/sections/TcoCalculator.tsx": $$$$$$32,
+    "site/sections/TcoCalculatorV2.tsx": $$$$$$33,
+    "site/sections/Testimonials.tsx": $$$$$$34,
+    "site/sections/Theme/Theme.tsx": $$$$$$35,
   },
   "actions": {
     "site/actions/sendTcoUserData.ts": $$$$$$$$$0,

@@ -58,7 +58,7 @@ export default function DetailedHero({ backgroundColor, title, caption, captionC
                 </AnimateOnShow>
                 <div class="flex overflow-auto lg:overflow-visible lg:flex-wrap gap-14 gap-y-9">
                     {cards?.map((card, index) => (
-                        <AnimateOnShow divClass="min-w-[60vw] lg:min-w-[0] w-[60vw] lg:w-auto lg:max-w-[342px] flex-grow flex flex-col gap-5 mt-4" delay={index * 100} animation="animate-fade-up">
+                        <AnimateOnShow divClass="min-w-[60vw] lg:min-w-[0] w-[60vw] lg:w-auto lg:max-w-[342px] flex-grow flex flex-col gap-5 mt-4" delay={index * 50} animation="animate-fade-up">
                             {card.icon?.src && <Image
                                 width={card.icon.width || 39}
                                 height={card.icon.height || 39}

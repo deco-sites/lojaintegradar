@@ -129,7 +129,7 @@
       "asideMenuBackgroundColor": "#ffffff",
       "asideMenuCloseIconColor": "#371E55",
       "headerMessage": {
-        "show": true,
+        "show": false,
         "text": "🔥 Aumente sua capacidade de venda! Conheça nossos planos a partir de R$ 54/mês",
         "textColor": "#ffffff",
         "backgroundColor": "#371E55",
@@ -143,7 +143,7 @@
         ]
       },
       "campaignTimer": {
-        "show": true,
+        "show": false,
         "expiresAt": "2024-11-25T20:30:00.000Z",
         "backgroundColor": "#FFC19F",
         "labels": {
@@ -164,8 +164,8 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "Reduza seus custos e venda com mais eficiência",
-            "caption": "<p><span style=\"font-size: 14pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 14pt; color: rgb(95, 110, 130);\">Conheça o ecossistema Loja Integrada e <strong><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">ganhe até 20% OFF</span></strong> na assinatura anual</span></p>",
+            "title": "O futuro do e-commerce é inteligente",
+            "caption": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><font color=\"#5f6e82\"><span style=\"font-size: 18.6667px;\">Faça parte! Escolha a plataforma que investe em dados e automação e veja seu faturamento disparar﻿</span></font></span></p>",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
             "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ ",
@@ -174,8 +174,10 @@
               "alt": "top image"
             },
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/da9060c9-9708-4d08-b57d-e038c769434f/background-image.webp",
-              "alt": "background image"
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c1a799c-a832-44c0-aa82-ff4cf75eb48d/main-hero-mobile-background-image.png",
+              "alt": "background image",
+              "width": 430,
+              "height": 341
             },
             "inputLabelBackgroundColor": "#EAE0EE",
             "inputLabelColor": "#371E55",
@@ -183,7 +185,38 @@
             "hubspotFormButtonColor": "#371E55",
             "hubspotFormButtonTextColor": "#ffffff",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image"
+            "use": "image",
+            "modal": {
+              "title": "Obrigado por se inscrever para receber nossa oferta especial!",
+              "titleColor": "#371E55",
+              "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55",
+                  "showIcon": false
+                },
+                {
+                  "ctaStyle": "button",
+                  "text": "Ver planos",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#371E55",
+                  "borderColor": "#371E55",
+                  "href": "#plans"
+                }
+              ]
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -194,8 +227,8 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "Suporte e economia na hora de migrar",
-            "caption": "<p><span style=\"font-size: 24pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 24pt; color: rgb(95, 110, 130);\">Redução média de R$ 90.000/ano com custos de manutenção da plataforma</span><br></p>",
+            "title": "<p><span style=\"font-size: 35pt;\" data-mce-style=\"font-size: 35pt;\">O futuro do e-commerce é inteligente</span></p>",
+            "caption": "<p style=\"line-height: 1.2;\" data-mce-style=\"line-height: 1.2;\"><span style=\"font-size: 24pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 24pt; color: rgb(95, 110, 130);\">Faça parte! Escolha a plataforma que investe em </span><span style=\"font-size: 24pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 24pt; color: rgb(95, 110, 130);\">dados e automação e veja seu faturamento disparar</span></p>",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
             "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ ",
@@ -213,7 +246,38 @@
             "hubspotFormButtonColor": "#371E55",
             "hubspotFormButtonTextColor": "#ffffff",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image"
+            "use": "image",
+            "modal": {
+              "title": "Obrigado por se inscrever para receber nossa oferta especial!",
+              "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+              "titleColor": "#371E55",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55",
+                  "showIcon": false
+                },
+                {
+                  "ctaStyle": "button",
+                  "text": "Ver planos",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#371E55",
+                  "borderColor": "#371E55",
+                  "href": "#plans"
+                }
+              ]
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -317,7 +381,7 @@
       "slides": [
         {
           "content": {
-            "description": "<p>\"Depois que migramos para a Loja Integrada, <em><strong>aumentamos nosso ticket médio em 15% e reduzimos nossos custos operacionais em 9 mil reais.</strong></em> Viemos pela fácil integração com a VTEX, em busca de redução de custo e uma plataforma mais fácil de usar e foi exatamente isso que encontramos\".</p>",
+            "description": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">\"Depois que migramos para a Loja Integrada, <em><strong>aumentamos nosso ticket médio em 15% e reduzimos nossos custos operacionais em 9 mil reais.</strong></em> Viemos pela fácil integração com a VTEX, em busca de redução de custo e uma plataforma mais fácil de usar e foi exatamente isso que encontramos\".</span></p>",
             "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
             "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
             "alt": "m camicado",
@@ -355,8 +419,9 @@
           },
           "textPlacement": "Top",
           "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/fb4a2731-809a-46cd-8925-fed7e3ec1023/purple-stonks-arrow.png",
-            "alt": "purple arrow"
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/510efa8f-5826-4892-b116-5a1e03a92e6c/purple-stonks-arrow-squared.png",
+            "alt": "purple arrow",
+            "placement": "Top right"
           },
           "textColor": "#371E55",
           "useBackground": "image",
@@ -365,7 +430,7 @@
         {
           "textPlacement": "Top",
           "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/dcef1aac-4d4d-4ad3-befd-005a6b833bfd/white-stonks-arrow.png",
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5b6f34eb-d77f-4cf2-b32e-33b2b5290818/white-stonks-arrow-squared.png",
             "alt": "white arrow",
             "placement": "Top right"
           },
@@ -395,7 +460,7 @@
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/fb4a2731-809a-46cd-8925-fed7e3ec1023/purple-stonks-arrow.png",
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/510efa8f-5826-4892-b116-5a1e03a92e6c/purple-stonks-arrow-squared.png",
             "alt": "purple arrow"
           },
           "bulletPoints": {
@@ -413,7 +478,7 @@
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/dcef1aac-4d4d-4ad3-befd-005a6b833bfd/white-stonks-arrow.png",
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5b6f34eb-d77f-4cf2-b32e-33b2b5290818/white-stonks-arrow-squared.png",
             "alt": "white arrow"
           },
           "bulletPoints": {
@@ -431,7 +496,7 @@
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/fb4a2731-809a-46cd-8925-fed7e3ec1023/purple-stonks-arrow.png",
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/510efa8f-5826-4892-b116-5a1e03a92e6c/purple-stonks-arrow-squared.png",
             "alt": "white arrow"
           },
           "bulletPoints": {
@@ -449,7 +514,7 @@
           "textPlacement": "Bottom",
           "icon": {
             "placement": "Top right",
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/dcef1aac-4d4d-4ad3-befd-005a6b833bfd/white-stonks-arrow.png",
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5b6f34eb-d77f-4cf2-b32e-33b2b5290818/white-stonks-arrow-squared.png",
             "alt": "white arrow"
           },
           "bulletPoints": {
@@ -464,13 +529,13 @@
         }
       ],
       "arrows": true,
-      "title": "Aumente suas vendas e potencialize sua eficiência com nosso ecossistema!",
+      "title": "Aumente suas vendas e ganhe eficiência  de forma inteligente e automatizada",
       "backgroundImage": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a4868c23-20ac-4754-a3d9-8a02cf8d61bb/rounded-bg-figure.png"
       },
       "cta": [
         {
-          "href": "#plans section",
+          "href": "#plans",
           "text": "Ver planos",
           "backgroundColor": "#371E55",
           "textColor": "#fff5f5",
@@ -478,13 +543,14 @@
           "ctaStyle": "button"
         },
         {
-          "text": "Ver recursos",
-          "href": "/",
+          "href": "/talkToSpecialist",
           "outline": true,
           "backgroundColor": "#ffffff",
           "textColor": "#371E55",
           "borderColor": "#371E55",
-          "ctaStyle": "button"
+          "ctaStyle": "link",
+          "showIcon": true,
+          "underlineText": "Falar com Especialista "
         }
       ],
       "interval": 0,
@@ -5759,6 +5825,210 @@
           "rule": {
             "__resolveType": "website/matchers/always.ts"
           }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/CardsHero.tsx",
+            "leftColumn": {
+              "cards": [
+                {
+                  "title": "Tráfego qualificado",
+                  "titleColor": "#371E55",
+                  "text": "<p><span style=\"color: rgb(55, 30, 85); font-size: 15px;\" data-mce-style=\"color: rgb(55, 30, 85); font-size: 15px;\">Aumente seu tráfego através de</span></p><p><span style=\"color: rgb(55, 30, 85); font-size: 15px;\" data-mce-style=\"color: rgb(55, 30, 85); font-size: 15px;\">campanhas de mídia paga com altíssimo</span></p><p><span style=\"color: rgb(55, 30, 85); font-size: 15px;\" data-mce-style=\"color: rgb(55, 30, 85); font-size: 15px;\">retorno (ROAS), através de integrações</span></p><p><span style=\"color: rgb(55, 30, 85); font-size: 15px;\" data-mce-style=\"color: rgb(55, 30, 85); font-size: 15px;\">nativas com Google Shopping, TikTok,</span></p><p><span style=\"color: rgb(55, 30, 85); font-size: 15px;\" data-mce-style=\"color: rgb(55, 30, 85); font-size: 15px;\">Meta e Whatsapp;</span></p>",
+                  "minHeight": 518,
+                  "borderColor": "#ECEAEA",
+                  "backgroundImage": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1d064676-00fc-4dda-bc3b-ef9c20864f97/cards-hero-card-1-background-mobile.png",
+                    "width": 756,
+                    "height": 1048
+                  },
+                  "useBackground": "image"
+                }
+              ]
+            },
+            "invertColumns": false,
+            "rightColumn": {
+              "cards": [
+                {
+                  "useBackground": "image",
+                  "title": "Ticket médio",
+                  "titleColor": "#371E55",
+                  "borderColor": "#ECEAEA",
+                  "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Gere mais receita por usuário com baixo esforço, aumentando seu ticket médio com ferramentas nativas como: Promoções, cupons, Carrinho Abandonado e Compre Junto;</span></p>",
+                  "minHeight": 211
+                },
+                {
+                  "useBackground": "image",
+                  "title": "Relacionamento com cliente",
+                  "titleColor": "#371E55",
+                  "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Fale com seus clientes via Whatsapp e converta mais vendas com o aplicativo Conectali.</span></p>",
+                  "minHeight": 211
+                },
+                {
+                  "useBackground": "image",
+                  "title": "Taxa de conversão",
+                  "titleColor": "#371E55",
+                  "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Recupere vendas sem gastar com anúncios pagos, reengajando visitantes que montaram carrinhos e não concluíram suas compras, com a solução nativa do Carrinho Abandonado;</span></p><div style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\" data-mce-style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\"><p>Aumento de taxa</p><p>de conversão em 60%</p><p>depois da migração</p></div>",
+                  "cta": [
+                    {
+                      "ctaStyle": "link",
+                      "href": "linkhere",
+                      "text": "Saiba mais do caso da L.Florence ",
+                      "textColor": "#371E55",
+                      "showIcon": true
+                    }
+                  ],
+                  "minHeight": 412
+                }
+              ]
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/CardsHero.tsx",
+            "leftColumn": {
+              "cards": [
+                {
+                  "title": "Tráfego qualificado",
+                  "titleColor": "#371E55",
+                  "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Aumente seu tráfego através de campanhas de</span></p><p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">mídia paga com altíssimo retorno (ROAS), através</span></p><p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">de integrações nativas com Google Shopping,</span></p><p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">TikTok, Meta e Whatsapp;</span></p>",
+                  "minHeight": 876,
+                  "borderColor": "#ECEAEA",
+                  "backgroundImage": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/18aeeb1c-633b-4a0d-ac8c-e1e19aca600f/cards-hero-card-1-background.png",
+                    "width": 1194,
+                    "height": 1752
+                  },
+                  "useBackground": "image"
+                }
+              ]
+            },
+            "invertColumns": false,
+            "rightColumn": {
+              "cards": [
+                {
+                  "useBackground": "image",
+                  "title": "Ticket médio",
+                  "titleColor": "#371E55",
+                  "borderColor": "#ECEAEA",
+                  "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Gere mais receita por usuário com baixo esforço, aumentando seu ticket médio com ferramentas nativas como: Promoções, cupons, Carrinho Abandonado e Compre Junto;</span></p>",
+                  "minHeight": 211
+                },
+                {
+                  "useBackground": "image",
+                  "title": "Relacionamento com cliente",
+                  "titleColor": "#371E55",
+                  "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Fale com seus clientes via Whatsapp e converta mais vendas com o aplicativo Conectali.</span></p>",
+                  "minHeight": 211
+                },
+                {
+                  "useBackground": "image",
+                  "title": "Taxa de conversão",
+                  "titleColor": "#371E55",
+                  "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Recupere vendas sem gastar com anúncios pagos, reengajando visitantes que montaram carrinhos e não concluíram suas compras, com a solução nativa do Carrinho Abandonado;</span></p><div style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\" data-mce-style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\"><p>Aumento de taxa</p><p>de conversão em 60%</p><p>depois da migração</p></div>",
+                  "cta": [
+                    {
+                      "ctaStyle": "link",
+                      "href": "linkhere",
+                      "text": "Saiba mais do caso da L.Florence ",
+                      "textColor": "#371E55",
+                      "showIcon": true
+                    }
+                  ],
+                  "minHeight": 412
+                }
+              ]
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/DetailedHero.tsx",
+      "backgroundColor": "#1F172B",
+      "title": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">A Loja Integrada tem tudo o que seu negócio precisa para decolar as vendas de final de ano</span></p>",
+      "caption": "Tecnologia, estabilidade e potência",
+      "captionColor": "#ffffff",
+      "cards": [
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/373aa83d-dfec-4efc-b14c-461bc6f2a6aa/migrating-1.svg"
+          },
+          "title": "Migração assistida",
+          "titleColor": "#ffffff",
+          "text": "Nossa equipe de especialistas em ecommerce te auxilia durante todo o seu processo de migração.",
+          "textColor": "#ffffff"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2f8b3b2e-d889-4de7-8cff-dd7be19317bb/profit-report-1.svg"
+          },
+          "title": "Relatórios e Painel de Controle",
+          "titleColor": "#ffffff",
+          "text": "Nossa equipe de especialistas te auxilia durante todo o seu processo de migração.",
+          "textColor": "#ffffff"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1ffa20f2-9aca-471d-aa30-6005ff1ea534/stock-market-1.svg"
+          },
+          "title": "Tenha um site de alta performance",
+          "titleColor": "#ffffff",
+          "text": "Acesse uma galeria com +50 temas profissionais e adaptados para CDN.",
+          "textColor": "#ffffff"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d458280-2d5a-4f91-a28a-863f986dc138/checklist-1.svg"
+          },
+          "title": "Checkout transparente",
+          "titleColor": "#ffffff",
+          "textColor": "#ffffff",
+          "text": "Tenha mais conversão e performance para sua loja com nosso checkout inteligente e ofereça diversos meios de pagamento."
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b46c7cf3-728b-49a5-9156-6efe52510557/icon-google.svg"
+          },
+          "title": "Melhor integração com Google Shopping",
+          "titleColor": "#ffffff",
+          "text": "Nossos lojistas tiveram ROAS de até 8x de valor investido em anúncios, realizados dentro da própria plataforma.",
+          "textColor": "#ffffff"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b311a7ed-a89d-4295-82b4-ea280bbc6bb7/icon-equipe-bf.svg"
+          },
+          "title": "Sua equipe é reduzida?",
+          "titleColor": "#ffffff",
+          "text": "Contrate os melhores profissionais para customizar sua loja, instalar um tema ou operacionalizar suas estratégias.",
+          "textColor": "#ffffff"
+        }
+      ],
+      "image": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b3d58a15-6798-41ee-bc91-4dfa35c66298/quem-vende-loja-fisica-bg-second.svg"
+      },
+      "cta": [
+        {
+          "ctaStyle": "button",
+          "href": "linkhere",
+          "text": "Aumentar minhas vendas",
+          "backgroundColor": "#ffffff",
+          "textColor": "#371E55",
+          "borderColor": "#ffffff"
         }
       ]
     }

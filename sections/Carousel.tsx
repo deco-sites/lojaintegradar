@@ -203,7 +203,7 @@ function Carousel(props: Props) {
             <div id={carouselId} class="min-h-min flex flex-col items-center w-full pt-7 lg:pt-14 relative" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
                 {backgroundImage && <div class="absolute hidden md:block -z-50 top-0 left-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "background image"} height={backgroundImage.height || 780} width={backgroundImage.width || 460} class="h-full object-contain" /></div>}
 
-                <AnimateOnShow >
+                <AnimateOnShow animation="animate-fade-up" delay={500}>
                     {title && <h2 class="text-2xl md:text-5xl font-semibold text-center text-primary leading-snug max-w-[942px] lg:pb-16" style={{ color: titleColor }}>
                         {title}
                     </h2>}

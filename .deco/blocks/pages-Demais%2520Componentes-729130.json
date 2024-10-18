@@ -381,7 +381,7 @@
       "slides": [
         {
           "content": {
-            "description": "<p>\"Depois que migramos para a Loja Integrada, <em><strong>aumentamos nosso ticket médio em 15% e reduzimos nossos custos operacionais em 9 mil reais.</strong></em> Viemos pela fácil integração com a VTEX, em busca de redução de custo e uma plataforma mais fácil de usar e foi exatamente isso que encontramos\".</p>",
+            "description": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">\"Depois que migramos para a Loja Integrada, <em><strong>aumentamos nosso ticket médio em 15% e reduzimos nossos custos operacionais em 9 mil reais.</strong></em> Viemos pela fácil integração com a VTEX, em busca de redução de custo e uma plataforma mais fácil de usar e foi exatamente isso que encontramos\".</span></p>",
             "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
             "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
             "alt": "m camicado",
@@ -419,8 +419,9 @@
           },
           "textPlacement": "Top",
           "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/fb4a2731-809a-46cd-8925-fed7e3ec1023/purple-stonks-arrow.png",
-            "alt": "purple arrow"
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/510efa8f-5826-4892-b116-5a1e03a92e6c/purple-stonks-arrow-squared.png",
+            "alt": "purple arrow",
+            "placement": "Top right"
           },
           "textColor": "#371E55",
           "useBackground": "image",
@@ -429,7 +430,7 @@
         {
           "textPlacement": "Top",
           "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/dcef1aac-4d4d-4ad3-befd-005a6b833bfd/white-stonks-arrow.png",
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5b6f34eb-d77f-4cf2-b32e-33b2b5290818/white-stonks-arrow-squared.png",
             "alt": "white arrow",
             "placement": "Top right"
           },
@@ -459,7 +460,7 @@
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/fb4a2731-809a-46cd-8925-fed7e3ec1023/purple-stonks-arrow.png",
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/510efa8f-5826-4892-b116-5a1e03a92e6c/purple-stonks-arrow-squared.png",
             "alt": "purple arrow"
           },
           "bulletPoints": {
@@ -477,7 +478,7 @@
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/dcef1aac-4d4d-4ad3-befd-005a6b833bfd/white-stonks-arrow.png",
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5b6f34eb-d77f-4cf2-b32e-33b2b5290818/white-stonks-arrow-squared.png",
             "alt": "white arrow"
           },
           "bulletPoints": {
@@ -495,7 +496,7 @@
           "textPlacement": "Top",
           "icon": {
             "placement": "Top right",
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/fb4a2731-809a-46cd-8925-fed7e3ec1023/purple-stonks-arrow.png",
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/510efa8f-5826-4892-b116-5a1e03a92e6c/purple-stonks-arrow-squared.png",
             "alt": "white arrow"
           },
           "bulletPoints": {
@@ -513,7 +514,7 @@
           "textPlacement": "Bottom",
           "icon": {
             "placement": "Top right",
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/dcef1aac-4d4d-4ad3-befd-005a6b833bfd/white-stonks-arrow.png",
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5b6f34eb-d77f-4cf2-b32e-33b2b5290818/white-stonks-arrow-squared.png",
             "alt": "white arrow"
           },
           "bulletPoints": {
@@ -528,13 +529,13 @@
         }
       ],
       "arrows": true,
-      "title": "Aumente suas vendas e potencialize sua eficiência com nosso ecossistema!",
+      "title": "Aumente suas vendas e ganhe eficiência  de forma inteligente e automatizada",
       "backgroundImage": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a4868c23-20ac-4754-a3d9-8a02cf8d61bb/rounded-bg-figure.png"
       },
       "cta": [
         {
-          "href": "#plans section",
+          "href": "#plans",
           "text": "Ver planos",
           "backgroundColor": "#371E55",
           "textColor": "#fff5f5",
@@ -542,13 +543,14 @@
           "ctaStyle": "button"
         },
         {
-          "text": "Ver recursos",
-          "href": "/",
+          "href": "/talkToSpecialist",
           "outline": true,
           "backgroundColor": "#ffffff",
           "textColor": "#371E55",
           "borderColor": "#371E55",
-          "ctaStyle": "button"
+          "ctaStyle": "link",
+          "showIcon": true,
+          "underlineText": "Falar com Especialista "
         }
       ],
       "interval": 0,
@@ -5951,6 +5953,82 @@
           "rule": {
             "__resolveType": "website/matchers/always.ts"
           }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/DetailedHero.tsx",
+      "backgroundColor": "#1F172B",
+      "title": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">A Loja Integrada tem tudo o que seu negócio precisa para decolar as vendas de final de ano</span></p>",
+      "caption": "Tecnologia, estabilidade e potência",
+      "captionColor": "#ffffff",
+      "cards": [
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/373aa83d-dfec-4efc-b14c-461bc6f2a6aa/migrating-1.svg"
+          },
+          "title": "Migração assistida",
+          "titleColor": "#ffffff",
+          "text": "Nossa equipe de especialistas em ecommerce te auxilia durante todo o seu processo de migração.",
+          "textColor": "#ffffff"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2f8b3b2e-d889-4de7-8cff-dd7be19317bb/profit-report-1.svg"
+          },
+          "title": "Relatórios e Painel de Controle",
+          "titleColor": "#ffffff",
+          "text": "Nossa equipe de especialistas te auxilia durante todo o seu processo de migração.",
+          "textColor": "#ffffff"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1ffa20f2-9aca-471d-aa30-6005ff1ea534/stock-market-1.svg"
+          },
+          "title": "Tenha um site de alta performance",
+          "titleColor": "#ffffff",
+          "text": "Acesse uma galeria com +50 temas profissionais e adaptados para CDN.",
+          "textColor": "#ffffff"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d458280-2d5a-4f91-a28a-863f986dc138/checklist-1.svg"
+          },
+          "title": "Checkout transparente",
+          "titleColor": "#ffffff",
+          "textColor": "#ffffff",
+          "text": "Tenha mais conversão e performance para sua loja com nosso checkout inteligente e ofereça diversos meios de pagamento."
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b46c7cf3-728b-49a5-9156-6efe52510557/icon-google.svg"
+          },
+          "title": "Melhor integração com Google Shopping",
+          "titleColor": "#ffffff",
+          "text": "Nossos lojistas tiveram ROAS de até 8x de valor investido em anúncios, realizados dentro da própria plataforma.",
+          "textColor": "#ffffff"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b311a7ed-a89d-4295-82b4-ea280bbc6bb7/icon-equipe-bf.svg"
+          },
+          "title": "Sua equipe é reduzida?",
+          "titleColor": "#ffffff",
+          "text": "Contrate os melhores profissionais para customizar sua loja, instalar um tema ou operacionalizar suas estratégias.",
+          "textColor": "#ffffff"
+        }
+      ],
+      "image": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b3d58a15-6798-41ee-bc91-4dfa35c66298/quem-vende-loja-fisica-bg-second.svg"
+      },
+      "cta": [
+        {
+          "ctaStyle": "button",
+          "href": "linkhere",
+          "text": "Aumentar minhas vendas",
+          "backgroundColor": "#ffffff",
+          "textColor": "#371E55",
+          "borderColor": "#ffffff"
         }
       ]
     }

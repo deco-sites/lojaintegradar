@@ -137,6 +137,7 @@ export interface Nav {
   logo?: {
     src?: ImageWidget;
     alt?: string;
+    href?: string;
   };
   navigation?: Navigation;
   /** @format color-input */
@@ -195,7 +196,7 @@ export default function Header2({ logo = {
 
           <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, navigation) }} />
 
-          <a href="/" class="min-w-32 h-5 md:min-w-64 md:h-10">
+          <a href={logo.href || "/"} class="min-w-32 h-5 md:min-w-64 md:h-10">
             <Image src={logo.src || ""} width={257} height={40} alt={logo.alt || "header logo"} class="h-full w-full" />
           </a>
 

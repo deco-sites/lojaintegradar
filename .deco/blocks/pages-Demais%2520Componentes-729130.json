@@ -24,13 +24,17 @@
             "textColor": "#371E55"
           },
           {
+            "label": "Calculadora TCO",
+            "url": "#tcocalculator"
+          },
+          {
             "label": "Faça parte da Elite",
-            "url": "#",
+            "url": "#planoelite",
             "textColor": "#371E55"
           },
           {
             "label": "Planos",
-            "url": "#plans section",
+            "url": "#plans",
             "textColor": "#371E55"
           },
           {
@@ -71,34 +75,20 @@
         ],
         "buttons": [
           {
-            "href": "#",
-            "text": "Criar loja",
-            "ctaStyle": "button",
-            "backgroundColor": "#371E55",
-            "textColor": "#ffffff",
-            "borderColor": "#371E55"
-          },
-          {
-            "text": "Acessar minha loja",
             "href": "https://app.lojaintegrada.com.br/painel/login",
-            "outline": true,
+            "text": "Acessar minha loja",
             "ctaStyle": "button",
             "backgroundColor": "Transparent",
             "textColor": "#371E55",
-            "borderColor": "#371E55"
+            "borderColor": "#371E55",
+            "outline": true
           }
         ],
-        "mobileButtons": [
-          {
-            "href": "#",
-            "text": "Ver planos",
-            "ctaStyle": "button"
-          }
-        ],
+        "mobileButtons": [],
         "asideMenuButtons": [
           {
             "text": "Abrir loja virtual",
-            "href": "#plans section",
+            "href": "#plans",
             "ctaStyle": "button",
             "backgroundColor": "#371E55",
             "textColor": "#ffffff",
@@ -117,7 +107,35 @@
         "sideMenuButtons": [],
         "linksBorderColor": "#CCC4CF",
         "textHoverColor": "#C6B3CE",
-        "textColor": "#371E55"
+        "textColor": "#371E55",
+        "mobileButtonsOnScrollColors": {
+          "textColor": "#ffffff",
+          "backgroundColor": "#371E55",
+          "borderColor": "#371E55"
+        },
+        "createStoreCta": {
+          "ctaStyle": "button",
+          "planId": "172",
+          "backgroundColor": "#371E55",
+          "textColor": "#ffffff",
+          "borderColor": "#371E55",
+          "text": "Criar loja",
+          "showIcon": false
+        },
+        "createStoreCtaMobile": {
+          "ctaStyle": "button",
+          "planId": "172",
+          "text": "Abrir loja virtual",
+          "backgroundColor": "#ffffff",
+          "textColor": "#371E55",
+          "borderColor": "#ffffff",
+          "showIcon": false
+        },
+        "createStoreCtaMobileOnScrollColors": {
+          "backgroundColor": "#371E55",
+          "borderColor": "#371E55",
+          "textColor": "#ffffff"
+        }
       },
       "logo": {
         "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12380/089daad4-d996-4911-9340-e227552948de"
@@ -136,26 +154,14 @@
         "cta": [
           {
             "ctaStyle": "link",
-            "href": "#plans section",
+            "href": "#plans",
             "textColor": "#FFC19F",
             "underlineText": "Ver planos"
           }
         ]
       },
       "campaignTimer": {
-        "show": false,
-        "expiresAt": "2024-11-25T20:30:00.000Z",
-        "backgroundColor": "#FFC19F",
-        "labels": {
-          "days": "Dias",
-          "hours": "Horas",
-          "minutes": "Minutos",
-          "seconds": "Segundos"
-        },
-        "numbersColor": "#371E55",
-        "labelsColor": "#371E55",
-        "textColor": "#371E55",
-        "text": "ÚLTIMAS CHANCES, A OFERTA ACABA EM:"
+        "text": "Time left for a campaign to end with a link"
       }
     },
     {
@@ -6180,6 +6186,40 @@
           "textColor": "#ffffff"
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/TimeLine.tsx",
+      "caption": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Faça parte do programa de desenvolvimento</span><br><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">e mude para a Loja Integrada</span></p>",
+      "title": "<div><br data-mce-bogus=\"1\"></div><p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Teste sua loja e até 5 dias</span></p>",
+      "TimelineItems": [
+        {
+          "title": "Passo 1",
+          "titleBackgroundColor": "rgba(255,255,255,0.5)",
+          "caption": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Faça sua inscrição</span></p>",
+          "text": "<p>Nosso time entra em contato em até 24h para tirar suas dúvidas e te ajudar na assinatura e no detalhamento da migração. Após a assinatura do seu plano, você já pode participar do nosso programa de desenvolvimento.</p>",
+          "titleColor": "#371E55"
+        },
+        {
+          "title": "Passo 2",
+          "caption": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Início da migração assistida e entrega</span></p>",
+          "text": "<p>Vamos migrar seus produtos e categorias de forma automática, segura e rápida! Usando nossas tecnologias para tornar esse processo o mais seguro que você já viu.</p>",
+          "titleBackgroundColor": "rgba(255,255,255,0.5)",
+          "titleColor": "#371E55"
+        },
+        {
+          "title": "Passo 3",
+          "titleBackgroundColor": "rgba(255,255,255,0.5)",
+          "caption": "<p><span style=\"color: rgb(55, 30, 85)\">Lorem Ipsum</span></p>",
+          "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+          "titleColor": "#371E55"
+        }
+      ],
+      "backgroundImage": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a103f333-d3df-4b4c-b5f3-34a32658e53b/dobra3.svg"
+      },
+      "firstAndLastItemDotColor": "",
+      "itemsDotColor": "",
+      "dotedLineColor": ""
     }
   ],
   "seo": {

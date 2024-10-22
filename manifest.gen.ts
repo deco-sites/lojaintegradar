@@ -43,6 +43,7 @@ import * as $$$$$$34 from "./sections/TcoCalculator.tsx";
 import * as $$$$$$35 from "./sections/TcoCalculatorV2.tsx";
 import * as $$$$$$36 from "./sections/Testimonials.tsx";
 import * as $$$$$$37 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$38 from "./sections/TimeLine.tsx";
 
 const manifest = {
   "sections": {
@@ -84,6 +85,7 @@ const manifest = {
     "site/sections/TcoCalculatorV2.tsx": $$$$$$35,
     "site/sections/Testimonials.tsx": $$$$$$36,
     "site/sections/Theme/Theme.tsx": $$$$$$37,
+    "site/sections/TimeLine.tsx": $$$$$$38,
   },
   "actions": {
     "site/actions/sendTcoUserData.ts": $$$$$$$$$0,

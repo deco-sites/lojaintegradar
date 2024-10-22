@@ -24,13 +24,17 @@
             "textColor": "#371E55"
           },
           {
+            "label": "Calculadora TCO",
+            "url": "#tcocalculator"
+          },
+          {
             "label": "Faça parte da Elite",
-            "url": "#",
+            "url": "#planoelite",
             "textColor": "#371E55"
           },
           {
             "label": "Planos",
-            "url": "#plans section",
+            "url": "#plans",
             "textColor": "#371E55"
           },
           {
@@ -71,34 +75,20 @@
         ],
         "buttons": [
           {
-            "href": "#",
-            "text": "Criar loja",
-            "ctaStyle": "button",
-            "backgroundColor": "#371E55",
-            "textColor": "#ffffff",
-            "borderColor": "#371E55"
-          },
-          {
-            "text": "Acessar minha loja",
             "href": "https://app.lojaintegrada.com.br/painel/login",
-            "outline": true,
+            "text": "Acessar minha loja",
             "ctaStyle": "button",
             "backgroundColor": "Transparent",
             "textColor": "#371E55",
-            "borderColor": "#371E55"
+            "borderColor": "#371E55",
+            "outline": true
           }
         ],
-        "mobileButtons": [
-          {
-            "href": "#",
-            "text": "Ver planos",
-            "ctaStyle": "button"
-          }
-        ],
+        "mobileButtons": [],
         "asideMenuButtons": [
           {
             "text": "Abrir loja virtual",
-            "href": "#plans section",
+            "href": "#plans",
             "ctaStyle": "button",
             "backgroundColor": "#371E55",
             "textColor": "#ffffff",
@@ -117,7 +107,35 @@
         "sideMenuButtons": [],
         "linksBorderColor": "#CCC4CF",
         "textHoverColor": "#C6B3CE",
-        "textColor": "#371E55"
+        "textColor": "#371E55",
+        "mobileButtonsOnScrollColors": {
+          "textColor": "#ffffff",
+          "backgroundColor": "#371E55",
+          "borderColor": "#371E55"
+        },
+        "createStoreCta": {
+          "ctaStyle": "button",
+          "planId": "172",
+          "backgroundColor": "#371E55",
+          "textColor": "#ffffff",
+          "borderColor": "#371E55",
+          "text": "Criar loja",
+          "showIcon": false
+        },
+        "createStoreCtaMobile": {
+          "ctaStyle": "button",
+          "planId": "172",
+          "text": "Abrir loja virtual",
+          "backgroundColor": "#ffffff",
+          "textColor": "#371E55",
+          "borderColor": "#ffffff",
+          "showIcon": false
+        },
+        "createStoreCtaMobileOnScrollColors": {
+          "backgroundColor": "#371E55",
+          "borderColor": "#371E55",
+          "textColor": "#ffffff"
+        }
       },
       "logo": {
         "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12380/089daad4-d996-4911-9340-e227552948de"
@@ -136,26 +154,14 @@
         "cta": [
           {
             "ctaStyle": "link",
-            "href": "#plans section",
+            "href": "#plans",
             "textColor": "#FFC19F",
             "underlineText": "Ver planos"
           }
         ]
       },
       "campaignTimer": {
-        "show": false,
-        "expiresAt": "2024-11-25T20:30:00.000Z",
-        "backgroundColor": "#FFC19F",
-        "labels": {
-          "days": "Dias",
-          "hours": "Horas",
-          "minutes": "Minutos",
-          "seconds": "Segundos"
-        },
-        "numbersColor": "#371E55",
-        "labelsColor": "#371E55",
-        "textColor": "#371E55",
-        "text": "ÚLTIMAS CHANCES, A OFERTA ACABA EM:"
+        "text": "Time left for a campaign to end with a link"
       }
     },
     {
@@ -396,7 +402,7 @@
             "description": "<p><em><strong>Logo no primeiro mês pós migração, vi um aumento</strong></em><br><em><strong>na taxa de conversão de 60%.</strong></em><br>Vim pela necessidade de otimizar meu investimento, em busca de uma plataforma fácil de usar. Encontrei ambos e ainda um time próximo, o que é muito bom\".</p>",
             "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
             "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
-            "alt": "m camicado",
+            "alt": "liv",
             "nameIconColor": "#371E55",
             "quoteIconColor": "#371E55",
             "nameBackgroundColor": "#F1EAF4",
@@ -6031,6 +6037,189 @@
           "borderColor": "#ffffff"
         }
       ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Quote.tsx",
+            "title": "A opinião de quem já tá otimizando seus custos",
+            "titleColor": "#371E55",
+            "quote": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">“A Loja Integrada chamava atenção pelo que ela oferecia e pelo preço. Dá para ver que tem alguém ali pensando realmente no que o cliente precisa para crescer.”</span></p>",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/40976a63-ce7b-4a08-a231-efb7d9e8a153/Avatar-Image.png"
+            },
+            "imageCaption": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Priscila Torres,</span></strong></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Sócia da loja O Queijólatra</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/13262e36-0971-43cb-a09c-c6e378e698fb/1.svg"
+            },
+            "useBackground": "image"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Quote.tsx",
+            "title": "A opinião de quem já tá otimizando seus custos",
+            "titleColor": "#371E55",
+            "quote": "<div style=\"background: linear-gradient(280deg, #825AB4 22.98%, #1B1525 79.04%); background-clip: text; color: transparent;\" data-mce-style=\"background: linear-gradient(280deg, #825AB4 22.98%, #1B1525 79.04%); background-clip: text; color: transparent;\"><p>“A Loja Integrada chamava atenção pelo que ela oferecia e pelo preço. Dá para ver que tem alguém ali pensando realmente no que o cliente precisa para crescer.”</p></div>",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/40976a63-ce7b-4a08-a231-efb7d9e8a153/Avatar-Image.png"
+            },
+            "imageCaption": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Priscila Torres,</span></strong></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Sócia da loja O Queijólatra</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/31b5e1e9-0458-4085-be1b-5d5e23de2bb5/depoimentos.svg"
+            },
+            "useBackground": "image",
+            "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8fd0634d-265f-46c6-b006-2b75aa39d895/video-dobra-comunidade.mp4",
+            "sectionHeight": "39.82vw"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/SimpleHero.tsx",
+            "text": "<p style=\"background: linear-gradient(99deg, rgb(130, 90, 180) 13.02%, rgb(210, 175, 237) 79.44%) text; color: transparent; text-align: center;\" data-mce-style=\"background: linear-gradient(99deg, rgb(130, 90, 180) 13.02%, rgb(210, 175, 237) 79.44%) text; color: transparent; text-align: center;\">Junte-se as + 700 lojas <br>que escolheram migrar</p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">para a Loja Integrada nos</span><br><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">últimos 6 meses</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Migrar minha loja",
+                "textColor": "#1B1525",
+                "backgroundColor": "#ffffff",
+                "borderColor": "#ffffff"
+              }
+            ],
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fa8074db-380f-4c1e-8da8-e2e512e44e3a/mobile-background.svg",
+              "width": 430,
+              "height": 449
+            },
+            "useBackground": "image",
+            "sectionHeight": "104vw"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/SimpleHero.tsx",
+            "sectionHeight": "52vw",
+            "text": "<p style=\"background: linear-gradient(99deg, rgb(130, 90, 180) 13.02%, rgb(210, 175, 237) 79.44%) text; color: transparent; text-align: center;\" data-mce-style=\"background: linear-gradient(99deg, rgb(130, 90, 180) 13.02%, rgb(210, 175, 237) 79.44%) text; color: transparent; text-align: center;\">Junte-se as + 700 lojas <br>que escolheram migrar</p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">para a Loja Integrada nos</span><br><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">últimos 6 meses</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Migrar minha loja",
+                "textColor": "#1B1525",
+                "backgroundColor": "#ffffff",
+                "borderColor": "#ffffff"
+              }
+            ],
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5407b818-765c-4145-a24b-bd9cfb100ee7/Junte-se-a-(1).png",
+              "width": 1440,
+              "height": 744
+            },
+            "useBackground": "image"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx",
+      "title": "Perguntas frequentes",
+      "titleColor": "#371E55",
+      "caption": "Encontre respostas para suas dúvidas mais comuns aqui.",
+      "captionColor": "#485565",
+      "questions": [
+        {
+          "question": "O que é TCO?",
+          "answear": "<div><p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div><div><br data-mce-bogus=\"1\"></div>"
+        },
+        {
+          "question": "Como calcular o TCO?",
+          "answear": "<div><p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div><div><br data-mce-bogus=\"1\"></div>"
+        },
+        {
+          "question": "Qual é o objetivo do cálculo de TCO?",
+          "answear": "<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+        },
+        {
+          "question": "Como posso obter minha TCO?",
+          "answear": "<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+        },
+        {
+          "question": "Ainda tem dúvidas?",
+          "answear": "<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+        }
+      ],
+      "questionsTitleColor": "#371E55",
+      "questionsDivisionLineColor": "#E1E1E1",
+      "bottomTitle": "Ainda tem dúvidas?",
+      "bottomTitleColor": "#371E55",
+      "bottomCaptionColor": "#485565",
+      "bottomCaption": "Entre em contato conosco para mais informações.",
+      "cta": [
+        {
+          "ctaStyle": "button",
+          "href": "/talkToSpecialist",
+          "text": "Fale com um especialista",
+          "backgroundColor": "#371E55",
+          "borderColor": "#371E55",
+          "textColor": "#ffffff"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/TimeLine.tsx",
+      "caption": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Faça parte do programa de desenvolvimento</span><br><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">e mude para a Loja Integrada</span></p>",
+      "title": "<div><br data-mce-bogus=\"1\"></div><p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Teste sua loja e até 5 dias</span></p>",
+      "TimelineItems": [
+        {
+          "title": "Passo 1",
+          "titleBackgroundColor": "rgba(255,255,255,0.5)",
+          "caption": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Faça sua inscrição</span></p>",
+          "text": "<p>Nosso time entra em contato em até 24h para tirar suas dúvidas e te ajudar na assinatura e no detalhamento da migração. Após a assinatura do seu plano, você já pode participar do nosso programa de desenvolvimento.</p>",
+          "titleColor": "#371E55"
+        },
+        {
+          "title": "Passo 2",
+          "caption": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Início da migração assistida e entrega</span></p>",
+          "text": "<p>Vamos migrar seus produtos e categorias de forma automática, segura e rápida! Usando nossas tecnologias para tornar esse processo o mais seguro que você já viu.</p>",
+          "titleBackgroundColor": "rgba(255,255,255,0.5)",
+          "titleColor": "#371E55"
+        },
+        {
+          "title": "Passo 3",
+          "titleBackgroundColor": "rgba(255,255,255,0.5)",
+          "caption": "<p><span style=\"color: rgb(55, 30, 85)\">Lorem Ipsum</span></p>",
+          "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+          "titleColor": "#371E55"
+        }
+      ],
+      "backgroundImage": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a103f333-d3df-4b4c-b5f3-34a32658e53b/dobra3.svg"
+      },
+      "firstAndLastItemDotColor": "",
+      "itemsDotColor": "",
+      "dotedLineColor": ""
     }
   ],
   "seo": {

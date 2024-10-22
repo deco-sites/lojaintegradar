@@ -1,6 +1,6 @@
-import type { ImageWidget, VideoWidget, HTMLWidget } from "apps/admin/widgets.ts";
-import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
+import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
 /** @title {{text}} {{underlineText}} */
@@ -25,62 +25,50 @@ export interface IImage {
     height?: number;
 }
 
-/** @title {{title}} */
-export interface Card {
-    icon?: IImage;
-    title?: string;
-    /** @format color-input */
-    titleColor?: string;
-    text?: string;
-    /** @format color-input */
-    textColor?: string;
-}
-
 export interface Props {
-    /** @format color-input */
-    backgroundColor?: string;
-    title?: HTMLWidget;
-    caption?: string;
-    /** @format color-input */
-    captionColor?: string;
-    cards?: Card[];
-    image?: IImage;
+    text?: HTMLWidget;
     cta?: CTA[];
+    backgroundImage?: IImage;
+    backgroundVideo?: VideoWidget;
+    useBackground?: "image" | "video";
+    sectionHeight?: string;
 }
 
-export default function DetailedHero({ backgroundColor, title, caption, captionColor, cards, cta = [], image }: Props) {
-    return <div class="py-[52px] px-7 xl:px-24" style={{ background: backgroundColor }}>
-        <div class="flex justify-center lg:justify-between flex-wrap lg:flex-nowrap">
-            <div class="max-w-full lg:max-w-[764px]">
-                <AnimateOnShow animation="animate-fade-up">
-                    {caption && <p class="text-base font-normal leading-normal mb-5" style={{ color: captionColor }}>{caption}</p>}
-                    {title && <div dangerouslySetInnerHTML={{ __html: title }} class="text-3xl lg:text-5xl font-semibold leading-[120%] lg:w-[120%]" />}
-                </AnimateOnShow>
-                <div class="flex overflow-auto lg:overflow-visible lg:flex-wrap gap-14 gap-y-9">
-                    {cards?.map((card, index) => (
-                        <AnimateOnShow divClass="min-w-[60vw] lg:min-w-[0] w-[60vw] lg:w-auto lg:max-w-[342px] flex-grow flex flex-col gap-5 mt-4" delay={index * 50} animation="animate-fade-up">
-                            {card.icon?.src && <Image
-                                width={card.icon.width || 39}
-                                height={card.icon.height || 39}
-                                src={card.icon.src}
-                                alt={card.icon.alt || "card icon"}
-                            />}
-                            {card.title && <h3 class="text-xl font-semibold leading-[120%]" style={{ color: card.titleColor }}>{card.title}</h3>}
-                            {card.text && <p class="text-sm font-normal leading-normal" style={{ color: card.textColor }}>{card.text}</p>}
-                        </AnimateOnShow>
-                    ))}
-                </div>
-            </div>
-            <div class="flex items-center">
-                {image?.src && <Image
-                    src={image.src}
-                    alt={image.alt || "right image"}
-                    width={image.width || 515}
-                    height={image.height || 747}
-                />}
-            </div>
-        </div>
-        <AnimateOnShow divClass="flex flex-wrap items-center justify-center gap-7 mt-14" animation="animate-fade-up">
+export default function FloatingImagesHero({ text, cta = [], backgroundImage, backgroundVideo, sectionHeight, useBackground }: Props) {
+    return <div class="relative flex flex-col gap-5 lg:gap-10 lg:justify-center items-center overflow-hidden py-[38px] px-7" style={{ height: sectionHeight || "auto" }}>
+        {useBackground == "image" && backgroundImage?.src && <Image
+            src={backgroundImage.src}
+            alt={backgroundImage.alt || "background image"}
+            width={backgroundImage.width || 1439}
+            height={backgroundImage.height || 569}
+            class="absolute left-0 top-0 w-full h-full object-cover -z-50"
+        />}
+        {useBackground == "video" && backgroundVideo && <video
+            width="1280"
+            height="720"
+            autoPlay
+            playsInline
+            muted
+            loading="lazy"
+            loop
+            class="object-cover w-full h-full absolute top-0 left-0 -z-50"
+        >
+            <source src={backgroundVideo} type="video/mp4" />
+        </video>}
+        {/* {floatingImages?.map((image) => (
+            <Image
+                src={image.src || ""}
+                alt={image.alt || "floating image"}
+                width={image.width || 86}
+                height={image.height || 86}
+                class="absolute -z-40"
+                style={{ top: image.verticalPosition, left: image.horizontalPosition }}
+            />
+        ))} */}
+        <AnimateOnShow animation="animate-fade-down50">
+            {text && <div class="text-2xl lg:text-[56px] font-bold leading-[120%] max-w-[1130px]" dangerouslySetInnerHTML={{ __html: text }} />}
+        </AnimateOnShow>
+        <AnimateOnShow divClass="flex flex-wrap items-center justify-center gap-7" animation="animate-fade-up">
             {cta.map((button) => {
                 if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                     showIcon={button.showIcon}

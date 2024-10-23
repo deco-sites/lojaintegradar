@@ -2,7 +2,7 @@ import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "../components/ui/Icon.tsx";
 import { useScript } from "@deco/deco/hooks";
-import CampaignTimer from "../components/CampaignTimer.tsx";
+import CampaignTimer from "../components/CampaignTimerHeader.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
 const onLoad = (backgroundColor?: string, navigation?: Navigation) => {
@@ -83,7 +83,8 @@ export interface CampaignTimer {
   /** @format color-input */
   textColor?: string;
 
-  expiredText?: HTMLWidget;
+  /** @format rich-text */
+  expiredText?: string;
   /**
    * @title Expires at date
    * @format datetime

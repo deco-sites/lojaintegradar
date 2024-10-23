@@ -90,12 +90,12 @@ function CampaignTimer({
         { id, label, time, labelsColor, numbersColor },
     ) => (
         <div class="flex flex-col items-center">
-            <span class="text-[9px] lg:text-[14px] leading-none text-base-content font-normal my-4" style={{ color: labelsColor }}>
+            <span class="text-[8px] leading-none text-base-content font-normal" style={{ color: labelsColor }}>
                 {label || ""}
             </span>
             <span class="countdown font-normal text-xl lg:text-2xl">
                 <span
-                    class="text-5xl lg:text-[72px] leading-none font-light text-primary-content tracking-[-3px]"
+                    class="text-[30px] leading-none font-normal text-primary-content tracking-[-3px] px-1"
                     id={`${id}::${time}`}
                     style={{ color: numbersColor }}
                 />
@@ -105,7 +105,7 @@ function CampaignTimer({
     return (
         <>
             <div>
-                <div class="container mx-auto flex flex-col lg:flex-row lg:items-center lg:gap-16 gap-4">
+                <div class="container mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-16 gap-4">
                     <div
                         id={`${id}::expired`}
                         class="hidden text-sm text-center lg:text-xl lg:text-left lg:max-w-lg"
@@ -114,10 +114,10 @@ function CampaignTimer({
                     </div>
                     <div class="flex flex-wrap gap-8 lg:gap-16 items-center justify-center lg:justify-normal">
                         <div id={`${id}::counter`}>
-                            <div class="flex text-center text-5xl lg:text-[72px] auto-cols-max items-center" style={{ color: numbersColor }}>
-                                <TimeComponent id={id} label={labels?.days} time="days" {...{ labelsColor, numbersColor }} /> <span class="pt-7">:</span>
-                                <TimeComponent id={id} label={labels?.hours} time="hours" {...{ labelsColor, numbersColor }} /> <span class="pt-7">:</span>
-                                <TimeComponent id={id} label={labels?.minutes} time="minutes" {...{ labelsColor, numbersColor }} /> <span class="pt-7">:</span>
+                            <div class="flex text-center text-[30px] auto-cols-max items-center" style={{ color: numbersColor }}>
+                                <TimeComponent id={id} label={labels?.days} time="days" {...{ labelsColor, numbersColor }} /> <span class="pt-1">:</span>
+                                <TimeComponent id={id} label={labels?.hours} time="hours" {...{ labelsColor, numbersColor }} /> <span class="pt-1">:</span>
+                                <TimeComponent id={id} label={labels?.minutes} time="minutes" {...{ labelsColor, numbersColor }} /> <span class="pt-1">:</span>
                                 <TimeComponent id={id} label={labels?.seconds} time="seconds" {...{ labelsColor, numbersColor }} />
                             </div>
                         </div>

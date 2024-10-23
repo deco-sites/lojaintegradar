@@ -1,4 +1,5 @@
 import { HTMLWidget, ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
+import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import Image from "apps/website/components/Image.tsx";
 
 export interface IImage {
@@ -57,18 +58,20 @@ export default function TimeLine({ caption, title, TimelineItems = [], backgroun
         >
             <source src={backgroundVideo} type="video/mp4" />
         </video>}
-        {caption && <div class="text-center text-sm lg:text-2xl font-medium lg:font-semibold leading-[120%] mb-4 lg:mb-5" dangerouslySetInnerHTML={{ __html: caption }} />}
-        {title && <div class="text-[22px] lg:text-5xl text-center font-bold lg:font-semibold leading-[120%] mb-10 lg:mb-12" dangerouslySetInnerHTML={{ __html: title }} />}
+        <AnimateOnShow animation="animate-fade-up">
+            {caption && <div class="text-center text-sm lg:text-2xl font-medium lg:font-semibold leading-[120%] mb-4 lg:mb-5" dangerouslySetInnerHTML={{ __html: caption }} />}
+            {title && <div class="text-[22px] lg:text-5xl text-center font-bold lg:font-semibold leading-[120%] mb-10 lg:mb-12" dangerouslySetInnerHTML={{ __html: title }} />}
+        </AnimateOnShow>
         <div class="max-h-[382px] gap-20 carousel flex flex-col">
             {TimelineItems.map((item, index) => {
 
                 const even = index % 2 == 0;
                 return (
                     <div class={`relative flex gap-5 justify-center group even:flex-row-reverse`}>
-                        <div class="w-[40%] lg:w-[264px] mt-6">
+                        <AnimateOnShow animation={even ? "animate-fade-right" : "animate-fade-left"} divClass="w-[40%] lg:w-[264px] mt-6">
                             {item.caption && <div class="mb-3 text-sm lg:text-[26px] text-primary font-bold leading-normal" dangerouslySetInnerHTML={{ __html: item.caption }} />}
                             {item.text && <div class="text-primary-content text-xs lg:text-sm font-normal leading-normal" dangerouslySetInnerHTML={{ __html: item.text }} />}
-                        </div>
+                        </AnimateOnShow>
 
                         {index == 0 || index == TimelineItems.length - 1
                             ? <svg width="31" height="30" class="mt-6 fill-current" style={{ color: firstAndLastItemDotColor || "rgba(55, 30, 85)", stroke: firstAndLastItemDotColor || "rgba(55, 30, 85)" }} viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +82,7 @@ export default function TimeLine({ caption, title, TimelineItems = [], backgroun
                             </svg>
                         }
 
-                        <div class="w-[40%] lg:w-[264px]">
+                        <AnimateOnShow animation={even ? "animate-fade-left" : "animate-fade-right"} divClass="w-[40%] lg:w-[264px]">
                             <h3 class="text-xl lg:text-[34px] font-extrabold rounded-xl px-5 lg:px-9 py-1.5 lg:py-3 relative mx-4 mt-5 lg:mt-4" style={{ color: item.titleColor, background: item.titleBackgroundColor || "rgba(255,255,255,0.5)" }}>
                                 {item.title}
                                 {even && <div class="absolute h-full flex items-center top-0 right-full">
@@ -93,7 +96,7 @@ export default function TimeLine({ caption, title, TimelineItems = [], backgroun
                                     </svg>
                                 </div>}
                             </h3>
-                        </div>
+                        </AnimateOnShow>
                         <div class="absolute w-full top-14 left-0 flex justify-center group-last:hidden" style="height: calc(100% + 50px);">
                             <div class="border-l-[2.5px] border-dashed" style={{ borderColor: dotedLineColor || "#00969C" }} />
                         </div>

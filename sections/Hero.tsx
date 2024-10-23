@@ -103,8 +103,8 @@ export default function Hero({
         </div>
         {use == "image" && image?.src && <Image src={image.src} alt={image.alt || "hero image"} width={image.width || 809} height={image.height || 675} class="w-full xl:w-auto max-w-[809px] object-contain" />}
         {use == 'video' && video && <video
-          width="1018"
-          height="1237"
+          width="1280"
+          height="720"
           autoPlay
           playsInline
           muted
@@ -113,8 +113,8 @@ export default function Hero({
           class="w-full xl:w-auto max-w-[809px] object-contain"
         >
           <source src={video} type="video/mp4" />
-          <object data="" width="1018" height="1237">
-            <embed width="1018" height="1237" src={video} />
+          <object data="" width="1280" height="720">
+            <embed width="1280" height="720" src={video} />
           </object>
         </video>}
       </AnimateOnShow>

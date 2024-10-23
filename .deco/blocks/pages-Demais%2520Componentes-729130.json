@@ -161,7 +161,12 @@
         ]
       },
       "campaignTimer": {
-        "text": "Time left for a campaign to end with a link"
+        "text": "Time left for a campaign to end with a link",
+        "show": false,
+        "backgroundColor": "#FFC19F",
+        "textColor": "#371E55",
+        "numbersColor": "#371E55",
+        "labelsColor": "#371E55"
       }
     },
     {
@@ -6220,6 +6225,98 @@
       "firstAndLastItemDotColor": "",
       "itemsDotColor": "",
       "dotedLineColor": ""
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/CampaignTimerHero.tsx",
+            "campaignTimer": {
+              "backgroundColor": "#de1717",
+              "text": "teste",
+              "expiresAt": "2025-01-25T03:00:00.000Z",
+              "labels": {
+                "days": "Dias",
+                "hours": "Horas",
+                "minutes": "Minutos",
+                "seconds": "Segundos"
+              },
+              "labelsColor": "#C8C8C8",
+              "numbersColor": "#371E55"
+            },
+            "title": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Oferta por tempo limitado</span></p>",
+            "text": "<p><span style=\"color: rgb(156, 154, 182);\" data-mce-style=\"color: rgb(156, 154, 182);\">Inscreva-se para saber mais sobre o lançamento</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Inscreva-se agora",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff"
+              }
+            ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e3be6427-5abd-4b35-80a7-88cbada037f4/rocket-image.svg",
+              "alt": "space ship image"
+            },
+            "use": "image",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/12db7a22-5d5f-429f-bcc4-73d1c7155cca/Countdown-mobile.svg",
+              "width": 430,
+              "height": 550
+            },
+            "invertPlacement": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/CampaignTimerHero.tsx",
+            "campaignTimer": {
+              "backgroundColor": "#de1717",
+              "text": "teste",
+              "expiresAt": "2025-01-25T03:00:00.000Z",
+              "labels": {
+                "days": "Dias",
+                "hours": "Horas",
+                "minutes": "Minutos",
+                "seconds": "Segundos"
+              },
+              "labelsColor": "#C8C8C8",
+              "numbersColor": "#371E55"
+            },
+            "title": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Oferta por tempo limitado</span></p>",
+            "text": "<p><span style=\"color: rgb(156, 154, 182);\" data-mce-style=\"color: rgb(156, 154, 182);\">Inscreva-se para saber mais sobre o lançamento</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Inscreva-se agora",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff"
+              }
+            ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e3be6427-5abd-4b35-80a7-88cbada037f4/rocket-image.svg",
+              "alt": "space ship image"
+            },
+            "use": "image",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/86bd8a53-faff-4bbd-a70e-41768392c0f8/Countdown.svg"
+            },
+            "invertPlacement": false
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     }
   ],
   "seo": {

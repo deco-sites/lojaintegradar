@@ -754,11 +754,10 @@
               },
               {
                 "ctaStyle": "link",
-                "text": "Já tem uma loja?",
-                "underlineText": " Ative agora",
+                "underlineText": "Falar com Especialista ",
                 "showIcon": true,
                 "textColor": "#371E55",
-                "href": "#"
+                "href": "/talkToSpecialist"
               }
             ],
             "links": [],
@@ -941,13 +940,14 @@
                 "textColor": "#ffffff"
               },
               {
-                "text": "Falar com Especialista ",
                 "href": "/talkToSpecialist",
                 "outline": true,
-                "ctaStyle": "button",
+                "ctaStyle": "link",
                 "backgroundColor": "tRANSPARENT",
                 "textColor": "#371E55",
-                "borderColor": "#371E55"
+                "borderColor": "#371E55",
+                "showIcon": true,
+                "underlineText": "Falar com Especialista "
               }
             ],
             "links": [],

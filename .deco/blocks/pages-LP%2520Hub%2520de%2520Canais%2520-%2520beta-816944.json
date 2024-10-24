@@ -3,7 +3,179 @@
   "path": "/hub-canais-beta",
   "sections": [
     {
-      "__resolveType": "Header2 global"
+      "__resolveType": "site/sections/Header2.tsx",
+      "navigation": {
+        "links": [
+          {
+            "label": "Abra sua Loja na LI",
+            "url": "#",
+            "textColor": "#371E55",
+            "textHoverColor": "#C6B3CE"
+          },
+          {
+            "label": "Nosso ecossistema",
+            "url": "#nossoecossistema",
+            "textColor": "#371E55",
+            "textHoverColor": "#C6B3CE"
+          },
+          {
+            "label": "Recursos e Ferramentas",
+            "url": "#",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Calculadora TCO",
+            "url": "#tcocalculator"
+          },
+          {
+            "label": "Faça parte da Elite",
+            "url": "#planoelite",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Planos",
+            "url": "#plans",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Compre Junto e Carrinho Abandonado",
+            "url": "#",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Plano Aceleração",
+            "url": "#planoaceleracao",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Plano Expansão ",
+            "url": "#planoexpancao",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Plano Elite",
+            "url": "#planoelite",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Pagali e Enviali",
+            "url": "#pagali",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Plano Crescimento",
+            "url": "#planocrescimento",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Ecossistema de conteúdo",
+            "url": "#",
+            "textColor": "#371E55"
+          }
+        ],
+        "buttons": [
+          {
+            "href": "https://app.lojaintegrada.com.br/painel/login",
+            "text": "Acessar minha loja",
+            "ctaStyle": "button",
+            "backgroundColor": "Transparent",
+            "textColor": "#FFFFFF",
+            "borderColor": "#FFFFFF",
+            "outline": true
+          }
+        ],
+        "mobileButtons": [],
+        "asideMenuButtons": [
+          {
+            "text": "Abrir loja virtual",
+            "href": "#plans",
+            "ctaStyle": "button",
+            "backgroundColor": "#371E55",
+            "textColor": "#ffffff",
+            "borderColor": "#371E55"
+          },
+          {
+            "text": "Fazer Login",
+            "href": "https://app.lojaintegrada.com.br/painel/login",
+            "outline": true,
+            "ctaStyle": "button",
+            "backgroundColor": "Transparent",
+            "textColor": "#371E55",
+            "borderColor": "#371E55"
+          }
+        ],
+        "sideMenuButtons": [],
+        "linksBorderColor": "#CCC4CF",
+        "textHoverColor": "#C6B3CE",
+        "textColor": "#371E55",
+        "mobileButtonsOnScrollColors": {
+          "textColor": "#ffffff",
+          "backgroundColor": "#371E55",
+          "borderColor": "#371E55"
+        },
+        "createStoreCta": {
+          "ctaStyle": "button",
+          "planId": "172",
+          "backgroundColor": "#371E55",
+          "textColor": "#ffffff",
+          "borderColor": "#371E55",
+          "showIcon": false
+        },
+        "createStoreCtaMobile": {
+          "ctaStyle": "button",
+          "planId": "172",
+          "text": "Abrir loja virtual",
+          "backgroundColor": "#ffffff",
+          "textColor": "#371E55",
+          "borderColor": "#ffffff",
+          "showIcon": false
+        },
+        "createStoreCtaMobileOnScrollColors": {
+          "backgroundColor": "#371E55",
+          "borderColor": "#371E55",
+          "textColor": "#ffffff"
+        }
+      },
+      "logo": {
+        "src": {
+          "__resolveType": "website/flags/multivariate/image.ts",
+          "variants": [
+            {
+              "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e47bad3a-c5cd-4266-93b0-d5b04b9d6400/Logo-li-migracao.svg"
+            },
+            {
+              "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/044f733d-5bc8-4951-b88d-ee423cfd7f1c/logo-li-novo.svg",
+              "rule": {
+                "__resolveType": "website/matchers/always.ts"
+              }
+            }
+          ]
+        },
+        "href": "/venda-mais"
+      },
+      "initialButtons": [],
+      "backgroundColor": "#ffffff",
+      "barsColor": "#371E55",
+      "asideMenuTopBackgroundColor": "#C6B3CE",
+      "asideMenuBackgroundColor": "#ffffff",
+      "asideMenuCloseIconColor": "#371E55",
+      "headerMessage": {
+        "show": false,
+        "text": "🔥 Aumente sua capacidade de venda! Conheça nossos planos a partir de R$ 54/mês",
+        "textColor": "#ffffff",
+        "backgroundColor": "#371E55",
+        "cta": [
+          {
+            "ctaStyle": "link",
+            "href": "#plans",
+            "textColor": "#FFC19F",
+            "underlineText": "Ver planos"
+          }
+        ]
+      },
+      "campaignTimer": {
+        "text": "Time left for a campaign to end with a link"
+      }
     },
     {
       "__resolveType": "site/sections/FloatingButtons.tsx",
@@ -101,7 +273,7 @@
               "alt": "top image"
             },
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/da9060c9-9708-4d08-b57d-e038c769434f/background-image.webp",
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a43ec36a-3e93-4631-a835-a29d7a259f57/bg-hub-canais.png",
               "alt": "background image"
             },
             "inputLabelColor": "#371E55",
@@ -140,7 +312,8 @@
                   "href": "#plans"
                 }
               ]
-            }
+            },
+            "video": "https://www.youtube.com/embed/LNCNuQeaLGw?si=_eDagIeqI4Mw0-1W"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

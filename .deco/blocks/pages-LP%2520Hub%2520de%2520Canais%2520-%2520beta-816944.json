@@ -288,132 +288,6 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Recupere vendas com inteligência",
-            "caption": "Envie mensagens automáticas para reengajar clientes",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a4570df3-1d3c-4408-bb0e-58a2f88a1914/hero-2-image.svg"
-            },
-            "cta": [
-              {
-                "text": "Ver plano Aceleração ",
-                "href": "#planoaceleracao",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com Especialista ",
-                "showIcon": true,
-                "textColor": "#371E55",
-                "href": "/talkToSpecialist"
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02b136e7-9e3f-48e6-874b-6284cf518868/Ellipse-61.png",
-              "alt": "green elipse",
-              "width": 797,
-              "height": 1227
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "use": "image",
-            "description": "Com as ferramentas de Produto e Carrinho Abandonado, você reativa facilmente quem navegou no site, mas não finalizou a compra, ou quem fez o pedido sem concluir o pagamento. Com disparos ilimitados, você não perde mais nenhuma venda.",
-            "bigNumbers": [
-              {
-                "text": "+ R$ 14 milhões",
-                "caption": "em vendas recuperadas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 45 mil pedidos",
-                "caption": "recuperados com estratégia",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 2 mil lojistas",
-                "caption": "já utilizaram a ferramenta",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              }
-            ],
-            "placement": "right",
-            "links": [
-              {
-                "textBefore": "Já tem uma loja?",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "descriptionColor": "#5F6E82"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a4570df3-1d3c-4408-bb0e-58a2f88a1914/hero-2-image.svg"
-            },
-            "cta": [],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02b136e7-9e3f-48e6-874b-6284cf518868/Ellipse-61.png",
-              "alt": "green elipse",
-              "width": 797,
-              "height": 1227
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "title": "A solução que descomplica suas  vendas em marketplaces",
-            "description": "Quer vender em marketplaces? O Hub de Canais faz isso de forma simples, enviando seus produtos sem dificuldade. Com inteligência artificial, ele otimiza as informações, eliminando ajustes manuais e aumentando suas aprovações.",
-            "bigNumbers": [
-              {
-                "text": "Cadastro inteligente",
-                "caption": "Ajuste automático do seu catálogo de produtos com IA",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "Otimização rápida",
-                "caption": "Envio de produtos adaptados para diferentes canais",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              },
-              {
-                "text": "Conversão garantida",
-                "caption": "Alcance mais clientes com dados otimizados e produtos prontos para aprovação",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              }
-            ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja?",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "placement": "right",
-            "descriptionColor": "#5F6E82"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
             "__resolveType": "site/sections/BigImageHero.tsx",
             "title": "Encante seu cliente",
             "caption": "Tenha um visual profissional em poucos cliques!",
@@ -562,6 +436,132 @@
       ]
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Hero.tsx",
+            "title": "Recupere vendas com inteligência",
+            "caption": "Envie mensagens automáticas para reengajar clientes",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a4570df3-1d3c-4408-bb0e-58a2f88a1914/hero-2-image.svg"
+            },
+            "cta": [
+              {
+                "text": "Ver plano Aceleração ",
+                "href": "#planoaceleracao",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "underlineText": "Falar com Especialista ",
+                "showIcon": true,
+                "textColor": "#371E55",
+                "href": "/talkToSpecialist"
+              }
+            ],
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02b136e7-9e3f-48e6-874b-6284cf518868/Ellipse-61.png",
+              "alt": "green elipse",
+              "width": 797,
+              "height": 1227
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "use": "image",
+            "description": "Com as ferramentas de Produto e Carrinho Abandonado, você reativa facilmente quem navegou no site, mas não finalizou a compra, ou quem fez o pedido sem concluir o pagamento. Com disparos ilimitados, você não perde mais nenhuma venda.",
+            "bigNumbers": [
+              {
+                "text": "+ R$ 14 milhões",
+                "caption": "em vendas recuperadas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
+              },
+              {
+                "text": "+ 45 mil pedidos",
+                "caption": "recuperados com estratégia",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
+              },
+              {
+                "text": "+ 2 mil lojistas",
+                "caption": "já utilizaram a ferramenta",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
+              }
+            ],
+            "placement": "right",
+            "links": [
+              {
+                "textBefore": "Já tem uma loja?",
+                "text": "Ative agora",
+                "href": "#"
+              }
+            ],
+            "descriptionColor": "#5F6E82"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Hero.tsx",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a4570df3-1d3c-4408-bb0e-58a2f88a1914/hero-2-image.svg"
+            },
+            "cta": [],
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02b136e7-9e3f-48e6-874b-6284cf518868/Ellipse-61.png",
+              "alt": "green elipse",
+              "width": 797,
+              "height": 1227
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "title": "A solução que descomplica suas  vendas em marketplaces",
+            "description": "Quer vender em marketplaces? O Hub de Canais faz isso de forma simples, enviando seus produtos sem dificuldade. Com inteligência artificial, ele otimiza as informações, eliminando ajustes manuais e aumentando suas aprovações.",
+            "bigNumbers": [
+              {
+                "text": "Cadastro inteligente",
+                "caption": "Ajuste automático do seu catálogo de produtos com IA",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
+              },
+              {
+                "text": "Otimização rápida",
+                "caption": "Envio de produtos adaptados para diferentes canais",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
+              },
+              {
+                "text": "Conversão garantida",
+                "caption": "Alcance mais clientes com dados otimizados e produtos prontos para aprovação",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
+              }
+            ],
+            "links": [
+              {
+                "textBefore": "Já tem uma loja?",
+                "text": "Ative agora",
+                "href": "#"
+              }
+            ],
+            "placement": "right",
+            "descriptionColor": "#5F6E82"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/TalkToSpecialistModal.tsx"
     },
     {
@@ -578,6 +578,46 @@
     },
     {
       "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/CalculateYourCosts.tsx",
+        "subtitle": null,
+        "title": "Por que vender em marketplaces?",
+        "cards": [
+          {
+            "icon": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+            },
+            "title": "Acesso a milhares de novos clientes"
+          },
+          {
+            "icon": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+            },
+            "title": "Mais tráfego e visibilidade para o seu negócio"
+          },
+          {
+            "icon": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+            },
+            "title": "Um canal de vendas adicional para crescer faturamento"
+          },
+          {
+            "icon": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+            },
+            "title": "Sem custos elevados e menor esforço para vender"
+          },
+          {
+            "icon": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+            },
+            "title": "Maior presença nas buscas, com melhora no SEO"
+          }
+        ]
+      }
     }
   ],
   "seo": {

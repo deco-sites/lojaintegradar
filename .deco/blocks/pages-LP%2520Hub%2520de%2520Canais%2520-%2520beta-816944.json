@@ -284,198 +284,6 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/CalculateYourCosts.tsx",
-        "subtitle": null,
-        "title": "Por que vender em marketplaces?",
-        "cards": [
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-            },
-            "title": "Acesso a milhares de novos clientes"
-          },
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-            },
-            "title": "Mais tráfego e visibilidade para o seu negócio"
-          },
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-            },
-            "title": "Um canal de vendas adicional para crescer faturamento"
-          },
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-            },
-            "title": "Sem custos elevados e menor esforço para vender"
-          },
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-            },
-            "title": "Maior presença nas buscas, com melhora no SEO"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/BigImageHero.tsx",
-            "title": "Encante seu cliente",
-            "caption": "Tenha um visual profissional em poucos cliques!",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb8a0a0-826d-49a8-9c4f-87204f15ce0b/moda-tema-mobile-1.svg"
-            },
-            "cta": [
-              {
-                "text": "Ver planos ",
-                "href": "#plans",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "showIcon": false
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": " Falar com especialista",
-                "showIcon": true,
-                "textColor": "#371E55",
-                "href": "/talkToSpecialist",
-                "backgroundColor": "",
-                "borderColor": ""
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "use": "image",
-            "features": [
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Funcionalidades extras",
-                "titleColor": "#371E55",
-                "text": "Potencializa ainda mais sua loja com recursos exclusivos"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Contratação vitalícia",
-                "titleColor": "#371E55",
-                "text": "Contrate uma vez e use por quanto tempo quiser",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Suporte Estendido",
-                "titleColor": "#371E55",
-                "text": "Um ano de suporte com nossos parceiros",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "100% editável ",
-                "titleColor": "#371E55",
-                "text": "Personalize de acordo com seu segmento, código aberto para edição livre",
-                "textColor": "#371E55"
-              }
-            ],
-            "bottomFloatingImage": {}
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/BigImageHero.tsx",
-            "image": {},
-            "cta": [
-              {
-                "text": "Digite seu e-mail para começar",
-                "href": "#plans",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "showIcon": true
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c1a799c-a832-44c0-aa82-ff4cf75eb48d/main-hero-mobile-background-image.png"
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "title": "Por que vender em marketplaces?",
-            "caption": "Uma loja de temas e serviços para seu negócio ficar incrível",
-            "features": [
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Acesso a milhares de novos clientes",
-                "titleColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Mais tráfego e visibilidade para o seu negócio",
-                "titleColor": "#371E55",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Um canal de vendas adicional para crescer faturamento",
-                "titleColor": "#371E55",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Sem custos elevados e menor esforço para vender",
-                "titleColor": "#371E55",
-                "textColor": "#371E55"
-              },
-              {
-                "title": "Maior presença nas buscas, com melhora no SEO",
-                "titleColor": "#371E55",
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                }
-              }
-            ],
-            "use": "image",
-            "bottomFloatingImage": {}
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -563,28 +371,8 @@
             },
             "titleColor": "#371E55",
             "captionColor": "#371E55",
-            "title": "A solução que descomplica suas  vendas em marketplaces",
-            "description": "Quer vender em marketplaces? O Hub de Canais faz isso de forma simples, enviando seus produtos sem dificuldade. Com inteligência artificial, ele otimiza as informações, eliminando ajustes manuais e aumentando suas aprovações.",
-            "bigNumbers": [
-              {
-                "text": "Cadastro inteligente",
-                "caption": "Ajuste automático do seu catálogo de produtos com IA",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "Otimização rápida",
-                "caption": "Envio de produtos adaptados para diferentes canais",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              },
-              {
-                "text": "Conversão garantida",
-                "caption": "Alcance mais clientes com dados otimizados e produtos prontos para aprovação",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              }
-            ],
+            "title": "Por que vender em marketplaces?",
+            "bigNumbers": [],
             "links": [
               {
                 "textBefore": "Já tem uma loja?",
@@ -593,7 +381,20 @@
               }
             ],
             "placement": "right",
-            "descriptionColor": "#5F6E82"
+            "descriptionColor": "#5F6E82",
+            "bulletpoints": {
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+              },
+              "items": [
+                "Acesso a milhares de novos clientes",
+                "Mais tráfego e visibilidade para o seu negócio",
+                "Um canal de vendas adicional para crescer faturamento",
+                "Sem custos elevados e menor esforço para vender",
+                "Maior presença nas buscas, com melhora no SEO"
+              ],
+              "itemsTextColor": "#5F6E82"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

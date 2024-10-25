@@ -64,8 +64,8 @@ export default function CampaignTimerHero({ campaignTimer, title, text, cta = []
         <div class="max-w-[610px]">
             {title && <AnimateOnShow animation="animate-fade-up"><div class="text-2xl lg:text-5xl font-semibold text-center leading-[120%]" dangerouslySetInnerHTML={{ __html: title }} /></AnimateOnShow>}
             <CampaignTimer {...campaignTimer} labelsColor={campaignTimer?.labelsColor} numbersColor={campaignTimer?.numbersColor} />
-            {text && <AnimateOnShow animation="animate-fade-up"><div class="text-base text-center lg:text-sm font-normal mt-11 leading-normal" dangerouslySetInnerHTML={{ __html: text }} /></AnimateOnShow>}
-            <AnimateOnShow divClass="flex flex-wrap items-center justify-center lg:justify-left gap-7 mt-7" animation="animate-fade-up" delay={300}>
+            {text && <AnimateOnShow animation="animate-fade-up"><div class="text-base text-center lg:text-left lg:text-sm font-normal mt-11 leading-normal" dangerouslySetInnerHTML={{ __html: text }} /></AnimateOnShow>}
+            <AnimateOnShow divClass="flex flex-wrap items-center justify-center lg:justify-start gap-7 mt-7" animation="animate-fade-up" delay={300}>
                 {cta.map((button) => {
                     if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                         showIcon={button.showIcon}

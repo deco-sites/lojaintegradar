@@ -20,21 +20,13 @@
         "mobileButtons": [],
         "asideMenuButtons": [
           {
-            "text": "Abrir loja virtual",
-            "href": "#plans",
-            "ctaStyle": "button",
-            "backgroundColor": "#371E55",
-            "textColor": "#ffffff",
-            "borderColor": "#371E55"
-          },
-          {
             "text": "Fazer Login",
             "href": "https://app.lojaintegrada.com.br/painel/login",
-            "outline": true,
             "ctaStyle": "button",
             "backgroundColor": "Transparent",
             "textColor": "#371E55",
-            "borderColor": "#371E55"
+            "borderColor": "#371E55",
+            "outline": true
           }
         ],
         "sideMenuButtons": [],
@@ -57,7 +49,6 @@
         "createStoreCtaMobile": {
           "ctaStyle": "button",
           "planId": "172",
-          "text": "Abrir loja virtual",
           "backgroundColor": "#ffffff",
           "textColor": "#371E55",
           "borderColor": "#ffffff",

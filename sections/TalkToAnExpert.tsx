@@ -85,7 +85,7 @@ export default function TalkToAnExpert({
 }: Props) {
   return (
     <div
-      class="overflow-clip relative"
+      class="overflow-clip relative "
     >
       <div class="-z-50 absolute top-0 left-0 h-full w-full" style={{ background: backgroundColor }} />
       <div class="container flex flex-col justify-center-center md:justify-center p-8 relative min-h-[310px]">

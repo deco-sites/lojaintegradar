@@ -107,7 +107,7 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\">Alcance mais clientes em segundos com o Hub de Canais</p>",
+            "title": "<p style=\"text-align: left;\" data-mce-style=\"text-align: left;\">Alcance mais clientes em segundos com o Hub de Canais</p>",
             "caption": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"font-size: 18.6667px;\" data-mce-style=\"font-size: 18.6667px;\">Integre e distribua seu catálogo para marketplaces, tudo de forma automatizada e inteligente</span></span></span></p>",
             "titleColor": "#ffffff",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
@@ -263,58 +263,20 @@
         {
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
-            "title": "Recupere vendas com inteligência",
-            "caption": "Envie mensagens automáticas para reengajar clientes",
+            "title": "Por que vender em marketplaces?",
             "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a4570df3-1d3c-4408-bb0e-58a2f88a1914/hero-2-image.svg"
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9ee7e1a7-675b-4e6f-bf73-21e52ff01ad9/catalogo-otimizado.png"
             },
-            "cta": [
-              {
-                "text": "Ver plano Aceleração ",
-                "href": "#planoaceleracao",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com Especialista ",
-                "showIcon": true,
-                "textColor": "#371E55",
-                "href": "/talkToSpecialist"
-              }
-            ],
+            "cta": [],
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02b136e7-9e3f-48e6-874b-6284cf518868/Ellipse-61.png",
               "alt": "green elipse",
               "width": 797,
               "height": 1227
             },
-            "titleColor": "#371E55",
+            "titleColor": "#023037",
             "captionColor": "#371E55",
             "use": "image",
-            "description": "Com as ferramentas de Produto e Carrinho Abandonado, você reativa facilmente quem navegou no site, mas não finalizou a compra, ou quem fez o pedido sem concluir o pagamento. Com disparos ilimitados, você não perde mais nenhuma venda.",
-            "bigNumbers": [
-              {
-                "text": "+ R$ 14 milhões",
-                "caption": "em vendas recuperadas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 45 mil pedidos",
-                "caption": "recuperados com estratégia",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 2 mil lojistas",
-                "caption": "já utilizaram a ferramenta",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              }
-            ],
+            "bigNumbers": [],
             "placement": "right",
             "links": [
               {
@@ -323,7 +285,20 @@
                 "href": "#"
               }
             ],
-            "descriptionColor": "#5F6E82"
+            "descriptionColor": "#5F6E82",
+            "bulletpoints": {
+              "items": [
+                "Acesso a milhares de novos clientes",
+                "Mais tráfego e visibilidade para o seu negócio",
+                "Um canal de vendas adicional para crescer faturamento",
+                "Sem custos elevados e menor esforço para vender",
+                "Maior presença nas buscas, com melhora no SEO"
+              ],
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+              },
+              "itemsTextColor": "#5F6E82"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

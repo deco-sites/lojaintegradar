@@ -215,46 +215,100 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/CalculateYourCosts.tsx",
-        "title": "A solução que descomplica suas  vendas em marketplaces",
-        "subtitle": "Quer vender em marketplaces? O Hub de Canais faz isso de forma simples, enviando seus produtos sem dificuldade. Com inteligência artificial, ele otimiza as informações, eliminando ajustes manuais e aumentando suas aprovações.\n\n\nE o melhor: é um recurso nativo da Loja Integrada, sem custo adicional.\n",
-        "cards": [
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
           {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+            "value": {
+              "__resolveType": "site/sections/CalculateYourCosts.tsx",
+              "decorativeImage": {},
+              "cards": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "Cadastro inteligente",
+                  "description": "Ajuste automático do seu catálogo de produtos com IA para atender às exigências de cada marketplace",
+                  "titleColor": "#023037",
+                  "descriptionColor": "#023037"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "titleColor": "#023037",
+                  "descriptionColor": "#023037",
+                  "title": "Otimização rápida",
+                  "description": "Envio de produtos adaptados para diferentes canais, com menos esforço e mais velocidade"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "Conversão garantida",
+                  "description": "Alcance mais clientes com dados otimizados e produtos prontos para aprovação nos marketplaces",
+                  "titleColor": "#023037",
+                  "descriptionColor": "#023037"
+                }
+              ],
+              "cta": [],
+              "title": "A solução que descomplica suas  vendas em marketplaces",
+              "titleColor": "#023037",
+              "subtitle": "Quer vender em marketplaces? O Hub de Canais faz isso de forma simples, enviando seus produtos sem dificuldade. Com inteligência artificial, ele otimiza as informações, eliminando ajustes manuais e aumentando suas aprovações.\n\n\nE o melhor: é um recurso nativo da Loja Integrada, sem custo adicional.\n",
+              "subtitleColor": "#5F6E82"
             },
-            "title": "Cadastro inteligente",
-            "description": "Ajuste automático do seu catálogo de produtos com IA para atender às exigências de cada marketplace",
-            "titleColor": "#023037",
-            "descriptionColor": "#023037"
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
           },
           {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+            "value": {
+              "__resolveType": "site/sections/CalculateYourCosts.tsx",
+              "title": "A solução que descomplica suas  vendas em marketplaces",
+              "subtitle": "Quer vender em marketplaces? O Hub de Canais faz isso de forma simples, enviando seus produtos sem dificuldade. Com inteligência artificial, ele otimiza as informações, eliminando ajustes manuais e aumentando suas aprovações.\n\n\nE o melhor: é um recurso nativo da Loja Integrada, sem custo adicional.\n",
+              "cards": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "Cadastro inteligente",
+                  "description": "Ajuste automático do seu catálogo de produtos com IA para atender às exigências de cada marketplace",
+                  "titleColor": "#023037",
+                  "descriptionColor": "#023037"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "Otimização rápida",
+                  "description": "Envio de produtos adaptados para diferentes canais, com menos esforço e mais velocidade",
+                  "titleColor": "#023037",
+                  "descriptionColor": "#023037"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "Conversão garantida",
+                  "description": "Alcance mais clientes com dados otimizados e produtos prontos para aprovação nos marketplaces",
+                  "titleColor": "#023037",
+                  "descriptionColor": "#023037"
+                }
+              ],
+              "titleColor": "#023037",
+              "subtitleColor": "#5F6E82",
+              "decorativeImage": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9ee7e1a7-675b-4e6f-bf73-21e52ff01ad9/catalogo-otimizado.png",
+                "width": 400,
+                "height": 300
+              },
+              "backgroundColor": "#fffff"
             },
-            "title": "Otimização rápida",
-            "description": "Envio de produtos adaptados para diferentes canais, com menos esforço e mais velocidade",
-            "titleColor": "#023037",
-            "descriptionColor": "#023037"
-          },
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-            },
-            "title": "Conversão garantida",
-            "description": "Alcance mais clientes com dados otimizados e produtos prontos para aprovação nos marketplaces",
-            "titleColor": "#023037",
-            "descriptionColor": "#023037"
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
           }
-        ],
-        "titleColor": "#023037",
-        "subtitleColor": "#5F6E82",
-        "decorativeImage": {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9ee7e1a7-675b-4e6f-bf73-21e52ff01ad9/catalogo-otimizado.png",
-          "width": 400,
-          "height": 300
-        },
-        "backgroundColor": "#fffff"
+        ]
       }
     },
     {

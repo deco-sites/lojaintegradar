@@ -5,7 +5,12 @@
     {
       "__resolveType": "site/sections/Header2.tsx",
       "navigation": {
-        "links": [],
+        "links": [
+          {
+            "label": "Por que vender em Marketplace?",
+            "url": "#marketplace"
+          }
+        ],
         "buttons": [
           {
             "href": "https://app.lojaintegrada.com.br/painel/login",
@@ -24,15 +29,15 @@
             "href": "https://app.lojaintegrada.com.br/painel/login",
             "ctaStyle": "button",
             "backgroundColor": "Transparent",
-            "textColor": "#371E55",
-            "borderColor": "#371E55",
+            "textColor": "#ffffff",
+            "borderColor": "#ffffff",
             "outline": true
           }
         ],
         "sideMenuButtons": [],
-        "linksBorderColor": "#CCC4CF",
-        "textHoverColor": "#C6B3CE",
-        "textColor": "#371E55",
+        "linksBorderColor": "#013F44",
+        "textHoverColor": "#ffffff",
+        "textColor": "#013F44",
         "mobileButtonsOnScrollColors": {
           "textColor": "#ffffff",
           "backgroundColor": "#371E55",
@@ -41,22 +46,22 @@
         "createStoreCta": {
           "ctaStyle": "button",
           "planId": "172",
-          "backgroundColor": "#371E55",
+          "backgroundColor": "#ffffff",
           "textColor": "#ffffff",
-          "borderColor": "#371E55",
+          "borderColor": "#ffffff",
           "showIcon": false
         },
         "createStoreCtaMobile": {
           "ctaStyle": "button",
           "planId": "172",
           "backgroundColor": "#ffffff",
-          "textColor": "#371E55",
+          "textColor": "#ffffff",
           "borderColor": "#ffffff",
           "showIcon": false
         },
         "createStoreCtaMobileOnScrollColors": {
-          "backgroundColor": "#371E55",
-          "borderColor": "#371E55",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#ffffff",
           "textColor": "#ffffff"
         }
       },
@@ -74,15 +79,14 @@
               }
             }
           ]
-        },
-        "href": "/venda-mais"
+        }
       },
       "initialButtons": [],
       "backgroundColor": "#013F44",
       "barsColor": "#FFFFFF",
-      "asideMenuTopBackgroundColor": "#C6B3CE",
+      "asideMenuTopBackgroundColor": "#013F44",
       "asideMenuBackgroundColor": "#ffffff",
-      "asideMenuCloseIconColor": "#371E55",
+      "asideMenuCloseIconColor": "#ffffff",
       "headerMessage": {
         "show": false,
         "text": "🔥 Aumente sua capacidade de venda! Conheça nossos planos a partir de R$ 54/mês",
@@ -397,7 +401,8 @@
                 "Maior presença nas buscas, com melhora no SEO"
               ],
               "itemsTextColor": "#5F6E82"
-            }
+            },
+            "id": "marketplace"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

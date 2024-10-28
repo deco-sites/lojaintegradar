@@ -37,6 +37,12 @@ export interface CTA {
     showIcon?: boolean;
 }
 
+export interface HubspotForm {
+    region?: string,
+    portalId?: string,
+    formId?: string,
+}
+
 export interface Modal {
     title: string;
     /** @format color-input */
@@ -61,7 +67,9 @@ export interface Props {
     image?: IImage;
     video?: VideoWidget;
     use?: "image" | "video";
+    htmlContent?: HTMLWidget;
     backgroundImage?: IImage
+    hubspotForm?: HubspotForm;
     /** @format color-input */
     hubspotFormButtonColor?: string;
     /** @format color-input */
@@ -71,9 +79,9 @@ export interface Props {
     modal: Modal;
 }
 
-export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, image, titleColor, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal }: Props) {
+export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, image, hubspotForm, htmlContent, titleColor, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal }: Props) {
     const modalId = useId() + "modal";
-    return <div id={id} class="flex min-h-96 pt-[92px] lg:pt-40 relative overflow-hidden pb-12">
+    return <div id={id} class="flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 relative overflow-hidden pb-12">
         {backgroundImage?.src && <Image
             width={backgroundImage.width || 1440}
             height={backgroundImage.height || 926}
@@ -84,20 +92,20 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             loading={"eager"}
             preload={true}
         />}
-        <div class="flex-grow flex justify-center xl:justify-end items-center w-full xl:w-1/2 px-7 md:px-0 border-base">
+        <div class={`flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-7 md:px-0 border-base`}>
             <script dangerouslySetInnerHTML={{__html: useScript(openModal, modalId)}} />
-            <div class="flex-grow flex flex-col gap-5 md:gap-7 max-w-[630px] z-10">
-                <div class="text-primary text-2xl md:text-[56px] font-semibold md:font-bold max-w-[575px] leading-[120%]" style={{ color: titleColor }} dangerouslySetInnerHTML={{__html: title}}/>
-                <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[130%]" dangerouslySetInnerHTML={{ __html: caption }} />
-                <label class="md:pt-7">
+            <div class={`flex-grow flex flex-col gap-5 md:gap-7 ${(use == "image" || use == "video") ? "max-w-[630px]" : "items-center max-w-[1220px]"} z-10`}>
+                <div class="text-primary text-2xl md:text-[56px] font-semibold md:font-bold leading-[120%] " style={{ color: titleColor }} dangerouslySetInnerHTML={{__html: title}}/>
+                <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[130%] w-full" dangerouslySetInnerHTML={{ __html: caption }} />
+                <label class="md:pt-7 lg:w-[600px]">
                     {inputLabel && <p class="bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 px-5 text-base text-primary inline-block" style={{ color: inputLabelColor, backgroundColor: inputLabelBackgroundColor }}>{inputLabel}</p>}
                     <div class="main-hero-form" dangerouslySetInnerHTML={{
                         __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                     <script>
                     hbspt.forms.create({
-                        region: "na1",
-                        portalId: "7112881",
-                        formId: "51bbcad7-31d8-4a8f-ba76-845a10da854d",
+                        region: "${hubspotForm?.region || ""}",
+                        portalId: "${hubspotForm?.portalId}",
+                        formId: "${hubspotForm?.formId}",
                         onFormSubmit: function($form){
                                     const modal = document.getElementById("${modalId}");
                                     if (modal) modal.classList.remove('hidden'); 
@@ -119,13 +127,13 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             </div>
         </div>
 
-        <div class="flex-grow hidden md:flex justify-end w-1/2">
+        <div class={`md:flex-grow md:flex flex-col items-end ${(use == "image" || use == "video") && "xl:w-1/2"}`}>
             {use == "image" && image?.src && <Image
                 width={image.width || 697}
                 height={image.height || 592}
                 src={image.src}
                 alt={image.src || ""}
-                class="h-[697px] object-contain"
+                class="h-[697px] object-contain hidden md:block"
             />}
             {use == "video" && video && <video
                 width="697"
@@ -135,13 +143,14 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                 muted
                 loading="lazy"
                 loop
-                class="w-full xl:w-auto max-w-[809px] object-contain"
+                class="w-full xl:w-auto max-w-[809px] object-contain hidden md:block"
             >
                 <source src={video} type="video/mp4" />
                 <object data="" width="697" height="592">
                     <embed width="697" height="592" src={video} />
                 </object>
             </video>}
+            {htmlContent && <div class="px-7 flex justify-center w-[98vw] md:w-auto" dangerouslySetInnerHTML={{__html: htmlContent}}/>}
         </div>
         
         <style dangerouslySetInnerHTML={{

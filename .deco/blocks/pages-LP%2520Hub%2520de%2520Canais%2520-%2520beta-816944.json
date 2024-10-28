@@ -190,7 +190,7 @@
               "alt": "top image"
             },
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f39b4f94-fd80-4101-bbea-9dc7de6a3b21/bg-hub-canais.png",
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8493ce3c-7978-45b9-be57-a453350d64b6/bg-hub-canais.png",
               "alt": "background image"
             },
             "inputLabelColor": "#023037",
@@ -201,7 +201,7 @@
             "use": "image",
             "modal": {
               "title": "Obrigado por se inscrever para receber nossa oferta especial!",
-              "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+              "text": "Em breve, você receberá um e-mail com mais detalhes",
               "titleColor": "#023037",
               "textColor": "#5F6E82",
               "backButton": {
@@ -219,14 +219,6 @@
                   "textColor": "#ffffff",
                   "borderColor": "#371E55",
                   "showIcon": false
-                },
-                {
-                  "ctaStyle": "button",
-                  "text": "Ver planos",
-                  "backgroundColor": "#ffffff",
-                  "textColor": "#371E55",
-                  "borderColor": "#371E55",
-                  "href": "#plans"
                 }
               ]
             },
@@ -282,158 +274,6 @@
         },
         "backgroundColor": "#fffff"
       }
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/BigImageHero.tsx",
-            "title": "Encante seu cliente",
-            "caption": "Tenha um visual profissional em poucos cliques!",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb8a0a0-826d-49a8-9c4f-87204f15ce0b/moda-tema-mobile-1.svg"
-            },
-            "cta": [
-              {
-                "text": "Ver planos ",
-                "href": "#plans",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "showIcon": false
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": " Falar com especialista",
-                "showIcon": true,
-                "textColor": "#371E55",
-                "href": "/talkToSpecialist",
-                "backgroundColor": "",
-                "borderColor": ""
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "use": "image",
-            "features": [
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Funcionalidades extras",
-                "titleColor": "#371E55",
-                "text": "Potencializa ainda mais sua loja com recursos exclusivos"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Contratação vitalícia",
-                "titleColor": "#371E55",
-                "text": "Contrate uma vez e use por quanto tempo quiser",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Suporte Estendido",
-                "titleColor": "#371E55",
-                "text": "Um ano de suporte com nossos parceiros",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "100% editável ",
-                "titleColor": "#371E55",
-                "text": "Personalize de acordo com seu segmento, código aberto para edição livre",
-                "textColor": "#371E55"
-              }
-            ],
-            "bottomFloatingImage": {}
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/BigImageHero.tsx",
-            "image": {},
-            "cta": [
-              {
-                "text": "Digite seu e-mail para começar",
-                "href": "#plans",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "showIcon": true
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c1a799c-a832-44c0-aa82-ff4cf75eb48d/main-hero-mobile-background-image.png"
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "title": "Por que vender em marketplaces?",
-            "caption": "Uma loja de temas e serviços para seu negócio ficar incrível",
-            "features": [
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Acesso a milhares de novos clientes",
-                "titleColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Mais tráfego e visibilidade para o seu negócio",
-                "titleColor": "#371E55",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Um canal de vendas adicional para crescer faturamento",
-                "titleColor": "#371E55",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Sem custos elevados e menor esforço para vender",
-                "titleColor": "#371E55",
-                "textColor": "#371E55"
-              },
-              {
-                "title": "Maior presença nas buscas, com melhora no SEO",
-                "titleColor": "#371E55",
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                }
-              }
-            ],
-            "use": "image",
-            "bottomFloatingImage": {}
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -512,7 +352,7 @@
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
             "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a4570df3-1d3c-4408-bb0e-58a2f88a1914/hero-2-image.svg"
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9ee7e1a7-675b-4e6f-bf73-21e52ff01ad9/catalogo-otimizado.png"
             },
             "cta": [],
             "backgroundImage": {
@@ -521,30 +361,10 @@
               "width": 797,
               "height": 1227
             },
-            "titleColor": "#371E55",
+            "titleColor": "#023037",
             "captionColor": "#371E55",
-            "title": "A solução que descomplica suas  vendas em marketplaces",
-            "description": "Quer vender em marketplaces? O Hub de Canais faz isso de forma simples, enviando seus produtos sem dificuldade. Com inteligência artificial, ele otimiza as informações, eliminando ajustes manuais e aumentando suas aprovações.",
-            "bigNumbers": [
-              {
-                "text": "Cadastro inteligente",
-                "caption": "Ajuste automático do seu catálogo de produtos com IA",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "Otimização rápida",
-                "caption": "Envio de produtos adaptados para diferentes canais",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              },
-              {
-                "text": "Conversão garantida",
-                "caption": "Alcance mais clientes com dados otimizados e produtos prontos para aprovação",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              }
-            ],
+            "title": "Por que vender em marketplaces?",
+            "bigNumbers": [],
             "links": [
               {
                 "textBefore": "Já tem uma loja?",
@@ -553,7 +373,20 @@
               }
             ],
             "placement": "right",
-            "descriptionColor": "#5F6E82"
+            "descriptionColor": "#5F6E82",
+            "bulletpoints": {
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+              },
+              "items": [
+                "Acesso a milhares de novos clientes",
+                "Mais tráfego e visibilidade para o seu negócio",
+                "Um canal de vendas adicional para crescer faturamento",
+                "Sem custos elevados e menor esforço para vender",
+                "Maior presença nas buscas, com melhora no SEO"
+              ],
+              "itemsTextColor": "#5F6E82"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -580,44 +413,123 @@
       "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/CalculateYourCosts.tsx",
-        "subtitle": null,
-        "title": "Por que vender em marketplaces?",
-        "cards": [
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/MainHero.tsx",
+            "title": "O futuro do e-commerce é inteligente",
+            "caption": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><font color=\"#5f6e82\"><span style=\"font-size: 18.6667px;\">Faça parte! Escolha a plataforma que investe em dados e automação e veja seu faturamento disparar﻿</span></font></span></p>",
+            "titleColor": "#371E55",
+            "inputPlaceHolder": "Digite seu email aqui para ganhar",
+            "inputButtonText": "Aproveitar",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a5138fc3-9cef-49db-9369-6ed4f896b5ee/img-topo.png",
+              "alt": "top image"
             },
-            "title": "Acesso a milhares de novos clientes"
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c1a799c-a832-44c0-aa82-ff4cf75eb48d/main-hero-mobile-background-image.png",
+              "alt": "background image",
+              "width": 430,
+              "height": 341
+            },
+            "inputLabelBackgroundColor": "#EAE0EE",
+            "inputLabelColor": "#371E55",
+            "hubspotFormButtonColor": "#371E55",
+            "hubspotFormButtonTextColor": "#ffffff",
+            "hubspotErrorMessageColor": "#F57E77",
+            "use": "image",
+            "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ ",
+            "modal": {
+              "title": "Obrigado por se inscrever para receber nossa oferta especial!",
+              "titleColor": "#371E55",
+              "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55",
+                  "showIcon": false
+                },
+                {
+                  "ctaStyle": "button",
+                  "text": "Ver planos",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#371E55",
+                  "borderColor": "#371E55",
+                  "href": "#plans"
+                }
+              ]
+            }
           },
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-            },
-            "title": "Mais tráfego e visibilidade para o seu negócio"
-          },
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-            },
-            "title": "Um canal de vendas adicional para crescer faturamento"
-          },
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-            },
-            "title": "Sem custos elevados e menor esforço para vender"
-          },
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-            },
-            "title": "Maior presença nas buscas, com melhora no SEO"
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true,
+            "tablet": false
           }
-        ]
-      }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/MainHero.tsx",
+            "title": "<h1><span style=\"font-size: 46.6667px;\" data-mce-style=\"font-size: 46.6667px;\"><strong id=\"docs-internal-guid-f36d1f46-7fff-dbe2-1a59-468877a4c016\">🧠 </strong>Seu e-commerce mais inteligente com o Hub de Canais﻿</span></h1>",
+            "caption": "<p><br data-mce-bogus=\"1\"></p>",
+            "titleColor": "#FFFFFF",
+            "inputPlaceHolder": "Digite seu email aqui para ganhar",
+            "inputButtonText": "Aproveitar",
+            "inputLabel": "Digite seu e-mail e garanta o acesso",
+            "image": {
+              "alt": "top image"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8493ce3c-7978-45b9-be57-a453350d64b6/bg-hub-canais.png",
+              "alt": "background image"
+            },
+            "inputLabelColor": "#023037",
+            "inputLabelBackgroundColor": "#88ADAF",
+            "hubspotFormButtonColor": "#023037",
+            "hubspotFormButtonTextColor": "#FFFFFF",
+            "hubspotErrorMessageColor": "#F57E77",
+            "use": "image",
+            "modal": {
+              "title": "Obrigado por se inscrever para receber nossa oferta especial!",
+              "text": "Em breve, você receberá um e-mail com mais detalhes",
+              "titleColor": "#023037",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#371E55",
+                  "textColor": "#ffffff",
+                  "borderColor": "#371E55",
+                  "showIcon": false
+                }
+              ]
+            },
+            "video": "https://www.youtube.com/embed/LNCNuQeaLGw?si=_eDagIeqI4Mw0-1W"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     }
   ],
   "seo": {

@@ -168,7 +168,8 @@
         "numbersColor": "#371E55",
         "labelsColor": "#371E55",
         "expiresAt": "2025-01-25T03:00:00.000Z"
-      }
+      },
+      "hideAsideMenu": false
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -6610,7 +6611,8 @@
             "placement": "right",
             "titleColor": "#371E55",
             "captionColor": "#371E55",
-            "descriptionColor": "#5F6E82"
+            "descriptionColor": "#5F6E82",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -7600,7 +7602,8 @@
               "itemsTextColor": "#5F6E82"
             },
             "id": "pagali",
-            "descriptionColor": "#5F6E82"
+            "descriptionColor": "#5F6E82",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -7738,7 +7741,8 @@
                 "href": "#"
               }
             ],
-            "textBelowColor": "#5F6E82"
+            "textBelowColor": "#5F6E82",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

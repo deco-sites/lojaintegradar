@@ -1,4 +1,4 @@
-import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, VideoWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import Image from "apps/website/components/Image.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
@@ -58,6 +58,7 @@ export interface Props {
   image?: IImage;
   video?: VideoWidget;
   use?: 'image' | 'video';
+  htmlContent?: HTMLWidget;
   placement?: "left" | "right";
   /** @title Text Below */
   ctaTitle?: string;
@@ -80,7 +81,8 @@ export default function Hero({
   bigNumbers,
   image,
   video,
-  use = 'image',
+  use,
+  htmlContent,
   placement = 'left',
   ctaTitle,
   textBelowColor,
@@ -117,6 +119,7 @@ export default function Hero({
             <embed width="1280" height="720" src={video} />
           </object>
         </video>}
+        {htmlContent && <div class="px-7 flex justify-center w-full" dangerouslySetInnerHTML={{ __html: htmlContent }} />}
       </AnimateOnShow>
       <div class={`lg:w-1/2 flex px-7 justify-center ${placement == "left" ? 'lg:justify-start' : 'lg:justify-end'}`}>
         <div class="max-w-[555px]">

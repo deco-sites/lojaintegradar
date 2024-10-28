@@ -79,6 +79,13 @@
                   "href": "#plans"
                 }
               ]
+            },
+            "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                                                                     <script>                                                                     hbspt.forms.create({                                                                         region: \"na1\",                                                                         portalId: \"7112881\",                                                                         formId: \"06d3df52-7c37-4749-aa27-5c7744917d89\"                                                                     });                                                                     </script>",
+            "htmlContent": "<p><br data-mce-bogus=\"1\"></p>",
+            "hubspotForm": {
+              "portalId": "7112881",
+              "region": "na1",
+              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d"
             }
           },
           "rule": {
@@ -90,7 +97,7 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<p><span style=\"font-size: 35pt;\" data-mce-style=\"font-size: 35pt;\">O futuro do e-commerce é inteligente</span></p>",
+            "title": "<p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><span style=\"font-size: 35pt;\" data-mce-style=\"font-size: 35pt;\">O futuro do e-commerce é inteligente</span></p>",
             "caption": "<p style=\"line-height: 1.2;\" data-mce-style=\"line-height: 1.2;\"><span style=\"font-size: 24pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 24pt; color: rgb(95, 110, 130);\">Faça parte! Escolha a plataforma que investe em </span><span style=\"font-size: 24pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 24pt; color: rgb(95, 110, 130);\">dados e automação e veja seu faturamento disparar</span></p>",
             "titleColor": "#371E55",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
@@ -109,7 +116,6 @@
             "hubspotFormButtonColor": "#371E55",
             "hubspotFormButtonTextColor": "#ffffff",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image",
             "modal": {
               "title": "Obrigado por se inscrever para receber nossa oferta especial!",
               "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
@@ -140,7 +146,15 @@
                   "href": "#plans"
                 }
               ]
-            }
+            },
+            "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
+            "hubspotForm": {
+              "portalId": "7112881",
+              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
+              "region": "na1"
+            },
+            "htmlContent": "<p><br data-mce-bogus=\"1\"></p>",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -5669,6 +5683,7 @@
             "titleColor": "#371E55",
             "captionColor": "#371E55",
             "descriptionColor": "#5F6E82",
+            "htmlContent": "<p><br data-mce-bogus=\"1\"></p>",
             "use": "image"
           },
           "rule": {
@@ -5812,7 +5827,8 @@
             "placement": "right",
             "titleColor": "#371E55",
             "captionColor": "#371E55",
-            "descriptionColor": "#5F6E82"
+            "descriptionColor": "#5F6E82",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6802,7 +6818,8 @@
               "itemsTextColor": "#5F6E82"
             },
             "id": "pagali",
-            "descriptionColor": "#5F6E82"
+            "descriptionColor": "#5F6E82",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6940,7 +6957,8 @@
                 "href": "#"
               }
             ],
-            "textBelowColor": "#5F6E82"
+            "textBelowColor": "#5F6E82",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

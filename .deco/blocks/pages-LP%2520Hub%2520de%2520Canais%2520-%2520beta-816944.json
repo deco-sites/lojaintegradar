@@ -22,7 +22,16 @@
             "outline": true
           }
         ],
-        "mobileButtons": [],
+        "mobileButtons": [
+          {
+            "ctaStyle": "button",
+            "href": "https://app.lojaintegrada.com.br/painel/login",
+            "text": "Entrar",
+            "backgroundColor": "#ffffff",
+            "textColor": "#ffffff",
+            "borderColor": "#ffffff"
+          }
+        ],
         "asideMenuButtons": [
           {
             "text": "Fazer Login",
@@ -158,7 +167,8 @@
             "hubspotForm": {
               "portalId": "7112881",
               "formId": "c8b4638f-ad72-42c9-bc53-66c2991f59fe"
-            }
+            },
+            "htmlContent": "<div style=\"width: 100%;\" data-mce-style=\"width: 100%;\"><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/LNCNuQeaLGw?si=Si8gBH1jSewnW2T1\" width=\"100%\" height=\"315\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\" data-mce-src=\"https://www.youtube.com/embed/LNCNuQeaLGw?si=Si8gBH1jSewnW2T1\"></iframe></div>"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -451,7 +461,6 @@
             "hubspotFormButtonColor": "#023037",
             "hubspotFormButtonTextColor": "#ffffff",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image",
             "inputLabel": "⚡ Digite seu e-mail e garanta o acesso",
             "modal": {
               "title": "Obrigado por se inscrever para testar o Hub de Canais",
@@ -475,6 +484,10 @@
                   "showIcon": false
                 }
               ]
+            },
+            "hubspotForm": {
+              "formId": "c8b4638f-ad72-42c9-bc53-66c2991f59fe",
+              "portalId": "7112881"
             }
           },
           "rule": {

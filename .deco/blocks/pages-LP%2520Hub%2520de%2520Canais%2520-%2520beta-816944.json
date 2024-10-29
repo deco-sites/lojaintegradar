@@ -28,7 +28,7 @@
             "href": "https://app.lojaintegrada.com.br/painel/login",
             "text": "Entrar",
             "backgroundColor": "#ffffff",
-            "textColor": "#ffffff",
+            "textColor": "#013F44",
             "borderColor": "#ffffff"
           }
         ],
@@ -374,7 +374,9 @@
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
               },
               "itemsTextColor": "#5F6E82"
-            }
+            },
+            "marginTop": "0px",
+            "marginBottom": "10px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

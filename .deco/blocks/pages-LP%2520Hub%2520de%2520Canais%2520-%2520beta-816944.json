@@ -461,7 +461,6 @@
             "hubspotFormButtonColor": "#023037",
             "hubspotFormButtonTextColor": "#ffffff",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image",
             "inputLabel": "⚡ Digite seu e-mail e garanta o acesso",
             "modal": {
               "title": "Obrigado por se inscrever para testar o Hub de Canais",
@@ -485,6 +484,10 @@
                   "showIcon": false
                 }
               ]
+            },
+            "hubspotForm": {
+              "formId": "c8b4638f-ad72-42c9-bc53-66c2991f59fe",
+              "portalId": "7112881"
             }
           },
           "rule": {

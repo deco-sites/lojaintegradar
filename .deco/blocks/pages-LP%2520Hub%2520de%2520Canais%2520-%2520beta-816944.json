@@ -487,7 +487,7 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<h1 style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"font-size: 46.6667px;\" data-mce-style=\"font-size: 46.6667px;\"><strong id=\"docs-internal-guid-f36d1f46-7fff-dbe2-1a59-468877a4c016\">🧠 </strong>Seu e-commerce mais inteligente com o Hub de Canais﻿</span></h1>",
+            "title": "<h1 style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"font-size: 46.6667px;\" data-mce-style=\"font-size: 46.6667px;\"><strong id=\"docs-internal-guid-f36d1f46-7fff-dbe2-1a59-468877a4c016\">🧠 </strong>Seu e-commerce mais inteligente<br>com o Hub de Canais</span></h1>",
             "caption": "<p><br data-mce-bogus=\"1\"></p>",
             "titleColor": "#FFFFFF",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
@@ -505,7 +505,6 @@
             "hubspotFormButtonColor": "#023037",
             "hubspotFormButtonTextColor": "#FFFFFF",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image",
             "modal": {
               "title": "Obrigado por se inscrever para testar o Hub de Canais",
               "text": "Em breve, você receberá um e-mail com mais detalhes",
@@ -522,9 +521,9 @@
                 {
                   "ctaStyle": "button",
                   "text": "Retomar a navegação ",
-                  "backgroundColor": "#371E55",
+                  "backgroundColor": "#023037",
                   "textColor": "#ffffff",
-                  "borderColor": "#371E55",
+                  "borderColor": "#023037",
                   "showIcon": false
                 }
               ]

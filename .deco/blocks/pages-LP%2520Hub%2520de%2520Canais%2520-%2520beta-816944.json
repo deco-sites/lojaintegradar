@@ -340,9 +340,7 @@
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
             "title": "Por que vender em marketplaces?",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9ee7e1a7-675b-4e6f-bf73-21e52ff01ad9/catalogo-otimizado.png"
-            },
+            "image": {},
             "cta": [],
             "backgroundImage": {
               "alt": "green elipse",
@@ -351,7 +349,6 @@
             },
             "titleColor": "#023037",
             "captionColor": "#371E55",
-            "use": "image",
             "bigNumbers": [],
             "placement": "right",
             "links": [
@@ -387,7 +384,7 @@
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
             "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9ee7e1a7-675b-4e6f-bf73-21e52ff01ad9/catalogo-otimizado.png"
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0cd29639-ef2b-4365-b241-95392d901343/hub-canais-.png"
             },
             "cta": [],
             "backgroundImage": {
@@ -503,7 +500,7 @@
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
             "title": "<h1 style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"font-size: 46.6667px;\" data-mce-style=\"font-size: 46.6667px;\"><strong id=\"docs-internal-guid-f36d1f46-7fff-dbe2-1a59-468877a4c016\">🧠 </strong>Seu e-commerce mais <br>inteligente com o Hub de Canais</span></h1>",
-            "caption": "<h6 style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">Digite seu e-mail e garanta o acesso</span></h6>",
+            "caption": "<p><br data-mce-bogus=\"1\"></p>",
             "titleColor": "#FFFFFF",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
@@ -546,7 +543,8 @@
             "hubspotForm": {
               "formId": "c8b4638f-ad72-42c9-bc53-66c2991f59fe",
               "portalId": "7112881"
-            }
+            },
+            "inputLabel": "⚡️ Digite seu e-mail e garanta o acesso"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

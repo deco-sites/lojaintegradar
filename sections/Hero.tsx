@@ -66,6 +66,8 @@ export interface Props {
   textBelowColor?: string;
   cta?: CTA[];
   backgroundImage?: IImage;
+  marginTop?: string;
+  marginBottom?: string;
 }
 
 
@@ -88,9 +90,11 @@ export default function Hero({
   textBelowColor,
   cta = [],
   backgroundImage,
+  marginBottom,
+  marginTop,
 }: Props) {
   return (
-    <div id={id} class={`relative flex flex-col lg:flex-row w-full mt-48 text-primary leading-[120%] ${placement == "left" ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
+    <div id={id} class={`relative flex flex-col lg:flex-row w-full mt-48 text-primary leading-[120%] ${placement == "left" ? 'lg:flex-row' : 'lg:flex-row-reverse'}`} style={{ marginTop: marginTop, marginBottom: marginBottom }}>
       <AnimateOnShow divClass={`lg:relative lg:w-1/2 flex flex-col lg:flex-row ${placement == "left" ? 'justify-start' : 'justify-end'}`} animation="animate-fade-right">
         {backgroundImage?.src && <Image
           src={backgroundImage.src}

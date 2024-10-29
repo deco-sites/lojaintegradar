@@ -131,7 +131,6 @@
             "hubspotFormButtonColor": "#023037",
             "hubspotFormButtonTextColor": "#ffffff",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image",
             "inputLabel": "⚡ Seja uma das primeiras 100 lojas",
             "modal": {
               "title": "Obrigado por se inscrever para ser um dos primeiros a testar o Hub de canais",
@@ -170,14 +169,13 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><span style=\"font-size: 35pt;\" data-mce-style=\"font-size: 35pt;\">Alcance mais clientes em segundos&nbsp;</span><span style=\"font-size: 35pt;\" data-mce-style=\"font-size: 35pt;\">com </span></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><span style=\"font-size: 35pt;\" data-mce-style=\"font-size: 35pt;\">o Hub de Canais</span></p>",
+            "title": "<p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><span style=\"font-size: 35pt;\" data-mce-style=\"font-size: 35pt;\">Alcance mais clientes<br>em segundos&nbsp;</span><span style=\"font-size: 35pt;\" data-mce-style=\"font-size: 35pt;\">com </span></p><p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><span style=\"font-size: 35pt;\" data-mce-style=\"font-size: 35pt;\">o Hub de Canais</span></p>",
             "caption": "<p style=\"line-height: 1.2;\" data-mce-style=\"line-height: 1.2;\"><span style=\"color: rgb(255, 255, 255); font-size: 18pt;\" data-mce-style=\"color: rgb(255, 255, 255); font-size: 18pt;\">Integre e distribua seu catálogo para marketplaces, tudo de forma automatizada e inteligente</span></p>",
             "titleColor": "#FFFFFF",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
             "inputLabel": "⚡ Seja uma das primeiras 100 lojas a usar",
             "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0cd29639-ef2b-4365-b241-95392d901343/hub-canais-.png",
               "alt": "top image"
             },
             "backgroundImage": {
@@ -217,8 +215,8 @@
               "portalId": "7112881",
               "formId": "c8b4638f-ad72-42c9-bc53-66c2991f59fe"
             },
-            "htmlContent": "<div style=\"width: 100%;\" data-mce-style=\"width: 100%;\"><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/LNCNuQeaLGw?si=Si8gBH1jSewnW2T1\" width=\"500px\" height=\"315\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\" data-mce-src=\"https://www.youtube.com/embed/LNCNuQeaLGw?si=Si8gBH1jSewnW2T1\"></iframe></div>",
-            "use": "video"
+            "htmlContent": "<p style=\"width: 100%; margin-bottom: 0px; margin-left: 0px;\" data-mce-style=\"width: 100%; margin-bottom: 0px; margin-left: 0px;\"><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/LNCNuQeaLGw?si=Si8gBH1jSewnW2T1\" width=\"500px\" height=\"315\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\" data-mce-src=\"https://www.youtube.com/embed/LNCNuQeaLGw?si=Si8gBH1jSewnW2T1\"></iframe></p>",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

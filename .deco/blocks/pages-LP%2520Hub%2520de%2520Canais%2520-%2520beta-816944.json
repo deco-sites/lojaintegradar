@@ -189,7 +189,6 @@
             "hubspotFormButtonColor": "#023037",
             "hubspotFormButtonTextColor": "#FFFFFF",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image",
             "modal": {
               "title": "Obrigado por se inscrever para ser um dos primeiros a testar o Hub de canais",
               "text": "Em breve, você receberá um e-mail com mais detalhes",
@@ -217,7 +216,9 @@
             "hubspotForm": {
               "portalId": "7112881",
               "formId": "c8b4638f-ad72-42c9-bc53-66c2991f59fe"
-            }
+            },
+            "htmlContent": "<div style=\"width: 100%;\" data-mce-style=\"width: 100%;\"><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/LNCNuQeaLGw?si=Si8gBH1jSewnW2T1\" width=\"500px\" height=\"315\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\" data-mce-src=\"https://www.youtube.com/embed/LNCNuQeaLGw?si=Si8gBH1jSewnW2T1\"></iframe></div>",
+            "use": "video"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -487,7 +488,7 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<h1 style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"font-size: 46.6667px;\" data-mce-style=\"font-size: 46.6667px;\"><strong id=\"docs-internal-guid-f36d1f46-7fff-dbe2-1a59-468877a4c016\">🧠 </strong>Seu e-commerce mais inteligente<br>com o Hub de Canais</span></h1>",
+            "title": "<h1 style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"font-size: 46.6667px;\" data-mce-style=\"font-size: 46.6667px;\"><strong id=\"docs-internal-guid-f36d1f46-7fff-dbe2-1a59-468877a4c016\">🧠 </strong>Seu e-commerce mais <br>inteligente com o Hub de Canais</span></h1>",
             "caption": "<p><br data-mce-bogus=\"1\"></p>",
             "titleColor": "#FFFFFF",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",

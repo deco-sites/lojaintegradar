@@ -13,7 +13,8 @@ export async function handler(request: Request, ctx: FreshContext) {
       .replaceAll('action="/', `action="${originToRewrite}/`)
       .replaceAll('url("/', `url("${originToRewrite}/`)
       .replaceAll('url(/', `url(${originToRewrite}/`)
-      .replaceAll('srcset="/', `srcset="${originToRewrite}/`);
+      .replaceAll('srcset="/', `srcset="${originToRewrite}/`)
+      .replaceAll(' /live/invoke', ` ${originToRewrite}/live/invoke`);
 
     response.headers.set("x-middleware-processed", "1");
   

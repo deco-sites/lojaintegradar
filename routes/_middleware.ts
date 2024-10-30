@@ -1,17 +1,19 @@
 import { FreshContext } from "$fresh/server.ts";
 
-export async function handler(_request: Request, ctx: FreshContext) {
+export async function handler(request: Request, ctx: FreshContext) {
+  const incomingOrigin = new URL(request.url).origin;
+  const originToRewrite = incomingOrigin === "https://lojaintegrada.com.br" ? "https://lojaintegradar.deco.site" : incomingOrigin;
   const response = await ctx.next();
 
-  if (response.headers.get("Content-Type") === "text/html") {
+  if (response.headers.get("Content-Type")?.startsWith("text/html")) {
     const body = (await response.text())
-      .replaceAll('href="/', 'href="https://lojaintegradar.deco.site/')
-      .replaceAll('src="/', 'src="https://lojaintegradar.deco.site/')
-      .replaceAll('action="/', 'action="https://lojaintegradar.deco.site/')
-      .replaceAll('url("/', 'url("https://lojaintegradar.deco.site/')
-      .replaceAll('url("/"', 'url("https://lojaintegradar.deco.site/')
-      .replaceAll('srcset="/', 'srcset="https://lojaintegradar.deco.site/')
-      .replaceAll('"/_frsh/', '"https://lojaintegradar.deco.site/_frsh/');
+      .replaceAll('src="//js', 'src="https://js')
+      .replaceAll('href="/', `href="${originToRewrite}/`)
+      .replaceAll('src="/', `src="${originToRewrite}/`)
+      .replaceAll('action="/', `action="${originToRewrite}/`)
+      .replaceAll('url("/', `url("${originToRewrite}/`)
+      .replaceAll('url(/', `url(${originToRewrite}/`)
+      .replaceAll('srcset="/', `srcset="${originToRewrite}/`);
 
     response.headers.set("x-middleware-processed", "1");
   

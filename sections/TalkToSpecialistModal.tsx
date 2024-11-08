@@ -1,18 +1,15 @@
-import { useScript } from "deco/hooks/useScript.ts";
-
+import { useScript } from "@deco/deco/hooks";
 const closeTalkToSpecialist = () => {
     const form = document.getElementById("talkToSpecialistPopUpForm") as HTMLElement;
-    form?.classList.add("hidden"); 
-}
-
+    form?.classList.add("hidden");
+};
 export default function TalkToSpecialistModal() {
-
     return <div>
         <div id="talkToSpecialistPopUpForm" class="fixed top-0 left-0 px-6 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-[60] talkToSpecialistForm overflow-auto hidden">
-            <div class="max-w-[550px] min-h-[600px] bg-primary-content rounded-xl lg:p-12 animate-pop-up relative pt-12" style={{animationDuration: "0.3s"}}>
+            <div class="max-w-[550px] min-h-[600px] bg-primary-content rounded-xl lg:p-12 animate-pop-up relative pt-12" style={{ animationDuration: "0.3s" }}>
                 <button class="text-[#371E55] font-black p-2.5 absolute top-2 right-2" hx-on:click={useScript(closeTalkToSpecialist)}>X</button>
                 <div dangerouslySetInnerHTML={{
-                    __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+            __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                                                                     <script>
                                                                     hbspt.forms.create({
                                                                         region: "na1",
@@ -20,10 +17,11 @@ export default function TalkToSpecialistModal() {
                                                                         formId: "06d3df52-7c37-4749-aa27-5c7744917d89"
                                                                     });
                                                                     </script>
-                `}}/>
+                `
+        }}/>
             </div>
         </div>
-        <style dangerouslySetInnerHTML={{__html: `
+        <style dangerouslySetInnerHTML={{ __html: `
             .talkToSpecialistForm .hs-form-private {
             position: relative;
             background-color: white;
@@ -118,6 +116,6 @@ export default function TalkToSpecialistModal() {
     border-color: #371E55;
 }
 
-            `}} />
-    </div>
+            ` }}/>
+    </div>;
 }

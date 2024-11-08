@@ -13,7 +13,7 @@ import * as $HeroTab from "./islands/HeroTab.tsx";
 import * as $HeroTimeButtons from "./islands/HeroTimeButtons.tsx";
 import * as $HeroWithTime from "./islands/HeroWithTime.tsx";
 import * as $PricesButtons from "./islands/PricesButtons.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {

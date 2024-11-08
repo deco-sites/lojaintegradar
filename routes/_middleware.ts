@@ -1,8 +1,16 @@
 import { FreshContext } from "$fresh/server.ts";
 
 export async function handler(request: Request, ctx: FreshContext) {
-  const incomingOrigin = new URL(request.url).origin;
-  const originToRewrite = incomingOrigin === "https://lojaintegrada.com.br" ? "https://lojaintegradar.deco.site" : incomingOrigin;
+  let incomingOrigin = new URL(request.url).origin;
+  if (
+    incomingOrigin.includes(".deco.site") &&
+    incomingOrigin.startsWith("http://")
+  ) {
+    incomingOrigin = incomingOrigin.replace("http://", "https://");
+  }
+  const originToRewrite = incomingOrigin === "https://lojaintegrada.com.br"
+    ? "https://lojaintegradar.deco.site"
+    : incomingOrigin;
   const response = await ctx.next();
 
   if (response.headers.get("Content-Type")?.startsWith("text/html")) {
@@ -12,12 +20,12 @@ export async function handler(request: Request, ctx: FreshContext) {
       .replaceAll('src="/', `src="${originToRewrite}/`)
       .replaceAll('action="/', `action="${originToRewrite}/`)
       .replaceAll('url("/', `url("${originToRewrite}/`)
-      .replaceAll('url(/', `url(${originToRewrite}/`)
+      .replaceAll("url(/", `url(${originToRewrite}/`)
       .replaceAll('srcset="/', `srcset="${originToRewrite}/`)
-      .replaceAll(' /live/invoke', ` ${originToRewrite}/live/invoke`);
+      .replaceAll(" /live/invoke", ` ${originToRewrite}/live/invoke`);
 
     response.headers.set("x-middleware-processed", "1");
-  
+
     return new Response(body, {
       headers: response.headers,
       status: response.status,

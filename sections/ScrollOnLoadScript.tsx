@@ -1,5 +1,4 @@
-import { useScript } from "deco/hooks/useScript.ts";
-
+import { useScript } from "@deco/deco/hooks";
 const onLoad = () => {
     document.addEventListener("DOMContentLoaded", function () {
         // Função para rolar suavemente até o elemento alvo
@@ -12,18 +11,13 @@ const onLoad = () => {
                 }
             }
         }
-
         // Chama a função ao carregar a página
         scrollToHash();
     });
 };
-
 export default function ScrollOnLoadScript() {
     return <div>
-        <script
-            type="module"
-            dangerouslySetInnerHTML={{ __html: useScript(onLoad) }}
-        />
+        <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad) }}/>
 
-    </div>
+    </div>;
 }

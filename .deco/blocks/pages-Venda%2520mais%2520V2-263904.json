@@ -76,11 +76,11 @@
         "buttons": [
           {
             "href": "https://app.lojaintegrada.com.br/painel/login",
-            "text": "Acessar minha loja",
+            "text": "<p>Entrar</p>",
             "ctaStyle": "button",
             "backgroundColor": "Transparent",
-            "textColor": "#371E55",
-            "borderColor": "#371E55",
+            "textColor": "#ffffff",
+            "borderColor": "#ffffff",
             "outline": true
           }
         ],
@@ -116,9 +116,9 @@
         "createStoreCta": {
           "ctaStyle": "button",
           "planId": "172",
-          "backgroundColor": "#371E55",
+          "backgroundColor": "#ffffff",
           "textColor": "#003037",
-          "borderColor": "#003037",
+          "borderColor": "#ffffff",
           "text": "Criar loja",
           "showIcon": false
         },
@@ -142,7 +142,7 @@
           "__resolveType": "website/flags/multivariate/image.ts",
           "variants": [
             {
-              "value": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12380/089daad4-d996-4911-9340-e227552948de",
+              "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/051ff7e6-5058-4e08-a303-b41222f9773c/Loja-Integrada-RGB---Prioritaria---Fundo-Branco---LOGO-1.svg",
               "rule": {
                 "__resolveType": "website/matchers/always.ts"
               }
@@ -152,8 +152,8 @@
         "href": "/venda-mais"
       },
       "initialButtons": [],
-      "backgroundColor": "#ffffff",
-      "barsColor": "#371E55",
+      "backgroundColor": "#003037",
+      "barsColor": "#ffffff",
       "asideMenuTopBackgroundColor": "#C6B3CE",
       "asideMenuBackgroundColor": "#ffffff",
       "asideMenuCloseIconColor": "#371E55",
@@ -251,11 +251,13 @@
               ]
             },
             "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                                                                     <script>                                                                     hbspt.forms.create({                                                                         region: \"na1\",                                                                         portalId: \"7112881\",                                                                         formId: \"06d3df52-7c37-4749-aa27-5c7744917d89\"                                                                     });                                                                     </script>",
-            "htmlContent": "<p><br data-mce-bogus=\"1\"></p>",
             "hubspotForm": {
               "portalId": "7112881",
               "region": "na1",
               "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d"
+            },
+            "bulletPoints": {
+              "show": false
             }
           },
           "rule": {
@@ -267,24 +269,26 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<p style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><span style=\"font-size: 35pt;\" data-mce-style=\"font-size: 35pt;\">O futuro do e-commerce é inteligente</span></p>",
-            "caption": "<p style=\"line-height: 1.2;\" data-mce-style=\"line-height: 1.2;\"><span style=\"font-size: 24pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 24pt; color: rgb(95, 110, 130);\">Faça parte! Escolha a plataforma que investe em </span><span style=\"font-size: 24pt; color: rgb(95, 110, 130);\" data-mce-style=\"font-size: 24pt; color: rgb(95, 110, 130);\">dados e automação e veja seu faturamento disparar</span></p>",
-            "titleColor": "#371E55",
+            "title": "<div style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\" data-mce-style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\"><p style=\"text-align: left; font-family: 'Instrument Serif'; font-size: 60px; line-height: 110%; font-weight: 400;\" data-mce-style=\"text-align: left; font-family: 'Instrument Serif'; font-size: 60px; line-height: 110%; font-weight: 400;\">O que ninguém te contou&nbsp;</p><p style=\"text-align: left; font-family: 'Instrument Serif'; font-size: 60px; line-height: 110%; font-weight: 400;\" data-mce-style=\"text-align: left; font-family: 'Instrument Serif'; font-size: 60px; line-height: 110%; font-weight: 400;\">sobre a Black Friday</p></div>",
+            "caption": "<p style=\"line-height: 1.2; font-size: 20px;\" data-mce-style=\"line-height: 1.2; font-size: 20px;\"><span style=\"color: rgb(250, 250, 245);\" data-mce-style=\"color: rgb(250, 250, 245);\">assinado por Victor Popper, CEO da</span><br><span style=\"color: rgb(250, 250, 245);\" data-mce-style=\"color: rgb(250, 250, 245);\">Loja Integrada</span></p>",
+            "titleColor": "",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
-            "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ ",
+            "inputLabel": " ⚡ ️Baixe agora e destaque-se na Black",
             "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a5138fc3-9cef-49db-9369-6ed4f896b5ee/img-topo.png",
-              "alt": "top image"
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0907e9e6-48cd-4c84-8bb6-b5df4ca073fb/vitao-1.png",
+              "alt": "top image",
+              "width": 925,
+              "height": 530
             },
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33795203-2aed-4054-a781-3f33d62ebaed/main-hero-background-(2).svg",
               "alt": "background image"
             },
-            "inputLabelColor": "#371E55",
-            "inputLabelBackgroundColor": "#EAE0EE",
-            "hubspotFormButtonColor": "#371E55",
-            "hubspotFormButtonTextColor": "#ffffff",
+            "inputLabelColor": "#FAFAF5",
+            "inputLabelBackgroundColor": "#44656A",
+            "hubspotFormButtonColor": "#71DBD4",
+            "hubspotFormButtonTextColor": "#003037",
             "hubspotErrorMessageColor": "#F57E77",
             "modal": {
               "title": "Obrigado por se inscrever para receber nossa oferta especial!",
@@ -323,8 +327,25 @@
               "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
               "region": "na1"
             },
-            "htmlContent": "<p><br data-mce-bogus=\"1\"></p>",
-            "use": "image"
+            "htmlContent": "",
+            "use": "image",
+            "captionAbove": "<p style=\"font-size: 20px; line-height: 120%;\" data-mce-style=\"font-size: 20px; line-height: 120%;\"><span style=\"color: rgb(250, 250, 245);\" data-mce-style=\"color: rgb(250, 250, 245);\">Guia gratuito com insights exclusivos</span><br><span style=\"color: rgb(250, 250, 245);\" data-mce-style=\"color: rgb(250, 250, 245);\">sobre o maior evento do e-commerce</span></p>",
+            "bulletPoints": {
+              "show": true,
+              "title": "<div style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\" data-mce-style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\"><p>O que você vai receber no Guia</p></div>",
+              "items": [
+                "Como o consumidor decide na Black Friday ",
+                "Proposta de valor: produto vs. experiência do cliente",
+                "Estratégias que vão além de descontos",
+                "Dados e dicas práticas para suas campanhas"
+              ],
+              "textColor": "#ffffff",
+              "backgroundColor": "rgba(255, 255, 255, 0.09)",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                "alt": "check icon"
+              }
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -7491,7 +7512,102 @@
       ]
     },
     {
-      "__resolveType": "Footer2 global"
+      "__resolveType": "site/sections/Footer2.tsx",
+      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8fd0634d-265f-46c6-b006-2b75aa39d895/video-dobra-comunidade.mp4",
+      "backgroundImage": {},
+      "color1": "#371E55",
+      "color2": "#FFFFFF",
+      "cards": [
+        {
+          "cardIcon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
+          },
+          "title": "Conheça nosso Blog",
+          "text": "Informação, insights e muito, muito conteúdo de valor para seu negócio crescer.",
+          "CTA": {
+            "text": "Conhecer",
+            "href": "#"
+          }
+        },
+        {
+          "cardIcon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
+            "alt": "youtube green icon"
+          },
+          "title": "Conheça nosso canal no Youtube",
+          "text": "Debates, conversas e muito, muito aprendizado para quem  quer impulsionar suas vendas.",
+          "CTA": {
+            "text": "Conhecer",
+            "href": "#"
+          }
+        }
+      ],
+      "color3": "#EBEBEB",
+      "useBackground": "video",
+      "title": "Estamos com você em toda a sua jornada de crescimento!",
+      "logoCaption": "Mais venda, mais eficiência Com quem entende disso.",
+      "logo": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
+      },
+      "showForm": true,
+      "emailForm": {
+        "inputName": "email",
+        "inputLabel": "Junte-se a mais de  2,5 milhões de lojistas",
+        "inputPlaceHolder": "Digite seu email aqui",
+        "submitText": "Fazer parte"
+      },
+      "socialLinks": [
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
+            "alt": "linkein icon"
+          },
+          "href": "http://linkedin.com"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
+            "alt": "instgram icon"
+          },
+          "href": "https://instagram.com"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
+          },
+          "href": "https://tiktok.com"
+        }
+      ],
+      "color4": "#d4d4d4",
+      "bottomLinks": [
+        {
+          "href": "https://comunidade.lojaintegrada.com.br/",
+          "text": "Conheça nossa comunidade"
+        },
+        {
+          "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
+          "text": "Central de ajuda"
+        },
+        {
+          "text": "Fale com especialista",
+          "href": "/talkToSpecialist"
+        },
+        {
+          "href": "https://lojaintegrada.com.br/termos-de-uso",
+          "text": "Termos de uso"
+        },
+        {
+          "href": "https://lojaintegrada.com.br/privacidade",
+          "text": "Privacidade"
+        },
+        {
+          "href": "#",
+          "text": "Comece pelo grátis"
+        }
+      ],
+      "bottomBackground": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
+      }
     },
     {
       "__resolveType": "site/sections/TalkToSpecialistModal.tsx"

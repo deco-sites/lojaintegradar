@@ -73,7 +73,7 @@ export interface Props {
 export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, image, hubspotForm, htmlContent, titleColor, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal }: Props) {
     const modalId = useId() + "modal";
     return <div id={id} class="flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 relative overflow-hidden pb-12">
-        {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} class="w-full h-full absolute object-fill top-0 left-0 -z-50" 
+        {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} class="w-full h-full absolute object-cover top-0 left-0 -z-50" 
         // style={{ objectPosition: "top right" }}
         alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={"eager"} preload={true}/>}
         <div class={`flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-7 md:px-0 border-base`}>

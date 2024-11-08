@@ -249,7 +249,7 @@ export default function Header2({ logo = {
                 text={navigation.createStoreCta.text}
                 underlineText={navigation.createStoreCta.underlineText}
                 ctaClass={`${navigation.createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
-                style={navigation.createStoreCta.ctaStyle == "button" ? { backgroundColor: navigation.createStoreCta.backgroundColor, createStoreCta: navigation.createStoreCta.textColor, borderColor: navigation.createStoreCta.borderColor } : { color: navigation.createStoreCta.textColor }}
+                style={navigation.createStoreCta.ctaStyle == "button" ? { backgroundColor: navigation.createStoreCta.backgroundColor, color: navigation.createStoreCta.textColor, borderColor: navigation.createStoreCta.borderColor } : { color: navigation.createStoreCta.textColor }}
               />}
               {navigation?.buttons?.map((button) => (<a
                 href={button?.href ?? "#"}

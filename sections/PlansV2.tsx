@@ -97,7 +97,10 @@ export interface BulletPointItem {
     text: string;
     toolTipText?: string;
     icon?: IImage;
+    fontWeight?: number;
+    marginTop?: string;
 }
+
 export interface BulletPoints {
     items?: BulletPointItem[];
     /** @format color-input */
@@ -238,14 +241,14 @@ function SliderItem({ slide, id }: {
                     <div class="text-white text-[80px] font-normal lg:font-medium leading-tight mt-2" dangerouslySetInnerHTML={{__html: title}} style={{fontFamily: titleFont}}/>
 
                     <div class={`mt-7 ${bulletPoints?.items && bulletPoints?.items.length > 4 ? "hidden lg:flex" : "flex"} flex-col gap-[20px]`}>
-                        {bulletPoints?.items?.map((item) => (<div class="flex gap-3.5 text-pri">
+                        {bulletPoints?.items?.map((item) => (<div class="flex gap-3.5 text-pri" style={{marginTop: item.marginTop}}>
                             {(item.icon?.src || bulletPoints.bulletPointsIcon?.src) && <Image 
                                 width={item.icon?.width || bulletPoints.bulletPointsIcon?.width || 18} 
                                 height={item.icon?.height || bulletPoints.bulletPointsIcon?.height || 18} 
                                 class="object-contain" src={item.icon?.src || bulletPoints.bulletPointsIcon?.src || ""} 
                                 alt={item.icon?.alt || bulletPoints.bulletPointsIcon?.alt || "bullet points icon"}/>}
                             <div class="flex w-full justify-between">
-                                <p class="text-lg font-normal leading-none" style={{color: bulletPoints.itemsTextColor}} >{item.text}</p>
+                                <p class="text-lg font-normal leading-none" style={{color: bulletPoints.itemsTextColor, fontWeight: item.fontWeight}}>{item.text}</p>
                                 {item.toolTipText && <div class={`tooltip tooltip-left h-4`} data-tip={item.toolTipText} style={`--tooltip-text-color: ${bulletPoints.tooltipTextColor}; --tooltip-color: ${bulletPoints.tooltipBackgroundColor};`}>
                                     <InfoIcon color={bulletPoints.itemsTextColor || "white"} />
                                 </div>}

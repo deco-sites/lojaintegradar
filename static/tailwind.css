@@ -4568,6 +4568,9 @@ details.collapse summary::-webkit-details-marker {
 .gap-\[18px\] {
   gap: 18px;
 }
+.gap-\[20px\] {
+  gap: 20px;
+}
 .gap-\[21px\] {
   gap: 21px;
 }
@@ -4692,6 +4695,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .rounded-\[3px\] {
   border-radius: 3px;
+}
+.rounded-\[5px\] {
+  border-radius: 5px;
 }
 .rounded-\[6px\] {
   border-radius: 6px;
@@ -5032,6 +5038,10 @@ details.collapse summary::-webkit-details-marker {
   -o-object-position: right;
      object-position: right;
 }
+.object-right-top {
+  -o-object-position: right top;
+     object-position: right top;
+}
 .object-top {
   -o-object-position: top;
      object-position: top;
@@ -5059,6 +5069,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .p-8 {
   padding: 2rem;
+}
+.p-\[1px\] {
+  padding: 1px;
 }
 .p-\[27px\] {
   padding: 27px;
@@ -5525,6 +5538,9 @@ details.collapse summary::-webkit-details-marker {
 .text-\[50px\] {
   font-size: 50px;
 }
+.text-\[80px\] {
+  font-size: 80px;
+}
 .text-\[8px\] {
   font-size: 8px;
 }
@@ -5607,6 +5623,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .leading-\[10px\] {
   line-height: 10px;
+}
+.leading-\[110\%\] {
+  line-height: 110%;
 }
 .leading-\[120\%\] {
   line-height: 120%;
@@ -7090,6 +7109,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:text-\[56px\] {
     font-size: 56px;
+  }
+
+  .lg\:text-\[70px\] {
+    font-size: 70px;
   }
 
   .lg\:text-\[72px\] {

@@ -5608,6 +5608,9 @@ details.collapse summary::-webkit-details-marker {
 .leading-\[10px\] {
   line-height: 10px;
 }
+.leading-\[110\%\] {
+  line-height: 110%;
+}
 .leading-\[120\%\] {
   line-height: 120%;
 }
@@ -7090,6 +7093,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:text-\[56px\] {
     font-size: 56px;
+  }
+
+  .lg\:text-\[70px\] {
+    font-size: 70px;
   }
 
   .lg\:text-\[72px\] {

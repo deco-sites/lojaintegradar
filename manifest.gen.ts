@@ -34,17 +34,18 @@ import * as $$$$$$25 from "./sections/Partners.tsx";
 import * as $$$$$$26 from "./sections/PlanDetails.tsx";
 import * as $$$$$$27 from "./sections/PlanDetails2.tsx";
 import * as $$$$$$28 from "./sections/Plans.tsx";
-import * as $$$$$$29 from "./sections/Prices.tsx";
-import * as $$$$$$30 from "./sections/Quote.tsx";
-import * as $$$$$$31 from "./sections/ScrollOnLoadScript.tsx";
-import * as $$$$$$32 from "./sections/SimpleHero.tsx";
-import * as $$$$$$33 from "./sections/TalkToAnExpert.tsx";
-import * as $$$$$$34 from "./sections/TalkToSpecialistModal.tsx";
-import * as $$$$$$35 from "./sections/TcoCalculator.tsx";
-import * as $$$$$$36 from "./sections/TcoCalculatorV2.tsx";
-import * as $$$$$$37 from "./sections/Testimonials.tsx";
-import * as $$$$$$38 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$39 from "./sections/TimeLine.tsx";
+import * as $$$$$$29 from "./sections/PlansV2.tsx";
+import * as $$$$$$30 from "./sections/Prices.tsx";
+import * as $$$$$$31 from "./sections/Quote.tsx";
+import * as $$$$$$32 from "./sections/ScrollOnLoadScript.tsx";
+import * as $$$$$$33 from "./sections/SimpleHero.tsx";
+import * as $$$$$$34 from "./sections/TalkToAnExpert.tsx";
+import * as $$$$$$35 from "./sections/TalkToSpecialistModal.tsx";
+import * as $$$$$$36 from "./sections/TcoCalculator.tsx";
+import * as $$$$$$37 from "./sections/TcoCalculatorV2.tsx";
+import * as $$$$$$38 from "./sections/Testimonials.tsx";
+import * as $$$$$$39 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$40 from "./sections/TimeLine.tsx";
 
 const manifest = {
   "sections": {
@@ -77,17 +78,18 @@ const manifest = {
     "site/sections/PlanDetails.tsx": $$$$$$26,
     "site/sections/PlanDetails2.tsx": $$$$$$27,
     "site/sections/Plans.tsx": $$$$$$28,
-    "site/sections/Prices.tsx": $$$$$$29,
-    "site/sections/Quote.tsx": $$$$$$30,
-    "site/sections/ScrollOnLoadScript.tsx": $$$$$$31,
-    "site/sections/SimpleHero.tsx": $$$$$$32,
-    "site/sections/TalkToAnExpert.tsx": $$$$$$33,
-    "site/sections/TalkToSpecialistModal.tsx": $$$$$$34,
-    "site/sections/TcoCalculator.tsx": $$$$$$35,
-    "site/sections/TcoCalculatorV2.tsx": $$$$$$36,
-    "site/sections/Testimonials.tsx": $$$$$$37,
-    "site/sections/Theme/Theme.tsx": $$$$$$38,
-    "site/sections/TimeLine.tsx": $$$$$$39,
+    "site/sections/PlansV2.tsx": $$$$$$29,
+    "site/sections/Prices.tsx": $$$$$$30,
+    "site/sections/Quote.tsx": $$$$$$31,
+    "site/sections/ScrollOnLoadScript.tsx": $$$$$$32,
+    "site/sections/SimpleHero.tsx": $$$$$$33,
+    "site/sections/TalkToAnExpert.tsx": $$$$$$34,
+    "site/sections/TalkToSpecialistModal.tsx": $$$$$$35,
+    "site/sections/TcoCalculator.tsx": $$$$$$36,
+    "site/sections/TcoCalculatorV2.tsx": $$$$$$37,
+    "site/sections/Testimonials.tsx": $$$$$$38,
+    "site/sections/Theme/Theme.tsx": $$$$$$39,
+    "site/sections/TimeLine.tsx": $$$$$$40,
   },
   "actions": {
     "site/actions/sendTcoUserData.ts": $$$$$$$$$0,

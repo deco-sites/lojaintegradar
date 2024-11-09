@@ -1514,7 +1514,7 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/Plans.tsx",
+            "__resolveType": "site/sections/PlansV2.tsx",
             "slides": [
               {
                 "title": "Aceleração ",
@@ -1532,7 +1532,7 @@
                 },
                 "bulletPoints": {
                   "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png"
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
                   },
                   "items": [
                     {
@@ -1579,7 +1579,7 @@
                 ],
                 "createStoreWithPlanCta": {
                   "planId": "174",
-                  "text": "Escolher",
+                  "text": "Assinar",
                   "backgroundColor": "#ffffff",
                   "textColor": "#371E55",
                   "borderColor": "#ffffff",
@@ -1653,7 +1653,7 @@
                 "theme": "light",
                 "createStoreWithPlanCta": {
                   "planId": "176",
-                  "text": "Escolher",
+                  "text": "Assinar",
                   "ctaStyle": "button",
                   "backgroundColor": "#371E55",
                   "textColor": "#ffffff",
@@ -1661,286 +1661,6 @@
                 }
               },
               {
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes",
-                  "href": "#"
-                },
-                "bulletPoints": {
-                  "items": [
-                    {
-                      "text": "Tudo do Plano Expansão +"
-                    },
-                    {
-                      "text": "Produtos ativos ilimitados"
-                    },
-                    {
-                      "text": "Visitas ilimitadas"
-                    },
-                    {
-                      "text": "Suporte e atendimento por ligação e vídeo"
-                    },
-                    {
-                      "text": "Migração 100% assistida e sem custos adicionais"
-                    },
-                    {
-                      "text": "Especialista de e-commerce dedicado ao seu negócio"
-                    },
-                    {
-                      "text": "Negociação direta com meios de pagamento selecionados"
-                    },
-                    {
-                      "text": "Negociação direta com meios de pagamento selecionados"
-                    }
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                  },
-                  "itemsTextColor": "#371E55",
-                  "tooltipTextColor": "#371E55",
-                  "tooltipBackgroundColor": "#ffffff"
-                },
-                "tag": {
-                  "text": "Premium",
-                  "icon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/5cc30ad5-f8a1-4ea4-b7e7-a37f25023f91/coroa-1.svg",
-                    "alt": "crown icon"
-                  }
-                },
-                "title": "Elite",
-                "montlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1999</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
-                "cutedMontlyFee": "de R$ 1999 /mês",
-                "annualMontlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">1599</span></strong>&nbsp;<span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
-                "annualSaving": "Economia de R$500 no anual",
-                "seeMoreButtonText": "Ver mais",
-                "backgroundColor": "#ffffff",
-                "titleColor": "#371E55",
-                "cutedMontlyFeeColor": "#371E55",
-                "annualSavingColor": "#371E55",
-                "cta": [
-                  {
-                    "ctaStyle": "link",
-                    "href": "#planoelite",
-                    "textColor": "#371E55",
-                    "underlineText": "Ver detalhes"
-                  }
-                ],
-                "tagColor": "#371E55",
-                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
-                "createStoreWithPlanCta": {
-                  "planId": "180",
-                  "text": "Escolher",
-                  "ctaStyle": "button",
-                  "backgroundColor": "#371E55",
-                  "textColor": "#FFFFFF",
-                  "borderColor": "#371E55"
-                },
-                "theme": "light",
-                "topImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
-                }
-              }
-            ],
-            "title": "Escolha seu plano e eleve a eficiência do seu negócio",
-            "caption": "Planos",
-            "annualLabel": "Anual",
-            "montlyLabel": "Mensal",
-            "annualTag": "-20% OFF",
-            "dots": false,
-            "bottomCaption": "Ainda em dúvida?",
-            "bottomTitle": "Comece pelo plano gratuito",
-            "bottomButton": {
-              "text": "Começar no grátis",
-              "href": "#"
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#828CA0",
-            "labelColor": "#371E55",
-            "disabledLabelColor": "#828CA0",
-            "annualTagColor": "#FFE6A0",
-            "annualTagDisabledColor": "#EBEBEB",
-            "bottomButtons": [
-              {
-                "ctaStyle": "button",
-                "href": "#",
-                "text": "Começar no grátis",
-                "backgroundColor": "#371E55",
-                "textColor": "#ffffff",
-                "borderColor": "#371E55"
-              }
-            ],
-            "bottomCaptionColor": "#828CA0",
-            "bottomTitleColor": "#371E55",
-            "bottomCreateStoreCta": {
-              "planId": "172",
-              "text": "Começar no grátis",
-              "backgroundColor": "#371E55",
-              "textColor": "#ffffff",
-              "borderColor": "#371E55",
-              "ctaStyle": "button"
-            },
-            "arrows": true,
-            "arrowsColor": "#371E55",
-            "id": "plans"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Plans.tsx",
-            "slides": [
-              {
-                "title": "Aceleração ",
-                "tag": {
-                  "text": "🚀 Mais popular "
-                },
-                "montlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">99</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>",
-                "annualFee": 79,
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes",
-                  "href": "#"
-                },
-                "bulletPoints": {
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                  },
-                  "items": [
-                    {
-                      "text": "500 produtos ativos"
-                    },
-                    {
-                      "text": "50.000 visitas por mês"
-                    },
-                    {
-                      "text": "5 Visuais profissionais Inclusos"
-                    },
-                    {
-                      "text": "Mais conversão com Checkout sem Senha baseado na VTEX"
-                    },
-                    {
-                      "text": "Aumento de ticket médio em até 31% com Promoções e Compre Junto"
-                    },
-                    {
-                      "text": "Tarifa por transação gratuita com Pagali"
-                    },
-                    {
-                      "text": "Envio pelos Correios com até 70% de desconto com Enviali"
-                    }
-                  ],
-                  "itemsTextColor": "#FAFAF5",
-                  "tooltipTextColor": "#371E55",
-                  "tooltipBackgroundColor": "#ffffff"
-                },
-                "annualMontlyFeeFee": 79,
-                "annualMontlyFee": "<p><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <strong><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">79</span></strong> <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês<br></span></p>",
-                "cutedMontlyFee": "de R$99/mês ",
-                "annualSaving": "Economia de R$240 no anual",
-                "seeMoreTag": "Ver mais",
-                "seeMoreButtonText": "Ver mais",
-                "backgroundColor": "linear-gradient(153deg, #372158 7.7%, #170C24 83.32%)",
-                "tagColor": "#FAFAF5",
-                "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
-                "titleColor": "#FAFAF5",
-                "cutedMontlyFeeColor": "#FAFAF5",
-                "annualSavingColor": "#FAFAF5",
-                "cta": [
-                  {
-                    "ctaStyle": "link",
-                    "href": "#planoaceleracao",
-                    "textColor": "#ffffff",
-                    "underlineText": "Ver detalhes"
-                  }
-                ],
-                "createStoreWithPlanCta": {
-                  "planId": "174",
-                  "text": "Assinar",
-                  "backgroundColor": "#ffffff",
-                  "textColor": "#371E55",
-                  "ctaStyle": "button",
-                  "borderColor": "#ffffff"
-                }
-              },
-              {
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes"
-                },
-                "bulletPoints": {
-                  "items": [
-                    {
-                      "text": "Tudo do Plano Aceleração +"
-                    },
-                    {
-                      "text": "Produtos ativos ilimitados"
-                    },
-                    {
-                      "text": "300.000 visitas por mês"
-                    },
-                    {
-                      "text": "7 Visuais Profissionais Inclusos"
-                    },
-                    {
-                      "text": "Relatório de performance e diário de bordo"
-                    },
-                    {
-                      "text": "Mais conversão com customização de e-mails de transação e Carrinho Abandonado"
-                    },
-                    {
-                      "text": "Atendimento prioritário em chat, e-mail e WhatsApp"
-                    }
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-                    "alt": "bullet points icon"
-                  },
-                  "itemsTextColor": "#371E55",
-                  "tooltipTextColor": "#ffffff",
-                  "tooltipBackgroundColor": "#371E55"
-                },
-                "tag": {},
-                "title": "Expansão ",
-                "montlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>239</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
-                "cutedMontlyFee": "de R$ 239/mês",
-                "annualMontlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span> <span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>191</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
-                "annualSaving": "Economia de R$576 no anual",
-                "seeMoreButtonText": "Ver mais",
-                "cta": [
-                  {
-                    "ctaStyle": "link",
-                    "href": "#planoexpancao",
-                    "textColor": "#371E55",
-                    "underlineText": "Ver detalhes"
-                  }
-                ],
-                "backgroundColor": "#ffffff",
-                "titleColor": "#371E55",
-                "cutedMontlyFeeColor": "#371E55",
-                "annualSavingColor": "#371E55",
-                "theme": "light",
-                "createStoreWithPlanCta": {
-                  "planId": "176",
-                  "backgroundColor": "#371E55",
-                  "textColor": "#ffffff",
-                  "borderColor": "#371E55",
-                  "ctaStyle": "button",
-                  "text": "Assinar"
-                }
-              },
-              {
-                "theme": "light",
                 "chooseCta": {
                   "text": "Assinar",
                   "href": "#"
@@ -2008,9 +1728,6 @@
                     "underlineText": "Ver detalhes"
                   }
                 ],
-                "topImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
-                },
                 "tagColor": "#371E55",
                 "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
                 "createStoreWithPlanCta": {
@@ -2020,11 +1737,15 @@
                   "backgroundColor": "#371E55",
                   "textColor": "#ffffff",
                   "borderColor": "#371E55"
+                },
+                "theme": "light",
+                "topImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/aa340552-8e36-4e1d-9740-dfbbc9ff9b25/3D-Illustration-Y2K-Abstract-Stars-1.svg"
                 }
               }
             ],
-            "title": "Escolha seu plano e eleve a eficiência do seu negócio",
-            "caption": "Planos",
+            "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\">Planos que crescem com o seu negócio</p>",
+            "caption": "+2,7 milhões de lojistas escolheram a Loja Integrada",
             "annualLabel": "Anual",
             "montlyLabel": "Mensal",
             "annualTag": "-20% OFF",
@@ -2035,9 +1756,8 @@
               "text": "Começar no grátis",
               "href": "#"
             },
-            "id": "plans",
             "titleColor": "#371E55",
-            "captionColor": "#828CA0",
+            "captionColor": "#371E55",
             "labelColor": "#371E55",
             "disabledLabelColor": "#828CA0",
             "annualTagColor": "#FFE6A0",
@@ -2055,14 +1775,15 @@
             "bottomCaptionColor": "#828CA0",
             "bottomTitleColor": "#371E55",
             "bottomCreateStoreCta": {
+              "planId": "172",
               "text": "Começar no grátis",
-              "ctaStyle": "button",
               "backgroundColor": "#371E55",
               "textColor": "#ffffff",
               "borderColor": "#371E55",
-              "planId": "172"
+              "ctaStyle": "button"
             },
-            "arrowsColor": "#000000"
+            "arrowsColor": "#000000",
+            "id": "plans"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6034,17 +5755,27 @@
           "value": {
             "__resolveType": "site/sections/PlanDetails2.tsx",
             "title": "Acelere o seu negócio",
-            "planTag": {
-              "icon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
-              },
-              "text": "Plano Aceleração"
-            },
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b3686d4f-c7c4-4a58-b5db-a6dd6ed51fc3/aceleracao-background-mobile-2.png",
               "alt": "background ",
               "width": 600,
               "height": 1700
+            },
+            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "textColor": "#ffffff",
+                "underlineText": "Falar com especialista",
+                "showIcon": true
+              }
+            ],
+            "planTag": {
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
+              },
+              "text": "Plano Aceleração"
             },
             "useBackground": "video",
             "slides": [
@@ -6138,7 +5869,6 @@
             "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fc9c24eb-f8d4-4810-a52b-bf2d4f180391/video-dobra-aceleracao-mobile.mp4",
             "useContent": "video",
             "contentImage": {},
-            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
             "annualValues": {
               "title": "Anual",
               "tag": "20% OFF",
@@ -6160,15 +5890,6 @@
               }
             },
             "color4": "#FFE6A0",
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "underlineText": "Falar com especialista",
-                "textColor": "#ffffff",
-                "showIcon": true
-              }
-            ],
             "link": {
               "textBefore": "Já tem uma loja? ",
               "href": "#",
@@ -6197,15 +5918,25 @@
           "value": {
             "__resolveType": "site/sections/PlanDetails2.tsx",
             "title": "Acelere o seu negócio",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4c9f864e-51e2-469e-a56b-5f02c2af1b6a/aceleracao-background.svg",
+              "alt": "background "
+            },
+            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "textColor": "#ffffff",
+                "underlineText": "Falar com especialista",
+                "showIcon": true
+              }
+            ],
             "planTag": {
               "icon": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
               },
               "text": "Plano Aceleração"
-            },
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4c9f864e-51e2-469e-a56b-5f02c2af1b6a/aceleracao-background.svg",
-              "alt": "background "
             },
             "useBackground": "video",
             "slides": [
@@ -6299,7 +6030,6 @@
             "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8fd3818a-e988-426b-9f8b-6c6c8dffa479/video-dobra-aceleracao.webm",
             "useContent": "video",
             "contentImage": {},
-            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
             "annualValues": {
               "title": "Anual",
               "tag": "20% OFF",
@@ -6321,15 +6051,6 @@
               }
             },
             "color4": "#FFE6A0",
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com especialista",
-                "href": "/talkToSpecialist",
-                "textColor": "#ffffff",
-                "showIcon": true
-              }
-            ],
             "link": {
               "textBefore": "Já tem uma loja? ",
               "href": "#",
@@ -7093,7 +6814,6 @@
             "__resolveType": "site/sections/Hero.tsx",
             "title": "Reduza seus custos com frete",
             "titleColor": "#371E55",
-            "caption": "Ofereça fretes mais competitivos com Enviali e aumente suas vendas",
             "captionColor": "#371E55",
             "cta": [
               {
@@ -7149,7 +6869,8 @@
               }
             ],
             "textBelowColor": "#5F6E82",
-            "use": "image"
+            "use": "image",
+            "caption": "Ofereça fretes mais competitivos com Enviali e aumente suas vendas"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -7173,10 +6894,10 @@
                 "ctaStyle": "button",
                 "href": "#plans",
                 "textColor": "#ffffff",
-                "showIcon": false,
                 "text": "Ver planos ",
                 "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
+                "borderColor": "#371E55",
+                "showIcon": false
               },
               {
                 "href": "/talkToSpecialist",
@@ -7190,6 +6911,9 @@
             ],
             "titleColor": "#371E55",
             "captionColor": "#371E55",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb8a0a0-826d-49a8-9c4f-87204f15ce0b/moda-tema-mobile-1.svg"
+            },
             "features": [
               {
                 "icon": {
@@ -7227,9 +6951,6 @@
                 "textColor": "#371E55"
               }
             ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb8a0a0-826d-49a8-9c4f-87204f15ce0b/moda-tema-mobile-1.svg"
-            },
             "use": "image",
             "bottomFloatingImage": {}
           },
@@ -7251,23 +6972,27 @@
                 "ctaStyle": "button",
                 "href": "#plans",
                 "textColor": "#ffffff",
-                "showIcon": false,
                 "text": "Ver planos ",
                 "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
+                "borderColor": "#371E55",
+                "showIcon": false
               },
               {
-                "backgroundColor": "",
                 "textColor": "#371E55",
-                "borderColor": "",
                 "underlineText": " Falar com especialista",
                 "ctaStyle": "link",
                 "showIcon": true,
-                "href": "/talkToSpecialist"
+                "href": "/talkToSpecialist",
+                "backgroundColor": "",
+                "borderColor": ""
               }
             ],
             "titleColor": "#371E55",
             "captionColor": "#371E55",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4db6d41b-a78e-45da-834d-1458bc900f19/big-image-hero-image.gif"
+            },
+            "use": "image",
             "features": [
               {
                 "icon": {
@@ -7305,10 +7030,6 @@
                 "textColor": "#371E55"
               }
             ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4db6d41b-a78e-45da-834d-1458bc900f19/big-image-hero-image.gif"
-            },
-            "use": "image",
             "bottomFloatingImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c36230b-5d85-4f99-af96-67f513e7c7d8/floating-bottom-image.svg"
             }
@@ -7328,16 +7049,25 @@
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d20efb42-545b-49e0-9acc-e12f5b6e0541/crescimento-background-mobile.svg"
             },
+            "title": "Comece pagando menos",
+            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "textColor": "#003037",
+                "showIcon": true,
+                "underlineText": "Falar com especialista"
+              }
+            ],
             "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/96963d3a-6c2e-4310-86bb-dcff7c4852de/video-dobra-crescimento-mobile.mp4",
             "useContent": "video",
-            "title": "Comece pagando menos",
             "planTag": {
               "text": "Plano Crescimento",
               "icon": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
               }
             },
-            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
             "showArrows": false,
             "slides": [
               {
@@ -7378,15 +7108,6 @@
               "title": "Mensal",
               "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 54</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>"
             },
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "textColor": "#003037",
-                "underlineText": "Falar com especialista",
-                "showIcon": true
-              }
-            ],
             "link": {
               "textBefore": "Já tem uma loja?",
               "text": " Ative agora",
@@ -7422,16 +7143,25 @@
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f0ef7f54-f95f-4358-bf93-9882a6e34a4f/crescimento-background.svg"
             },
+            "title": "Comece pagando menos",
+            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "textColor": "#003037",
+                "showIcon": true,
+                "underlineText": "Falar com especialista"
+              }
+            ],
             "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f68f0cae-2879-4a82-95a1-85fc54ef8b68/video-dobra-crescimento.webm",
             "useContent": "video",
-            "title": "Comece pagando menos",
             "planTag": {
               "text": "Plano Crescimento",
               "icon": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
               }
             },
-            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
             "showArrows": false,
             "slides": [
               {
@@ -7472,15 +7202,6 @@
               "title": "Mensal",
               "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 54</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>"
             },
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "underlineText": "Falar com especialista",
-                "textColor": "#003037",
-                "showIcon": true
-              }
-            ],
             "link": {
               "textBefore": "Já tem uma loja?",
               "text": " Ative agora",

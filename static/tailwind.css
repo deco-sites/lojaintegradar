@@ -4693,6 +4693,9 @@ details.collapse summary::-webkit-details-marker {
 .rounded-\[3px\] {
   border-radius: 3px;
 }
+.rounded-\[5px\] {
+  border-radius: 5px;
+}
 .rounded-\[6px\] {
   border-radius: 6px;
 }
@@ -5032,6 +5035,10 @@ details.collapse summary::-webkit-details-marker {
   -o-object-position: right;
      object-position: right;
 }
+.object-right-top {
+  -o-object-position: right top;
+     object-position: right top;
+}
 .object-top {
   -o-object-position: top;
      object-position: top;
@@ -5059,6 +5066,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .p-8 {
   padding: 2rem;
+}
+.p-\[1px\] {
+  padding: 1px;
 }
 .p-\[27px\] {
   padding: 27px;
@@ -5524,6 +5534,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .text-\[50px\] {
   font-size: 50px;
+}
+.text-\[80px\] {
+  font-size: 80px;
 }
 .text-\[8px\] {
   font-size: 8px;

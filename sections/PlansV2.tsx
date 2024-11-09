@@ -1,4 +1,4 @@
-import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
@@ -140,6 +140,12 @@ export interface CreateStoreWithPlanCTA {
 export interface Tag {
     text?: string;
     icon?: IImage;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    borderColor?: string;
 }
 /** @title {{title}} */
 export interface Plan {
@@ -147,18 +153,13 @@ export interface Plan {
     backgroundColor?: string;
     topImage?: IImage;
     tag?: Tag;
-    /** @format color-input */
-    tagColor?: string;
-    /** @format color-input */
-    tagBackgroundColor?: string;
-    title: string;
-    /** @format color-input */
-    titleColor?: string;
-    montlyFee?: HTMLWidget;
+    title: RichText;
+    titleFont?: string;
+    montlyFee?: RichText;
     cutedMontlyFee?: string;
     /** @format color-input */
     cutedMontlyFeeColor?: string;
-    annualMontlyFee?: HTMLWidget;
+    annualMontlyFee?: RichText;
     annualSaving?: string;
     /** @format color-input */
     annualSavingColor?: string;
@@ -171,8 +172,6 @@ export interface Plan {
 export interface Props {
     id?: string;
     title?: HTMLWidget;
-    /** @format color-input */
-    titleColor?: string;
     caption?: string;
     /** @format color-input */
     captionColor?: string;
@@ -218,19 +217,23 @@ function SliderItem({ slide, id }: {
     slide: Plan;
     id: string;
 }) {
-    const { title, tag, montlyFee, cutedMontlyFee, annualMontlyFee, annualSaving, cta = [], bulletPoints, topImage, seeMoreButtonText, backgroundColor, titleColor, tagColor, tagBackgroundColor, cutedMontlyFeeColor, annualSavingColor, createStoreWithPlanCta } = slide;
-    return (<div id={id} class={`px-1 lg:px-4 w-full ${!topImage?.src && 'pt-[73px]'}`}>
+    const { title, titleFont, tag, montlyFee, cutedMontlyFee, annualMontlyFee, annualSaving, cta = [], bulletPoints, topImage, seeMoreButtonText, backgroundColor, cutedMontlyFeeColor, annualSavingColor, createStoreWithPlanCta } = slide;
+    return (<div id={id} class={`px-1 lg:px-4 w-full `}>
             <div class={`relative w-full h-full lg:min-h-[864px] rounded-3xl shadow-spreaded3 overflow-hidden bg-primary text-primary-content`} style={{background: backgroundColor}}>
                 
-                {topImage?.src && <Image width={topImage.width || 200} height={topImage.height || 226} src={topImage.src} alt={topImage.alt || "background top image"} class="w-[200px] h-[226px] object-contain absolute top-0 right-0"/>}
-                <div class={`relative z-10 h-full w-full py-9 px-6 ${topImage?.src && 'pt-[109px]'}`}>
+                {topImage?.src && <Image width={topImage.width || 200} height={topImage.height || 226} src={topImage.src} alt={topImage.alt || "background top image"} class="object-contain object-right-top absolute top-0 right-0"/>}
+                <div class={`relative z-10 h-full w-full py-9 px-6`}>
                     <div class="h-9">
-                        {tag?.text && <p class={`inline-flex gap-2.5 items-center h-full py-[7px] px-4 bg-primary-content text-primary-content font-semibold bg-opacity-20 rounded-[20px]`} style={{color: tagColor, background: tagBackgroundColor}}>
-                            {tag?.icon?.src && <Image width={tag.icon.width || 20} height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.src || "tag icon"} class="h-5 w-5 object-contain"/>}
-                            {tag.text}
-                        </p>}
+                        {tag?.text && <div class="inline-block rounded-[5px] overflow-hidden p-[1px]" style={{background: tag.borderColor}}>
+                            <div class="inline-block rounded-[5px]" style={{background: tag.backgroundColor}}>
+                                <p class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-semibold `} style={{background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent'}}>
+                                    {tag?.icon?.src && <Image width={tag.icon.width || 20} height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.alt || "tag icon"} class="h-5 w-5 object-contain"/>}
+                                    {tag.text}
+                                </p>
+                            </div>
+                        </div>}
                     </div>
-                    <h2 class="text-[13vw] lg:text-[40px] font-bold lg:font-medium leading-tight mt-2" style={{color: titleColor}}>{title}</h2>
+                    <div class="text-white text-[80px] font-normal lg:font-medium leading-tight mt-2" dangerouslySetInnerHTML={{__html: title}} style={{fontFamily: titleFont}}/>
 
                     <div class="montlyValues hidden">
                         <div class="leading-tight" dangerouslySetInnerHTML={{ __html: montlyFee || ""}}/>
@@ -346,7 +349,7 @@ function Buttons({arrowsColor}: {arrowsColor?: string}) {
 function Plans(props: Props) {
     const carouselId = useId();
     const id = props.id || carouselId;
-    const { title, caption, slides, montlyLabel, annualLabel, annualTag, annualTagTextColor, arrows, bottomCaption, bottomTitle, bottomCreateStoreCta, titleColor, captionColor, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, bottomCaptionColor, bottomTitleColor, arrowsColor } = { ...props };
+    const { title, caption, slides, montlyLabel, annualLabel, annualTag, annualTagTextColor, arrows, bottomCaption, bottomTitle, bottomCreateStoreCta, captionColor, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, bottomCaptionColor, bottomTitleColor, arrowsColor } = { ...props };
     return (<div id={id}>
 
             <div id={carouselId} class="min-h-min flex flex-col items-center lg:container md:max-w-[1500px] lg:mx-auto pt-7 lg:pt-[90px]" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)} >
@@ -354,7 +357,7 @@ function Plans(props: Props) {
                     <p class="text-lg lg:text-2xl text-neutral-content font-semibold leading-tight" style={{color: captionColor}}>{caption}</p>
                 </AnimateOnShow>
 
-                {title && <AnimateOnShow animation="animate-fade-down" animationDuration="1.1s" divClass="text-2xl lg:text-[70px] text-primary text-center leading-[110%] font-normal pb-12 lg:pb-16 mx-auto" style={{color: titleColor}}>
+                {title && <AnimateOnShow animation="animate-fade-down" animationDuration="1.1s" divClass="text-2xl lg:text-[70px] text-primary text-center leading-[110%] font-normal pb-12 lg:pb-16 mx-auto">
                     <div dangerouslySetInnerHTML={{__html: title}} />
                 </AnimateOnShow>}
                 

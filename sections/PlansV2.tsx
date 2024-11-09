@@ -96,6 +96,7 @@ export interface IImage {
 export interface BulletPointItem {
     text: string;
     toolTipText?: string;
+    icon?: IImage;
 }
 export interface BulletPoints {
     items?: BulletPointItem[];
@@ -105,6 +106,7 @@ export interface BulletPoints {
     tooltipTextColor?: string;
     /** @format color-input */
     tooltipBackgroundColor?: string;
+    /** @title Default bullet points icon */
     bulletPointsIcon?: IImage;
 }
 
@@ -235,6 +237,22 @@ function SliderItem({ slide, id }: {
                     </div>
                     <div class="text-white text-[80px] font-normal lg:font-medium leading-tight mt-2" dangerouslySetInnerHTML={{__html: title}} style={{fontFamily: titleFont}}/>
 
+                    <div class={`mt-7 ${bulletPoints?.items && bulletPoints?.items.length > 4 ? "hidden lg:flex" : "flex"} flex-col gap-[20px]`}>
+                        {bulletPoints?.items?.map((item) => (<div class="flex gap-3.5 text-pri">
+                            {(item.icon?.src || bulletPoints.bulletPointsIcon?.src) && <Image 
+                                width={item.icon?.width || bulletPoints.bulletPointsIcon?.width || 18} 
+                                height={item.icon?.height || bulletPoints.bulletPointsIcon?.height || 18} 
+                                class="object-contain" src={item.icon?.src || bulletPoints.bulletPointsIcon?.src || ""} 
+                                alt={item.icon?.alt || bulletPoints.bulletPointsIcon?.alt || "bullet points icon"}/>}
+                            <div class="flex w-full justify-between">
+                                <p class="text-lg font-normal leading-none" style={{color: bulletPoints.itemsTextColor}} >{item.text}</p>
+                                {item.toolTipText && <div class={`tooltip tooltip-left h-4`} data-tip={item.toolTipText} style={`--tooltip-text-color: ${bulletPoints.tooltipTextColor}; --tooltip-color: ${bulletPoints.tooltipBackgroundColor};`}>
+                                    <InfoIcon color={bulletPoints.itemsTextColor || "white"} />
+                                </div>}
+                            </div>
+                        </div>))}
+                    </div>
+
                     <div class="montlyValues hidden">
                         <div class="leading-tight" dangerouslySetInnerHTML={{ __html: montlyFee || ""}}/>
                     </div>
@@ -246,72 +264,53 @@ function SliderItem({ slide, id }: {
                     </div>
 
                     <div class="mt-9 flex flex-wrap gap-[18px] items-center">
-                    {createStoreWithPlanCta?.text && <CreateStoreCta 
-                        period="anual"
-                        text={createStoreWithPlanCta.text} 
-                        planId={createStoreWithPlanCta.planId}
-                        showIcon={createStoreWithPlanCta.showIcon}
-                        underlineText={createStoreWithPlanCta.underlineText}
-                        ctaClass={`${createStoreWithPlanCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer annualCreateStoreButton`}
-                        style={createStoreWithPlanCta.ctaStyle == "button" ? { backgroundColor: createStoreWithPlanCta.backgroundColor, color: createStoreWithPlanCta.textColor, borderColor: createStoreWithPlanCta.borderColor } : { color: createStoreWithPlanCta.textColor }}
-                    />}
-                    {createStoreWithPlanCta?.text && <CreateStoreCta 
-                        period="mensal"
-                        text={createStoreWithPlanCta.text} 
-                        planId={createStoreWithPlanCta.planId}
-                        showIcon={createStoreWithPlanCta.showIcon}
-                        underlineText={createStoreWithPlanCta.underlineText}
-                        ctaClass={`${createStoreWithPlanCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer montlyCreateStoreButton hidden`}
-                        style={createStoreWithPlanCta.ctaStyle == "button" ? { backgroundColor: createStoreWithPlanCta.backgroundColor, color: createStoreWithPlanCta.textColor, borderColor: createStoreWithPlanCta.borderColor } : { color: createStoreWithPlanCta.textColor }}
-                    />}
-                    {cta.map((button) => {
-                    if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
-                        showIcon={button.showIcon}
-                        underlineText={button.underlineText}
-                        text={button.text}
-                        ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
-                        style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
-                    />
-                    return <a
-                        href={button?.href ?? "#"}
-                        target={button?.href.includes("http") ? "_blank" : "_self"}
-                        class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
-                        style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
-                    >
-                        {button?.text}
-                        {button.underlineText && <span class="underline">{button.underlineText}</span>}
-                        {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z" />
-                        </svg>}
-                    </a>
-                })}
+                        {createStoreWithPlanCta?.text && <CreateStoreCta 
+                            period="anual"
+                            text={createStoreWithPlanCta.text} 
+                            planId={createStoreWithPlanCta.planId}
+                            showIcon={createStoreWithPlanCta.showIcon}
+                            underlineText={createStoreWithPlanCta.underlineText}
+                            ctaClass={`${createStoreWithPlanCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer annualCreateStoreButton`}
+                            style={createStoreWithPlanCta.ctaStyle == "button" ? { backgroundColor: createStoreWithPlanCta.backgroundColor, color: createStoreWithPlanCta.textColor, borderColor: createStoreWithPlanCta.borderColor } : { color: createStoreWithPlanCta.textColor }}
+                        />}
+                        {createStoreWithPlanCta?.text && <CreateStoreCta 
+                            period="mensal"
+                            text={createStoreWithPlanCta.text} 
+                            planId={createStoreWithPlanCta.planId}
+                            showIcon={createStoreWithPlanCta.showIcon}
+                            underlineText={createStoreWithPlanCta.underlineText}
+                            ctaClass={`${createStoreWithPlanCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer montlyCreateStoreButton hidden`}
+                            style={createStoreWithPlanCta.ctaStyle == "button" ? { backgroundColor: createStoreWithPlanCta.backgroundColor, color: createStoreWithPlanCta.textColor, borderColor: createStoreWithPlanCta.borderColor } : { color: createStoreWithPlanCta.textColor }}
+                        />}
+                        {cta.map((button) => {
+                            if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
+                                showIcon={button.showIcon}
+                                underlineText={button.underlineText}
+                                text={button.text}
+                                ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                                style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                            />
+                            return <a
+                                href={button?.href ?? "#"}
+                                target={button?.href.includes("http") ? "_blank" : "_self"}
+                                class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                                style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                            >
+                                {button?.text}
+                                {button.underlineText && <span class="underline">{button.underlineText}</span>}
+                                {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z" />
+                                </svg>}
+                            </a>
+                        })}
                     </div>
 
-                    <div id={id + "fullBulletPoints"} class={`mt-7 ${bulletPoints?.items && bulletPoints?.items.length > 4 ? "hidden lg:flex" : "flex"} flex-col gap-[30px]`}>
-                        {bulletPoints?.items?.map((item) => (<div class="flex gap-3.5 text-pri">
-                            {bulletPoints.bulletPointsIcon?.src && <Image width={bulletPoints.bulletPointsIcon.width || 18} height={bulletPoints.bulletPointsIcon.height || 18} class="h-[18px] w-[18px] object-contain" src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet points icon"}/>}
-                            <div class="flex w-full justify-between">
-                                <p class="text-lg font-normal leading-none" style={{color: bulletPoints.itemsTextColor}} >{item.text}</p>
-                                {item.toolTipText && <div class={`tooltip tooltip-left h-4`} data-tip={item.toolTipText} style={`--tooltip-text-color: ${bulletPoints.tooltipTextColor}; --tooltip-color: ${bulletPoints.tooltipBackgroundColor};`}>
-                                    <InfoIcon color={bulletPoints.itemsTextColor || "white"} />
-                                </div>}
-                            </div>
-                        </div>))}
-                    </div>
-                    <div id={id + "firstBulletPoints"} class={`${bulletPoints?.items && bulletPoints?.items.length <= 4 && 'hidden'} mt-7 flex lg:hidden flex-col gap-[30px]`}>
-                        {bulletPoints?.items?.slice(0, 4).map((item) => (<div class="flex gap-3.5 text-pri">
-                            {bulletPoints.bulletPointsIcon?.src && <Image width={bulletPoints.bulletPointsIcon.width || 18} height={bulletPoints.bulletPointsIcon.height || 18} class="h-[18px] w-[18px] object-contain" src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet points icon"}/>}
-                            <div class="flex w-full justify-between">
-                                <p class="text-lg font-normal leading-none" style={{color: bulletPoints.itemsTextColor}}>{item.text}</p>
-                                {item.toolTipText && <div class={`tooltip tooltip-left h-4`} data-tip={item.toolTipText} style={`--tooltip-text-color: ${bulletPoints.tooltipTextColor}; --tooltip-color: ${bulletPoints.tooltipBackgroundColor};`}>
-                                    <InfoIcon color={bulletPoints.itemsTextColor || "white"} />
-                                </div>}
-                            </div>
-                        </div>))}
-                        {bulletPoints?.items && bulletPoints?.items.length > 4 && <div id={id + "firstBulletPoints"} class="flex justify-center">
-                            <button class="text-neutral-content text-base font-medium leading-normal" hx-on:click={useScript(onClick, id)} style={{color: bulletPoints.itemsTextColor}}>
+                    <div id={id + "firstBulletPoints"} class={` mt-7 flex lg:hidden flex-col gap-[30px]`}>
+                        teste
+                        <div class="flex justify-center">
+                            <button class="text-neutral-content text-base font-medium leading-normal" hx-on:click={useScript(onClick, id)} style={{color: bulletPoints?.itemsTextColor}}>
                                 {seeMoreButtonText || "Ver mais"}
-                                <svg width="16" height="16" viewBox="0 0 16 16" class="text-neutral-content fill-current inline ml-1" style={{color: bulletPoints.itemsTextColor}} xmlns="http://www.w3.org/2000/svg">
+                                <svg width="16" height="16" viewBox="0 0 16 16" class="text-neutral-content fill-current inline ml-1" style={{color: bulletPoints?.itemsTextColor}} xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_121_3611)">
                                         <path d="M14.5237 5.65973L8.06468 12.2379C8.00469 12.2991 7.93346 12.3476 7.85505 12.3807C7.77663 12.4138 7.69258 12.4309 7.6077 12.4309C7.52282 12.4309 7.43877 12.4138 7.36036 12.3807C7.28195 12.3476 7.21072 12.2991 7.15073 12.2379L0.691726 5.65973C0.570529 5.53629 0.502441 5.36888 0.502441 5.19432C0.502441 5.01976 0.570529 4.85234 0.691726 4.72891C0.812924 4.60548 0.977302 4.53613 1.1487 4.53613C1.3201 4.53613 1.48448 4.60548 1.60568 4.72891L7.6077 10.8425L13.6097 4.72891C13.6697 4.66779 13.741 4.61931 13.8194 4.58623C13.8978 4.55316 13.9818 4.53613 14.0667 4.53613C14.1516 4.53613 14.2356 4.55316 14.314 4.58623C14.3924 4.61931 14.4637 4.66779 14.5237 4.72891C14.5837 4.79003 14.6313 4.86259 14.6638 4.94244C14.6963 5.0223 14.713 5.10789 14.713 5.19432C14.713 5.28075 14.6963 5.36634 14.6638 5.4462C14.6313 5.52605 14.5837 5.59861 14.5237 5.65973Z"/>
                                     </g>
@@ -322,7 +321,7 @@ function SliderItem({ slide, id }: {
                                     </defs>
                                 </svg>
                             </button>
-                        </div>}
+                        </div>
                     </div>
                 </div>
             </div>

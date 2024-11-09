@@ -1748,7 +1748,6 @@
             "caption": "+2,7 milhões de lojistas escolheram a Loja Integrada",
             "annualLabel": "Anual",
             "montlyLabel": "Mensal",
-            "annualTag": "-20% OFF",
             "dots": false,
             "bottomCaption": "Ainda em dúvida?",
             "bottomTitle": "Comece pelo plano gratuito",
@@ -1760,8 +1759,8 @@
             "captionColor": "#371E55",
             "labelColor": "#371E55",
             "disabledLabelColor": "#828CA0",
-            "annualTagColor": "#FFE6A0",
-            "annualTagDisabledColor": "#EBEBEB",
+            "annualTagColor": "#26133B",
+            "annualTagDisabledColor": "rgba(38, 19, 59, 0.20)",
             "bottomButtons": [
               {
                 "ctaStyle": "button",
@@ -1783,7 +1782,9 @@
               "ctaStyle": "button"
             },
             "arrowsColor": "#000000",
-            "id": "plans"
+            "id": "plans",
+            "annualTagTextColor": "#FAFAF5",
+            "annualTag": "🔥 Ofertas de Black friday"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

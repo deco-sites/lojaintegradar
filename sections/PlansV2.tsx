@@ -21,7 +21,7 @@ const onChange = (rootId: string, labelColor?: string, disabledLabelColor?: stri
     const parent = document.getElementById(rootId) as HTMLElement;
     const montlyLabel = element.parentElement?.children[0] as HTMLElement;
     const annualLabel = element.parentElement?.children[2] as HTMLElement;
-    const annualTag = annualLabel.querySelector("p") as HTMLElement;
+    const annualTag = parent.querySelector(".anualTag") as HTMLElement;
     const montlyValues = parent.querySelectorAll(".montlyValues");
     const annualValues = parent.querySelectorAll(".annualValues");
     const montlyCreateStoreButtons = parent.querySelectorAll(".montlyCreateStoreButton");
@@ -187,6 +187,8 @@ export interface Props {
     annualTagColor?: string;
     /** @format color-input */
     annualTagDisabledColor?: string;
+    /** @format color-input */
+    annualTagTextColor?: string;
     slides?: Plan[];
     /**
      * @title Show arrows
@@ -344,7 +346,7 @@ function Buttons({arrowsColor}: {arrowsColor?: string}) {
 function Plans(props: Props) {
     const carouselId = useId();
     const id = props.id || carouselId;
-    const { title, caption, slides, montlyLabel, annualLabel, annualTag, arrows, bottomCaption, bottomTitle, bottomCreateStoreCta, titleColor, captionColor, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, bottomCaptionColor, bottomTitleColor, arrowsColor } = { ...props };
+    const { title, caption, slides, montlyLabel, annualLabel, annualTag, annualTagTextColor, arrows, bottomCaption, bottomTitle, bottomCreateStoreCta, titleColor, captionColor, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, bottomCaptionColor, bottomTitleColor, arrowsColor } = { ...props };
     return (<div id={id}>
 
             <div id={carouselId} class="min-h-min flex flex-col items-center lg:container md:max-w-[1500px] lg:mx-auto pt-7 lg:pt-[90px]" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)} >
@@ -362,9 +364,9 @@ function Plans(props: Props) {
                         <input type="checkbox" className={`toggle border-primary-content bg-primary-content [--tglbg:purple] hover:bg-primary-content`} style={`--tglbg: ${labelColor}`} defaultChecked hx-on:click={useScript(onChange, id, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor)}/>
                         {annualLabel && <button className="relative flex text-lg text-primary font-semibold leading-tight disabled:text-neutral-content group" style={{color: labelColor}}>
                             {annualLabel}
-                            {annualTag && <p class="lg:absolute text-nowrap left-full top-0 text-base px-2 py-0.5 bg-info group-disabled:bg-base-200 ml-2.5 rounded-[3px] " style={{background: annualTagColor}}>{annualTag}</p>}
                         </button>}
                     </label>
+                    {annualTag && <p class="text-nowrap left-full top-0 text-base px-2 py-1.5 bg-info group-disabled:bg-base-200 rounded-[10px] anualTag" style={{background: annualTagColor, color: annualTagTextColor}}>{annualTag}</p>}
                 </div>
 
                 <AnimateOnShow animation="animate-pop-up" divClass="w-full" delay={400}>

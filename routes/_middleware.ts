@@ -7,7 +7,7 @@ export async function handler(request: Request, ctx: FreshContext) {
   if (
     incomingOrigin.includes(".deco.site") &&
     incomingOrigin.startsWith("http://") &&
-    isLocalhost
+    !incomingOrigin.includes("staging")
   ) {
     incomingOrigin = incomingOrigin.replace("http://", "https://");
   }

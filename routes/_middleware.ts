@@ -1,9 +1,7 @@
 import { FreshContext } from "$fresh/server.ts";
-import "jsr:@std/dotenv/load";
 
 export async function handler(request: Request, ctx: FreshContext) {
   let incomingOrigin = new URL(request.url).origin;
-  const isLocalhost = Deno.env.get("IS_LOCALHOST");
   if (
     incomingOrigin.includes(".deco.site") &&
     incomingOrigin.startsWith("http://") &&

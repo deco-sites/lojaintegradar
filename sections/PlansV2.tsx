@@ -8,12 +8,11 @@ import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
 const onClick = (rootId: string) => {
-    const parent = document.getElementById(rootId) as HTMLElement;
-    const fullBulletPoints = parent?.querySelector("#" + rootId + "fullBulletPoints") as HTMLElement;
-    const firstBulletPoints = parent?.querySelector("#" + rootId + "firstBulletPoints");
-    firstBulletPoints?.classList.add("hidden");
-    fullBulletPoints?.classList.remove("hidden");
-    fullBulletPoints.classList.add("flex");
+    const parent = (document.getElementById(rootId) as HTMLElement).parentElement?.parentElement;
+    const bellowContentDivs = parent?.querySelectorAll(".bellowContentDiv");
+    const seeMoreButtonDivs = parent?.querySelectorAll(".seeMoreButtonDiv");
+    bellowContentDivs?.forEach((div) => div.classList.remove("hidden"));
+    seeMoreButtonDivs?.forEach((div) => div.classList.add("hidden"));
 };
 
 const onChange = (rootId: string, labelColor?: string, disabledLabelColor?: string, annualTagColor?: string, annualTagDisabledColor?: string) => {
@@ -228,7 +227,6 @@ function SliderItem({ slide, id }: {
                 {topImage?.src && <Image width={topImage.width || 200} height={topImage.height || 226} src={topImage.src} alt={topImage.alt || "background top image"} class="object-contain object-right-top absolute top-0 right-0"/>}
                 <div class={`relative flex flex-col justify-between z-10 h-full w-full py-9 px-6`}>
                     <div>
-
                         <div class="h-9">
                             {tag?.text && <div class="inline-block rounded-[5px] overflow-hidden p-[1px]" style={{background: tag.borderColor}}>
                                 <div class="inline-block rounded-[5px]" style={{background: tag.backgroundColor}}>
@@ -241,8 +239,8 @@ function SliderItem({ slide, id }: {
                         </div>
                         <div class="text-white text-[80px] font-normal lg:font-medium leading-tight mt-2" dangerouslySetInnerHTML={{__html: title}} style={{fontFamily: titleFont}}/>
 
-                        <div class={`mt-7 ${bulletPoints?.items && bulletPoints?.items.length > 4 ? "hidden lg:flex" : "flex"} flex-col`}>
-                            {bulletPoints?.items?.map((item) => (<div class="flex gap-3.5 text-pri" style={{marginTop: item.marginTop || "20px"}}>
+                        <div class={`mt-7 flex flex-col`}>
+                            {bulletPoints?.items?.map((item) => (<div class="flex gap-3.5 text-primary" style={{marginTop: item.marginTop || "20px"}}>
                                 {(item.icon?.src || bulletPoints.bulletPointsIcon?.src) && <Image 
                                     width={item.icon?.width || bulletPoints.bulletPointsIcon?.width || 18} 
                                     height={item.icon?.height || bulletPoints.bulletPointsIcon?.height || 18} 
@@ -258,7 +256,7 @@ function SliderItem({ slide, id }: {
                         </div>
                     </div>
                     
-                    <div>
+                    <div class="hidden lg:block bellowContentDiv">
                         <div class="montlyValues mt-7 hidden">
                             <div class="leading-tight" dangerouslySetInnerHTML={{ __html: montlyFee || ""}}/>
                         </div>
@@ -318,8 +316,7 @@ function SliderItem({ slide, id }: {
                         </div>
                     </div>
 
-                    <div id={id + "firstBulletPoints"} class={` mt-7 flex lg:hidden flex-col gap-[30px]`}>
-                        teste
+                    <div class={` mt-7 flex lg:hidden flex-col gap-[30px] seeMoreButtonDiv`}>
                         <div class="flex justify-center">
                             <button class="text-neutral-content text-base font-medium leading-normal" hx-on:click={useScript(onClick, id)} style={{color: bulletPoints?.itemsTextColor}}>
                                 {seeMoreButtonText || "Ver mais"}

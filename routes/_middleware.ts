@@ -3,9 +3,9 @@ import { FreshContext } from "$fresh/server.ts";
 export async function handler(request: Request, ctx: FreshContext) {
   let incomingOrigin = new URL(request.url).origin;
   if (
-    incomingOrigin.includes(".deco.site") &&
-    incomingOrigin.startsWith("http://") &&
-    !incomingOrigin.includes("staging")
+    (incomingOrigin.includes(".deco.site") ||
+      incomingOrigin.includes(".decocdn.com")) &&
+    incomingOrigin.startsWith("http://")
   ) {
     incomingOrigin = incomingOrigin.replace("http://", "https://");
   }

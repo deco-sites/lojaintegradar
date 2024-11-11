@@ -4019,6 +4019,9 @@ details.collapse summary::-webkit-details-marker {
 .min-w-\[15px\] {
   min-width: 15px;
 }
+.min-w-\[210px\] {
+  min-width: 210px;
+}
 .min-w-\[239px\] {
   min-width: 239px;
 }
@@ -4597,9 +4600,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-\[84px\] {
   gap: 84px;
-}
-.gap-\[88px\] {
-  gap: 88px;
 }
 .gap-y-1 {
   row-gap: 0.25rem;
@@ -6854,6 +6854,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:gap-\[42px\] {
     gap: 42px;
+  }
+
+  .lg\:gap-\[88px\] {
+    gap: 88px;
   }
 
   .lg\:overflow-visible {

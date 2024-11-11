@@ -252,19 +252,20 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             </div>
 
         </div>
-        {bulletPoints?.show && <div class="backdrop-blur-3xl py-9 px-7" style={{background: bulletPoints?.backgroundColor}}>
+        {bulletPoints?.show && <div class="backdrop-blur-3xl py-9 px-7 mt-7 lg:mt-0" style={{background: bulletPoints?.backgroundColor}}>
             <div class="max-w-[1260px] mx-auto">
-                {bulletPoints?.title && <div class="leading-[130%] text-[32px] " dangerouslySetInnerHTML={{__html: bulletPoints.title}}/>}
-                <div class="flex flex-wrap lg:flex-nowrap gap-[88px] mt-7">
+                {bulletPoints?.title && <div class="leading-[130%] text-[32px]" dangerouslySetInnerHTML={{__html: bulletPoints.title}}/>}
+                <div class="flex overflow-auto lg:overflow-visible gap-7 lg:gap-[88px] mt-7 pb-4">
                     {bulletPoints?.items?.map((item) => (
-                        <div class="flex gap-3.5">
+                        <div class="flex gap-3.5 min-w-[210px] lg:min-w-0">
                             {bulletPoints?.bulletPointsIcon?.src && <Image 
                                 src={bulletPoints?.bulletPointsIcon?.src}
                                 alt={bulletPoints?.bulletPointsIcon.alt}
                                 width={bulletPoints?.bulletPointsIcon.width || 18}
                                 height={bulletPoints?.bulletPointsIcon.height || 18}
+                                class="self-start"
                             />}
-                            <p class="font-semibold text-lg leading-[120%]" style={{color: bulletPoints.textColor}}>{item}</p>
+                            <p class="font-normal lg:font-semibold text-sm lg:text-lg leading-[120%]" style={{color: bulletPoints.textColor}}>{item}</p>
                         </div>
                     ))}
                 </div>

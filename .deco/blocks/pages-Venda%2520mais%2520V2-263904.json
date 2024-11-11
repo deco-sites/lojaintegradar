@@ -167,7 +167,7 @@
             "ctaStyle": "link",
             "href": "#",
             "textColor": "#22454B",
-            "text": "<p style=\"text-align: center\">Descubra como a loja do Neymar faturou R$ 300 milhões em apenas 10 dias. <u>Acesse aqui</u></p>"
+            "text": "<p style=\"text-align: center\"><span>🚀</span>Descubra como a loja do Neymar faturou R$ 300 milhões em apenas 10 dias. <u>Acesse aqui</u></p>"
           }
         ],
         "font": "Instrument Serif"
@@ -198,28 +198,28 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "O futuro do e-commerce é inteligente",
-            "caption": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><font color=\"#5f6e82\"><span style=\"font-size: 18.6667px;\">Faça parte! Escolha a plataforma que investe em dados e automação e veja seu faturamento disparar﻿</span></font></span></p>",
-            "titleColor": "#371E55",
+            "title": "<div style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\" data-mce-style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\"><p style=\"text-align: left; font-family: 'Instrument Serif'; font-size: 60px; line-height: 110%; font-weight: 400;\" data-mce-style=\"text-align: left; font-family: 'Instrument Serif'; font-size: 60px; line-height: 110%; font-weight: 400;\">O que ninguém te contou&nbsp;</p><p style=\"text-align: left; font-family: 'Instrument Serif'; font-size: 60px; line-height: 110%; font-weight: 400;\" data-mce-style=\"text-align: left; font-family: 'Instrument Serif'; font-size: 60px; line-height: 110%; font-weight: 400;\">sobre a Black Friday</p></div>",
+            "caption": "<p style=\"line-height: 1.2; font-size: 20px;\" data-mce-style=\"line-height: 1.2; font-size: 20px;\"><span style=\"color: rgb(250, 250, 245);\" data-mce-style=\"color: rgb(250, 250, 245);\">assinado por Victor Popper, CEO da</span><br><span style=\"color: rgb(250, 250, 245);\" data-mce-style=\"color: rgb(250, 250, 245);\">Loja Integrada</span></p>",
+            "titleColor": "",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
             "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a5138fc3-9cef-49db-9369-6ed4f896b5ee/img-topo.png",
-              "alt": "top image"
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0907e9e6-48cd-4c84-8bb6-b5df4ca073fb/vitao-1.png",
+              "alt": "top image",
+              "width": 925,
+              "height": 530
             },
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c1a799c-a832-44c0-aa82-ff4cf75eb48d/main-hero-mobile-background-image.png",
-              "alt": "background image",
-              "width": 430,
-              "height": 341
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33795203-2aed-4054-a781-3f33d62ebaed/main-hero-background-(2).svg",
+              "alt": "background image"
             },
-            "inputLabelBackgroundColor": "#EAE0EE",
-            "inputLabelColor": "#371E55",
-            "hubspotFormButtonColor": "#371E55",
-            "hubspotFormButtonTextColor": "#ffffff",
+            "inputLabelBackgroundColor": "#44656A",
+            "inputLabelColor": "#FAFAF5",
+            "hubspotFormButtonColor": "#71DBD4",
+            "hubspotFormButtonTextColor": "#003037",
             "hubspotErrorMessageColor": "#F57E77",
             "use": "image",
-            "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️ ",
+            "inputLabel": " ⚡ ️Baixe agora e destaque-se na Black",
             "modal": {
               "title": "Obrigado por se inscrever para receber nossa oferta especial!",
               "titleColor": "#371E55",
@@ -251,15 +251,30 @@
                 }
               ]
             },
-            "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                                                                     <script>                                                                     hbspt.forms.create({                                                                         region: \"na1\",                                                                         portalId: \"7112881\",                                                                         formId: \"06d3df52-7c37-4749-aa27-5c7744917d89\"                                                                     });                                                                     </script>",
+            "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
             "hubspotForm": {
               "portalId": "7112881",
               "region": "na1",
               "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d"
             },
             "bulletPoints": {
-              "show": false
-            }
+              "show": true,
+              "title": "<div style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\" data-mce-style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\"><p>O que você vai receber no Guia</p></div>",
+              "items": [
+                "Como o consumidor decide na Black Friday ",
+                "Proposta de valor: produto vs. experiência do cliente",
+                "Estratégias que vão além de descontos",
+                "Dados e dicas práticas para suas campanhas"
+              ],
+              "textColor": "#ffffff",
+              "backgroundColor": "rgba(255, 255, 255, 0.09)",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                "alt": "check icon"
+              }
+            },
+            "htmlContent": "",
+            "captionAbove": "<p style=\"font-size: 20px; line-height: 120%;\" data-mce-style=\"font-size: 20px; line-height: 120%;\"><span style=\"color: rgb(250, 250, 245);\" data-mce-style=\"color: rgb(250, 250, 245);\">Guia gratuito com insights exclusivos</span><br><span style=\"color: rgb(250, 250, 245);\" data-mce-style=\"color: rgb(250, 250, 245);\">sobre o maior evento do e-commerce</span></p>"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

@@ -6,7 +6,7 @@ import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 import { useScript } from "@deco/deco/hooks";
-import TimeTabs, {Tab, Props as TimeTabsProps} from "../components/ui/TimeTabs.tsx";
+import TimeTabs, {Props as TimeTabsProps} from "../components/ui/TimeTabs.tsx";
 
 const refreshArrowsVisibility = () => {
     const currentTarget = event!.currentTarget as HTMLElement;
@@ -221,13 +221,13 @@ export default function PlanDetails2({ id, color1, color2, color3, color4, color
                     >
                         {valuesTag.text}
                     </div>}
-                    {annualValues?.title && <div class="max-w-[227px] ml-5 lg:ml-0">
+                    {annualValues?.title && <div class="max-w-[235px] ml-5 lg:ml-0">
                         <h3 class="text-2xl font-semibold flex flex-wrap items-center">
                             {annualValues.title}
                             {annualValues.tag && <span class="text-primary text-xs py-1 px-4 ml-1.5 bg-info rounded-[20px]" style={{ backgroundColor: color4 }}>{annualValues.tag}</span>}
                         </h3>
                         {annualValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: annualValues.text }}/>}
-                        {annualValues.saving && <p class="mt-3" style={{ color: color6 }}>{annualValues.saving}</p>}
+                        {annualValues.saving && <p class="mt-3 text-base font-medium" style={{ color: color6 }}>{annualValues.saving}</p>}
                     </div>}
                     {montlyValues?.title && <div>
                         <h3 class="text-2xl font-semibold">{montlyValues.title}</h3>

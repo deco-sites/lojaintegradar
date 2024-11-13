@@ -16,7 +16,9 @@ const onLoad = (rootId: string, interval: number) => {
 
         if (tabs) {
             const tab = tabs[index] as HTMLElement || undefined;
-            tab.focus({ preventScroll: true });
+            tabs.forEach((tab) => tab.removeAttribute("open"));
+            tabs[index].setAttribute("open", "");
+            //tab.focus({ preventScroll: true });
             const progressBar = tab.querySelector(".tabProgressBar") as HTMLElement || undefined;
             progressBar?.classList.add("animate-progress");
 

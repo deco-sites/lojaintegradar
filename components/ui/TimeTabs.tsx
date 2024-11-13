@@ -16,7 +16,7 @@ const onLoad = (rootId: string, interval: number) => {
 
         if (tabs) {
             const tab = tabs[index] as HTMLElement || undefined;
-            tab.focus();
+            tab.focus({ preventScroll: true });
             const progressBar = tab.querySelector(".tabProgressBar") as HTMLElement || undefined;
             progressBar?.classList.add("animate-progress");
 
@@ -26,9 +26,8 @@ const onLoad = (rootId: string, interval: number) => {
     changeToTab(currentTab);
 
     function nextTab() {
-        //if (tabs) tabs[currentTab].querySelector(".tabProgressBar")?.classList.remove("animate-progress")
-        const allProgressBar = parent?.querySelectorAll(".tabProgressBar");
-        if (allProgressBar) allProgressBar.forEach(bar => bar.classList.remove("animate-progress"));
+        if (tabs) tabs[currentTab].querySelector(".tabProgressBar")?.classList.remove("animate-progress");
+
         if (tabs) {
             if (currentTab == tabs.length - 1) currentTab = 0;
             else currentTab += 1;
@@ -39,8 +38,8 @@ const onLoad = (rootId: string, interval: number) => {
 
     tabs?.forEach((tab, index) => {
         tab.addEventListener("click", () => {
+            tabs[currentTab].querySelector(".tabProgressBar")?.classList.remove("animate-progress");
             currentTab = index;
-            tabs[index].classList.remove("animate-progress");
             clearInterval(intervalObj);
             intervalObj = setInterval(nextTab, (interval * 1000));
             changeToTab(index);

@@ -6,6 +6,8 @@ import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 import { useScript } from "@deco/deco/hooks";
+import TimeTabs, {Tab, Props as TimeTabsProps} from "../components/ui/TimeTabs.tsx";
+
 const refreshArrowsVisibility = () => {
     const currentTarget = event!.currentTarget as HTMLElement;
     refresh(0);
@@ -106,6 +108,7 @@ export interface Props {
     contentVideo?: VideoWidget;
     contentImage?: IImage;
     useContent?: 'video' | 'image';
+    tabs?: TimeTabsProps;
     planTag?: PlanTag;
     imageText?: HTMLWidget;
     title: RichText;
@@ -199,7 +202,7 @@ function Buttons({ buttonColor }: {
             </div>
         </div>);
 }
-export default function PlanDetails2({ id, color1, color2, color3, color4, color5, color6, title, titleFont, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta }: Props) {
+export default function PlanDetails2({ id, color1, color2, color3, color4, color5, color6, title, titleFont, tabs, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta }: Props) {
     const backgroundColor = backgroundImage?.src ? "transparent" : color1;
     const contentBackgroundColor = useContent ? "transparent" : color1;
     const carouselId = useId();
@@ -210,7 +213,8 @@ export default function PlanDetails2({ id, color1, color2, color3, color4, color
         </AnimateOnShow>
         <div class="max-w-[1244px] mx-auto flex flex-wrap lg:flex-nowrap justify-between gap-[18px]  py-[60px]">
             <div class="lg:w-[606px] max-w-[606px] w-full" style={{ color: color5 }}> 
-                <AnimateOnShow divClass="inline-flex flex-wrap mt-7 p-7 gap-5 rounded-[20px] relative" animation="animate-fade-up" delay={300} style={{background: valuesBackgroundColor}}>
+                <TimeTabs {...tabs}/>
+                <AnimateOnShow divClass="inline-flex flex-wrap mt-11 p-7 gap-5 rounded-[20px] relative" animation="animate-fade-up" delay={300} style={{background: valuesBackgroundColor}}>
                     {valuesTag?.text && <div 
                         class="absolute left-0 top-[-45px] h-16 p-3.5 -z-40 rounded-tr-xl"
                         style={{color: valuesTag.textColor, background: valuesTag.backgroundColor}}

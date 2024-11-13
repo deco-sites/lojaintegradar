@@ -77,6 +77,8 @@ export interface PlanTag {
 export interface BulletPoints {
     items?: string[];
     bulletPointsIcon?: IImage;
+    /** @format color-input */
+    textColor?: string;
 }
 export interface AnnualValues {
     title?: string;
@@ -90,8 +92,12 @@ export interface MontlyValues {
 }
 /** @title {{title}} */
 export interface Slide {
-    title: string;
+    title?: string;
+    /** @format color-input */
+    titleColor?: string;
+    text?: RichText;
     bulletPoints?: BulletPoints;
+    backgroundImage?: IImage;
 }
 
 export interface ValuesTag {
@@ -138,24 +144,30 @@ export interface Props {
     /** @format color-input */
     color6?: string;
 }
-function SliderItem({ slide, id, backgroundColor, textColor }: {
+function SliderItem({ slide, id }: {
     slide: Slide;
     id: string;
-    backgroundColor?: string;
-    textColor?: string;
 }) {
-    const { title, bulletPoints = { items: [] } } = slide;
+    const { title, titleColor, bulletPoints = { items: [] }, backgroundImage, text } = slide;
     return (<div id={id} class="relative w-full px-2.5 py-7 text-primary">
-            <div class="bg-primary-content text-primary min-h-[215px] rounded-3xl py-5 px-8 h-full shadow-tinyspread" style={{ backgroundColor, color: textColor }}>
-                <h3 class="text-xl font-semibold">{title}</h3>
-                <div class="mt-2.5 text-sm font-normal flex flex-col gap-2.5">
-                    {bulletPoints.items && bulletPoints.items.length > 0 && bulletPoints.items.map((item) => (<div class="flex gap-2 items-center">
-                            {bulletPoints.bulletPointsIcon?.src && <Image width={bulletPoints.bulletPointsIcon.width || 12} height={bulletPoints.bulletPointsIcon.height || 12} src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bulletpoint icon"}/>}
-                            {item}
-                        </div>))}
+        <div class={`relative text-primary min-h-[187px] rounded-3xl py-5 px-8 h-full overflow-hidden ${!backgroundImage?.src && 'bg-primary-content'}`} style={{boxShadow: '0px 3.49px 26.176px 0px rgba(0, 0, 0, 0.10)'}}>
+            {backgroundImage?.src && <Image 
+                src={backgroundImage.src}
+                alt={backgroundImage.alt || "slide background image"}
+                width={backgroundImage.width || 398}
+                height={backgroundImage.height || 187}
+                class="absolute top-0 left-0 w-full h-full -z-40 object-cover"
+            />}
+            {title && <h3 class="text-xl font-semibold mb-2.5" style={{color: titleColor}}>{title}</h3>}
+            {text && <div class="text-sm" dangerouslySetInnerHTML={{__html: text}}/>}
+            <div class="text-sm font-normal flex flex-col gap-2.5" style={{color: bulletPoints.textColor}}>
+                {bulletPoints.items && bulletPoints.items.length > 0 && bulletPoints.items.map((item) => (<div class="flex gap-2 items-center">
+                        {bulletPoints.bulletPointsIcon?.src && <Image width={bulletPoints.bulletPointsIcon.width || 12} height={bulletPoints.bulletPointsIcon.height || 12} src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bulletpoint icon"}/>}
+                        {item}
+                    </div>))}
                 </div>
-            </div>
-        </div>);
+        </div>
+    </div>);
 }
 function Dots({ slides, interval = 0 }: {
     slides: Slide[];
@@ -268,11 +280,11 @@ export default function PlanDetails2({ id, color1, color2, color3, color4, color
             <div id={carouselId} class="min-h-min flex flex-col w-full lg:w-full lg:-ml-2.5" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
                 <Slider class="carousel carousel-center w-full col-span-full row-span-full" rootId={carouselId} interval={0 && 0 * 1e3} infinite>
                     {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-[80%] lg:w-1/3">
-                        <SliderItem slide={slide} id={`${carouselId}::${index}`} backgroundColor={color2} textColor={color3}/>
+                        <SliderItem slide={slide} id={`${carouselId}::${index}`} />
                     </Slider.Item>))}
                 </Slider>
 
-                <div class="lg:ml-2.5 flex pr-[22px]">
+                <div class="lg:ml-2.5 flex justify-end pr-[22px]">
                     {/* {props.dots && <Dots slides={slides} interval={interval} />}{" "} */}
                     {showArrows && <Buttons buttonColor={color5}/>}
                 </div>

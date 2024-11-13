@@ -4936,10 +4936,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-erc,oklch(var(--erc)/var(--tw-bg-opacity)));
 }
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
 .bg-info {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-in,oklch(var(--in)/var(--tw-bg-opacity)));
@@ -4955,10 +4951,6 @@ details.collapse summary::-webkit-details-marker {
 .bg-primary-content {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-pc,oklch(var(--pc)/var(--tw-bg-opacity)));
-}
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 .bg-secondary {
   --tw-bg-opacity: 1;

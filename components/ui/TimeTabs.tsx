@@ -63,9 +63,13 @@ export interface Tab {
 export interface Props {
     tabs?: Tab[];
     interval?: number;
+    /** @format color-input */
+    progressBarColor?: string;
+    /** @format color-input */
+    progressBarBackgroundColor?: string;
 }
 
-export default function TimeTabs({ tabs, interval = 5 }: Props) {
+export default function TimeTabs({ tabs, interval = 5, progressBarColor, progressBarBackgroundColor }: Props) {
     const id = useId();
     return <div id={id} class="mb-14">
         {tabs?.map((tab, index) => (<div
@@ -85,8 +89,8 @@ export default function TimeTabs({ tabs, interval = 5 }: Props) {
             </div>
             <div className="collapse-content px-0">
                 <div class="text-base" dangerouslySetInnerHTML={{ __html: tab.contentText || "" }} />
-                <div class="bg-gray-500 mt-6">
-                    <div class="h-[1px]  bg-red-600 tabProgressBar" style={{ animationDuration: interval + 's' }} />
+                <div class="bg-secondary mt-6" style={{ background: progressBarBackgroundColor }}>
+                    <div class="h-[1px] bg-primary tabProgressBar" style={{ animationDuration: interval + 's', background: progressBarColor }} />
                 </div>
             </div>
         </div>))}

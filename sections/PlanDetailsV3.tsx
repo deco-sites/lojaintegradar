@@ -45,6 +45,8 @@ export interface CTA {
     href: string;
     text?: RichText;
     /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
     backgroundColor?: string;
     /** @format color-input */
     borderColor?: string;
@@ -82,12 +84,22 @@ export interface BulletPoints {
 }
 export interface AnnualValues {
     title?: string;
+    /** @format color-input */
+    titleColor?:string;
     tag?: string;
+    /** @format color-input */
+    tagTextColor?: string;
+    /** @format color-input */
+    tagBackgroundColor?: string;
     text?: RichText;
     saving?: string;
+    /** @format color-input */
+    savingColor?: string;
 }
 export interface MontlyValues {
     title?: string;
+    /** @format color-input */
+    titleColor?:string;
     text?: RichText;
 }
 /** @title {{title}} */
@@ -121,6 +133,8 @@ export interface Props {
     titleFont?: string;
     slides?: Slide[];
     showArrows?: boolean;
+    /** @format color-input */
+    arrowsColor?: string;
     valuesTag?: ValuesTag;
     annualValues?: AnnualValues;
     montlyValues?: MontlyValues;
@@ -128,21 +142,6 @@ export interface Props {
     valuesBackgroundColor?: string;
     createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
-    /**
-     * @format color-input
-     * @description background color in case there is no image
-    */
-    color1?: string;
-    /** @format color-input */
-    color2?: string;
-    /** @format color-input */
-    color3?: string;
-    /** @format color-input */
-    color4?: string;
-    /** @format color-input */
-    color5?: string;
-    /** @format color-input */
-    color6?: string;
 }
 function SliderItem({ slide, id }: {
     slide: Slide;
@@ -214,45 +213,51 @@ function Buttons({ buttonColor }: {
             </div>
         </div>);
 }
-export default function PlanDetails2({ id, color1, color2, color3, color4, color5, color6, title, titleFont, tabs, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta }: Props) {
-    const backgroundColor = backgroundImage?.src ? "transparent" : color1;
-    const contentBackgroundColor = useContent ? "transparent" : color1;
+export default function PlanDetails2({ id, title, titleFont, tabs, arrowsColor, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta }: Props) {
+
     const carouselId = useId();
-    return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-20 text-primary" style={{ backgroundColor, color: color2 }}>
+    return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-20 text-primary" >
         {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 950} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top absolute h-full w-full top-0 left-0 -z-50"/>}
-        <AnimateOnShow divClass="text-2xl mt-4 lg:mt-0 lg:text-[56px] font-normal leading-[120%] px-6 lg:px-0 max-w-[1244px] mx-auto" animation="animate-fade-down">
+        <AnimateOnShow divClass="mt-4 lg:mt-0 text-[32px] lg:text-[56px] font-normal leading-[120%] px-6 lg:px-0 max-w-[1244px] mx-auto" animation="animate-fade-down">
             <div dangerouslySetInnerHTML={{__html: title}} style={{fontFamily: titleFont}}/>
         </AnimateOnShow>
-        <div class="max-w-[1244px] mx-auto flex flex-wrap lg:flex-nowrap justify-between gap-[18px]  py-[60px]">
-            <div class="lg:w-[606px] max-w-[606px] w-full" style={{ color: color5 }}> 
-                <TimeTabs {...tabs}/>
-                <AnimateOnShow divClass="inline-flex flex-wrap mt-11 p-7 gap-5 rounded-[20px] relative" animation="animate-fade-up" delay={300} style={{background: valuesBackgroundColor}}>
-                    {valuesTag?.text && <div 
-                        class="absolute left-0 top-[-45px] h-16 p-3.5 -z-40 rounded-tr-xl"
-                        style={{color: valuesTag.textColor, background: valuesTag.backgroundColor}}
-                    >
-                        {valuesTag.text}
-                    </div>}
-                    {annualValues?.title && <div class="max-w-[235px] ml-5 lg:ml-0">
-                        <h3 class="text-2xl font-semibold flex flex-wrap items-center">
-                            {annualValues.title}
-                            {annualValues.tag && <span class="text-primary text-xs py-1 px-4 ml-1.5 bg-info rounded-[20px]" style={{ backgroundColor: color4 }}>{annualValues.tag}</span>}
-                        </h3>
-                        {annualValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: annualValues.text }}/>}
-                        {annualValues.saving && <p class="mt-3 text-base font-medium" style={{ color: color6 }}>{annualValues.saving}</p>}
-                    </div>}
-                    {montlyValues?.title && <div>
-                        <h3 class="text-2xl font-semibold">{montlyValues.title}</h3>
-                        {montlyValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: montlyValues.text }}/>}
-                    </div>}
-                </AnimateOnShow>
-                <AnimateOnShow divClass="mt-7 flex flex-wrap lg:flex-nowrap items-start lg:items-center gap-5 px-6 lg:px-0" animation="animate-fade-up" delay={400}>
+        <div class="max-w-[1244px] mx-auto flex flex-col-reverse lg:flex-row flex-wrap lg:flex-nowrap justify-between gap-[18px]  py-[60px]">
+            <div class="lg:w-[606px] max-w-[606px] w-full" > 
+                <div class="px-7 lg:px-0">
+                    <TimeTabs {...tabs}/>
+                    <AnimateOnShow divClass="inline-flex flex-wrap justify-center lg:justify-start mt-11 p-7 gap-5 lg:rounded-[20px] relative" animation="animate-fade-up" delay={300} style={{background: valuesBackgroundColor}}>
+                        {valuesTag?.text && <div 
+                            class="absolute left-0 top-[-45px] h-16 p-3.5 -z-40 rounded-tr-xl rounded-tl-xl lg:rounded-tl-none w-full lg:w-auto"
+                            style={{color: valuesTag.textColor, background: valuesTag.backgroundColor}}
+                        >
+                            {valuesTag.text}
+                        </div>}
+                        {annualValues?.title && <div class="w-[207px] lg:w-auto max-w-[235px]">
+                            <h3 class="text-2xl font-semibold flex flex-wrap items-center" style={{color: annualValues.titleColor}}>
+                                {annualValues.title}
+                                {annualValues.tag && <span
+                                    class="text-primary text-xs py-1 px-4 ml-1.5 bg-info rounded-[20px]"
+                                    style={{color: annualValues.tagTextColor, background: annualValues.tagBackgroundColor}}
+                                >
+                                    {annualValues.tag}
+                                </span>}
+                            </h3>
+                            {annualValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: annualValues.text }}/>}
+                            {annualValues.saving && <p class="mt-3 text-base font-medium" style={{color: annualValues.savingColor}}>{annualValues.saving}</p>}
+                        </div>}
+                        {montlyValues?.title && <div class="w-[207px] lg:w-auto max-w-[235px]">
+                            <h3 class="text-2xl font-semibold" style={{color: montlyValues.titleColor}}>{montlyValues.title}</h3>
+                            {montlyValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: montlyValues.text }}/>}
+                        </div>}
+                    </AnimateOnShow>
+                </div>
+                <AnimateOnShow divClass="mt-7 flex flex-wrap justify-center lg:justify-start lg:flex-nowrap items-start lg:items-center gap-5 px-6 lg:px-0" animation="animate-fade-up" delay={400}>
                     {createStoreCta?.text && <CreateStoreCta period="anual" text={createStoreCta.text} planId={createStoreCta.planId} showIcon={createStoreCta.showIcon} underlineText={createStoreCta.underlineText} ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`} style={createStoreCta.ctaStyle == "button" ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor } : { color: createStoreCta.textColor }}/>}
                     {cta.map((button) => {
                         if (button.href == '/talkToSpecialist')
-                            return <TalkToSpecialistCta showIcon={button.showIcon} text={button.text} ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`} style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, borderColor: button.borderColor } : {}}/>;
-                        return <a href={button?.href ?? "#"} target={button?.href.includes("http") ? "_blank" : ""} class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`} style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, borderColor: button.borderColor } : { }}>
-                                        <div dangerouslySetInnerHTML={{__html: button.text || ""}}/>
+                            return <TalkToSpecialistCta showIcon={button.showIcon} text={button.text} ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`} style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, borderColor: button.borderColor, color: button.textColor } : {color: button.textColor}}/>;
+                        return <a href={button?.href ?? "#"} target={button?.href.includes("http") ? "_blank" : ""} class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`} style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, borderColor: button.borderColor, color: button.textColor  } : {color: button.textColor  }}>
+                                        <div style={{color: button.textColor}} dangerouslySetInnerHTML={{__html: button.text || ""}}/>
                                         {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z"/>
                                         </svg>}
@@ -261,18 +266,18 @@ export default function PlanDetails2({ id, color1, color2, color3, color4, color
                 </AnimateOnShow>
             </div>
             <AnimateOnShow animation="animate-fade-left" divClass="w-auto px-6 lg:px-0">
-                <div class="w-full lg:min-w-[606px] lg:w-[606px] h-[62vw] lg:h-[687px] overflow-hidden rounded-[30px] lg:rounded-[40px] px-5 lg:px-11 py-6 lg:pt-7 lg:pb-10 flex flex-col justify-between relative" style={{ backgroundColor: contentBackgroundColor }}>
+                <div class="w-full lg:min-w-[606px] lg:w-[606px] h-[62vw] lg:h-[687px] overflow-hidden rounded-[30px] lg:rounded-[40px] px-5 lg:px-11 py-6 lg:pt-7 lg:pb-10 flex flex-col justify-between relative">
                     {useContent == "video" && contentVideo && <video width="532" height="747" autoPlay playsInline muted loading="lazy" loop class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10">
                         <source src={contentVideo} type="video/mp4"/>
                     </video>}
                     {useContent == "image" && contentImage?.src && <Image width={contentImage.width || 532} height={contentImage.height || 747} src={contentImage.src} alt={contentImage.alt || "content background image"} class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10"/>}
                     <div>
-                        {planTag?.text && <div class="inline-flex gap-2 px-3 lg:px-4 py-1 lg:py-1.5 rounded-[20px] items-center bg-primary-content text-primary text-xs lg:text-sm font-semibold" style={{ backgroundColor: color2, color: color3 }}>
+                        {planTag?.text && <div class="inline-flex gap-2 px-3 lg:px-4 py-1 lg:py-1.5 rounded-[20px] items-center bg-primary-content text-primary text-xs lg:text-sm font-semibold" >
                             {planTag?.icon?.src && <Image width={planTag.icon.width || 18} height={planTag.icon.height || 18} src={planTag.icon.src} alt={planTag.icon.alt || "plan tag icon"} class="h-[18px] w-[18px] object-contain inline-block"/>}
                             {planTag?.text && <p class="inline-block">{planTag.text}</p>}
                         </div>}
                     </div>
-                    <div class="text-primary text-2xl lg:text-[32px] leading-[120%] font-extralight" style={{ color: color2 }} dangerouslySetInnerHTML={{ __html: imageText || "" }}/>
+                    <div class="text-primary text-2xl lg:text-[32px] leading-[120%] font-extralight" dangerouslySetInnerHTML={{ __html: imageText || "" }}/>
                 </div>
             </AnimateOnShow>
         </div>
@@ -286,7 +291,7 @@ export default function PlanDetails2({ id, color1, color2, color3, color4, color
 
                 <div class="lg:ml-2.5 flex justify-end pr-[22px]">
                     {/* {props.dots && <Dots slides={slides} interval={interval} />}{" "} */}
-                    {showArrows && <Buttons buttonColor={color5}/>}
+                    {showArrows && <Buttons buttonColor={arrowsColor}/>}
                 </div>
             </div>
         </AnimateOnShow>

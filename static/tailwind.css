@@ -3926,6 +3926,9 @@ details.collapse summary::-webkit-details-marker {
 .w-\[200px\] {
   width: 200px;
 }
+.w-\[207px\] {
+  width: 207px;
+}
 .w-\[239px\] {
   width: 239px;
 }
@@ -5444,6 +5447,9 @@ details.collapse summary::-webkit-details-marker {
 .pt-4 {
   padding-top: 1rem;
 }
+.pt-5 {
+  padding-top: 1.25rem;
+}
 .pt-7 {
   padding-top: 1.75rem;
 }
@@ -6911,12 +6917,20 @@ details.collapse summary::-webkit-details-marker {
     overflow: visible;
   }
 
+  .lg\:rounded-\[20px\] {
+    border-radius: 20px;
+  }
+
   .lg\:rounded-\[30px\] {
     border-radius: 30px;
   }
 
   .lg\:rounded-\[40px\] {
     border-radius: 40px;
+  }
+
+  .lg\:rounded-tl-none {
+    border-top-left-radius: 0px;
   }
 
   .lg\:p-0 {

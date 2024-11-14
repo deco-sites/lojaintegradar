@@ -96,7 +96,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                     {captionAbove && <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: captionAbove }}/>}
                     <div class="text-primary text-2xl md:text-[56px] font-semibold md:font-bold leading-[120%] " style={{ color: titleColor }} dangerouslySetInnerHTML={{ __html: title }}/>
                     <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: caption }}/>
-                    <label class="md:pt-10 lg:w-[600px]">
+                    <label class="pt-5 md:pt-10 lg:w-[600px]">
                         {inputLabel && <p class="bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 px-5 text-base text-primary inline-block" style={{ color: inputLabelColor, backgroundColor: inputLabelBackgroundColor }}>{inputLabel}</p>}
                         <div class="main-hero-form" dangerouslySetInnerHTML={{
                 __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>

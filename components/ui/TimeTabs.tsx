@@ -16,6 +16,7 @@ const onLoad = (rootId: string, interval: number) => {
 
         if (tabs) {
             const tab = tabs[index] as HTMLElement || undefined;
+            tab.classList.remove("opacity-60");
             tabs.forEach((tab) => tab.removeAttribute("open"));
             tabs[index].setAttribute("open", "");
             //tab.focus({ preventScroll: true });
@@ -28,7 +29,10 @@ const onLoad = (rootId: string, interval: number) => {
     changeToTab(currentTab);
 
     function nextTab() {
-        if (tabs) tabs[currentTab].querySelector(".tabProgressBar")?.classList.remove("animate-progress");
+        if (tabs) {
+            tabs[currentTab].querySelector(".tabProgressBar")?.classList.remove("animate-progress");
+            tabs[currentTab].classList.add("opacity-60");
+        }
 
         if (tabs) {
             if (currentTab == tabs.length - 1) currentTab = 0;
@@ -41,6 +45,7 @@ const onLoad = (rootId: string, interval: number) => {
     tabs?.forEach((tab, index) => {
         tab.addEventListener("click", () => {
             tabs[currentTab].querySelector(".tabProgressBar")?.classList.remove("animate-progress");
+            tabs[currentTab].classList.add("opacity-60");
             currentTab = index;
             clearInterval(intervalObj);
             intervalObj = setInterval(nextTab, (interval * 1000));
@@ -75,7 +80,7 @@ export default function TimeTabs({ tabs, interval = 5, progressBarColor, progres
     const id = useId();
     return <div id={id} class="mb-14">
         {tabs?.map((tab) => (<div
-            className=" text-primary-content open collapse focus:outline-none rounded-none"
+            className=" text-primary-content open collapse focus:outline-none rounded-none opacity-60"
         >
             <div className="collapse-title px-0 flex gap-4" id="collapseElement" >
                 {tab.icon?.src && <Image

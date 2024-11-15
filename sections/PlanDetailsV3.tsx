@@ -40,6 +40,19 @@ const refreshArrowsVisibility = () => {
         }, 200);
     }
 };
+
+export interface Tag {
+    text?: string;
+    fontFamily?: string;
+    icon?: IImage;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+}
+
 /** @title {{text}} {{underlineText}} */
 export interface CTA {
     href: string;
@@ -92,6 +105,7 @@ export interface AnnualValues {
     /** @format color-input */
     tagBackgroundColor?: string;
     text?: RichText;
+    promoTag?: Tag;
     saving?: string;
     /** @format color-input */
     savingColor?: string;
@@ -245,6 +259,14 @@ export default function PlanDetails2({ id, title, titleFont, imageTextFont, tabs
                                 </span>}
                             </h3>
                             {annualValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: annualValues.text }}/>}
+                            {annualValues.promoTag?.text && <div class="inline-block rounded-[5px] overflow-hidden p-[1px] mt-3.5" style={{background: annualValues.promoTag.borderColor}}>
+                                <div class="inline-block rounded-[5px]" style={{background: annualValues.promoTag.backgroundColor}}>
+                                    <p class={`flex gap-2.5 items-center h-full py-[7px] text-sm px-4 bg-primary-content text-primary-content font-semibold `} style={{background: annualValues.promoTag.textColor, backgroundClip: "text", color: annualValues.promoTag.textColor && 'transparent', fontFamily: annualValues.promoTag.fontFamily}}>
+                                        {annualValues.promoTag?.icon?.src && <Image width={annualValues.promoTag.icon.width || 20} height={annualValues.promoTag.icon.height || 20} src={annualValues.promoTag.icon.src} alt={annualValues.promoTag.icon.alt || "annualValues.promoTag icon"} class="h-5 w-5 object-contain"/>}
+                                        {annualValues.promoTag.text}
+                                    </p>
+                                </div>
+                            </div>} 
                             {annualValues.saving && <p class="mt-3 text-base font-medium" style={{color: annualValues.savingColor}}>{annualValues.saving}</p>}
                         </div>}
                         {montlyValues?.title && <div class="w-[207px] lg:w-auto max-w-[235px]">

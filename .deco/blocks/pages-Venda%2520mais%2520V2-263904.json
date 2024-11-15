@@ -419,7 +419,7 @@
           "value": {
             "__resolveType": "site/sections/Logos.tsx",
             "titleColor": "#371E55",
-            "title": "Várias lojas já estão vendendo mais com Dados e Automação",
+            "title": "<p><span style=\"color: #003037\">Uma escolha estratégica para vender mais</span></p>",
             "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
             "logos": [
               {
@@ -461,7 +461,9 @@
                 "height": 72
               }
             ],
-            "captionColor": "#371E55"
+            "captionColor": "#5F6E82",
+            "titleFont": "Instrument serif",
+            "paddingTop": "120px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

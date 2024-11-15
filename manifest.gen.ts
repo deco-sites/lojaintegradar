@@ -39,14 +39,15 @@ import * as $$$$$$30 from "./sections/PlansV2.tsx";
 import * as $$$$$$31 from "./sections/Prices.tsx";
 import * as $$$$$$32 from "./sections/Quote.tsx";
 import * as $$$$$$33 from "./sections/ScrollOnLoadScript.tsx";
-import * as $$$$$$34 from "./sections/SimpleHero.tsx";
-import * as $$$$$$35 from "./sections/TalkToAnExpert.tsx";
-import * as $$$$$$36 from "./sections/TalkToSpecialistModal.tsx";
-import * as $$$$$$37 from "./sections/TcoCalculator.tsx";
-import * as $$$$$$38 from "./sections/TcoCalculatorV2.tsx";
-import * as $$$$$$39 from "./sections/Testimonials.tsx";
-import * as $$$$$$40 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$41 from "./sections/TimeLine.tsx";
+import * as $$$$$$34 from "./sections/SectionsInTabs.tsx";
+import * as $$$$$$35 from "./sections/SimpleHero.tsx";
+import * as $$$$$$36 from "./sections/TalkToAnExpert.tsx";
+import * as $$$$$$37 from "./sections/TalkToSpecialistModal.tsx";
+import * as $$$$$$38 from "./sections/TcoCalculator.tsx";
+import * as $$$$$$39 from "./sections/TcoCalculatorV2.tsx";
+import * as $$$$$$40 from "./sections/Testimonials.tsx";
+import * as $$$$$$41 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$42 from "./sections/TimeLine.tsx";
 
 const manifest = {
   "sections": {
@@ -84,14 +85,15 @@ const manifest = {
     "site/sections/Prices.tsx": $$$$$$31,
     "site/sections/Quote.tsx": $$$$$$32,
     "site/sections/ScrollOnLoadScript.tsx": $$$$$$33,
-    "site/sections/SimpleHero.tsx": $$$$$$34,
-    "site/sections/TalkToAnExpert.tsx": $$$$$$35,
-    "site/sections/TalkToSpecialistModal.tsx": $$$$$$36,
-    "site/sections/TcoCalculator.tsx": $$$$$$37,
-    "site/sections/TcoCalculatorV2.tsx": $$$$$$38,
-    "site/sections/Testimonials.tsx": $$$$$$39,
-    "site/sections/Theme/Theme.tsx": $$$$$$40,
-    "site/sections/TimeLine.tsx": $$$$$$41,
+    "site/sections/SectionsInTabs.tsx": $$$$$$34,
+    "site/sections/SimpleHero.tsx": $$$$$$35,
+    "site/sections/TalkToAnExpert.tsx": $$$$$$36,
+    "site/sections/TalkToSpecialistModal.tsx": $$$$$$37,
+    "site/sections/TcoCalculator.tsx": $$$$$$38,
+    "site/sections/TcoCalculatorV2.tsx": $$$$$$39,
+    "site/sections/Testimonials.tsx": $$$$$$40,
+    "site/sections/Theme/Theme.tsx": $$$$$$41,
+    "site/sections/TimeLine.tsx": $$$$$$42,
   },
   "actions": {
     "site/actions/sendTcoUserData.ts": $$$$$$$$$0,

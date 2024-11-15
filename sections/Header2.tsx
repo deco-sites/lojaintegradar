@@ -166,7 +166,7 @@ export default function Header2({ logo = {
     {campaignTimer?.show && <div class="h-[76px]" />}
     <div class="fixed top-0 left-0 w-full z-50 justify-center ">
       
-      {headerMessage?.show && <div class="min-h-16 w-full bg-primary text-primary-content px-11 py-2 flex items-center justify-center gap-1" style={{background: headerMessage?.backgroundColor, color: headerMessage?.textColor, fontFamily: headerMessage.font}}>
+      {headerMessage?.show && <div class="h-16 w-full bg-primary text-primary-content px-1 lg:px-11 py-2 flex items-center justify-center gap-1" style={{background: headerMessage?.backgroundColor, color: headerMessage?.textColor, fontFamily: headerMessage.font}}>
         <p class="text-xs lg:text-2xl text-center font-semibold leading-[120%] flex items-center justify-center">
           <div class="text-lg lg:text-2xl" dangerouslySetInnerHTML={{__html: headerMessage.text || ""}}/>
           {headerMessage.cta?.map((button) => (<span><a

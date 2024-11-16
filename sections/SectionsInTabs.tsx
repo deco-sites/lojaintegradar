@@ -36,7 +36,7 @@ export interface SectionTab {
     /** @format color-input */
     titleDisabledBackgroundColor?: string;
     titleFont?: string;
-    section: Section;
+    section?: Section;
 }
 
 export interface Props {
@@ -65,7 +65,9 @@ export default function SectionInTabs({ id, sectionTabs = [] }: Props) {
             </ul>
             <div>
                 {sectionTabs.map((sectionTab, index) => (
-                    <div class={`${index && 'hidden'} sectionContainer`}><sectionTab.section.Component  {...sectionTab.section.props} /></div>
+                    <div class={`${index && 'hidden'} sectionContainer`}>
+                        {sectionTab.section && <sectionTab.section.Component  {...sectionTab.section.props} />}
+                    </div>
                 ))}
             </div>
         </div>

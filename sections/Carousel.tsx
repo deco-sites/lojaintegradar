@@ -44,7 +44,7 @@ const refreshArrowsVisibility = () => {
 };
 
 export interface CarouselIcon {
-    src: ImageWidget;
+    src?: ImageWidget;
     alt?: string;
     placement?: 'Top right' | 'Top left' | 'Bottom left' | 'Bottom right';
     width?: number;
@@ -137,7 +137,7 @@ function SliderItem({ slide, id }: {
             {icon?.src && <Image src={icon.src} alt={icon.alt || "carousel item background image"} width={icon.width || 32} height={icon.width || 32} class={` object-contain absolute h-8 w-8 ${iconPosition[icon.placement || 'Top right']}`} />}
             <div>
                 {title && <h2 class="text-lg md:text-2xl min-h-16 pr-12 md:mb-5">{title}</h2>}
-                <div class="text-base md:text-lg !leading-[100%]" dangerouslySetInnerHTML={{ __html: caption }} />
+                <div class="text-xs md:text-sm !leading-[100%]" dangerouslySetInnerHTML={{ __html: caption }} />
             </div>
             <div>
                 {bulletPoints?.bulletPointsTitle && <p class="text-sm">{bulletPoints.bulletPointsTitle}</p>}

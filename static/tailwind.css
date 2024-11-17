@@ -3448,6 +3448,9 @@ details.collapse summary::-webkit-details-marker {
 .mb-6 {
   margin-bottom: 1.5rem;
 }
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
 .mb-\[157px\] {
   margin-bottom: 157px;
 }
@@ -3932,6 +3935,9 @@ details.collapse summary::-webkit-details-marker {
 .w-\[239px\] {
   width: 239px;
 }
+.w-\[251px\] {
+  width: 251px;
+}
 .w-\[316px\] {
   width: 316px;
 }
@@ -4037,6 +4043,9 @@ details.collapse summary::-webkit-details-marker {
 .min-w-\[239px\] {
   min-width: 239px;
 }
+.min-w-\[251px\] {
+  min-width: 251px;
+}
 .min-w-\[280px\] {
   min-width: 280px;
 }
@@ -4102,6 +4111,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[140px\] {
   max-width: 140px;
+}
+.max-w-\[1440px\] {
+  max-width: 1440px;
 }
 .max-w-\[1480px\] {
   max-width: 1480px;
@@ -6260,12 +6272,12 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 5rem;
   }
 
-  .md\:mt-11 {
-    margin-top: 2.75rem;
+  .md\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
-  .md\:mt-5 {
-    margin-top: 1.25rem;
+  .md\:mt-11 {
+    margin-top: 2.75rem;
   }
 
   .md\:mt-\[-26px\] {
@@ -6973,6 +6985,16 @@ details.collapse summary::-webkit-details-marker {
     padding-right: 7rem;
   }
 
+  .lg\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .lg\:px-3\.5 {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -7100,6 +7122,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .lg\:pt-28 {
+    padding-top: 7rem;
   }
 
   .lg\:pt-40 {

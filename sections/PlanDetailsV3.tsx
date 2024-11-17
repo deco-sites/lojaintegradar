@@ -158,6 +158,8 @@ export interface Props {
     arrowsColor?: string;
     createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
+    marginTop?: string;
+    marginBottom?: string;
 }
 function SliderItem({ slide, id }: {
     slide: Slide;
@@ -229,10 +231,10 @@ function Buttons({ buttonColor }: {
             </div>
         </div>);
 }
-export default function PlanDetails2({ id, title, titleFont, imageTextFont, tabs, arrowsColor, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta }: Props) {
+export default function PlanDetails2({ id, title, titleFont, marginBottom, marginTop, imageTextFont, tabs, arrowsColor, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta }: Props) {
 
     const carouselId = useId();
-    return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-20 text-primary" >
+    return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-20 text-primary" style={{marginBottom, marginTop}}>
         {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 950} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top absolute h-full w-full top-0 left-0 -z-50"/>}
         <AnimateOnShow divClass="mt-4 lg:mt-0 text-[32px] lg:text-[56px] font-normal leading-[120%] px-6 lg:px-0 max-w-[1244px] mx-auto" animation="animate-fade-down">
             {title && <div dangerouslySetInnerHTML={{__html: title}} style={{fontFamily: titleFont}}/>}

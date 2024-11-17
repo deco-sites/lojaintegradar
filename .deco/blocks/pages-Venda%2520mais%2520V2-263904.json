@@ -479,6 +479,7 @@
         {
           "value": {
             "__resolveType": "site/sections/Testimonials.tsx",
+            "titleColor": "#371E55",
             "slides": [
               {
                 "content": {
@@ -509,7 +510,6 @@
             ],
             "arrows": true,
             "dots": false,
-            "titleColor": "#371E55",
             "arrowsColor": "#003037"
           },
           "rule": {
@@ -520,6 +520,7 @@
         {
           "value": {
             "__resolveType": "site/sections/Testimonials.tsx",
+            "titleColor": "#371E55",
             "slides": [
               {
                 "content": {
@@ -550,7 +551,6 @@
             ],
             "arrows": false,
             "dots": false,
-            "titleColor": "#371E55",
             "arrowsColor": ""
           },
           "rule": {
@@ -616,8 +616,8 @@
           "caption": "<p><span style=\"font-size: 11pt\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
           "backgroundImage": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8666f1f1-0c96-4481-84cf-52388acd6815/c-image-3.png",
-            "height": 456,
-            "width": 484
+            "height": 484,
+            "width": 456
           },
           "useBackground": "image"
         },
@@ -669,198 +669,532 @@
       "titleColor": "",
       "captionColor": "#371E55",
       "arrowsColor": "#003037",
-      "titleFont": "Instrument serif"
+      "titleFont": "Instrument serif",
+      "paddingBottom": "50px"
+    },
+    {
+      "__resolveType": "site/sections/HeroWithTime.tsx",
+      "title": {
+        "desktop": "<p></p>",
+        "mobile": "<p></p>"
+      },
+      "subTitle": {
+        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24pt\">Recursos avançados </span><em><span style=\"color: rgb(113, 219, 212); font-size: 24pt\">de ponta a ponta</span></em></p>",
+        "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 45pt\">Recursos avançados </span><em><span style=\"color: rgb(113, 219, 212); font-size: 45pt\">de ponta a ponta</span></em></p>"
+      },
+      "tabs": [
+        {
+          "icon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg",
+            "alt": "Tab icon"
+          },
+          "title": {
+            "0": "R",
+            "1": "e",
+            "2": "c",
+            "3": "u",
+            "4": "p",
+            "5": "e",
+            "6": "r",
+            "7": "e",
+            "8": " ",
+            "9": "v",
+            "10": "e",
+            "11": "n",
+            "12": "d",
+            "13": "a",
+            "14": "s",
+            "15": " ",
+            "16": "p",
+            "17": "e",
+            "18": "r",
+            "19": "d",
+            "20": "i",
+            "21": "d",
+            "22": "a",
+            "23": "s",
+            "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Carrinho e Produto Abandonado</span></p>",
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Carrinho e Produto Abandonado</span></p>"
+          },
+          "textContent": {
+            "0": "c",
+            "1": "o",
+            "2": "m",
+            "3": " ",
+            "4": "g",
+            "5": "a",
+            "6": "t",
+            "7": "i",
+            "8": "l",
+            "9": "h",
+            "10": "o",
+            "11": "s",
+            "12": " ",
+            "13": "d",
+            "14": "e",
+            "15": " ",
+            "16": "m",
+            "17": "a",
+            "18": "r",
+            "19": "k",
+            "20": "e",
+            "21": "t",
+            "22": "i",
+            "23": "n",
+            "24": "g",
+            "25": " ",
+            "26": "q",
+            "27": "u",
+            "28": "e",
+            "29": " ",
+            "30": "p",
+            "31": "o",
+            "32": "d",
+            "33": "e",
+            "34": "m",
+            "35": " ",
+            "36": "s",
+            "37": "e",
+            "38": "r",
+            "39": " ",
+            "40": "c",
+            "41": "o",
+            "42": "n",
+            "43": "f",
+            "44": "i",
+            "45": "g",
+            "46": "u",
+            "47": "r",
+            "48": "a",
+            "49": "d",
+            "50": "o",
+            "51": "s",
+            "52": " ",
+            "53": "d",
+            "54": "i",
+            "55": "r",
+            "56": "e",
+            "57": "t",
+            "58": "o",
+            "59": " ",
+            "60": "d",
+            "61": "a",
+            "62": " ",
+            "63": "p",
+            "64": "l",
+            "65": "a",
+            "66": "t",
+            "67": "a",
+            "68": "f",
+            "69": "o",
+            "70": "r",
+            "71": "m",
+            "72": "a",
+            "73": " ",
+            "74": "d",
+            "75": "e",
+            "76": " ",
+            "77": "e",
+            "78": "c",
+            "79": "o",
+            "80": "m",
+            "81": "m",
+            "82": "e",
+            "83": "r",
+            "84": "c",
+            "85": "e",
+            "86": ":",
+            "87": " ",
+            "88": "c",
+            "89": "a",
+            "90": "r",
+            "91": "r",
+            "92": "i",
+            "93": "n",
+            "94": "h",
+            "95": "o",
+            "96": " ",
+            "97": "e",
+            "98": " ",
+            "99": "p",
+            "100": "r",
+            "101": "o",
+            "102": "d",
+            "103": "u",
+            "104": "t",
+            "105": "o",
+            "106": " ",
+            "107": "a",
+            "108": "b",
+            "109": "a",
+            "110": "n",
+            "111": "d",
+            "112": "o",
+            "113": "n",
+            "114": "a",
+            "115": "d",
+            "116": "o",
+            "117": "s",
+            "118": ",",
+            "119": " ",
+            "120": "c",
+            "121": "o",
+            "122": "m",
+            "123": "p",
+            "124": "r",
+            "125": "a",
+            "126": "s",
+            "127": " ",
+            "128": "c",
+            "129": "a",
+            "130": "n",
+            "131": "c",
+            "132": "e",
+            "133": "l",
+            "134": "a",
+            "135": "d",
+            "136": "a",
+            "137": "s",
+            "138": ",",
+            "139": " ",
+            "140": "r",
+            "141": "e",
+            "142": "c",
+            "143": "o",
+            "144": "m",
+            "145": "e",
+            "146": "n",
+            "147": "d",
+            "148": "a",
+            "149": "ç",
+            "150": "ã",
+            "151": "o",
+            "152": " ",
+            "153": "d",
+            "154": "e",
+            "155": " ",
+            "156": "p",
+            "157": "r",
+            "158": "o",
+            "159": "d",
+            "160": "u",
+            "161": "t",
+            "162": "o",
+            "163": ".",
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Ative gatilhos que ajudam a recuperar vendas que escaparam por pouco. Recupere clientes que deixaram produtos em seus carrinhos e também aqueles que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação.</span></p>",
+            "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Ative gatilhos que ajudam a recuperar vendas que escaparam por pouco. Recupere clientes que deixaram produtos em seus carrinhos e também aqueles que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação.</span></p>"
+          },
+          "tabImage": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fff82cb8-5a3e-4a44-bb99-b4f029c4a6f5/img--recupere-vendas.png",
+            "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fff82cb8-5a3e-4a44-bb99-b4f029c4a6f5/img--recupere-vendas.png",
+            "widthDesktop": 606,
+            "heightDesktop": 665
+          },
+          "videoOn": true,
+          "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+          "button": {},
+          "videoText": "Ver demo",
+          "tags": [
+            {
+              "text": "Carrinho e Produto Abandonado"
+            },
+            {
+              "text": "Compre Junto",
+              "textColor": "",
+              "backgroundColor": "",
+              "borderColor": ""
+            },
+            {
+              "text": "Desconto progressivo"
+            },
+            {
+              "text": "Segmentação de preços por CEP"
+            },
+            {
+              "text": "Ferramenta de Avalição"
+            },
+            {
+              "text": "Busca otimizada"
+            },
+            {
+              "text": "E muito mais..."
+            }
+          ]
+        },
+        {
+          "textContent": {
+            "desktop": "<p><span style=\"color: #ffffff\">Ofereça produtos semelhantes ao que seus clientes estão buscando, enquanto eles navegam em sua loja.</span><br><span style=\"color: #ffffff\"><br>Ative as sugestões complementares em vitrines de recomendações e envie e-mails personalizados com dicas de produtos que combinam perfeitamente com cada escolha.</span></p>",
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Ofereça produtos semelhantes ao que seus clientes estão buscando, enquanto eles navegam em sua loja.</span><br><span style=\"color: rgb(255, 255, 255)\"><br>Ative as sugestões complementares em vitrines de recomendações e envie e-mails personalizados com dicas de produtos que combinam perfeitamente com cada escolha.</span></p>"
+          },
+          "icon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
+          },
+          "title": {
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Recomendação de produtos</span></p>",
+            "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Recomendação de produtos</span></p>"
+          },
+          "tabImage": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/11e55ae2-9a97-43f9-8684-ebe80e7c5c0d/img-recomendacao-produtos.png",
+            "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/11e55ae2-9a97-43f9-8684-ebe80e7c5c0d/img-recomendacao-produtos.png",
+            "widthDesktop": 606,
+            "heightDesktop": 665
+          },
+          "highlight": false,
+          "buttons": []
+        },
+        {
+          "textContent": {
+            "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme oportunidades perdidas em vendas concretizadas! Envie gatilhos automáticos por e-mail para reengajar clientes com pedidos sem pagamento.</span></p>",
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme oportunidades perdidas em vendas concretizadas! Envie gatilhos automáticos por e-mail para reengajar clientes com pedidos sem pagamento.</span></p>"
+          },
+          "icon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
+          },
+          "title": {
+            "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Reativando vendas canceladas</span></p>",
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reativando vendas canceladas</span></p>"
+          },
+          "tabImage": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c7920389-97a5-4086-add4-7e3cd2b72795/img-recuperacao-vendas-canceladas.png",
+            "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c7920389-97a5-4086-add4-7e3cd2b72795/img-recuperacao-vendas-canceladas.png",
+            "widthDesktop": 606,
+            "heightDesktop": 665
+          },
+          "highlight": false,
+          "buttons": []
+        },
+        {
+          "textContent": {
+            "desktop": "<p><span style=\"color: #ffffff\">Quanto mais seu cliente compra, maior pode ser o desconto.</span><span style=\"color: #ffffff\"><br><br>No módulo promocional, crie promoções com múltiplos produtos e defina valores de desconto progressivos, alinhados às suas estratégias de venda.</span></p>",
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Quanto mais seu cliente compra, maior pode ser o desconto.<br><br>No módulo promocional, crie promoções com múltiplos produtos e defina valores de desconto progressivos, alinhados às suas estratégias de venda.</span></p>"
+          },
+          "title": {
+            "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 21pt\">Desconto Progressivo</span></p>",
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Desconto progressivo</span></p>"
+          },
+          "icon": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
+          },
+          "tabImage": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/977d5dd9-f394-44f5-ab7b-c7bff1027c3c/imagem_2024-09-24_161433635.png",
+            "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/977d5dd9-f394-44f5-ab7b-c7bff1027c3c/imagem_2024-09-24_161433635.png",
+            "widthDesktop": 606,
+            "heightDesktop": 665
+          },
+          "highlight": false
+        }
+      ],
+      "background": {
+        "type": "gradient",
+        "gradient": {
+          "type": "linear",
+          "angle": 180,
+          "stops": [
+            {
+              "color": "#005F5F",
+              "position": 2.19
+            },
+            {
+              "color": "#003037",
+              "position": 56.08
+            }
+          ]
+        }
+      },
+      "finalButtons": [],
+      "bottomSection": {
+        "__resolveType": "site/sections/Carousel.tsx",
+        "slides": [
+          {
+            "textPlacement": "Top",
+            "icon": {
+              "placement": "Top right",
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5b6f34eb-d77f-4cf2-b32e-33b2b5290818/white-stonks-arrow-squared.png"
+            },
+            "useBackground": "image",
+            "bulletPoints": {
+              "items": []
+            },
+            "title": "Meios de pagamento seguros e atualizados",
+            "textColor": "#ffffff",
+            "caption": "<p><span>Garanta eficiência e comodidade nas transações, conquistando a confiança do seu cliente. Oferecemos meio de pagamento próprio, o Pagali, e integração com as soluções mais renomadas do mercado: PayPal, Cielo, Mercado Pago, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Pagar.me\"><span>Pagar.me</span></a><span>, PagBank, PagHiper e Appmax.</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7eecb542-aaca-441b-a28c-5ddf416db3de/c2-image-1.png",
+              "height": 484,
+              "width": 456
+            }
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {
+              "placement": "Top right",
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5b6f34eb-d77f-4cf2-b32e-33b2b5290818/white-stonks-arrow-squared.png"
+            },
+            "useBackground": "image",
+            "bulletPoints": {
+              "items": []
+            },
+            "title": "Envio facilitado e econômico",
+            "textColor": "#ffffff",
+            "caption": "<p><span>Reduza custos e agilize entregas com soluções de frete inteligentes. Além do Enviali, nossa solução proprietária, tenha acesso a Correios, Fretenet, Kangu, Melhor Envio e outras plataformas reconhecidas.</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8c0c3d28-b560-4395-bab6-95068cc24df4/c2-image-2.png",
+              "height": 484,
+              "width": 456
+            }
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {
+              "placement": "Top right"
+            },
+            "useBackground": "image",
+            "bulletPoints": {
+              "items": []
+            },
+            "caption": "<p><span>Conte com assistência e conteúdo de primeira para escalar seu negócio com confiança. Atendimento por chat, e-mail e Whatsapp, Central de Ajuda, Comunidade, Hub de Conteúdo, além de gerente dedicado no plano Elite.</span></p>",
+            "textColor": "#ffffff",
+            "title": "Suporte que acompanha seu crescimento",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/65f9b201-d32c-4b05-a131-c646080fef5b/c2-image-3.png",
+              "height": 486,
+              "width": 456
+            }
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {
+              "placement": "Top right",
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5b6f34eb-d77f-4cf2-b32e-33b2b5290818/white-stonks-arrow-squared.png"
+            },
+            "useBackground": "image",
+            "bulletPoints": {
+              "items": []
+            },
+            "caption": "<p><span>Garanta eficiência e comodidade nas transações, conquistando a confiança do seu cliente. Oferecemos meio de pagamento próprio, o Pagali, e integração com as soluções mais renomadas do mercado: PayPal, Cielo, Mercado Pago, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Pagar.me\"><span>Pagar.me</span></a><span>, PagBank, PagHiper e Appmax.</span></p>",
+            "textColor": "#ffffff",
+            "title": "Meios de pagamento seguros e atualizados",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7eecb542-aaca-441b-a28c-5ddf416db3de/c2-image-1.png",
+              "height": 484,
+              "width": 456
+            }
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {
+              "placement": "Top right",
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5b6f34eb-d77f-4cf2-b32e-33b2b5290818/white-stonks-arrow-squared.png"
+            },
+            "useBackground": "image",
+            "bulletPoints": {
+              "items": []
+            },
+            "title": "Envio facilitado e econômico",
+            "textColor": "#ffffff",
+            "caption": "<p><span>Reduza custos e agilize entregas com soluções de frete inteligentes. Além do Enviali, nossa solução proprietária, tenha acesso a Correios, Fretenet, Kangu, Melhor Envio e outras plataformas reconhecidas.</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8c0c3d28-b560-4395-bab6-95068cc24df4/c2-image-2.png",
+              "height": 484,
+              "width": 456
+            }
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {
+              "placement": "Top right"
+            },
+            "useBackground": "image",
+            "bulletPoints": {
+              "items": []
+            },
+            "title": "Suporte que acompanha seu crescimento",
+            "textColor": "#ffffff",
+            "caption": "<p><span>Conte com assistência e conteúdo de primeira para escalar seu negócio com confiança. Atendimento por chat, e-mail e Whatsapp, Central de Ajuda, Comunidade, Hub de Conteúdo, além de gerente dedicado no plano Elite.</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/65f9b201-d32c-4b05-a131-c646080fef5b/c2-image-3.png",
+              "height": 486,
+              "width": 456
+            }
+          }
+        ],
+        "cta": [
+          {
+            "ctaStyle": "button",
+            "href": "#",
+            "text": "Assinar plano",
+            "backgroundColor": "#ffffff",
+            "textColor": "#003037",
+            "borderColor": "#ffffff"
+          },
+          {
+            "ctaStyle": "link",
+            "href": "/talkToSpecialist",
+            "underlineText": " Falar com especialista",
+            "textColor": "#ffffff",
+            "showIcon": true
+          }
+        ],
+        "arrows": true,
+        "arrowsColor": "#FAFAF5"
+      }
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/DetailedCarousel.tsx",
-            "slides": [
+            "__resolveType": "site/sections/BigImageHeroV2.tsx",
+            "title": "<p style=\"text-align: center\"><span style=\"color: #003037\">Temas e personalização para</span><em><span style=\"color: #003037\"> </span><span style=\"color: #28c3c3\">elevar sua marca</span></em></p>",
+            "titleFont": "Instrument serif",
+            "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130)\">Deixe sua loja com a cara do seu negócio! Explore uma seleção de temas personalizáveis para criar uma experiência única e atrativa.&nbsp;Aproveite opções gratuitas ou contrate layouts avançados para destacar seus produtos e conquistar mais clientes.</span></p>",
+            "paddingTop": "42px",
+            "features": [
               {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/21c9821a-a34d-400a-8276-cf899c9e9936/detailed-carousel-1.png"
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
                 },
-                "title": "+10 Funcionalidades incrementais",
-                "bulletPoints": {
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  },
-                  "items": [
-                    "Compre Junto",
-                    "Desconto Progressivo",
-                    "Carrinho e Produto Abandonado",
-                    "Preços segmentados por CEP",
-                    "Ferramenta de Avaliação",
-                    "Mecanismo de busca otimizado",
-                    "Painel de Promoções",
-                    "Cupons personalizados",
-                    "Alerta de frete grátis",
-                    "Avise-me",
-                    "Aniversariantes do mês",
-                    "Brindes",
-                    "Newsletter",
-                    "E mais 80 aplicativos extras"
-                  ],
-                  "textColor": "#371E55",
-                  "bulletPointsTitle": "ste"
-                },
-                "time": 3,
-                "titleColor": "#371E55"
+                "title": "Recursos exclusivos",
+                "titleColor": "#003037",
+                "text": "Impulsione sua loja com funcionalidades únicas que otimizam a experiência do cliente",
+                "textColor": "#5F6E82"
               },
               {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/278f2a44-ab36-48b5-9168-198d3bdebf3c/detailed-carousel-2.png"
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
                 },
-                "title": "Atendimento e suporte",
-                "bulletPoints": {
-                  "items": [
-                    "Prioridade no atendimento (a partir do Expansão)",
-                    "Migração assistida (liberado Elite)",
-                    "Atendimento de excelência (chat, e-mail e WhatsApp)",
-                    "Gerente de performance exclusivo (no Plano Elite)",
-                    "Central de Ajuda",
-                    "Comunidade",
-                    "Blog e Hub de Conteúdo"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  },
-                  "textColor": "#371E55"
-                },
-                "titleColor": "#371E55"
+                "title": "Pague uma vez só",
+                "titleColor": "#003037",
+                "text": "Uma só contratação para aproveitar as ferramentas por tempo indeterminado",
+                "textColor": "#5F6E82"
               },
               {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e6b6e31f-738e-4ae2-8f6c-9b7268843ad7/detailed-carousel-3.png"
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
                 },
-                "title": "+10 Canais de venda",
-                "bulletPoints": {
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  },
-                  "items": [
-                    "Venda por redes sociais",
-                    "Link de carrinho para compartilhar em qualquer canal",
-                    "Google PMax nativa (com ROAS 8,5x – o melhor da América Latina)",
-                    "Sacolinha do Instagram integrada",
-                    "Venda no Tik Tok ",
-                    "Recursos de SEO ",
-                    "Hub de Canais para vender em marketplaces",
-                    "Venda por dropshipping",
-                    "Pedidos Manuais",
-                    "API Meta"
-                  ],
-                  "textColor": "#371E55"
-                },
-                "titleColor": "#371E55"
+                "title": "Suporte estendido",
+                "titleColor": "#003037",
+                "text": "Um ano de atendimento com nossos parceiros",
+                "textColor": "#5F6E82"
               },
               {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/83a600a2-6b3c-4e67-8d46-0b1e6d57206e/detailed-carousel-4.png"
+                "title": "Personalize do seu jeito",
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
                 },
-                "bulletPoints": {
-                  "items": [
-                    "Sua Loja Pronta, por Loja do E-commerce",
-                    "Catálogo otimizado em massa por IA, com Indexa.AI",
-                    "Curso de Tráfego Pago, por Ajuda Vitor",
-                    "Banners Personalizados, por Consultor Net",
-                    "Gestão de Tráfego, por Marketing e inteligência",
-                    "Cronômetro de Vitrine, por Samá Themes",
-                    "Pacote de Redes Sociais, por MT Soluções",
-                    "+20 serviços renomados"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  },
-                  "textColor": "#371E55"
-                },
-                "title": "+30 Serviços de parceiros recomendados ",
-                "titleColor": "#371E55"
-              },
-              {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/01fe0986-7544-4c98-9c68-25cbf887de56/detailed-carousel-5.png"
-                },
-                "bulletPoints": {
-                  "items": [
-                    "Pagali (melhores taxas e integração nativa)",
-                    "PayPal Plus",
-                    "PayPal",
-                    "Cielo",
-                    "Mercado Pago",
-                    "Pagar.me",
-                    "PagBank",
-                    "PagHiper",
-                    "AppMax"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  },
-                  "textColor": "#371E55"
-                },
-                "title": "+9 Formas de pagamento ",
-                "titleColor": "#371E55"
-              },
-              {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/68276b37-5999-4d47-b15e-a8e7f9ed7400/detailed-carousel-6.png"
-                },
-                "bulletPoints": {
-                  "items": [
-                    "Enviali (melhores taxas e integração nativa)",
-                    "Frenet",
-                    "Kangu ",
-                    "Manda Bem ",
-                    "Melhor Envio",
-                    "Frete Barato",
-                    "Correios SEDEX",
-                    "Correios PAC",
-                    "Motoboy",
-                    "Retirar pessoalmente"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/3d1654c8-73d2-48b1-9cd2-649a346d922c/green-check-icon.png"
-                  },
-                  "textColor": "#371E55"
-                },
-                "title": "+10 Formas de envio",
-                "titleColor": "#371E55"
+                "titleColor": "#003037",
+                "text": "Código aberto para edição livre, adaptável de acordo com o seu segmento",
+                "textColor": "#5F6E82"
               }
             ],
-            "arrows": true,
-            "title": "Um ecossistema de recursos inteligentes",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/46f543f0-e203-4ed6-b206-835381812669/detailed-carousel-background.jpg",
-              "alt": "carousel background"
+            "image": {
+              "width": 429,
+              "height": 310,
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/92d165a9-4182-4d44-bd21-43fddd8235d1/IMG-MOBILE.png"
             },
-            "dots": true,
-            "interval": 13,
-            "cta": [
-              {
-                "text": "Ver planos",
-                "href": "#plans",
-                "ctaStyle": "button",
-                "backgroundColor": "#371E55",
-                "textColor": "#ffffff",
-                "borderColor": "#371E55"
-              },
-              {
-                "ctaStyle": "link",
-                "showIcon": true,
-                "textColor": "#371E55",
-                "href": "/talkToSpecialist",
-                "backgroundColor": "Transparent",
-                "borderColor": "#371E55",
-                "underlineText": "Falar com Especialista "
-              }
-            ],
-            "links": [],
-            "progressBarBackgroundColor": "#b21515",
-            "titleColor": "#371E55",
-            "arrowsColor": "#371E55",
-            "dotsColor": "#371E55"
+            "use": "image",
+            "cta": [],
+            "paddingBottom": "20px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -869,193 +1203,54 @@
         },
         {
           "value": {
-            "__resolveType": "site/sections/DetailedCarousel.tsx",
-            "slides": [
+            "__resolveType": "site/sections/BigImageHeroV2.tsx",
+            "title": "<p style=\"text-align: center\"><span style=\"color: #003037\">Temas e personalização para</span><em><span style=\"color: #003037\"> </span><span style=\"color: #28c3c3\">elevar sua marca</span></em></p>",
+            "titleFont": "Instrument serif",
+            "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130)\">Deixe sua loja com a cara do seu negócio! Explore uma seleção de temas personalizáveis para criar uma experiência única e</span></p><p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130)\">atrativa.&nbsp;Aproveite opções gratuitas ou contrate layouts avançados para destacar seus produtos e conquistar mais clientes.</span></p>",
+            "paddingTop": "120px",
+            "features": [
               {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/21c9821a-a34d-400a-8276-cf899c9e9936/detailed-carousel-1.png"
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
                 },
-                "title": "+10 Funcionalidades incrementais",
-                "bulletPoints": {
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  },
-                  "items": [
-                    "Compre Junto",
-                    "Desconto Progressivo",
-                    "Carrinho e Produto Abandonado",
-                    "Preços segmentados por CEP",
-                    "Ferramenta de Avaliação",
-                    "Mecanismo de busca otimizado",
-                    "Painel de Promoções",
-                    "Alerta de frete grátis",
-                    "Avise-me (alerta de reposição de estoque)",
-                    "Aniversariantes do mês",
-                    "Brindes",
-                    "Newsletter",
-                    "E mais 80 aplicativos extras"
-                  ],
-                  "textColor": "#371E55"
-                },
-                "time": 3,
-                "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/2014ce37-ca95-449b-8498-8d66dec23865/Developer-Coding-Background.mp4",
-                "use": "image",
-                "titleColor": "#371E55"
+                "title": "Recursos exclusivos",
+                "titleColor": "#003037",
+                "text": "Impulsione sua loja com funcionalidades únicas que otimizam a experiência do cliente",
+                "textColor": "#5F6E82"
               },
               {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/278f2a44-ab36-48b5-9168-198d3bdebf3c/detailed-carousel-2.png"
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
                 },
-                "title": "Atendimento e suporte",
-                "bulletPoints": {
-                  "items": [
-                    "Prioridade no Atendimento (a partir do Plano Expansão)",
-                    "Migração Assistida (liberado no Plano Elite)",
-                    "Atendimento de excelência (chat, e-mail e WhatsApp)",
-                    "Gerente de performance exclusivo (disponível no Plano Elite)",
-                    "Central de Ajuda",
-                    "Comunidade",
-                    "Blog e Hub de Conteúdo"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  },
-                  "textColor": "#371E55"
-                },
-                "titleColor": "#371E55"
+                "title": "Pague uma vez só",
+                "titleColor": "#003037",
+                "text": "Uma só contratação para aproveitar as ferramentas por tempo indeterminado",
+                "textColor": "#5F6E82"
               },
               {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e6b6e31f-738e-4ae2-8f6c-9b7268843ad7/detailed-carousel-3.png"
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
                 },
-                "title": "+10 Canais de venda",
-                "bulletPoints": {
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  },
-                  "items": [
-                    "Venda por redes sociais",
-                    "Link de carrinho para compartilhar em qualquer canal",
-                    "Google PMax nativa (com ROAS 8,5x – o melhor da América Latina)",
-                    "Sacolinha do Instagram integrada",
-                    "Venda no Tik Tok ",
-                    "Recursos de SEO",
-                    "Hub de Canais para vender em marketplaces",
-                    "Venda por dropshipping",
-                    "Pedidos manuais",
-                    "API Meta"
-                  ],
-                  "textColor": "#371E55"
-                },
-                "titleColor": "#371E55"
+                "title": "Suporte estendido",
+                "titleColor": "#003037",
+                "text": "Um ano de atendimento com nossos parceiros",
+                "textColor": "#5F6E82"
               },
               {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/83a600a2-6b3c-4e67-8d46-0b1e6d57206e/detailed-carousel-4.png"
+                "title": "Personalize do seu jeito",
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
                 },
-                "bulletPoints": {
-                  "items": [
-                    "Sua Loja Pronta por Loja do E-commerce",
-                    "Catálogo otimizado em massa por IA, com Indexa.AI",
-                    "Curso de Tráfego Pago, por Ajuda Vitor",
-                    "Banners Personalizados, por Consultor Net",
-                    "Gestão de Tráfego, por Marketing e inteligência",
-                    "Cronômetro de Vitrine, por Samá Themes",
-                    "Pacote de Redes Sociais, por MT Soluções",
-                    "+20 serviços renomados"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  },
-                  "textColor": "#371E55"
-                },
-                "title": "+30 Serviços de parceiros recomendados ",
-                "titleColor": "#371E55"
-              },
-              {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/01fe0986-7544-4c98-9c68-25cbf887de56/detailed-carousel-5.png"
-                },
-                "bulletPoints": {
-                  "items": [
-                    "Pagali (melhores taxas e integração nativa)",
-                    "PayPal Plus",
-                    "PayPal",
-                    "Cielo",
-                    "Mercado Pago",
-                    "Pagar.me ",
-                    "PagBank",
-                    "PagHiper",
-                    "AppMax"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  },
-                  "textColor": "#371E55"
-                },
-                "title": "+9 Formas de pagamento ",
-                "titleColor": "#371E55"
-              },
-              {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/68276b37-5999-4d47-b15e-a8e7f9ed7400/detailed-carousel-6.png"
-                },
-                "bulletPoints": {
-                  "items": [
-                    "Enviali (melhores taxas e integração nativa)",
-                    "Frenet",
-                    "Kangu ",
-                    "Manda Bem ",
-                    "Melhor Envio",
-                    "Frete Barato",
-                    "Correios SEDEX",
-                    "Correios PAC",
-                    "Motoboy",
-                    "Retirar pessoalmente"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6521c377-38ab-4441-a3ac-e29ff0779303/dark-check-icon.png"
-                  },
-                  "textColor": "#371E55"
-                },
-                "title": "+10 Formas de envio",
-                "titleColor": "#371E55"
+                "titleColor": "#003037",
+                "text": "Código aberto para edição livre, adaptável de acordo com o seu segmento",
+                "textColor": "#5F6E82"
               }
             ],
-            "arrows": false,
-            "title": "Um ecossistema de recursos inteligentes",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/46f543f0-e203-4ed6-b206-835381812669/detailed-carousel-background.jpg",
-              "alt": "carousel background"
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f40c8e63-d628-46c4-af8a-05f20686f8da/big-image-hero-v2-image.png"
             },
-            "dots": true,
-            "interval": 13,
-            "cta": [
-              {
-                "text": "Ver planos",
-                "href": "#plans",
-                "ctaStyle": "button",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff"
-              },
-              {
-                "href": "/talkToSpecialist",
-                "outline": true,
-                "ctaStyle": "link",
-                "backgroundColor": "tRANSPARENT",
-                "textColor": "#371E55",
-                "borderColor": "#371E55",
-                "underlineText": "Falar com Especialista ",
-                "showIcon": true
-              }
-            ],
-            "links": [],
-            "titleColor": "#371E55",
-            "arrowsColor": "#371E55",
-            "dotsColor": "#371E55",
-            "progressBarBackgroundColor": "#2caf53",
-            "dotsProgressBarPlacement": "below"
+            "use": "image",
+            "cta": []
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1065,6 +1260,7 @@
     },
     {
       "__resolveType": "site/sections/TcoCalculatorV2.tsx",
+      "title": "Calcule a eficiência da sua operação",
       "page1": {
         "title": "Calculadora TCO",
         "caption": "O TCO é o total dos custos relacionados à implementação, operação e manutenção de uma loja virtual. Ele reflete o custo total que o seu e-commerce representa para você, levando em conta um ciclo de vida completo.",
@@ -1146,7 +1342,6 @@
         },
         "asideBottomText": "<p>Gabriel Bollico</p><p><span style=\"color: rgb(204, 190, 255);\" data-mce-style=\"color: rgb(204, 190, 255);\">Ecommerce Puro</span></p>"
       },
-      "title": "Calcule a eficiência da sua operação",
       "caption": "Cálculo de TCO",
       "page2": {
         "progressImage": {
@@ -2769,3963 +2964,6 @@
       ]
     },
     {
-      "__resolveType": "site/sections/CollapseGroup.tsx",
-      "caption": "Compare nossos planos",
-      "title": "Entenda a melhor opção pro seu negócio",
-      "collapses": [
-        {
-          "headerItems": [
-            {
-              "text": "Atendimento ao cliente",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Suporte humanizado por chat e e-mail",
-                  "textPosition": "left"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Suporte humanizado por whatsapp"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Suporte humanizado por voz e vídeo"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Atendimento Especializado",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Prioridade no atendimento"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center",
-                  "caption": "Canal exclusivo"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Time técnico de suporte a migração"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Suporte ao cliente",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Central de Ajuda",
-                  "caption": "Tutoriais explicativos de como configurar a sua loja e suas funcionalidades."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Comunidade",
-                  "caption": "Troca de informações entre lojistas reais."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Blog",
-                  "caption": "Conteúdos especializados, vídeos e cases de sucesso."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Visual e Layout",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Temas grátis pré-selecionado",
-                  "caption": "Tenha um visual profissional e aumente a conversão da sua loja."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "4"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "5"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "7"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "7",
-                  "caption": "+1 tema de parceiros 100% grátis"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Subdomínio Gratuito",
-                  "caption": "Subdomínio gratuito: Link personalizado da sua loja, atrelado à Loja Integrada"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Apontamento de dominio próprio",
-                  "caption": "Adquira uma URL personalizada para sua loja."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Personalização do layout",
-                  "caption": "Insira o seu logo, favicon, banners e estrutura de vitrine para deixar o site com a sua cara."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Recursos LGPD",
-                  "caption": "Inserção de politica no momento da compra e mais"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Versão Mobile",
-                  "caption": "Seu site terá a versão adaptada para todos os smartphones."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Inserção de código HTML",
-                  "caption": "Altere a aparência do tema que você escolheu com o uso de HTML."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Inserção de CSS",
-                  "caption": "Altere a aparência do tema que você escolheu com o uso de CSS."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Inserção de Scripts"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Lazy Loading",
-                  "caption": "Melhoria de performance com mais agilidade no carregamento das imagens da sua loja."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Suporte nativo WebP",
-                  "caption": "Menor tempo de carregamento para a sua loja com maior qualidade das imagens."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Páginas de Conteúdo"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Páginas de Quem somos"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Página de Política de privacidade"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Página de meios de pagamento e de frete"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Página de política de trocas e devoluções"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Gestão da loja",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Limite de Usuários",
-                  "caption": "Acompanhe faturamento, quantidade de pedidos e visitas da sua loja."
-                },
-                {
-                  "use": "no icon",
-                  "text": "1",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "2"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "3"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "10"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "Ilimitado"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Relatório de vendas simplificado",
-                  "caption": "Acompanhe faturamento, quantidade de pedidos e visitas da sua loja."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Gerenciamento de clientes",
-                  "caption": "Exporte os dados de seus clientes de acordo com a LGPD."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Modelo de planejamento de negócio",
-                  "caption": "Templates para planejamento de negócio."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Exportação de produtos"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Exportação de pedidos"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Exportação de clientes"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Gestão da loja",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Limite de Usuários",
-                  "caption": "Acompanhe faturamento, quantidade de pedidos e visitas da sua loja."
-                },
-                {
-                  "use": "no icon",
-                  "text": "1",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "2"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "3"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "10"
-                },
-                {
-                  "use": "no icon",
-                  "textPosition": "center",
-                  "text": "Ilimitado"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Relatório de vendas simplificado",
-                  "caption": "Acompanhe faturamento, quantidade de pedidos e visitas da sua loja."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Gerenciamento de clientes",
-                  "caption": "Exporte os dados de seus clientes de acordo com a LGPD."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Modelo de planejamento de negócio",
-                  "caption": "Templates para planejamento de negócio."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Exportação de produtos"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Exportação de pedidos"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Exportação de clientes"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Canais de venda",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Compartilhamento em Redes Sociais"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Google Shopping (PMAX)",
-                  "caption": "Anuncie no Google Shopping de forma rápida através do Painel com a tecnologia PMax."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Sacolinha do Instagram",
-                  "caption": "Configure a Sacolinha do Instagram através de parceiros."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Vendas pelo TikTok",
-                  "caption": "Anuncie no Tiktok de forma rápida através do Painel e aumente as visitas."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Botão do WhatsApp",
-                  "caption": "Anuncie no Tiktok de forma rápida através do Painel e aumente as visitas."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Recursos básicos de SEO",
-                  "caption": "Configure o SEO de seus produtos e melhore o posicionamento do seu negócio nas buscas do Google."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Pedido Manual",
-                  "caption": "Monte um pedido e envie para clientes que estão comprando por outros canais."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Venda pelos marketplaces",
-                  "caption": "Coloque seus produtos nos maiores marketplaces do país através de parceiros."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Vendas por droppshipping",
-                  "caption": "Integração via parceiro para que você possa vender sem precisar ter o produto em estoque"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Ferramentas promocionais",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Carrinho abandonado"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "XML de produtos",
-                  "caption": "Disponibilize as informações de seus produtos em um dos formatos mais populares"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Frete Grátis",
-                  "caption": "Crie campanhas de frete grátis e escolha as regiões participantes."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Newsletter",
-                  "caption": "Capture o email dos cliente e envie email marketing com as novidades e promoções."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Avise-me",
-                  "caption": "Lista de espera quando o produto estiver esgotado."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Aniversariantes do mês",
-                  "caption": "Receba os aniversariantes do mês e realize campanhas de relacionamento."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Cupom de Desconto",
-                  "caption": "Cupom de desconto simples para oferecer descontos em todos os produtos da loja."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Cupom de Desconto avançado com limitação de produto",
-                  "caption": "Cupom de desconto avançado com limitação de produto."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Alerta de Frete Grátis",
-                  "caption": "Criei gatilhos para liberar a campanha de frete grátis."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Brindes",
-                  "caption": "Crie campanhas com distribuição de brindes."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Compre Junto",
-                  "caption": "Sugira ao cliente produtos complementares e aumente o ticket médio."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Integrações com Google",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Google Shopping (PMax)",
-                  "caption": "Anuncie no Google Shopping de forma rápida através do Painel com a tecnologia PMax."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Google Analytics",
-                  "caption": "Colete dados do seu site e crie relatórios sobre a sua loja"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Google Merchan Center",
-                  "caption": "Forneça informações sobre sua loja e seus produtos e apareça nas buscas do Google"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Google Tag Manager",
-                  "caption": "Automatize e gerencie a inserção de tags de acompanhamento do seu site"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Avaliações de Consumidor",
-                  "caption": "Colete feedback importante dos clientes que fizeram compras no seu site"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Google Wallet",
-                  "caption": "Colete feedback importante dos clientes que fizeram compras no seu site"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Google Ads",
-                  "caption": "Anuncie no Google e coloque sua loja e seus produtos na maior vitrine da internet."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Google Workspace",
-                  "caption": "Tenha acesso a diversas ferramentas de colaboração como o Gmail, Agenda, Meet, Drive, Documentos, Planilhas, Apresentações e outros."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Integrações com o Facebook",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Anúncios Dinamicos (XML)"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Pixel do Facebook"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Facebook Comentários"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Pagamentos e tarifas",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Tarifa por transações feitas em outros meios de pagamento"
-                },
-                {
-                  "use": "cross icon",
-                  "textPosition": "center",
-                  "topCaption": "*"
-                },
-                {
-                  "textPosition": "center",
-                  "text": "0,99"
-                },
-                {
-                  "textPosition": "center",
-                  "text": "0,90"
-                },
-                {
-                  "textPosition": "center",
-                  "text": "0,70"
-                },
-                {
-                  "textPosition": "center",
-                  "text": "Sob consulta"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Isenção de tarifa por transações em outros meios de pagamento"
-                },
-                {
-                  "use": "cross icon",
-                  "textPosition": "center",
-                  "topCaption": "*"
-                },
-                {
-                  "textPosition": "center",
-                  "text": "R$2.500",
-                  "caption": "em vendas mensal **",
-                  "topCaption": "Grátis até"
-                },
-                {
-                  "textPosition": "center",
-                  "text": "R$2.800",
-                  "caption": "em vendas mensal **",
-                  "topCaption": "Grátis até "
-                },
-                {
-                  "textPosition": "center",
-                  "text": "R$3.500",
-                  "caption": "em vendas mensal **",
-                  "topCaption": "Grátis até "
-                },
-                {
-                  "textPosition": "center",
-                  "text": "Sob consulta"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Tarifa por transações feitas com Pagali"
-                },
-                {
-                  "text": "Grátis",
-                  "textPosition": "center"
-                },
-                {
-                  "textPosition": "center",
-                  "text": "Grátis"
-                },
-                {
-                  "textPosition": "center",
-                  "text": "Grátis"
-                },
-                {
-                  "textPosition": "center",
-                  "text": "Grátis"
-                },
-                {
-                  "textPosition": "center",
-                  "text": "Grátis"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Taxas Pagali",
-                  "caption": "Taxas a partir de:"
-                },
-                {
-                  "text": "4,99%",
-                  "textPosition": "center"
-                },
-                {
-                  "text": "4,59%",
-                  "textPosition": "center"
-                },
-                {
-                  "text": "4,49%",
-                  "textPosition": "center"
-                },
-                {
-                  "text": "4,29%",
-                  "textPosition": "center"
-                },
-                {
-                  "text": "3,59%",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Pagali para PIX",
-                  "caption": "Meio de pagamento próprio com PIX."
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Pagamento na entrega",
-                  "caption": "Boleto e cartão com checkout transparente ou redirect."
-                },
-                {
-                  "textPosition": "center",
-                  "use": "cross icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "caption": "** A franquia mínima mensal de R$25,00 para isenção de tarifa poderá sofrer alterações durante a vigência do seu contrato",
-                  "topCaption": "* Outros meios de pagamento não estão disponíveis no Plano Gratuito. Para lojistas que assinarem planos pagos e voltarem a utilizar o plano gratuito, outros meios de pagamento continuarão disponíveis mas será cobrada uma tarifa de 2% por transações feitas com os mesmos.  "
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Formas de envio",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Integração com diversos meios de envio",
-                  "href": "https://lojaintegrada.com.br/planos/"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "Enviali",
-                  "href": "https://lojaintegrada.com.br/planos/",
-                  "caption": "Integrador de frete da LI com preços até 70% mais baratos e impressão da etiqueta direto do painel."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Enviali com transportadoras (Jadlog)",
-                  "href": "https://lojaintegrada.com.br/planos/"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                },
-                {
-                  "textPosition": "center",
-                  "use": "check icon"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "SEDEX",
-                  "caption": "Envio expresso dos Correios."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "PAC",
-                  "caption": "Envio econômico dos Correios."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "Frenet",
-                  "caption": "Integrador de fretes entre sua loja e as transportadoras."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "Melhor Envio",
-                  "caption": "Integrador de fretes entre sua loja e as transportadoras."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "MandaBem",
-                  "caption": "Integrador de fretes entre sua loja e as transportadoras e Correios."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "Kangu",
-                  "caption": "Integrador de fretes entre sua loja e as transportadoras e Correios."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "Motoboy",
-                  "caption": "Para quem já trabalha com motoboy."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "Retirar pessoalmente",
-                  "caption": "Ideal para quem tem loja física."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "Transportadora",
-                  "caption": "Para quem já trabalha com transportadoras."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "Calculadora de fretes"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Integrações com Parceiros",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Integração de atendimento ao cliente",
-                  "caption": "Parceiros com ferramentas de atedimento ao seu cliente."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Domínio Uol",
-                  "caption": "Tenha condições especiais para a compra de um link personalizado"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Experiência do cliente",
-                  "caption": "Atendimento por chat, e-mail e WhatsappParceiros com ferramentas de experência do cliente."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Gestão (ERPs)",
-                  "caption": "Parceiros que fazem a gestão da sua loja."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Precificação",
-                  "caption": "Tenha auxílio para escolher o melhor preço de seus produtos"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Logística",
-                  "caption": "Conte com os nossos parceiros para realizar a entrega dos seus produtos"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Pagamento",
-                  "caption": "Conte com os principais meios de pagamento do Brasil"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Marketplaces",
-                  "caption": "Parceiros que integram com milhares de Marketplaces."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Marketing",
-                  "caption": "Parceiros que possuem ferramentas promocionais e de campanhas."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "Editor de Layout"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "Inteligência Artificial"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "text": "Venda",
-                  "caption": "Parceiros que possuem ferramentas de venda e cobrança."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Outras parcerias",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Loja de Temas",
-                  "caption": "Encontre +1.000 temas para você escolher de acordo com o seu negócio"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Loja de Aplicativos",
-                  "caption": "Encontre soluções para gestão e profissionalização da sua loja"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Logo e Branding",
-                  "caption": "Encontre parceiros que vão criar uma identidade visual inesquecível pra sua marca"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Marketing",
-                  "caption": "Encontre as melhores soluções para alavancar suas vendas"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Gestão de Tráfego",
-                  "caption": "Seu cliente será avisado sobre o status do pedido."
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Implantações",
-                  "caption": "Conte com parceiros para te ajudar nas implantações iniciais ou avançadas da sua loja"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Plugins"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "headerItems": [
-            {
-              "text": "Recursos Gerais",
-              "bold": true,
-              "textPosition": "left"
-            },
-            {
-              "text": "Gratuito"
-            },
-            {
-              "text": "Crescimento"
-            },
-            {
-              "text": "Aceleração "
-            },
-            {
-              "text": "Expansão "
-            },
-            {
-              "text": "Elite"
-            }
-          ],
-          "checkIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f86717f3-5c53-4491-82b7-eeaf3dcaf120/check.png",
-            "alt": "check icon"
-          },
-          "crossIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fb28ffa0-9cb5-42d6-a13e-534cc13a205b/cross.png",
-            "alt": "cross icon"
-          },
-          "rows": [
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Notificações via e-mail para o usuário"
-                },
-                {
-                  "use": "check icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Login Google para cliente no Checkout",
-                  "caption": "Com o login social do Google, seus clientes podem se cadastrar na sua loja em segundos, sem a necessidade de lembrar de senhas complicadas, dando mais agilidade ao checkout da sua loja"
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Editor de e-mails",
-                  "caption": "Configure os e-mails transacionais, cabeçalho e rodapé das comunicações e adapte sua estratégia de acordo com o perfil de seus clientes e sua identidade visual."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "API pública",
-                  "caption": "Conecte sua loja com diversas soluções parceiras."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Loja catálogo com e sem preço",
-                  "caption": "Crie uma loja como mostruário de produtos para vendas em outros canais."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "use": "no icon",
-                  "text": "Loja Orçamento",
-                  "caption": "Crie uma loja para recebimento de solicitações de orçamento, alinhando detalhes diretamente com o cliente."
-                },
-                {
-                  "use": "cross icon"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                },
-                {
-                  "use": "check icon",
-                  "textPosition": "center"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "captionColor": "#828CA0",
-      "titleColor": "#371E55",
-      "collapsesTextColor": "#371E55",
-      "collapsesBorderColor": "#EBEBEB"
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Venda mais sem gastar com anúncios",
-            "caption": "Conheça o “Compre Junto”, nossa ferramenta nativa",
-            "description": "Aumente até 31% do seu faturamento, oferecendo produtos  complementares no momento da compra.",
-            "bigNumbers": [
-              {
-                "text": "+ 31% de aumento",
-                "caption": "no ticket médio",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 900 lojas",
-                "caption": "usando a ferramenta",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 2 mil lojistas",
-                "caption": "já utilizaram a ferramenta",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              }
-            ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e1976be0-b8c1-441d-bfb6-8de773198dea/hero-1-image-mobile.svg",
-              "alt": "hero image"
-            },
-            "placement": "left",
-            "cta": [
-              {
-                "text": "Ver plano Aceleração ",
-                "href": "#planoaceleracao",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "style": "button"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com Especialista ",
-                "showIcon": true,
-                "textColor": "#371E55",
-                "href": "/talkToSpecialist"
-              }
-            ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja?",
-                "text": " Ative agora",
-                "href": "#"
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c599270-8b52-436d-a57d-1eb07092c562/carrinho-abandonado-after.webp",
-              "alt": "background gradiente",
-              "width": 818,
-              "height": 1395
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "descriptionColor": "#5F6E82",
-            "use": "image"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Venda mais sem gastar com anúncios",
-            "caption": "Conheça o “Compre Junto”, nossa ferramenta nativa",
-            "description": "Aumente até 31% do seu faturamento, oferecendo produtos  complementares no momento da compra.",
-            "bigNumbers": [
-              {
-                "text": "+ 31% de aumento",
-                "caption": "no ticket médio",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 2.5k lojistas",
-                "caption": "usando a ferramenta",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              },
-              {
-                "text": "+ 8.6k pedidos",
-                "caption": "convertidos em vendas no 1º Tri de 2024",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              }
-            ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4d2a4a59-bf70-4c3b-850c-e11e59ef5e5a/hero1-image.svg",
-              "alt": "hero image"
-            },
-            "cta": [
-              {
-                "text": "Ver plano Aceleração ",
-                "href": "#planoaceleracao",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "style": "button"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com Especialista ",
-                "textColor": "#371E55",
-                "showIcon": true,
-                "href": "/talkToSpecialist"
-              }
-            ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja?",
-                "text": " Ative agora",
-                "href": "#"
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/774fda65-7da8-4ecc-a7f0-2c55c8e67f40/Ellipse-62.svg",
-              "alt": "background gradiente"
-            },
-            "placement": "left",
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "descriptionColor": "#5F6E82",
-            "htmlContent": "<p><br data-mce-bogus=\"1\"></p>",
-            "use": "image"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Recupere vendas com inteligência",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02b136e7-9e3f-48e6-874b-6284cf518868/Ellipse-61.png",
-              "alt": "green elipse",
-              "width": 797,
-              "height": 1227
-            },
-            "caption": "Envie mensagens automáticas para reengajar clientes",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "#planoaceleracao",
-                "textColor": "#ffffff",
-                "text": "Ver plano Aceleração ",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com Especialista ",
-                "showIcon": true,
-                "textColor": "#371E55",
-                "href": "/talkToSpecialist"
-              }
-            ],
-            "description": "Com as ferramentas de Produto e Carrinho Abandonado, você reativa facilmente quem navegou no site, mas não finalizou a compra, ou quem fez o pedido sem concluir o pagamento. Com disparos ilimitados, você não perde mais nenhuma venda.",
-            "bigNumbers": [
-              {
-                "text": "+ R$ 14 milhões",
-                "caption": "em vendas recuperadas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 45 mil pedidos",
-                "caption": "recuperados com estratégia",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 2 mil lojistas",
-                "caption": "já utilizaram a ferramenta",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              }
-            ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a4570df3-1d3c-4408-bb0e-58a2f88a1914/hero-2-image.svg"
-            },
-            "placement": "right",
-            "links": [
-              {
-                "textBefore": "Já tem uma loja?",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "descriptionColor": "#5F6E82",
-            "use": "image"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Recupere vendas com inteligência",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02b136e7-9e3f-48e6-874b-6284cf518868/Ellipse-61.png",
-              "alt": "green elipse",
-              "width": 797,
-              "height": 1227
-            },
-            "caption": "Envie mensagens automáticas para reengajar clientes",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "#planoaceleracao",
-                "textColor": "#ffffff",
-                "text": "Ver plano Aceleração ",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com Especialista ",
-                "textColor": "#371E55",
-                "showIcon": true,
-                "href": "/talkToSpecialist"
-              }
-            ],
-            "description": "Com as ferramentas de Produto e Carrinho Abandonado, você reativa facilmente quem navegou no site, mas não finalizou a compra, ou quem fez o pedido sem concluir o pagamento. Com disparos ilimitados, você não perde mais nenhuma venda.",
-            "bigNumbers": [
-              {
-                "text": "+ R$ 14 milhões",
-                "caption": "em vendas recuperadas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 45 mil pedidos",
-                "caption": "recuperados com estratégia",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              },
-              {
-                "text": "+ 2 mil lojistas",
-                "caption": "já utilizaram a ferramenta",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              }
-            ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a4570df3-1d3c-4408-bb0e-58a2f88a1914/hero-2-image.svg"
-            },
-            "links": [
-              {
-                "textBefore": "Já tem uma loja?",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "placement": "right",
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "descriptionColor": "#5F6E82",
-            "use": "image"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -6744,9 +2982,9 @@
                 "ctaStyle": "link",
                 "href": "/talkToSpecialist",
                 "textColor": "#ffffff",
+                "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
                 "underlineText": "Mude para o Elite agora",
-                "showIcon": true,
-                "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>"
+                "showIcon": true
               }
             ],
             "planTag": {
@@ -6918,9 +3156,9 @@
                 "ctaStyle": "link",
                 "href": "/talkToSpecialist",
                 "textColor": "#ffffff",
+                "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
                 "underlineText": "Mude para o Elite agora",
-                "showIcon": true,
-                "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>"
+                "showIcon": true
               }
             ],
             "planTag": {
@@ -7069,7 +3307,8 @@
               "progressBarBackgroundColor": "rgba(217, 217, 217, 0.10)",
               "progressBarColor": "#02333A"
             },
-            "imageTextFont": "Instrument Serif"
+            "imageTextFont": "Instrument Serif",
+            "marginTop": "120px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -7524,662 +3763,6 @@
         }
       ],
       "id": "plansdetails"
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Aumente a aprovação das suas vendas",
-            "caption": "Taxas competitivas em relação ao mercado,maiores taxas de aprovação",
-            "cta": [
-              {
-                "href": "#plans",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
-              },
-              {
-                "href": "/talkToSpecialist",
-                "textColor": "#371E55",
-                "underlineText": "Falar com especialista",
-                "ctaStyle": "link",
-                "showIcon": true
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
-            },
-            "id": "pagali",
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/06f5310e-1057-487a-8425-a02c83d3825c/hero-3-image-mobile.svg"
-            },
-            "bigNumbers": [
-              {
-                "text": "+ R$ 1,8 bilhão",
-                "caption": "transacionados",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 12 mil lojistas",
-                "caption": "ativos no Pagali",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              },
-              {
-                "text": "+ 8,6 milhões ",
-                "caption": "de transações pagas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              }
-            ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja? ",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "textBelowColor": "#5F6E82",
-            "description": "Venda mais com o Pagali, nosso meio de pagamento próprio. Reduza taxas, melhore sua taxa de aceitação e aprovação, e gerencie tudo no painel da sua loja de forma integrada.",
-            "placement": "right",
-            "bulletpoints": {
-              "bulletPointsIcon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-              },
-              "items": [
-                "Gestão financeira unificada",
-                "Sem tarifa adicional sobre transações feitas via Pagali;",
-                "Fácil de configurar"
-              ],
-              "itemsTextColor": "#5F6E82"
-            },
-            "descriptionColor": "#5F6E82"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Aumente a aprovação das suas vendas",
-            "cta": [
-              {
-                "href": "#plans",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
-              },
-              {
-                "textColor": "#371E55",
-                "underlineText": " Falar com especialista",
-                "ctaStyle": "link",
-                "showIcon": true,
-                "href": "/talkToSpecialist"
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
-            },
-            "id": "pagali",
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a7020552-9bea-4573-a1c1-53f7a681e735/hero-3-image.svg"
-            },
-            "bigNumbers": [
-              {
-                "text": "+ R$ 1,8 bilhão",
-                "caption": "transacionados",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 12 mil lojistas",
-                "caption": "ativos no Pagali",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 8,6 milhões ",
-                "caption": "de transações pagas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              }
-            ],
-            "ctaTitle": "Disponível em todos os planos",
-            "links": [
-              {
-                "textBefore": "Já tem uma loja? ",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "textBelowColor": "#5F6E82",
-            "use": "image",
-            "description": "Venda mais com o Pagali, nosso meio de pagamento próprio. Reduza taxas, melhore sua taxa de aceitação e aprovação, e gerencie tudo no painel da sua loja de forma integrada.",
-            "placement": "right",
-            "bulletpoints": {
-              "bulletPointsIcon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-              },
-              "items": [
-                "Gestão financeira unificada ",
-                "Sem tarifa adicional sobre transações feitas via Pagali;",
-                "Fácil de configurar"
-              ],
-              "itemsTextColor": "#5F6E82"
-            },
-            "descriptionColor": "#5F6E82"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Reduza seus custos com frete e aumente suas vendas",
-            "caption": "Ofereça fretes mais competitivos com o Enviali",
-            "cta": [
-              {
-                "href": "#plans",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
-              },
-              {
-                "href": "/talkToSpecialist",
-                "textColor": "#371E55",
-                "underlineText": " Falar com especialista",
-                "ctaStyle": "link",
-                "showIcon": true
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/37ad2c84-9ed1-438c-bb7c-d0f1ac8eaed4/Ellipse-63.png",
-              "width": 430,
-              "height": 690
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/14a0d78a-9192-4fa1-8602-c9bbd427b019/hero-4-image-mobile.svg"
-            },
-            "bigNumbers": [
-              {
-                "text": "Fretes 70%  ",
-                "caption": "mais baratos",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 2 mil pontos",
-                "caption": "de coletas para envios",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              },
-              {
-                "text": "+ 2,5 mil veículos",
-                "caption": "de entregas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              }
-            ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja?",
-                "text": " Ativar recursos",
-                "href": "#"
-              }
-            ],
-            "textBelowColor": "#5F6E82",
-            "description": "Acesse as tabelas de frete mais vantajosas com Correios e Jadlog, negociadas pelo Enviali para maximizar suas conversões. Disponível em todos os planos."
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Reduza seus custos com frete",
-            "cta": [
-              {
-                "href": "#plans",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
-              },
-              {
-                "textColor": "#371E55",
-                "underlineText": " Falar com especialista",
-                "ctaStyle": "link",
-                "showIcon": true,
-                "href": "/talkToSpecialist"
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/21ead906-16be-442f-a3ca-814d04e5561a/Ellipse-67.png",
-              "width": 880,
-              "height": 1295
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02de4eda-2931-42b8-9fbc-cd8ddea17749/hero-4-image.svg"
-            },
-            "bigNumbers": [
-              {
-                "text": "Fretes 70%  ",
-                "caption": "mais baratos",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 2 mil pontos",
-                "caption": "de coletas para envios",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 2,5 mil veículos",
-                "caption": "de entregas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              }
-            ],
-            "ctaTitle": "Tenha acesso a tabelas de preço mais competitivas com os Correios e com a transportadora Jadlog e aumente sua conversão. Os melhores valores de frete já negociados pelo Enviali para você vender mais. Disponível em todos os planos",
-            "links": [
-              {
-                "textBefore": "Já tem uma loja?",
-                "text": " Ativar recursos",
-                "href": "#"
-              }
-            ],
-            "textBelowColor": "#5F6E82",
-            "use": "image",
-            "caption": "Ofereça fretes mais competitivos com Enviali e aumente suas vendas"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/BigImageHero.tsx",
-            "title": "Encante seu cliente",
-            "titleColor": "#371E55",
-            "caption": "Tenha um visual profissional em poucos cliques!",
-            "captionColor": "#371E55",
-            "cta": [
-              {
-                "href": "#plans",
-                "text": "Ver planos ",
-                "backgroundColor": "#371E55",
-                "textColor": "#ffffff",
-                "borderColor": "#371E55",
-                "ctaStyle": "button",
-                "showIcon": false
-              },
-              {
-                "href": "/talkToSpecialist",
-                "textColor": "#371E55",
-                "underlineText": " Falar com especialista",
-                "ctaStyle": "link",
-                "showIcon": true,
-                "backgroundColor": "",
-                "borderColor": ""
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
-            },
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb8a0a0-826d-49a8-9c4f-87204f15ce0b/moda-tema-mobile-1.svg"
-            },
-            "features": [
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Funcionalidades extras",
-                "titleColor": "#371E55",
-                "text": "Potencializa ainda mais sua loja com recursos exclusivos"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Contratação vitalícia",
-                "titleColor": "#371E55",
-                "text": "Contrate uma vez e use por quanto tempo quiser",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Suporte Estendido",
-                "titleColor": "#371E55",
-                "text": "Um ano de suporte com nossos parceiros",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "100% editável ",
-                "titleColor": "#371E55",
-                "text": "Personalize de acordo com seu segmento, código aberto para edição livre",
-                "textColor": "#371E55"
-              }
-            ],
-            "use": "image",
-            "bottomFloatingImage": {}
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/BigImageHero.tsx",
-            "title": "Personalização e visuais",
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "cta": [
-              {
-                "href": "#plans",
-                "text": "Ver planos ",
-                "backgroundColor": "#371E55",
-                "textColor": "#ffffff",
-                "borderColor": "#371E55",
-                "ctaStyle": "button",
-                "showIcon": false
-              },
-              {
-                "textColor": "#371E55",
-                "underlineText": " Falar com especialista",
-                "ctaStyle": "link",
-                "showIcon": true,
-                "href": "/talkToSpecialist",
-                "backgroundColor": "",
-                "borderColor": ""
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
-            },
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4db6d41b-a78e-45da-834d-1458bc900f19/big-image-hero-image.gif"
-            },
-            "use": "image",
-            "caption": "Uma loja de temas e serviços para seu negócio ficar incrível",
-            "features": [
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Funcionalidades extras",
-                "titleColor": "#371E55",
-                "text": "Potencializa ainda mais sua loja com recursos exclusivos"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Contratação vitalícia",
-                "titleColor": "#371E55",
-                "text": "Contrate uma vez e use por quanto tempo quiser",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "Suporte Estendido",
-                "titleColor": "#371E55",
-                "text": "Um ano de suporte com nossos parceiros",
-                "textColor": "#371E55"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd023dbb-8589-4756-a73b-b786556d3c78/purple-check-icon.svg"
-                },
-                "title": "100% editável ",
-                "titleColor": "#371E55",
-                "text": "Personalize de acordo com seu segmento, código aberto para edição livre",
-                "textColor": "#371E55"
-              }
-            ],
-            "bottomFloatingImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c36230b-5d85-4f99-af96-67f513e7c7d8/floating-bottom-image.svg"
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/PlanDetails2.tsx",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d20efb42-545b-49e0-9acc-e12f5b6e0541/crescimento-background-mobile.svg"
-            },
-            "title": "Comece pagando menos",
-            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "textColor": "#003037",
-                "showIcon": true,
-                "underlineText": "Falar com especialista"
-              }
-            ],
-            "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/96963d3a-6c2e-4310-86bb-dcff7c4852de/video-dobra-crescimento-mobile.mp4",
-            "useContent": "video",
-            "planTag": {
-              "text": "Plano Crescimento",
-              "icon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
-              }
-            },
-            "showArrows": false,
-            "slides": [
-              {
-                "bulletPoints": {
-                  "items": [
-                    "Importador de produtos e URL",
-                    "Suporte premiado",
-                    "Média de 29 para concluir a migração"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                  }
-                },
-                "title": "Para você migrar"
-              },
-              {
-                "bulletPoints": {
-                  "items": [
-                    "Taxa de 4,29% no cartão de crédito com Pagali",
-                    "Pagali a partir de R$0,99 no PIX",
-                    "Fretes 70% mais baratos com Enviali",
-                    "Prioridade no atendimento"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                  }
-                },
-                "title": "Para você lucrar"
-              }
-            ],
-            "annualValues": {
-              "title": "Anual",
-              "tag": "20% OFF",
-              "saving": "⚡️ Economize R$ 132 no plano anual",
-              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 516</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>"
-            },
-            "montlyValues": {
-              "title": "Mensal",
-              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 54</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>"
-            },
-            "link": {
-              "textBefore": "Já tem uma loja?",
-              "text": " Ative agora",
-              "href": "#"
-            },
-            "color1": "#dd0808",
-            "color2": "#ffffff",
-            "color3": "#003037",
-            "color4": "#FFE6A0",
-            "color5": "#003037",
-            "color6": "#5F6E82",
-            "color7": "#003037",
-            "color8": "#ffffff",
-            "id": "planocrescimento",
-            "createStoreCta": {
-              "planId": "173",
-              "text": "Assinar",
-              "backgroundColor": "#003037",
-              "borderColor": "#003037",
-              "textColor": "#ffffff",
-              "ctaStyle": "button"
-            },
-            "imageText": "<p><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">Tenha recursos&nbsp;</strong>essenciais</p><p>para o&nbsp;<strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">crescimento do </strong></p><p><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">seu negócio</strong></p>"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/PlanDetails2.tsx",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f0ef7f54-f95f-4358-bf93-9882a6e34a4f/crescimento-background.svg"
-            },
-            "title": "Comece pagando menos",
-            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "textColor": "#003037",
-                "showIcon": true,
-                "underlineText": "Falar com especialista"
-              }
-            ],
-            "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f68f0cae-2879-4a82-95a1-85fc54ef8b68/video-dobra-crescimento.webm",
-            "useContent": "video",
-            "planTag": {
-              "text": "Plano Crescimento",
-              "icon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
-              }
-            },
-            "showArrows": false,
-            "slides": [
-              {
-                "bulletPoints": {
-                  "items": [
-                    "Importador de produtos e URL ",
-                    "Suporte premiado",
-                    "Média de 29 para concluir a migração"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                  }
-                },
-                "title": "Para você migrar"
-              },
-              {
-                "bulletPoints": {
-                  "items": [
-                    "Taxa de 4,29% no cartão com Pagali",
-                    "A partir de R$ 0,99 no Pix com Pagali",
-                    "Fretes 70% mais baratos com Enviali",
-                    "Prioridade de atendimento"
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                  }
-                },
-                "title": "Para você lucrar"
-              }
-            ],
-            "annualValues": {
-              "title": "Anual",
-              "tag": "20% OFF",
-              "saving": "⚡️ Economize R$ 132 no plano anual",
-              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 516</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">em até 6x sem juros</span></p>"
-            },
-            "montlyValues": {
-              "title": "Mensal",
-              "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 54</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>"
-            },
-            "link": {
-              "textBefore": "Já tem uma loja?",
-              "text": " Ative agora",
-              "href": "#"
-            },
-            "color1": "#dd0808",
-            "color2": "#ffffff",
-            "color3": "#003037",
-            "color4": "#FFE6A0",
-            "color5": "#003037",
-            "color6": "#5F6E82",
-            "color7": "#003037",
-            "color8": "#ffffff",
-            "id": "planocrescimento",
-            "createStoreCta": {
-              "planId": "173",
-              "text": "Assinar plano",
-              "textColor": "#ffffff",
-              "backgroundColor": "#003037",
-              "borderColor": "#003037",
-              "ctaStyle": "button"
-            },
-            "imageText": "<p><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">Tenha recursos&nbsp;</strong>essenciais</p><p>para o&nbsp;<strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">crescimento do </strong></p><p><strong style=\"font-weight: bold;\" data-mce-style=\"font-weight: bold;\">seu negócio</strong></p>"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
     },
     {
       "__resolveType": "site/sections/Footer2.tsx",

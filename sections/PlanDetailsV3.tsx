@@ -243,7 +243,7 @@ export default function PlanDetails2({ id, title, titleFont, marginBottom, margi
             <div class="lg:w-[606px] max-w-[606px] w-full" > 
                 <div class="px-7 lg:px-0">
                     <TimeTabs {...tabs}/>
-                    <AnimateOnShow divClass="inline-flex flex-wrap justify-center lg:justify-start mt-11 p-7 gap-5 lg:rounded-[20px] relative" animation="animate-fade-up" delay={300} style={{background: valuesBackgroundColor}}>
+                    <AnimateOnShow divClass="inline-flex flex-wrap justify-center lg:justify-start mt-11 p-7 gap-5 rounded-bl-[20px] rounded-br-[20px] lg:rounded-[20px] relative" animation="animate-fade-up" delay={300} style={{background: valuesBackgroundColor}}>
                         {valuesTag?.text && <div 
                             class="absolute left-0 top-[-45px] h-16 p-3.5 -z-40 rounded-tr-xl rounded-tl-xl lg:rounded-tl-none w-full lg:w-auto"
                             style={{color: valuesTag.textColor, background: valuesTag.backgroundColor}}

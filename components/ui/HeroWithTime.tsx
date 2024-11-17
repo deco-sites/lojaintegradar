@@ -151,7 +151,19 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
                                                     }}
                                                 ></span>
                                             )}
-
+                                            <div class="flex flex-wrap gap-4 mt-4">
+                                                {tab.tags?.map(tag => (
+                                                    <div class="inline-block rounded-[5px] overflow-hidden p-[1px]" style={{ background: tag.borderColor || "linear-gradient(90deg, #71DBD4 0%, #204E53 100%)" }}>
+                                                        <div class="inline-block rounded-[5px]" style={{ background: tag.backgroundColor || "linear-gradient(90deg, #13393D 0%, #204E53 100%)" }}>
+                                                            <p
+                                                                class={`flex gap-2.5 items-center h-full py-1 text-xl px-4 bg-primary-content text-primary-content font-normal `}
+                                                                style={{ background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent', fontFamily: tag.fontFamily || "Instrument serif" }}>
+                                                                {tag.text}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
                                             <div class="flex items-center mt-4 mb-6 gap-[10px]">  {tab.videoOn && (
                                                 <button class="bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 pr-[18px] flex items-center gap-[18px] h-[48px]" onClick={() => {
                                                     setCurrentVideoUrl(tab.videoUrl || "");

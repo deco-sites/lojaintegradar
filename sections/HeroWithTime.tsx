@@ -13,6 +13,7 @@ export interface Props {
     bottomSection?: Section;
 }
 
+/** @title {{text}} */
 export interface Tag {
     text?: string;
     fontFamily?: string;
@@ -57,6 +58,7 @@ interface Tabs {
     highlight?: boolean;
     title?: TabsTitle;
     textContent?: TabsTextContent;
+    tags?: Tag[];
     tabImage?: {
         image?: ImageWidget;
         alt?: string;

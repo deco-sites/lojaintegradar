@@ -48,14 +48,14 @@ export default function SectionInTabs({ id, sectionTabs = [] }: Props) {
     const rootId = useId();
     return <div id={id} class="pt-[71px] lg:pt-[120px]">
         <div id={rootId}>
-            <ul class="flex justify-center flex-wrap px-7 gap-3 lg:gap-14 pb-7">
+            <ul class="flex justify-center flex-wrap px-4 gap-3 lg:gap-14 pb-7">
                 {sectionTabs.map((tab, index) => {
                     const titleBackgroundColor = index == 0 ? tab.titleBackgroundColor : tab.titleDisabledBackgroundColor ;
                     const textColor = index == 0 ? tab.titleColor : tab.titleDisabledColor;
                     return <li>
                         <a 
                             hx-on:click={useScript(onClick, rootId, index, sectionTabs)} 
-                            class={`sectionTab block cursor-pointer py-2.5 px-3.5 rounded-full font-normal text-lg lg:text-[32px]`}
+                            class={`sectionTab block cursor-pointer py-2.5 px-2 lg:px-3.5 rounded-full font-normal text-lg lg:text-[32px]`}
                             style={{background: titleBackgroundColor, fontFamily: tab.titleFont, color: textColor}}
                         >
                             {tab.title}

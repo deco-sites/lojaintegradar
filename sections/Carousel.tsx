@@ -51,7 +51,7 @@ export interface CarouselIcon {
     height?: number;
 }
 export interface IImage {
-    src: ImageWidget;
+    src?: ImageWidget;
     alt?: string;
     height?: number;
     width?:number;
@@ -105,18 +105,12 @@ export interface Props {
     arrows?: boolean;
     /** @format color-input */
     arrowsColor?: string;
-    /**
-     * @title Show dots
-     * @description show dots to navigate through the images
-     */
     // dots?: boolean;
     cta?: CTA[];
     backgroundImage?: IImage;
-    /**
-     * @title Autoplay interval
-     * @description time (in seconds) to start the carousel autoplay
-     */
     // interval?: number;
+    paddingTop?: string;
+    paddingBottom?: string;
 }
 function SliderItem({ slide, id }: {
     slide: CarouselItem;
@@ -132,23 +126,23 @@ function SliderItem({ slide, id }: {
     console.log(icon?.width," ",icon?.height)
     return (<div id={id} class={`relative w-full h-[400px] sm:h-[484px] rounded-[30px] overflow-y-auto p-6 md:p-8 'text-primary' `} style={{ color: textColor }}>
 
-        {useBackground == 'image' && backgroundImage && <div class="absolute top-0 left-0 -z-50 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "carousel item background image"} width={backgroundImage.width || 456} height={backgroundImage.height || 608} class="w-full h-full object-cover object-top" /></div>}
-        {useBackground == 'video' && backgroundVideo && <video width="456" height="608" autoPlay playsInline muted loading="lazy" loop class="absolute top-0 left-0 -z-50 h-full w-full object-cover object-top">
+        {useBackground == 'image' && backgroundImage?.src && <div class="absolute top-0 left-0 z-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "carousel item background image"} width={backgroundImage.width || 456} height={backgroundImage.height || 608} class="w-full h-full object-cover object-top" /></div>}
+        {useBackground == 'video' && backgroundVideo && <video width="456" height="608" autoPlay playsInline muted loading="lazy" loop class="absolute top-0 left-0 z-0 h-full w-full object-cover object-top">
             <source src={backgroundVideo} type="video/mp4" />
             <object data="" width="320" height="240">
                 <embed width="320" height="240" src={backgroundVideo} />
             </object>
         </video>}
         <div class={`relative w-full h-full flex justify-between ${textPlacement == 'Top' ? 'flex-col' : 'flex-col-reverse'}`}>
-            {icon?.src && <Image src={icon.src} alt={icon.alt || "carousel item background image"} width={icon.width || 32} height={icon.width || 32} class={` object-contain absolute -z-40 h-8 w-8 ${iconPosition[icon.placement || 'Top right']}`} />}
+            {icon?.src && <Image src={icon.src} alt={icon.alt || "carousel item background image"} width={icon.width || 32} height={icon.width || 32} class={` object-contain absolute h-8 w-8 ${iconPosition[icon.placement || 'Top right']}`} />}
             <div>
-                {title && <h2 class="text-lg md:text-2xl min-h-16 pr-12">{title}</h2>}
-                <div class="text-base md:text-lg md:mt-5 !leading-[100%]" dangerouslySetInnerHTML={{ __html: caption }} />
+                {title && <h2 class="text-lg md:text-2xl min-h-16 pr-12 md:mb-5">{title}</h2>}
+                <div class="text-base md:text-lg !leading-[100%]" dangerouslySetInnerHTML={{ __html: caption }} />
             </div>
             <div>
                 {bulletPoints?.bulletPointsTitle && <p class="text-sm">{bulletPoints.bulletPointsTitle}</p>}
                 {bulletPoints?.items?.map((bulletPoint) => (<div class="flex gap-2 mt-[10px]">
-                    {bulletPoints.bulletPointsIcon && <Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain" />}
+                    {bulletPoints.bulletPointsIcon?.src && <Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain" />}
                     <p class="text-sm">{bulletPoint}</p>
                 </div>))}
             </div>
@@ -196,13 +190,13 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
     </div>);
 }
 function Carousel(props: Props) {
-    const { id, title, titleFont, caption, slides, backgroundImage, cta, titleColor, captionColor, arrowsColor } = { ...props };
+    const { id, title, titleFont, caption, slides, backgroundImage, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop } = { ...props };
     const carouselId = useId();
-    return (<div id={id} >
+    return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}}>
         {/* <input type="text" value="0" /> */}
         <AnimateOnShow animation="animate-fade-up50" delay={300}>
             <div id={carouselId} class="min-h-min flex flex-col items-center w-full pt-7 lg:pt-14 relative" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
-                {backgroundImage && <div class="absolute hidden md:block -z-50 top-0 left-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "background image"} height={backgroundImage.height || 780} width={backgroundImage.width || 460} class="h-full object-contain" /></div>}
+                {backgroundImage?.src && <div class="absolute hidden md:block -z-50 top-0 left-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "background image"} height={backgroundImage.height || 780} width={backgroundImage.width || 460} class="h-full object-contain" /></div>}
 
                 <AnimateOnShow animation="animate-fade-up" delay={500}>
                     {title && <div class="text-2xl md:text-5xl font-normal text-center text-primary leading-snug max-w-[942px] lg:pb-16" style={{ color: titleColor, fontFamily: titleFont }} dangerouslySetInnerHTML={{__html: title}} />}

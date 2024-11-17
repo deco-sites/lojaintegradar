@@ -6260,12 +6260,12 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 5rem;
   }
 
-  .md\:mt-11 {
-    margin-top: 2.75rem;
+  .md\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
-  .md\:mt-5 {
-    margin-top: 1.25rem;
+  .md\:mt-11 {
+    margin-top: 2.75rem;
   }
 
   .md\:mt-\[-26px\] {
@@ -6971,6 +6971,16 @@ details.collapse summary::-webkit-details-marker {
   .lg\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .lg\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .lg\:px-3\.5 {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
   }
 
   .lg\:px-4 {

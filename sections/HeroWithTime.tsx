@@ -1,13 +1,27 @@
 import HeroWithTime from "../islands/HeroWithTime.tsx";
+import { Section } from "deco/blocks/section.ts";
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import { Button } from "site/types/types.ts";
 import { ButtonProps } from "../islands/HeroTimeButtons.tsx";
+
 export interface Props {
     title?: Title;
     subTitle?: Subtitle;
     tabs?: Tabs[];
     finalButtons?: Button[];
     background?: Background;
+    bottomSection?: Section;
+}
+
+export interface Tag {
+    text?: string;
+    fontFamily?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    borderColor?: string;
 }
 
 interface Title {
@@ -139,6 +153,7 @@ function HeroWithTimer(props: Props) {
     return (
         <div id="heroTimeSection" style={getBackgroundStyle()} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
             <HeroWithTime {...props} />
+            {props.bottomSection && <props.bottomSection.Component {...props.bottomSection.props} />}
         </div>
     )
 }

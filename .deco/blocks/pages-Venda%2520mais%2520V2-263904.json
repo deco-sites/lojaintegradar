@@ -3339,11 +3339,11 @@
                     }
                   ],
                   "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d1ce5db2-f8c9-4837-8286-f4c4f976eebf/expancao-mobile-background.png",
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/bee34ab5-8120-4c61-9a84-63503d7845b2/bg-exapansao-mobile.png",
                     "width": 430,
                     "height": 1354
                   },
-                  "useContent": "video",
+                  "useContent": "image",
                   "planTag": {
                     "icon": {
                       "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6ebac615-ff6e-43d6-879e-475960c20693/foguete-(1)-1.svg"
@@ -3423,7 +3423,10 @@
                   },
                   "valuesBackgroundColor": "#371E55",
                   "imageTextFont": "Instrument Serif",
-                  "contentImage": {},
+                  "contentImage": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fc2f7ee2-e262-41bf-8c35-ccfcf22459ec/img-expansao-mobile.png",
+                    "height": 492
+                  },
                   "tabs": {
                     "tabs": [
                       {
@@ -3440,14 +3443,14 @@
                           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
                         },
                         "title": "<p><span style=\"color: #371e55\">Amplo número de usuários</span></p>",
-                        "contentText": "<p><strong><span style=\"color: #371e55\">Lorem Ipsum</span></strong><span style=\"color: #371e55; font-size: 14px\"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</span></p>"
+                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Adicione até 10 pessoas para acompanhar o faturamento, pedidos e visitas da sua loja.</span></p>"
                       },
                       {
                         "icon": {
                           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
                         },
                         "title": "<p><span style=\"color: #371e55\">Tráfego otimizado com IA</span></p>",
-                        "contentText": "<p><strong><span style=\"color: #371e55\">Lorem Ipsum</span></strong><span style=\"color: #371e55; font-size: 14px\"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</span></p>"
+                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Enriqueça seu catálogo e crie descrições de produtos com Inteligência Artificial. Experimente gratuitamente em 50 produtos e aproveite o enriquecimento em massa.</span></p>"
                       }
                     ],
                     "interval": 6,

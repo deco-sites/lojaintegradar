@@ -182,7 +182,7 @@ function TcoCalculatorPage4({ page1, rootId, page4, plans }: {
     const { progressImage, contentBackground, saving, result, resultTableColors, topSellerFeedback, midTailFeedback, longTailFeedback, lessVantageText, moreVantageText, lojaIntegradaText, indicatedPlanSavingLabel, indicatedPlanSavingLabelTextColor, indicatedPlanSavingLabelBackgroundColor, moreVantageBackgroundColor, moreVantageTextColor, lessVantageBackgroundColor, lessVantageTextColor, lojaIntegradaTextColor, asideContentBackgroundColor } = page4;
     const inputCaptionClass = "text-base text-primary font-bold flex justify-between items-center";
     const inputClass = "bg-transparent min-h-[38px] w-full rounded-lg border border-neutral-content px-4 mt-1";
-    return (<div class="relative flex flex-wrap xl:flex-nowrap w-full min-h-[971px] xl:rounded-[30px] overflow-hidden hidden">
+    return (<div class="relative flex flex-wrap xl:flex-nowrap w-full min-h-[971px] xl:rounded-[10px] overflow-hidden hidden">
         <div class={`relative w-full xl:max-w-[437px] min-h-[971px] pt-[70px] px-7 pb-16 xl:pb-0 text-primary order-last xl:order-none`} style={{ backgroundColor: asideContentBackgroundColor }}>
             {asideTopIcon?.src && <Image id={rootId + "negativeScreenAsideTopIcon"} width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10 hidden" />}
             {asideBackground?.src && <Image width={asideBackground.width || 813} height={asideBackground.height || 971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover object-top" />}

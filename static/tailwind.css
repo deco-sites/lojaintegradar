@@ -6945,6 +6945,10 @@ details.collapse summary::-webkit-details-marker {
     overflow: visible;
   }
 
+  .lg\:rounded-\[10px\] {
+    border-radius: 10px;
+  }
+
   .lg\:rounded-\[20px\] {
     border-radius: 20px;
   }
@@ -7351,6 +7355,10 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:justify-end {
     justify-content: flex-end;
+  }
+
+  .xl\:rounded-\[10px\] {
+    border-radius: 10px;
   }
 
   .xl\:rounded-\[30px\] {

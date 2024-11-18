@@ -3345,6 +3345,9 @@ details.collapse summary::-webkit-details-marker {
 .z-\[-2\] {
   z-index: -2;
 }
+.z-\[-60\] {
+  z-index: -60;
+}
 .z-\[1\] {
   z-index: 1;
 }
@@ -5483,6 +5486,9 @@ details.collapse summary::-webkit-details-marker {
 .pt-\[36px\] {
   padding-top: 36px;
 }
+.pt-\[42px\] {
+  padding-top: 42px;
+}
 .pt-\[50px\] {
   padding-top: 50px;
 }
@@ -7063,6 +7069,11 @@ details.collapse summary::-webkit-details-marker {
   .lg\:py-\[118px\] {
     padding-top: 118px;
     padding-bottom: 118px;
+  }
+
+  .lg\:py-\[120px\] {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .lg\:py-\[150px\] {

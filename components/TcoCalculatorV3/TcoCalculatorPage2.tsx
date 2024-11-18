@@ -1,4 +1,4 @@
-import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { Benefit } from "./TcoCalculatorPage1.tsx";
@@ -99,10 +99,17 @@ export interface IDropdown {
     tooltipMessage?: string;
 }
 export interface Page1 {
-    title: string;
-    caption: string;
+    title?: string;
+    caption?: string;
     /** @format color-input */
     asideTextColor?: string;
+    text?: RichText;
+    textFont?: string; 
+    textWithIcon?: {
+        text?: string;
+        icon?: IImage;
+    };
+    asideBottomText?: RichText;
     contentTitle: HTMLWidget;
     contentTitleIcon?: IImage;
     contentCaption?: string;
@@ -114,8 +121,6 @@ export interface Page1 {
     mobileTopBanner: IImage;
 }
 export interface Page2 {
-    asideBackground?: IImage;
-    benefits?: Benefit[];
     progressImage?: IImage;
     averageMonthlyRevenue: IInput;
     currentPlatform: IDropdown;
@@ -144,26 +149,29 @@ function TcoCalculatorPage2({ page1, rootId, page2 }: {
     page2: Page2;
     rootId: string;
 }) {
-    const { title, caption, contentTitle, contentTitleIcon, contentCaption, contentBackground, asideTopIcon, mobileTopBanner, asideTextColor, contentCaptionColor } = page1;
-    const { progressImage, benefits, averageMonthlyRevenue, currentPlatform, asideBackground, currentPlatformMonthlyFee, currentPlatformComission, MontlyOrders, nextButtonText, backButtonText, inputsTextColor, inputsBorderColor, buttonsTextColor, inputsNoFillErrorMessage, inputsErrorMessageColor } = page2;
+    const { title, caption, contentTitle, text, textFont,asideBackground, asideBottomText, textWithIcon, contentTitleIcon, contentCaption, contentBackground, asideTopIcon, mobileTopBanner, asideTextColor, contentCaptionColor } = page1;
+    const { progressImage, averageMonthlyRevenue, currentPlatform, currentPlatformMonthlyFee, currentPlatformComission, MontlyOrders, nextButtonText, backButtonText, inputsTextColor, inputsBorderColor, buttonsTextColor, inputsNoFillErrorMessage, inputsErrorMessageColor } = page2;
     const inputCaptionClass = "text-base text-primary flex justify-between items-center";
     const inputClass = "bg-transparent min-h-[38px] w-full rounded-lg border border-primary px-4 mt-2.5";
     return (<div class="relative flex flex-wrap lg:flex-nowrap w-full min-h-[971px] lg:rounded-[10px] overflow-hidden hidden">
-            <div class={`relative w-full lg:max-w-[437px] pt-[121px] px-11 ${!asideBackground && 'bg-primary'} text-primary-content hidden lg:block`} style={{color: asideTextColor}}>
-                {asideTopIcon?.src && <Image width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10"/>}
-                {asideBackground?.src && <Image width={asideBackground.width || 813} height={asideBackground.height || 971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
-                <h2 class="text-[32px] leading-[130%]">{title}</h2>
-                <p class="text-sm mt-5 leading-[120%]">{caption}</p>
-                <div class="mt-[60px]">
-                    {benefits && benefits.map((benefit) => (<div class="mt-[30px]">
-                        <div class="flex">
-                                {benefit.icon.src && <Image height={benefit.icon.height || 17} width={benefit.icon.width || 17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} class="mr-2.5"/>}
-                                <p style={{color: benefit.titleColor}}>{benefit.title}</p>
-                            </div>
-                            <p class="mt-2.5 text-sm" style={{color: benefit.captionColor}}>{benefit.caption}</p>
-                        </div>))}
+            <div class={`relative w-full lg:max-w-[437px] pt-[71px] px-11 ${!asideBackground && 'bg-primary'} text-primary-content hidden lg:block`} style={{color: asideTextColor}}>
+                {asideTopIcon?.src && <Image width={asideTopIcon.width || 133} height={asideTopIcon.width || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10"/>}
+                {asideBackground?.src && <Image width={asideBackground.width || 813} height={asideBackground.height || 971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover object-top"/>}
+                <h2 class="text-[32px] leading-[130%] font-bold">{title}</h2>
+                {caption && <p class="text-sm mt-5 leading-[120%] font-normal">{caption}</p>}
+                <div class="text-[42px] leading-[120%] font-instrument font-normal mt-5" style={{fontFamily: textFont}} dangerouslySetInnerHTML={{__html: text || ""}}/>
+                <div class="flex gap-2.5 items-center mt-5">
+                    <p class="text-base font-normal leading-normal">{textWithIcon?.text}</p>
+                    {textWithIcon?.icon?.src && <Image 
+                        src={textWithIcon.icon.src}
+                        alt={textWithIcon.icon.alt || "icon"}
+                        width={textWithIcon.icon.width || 18}
+                        height={textWithIcon.icon.height || 18}
+                    />}
                 </div>
+                <div dangerouslySetInnerHTML={{__html: asideBottomText || ""}} class="font-bold leading-[130%] absolute left-6 bottom-6" />
             </div>
+
 
             <div class="lg:hidden relative text-2xl text-secondary-content font-semibold py-10 px-4 w-full min-h-[155px]" style={{color: asideTextColor}}>
                     {mobileTopBanner.src && <Image width={mobileTopBanner.width || 430} height={mobileTopBanner.height || 155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10"/>}

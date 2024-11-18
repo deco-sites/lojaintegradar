@@ -30,7 +30,7 @@ export interface Benefit {
     caption?: string;
     /** @format color-input */
     captionColor?: string;
-    icon: IImage;
+    icon?: IImage;
 }
 /** @title {{title}} */
 export interface Objective {
@@ -39,8 +39,8 @@ export interface Objective {
     icon: IImage;
 }
 export interface Page1 {
-    title: string;
-    caption: string;
+    title?: string;
+    caption?: string;
     /** 
      * @format color-input
      * @title Title and caption color
@@ -52,8 +52,8 @@ export interface Page1 {
         text?: string;
         icon?: IImage;
     };
-    asideBottomText?: HTMLWidget;
-    contentTitle: HTMLWidget;
+    asideBottomText?: RichText;
+    contentTitle: RichText;
     contentTitleIcon?: IImage;
     contentCaption?: string;
     /** @format color-input */
@@ -83,6 +83,9 @@ export interface Page1 {
     contentBackground?: IImage;
     mobileTopBanner: IImage;
     mobileStartBanner: IImage;
+    mobileStartBannerTitle?: RichText;
+    mobileStartBannerTitleFont?: string;
+    mobileStartBannerText?: RichText;
     mobileStartButtonText: string;
 }
 function TcoCalculatorPage1({ page1, rootId }: {
@@ -97,7 +100,7 @@ function TcoCalculatorPage1({ page1, rootId }: {
                 <h2 class="text-[32px] leading-[130%] font-bold">{title}</h2>
                 {caption && <p class="text-sm mt-5 leading-[120%] font-normal">{caption}</p>}
                 <div class="text-[42px] leading-[120%] font-instrument font-normal mt-5" style={{fontFamily: textFont}} dangerouslySetInnerHTML={{__html: text || ""}}/>
-                <div class="flex gap-2.5 items-center">
+                <div class="flex gap-2.5 items-center mt-5">
                     <p class="text-base font-normal leading-normal">{textWithIcon?.text}</p>
                     {textWithIcon?.icon?.src && <Image 
                         src={textWithIcon.icon.src}

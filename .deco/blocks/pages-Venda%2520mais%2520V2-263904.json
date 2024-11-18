@@ -125,16 +125,16 @@
         "createStoreCtaMobile": {
           "ctaStyle": "button",
           "planId": "172",
-          "text": "Abrir loja virtual",
-          "backgroundColor": "#ffffff",
-          "textColor": "#371E55",
-          "borderColor": "#ffffff",
+          "text": "Criar loja",
+          "backgroundColor": "rgba(255, 255, 255, 0.60)",
+          "textColor": "#003037",
+          "borderColor": "Transparent",
           "showIcon": false
         },
         "createStoreCtaMobileOnScrollColors": {
-          "backgroundColor": "#371E55",
-          "borderColor": "#371E55",
-          "textColor": "#ffffff"
+          "backgroundColor": "rgba(255, 255, 255, 0.60)",
+          "borderColor": "Transparent",
+          "textColor": "#003037"
         }
       },
       "logo": {
@@ -1263,9 +1263,8 @@
       "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Calcule e compare os gastos</span> <em><span style=\"color: rgb(170, 130, 200)\">da sua loja</span></em></p>",
       "page1": {
         "title": "Calculadora TCO",
-        "caption": "O TCO é o total dos custos relacionados à implementação, operação e manutenção de uma loja virtual. Ele reflete o custo total que o seu e-commerce representa para você, levando em conta um ciclo de vida completo.",
         "benefits": [],
-        "contentTitle": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">É rapidinho, <strong>1 min</strong></span></p>",
+        "contentTitle": "<p><span style=\"color: rgb(55, 30, 85)\">É rapidinho, </span><strong><span style=\"color: rgb(55, 30, 85)\">1 min</span></strong></p>",
         "contentTitleIcon": {
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/b355f7b9-d26f-48eb-b075-832fd8ea1435/clock-icon.svg",
           "alt": "clock icon"
@@ -1333,14 +1332,17 @@
         "hubspotButtonTextColor": "#ffffff",
         "hubspotErrorMessageColor": "#F57E77",
         "objectivesBorderColor": "#371E55",
-        "text": "<p style=\"letter-spacing: -1.26px;\" data-mce-style=\"letter-spacing: -1.26px;\"><span style=\"color: rgb(113, 219, 212);\" data-mce-style=\"color: rgb(113, 219, 212);\"><em>A concorrência pode não ter clareza</em></span>&nbsp; sobre o custo de manter um e-commerce. Saia na frente e calcule!</p>",
+        "text": "<p><span style=\"color: #71dbd4\">Economize e conheça</span><span> </span><span style=\"color: #fafaf5\">o melhor custo-benefício<br>para a sua operação</span></p>",
         "textWithIcon": {
           "text": "Preencha os dados da sua loja e descubra",
           "icon": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c530ddfa-b35d-49b8-8b6d-b71ae75dd3ba/arrow-green.svg"
           }
         },
-        "asideBottomText": "<p>Gabriel Bollico</p><p><span style=\"color: rgb(204, 190, 255);\" data-mce-style=\"color: rgb(204, 190, 255);\">Ecommerce Puro</span></p>"
+        "asideBottomText": "<p>Gabriel Bollico</p><p><span style=\"color: rgb(204, 190, 255)\">Ecommerce Puro</span></p>",
+        "mobileStartBannerText": "<p><span>A nossa calculadora mostra quanto você economiza, ano a ano, ao escolher uma plataforma que valoriza seu orçamento e potencializa suas vendas. Quem compara, comprova: mais economia, mais lucro!</span></p>",
+        "mobileStartBannerTitle": "<p style=\"text-align: center\"><span style=\"color: #fafaf5\">Calcule e compare os gastos</span><br><span style=\"color: #aa82c8\">da sua loja</span></p>",
+        "mobileStartBannerTitleFont": "Instrument serif"
       },
       "caption": "<p style=\"text-align: justify\"><span style=\"color: rgb(250, 250, 245)\">Veja quanto você pode economizar por ano</span></p><p style=\"text-align: justify\"></p>",
       "page2": {

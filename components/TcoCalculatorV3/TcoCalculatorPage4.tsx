@@ -76,7 +76,7 @@ export interface ResultTableColors {
 }
 
 export interface Page1 {
-    title: string;
+    title?: string;
     asideBackground?: IImage;
     contentTitle: HTMLWidget;
     contentTitleIcon?: IImage;

@@ -1,4 +1,4 @@
-import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, RichText, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
@@ -40,7 +40,8 @@ export interface emailForm {
 
 export interface Props {
     id?: string;
-    title?: string;
+    title?: RichText;
+    titleFont?: string;
     backgroundVideo?: VideoWidget;
     backgroundImage?: IImage;
     useBackground?: "video" | "image";
@@ -64,7 +65,7 @@ export interface Props {
     /** @format color-input */
 }
 
-export default function Footer2({ id, title, backgroundImage, backgroundVideo, useBackground, cards = [], logo, logoCaption, formCaption, socialLinks, bottomLinks, emailForm, color1, color2, color3, color4, showForm, bottomBackground }: Props) {
+export default function Footer2({ id, title, titleFont, backgroundImage, backgroundVideo, useBackground, cards = [], logo, logoCaption, formCaption, socialLinks, bottomLinks, emailForm, color1, color2, color3, color4, showForm, bottomBackground }: Props) {
     const backgroundColor = useBackground ? "transparent" : color1;
     return <footer id={id} class="text-primary" style={{ color: color1 }}>
         <div class={`relative w-full h-[56vw] lg:h-[42vw] flex justify-center items-end  ${!useBackground && "bg-primary"}`} style={{ backgroundColor: backgroundColor }}>
@@ -91,7 +92,11 @@ export default function Footer2({ id, title, backgroundImage, backgroundVideo, u
                 class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10"
             />}
             <AnimateOnShow animation="animate-fade-down50">
-                <h2 class="pb-14 lg:pb-[14vw] text-center text-2xl lg:text-[40px] leading-[120%] font-medium max-w-[576px] text-primary-content" style={{ color: color2 }}>{title}</h2>
+                <div
+                    class="pb-14 lg:pb-[14vw] text-center text-2xl lg:text-[40px] leading-[120%] font-normal text-primary-content"
+                    style={{ color: color2, fontFamily: titleFont }}
+                    dangerouslySetInnerHTML={{ __html: title || "" }}
+                />
             </AnimateOnShow>
         </div>
         <div class="relative pb-32">

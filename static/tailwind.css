@@ -3189,6 +3189,9 @@ details.collapse summary::-webkit-details-marker {
 .bottom-5 {
   bottom: 1.25rem;
 }
+.bottom-56 {
+  bottom: 14rem;
+}
 .bottom-6 {
   bottom: 1.5rem;
 }
@@ -3344,6 +3347,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .z-\[-2\] {
   z-index: -2;
+}
+.z-\[-60\] {
+  z-index: -60;
 }
 .z-\[1\] {
   z-index: 1;
@@ -3932,6 +3938,9 @@ details.collapse summary::-webkit-details-marker {
 .w-\[207px\] {
   width: 207px;
 }
+.w-\[214px\] {
+  width: 214px;
+}
 .w-\[239px\] {
   width: 239px;
 }
@@ -4039,6 +4048,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-w-\[210px\] {
   min-width: 210px;
+}
+.min-w-\[214px\] {
+  min-width: 214px;
 }
 .min-w-\[239px\] {
   min-width: 239px;
@@ -4175,6 +4187,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[360px\] {
   max-width: 360px;
 }
+.max-w-\[364px\] {
+  max-width: 364px;
+}
 .max-w-\[375px\] {
   max-width: 375px;
 }
@@ -4219,9 +4234,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[555px\] {
   max-width: 555px;
-}
-.max-w-\[576px\] {
-  max-width: 576px;
 }
 .max-w-\[597px\] {
   max-width: 597px;
@@ -5375,6 +5387,9 @@ details.collapse summary::-webkit-details-marker {
 .pb-\[72px\] {
   padding-bottom: 72px;
 }
+.pl-0 {
+  padding-left: 0px;
+}
 .pl-1 {
   padding-left: 0.25rem;
 }
@@ -5482,6 +5497,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-\[36px\] {
   padding-top: 36px;
+}
+.pt-\[42px\] {
+  padding-top: 42px;
 }
 .pt-\[50px\] {
   padding-top: 50px;
@@ -6936,6 +6954,10 @@ details.collapse summary::-webkit-details-marker {
     overflow: visible;
   }
 
+  .lg\:rounded-\[10px\] {
+    border-radius: 10px;
+  }
+
   .lg\:rounded-\[20px\] {
     border-radius: 20px;
   }
@@ -7065,6 +7087,11 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 118px;
   }
 
+  .lg\:py-\[120px\] {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .lg\:py-\[150px\] {
     padding-top: 150px;
     padding-bottom: 150px;
@@ -7156,6 +7183,10 @@ details.collapse summary::-webkit-details-marker {
     padding-top: 160px;
   }
 
+  .lg\:pt-\[60px\] {
+    padding-top: 60px;
+  }
+
   .lg\:pt-\[72px\] {
     padding-top: 72px;
   }
@@ -7187,6 +7218,11 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 
@@ -7328,6 +7364,10 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:justify-end {
     justify-content: flex-end;
+  }
+
+  .xl\:rounded-\[10px\] {
+    border-radius: 10px;
   }
 
   .xl\:rounded-\[30px\] {

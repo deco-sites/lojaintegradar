@@ -1686,7 +1686,36 @@
       "sectionId": "tcocalculator",
       "backgroundColor": "#3A2159",
       "titleFont": "Instrument serif",
-      "captionText": "<p><span style=\"color: #fafaf5\">Ao comparar o custo entre plataformas, você entende onde pode otimizar sua operação e investir no que realmente importa para o crescimento do seu negócio. A nossa calculadora mostra quanto você economiza, ano a ano, ao escolher uma plataforma que valoriza seu orçamento e potencializa suas vendas. Quem compara, comprova: mais economia, mais lucro!</span></p>"
+      "captionText": "<p><span style=\"color: #fafaf5\">Ao comparar o custo entre plataformas, você entende onde pode otimizar sua operação e investir no que realmente importa para o crescimento do seu negócio. A nossa calculadora mostra quanto você economiza, ano a ano, ao escolher uma plataforma que valoriza seu orçamento e potencializa suas vendas. Quem compara, comprova: mais economia, mais lucro!</span></p>",
+      "benefits": [
+        {
+          "title": "Negócio",
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1c1fdacc-f7dc-4875-b3e9-01b6a8e6238b/calculadora-3.svg"
+          },
+          "titleColor": "#FAFAF5",
+          "caption": "Compare seus custos mensais de plataforma e comissão versus sua receita.",
+          "captionColor": "#FAFAF5"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f5bb43eb-e9b1-4cbb-b0d2-fbacb7d35101/Vector.svg"
+          },
+          "title": "Pagamento",
+          "titleColor": "#FAFAF5",
+          "captionColor": "#FAFAF5",
+          "caption": "Analise seus custos com tarifas de cartão de crédito, pix, boleto e ferramentas antifraude."
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d91c2e39-8372-4995-ace9-a11e80fbf895/start-up-1.svg"
+          },
+          "title": "Envio",
+          "titleColor": "#FAFAF5",
+          "caption": "Leve em consideração todos os custos que sua loja possui com o envio de produtos.",
+          "captionColor": "#FAFAF5"
+        }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

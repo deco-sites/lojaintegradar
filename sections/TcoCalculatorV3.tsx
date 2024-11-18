@@ -1,18 +1,21 @@
 import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 import { useId } from "../sdk/useId.ts";
-import TcoCalculatorPage1 from "site/components/TcoCalculatorV2/TcoCalculatorPage1.tsx";
-import TcoCalculatorPage2 from "site/components/TcoCalculatorV2/TcoCalculatorPage2.tsx";
-import TcoCalculatorPage3 from "site/components/TcoCalculatorV2/TcoCalculatorPage3.tsx";
-import TcoCalculatorPage4 from "site/components/TcoCalculatorV2/TcoCalculatorPage4.tsx";
-import TcoCalculatorMobileStartPage from "site/components/TcoCalculatorV2/TcoCalculatorMobileStartPage.tsx";
-import { Page1 } from "site/components/TcoCalculatorV2/TcoCalculatorPage1.tsx";
-import { Page2 } from "site/components/TcoCalculatorV2/TcoCalculatorPage2.tsx";
-import { Page3 } from "site/components/TcoCalculatorV2/TcoCalculatorPage3.tsx"
-import { Page4 } from "site/components/TcoCalculatorV2/TcoCalculatorPage4.tsx";
+import TcoCalculatorPage1 from "site/components/TcoCalculatorV3/TcoCalculatorPage1.tsx";
+import TcoCalculatorPage2 from "site/components/TcoCalculatorV3/TcoCalculatorPage2.tsx";
+import TcoCalculatorPage3 from "site/components/TcoCalculatorV3/TcoCalculatorPage3.tsx";
+import TcoCalculatorPage4 from "site/components/TcoCalculatorV3/TcoCalculatorPage4.tsx";
+import TcoCalculatorMobileStartPage from "site/components/TcoCalculatorV3/TcoCalculatorMobileStartPage.tsx";
+import { Page1 } from "site/components/TcoCalculatorV3/TcoCalculatorPage1.tsx";
+import { Page2 } from "site/components/TcoCalculatorV3/TcoCalculatorPage2.tsx";
+import { Page3 } from "site/components/TcoCalculatorV3/TcoCalculatorPage3.tsx"
+import { Page4 } from "site/components/TcoCalculatorV3/TcoCalculatorPage4.tsx";
 
 export interface IImage {
-    src: ImageWidget;
+    src?: ImageWidget;
     alt?: string;
+    width?: number;
+    height?: number;
 }
 
 /** @title {{title}} */
@@ -26,6 +29,17 @@ export interface Plan {
     comission: number;
 }
 
+/** @title {{title}} */
+export interface Benefit {
+    title: string;
+    /** @format color-input */
+    titleColor?: string;
+    caption?: string;
+    /** @format color-input */
+    captionColor?: string;
+    icon?: IImage;
+}
+
 export interface Props {
     sectionId?: string;
     /** @format color-input */
@@ -34,6 +48,7 @@ export interface Props {
     titleFont?: string;
     caption?: RichText;
     captionText?: RichText;
+    benefits?: Benefit[];
     plans: Plan[];
     page1: Page1;
     page2: Page2;
@@ -45,7 +60,7 @@ export interface Props {
 
 function TcoCalculator(props: Props) {
     const id = useId();
-    const { sectionId, backgroundColor, title, titleFont, caption, captionText, page1, page2, page3, page4, plans, paddingBottom, paddingTop } = { ...props };
+    const { sectionId, backgroundColor, title, titleFont, benefits, caption, captionText, page1, page2, page3, page4, plans, paddingBottom, paddingTop } = { ...props };
 
     return (
         <div class="relative">
@@ -59,6 +74,13 @@ function TcoCalculator(props: Props) {
                     {title && <div class="mt-3 text-primary text-[32px] lg:text-7xl font-normal" dangerouslySetInnerHTML={{ __html: title }} style={{ fontFamily: titleFont }} />}
                     {caption && <div class="text-neutral text-2xl font-normal leading-normal  mt-[60px]" dangerouslySetInnerHTML={{ __html: caption }} />}
                     {captionText && <div class="text-base text-normal mt-2.5" dangerouslySetInnerHTML={{ __html: captionText }} />}
+                    <div class="mt-7 flex justify-between">
+                        {benefits && benefits.map((benefit) => (<div class="max-w-[364px]">
+                            {benefit.icon?.src && <Image height={benefit.icon.height || 17} width={benefit.icon.width || 17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} />}
+                            <p class="mt-2.5" style={{ color: benefit.titleColor }}>{benefit.title}</p>
+                            <p class="mt-2.5 text-sm" style={{ color: benefit.captionColor }}>{benefit.caption}</p>
+                        </div>))}
+                    </div>
                 </div>
                 <div
                     class="w-full gap-9 lg:pt-[60px] lg:px-9"

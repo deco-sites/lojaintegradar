@@ -3569,7 +3569,7 @@
                   "valuesBackgroundColor": "#371E55",
                   "imageTextFont": "Instrument Serif",
                   "contentImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fc2f7ee2-e262-41bf-8c35-ccfcf22459ec/img-expansao-mobile.png",
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/60c4287f-d8a5-4989-bad2-eb8f8f554024/aceleracao-mobile.png",
                     "height": 492
                   },
                   "tabs": {
@@ -3604,6 +3604,147 @@
                   }
                 },
                 "title": "Plano Aceleração",
+                "titleFont": "Instrument Serif",
+                "titleBackgroundColor": "#DDD5EB",
+                "titleDisabledBackgroundColor": "#EDEDED",
+                "titleColor": "#371E55",
+                "titleDisabledColor": "#5F6E82"
+              },
+              {
+                "section": {
+                  "__resolveType": "site/sections/PlanDetailsV3.tsx",
+                  "cta": [
+                    {
+                      "ctaStyle": "link",
+                      "href": "/talkToSpecialist",
+                      "showIcon": true,
+                      "textColor": "#371E55",
+                      "text": "<p><u>Mude para o Crescimento agora</u></p>"
+                    }
+                  ],
+                  "backgroundImage": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/bee34ab5-8120-4c61-9a84-63503d7845b2/bg-exapansao-mobile.png",
+                    "width": 430,
+                    "height": 1354
+                  },
+                  "useContent": "image",
+                  "planTag": {
+                    "icon": {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6ebac615-ff6e-43d6-879e-475960c20693/foguete-(1)-1.svg"
+                    },
+                    "text": "Plano Crescimento"
+                  },
+                  "slides": [
+                    {
+                      "bulletPoints": {
+                        "items": [],
+                        "bulletPointsIcon": {}
+                      },
+                      "title": "Tarifas reduzidas e faixa de isenção",
+                      "titleColor": "#371E55",
+                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Pague apenas 0,99% de tarifa para transações em outros meios de pagamento, com isenção para faturamento de até R$ 2.500/mês.</span></p>",
+                      "backgroundImage": {
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
+                      }
+                    },
+                    {
+                      "bulletPoints": {
+                        "items": []
+                      },
+                      "title": "Pagali com taxa reduzida",
+                      "backgroundImage": {
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
+                      },
+                      "titleColor": "#371E55",
+                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Usando o meio de pagamento nativo da Loja Integrada, a tarifa é de apenas 4,59%</span></p>"
+                    },
+                    {
+                      "bulletPoints": {
+                        "items": []
+                      },
+                      "title": "Tráfego otimizado com IA",
+                      "titleColor": "#371E55",
+                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Enriqueça seu catálogo e crie descrições de produtos com Inteligência Artificial. Experimente gratuitamente em 30 produtos.</span></p>",
+                      "backgroundImage": {
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
+                      }
+                    }
+                  ],
+                  "annualValues": {
+                    "title": "Anual",
+                    "text": "<p><span style=\"color: rgb(250, 250, 245)\">em até 6x sem juros</span></p><p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 86</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 516</span></p>",
+                    "saving": "⚡️ Economia de R$ 132/ano",
+                    "titleColor": "#FAFAF5",
+                    "promoTag": {
+                      "borderColor": "linear-gradient(90deg, #BAB1E8 0%, #371E55 94.19%)",
+                      "textColor": "linear-gradient(90deg, #BAB1E8 0%, #75569B 100%)",
+                      "backgroundColor": "linear-gradient(90deg, #27153D 0%, #371E55 94.19%)"
+                    },
+                    "savingColor": "#FAFAF5",
+                    "tag": "20% OFF",
+                    "tagTextColor": "#371E55",
+                    "tagBackgroundColor": "#FFE6A0"
+                  },
+                  "montlyValues": {
+                    "text": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 54</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$648</span></p>",
+                    "title": "Mensal",
+                    "titleColor": "#FAFAF5"
+                  },
+                  "createStoreCta": {
+                    "ctaStyle": "button",
+                    "planId": "173",
+                    "text": "Quero assinar",
+                    "backgroundColor": "#371E55",
+                    "textColor": "#FAFAF5",
+                    "borderColor": "#371E55"
+                  },
+                  "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/11926add-083a-4916-abf5-0f4d3f4e6378/video-dobra-expansao.webm",
+                  "imageText": "<p><span style=\"color: rgb(235, 235, 235)\">Tenha mais recursos, suporte dedicado </span><em><span style=\"color: rgb(170, 130, 200)\">e inteligência para impulsionar sua loja.</span></em></p>",
+                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(55, 30, 92)\">Investimento acessível </span><em><span style=\"color: rgb(130, 90, 180)\">para sua loja crescer</span></em></p>",
+                  "titleFont": "Instrument Serif",
+                  "valuesTag": {
+                    "text": "🔥 Oferta de Black Friday",
+                    "backgroundColor": "#27153D",
+                    "textColor": "#FAFAF5"
+                  },
+                  "valuesBackgroundColor": "#371E55",
+                  "imageTextFont": "Instrument Serif",
+                  "contentImage": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0f6216ef-9425-4124-9ce1-32c938268e2d/crescimento-mobile.png",
+                    "height": 492
+                  },
+                  "tabs": {
+                    "tabs": [
+                      {
+                        "icon": {
+                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg",
+                          "width": 25,
+                          "height": 25
+                        },
+                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">5x mais produtos e acessos</span></p>",
+                        "contentText": "<p><span style=\"color: rgb(55, 30, 85)\">Tenha 250 produtos ativos à disposição e capacidade para receber até 25 mil visitas mensais, cinco vezes mais que no plano gratuito;</span></p>"
+                      },
+                      {
+                        "icon": {
+                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
+                        },
+                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Recursos para vender mais</span></p>",
+                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">A partir deste plano, tenha acesso ao Checkout sem Senha, Carrinho Abandonado e Compre Junto, aumentando seu ticket médio em até 21%;</span></p>"
+                      },
+                      {
+                        "icon": {
+                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
+                        },
+                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Suporte facilitado</span></p>",
+                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Conte com atendimento eficiente via chat e e-mail para sanar todas as suas dúvidas;</span></p>"
+                      }
+                    ],
+                    "interval": 6,
+                    "progressBarColor": "#3F2656",
+                    "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
+                  }
+                },
+                "title": "Plano Crescimento",
                 "titleFont": "Instrument Serif",
                 "titleBackgroundColor": "#DDD5EB",
                 "titleDisabledBackgroundColor": "#EDEDED",
@@ -3713,7 +3854,10 @@
                       "textColor": "linear-gradient(90deg, #BAB1E8 0%, #75569B 100%)",
                       "backgroundColor": "linear-gradient(90deg, #27153D 0%, #371E55 94.19%)"
                     },
-                    "savingColor": "#FAFAF5"
+                    "savingColor": "#FAFAF5",
+                    "tag": "40% OFF",
+                    "tagTextColor": "#371E55",
+                    "tagBackgroundColor": "#FFE6A0"
                   },
                   "montlyValues": {
                     "text": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 239</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 2.868</span></p>",

@@ -7167,6 +7167,10 @@ details.collapse summary::-webkit-details-marker {
     padding-top: 160px;
   }
 
+  .lg\:pt-\[60px\] {
+    padding-top: 60px;
+  }
+
   .lg\:pt-\[72px\] {
     padding-top: 72px;
   }
@@ -7198,6 +7202,11 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 

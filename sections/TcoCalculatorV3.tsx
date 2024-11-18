@@ -1,4 +1,4 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import { useId } from "../sdk/useId.ts";
 import TcoCalculatorPage1 from "site/components/TcoCalculatorV2/TcoCalculatorPage1.tsx";
 import TcoCalculatorPage2 from "site/components/TcoCalculatorV2/TcoCalculatorPage2.tsx";
@@ -30,12 +30,10 @@ export interface Props {
     sectionId?: string;
     /** @format color-input */
     backgroundColor?: string;
-    title?: string;
-    /** @format color-input */
-    titleColor?: string;
-    caption?: string;
-    /** @format color-input */
-    captionColor?: string;
+    title?: RichText;
+    titleFont?: string;
+    caption?: RichText;
+    captionText?: RichText;
     plans: Plan[];
     page1: Page1;
     page2: Page2;
@@ -47,7 +45,7 @@ export interface Props {
 
 function TcoCalculator(props: Props) {
     const id = useId();
-    const { sectionId, backgroundColor, title, caption, page1, page2, page3, page4, plans, titleColor, captionColor, paddingBottom, paddingTop } = { ...props };
+    const { sectionId, backgroundColor, title, titleFont, caption, captionText, page1, page2, page3, page4, plans, paddingBottom, paddingTop } = { ...props };
 
     return (
         <div class="relative">
@@ -57,10 +55,13 @@ function TcoCalculator(props: Props) {
                 class="min-h-min flex flex-col lg:container md:max-w-[1332px] lg:mx-auto pt-[42px] lg:py-[120px]"
                 style={{ paddingBottom, paddingTop }}
             >
-                {caption && <h3 class="text-center text-neutral text-2xl font-semibold hidden lg:block" style={{ color: captionColor }}>{caption}</h3>}
-                {title && <h2 class="mt-3 text-center text-primary text-5xl font-semibold hidden lg:block" style={{ color: titleColor }}>{title}</h2>}
+                <div class="px-9 hidden lg:block">
+                    {title && <div class="mt-3 text-primary text-[32px] lg:text-7xl font-normal" dangerouslySetInnerHTML={{ __html: title }} style={{ fontFamily: titleFont }} />}
+                    {caption && <div class="text-neutral text-2xl font-normal leading-normal  mt-[60px]" dangerouslySetInnerHTML={{ __html: caption }} />}
+                    {captionText && <div class="text-base text-normal mt-2.5" dangerouslySetInnerHTML={{ __html: captionText }} />}
+                </div>
                 <div
-                    class="w-full gap-9 lg:pt-[116px] lg:px-9"
+                    class="w-full gap-9 lg:pt-[60px] lg:px-9"
                     id={id}
                 >
                     <TcoCalculatorPage1

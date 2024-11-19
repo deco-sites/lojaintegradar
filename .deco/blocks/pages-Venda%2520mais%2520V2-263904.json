@@ -7,12 +7,6 @@
       "navigation": {
         "links": [
           {
-            "label": "Abra sua Loja na LI",
-            "url": "#",
-            "textColor": "#371E55",
-            "textHoverColor": "#C6B3CE"
-          },
-          {
             "label": "Nosso ecossistema",
             "url": "#nossoecossistema",
             "textColor": "#371E55",
@@ -20,7 +14,7 @@
           },
           {
             "label": "Recursos e Ferramentas",
-            "url": "#",
+            "url": "#recursosferramentas",
             "textColor": "#371E55"
           },
           {
@@ -38,38 +32,23 @@
             "textColor": "#371E55"
           },
           {
-            "label": "Compre Junto e Carrinho Abandonado",
-            "url": "#",
+            "label": "Plano Expansão ",
+            "url": "#plansdetails",
             "textColor": "#371E55"
           },
           {
             "label": "Plano Aceleração",
-            "url": "#planoaceleracao",
-            "textColor": "#371E55"
-          },
-          {
-            "label": "Plano Expansão ",
-            "url": "#planoexpancao",
-            "textColor": "#371E55"
-          },
-          {
-            "label": "Plano Elite",
-            "url": "#planoelite",
-            "textColor": "#371E55"
-          },
-          {
-            "label": "Pagali e Enviali",
-            "url": "#pagali",
+            "url": "#plansdetails",
             "textColor": "#371E55"
           },
           {
             "label": "Plano Crescimento",
-            "url": "#planocrescimento",
+            "url": "#plansdetails",
             "textColor": "#371E55"
           },
           {
             "label": "Ecossistema de conteúdo",
-            "url": "#",
+            "url": "#ecossistemaconteudo",
             "textColor": "#371E55"
           }
         ],
@@ -1077,7 +1056,8 @@
           }
         ],
         "arrows": true,
-        "arrowsColor": "#FAFAF5"
+        "arrowsColor": "#FAFAF5",
+        "id": "recursosferramentas"
       }
     },
     {
@@ -4365,7 +4345,8 @@
       "bottomBackground": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
       },
-      "titleFont": "Instrument serif"
+      "titleFont": "Instrument serif",
+      "id": "ecossistemaconteudo"
     },
     {
       "__resolveType": "site/sections/TalkToSpecialistModal.tsx"

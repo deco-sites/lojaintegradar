@@ -6,6 +6,7 @@ import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useScript } from "@deco/deco/hooks";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
+import { eTag } from "@std/http/etag";
 
 const onClick = (rootId: string) => {
     const parent = (document.getElementById(rootId) as HTMLElement).parentElement?.parentElement;
@@ -25,6 +26,7 @@ const onChange = (rootId: string, labelColor?: string, disabledLabelColor?: stri
     const annualValues = parent.querySelectorAll(".annualValues");
     const montlyCreateStoreButtons = parent.querySelectorAll(".montlyCreateStoreButton");
     const annualCreateStoreButtons = parent.querySelectorAll(".annualCreateStoreButton");
+    const annualTags = parent.querySelectorAll(".annualTag");
 
     if (!element.checked) {
         montlyValues.forEach((value) => value.classList.remove("hidden"));
@@ -36,6 +38,7 @@ const onChange = (rootId: string, labelColor?: string, disabledLabelColor?: stri
         annualLabel.style.color = disabledLabelColor || "#828CA0";
         annualTag.style.backgroundColor = annualTagDisabledColor || "#EBEBEB";
         montlyLabel.style.color = labelColor || "#371E55";
+        annualTags.forEach((annualTag) => annualTag.classList.add("hidden"));
     }
     else {
         montlyValues.forEach((value) => value.classList.add("hidden"));
@@ -47,6 +50,7 @@ const onChange = (rootId: string, labelColor?: string, disabledLabelColor?: stri
         annualLabel.style.color = labelColor || "#371E55";
         annualTag.style.backgroundColor = annualTagColor || "#FFE6A0";
         montlyLabel.style.color = disabledLabelColor || "#828CA0";
+        annualTags.forEach((annualTag) => annualTag.classList.remove("hidden"));
     }
 };
 
@@ -151,6 +155,7 @@ export interface Tag {
     backgroundColor?: string;
     /** @format color-input */
     borderColor?: string;
+    onlyAnnual?: boolean;
 }
 /** @title {{title}} */
 export interface Plan {
@@ -228,7 +233,7 @@ function SliderItem({ slide, id }: {
                 <div class={`relative flex flex-col justify-between z-10 h-full w-full py-9 px-6`}>
                     <div>
                         <div class="h-9">
-                            {tag?.text && <div class="inline-block rounded-[5px] overflow-hidden p-[1px]" style={{background: tag.borderColor}}>
+                            {tag?.text && <div class={`inline-block rounded-[5px] overflow-hidden p-[1px] ${tag.onlyAnnual && 'annualTag'}`} style={{background: tag.borderColor}}>
                                 <div class="inline-block rounded-[5px]" style={{background: tag.backgroundColor}}>
                                     <p class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `} style={{background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent', fontFamily: tag.fontFamily}}>
                                         {tag?.icon?.src && <Image width={tag.icon.width || 20} height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.alt || "tag icon"} class="h-5 w-5 object-contain"/>}

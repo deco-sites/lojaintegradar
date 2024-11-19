@@ -7,12 +7,6 @@
       "navigation": {
         "links": [
           {
-            "label": "Abra sua Loja na LI",
-            "url": "#",
-            "textColor": "#371E55",
-            "textHoverColor": "#C6B3CE"
-          },
-          {
             "label": "Nosso ecossistema",
             "url": "#nossoecossistema",
             "textColor": "#371E55",
@@ -20,7 +14,7 @@
           },
           {
             "label": "Recursos e Ferramentas",
-            "url": "#",
+            "url": "#recursosferramentas",
             "textColor": "#371E55"
           },
           {
@@ -38,38 +32,23 @@
             "textColor": "#371E55"
           },
           {
-            "label": "Compre Junto e Carrinho Abandonado",
-            "url": "#",
+            "label": "Plano Expansão ",
+            "url": "#plansdetails",
             "textColor": "#371E55"
           },
           {
             "label": "Plano Aceleração",
-            "url": "#planoaceleracao",
-            "textColor": "#371E55"
-          },
-          {
-            "label": "Plano Expansão ",
-            "url": "#planoexpancao",
-            "textColor": "#371E55"
-          },
-          {
-            "label": "Plano Elite",
-            "url": "#planoelite",
-            "textColor": "#371E55"
-          },
-          {
-            "label": "Pagali e Enviali",
-            "url": "#pagali",
+            "url": "#plansdetails",
             "textColor": "#371E55"
           },
           {
             "label": "Plano Crescimento",
-            "url": "#planocrescimento",
+            "url": "#plansdetails",
             "textColor": "#371E55"
           },
           {
             "label": "Ecossistema de conteúdo",
-            "url": "#",
+            "url": "#ecossistemaconteudo",
             "textColor": "#371E55"
           }
         ],
@@ -90,9 +69,9 @@
             "text": "<p>Abrir loja virtual</p>",
             "href": "#plans",
             "ctaStyle": "button",
-            "backgroundColor": "#371E55",
+            "backgroundColor": "#003037",
             "textColor": "#ffffff",
-            "borderColor": "#371E55"
+            "borderColor": "#003037"
           },
           {
             "text": "Fazer Login",
@@ -100,14 +79,14 @@
             "outline": true,
             "ctaStyle": "button",
             "backgroundColor": "Transparent",
-            "textColor": "#371E55",
-            "borderColor": "#371E55"
+            "textColor": "#003037",
+            "borderColor": "#003037"
           }
         ],
         "sideMenuButtons": [],
-        "linksBorderColor": "#CCC4CF",
-        "textHoverColor": "#C6B3CE",
-        "textColor": "#371E55",
+        "linksBorderColor": "#D0DAD9",
+        "textHoverColor": "#D0DAD9",
+        "textColor": "#003037",
         "mobileButtonsOnScrollColors": {
           "textColor": "#ffffff",
           "backgroundColor": "#371E55",
@@ -154,9 +133,9 @@
       "initialButtons": [],
       "backgroundColor": "#003037",
       "barsColor": "#ffffff",
-      "asideMenuTopBackgroundColor": "#C6B3CE",
+      "asideMenuTopBackgroundColor": "#D0DAD9",
       "asideMenuBackgroundColor": "#ffffff",
-      "asideMenuCloseIconColor": "#371E55",
+      "asideMenuCloseIconColor": "#003037",
       "headerMessage": {
         "show": false,
         "text": "<p></p>",
@@ -184,7 +163,7 @@
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
             "alt": "Whatsapp icon"
           },
-          "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero+saber+mais+informa%C[…]5es+sobre+a+Loja+Integrada...&type=phone_number&app_absent=0",
+          "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero+saber+mais+informações+sobre+a+Loja+Integrada...&type=phone_number&app_absent=0",
           "size": 57
         }
       ],
@@ -221,9 +200,9 @@
             "use": "image",
             "inputLabel": "⚡ ️Baixe agora e destaque-se",
             "modal": {
-              "title": "Obrigado por se inscrever para receber nossa oferta especial!",
-              "titleColor": "#371E55",
-              "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+              "title": "Obrigado por se inscrever para receber guia exclusivo de Black Friday",
+              "titleColor": "#003037",
+              "text": "Em até 24 horas, você receberá um e-mail com o seu eBook gratuito, com muitas de estratégias valiosas para se destacar nesta Black Friday. Fique atento à sua caixa de entrada",
               "textColor": "#5F6E82",
               "backButton": {
                 "text": "Retomar a navegação ",
@@ -236,17 +215,17 @@
                 {
                   "ctaStyle": "button",
                   "text": "Retomar a navegação ",
-                  "backgroundColor": "#371E55",
+                  "backgroundColor": "#003037",
                   "textColor": "#ffffff",
-                  "borderColor": "#371E55",
+                  "borderColor": "#003037",
                   "showIcon": false
                 },
                 {
                   "ctaStyle": "button",
-                  "text": "Ver planos",
+                  "text": "Ver ofertas",
                   "backgroundColor": "#ffffff",
-                  "textColor": "#371E55",
-                  "borderColor": "#371E55",
+                  "textColor": "#003037",
+                  "borderColor": "#003037",
                   "href": "#plans"
                 }
               ]
@@ -254,8 +233,7 @@
             "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
             "hubspotForm": {
               "portalId": "7112881",
-              "region": "na1",
-              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d"
+              "formId": "da90329f-c54b-4a42-bf6c-800a08b0ca27"
             },
             "bulletPoints": {
               "show": true,
@@ -307,9 +285,9 @@
             "hubspotFormButtonTextColor": "#003037",
             "hubspotErrorMessageColor": "#F57E77",
             "modal": {
-              "title": "Obrigado por se inscrever para receber nossa oferta especial!",
-              "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
-              "titleColor": "#371E55",
+              "title": "Obrigado por se inscrever para receber guia exclusivo de Black Friday",
+              "text": "Em até 24 horas, você receberá um e-mail com o seu eBook gratuito, com muitas de estratégias valiosas para se destacar nesta Black Friday. Fique atento à sua caixa de entrada",
+              "titleColor": "#003037",
               "textColor": "#5F6E82",
               "backButton": {
                 "text": "Retomar a navegação ",
@@ -322,17 +300,17 @@
                 {
                   "ctaStyle": "button",
                   "text": "Retomar a navegação ",
-                  "backgroundColor": "#371E55",
+                  "backgroundColor": "#003037",
                   "textColor": "#ffffff",
-                  "borderColor": "#371E55",
+                  "borderColor": "#003037",
                   "showIcon": false
                 },
                 {
                   "ctaStyle": "button",
-                  "text": "Ver planos",
+                  "text": "Ver ofertas de Black Friday",
                   "backgroundColor": "#ffffff",
-                  "textColor": "#371E55",
-                  "borderColor": "#371E55",
+                  "textColor": "#003037",
+                  "borderColor": "#003037",
                   "href": "#plans"
                 }
               ]
@@ -340,8 +318,7 @@
             "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
             "hubspotForm": {
               "portalId": "7112881",
-              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
-              "region": "na1"
+              "formId": "da90329f-c54b-4a42-bf6c-800a08b0ca27"
             },
             "htmlContent": "",
             "use": "image",
@@ -560,117 +537,246 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Carousel.tsx",
-      "slides": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "title": "Campanhas automatizadas para reengajar clientes",
-          "caption": "<p style='line-height: 1.5;'>Venda mais e sem custo adicional com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento.</p>",
-          "backgroundImage": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/83ca92af-e89a-48ed-b87d-a09df9a9c6da/campanhas-para-engajar-clientes-.png",
-            "height": 456,
-            "width": 484
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "slides": [
+              {
+                "title": "Campanhas automatizadas para reengajar clientes",
+                "caption": "<p style='line-height: 1.5;'>Venda mais e sem custo adicional com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento.</p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/83ca92af-e89a-48ed-b87d-a09df9a9c6da/campanhas-para-engajar-clientes-.png",
+                  "height": 456,
+                  "width": 484
+                },
+                "textPlacement": "Bottom",
+                "icon": {
+                  "alt": "purple arrow",
+                  "placement": "Top right"
+                },
+                "textColor": "#ffffff",
+                "useBackground": "video",
+                "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5d7bf106-a77a-41e9-b1b6-d5531602ae93/campanhas-para-engajar-clientes.mp4"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "alt": "white arrow",
+                  "placement": "Top right"
+                },
+                "title": "Anuncie seus produtos em diferentes canais",
+                "caption": "<p><span style=\"font-size: 11pt\">Faturamento fácil e nas alturas: Hub de Canais para integração nativa com marketplaces, cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b30f13a5-0534-430f-96c3-919e7fee3ad2/Hub-de-canais.png",
+                  "width": 484,
+                  "height": 456
+                },
+                "textColor": "#ffffff",
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/12f925ba-030b-498b-8aaf-ff031a1c765d/check-icon.png",
+                    "alt": "check icon"
+                  }
+                },
+                "useBackground": "image"
+              },
+              {
+                "textColor": "#ffffff",
+                "textPlacement": "Bottom",
+                "icon": {
+                  "placement": "Top right",
+                  "alt": "purple arrow"
+                },
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Frete e pagamento descomplicados",
+                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e2e0bb9f-554f-4f0b-a650-042a87c860c5/enviali-pagali.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "useBackground": "image"
+              },
+              {
+                "textColor": "#ffffff",
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right",
+                  "alt": "white arrow"
+                },
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Checkout rápido e aprimorado",
+                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10e605df-cef1-47f7-a057-78bb8a7cc2fe/checkout-inteligente.png",
+                  "width": 484,
+                  "height": 456
+                },
+                "useBackground": "image"
+              }
+            ],
+            "arrows": true,
+            "title": "<p><span style=\"color: rgb(0, 48, 55); font-size: 15pt\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195); font-size: 15pt\">Dados e Automação</span></em></p>",
+            "backgroundImage": {},
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#003037",
+                "textColor": "#fff5f5",
+                "borderColor": "#003037",
+                "ctaStyle": "button"
+              },
+              {
+                "href": "/talkToSpecialist",
+                "outline": true,
+                "backgroundColor": "#ffffff",
+                "textColor": "#003037",
+                "borderColor": "#003037",
+                "ctaStyle": "link",
+                "showIcon": true,
+                "underlineText": "Falar com Especialista "
+              }
+            ],
+            "interval": 0,
+            "id": "nossoecossistema",
+            "titleColor": "",
+            "captionColor": "#371E55",
+            "arrowsColor": "#003037",
+            "titleFont": "Instrument serif",
+            "paddingBottom": "50px"
           },
-          "textPlacement": "Bottom",
-          "icon": {
-            "alt": "purple arrow",
-            "placement": "Top right"
-          },
-          "textColor": "#ffffff",
-          "useBackground": "video",
-          "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5d7bf106-a77a-41e9-b1b6-d5531602ae93/campanhas-para-engajar-clientes.mp4"
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
         },
         {
-          "textPlacement": "Top",
-          "icon": {
-            "alt": "white arrow",
-            "placement": "Top right"
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "slides": [
+              {
+                "title": "Campanhas automatizadas para reengajar clientes",
+                "caption": "<p style='line-height: 1.5;'>Venda mais e sem custo adicional com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento.</p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/83ca92af-e89a-48ed-b87d-a09df9a9c6da/campanhas-para-engajar-clientes-.png",
+                  "height": 456,
+                  "width": 484
+                },
+                "textPlacement": "Bottom",
+                "icon": {
+                  "alt": "purple arrow",
+                  "placement": "Top right"
+                },
+                "textColor": "#ffffff",
+                "useBackground": "video",
+                "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5d7bf106-a77a-41e9-b1b6-d5531602ae93/campanhas-para-engajar-clientes.mp4"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "alt": "white arrow",
+                  "placement": "Top right"
+                },
+                "title": "Anuncie seus produtos em diferentes canais",
+                "caption": "<p><span style=\"font-size: 11pt\">Faturamento fácil e nas alturas: Hub de Canais para integração nativa com marketplaces, cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b30f13a5-0534-430f-96c3-919e7fee3ad2/Hub-de-canais.png",
+                  "width": 484,
+                  "height": 456
+                },
+                "textColor": "#ffffff",
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/12f925ba-030b-498b-8aaf-ff031a1c765d/check-icon.png",
+                    "alt": "check icon"
+                  }
+                },
+                "useBackground": "image"
+              },
+              {
+                "textColor": "#ffffff",
+                "textPlacement": "Bottom",
+                "icon": {
+                  "placement": "Top right",
+                  "alt": "purple arrow"
+                },
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Frete e pagamento descomplicados",
+                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e2e0bb9f-554f-4f0b-a650-042a87c860c5/enviali-pagali.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "useBackground": "image"
+              },
+              {
+                "textColor": "#ffffff",
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right",
+                  "alt": "white arrow"
+                },
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Checkout rápido e aprimorado",
+                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10e605df-cef1-47f7-a057-78bb8a7cc2fe/checkout-inteligente.png",
+                  "width": 484,
+                  "height": 456
+                },
+                "useBackground": "image"
+              }
+            ],
+            "arrows": true,
+            "title": "<p><span style=\"color: rgb(0, 48, 55)\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195)\">Dados e Automação</span></em></p>",
+            "backgroundImage": {},
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#003037",
+                "textColor": "#fff5f5",
+                "borderColor": "#003037",
+                "ctaStyle": "button"
+              },
+              {
+                "href": "/talkToSpecialist",
+                "outline": true,
+                "backgroundColor": "#ffffff",
+                "textColor": "#003037",
+                "borderColor": "#003037",
+                "ctaStyle": "link",
+                "showIcon": true,
+                "underlineText": "Falar com Especialista "
+              }
+            ],
+            "interval": 0,
+            "id": "nossoecossistema",
+            "titleColor": "",
+            "captionColor": "#371E55",
+            "arrowsColor": "#003037",
+            "titleFont": "Instrument serif",
+            "paddingBottom": "50px"
           },
-          "title": "Anuncie seus produtos em diferentes canais",
-          "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Faturamento fácil e nas alturas: Hub de Canais para integração nativa com marketplaces, cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender nas redes sociais.</span></p>",
-          "backgroundImage": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b30f13a5-0534-430f-96c3-919e7fee3ad2/Hub-de-canais.png",
-            "width": 484,
-            "height": 456
-          },
-          "textColor": "#ffffff",
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/12f925ba-030b-498b-8aaf-ff031a1c765d/check-icon.png",
-              "alt": "check icon"
-            }
-          },
-          "useBackground": "image"
-        },
-        {
-          "textColor": "#ffffff",
-          "textPlacement": "Bottom",
-          "icon": {
-            "placement": "Top right",
-            "alt": "purple arrow"
-          },
-          "bulletPoints": {
-            "items": []
-          },
-          "title": "Tecnologia para melhorar processos",
-          "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
-          "backgroundImage": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e2e0bb9f-554f-4f0b-a650-042a87c860c5/enviali-pagali.png",
-            "height": 484,
-            "width": 456
-          },
-          "useBackground": "image"
-        },
-        {
-          "textColor": "#ffffff",
-          "textPlacement": "Top",
-          "icon": {
-            "placement": "Top right",
-            "alt": "white arrow"
-          },
-          "bulletPoints": {
-            "items": []
-          },
-          "title": "Conversão aprimorada",
-          "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
-          "backgroundImage": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10e605df-cef1-47f7-a057-78bb8a7cc2fe/checkout-inteligente.png",
-            "width": 484,
-            "height": 456
-          },
-          "useBackground": "image"
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
         }
-      ],
-      "arrows": true,
-      "title": "<p><span style=\"color: rgb(0, 48, 55)\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195)\">Dados e Automação</span></em></p>",
-      "backgroundImage": {},
-      "cta": [
-        {
-          "href": "#plans",
-          "text": "Ver planos",
-          "backgroundColor": "#003037",
-          "textColor": "#fff5f5",
-          "borderColor": "#003037",
-          "ctaStyle": "button"
-        },
-        {
-          "href": "/talkToSpecialist",
-          "outline": true,
-          "backgroundColor": "#ffffff",
-          "textColor": "#003037",
-          "borderColor": "#003037",
-          "ctaStyle": "link",
-          "showIcon": true,
-          "underlineText": "Falar com Especialista "
-        }
-      ],
-      "interval": 0,
-      "id": "nossoecossistema",
-      "titleColor": "",
-      "captionColor": "#371E55",
-      "arrowsColor": "#003037",
-      "titleFont": "Instrument serif",
-      "paddingBottom": "50px"
+      ]
     },
     {
       "__resolveType": "site/sections/HeroWithTime.tsx",
@@ -906,7 +1012,7 @@
               "borderColor": ""
             },
             {
-              "text": "Desconto progressivo"
+              "text": "Desconto Progressivo"
             },
             {
               "text": "Segmentação de preços por CEP"
@@ -1064,7 +1170,7 @@
         "cta": [
           {
             "ctaStyle": "button",
-            "href": "#",
+            "href": "#plans",
             "text": "Assinar plano",
             "backgroundColor": "#ffffff",
             "textColor": "#003037",
@@ -1079,7 +1185,8 @@
           }
         ],
         "arrows": true,
-        "arrowsColor": "#FAFAF5"
+        "arrowsColor": "#FAFAF5",
+        "id": "recursosferramentas"
       }
     },
     {
@@ -1136,8 +1243,26 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/35d81fbc-0a4f-498f-8dd9-2274c431a2e5/img-pod-pah-mobile.png"
             },
             "use": "image",
-            "cta": [],
-            "paddingBottom": "20px"
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "text": "Ver planos",
+                "backgroundColor": "#003037",
+                "borderColor": "#003037",
+                "textColor": "#ffffff",
+                "href": "#plans"
+              },
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist ",
+                "underlineText": "Falar com especialista",
+                "showIcon": true,
+                "backgroundColor": "",
+                "borderColor": "",
+                "textColor": "#003037"
+              }
+            ],
+            "paddingBottom": "42px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1193,7 +1318,27 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ed508e20-6379-4e62-aa01-30e70420dabb/img-pod-pah-desktop.png"
             },
             "use": "image",
-            "cta": []
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#003037",
+                "borderColor": "#003037",
+                "textColor": "#fffff",
+                "showIcon": false
+              },
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "underlineText": "Falar com especialista",
+                "backgroundColor": "",
+                "borderColor": "",
+                "showIcon": true,
+                "textColor": "#003037"
+              }
+            ],
+            "paddingBottom": "120px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -2638,7 +2783,8 @@
                   "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)",
                   "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
                   "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
-                  "fontFamily": "Instrument Serif"
+                  "fontFamily": "Instrument Serif",
+                  "onlyAnnual": true
                 },
                 "montlyFee": "<p><span style=\"color: #fafaf5; font-size: 24pt\">R$</span><span style=\"color: #fafaf5\">&nbsp;</span><strong><span style=\"color: #fafaf5; font-size: 36pt\">1999</span></strong><span style=\"color: #fafaf5\">&nbsp;</span><span style=\"color: #fafaf5; font-size: 14pt\">/mês</span></p>",
                 "chooseCta": {
@@ -2793,7 +2939,7 @@
                 "cta": [
                   {
                     "ctaStyle": "link",
-                    "href": "#planoexpancao",
+                    "href": "#planoexpansao",
                     "textColor": "#371E55",
                     "underlineText": "Ver detalhes"
                   }
@@ -2960,7 +3106,7 @@
             "cta": [
               {
                 "ctaStyle": "link",
-                "href": "/talkToSpecialist",
+                "href": "https://app.lojaintegrada.com.br/painel/login",
                 "textColor": "#ffffff",
                 "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
                 "underlineText": "Mude para o Elite agora",
@@ -3137,7 +3283,7 @@
             "cta": [
               {
                 "ctaStyle": "link",
-                "href": "/talkToSpecialist",
+                "href": "https://app.lojaintegrada.com.br/painel/login",
                 "textColor": "#ffffff",
                 "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
                 "underlineText": "Mude para o Elite agora",
@@ -3332,7 +3478,7 @@
                   "cta": [
                     {
                       "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
+                      "href": "https://app.lojaintegrada.com.br/painel/login",
                       "showIcon": true,
                       "textColor": "#371E55",
                       "text": "<p><u><span>Mude para o Expansão agora</span></u></p>"
@@ -3477,7 +3623,7 @@
                       "href": "/talkToSpecialist",
                       "showIcon": true,
                       "textColor": "#371E55",
-                      "text": "<p><u><span>Mude para o Expansão agora</span></u></p>"
+                      "text": "<p><u>Mude para o Aceleração agora</u></p>"
                     }
                   ],
                   "backgroundImage": {
@@ -3616,7 +3762,7 @@
                   "cta": [
                     {
                       "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
+                      "href": "https://app.lojaintegrada.com.br/painel/login",
                       "showIcon": true,
                       "textColor": "#371E55",
                       "text": "<p><u>Mude para o Crescimento agora</u></p>"
@@ -3789,7 +3935,7 @@
                   "cta": [
                     {
                       "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
+                      "href": "https://app.lojaintegrada.com.br/painel/login",
                       "showIcon": true,
                       "textColor": "#371E55",
                       "text": "<p><u><span>Mude para o Expansão agora</span></u></p>"
@@ -3913,7 +4059,8 @@
                     "interval": 6,
                     "progressBarColor": "#3F2656",
                     "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  }
+                  },
+                  "id": "planoexpansao"
                 },
                 "title": "Plano Expansão",
                 "titleFont": "Instrument Serif",
@@ -3934,7 +4081,7 @@
                   "cta": [
                     {
                       "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
+                      "href": "https://app.lojaintegrada.com.br/painel/login",
                       "textColor": "#371E55",
                       "showIcon": true,
                       "text": "<p><u>Mude para o Aceleração agora</u></p>"
@@ -4053,7 +4200,8 @@
                     "interval": 6,
                     "progressBarColor": "#3F2656",
                     "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  }
+                  },
+                  "id": "planoaceleracao"
                 },
                 "title": "Plano Aceleração",
                 "titleFont": "Instrument Serif",
@@ -4069,7 +4217,7 @@
                   "cta": [
                     {
                       "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
+                      "href": "https://app.lojaintegrada.com.br/painel/login",
                       "textColor": "#371E55",
                       "showIcon": true,
                       "text": "<p><u>Mude para o Crescimento agora</u></p>"
@@ -4192,7 +4340,8 @@
                     "interval": 6,
                     "progressBarColor": "#3F2656",
                     "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  }
+                  },
+                  "id": "planocrescimento"
                 },
                 "titleFont": "Instrument Serif",
                 "titleColor": "#371E55",
@@ -4220,12 +4369,8 @@
       "questionsDivisionLineColor": "#82A3A4",
       "questions": [
         {
-          "question": "Já sou assinante de um plano pago da Loja Integrada, eu sou elegível às ofertas?",
-          "answear": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Lorem Ipsum</span></strong><span style=\"color: rgb(255, 255, 255); font-size: medium\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>"
-        },
-        {
-          "answear": "<p><span style=\"color: rgb(255, 255, 255)\">Essa promoção é exclusiva para a Black Friday de 2024 e não é garantida para o próximo ano. No entanto, a Loja Integrada pode oferecer outras condições especiais em futuras datas promocionais.</span></p>",
-          "question": "Posso renovar o plano na promoção para o próximo ano?"
+          "question": "Posso renovar o plano na promoção para o próximo ano?",
+          "answear": "<p><span style=\"color: rgb(255, 255, 255)\">Essa promoção é exclusiva para a Black Friday de 2024 e não é garantida para o próximo ano. No entanto, a Loja Integrada pode oferecer outras condições especiais em futuras datas promocionais.</span></p>"
         },
         {
           "answear": "<p><span style=\"color: rgb(255, 255, 255)\">Se o seu faturamento ultrapassar R$10.000 durante o período de isenção de tarifas, a taxa sobre transações de meios de pagamento será aplicada automaticamente naquele mês. No entanto, se o faturamento voltar a ficar abaixo de R$10.000 no mês seguinte, a isenção será reativada.</span></p>",
@@ -4236,7 +4381,7 @@
           "question": "Posso testar um dos planos pagos da oferta? "
         },
         {
-          "answear": "<p><span style=\"color: rgb(255, 255, 255)\">No final do ciclo da sua oferta, você será migrado automaticamente para o mesmo plano, sem a oferta de Black Friday. Por exemplo, no final dos 6 meses de isenção do plano Crescimento, o usuário retornará as taxas de acordo com as regras elegíveis.</span></p>",
+          "answear": "<p><span style=\"color: rgb(255, 255, 255)\">No final do ciclo da sua oferta, você será migrado automaticamente para o mesmo plano, sem a oferta de Black Friday. Por exemplo, no final dos 6 meses de isenção do plano Aceleração, o usuário retornará as taxas de acordo com as regras elegíveis.</span></p>",
           "question": "Quando o ciclo da minha oferta acabar, o que acontece?"
         },
         {
@@ -4244,8 +4389,8 @@
           "question": "Posso alterar meu plano depois do período da oferta?"
         },
         {
-          "question": "Posso acumular descontos com outras promoções?",
-          "answear": "<p><span style=\"color: #ffffff\">Sim, o desconto é acumulativo com os 20% OFF liberados na assinatura do seu plano anual. Então, ao assinar uma plano anual você pode pagar ainda mais barato com a oferta da Black Friday.</span></p>"
+          "answear": "<p><span style=\"color: #ffffff\">Sim, o desconto é acumulativo com os 20% OFF liberados na assinatura do seu plano anual. Então, ao assinar uma plano anual você pode pagar ainda mais barato com a oferta da Black Friday.</span></p>",
+          "question": "Posso acumular descontos com outras promoções?"
         }
       ],
       "titleColor": "#FAFAF5",
@@ -4286,7 +4431,7 @@
           "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
           "CTA": {
             "text": "Conhecer",
-            "href": "#"
+            "href": "https://lojaintegrada.com.br/hub/"
           }
         },
         {
@@ -4298,14 +4443,14 @@
           "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
           "CTA": {
             "text": "Conhecer",
-            "href": "#"
+            "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
           }
         }
       ],
       "color3": "#EBEBEB",
       "useBackground": "video",
       "title": "<p>O futuro do e-commerce é mais inteligente</p><p> com você. Escolha soluções automatizadas </p><p><span style=\"color: #2bc3c2\">para escalar suas vendas</span></p>",
-      "logoCaption": "Mais venda, mais eficiência Com quem entende disso.",
+      "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
       "logo": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
       },
@@ -4322,20 +4467,20 @@
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
             "alt": "linkein icon"
           },
-          "href": "http://linkedin.com"
+          "href": "https://www.linkedin.com/company/lojaintegrada/"
         },
         {
           "icon": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
             "alt": "instgram icon"
           },
-          "href": "https://instagram.com"
+          "href": "https://www.instagram.com/lojaintegrada/"
         },
         {
           "icon": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
           },
-          "href": "https://tiktok.com"
+          "href": "https://www.tiktok.com/@lojaintegrada"
         }
       ],
       "color4": "#d4d4d4",
@@ -4361,14 +4506,15 @@
           "text": "Privacidade"
         },
         {
-          "href": "#",
+          "href": "https://app.lojaintegrada.com.br/public/assinar",
           "text": "Comece pelo grátis"
         }
       ],
       "bottomBackground": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
       },
-      "titleFont": "Instrument serif"
+      "titleFont": "Instrument serif",
+      "id": "ecossistemaconteudo"
     },
     {
       "__resolveType": "site/sections/TalkToSpecialistModal.tsx"

@@ -136,7 +136,7 @@ function SliderItem({ slide, id }: {
         <div class={`relative w-full h-full flex justify-between ${textPlacement == 'Top' ? 'flex-col' : 'flex-col-reverse'}`}>
             {icon?.src && <Image src={icon.src} alt={icon.alt || "carousel item background image"} width={icon.width || 32} height={icon.width || 32} class={` object-contain absolute h-8 w-8 ${iconPosition[icon.placement || 'Top right']}`} />}
             <div>
-                {title && <h2 class="text-lg md:text-2xl min-h-16 pr-12 md:mb-5">{title}</h2>}
+                {title && <h2 class="text-lg md:text-2xl pr-12 md:mb-5">{title}</h2>}
                 <div class="text-xs md:text-sm !leading-[100%]" dangerouslySetInnerHTML={{ __html: caption }} />
             </div>
             <div>

@@ -2793,7 +2793,7 @@
                 "cta": [
                   {
                     "ctaStyle": "link",
-                    "href": "#planoexpancao",
+                    "href": "#planoexpansao",
                     "textColor": "#371E55",
                     "underlineText": "Ver detalhes"
                   }
@@ -2960,7 +2960,7 @@
             "cta": [
               {
                 "ctaStyle": "link",
-                "href": "/talkToSpecialist",
+                "href": "https://app.lojaintegrada.com.br/painel/login",
                 "textColor": "#ffffff",
                 "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
                 "underlineText": "Mude para o Elite agora",
@@ -3137,7 +3137,7 @@
             "cta": [
               {
                 "ctaStyle": "link",
-                "href": "/talkToSpecialist",
+                "href": "https://app.lojaintegrada.com.br/painel/login",
                 "textColor": "#ffffff",
                 "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
                 "underlineText": "Mude para o Elite agora",
@@ -3332,7 +3332,7 @@
                   "cta": [
                     {
                       "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
+                      "href": "https://app.lojaintegrada.com.br/painel/login",
                       "showIcon": true,
                       "textColor": "#371E55",
                       "text": "<p><u><span>Mude para o Expansão agora</span></u></p>"
@@ -3477,7 +3477,7 @@
                       "href": "/talkToSpecialist",
                       "showIcon": true,
                       "textColor": "#371E55",
-                      "text": "<p><u><span>Mude para o Expansão agora</span></u></p>"
+                      "text": "<p><u>Mude para o Aceleração agora</u></p>"
                     }
                   ],
                   "backgroundImage": {
@@ -3616,7 +3616,7 @@
                   "cta": [
                     {
                       "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
+                      "href": "https://app.lojaintegrada.com.br/painel/login",
                       "showIcon": true,
                       "textColor": "#371E55",
                       "text": "<p><u>Mude para o Crescimento agora</u></p>"
@@ -3789,7 +3789,7 @@
                   "cta": [
                     {
                       "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
+                      "href": "https://app.lojaintegrada.com.br/painel/login",
                       "showIcon": true,
                       "textColor": "#371E55",
                       "text": "<p><u><span>Mude para o Expansão agora</span></u></p>"
@@ -3913,7 +3913,8 @@
                     "interval": 6,
                     "progressBarColor": "#3F2656",
                     "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  }
+                  },
+                  "id": "planoexpansao"
                 },
                 "title": "Plano Expansão",
                 "titleFont": "Instrument Serif",
@@ -3934,7 +3935,7 @@
                   "cta": [
                     {
                       "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
+                      "href": "https://app.lojaintegrada.com.br/painel/login",
                       "textColor": "#371E55",
                       "showIcon": true,
                       "text": "<p><u>Mude para o Aceleração agora</u></p>"
@@ -4053,7 +4054,8 @@
                     "interval": 6,
                     "progressBarColor": "#3F2656",
                     "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  }
+                  },
+                  "id": "planoaceleracao"
                 },
                 "title": "Plano Aceleração",
                 "titleFont": "Instrument Serif",
@@ -4069,7 +4071,7 @@
                   "cta": [
                     {
                       "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
+                      "href": "https://app.lojaintegrada.com.br/painel/login",
                       "textColor": "#371E55",
                       "showIcon": true,
                       "text": "<p><u>Mude para o Crescimento agora</u></p>"
@@ -4192,7 +4194,8 @@
                     "interval": 6,
                     "progressBarColor": "#3F2656",
                     "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  }
+                  },
+                  "id": "planocrescimento"
                 },
                 "titleFont": "Instrument Serif",
                 "titleColor": "#371E55",
@@ -4220,12 +4223,8 @@
       "questionsDivisionLineColor": "#82A3A4",
       "questions": [
         {
-          "question": "Já sou assinante de um plano pago da Loja Integrada, eu sou elegível às ofertas?",
-          "answear": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Lorem Ipsum</span></strong><span style=\"color: rgb(255, 255, 255); font-size: medium\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>"
-        },
-        {
-          "answear": "<p><span style=\"color: rgb(255, 255, 255)\">Essa promoção é exclusiva para a Black Friday de 2024 e não é garantida para o próximo ano. No entanto, a Loja Integrada pode oferecer outras condições especiais em futuras datas promocionais.</span></p>",
-          "question": "Posso renovar o plano na promoção para o próximo ano?"
+          "question": "Posso renovar o plano na promoção para o próximo ano?",
+          "answear": "<p><span style=\"color: rgb(255, 255, 255)\">Essa promoção é exclusiva para a Black Friday de 2024 e não é garantida para o próximo ano. No entanto, a Loja Integrada pode oferecer outras condições especiais em futuras datas promocionais.</span></p>"
         },
         {
           "answear": "<p><span style=\"color: rgb(255, 255, 255)\">Se o seu faturamento ultrapassar R$10.000 durante o período de isenção de tarifas, a taxa sobre transações de meios de pagamento será aplicada automaticamente naquele mês. No entanto, se o faturamento voltar a ficar abaixo de R$10.000 no mês seguinte, a isenção será reativada.</span></p>",
@@ -4244,8 +4243,8 @@
           "question": "Posso alterar meu plano depois do período da oferta?"
         },
         {
-          "question": "Posso acumular descontos com outras promoções?",
-          "answear": "<p><span style=\"color: #ffffff\">Sim, o desconto é acumulativo com os 20% OFF liberados na assinatura do seu plano anual. Então, ao assinar uma plano anual você pode pagar ainda mais barato com a oferta da Black Friday.</span></p>"
+          "answear": "<p><span style=\"color: #ffffff\">Sim, o desconto é acumulativo com os 20% OFF liberados na assinatura do seu plano anual. Então, ao assinar uma plano anual você pode pagar ainda mais barato com a oferta da Black Friday.</span></p>",
+          "question": "Posso acumular descontos com outras promoções?"
         }
       ],
       "titleColor": "#FAFAF5",
@@ -4286,7 +4285,7 @@
           "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
           "CTA": {
             "text": "Conhecer",
-            "href": "#"
+            "href": "https://lojaintegrada.com.br/hub/"
           }
         },
         {
@@ -4298,14 +4297,14 @@
           "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
           "CTA": {
             "text": "Conhecer",
-            "href": "#"
+            "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
           }
         }
       ],
       "color3": "#EBEBEB",
       "useBackground": "video",
       "title": "<p>O futuro do e-commerce é mais inteligente</p><p> com você. Escolha soluções automatizadas </p><p><span style=\"color: #2bc3c2\">para escalar suas vendas</span></p>",
-      "logoCaption": "Mais venda, mais eficiência Com quem entende disso.",
+      "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
       "logo": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
       },
@@ -4322,20 +4321,20 @@
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
             "alt": "linkein icon"
           },
-          "href": "http://linkedin.com"
+          "href": "https://www.linkedin.com/company/lojaintegrada/"
         },
         {
           "icon": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
             "alt": "instgram icon"
           },
-          "href": "https://instagram.com"
+          "href": "https://www.instagram.com/lojaintegrada/"
         },
         {
           "icon": {
             "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
           },
-          "href": "https://tiktok.com"
+          "href": "https://www.tiktok.com/@lojaintegrada"
         }
       ],
       "color4": "#d4d4d4",
@@ -4361,7 +4360,7 @@
           "text": "Privacidade"
         },
         {
-          "href": "#",
+          "href": "https://app.lojaintegrada.com.br/public/assinar",
           "text": "Comece pelo grátis"
         }
       ],

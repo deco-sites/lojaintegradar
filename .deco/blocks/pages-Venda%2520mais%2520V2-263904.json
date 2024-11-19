@@ -1,6 +1,6 @@
 {
   "name": "Venda mais V2",
-  "path": "/venda-mais-v2",
+  "path": "/venda-mais",
   "sections": [
     {
       "__resolveType": "site/sections/Header2.tsx",
@@ -4541,7 +4541,11 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "image": "",
+    "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/92453a09-1a8b-4ba4-8861-b84939dde7d3/favicon-li.png",
+    "type": "website",
+    "title": "Venda mais - Loja Integrada"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

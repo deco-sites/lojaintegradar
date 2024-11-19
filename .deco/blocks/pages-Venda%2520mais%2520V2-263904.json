@@ -1114,8 +1114,26 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/35d81fbc-0a4f-498f-8dd9-2274c431a2e5/img-pod-pah-mobile.png"
             },
             "use": "image",
-            "cta": [],
-            "paddingBottom": "20px"
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "text": "Ver planos",
+                "backgroundColor": "#003037",
+                "borderColor": "#003037",
+                "textColor": "#ffffff",
+                "href": "#plans"
+              },
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist ",
+                "underlineText": "Falar com especialista",
+                "showIcon": true,
+                "backgroundColor": "",
+                "borderColor": "",
+                "textColor": "#003037"
+              }
+            ],
+            "paddingBottom": "42px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1171,7 +1189,27 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ed508e20-6379-4e62-aa01-30e70420dabb/img-pod-pah-desktop.png"
             },
             "use": "image",
-            "cta": []
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#003037",
+                "borderColor": "#003037",
+                "textColor": "#fffff",
+                "showIcon": false
+              },
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "underlineText": "Falar com especialista",
+                "backgroundColor": "",
+                "borderColor": "",
+                "showIcon": true,
+                "textColor": "#003037"
+              }
+            ],
+            "paddingBottom": "120px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

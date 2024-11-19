@@ -537,117 +537,246 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Carousel.tsx",
-      "slides": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "title": "Campanhas automatizadas para reengajar clientes",
-          "caption": "<p style='line-height: 1.5;'>Venda mais e sem custo adicional com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento.</p>",
-          "backgroundImage": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/83ca92af-e89a-48ed-b87d-a09df9a9c6da/campanhas-para-engajar-clientes-.png",
-            "height": 456,
-            "width": 484
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "slides": [
+              {
+                "title": "Campanhas automatizadas para reengajar clientes",
+                "caption": "<p style='line-height: 1.5;'>Venda mais e sem custo adicional com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento.</p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/83ca92af-e89a-48ed-b87d-a09df9a9c6da/campanhas-para-engajar-clientes-.png",
+                  "height": 456,
+                  "width": 484
+                },
+                "textPlacement": "Bottom",
+                "icon": {
+                  "alt": "purple arrow",
+                  "placement": "Top right"
+                },
+                "textColor": "#ffffff",
+                "useBackground": "video",
+                "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5d7bf106-a77a-41e9-b1b6-d5531602ae93/campanhas-para-engajar-clientes.mp4"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "alt": "white arrow",
+                  "placement": "Top right"
+                },
+                "title": "Anuncie seus produtos em diferentes canais",
+                "caption": "<p><span style=\"font-size: 11pt\">Faturamento fácil e nas alturas: Hub de Canais para integração nativa com marketplaces, cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b30f13a5-0534-430f-96c3-919e7fee3ad2/Hub-de-canais.png",
+                  "width": 484,
+                  "height": 456
+                },
+                "textColor": "#ffffff",
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/12f925ba-030b-498b-8aaf-ff031a1c765d/check-icon.png",
+                    "alt": "check icon"
+                  }
+                },
+                "useBackground": "image"
+              },
+              {
+                "textColor": "#ffffff",
+                "textPlacement": "Bottom",
+                "icon": {
+                  "placement": "Top right",
+                  "alt": "purple arrow"
+                },
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Frete e pagamento descomplicados",
+                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e2e0bb9f-554f-4f0b-a650-042a87c860c5/enviali-pagali.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "useBackground": "image"
+              },
+              {
+                "textColor": "#ffffff",
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right",
+                  "alt": "white arrow"
+                },
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Checkout rápido e aprimorado",
+                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10e605df-cef1-47f7-a057-78bb8a7cc2fe/checkout-inteligente.png",
+                  "width": 484,
+                  "height": 456
+                },
+                "useBackground": "image"
+              }
+            ],
+            "arrows": true,
+            "title": "<p><span style=\"color: rgb(0, 48, 55); font-size: 15pt\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195); font-size: 15pt\">Dados e Automação</span></em></p>",
+            "backgroundImage": {},
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#003037",
+                "textColor": "#fff5f5",
+                "borderColor": "#003037",
+                "ctaStyle": "button"
+              },
+              {
+                "href": "/talkToSpecialist",
+                "outline": true,
+                "backgroundColor": "#ffffff",
+                "textColor": "#003037",
+                "borderColor": "#003037",
+                "ctaStyle": "link",
+                "showIcon": true,
+                "underlineText": "Falar com Especialista "
+              }
+            ],
+            "interval": 0,
+            "id": "nossoecossistema",
+            "titleColor": "",
+            "captionColor": "#371E55",
+            "arrowsColor": "#003037",
+            "titleFont": "Instrument serif",
+            "paddingBottom": "50px"
           },
-          "textPlacement": "Bottom",
-          "icon": {
-            "alt": "purple arrow",
-            "placement": "Top right"
-          },
-          "textColor": "#ffffff",
-          "useBackground": "video",
-          "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5d7bf106-a77a-41e9-b1b6-d5531602ae93/campanhas-para-engajar-clientes.mp4"
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
         },
         {
-          "textPlacement": "Top",
-          "icon": {
-            "alt": "white arrow",
-            "placement": "Top right"
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "slides": [
+              {
+                "title": "Campanhas automatizadas para reengajar clientes",
+                "caption": "<p style='line-height: 1.5;'>Venda mais e sem custo adicional com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento.</p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/83ca92af-e89a-48ed-b87d-a09df9a9c6da/campanhas-para-engajar-clientes-.png",
+                  "height": 456,
+                  "width": 484
+                },
+                "textPlacement": "Bottom",
+                "icon": {
+                  "alt": "purple arrow",
+                  "placement": "Top right"
+                },
+                "textColor": "#ffffff",
+                "useBackground": "video",
+                "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5d7bf106-a77a-41e9-b1b6-d5531602ae93/campanhas-para-engajar-clientes.mp4"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "alt": "white arrow",
+                  "placement": "Top right"
+                },
+                "title": "Anuncie seus produtos em diferentes canais",
+                "caption": "<p><span style=\"font-size: 11pt\">Faturamento fácil e nas alturas: Hub de Canais para integração nativa com marketplaces, cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b30f13a5-0534-430f-96c3-919e7fee3ad2/Hub-de-canais.png",
+                  "width": 484,
+                  "height": 456
+                },
+                "textColor": "#ffffff",
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/12f925ba-030b-498b-8aaf-ff031a1c765d/check-icon.png",
+                    "alt": "check icon"
+                  }
+                },
+                "useBackground": "image"
+              },
+              {
+                "textColor": "#ffffff",
+                "textPlacement": "Bottom",
+                "icon": {
+                  "placement": "Top right",
+                  "alt": "purple arrow"
+                },
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Frete e pagamento descomplicados",
+                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e2e0bb9f-554f-4f0b-a650-042a87c860c5/enviali-pagali.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "useBackground": "image"
+              },
+              {
+                "textColor": "#ffffff",
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right",
+                  "alt": "white arrow"
+                },
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Checkout rápido e aprimorado",
+                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
+                "backgroundImage": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10e605df-cef1-47f7-a057-78bb8a7cc2fe/checkout-inteligente.png",
+                  "width": 484,
+                  "height": 456
+                },
+                "useBackground": "image"
+              }
+            ],
+            "arrows": true,
+            "title": "<p><span style=\"color: rgb(0, 48, 55)\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195)\">Dados e Automação</span></em></p>",
+            "backgroundImage": {},
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#003037",
+                "textColor": "#fff5f5",
+                "borderColor": "#003037",
+                "ctaStyle": "button"
+              },
+              {
+                "href": "/talkToSpecialist",
+                "outline": true,
+                "backgroundColor": "#ffffff",
+                "textColor": "#003037",
+                "borderColor": "#003037",
+                "ctaStyle": "link",
+                "showIcon": true,
+                "underlineText": "Falar com Especialista "
+              }
+            ],
+            "interval": 0,
+            "id": "nossoecossistema",
+            "titleColor": "",
+            "captionColor": "#371E55",
+            "arrowsColor": "#003037",
+            "titleFont": "Instrument serif",
+            "paddingBottom": "50px"
           },
-          "title": "Anuncie seus produtos em diferentes canais",
-          "caption": "<p><span style=\"font-size: 11pt\">Faturamento fácil e nas alturas: Hub de Canais para integração nativa com marketplaces, cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
-          "backgroundImage": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b30f13a5-0534-430f-96c3-919e7fee3ad2/Hub-de-canais.png",
-            "width": 484,
-            "height": 456
-          },
-          "textColor": "#ffffff",
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/12f925ba-030b-498b-8aaf-ff031a1c765d/check-icon.png",
-              "alt": "check icon"
-            }
-          },
-          "useBackground": "image"
-        },
-        {
-          "textColor": "#ffffff",
-          "textPlacement": "Bottom",
-          "icon": {
-            "placement": "Top right",
-            "alt": "purple arrow"
-          },
-          "bulletPoints": {
-            "items": []
-          },
-          "title": "Frete e pagamento descomplicados",
-          "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
-          "backgroundImage": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e2e0bb9f-554f-4f0b-a650-042a87c860c5/enviali-pagali.png",
-            "height": 484,
-            "width": 456
-          },
-          "useBackground": "image"
-        },
-        {
-          "textColor": "#ffffff",
-          "textPlacement": "Top",
-          "icon": {
-            "placement": "Top right",
-            "alt": "white arrow"
-          },
-          "bulletPoints": {
-            "items": []
-          },
-          "title": "Checkout rápido e aprimorado",
-          "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
-          "backgroundImage": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10e605df-cef1-47f7-a057-78bb8a7cc2fe/checkout-inteligente.png",
-            "width": 484,
-            "height": 456
-          },
-          "useBackground": "image"
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
         }
-      ],
-      "arrows": true,
-      "title": "<p><span style=\"color: rgb(0, 48, 55)\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195)\">Dados e Automação</span></em></p>",
-      "backgroundImage": {},
-      "cta": [
-        {
-          "href": "#plans",
-          "text": "Ver planos",
-          "backgroundColor": "#003037",
-          "textColor": "#fff5f5",
-          "borderColor": "#003037",
-          "ctaStyle": "button"
-        },
-        {
-          "href": "/talkToSpecialist",
-          "outline": true,
-          "backgroundColor": "#ffffff",
-          "textColor": "#003037",
-          "borderColor": "#003037",
-          "ctaStyle": "link",
-          "showIcon": true,
-          "underlineText": "Falar com Especialista "
-        }
-      ],
-      "interval": 0,
-      "id": "nossoecossistema",
-      "titleColor": "",
-      "captionColor": "#371E55",
-      "arrowsColor": "#003037",
-      "titleFont": "Instrument serif",
-      "paddingBottom": "50px"
+      ]
     },
     {
       "__resolveType": "site/sections/HeroWithTime.tsx",

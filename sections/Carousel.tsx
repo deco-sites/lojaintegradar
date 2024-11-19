@@ -209,7 +209,7 @@ function Carousel(props: Props) {
                     {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full sm:w-[456px]">
                         <SliderItem slide={slide} id={`${carouselId}::${index}`} />
                     </Slider.Item>))}
-                    <Slider.Item index={slides?.length || 0} class="carousel-item w-[1px] sm:block" >
+                    <Slider.Item index={slides?.length || 0} class="carousel-item w-[1px] lg:w-[456px] sm:block" >
                         <div></div>
                     </Slider.Item>
                 </Slider>

@@ -90,7 +90,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} class="w-full h-full absolute object-cover top-0 left-0 -z-50" 
             // style={{ objectPosition: "top right" }}
             alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={"eager"} preload={true}/>}
-            <div class={`flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-7 md:px-0 border-base`}>
+            <div class={`lg:pb-20 flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-7 md:px-0 border-base`}>
                 <script dangerouslySetInnerHTML={{ __html: useScript(openModal, modalId) }}/>
                 <div class={`flex-grow flex flex-col gap-2.5 ${(use == "image" || use == "video") ? "max-w-[630px]" : "items-center max-w-[1220px]"} z-10`}>
                     {captionAbove && <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: captionAbove }}/>}
@@ -127,7 +127,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                 </div>
             </div>
 
-            <div class={`md:flex-grow md:flex flex-col items-end ${(use == "image" || use == "video") && "xl:w-1/2"}`}>
+            <div class={`md:flex-grow md:flex flex-col justify-end items-end ${(use == "image" || use == "video") && "xl:w-1/2"}`}>
                 {use == "image" && image?.src && <Image width={image.width || 697} height={image.height || 592} src={image.src} alt={image.src || ""} class=" object-contain hidden md:block"/>}
                 {use == "video" && video && <video width="697" height="592" autoPlay playsInline muted loading="lazy" loop class="w-full xl:w-auto max-w-[809px] object-contain hidden md:block">
                     <source src={video} type="video/mp4"/>

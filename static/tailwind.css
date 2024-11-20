@@ -3775,6 +3775,9 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[80px\] {
   max-height: 80px;
 }
+.min-h-0 {
+  min-height: 0px;
+}
 .min-h-10 {
   min-height: 2.5rem;
 }
@@ -5338,6 +5341,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .\!pt-6 {
   padding-top: 1.5rem !important;
+}
+.pb-0 {
+  padding-bottom: 0px;
 }
 .pb-12 {
   padding-bottom: 3rem;

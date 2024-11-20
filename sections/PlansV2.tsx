@@ -180,7 +180,7 @@ export interface Plan {
 export interface Props {
     id?: string;
     title?: HTMLWidget;
-    caption?: string;
+    caption?: RichText;
     /** @format color-input */
     captionColor?: string;
     montlyLabel?: string;
@@ -367,9 +367,9 @@ function Plans(props: Props) {
     return (<div id={id}>
 
             <div id={carouselId} class="min-h-min flex flex-col items-center lg:container md:max-w-[1340px] lg:mx-auto pt-7 lg:pt-[90px]" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)} >
-                <AnimateOnShow animation="animate-fade-down" >
-                    <p class="text-lg lg:text-2xl text-neutral-content font-semibold leading-tight" style={{color: captionColor}}>{caption}</p>
-                </AnimateOnShow>
+                {caption && <AnimateOnShow animation="animate-fade-down" >
+                    <div class="text-lg lg:text-2xl text-neutral-content font-semibold leading-tight" style={{color: captionColor}} dangerouslySetInnerHTML={{__html: caption}}/>
+                </AnimateOnShow>}
 
                 {title && <AnimateOnShow animation="animate-fade-down" animationDuration="1.1s" divClass="text-2xl lg:text-[70px] text-primary text-center leading-[110%] font-normal pb-12 lg:pb-16 mx-auto">
                     <div dangerouslySetInnerHTML={{__html: title}} />

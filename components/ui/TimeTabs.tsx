@@ -82,7 +82,7 @@ export default function TimeTabs({ tabs, interval = 5, progressBarColor, progres
         {tabs?.map((tab) => (<div
             className=" text-primary-content open collapse focus:outline-none rounded-none opacity-60"
         >
-            <div className="collapse-title px-0 flex gap-4" id="collapseElement" >
+            <div className="collapse-title px-0 pb-0 min-h-0 flex gap-4" id="collapseElement" >
                 {tab.icon?.src && <Image
                     src={tab.icon.src}
                     alt={tab.icon.alt || "tab icon"}
@@ -93,10 +93,10 @@ export default function TimeTabs({ tabs, interval = 5, progressBarColor, progres
                 <div class="text-xl" dangerouslySetInnerHTML={{ __html: tab.title || "" }} />
             </div>
             <div className="collapse-content px-0">
-                <div class="text-base" dangerouslySetInnerHTML={{ __html: tab.contentText || "" }} />
-                <div class="bg-secondary mt-6" style={{ background: progressBarBackgroundColor }}>
-                    <div class="h-[1px] bg-primary tabProgressBar" style={{ animationDuration: interval + 's', background: progressBarColor }} />
-                </div>
+                <div class="text-base pt-4" dangerouslySetInnerHTML={{ __html: tab.contentText || "" }} />
+            </div>
+            <div class="bg-secondary mt-6" style={{ background: progressBarBackgroundColor }}>
+                <div class="h-[1px] w-0 bg-primary tabProgressBar" style={{ animationDuration: interval + 's', background: progressBarColor }} />
             </div>
         </div>))}
         <script

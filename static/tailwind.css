@@ -5402,6 +5402,9 @@ details.collapse summary::-webkit-details-marker {
 .pl-2 {
   padding-left: 0.5rem;
 }
+.pl-2\.5 {
+  padding-left: 0.625rem;
+}
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -7144,6 +7147,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pl-0 {
     padding-left: 0px;
+  }
+
+  .lg\:pl-4 {
+    padding-left: 1rem;
   }
 
   .lg\:pt-0 {

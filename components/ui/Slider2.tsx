@@ -80,8 +80,10 @@ const setup = ({ rootId, scroll, interval, infinite }: Props) => {
         const isShowingFirst = indices[0] === 0;
         const pageIndex = Math.floor(indices[indices.length - 1] / itemsPerPage);
         //goToItem(isShowingFirst ? items.length - 1 : (pageIndex - 1) * itemsPerPage);
+
         if (itemsPerPage > 2) {
-            goToItem(indices[0] - 1);
+            if (isShowingFirst) goToItem(0);
+            else goToItem(indices[0] - 1);
         }
         else {
             goToItem((pageIndex - 1) * itemsPerPage);

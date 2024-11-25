@@ -68,6 +68,7 @@ export interface Props {
     inputLabelColor?: string;
     /** @format color-input */
     inputLabelBackgroundColor?: string;
+    inputLabelWidth?: 'min' | 'full';
     image?: IImage;
     video?: VideoWidget;
     use?: "image" | "video";
@@ -83,8 +84,10 @@ export interface Props {
     bulletPoints: BulletPoints;
     modal: Modal;
 }
-export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
-    const modalId = useId() + "modal";
+export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
+    const randomId = useId();
+    const modalId = randomId + "modal";
+    const hubspostFormId = randomId + "hubspotForm";
     return <div class="relative">
         <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`}>
             {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} class="w-full h-full absolute object-cover top-0 left-0 -z-50" 
@@ -97,8 +100,13 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                     <div class="text-primary text-2xl md:text-[56px] font-normal leading-[120%] " style={{ color: titleColor }} dangerouslySetInnerHTML={{ __html: title }}/>
                     <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: caption }}/>
                     <label class="pt-5 md:pt-10 lg:w-[600px]">
-                        {inputLabel && <p class="bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 pl-2.5 lg:pl-4 pr-12 text-base text-primary inline-block" style={{ color: inputLabelColor, backgroundColor: inputLabelBackgroundColor }}>{inputLabel}</p>}
-                        <div class="main-hero-form" dangerouslySetInnerHTML={{
+                        {inputLabel && <p 
+                            class={`bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 pl-2.5 lg:pl-4 text-base text-primary inline-block ${inputLabelWidth == 'full' ? "w-full text-center px-1" : "pr-12"}`} 
+                            style={{ color: inputLabelColor, background: inputLabelBackgroundColor }}
+                        >
+                            {inputLabel}
+                        </p>}
+                        <div class={hubspostFormId} dangerouslySetInnerHTML={{
                 __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                         <script>
                         hbspt.forms.create({
@@ -137,7 +145,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             
             <style dangerouslySetInnerHTML={{
                 __html: `
-                .main-hero-form .hs-form-private {
+                .${hubspostFormId} .hs-form-private {
                     position: relative;
                     display: flex; /* flex */
                     flex-wrap: wrap;
@@ -149,26 +157,27 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                     border: 1px solid #EBEBEB;
                     --tw-border-opacity: 1;
                     border-radius: ${inputLabel ? '0 0.75rem 0.75rem 0.75rem' : '0.75rem'};
+                    ${inputLabel && inputLabelWidth == 'full' && 'border-radius: 0 0 0.75rem 0.75rem;'}
                     box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
                     --tw-bg-opacity: 1;
                     flex-wrap: nowrap;
                     background-color: white;
                     }
                     
-                    .main-hero-form .hs-form-private {
+                    .${hubspostFormId} .hs-form-private {
                         flex-wrap: nowrap;
                         }
                         
-                        .main-hero-form .hs-input {
+                        .${hubspostFormId} .hs-input {
                             width: 100%;
                             margin-top: 10px;
                             }
                             
-                            .main-hero-form .actions {
+                            .${hubspostFormId} .actions {
                                 height: 47px;
                                 }
                                 
-                                .main-hero-form .hs-button {
+                                .${hubspostFormId} .hs-button {
                                     background-color: ${hubspotFormButtonColor};
                                     color: ${hubspotFormButtonTextColor};
                                     cursor:pointer;
@@ -181,32 +190,32 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                                     border-radius: 8px;
                                     }
                                     
-                                    .main-hero-form .hs-button:hover {
+                                    .${hubspostFormId} .hs-button:hover {
                                         transform: scale(1.15);
                                         }
                                         
-                                        .main-hero-form .hs-input {
+                                        .${hubspostFormId} .hs-input {
                                             padding-left: 0.5rem; /* 2 * 0.25rem */
                                             outline: none;
                                             font-size: 0.875rem; /* text-sm */
                                             }
                                             
-                                            .main-hero-form .input  {
+                                            .${hubspostFormId} .input  {
                                                 outline: none; /* Remove a borda padrão */
                                                 border: none;
                                                 box-shadow: none; /* Remove qualquer sombra */
                                                 }
                                                 
-                                                .main-hero-form .hs-error-msg {
+                                                .${hubspostFormId} .hs-error-msg {
                                                     --tw-text-opacity: 1;
                                                     color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity)));
                                                     }
                                                     
-                                                    .main-hero-form .submitted-message {
+                                                    .${hubspostFormId} .submitted-message {
                                                         text-align: center;
                                                         }
                                                         
-                                                        .main-hero-form .hs-error-msg {
+                                                        .${hubspostFormId} .hs-error-msg {
                                                             position: absolute;
                                                             top: 60px;
                                                             left: 24px;
@@ -214,12 +223,12 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                                                             color: ${hubspotErrorMessageColor}
                                                             }
                                                             
-                                                            .main-hero-form .hs_error_rollup {
+                                                            .${hubspostFormId} .hs_error_rollup {
                                                                 display: none;
                                                                 }
                 
                                                                 @media (min-width: 768px) {
-                                                                    .main-hero-form .hs-input {
+                                                                    .${hubspostFormId} .hs-input {
                                                                         width: auto;
                                                                         flex-grow: 1;
                                                                         padding-left: 1.75rem; /* 7 * 0.25rem */

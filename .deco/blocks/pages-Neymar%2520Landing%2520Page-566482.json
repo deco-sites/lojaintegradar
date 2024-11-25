@@ -54,7 +54,7 @@
         ],
         "buttons": [
           {
-            "href": "https://app.lojaintegrada.com.br/painel/login",
+            "href": "#plans",
             "text": "<p>Ver planos</p>",
             "ctaStyle": "button",
             "backgroundColor": "#71DBD4",
@@ -262,12 +262,12 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<p style=\"font-family: 'Instrument serif';\" data-mce-style=\"font-family: 'Instrument serif';\">Sua loja merece ser camisa 10 em vendas</p>",
-            "caption": "<p style=\"line-height: 1.2; font-size: 20px;\" data-mce-style=\"line-height: 1.2; font-size: 20px;\"><span style=\"color: rgb(250, 250, 245);\" data-mce-style=\"color: rgb(250, 250, 245);\">Acesse um Guia com insights exclusivos sobre o maior evento do e-commerce, assinado por Victor Popper, CEO da Loja Integrada</span></p>",
+            "title": "<p style=\"font-family: 'Instrument serif';\" data-mce-style=\"font-family: 'Instrument serif';\">Sua loja merece ser</p><p style=\"font-family: 'Instrument serif';\" data-mce-style=\"font-family: 'Instrument serif';\">camisa 10 em vendas</p>",
+            "caption": "<p style=\"line-height: 1.2; font-size: 20px;\" data-mce-style=\"line-height: 1.2; font-size: 20px;\"><span style=\"color: rgb(189, 141, 236);\" data-mce-style=\"color: rgb(189, 141, 236);\">Descubra as <em><span style=\"color: rgb(232, 224, 237);\" data-mce-style=\"color: rgb(232, 224, 237);\">3 estratégias</span></em> da Next 10</span></p><p style=\"line-height: 1.2; font-size: 20px;\" data-mce-style=\"line-height: 1.2; font-size: 20px;\"><span style=\"color: rgb(189, 141, 236);\" data-mce-style=\"color: rgb(189, 141, 236);\">para aumentar a frequência de compras</span></p><p style=\"line-height: 1.2; font-size: 20px;\" data-mce-style=\"line-height: 1.2; font-size: 20px;\"><span style=\"color: rgb(189, 141, 236);\" data-mce-style=\"color: rgb(189, 141, 236);\">no seu site usando <em><span style=\"color: rgb(232, 224, 237);\" data-mce-style=\"color: rgb(232, 224, 237);\">automação em</span></em></span></p><p style=\"line-height: 1.2; font-size: 20px;\" data-mce-style=\"line-height: 1.2; font-size: 20px;\"><em><span style=\"color: rgb(232, 224, 237);\" data-mce-style=\"color: rgb(232, 224, 237);\">marketing</span></em><br></p>",
             "titleColor": "#ffffff",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
-            "inputLabel": " ⚡Baixe agora e destaque-se na Black",
+            "inputLabel": "Entenda por que a Next 10 escolheu a Loja Integrada",
             "image": {
               "alt": "top image",
               "width": 925,
@@ -279,8 +279,8 @@
               "width": 1796,
               "height": 1106
             },
-            "inputLabelColor": "#FAFAF5",
-            "inputLabelBackgroundColor": "#44656A",
+            "inputLabelColor": "#ffffff",
+            "inputLabelBackgroundColor": "RGBA(255,255,255, 0.3)",
             "hubspotFormButtonColor": "#71DBD4",
             "hubspotFormButtonTextColor": "#003037",
             "hubspotErrorMessageColor": "#F57E77",
@@ -338,7 +338,8 @@
               }
             },
             "use": "image",
-            "captionAbove": "<p></p>"
+            "captionAbove": "<p></p>",
+            "inputLabelWidth": "full"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

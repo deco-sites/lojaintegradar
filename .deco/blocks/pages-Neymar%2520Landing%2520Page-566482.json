@@ -262,9 +262,9 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<div style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\" data-mce-style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\"><p style=\"text-align: left; font-family: 'Instrument Serif'; font-size: 60px; line-height: 110%; font-weight: 400;\" data-mce-style=\"text-align: left; font-family: 'Instrument Serif'; font-size: 60px; line-height: 110%; font-weight: 400;\">Escolha a plataforma que investe em dados e automação</p></div>",
+            "title": "<p style=\"font-family: 'Instrument serif';\" data-mce-style=\"font-family: 'Instrument serif';\">Sua loja merece ser camisa 10 em vendas</p>",
             "caption": "<p style=\"line-height: 1.2; font-size: 20px;\" data-mce-style=\"line-height: 1.2; font-size: 20px;\"><span style=\"color: rgb(250, 250, 245);\" data-mce-style=\"color: rgb(250, 250, 245);\">Acesse um Guia com insights exclusivos sobre o maior evento do e-commerce, assinado por Victor Popper, CEO da Loja Integrada</span></p>",
-            "titleColor": "",
+            "titleColor": "#ffffff",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
             "inputLabel": " ⚡Baixe agora e destaque-se na Black",
@@ -321,7 +321,6 @@
               "formId": "da90329f-c54b-4a42-bf6c-800a08b0ca27"
             },
             "htmlContent": "",
-            "captionAbove": "<p style=\"font-size: 20px; line-height: 120%;\" data-mce-style=\"font-size: 20px; line-height: 120%;\"><span style=\"color: rgb(250, 250, 245);\" data-mce-style=\"color: rgb(250, 250, 245);\">Veja seu faturamento disparar nessa Black Friday</span><br></p>",
             "bulletPoints": {
               "show": false,
               "title": "<div style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\" data-mce-style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\"><p>O que você vai receber no Guia</p></div>",
@@ -338,7 +337,8 @@
                 "alt": "check icon"
               }
             },
-            "use": "image"
+            "use": "image",
+            "captionAbove": "<p></p>"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

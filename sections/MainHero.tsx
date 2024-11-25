@@ -1,4 +1,4 @@
-import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, HTMLWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useId } from "site/sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
@@ -58,7 +58,7 @@ export interface Modal {
 }
 export interface Props {
     id?: string;
-    captionAbove?: HTMLWidget;
+    captionAbove?: RichText;
     title: HTMLWidget;
     /** @format color-input */
     titleColor?: string;
@@ -94,7 +94,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
                 <script dangerouslySetInnerHTML={{ __html: useScript(openModal, modalId) }}/>
                 <div class={`flex-grow flex flex-col gap-2.5 ${(use == "image" || use == "video") ? "max-w-[630px]" : "items-center max-w-[1220px]"} z-10`}>
                     {captionAbove && <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: captionAbove }}/>}
-                    <div class="text-primary text-2xl md:text-[56px] font-semibold md:font-bold leading-[120%] " style={{ color: titleColor }} dangerouslySetInnerHTML={{ __html: title }}/>
+                    <div class="text-primary text-2xl md:text-[56px] font-normal leading-[120%] " style={{ color: titleColor }} dangerouslySetInnerHTML={{ __html: title }}/>
                     <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: caption }}/>
                     <label class="pt-5 md:pt-10 lg:w-[600px]">
                         {inputLabel && <p class="bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 pl-2.5 lg:pl-4 pr-12 text-base text-primary inline-block" style={{ color: inputLabelColor, backgroundColor: inputLabelBackgroundColor }}>{inputLabel}</p>}

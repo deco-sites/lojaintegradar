@@ -339,7 +339,9 @@
             },
             "use": "image",
             "captionAbove": "<p></p>",
-            "inputLabelWidth": "full"
+            "inputLabelWidth": "full",
+            "hubspotFormButtonIcon": true,
+            "sectionMinHeight": "815px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

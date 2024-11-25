@@ -80,16 +80,18 @@ export interface Props {
     /** @format color-input */
     hubspotFormButtonTextColor?: string;
     /** @format color-input */
+    hubspotFormButtonIcon?: boolean;
     hubspotErrorMessageColor?: string;
     bulletPoints: BulletPoints;
     modal: Modal;
+    sectionMinHeight?: string;
 }
-export default function MainHero({ id, title, caption = "", inputLabel, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
+export default function MainHero({ id, title, caption = "", inputLabel, hubspotFormButtonIcon, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
     const randomId = useId();
     const modalId = randomId + "modal";
     const hubspostFormId = randomId + "hubspotForm";
     return <div class="relative">
-        <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`}>
+        <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`} style={{minHeight: sectionMinHeight}}>
             {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} class="w-full h-full absolute object-cover top-0 left-0 -z-50" 
             // style={{ objectPosition: "top right" }}
             alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={"eager"} preload={true}/>}
@@ -145,60 +147,76 @@ export default function MainHero({ id, title, caption = "", inputLabel, backgrou
             
             <style dangerouslySetInnerHTML={{
                 __html: `
-                .${hubspostFormId} .hs-form-private {
-                    position: relative;
-                    display: flex; /* flex */
-                    flex-wrap: wrap;
-                    justify-content: space-between; /* justify-between */
-                    padding-top: 0.375rem; /* py-1.5 */
-                    padding-bottom: 0.375rem; /* py-1.5 */
-                    padding-right: 0.375rem; /* pr-1.5 */
-                    font-size: 1rem; /* text-base */
-                    border: 1px solid #EBEBEB;
-                    --tw-border-opacity: 1;
-                    border-radius: ${inputLabel ? '0 0.75rem 0.75rem 0.75rem' : '0.75rem'};
-                    ${inputLabel && inputLabelWidth == 'full' && 'border-radius: 0 0 0.75rem 0.75rem;'}
-                    box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
-                    --tw-bg-opacity: 1;
-                    flex-wrap: nowrap;
-                    background-color: white;
+                    .${hubspostFormId} .hs-form-private {
+                        position: relative;
+                        display: flex; /* flex */
+                        flex-wrap: wrap;
+                        justify-content: space-between; /* justify-between */
+                        padding-top: 0.375rem; /* py-1.5 */
+                        padding-bottom: 0.375rem; /* py-1.5 */
+                        padding-right: 0.375rem; /* pr-1.5 */
+                        font-size: 1rem; /* text-base */
+                        border: 1px solid #EBEBEB;
+                        --tw-border-opacity: 1;
+                        border-radius: ${inputLabel ? '0 0.75rem 0.75rem 0.75rem' : '0.75rem'};
+                        ${inputLabel && inputLabelWidth == 'full' && 'border-radius: 0 0 0.75rem 0.75rem;'}
+                        box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
+                        --tw-bg-opacity: 1;
+                        flex-wrap: nowrap;
+                        background-color: white;
                     }
                     
                     .${hubspostFormId} .hs-form-private {
                         flex-wrap: nowrap;
-                        }
+                    }
                         
-                        .${hubspostFormId} .hs-input {
-                            width: 100%;
-                            margin-top: 10px;
-                            }
+                    .${hubspostFormId} .hs-input {
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                    
+                    .${hubspostFormId} ${hubspotFormButtonIcon && '.actions::before'} {
+                        content: '';
+                        background-image: url("data:image/svg+xml,%3Csvg width='40' height='41' viewBox='0 0 40 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='0.5' width='40' height='40' rx='4' fill='white'/%3E%3Cpath d='M26.8087 19.3671L16.4581 12.8195C16.2836 12.709 16.0837 12.6487 15.8791 12.6447C15.6745 12.6408 15.4726 12.6934 15.2943 12.7972C15.1176 12.8993 14.9705 13.0483 14.868 13.2287C14.7654 13.4091 14.7112 13.6145 14.7109 13.8238V26.9175C14.7123 27.2314 14.8341 27.5319 15.0496 27.753C15.2652 27.9741 15.5568 28.0976 15.8604 28.0964C16.0723 28.0963 16.28 28.0359 16.461 27.9218L26.8087 21.3743C26.9751 21.2694 27.1125 21.1221 27.2079 20.9465C27.3033 20.7709 27.3534 20.5728 27.3534 20.3714C27.3534 20.17 27.3033 19.9719 27.2079 19.7963C27.1125 19.6207 26.9751 19.4734 26.8087 19.3685V19.3671Z' fill='%232F575C'/%3E%3C/svg%3E%0A");
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        width: 40px;
+                        height: 40px;
+                        display: block;
+                    }
                             
-                            .${hubspostFormId} .actions {
-                                height: 47px;
-                                }
+                    .${hubspostFormId} .actions {
+                        display: flex;
+                        align-items: center;
+                        height: 47px;
+                        background-color: ${hubspotFormButtonColor};
+                        cursor: pointer;
+                        border-radius: 8px;
+                        padding-left: 4px;
+                        transition: transform 0.2s ease-in-out;
+                    }
                                 
-                                .${hubspostFormId} .hs-button {
-                                    background-color: ${hubspotFormButtonColor};
-                                    color: ${hubspotFormButtonTextColor};
-                                    cursor:pointer;
-                                    transition: transform 0.2s ease-in-out;
-                                    height: 100%;
-                                    padding: 0px 30px 0px 30px;
-                                    font-size: 18px;
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    border-radius: 8px;
-                                    }
+                    .${hubspostFormId} .actions:hover {
+                        transform: scale(1.15);
+                    }
+
+                    .${hubspostFormId} .hs-button {
+                        color: ${hubspotFormButtonTextColor};
+                        padding: 0px 18px 0px 18px;
+                        height: 100%;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
                                     
-                                    .${hubspostFormId} .hs-button:hover {
-                                        transform: scale(1.15);
-                                        }
+                    
                                         
-                                        .${hubspostFormId} .hs-input {
-                                            padding-left: 0.5rem; /* 2 * 0.25rem */
-                                            outline: none;
-                                            font-size: 0.875rem; /* text-sm */
-                                            }
+                    .${hubspostFormId} .hs-input {
+                        padding-left: 0.5rem; /* 2 * 0.25rem */
+                        outline: none;
+                        font-size: 0.875rem; /* text-sm */
+                    }
                                             
                                             .${hubspostFormId} .input  {
                                                 outline: none; /* Remove a borda padrão */

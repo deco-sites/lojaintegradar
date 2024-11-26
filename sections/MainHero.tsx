@@ -59,10 +59,11 @@ export interface Modal {
 export interface Props {
     id?: string;
     captionAbove?: RichText;
-    title: HTMLWidget;
+    title: RichText;
+    titleFont?: string;
     /** @format color-input */
     titleColor?: string;
-    caption?: HTMLWidget;
+    caption?: RichText;
     inputLabel?: string;
     /** @format color-input */
     inputLabelColor?: string;
@@ -86,7 +87,7 @@ export interface Props {
     modal: Modal;
     sectionMinHeight?: string;
 }
-export default function MainHero({ id, title, caption = "", inputLabel, hubspotFormButtonIcon, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
+export default function MainHero({ id, title, caption = "", inputLabel, hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
     const randomId = useId();
     const modalId = randomId + "modal";
     const hubspostFormId = randomId + "hubspotForm";
@@ -99,7 +100,11 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                 <script dangerouslySetInnerHTML={{ __html: useScript(openModal, modalId) }}/>
                 <div class={`flex-grow flex flex-col gap-2.5 ${(use == "image" || use == "video") ? "max-w-[630px]" : "items-center max-w-[1220px]"} z-10`}>
                     {captionAbove && <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: captionAbove }}/>}
-                    <div class="text-primary text-2xl md:text-[56px] font-normal leading-[120%] " style={{ color: titleColor }} dangerouslySetInnerHTML={{ __html: title }}/>
+                    <div 
+                        class="text-primary text-2xl md:text-[56px] font-normal leading-[120%] pt-0.5" 
+                        style={{ background: titleColor, backgroundClip: "text", color: titleColor && 'transparent', fontFamily: titleFont }} 
+                        dangerouslySetInnerHTML={{ __html: title }}
+                    />
                     <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: caption }}/>
                     <label class="pt-5 md:pt-10 lg:w-[600px]">
                         {inputLabel && <p 

@@ -496,6 +496,45 @@
       }
     },
     {
+      "__resolveType": "site/sections/HeroV2.tsx",
+      "paddingTop": "76px",
+      "paddingBottom": "145px",
+      "tag": {
+        "text": "01. Desconto Progressivo",
+        "textColor": "#003239",
+        "backgroundColor": "#FFE596"
+      },
+      "id": "teste",
+      "title": {
+        "text": "<p><span style=\"color: #401a5b\">Faturamento maior com cada pedido enquanto fideliza clientes</span></p>",
+        "font": "Instrument serif"
+      },
+      "caption": "<p><span style=\"color: #401a5b\">A Next 10 oferece descontos progressivos para incentivar seus clientes a comprarem mais: quanto mais itens no carrinho, maior o desconto aplicado. Mais economia para eles, mais vendas a loja!</span></p>",
+      "cta": [
+        {
+          "ctaStyle": "button",
+          "href": "linkhere",
+          "text": "Leve Desconto Progressivo para seu e-commerce ",
+          "backgroundColor": "#00929F",
+          "borderColor": "#00929F",
+          "showIcon": false
+        }
+      ],
+      "ctaAndBulletPointsDivColor": "#71DBD4",
+      "bulletpoints": {
+        "items": [
+          "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
+        ],
+        "itemsTextColor": "#006877",
+        "bulletPointsIcon": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
+        }
+      },
+      "ctaDiv": {
+        "backgroundColor": "#71DBD4"
+      }
+    },
+    {
       "__resolveType": "site/sections/Footer2.tsx",
       "title": "<p>O futuro do e-commerce começa com você.<br>Escolha soluções automatizadas e veja suas</p><p><span style=\"color: rgb(43, 195, 194)\">vendas decolarem</span></p>",
       "titleFont": "Instrument serif",

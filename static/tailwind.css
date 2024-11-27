@@ -5453,12 +5453,6 @@ details.collapse summary::-webkit-details-marker {
 .pr-\[22px\] {
   padding-right: 22px;
 }
-.pt-0 {
-  padding-top: 0px;
-}
-.pt-0\.5 {
-  padding-top: 0.125rem;
-}
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -5696,6 +5690,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .leading-\[1\.125rem\] {
   line-height: 1.125rem;
+}
+.leading-\[1\.2\] {
+  line-height: 1.2;
 }
 .leading-\[10px\] {
   line-height: 10px;

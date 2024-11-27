@@ -82,12 +82,13 @@ export interface Props {
     hubspotFormButtonTextColor?: string;
     /** @format color-input */
     hubspotFormButtonIcon?: boolean;
+    hubspotFormButtonWidth?: 'min' | 'full';
     hubspotErrorMessageColor?: string;
     bulletPoints: BulletPoints;
     modal: Modal;
     sectionMinHeight?: string;
 }
-export default function MainHero({ id, title, caption = "", inputLabel, hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
+export default function MainHero({ id, title, caption = "", inputLabel, hubspotFormButtonWidth, hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
     const randomId = useId();
     const modalId = randomId + "modal";
     const hubspostFormId = randomId + "hubspotForm";
@@ -101,14 +102,14 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                 <div class={`flex-grow flex flex-col gap-2.5 ${(use == "image" || use == "video") ? "max-w-[630px]" : "items-center max-w-[1220px]"} z-10`}>
                     {captionAbove && <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: captionAbove }}/>}
                     <div 
-                        class="text-primary text-2xl md:text-[56px] font-normal leading-[120%] pt-0.5" 
+                        class="text-primary text-2xl md:text-[56px] font-normal leading-[1.2] pt-2 lg:pt-0" 
                         style={{ background: titleColor, backgroundClip: "text", color: titleColor && 'transparent', fontFamily: titleFont }} 
                         dangerouslySetInnerHTML={{ __html: title }}
                     />
                     <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: caption }}/>
                     <label class="pt-5 md:pt-10 lg:w-[600px]">
                         {inputLabel && <p 
-                            class={`bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 pl-2.5 lg:pl-4 text-base text-primary inline-block ${inputLabelWidth == 'full' ? "w-full text-center px-1" : "pr-12"}`} 
+                            class={`bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 pl-2.5 lg:pl-4 text-sm lg:text-base text-primary inline-block ${inputLabelWidth == 'full' ? "w-full text-center px-1" : "pr-12"}`} 
                             style={{ color: inputLabelColor, background: inputLabelBackgroundColor }}
                         >
                             {inputLabel}
@@ -155,11 +156,9 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                     .${hubspostFormId} .hs-form-private {
                         position: relative;
                         display: flex; /* flex */
-                        flex-wrap: wrap;
+                        flex-wrap: wrap !important;
                         justify-content: space-between; /* justify-between */
-                        padding-top: 0.375rem; /* py-1.5 */
-                        padding-bottom: 0.375rem; /* py-1.5 */
-                        padding-right: 0.375rem; /* pr-1.5 */
+                        padding: 0.375rem;
                         font-size: 1rem; /* text-base */
                         border: 1px solid #EBEBEB;
                         --tw-border-opacity: 1;
@@ -167,7 +166,6 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                         ${inputLabel && inputLabelWidth == 'full' && 'border-radius: 0 0 0.75rem 0.75rem;'}
                         box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
                         --tw-bg-opacity: 1;
-                        flex-wrap: nowrap;
                         background-color: white;
                     }
                     
@@ -190,6 +188,10 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                         display: block;
                     }
                             
+                    .${hubspostFormId} .hs-submit {
+                        ${hubspotFormButtonWidth == 'full' && 'width: 100%;'}
+                    }
+
                     .${hubspostFormId} .actions {
                         display: flex;
                         align-items: center;
@@ -213,6 +215,8 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                         font-style: normal;
                         font-weight: 700;
                         cursor: pointer;
+                        text-align: center;
+                        ${hubspotFormButtonWidth == 'full' && 'width: 100%;'}
                     }
                                     
                     

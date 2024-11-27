@@ -94,7 +94,8 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
     const hubspostFormId = randomId + "hubspotForm";
     return <div class="relative">
         <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`} style={{minHeight: sectionMinHeight}}>
-            {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} class="w-full h-full absolute object-cover top-0 left-0 -z-50" 
+            {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} 
+            class="w-full h-full absolute object-cover top-0 left-0 -z-50 object-right-top" 
             // style={{ objectPosition: "top right" }}
             alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={"eager"} preload={true}/>}
             <div class={`lg:pb-20 flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-7 md:px-0 border-base`}>

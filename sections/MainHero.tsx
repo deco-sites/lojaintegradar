@@ -75,6 +75,8 @@ export interface Props {
     use?: "image" | "video";
     htmlContent?: HTMLWidget;
     backgroundImage?: IImage;
+    backgroundVideo?: VideoWidget;
+    useBackground?: "image" | "video";
     hubspotForm?: HubspotForm;
     /** @format color-input */
     hubspotFormButtonColor?: string;
@@ -88,16 +90,20 @@ export interface Props {
     modal: Modal;
     sectionMinHeight?: string;
 }
-export default function MainHero({ id, title, caption = "", inputLabel, hubspotFormButtonWidth, hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
+export default function MainHero({ id, title, caption = "", inputLabel, hubspotFormButtonWidth, backgroundVideo, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
     const randomId = useId();
     const modalId = randomId + "modal";
     const hubspostFormId = randomId + "hubspotForm";
     return <div class="relative">
         <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`} style={{minHeight: sectionMinHeight}}>
-            {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} 
-            class="w-full h-full absolute object-cover top-0 left-0 -z-50 object-right-top" 
-            // style={{ objectPosition: "top right" }}
-            alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={"eager"} preload={true}/>}
+            {useBackground == "image" &&backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} 
+                class="w-full h-full absolute object-cover top-0 left-0 -z-50 object-right-top" 
+                // style={{ objectPosition: "top right" }}
+                alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={"eager"} preload={true}
+            />}
+            {useBackground == "video" && backgroundVideo && <video width="1280" height="720" autoPlay playsInline muted loading="lazy" loop class="absolute w-full h-full object-cover top-0 left-0 -z-50 ">
+                    <source src={backgroundVideo} type="video/mp4"/>
+                </video>}
             <div class={`lg:pb-20 flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-7 md:px-0 border-base`}>
                 <script dangerouslySetInnerHTML={{ __html: useScript(openModal, modalId) }}/>
                 <div class={`flex-grow flex flex-col gap-2.5 ${(use == "image" || use == "video") ? "max-w-[630px]" : "items-center max-w-[1220px]"} z-10`}>
@@ -223,7 +229,6 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                     
                                         
                     .${hubspostFormId} .hs-input {
-                        padding-left: 0.5rem; /* 2 * 0.25rem */
                         outline: none;
                         font-size: 0.875rem; /* text-sm */
                     }
@@ -259,7 +264,6 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                                                                     .${hubspostFormId} .hs-input {
                                                                         width: auto;
                                                                         flex-grow: 1;
-                                                                        padding-left: 1.75rem; /* 7 * 0.25rem */
                                                                         font-size: 1rem; /* text-base */
                                                                         }
                                                                         `

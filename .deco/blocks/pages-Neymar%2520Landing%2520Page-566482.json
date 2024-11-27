@@ -63,7 +63,16 @@
             "outline": true
           }
         ],
-        "mobileButtons": [],
+        "mobileButtons": [
+          {
+            "ctaStyle": "button",
+            "href": "#plans",
+            "text": "<p><span>Ver planos</span></p>",
+            "textColor": "#401A5B",
+            "backgroundColor": "#3ADED5",
+            "borderColor": "#3ADED5"
+          }
+        ],
         "asideMenuButtons": [
           {
             "text": "<p>Abrir loja virtual</p>",
@@ -103,7 +112,6 @@
         "createStoreCtaMobile": {
           "ctaStyle": "button",
           "planId": "172",
-          "text": "Criar loja",
           "backgroundColor": "rgba(255, 255, 255, 0.60)",
           "textColor": "#003037",
           "borderColor": "Transparent",
@@ -268,7 +276,7 @@
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
             "title": "<p style=\"font-family: 'Instrument serif';\" data-mce-style=\"font-family: 'Instrument serif';\"><span style=\"font-size: 76px;\" data-mce-style=\"font-size: 76px;\">Sua loja merece ser</span></p><p style=\"font-family: 'Instrument serif';\" data-mce-style=\"font-family: 'Instrument serif';\"><span style=\"font-size: 76px;\" data-mce-style=\"font-size: 76px;\">camisa 10 em vendas</span></p>",
-            "caption": "<p><span style=\"color: rgb(189, 141, 236)\">Descubra as </span><em><span style=\"color: rgb(232, 224, 237)\">3 estratégias</span></em> da Next 10</p><p><span style=\"color: rgb(189, 141, 236)\">para aumentar a frequência de compras</span></p><p><span style=\"color: rgb(189, 141, 236)\">no seu site usando </span><em><span style=\"color: rgb(232, 224, 237)\">automação em</span></em></p><p><em><span style=\"color: rgb(232, 224, 237)\">marketing</span></em></p>",
+            "caption": "<p><span style=\"color: rgb(189, 141, 236)\">Descubra as </span><em><span style=\"color: rgb(232, 224, 237)\">3 estratégias</span></em> <span style=\"color: #ffffff\">da</span><span style=\"color: #bd8dec\"> Next 10</span></p><p><span style=\"color: rgb(189, 141, 236)\">para aumentar a frequência de compras</span></p><p><span style=\"color: rgb(189, 141, 236)\">no seu site usando </span><em><span style=\"color: rgb(232, 224, 237)\">automação em</span></em></p><p><em><span style=\"color: rgb(232, 224, 237)\">marketing</span></em></p>",
             "titleColor": "#ffffff",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
@@ -346,111 +354,9 @@
             "captionAbove": "<p></p>",
             "inputLabelWidth": "full",
             "hubspotFormButtonIcon": true,
-            "sectionMinHeight": "90vh"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Logos.tsx",
-            "titleColor": "#371E55",
-            "title": "<p><span style=\"color: rgb(0, 48, 55)\">Uma escolha estratégica para vender mais</span></p>",
-            "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
-            "logos": [
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
-                "altText": "Forbes logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
-                "altText": "Frutifica logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
-                "altText": "Rock in Rio Logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
-                "altText": "PodPah logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
-                "altText": "Soldiers logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
-                "altText": "Gorila Shield logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
-                "altText": "+Mu logo"
-              }
-            ],
-            "captionColor": "#5F6E82",
-            "paddingTop": "40px",
-            "titleFont": "Instrument serif"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Logos.tsx",
-            "titleColor": "#371E55",
-            "title": "<p><span style=\"color: rgb(0, 48, 55)\">Uma escolha estratégica para vender mais</span></p>",
-            "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
-            "logos": [
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
-                "altText": "Forbes logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
-                "altText": "Frutifica logo",
-                "width": 119,
-                "height": 34
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
-                "altText": "Rock in Rio Logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
-                "altText": "PodPah logo",
-                "width": 157,
-                "height": 72
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
-                "altText": "Soldiers logo",
-                "width": 157,
-                "height": 72
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
-                "altText": "Gorila Shield logo",
-                "width": 157,
-                "height": 72
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
-                "altText": "+Mu logo",
-                "width": 157,
-                "height": 72
-              }
-            ],
-            "captionColor": "#5F6E82",
-            "titleFont": "Instrument serif",
-            "paddingTop": "120px"
+            "sectionMinHeight": "90vh",
+            "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
+            "useBackground": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -550,6 +456,7 @@
         {
           "value": {
             "__resolveType": "site/sections/Carousel.tsx",
+            "titleColor": "",
             "slides": [
               {
                 "title": "Campanhas automatizadas para reengajar clientes",
@@ -631,6 +538,7 @@
               }
             ],
             "arrows": true,
+            "arrowsColor": "#003037",
             "title": "<p><span style=\"color: rgb(0, 48, 55); font-size: 15pt\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195); font-size: 15pt\">Dados e Automação</span></em></p>",
             "backgroundImage": {},
             "cta": [
@@ -655,9 +563,7 @@
             ],
             "interval": 0,
             "id": "nossoecossistema",
-            "titleColor": "",
             "captionColor": "#371E55",
-            "arrowsColor": "#003037",
             "titleFont": "Instrument serif",
             "paddingBottom": "50px"
           },
@@ -669,6 +575,7 @@
         {
           "value": {
             "__resolveType": "site/sections/Carousel.tsx",
+            "titleColor": "",
             "slides": [
               {
                 "title": "Campanhas automatizadas para reengajar clientes",
@@ -750,6 +657,7 @@
               }
             ],
             "arrows": true,
+            "arrowsColor": "#003037",
             "title": "<p><span style=\"color: rgb(0, 48, 55)\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195)\">Dados e Automação</span></em></p>",
             "backgroundImage": {},
             "cta": [
@@ -774,9 +682,7 @@
             ],
             "interval": 0,
             "id": "nossoecossistema",
-            "titleColor": "",
             "captionColor": "#371E55",
-            "arrowsColor": "#003037",
             "titleFont": "Instrument serif",
             "paddingBottom": "50px"
           },
@@ -3108,45 +3014,20 @@
         {
           "value": {
             "__resolveType": "site/sections/PlanDetailsV3.tsx",
-            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Faça parte da Elite do</span> <br><span style=\"color: rgb(113, 219, 212)\">e-commerce</span></p>",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/133ba8f6-dc32-4458-94f9-c878da9da993/elite-mobie-background.png",
-              "alt": "background ",
-              "width": 430,
-              "height": 1354
-            },
-            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "https://app.lojaintegrada.com.br/painel/login",
-                "textColor": "#ffffff",
-                "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
-                "underlineText": "Mude para o Elite agora",
-                "showIcon": true
-              }
-            ],
-            "planTag": {
-              "icon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
-              },
-              "text": "Plano Elite"
-            },
-            "useBackground": "video",
             "slides": [
               {
                 "bulletPoints": {
-                  "items": [],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                  }
+                  },
+                  "items": []
                 },
+                "titleColor": "#ffffff",
                 "title": "Tarifa por venda reduzida",
                 "backgroundImage": {
                   "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff3a071-1f24-4ed3-ba7d-5628879e0e3c/slide-background.png"
                 },
-                "text": "<p><span style=\"color: #ffffff\">A menor tarifa por transação do mercado, com faixa de isenção disponível (valor sob consulta).</span></p>",
-                "titleColor": "#ffffff"
+                "text": "<p><span style=\"color: #ffffff\">A menor tarifa por transação do mercado, com faixa de isenção disponível (valor sob consulta).</span></p>"
               },
               {
                 "bulletPoints": {
@@ -3178,6 +3059,32 @@
                 }
               }
             ],
+            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Faça parte da Elite do</span> <br><span style=\"color: rgb(113, 219, 212)\">e-commerce</span></p>",
+            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
+            "id": "planoelite",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/133ba8f6-dc32-4458-94f9-c878da9da993/elite-mobie-background.png",
+              "alt": "background ",
+              "width": 430,
+              "height": 1354
+            },
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "https://app.lojaintegrada.com.br/painel/login",
+                "textColor": "#ffffff",
+                "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
+                "underlineText": "Mude para o Elite agora",
+                "showIcon": true
+              }
+            ],
+            "planTag": {
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
+              },
+              "text": "Plano Elite"
+            },
+            "useBackground": "video",
             "showArrows": false,
             "color3": "#003037",
             "color1": "#8c00a8",
@@ -3224,7 +3131,6 @@
             "color6": "#FFE6A0",
             "color7": "#ffffff",
             "color8": "#003037",
-            "id": "planoelite",
             "createStoreCta": {
               "planId": "180",
               "ctaStyle": "button",
@@ -3285,45 +3191,20 @@
         {
           "value": {
             "__resolveType": "site/sections/PlanDetailsV3.tsx",
-            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Faça parte da Elite do</span> <span style=\"color: rgb(113, 219, 212)\">e-commerce</span></p>",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c0715300-7830-4ca6-8deb-5fe41d41fa7e/elite-background.png",
-              "alt": "background ",
-              "width": 2880,
-              "height": 2480
-            },
-            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "https://app.lojaintegrada.com.br/painel/login",
-                "textColor": "#ffffff",
-                "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
-                "underlineText": "Mude para o Elite agora",
-                "showIcon": true
-              }
-            ],
-            "planTag": {
-              "icon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
-              },
-              "text": "Plano Elite"
-            },
-            "useBackground": "video",
             "slides": [
               {
                 "bulletPoints": {
-                  "items": [],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                  }
+                  },
+                  "items": []
                 },
+                "titleColor": "#ffffff",
                 "title": "Tarifa por venda reduzida",
                 "backgroundImage": {
                   "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff3a071-1f24-4ed3-ba7d-5628879e0e3c/slide-background.png"
                 },
-                "text": "<p><span style=\"color: #ffffff\">A menor tarifa por transação do mercado, com faixa de isenção disponível (valor sob consulta).</span></p>",
-                "titleColor": "#ffffff"
+                "text": "<p><span style=\"color: #ffffff\">A menor tarifa por transação do mercado, com faixa de isenção disponível (valor sob consulta).</span></p>"
               },
               {
                 "bulletPoints": {
@@ -3355,6 +3236,32 @@
                 }
               }
             ],
+            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Faça parte da Elite do</span> <span style=\"color: rgb(113, 219, 212)\">e-commerce</span></p>",
+            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
+            "id": "planoelite",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c0715300-7830-4ca6-8deb-5fe41d41fa7e/elite-background.png",
+              "alt": "background ",
+              "width": 2880,
+              "height": 2480
+            },
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "https://app.lojaintegrada.com.br/painel/login",
+                "textColor": "#ffffff",
+                "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
+                "underlineText": "Mude para o Elite agora",
+                "showIcon": true
+              }
+            ],
+            "planTag": {
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
+              },
+              "text": "Plano Elite"
+            },
+            "useBackground": "video",
             "showArrows": false,
             "color3": "#003037",
             "color1": "#8c00a8",
@@ -3398,7 +3305,6 @@
             "color6": "#FFE6A0",
             "color7": "#ffffff",
             "color8": "#003037",
-            "id": "planoelite",
             "createStoreCta": {
               "planId": "180",
               "text": "Fazer assinatura",
@@ -3464,6 +3370,7 @@
         {
           "value": {
             "__resolveType": "site/sections/SectionsInTabs.tsx",
+            "id": "plansdetails",
             "innerSection": {
               "__resolveType": "site/sections/PlanDetailsV3.tsx",
               "backgroundImage": {},
@@ -3910,8 +3817,7 @@
                 "titleColor": "#371E55",
                 "titleDisabledColor": "#5F6E82"
               }
-            ],
-            "id": "plansdetails"
+            ]
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -3921,6 +3827,7 @@
         {
           "value": {
             "__resolveType": "site/sections/SectionsInTabs.tsx",
+            "id": "plansdetails",
             "innerSection": {
               "__resolveType": "site/sections/PlanDetailsV3.tsx",
               "backgroundImage": {},
@@ -4362,8 +4269,7 @@
                 "titleBackgroundColor": "#DDD5EB",
                 "titleDisabledBackgroundColor": "#EDEDED"
               }
-            ],
-            "id": "plansdetails"
+            ]
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -4431,6 +4337,8 @@
     },
     {
       "__resolveType": "site/sections/Footer2.tsx",
+      "title": "<p>O futuro do e-commerce começa com você.<br>Escolha soluções automatizadas e veja suas</p><p><span style=\"color: rgb(43, 195, 194)\">vendas decolarem</span></p>",
+      "titleFont": "Instrument serif",
       "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8fd0634d-265f-46c6-b006-2b75aa39d895/video-dobra-comunidade.mp4",
       "backgroundImage": {},
       "color1": "#371E55",
@@ -4462,7 +4370,6 @@
       ],
       "color3": "#EBEBEB",
       "useBackground": "video",
-      "title": "<p>O futuro do e-commerce começa com você.<br>Escolha soluções automatizadas e veja suas</p><p><span style=\"color: rgb(43, 195, 194)\">vendas decolarem</span></p>",
       "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
       "logo": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
@@ -4526,7 +4433,6 @@
       "bottomBackground": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
       },
-      "titleFont": "Instrument serif",
       "id": "ecossistemaconteudo"
     },
     {

@@ -31,6 +31,12 @@ export interface IImage {
     height?: number;
 }
 
+export interface IVideo {
+    src?: VideoWidget;
+    width?: number;
+    height?: number;
+}
+
 export interface Title {
     text?: RichText;
     font?: string;
@@ -46,6 +52,12 @@ export interface Tag {
 }
 
 export interface Media {
+    image?: IImage;
+    video?: IVideo;
+    use?: "image" | "video" | "embed";
+}
+
+export interface BackgroundMedia {
     image?: IImage;
     video?: VideoWidget;
     use?: "image" | "video";
@@ -64,20 +76,20 @@ export interface Props {
     caption?: RichText;
     cta?: CTA[];
     bulletpoints?: BulletPoints;
-    /** @format color-input */
     ctaDiv?: Div;
     media?: Media;
     mediaPlacement?: "right" | "left";
-    backgroundMedia?: Media;
+    backgroundMedia?: BackgroundMedia;
     paddingTop?: string;
     paddingBottom?: string;
-    horizontalPadding?: string;
+    paddingRight?: string;
+    paddingLeft?: string;
 }
 
-export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement, horizontalPadding }: Props) {
+export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement, paddingLeft, paddingRight }: Props) {
     return <div
         id={id}
-        style={{ paddingTop, paddingBottom, paddingRight: horizontalPadding, paddingLeft: horizontalPadding }}
+        style={{ paddingTop, paddingBottom, paddingRight, paddingLeft }}
     >
         <div class={`flex ${mediaPlacement == 'left' && 'flex-row-reverse'}`}>
             <div class="w-1/2 flex justify-end">
@@ -92,7 +104,13 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                         class="text-2xl font-normal leading-normal mb-4"
                         dangerouslySetInnerHTML={{ __html: caption }}
                     />}
-                    <div class="rounded-3xl px-6 pt-7 pb-8" style={{ background: ctaDiv?.backgroundColor }}>
+                    <div class="relative rounded-3xl px-6 pt-7 pb-8" style={{ background: ctaDiv?.backgroundColor }}>
+                        {ctaDiv?.icon?.src && <Image
+                            src={ctaDiv.icon.src}
+                            width={ctaDiv.icon.width || 31}
+                            height={ctaDiv.icon.height || 30}
+                            class="absolute bottom-6 right-8"
+                        />}
                         {cta.length > 0 && <div class="mb-8">
                             {cta.map((button) => {
                                 if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
@@ -116,22 +134,42 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                                 </a>
                             })}
                         </div>}
-                        {bulletpoints?.items?.map((item) => (
-                            <p class="flex gap-2.5 text-lg font-semibold max-w-[440px]" style={{ color: bulletpoints.itemsTextColor }}>
-                                {bulletpoints.bulletPointsIcon?.src && <Image
-                                    height={bulletpoints.bulletPointsIcon?.height || 20}
-                                    width={bulletpoints.bulletPointsIcon?.width || 20}
-                                    src={bulletpoints.bulletPointsIcon?.src}
-                                    alt={bulletpoints.bulletPointsIcon.alt || ""}
-                                />}
-                                {item}
-                            </p>
-                        ))}
+                        <div class="relative z-10">
+                            {bulletpoints?.items?.map((item) => (
+                                <p class="flex gap-2.5 text-lg font-semibold max-w-[440px]" style={{ color: bulletpoints.itemsTextColor }}>
+                                    {bulletpoints.bulletPointsIcon?.src && <Image
+                                        height={bulletpoints.bulletPointsIcon?.height || 20}
+                                        width={bulletpoints.bulletPointsIcon?.width || 20}
+                                        src={bulletpoints.bulletPointsIcon?.src}
+                                        alt={bulletpoints.bulletPointsIcon.alt || "bullet point icon"}
+                                    />}
+                                    {item}
+                                </p>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="w-1/2 flex justify-end">
-
+            <div class="w-1/2 flex justify-end items-center">
+                {media?.use == "image" && media.image?.src && <Image
+                    src={media.image.src}
+                    alt={media.image.alt || "image"}
+                    width={media.image.width || 752}
+                    height={media.image.height || 726}
+                    class="object-contain"
+                />}
+                {media?.use == "video" && media.video?.src && <video width={media.video.width || 1280} height={media.video.height || 720} autoPlay playsInline muted loading="lazy" loop
+                    class="object-cover"
+                    style={{ width: media.video.width + "px" || "1280px", height: media.video.height + "px" || "720px" }}>
+                    <source src={media.video.src} type="video/mp4" />
+                </video>}
+                {media?.use == "embed" && <iframe
+                    width={media.video?.width}
+                    height={media.video?.height}
+                    src={media.video?.src}
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                />}
             </div>
         </div>
     </div>

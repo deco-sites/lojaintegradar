@@ -275,7 +275,7 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<p style=\"font-family: 'Instrument serif';\" data-mce-style=\"font-family: 'Instrument serif';\"><span style=\"font-size: 76px;\" data-mce-style=\"font-size: 76px;\">Sua loja merece ser</span></p><p style=\"font-family: 'Instrument serif';\" data-mce-style=\"font-family: 'Instrument serif';\"><span style=\"font-size: 76px;\" data-mce-style=\"font-size: 76px;\">camisa 10 em vendas</span></p>",
+            "title": "<p><span style=\"font-size: 76px\">Sua loja merece ser</span></p><p><span style=\"font-size: 76px\">camisa 10 em vendas</span></p>",
             "caption": "<p><span style=\"color: rgb(189, 141, 236)\">Descubra as </span><em><span style=\"color: rgb(232, 224, 237)\">3 estratégias</span></em> <span style=\"color: #ffffff\">da</span><span style=\"color: #bd8dec\"> Next 10</span></p><p><span style=\"color: rgb(189, 141, 236)\">para aumentar a frequência de compras</span></p><p><span style=\"color: rgb(189, 141, 236)\">no seu site usando </span><em><span style=\"color: rgb(232, 224, 237)\">automação em</span></em></p><p><em><span style=\"color: rgb(232, 224, 237)\">marketing</span></em></p>",
             "titleColor": "#ffffff",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
@@ -356,7 +356,8 @@
             "hubspotFormButtonIcon": true,
             "sectionMinHeight": "90vh",
             "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
-            "useBackground": "image"
+            "useBackground": "image",
+            "titleFont": "Instrument serif"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -539,10 +540,9 @@
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d3998f36-783a-41e8-bdcf-d86cb3d62c61/hero-v2-image-1.svg"
         },
         "video": {
-          "width": 300,
-          "height": 300
+          "src": "https://www.youtube.com/embed/u31qwQUeGuM?si=ouIpO7sYy_VXL_EL"
         },
-        "use": "image"
+        "use": "embed"
       },
       "backgroundMedia": {
         "image": {

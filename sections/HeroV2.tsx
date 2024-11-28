@@ -33,8 +33,8 @@ export interface IImage {
 
 export interface IVideo {
     src?: VideoWidget;
-    width?: number;
-    height?: number;
+    width?: string;
+    height?: string;
 }
 
 export interface Title {
@@ -165,11 +165,12 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                     <source src={media.video.src} type="video/mp4" />
                 </video>}
                 {media?.use == "embed" && <iframe
-                    width={media.video?.width}
-                    height={media.video?.height}
+                    width={"100%"}
+                    height={"100%"}
                     src={media.video?.src}
                     frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    style={{ width: media.video?.width || 854, height: media.video?.height || 480 }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen gyroscope; picture-in-picture"
                 />}
             </div>
         </div>

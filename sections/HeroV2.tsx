@@ -86,13 +86,14 @@ export interface Props {
     paddingLeft?: string;
 }
 
-export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement, paddingLeft, paddingRight }: Props) {
+export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement = "right", paddingLeft, paddingRight }: Props) {
     return <div
         id={id}
         style={{ paddingTop, paddingBottom, paddingRight, paddingLeft }}
+        class="relative"
     >
         <div class={`flex ${mediaPlacement == 'left' && 'flex-row-reverse'}`}>
-            <div class="w-1/2 flex justify-end">
+            <div class={`w-1/2 flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"}`}>
                 <div class={`max-w-[590px] ${mediaPlacement == "left" ? 'ml-11' : 'mr-11'}`}>
                     {tag?.text && <div class="py-2.5 px-5 rounded-[20px] mb-11 inline-block text-base font-bold" style={{ background: tag.backgroundColor, color: tag.textColor }}>{tag.text}</div>}
                     {title?.text && <div
@@ -150,7 +151,7 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                     </div>
                 </div>
             </div>
-            <div class="w-1/2 flex justify-end items-center">
+            <div class={`w-1/2 flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"} items-center`}>
                 {media?.use == "image" && media.image?.src && <Image
                     src={media.image.src}
                     alt={media.image.alt || "image"}
@@ -172,5 +173,16 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                 />}
             </div>
         </div>
+        {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
+            src={backgroundMedia.image.src}
+            alt={backgroundMedia.image.alt || "background image"}
+            width={backgroundMedia.image.width || 1440}
+            height={backgroundMedia.image.height || 960}
+            class="absolute -z-50 top-0 left-0 h-full w-full object-cover"
+        />}
+        {backgroundMedia?.use == "video" && backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading="lazy" loop
+            class="object-cover absolute -z-50 top-0 left-0 h-full w-full">
+            <source src={backgroundMedia.video} type="video/mp4" />
+        </video>}
     </div>
 }

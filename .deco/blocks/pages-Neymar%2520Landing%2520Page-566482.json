@@ -500,11 +500,9 @@
       "paddingTop": "76px",
       "paddingBottom": "145px",
       "tag": {
-        "text": "01. Desconto Progressivo",
         "textColor": "#003239",
         "backgroundColor": "#FFE596"
       },
-      "id": "teste",
       "title": {
         "text": "<p><span style=\"color: #401a5b\">Faturamento maior com cada pedido enquanto fideliza clientes</span></p>",
         "font": "Instrument serif"
@@ -540,14 +538,17 @@
         "image": {
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d3998f36-783a-41e8-bdcf-d86cb3d62c61/hero-v2-image-1.svg"
         },
-        "use": "image",
         "video": {
           "width": 300,
           "height": 300
-        }
+        },
+        "use": "image"
       },
       "backgroundMedia": {
-        "image": {}
+        "image": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/61930679-94ab-4c26-94a6-e95b206ad75c/heroV2-background-image-1.svg"
+        },
+        "use": "image"
       }
     },
     {

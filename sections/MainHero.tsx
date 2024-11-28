@@ -151,11 +151,11 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
             </div>
 
             <div class={`md:flex-grow md:flex flex-col justify-end items-end ${(use == "image" || use == "video") && "lg:w-1/2"}`}>
+                {htmlContent && <div class="px-7 flex justify-center w-[98vw] md:w-auto" dangerouslySetInnerHTML={{ __html: htmlContent }}/>}
                 {use == "image" && image?.src && <Image width={image.width || 697} height={image.height || 592} src={image.src} alt={image.src || ""} class=" object-contain hidden md:block"/>}
                 {use == "video" && video && <video width="697" height="592" autoPlay playsInline muted loading="lazy" loop class="w-full xl:w-auto max-w-[809px] object-contain hidden md:block">
                     <source src={video} type="video/mp4"/>
                 </video>}
-                {htmlContent && <div class="px-7 flex justify-center w-[98vw] md:w-auto" dangerouslySetInnerHTML={{ __html: htmlContent }}/>}
             </div>
             
             <style dangerouslySetInnerHTML={{

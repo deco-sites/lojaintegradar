@@ -86,6 +86,31 @@ export interface Props {
     paddingLeft?: string;
 }
 
+export function HeroMedia({ media }: { media?: Media }) {
+    return <div>
+        {media?.use == "image" && media.image?.src && <Image
+            src={media.image.src}
+            alt={media.image.alt || "image"}
+            width={media.image.width || 752}
+            height={media.image.height || 726}
+            class="object-contain"
+        />}
+        {media?.use == "video" && media.video?.src && <video width={media.video.width || 1280} height={media.video.height || 720} autoPlay playsInline muted loading="lazy" loop
+            class="object-cover"
+            style={{ width: media.video.width + "px" || "1280px", height: media.video.height + "px" || "720px" }}>
+            <source src={media.video.src} type="video/mp4" />
+        </video>}
+        {media?.use == "embed" && <iframe
+            width={"100%"}
+            height={"100%"}
+            src={media.video?.src}
+            frameborder="0"
+            style={{ width: media.video?.width || 854, height: media.video?.height || 480 }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen gyroscope; picture-in-picture"
+        />}
+    </div>
+}
+
 export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement = "right", paddingLeft, paddingRight }: Props) {
     return <div
         id={id}
@@ -93,8 +118,8 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
         class="relative"
     >
         <div class={`flex ${mediaPlacement == 'left' && 'flex-row-reverse'}`}>
-            <div class={`w-1/2 flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"}`}>
-                <div class={`max-w-[590px] ${mediaPlacement == "left" ? 'ml-11' : 'mr-11'}`}>
+            <div class={`w-full lg:w-1/2 flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"}`}>
+                <div class={`max-w-[590px] ${mediaPlacement == "left" ? 'lg:ml-11' : 'lg:mr-11'}`}>
                     {tag?.text && <div class="py-2.5 px-5 rounded-[20px] mb-11 inline-block text-base font-bold" style={{ background: tag.backgroundColor, color: tag.textColor }}>{tag.text}</div>}
                     {title?.text && <div
                         class="text-5xl lg:text-[64px] leading-[120%] mb-4"
@@ -102,15 +127,18 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                         dangerouslySetInnerHTML={{ __html: title.text }}
                     />}
                     {caption && <div
-                        class="text-2xl font-normal leading-normal mb-4"
+                        class="text-base lg:text-2xl font-normal leading-normal mb-4"
                         dangerouslySetInnerHTML={{ __html: caption }}
                     />}
-                    <div class="relative rounded-3xl px-6 pt-7 pb-8" style={{ background: ctaDiv?.backgroundColor }}>
+                    <div class="lg:hidden mt-16 mb-7">
+                        <HeroMedia media={media} />
+                    </div>
+                    <div class="relative rounded-xl lg:rounded-3xl py-4 px-3 lg:px-6 lg:pt-7 lg:pb-8" style={{ background: ctaDiv?.backgroundColor }}>
                         {ctaDiv?.icon?.src && <Image
                             src={ctaDiv.icon.src}
                             width={ctaDiv.icon.width || 31}
                             height={ctaDiv.icon.height || 30}
-                            class="absolute bottom-6 right-8"
+                            class="absolute bottom-4 right-3 lg:bottom-6 lg:right-8"
                         />}
                         {cta.length > 0 && <div class="mb-8">
                             {cta.map((button) => {
@@ -118,13 +146,13 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                                     showIcon={button.showIcon}
                                     underlineText={button.underlineText}
                                     text={button.text}
-                                    ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg w-full h-auto cursor-pointer`}
+                                    ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base w-full h-auto cursor-pointer`}
                                     style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
                                 />
                                 return <a
                                     href={button?.href ?? "#"}
                                     target={button?.href.includes("http") ? "_blank" : ""}
-                                    class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg h-auto w-full`}
+                                    class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto w-full`}
                                     style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
                                 >
                                     {button?.text}
@@ -137,7 +165,7 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                         </div>}
                         <div class="relative z-10">
                             {bulletpoints?.items?.map((item) => (
-                                <p class="flex gap-2.5 text-lg font-semibold max-w-[440px]" style={{ color: bulletpoints.itemsTextColor }}>
+                                <p class="flex gap-2.5 text-sm lg:text-lg font-semibold max-w-[247px] lg:max-w-[440px]" style={{ color: bulletpoints.itemsTextColor }}>
                                     {bulletpoints.bulletPointsIcon?.src && <Image
                                         height={bulletpoints.bulletPointsIcon?.height || 20}
                                         width={bulletpoints.bulletPointsIcon?.width || 20}
@@ -151,27 +179,8 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                     </div>
                 </div>
             </div>
-            <div class={`w-1/2 flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"} items-center`}>
-                {media?.use == "image" && media.image?.src && <Image
-                    src={media.image.src}
-                    alt={media.image.alt || "image"}
-                    width={media.image.width || 752}
-                    height={media.image.height || 726}
-                    class="object-contain"
-                />}
-                {media?.use == "video" && media.video?.src && <video width={media.video.width || 1280} height={media.video.height || 720} autoPlay playsInline muted loading="lazy" loop
-                    class="object-cover"
-                    style={{ width: media.video.width + "px" || "1280px", height: media.video.height + "px" || "720px" }}>
-                    <source src={media.video.src} type="video/mp4" />
-                </video>}
-                {media?.use == "embed" && <iframe
-                    width={"100%"}
-                    height={"100%"}
-                    src={media.video?.src}
-                    frameborder="0"
-                    style={{ width: media.video?.width || 854, height: media.video?.height || 480 }}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen gyroscope; picture-in-picture"
-                />}
+            <div class={`w-1/2 hidden lg:flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"} items-center`}>
+                <HeroMedia media={media} />
             </div>
         </div>
         {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image

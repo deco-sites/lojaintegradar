@@ -196,6 +196,7 @@ export interface Props {
     annualTagDisabledColor?: string;
     /** @format color-input */
     annualTagTextColor?: string;
+    annualTagPosition?: "below" | "aside";
     slides?: Plan[];
     /**
      * @title Show arrows
@@ -363,9 +364,8 @@ function Buttons({arrowsColor}: {arrowsColor?: string}) {
 function Plans(props: Props) {
     const carouselId = useId();
     const id = props.id || carouselId;
-    const { title, caption, slides, montlyLabel, annualLabel, annualTag, annualTagTextColor, arrows, bottomCaption, bottomTitle, bottomCreateStoreCta, captionColor, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, bottomCaptionColor, bottomTitleColor, arrowsColor } = { ...props };
+    const { title, caption, slides, montlyLabel, annualLabel, annualTagPosition = "below", annualTag, annualTagTextColor, arrows, bottomCaption, bottomTitle, bottomCreateStoreCta, captionColor, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, bottomCaptionColor, bottomTitleColor, arrowsColor } = props;
     return (<div id={id}>
-
             <div id={carouselId} class="min-h-min flex flex-col items-center lg:container md:max-w-[1340px] lg:mx-auto pt-7 lg:pt-[90px]" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)} >
                 {caption && <AnimateOnShow animation="animate-fade-down" >
                     <div class="text-lg lg:text-2xl text-neutral-content font-semibold leading-tight" style={{color: captionColor}} dangerouslySetInnerHTML={{__html: caption}}/>
@@ -375,7 +375,7 @@ function Plans(props: Props) {
                     <div dangerouslySetInnerHTML={{__html: title}} />
                 </AnimateOnShow>}
                 
-                <div className="form-control">
+                <div className="form-control relative">
                     <label className="label cursor-pointer gap-5">
                         {montlyLabel && <button className="text-lg text-primary font-semibold leading-tight disabled:text-neutral-content" disabled style={{color: disabledLabelColor}}>{montlyLabel}</button>}
                         <input type="checkbox" className={`toggle border-primary-content bg-primary-content [--tglbg:purple] hover:bg-primary-content`} style={`--tglbg: ${labelColor}`} defaultChecked hx-on:click={useScript(onChange, id, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor)}/>
@@ -383,7 +383,13 @@ function Plans(props: Props) {
                             {annualLabel}
                         </button>}
                     </label>
-                    {annualTag && <p class="text-nowrap left-full top-0 text-base px-2 py-1.5 bg-info group-disabled:bg-base-200 rounded-[10px] anualTag" style={{background: annualTagColor, color: annualTagTextColor}}>{annualTag}</p>}
+                    {annualTag && <div class={`flex justify-center ${annualTagPosition == "aside" && 'absolute left-full ml-2'}`}>
+                        <p 
+                            class="inline-block text-nowrap left-full top-0 text-base px-2 py-1.5 bg-info group-disabled:bg-base-200 rounded-[10px] anualTag" 
+                            style={{background: annualTagColor, color: annualTagTextColor}}>
+                            {annualTag}
+                        </p>
+                    </div>}
                 </div>
 
                 <AnimateOnShow animation="animate-pop-up" divClass="w-full" delay={400}>

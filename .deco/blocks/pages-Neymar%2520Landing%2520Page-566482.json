@@ -497,62 +497,198 @@
       }
     },
     {
-      "__resolveType": "site/sections/HeroV2.tsx",
-      "paddingTop": "76px",
-      "paddingBottom": "145px",
-      "tag": {
-        "textColor": "#003239",
-        "backgroundColor": "#FFE596"
-      },
-      "title": {
-        "text": "<p><span style=\"color: #401a5b\">Faturamento maior com cada pedido enquanto fideliza clientes</span></p>",
-        "font": "Instrument serif"
-      },
-      "caption": "<p><span style=\"color: #401a5b\">A Next 10 oferece descontos progressivos para incentivar seus clientes a comprarem mais: quanto mais itens no carrinho, maior o desconto aplicado. Mais economia para eles, mais vendas a loja!</span></p>",
-      "cta": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "ctaStyle": "button",
-          "href": "linkhere",
-          "text": "Leve Desconto Progressivo para seu e-commerce ",
-          "backgroundColor": "#00929F",
-          "borderColor": "#00929F",
-          "showIcon": false
-        }
-      ],
-      "ctaAndBulletPointsDivColor": "#71DBD4",
-      "bulletpoints": {
-        "items": [
-          "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
-        ],
-        "itemsTextColor": "#006877",
-        "bulletPointsIcon": {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
-        }
-      },
-      "ctaDiv": {
-        "backgroundColor": "#E4F3F3",
-        "icon": {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
-        }
-      },
-      "media": {
-        "image": {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d3998f36-783a-41e8-bdcf-d86cb3d62c61/hero-v2-image-1.svg"
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "paddingTop": "76px",
+            "paddingBottom": "65px",
+            "tag": {
+              "textColor": "#003239",
+              "backgroundColor": "#FFE596",
+              "text": "01. Desconto Progressivo"
+            },
+            "title": {
+              "text": "<p><span style=\"color: #401a5b\">Faturamento maior com cada pedido enquanto fideliza clientes</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #401a5b\">A Next 10 oferece descontos progressivos para incentivar seus clientes a comprarem mais: quanto mais itens no carrinho, maior o desconto aplicado. Mais economia para eles, mais vendas a loja!</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Leve Desconto Progressivo para seu e-commerce ",
+                "backgroundColor": "#00929F",
+                "borderColor": "#00929F",
+                "showIcon": false
+              }
+            ],
+            "ctaAndBulletPointsDivColor": "#71DBD4",
+            "bulletpoints": {
+              "items": [
+                "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
+              ],
+              "itemsTextColor": "#006877",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
+              }
+            },
+            "ctaDiv": {
+              "backgroundColor": "#E4F3F3",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "media": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/22453c18-dbb5-490d-8ae4-02e0e66d32a9/hero-v2-mobile-image-1.svg"
+              },
+              "video": {},
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1b783a51-5ac8-4bd1-857c-3b69ce374d45/hero-v2-mobile-background.svg",
+                "width": 430,
+                "height": 959
+              },
+              "use": "image"
+            },
+            "paddingRight": "56px",
+            "paddingLeft": "56px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
         },
-        "video": {},
-        "use": "image"
-      },
-      "backgroundMedia": {
-        "image": {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/61930679-94ab-4c26-94a6-e95b206ad75c/heroV2-background-image-1.svg"
-        },
-        "use": "image"
-      }
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "paddingTop": "76px",
+            "paddingBottom": "145px",
+            "tag": {
+              "textColor": "#003239",
+              "backgroundColor": "#FFE596"
+            },
+            "title": {
+              "text": "<p><span style=\"color: #401a5b\">Faturamento maior com cada pedido enquanto fideliza clientes</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #401a5b\">A Next 10 oferece descontos progressivos para incentivar seus clientes a comprarem mais: quanto mais itens no carrinho, maior o desconto aplicado. Mais economia para eles, mais vendas a loja!</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Leve Desconto Progressivo para seu e-commerce ",
+                "backgroundColor": "#00929F",
+                "borderColor": "#00929F",
+                "showIcon": false
+              }
+            ],
+            "ctaAndBulletPointsDivColor": "#71DBD4",
+            "bulletpoints": {
+              "items": [
+                "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
+              ],
+              "itemsTextColor": "#006877",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
+              }
+            },
+            "ctaDiv": {
+              "backgroundColor": "#E4F3F3",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "media": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d3998f36-783a-41e8-bdcf-d86cb3d62c61/hero-v2-image-1.svg"
+              },
+              "video": {},
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/61930679-94ab-4c26-94a6-e95b206ad75c/heroV2-background-image-1.svg"
+              },
+              "use": "image"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "paddingTop": "76px",
+            "paddingBottom": "145px",
+            "tag": {
+              "textColor": "#003239",
+              "backgroundColor": "#FFE596"
+            },
+            "title": {
+              "text": "<p><span style=\"color: #401a5b\">Faturamento maior com cada pedido enquanto fideliza clientes</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #401a5b\">A Next 10 oferece descontos progressivos para incentivar seus clientes a comprarem mais: quanto mais itens no carrinho, maior o desconto aplicado. Mais economia para eles, mais vendas a loja!</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Leve Desconto Progressivo para seu e-commerce ",
+                "backgroundColor": "#00929F",
+                "borderColor": "#00929F",
+                "showIcon": false
+              }
+            ],
+            "ctaAndBulletPointsDivColor": "#71DBD4",
+            "bulletpoints": {
+              "items": [
+                "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
+              ],
+              "itemsTextColor": "#006877",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
+              }
+            },
+            "ctaDiv": {
+              "backgroundColor": "#E4F3F3",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "media": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d3998f36-783a-41e8-bdcf-d86cb3d62c61/hero-v2-image-1.svg"
+              },
+              "video": {},
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/61930679-94ab-4c26-94a6-e95b206ad75c/heroV2-background-image-1.svg"
+              },
+              "use": "image"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Footer2.tsx",
       "title": "<p>O futuro do e-commerce começa com você.<br>Escolha soluções automatizadas e veja suas</p><p><span style=\"color: rgb(43, 195, 194)\">vendas decolarem</span></p>",
-      "titleFont": "Instrument serif",
       "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8fd0634d-265f-46c6-b006-2b75aa39d895/video-dobra-comunidade.mp4",
       "backgroundImage": {},
       "color1": "#371E55",

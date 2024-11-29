@@ -122,20 +122,20 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                             {inputLabel}
                         </p>}
                         <div class={hubspostFormId} dangerouslySetInnerHTML={{
-                __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                        <script>
-                        hbspt.forms.create({
-                            region: "${hubspotForm?.region || ""}",
-                            portalId: "${hubspotForm?.portalId}",
-                            formId: "${hubspotForm?.formId}",
-                            onFormSubmit: function($form){
-                                const modal = document.getElementById("${modalId}");
-                                if (modal) modal.classList.remove('hidden'); 
-                                }
-                                });
-                                </script>
-                                `
-                            }}/>
+                            __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                            <script>
+                            hbspt.forms.create({
+                                region: "${hubspotForm?.region || ""}",
+                                portalId: "${hubspotForm?.portalId}",
+                                formId: "${hubspotForm?.formId}",
+                                onFormSubmit: function($form){
+                                    const modal = document.getElementById("${modalId}");
+                                    if (modal) modal.classList.remove('hidden'); 
+                                    }
+                                    });
+                                    </script>
+                                    `
+                        }}/>
                         {/* <div class={`bg-primary-content flex justify-between py-1.5 pr-1.5 text-base text-primary border border-base-200 rounded-xl shadow-spreaded ${inputLabel && 'md:rounded-tl-none'}`}>
                 <input
                     type="email"

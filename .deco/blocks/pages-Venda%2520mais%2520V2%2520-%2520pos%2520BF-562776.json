@@ -183,7 +183,6 @@
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
             "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0907e9e6-48cd-4c84-8bb6-b5df4ca073fb/vitao-1.png",
               "alt": "top image",
               "width": 925,
               "height": 530
@@ -197,8 +196,7 @@
             "hubspotFormButtonColor": "#71DBD4",
             "hubspotFormButtonTextColor": "#003037",
             "hubspotErrorMessageColor": "#F57E77",
-            "use": "image",
-            "inputLabel": "⚡ ️Baixe agora e destaque-se",
+            "inputLabel": " ⚡ Ganhe 20% OFF na assinatura anual️",
             "modal": {
               "title": "Obrigado por se inscrever para receber guia exclusivo de Black Friday",
               "titleColor": "#003037",
@@ -233,10 +231,11 @@
             "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
             "hubspotForm": {
               "portalId": "7112881",
-              "formId": "da90329f-c54b-4a42-bf6c-800a08b0ca27"
+              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
+              "region": "na1"
             },
             "bulletPoints": {
-              "show": true,
+              "show": false,
               "title": "<div style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\" data-mce-style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\"><p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">O que você vai receber no Guia:</span></p></div>",
               "items": [
                 "Como o consumidor decide na Black Friday ",
@@ -268,7 +267,7 @@
             "titleColor": "",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
-            "inputLabel": "⚡ Ganhe 20% OFF na assinatura anual️",
+            "inputLabel": " ⚡ Ganhe 20% OFF na assinatura anual️",
             "image": {
               "alt": "top image",
               "width": 925,

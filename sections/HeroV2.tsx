@@ -86,6 +86,7 @@ export interface Props {
     paddingBottom?: string;
     paddingRight?: string;
     paddingLeft?: string;
+    sectionMinHeight?: string;
 }
 
 export function HeroMedia({ media }: { media?: Media }) {
@@ -113,21 +114,23 @@ export function HeroMedia({ media }: { media?: Media }) {
     </div>
 }
 
-export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement = "right", paddingLeft, paddingRight }: Props) {
+export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints, sectionMinHeight, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement = "right", paddingLeft, paddingRight }: Props) {
     return <div
         id={id}
-        style={{ paddingTop, paddingBottom, paddingRight, paddingLeft }}
+        style={{ paddingTop, paddingBottom, paddingRight, paddingLeft, minHeight: sectionMinHeight }}
         class="relative"
     >
         <div class={`flex ${mediaPlacement == 'left' && 'flex-row-reverse'}`}>
             <div class={`w-full lg:w-1/2 flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"}`}>
                 <div class={`max-w-[590px] ${mediaPlacement == "left" ? 'lg:ml-11' : 'lg:mr-11'}`}>
-                    {tag?.text && <AnimateOnShow
-                        animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
-                        divClass="py-2.5 px-5 rounded-[20px] mb-11 inline-block text-base font-bold"
-                        style={{ background: tag.backgroundColor, color: tag.textColor }}>
-                        {tag.text}
-                    </AnimateOnShow>}
+                    <div style={{ marginTop: tag?.marginTop }}>
+                        {tag?.text && <AnimateOnShow
+                            animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
+                            divClass="py-2.5 px-5 rounded-[20px] mb-11 inline-block text-base font-bold"
+                            style={{ background: tag.backgroundColor, color: tag.textColor }}>
+                            {tag.text}
+                        </AnimateOnShow>}
+                    </div>
                     {title?.text && <AnimateOnShow
                         animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
                         divClass="text-5xl lg:text-[64px] leading-[120%] mb-4"
@@ -143,7 +146,7 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                         <HeroMedia media={media} />
                     </AnimateOnShow>
                     <AnimateOnShow
-                        divClass={`relative rounded-xl lg:rounded-3xl py-4 px-3 lg:px-6 lg:pt-7 lg:pb-8`}
+                        divClass={`relative rounded-xl lg:rounded-3xl ${ctaDiv?.backgroundColor && 'py-4 px-3 lg:px-6 lg:pt-7 lg:pb-8'}`}
                         style={{ background: ctaDiv?.backgroundColor }}
                         animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}>
                         {ctaDiv?.icon?.src && <Image

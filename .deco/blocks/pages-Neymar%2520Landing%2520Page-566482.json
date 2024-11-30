@@ -757,9 +757,33 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/HeroV2.tsx"
+      "__resolveType": "site/sections/HeroV2.tsx",
+      "sectionMinHeight": "33vw",
+      "backgroundMedia": {
+        "image": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7a4b90b4-6a2d-45c4-a61e-713c79ecd852/hero-v2-background-image-3.svg"
+        },
+        "use": "image"
+      },
+      "title": {
+        "text": "<p><span style=\"color: #ffffff\">Na cola da Frequência</span></p>",
+        "font": "Instrument Serif"
+      },
+      "tag": {
+        "marginTop": "3.5vw"
+      },
+      "caption": "<p><span style=\"color: #003239\">Confira o eBook que traz o case completo da</span></p><p><span style=\"color: #003239\">Next 10 e outras estratégias de especialistas</span></p><p><span style=\"color: #003239\">para aumentar a frequência de compras no</span></p><p><span style=\"color: #003239\">seu e-commerce.</span></p>",
+      "cta": [
+        {
+          "ctaStyle": "button",
+          "href": "/linkhere",
+          "backgroundColor": "#003239",
+          "borderColor": "#003239",
+          "text": "Baixe agora"
+        }
+      ],
+      "ctaDiv": {
+        "backgroundColor": ""
       }
     },
     {

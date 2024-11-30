@@ -570,7 +570,8 @@
             "paddingBottom": "145px",
             "tag": {
               "textColor": "#003239",
-              "backgroundColor": "#FFE596"
+              "backgroundColor": "#FFE596",
+              "text": "01. Desconto Progressivo"
             },
             "title": {
               "text": "<p><span style=\"color: #401a5b\">Faturamento maior com cada pedido enquanto fideliza clientes</span></p>",
@@ -584,7 +585,8 @@
                 "text": "Leve Desconto Progressivo para seu e-commerce ",
                 "backgroundColor": "#00929F",
                 "borderColor": "#00929F",
-                "showIcon": false
+                "showIcon": false,
+                "width": "100%"
               }
             ],
             "ctaAndBulletPointsDivColor": "#71DBD4",
@@ -629,22 +631,23 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV2.tsx",
-            "paddingTop": "76px",
-            "paddingBottom": "145px",
+            "paddingTop": "42px",
+            "paddingBottom": "27px",
             "tag": {
               "textColor": "#003239",
-              "backgroundColor": "#FFE596"
+              "backgroundColor": "#FFE596",
+              "text": "02. Brinde Progressivo"
             },
             "title": {
-              "text": "<p><span style=\"color: #401a5b\">Faturamento maior com cada pedido enquanto fideliza clientes</span></p>",
+              "text": "<p><span style=\"color: #401a5b\">Compras maiores, recompensas exclusivas</span></p>",
               "font": "Instrument serif"
             },
-            "caption": "<p><span style=\"color: #401a5b\">A Next 10 oferece descontos progressivos para incentivar seus clientes a comprarem mais: quanto mais itens no carrinho, maior o desconto aplicado. Mais economia para eles, mais vendas a loja!</span></p>",
+            "caption": "<p><span style=\"color: #401a5b\">A loja incentiva compras de maior valor e oferece uma experiência além do esperado com o Brinde Progressivo. Ao atingir um valor específico, seus clientes ganham um brinde exclusivo – uma forma eficaz de aumentar o ticket médio e incentivar novas compras.<br></span></p>",
             "cta": [
               {
                 "ctaStyle": "button",
                 "href": "linkhere",
-                "text": "Leve Desconto Progressivo para seu e-commerce ",
+                "text": "Ofereça Brinde Progressivo no seu e-commerce",
                 "backgroundColor": "#00929F",
                 "borderColor": "#00929F",
                 "showIcon": false
@@ -668,23 +671,96 @@
             },
             "media": {
               "image": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d3998f36-783a-41e8-bdcf-d86cb3d62c61/hero-v2-image-1.svg"
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/21256353-1cf6-4c77-ad55-6b96cde251a6/hero-v2-mobile-image-2.svg"
               },
               "video": {},
               "use": "image"
             },
             "backgroundMedia": {
               "image": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/61930679-94ab-4c26-94a6-e95b206ad75c/heroV2-background-image-1.svg"
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d3284d22-d1d3-4eae-b761-f693e186135f/hero-v2-mobile-background-2.svg",
+                "height": 878,
+                "width": 430
               },
               "use": "image"
-            }
+            },
+            "mediaPlacement": "left",
+            "paddingRight": "56px",
+            "paddingLeft": "56px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "paddingTop": "76px",
+            "paddingBottom": "145px",
+            "tag": {
+              "textColor": "#003239",
+              "backgroundColor": "#FFE596",
+              "text": "02. Brinde Progressivo"
+            },
+            "title": {
+              "text": "<p><span style=\"color: #401a5b\">Compras maiores, recompensas exclusivas</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #401a5b\">A loja incentiva compras de maior valor e oferece uma experiência além do esperado com o Brinde Progressivo. Ao atingir um valor específico, seus clientes ganham um brinde exclusivo – uma forma eficaz de aumentar o ticket médio e incentivar novas compras.<br></span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Ofereça Brinde Progressivo no seu e-commerce",
+                "backgroundColor": "#00929F",
+                "borderColor": "#00929F",
+                "showIcon": false,
+                "width": "100%"
+              }
+            ],
+            "ctaAndBulletPointsDivColor": "#71DBD4",
+            "bulletpoints": {
+              "items": [
+                "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
+              ],
+              "itemsTextColor": "#006877",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
+              }
+            },
+            "ctaDiv": {
+              "backgroundColor": "#E4F3F3",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "media": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c88a779-cf63-480f-93c1-5177c986b7bd/hero-v2-image-2.svg"
+              },
+              "video": {},
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c12b0743-6365-4b8d-8b22-447801d366b2/hero-v2-background-image-2.svg"
+              },
+              "use": "image"
+            },
+            "mediaPlacement": "left"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
           }
         }
       ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/HeroV2.tsx"
+      }
     },
     {
       "__resolveType": "site/sections/Footer2.tsx",

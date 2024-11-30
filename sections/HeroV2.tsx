@@ -1,6 +1,7 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
+import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 
 export interface BulletPoints {
     items?: string[];
@@ -22,6 +23,7 @@ export interface CTA {
     borderColor?: string;
     ctaStyle: "button" | "link";
     showIcon?: boolean;
+    width?: string;
 }
 
 export interface IImage {
@@ -120,40 +122,50 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
         <div class={`flex ${mediaPlacement == 'left' && 'flex-row-reverse'}`}>
             <div class={`w-full lg:w-1/2 flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"}`}>
                 <div class={`max-w-[590px] ${mediaPlacement == "left" ? 'lg:ml-11' : 'lg:mr-11'}`}>
-                    {tag?.text && <div class="py-2.5 px-5 rounded-[20px] mb-11 inline-block text-base font-bold" style={{ background: tag.backgroundColor, color: tag.textColor }}>{tag.text}</div>}
-                    {title?.text && <div
-                        class="text-5xl lg:text-[64px] leading-[120%] mb-4"
-                        style={{ fontFamily: title.font }}
-                        dangerouslySetInnerHTML={{ __html: title.text }}
-                    />}
-                    {caption && <div
-                        class="text-base lg:text-2xl font-normal leading-normal mb-4"
-                        dangerouslySetInnerHTML={{ __html: caption }}
-                    />}
-                    <div class="lg:hidden mt-16 mb-7">
+                    {tag?.text && <AnimateOnShow
+                        animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
+                        divClass="py-2.5 px-5 rounded-[20px] mb-11 inline-block text-base font-bold"
+                        style={{ background: tag.backgroundColor, color: tag.textColor }}>
+                        {tag.text}
+                    </AnimateOnShow>}
+                    {title?.text && <AnimateOnShow
+                        animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
+                        divClass="text-5xl lg:text-[64px] leading-[120%] mb-4"
+                        style={{ fontFamily: title.font }}>
+                        <div dangerouslySetInnerHTML={{ __html: title.text }} />
+                    </AnimateOnShow>}
+                    {caption && <AnimateOnShow
+                        animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
+                        divClass="text-base lg:text-2xl font-normal leading-normal mb-4">
+                        <div dangerouslySetInnerHTML={{ __html: caption }} />
+                    </AnimateOnShow>}
+                    <AnimateOnShow divClass="lg:hidden mt-4 mb-7" animation={mediaPlacement == "right" ? "animate-fade-left" : "animate-fade-right"}>
                         <HeroMedia media={media} />
-                    </div>
-                    <div class="relative rounded-xl lg:rounded-3xl py-4 px-3 lg:px-6 lg:pt-7 lg:pb-8" style={{ background: ctaDiv?.backgroundColor }}>
+                    </AnimateOnShow>
+                    <AnimateOnShow
+                        divClass={`relative rounded-xl lg:rounded-3xl py-4 px-3 lg:px-6 lg:pt-7 lg:pb-8`}
+                        style={{ background: ctaDiv?.backgroundColor }}
+                        animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}>
                         {ctaDiv?.icon?.src && <Image
                             src={ctaDiv.icon.src}
                             width={ctaDiv.icon.width || 31}
                             height={ctaDiv.icon.height || 30}
                             class="absolute bottom-4 right-3 lg:bottom-6 lg:right-8"
                         />}
-                        {cta.length > 0 && <div class="mb-8">
+                        {cta.length > 0 && <div class="mb-8 flex gap-4 flex-wrap">
                             {cta.map((button) => {
                                 if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                                     showIcon={button.showIcon}
                                     underlineText={button.underlineText}
                                     text={button.text}
-                                    ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base w-full h-auto cursor-pointer`}
-                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                                    ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto cursor-pointer`}
+                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content" } : { color: button.textColor, width: button.width || "fit-content" }}
                                 />
                                 return <a
                                     href={button?.href ?? "#"}
                                     target={button?.href.includes("http") ? "_blank" : ""}
-                                    class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto w-full`}
-                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                                    class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto`}
+                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content" } : { color: button.textColor, width: button.width || "fit-content" }}
                                 >
                                     {button?.text}
                                     {button.underlineText && <span class="underline">{button.underlineText}</span>}
@@ -165,7 +177,7 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                         </div>}
                         <div class="relative z-10">
                             {bulletpoints?.items?.map((item) => (
-                                <p class="flex gap-2.5 text-sm lg:text-lg font-semibold max-w-[247px] lg:max-w-[440px]" style={{ color: bulletpoints.itemsTextColor }}>
+                                <p class="flex gap-2.5 text-sm lg:text-lg font-semibold max-w-[85%] lg:max-w-[440px]" style={{ color: bulletpoints.itemsTextColor }}>
                                     {bulletpoints.bulletPointsIcon?.src && <Image
                                         height={bulletpoints.bulletPointsIcon?.height || 20}
                                         width={bulletpoints.bulletPointsIcon?.width || 20}
@@ -176,12 +188,14 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                                 </p>
                             ))}
                         </div>
-                    </div>
+                    </AnimateOnShow>
                 </div>
             </div>
-            <div class={`w-1/2 hidden lg:flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"} items-center`}>
+            <AnimateOnShow
+                divClass={`w-1/2 hidden lg:flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"} items-center`}
+                animation={mediaPlacement == "right" ? "animate-fade-left" : "animate-fade-right"}>
                 <HeroMedia media={media} />
-            </div>
+            </AnimateOnShow>
         </div>
         {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
             src={backgroundMedia.image.src}

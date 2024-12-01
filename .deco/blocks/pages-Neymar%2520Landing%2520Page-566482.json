@@ -684,9 +684,9 @@
               },
               "use": "image"
             },
-            "mediaPlacement": "left",
             "paddingRight": "56px",
-            "paddingLeft": "56px"
+            "paddingLeft": "56px",
+            "mediaPlacement": "left"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -762,7 +762,6 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV2.tsx",
-            "sectionMinHeight": "144vw",
             "backgroundMedia": {
               "image": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/77e41873-daff-4cd3-9ee8-04677cc14ffc/hero-v2-background-mobile-image-3.png",
@@ -790,7 +789,8 @@
             ],
             "ctaDiv": {
               "backgroundColor": ""
-            }
+            },
+            "sectionMinHeight": "144vw"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -800,7 +800,6 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV2.tsx",
-            "sectionMinHeight": "33vw",
             "backgroundMedia": {
               "image": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7a4b90b4-6a2d-45c4-a61e-713c79ecd852/hero-v2-background-image-3.svg"
@@ -826,7 +825,8 @@
             ],
             "ctaDiv": {
               "backgroundColor": ""
-            }
+            },
+            "sectionMinHeight": "33vw"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -950,12 +950,6 @@
     },
     {
       "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "TcoCalculatorV4"
-      }
     }
   ],
   "seo": {

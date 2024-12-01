@@ -137,6 +137,18 @@ const onClickNext = (rootId: string, plans: Plan[], inputsErrorMessageColor: str
         (parent?.querySelector("#" + rootId + "savingAside") as HTMLElement).textContent = saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).split(',')[0];
         (parent?.querySelector("#" + rootId + "indicatedPlanLabelSaving") as HTMLElement).textContent = saving.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).split(',')[0];
         (parent?.querySelector("#" + rootId + "indicatedPlanName") as HTMLElement).textContent = plans[indicatedPlan].title;
+        //caso o plano indicado não ofereça economia transforma a tela final na tela negativa
+        if (negativeResult) {
+            parent?.querySelector("#" + rootId + "resultAsideContentDiv")?.classList.add("flex-col-reverse");
+            parent?.querySelector("#" + rootId + "negativeScreenAsideTitle")?.classList.remove("hidden");
+            parent?.querySelector("#" + rootId + "savingDiv")?.classList.add("hidden");
+            parent?.querySelector("#" + rootId + "currentPlanLabel")?.classList.add("hidden");
+            parent?.querySelector("#" + rootId + "indicatedPlanLabel")?.classList.add("hidden");
+            (parent?.querySelector("#" + rootId + "indicatedPlanLabelSaving")?.parentElement?.parentElement as HTMLElement).classList.add("hidden");
+            parent?.querySelector("#" + rootId + "negativeScreenExtraBenefit1")?.classList.remove("hidden");
+            parent?.querySelector("#" + rootId + "negativeScreenExtraBenefit2")?.classList.remove("hidden");
+            parent?.querySelector("#" + rootId + "negativeScreenAsideTopIcon")?.classList.remove("hidden");
+        }
         //mostra o botão de migrar para o plano indicado pela calculadora
         if (moneyToNumber(gmvInput) < 100000) {
             const migrateCta = (parent?.querySelector("#" + rootId + "migrateCta") as HTMLElement).querySelector(".migrateTo" + plans[indicatedPlan].planId);

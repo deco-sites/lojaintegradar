@@ -192,7 +192,7 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
 function Carousel(props: Props) {
     const { id, title, titleFont, caption, slides, backgroundImage, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop } = { ...props };
     const carouselId = useId();
-    return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}}>
+    return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative">
         {/* <input type="text" value="0" /> */}
         <AnimateOnShow animation="animate-fade-up50" delay={300}>
             <div id={carouselId} class="min-h-min flex flex-col items-center w-full pt-7 lg:pt-14 relative" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>

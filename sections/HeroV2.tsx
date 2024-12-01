@@ -121,7 +121,7 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
         class="relative"
     >
         <div class={`flex ${mediaPlacement == 'left' && 'flex-row-reverse'}`}>
-            <div class={`w-full lg:w-1/2 flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"}`}>
+            <div class={`w-full lg:w-1/2 flex justify-center ${mediaPlacement == "right" ? "lg:justify-end" : "lg:justify-start"}`}>
                 <div class={`max-w-[590px] ${mediaPlacement == "left" ? 'lg:ml-11' : 'lg:mr-11'}`}>
                     <div style={{ marginTop: tag?.marginTop }}>
                         {tag?.text && <AnimateOnShow
@@ -195,7 +195,7 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                 </div>
             </div>
             <AnimateOnShow
-                divClass={`w-1/2 hidden lg:flex ${mediaPlacement == "right" ? "justify-end" : "justify-start"} items-center`}
+                divClass={`w-1/2 hidden lg:flex justify-center ${mediaPlacement == "right" ? "lg:justify-end" : "lg:justify-start"} items-center`}
                 animation={mediaPlacement == "right" ? "animate-fade-left" : "animate-fade-right"}>
                 <HeroMedia media={media} />
             </AnimateOnShow>

@@ -1,0 +1,959 @@
+{
+  "name": "Neymar Landing Page",
+  "path": "/neymar-lp",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Header2.tsx",
+      "navigation": {
+        "links": [
+          {
+            "label": "Nosso ecossistema",
+            "url": "#nossoecossistema",
+            "textColor": "#371E55",
+            "textHoverColor": "#C6B3CE"
+          },
+          {
+            "label": "Recursos e Ferramentas",
+            "url": "#recursosferramentas",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Calculadora TCO",
+            "url": "#tcocalculator"
+          },
+          {
+            "label": "Faça parte da Elite",
+            "url": "#planoelite",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Planos",
+            "url": "#plans",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Plano Expansão ",
+            "url": "#plansdetails",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Plano Aceleração",
+            "url": "#plansdetails",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Plano Crescimento",
+            "url": "#plansdetails",
+            "textColor": "#371E55"
+          },
+          {
+            "label": "Ecossistema de conteúdo",
+            "url": "#ecossistemaconteudo",
+            "textColor": "#371E55"
+          }
+        ],
+        "buttons": [
+          {
+            "href": "#plans",
+            "text": "<p>Ver planos</p>",
+            "ctaStyle": "button",
+            "backgroundColor": "#71DBD4",
+            "textColor": "#3b1c58",
+            "borderColor": "#71DBD4",
+            "outline": true
+          }
+        ],
+        "mobileButtons": [
+          {
+            "ctaStyle": "button",
+            "href": "#plans",
+            "text": "<p><span>Ver planos</span></p>",
+            "textColor": "#401A5B",
+            "backgroundColor": "#3ADED5",
+            "borderColor": "#3ADED5"
+          }
+        ],
+        "asideMenuButtons": [
+          {
+            "text": "<p>Abrir loja virtual</p>",
+            "href": "#plans",
+            "ctaStyle": "button",
+            "backgroundColor": "#003037",
+            "textColor": "#ffffff",
+            "borderColor": "#003037"
+          },
+          {
+            "text": "Fazer Login",
+            "href": "https://app.lojaintegrada.com.br/painel/login",
+            "outline": true,
+            "ctaStyle": "button",
+            "backgroundColor": "Transparent",
+            "textColor": "#003037",
+            "borderColor": "#003037"
+          }
+        ],
+        "sideMenuButtons": [],
+        "linksBorderColor": "#D0DAD9",
+        "textHoverColor": "#D0DAD9",
+        "textColor": "#003037",
+        "mobileButtonsOnScrollColors": {
+          "textColor": "#ffffff",
+          "backgroundColor": "#371E55",
+          "borderColor": "#371E55"
+        },
+        "createStoreCta": {
+          "ctaStyle": "button",
+          "planId": "172",
+          "backgroundColor": "#71DBD4",
+          "textColor": "#3b1c58",
+          "borderColor": "#71DBD4",
+          "showIcon": false
+        },
+        "createStoreCtaMobile": {
+          "ctaStyle": "button",
+          "planId": "172",
+          "backgroundColor": "rgba(255, 255, 255, 0.60)",
+          "textColor": "#003037",
+          "borderColor": "Transparent",
+          "showIcon": false
+        },
+        "createStoreCtaMobileOnScrollColors": {
+          "backgroundColor": "rgba(255, 255, 255, 0.60)",
+          "borderColor": "Transparent",
+          "textColor": "#003037"
+        }
+      },
+      "logo": {
+        "src": {
+          "__resolveType": "website/flags/multivariate/image.ts",
+          "variants": [
+            {
+              "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/051ff7e6-5058-4e08-a303-b41222f9773c/Loja-Integrada-RGB---Prioritaria---Fundo-Branco---LOGO-1.svg",
+              "rule": {
+                "__resolveType": "website/matchers/always.ts"
+              }
+            }
+          ]
+        },
+        "href": "/venda-mais"
+      },
+      "initialButtons": [],
+      "backgroundColor": "#003037",
+      "barsColor": "#ffffff",
+      "asideMenuTopBackgroundColor": "#D0DAD9",
+      "asideMenuBackgroundColor": "#ffffff",
+      "asideMenuCloseIconColor": "#003037",
+      "headerMessage": {
+        "show": false,
+        "text": "<p></p>",
+        "textColor": "#22454B",
+        "backgroundColor": "#D0DAD9",
+        "cta": [
+          {
+            "ctaStyle": "link",
+            "href": "#",
+            "textColor": "#22454B",
+            "text": "<p style=\"text-align: center\">🚀 Descubra como a loja do Neymar faturou R$ 300 milhões em apenas 10 dias. Acesse aqui</p>"
+          }
+        ],
+        "font": "Instrument Serif"
+      },
+      "campaignTimer": {
+        "text": "Time left for a campaign to end with a link"
+      }
+    },
+    {
+      "__resolveType": "site/sections/FloatingButtons.tsx",
+      "buttons": [
+        {
+          "image": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
+            "alt": "Whatsapp icon"
+          },
+          "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero+saber+mais+informações+sobre+a+Loja+Integrada...&type=phone_number&app_absent=0",
+          "size": 57
+        }
+      ],
+      "distanceFromRightEnd": 34,
+      "distanceFromBottom": 120,
+      "distanceBetweenButtons": 20
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/MainHero.tsx",
+            "title": "<p><span style=\"font-size: 42pt\">Sua loja merece</span></p><p><span style=\"font-size: 42pt\">ser camisa 10</span></p><p><span style=\"font-size: 42pt\">em vendas</span></p>",
+            "caption": "<p><span style=\"color: #c68bf3; font-size: 18pt\">Descubra as </span><span style=\"color: #d5cbe5; font-size: 18pt\">3 estratégias</span><span style=\"color: #c68bf3; font-size: 18pt\"> da Next 10 para aumentar a frequência de compras no seu site usando </span><span style=\"color: #d5cbe5; font-size: 18pt\">automação em marketing</span></p>",
+            "titleColor": "#ffffff",
+            "inputPlaceHolder": "Digite seu email aqui para ganhar",
+            "inputButtonText": "Aproveitar",
+            "image": {
+              "alt": "top image",
+              "width": 925,
+              "height": 530
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b81e1290-1e8a-46aa-b5aa-6752a1bb8680/neymar-mobile-background.png",
+              "alt": "background image",
+              "width": 428,
+              "height": 871
+            },
+            "inputLabelBackgroundColor": "rgba(235, 235, 235, 0.32)",
+            "inputLabelColor": "#FAFAF5",
+            "hubspotFormButtonColor": "#71DBD4",
+            "hubspotFormButtonTextColor": "#003037",
+            "hubspotErrorMessageColor": "#F57E77",
+            "use": "image",
+            "inputLabel": "Por que a Next 10 escolheu a Loja Integrada?",
+            "modal": {
+              "title": "Obrigado por se inscrever para receber guia exclusivo de Black Friday",
+              "titleColor": "#003037",
+              "text": "Em até 24 horas, você receberá um e-mail com o seu eBook gratuito, com muitas de estratégias valiosas para se destacar nesta Black Friday. Fique atento à sua caixa de entrada",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#003037",
+                  "textColor": "#ffffff",
+                  "borderColor": "#003037",
+                  "showIcon": false
+                },
+                {
+                  "ctaStyle": "button",
+                  "text": "Ver ofertas",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#003037",
+                  "borderColor": "#003037",
+                  "href": "#plans"
+                }
+              ]
+            },
+            "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
+            "hubspotForm": {
+              "portalId": "7112881",
+              "formId": "da90329f-c54b-4a42-bf6c-800a08b0ca27"
+            },
+            "bulletPoints": {
+              "show": false,
+              "title": "<div style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\" data-mce-style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\"><p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">O que você vai receber no Guia:</span></p></div>",
+              "items": [
+                "Como o consumidor decide na Black Friday ",
+                "Proposta de valor: produto vs. experiência do cliente",
+                "Estratégias que vão além de descontos",
+                "Dados e dicas práticas para suas campanhas"
+              ],
+              "textColor": "#ffffff",
+              "backgroundColor": "rgba(255, 255, 255, 0.09)",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                "alt": "check icon"
+              }
+            },
+            "htmlContent": "",
+            "captionAbove": "<p></p>",
+            "titleFont": "Instrument serif",
+            "inputLabelWidth": "full",
+            "hubspotFormButtonIcon": true,
+            "hubspotFormButtonWidth": "full"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true,
+            "tablet": false
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/MainHero.tsx",
+            "title": "<p><span style=\"font-size: 76px\">Sua loja merece ser</span></p><p><span style=\"font-size: 76px\">camisa 10 em vendas</span></p>",
+            "caption": "<p><span style=\"color: rgb(189, 141, 236)\">Descubra as </span><em><span style=\"color: rgb(232, 224, 237)\">3 estratégias</span></em> <span style=\"color: #ffffff\">da</span><span style=\"color: #bd8dec\"> Next 10</span></p><p><span style=\"color: rgb(189, 141, 236)\">para aumentar a frequência de compras</span></p><p><span style=\"color: rgb(189, 141, 236)\">no seu site usando </span><em><span style=\"color: rgb(232, 224, 237)\">automação em</span></em></p><p><em><span style=\"color: rgb(232, 224, 237)\">marketing</span></em></p>",
+            "titleColor": "#ffffff",
+            "inputPlaceHolder": "Digite seu email aqui para ganhar",
+            "inputButtonText": "Aproveitar",
+            "inputLabel": "Entenda por que a Next 10 escolheu a Loja Integrada",
+            "image": {
+              "alt": "top image",
+              "width": 925,
+              "height": 530
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5bfb1417-5688-4bfb-baa4-f1f32a24803e/neymar-background.png",
+              "alt": "background image",
+              "width": 1796,
+              "height": 1106
+            },
+            "inputLabelColor": "#ffffff",
+            "inputLabelBackgroundColor": "RGBA(255,255,255, 0.3)",
+            "hubspotFormButtonColor": "#71DBD4",
+            "hubspotFormButtonTextColor": "#003037",
+            "hubspotErrorMessageColor": "#F57E77",
+            "modal": {
+              "title": "Obrigado por se inscrever para receber guia exclusivo de Black Friday",
+              "text": "Em até 24 horas, você receberá um e-mail com o seu eBook gratuito, com muitas de estratégias valiosas para se destacar nesta Black Friday. Fique atento à sua caixa de entrada",
+              "titleColor": "#003037",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#003037",
+                  "textColor": "#ffffff",
+                  "borderColor": "#003037",
+                  "showIcon": false
+                },
+                {
+                  "ctaStyle": "button",
+                  "text": "Ver ofertas de Black Friday",
+                  "backgroundColor": "#ffffff",
+                  "textColor": "#003037",
+                  "borderColor": "#003037",
+                  "href": "#plans"
+                }
+              ]
+            },
+            "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
+            "hubspotForm": {
+              "portalId": "7112881",
+              "formId": "da90329f-c54b-4a42-bf6c-800a08b0ca27"
+            },
+            "htmlContent": "",
+            "bulletPoints": {
+              "show": false,
+              "title": "<div style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\" data-mce-style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\"><p>O que você vai receber no Guia</p></div>",
+              "items": [
+                "Como o consumidor decide na Black Friday ",
+                "Proposta de valor: produto vs. experiência do cliente",
+                "Estratégias que vão além de descontos",
+                "Dados e dicas práticas para suas campanhas"
+              ],
+              "textColor": "#ffffff",
+              "backgroundColor": "rgba(255, 255, 255, 0.09)",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                "alt": "check icon"
+              }
+            },
+            "use": "image",
+            "captionAbove": "<p></p>",
+            "inputLabelWidth": "full",
+            "hubspotFormButtonIcon": true,
+            "sectionMinHeight": "90vh",
+            "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
+            "useBackground": "image",
+            "titleFont": "Instrument serif"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Division.tsx",
+        "divisionHeight": "70px",
+        "divisionImage": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4c167d61-83d7-4b5d-9390-d711adb71d4c/division.png",
+          "fit": "fill"
+        },
+        "divisionColor": "",
+        "useDivision": "image",
+        "divisionVideo": {
+          "0": "h",
+          "1": "t",
+          "2": "t",
+          "3": "p",
+          "4": "s",
+          "5": ":",
+          "6": "/",
+          "7": "/",
+          "8": "d",
+          "9": "e",
+          "10": "c",
+          "11": "o",
+          "12": "-",
+          "13": "s",
+          "14": "i",
+          "15": "t",
+          "16": "e",
+          "17": "s",
+          "18": "-",
+          "19": "a",
+          "20": "s",
+          "21": "s",
+          "22": "e",
+          "23": "t",
+          "24": "s",
+          "25": ".",
+          "26": "s",
+          "27": "3",
+          "28": ".",
+          "29": "s",
+          "30": "a",
+          "31": "-",
+          "32": "e",
+          "33": "a",
+          "34": "s",
+          "35": "t",
+          "36": "-",
+          "37": "1",
+          "38": ".",
+          "39": "a",
+          "40": "m",
+          "41": "a",
+          "42": "z",
+          "43": "o",
+          "44": "n",
+          "45": "a",
+          "46": "w",
+          "47": "s",
+          "48": ".",
+          "49": "c",
+          "50": "o",
+          "51": "m",
+          "52": "/",
+          "53": "l",
+          "54": "o",
+          "55": "j",
+          "56": "a",
+          "57": "i",
+          "58": "n",
+          "59": "t",
+          "60": "e",
+          "61": "g",
+          "62": "r",
+          "63": "a",
+          "64": "d",
+          "65": "a",
+          "66": "r",
+          "67": "/",
+          "68": "a",
+          "69": "1",
+          "70": "e",
+          "71": "7",
+          "72": "6",
+          "73": "8",
+          "74": "3",
+          "75": "f",
+          "76": "-",
+          "77": "9",
+          "78": "d",
+          "79": "f",
+          "80": "7",
+          "81": "-",
+          "82": "4",
+          "83": "0",
+          "84": "d",
+          "85": "b",
+          "86": "-",
+          "87": "9",
+          "88": "0",
+          "89": "7",
+          "90": "a",
+          "91": "-",
+          "92": "f",
+          "93": "e",
+          "94": "d",
+          "95": "9",
+          "96": "b",
+          "97": "7",
+          "98": "0",
+          "99": "f",
+          "100": "6",
+          "101": "2",
+          "102": "a",
+          "103": "a",
+          "104": "/",
+          "105": "b",
+          "106": "g",
+          "107": "-",
+          "108": "s",
+          "109": "i",
+          "110": "t",
+          "111": "e",
+          "112": ".",
+          "113": "m",
+          "114": "p",
+          "115": "4"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "paddingTop": "76px",
+            "paddingBottom": "65px",
+            "tag": {
+              "textColor": "#003239",
+              "backgroundColor": "#FFE596",
+              "text": "01. Desconto Progressivo"
+            },
+            "title": {
+              "text": "<p><span style=\"color: #401a5b\">Faturamento maior com cada pedido enquanto fideliza clientes</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #401a5b\">A Next 10 oferece descontos progressivos para incentivar seus clientes a comprarem mais: quanto mais itens no carrinho, maior o desconto aplicado. Mais economia para eles, mais vendas a loja!</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Leve Desconto Progressivo para seu e-commerce ",
+                "backgroundColor": "#00929F",
+                "borderColor": "#00929F",
+                "showIcon": false
+              }
+            ],
+            "ctaAndBulletPointsDivColor": "#71DBD4",
+            "bulletpoints": {
+              "items": [
+                "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
+              ],
+              "itemsTextColor": "#006877",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
+              }
+            },
+            "ctaDiv": {
+              "backgroundColor": "#E4F3F3",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "media": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/22453c18-dbb5-490d-8ae4-02e0e66d32a9/hero-v2-mobile-image-1.svg"
+              },
+              "video": {},
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1b783a51-5ac8-4bd1-857c-3b69ce374d45/hero-v2-mobile-background.svg",
+                "width": 430,
+                "height": 959
+              },
+              "use": "image"
+            },
+            "paddingRight": "56px",
+            "paddingLeft": "56px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "paddingTop": "76px",
+            "paddingBottom": "145px",
+            "tag": {
+              "textColor": "#003239",
+              "backgroundColor": "#FFE596",
+              "text": "01. Desconto Progressivo"
+            },
+            "title": {
+              "text": "<p><span style=\"color: #401a5b\">Faturamento maior com cada pedido enquanto fideliza clientes</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #401a5b\">A Next 10 oferece descontos progressivos para incentivar seus clientes a comprarem mais: quanto mais itens no carrinho, maior o desconto aplicado. Mais economia para eles, mais vendas a loja!</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Leve Desconto Progressivo para seu e-commerce ",
+                "backgroundColor": "#00929F",
+                "borderColor": "#00929F",
+                "showIcon": false,
+                "width": "100%"
+              }
+            ],
+            "ctaAndBulletPointsDivColor": "#71DBD4",
+            "bulletpoints": {
+              "items": [
+                "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
+              ],
+              "itemsTextColor": "#006877",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
+              }
+            },
+            "ctaDiv": {
+              "backgroundColor": "#E4F3F3",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "media": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d3998f36-783a-41e8-bdcf-d86cb3d62c61/hero-v2-image-1.svg"
+              },
+              "video": {},
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/61930679-94ab-4c26-94a6-e95b206ad75c/heroV2-background-image-1.svg"
+              },
+              "use": "image"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "paddingTop": "42px",
+            "paddingBottom": "27px",
+            "tag": {
+              "textColor": "#003239",
+              "backgroundColor": "#FFE596",
+              "text": "02. Brinde Progressivo"
+            },
+            "title": {
+              "text": "<p><span style=\"color: #401a5b\">Compras maiores, recompensas exclusivas</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #401a5b\">A loja incentiva compras de maior valor e oferece uma experiência além do esperado com o Brinde Progressivo. Ao atingir um valor específico, seus clientes ganham um brinde exclusivo – uma forma eficaz de aumentar o ticket médio e incentivar novas compras.<br></span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Ofereça Brinde Progressivo no seu e-commerce",
+                "backgroundColor": "#00929F",
+                "borderColor": "#00929F",
+                "showIcon": false
+              }
+            ],
+            "ctaAndBulletPointsDivColor": "#71DBD4",
+            "bulletpoints": {
+              "items": [
+                "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
+              ],
+              "itemsTextColor": "#006877",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
+              }
+            },
+            "ctaDiv": {
+              "backgroundColor": "#E4F3F3",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "media": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/21256353-1cf6-4c77-ad55-6b96cde251a6/hero-v2-mobile-image-2.svg"
+              },
+              "video": {},
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d3284d22-d1d3-4eae-b761-f693e186135f/hero-v2-mobile-background-2.svg",
+                "height": 878,
+                "width": 430
+              },
+              "use": "image"
+            },
+            "mediaPlacement": "left",
+            "paddingRight": "56px",
+            "paddingLeft": "56px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "paddingTop": "76px",
+            "paddingBottom": "145px",
+            "tag": {
+              "textColor": "#003239",
+              "backgroundColor": "#FFE596",
+              "text": "02. Brinde Progressivo"
+            },
+            "title": {
+              "text": "<p><span style=\"color: #401a5b\">Compras maiores, recompensas exclusivas</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #401a5b\">A loja incentiva compras de maior valor e oferece uma experiência além do esperado com o Brinde Progressivo. Ao atingir um valor específico, seus clientes ganham um brinde exclusivo – uma forma eficaz de aumentar o ticket médio e incentivar novas compras.<br></span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Ofereça Brinde Progressivo no seu e-commerce",
+                "backgroundColor": "#00929F",
+                "borderColor": "#00929F",
+                "showIcon": false,
+                "width": "100%"
+              }
+            ],
+            "ctaAndBulletPointsDivColor": "#71DBD4",
+            "bulletpoints": {
+              "items": [
+                "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
+              ],
+              "itemsTextColor": "#006877",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
+              }
+            },
+            "ctaDiv": {
+              "backgroundColor": "#E4F3F3",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "media": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c88a779-cf63-480f-93c1-5177c986b7bd/hero-v2-image-2.svg"
+              },
+              "video": {},
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c12b0743-6365-4b8d-8b22-447801d366b2/hero-v2-background-image-2.svg"
+              },
+              "use": "image"
+            },
+            "mediaPlacement": "left"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "sectionMinHeight": "144vw",
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/77e41873-daff-4cd3-9ee8-04677cc14ffc/hero-v2-background-mobile-image-3.png",
+                "width": 860,
+                "height": 1240
+              },
+              "use": "image"
+            },
+            "title": {
+              "text": "<p><span style=\"color: #ffffff\">Na cola da Frequência</span></p>",
+              "font": "Instrument Serif"
+            },
+            "tag": {
+              "marginTop": "3.5vw"
+            },
+            "caption": "<p><span style=\"color: rgb(0, 50, 57)\">Confira o eBook que traz o case completo da</span></p><p><span style=\"color: rgb(0, 50, 57)\">Next 10 e outras estratégias de especialistas</span></p><p><span style=\"color: rgb(0, 50, 57)\">para aumentar a frequência de compras no</span></p><p><span style=\"color: rgb(0, 50, 57)\">seu e-commerce.</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "/linkhere",
+                "backgroundColor": "#003239",
+                "borderColor": "#003239",
+                "text": "Baixe agora"
+              }
+            ],
+            "ctaDiv": {
+              "backgroundColor": ""
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "sectionMinHeight": "33vw",
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7a4b90b4-6a2d-45c4-a61e-713c79ecd852/hero-v2-background-image-3.svg"
+              },
+              "use": "image"
+            },
+            "title": {
+              "text": "<p><span style=\"color: #ffffff\">Na cola da Frequência</span></p>",
+              "font": "Instrument Serif"
+            },
+            "tag": {
+              "marginTop": "3.5vw"
+            },
+            "caption": "<p><span style=\"color: #003239\">Confira o eBook que traz o case completo da</span></p><p><span style=\"color: #003239\">Next 10 e outras estratégias de especialistas</span></p><p><span style=\"color: #003239\">para aumentar a frequência de compras no</span></p><p><span style=\"color: #003239\">seu e-commerce.</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "/linkhere",
+                "backgroundColor": "#003239",
+                "borderColor": "#003239",
+                "text": "Baixe agora"
+              }
+            ],
+            "ctaDiv": {
+              "backgroundColor": ""
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Footer2.tsx",
+      "title": "<p>O futuro do e-commerce começa com você.<br>Escolha soluções automatizadas e veja suas</p><p><span style=\"color: rgb(43, 195, 194)\">vendas decolarem</span></p>",
+      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8fd0634d-265f-46c6-b006-2b75aa39d895/video-dobra-comunidade.mp4",
+      "backgroundImage": {},
+      "color1": "#371E55",
+      "color2": "#FFFFFF",
+      "cards": [
+        {
+          "cardIcon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
+          },
+          "title": "Hub de conteúdo",
+          "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
+          "CTA": {
+            "text": "Conhecer",
+            "href": "https://lojaintegrada.com.br/hub/"
+          }
+        },
+        {
+          "cardIcon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
+            "alt": "youtube green icon"
+          },
+          "title": "Canal no Youtube",
+          "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
+          "CTA": {
+            "text": "Conhecer",
+            "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
+          }
+        }
+      ],
+      "color3": "#EBEBEB",
+      "useBackground": "video",
+      "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
+      "logo": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
+      },
+      "showForm": true,
+      "emailForm": {
+        "inputName": "email",
+        "inputLabel": "Junte-se a mais de  2,7 milhões de lojistas",
+        "inputPlaceHolder": "Digite seu email aqui",
+        "submitText": "Fazer parte"
+      },
+      "socialLinks": [
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
+            "alt": "linkein icon"
+          },
+          "href": "https://www.linkedin.com/company/lojaintegrada/"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
+            "alt": "instgram icon"
+          },
+          "href": "https://www.instagram.com/lojaintegrada/"
+        },
+        {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
+          },
+          "href": "https://www.tiktok.com/@lojaintegrada"
+        }
+      ],
+      "color4": "#d4d4d4",
+      "bottomLinks": [
+        {
+          "href": "https://comunidade.lojaintegrada.com.br/",
+          "text": "Conheça nossa comunidade"
+        },
+        {
+          "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
+          "text": "Central de ajuda"
+        },
+        {
+          "text": "Fale com especialista",
+          "href": "/talkToSpecialist"
+        },
+        {
+          "href": "https://lojaintegrada.com.br/termos-de-uso",
+          "text": "Termos de uso"
+        },
+        {
+          "href": "https://lojaintegrada.com.br/privacidade",
+          "text": "Privacidade"
+        },
+        {
+          "href": "https://app.lojaintegrada.com.br/public/assinar",
+          "text": "Comece pelo grátis"
+        }
+      ],
+      "bottomBackground": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
+      },
+      "id": "ecossistemaconteudo"
+    },
+    {
+      "__resolveType": "site/sections/TalkToSpecialistModal.tsx"
+    },
+    {
+      "__resolveType": "site/sections/BackToTopButton.tsx",
+      "text": "Voltar ao topo",
+      "textColor": "#FAFAF5",
+      "backgroundColor": "#371E55",
+      "appearAt": 1500,
+      "position": {
+        "distanceFromScreenBottom": 20,
+        "distanceFromScreenRightEnd": 20
+      },
+      "size": 84
+    },
+    {
+      "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

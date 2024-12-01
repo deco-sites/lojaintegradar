@@ -632,6 +632,35 @@ html {
     max-width: 1800px;
   }
 }
+.alert {
+  display: grid;
+  width: 100%;
+  grid-auto-flow: row;
+  align-content: flex-start;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  text-align: center;
+  border-radius: var(--rounded-box, 1rem);
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
+  padding: 1rem;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+  --alert-bg: var(--fallback-b2,oklch(var(--b2)/1));
+  --alert-bg-mix: var(--fallback-b1,oklch(var(--b1)/1));
+  background-color: var(--alert-bg);
+}
+@media (min-width: 640px) {
+
+  .alert {
+    grid-auto-flow: column;
+    grid-template-columns: auto minmax(auto,1fr);
+    justify-items: start;
+    text-align: start;
+  }
+}
 .avatar {
   position: relative;
   display: inline-flex;
@@ -3186,6 +3215,9 @@ details.collapse summary::-webkit-details-marker {
 .bottom-16 {
   bottom: 4rem;
 }
+.bottom-4 {
+  bottom: 1rem;
+}
 .bottom-5 {
   bottom: 1.25rem;
 }
@@ -3230,6 +3262,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .right-2\/4 {
   right: 50%;
+}
+.right-3 {
+  right: 0.75rem;
 }
 .right-4 {
   right: 1rem;
@@ -3456,6 +3491,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .mb-7 {
   margin-bottom: 1.75rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
 }
 .mb-\[157px\] {
   margin-bottom: 157px;
@@ -4235,6 +4273,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[555px\] {
   max-width: 555px;
 }
+.max-w-\[590px\] {
+  max-width: 590px;
+}
 .max-w-\[597px\] {
   max-width: 597px;
 }
@@ -4282,6 +4323,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[80px\] {
   max-width: 80px;
+}
+.max-w-\[85\%\] {
+  max-width: 85%;
 }
 .max-w-\[858px\] {
   max-width: 858px;
@@ -5691,6 +5735,9 @@ details.collapse summary::-webkit-details-marker {
 .leading-\[1\.125rem\] {
   line-height: 1.125rem;
 }
+.leading-\[1\.2\] {
+  line-height: 1.2;
+}
 .leading-\[10px\] {
   line-height: 10px;
 }
@@ -6549,10 +6596,6 @@ details.collapse summary::-webkit-details-marker {
     line-height: 1.25rem;
   }
 
-  .md\:font-bold {
-    font-weight: 700;
-  }
-
   .md\:opacity-100 {
     opacity: 1;
   }
@@ -6571,6 +6614,10 @@ details.collapse summary::-webkit-details-marker {
     bottom: 3.5rem;
   }
 
+  .lg\:bottom-6 {
+    bottom: 1.5rem;
+  }
+
   .lg\:left-\[50px\] {
     left: 50px;
   }
@@ -6581,6 +6628,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:right-14 {
     right: 3.5rem;
+  }
+
+  .lg\:right-8 {
+    right: 2rem;
   }
 
   .lg\:top-0 {
@@ -6652,6 +6703,10 @@ details.collapse summary::-webkit-details-marker {
     margin-left: 0px;
   }
 
+  .lg\:ml-11 {
+    margin-left: 2.75rem;
+  }
+
   .lg\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -6666,6 +6721,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mr-0 {
     margin-right: 0px;
+  }
+
+  .lg\:mr-11 {
+    margin-right: 2.75rem;
   }
 
   .lg\:mt-0 {
@@ -6848,6 +6907,10 @@ details.collapse summary::-webkit-details-marker {
     max-width: 437px;
   }
 
+  .lg\:max-w-\[440px\] {
+    max-width: 440px;
+  }
+
   .lg\:max-w-\[500px\] {
     max-width: 500px;
   }
@@ -6964,6 +7027,10 @@ details.collapse summary::-webkit-details-marker {
     overflow: visible;
   }
 
+  .lg\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+
   .lg\:rounded-\[10px\] {
     border-radius: 10px;
   }
@@ -7035,6 +7102,11 @@ details.collapse summary::-webkit-details-marker {
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .lg\:px-7 {
@@ -7131,6 +7203,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .lg\:pb-8 {
+    padding-bottom: 2rem;
   }
 
   .lg\:pb-\[124px\] {
@@ -7266,6 +7342,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:text-\[56px\] {
     font-size: 56px;
+  }
+
+  .lg\:text-\[64px\] {
+    font-size: 64px;
   }
 
   .lg\:text-\[70px\] {

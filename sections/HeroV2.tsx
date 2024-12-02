@@ -51,6 +51,7 @@ export interface Tag {
     /** @format color-input */
     backgroundColor?: string;
     marginTop?: string;
+    placement?: 'left' | 'center' | 'right';
 }
 
 export interface Media {
@@ -115,21 +116,28 @@ export function HeroMedia({ media }: { media?: Media }) {
 }
 
 export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints, sectionMinHeight, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement = "right", paddingLeft, paddingRight }: Props) {
+    const placement = {
+        "left": "justify-start",
+        "center": "justify-center",
+        "right": "justify-end"
+    }
     return <div
         id={id}
         style={{ paddingTop, paddingBottom, paddingRight, paddingLeft, minHeight: sectionMinHeight }}
         class="relative"
     >
         <div class={`flex ${mediaPlacement == 'left' && 'flex-row-reverse'}`}>
-            <div class={`w-full lg:w-1/2 flex justify-center ${mediaPlacement == "right" ? "lg:justify-end" : "lg:justify-start"}`}>
-                <div class={`max-w-[590px] ${mediaPlacement == "left" ? 'lg:ml-11' : 'lg:mr-11'}`}>
+            <div class={`w-full ${media?.use && 'lg:w-1/2'} flex justify-center ${mediaPlacement == "right" ? "lg:justify-end" : "lg:justify-start"} ${!media?.use && 'lg:justify-center'}`}>
+                <div class={`${mediaPlacement == "left" ? `${media?.use && 'lg:ml-11 max-w-[590px]'}` : `${media?.use && 'lg:mr-11 max-w-[590px]'}`} ${!media?.use && 'w-full'}`}>
                     <div style={{ marginTop: tag?.marginTop }}>
-                        {tag?.text && <AnimateOnShow
-                            animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
-                            divClass="py-2.5 px-5 rounded-[20px] mb-11 inline-block text-base font-bold"
-                            style={{ background: tag.backgroundColor, color: tag.textColor }}>
-                            {tag.text}
-                        </AnimateOnShow>}
+                        {tag?.text && <div class={`flex ${placement[tag?.placement || "left"] || "justify-start"}`}>
+                            <AnimateOnShow
+                                animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
+                                divClass="py-2.5 px-5 rounded-[20px] mb-11 text-base font-bold"
+                                style={{ background: tag.backgroundColor, color: tag.textColor }}>
+                                {tag.text}
+                            </AnimateOnShow>
+                        </div>}
                     </div>
                     {title?.text && <AnimateOnShow
                         animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
@@ -194,11 +202,11 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                     </AnimateOnShow>
                 </div>
             </div>
-            <AnimateOnShow
+            {media?.use && <AnimateOnShow
                 divClass={`w-1/2 hidden lg:flex justify-center ${mediaPlacement == "right" ? "lg:justify-end" : "lg:justify-start"} items-center`}
                 animation={mediaPlacement == "right" ? "animate-fade-left" : "animate-fade-right"}>
                 <HeroMedia media={media} />
-            </AnimateOnShow>
+            </AnimateOnShow>}
         </div>
         {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
             src={backgroundMedia.image.src}

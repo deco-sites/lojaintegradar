@@ -826,6 +826,9 @@
             ],
             "ctaDiv": {
               "backgroundColor": ""
+            },
+            "media": {
+              "use": "video"
             }
           },
           "rule": {
@@ -833,6 +836,20 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/HeroV2.tsx",
+      "tag": {
+        "text": "03. Carrinho Abandonado",
+        "textColor": "#003239",
+        "backgroundColor": "#FFE596",
+        "marginTop": "76px"
+      },
+      "media": {},
+      "title": {
+        "text": "<p><span>Recuperando vendas que iriam ser perdidas</span></p>",
+        "font": "Instrument serif"
+      }
     },
     {
       "__resolveType": "site/sections/Footer2.tsx",

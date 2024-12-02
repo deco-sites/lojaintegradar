@@ -1980,8 +1980,9 @@
             "arrowsColor": "#371E55",
             "id": "plans",
             "annualTagTextColor": "#371E55",
-            "annualTag": "🔥 Anual desconto de 20%",
-            "arrows": true
+            "annualTag": "-20% OFF",
+            "arrows": true,
+            "annualTagPosition": "aside"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -2618,7 +2619,8 @@
             "id": "plans",
             "annualTagTextColor": "#371E55",
             "arrows": false,
-            "annualTag": "🔥 Anual desconto de 20% "
+            "annualTag": "- 2O% FF",
+            "annualTagPosition": "aside"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

@@ -70,6 +70,7 @@ export interface Div {
     /** @format color-input */
     backgroundColor?: string;
     icon?: IImage;
+    contentPlacement?: 'left' | 'center' | 'right';
 }
 
 export interface Props {
@@ -154,7 +155,7 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                         <HeroMedia media={media} />
                     </AnimateOnShow>
                     <AnimateOnShow
-                        divClass={`relative rounded-xl lg:rounded-3xl ${ctaDiv?.backgroundColor && 'py-4 px-3 lg:px-6 lg:pt-7 lg:pb-8'}`}
+                        divClass={`relative flex flex-col rounded-xl lg:rounded-3xl ${ctaDiv?.backgroundColor && 'py-4 px-3 lg:px-6 lg:pt-7 lg:pb-8'}`}
                         style={{ background: ctaDiv?.backgroundColor }}
                         animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}>
                         {ctaDiv?.icon?.src && <Image
@@ -163,7 +164,7 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                             height={ctaDiv.icon.height || 30}
                             class="absolute bottom-4 right-3 lg:bottom-6 lg:right-8"
                         />}
-                        {cta.length > 0 && <div class="mb-8 flex gap-4 flex-wrap">
+                        {cta.length > 0 && <div class={`mb-8 flex gap-4 flex-wrap ${placement[ctaDiv?.contentPlacement || "left"]}`}>
                             {cta.map((button) => {
                                 if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                                     showIcon={button.showIcon}

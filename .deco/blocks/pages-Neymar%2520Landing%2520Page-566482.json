@@ -778,7 +778,7 @@
             "tag": {
               "marginTop": "3.5vw"
             },
-            "caption": "<p><span style=\"color: rgb(0, 50, 57)\">Confira o eBook que traz o case completo da</span></p><p><span style=\"color: rgb(0, 50, 57)\">Next 10 e outras estratégias de especialistas</span></p><p><span style=\"color: rgb(0, 50, 57)\">para aumentar a frequência de compras no</span></p><p><span style=\"color: rgb(0, 50, 57)\">seu e-commerce.</span></p>",
+            "caption": "<p><span style=\"color: rgb(0, 50, 57)\">Confira o eBook que traz o case completo da Next 10 e outras estratégias de especialistas para aumentar a frequência de compras no seu e-commerce.</span></p>",
             "cta": [
               {
                 "ctaStyle": "button",
@@ -790,7 +790,10 @@
             ],
             "ctaDiv": {
               "backgroundColor": ""
-            }
+            },
+            "paddingTop": "40px",
+            "paddingLeft": "56px",
+            "paddingRight": "56px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -838,18 +841,190 @@
       ]
     },
     {
-      "__resolveType": "site/sections/HeroV2.tsx",
-      "tag": {
-        "text": "03. Carrinho Abandonado",
-        "textColor": "#003239",
-        "backgroundColor": "#FFE596",
-        "marginTop": "76px"
-      },
-      "media": {},
-      "title": {
-        "text": "<p><span>Recuperando vendas que iriam ser perdidas</span></p>",
-        "font": "Instrument serif"
-      }
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "tag": {
+              "text": "03. Carrinho Abandonado",
+              "textColor": "#003239",
+              "backgroundColor": "#FFE596"
+            },
+            "media": {
+              "use": "image",
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ab12de34-414b-4e59-abb9-796917f2459b/hero-v2-mobile-image-3.svg",
+                "width": 724,
+                "height": 785
+              }
+            },
+            "title": {
+              "text": "<p><span style=\"color: rgb(64, 26, 91)\">Recuperando vendas que iriam ser perdidas</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #401a5b\">Ativando gatilhos que ajudam a recuperar vendas que escaparam por pouco, A Next 10 Recuperou clientes que deixaram produtos em seus carrinhos e também aqueles que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação de forma automática.</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "teste",
+                "text": "Experimente o Carrinho Abandonado no seu e-commerce",
+                "backgroundColor": "#00929F",
+                "borderColor": "#00929F",
+                "width": "100%"
+              }
+            ],
+            "ctaDiv": {
+              "backgroundColor": "#DBF5F3",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "bulletpoints": {
+              "itemsTextColor": "#006473",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
+              },
+              "items": [
+                "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
+              ]
+            },
+            "paddingBottom": "38px",
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/abe6a92f-be85-4a7e-86df-a7b861d5a098/hero-v2-background-mobile-image-3.svg"
+              },
+              "use": "image"
+            },
+            "paddingRight": "52px",
+            "paddingLeft": "59px",
+            "paddingTop": "76px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV2.tsx",
+            "tag": {
+              "text": "03. Carrinho Abandonado",
+              "textColor": "#003239",
+              "backgroundColor": "#FFE596",
+              "marginTop": "76px"
+            },
+            "media": {
+              "use": "image",
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f12d5345-ba53-4870-a793-f18497a1d773/hero-v2-image-3.png",
+                "width": 724,
+                "height": 785
+              }
+            },
+            "title": {
+              "text": "<p style=\"text-align: justify\"><span style=\"color: #401a5b\">Recuperando vendas que iriam ser perdidas</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #401a5b\">Ativando gatilhos que ajudam a recuperar vendas que escaparam por pouco, A Next 10 Recuperou clientes que deixaram produtos em seus carrinhos e também aqueles que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação de forma automática.</span></p>",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "teste",
+                "text": "Experimente o Carrinho Abandonado no seu e-commerce",
+                "backgroundColor": "#00929F",
+                "borderColor": "#00929F",
+                "width": "100%"
+              }
+            ],
+            "ctaDiv": {
+              "backgroundColor": "#DBF5F3",
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "bulletpoints": {
+              "itemsTextColor": "#006473",
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4915b949-7961-4601-823a-d10bc6ec7e93/green-check-icon-2.svg"
+              },
+              "items": [
+                "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
+              ]
+            },
+            "paddingBottom": "155px",
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/559ca399-a2a0-4953-9011-a89178ebc480/hero-v2-background-image-3.svg"
+              },
+              "use": "image"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/MainHero.tsx",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/093be4d6-3cd3-4e55-b7d3-428c294e60bd/neymar-mobile-background-2.svg",
+              "width": 1440,
+              "height": 618
+            },
+            "sectionMinHeight": "131vw",
+            "title": "<p style=\"text-align: center\"><span style=\"font-size: 30pt\">Next 10 &amp; Loja</span></p><p style=\"text-align: center\"><span style=\"font-size: 30pt\">Integrada</span></p><p style=\"text-align: center\"><span style=\"font-size: 30pt\">Parceria campeã</span></p>",
+            "titleColor": "#FAFAF5",
+            "inputLabel": "Veja os bastidores dessa colaboração ",
+            "inputLabelColor": "#ffffff",
+            "inputLabelBackgroundColor": "rgba(235, 235, 235, 0.32)",
+            "hubspotForm": {
+              "formId": "da90329f-c54b-4a42-bf6c-800a08b0ca27",
+              "portalId": "7112881"
+            },
+            "inputLabelWidth": "full",
+            "hubspotFormButtonTextColor": "#12464C",
+            "hubspotFormButtonColor": "#4FA8A6",
+            "hubspotFormButtonIcon": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/MainHero.tsx",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e7a1403f-946b-4674-b07b-2a3421249ea2/neymar-background-2.png",
+              "width": 1440,
+              "height": 618
+            },
+            "sectionMinHeight": "43vw",
+            "title": "<p style=\"text-align: center\"><strong><span>Next 10 &amp; Loja Integrada</span></strong></p><p style=\"text-align: center\"><strong><span>Parceria campeã</span></strong></p>",
+            "titleColor": "#FAFAF5",
+            "inputLabel": "Veja os bastidores dessa colaboração e inspire-se com novas ideias",
+            "inputLabelColor": "#ffffff",
+            "inputLabelBackgroundColor": "rgba(235, 235, 235, 0.32)",
+            "hubspotForm": {
+              "formId": "da90329f-c54b-4a42-bf6c-800a08b0ca27",
+              "portalId": "7112881"
+            },
+            "inputLabelWidth": "full",
+            "hubspotFormButtonTextColor": "#12464C",
+            "hubspotFormButtonColor": "#4FA8A6",
+            "hubspotFormButtonIcon": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Footer2.tsx",

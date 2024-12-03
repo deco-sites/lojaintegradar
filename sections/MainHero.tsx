@@ -54,7 +54,7 @@ export interface Modal {
     text?: string;
     /** @format color-input */
     textColor?: string;
-    cta: CTA[];
+    cta?: CTA[];
 }
 export interface Props {
     id?: string;
@@ -85,8 +85,9 @@ export interface Props {
     /** @format color-input */
     hubspotFormButtonIcon?: boolean;
     hubspotFormButtonWidth?: 'min' | 'full';
+    /** @format color-input */
     hubspotErrorMessageColor?: string;
-    bulletPoints: BulletPoints;
+    bulletPoints?: BulletPoints;
     modal: Modal;
     sectionMinHeight?: string;
 }
@@ -109,7 +110,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                 <div class={`flex-grow flex flex-col gap-2.5 ${(use == "image" || use == "video") ? "max-w-[630px]" : "items-center max-w-[1220px]"} z-10`}>
                     {captionAbove && <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: captionAbove }}/>}
                     <div 
-                        class="text-primary text-2xl md:text-[56px] font-normal leading-[1.2] pt-2 lg:pt-0" 
+                        class="text-primary w-full text-2xl md:text-[56px] font-normal leading-[1.2] pt-2 lg:pt-0" 
                         style={{ background: titleColor, backgroundClip: "text", color: titleColor && 'transparent', fontFamily: titleFont }} 
                         dangerouslySetInnerHTML={{ __html: title }}
                     />
@@ -220,7 +221,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                         height: 100%;
                         font-size: 18px;
                         font-style: normal;
-                        font-weight: 700;
+                        font-weight: 500;
                         cursor: pointer;
                         text-align: center;
                         ${hubspotFormButtonWidth == 'full' && 'width: 100%;'}
@@ -279,7 +280,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                     <h2 class="font-normal text-[32px] leading-[130%] max-w-[475px]" style={{ color: modal?.titleColor }}>{modal?.title}</h2>
                     <p class="mt-7 text-xl text-neutral font-medium leading-[120%]" style={{ color: modal?.textColor }}>{modal?.text}</p>
                     <div class="flex flex-wrap items-center gap-7 mt-5">
-                        {modal?.cta.map((button) => {
+                        {modal?.cta?.map((button) => {
                 return <a href={button?.href ?? "#"} target={button?.href?.includes("http") ? "_blank" : ""} hx-on:click={useScript(closeModal, modalId)} class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`} style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}>
                             {button?.text}
                             {button.underlineText && <span class="underline">{button.underlineText}</span>}

@@ -177,6 +177,10 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                         background-color: white;
                     }
                     
+                    .${hubspostFormId} .input {
+                        padding-right: 0px;
+                    } 
+
                     .${hubspostFormId} .hs-form-private {
                         flex-wrap: nowrap;
                     }

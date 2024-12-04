@@ -88,7 +88,7 @@ export interface Props {
     /** @format color-input */
     hubspotErrorMessageColor?: string;
     bulletPoints?: BulletPoints;
-    modal: Modal;
+    modal?: Modal;
     sectionMinHeight?: string;
 }
 export default function MainHero({ id, title, caption = "", inputLabel, hubspotFormButtonWidth, backgroundVideo, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {

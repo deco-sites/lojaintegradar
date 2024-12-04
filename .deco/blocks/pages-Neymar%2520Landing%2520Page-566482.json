@@ -208,9 +208,8 @@
             "use": "image",
             "inputLabel": "Por que a Next 10 escolheu a Loja Integrada?",
             "modal": {
-              "title": "Obrigado por se inscrever para receber guia exclusivo de Black Friday",
+              "title": "Obrigado por se inscrever ",
               "titleColor": "#003037",
-              "text": "Em até 24 horas, você receberá um e-mail com o seu eBook gratuito, com muitas de estratégias valiosas para se destacar nesta Black Friday. Fique atento à sua caixa de entrada",
               "textColor": "#5F6E82",
               "backButton": {
                 "text": "Retomar a navegação ",
@@ -227,14 +226,6 @@
                   "textColor": "#ffffff",
                   "borderColor": "#003037",
                   "showIcon": false
-                },
-                {
-                  "ctaStyle": "button",
-                  "text": "Ver ofertas",
-                  "backgroundColor": "#ffffff",
-                  "textColor": "#003037",
-                  "borderColor": "#003037",
-                  "href": "#plans"
                 }
               ]
             },
@@ -298,8 +289,7 @@
             "hubspotFormButtonTextColor": "#003037",
             "hubspotErrorMessageColor": "#F57E77",
             "modal": {
-              "title": "Obrigado por se inscrever para receber guia exclusivo de Black Friday",
-              "text": "Em até 24 horas, você receberá um e-mail com o seu eBook gratuito, com muitas de estratégias valiosas para se destacar nesta Black Friday. Fique atento à sua caixa de entrada",
+              "title": "Obrigado por se inscrever ",
               "titleColor": "#003037",
               "textColor": "#5F6E82",
               "backButton": {
@@ -317,14 +307,6 @@
                   "textColor": "#ffffff",
                   "borderColor": "#003037",
                   "showIcon": false
-                },
-                {
-                  "ctaStyle": "button",
-                  "text": "Ver ofertas de Black Friday",
-                  "backgroundColor": "#ffffff",
-                  "textColor": "#003037",
-                  "borderColor": "#003037",
-                  "href": "#plans"
                 }
               ]
             },
@@ -923,7 +905,7 @@
               }
             },
             "title": {
-              "text": "<p style=\"text-align: justify\"><span style=\"color: #401a5b\">Recuperando vendas que iriam ser perdidas</span></p>",
+              "text": "<p><span style=\"color: rgb(64, 26, 91)\">Recuperando vendas que iriam ser perdidas</span></p>",
               "font": "Instrument serif"
             },
             "caption": "<p><span style=\"color: #401a5b\">Ativando gatilhos que ajudam a recuperar vendas que escaparam por pouco, A Next 10 Recuperou clientes que deixaram produtos em seus carrinhos e também aqueles que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação de forma automática.</span></p>",
@@ -990,7 +972,29 @@
             "inputLabelWidth": "full",
             "hubspotFormButtonTextColor": "#12464C",
             "hubspotFormButtonColor": "#4FA8A6",
-            "hubspotFormButtonIcon": true
+            "hubspotFormButtonIcon": true,
+            "modal": {
+              "title": "Obrigado por se inscrever ",
+              "titleColor": "#003037",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#003037",
+                  "textColor": "#ffffff",
+                  "borderColor": "#003037",
+                  "showIcon": false
+                }
+              ]
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1018,7 +1022,182 @@
             "inputLabelWidth": "full",
             "hubspotFormButtonTextColor": "#12464C",
             "hubspotFormButtonColor": "#4FA8A6",
-            "hubspotFormButtonIcon": true
+            "hubspotFormButtonIcon": true,
+            "modal": {
+              "title": "Obrigado por se inscrever ",
+              "titleColor": "#003037",
+              "textColor": "#5F6E82",
+              "backButton": {
+                "text": "Retomar a navegação ",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Retomar a navegação ",
+                  "backgroundColor": "#003037",
+                  "textColor": "#ffffff",
+                  "borderColor": "#003037",
+                  "showIcon": false
+                }
+              ]
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/BulletPointsHero.tsx",
+            "backgroundMedia": {
+              "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
+              "use": "video"
+            },
+            "media": {
+              "video": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6944d7b-d171-4723-bb39-2ad6891d34d0/(FULL-HD-1080p)-ASUS-Zenfone-display-demo-video-portrait-mode.mp4",
+                "mutedIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/290683e7-56fd-41c4-a278-a23da9223d85/mute-icon.png",
+                  "width": 40,
+                  "height": 40
+                }
+              }
+            },
+            "paddingTop": "54px",
+            "paddingBottom": "63px",
+            "title": {
+              "text": "<p><span style=\"color: #fafaf5\">Invista em Dados e Automação</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #fafaf5\">Economize tempo e aumente a precisão na sua estratégia de negócios. A Loja Integrada é a plataforma de e-commerce que combina inteligência de dados e expertise no mercado  para oferecer um SaaS adaptável às constantes mudanças do varejo.</span></p>",
+            "bulletpointSections": [
+              {
+                "items": [
+                  "Importador de produtos e URL ",
+                  "Suporte Facilitado",
+                  "29 dias (em média) para migração da plataforma",
+                  "Prioridade no atendimento"
+                ],
+                "bulletPointsIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                },
+                "backgroundColor": "#ffffff",
+                "itemsTextColor": "#003239",
+                "title": "Para você migrar",
+                "titleColor": "#003239"
+              },
+              {
+                "items": [
+                  "Taxa de 4,29% no cartão de crédito com Pagali",
+                  "Pagali a partir de R$0,99 no PIX",
+                  "Fretes 70% mais baratos com Enviali"
+                ],
+                "title": "Para você lucrar",
+                "titleColor": "#003239",
+                "backgroundColor": "#ffffff",
+                "itemsTextColor": "#003239",
+                "bulletPointsIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                }
+              }
+            ],
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Abra sua loja ",
+                "backgroundColor": "#ffffff",
+                "borderColor": "#ffffff",
+                "textColor": "#003239",
+                "showIcon": false
+              }
+            ],
+            "mediaPlacement": "left",
+            "paddingRight": "40px",
+            "paddingLeft": "40px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/BulletPointsHero.tsx",
+            "backgroundMedia": {
+              "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
+              "use": "video"
+            },
+            "media": {
+              "video": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6944d7b-d171-4723-bb39-2ad6891d34d0/(FULL-HD-1080p)-ASUS-Zenfone-display-demo-video-portrait-mode.mp4",
+                "mutedIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/290683e7-56fd-41c4-a278-a23da9223d85/mute-icon.png",
+                  "width": 40,
+                  "height": 40
+                }
+              },
+              "use": "video"
+            },
+            "paddingTop": "116px",
+            "paddingBottom": "124px",
+            "title": {
+              "text": "<p><span style=\"color: #fafaf5\">Invista em Dados e Automação</span></p>",
+              "font": "Instrument serif"
+            },
+            "caption": "<p><span style=\"color: #fafaf5\">Economize tempo e aumente a precisão na sua estratégia de negócios. A Loja Integrada é a plataforma de e-commerce que combina inteligência de dados e expertise no mercado  para oferecer um SaaS adaptável às constantes mudanças do varejo.</span></p>",
+            "bulletpointSections": [
+              {
+                "items": [
+                  "Importador de produtos e URL ",
+                  "Suporte Facilitado",
+                  "29 dias (em média) para migração da plataforma",
+                  "Prioridade no atendimento"
+                ],
+                "bulletPointsIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                },
+                "backgroundColor": "#ffffff",
+                "itemsTextColor": "#003239",
+                "title": "Para você migrar",
+                "titleColor": "#003239"
+              },
+              {
+                "items": [
+                  "Taxa de 4,29% no cartão de crédito com Pagali",
+                  "Pagali a partir de R$0,99 no PIX",
+                  "Fretes 70% mais baratos com Enviali"
+                ],
+                "title": "Para você lucrar",
+                "titleColor": "#003239",
+                "backgroundColor": "#ffffff",
+                "itemsTextColor": "#003239",
+                "bulletPointsIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                }
+              }
+            ],
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "linkhere",
+                "text": "Abra sua loja ",
+                "backgroundColor": "#ffffff",
+                "borderColor": "#ffffff",
+                "textColor": "#003239",
+                "showIcon": false
+              }
+            ],
+            "mediaPlacement": "left"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

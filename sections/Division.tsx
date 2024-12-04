@@ -38,3 +38,7 @@ export default function Division({ divisionColor, divisionHeight, divisionImage,
         </video>}
     </div>
 }
+
+export function LoadingFallback() {
+    return <h2 class="text-center">loading...</h2>
+}

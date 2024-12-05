@@ -10,13 +10,18 @@ const onClick = () => {
   const mutedIcon = parent.querySelector(".mutedIcon") as HTMLElement || undefined;
 
   if (video.muted) {
-    video.currentTime = 0;
-    video.play();
+    // video.currentTime = 0;
+    // video.play();
+    // mutedIcon.classList.add("hidden");
+    // video.muted = false;
     mutedIcon.classList.add("hidden");
     video.muted = false;
+    video.currentTime = 0;
+    video.play();
+    video.controls = true;
   } else {
-    video.muted = true;
-    mutedIcon.classList.remove("hidden");
+    // video.muted = true;
+    // mutedIcon.classList.remove("hidden");
   }
 };
 
@@ -111,13 +116,13 @@ export function HeroMedia({ media }: { media?: Media }) {
         style={{ width: media.video.width ? media.video.width + "px" : "400px", height: media.video.height ? media.video.height + "px" : "710px" }}>
         <source src={media.video.src} type="video/mp4" />
       </video>
-      {media.video.mutedIcon?.src && <Image 
+      {media.video.mutedIcon?.src && <div class="absolute w-full h-full top-0 left-0 mutedIcon"><Image 
         src={media.video.mutedIcon.src}
         alt={media.video.mutedIcon.alt || "muted icon"}
         width={media.video.mutedIcon.width || 30}
         height={media.video.mutedIcon.height || 30}
-        class="object-contain mutedIcon absolute bottom-5 right-5"
-      />}
+        class="object-contain absolute bottom-5 right-5"
+      /></div>}
     </div>}
     {media?.use == "embed" && <iframe
       width={"100%"}

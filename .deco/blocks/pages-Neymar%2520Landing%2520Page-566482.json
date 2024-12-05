@@ -994,7 +994,8 @@
                   "showIcon": false
                 }
               ]
-            }
+            },
+            "hubspotFormButtonWidth": "full"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1325,7 +1326,7 @@
       "cardsBackgroundColor": "#ffffff",
       "logoCaptionColor": "#ffffff",
       "bottomLinksColor": "#ffffff",
-      "lineColor": "#ffffff",
+      "lineColor": "rgba(255, 255, 255, 0.10)",
       "cardsButtonColor": "#401A5B",
       "cardsButtonTextColor": "#ffffff"
     },

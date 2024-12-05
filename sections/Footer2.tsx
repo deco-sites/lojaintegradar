@@ -48,7 +48,6 @@ export interface Props {
     cards?: Card[];
     logo?: IImage;
     logoCaption?: string;
-    formCaption?: string;
     socialLinks?: socialLink[];
     bottomLinks?: CTA[];
     emailForm?: emailForm;
@@ -65,7 +64,7 @@ export interface Props {
     /** @format color-input */
 }
 
-export default function Footer2({ id, title, titleFont, backgroundImage, backgroundVideo, useBackground, cards = [], logo, logoCaption, formCaption, socialLinks, bottomLinks, emailForm, color1, color2, color3, color4, showForm, bottomBackground }: Props) {
+export default function Footer2({ id, title, titleFont, backgroundImage, backgroundVideo, useBackground, cards = [], logo, logoCaption, socialLinks, bottomLinks, emailForm, color1, color2, color3, color4, showForm, bottomBackground }: Props) {
     const backgroundColor = useBackground ? "transparent" : color1;
     return <footer id={id} class="text-primary" style={{ color: color1 }}>
         <div class={`relative w-full h-[56vw] lg:h-[42vw] flex justify-center items-end  ${!useBackground && "bg-primary"}`} style={{ backgroundColor: backgroundColor }}>

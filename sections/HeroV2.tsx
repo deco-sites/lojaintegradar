@@ -51,6 +51,7 @@ export interface Tag {
     /** @format color-input */
     backgroundColor?: string;
     marginTop?: string;
+    placement?: 'left' | 'center' | 'right';
 }
 
 export interface Media {
@@ -69,6 +70,7 @@ export interface Div {
     /** @format color-input */
     backgroundColor?: string;
     icon?: IImage;
+    contentPlacement?: 'left' | 'center' | 'right';
 }
 
 export interface Props {
@@ -115,21 +117,28 @@ export function HeroMedia({ media }: { media?: Media }) {
 }
 
 export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints, sectionMinHeight, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement = "right", paddingLeft, paddingRight }: Props) {
+    const placement = {
+        "left": "justify-start",
+        "center": "justify-center",
+        "right": "justify-end"
+    }
     return <div
         id={id}
         style={{ paddingTop, paddingBottom, paddingRight, paddingLeft, minHeight: sectionMinHeight }}
         class="relative"
     >
         <div class={`flex ${mediaPlacement == 'left' && 'flex-row-reverse'}`}>
-            <div class={`w-full lg:w-1/2 flex justify-center ${mediaPlacement == "right" ? "lg:justify-end" : "lg:justify-start"}`}>
-                <div class={`max-w-[590px] ${mediaPlacement == "left" ? 'lg:ml-11' : 'lg:mr-11'}`}>
+            <div class={`w-full ${media?.use && 'lg:w-1/2'} flex justify-center ${mediaPlacement == "right" ? "lg:justify-end" : "lg:justify-start"} ${!media?.use && 'lg:justify-center'}`}>
+                <div class={`${mediaPlacement == "left" ? `${media?.use && 'lg:ml-11 max-w-[590px]'}` : `${media?.use && 'lg:mr-11 max-w-[590px]'}`} ${!media?.use && 'w-full'}`}>
                     <div style={{ marginTop: tag?.marginTop }}>
-                        {tag?.text && <AnimateOnShow
-                            animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
-                            divClass="py-2.5 px-5 rounded-[20px] mb-11 inline-block text-base font-bold"
-                            style={{ background: tag.backgroundColor, color: tag.textColor }}>
-                            {tag.text}
-                        </AnimateOnShow>}
+                        {tag?.text && <div class={`flex ${placement[tag?.placement || "left"] || "justify-start"}`}>
+                            <AnimateOnShow
+                                animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
+                                divClass="py-2.5 px-5 rounded-[20px] mb-11 text-base font-bold"
+                                style={{ background: tag.backgroundColor, color: tag.textColor }}>
+                                {tag.text}
+                            </AnimateOnShow>
+                        </div>}
                     </div>
                     {title?.text && <AnimateOnShow
                         animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}
@@ -146,7 +155,7 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                         <HeroMedia media={media} />
                     </AnimateOnShow>
                     <AnimateOnShow
-                        divClass={`relative rounded-xl lg:rounded-3xl ${ctaDiv?.backgroundColor && 'py-4 px-3 lg:px-6 lg:pt-7 lg:pb-8'}`}
+                        divClass={`relative flex flex-col rounded-xl lg:rounded-3xl ${ctaDiv?.backgroundColor && 'py-4 px-3 lg:px-6 lg:pt-7 lg:pb-8'}`}
                         style={{ background: ctaDiv?.backgroundColor }}
                         animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}>
                         {ctaDiv?.icon?.src && <Image
@@ -155,7 +164,7 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                             height={ctaDiv.icon.height || 30}
                             class="absolute bottom-4 right-3 lg:bottom-6 lg:right-8"
                         />}
-                        {cta.length > 0 && <div class="mb-8 flex gap-4 flex-wrap">
+                        {cta.length > 0 && <div class={`mb-8 flex gap-4 flex-wrap ${placement[ctaDiv?.contentPlacement || "left"]}`}>
                             {cta.map((button) => {
                                 if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                                     showIcon={button.showIcon}
@@ -194,11 +203,11 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                     </AnimateOnShow>
                 </div>
             </div>
-            <AnimateOnShow
+            {media?.use && <AnimateOnShow
                 divClass={`w-1/2 hidden lg:flex justify-center ${mediaPlacement == "right" ? "lg:justify-end" : "lg:justify-start"} items-center`}
                 animation={mediaPlacement == "right" ? "animate-fade-left" : "animate-fade-right"}>
                 <HeroMedia media={media} />
-            </AnimateOnShow>
+            </AnimateOnShow>}
         </div>
         {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
             src={backgroundMedia.image.src}

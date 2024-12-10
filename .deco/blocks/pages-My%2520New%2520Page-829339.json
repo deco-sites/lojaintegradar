@@ -1,0 +1,47 @@
+{
+  "activePrompts": [],
+  "actionBar": {
+    "image": {
+      "name": "Image",
+      "shortcut": {
+        "mac": "ââ§I",
+        "windows": "Ctrl+Shift+I"
+      },
+      "icon": "imagesmode",
+      "color": "bg-purple-gradient hover:bg-purple-gradient-hover",
+      "tools": [
+        "generate_image"
+      ],
+      "prompts": []
+    },
+    "draw": {
+      "name": "Draw",
+      "shortcut": {
+        "mac": "Tab",
+        "windows": "Tab"
+      },
+      "icon": "gesture",
+      "color": "bg-orange-gradient hover:bg-orange-gradient-hover",
+      "tools": [
+        "draw_elements"
+      ],
+      "prompts": []
+    },
+    "code": {
+      "name": "App",
+      "shortcut": {
+        "mac": "âEnter",
+        "windows": "Ctrl+Enter"
+      },
+      "icon": "code-blocks",
+      "color": "bg-green-gradient hover:bg-green-gradient-hover",
+      "tools": [
+        "write_file",
+        "edit_code"
+      ],
+      "prompts": [
+        "4ed74612-26a2-4b91-963b-54ce2f80928f"
+      ]
+    }
+  }
+}

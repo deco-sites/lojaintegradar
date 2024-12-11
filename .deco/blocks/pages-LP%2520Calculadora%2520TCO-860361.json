@@ -118,7 +118,7 @@
             }
           ]
         },
-        "href": "/venda-mais"
+        "href": "/calculadora-tco"
       },
       "initialButtons": [],
       "backgroundColor": "#584A6A",
@@ -168,18 +168,19 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<div style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\" data-mce-style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\"><p style=\"font-family: 'Instrument Serif'; font-size: 28px; line-height: 1.4; font-weight: 200; text-align: center;\" data-mce-style=\"font-family: 'Instrument Serif'; font-size: 28px; line-height: 1.4; font-weight: 200; text-align: center;\"><span style=\"font-size: 28pt;\" data-mce-style=\"font-size: 28pt;\"> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">Escolha a plataforma com<br></span> <em>Dados e Automação&nbsp;</em> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><br>para faturar mais</span></span></p></div>",
-            "caption": "<p><br data-mce-bogus=\"1\"></p>",
+            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Faça o cálculo e descubra como </span><em><span style=\"color: rgb(170, 130, 200); font-size: 32pt\">economizar com <br>seu e-commerce</span></em></p>",
+            "caption": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">A calculadora que detalha os custos da sua loja e mostra onde economizar</span></p>",
             "titleColor": "",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
             "inputButtonText": "Aproveitar",
             "image": {
               "alt": "top image",
               "width": 925,
-              "height": 530
+              "height": 530,
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d68273f8-47e7-4bf8-bd01-de2c1d0dde30/Frame-1000002594.png"
             },
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33795203-2aed-4054-a781-3f33d62ebaed/main-hero-background-(2).svg",
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/55902843-6ecb-4630-9071-9dc278626341/bg-topo-calculadora.png",
               "alt": "background image"
             },
             "inputLabelBackgroundColor": "#44656A",
@@ -187,7 +188,6 @@
             "hubspotFormButtonColor": "#71DBD4",
             "hubspotFormButtonTextColor": "#003037",
             "hubspotErrorMessageColor": "#F57E77",
-            "inputLabel": "⚡ Ganhe 20% OFF na assinatura",
             "modal": {
               "title": "Obrigado por se inscrever para receber nossa oferta especial!",
               "titleColor": "#003037",
@@ -220,19 +220,14 @@
               ]
             },
             "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
-            "hubspotForm": {
-              "portalId": "7112881",
-              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
-              "region": "na1"
-            },
+            "hubspotForm": {},
             "bulletPoints": {
-              "show": false,
+              "show": true,
               "title": "<div style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\" data-mce-style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\"><p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">O que você vai receber no Guia:</span></p></div>",
               "items": [
-                "Como o consumidor decide na Black Friday ",
-                "Proposta de valor: produto vs. experiência do cliente",
-                "Estratégias que vão além de descontos",
-                "Dados e dicas práticas para suas campanhas"
+                "Estrutura: compare seus custos mensais com plataforma e comissão, versus a sua receita.",
+                "Pagamento: analise suas despesas com tarifas de cartão de crédito, Pix, boleto e antifraude.",
+                "Envio: leve em consideração todos os gastos que sua loja possui com frete."
               ],
               "textColor": "#ffffff",
               "backgroundColor": "rgba(255, 255, 255, 0.09)",
@@ -242,7 +237,10 @@
               }
             },
             "htmlContent": "",
-            "captionAbove": "<p style=\"font-size: 16px; line-height: 120%; font-weight: bold; text-align: center;\" data-mce-style=\"font-size: 16px; line-height: 120%; font-weight: bold; text-align: center;\"><span style=\"color: rgb(250, 250, 245); font-size: 10pt;\" data-mce-style=\"color: rgb(250, 250, 245); font-size: 10pt;\">O futuro do e-commerce é inteligente</span></p>"
+            "captionAbove": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(250, 250, 245); font-size: 10pt\">Calculadora TCO</span></strong></p>",
+            "titleFont": "Instrument Serif",
+            "use": "image",
+            "inputLabelWidth": "min"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -253,7 +251,7 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<p><span style=\"font-size: 70px; color: #FAFAF5; font-feature-settings: 'liga' off; font-family: 'Instrument Serif'; \">Faça o cálculo e descubra como <span style=\"font-size: 70px; font-feature-settings: 'liga' off; color: #AA82C8; font-style: italic;\">economizar com <br>seu e-commerce</span></p>",
+            "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 70px\">Faça o cálculo e descubra como </span><em><span style=\"color: rgb(170, 130, 200); font-size: 70px\">economizar com <br>seu e-commerce</span></em></p>",
             "caption": "<p><span style=\"color: #ffffff; font-size: 24px;\">A calculadora que detalha os custos da sua loja <br> e mostra onde economizar</span></p>",
             "titleColor": "",
             "inputPlaceHolder": "Digite seu email aqui para ganhar",
@@ -332,6 +330,58 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/BigImageHeroV2.tsx",
+              "title": "<p><span style=\"color: rgb(170, 130, 200); font-size: 32px\">Ao comparar o custo entre plataformas, você entende onde pode otimizar sua operação</span></p>",
+              "titleFont": "Instrument Serif",
+              "features": [
+                {
+                  "title": "Estrutura",
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/da39c2bb-524a-47e7-a19c-740d719b68d8/icone-estrutura.svg"
+                  },
+                  "text": "Compare seus custos mensais com plataforma e comissão, versus a sua receita.",
+                  "titleColor": "#371E55",
+                  "textColor": "#5F6E82"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d69663e2-2ab9-433e-a5ae-4172a1a4550d/icone-pagamento.svg"
+                  },
+                  "title": "Pagamento",
+                  "titleColor": "#371E55",
+                  "textColor": "#5F6E82",
+                  "text": "Analise suas despesas com tarifas de cartão de crédito, Pix, boleto e antifraude."
+                },
+                {
+                  "title": "Envio",
+                  "text": "Leve em consideração todos os gastos que sua loja possui com frete.",
+                  "textColor": "#5F6E82",
+                  "titleColor": "#371E55",
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2255a875-0718-42a2-ba1f-0b0d3362f48c/start-up-1.svg"
+                  }
+                }
+              ],
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5a257abc-0852-441b-b11f-c0d76025ce6f/calculadora-tco.png"
+              },
+              "paddingBottom": "0px"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          }
+        ]
+      }
     },
     {
       "__resolveType": "site/sections/TcoCalculatorV4.tsx",
@@ -456,8 +506,8 @@
           }
         },
         "asideBottomText": "<p>Gabriel Bollico</p><p><span style=\"color: rgb(204, 190, 255)\">Ecommerce Puro</span></p>",
-        "mobileStartBannerText": "<p style=\"text-align: center\"><strong>veja o quanto você pode economizar por ano:</strong><br>A nossa calculadora mostra quanto você economiza, ano a ano, ao escolher uma plataforma que valoriza seu orçamento e potencializa suas vendas. Quem compara, comprova: mais economia, mais lucro!</p>",
-        "mobileStartBannerTitle": "<p style=\"text-align: center\"><span style=\"color: #fafaf5\">Calcule e compare os gastos</span><br><span style=\"color: #aa82c8\">da sua loja</span></p>",
+        "mobileStartBannerText": "<p style=\"text-align: center\">A nossa calculadora mostra quanto você economiza, ano a ano, ao escolher uma plataforma que valoriza seu orçamento e potencializa suas vendas. Quem compara, comprova: mais economia, mais lucro!</p>",
+        "mobileStartBannerTitle": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Calcule e compare os gastos</span><br><span style=\"color: rgb(170, 130, 200)\">da sua loja</span></p>",
         "mobileStartBannerTitleFont": "Instrument serif"
       },
       "page2": {
@@ -764,7 +814,8 @@
       "captionColor": "#828CA0",
       "sectionId": "tcocalculator",
       "backgroundColor": "#FFFFFF",
-      "captionText": "<p></p>"
+      "captionText": "<p></p>",
+      "paddingBottom": "10px"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

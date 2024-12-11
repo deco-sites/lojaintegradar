@@ -212,6 +212,8 @@ export interface Props {
     /** @format color-input */
     bottomTitleColor?: string;
     bottomCreateStoreCta?: CreateStoreWithPlanCTA;
+    paddingTop?: string;
+    paddingBottom?: string;
 }
 
 function InfoIcon({color}: {color: string}) {
@@ -364,9 +366,14 @@ function Buttons({arrowsColor}: {arrowsColor?: string}) {
 function Plans(props: Props) {
     const carouselId = useId();
     const id = props.id || carouselId;
-    const { title, caption, slides, montlyLabel, annualLabel, annualTagPosition = "below", annualTag, annualTagTextColor, arrows, bottomCaption, bottomTitle, bottomCreateStoreCta, captionColor, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, bottomCaptionColor, bottomTitleColor, arrowsColor } = props;
+    const { title, caption, slides, montlyLabel, annualLabel, annualTagPosition = "below", annualTag, annualTagTextColor, arrows, bottomCaption, bottomTitle, bottomCreateStoreCta, captionColor, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, bottomCaptionColor, bottomTitleColor, arrowsColor, paddingBottom, paddingTop } = props;
     return (<div id={id}>
-            <div id={carouselId} class="min-h-min flex flex-col items-center lg:container md:max-w-[1340px] lg:mx-auto pt-7 lg:pt-[90px]" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)} >
+            <div 
+                id={carouselId} 
+                class="min-h-min flex flex-col items-center lg:container md:max-w-[1340px] lg:mx-auto pt-7 lg:pt-[90px]" 
+                hx-on:click={useScript(refreshArrowsVisibility)} 
+                hx-on:touchend={useScript(refreshArrowsVisibility)}
+                style={{paddingBottom, paddingTop}}>
                 {caption && <AnimateOnShow animation="animate-fade-down" >
                     <div class="text-lg lg:text-2xl text-neutral-content font-semibold leading-tight" style={{color: captionColor}} dangerouslySetInnerHTML={{__html: caption}}/>
                 </AnimateOnShow>}

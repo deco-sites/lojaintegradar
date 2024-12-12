@@ -342,6 +342,31 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/CardsHero.tsx",
+        "invertColumns": false,
+        "leftColumn": {
+          "cards": [
+            {
+              "cta": [],
+              "useBackground": "image",
+              "titleColor": "#FAFAF5",
+              "title": "“Leram meu pensamento!”",
+              "text": "<p><span style=\"color:#FAFAF5; font-family: 'Inter', sans-serif; font-size: 20px; font-style: normal; font-weight: 500; line-height: 120% \">Entenda o comportamento do <br>cliente e transforme cada<br> interação em uma chance de<br>conversão.</span></p>",
+              "backgroundImage": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/73ef836e-a163-446a-8924-251a2b00084d/bg-card1-leram-meu-pensamento.png",
+                "width": 1194,
+                "height": 1752
+              },
+              "minHeight": 876,
+              "borderColor": "#ECEAEB"
+            }
+          ]
+        }
+      }
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -451,7 +476,6 @@
         {
           "value": {
             "__resolveType": "site/sections/Testimonials.tsx",
-            "titleColor": "#371E55",
             "slides": [
               {
                 "content": {
@@ -481,8 +505,9 @@
               }
             ],
             "arrows": true,
-            "dots": false,
-            "arrowsColor": "#003037"
+            "titleColor": "#371E55",
+            "arrowsColor": "#003037",
+            "dots": false
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -492,7 +517,6 @@
         {
           "value": {
             "__resolveType": "site/sections/Testimonials.tsx",
-            "titleColor": "#371E55",
             "slides": [
               {
                 "content": {
@@ -522,8 +546,9 @@
               }
             ],
             "arrows": false,
-            "dots": false,
-            "arrowsColor": ""
+            "titleColor": "#371E55",
+            "arrowsColor": "",
+            "dots": false
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1350,32 +1375,11 @@
         {
           "value": {
             "__resolveType": "site/sections/PlansV2.tsx",
+            "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
+            "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
             "slides": [
               {
-                "tag": {
-                  "text": "Black Friday",
-                  "icon": {
-                    "alt": "crown icon"
-                  },
-                  "textColor1": "#ce2c2c",
-                  "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)",
-                  "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
-                  "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
-                  "fontFamily": "Instrument Serif"
-                },
-                "montlyFee": "<p><span style=\"color: #fafaf5; font-size: 24pt\">R$</span><span style=\"color: #fafaf5\">&nbsp;</span><strong><span style=\"color: #fafaf5; font-size: 36pt\">1999</span></strong><span style=\"color: #fafaf5\">&nbsp;</span><span style=\"color: #fafaf5; font-size: 14pt\">/mês</span></p>",
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes",
-                  "href": "#"
-                },
                 "bulletPoints": {
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
-                  },
                   "items": [
                     {
                       "text": "Produtos e visitas ilimitados"
@@ -1404,9 +1408,34 @@
                       "text": "Migração 100% assistida"
                     }
                   ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
+                  },
                   "itemsTextColor": "#FAFAF5",
                   "tooltipTextColor": "#003037",
                   "tooltipBackgroundColor": "#FAFAF5"
+                },
+                "title": "<p>Elite</p>",
+                "titleColor": "#ffffff",
+                "tag": {
+                  "text": "Black Friday",
+                  "icon": {
+                    "alt": "crown icon"
+                  },
+                  "textColor1": "#ce2c2c",
+                  "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)",
+                  "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
+                  "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
+                  "fontFamily": "Instrument Serif"
+                },
+                "montlyFee": "<p><span style=\"color: #fafaf5; font-size: 24pt\">R$</span><span style=\"color: #fafaf5\">&nbsp;</span><strong><span style=\"color: #fafaf5; font-size: 36pt\">1999</span></strong><span style=\"color: #fafaf5\">&nbsp;</span><span style=\"color: #fafaf5; font-size: 14pt\">/mês</span></p>",
+                "chooseCta": {
+                  "text": "Assinar",
+                  "href": "#"
+                },
+                "detailsCta": {
+                  "text": "Ver detalhes",
+                  "href": "#"
                 },
                 "annualMontlyFee": "<p><span style=\"color: #fafaf5; font-size: 24pt\">R$</span><span style=\"color: #fafaf5\">&nbsp;</span><strong><span style=\"color: #fafaf5; font-size: 36pt\">999</span></strong><span style=\"color: #fafaf5\">&nbsp;</span><span style=\"color: #fafaf5; font-size: 14pt\">/mês</span></p>",
                 "cutedMontlyFee": "de R$ 1999 /mês",
@@ -1419,7 +1448,6 @@
                 },
                 "seeMoreButtonText": "Ver mais",
                 "backgroundColor": "linear-gradient(180deg, #025D5E 0%, #02333A 100%)",
-                "titleColor": "#ffffff",
                 "cutedMontlyFeeColor": "#FAFAF5",
                 "annualSavingColor": "#FAFAf5",
                 "cta": [
@@ -1446,7 +1474,6 @@
                   "width": 239,
                   "height": 134
                 },
-                "title": "<p>Elite</p>",
                 "tagTextColor": {
                   "color1": "#71DBD4 ",
                   "color2": "#ABEECF "
@@ -1454,13 +1481,6 @@
                 "titleFont": "Instrument Serif"
               },
               {
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes"
-                },
                 "bulletPoints": {
                   "items": [
                     {
@@ -1492,6 +1512,15 @@
                   "tooltipTextColor": "#ffffff",
                   "tooltipBackgroundColor": "#371E55"
                 },
+                "title": "<h2><span style=\"color: #371e55\">Expansão</span></h2>",
+                "titleColor": "#371E55",
+                "chooseCta": {
+                  "text": "Assinar",
+                  "href": "#"
+                },
+                "detailsCta": {
+                  "text": "Ver detalhes"
+                },
                 "tag": {
                   "text": "Black Friday",
                   "fontFamily": "Instrument Serif",
@@ -1499,7 +1528,6 @@
                   "borderColor": "#B699D9",
                   "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)"
                 },
-                "title": "<h2><span style=\"color: #371e55\">Expansão</span></h2>",
                 "montlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>239</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                 "cutedMontlyFee": "de R$ 239/mês",
                 "annualMontlyFee": "<p><span style=\"color: #371e55; font-size: 24pt\">R$</span><span style=\"color: #371e55\"> </span><strong><span style=\"color: #371e55; font-size: 48px\">150</span></strong><span style=\"color: #371e55; font-size: 14pt\">/mês</span></p>",
@@ -1520,7 +1548,6 @@
                   }
                 ],
                 "backgroundColor": "linear-gradient(171deg, #3A2159 -34.91%, #FFF 23.96%)",
-                "titleColor": "#371E55",
                 "cutedMontlyFeeColor": "#371E55",
                 "createStoreWithPlanCta": {
                   "planId": "176",
@@ -1534,14 +1561,6 @@
                 "titleFont": "Instrument Serif"
               },
               {
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes",
-                  "href": "#"
-                },
                 "bulletPoints": {
                   "items": [
                     {
@@ -1569,6 +1588,16 @@
                   "tooltipTextColor": "#FAFAF5",
                   "tooltipBackgroundColor": "#371E55"
                 },
+                "title": "<h2><span style=\"color: #371e55\">Aceleração</span></h2>",
+                "titleColor": "#FAFAF5",
+                "chooseCta": {
+                  "text": "Assinar",
+                  "href": "#"
+                },
+                "detailsCta": {
+                  "text": "Ver detalhes",
+                  "href": "#"
+                },
                 "tag": {
                   "text": "Black Friday",
                   "fontFamily": "Instrument Serif",
@@ -1576,13 +1605,11 @@
                   "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
                   "borderColor": "linear-gradient(90deg, #B699D9 0%, #512F79 100%)"
                 },
-                "title": "<h2><span style=\"color: #371e55\">Aceleração</span></h2>",
                 "montlyFee": "<p><span style=\"color: #371e55; font-size: 24pt\">R$</span><span style=\"color: #371e55\"> </span><strong><span style=\"color: #371e55; font-size: 36pt\">99</span></strong><span style=\"color: #371e55\"> </span><span style=\"color: #371e55; font-size: 14pt\">/mês</span></p>",
                 "cutedMontlyFee": "de R$99/mês ",
                 "annualMontlyFee": "<p><span style=\"color: #371e55; font-size: 24pt\">R$</span><span style=\"color: #371e55\"> </span><strong><span style=\"color: #371e55; font-size: 36pt\">79</span></strong><span style=\"color: #371e55\"> </span><span style=\"color: #371e55; font-size: 14pt\">/mês<br></span></p>",
                 "seeMoreButtonText": "Ver mais",
                 "backgroundColor": "linear-gradient(171deg, #3A2159 -34.91%, #FFF 23.96%)",
-                "titleColor": "#FAFAF5",
                 "cutedMontlyFeeColor": "#371e55",
                 "annualSaving": {
                   "text": "+ Isenção de tarifas por 6 meses*",
@@ -1615,8 +1642,7 @@
                 "titleFont": "Instrument Serif"
               }
             ],
-            "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
-            "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
+            "id": "plans",
             "annualLabel": "Anual",
             "montlyLabel": "Mensal",
             "dots": false,
@@ -1653,7 +1679,6 @@
               "ctaStyle": "button"
             },
             "arrowsColor": "#371E55",
-            "id": "plans",
             "annualTagTextColor": "#FAFAF5",
             "annualTag": "🔥 Ofertas de Black friday",
             "arrows": true
@@ -1677,32 +1702,11 @@
         {
           "value": {
             "__resolveType": "site/sections/PlansV2.tsx",
+            "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
+            "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
             "slides": [
               {
-                "tag": {
-                  "icon": {
-                    "alt": "crown icon"
-                  },
-                  "textColor1": "#ce2c2c",
-                  "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)",
-                  "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
-                  "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
-                  "fontFamily": "Instrument Serif",
-                  "onlyAnnual": true
-                },
-                "montlyFee": "<p><span style=\"color: #fafaf5; font-size: 24pt\">R$</span><span style=\"color: #fafaf5\">&nbsp;</span><strong><span style=\"color: #fafaf5; font-size: 36pt\">1999</span></strong><span style=\"color: #fafaf5\">&nbsp;</span><span style=\"color: #fafaf5; font-size: 14pt\">/mês</span></p>",
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes",
-                  "href": "#"
-                },
                 "bulletPoints": {
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
-                  },
                   "items": [
                     {
                       "text": "Produtos e visitas ilimitados"
@@ -1731,9 +1735,34 @@
                       "text": "Migração 100% assistida"
                     }
                   ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
+                  },
                   "itemsTextColor": "#FAFAF5",
                   "tooltipTextColor": "#003037",
                   "tooltipBackgroundColor": "#FAFAF5"
+                },
+                "title": "<p>Elite</p>",
+                "titleColor": "#ffffff",
+                "tag": {
+                  "icon": {
+                    "alt": "crown icon"
+                  },
+                  "textColor1": "#ce2c2c",
+                  "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)",
+                  "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
+                  "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
+                  "fontFamily": "Instrument Serif",
+                  "onlyAnnual": true
+                },
+                "montlyFee": "<p><span style=\"color: #fafaf5; font-size: 24pt\">R$</span><span style=\"color: #fafaf5\">&nbsp;</span><strong><span style=\"color: #fafaf5; font-size: 36pt\">1999</span></strong><span style=\"color: #fafaf5\">&nbsp;</span><span style=\"color: #fafaf5; font-size: 14pt\">/mês</span></p>",
+                "chooseCta": {
+                  "text": "Assinar",
+                  "href": "#"
+                },
+                "detailsCta": {
+                  "text": "Ver detalhes",
+                  "href": "#"
                 },
                 "annualMontlyFee": "<p><span style=\"color: rgb(250, 250, 245); font-size: 24pt\">R$</span><span style=\"color: rgb(250, 250, 245)\">&nbsp;</span><strong><span style=\"color: rgb(250, 250, 245); font-size: 36pt\">1.599</span></strong><span style=\"color: rgb(250, 250, 245)\">&nbsp;</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p>",
                 "cutedMontlyFee": "de R$ 1999 /mês",
@@ -1746,7 +1775,6 @@
                 },
                 "seeMoreButtonText": "Ver mais",
                 "backgroundColor": "linear-gradient(180deg, #025D5E 0%, #02333A 100%)",
-                "titleColor": "#ffffff",
                 "cutedMontlyFeeColor": "#FAFAF5",
                 "annualSavingColor": "#FAFAf5",
                 "cta": [
@@ -1773,7 +1801,6 @@
                   "width": 239,
                   "height": 134
                 },
-                "title": "<p>Elite</p>",
                 "tagTextColor": {
                   "color1": "#71DBD4 ",
                   "color2": "#ABEECF "
@@ -1781,13 +1808,6 @@
                 "titleFont": "Instrument Serif"
               },
               {
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes"
-                },
                 "bulletPoints": {
                   "items": [
                     {
@@ -1819,6 +1839,15 @@
                   "tooltipTextColor": "#ffffff",
                   "tooltipBackgroundColor": "#371E55"
                 },
+                "title": "<h2><span style=\"color: #371e55\">Expansão</span></h2>",
+                "titleColor": "#371E55",
+                "chooseCta": {
+                  "text": "Assinar",
+                  "href": "#"
+                },
+                "detailsCta": {
+                  "text": "Ver detalhes"
+                },
                 "tag": {
                   "text": "Recomendado",
                   "fontFamily": "Instrument Serif",
@@ -1827,7 +1856,6 @@
                   "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
                   "onlyAnnual": false
                 },
-                "title": "<h2><span style=\"color: #371e55\">Expansão</span></h2>",
                 "montlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>239</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                 "cutedMontlyFee": "de R$ 239/mês",
                 "annualMontlyFee": "<p><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$</span><span style=\"color: rgb(55, 30, 85)\"> </span><strong><span style=\"color: rgb(55, 30, 85); font-size: 48px\">191</span></strong><span style=\"color: rgb(55, 30, 85); font-size: 14pt\">/mês</span></p>",
@@ -1848,7 +1876,6 @@
                   }
                 ],
                 "backgroundColor": "linear-gradient(171deg, #3A2159 -34.91%, #FFF 23.96%)",
-                "titleColor": "#371E55",
                 "cutedMontlyFeeColor": "#371E55",
                 "createStoreWithPlanCta": {
                   "planId": "176",
@@ -1862,14 +1889,6 @@
                 "titleFont": "Instrument Serif"
               },
               {
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes",
-                  "href": "#"
-                },
                 "bulletPoints": {
                   "items": [
                     {
@@ -1897,6 +1916,16 @@
                   "tooltipTextColor": "#FAFAF5",
                   "tooltipBackgroundColor": "#371E55"
                 },
+                "title": "<h2><span style=\"color: #371e55\">Aceleração</span></h2>",
+                "titleColor": "#FAFAF5",
+                "chooseCta": {
+                  "text": "Assinar",
+                  "href": "#"
+                },
+                "detailsCta": {
+                  "text": "Ver detalhes",
+                  "href": "#"
+                },
                 "tag": {
                   "fontFamily": "Instrument Serif",
                   "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
@@ -1904,13 +1933,11 @@
                   "borderColor": "linear-gradient(90deg, #B699D9 0%, #512F79 100%)",
                   "onlyAnnual": true
                 },
-                "title": "<h2><span style=\"color: #371e55\">Aceleração</span></h2>",
                 "montlyFee": "<p><span style=\"color: #371e55; font-size: 24pt\">R$</span><span style=\"color: #371e55\"> </span><strong><span style=\"color: #371e55; font-size: 36pt\">99</span></strong><span style=\"color: #371e55\"> </span><span style=\"color: #371e55; font-size: 14pt\">/mês</span></p>",
                 "cutedMontlyFee": "de R$99/mês ",
                 "annualMontlyFee": "<p><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$</span><span style=\"color: rgb(55, 30, 85)\"> </span><strong><span style=\"color: rgb(55, 30, 85); font-size: 36pt\">79</span></strong><span style=\"color: rgb(55, 30, 85)\"> </span><span style=\"color: rgb(55, 30, 85); font-size: 14pt\">/mês<br></span></p>",
                 "seeMoreButtonText": "Ver mais",
                 "backgroundColor": "linear-gradient(171deg, #3A2159 -34.91%, #FFF 23.96%)",
-                "titleColor": "#FAFAF5",
                 "cutedMontlyFeeColor": "#371e55",
                 "annualSaving": {
                   "text": "Economia de  R$ 240/ano",
@@ -1943,8 +1970,7 @@
                 "titleFont": "Instrument Serif"
               }
             ],
-            "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
-            "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
+            "id": "plans",
             "annualLabel": "Anual",
             "montlyLabel": "Mensal",
             "dots": false,
@@ -1981,7 +2007,6 @@
               "ctaStyle": "button"
             },
             "arrowsColor": "#371E55",
-            "id": "plans",
             "annualTagTextColor": "#371E55",
             "annualTag": "-20% OFF",
             "arrows": true,
@@ -2637,6 +2662,7 @@
         {
           "value": {
             "__resolveType": "site/sections/PlanDetailsV3.tsx",
+            "id": "planoelite",
             "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Faça parte da Elite do</span> <br><span style=\"color: rgb(113, 219, 212)\">e-commerce</span></p>",
             "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
             "slides": [
@@ -2684,7 +2710,6 @@
                 }
               }
             ],
-            "id": "planoelite",
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/133ba8f6-dc32-4458-94f9-c878da9da993/elite-mobie-background.png",
               "alt": "background ",
@@ -2814,6 +2839,7 @@
         {
           "value": {
             "__resolveType": "site/sections/PlanDetailsV3.tsx",
+            "id": "planoelite",
             "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Faça parte da Elite do</span> <span style=\"color: rgb(113, 219, 212)\">e-commerce</span></p>",
             "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
             "slides": [
@@ -2861,7 +2887,6 @@
                 }
               }
             ],
-            "id": "planoelite",
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c0715300-7830-4ca6-8deb-5fe41d41fa7e/elite-background.png",
               "alt": "background ",

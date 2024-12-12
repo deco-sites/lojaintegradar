@@ -27,7 +27,7 @@ export default function TcoCalculatorMobileStartPage({ page1, rootId, benefits }
     benefits?: Benefit[];
 }) {
     const { mobileStartBannerText,mobileStartBannerTitleFont, mobileStartBannerTitle, mobileStartBanner, mobileStartButtonText, asideTextColor, asideBottomText, mobileStartButtonTextColor } = page1;
-    return <div class="lg:hidden relative text-sm text-primary-content font-normal py-10 px-4 w-full min-h-[971px]" style={{color: asideTextColor}}>
+    return <div class="lg:hidden relative text-sm text-primary-content font-normal py-10 px-4 w-full min-h-[971px] " style={{color: asideTextColor}}>
         {mobileStartBanner.src && <Image width={mobileStartBanner.width || 430} height={mobileStartBanner.height || 755} alt={mobileStartBanner.alt || "background image"} src={mobileStartBanner.src} class="absolute w-full h-full top-0 left-0 object-cover object-top -z-10"/>}
         {mobileStartBannerTitle && <div class="text-[32px] normal leading-[110%]" dangerouslySetInnerHTML={{__html: mobileStartBannerTitle}} style={{fontFamily: mobileStartBannerTitleFont}}/>}
         {mobileStartBannerText && <div class="text-base font-normal leading-normal mt-7" dangerouslySetInnerHTML={{__html: mobileStartBannerText}}/>}

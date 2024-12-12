@@ -4736,6 +4736,9 @@ details.collapse summary::-webkit-details-marker {
 .self-start {
   align-self: flex-start;
 }
+.self-end {
+  align-self: flex-end;
+}
 .overflow-auto {
   overflow: auto;
 }

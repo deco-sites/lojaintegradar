@@ -52,9 +52,10 @@ import * as $$$$$$43 from "./sections/TcoCalculator.tsx";
 import * as $$$$$$44 from "./sections/TcoCalculatorV2.tsx";
 import * as $$$$$$45 from "./sections/TcoCalculatorV3.tsx";
 import * as $$$$$$46 from "./sections/TcoCalculatorV4.tsx";
-import * as $$$$$$47 from "./sections/Testimonials.tsx";
-import * as $$$$$$48 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$49 from "./sections/TimeLine.tsx";
+import * as $$$$$$47 from "./sections/TcoCalculatorV5.tsx";
+import * as $$$$$$48 from "./sections/Testimonials.tsx";
+import * as $$$$$$49 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$50 from "./sections/TimeLine.tsx";
 
 const manifest = {
   "sections": {
@@ -105,9 +106,10 @@ const manifest = {
     "site/sections/TcoCalculatorV2.tsx": $$$$$$44,
     "site/sections/TcoCalculatorV3.tsx": $$$$$$45,
     "site/sections/TcoCalculatorV4.tsx": $$$$$$46,
-    "site/sections/Testimonials.tsx": $$$$$$47,
-    "site/sections/Theme/Theme.tsx": $$$$$$48,
-    "site/sections/TimeLine.tsx": $$$$$$49,
+    "site/sections/TcoCalculatorV5.tsx": $$$$$$47,
+    "site/sections/Testimonials.tsx": $$$$$$48,
+    "site/sections/Theme/Theme.tsx": $$$$$$49,
+    "site/sections/TimeLine.tsx": $$$$$$50,
   },
   "actions": {
     "site/actions/sendTcoUserData.ts": $$$$$$$$$0,

@@ -406,6 +406,80 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/DetailedCarousel.tsx",
+        "title": "Fature enquanto eles trabalham.  Automatize formas de ganhar vendas.",
+        "titleColor": "#71DBD4",
+        "backgroundImage": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ca1babfe-7807-427c-b500-10c8c37fb51a/bg-carrossel.png"
+        },
+        "interval": 6,
+        "slides": [
+          {
+            "use": "image",
+            "bulletPoints": {
+              "items": [
+                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
+              ],
+              "textColor": "#FAFAF5"
+            },
+            "title": "Reengaje clientes com campanhas automáticas",
+            "titleColor": "#71DBD4",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c7c11d6e-fca4-408d-8e81-e85328fc6ca3/item1.png"
+            }
+          },
+          {
+            "use": "image",
+            "bulletPoints": {
+              "items": [
+                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
+              ],
+              "textColor": "#FAFAF5"
+            },
+            "title": "Anuncie produtos em diferentes canais",
+            "titleColor": "#FAFAF5",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6c807d3-ca29-40e3-8e30-2ca1ab8a402f/item1.png"
+            }
+          },
+          {
+            "use": "image",
+            "bulletPoints": {
+              "items": [
+                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
+              ],
+              "textColor": "#FAFAF5"
+            },
+            "title": "Frete e pagamento descomplicados",
+            "titleColor": "#FAFAF5",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6c807d3-ca29-40e3-8e30-2ca1ab8a402f/item1.png"
+            }
+          },
+          {
+            "use": "image",
+            "bulletPoints": {
+              "items": [
+                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
+              ],
+              "textColor": "#FAFAF5"
+            },
+            "title": "Checkout rápido e aprimorado",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6c807d3-ca29-40e3-8e30-2ca1ab8a402f/item1.png"
+            },
+            "titleColor": "#FAFAF5"
+          }
+        ],
+        "dotsColor": "#000000",
+        "dotsProgressBarPlacement": "below",
+        "arrows": false,
+        "dots": true
+      }
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -1414,6 +1488,7 @@
         {
           "value": {
             "__resolveType": "site/sections/PlansV2.tsx",
+            "id": "plans",
             "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
             "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
             "slides": [
@@ -1681,7 +1756,6 @@
                 "titleFont": "Instrument Serif"
               }
             ],
-            "id": "plans",
             "annualLabel": "Anual",
             "montlyLabel": "Mensal",
             "dots": false,
@@ -1741,6 +1815,7 @@
         {
           "value": {
             "__resolveType": "site/sections/PlansV2.tsx",
+            "id": "plans",
             "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
             "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
             "slides": [
@@ -2009,7 +2084,6 @@
                 "titleFont": "Instrument Serif"
               }
             ],
-            "id": "plans",
             "annualLabel": "Anual",
             "montlyLabel": "Mensal",
             "dots": false,

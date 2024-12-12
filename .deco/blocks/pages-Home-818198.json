@@ -380,14 +380,25 @@
               "titleColor": "#003037"
             },
             {
-              "cta": [],
+              "cta": [
+                {
+                  "ctaStyle": "button",
+                  "underlineText": "Criar loja",
+                  "showIcon": true,
+                  "href": "/",
+                  "backgroundColor": "TRANSPARENT",
+                  "borderColor": "TRANSPARENT",
+                  "textColor": "#003037"
+                }
+              ],
               "useBackground": "image",
               "backgroundImage": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ce7129fb-b593-401d-b5dc-13fd0e0b7285/bg-coluna.png",
                 "width": 1290,
                 "height": 876
               },
-              "minHeight": 412
+              "minHeight": 412,
+              "text": "<div style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\" data-mce-style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\"><p>Em um ano, milhares de<br>lojistas recuperaram<br>R$ 23 milhões em vendas<br>com ferramentas de<br>automação de marketing<br>da Loja Integrada.</p></div>"
             }
           ]
         }

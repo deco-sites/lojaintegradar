@@ -226,12 +226,12 @@ function TcoCalculatorPage1({ page1, rootId }: {
                 <form class="flex flex-col gap-[18px] mt-14 max-w-[375px] page1form" >
                     <label class="animate-fade-right" style={{ animationDuration: "0.3s" }}>
                         <div class={inputCaptionClass} style={{color: inputsTextColor }}>
-                            <p>{"Seu e-mail"}</p>
-                            <div class="tooltip tooltip-left" data-tip={"tool tip text"} style={`--tooltip-text-color: black; --tooltip-color: white`}>
+                            <p>{emailInput?.caption}</p>
+                            <div class="tooltip tooltip-left" data-tip={emailInput?.tooltipMessage} style={`--tooltip-text-color: black; --tooltip-color: white`}>
                                 <InfoIcon />
                             </div>
                         </div>
-                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(emailInputOnKeyUp, inputsBorderColor)} type="email" placeholder={"seuemail@"} required id={rootId + 'emailInput'}>
+                        <input class={inputClass} style={{borderColor: inputsBorderColor}} hx-on:keyup={useScript(emailInputOnKeyUp, inputsBorderColor)} type="email" placeholder={emailInput?.placeholder} required id={rootId + 'emailInput'}>
                         </input>
                         <p class="invalidEmail mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{invalidEmailErrorMessage || "Insira um e-mail válido."}</p>
                         <p class="text-error mt-2.5 leading-[120%] text-sm hidden" style={{color: inputsErrorMessageColor}} >{inputsNoFillErrorMessage || "Preencha esse campo obrigatório."}</p>

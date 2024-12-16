@@ -1537,88 +1537,12 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/DetailedCarousel.tsx",
-        "title": "Já vende em outra plataforma?",
-        "titleColor": "#ffffff",
-        "titleFont": "Instrument serif",
-        "backgroundImage": {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ca1babfe-7807-427c-b500-10c8c37fb51a/bg-carrossel.png"
-        },
-        "interval": 6,
-        "slides": [
-          {
-            "use": "image",
-            "bulletPoints": {
-              "items": [
-                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
-              ],
-              "textColor": "#FAFAF5"
-            },
-            "title": "Reengaje clientes com campanhas automáticas",
-            "titleColor": "#71DBD4",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c7c11d6e-fca4-408d-8e81-e85328fc6ca3/item1.png"
-            }
-          },
-          {
-            "use": "image",
-            "bulletPoints": {
-              "items": [
-                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
-              ],
-              "textColor": "#FAFAF5"
-            },
-            "title": "Anuncie produtos em diferentes canais",
-            "titleColor": "#FAFAF5",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6c807d3-ca29-40e3-8e30-2ca1ab8a402f/item1.png"
-            }
-          },
-          {
-            "use": "image",
-            "bulletPoints": {
-              "items": [
-                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
-              ],
-              "textColor": "#FAFAF5"
-            },
-            "title": "Frete e pagamento descomplicados",
-            "titleColor": "#FAFAF5",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6c807d3-ca29-40e3-8e30-2ca1ab8a402f/item1.png"
-            }
-          },
-          {
-            "use": "image",
-            "bulletPoints": {
-              "items": [
-                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
-              ],
-              "textColor": "#FAFAF5"
-            },
-            "title": "Checkout rápido e aprimorado",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6c807d3-ca29-40e3-8e30-2ca1ab8a402f/item1.png"
-            },
-            "titleColor": "#FAFAF5"
-          }
-        ],
-        "dotsColor": "#000000",
-        "dotsProgressBarPlacement": "below",
-        "arrows": false,
-        "dots": true,
-        "arrowsColor": "#FFFFF"
-      }
-    },
-    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "value": {
             "__resolveType": "site/sections/Carousel.tsx",
-            "title": "<p><span style=\"color: rgb(0, 48, 55); font-size: 15pt\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195); font-size: 15pt\">Dados e Automação</span></em></p>",
+            "title": "<p style=\"font-size:70px; \"><span style=\"color: rgb(0, 48, 55); font-size:70px; \"> Ganhe eficiência usando </span></p>",
             "cta": [
               {
                 "href": "#plans",
@@ -1737,7 +1661,7 @@
         {
           "value": {
             "__resolveType": "site/sections/Carousel.tsx",
-            "title": "<p><span style=\"color: rgb(0, 48, 55)\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195)\">Dados e Automação</span></em></p>",
+            "title": "<p><span style=\"color: rgb(0, 48, 55); font-size:70px; \">Nós queremos é mais que você cresça!</span></p>",
             "cta": [
               {
                 "href": "#plans",
@@ -1759,7 +1683,7 @@
               }
             ],
             "titleFont": "Instrument serif",
-            "paddingBottom": "50px",
+            "paddingBottom": "120px",
             "slides": [
               {
                 "title": "Campanhas automatizadas para reengajar clientes",
@@ -1842,19 +1766,96 @@
             ],
             "arrows": true,
             "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png"
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8243ad-68f1-4e47-bdc5-d7abec141794/elemento-bg-1.png"
             },
             "interval": 0,
             "id": "nossoecossistema",
             "titleColor": "",
             "captionColor": "#371E55",
-            "arrowsColor": "#003037"
+            "arrowsColor": "#003037",
+            "paddingTop": "120px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
           }
         }
       ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/DetailedCarousel.tsx",
+        "title": "Já vende em outra plataforma?",
+        "titleColor": "#ffffff",
+        "titleFont": "Instrument serif",
+        "backgroundImage": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ca1babfe-7807-427c-b500-10c8c37fb51a/bg-carrossel.png"
+        },
+        "interval": 6,
+        "slides": [
+          {
+            "use": "image",
+            "bulletPoints": {
+              "items": [
+                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
+              ],
+              "textColor": "#FAFAF5"
+            },
+            "title": "Reengaje clientes com campanhas automáticas",
+            "titleColor": "#71DBD4",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c7c11d6e-fca4-408d-8e81-e85328fc6ca3/item1.png"
+            }
+          },
+          {
+            "use": "image",
+            "bulletPoints": {
+              "items": [
+                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
+              ],
+              "textColor": "#FAFAF5"
+            },
+            "title": "Anuncie produtos em diferentes canais",
+            "titleColor": "#FAFAF5",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6c807d3-ca29-40e3-8e30-2ca1ab8a402f/item1.png"
+            }
+          },
+          {
+            "use": "image",
+            "bulletPoints": {
+              "items": [
+                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
+              ],
+              "textColor": "#FAFAF5"
+            },
+            "title": "Frete e pagamento descomplicados",
+            "titleColor": "#FAFAF5",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6c807d3-ca29-40e3-8e30-2ca1ab8a402f/item1.png"
+            }
+          },
+          {
+            "use": "image",
+            "bulletPoints": {
+              "items": [
+                "Venda mais e sem custo adicional  com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento."
+              ],
+              "textColor": "#FAFAF5"
+            },
+            "title": "Checkout rápido e aprimorado",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6c807d3-ca29-40e3-8e30-2ca1ab8a402f/item1.png"
+            },
+            "titleColor": "#FAFAF5"
+          }
+        ],
+        "dotsColor": "#000000",
+        "dotsProgressBarPlacement": "below",
+        "arrows": false,
+        "dots": true,
+        "arrowsColor": "#FFFFF"
+      }
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

@@ -9,7 +9,6 @@ const onLoad = (rootId: string) => {
   let progressPercent = 0;
   const numberOfCards = cardsContainer.children.length;
   const animationTriggersAtEach = 100 / numberOfCards;
-  console.log(animationTriggersAtEach);
 
   const handleScroll = () => {
     const parentRect = parent.getBoundingClientRect();
@@ -31,8 +30,6 @@ const onLoad = (rootId: string) => {
         currentCardInnerDiv.style.transform = `rotate(-${5 * i}deg)`;
       }
     }
-
-    console.log(progressPercent);
   };
 
   globalThis.addEventListener('scroll', handleScroll);

@@ -5658,6 +5658,9 @@ details.collapse summary::-webkit-details-marker {
   font-size: 3.75rem;
   line-height: 1;
 }
+.text-\[110px\] {
+  font-size: 110px;
+}
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -6040,6 +6043,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .duration-1000 {
   transition-duration: 1000ms;
+}
+.duration-150 {
+  transition-duration: 150ms;
 }
 .duration-300 {
   transition-duration: 300ms;

@@ -221,7 +221,7 @@ export default function Header2({ logo = {
                 text={navigation.createStoreCtaMobile.text}
                 showIcon={navigation.createStoreCtaMobile.showIcon}
                 underlineText={navigation.createStoreCtaMobile.underlineText}
-                ctaClass={` font-bold text-primary px-4 py-1.5 rounded-md transition-all hover:scale-110 text-xs bg-primary-content bg-opacity-60 border createStoreMobile`}
+                ctaClass={` font-bold text-primary px-4 py-1.5 rounded-md transition-all hover:scale-110 text-xs bg-primary-content bg-opacity-60 border cursor-pointer createStoreMobile`}
                 style={navigation.createStoreCtaMobile.ctaStyle == "button" ? { background: navigation.createStoreCtaMobile.backgroundColor, color: navigation.createStoreCtaMobile.textColor, borderColor: navigation.createStoreCtaMobile.borderColor } : { color: navigation.createStoreCtaMobile.textColor }}
               />}
               {navigation?.mobileButtons?.map((button) => {

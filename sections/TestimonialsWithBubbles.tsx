@@ -4,9 +4,48 @@ import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useScript } from "@deco/deco/hooks";
-/**
- * @titleBy alt
- */
+
+const onLoad = (rootId: string, bubblesImages: BubbleImage[]) => {
+  const parent = document.getElementById(rootId) as HTMLElement;
+  const bubbleElements = parent.querySelectorAll(".bubbleImage");
+
+  const horizontalComeFrom = {
+    "top left": "-",
+    "top right": "",
+    "bottom left": "-",
+    "bottom right": "",
+  }
+
+  const verticalComeFrom = {
+    "top left": "-",
+    "top right": "-",
+    "bottom left": "",
+    "bottom right": "",
+  }
+
+  const speed = {
+    "fast": 1,
+    "normal": 0.6,
+    "slow": 0.3
+  }
+
+  const handleScroll = () => {
+    const distanceFromTop = (parent?.getBoundingClientRect().top - 200);
+    for (let i = 0; i < bubbleElements.length; i++) {
+      const currentHorizontalComeFrom = horizontalComeFrom[bubblesImages[i].comeFrom || "top left"];
+      const currentVerticalComeFrom = verticalComeFrom[bubblesImages[i].comeFrom || "top left"];
+      const currentSpeed = speed[bubblesImages[i].speed || "normal"];
+      (bubbleElements[i] as HTMLElement).style.transform = `translateY(${currentVerticalComeFrom}${distanceFromTop * currentSpeed * 0.3}px) translateX(${currentHorizontalComeFrom}${distanceFromTop * currentSpeed}px)`;
+    }
+  };
+
+  globalThis.addEventListener('scroll', handleScroll);
+
+  return () => {
+    globalThis.removeEventListener('scroll', handleScroll);
+  };
+}
+
 const refreshArrowsVisibility = () => {
     const currentTarget = event!.currentTarget as HTMLElement;
     refresh(0);
@@ -39,6 +78,23 @@ const refreshArrowsVisibility = () => {
         }, 200);
     }
 };
+
+/** @title {{alt}} */
+export interface IImage {
+  src?: ImageWidget;
+  alt?: string;
+  width?: number;
+  height?: number;
+}
+
+/** @title {{alt}} */
+export interface BubbleImage extends IImage {
+  horizontalPosition?: string;
+  verticalPosition?: string;
+  comeFrom?: "top left" | "top right" | "bottom left" | "bottom right"
+  speed?: "normal" | "slow" | "fast";
+}
+
 export interface Content {
     description?: HTMLWidget;
     avatar?: ImageWidget;
@@ -61,7 +117,9 @@ export interface Testimonial {
 }
 export interface Props {
     title?: RichText;
-    titleFont?:string;
+    titleFont?: string;
+    caption?: RichText;
+    captionFont?: string;
     slides?: Testimonial[];
     /**
      * @title Show arrows
@@ -70,6 +128,7 @@ export interface Props {
     arrows?: boolean;
     /** @format color-input */
     arrowsColor?: string;
+  bubbleImages?: BubbleImage[];
 }
 const DEFAULT_PROPS = {
     slides: [
@@ -189,26 +248,39 @@ function Buttons({ arrowsColor }: {
     </div>
   </div>);
 }
-function Carousel(props: Props) {
+function TestimonialsWithBubbles(props: Props) {
     const id = useId();
-    const { title, slides, titleFont } = { ...DEFAULT_PROPS, ...props };
-    return (<AnimateOnShow animation="animate-fade-up50" delay={300}>
+    const { title, slides, titleFont, caption, captionFont, bubbleImages = [] } = { ...DEFAULT_PROPS, ...props };
+    return (<AnimateOnShow divClass="relative" animation="animate-fade-up50" delay={300}>
+      <div id={id} class="min-h-min flex flex-col lg:container md:max-w-[1332px] lg:mx-auto pt-7 lg:pt-14" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
+        <script
+              type="module"
+              dangerouslySetInnerHTML={{ __html: useScript(onLoad, id, bubbleImages) }}
+            />
+        {title && <div class="text-[110px] leading-[120%] mb-4 text-primary" style={{ fontFamily:  titleFont}} dangerouslySetInnerHTML={{ __html: title}}/>}
+        {caption && <div class="text-6xl leading-[120%] text-primary" style={{ fontFamily:  captionFont}} dangerouslySetInnerHTML={{ __html: caption}}/>}
 
-    <div id={id} class="min-h-min flex flex-col lg:container md:max-w-[1332px] lg:mx-auto pt-7 lg:pt-14" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
+        <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-9 md:py-20 md:px-9" rootId={id} interval={0 && 0 * 1e3} infinite>
+          {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item max-w-[608px] w-full">
+            <SliderItem slide={slide} id={`${id}::${index}`}/>
+          </Slider.Item>))}
+        </Slider>
 
-      {title && <div class="text-4xl leading-snug pb-12 lg:pb-16 text-primary" style={{ fontFamily:  titleFont}} dangerouslySetInnerHTML={{ __html: title}}/>}
-
-      <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-9 md:px-9" rootId={id} interval={0 && 0 * 1e3} infinite>
-        {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item max-w-[608px] w-full">
-          <SliderItem slide={slide} id={`${id}::${index}`}/>
-        </Slider.Item>))}
-      </Slider>
-
-      <div class="flex justify-end pr-[22px] lg:px-9 ">
-        {/* {props.dots && <Dots slides={slides} interval={interval}/>}{" "} */}
-        {props.arrows && <Buttons arrowsColor={props.arrowsColor}/>}
+        <div class="flex justify-end pr-[22px] lg:px-9 ">
+          {/* {props.dots && <Dots slides={slides} interval={interval}/>}{" "} */}
+          {props.arrows && <Buttons arrowsColor={props.arrowsColor}/>}
+        </div>
+        {bubbleImages.map((image) => (
+          <Image 
+            src={image.src || ""}
+            width={image.width || 95}
+            height={image.height || 95}
+            alt={image.alt || "bubble image"}
+            class="absolute -z-40 rounded-full transition-transform ease-linear duration-150 bubbleImage"
+            style={{top: image.verticalPosition, left: image.horizontalPosition}}
+          />
+        ))}
       </div>
-    </div>
   </AnimateOnShow>);
 }
-export default Carousel;
+export default TestimonialsWithBubbles;

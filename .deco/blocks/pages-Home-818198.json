@@ -1994,9 +1994,10 @@
       "__resolveType": "site/sections/Footer2.tsx",
       "title": "<p><span style=\"color: #FAFAF5; font-size:70px; font-weight:100; \">O futuro do e-commerce começa com você.</span><br><span style=\"color: #FAFAF5; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \">Escolha soluções automatizadas e veja sua operação mais eficiente</span></p>",
       "titleFont": "Instrument serif",
-      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
+      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/50c87f63-bea7-44c0-a9d1-0de1dcc260fc/footer.mp4",
       "backgroundImage": {
-        "height": 300
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0d831a27-4ce5-4c9f-8375-ff33bc80500e/dobra-2.png",
+        "height": 448
       },
       "color1": "#371E55",
       "color2": "#FFFFFF",
@@ -2026,7 +2027,6 @@
         }
       ],
       "color3": "#EBEBEB",
-      "useBackground": "video",
       "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
       "logo": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
@@ -2090,7 +2090,8 @@
       "bottomBackground": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
       },
-      "id": "ecossistemaconteudo"
+      "id": "ecossistemaconteudo",
+      "useBackground": "video"
     },
     {
       "__resolveType": "site/sections/TalkToSpecialistModal.tsx"

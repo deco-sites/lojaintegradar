@@ -191,12 +191,18 @@
       "distanceBetweenButtons": 20
     },
     {
+      "__resolveType": "site/sections/ScrollableCards.tsx"
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "value": {
             "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
             "titleColor": "#371E55",
+            "title": "<p style=\"text-align: center\">Junte-se a mais de<br>2,7 milhões de lojas</p>",
+            "caption": "<p style=\"text-align: center\"><span>que escolheram a forma mais eficiente <br>de vender online</span></p>",
+            "titleFont": "Instrument serif",
             "slides": [
               {
                 "content": {
@@ -209,7 +215,8 @@
                   "nameBackgroundColor": "#ffffff",
                   "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
                   "avatarWidth": 399,
-                  "avatarHeight": 46
+                  "avatarHeight": 46,
+                  "backgroundColor": ""
                 }
               },
               {
@@ -228,19 +235,17 @@
             "arrows": false,
             "arrowsColor": "",
             "dots": false,
-            "title": "<p style=\"text-align: center\">Junte-se a mais de<br>2,7 milhões de lojas</p>",
-            "titleFont": "Instrument serif",
             "bubbleImages": [
               {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10c91eb1-0f78-465d-9fa6-49438978da81/bubble-image-1.jpg",
-                "horizontalPosition": "15%",
+                "horizontalPosition": "16%",
                 "verticalPosition": "5%",
                 "alt": "oldman on laptop",
                 "speed": "fast"
               },
               {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d5f1a647-cbf8-4ba9-bc36-16b01ac784bf/bubble-image-3.jpg",
-                "horizontalPosition": "0",
+                "horizontalPosition": "2%",
                 "alt": "lady holding phone",
                 "comeFrom": "top left",
                 "speed": "slow",
@@ -251,7 +256,7 @@
                 "speed": "normal",
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/dea1f370-0fde-40bc-a99f-f824dd35d68d/bubble-image-4.png",
                 "verticalPosition": "20%",
-                "horizontalPosition": "9%",
+                "horizontalPosition": "10%",
                 "alt": "man on opening laptop"
               },
               {
@@ -276,11 +281,64 @@
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea2d2fac-5029-4de9-b739-f935f947ec58/bubble-image-6.png",
                 "alt": "man holding pencil",
                 "verticalPosition": "53%",
-                "horizontalPosition": "-20px"
+                "horizontalPosition": "1%"
+              },
+              {
+                "comeFrom": "top right",
+                "speed": "slow",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e9719f1e-a26e-4006-b720-92b9a0ccf46c/bubble-image-7.jpg",
+                "alt": "woman on laptop",
+                "horizontalPosition": "92%",
+                "verticalPosition": "2%"
+              },
+              {
+                "comeFrom": "top right",
+                "speed": "fast",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e437c963-677d-417b-9530-414d819e9311/bubble-image-8.jpg",
+                "alt": "man with blue shirt",
+                "horizontalPosition": "77%",
+                "verticalPosition": "4%"
+              },
+              {
+                "comeFrom": "top right",
+                "speed": "fast",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aab535f6-b04a-4827-ae41-dfd92db98793/bubble-image-9.jpg",
+                "alt": "man holding tablet",
+                "horizontalPosition": "77%",
+                "verticalPosition": "23%"
+              },
+              {
+                "comeFrom": "bottom right",
+                "speed": "slow",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec9b56b2-a0eb-48ea-a418-73f63562182e/bubble-image-10.jpg",
+                "horizontalPosition": "90%",
+                "verticalPosition": "27%",
+                "alt": "man holding notebook"
+              },
+              {
+                "comeFrom": "bottom right",
+                "speed": "normal",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a39c4644-5ccf-4c81-8a93-ab765f68c65a/bubble-image-11.jpg",
+                "horizontalPosition": "83%",
+                "verticalPosition": "40%",
+                "alt": "man holding paper"
+              },
+              {
+                "comeFrom": "bottom right",
+                "speed": "slow",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1a0b5443-1820-4d69-95c7-bb0bd79d6bd9/bubble-image-12.jpg",
+                "horizontalPosition": "91%",
+                "verticalPosition": "54%",
+                "alt": "woman holding folder"
               }
             ],
-            "caption": "<p style=\"text-align: center\"><span>que escolheram a forma mais eficiente <br>de vender online</span></p>",
-            "captionFont": "Instrument serif"
+            "captionFont": "Instrument serif",
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33eb18cd-3071-4d34-9202-937feca15495/Testimonials-background.svg"
+              },
+              "use": "image"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -294,8 +352,10 @@
         {
           "value": {
             "__resolveType": "site/sections/Logos.tsx",
-            "titleColor": "#371E55",
             "title": "<p><span style=\"color: rgb(0, 48, 55)\">Uma escolha estratégica para vender mais</span></p>",
+            "titleColor": "#371E55",
+            "captionColor": "#5F6E82",
+            "titleFont": "Instrument serif",
             "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
             "logos": [
               {
@@ -327,9 +387,7 @@
                 "altText": "+Mu logo"
               }
             ],
-            "captionColor": "#5F6E82",
-            "paddingTop": "40px",
-            "titleFont": "Instrument serif"
+            "paddingTop": "40px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -339,8 +397,10 @@
         {
           "value": {
             "__resolveType": "site/sections/Logos.tsx",
-            "titleColor": "#371E55",
             "title": "<p><span style=\"color: rgb(0, 48, 55)\">Uma escolha estratégica para vender mais</span></p>",
+            "titleColor": "#371E55",
+            "captionColor": "#5F6E82",
+            "titleFont": "Instrument serif",
             "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
             "logos": [
               {
@@ -382,8 +442,6 @@
                 "height": 72
               }
             ],
-            "captionColor": "#5F6E82",
-            "titleFont": "Instrument serif",
             "paddingTop": "120px"
           },
           "rule": {
@@ -1211,12 +1269,12 @@
         {
           "value": {
             "__resolveType": "site/sections/PlansV2.tsx",
+            "id": "plans",
+            "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
+            "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
             "slides": [
               {
                 "bulletPoints": {
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
-                  },
                   "items": [
                     {
                       "text": "Produtos e visitas ilimitados"
@@ -1245,12 +1303,15 @@
                       "text": "Migração 100% assistida"
                     }
                   ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
+                  },
                   "itemsTextColor": "#FAFAF5",
                   "tooltipTextColor": "#003037",
                   "tooltipBackgroundColor": "#FAFAF5"
                 },
-                "titleColor": "#ffffff",
                 "title": "<p>Elite</p>",
+                "titleColor": "#ffffff",
                 "tag": {
                   "text": "Black Friday",
                   "icon": {
@@ -1476,9 +1537,6 @@
                 "titleFont": "Instrument Serif"
               }
             ],
-            "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
-            "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
-            "id": "plans",
             "annualLabel": "Anual",
             "montlyLabel": "Mensal",
             "dots": false,
@@ -1538,12 +1596,12 @@
         {
           "value": {
             "__resolveType": "site/sections/PlansV2.tsx",
+            "id": "plans",
+            "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
+            "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
             "slides": [
               {
                 "bulletPoints": {
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
-                  },
                   "items": [
                     {
                       "text": "Produtos e visitas ilimitados"
@@ -1572,12 +1630,15 @@
                       "text": "Migração 100% assistida"
                     }
                   ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
+                  },
                   "itemsTextColor": "#FAFAF5",
                   "tooltipTextColor": "#003037",
                   "tooltipBackgroundColor": "#FAFAF5"
                 },
-                "titleColor": "#ffffff",
                 "title": "<p>Elite</p>",
+                "titleColor": "#ffffff",
                 "tag": {
                   "icon": {
                     "alt": "crown icon"
@@ -1804,9 +1865,6 @@
                 "titleFont": "Instrument Serif"
               }
             ],
-            "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
-            "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
-            "id": "plans",
             "annualLabel": "Anual",
             "montlyLabel": "Mensal",
             "dots": false,

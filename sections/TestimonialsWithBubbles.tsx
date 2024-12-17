@@ -1,4 +1,4 @@
-import type { ImageWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
+import type { ImageWidget, HTMLWidget, RichText, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
@@ -30,7 +30,8 @@ const onLoad = (rootId: string, bubblesImages: BubbleImage[]) => {
   }
 
   const handleScroll = () => {
-    const distanceFromTop = (parent?.getBoundingClientRect().top - 200);
+    let distanceFromTop = (parent?.getBoundingClientRect().top - 200);
+    if (distanceFromTop < 0) distanceFromTop = 0;
     for (let i = 0; i < bubbleElements.length; i++) {
       const currentHorizontalComeFrom = horizontalComeFrom[bubblesImages[i].comeFrom || "top left"];
       const currentVerticalComeFrom = verticalComeFrom[bubblesImages[i].comeFrom || "top left"];
@@ -95,6 +96,12 @@ export interface BubbleImage extends IImage {
   speed?: "normal" | "slow" | "fast";
 }
 
+export interface BackgroundMedia {
+    image?: IImage;
+    video?: VideoWidget;
+    use?: "image" | "video";
+}
+
 export interface Content {
     description?: HTMLWidget;
     avatar?: ImageWidget;
@@ -110,6 +117,8 @@ export interface Content {
     position?: string;
     /** @format color-input */
     quoteIconColor?: string;
+    /** @format color-input */
+    backgroundColor?: string;
 }
 /** @title {{content.alt}} */
 export interface Testimonial {
@@ -128,6 +137,7 @@ export interface Props {
     arrows?: boolean;
     /** @format color-input */
     arrowsColor?: string;
+    backgroundMedia?: BackgroundMedia;
   bubbleImages?: BubbleImage[];
 }
 const DEFAULT_PROPS = {
@@ -184,8 +194,8 @@ function SliderItem({ slide, id }: {
     id: string;
 }) {
     const { content, } = slide;
-    return (<div id={id} class="relative w-full min-h-[292px]">
-    <div class="flex flex-col justify-between rounded-[32px] h-full shadow-spreaded2 overflow-hidden pt-7">
+    return (<div id={id} class="relative w-full min-h-[292px] z-10">
+    <div class="flex flex-col justify-between rounded-[32px] h-full shadow-spreaded2 overflow-hidden pt-7" style={{background: content?.backgroundColor}}>
 
       <div class="px-6 md:pl-12 md:pr-7">
         <svg width="31" height="22" viewBox="0 0 31 22" class="text-primary fill-current" xmlns="http://www.w3.org/2000/svg" style={{ color: content?.quoteIconColor }}>
@@ -250,8 +260,8 @@ function Buttons({ arrowsColor }: {
 }
 function TestimonialsWithBubbles(props: Props) {
     const id = useId();
-    const { title, slides, titleFont, caption, captionFont, bubbleImages = [] } = { ...DEFAULT_PROPS, ...props };
-    return (<AnimateOnShow divClass="relative" animation="animate-fade-up50" delay={300}>
+    const { title, slides, titleFont, caption, captionFont, bubbleImages = [], backgroundMedia } = { ...DEFAULT_PROPS, ...props };
+    return (<div class="relative overflow-hidden" >
       <div id={id} class="min-h-min flex flex-col lg:container md:max-w-[1332px] lg:mx-auto pt-7 lg:pt-14" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
         <script
               type="module"
@@ -281,6 +291,17 @@ function TestimonialsWithBubbles(props: Props) {
           />
         ))}
       </div>
-  </AnimateOnShow>);
+      {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
+            src={backgroundMedia.image.src}
+            alt={backgroundMedia.image.alt || "background image"}
+            width={backgroundMedia.image.width || 1440}
+            height={backgroundMedia.image.height || 960}
+            class="absolute -z-50 top-0 left-0 h-full w-full object-cover"
+        />}
+        {backgroundMedia?.use == "video" && backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading="lazy" loop
+            class="object-cover absolute -z-50 top-0 left-0 h-full w-full">
+            <source src={backgroundMedia.video} type="video/mp4" />
+        </video>}
+  </div>);
 }
 export default TestimonialsWithBubbles;

@@ -147,6 +147,22 @@
       "hideAsideMenu": true
     },
     {
+      "__resolveType": "site/sections/FloatingButtons.tsx",
+      "buttons": [
+        {
+          "image": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
+            "alt": "Whatsapp icon"
+          },
+          "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero+saber+mais+informações+sobre+a+Loja+Integrada...&type=phone_number&app_absent=0",
+          "size": 57
+        }
+      ],
+      "distanceFromRightEnd": 34,
+      "distanceFromBottom": 120,
+      "distanceBetweenButtons": 20
+    },
+    {
       "__resolveType": "site/sections/HeroV2.tsx",
       "title": {
         "text": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255)\">A plataforma</span><span style=\"color: rgb(113, 219, 212)\"> AI-first</span><span style=\"color: rgb(255, 255, 255)\"> que acelera</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255)\">sua operação para vender mais</span></p>",
@@ -175,20 +191,17 @@
       "paddingBottom": "166px"
     },
     {
-      "__resolveType": "site/sections/FloatingButtons.tsx",
-      "buttons": [
-        {
-          "image": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
-            "alt": "Whatsapp icon"
-          },
-          "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero+saber+mais+informações+sobre+a+Loja+Integrada...&type=phone_number&app_absent=0",
-          "size": 57
-        }
-      ],
-      "distanceFromRightEnd": 34,
-      "distanceFromBottom": 120,
-      "distanceBetweenButtons": 20
+      "__resolveType": "site/sections/CardsHero.tsx",
+      "leftColumn": {
+        "cards": [
+          {
+            "cta": [],
+            "useBackground": "image",
+            "title": "<p><span>“Leram meu  pensamento!”</span></p>",
+            "titleColor": "linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%)"
+          }
+        ]
+      }
     },
     {
       "__resolveType": "site/sections/ScrollableCards.tsx"
@@ -199,10 +212,10 @@
         {
           "value": {
             "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
-            "titleColor": "#371E55",
             "title": "<p style=\"text-align: center\">Junte-se a mais de<br>2,7 milhões de lojas</p>",
-            "caption": "<p style=\"text-align: center\"><span>que escolheram a forma mais eficiente <br>de vender online</span></p>",
+            "titleColor": "#371E55",
             "titleFont": "Instrument serif",
+            "caption": "<p style=\"text-align: center\"><span>que escolheram a forma mais eficiente <br>de vender online</span></p>",
             "slides": [
               {
                 "content": {

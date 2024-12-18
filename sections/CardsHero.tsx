@@ -24,28 +24,33 @@ export interface IImage {
     height?: number;
 }
 
-/** @title {{title}} */
 export interface Card {
     title?: RichText;
     /** @format color-input */
     titleColor?: string;
-    text?: RichText;
+    titleFont?: string;
+    spaceBetweenTitleAndText?: string;
+    text?: HTMLWidget;
     cta?: CTA[];
     backgroundImage?: IImage;
     backgroundVideo?: VideoWidget;
     useBackground?: 'image' | 'video';
     /** @format color-input */
     borderColor?: string;
-    minHeight?: number;
+    minHeight?: string;
 }
 
 export function CardColumn({ cards = [] }: { cards?: Card[] }) {
     return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow">
         {cards.map((card, index) => (
-            <AnimateOnShow animation="animate-fade-up50" divClass="relative rounded-md border py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 overflow-hidden" style={{ borderColor: card.borderColor, minHeight: card.minHeight }} delay={100 * index}>
-                {card.title && <div class="text-2xl text-primary font-semibold leading-[120%]" style={{ background: card.titleColor, backgroundClip: "text", color: "transparent" }} dangerouslySetInnerHTML={{ __html: card.title }} />}
-                <div dangerouslySetInnerHTML={{ __html: card.text || "" }} class="mt-2.5 text-base font-normal leading-normal" />
-                <div class="flex flex-wrap gap-7 mt-5">
+            <AnimateOnShow animation="animate-fade-up50" divClass="relative rounded-md border py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 flex flex-col overflow-hidden" style={{ borderColor: card.borderColor, minHeight: card.minHeight }} delay={100 * index}>
+                {card.title && <div
+                    class="text-2xl text-primary font-normal leading-none"
+                    style={{ background: card.titleColor, backgroundClip: "text", color: "transparent", fontFamily: card.titleFont }}
+                    dangerouslySetInnerHTML={{ __html: card.title }}
+                />}
+                <div dangerouslySetInnerHTML={{ __html: card.text || "" }} class="mt-2.5 text-base font-normal leading-[120%]" style={{ marginTop: card.spaceBetweenTitleAndText }} />
+                <div class="flex flex-wrap gap-7 mt-auto">
                     {card.cta?.map((button) => {
                         return <a
                             href={button?.href ?? "#"}

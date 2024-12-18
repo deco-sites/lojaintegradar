@@ -944,23 +944,40 @@
                 ]
               }
             },
-            "finalButtons": [],
+            "finalButtons": [
+              {
+                "type": "link",
+                "text": "Criar loja",
+                "link": "/"
+              }
+            ],
             "bottomSection": {
-              "__resolveType": "site/sections/Carousel.tsx",
-              "slides": [],
-              "cta": [
-                {
-                  "ctaStyle": "button",
-                  "href": "#plans",
-                  "text": "Assinar plano",
-                  "backgroundColor": "#ffffff",
-                  "textColor": "#003037",
-                  "borderColor": "#ffffff"
-                }
-              ],
-              "arrows": false,
-              "arrowsColor": "#FAFAF5",
-              "id": "recursosferramentas"
+              "__resolveType": "site/sections/HeroV2.tsx",
+              "cta": [],
+              "tag": {
+                "placement": "left"
+              },
+              "title": {},
+              "bulletpoints": {
+                "items": [],
+                "bulletPointsIcon": {}
+              },
+              "ctaDiv": {
+                "contentPlacement": "left",
+                "icon": {}
+              },
+              "media": {
+                "use": "image",
+                "image": {},
+                "video": {}
+              },
+              "mediaPlacement": "right",
+              "backgroundMedia": {
+                "use": "image",
+                "image": {}
+              },
+              "paddingTop": "0",
+              "paddingBottom": "0"
             }
           },
           {
@@ -1202,7 +1219,7 @@
                 "tabImage": {
                   "widthDesktop": 606,
                   "heightDesktop": 665,
-                  "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6c7fce8f-0b8d-43d0-9b52-9ba864ff3ca1/ecossistema2.png"
+                  "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ad6421d-59a8-485b-9df5-cca34902f762/crescimento-inteligente-img.png"
                 },
                 "highlight": false,
                 "buttons": []
@@ -1219,7 +1236,11 @@
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Liberdade para personalizar</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Liberdade para personalizar</span></p>"
                 },
-                "tabImage": {},
+                "tabImage": {
+                  "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7b73a75d-54be-4797-bb0c-aeefb0595851/Personalizacao-temas.png",
+                  "widthDesktop": 606,
+                  "heightDesktop": 627
+                },
                 "highlight": false,
                 "buttons": []
               },
@@ -1427,7 +1448,8 @@
                 "tabImage": {
                   "widthDesktop": 606,
                   "width": 0,
-                  "heightDesktop": 665
+                  "heightDesktop": 665,
+                  "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ad65e623-7b72-4549-90ea-f8052b1a32f0/usabilidade.png"
                 },
                 "videoOn": false,
                 "button": {},
@@ -1465,14 +1487,14 @@
                   "bulletPoints": {
                     "items": []
                   },
-                  "caption": "<p style='line-height: 1.5;'>Soluções integradas com ERPs, canais de vendas, operação omnichannel, redes sociais, parceiros e agências — tudo em um só lugar.</p>",
+                  "caption": "<p style='line-height: 1.5;'>Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via telefone e WhatsApp</p>",
                   "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d8939915-c422-44fa-a2f8-f8d7c35724d4/Ecossistema-completo.png",
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb7d8d6-b1ed-4a95-b53d-28d0b26852de/suporte-facilitado.png",
                     "height": 456,
                     "width": 484
                   },
                   "textColor": "#FAFAF5",
-                  "title": "Ecossistema completo"
+                  "title": "Suporte facilitado"
                 },
                 {
                   "textPlacement": "Bottom",
@@ -1483,14 +1505,14 @@
                   "bulletPoints": {
                     "items": []
                   },
-                  "title": "Suporte facilitado",
+                  "title": "Ecossistema completo",
                   "textColor": "#FAFAF5",
                   "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb7d8d6-b1ed-4a95-b53d-28d0b26852de/suporte-facilitado.png",
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d8939915-c422-44fa-a2f8-f8d7c35724d4/Ecossistema-completo.png",
                     "height": 456,
                     "width": 484
                   },
-                  "caption": "<p style='line-height: 1.5;'>Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via telefone e WhatsApp</p>"
+                  "caption": "<p style='line-height: 1.5;'>Soluções integradas com ERPs, canais de vendas, operação omnichannel, redes sociais, parceiros e agências — tudo em um só lugar.</p>"
                 },
                 {
                   "textPlacement": "Bottom",
@@ -1504,7 +1526,7 @@
                   "title": "Manutenção econômica",
                   "textColor": "#FAFAF5",
                   "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb7d8d6-b1ed-4a95-b53d-28d0b26852de/suporte-facilitado.png",
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e9014575-b95f-4b05-acf4-7d6a277aea0a/manutencao-economica.png",
                     "height": 456,
                     "width": 484
                   },

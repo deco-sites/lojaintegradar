@@ -593,12 +593,13 @@
                       "showIcon": false
                     },
                     {
-                      "ctaStyle": "button",
                       "href": "/",
                       "backgroundColor": "transparent",
                       "borderColor": "#003037",
                       "textColor": "#003037",
-                      "text": "Abrir loja"
+                      "text": "Abrir loja",
+                      "showIcon": false,
+                      "ctaStyle": "button"
                     }
                   ],
                   "paddingBottom": "120px",
@@ -985,7 +986,8 @@
                   "ctaStyle": "button",
                   "backgroundColor": "#003037",
                   "textColor": "#FFFFFF",
-                  "borderColor": "#003037"
+                  "borderColor": "#003037",
+                  "showIcon": false
                 }
               ],
               "useBackground": "image",

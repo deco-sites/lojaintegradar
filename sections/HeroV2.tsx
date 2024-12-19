@@ -2,6 +2,7 @@ import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
 export interface BulletPoints {
     items?: string[];
@@ -24,6 +25,22 @@ export interface CTA {
     ctaStyle: "button" | "link";
     showIcon?: boolean;
     width?: string;
+}
+
+export interface CreateStoreWithPlanCTA {
+    planId: string;
+    text?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle?: "button" | "link";
+    showIcon?: boolean;
+    width?: string;
+    order?: number;
 }
 
 export interface IImage {
@@ -78,6 +95,7 @@ export interface Props {
     tag?: Tag;
     title?: Title;
     caption?: RichText;
+    createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     bulletpoints?: BulletPoints;
     ctaDiv?: Div;
@@ -116,7 +134,7 @@ export function HeroMedia({ media }: { media?: Media }) {
     </div>
 }
 
-export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints, sectionMinHeight, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement = "right", paddingLeft, paddingRight }: Props) {
+export default function HeroV2({ id, tag, title, caption, createStoreCta, cta = [], bulletpoints, sectionMinHeight, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement = "right", paddingLeft, paddingRight }: Props) {
     const placement = {
         "left": "justify-start",
         "center": "justify-center",
@@ -165,6 +183,18 @@ export default function HeroV2({ id, tag, title, caption, cta = [], bulletpoints
                             class="absolute bottom-4 right-3 lg:bottom-6 lg:right-8"
                         />}
                         {cta.length > 0 && <div class={`mb-8 flex gap-4 flex-wrap ${placement[ctaDiv?.contentPlacement || "left"]}`}>
+                            {createStoreCta?.text && <CreateStoreCta
+                                period="anual"
+                                text={createStoreCta.text}
+                                planId={createStoreCta.planId}
+                                showIcon={createStoreCta.showIcon}
+                                underlineText={createStoreCta.underlineText}
+                                icon="long arrow"
+                                ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base cursor-pointer`}
+                                style={createStoreCta.ctaStyle == "button"
+                                    ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order, width: createStoreCta.width }
+                                    : { color: createStoreCta.textColor, order: createStoreCta.order, width: createStoreCta.width }}
+                            />}
                             {cta.map((button) => {
                                 if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                                     showIcon={button.showIcon}

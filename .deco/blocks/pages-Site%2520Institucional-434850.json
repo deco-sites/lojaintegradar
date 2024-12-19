@@ -52,7 +52,16 @@
             "textColor": "#371E55"
           }
         ],
-        "buttons": [],
+        "buttons": [
+          {
+            "ctaStyle": "button",
+            "href": "https://app.lojaintegrada.com.br/painel/login",
+            "text": "<p>Fazer login</p>",
+            "backgroundColor": "Transparent",
+            "textColor": "#FAFAF5",
+            "borderColor": "#FAFAF5"
+          }
+        ],
         "mobileButtons": [],
         "asideMenuButtons": [
           {
@@ -272,7 +281,7 @@
             "createStoreCta": {
               "planId": "172",
               "ctaStyle": "link",
-              "text": "Criar loja 2",
+              "text": "Criar loja",
               "textColor": "#003037",
               "showIcon": true
             }

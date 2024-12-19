@@ -60,6 +60,7 @@ export interface CreateStoreWithPlanCTA {
   borderColor?: string;
   ctaStyle: "button" | "link";
   showIcon?: boolean;
+  order?: number;
 }
 
 export interface HeaderMessage {
@@ -222,7 +223,9 @@ export default function Header2({ logo = {
                 showIcon={navigation.createStoreCtaMobile.showIcon}
                 underlineText={navigation.createStoreCtaMobile.underlineText}
                 ctaClass={` font-bold text-primary px-4 py-1.5 rounded-md transition-all hover:scale-110 text-xs bg-primary-content bg-opacity-60 border cursor-pointer createStoreMobile`}
-                style={navigation.createStoreCtaMobile.ctaStyle == "button" ? { background: navigation.createStoreCtaMobile.backgroundColor, color: navigation.createStoreCtaMobile.textColor, borderColor: navigation.createStoreCtaMobile.borderColor } : { color: navigation.createStoreCtaMobile.textColor }}
+                style={navigation.createStoreCtaMobile.ctaStyle == "button" 
+                  ? { background: navigation.createStoreCtaMobile.backgroundColor, color: navigation.createStoreCtaMobile.textColor, borderColor: navigation.createStoreCtaMobile.borderColor, order: navigation.createStoreCtaMobile.order } 
+                  : { color: navigation.createStoreCtaMobile.textColor, order: navigation.createStoreCtaMobile.order }}
               />}
               {navigation?.mobileButtons?.map((button) => {
                 return <a
@@ -251,7 +254,9 @@ export default function Header2({ logo = {
                 text={navigation.createStoreCta.text}
                 underlineText={navigation.createStoreCta.underlineText}
                 ctaClass={`${navigation.createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
-                style={navigation.createStoreCta.ctaStyle == "button" ? { backgroundColor: navigation.createStoreCta.backgroundColor, color: navigation.createStoreCta.textColor, borderColor: navigation.createStoreCta.borderColor } : { color: navigation.createStoreCta.textColor }}
+                style={navigation.createStoreCta.ctaStyle == "button" 
+                  ? { backgroundColor: navigation.createStoreCta.backgroundColor, color: navigation.createStoreCta.textColor, borderColor: navigation.createStoreCta.borderColor, order: navigation.createStoreCta.order } 
+                  : { color: navigation.createStoreCta.textColor, order: navigation.createStoreCta.order }}
               />}
               {navigation?.buttons?.map((button) => {
                 if (button.href == "/talkToSpecialist") return <TalkToSpecialistCta 

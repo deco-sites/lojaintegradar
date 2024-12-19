@@ -147,7 +147,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                             className={`mt-1 w-full p-2 border text-black ${errors.nome ? "border-red-500" : "border-gray-300"
                                 } rounded-md`}
                             placeholder={namePlaceholder || "Seu nome"}
-                            style={{ color: inputsTextColor }}
+                            style={{ color: inputsTextColor, borderColor: errors.nome ? "#ef4444 " : inputsBorderColor }}
                             required
                         />
                         {errors.nome && (
@@ -167,7 +167,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                             className={`mt-1 w-full p-2 border ${errors.email ? "border-red-500" : "border-gray-300"
                                 } rounded-md`}
                             placeholder={emailPlaceholder || "Seu e-mail"}
-                            style={{ color: inputsTextColor }}
+                            style={{ color: inputsTextColor, borderColor: errors.email ? "#ef4444 " : inputsBorderColor }}
                             required
                         />
                         {errors.email && (
@@ -186,7 +186,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                             type="password"
                             className="mt-1 w-full p-2 border border-gray-300 rounded-md"
                             placeholder={passwordPlaceholder || "Senha"}
-                            style={{ color: inputsTextColor }}
+                            style={{ color: inputsTextColor, borderColor: inputsBorderColor }}
                             required
                         />
                         <p
@@ -207,7 +207,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                             type="password"
                             className="mt-1 w-full p-2 border border-gray-300 rounded-md"
                             placeholder={confirmPasswordPlaceholder || "Confirme sua senha"}
-                            style={{ color: inputsTextColor }}
+                            style={{ color: inputsTextColor, borderColor: inputsBorderColor }}
                             required
                         />
                         {errors.confirmacao_senha && (

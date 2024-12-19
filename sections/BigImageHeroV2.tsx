@@ -2,6 +2,7 @@ import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
 export interface IImage {
     src?: ImageWidget;
@@ -25,6 +26,21 @@ export interface CTA {
     showIcon?: boolean;
 }
 
+export interface CreateStoreWithPlanCTA {
+    planId: string;
+    text?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle?: "button" | "link";
+    showIcon?: boolean;
+    order?: number;
+}
+
 /** @title {{title}} */
 export interface Feature {
     icon?: IImage;
@@ -46,12 +62,13 @@ export interface Props {
     image?: IImage;
     video?: VideoWidget;
     use?: "image" | "video";
+    createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     paddingTop?: string;
     paddingBottom?: string;
 }
 
-export default function BigHeroImageV2({ title, titleFont, caption, captionFont, image, video, use = "image", features, cta, paddingBottom, paddingTop, id }: Props) {
+export default function BigHeroImageV2({ title, createStoreCta, titleFont, caption, captionFont, image, video, use = "image", features, cta, paddingBottom, paddingTop, id }: Props) {
     return <div id={id} style={{ paddingTop: paddingTop, paddingBottom: paddingBottom }} class="pt-10 lg:pt-28">
         <div class="max-w-[1440px] mx-auto">
             <div class="px-7 mb-5">
@@ -100,19 +117,30 @@ export default function BigHeroImageV2({ title, titleFont, caption, captionFont,
                 </video>}
             </AnimateOnShow>
             {cta && <AnimateOnShow divClass="flex flex-wrap justify-center items-center gap-7 mt-4 px-7" animation="animate-fade-up">
-                {cta.map((button) => {
+                {createStoreCta?.text && <CreateStoreCta
+                    period="anual"
+                    text={createStoreCta.text}
+                    planId={createStoreCta.planId}
+                    showIcon={createStoreCta.showIcon}
+                    underlineText={createStoreCta.underlineText}
+                    ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                    style={createStoreCta.ctaStyle != "link"
+                        ? { background: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order }
+                        : { color: createStoreCta.textColor, order: createStoreCta.order }}
+                />}
+                {cta.map((button, index) => {
                     if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                         showIcon={button.showIcon}
                         underlineText={button.underlineText}
                         text={button.text}
                         ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} h-auto flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
-                        style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                        style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
                     />
                     return <a
                         href={button?.href ?? "#"}
                         target={button?.href.includes("http") ? "_blank" : ""}
                         class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} h-auto flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
-                        style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                        style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
                     >
                         {button?.text}
                         {button.underlineText && <span class="underline">{button.underlineText}</span>}

@@ -2,6 +2,7 @@ import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts
 import Image from "apps/website/components/Image.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
 /** @title {{text}} {{underlineText}} */
 export interface CTA {
@@ -18,6 +19,21 @@ export interface CTA {
     showIcon?: boolean;
 }
 
+export interface CreateStoreWithPlanCTA {
+    planId: string;
+    text?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle?: "button" | "link";
+    showIcon?: boolean;
+    order?: number;
+}
+
 export interface IImage {
     src?: ImageWidget;
     alt?: string;
@@ -27,6 +43,7 @@ export interface IImage {
 
 export interface Props {
     text?: HTMLWidget;
+    createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     backgroundImage?: IImage;
     backgroundVideo?: VideoWidget;
@@ -34,7 +51,7 @@ export interface Props {
     sectionHeight?: string;
 }
 
-export default function FloatingImagesHero({ text, cta = [], backgroundImage, backgroundVideo, sectionHeight, useBackground }: Props) {
+export default function FloatingImagesHero({ text, cta = [], createStoreCta, backgroundImage, backgroundVideo, sectionHeight, useBackground }: Props) {
     return <div class="relative flex flex-col gap-5 lg:gap-10 lg:justify-center items-center overflow-hidden py-[38px] px-7" style={{ height: sectionHeight || "auto" }}>
         {useBackground == "image" && backgroundImage?.src && <Image
             src={backgroundImage.src}
@@ -55,20 +72,21 @@ export default function FloatingImagesHero({ text, cta = [], backgroundImage, ba
         >
             <source src={backgroundVideo} type="video/mp4" />
         </video>}
-        {/* {floatingImages?.map((image) => (
-            <Image
-                src={image.src || ""}
-                alt={image.alt || "floating image"}
-                width={image.width || 86}
-                height={image.height || 86}
-                class="absolute -z-40"
-                style={{ top: image.verticalPosition, left: image.horizontalPosition }}
-            />
-        ))} */}
         <AnimateOnShow animation="animate-fade-down50">
             {text && <div class="text-2xl lg:text-[56px] font-bold leading-[120%] max-w-[1130px]" dangerouslySetInnerHTML={{ __html: text }} />}
         </AnimateOnShow>
         <AnimateOnShow divClass="flex flex-wrap items-center justify-center gap-7" animation="animate-fade-up">
+            {createStoreCta?.text && <CreateStoreCta
+                period="anual"
+                text={createStoreCta.text}
+                planId={createStoreCta.planId}
+                showIcon={createStoreCta.showIcon}
+                underlineText={createStoreCta.underlineText}
+                ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base cursor-pointer`}
+                style={createStoreCta.ctaStyle != "link"
+                    ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order }
+                    : { color: createStoreCta.textColor, order: createStoreCta.order }}
+            />}
             {cta.map((button) => {
                 if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                     showIcon={button.showIcon}

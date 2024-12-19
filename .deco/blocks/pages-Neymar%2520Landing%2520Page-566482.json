@@ -730,7 +730,11 @@
               },
               "use": "image"
             },
-            "mediaPlacement": "left"
+            "mediaPlacement": "left",
+            "createStoreCta": {
+              "planId": "172",
+              "order": 0
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

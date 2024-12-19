@@ -1,6 +1,8 @@
-import type { ImageWidget, VideoWidget, HTMLWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, VideoWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import Image from "apps/website/components/Image.tsx";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
+import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
 /** @title {{text}} {{underlineText}} */
 export interface CTA {
@@ -13,7 +15,7 @@ export interface CTA {
     textColor?: string;
     /** @format color-input */
     borderColor?: string;
-    ctaStyle: "button" | "link";
+    ctaStyle?: "button" | "link";
     showIcon?: boolean;
 }
 
@@ -24,34 +26,75 @@ export interface IImage {
     height?: number;
 }
 
-/** @title {{title}} */
+export interface CreateStoreWithPlanCTA {
+    planId: string;
+    text?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle: "button" | "link";
+    showIcon?: boolean;
+    order?: number;
+}
+
 export interface Card {
-    title?: string;
+    title?: RichText;
     /** @format color-input */
     titleColor?: string;
+    titleFont?: string;
+    spaceBetweenTitleAndText?: string;
     text?: HTMLWidget;
+    createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     backgroundImage?: IImage;
     backgroundVideo?: VideoWidget;
     useBackground?: 'image' | 'video';
     /** @format color-input */
     borderColor?: string;
-    minHeight?: number;
+    minHeight?: string;
 }
 
 export function CardColumn({ cards = [] }: { cards?: Card[] }) {
     return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow">
         {cards.map((card, index) => (
-            <AnimateOnShow animation="animate-fade-up50" divClass="relative rounded-md border py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 overflow-hidden" style={{ borderColor: card.borderColor, minHeight: card.minHeight }} delay={100 * index}>
-                {card.title && <h2 class="text-2xl text-primary font-semibold leading-[120%]" style={{ color: card.titleColor }}>{card.title}</h2>}
-                <div dangerouslySetInnerHTML={{ __html: card.text || "" }} class="mt-2.5 text-base font-normal leading-normal" />
-                <div class="flex flex-wrap gap-7 mt-5">
-                    {card.cta?.map((button) => {
+            <AnimateOnShow animation="animate-fade-up50" divClass="relative rounded-md border py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 flex flex-col overflow-hidden" style={{ borderColor: card.borderColor, minHeight: card.minHeight }} delay={100 * index}>
+                {card.title && <div
+                    class="text-2xl text-primary font-normal leading-none"
+                    style={{ background: card.titleColor, backgroundClip: "text", color: "transparent", fontFamily: card.titleFont }}
+                    dangerouslySetInnerHTML={{ __html: card.title }}
+                />}
+                <div dangerouslySetInnerHTML={{ __html: card.text || "" }} class="mt-2.5 text-base font-normal leading-[120%]" style={{ marginTop: card.spaceBetweenTitleAndText }} />
+                <div class="flex flex-wrap gap-7 mt-auto">
+                    {card.createStoreCta?.text && <CreateStoreCta
+                        period="anual"
+                        text={card.createStoreCta.text}
+                        planId={card.createStoreCta.planId}
+                        showIcon={card.createStoreCta.showIcon}
+                        underlineText={card.createStoreCta.underlineText}
+                        icon="long arrow"
+                        ctaClass={`${card.createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base cursor-pointer`}
+                        style={card.createStoreCta.ctaStyle == "button"
+                            ? { backgroundColor: card.createStoreCta.backgroundColor, color: card.createStoreCta.textColor, borderColor: card.createStoreCta.borderColor, order: card.createStoreCta.order }
+                            : { color: card.createStoreCta.textColor, order: card.createStoreCta.order }}
+                    />}
+                    {card.cta?.map((button, index) => {
+                        if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
+                            showIcon={button.showIcon}
+                            underlineText={button.underlineText}
+                            text={button.text}
+                            icon="long arrow"
+                            ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base h-auto cursor-pointer`}
+                            style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
+                        />
                         return <a
                             href={button?.href ?? "#"}
                             target={button?.href.includes("http") ? "_blank" : ""}
                             class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base`}
-                            style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                            style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
                         >
                             {button?.text}
                             {button.underlineText && <span class="underline">{button.underlineText}</span>}

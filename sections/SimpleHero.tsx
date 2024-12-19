@@ -82,7 +82,6 @@ export default function FloatingImagesHero({ text, cta = [], createStoreCta, bac
                 planId={createStoreCta.planId}
                 showIcon={createStoreCta.showIcon}
                 underlineText={createStoreCta.underlineText}
-                icon="long arrow"
                 ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base cursor-pointer`}
                 style={createStoreCta.ctaStyle == "button"
                     ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order }

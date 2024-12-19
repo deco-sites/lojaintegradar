@@ -1,4 +1,6 @@
 import { useState, useEffect, useCallback } from "preact/hooks";
+import { CreateStoreFormProps } from "../../sections/CreateStoreHero.tsx"
+import { useId } from "site/sdk/useId.ts";
 
 const useMutationObserver = (domNodeSelector: string, observerOptions: MutationObserverInit, cb: MutationCallback) => {
     useEffect(() => {
@@ -18,7 +20,9 @@ const useMutationObserver = (domNodeSelector: string, observerOptions: MutationO
 };
 
 
-const CreateStoreForm = () => {
+const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeLink1, agreeLink2, agreeText2, agreeText3, nameCaption, namePlaceholder, passwordCaption, passwordPlaceholder, passwordText, confirmPasswordCaption, confirmPasswordPlaceholder, emailCaption, emailPlaceholder, inputsLabelColor, inputsTextColor, inputsBorderColor, inputsBellowTextColor, linksColor, buttonBackgroundColor, buttonTextColor }: CreateStoreFormProps) => {
+    const formId = "create-store-" + useId();
+
     const [getPlanId, setGetPlanId] = useState('');
     const [getPeriod, setGetPeriod] = useState('');
     const [getCoupon, setGetCoupon] = useState('');
@@ -80,31 +84,6 @@ const CreateStoreForm = () => {
         }
     };
 
-    const handleClose = () => {
-        const getModal = document.getElementById("createStoreForm");
-        if (getModal) {
-            getModal.classList.add("hidden");
-            getModal.classList.remove("flex");
-        }
-    }
-
-    const handler = useCallback((mutationsList: MutationRecord[]) => {
-        for (const mutation of mutationsList) {
-            if (mutation.type === 'attributes' && mutation.attributeName === 'data-planid') {
-                const modal = document.getElementById("createStoreForm");
-                const newPlanId = modal?.getAttribute("data-planid") || '';
-                const newPeriod = modal?.getAttribute("data-period") || 'anual';
-                const newCoupon = modal?.getAttribute("data-coupon") || '';
-                setGetPlanId(newPlanId);
-                setGetPeriod(newPeriod);
-                setGetCoupon(newCoupon);
-                break;
-            }
-        }
-    }, []);
-
-    useMutationObserver('#createStoreForm', { attributes: true, attributeFilter: ['data-planid'] }, handler);
-
     const validateForm = () => {
         const { nome, email, senha, confirmacao_senha } = formData;
         let hasError = false;
@@ -142,30 +121,33 @@ const CreateStoreForm = () => {
     };
 
     return (
-        <div id="createStoreForm" className=" z-30 inset-0 bg-black bg-opacity-50 items-center justify-center z-5">
-            <div className="relative mx-[10px] flex flex-col items-center p-6 w-full max-w-[550px] lg:mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+        <div className="inset-0 bg-opacity-50 items-center justify-center z-5">
+            <div
+                className="relative mx-[10px] flex flex-col items-center p-12 w-full max-w-[460px] lg:mx-auto bg-white rounded-2xl shadow-md overflow-hidden text-[#371e56]"
+                style={{ background: backgroundColor, color: inputsLabelColor }}>
 
 
                 <form
-                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=anual&plano_id=172`}
-                    id="modal-no-check"
+                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${periodo || 'anual'}&plano_id=${planoId || '172'}`}
+                    id={formId}
                     data-gtm-form-interact-id="0"
                     method="POST"
                     className="w-full flex flex-col items-center justify-center"
                     onSubmit={handleSubmit}
                 >
                     <div className="mt-4 w-full max-w-[450px]">
-                        <label className="block text-sm font-semibold text-[#371e56]">
-                            Nome
+                        <label className="block text-sm font-semibold ">
+                            {nameCaption || 'Nome'}
                         </label>
                         <input
                             name="nome"
                             value={formData.nome}
                             onInput={handleInputChange}
                             type="text"
-                            className={`mt-1 w-full p-2 border ${errors.nome ? "border-red-500" : "border-gray-300"
-                                } rounded-[80px]`}
-                            placeholder="Seu nome"
+                            className={`mt-1 w-full p-2 border text-black ${errors.nome ? "border-red-500" : "border-gray-300"
+                                } rounded-md`}
+                            placeholder={namePlaceholder || "Seu nome"}
+                            style={{ color: inputsTextColor }}
                             required
                         />
                         {errors.nome && (
@@ -174,8 +156,8 @@ const CreateStoreForm = () => {
                     </div>
 
                     <div className="mt-4 w-full max-w-[450px]">
-                        <label className="block text-sm font-semibold text-[#371e56]">
-                            E-mail
+                        <label className="block text-sm font-semibold ">
+                            {emailCaption || 'E-mail'}
                         </label>
                         <input
                             name="email"
@@ -183,8 +165,9 @@ const CreateStoreForm = () => {
                             onInput={handleInputChange}
                             type="email"
                             className={`mt-1 w-full p-2 border ${errors.email ? "border-red-500" : "border-gray-300"
-                                } rounded-[80px]`}
-                            placeholder="Seu e-mail"
+                                } rounded-md`}
+                            placeholder={emailPlaceholder || "Seu e-mail"}
+                            style={{ color: inputsTextColor }}
                             required
                         />
                         {errors.email && (
@@ -193,35 +176,38 @@ const CreateStoreForm = () => {
                     </div>
 
                     <div className="mt-4 w-full max-w-[450px]">
-                        <label className="block text-sm font-semibold text-[#371e56]">
-                            Senha
+                        <label className="block text-sm font-semibold ">
+                            {passwordCaption || 'Senha'}
                         </label>
                         <input
                             name="senha"
                             value={formData.senha}
                             onInput={handleInputChange}
                             type="password"
-                            className="mt-1 w-full p-2 border border-gray-300 rounded-[80px]"
-                            placeholder="Senha"
+                            className="mt-1 w-full p-2 border border-gray-300 rounded-md"
+                            placeholder={passwordPlaceholder || "Senha"}
+                            style={{ color: inputsTextColor }}
                             required
                         />
-                        <p className={`text-gray-500 text-xs mt-1 ${errors.senha && "text-red-500"}`}>
-                            Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e
-                            uma letra minúscula
+                        <p
+                            className={`text-gray-500 text-xs mt-1 ${errors.senha && "text-red-500"}`}
+                            style={{ color: errors.senha ? "#ef4444" : inputsBellowTextColor }}>
+                            {passwordText || 'Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula'}
                         </p>
                     </div>
 
                     <div className="mt-4 w-full max-w-[450px]">
-                        <label className="block text-sm font-semibold text-[#371e56]">
-                            Confirme sua senha
+                        <label className="block text-sm font-semibold ">
+                            {confirmPasswordCaption || 'Confirme sua senha'}
                         </label>
                         <input
                             name="confirmacao_senha"
                             value={formData.confirmacao_senha}
                             onInput={handleInputChange}
                             type="password"
-                            className="mt-1 w-full p-2 border border-gray-300 rounded-[80px]"
-                            placeholder="Confirme sua senha"
+                            className="mt-1 w-full p-2 border border-gray-300 rounded-md"
+                            placeholder={confirmPasswordPlaceholder || "Confirme sua senha"}
+                            style={{ color: inputsTextColor }}
                             required
                         />
                         {errors.confirmacao_senha && (
@@ -235,15 +221,15 @@ const CreateStoreForm = () => {
                         <label className="flex items-center">
                             <input type="checkbox" className="form-checkbox" name="termos" required />
                             <span className="ml-2 text-xs text-gray-600">
-                                Ao clicar, você concorda com os{" "}
-                                <a href="#" className="text-[#0C9898] font-bold">
-                                    Termos de Uso
-                                </a>{" "}
-                                e a{" "}
-                                <a href="#" className="text-[#0C9898] font-bold">
-                                    Política de Privacidade
+                                {agreeText1}
+                                <a href={agreeLink1?.href} target='_blank' className="text-[#0C9898] font-bold" style={{ color: linksColor }}>
+                                    {agreeLink1?.text}
                                 </a>
-                                .
+                                {agreeText2}
+                                <a href={agreeLink2?.href} target='_blank' className="text-[#0C9898] font-bold" style={{ color: linksColor }}>
+                                    {agreeLink2?.text}
+                                </a>
+                                {agreeText3}
                             </span>
                         </label>
                     </div>
@@ -257,7 +243,7 @@ const CreateStoreForm = () => {
                         <script dangerouslySetInnerHTML={{
                             __html: `
                             function onSubmit(token) {
-                                document.getElementById('modal-no-check').submit();
+                                document.getElementById('${formId}').submit();
                             }
 
                             `}}></script>
@@ -267,6 +253,7 @@ const CreateStoreForm = () => {
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
                             data-callback="onSubmit"
+                            style={{ background: buttonBackgroundColor, color: buttonTextColor }}
                         >
                             Abrir minha loja agora
                         </button>

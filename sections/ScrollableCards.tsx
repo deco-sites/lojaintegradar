@@ -48,7 +48,7 @@ export default function ScrollableCards() {
       dangerouslySetInnerHTML={{ __html: useScript(onLoad, rootId) }}
     />
     <div class="sticky top-0 h-[100vh] bg-black flex flex-col justify-center items-center">
-      <h2 class="text-4xl py-5">Testando uma coisa</h2>
+      <h2 class="text-4xl py-5">Test</h2>
       <div class="cardsContainer relative h-56 w-36">
 
         <div class={`absolute ${transitionClass}`}>

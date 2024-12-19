@@ -14,7 +14,7 @@ export interface CTA {
     textColor?: string;
     /** @format color-input */
     borderColor?: string;
-    ctaStyle: "button" | "link";
+    ctaStyle?: "button" | "link";
     showIcon?: boolean;
 }
 

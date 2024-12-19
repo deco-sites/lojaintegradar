@@ -182,7 +182,7 @@ export default function HeroV2({ id, tag, title, caption, createStoreCta, cta = 
                             height={ctaDiv.icon.height || 30}
                             class="absolute bottom-4 right-3 lg:bottom-6 lg:right-8"
                         />}
-                        {cta.length > 0 && <div class={`mb-8 flex gap-4 flex-wrap ${placement[ctaDiv?.contentPlacement || "left"]}`}>
+                        {(cta.length > 0 || createStoreCta?.text) && <div class={`mb-8 flex gap-4 flex-wrap ${placement[ctaDiv?.contentPlacement || "left"]}`}>
                             {createStoreCta?.text && <CreateStoreCta
                                 period="anual"
                                 text={createStoreCta.text}

@@ -86,7 +86,7 @@ export interface CTA {
     textColor?: string;
     /** @format color-input */
     borderColor?: string;
-    ctaStyle: "button" | "link";
+    ctaStyle?: "button" | "link";
     showIcon?: boolean;
 }
 
@@ -244,7 +244,7 @@ function Carousel(props: Props) {
                             showIcon={createStoreCta.showIcon}
                             underlineText={createStoreCta.underlineText}
                             ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
-                            style={createStoreCta.ctaStyle == "button"
+                            style={createStoreCta.ctaStyle != "link"
                                 ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order }
                                 : { color: createStoreCta.textColor, order: createStoreCta.order }}
                         />}

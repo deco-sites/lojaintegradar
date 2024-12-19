@@ -124,8 +124,8 @@ export default function BigHeroImageV2({ title, createStoreCta, titleFont, capti
                     showIcon={createStoreCta.showIcon}
                     underlineText={createStoreCta.underlineText}
                     ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
-                    style={createStoreCta.ctaStyle == "button"
-                        ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order }
+                    style={createStoreCta.ctaStyle != "link"
+                        ? { background: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order }
                         : { color: createStoreCta.textColor, order: createStoreCta.order }}
                 />}
                 {cta.map((button, index) => {

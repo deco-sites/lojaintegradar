@@ -189,25 +189,24 @@ export default function HeroV2({ id, tag, title, caption, createStoreCta, cta = 
                                 planId={createStoreCta.planId}
                                 showIcon={createStoreCta.showIcon}
                                 underlineText={createStoreCta.underlineText}
-                                icon="long arrow"
                                 ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base cursor-pointer`}
                                 style={createStoreCta.ctaStyle == "button"
                                     ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order, width: createStoreCta.width }
                                     : { color: createStoreCta.textColor, order: createStoreCta.order, width: createStoreCta.width }}
                             />}
-                            {cta.map((button) => {
+                            {cta.map((button, index) => {
                                 if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                                     showIcon={button.showIcon}
                                     underlineText={button.underlineText}
                                     text={button.text}
                                     ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto cursor-pointer`}
-                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content" } : { color: button.textColor, width: button.width || "fit-content" }}
+                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content", order: index + 1 } : { color: button.textColor, width: button.width || "fit-content", order: index + 1 }}
                                 />
                                 return <a
                                     href={button?.href ?? "#"}
                                     target={button?.href.includes("http") ? "_blank" : ""}
                                     class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto`}
-                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content" } : { color: button.textColor, width: button.width || "fit-content" }}
+                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content", order: index + 1 } : { color: button.textColor, width: button.width || "fit-content", order: index + 1 }}
                                 >
                                     {button?.text}
                                     {button.underlineText && <span class="underline">{button.underlineText}</span>}

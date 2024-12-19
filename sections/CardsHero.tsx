@@ -2,6 +2,7 @@ import type { ImageWidget, VideoWidget, HTMLWidget, RichText } from "apps/admin/
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import Image from "apps/website/components/Image.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
+import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
 /** @title {{text}} {{underlineText}} */
 export interface CTA {
@@ -80,12 +81,20 @@ export function CardColumn({ cards = [] }: { cards?: Card[] }) {
                             ? { backgroundColor: card.createStoreCta.backgroundColor, color: card.createStoreCta.textColor, borderColor: card.createStoreCta.borderColor, order: card.createStoreCta.order }
                             : { color: card.createStoreCta.textColor, order: card.createStoreCta.order }}
                     />}
-                    {card.cta?.map((button) => {
+                    {card.cta?.map((button, index) => {
+                        if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
+                            showIcon={button.showIcon}
+                            underlineText={button.underlineText}
+                            text={button.text}
+                            icon="long arrow"
+                            ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base h-auto cursor-pointer`}
+                            style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
+                        />
                         return <a
                             href={button?.href ?? "#"}
                             target={button?.href.includes("http") ? "_blank" : ""}
                             class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base`}
-                            style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                            style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
                         >
                             {button?.text}
                             {button.underlineText && <span class="underline">{button.underlineText}</span>}

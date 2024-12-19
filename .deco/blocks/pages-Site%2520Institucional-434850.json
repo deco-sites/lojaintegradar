@@ -783,7 +783,11 @@
             "interval": 0,
             "id": "nossoecossistema",
             "arrowsColor": "#003037",
-            "paddingBottom": "50px"
+            "paddingBottom": "50px",
+            "createStoreCta": {
+              "planId": "172",
+              "ctaStyle": "button"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

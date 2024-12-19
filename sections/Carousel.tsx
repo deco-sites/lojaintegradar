@@ -5,6 +5,7 @@ import { useId } from "../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
 const refreshArrowsVisibility = () => {
     const currentTarget = event!.currentTarget as HTMLElement;
@@ -88,6 +89,22 @@ export interface CTA {
     ctaStyle: "button" | "link";
     showIcon?: boolean;
 }
+
+export interface CreateStoreWithPlanCTA {
+    planId: string;
+    text?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle?: "button" | "link";
+    showIcon?: boolean;
+    order?: number;
+}
+
 export interface Props {
     id?: string;
     title?: RichText;
@@ -106,6 +123,7 @@ export interface Props {
     /** @format color-input */
     arrowsColor?: string;
     // dots?: boolean;
+    createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     backgroundImage?: IImage;
     // interval?: number;
@@ -190,7 +208,7 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
     </div>);
 }
 function Carousel(props: Props) {
-    const { id, title, titleFont, caption, slides, backgroundImage, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop } = { ...props };
+    const { id, title, titleFont, caption, slides, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop } = { ...props };
     const carouselId = useId();
     return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative">
         {/* <input type="text" value="0" /> */}
@@ -219,19 +237,30 @@ function Carousel(props: Props) {
                     {props.arrows && <Buttons arrowsColor={arrowsColor} />}
                 </AnimateOnShow >
                 {cta && <AnimateOnShow divClass="flex flex-wrap justify-center items-center gap-7 mt-4 px-7" animation="animate-fade-up">
-                    {cta.map((button) => {
+                    {createStoreCta?.text && <CreateStoreCta
+                            period="anual"
+                            text={createStoreCta.text}
+                            planId={createStoreCta.planId}
+                            showIcon={createStoreCta.showIcon}
+                            underlineText={createStoreCta.underlineText}
+                            ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                            style={createStoreCta.ctaStyle == "button"
+                                ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order }
+                                : { color: createStoreCta.textColor, order: createStoreCta.order }}
+                        />}
+                    {cta.map((button, index) => {
                         if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                             showIcon={button.showIcon}
                             underlineText={button.underlineText}
                             text={button.text}
                             ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} h-auto flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
-                            style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                            style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
                         />
                         return <a
                             href={button?.href ?? "#"}
                             target={button?.href.includes("http") ? "_blank" : ""}
                             class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} h-auto flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
-                            style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
+                            style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
                         >
                             {button?.text}
                             {button.underlineText && <span class="underline">{button.underlineText}</span>}

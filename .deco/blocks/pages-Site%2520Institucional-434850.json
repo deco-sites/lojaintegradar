@@ -259,16 +259,7 @@
             "minHeight": "254px"
           },
           {
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "linkhere",
-                "text": "Criar loja",
-                "backgroundColor": "#",
-                "textColor": "#003037",
-                "showIcon": true
-              }
-            ],
+            "cta": [],
             "useBackground": "image",
             "title": "<p><span>Em um ano, milhares de</span></p><p><span>lojistas recuperaram<br>R$ 23 milhões em vendas</span></p><p><span>com ferramentas de</span></p><p><span>automação de marketing</span></p><p><span>da Loja Integrada.</span></p>",
             "titleColor": "linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%)",
@@ -277,6 +268,13 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1e295d52-64ee-42c2-999b-e8b0147f8f86/card-image-2.png",
               "width": 597,
               "height": 414
+            },
+            "createStoreCta": {
+              "planId": "172",
+              "ctaStyle": "link",
+              "text": "Criar loja 2",
+              "textColor": "#003037",
+              "showIcon": true
             }
           }
         ]

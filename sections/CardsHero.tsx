@@ -1,6 +1,7 @@
 import type { ImageWidget, VideoWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import Image from "apps/website/components/Image.tsx";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
 /** @title {{text}} {{underlineText}} */
 export interface CTA {
@@ -24,6 +25,21 @@ export interface IImage {
     height?: number;
 }
 
+export interface CreateStoreWithPlanCTA {
+    planId: string;
+    text?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle: "button" | "link";
+    showIcon?: boolean;
+    order?: number;
+}
+
 export interface Card {
     title?: RichText;
     /** @format color-input */
@@ -31,6 +47,7 @@ export interface Card {
     titleFont?: string;
     spaceBetweenTitleAndText?: string;
     text?: HTMLWidget;
+    createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     backgroundImage?: IImage;
     backgroundVideo?: VideoWidget;
@@ -51,6 +68,18 @@ export function CardColumn({ cards = [] }: { cards?: Card[] }) {
                 />}
                 <div dangerouslySetInnerHTML={{ __html: card.text || "" }} class="mt-2.5 text-base font-normal leading-[120%]" style={{ marginTop: card.spaceBetweenTitleAndText }} />
                 <div class="flex flex-wrap gap-7 mt-auto">
+                    {card.createStoreCta?.text && <CreateStoreCta
+                        period="anual"
+                        text={card.createStoreCta.text}
+                        planId={card.createStoreCta.planId}
+                        showIcon={card.createStoreCta.showIcon}
+                        underlineText={card.createStoreCta.underlineText}
+                        icon="long arrow"
+                        ctaClass={`${card.createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base cursor-pointer`}
+                        style={card.createStoreCta.ctaStyle == "button"
+                            ? { backgroundColor: card.createStoreCta.backgroundColor, color: card.createStoreCta.textColor, borderColor: card.createStoreCta.borderColor, order: card.createStoreCta.order }
+                            : { color: card.createStoreCta.textColor, order: card.createStoreCta.order }}
+                    />}
                     {card.cta?.map((button) => {
                         return <a
                             href={button?.href ?? "#"}

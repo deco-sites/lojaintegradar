@@ -133,7 +133,7 @@
                 ]
               },
               "href": "/venda-mais",
-              "alt": "logo"
+              "alt": "logo "
             },
             "initialButtons": [],
             "backgroundColor": "#003037",
@@ -948,6 +948,92 @@
             "variants": [
               {
                 "value": {
+                  "__resolveType": "site/sections/Testimonials.tsx",
+                  "slides": [
+                    {
+                      "content": {
+                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">Com a migração, aumentamos nosso ticket médio em 15% e reduzimos os custos operacionais em R$ 9 mil. Nossas expectativas foram atendidas pela plataforma intuitiva e com fácil integração à VTEX.</span></p>",
+                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
+                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>M. Camicado</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca&nbsp;<strong>de 60 dias</strong></span></p>",
+                        "alt": "m camicado",
+                        "quoteIconColor": "#003037",
+                        "nameIconColor": "#5F6E82",
+                        "nameBackgroundColor": "#ffffff",
+                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
+                        "avatarWidth": 399,
+                        "avatarHeight": 46
+                      }
+                    },
+                    {
+                      "content": {
+                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">No primeiro mês pós-migração, minha taxa de conversão aumentou 60%. Encontrei uma plataforma fácil de usar e um time com suporte próximo, otimizando meu investimento.</span><br></p>",
+                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
+                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>Livraria Florence</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca de&nbsp;<strong>30 dias</strong></span></p>",
+                        "alt": "livraria florence",
+                        "nameIconColor": "#371E55",
+                        "quoteIconColor": "#003037",
+                        "nameBackgroundColor": "#ffffff",
+                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
+                      }
+                    }
+                  ],
+                  "dots": false,
+                  "titleColor": "#371E55",
+                  "arrowsColor": "#003037",
+                  "arrows": true
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/Testimonials.tsx",
+                  "slides": [
+                    {
+                      "content": {
+                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">Com a migração, aumentamos nosso ticket médio em 15% e reduzimos os custos operacionais em R$ 9 mil. Nossas expectativas foram atendidas pela plataforma intuitiva e com fácil integração à VTEX.</span></p>",
+                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
+                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>M. Camicado</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca&nbsp;<strong>de 60 dias</strong></span></p>",
+                        "alt": "m camicado",
+                        "quoteIconColor": "#003037",
+                        "nameIconColor": "#5F6E82",
+                        "nameBackgroundColor": "#ffffff",
+                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
+                        "avatarWidth": 399,
+                        "avatarHeight": 46
+                      }
+                    },
+                    {
+                      "content": {
+                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">No primeiro mês pós-migração, minha taxa de conversão aumentou 60%. Encontrei uma plataforma fácil de usar e um time com suporte próximo, otimizando meu investimento.</span><br></p>",
+                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
+                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>Livraria Florence</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca de&nbsp;<strong>30 dias</strong></span></p>",
+                        "alt": "livraria florence",
+                        "nameIconColor": "#371E55",
+                        "quoteIconColor": "#003037",
+                        "nameBackgroundColor": "#ffffff",
+                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
+                      }
+                    }
+                  ],
+                  "dots": false,
+                  "titleColor": "#371E55",
+                  "arrowsColor": "",
+                  "arrows": false
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
+          },
+          {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
                   "slides": [
                     {
@@ -1214,18 +1300,20 @@
                       "titleFont": "Instrument Serif"
                     }
                   ],
+                  "dots": false,
+                  "titleColor": "#371E55",
+                  "arrowsColor": "#371E55",
+                  "arrows": true,
                   "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span><br><p style=\"text-align: center\"><span style=\"color: #5F6E82; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a</span><span style=\"color: #28C3C3; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \"> vender hoje mesmo</span></p>",
                   "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
                   "annualLabel": "Anual",
                   "montlyLabel": "Mensal",
-                  "dots": false,
                   "bottomCaption": "Que tal um impulso?",
                   "bottomTitle": "Comece agora sem custo",
                   "bottomButton": {
                     "text": "Começar no grátis",
                     "href": "#"
                   },
-                  "titleColor": "#371E55",
                   "captionColor": "#371E55",
                   "labelColor": "#371E55",
                   "disabledLabelColor": "#828CA0",
@@ -1251,11 +1339,9 @@
                     "borderColor": "#371E55",
                     "ctaStyle": "button"
                   },
-                  "arrowsColor": "#371E55",
                   "id": "plans",
                   "annualTagTextColor": "#FAFAF5",
-                  "annualTag": "🔥 Ofertas de Black friday",
-                  "arrows": true
+                  "annualTag": "🔥 Ofertas de Black friday"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/multi.ts",
@@ -1542,18 +1628,20 @@
                       "titleFont": "Instrument Serif"
                     }
                   ],
+                  "dots": false,
+                  "titleColor": "#371E55",
+                  "arrowsColor": "#371E55",
+                  "arrows": true,
                   "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span><br><p style=\"text-align: center\"><span style=\"color: #5F6E82; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a</span><span style=\"color: #28C3C3; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \"> vender hoje mesmo</span></p>",
                   "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
                   "annualLabel": "Anual",
                   "montlyLabel": "Mensal",
-                  "dots": false,
                   "bottomCaption": "Que tal um impulso?",
                   "bottomTitle": "Comece agora sem custo",
                   "bottomButton": {
                     "text": "Começar no grátis",
                     "href": "#"
                   },
-                  "titleColor": "#371E55",
                   "captionColor": "#371E55",
                   "labelColor": "#371E55",
                   "disabledLabelColor": "#828CA0",
@@ -1579,11 +1667,9 @@
                     "borderColor": "#371E55",
                     "ctaStyle": "button"
                   },
-                  "arrowsColor": "#371E55",
                   "id": "plans",
                   "annualTagTextColor": "#371E55",
                   "annualTag": "-20% OFF",
-                  "arrows": true,
                   "annualTagPosition": "aside"
                 },
                 "rule": {
@@ -2235,98 +2321,12 @@
             "variants": [
               {
                 "value": {
-                  "__resolveType": "site/sections/Testimonials.tsx",
-                  "slides": [
-                    {
-                      "content": {
-                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">Com a migração, aumentamos nosso ticket médio em 15% e reduzimos os custos operacionais em R$ 9 mil. Nossas expectativas foram atendidas pela plataforma intuitiva e com fácil integração à VTEX.</span></p>",
-                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
-                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>M. Camicado</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca&nbsp;<strong>de 60 dias</strong></span></p>",
-                        "alt": "m camicado",
-                        "quoteIconColor": "#003037",
-                        "nameIconColor": "#5F6E82",
-                        "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
-                        "avatarWidth": 399,
-                        "avatarHeight": 46
-                      }
-                    },
-                    {
-                      "content": {
-                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">No primeiro mês pós-migração, minha taxa de conversão aumentou 60%. Encontrei uma plataforma fácil de usar e um time com suporte próximo, otimizando meu investimento.</span><br></p>",
-                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
-                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>Livraria Florence</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca de&nbsp;<strong>30 dias</strong></span></p>",
-                        "alt": "livraria florence",
-                        "nameIconColor": "#371E55",
-                        "quoteIconColor": "#003037",
-                        "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
-                      }
-                    }
-                  ],
-                  "dots": false,
-                  "titleColor": "#371E55",
-                  "arrowsColor": "#003037",
-                  "arrows": true
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/Testimonials.tsx",
-                  "slides": [
-                    {
-                      "content": {
-                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">Com a migração, aumentamos nosso ticket médio em 15% e reduzimos os custos operacionais em R$ 9 mil. Nossas expectativas foram atendidas pela plataforma intuitiva e com fácil integração à VTEX.</span></p>",
-                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
-                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>M. Camicado</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca&nbsp;<strong>de 60 dias</strong></span></p>",
-                        "alt": "m camicado",
-                        "quoteIconColor": "#003037",
-                        "nameIconColor": "#5F6E82",
-                        "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
-                        "avatarWidth": 399,
-                        "avatarHeight": 46
-                      }
-                    },
-                    {
-                      "content": {
-                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">No primeiro mês pós-migração, minha taxa de conversão aumentou 60%. Encontrei uma plataforma fácil de usar e um time com suporte próximo, otimizando meu investimento.</span><br></p>",
-                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
-                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>Livraria Florence</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca de&nbsp;<strong>30 dias</strong></span></p>",
-                        "alt": "livraria florence",
-                        "nameIconColor": "#371E55",
-                        "quoteIconColor": "#003037",
-                        "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
-                      }
-                    }
-                  ],
-                  "dots": false,
-                  "titleColor": "#371E55",
-                  "arrowsColor": "",
-                  "arrows": false
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
                   "__resolveType": "site/sections/Logos.tsx",
                   "titleColor": "#371E55",
                   "title": "<p><span style=\"color: rgb(0, 48, 55)\">Uma escolha estratégica para vender mais</span></p>",
-                  "titleFont": "Instrument serif",
                   "captionColor": "#5F6E82",
                   "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
+                  "titleFont": "Instrument serif",
                   "logos": [
                     {
                       "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
@@ -2369,10 +2369,10 @@
                   "__resolveType": "site/sections/Logos.tsx",
                   "titleColor": "#371E55",
                   "title": "<p></p>",
-                  "titleFont": "Instrument serif",
-                  "paddingBottom": "120px",
                   "captionColor": "#5F6E82",
                   "caption": "<p></p>",
+                  "titleFont": "Instrument serif",
+                  "paddingBottom": "120px",
                   "logos": [
                     {
                       "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
@@ -3035,6 +3035,49 @@
             "variants": [
               {
                 "value": {
+                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
+                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195)\">Mostre que sua marca entende o cliente</span></em><br><span style=\"color: rgb(0, 48, 55)\">Traduzindo dados em soluções inteligentes</span></p>",
+                  "titleFont": "Instrument serif",
+                  "cta": [],
+                  "paddingBottom": "42px",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px\">Na Loja Integrada, unimos informações estruturadas a automação para maximizar<br></span><span style=\"color: rgb(40, 195, 195); font-size: 24px\"> cada oportunidade de venda</span></p>",
+                  "image": {
+                    "width": 429,
+                    "height": 310
+                  },
+                  "paddingTop": "42px",
+                  "features": [],
+                  "use": "image"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
+                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Resultados que </span><em><span style=\"color: rgb(40, 195, 195)\">falam por si </span></em></p>",
+                  "titleFont": "Instrument serif",
+                  "cta": [],
+                  "paddingBottom": "0px",
+                  "paddingTop": "0px",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight:1.2;\">Nossos lojistas estão potencializando suas vendas com<br></span><span style=\"color: rgb(40, 195, 195); font-size: 24px; font-weight:1.2;\"> soluções inteligentes e automação eficiente. Olha só:</span></p>",
+                  "image": {},
+                  "features": [],
+                  "use": "image"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
+          },
+          {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
                   "__resolveType": "site/sections/Testimonials.tsx",
                   "slides": [
                     {
@@ -3109,126 +3152,6 @@
                   "titleColor": "#371E55",
                   "arrowsColor": "",
                   "dots": false
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
-                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Temas e personalização para</span><em><span style=\"color: rgb(0, 48, 55)\"> </span><span style=\"color: rgb(40, 195, 195)\">elevar sua marca</span></em></p>",
-                  "titleFont": "Instrument serif",
-                  "cta": [
-                    {
-                      "ctaStyle": "button",
-                      "text": "Ver planos",
-                      "backgroundColor": "#003037",
-                      "borderColor": "#003037",
-                      "textColor": "#ffffff",
-                      "href": "#plans"
-                    },
-                    {
-                      "ctaStyle": "link",
-                      "href": "/talkToSpecialist ",
-                      "underlineText": "Falar com especialista",
-                      "showIcon": true,
-                      "backgroundColor": "",
-                      "borderColor": "",
-                      "textColor": "#003037"
-                    }
-                  ],
-                  "paddingBottom": "42px",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130)\">Deixe sua loja com a cara do seu negócio! Explore uma seleção de temas personalizáveis para criar uma experiência única e atrativa.&nbsp;Aproveite opções gratuitas ou contrate layouts avançados para destacar seus produtos e conquistar mais clientes.</span></p>",
-                  "paddingTop": "42px",
-                  "features": [
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                      },
-                      "title": "Recursos exclusivos",
-                      "titleColor": "#003037",
-                      "text": "Impulsione sua loja com funcionalidades únicas que otimizam a experiência do cliente",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                      },
-                      "title": "Pague uma vez só",
-                      "titleColor": "#003037",
-                      "text": "Uma só contratação para aproveitar as ferramentas por tempo indeterminado",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                      },
-                      "title": "Suporte estendido",
-                      "titleColor": "#003037",
-                      "text": "Um ano de atendimento com nossos parceiros",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "title": "Personalize do seu jeito",
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                      },
-                      "titleColor": "#003037",
-                      "text": "Código aberto para edição livre, adaptável de acordo com o seu segmento",
-                      "textColor": "#5F6E82"
-                    }
-                  ],
-                  "image": {
-                    "width": 429,
-                    "height": 310,
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/35d81fbc-0a4f-498f-8dd9-2274c431a2e5/img-pod-pah-mobile.png"
-                  },
-                  "use": "image"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p></p>",
-                  "titleFont": "Instrument serif",
-                  "cta": [
-                    {
-                      "ctaStyle": "button",
-                      "href": "#plans",
-                      "text": "Ver planos",
-                      "backgroundColor": "transparent",
-                      "borderColor": "#003037",
-                      "textColor": "#003037",
-                      "showIcon": false
-                    },
-                    {
-                      "ctaStyle": "button"
-                    }
-                  ],
-                  "paddingBottom": "120px",
-                  "caption": "<p></p>",
-                  "paddingTop": "0px",
-                  "features": [],
-                  "image": {},
-                  "use": "image",
-                  "createStoreCta": {
-                    "planId": "172",
-                    "text": "Criar loja",
-                    "backgroundColor": "#003037",
-                    "textColor": "#003037",
-                    "borderColor": "#fffff",
-                    "ctaStyle": "button"
-                  }
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

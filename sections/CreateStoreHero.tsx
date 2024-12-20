@@ -60,6 +60,7 @@ export interface CreateStoreFormProps {
   agreeText2?: string;
   agreeLink2?: createStoreFormLink;
   agreeText3?: string;
+  buttonText?: string;
   /** @format color-input */
   backgroundColor?: string;
   /** @format color-input */

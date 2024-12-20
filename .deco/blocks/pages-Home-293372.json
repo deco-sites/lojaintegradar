@@ -864,7 +864,9 @@
                 },
                 "tabImage": {
                   "widthDesktop": 606,
-                  "heightDesktop": 627
+                  "heightDesktop": 627,
+                  "image": "https://data.decoassets.com/lojaintegradar/13e16970-09de-4f72-8d92-699b2ab9779e/checkout-inteligente.png",
+                  "imageDesktop": "https://data.decoassets.com/lojaintegradar/13e16970-09de-4f72-8d92-699b2ab9779e/checkout-inteligente.png"
                 },
                 "highlight": false
               }
@@ -923,24 +925,21 @@
             }
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/SimpleHero.tsx",
-              "backgroundImage": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/426c8e51-67c5-4b72-a955-e4a1ede9891f/bg-junte-se-a-2milhoes-lojistas.png",
-                "height": 715
-              },
-              "cta": [],
-              "useBackground": "image",
-              "sectionHeight": "715px",
-              "text": "<p style=\"text-align: center\"> <span style=\"color: #003037; text-align: center; font-family: 'Instrument Serif'; font-size:110px; font-weight: 100; line-height:1.2 \" data-mce-style=\"color: #003037; text-align: center; font-feature-settings: 'liga' off;\">Junte-se a mais de<br>2,7 milhões de lojas</span><br><span style=\"color: #003037; text-align: center; font-family: 'Instrument Serif'; font-size:60px; font-weight: 100; line-height:1.2 \" data-mce-style=\"color: #003037; text-align: center; font-feature-settings: 'liga' off;\">que escolheram a forma mais eficiente<br> de vender online</span></p>",
-              "createStoreCta": {
-                "ctaStyle": "button",
-                "planId": "172",
-                "text": "Criar loja",
-                "backgroundColor": "#003037",
-                "borderColor": "#003037"
-              }
+            "__resolveType": "site/sections/SimpleHero.tsx",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/426c8e51-67c5-4b72-a955-e4a1ede9891f/bg-junte-se-a-2milhoes-lojistas.png",
+              "height": 715
+            },
+            "cta": [],
+            "useBackground": "image",
+            "sectionHeight": "715px",
+            "text": "<p style=\"text-align: center\"> <span style=\"color: #003037; text-align: center; font-family: 'Instrument Serif'; font-size:110px; font-weight: 100; line-height:1.2 \" data-mce-style=\"color: #003037; text-align: center; font-feature-settings: 'liga' off;\">Junte-se a mais de<br>2,7 milhões de lojas</span><br><span style=\"color: #003037; text-align: center; font-family: 'Instrument Serif'; font-size:60px; font-weight: 100; line-height:1.2 \" data-mce-style=\"color: #003037; text-align: center; font-feature-settings: 'liga' off;\">que escolheram a forma mais eficiente<br> de vender online</span></p>",
+            "createStoreCta": {
+              "ctaStyle": "button",
+              "planId": "172",
+              "text": "Criar loja",
+              "backgroundColor": "#003037",
+              "borderColor": "#003037"
             }
           },
           {

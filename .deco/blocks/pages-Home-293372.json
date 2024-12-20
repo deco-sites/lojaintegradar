@@ -7,9 +7,6 @@
       {
         "value": [
           {
-            "__resolveType": "Depoimentos-institucional"
-          },
-          {
             "__resolveType": "site/sections/Header2.tsx",
             "navigation": {
               "links": [
@@ -807,33 +804,19 @@
             }
           },
           {
-            "__resolveType": "site/sections/SimpleHero.tsx",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/426c8e51-67c5-4b72-a955-e4a1ede9891f/bg-junte-se-a-2milhoes-lojistas.png",
-              "height": 715
-            },
-            "cta": [],
-            "useBackground": "image",
-            "sectionHeight": "715px",
-            "text": "<p style=\"text-align: center\"> <span style=\"color: #003037; text-align: center; font-family: 'Instrument Serif'; font-size:110px; font-weight: 100; line-height:1.2 \" data-mce-style=\"color: #003037; text-align: center; font-feature-settings: 'liga' off;\">Junte-se a mais de<br>2,7 milhões de lojas</span><br><span style=\"color: #003037; text-align: center; font-family: 'Instrument Serif'; font-size:60px; font-weight: 100; line-height:1.2 \" data-mce-style=\"color: #003037; text-align: center; font-feature-settings: 'liga' off;\">que escolheram a forma mais eficiente<br> de vender online</span></p>",
-            "createStoreCta": {
-              "ctaStyle": "button",
-              "planId": "172",
-              "text": "Criar minha loja",
-              "backgroundColor": "#003037",
-              "borderColor": "#003037"
-            }
-          },
-          {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
                 "value": {
-                  "__resolveType": "site/sections/Testimonials.tsx",
+                  "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
+                  "title": "<p style=\"text-align: center\">Junte-se a mais de<br>2,7 milhões de lojas</p>",
+                  "titleColor": "#371E55",
+                  "titleFont": "Instrument serif",
+                  "caption": "<p style=\"text-align: center\"><span>que escolheram a forma mais eficiente <br>de vender online</span></p>",
                   "slides": [
                     {
                       "content": {
-                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">Com a migração, aumentamos nosso ticket médio em 15% e reduzimos os custos operacionais em R$ 9 mil. Nossas expectativas foram atendidas pela plataforma intuitiva e com fácil integração à VTEX.</span></p>",
+                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e com fácio integração à VTEX.</span></p>",
                         "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
                         "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>M. Camicado</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca&nbsp;<strong>de 60 dias</strong></span></p>",
                         "alt": "m camicado",
@@ -842,7 +825,8 @@
                         "nameBackgroundColor": "#ffffff",
                         "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
                         "avatarWidth": 399,
-                        "avatarHeight": 46
+                        "avatarHeight": 46,
+                        "backgroundColor": ""
                       }
                     },
                     {
@@ -858,10 +842,162 @@
                       }
                     }
                   ],
+                  "arrows": false,
+                  "arrowsColor": "",
                   "dots": false,
+                  "bubbleImages": [
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10c91eb1-0f78-465d-9fa6-49438978da81/bubble-image-1.jpg",
+                      "horizontalPosition": "16%",
+                      "verticalPosition": "5%",
+                      "alt": "oldman on laptop",
+                      "speed": "fast"
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d5f1a647-cbf8-4ba9-bc36-16b01ac784bf/bubble-image-3.jpg",
+                      "horizontalPosition": "2%",
+                      "alt": "lady holding phone",
+                      "comeFrom": "top left",
+                      "speed": "slow",
+                      "verticalPosition": "8%"
+                    },
+                    {
+                      "comeFrom": "top left",
+                      "speed": "normal",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/dea1f370-0fde-40bc-a99f-f824dd35d68d/bubble-image-4.png",
+                      "verticalPosition": "20%",
+                      "horizontalPosition": "10%",
+                      "alt": "man on opening laptop"
+                    },
+                    {
+                      "comeFrom": "bottom left",
+                      "speed": "fast",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d5f1a647-cbf8-4ba9-bc36-16b01ac784bf/bubble-image-3.jpg",
+                      "alt": "lady holding phone",
+                      "verticalPosition": "34%",
+                      "horizontalPosition": "13%"
+                    },
+                    {
+                      "comeFrom": "bottom left",
+                      "speed": "slow",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8c74a035-4f59-434e-894b-61beee1d7301/bubble-image-5.jpg",
+                      "verticalPosition": "37%",
+                      "horizontalPosition": "2%",
+                      "alt": "man holding sheets"
+                    },
+                    {
+                      "comeFrom": "bottom left",
+                      "speed": "slow",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea2d2fac-5029-4de9-b739-f935f947ec58/bubble-image-6.png",
+                      "alt": "man holding pencil",
+                      "verticalPosition": "53%",
+                      "horizontalPosition": "1%"
+                    },
+                    {
+                      "comeFrom": "top right",
+                      "speed": "slow",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e9719f1e-a26e-4006-b720-92b9a0ccf46c/bubble-image-7.jpg",
+                      "alt": "woman on laptop",
+                      "horizontalPosition": "92%",
+                      "verticalPosition": "2%"
+                    },
+                    {
+                      "comeFrom": "top right",
+                      "speed": "fast",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e437c963-677d-417b-9530-414d819e9311/bubble-image-8.jpg",
+                      "alt": "man with blue shirt",
+                      "horizontalPosition": "77%",
+                      "verticalPosition": "4%"
+                    },
+                    {
+                      "comeFrom": "top right",
+                      "speed": "fast",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aab535f6-b04a-4827-ae41-dfd92db98793/bubble-image-9.jpg",
+                      "alt": "man holding tablet",
+                      "horizontalPosition": "77%",
+                      "verticalPosition": "23%"
+                    },
+                    {
+                      "comeFrom": "bottom right",
+                      "speed": "slow",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec9b56b2-a0eb-48ea-a418-73f63562182e/bubble-image-10.jpg",
+                      "horizontalPosition": "90%",
+                      "verticalPosition": "27%",
+                      "alt": "man holding notebook"
+                    },
+                    {
+                      "comeFrom": "bottom right",
+                      "speed": "normal",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a39c4644-5ccf-4c81-8a93-ab765f68c65a/bubble-image-11.jpg",
+                      "horizontalPosition": "83%",
+                      "verticalPosition": "40%",
+                      "alt": "man holding paper"
+                    },
+                    {
+                      "comeFrom": "bottom right",
+                      "speed": "slow",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1a0b5443-1820-4d69-95c7-bb0bd79d6bd9/bubble-image-12.jpg",
+                      "horizontalPosition": "91%",
+                      "verticalPosition": "54%",
+                      "alt": "woman holding folder"
+                    }
+                  ],
+                  "captionFont": "Instrument serif",
+                  "backgroundMedia": {
+                    "image": {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33eb18cd-3071-4d34-9202-937feca15495/Testimonials-background.svg"
+                    },
+                    "use": "image"
+                  }
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
+          },
+          {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/Logos.tsx",
                   "titleColor": "#371E55",
-                  "arrowsColor": "#003037",
-                  "arrows": true
+                  "title": "<p><span style=\"color: rgb(0, 48, 55)\">Uma escolha estratégica para vender mais</span></p>",
+                  "captionColor": "#5F6E82",
+                  "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
+                  "titleFont": "Instrument serif",
+                  "logos": [
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
+                      "altText": "Forbes logo"
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
+                      "altText": "Frutifica logo"
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
+                      "altText": "Rock in Rio Logo"
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
+                      "altText": "PodPah logo"
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
+                      "altText": "Soldiers logo"
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
+                      "altText": "Gorila Shield logo"
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
+                      "altText": "+Mu logo"
+                    }
+                  ],
+                  "paddingTop": "40px"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/device.ts",
@@ -870,39 +1006,53 @@
               },
               {
                 "value": {
-                  "__resolveType": "site/sections/Testimonials.tsx",
-                  "slides": [
+                  "__resolveType": "site/sections/Logos.tsx",
+                  "titleColor": "#371E55",
+                  "title": "<p></p>",
+                  "captionColor": "#5F6E82",
+                  "caption": "<p></p>",
+                  "titleFont": "Instrument serif",
+                  "paddingBottom": "120px",
+                  "logos": [
                     {
-                      "content": {
-                        "description": "<p>Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e com fácil integração à VTEX.</p>",
-                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
-                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>M. Camicado</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca&nbsp;<strong>de 60 dias</strong></span></p>",
-                        "alt": "m camicado",
-                        "quoteIconColor": "#003037",
-                        "nameIconColor": "#5F6E82",
-                        "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
-                        "avatarWidth": 399,
-                        "avatarHeight": 46
-                      }
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
+                      "altText": "Forbes logo"
                     },
                     {
-                      "content": {
-                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">No primeiro mês pós-migração, minha taxa de conversão aumentou 60%. Encontrei uma plataforma fácil de usar e um time com suporte próximo, otimizando meu investimento.</span><br></p>",
-                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
-                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>Livraria Florence</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca de&nbsp;<strong>30 dias</strong></span></p>",
-                        "alt": "livraria florence",
-                        "nameIconColor": "#371E55",
-                        "quoteIconColor": "#003037",
-                        "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
-                      }
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
+                      "altText": "Frutifica logo",
+                      "width": 119,
+                      "height": 34
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
+                      "altText": "Rock in Rio Logo"
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
+                      "altText": "PodPah logo",
+                      "width": 157,
+                      "height": 72
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
+                      "altText": "Soldiers logo",
+                      "width": 157,
+                      "height": 72
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
+                      "altText": "Gorila Shield logo",
+                      "width": 157,
+                      "height": 72
+                    },
+                    {
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
+                      "altText": "+Mu logo",
+                      "width": 157,
+                      "height": 72
                     }
-                  ],
-                  "dots": false,
-                  "titleColor": "#371E55",
-                  "arrowsColor": "",
-                  "arrows": false
+                  ]
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
@@ -2190,110 +2340,6 @@
                   "arrows": false,
                   "annualTag": "- 2O% FF",
                   "annualTagPosition": "aside"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
-                  "__resolveType": "site/sections/Logos.tsx",
-                  "titleColor": "#371E55",
-                  "title": "<p><span style=\"color: rgb(0, 48, 55)\">Uma escolha estratégica para vender mais</span></p>",
-                  "captionColor": "#5F6E82",
-                  "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
-                  "titleFont": "Instrument serif",
-                  "logos": [
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
-                      "altText": "Forbes logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
-                      "altText": "Frutifica logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
-                      "altText": "Rock in Rio Logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
-                      "altText": "PodPah logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
-                      "altText": "Soldiers logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
-                      "altText": "Gorila Shield logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
-                      "altText": "+Mu logo"
-                    }
-                  ],
-                  "paddingTop": "40px"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/Logos.tsx",
-                  "titleColor": "#371E55",
-                  "title": "<p></p>",
-                  "captionColor": "#5F6E82",
-                  "caption": "<p></p>",
-                  "titleFont": "Instrument serif",
-                  "paddingBottom": "120px",
-                  "logos": [
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
-                      "altText": "Forbes logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
-                      "altText": "Frutifica logo",
-                      "width": 119,
-                      "height": 34
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
-                      "altText": "Rock in Rio Logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
-                      "altText": "PodPah logo",
-                      "width": 157,
-                      "height": 72
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
-                      "altText": "Soldiers logo",
-                      "width": 157,
-                      "height": 72
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
-                      "altText": "Gorila Shield logo",
-                      "width": 157,
-                      "height": 72
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
-                      "altText": "+Mu logo",
-                      "width": 157,
-                      "height": 72
-                    }
-                  ]
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

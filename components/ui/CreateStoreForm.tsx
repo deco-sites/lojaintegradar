@@ -101,7 +101,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
     };
 
     return (
-        <div className="inset-0 bg-opacity-50 items-center justify-center z-5">
+        <div id="createStoreForm" className="inset-0 bg-opacity-50 items-center justify-center z-5">
             <div
                 className="relative mx-[10px] flex flex-col items-center p-12 w-full max-w-[460px] lg:mx-auto bg-white rounded-2xl shadow-md overflow-hidden text-[#371e56]"
                 style={{ background: backgroundColor, color: inputsLabelColor }}>
@@ -110,7 +110,6 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                 <form
                     action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${periodo || 'anual'}&plano_id=${planoId || '172'}`}
                     id={formId}
-                    data-gtm-form-interact-id="0"
                     method="POST"
                     className="w-full flex flex-col items-center justify-center"
                     onSubmit={handleSubmit}
@@ -222,7 +221,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                         ></script>
                         <script dangerouslySetInnerHTML={{
                             __html: `
-                            function onSubmit(token) {
+                            function onSubmitForm(token) {
                                 document.getElementById('${formId}').submit();
                             }
 
@@ -232,7 +231,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                             className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha"
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
-                            data-callback="onSubmit"
+                            data-callback="onSubmitForm"
                             style={{ background: buttonBackgroundColor, color: buttonTextColor }}
                         >
                             Abrir minha loja agora

@@ -181,7 +181,7 @@
               {
                 "value": {
                   "__resolveType": "site/sections/MainHero.tsx",
-                  "title": "<div style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\" data-mce-style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\"><p style=\"font-family: 'Instrument Serif'; font-size: 28px; line-height: 1.4; font-weight: 200; text-align: center;\" data-mce-style=\"font-family: 'Instrument Serif'; font-size: 28px; line-height: 1.4; font-weight: 200; text-align: center;\"><span style=\"font-size: 28pt;\" data-mce-style=\"font-size: 28pt;\"> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">Escolha a plataforma com<br></span> <em>Dados e Automação&nbsp;</em> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><br>para faturar mais</span></span></p></div>",
+                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255)\">Plataforma </span><em><span style=\"color: rgb(113, 219, 212)\">inteligente</span></em><span style=\"color: rgb(255, 255, 255)\"> que</span><br><span style=\"color: rgb(255, 255, 255)\">acelera suas vendas</span></p>",
                   "caption": "<p><br data-mce-bogus=\"1\"></p>",
                   "image": {
                     "width": 925,
@@ -255,7 +255,7 @@
                     }
                   },
                   "htmlContent": "",
-                  "captionAbove": "<p style=\"font-size: 16px; line-height: 120%; font-weight: bold; text-align: center;\" data-mce-style=\"font-size: 16px; line-height: 120%; font-weight: bold; text-align: center;\"><span style=\"color: rgb(250, 250, 245); font-size: 10pt;\" data-mce-style=\"color: rgb(250, 250, 245); font-size: 10pt;\">O futuro do e-commerce é inteligente</span></p>"
+                  "captionAbove": "<p></p>"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/device.ts",
@@ -266,7 +266,7 @@
               {
                 "value": {
                   "__resolveType": "site/sections/MainHero.tsx",
-                  "title": "<p style=\"text-align: center; font-size: 72px\"><span style=\"color: rgb(255, 255, 255); font-weight: 300;\">A plataforma </span><em><span style=\"color: #71dbd4; font-weight: 300;\">inteligente</span></em><span style=\"color: rgb(255, 255, 255); font-weight: 300 \"> que acelera</span><br><span style=\"color: rgb(255, 255, 255); font-weight: 300 \">sua operação para vender mais</span></p>",
+                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255)\">Plataforma </span><em><span style=\"color: rgb(113, 219, 212)\">inteligente</span></em><span style=\"color: rgb(255, 255, 255)\"> que</span><br><span style=\"color: rgb(255, 255, 255)\">acelera suas vendas</span></p>",
                   "caption": "<p style=\"text-align: center; line-height: 120%; font-size: 24px; font-family: Inter; font-weight: 100; letter-spacing: -0.24px; color:#FAFAF5 \"><br>Nossa tecnologia traduz o comportamento do seu mercado e clientes<br>em técnicas de machine learning que automatiza e impulsiona suas<br>vendas no e-commerce.</span></p>",
                   "image": {
                     "alt": "top image",
@@ -351,73 +351,17 @@
               {
                 "value": {
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Temas e personalização para</span><em><span style=\"color: rgb(0, 48, 55)\"> </span><span style=\"color: rgb(40, 195, 195)\">elevar sua marca</span></em></p>",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130)\">Deixe sua loja com a cara do seu negócio! Explore uma seleção de temas personalizáveis para criar uma experiência única e atrativa.&nbsp;Aproveite opções gratuitas ou contrate layouts avançados para destacar seus produtos e conquistar mais clientes.</span></p>",
+                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195)\">Mostre que sua marca entende o cliente</span></em><br><span style=\"color: rgb(0, 48, 55)\">Traduzindo dados em soluções inteligentes</span></p>",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px\">Na Loja Integrada, unimos informações estruturadas a automação para maximizar<br></span><span style=\"color: rgb(40, 195, 195); font-size: 24px\"> cada oportunidade de venda</span></p>",
                   "image": {
                     "width": 429,
-                    "height": 310,
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/35d81fbc-0a4f-498f-8dd9-2274c431a2e5/img-pod-pah-mobile.png"
+                    "height": 310
                   },
                   "titleFont": "Instrument serif",
                   "paddingTop": "42px",
-                  "features": [
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                      },
-                      "title": "Recursos exclusivos",
-                      "titleColor": "#003037",
-                      "text": "Impulsione sua loja com funcionalidades únicas que otimizam a experiência do cliente",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                      },
-                      "title": "Pague uma vez só",
-                      "titleColor": "#003037",
-                      "text": "Uma só contratação para aproveitar as ferramentas por tempo indeterminado",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                      },
-                      "title": "Suporte estendido",
-                      "titleColor": "#003037",
-                      "text": "Um ano de atendimento com nossos parceiros",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "title": "Personalize do seu jeito",
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                      },
-                      "titleColor": "#003037",
-                      "text": "Código aberto para edição livre, adaptável de acordo com o seu segmento",
-                      "textColor": "#5F6E82"
-                    }
-                  ],
+                  "features": [],
                   "use": "image",
-                  "cta": [
-                    {
-                      "ctaStyle": "button",
-                      "text": "Ver planos",
-                      "backgroundColor": "#003037",
-                      "borderColor": "#003037",
-                      "textColor": "#ffffff",
-                      "href": "#plans"
-                    },
-                    {
-                      "ctaStyle": "link",
-                      "href": "/talkToSpecialist ",
-                      "underlineText": "Falar com especialista",
-                      "showIcon": true,
-                      "backgroundColor": "",
-                      "borderColor": "",
-                      "textColor": "#003037"
-                    }
-                  ],
+                  "cta": [],
                   "paddingBottom": "42px"
                 },
                 "rule": {
@@ -428,8 +372,8 @@
               {
                 "value": {
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195)\">Mostre que sua marca entende o cliente,</span></em><br><span style=\"color: rgb(0, 48, 55)\">Traduzindo dados em soluções inteligentes</span></p>",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: #5F6E82; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \">Na Loja Integrada, unimos informações estruturadas a automação para maximizar<br></span><span style=\"color: #28C3C3; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \"> cada oportunidade de venda</span></p>",
+                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195)\">Mostre que sua marca entende o cliente</span></em><br><span style=\"color: rgb(0, 48, 55)\">Traduzindo dados em soluções inteligentes</span></p>",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px\">Na Loja Integrada, unimos informações estruturadas a automação para maximizar<br></span><span style=\"color: rgb(40, 195, 195); font-size: 24px\"> cada oportunidade de venda</span></p>",
                   "image": {},
                   "titleFont": "Instrument serif",
                   "paddingTop": "120px",
@@ -2819,10 +2763,12 @@
               "cta": [
                 {
                   "ctaStyle": "link",
-                  "href": "/talkToSpecialist",
                   "textColor": "#ffffff",
-                  "underlineText": " Falar com especialista",
-                  "showIcon": true
+                  "showIcon": false,
+                  "href": "#plans",
+                  "text": "Ver planos",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#ffffff"
                 }
               ],
               "arrows": false,
@@ -2830,9 +2776,10 @@
               "id": "recursosferramentas",
               "createStoreCta": {
                 "planId": "172",
-                "text": "Assinar plano",
-                "backgroundColor": "Transparent",
-                "borderColor": "#ffffff"
+                "text": "Abrir loja",
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#ffffff",
+                "textColor": "#003037"
               }
             }
           },
@@ -2970,9 +2917,9 @@
                       "backgroundColor": "#ffffff",
                       "borderColor": "#003037",
                       "textColor": "#003037",
-                      "underlineText": "Falar com Especialista ",
-                      "showIcon": true,
-                      "outline": true
+                      "showIcon": false,
+                      "outline": true,
+                      "text": "Ver planos"
                     }
                   ],
                   "paddingBottom": "120px",
@@ -3259,19 +3206,13 @@
                       "ctaStyle": "button",
                       "href": "#plans",
                       "text": "Ver planos",
-                      "backgroundColor": "#003037",
+                      "backgroundColor": "transparent",
                       "borderColor": "#003037",
-                      "textColor": "#fffff",
+                      "textColor": "#003037",
                       "showIcon": false
                     },
                     {
-                      "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
-                      "underlineText": "Falar com especialista",
-                      "backgroundColor": "",
-                      "borderColor": "",
-                      "showIcon": true,
-                      "textColor": "#003037"
+                      "ctaStyle": "button"
                     }
                   ],
                   "paddingBottom": "120px",
@@ -3279,7 +3220,15 @@
                   "paddingTop": "0px",
                   "features": [],
                   "image": {},
-                  "use": "image"
+                  "use": "image",
+                  "createStoreCta": {
+                    "planId": "172",
+                    "text": "Criar loja",
+                    "backgroundColor": "#003037",
+                    "textColor": "#003037",
+                    "borderColor": "#fffff",
+                    "ctaStyle": "button"
+                  }
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

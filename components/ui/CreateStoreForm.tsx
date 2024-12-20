@@ -101,15 +101,15 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
     };
 
     return (
-        <div id="createStoreForm" className="inset-0 bg-opacity-50 items-center justify-center z-5">
+        <div id="createStoreFormDiv" className="inset-0 bg-opacity-50 items-center justify-center z-5">
             <div
                 className="relative mx-[10px] flex flex-col items-center p-12 w-full max-w-[460px] lg:mx-auto bg-white rounded-2xl shadow-md overflow-hidden text-[#371e56]"
-                style={{ background: backgroundColor, color: inputsLabelColor }}>
-
+                style={{ background: backgroundColor, color: inputsLabelColor }}
+                id="createStoreFormContainer">
 
                 <form
                     action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${periodo || 'anual'}&plano_id=${planoId || '172'}`}
-                    id={formId}
+                    id="createStoreForm"
                     method="POST"
                     className="w-full flex flex-col items-center justify-center"
                     onSubmit={handleSubmit}
@@ -222,12 +222,12 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                         <script dangerouslySetInnerHTML={{
                             __html: `
                             function onSubmitForm(token) {
-                                document.getElementById('${formId}').submit();
+                                document.getElementById('createStoreForm').submit();
                             }
 
                             `}}></script>
                         <button
-                            id="input-form-modal_no_check"
+                            id="input-createStoreForm"
                             className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha"
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"

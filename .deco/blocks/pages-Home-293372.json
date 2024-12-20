@@ -591,15 +591,6 @@
                       "borderColor": "#003037",
                       "textColor": "#fffff",
                       "showIcon": false
-                    },
-                    {
-                      "href": "/",
-                      "backgroundColor": "transparent",
-                      "borderColor": "#003037",
-                      "textColor": "#003037",
-                      "text": "Abrir loja",
-                      "showIcon": false,
-                      "ctaStyle": "button"
                     }
                   ],
                   "paddingBottom": "120px",
@@ -607,7 +598,14 @@
                   "paddingTop": "0px",
                   "features": [],
                   "image": {},
-                  "use": "image"
+                  "use": "image",
+                  "createStoreCta": {
+                    "planId": "172",
+                    "text": "Abrir loja",
+                    "backgroundColor": "Transparent",
+                    "textColor": "#003037",
+                    "borderColor": "#003037"
+                  }
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
@@ -979,20 +977,17 @@
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/426c8e51-67c5-4b72-a955-e4a1ede9891f/bg-junte-se-a-2milhoes-lojistas.png",
                 "height": 715
               },
-              "cta": [
-                {
-                  "text": "Criar loja",
-                  "href": "/",
-                  "ctaStyle": "button",
-                  "backgroundColor": "#003037",
-                  "textColor": "#FFFFFF",
-                  "borderColor": "#003037",
-                  "showIcon": false
-                }
-              ],
+              "cta": [],
               "useBackground": "image",
               "sectionHeight": "715px",
-              "text": "<p style=\"text-align: center\"> <span style=\"color: #003037; text-align: center; font-family: 'Instrument Serif'; font-size:110px; font-weight: 100; line-height:1.2 \" data-mce-style=\"color: #003037; text-align: center; font-feature-settings: 'liga' off;\">Junte-se a mais de<br>2,7 milhões de lojas</span><br><span style=\"color: #003037; text-align: center; font-family: 'Instrument Serif'; font-size:60px; font-weight: 100; line-height:1.2 \" data-mce-style=\"color: #003037; text-align: center; font-feature-settings: 'liga' off;\">que escolheram a forma mais eficiente<br> de vender online</span></p>"
+              "text": "<p style=\"text-align: center\"> <span style=\"color: #003037; text-align: center; font-family: 'Instrument Serif'; font-size:110px; font-weight: 100; line-height:1.2 \" data-mce-style=\"color: #003037; text-align: center; font-feature-settings: 'liga' off;\">Junte-se a mais de<br>2,7 milhões de lojas</span><br><span style=\"color: #003037; text-align: center; font-family: 'Instrument Serif'; font-size:60px; font-weight: 100; line-height:1.2 \" data-mce-style=\"color: #003037; text-align: center; font-feature-settings: 'liga' off;\">que escolheram a forma mais eficiente<br> de vender online</span></p>",
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172",
+                "text": "Criar loja",
+                "backgroundColor": "#003037",
+                "borderColor": "#003037"
+              }
             }
           },
           {
@@ -2814,24 +2809,22 @@
               ],
               "cta": [
                 {
-                  "ctaStyle": "button",
-                  "href": "#plans",
-                  "text": "Assinar plano",
-                  "backgroundColor": "#ffffff",
-                  "textColor": "#003037",
-                  "borderColor": "#ffffff"
-                },
-                {
                   "ctaStyle": "link",
                   "href": "/talkToSpecialist",
-                  "underlineText": " Falar com especialista",
                   "textColor": "#ffffff",
+                  "underlineText": " Falar com especialista",
                   "showIcon": true
                 }
               ],
               "arrows": false,
               "arrowsColor": "#FAFAF5",
-              "id": "recursosferramentas"
+              "id": "recursosferramentas",
+              "createStoreCta": {
+                "planId": "172",
+                "text": "Assinar plano",
+                "backgroundColor": "Transparent",
+                "borderColor": "#ffffff"
+              }
             }
           },
           {
@@ -2963,21 +2956,13 @@
                   "titleFont": "Instrument serif",
                   "cta": [
                     {
-                      "ctaStyle": "button",
-                      "href": "#plans",
-                      "text": "Criar loja",
-                      "backgroundColor": "#003037",
-                      "borderColor": "#003037",
-                      "textColor": "#fff5f5"
-                    },
-                    {
                       "ctaStyle": "link",
                       "href": "/talkToSpecialist",
-                      "underlineText": "Falar com Especialista ",
                       "backgroundColor": "#ffffff",
                       "borderColor": "#003037",
-                      "showIcon": true,
                       "textColor": "#003037",
+                      "underlineText": "Falar com Especialista ",
+                      "showIcon": true,
                       "outline": true
                     }
                   ],
@@ -3074,7 +3059,14 @@
                   "id": "nossoecossistema",
                   "titleColor": "",
                   "captionColor": "#371E55",
-                  "arrowsColor": "#003037"
+                  "arrowsColor": "#003037",
+                  "createStoreCta": {
+                    "order": 1,
+                    "planId": "172",
+                    "text": "Criar loja",
+                    "backgroundColor": "#003037",
+                    "borderColor": "#003037"
+                  }
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

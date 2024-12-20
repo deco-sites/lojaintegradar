@@ -445,56 +445,65 @@
             ]
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/CardsHero.tsx",
-              "invertColumns": false,
-              "leftColumn": {
-                "cards": [
-                  {
-                    "cta": [],
-                    "useBackground": "image",
-                    "titleColor": "#FAFAF5",
-                    "text": "<p><br><br><br><br><br><br><br></p><p><span style=\"color: #fafaf5; font-family: 'Inter', sans-serif; font-size: 20px; font-style: normal; font-weight: 100; line-height: 120%;\" data-mce-style=\"color: #fafaf5; font-family: 'Inter', sans-serif; font-size: 20px; font-style: normal; font-weight: 100; line-height: 120%;\">Entenda o comportamento do <br>cliente e transforme cada<br>interação em uma chance de<br>conversão.</span></p>",
-                    "backgroundImage": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/49b1dd2c-f414-4be5-902c-282dcbe43db2/bg-card1-leram-meu-pensamento.png",
-                      "width": 1194,
-                      "height": 1752
-                    },
-                    "minHeight": 876,
-                    "borderColor": "#ECEAEB"
-                  }
-                ]
-              },
-              "rightColumn": {
-                "cards": [
-                  {
-                    "cta": [],
-                    "useBackground": "image",
-                    "title": "Ações automatizadas que trabalha por você",
-                    "titleColor": "#003037",
-                    "text": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Envie alertas de carrinho abandonado, personalize campanhas segmentadas e ajuste preços de forma inteligente.</span><br></p>"
+            "__resolveType": "site/sections/CardsHero.tsx",
+            "leftColumn": {
+              "cards": [
+                {
+                  "cta": [],
+                  "useBackground": "image",
+                  "title": "<p><span style=\"font-size: 58pt\">“Leram meu pensamento!”</span></p>",
+                  "titleColor": "#ffffff",
+                  "backgroundImage": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/3bab4a20-361f-489a-be60-6d600467701e/card-image-1.png",
+                    "width": 597,
+                    "height": 960
                   },
-                  {
-                    "cta": [],
-                    "useBackground": "image",
-                    "title": "Se mostre relevante em todos os contatos",
-                    "titleColor": "#003037",
-                    "text": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Leve ofertas contextualizadas para seu clientes também via </span><br><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Whatsapp.</span></p>"
+                  "minHeight": "960px",
+                  "titleFont": "Instrument serif",
+                  "text": "<p><span style=\"font-size: 20px; color: rgb(250, 250, 245);\" data-mce-style=\"font-size: 20px; color: rgb(250, 250, 245);\">Entenda o comportamento do</span></p><p><span style=\"font-size: 20px; color: rgb(250, 250, 245);\" data-mce-style=\"font-size: 20px; color: rgb(250, 250, 245);\">cliente e transforme cada</span></p><p><span style=\"font-size: 20px; color: rgb(250, 250, 245);\" data-mce-style=\"font-size: 20px; color: rgb(250, 250, 245);\">interação em uma chance de</span></p><p><span style=\"font-size: 20px; color: rgb(250, 250, 245);\" data-mce-style=\"font-size: 20px; color: rgb(250, 250, 245);\">conversão.</span></p>",
+                  "spaceBetweenTitleAndText": "30px"
+                }
+              ]
+            },
+            "rightColumn": {
+              "cards": [
+                {
+                  "cta": [],
+                  "useBackground": "image",
+                  "title": "<p><strong><span>Ações automatizadas que trabalha por você</span></strong></p>",
+                  "titleColor": "#003037",
+                  "text": "<p><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt;\">Envie alertas de carrinho abandonado, personalize campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
+                  "minHeight": "254px",
+                  "backgroundImage": {}
+                },
+                {
+                  "cta": [],
+                  "useBackground": "image",
+                  "title": "<p><strong><span>Se mostre relevante em todos os contatos</span></strong></p>",
+                  "titleColor": "#003037",
+                  "text": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Leve ofertas contextualizadas para seu clientes também via</span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Whatsapp.</span></p>",
+                  "minHeight": "254px"
+                },
+                {
+                  "cta": [],
+                  "useBackground": "image",
+                  "title": "<p><span>Em um ano, milhares de</span></p><p><span>lojistas recuperaram<br>R$ 23 milhões em vendas</span></p><p><span>com ferramentas de</span></p><p><span>automação de marketing</span></p><p><span>da Loja Integrada.</span></p>",
+                  "titleColor": "linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%)",
+                  "minHeight": "414px",
+                  "backgroundImage": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1e295d52-64ee-42c2-999b-e8b0147f8f86/card-image-2.png",
+                    "width": 597,
+                    "height": 414
                   },
-                  {
-                    "cta": [],
-                    "useBackground": "image",
-                    "backgroundImage": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ce7129fb-b593-401d-b5dc-13fd0e0b7285/bg-coluna.png",
-                      "width": 1290,
-                      "height": 876
-                    },
-                    "minHeight": 455,
-                    "text": "<div style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\" data-mce-style=\"color: transparent; background: linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%); background-clip: text; font-size: 24px; font-weight: 600; display: inline-block; margin: 20px 0 0 0;\"><p>Em um ano, milhares de<br>lojistas recuperaram<br>R$ 23 milhões em vendas<br>com ferramentas de<br>automação de marketing<br>da Loja Integrada.</p></div>"
+                  "createStoreCta": {
+                    "planId": "172",
+                    "ctaStyle": "link",
+                    "text": "Criar loja",
+                    "textColor": "#003037",
+                    "showIcon": true
                   }
-                ]
-              }
+                }
+              ]
             }
           },
           {

@@ -110,7 +110,6 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                 <form
                     action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${periodo || 'anual'}&plano_id=${planoId || '172'}`}
                     id={formId}
-                    data-gtm-form-interact-id="0"
                     method="POST"
                     className="w-full flex flex-col items-center justify-center"
                     onSubmit={handleSubmit}

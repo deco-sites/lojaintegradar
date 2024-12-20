@@ -280,7 +280,7 @@ export default function Header2({ logo = {
                   </svg>}
                 </a>
               })}
-              {!hideAsideMenu && <label htmlFor="mobile-drawer-nav" class="flex btn btn-ghost drawer-button px-0">
+              {!hideAsideMenu && <label htmlFor="mobile-drawer-nav" class="flex btn btn-ghost drawer-button px-0 order-last">
                 <Icon id="Bars3" size={46} strokeWidth={0.1} class="text-primary fill-current" style={{ color: barsColor }} />
               </label>}
             </ul>

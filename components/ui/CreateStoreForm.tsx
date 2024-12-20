@@ -109,7 +109,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
 
                 <form
                     action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${periodo || 'anual'}&plano_id=${planoId || '172'}`}
-                    id="createStoreForm"
+                    id="createStoreFormRecaptcha"
                     method="POST"
                     className="w-full flex flex-col items-center justify-center"
                     onSubmit={handleSubmit}
@@ -221,8 +221,8 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                         ></script>
                         <script dangerouslySetInnerHTML={{
                             __html: `
-                            function onSubmitForm(token) {
-                                document.getElementById('createStoreForm').submit();
+                            function onSubmitFormRecaptcha(token) {
+                                document.getElementById('createStoreFormRecaptcha').submit();
                             }
 
                             `}}></script>
@@ -231,7 +231,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                             className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha"
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
-                            data-callback="onSubmitForm"
+                            data-callback="onSubmitFormRecaptcha"
                             style={{ background: buttonBackgroundColor, color: buttonTextColor }}
                         >
                             Abrir minha loja agora

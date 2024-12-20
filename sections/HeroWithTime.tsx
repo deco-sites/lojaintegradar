@@ -13,6 +13,15 @@ export interface Props {
     bottomSection?: Section;
 }
 
+export interface IVideo {
+    video?: VideoWidget;
+    width?: number;
+    height?: number;
+    videoDesktop?: VideoWidget;
+    widthDesktop?: number;
+    heightDesktop?: number;
+}
+
 /** @title {{text}} */
 export interface Tag {
     text?: string;
@@ -69,6 +78,8 @@ interface Tabs {
         widthDesktop?: number;
         heightDesktop?: number;
     };
+    tabVideo?: IVideo;
+    useTab?: "image" | "video";
     /**
      * @default false
      * @description Deixe ativo caso queira que o botão de vídeo apareça

@@ -4,7 +4,6 @@ import Icon from "site/components/ui/Icon.tsx";
 import type { Props } from "../../sections/HeroWithTime.tsx";
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 import HeroTimeButtons from "site/islands/HeroTimeButtons.tsx";
-import { useId } from "site/sdk/useId.ts";
 
 function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props) {
     const rootId = tabs ? tabs[0].tabImage?.imageDesktop : "HeroWithTime";
@@ -206,14 +205,22 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
                                 </div>
                                 {activeTab === index && (
                                     <>
-                                        <Image
-                                            src={tab.tabImage?.image || ""}
-                                            alt={tab.tabImage?.alt || ""}
-                                            height={tab.tabImage?.height || 351}
-                                            width={tab.tabImage?.width || 337}
-                                            style={{ minHeight: tab.tabImage?.height || 351 }}
-                                            class="lg:hidden shadow-md pb-[24px] lg:pb-0"
-                                        />
+                                        {tabs[index].useTab == "video"
+                                            ? tabs && <video width={tabs[index].tabVideo?.width || 337} height={tabs[index].tabVideo?.height || 351} autoPlay playsInline muted loading="lazy" loop
+                                                class="object-cover lg:hidden shadow-md pb-[24px] lg:pb-0"
+                                                style={{ width: tabs[index].tabVideo?.width + "px" || "337px", height: tabs[index].tabVideo?.height + "px" || "351px", animationDuration: '300ms' }}>
+                                                <source src={tabs[index].tabVideo?.videoDesktop} type="video/mp4" />
+                                            </video>
+                                            : <Image
+                                                src={tab.tabImage?.image || ""}
+                                                alt={tab.tabImage?.alt || ""}
+                                                height={tab.tabImage?.height || 351}
+                                                width={tab.tabImage?.width || 337}
+                                                style={{ minHeight: tab.tabImage?.height || 351 }}
+                                                class="lg:hidden shadow-md pb-[24px] lg:pb-0"
+                                            />
+                                        }
+
                                         <div className="w-full h-[1px] background-bar">
                                             <div
                                                 className="h-full bg-[#D9D9D9] transition-all ease-linear"
@@ -227,14 +234,20 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
                             </li>
                         ))}
                     </ul>
-                    {tabs && <Image
-                        src={tabs[activeTab].tabImage?.imageDesktop || ""}
-                        alt={tabs[activeTab].tabImage?.altDesktop || ""}
-                        height={tabs[activeTab].tabImage?.heightDesktop || 665}
-                        width={tabs[activeTab].tabImage?.widthDesktop || 606}
-                        className="right-0 top-0 hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage"
-                        style={{ animationDuration: '300ms' }}
-                    />}
+                    {tabs && tabs[activeTab].useTab == "video"
+                        ? tabs[activeTab].tabVideo?.videoDesktop && <video width={tabs[activeTab].tabVideo.widthDesktop || 606} height={tabs[activeTab].tabVideo.heightDesktop || 627} autoPlay playsInline muted loading="lazy" loop
+                            class="object-cover hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage"
+                            style={{ width: tabs[activeTab].tabVideo.widthDesktop + "px" || "606px", height: tabs[activeTab].tabVideo.heightDesktop + "px" || "627px", animationDuration: '300ms' }}>
+                            <source src={tabs[activeTab].tabVideo.videoDesktop} type="video/mp4" />
+                        </video>
+                        : tabs && <Image
+                            src={tabs[activeTab].tabImage?.imageDesktop || ""}
+                            alt={tabs[activeTab].tabImage?.altDesktop || ""}
+                            height={tabs[activeTab].tabImage?.heightDesktop || 665}
+                            width={tabs[activeTab].tabImage?.widthDesktop || 606}
+                            className="hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage"
+                            style={{ animationDuration: '300ms' }}
+                        />}
                     {isModalOpen && currentVideoUrl && (
                         <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
                             <div class="bg-white p-4 rounded-lg relative w-[90%] max-w-[800px]">

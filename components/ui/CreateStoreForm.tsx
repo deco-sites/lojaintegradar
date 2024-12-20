@@ -2,30 +2,10 @@ import { useState, useEffect, useCallback } from "preact/hooks";
 import { CreateStoreFormProps } from "../../sections/CreateStoreHero.tsx"
 import { useId } from "site/sdk/useId.ts";
 
-const useMutationObserver = (domNodeSelector: string, observerOptions: MutationObserverInit, cb: MutationCallback) => {
-    useEffect(() => {
-        const targetNode = document.querySelector(domNodeSelector);
-        if (!targetNode) {
-            console.error(`Element with selector "${domNodeSelector}" not found`);
-            return;
-        }
-
-        const observer = new MutationObserver(cb);
-        observer.observe(targetNode, observerOptions);
-
-        return () => {
-            observer.disconnect();
-        };
-    }, [domNodeSelector, observerOptions, cb]);
-};
 
 
 const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeLink1, agreeLink2, agreeText2, agreeText3, nameCaption, namePlaceholder, passwordCaption, passwordPlaceholder, passwordText, confirmPasswordCaption, confirmPasswordPlaceholder, emailCaption, emailPlaceholder, inputsLabelColor, inputsTextColor, inputsBorderColor, inputsBellowTextColor, linksColor, buttonBackgroundColor, buttonTextColor }: CreateStoreFormProps) => {
     const formId = "create-store-" + useId();
-
-    const [getPlanId, setGetPlanId] = useState('');
-    const [getPeriod, setGetPeriod] = useState('');
-    const [getCoupon, setGetCoupon] = useState('');
 
     const [formData, setFormData] = useState({
         nome: "",

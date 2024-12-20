@@ -103,7 +103,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
     return (
         <div id="createStoreFormDiv" className="inset-0 bg-opacity-50 items-center justify-center z-5">
             <div
-                className="relative mx-[10px] flex flex-col items-center p-12 w-full max-w-[460px] lg:mx-auto bg-white rounded-2xl shadow-md overflow-hidden text-[#371e56]"
+                className="relative flex flex-col items-center p-12 w-full max-w-[460px] lg:mx-auto bg-white rounded-2xl shadow-md overflow-hidden text-[#371e56]"
                 style={{ background: backgroundColor, color: inputsLabelColor }}
                 id="createStoreFormContainer">
 

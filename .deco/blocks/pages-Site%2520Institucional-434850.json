@@ -194,7 +194,7 @@
         "use": "video"
       },
       "paddingBottom": "85px",
-      "ctaPlacement": "left",
+      "ctaPlacement": "center",
       "createStoreFormProps": {
         "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
         "planoId": "172",
@@ -226,7 +226,9 @@
         "buttonBackgroundColor": "#003037",
         "buttonTextColor": "#ffffff",
         "inputsBorderColor": ""
-      }
+      },
+      "paddingRight": "36px",
+      "paddingLeft": "36px"
     },
     {
       "__resolveType": "site/sections/CardsHero.tsx",

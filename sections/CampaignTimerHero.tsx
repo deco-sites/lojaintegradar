@@ -46,7 +46,6 @@ export interface IImage {
     height?: number;
 }
 
-
 export interface Props {
     title?: HTMLWidget;
     campaignTimer?: CampaignTimer;

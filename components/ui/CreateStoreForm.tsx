@@ -4,9 +4,7 @@ import { useId } from "site/sdk/useId.ts";
 
 
 
-const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeLink1, agreeLink2, agreeText2, agreeText3, nameCaption, namePlaceholder, passwordCaption, passwordPlaceholder, passwordText, confirmPasswordCaption, confirmPasswordPlaceholder, emailCaption, emailPlaceholder, inputsLabelColor, inputsTextColor, inputsBorderColor, inputsBellowTextColor, linksColor, buttonBackgroundColor, buttonTextColor }: CreateStoreFormProps) => {
-    const formId = "create-store-" + useId();
-
+const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeText1, agreeLink1, agreeLink2, agreeText2, agreeText3, nameCaption, namePlaceholder, passwordCaption, passwordPlaceholder, passwordText, confirmPasswordCaption, confirmPasswordPlaceholder, emailCaption, emailPlaceholder, inputsLabelColor, inputsTextColor, inputsBorderColor, inputsBellowTextColor, linksColor, buttonBackgroundColor, buttonTextColor }: CreateStoreFormProps) => {
     const [formData, setFormData] = useState({
         nome: "",
         email: "",
@@ -103,7 +101,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
     return (
         <div id="createStoreFormDiv" className="inset-0 bg-opacity-50 items-center justify-center z-5">
             <div
-                className="relative mx-[10px] flex flex-col items-center p-12 w-full max-w-[460px] lg:mx-auto bg-white rounded-2xl shadow-md overflow-hidden text-[#371e56]"
+                className="relative flex flex-col items-center p-12 w-full max-w-[460px] lg:mx-auto bg-white rounded-2xl shadow-md overflow-hidden text-[#371e56]"
                 style={{ background: backgroundColor, color: inputsLabelColor }}
                 id="createStoreFormContainer">
 
@@ -234,7 +232,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, agreeText1, agreeL
                             data-callback="onSubmitFormRecaptcha"
                             style={{ background: buttonBackgroundColor, color: buttonTextColor }}
                         >
-                            Abrir minha loja agora
+                            {buttonText || 'Abrir minha loja agora'}
                         </button>
                     </div>
                 </form>

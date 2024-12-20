@@ -60,6 +60,7 @@ export interface CreateStoreFormProps {
   agreeText2?: string;
   agreeLink2?: createStoreFormLink;
   agreeText3?: string;
+  buttonText?: string;
   /** @format color-input */
   backgroundColor?: string;
   /** @format color-input */
@@ -100,7 +101,7 @@ export default function CreateStoreHero({ id, title, caption, cta = [], ctaPlace
     "right": "justify-end"
   }
   return <div id={id} class="relative" style={{ paddingTop, paddingLeft, paddingRight, paddingBottom, minHeight: sectionMinHeight }}>
-    <div class="max-w-[1250px] mx-auto flex justify-between">
+    <div class="max-w-[1250px] mx-auto flex flex-col items-center lg:flex-row justify-between">
       <div class="max-w-[620px]">
         {title?.text && <AnimateOnShow
           animation="animate-fade-up50"

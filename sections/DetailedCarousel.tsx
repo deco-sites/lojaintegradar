@@ -4,6 +4,7 @@ import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 import { useScript } from "@deco/deco/hooks";
 const refreshArrowsVisibility = () => {
     const currentTarget = event!.currentTarget as HTMLElement;
@@ -52,6 +53,22 @@ export interface CTA {
     showIcon?: boolean;
 }
 
+export interface CreateStoreWithPlanCTA {
+    planId: string;
+    text?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle?: "button" | "link";
+    showIcon?: boolean;
+    width?: string;
+    order?: number;
+}
+
 export interface IVideo {
     src?: VideoWidget;
     width?: string;
@@ -62,6 +79,7 @@ export interface Title {
     text?: RichText;
     font?: string;
 }
+
 
 export interface IImage {
     src: ImageWidget;
@@ -117,6 +135,7 @@ export interface Props {
      * @description time (in seconds) to start the carousel autoplay
      */
     interval?: number;
+    createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     backgroundImage?: IImage;
 }
@@ -137,7 +156,7 @@ function SliderItem({ slide, id }: {
                     </object> */}
                 </video>}
 
-            <div class="flex flex-col gap-7 md:max-w-[396px]">
+            <div class="flex flex-col gap-7">
                 {contentTitle
                     ? contentTitle.text && <div dangerouslySetInnerHTML={{__html: contentTitle.text}} class="text-[34px]" style={{fontFamily: contentTitle.font}}/>
                     : <h2 class="text-primary text-xl md:text-[40px] font-bold leading-[120%] flex" style={{ color: titleColor }}>{title}</h2>}
@@ -179,10 +198,10 @@ function Dots({ slides, interval = 0, dotsColor, dotsProgressBarPlacement = "bel
           }
           `,
         }}/>
-        <div class="relative w-full">
+        <div class="relative w-full my-10">
             <div class="absolute top-[70vw] left-0 md:static w-full flex justify-center">
-                <ul class="flex gap-1 md:gap-6 z-10">
-                    {slides?.map((slide, index) => (<li class="w-11 md:w-auto">
+                <ul class="flex gap-1 md:gap-6 z-10 w-full justify-center">
+                    {slides?.map((slide, index) => (<li class="w-11 md:w-auto max-w-[213px]">
                         <Slider.Dot index={index}>
                             <div class={`py-5 h-full flex ${dotsProgressBarPlacement == "above" ? 'flex-col-reverse' : 'flex-col'}`}>
                                 <div class="h-0 w-11 opacity-0 md:opacity-100 md:h-auto md:w-auto">
@@ -221,7 +240,7 @@ function Buttons({ arrowsColor }: {
 }
 function Carousel(props: Props) {
     const rootId = useId();
-    const { id, title, caption, slides, interval, backgroundImage, cta, arrowsColor, dotsColor, dotsProgressBarPlacement, dotsProgressBarBackgroundColor } = { ...props };
+    const { id, title, caption, slides, interval, backgroundImage, createStoreCta, cta = [], arrowsColor, dotsColor, dotsProgressBarPlacement, dotsProgressBarBackgroundColor } = { ...props };
     return (<div id={id} class="relative">
         {backgroundImage && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={backgroundImage.width || 1440} height={backgroundImage.height || 1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-cover"/></div>}
         <div id={rootId} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
@@ -249,19 +268,40 @@ function Carousel(props: Props) {
                     <SliderItem slide={slide} id={`${rootId}::${index}`}/>
                 </Slider.Item>))}
             </Slider>
-            {cta && <AnimateOnShow animation="animate-fade-up" divClass="flex flex-wrap items-center justify-center gap-7 mt-4 px-7">
-                {cta.map((button) => {
-                if (button.href == '/talkToSpecialist')
-                    return <TalkToSpecialistCta showIcon={button.showIcon} underlineText={button.underlineText} text={button.text} ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`} style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}/>;
-                return <a href={button?.href ?? "#"} target={button?.href.includes("http") ? "_blank" : "_self"} class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`} style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}>
-                        {button?.text}
-                        {button.underlineText && <span class="underline">{button.underlineText}</span>}
-                        {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z"/>
-                        </svg>}
-                    </a>;
-            })}
-            </AnimateOnShow>}
+            <AnimateOnShow divClass="flex flex-wrap justify-center items-center gap-7 mt-4 px-7" animation="animate-fade-up">
+                            {createStoreCta?.text && <CreateStoreCta
+                                period="anual"
+                                text={createStoreCta.text}
+                                planId={createStoreCta.planId}
+                                showIcon={createStoreCta.showIcon}
+                                underlineText={createStoreCta.underlineText}
+                                ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                                style={createStoreCta.ctaStyle != "link"
+                                    ? { background: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order }
+                                    : { color: createStoreCta.textColor, order: createStoreCta.order }}
+                            />}
+                            {cta.map((button, index) => {
+                                if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
+                                    showIcon={button.showIcon}
+                                    underlineText={button.underlineText}
+                                    text={button.text}
+                                    ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} h-auto flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
+                                />
+                                return <a
+                                    href={button?.href ?? "#"}
+                                    target={button?.href.includes("http") ? "_blank" : ""}
+                                    class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} h-auto flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
+                                >
+                                    {button?.text}
+                                    {button.underlineText && <span class="underline">{button.underlineText}</span>}
+                                    {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z" />
+                                    </svg>}
+                                </a>
+                            })}
+                        </AnimateOnShow>
         </div>
 
     </div>);

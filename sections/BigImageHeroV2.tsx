@@ -68,7 +68,7 @@ export interface Props {
     paddingBottom?: string;
 }
 
-export default function BigHeroImageV2({ title, createStoreCta, titleFont, caption, captionFont, image, video, use = "image", features, cta, paddingBottom, paddingTop, id }: Props) {
+export default function BigHeroImageV2({ title, createStoreCta, titleFont, caption, captionFont, image, video, use = "image", features, cta = [], paddingBottom, paddingTop, id }: Props) {
     return <div id={id} style={{ paddingTop: paddingTop, paddingBottom: paddingBottom }} class="pt-10 lg:pt-28">
         <div class="max-w-[1440px] mx-auto">
             <div class="px-7 mb-5">
@@ -116,7 +116,7 @@ export default function BigHeroImageV2({ title, createStoreCta, titleFont, capti
                     <source src={video} type="video/mp4" />
                 </video>}
             </AnimateOnShow>
-            {cta && <AnimateOnShow divClass="flex flex-wrap justify-center items-center gap-7 mt-4 px-7" animation="animate-fade-up">
+            <AnimateOnShow divClass="flex flex-wrap justify-center items-center gap-7 mt-4 px-7" animation="animate-fade-up">
                 {createStoreCta?.text && <CreateStoreCta
                     period="anual"
                     text={createStoreCta.text}
@@ -149,7 +149,7 @@ export default function BigHeroImageV2({ title, createStoreCta, titleFont, capti
                         </svg>}
                     </a>
                 })}
-            </AnimateOnShow>}
+            </AnimateOnShow>
         </div>
     </div>
 }

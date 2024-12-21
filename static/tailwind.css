@@ -3442,6 +3442,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -4197,6 +4201,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[199px\] {
   max-width: 199px;
+}
+.max-w-\[213px\] {
+  max-width: 213px;
 }
 .max-w-\[215px\] {
   max-width: 215px;
@@ -6485,10 +6492,6 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:max-w-\[1500px\] {
     max-width: 1500px;
-  }
-
-  .md\:max-w-\[396px\] {
-    max-width: 396px;
   }
 
   .md\:max-w-\[500px\] {

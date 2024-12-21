@@ -110,6 +110,8 @@ export interface Props {
     dotsProgressBarPlacement?: "above" | "below";
     /** @format color-input */
     dotsColor?: string;
+    /** @format color-input */
+    dotsProgressBarBackgroundColor?: string;
     /**
      * @title Autoplay interval
      * @description time (in seconds) to start the carousel autoplay
@@ -166,7 +168,7 @@ function SliderItem({ slide, id }: {
         </div>
     </AnimateOnShow>);
 }
-function Dots({ slides, interval = 0, dotsColor, dotsProgressBarPlacement = "below" }: Props) {
+function Dots({ slides, interval = 0, dotsColor, dotsProgressBarPlacement = "below", dotsProgressBarBackgroundColor }: Props) {
     return (<>
         <style dangerouslySetInnerHTML={{
             __html: `
@@ -186,7 +188,7 @@ function Dots({ slides, interval = 0, dotsColor, dotsProgressBarPlacement = "bel
                                 <div class="h-0 w-11 opacity-0 md:opacity-100 md:h-auto md:w-auto">
                                     <p class="text-lg text-primary text-left font-semibold opacity-30 group-disabled:opacity-100" style={{ color: dotsColor }}>{slide.title}</p>
                                 </div>
-                                <div class="h-1 mt-2 rounded-full dot overflow-hidden bg-accent-content" style={{ backgroundColor: '#A1ABBC' }}>
+                                <div class="h-1 mt-2 rounded-full dot overflow-hidden bg-accent-content" style={{ background: dotsProgressBarBackgroundColor || '#A1ABBC' }}>
                                     <div class="h-full w-0 bg-primary group-disabled:animate-progress" style={{ animationDuration: `${interval}s`, backgroundColor: dotsColor }}/>
                                 </div>
                             </div>
@@ -219,7 +221,7 @@ function Buttons({ arrowsColor }: {
 }
 function Carousel(props: Props) {
     const rootId = useId();
-    const { id, title, caption, slides, interval, backgroundImage, cta, arrowsColor, dotsColor, dotsProgressBarPlacement } = { ...props };
+    const { id, title, caption, slides, interval, backgroundImage, cta, arrowsColor, dotsColor, dotsProgressBarPlacement, dotsProgressBarBackgroundColor } = { ...props };
     return (<div id={id} class="relative">
         {backgroundImage && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={backgroundImage.width || 1440} height={backgroundImage.height || 1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-cover"/></div>}
         <div id={rootId} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
@@ -240,7 +242,7 @@ function Carousel(props: Props) {
                     {props.arrows && <Buttons arrowsColor={arrowsColor}/>}
                 </div>
             </div>
-            {props.dots && <Dots slides={slides} interval={interval} dotsColor={dotsColor} dotsProgressBarPlacement={dotsProgressBarPlacement}/>}{" "}
+            {props.dots && <Dots slides={slides} interval={interval} dotsColor={dotsColor} dotsProgressBarPlacement={dotsProgressBarPlacement} dotsProgressBarBackgroundColor={dotsProgressBarBackgroundColor} />}{" "}
 
             <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-0 md:py-9 md:px-9" rootId={rootId} interval={interval && interval * 1e3} infinite>
                 {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full">

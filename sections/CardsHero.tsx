@@ -64,6 +64,7 @@ export interface Card {
 }
 
 export interface Props {
+    id?: string;
     title?: Title;
     caption?: RichText;
     leftColumn?: {
@@ -73,6 +74,8 @@ export interface Props {
         cards?: Card[];
     }
     invertColumns?: boolean;
+    paddingTop?: string;
+    paddingBottom?: string;
 }
 
 export function CardColumn({ cards = [] }: { cards?: Card[] }) {
@@ -146,8 +149,8 @@ export function CardColumn({ cards = [] }: { cards?: Card[] }) {
 }
 
 
-export default function CardsHero({ title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
-    return <div>
+export default function CardsHero({ id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
+    return <div id={id} style={{ paddingBottom, paddingTop }}>
         {title?.text && <AnimateOnShow
             animation="animate-fade-up50"
             divClass="text-5xl lg:text-[70px] leading-[120%] mb-4"

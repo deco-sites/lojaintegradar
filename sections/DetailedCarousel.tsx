@@ -1,4 +1,4 @@
-import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, HTMLWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
@@ -51,9 +51,17 @@ export interface CTA {
     ctaStyle: "button" | "link";
     showIcon?: boolean;
 }
+
+export interface Title {
+    text?: RichText;
+    font?: string;
+}
+
 export interface IImage {
     src: ImageWidget;
     alt?: string;
+    width?: number;
+    height?: number;
 }
 export interface BulletPoints {
     items?: string[];
@@ -74,9 +82,11 @@ export interface Slide {
     bulletPoints?: BulletPoints;
 }
 export interface Props {
-    title?: string;
+    id?: string;
+    title?: Title;
     /** @format color-input */
     titleColor?: string;
+    caption?: RichText;
     /** @format color-input */
     slides?: Slide[];
     /**
@@ -112,7 +122,7 @@ function SliderItem({ slide, id }: {
     return (<AnimateOnShow animation="animate-fade-in" delay={150}>
         <div id={id} class="relative flex flex-col md:flex-row gap-[84px] md:gap-10 w-full min-h-[292px]">
             <div class="max-w-[730px] flex-grow bg-primary-content bg-opacity-30 rounded-[30px] flex items-center overflow-hidden">
-                {use == 'image' && image && <Image width={730} height={553} src={image.src} alt={image.alt || ""}/>}
+                {use == 'image' && image && <Image width={image.width || 730} height={image.height || 553} src={image.src} alt={image.alt || ""}/>}
                 {use == 'video' && video && <video width="730" height="553" autoPlay playsInline muted loading="lazy" loop class="object-cover object-top h-full w-full">
                     <source src={video} type="video/mp4"/>
                     <object data="" width="730" height="553">
@@ -127,13 +137,13 @@ function SliderItem({ slide, id }: {
                 <div class="flex gap-1 justify-between lg:hidden">
                     <div class="flex flex-col  w-5/12 lg:w-auto">
                         {leftColumnBulletPoints?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] w-full">
-                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain"/></div>}
+                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
                             <p class="text-sm md:text-lg font-normal" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
                         </div>))}
                     </div>
                     <div class="flex flex-col  w-5/12 lg:w-auto">
                         {rightColumnBulletPoints?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] w-full">
-                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain"/></div>}
+                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
                             <p class="text-sm md:text-lg font-normal" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
                         </div>))}
                     </div>
@@ -141,7 +151,7 @@ function SliderItem({ slide, id }: {
                 {/* desktop bullet points div */}
                 <div>
                     {bulletPoints?.items?.map((bulletPoint) => (<div class="hidden lg:flex gap-[15px] md:gap-5 mt-[10px] w-5/12 md:w-auto">
-                        {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain"/></div>}
+                        {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
                         <p class="text-sm md:text-lg font-semibold" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
                     </div>))}
                 </div>
@@ -201,15 +211,22 @@ function Buttons({ arrowsColor }: {
     </div>);
 }
 function Carousel(props: Props) {
-    const id = useId();
-    const { title, slides, interval, backgroundImage, cta, titleColor, arrowsColor, dotsColor, dotsProgressBarPlacement } = { ...props };
-    return (<div id="detailedCarousel" class="relative mt-16">
-        {backgroundImage && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={1440} height={1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-fill"/></div>}
-        <div id={id} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
-
-            {title && <AnimateOnShow divClass="max-w-[307px] md:max-w-full text-2xl md:text-5xl text-primary text-center font-semibold leading-snug pb-7 md:pb-12 lg:pb-16">
-                <h2 class="w-full" style={{ color: titleColor }}>{title}</h2>
-            </AnimateOnShow>}
+    const rootId = useId();
+    const { id, title, caption, slides, interval, backgroundImage, cta, arrowsColor, dotsColor, dotsProgressBarPlacement } = { ...props };
+    return (<div id={id} class="relative mt-16">
+        {backgroundImage && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={backgroundImage.width || 1440} height={backgroundImage.height || 1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-cover"/></div>}
+        <div id={rootId} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
+            {title?.text && <AnimateOnShow
+                        animation="animate-fade-up50"
+                        divClass="text-5xl lg:text-[70px] leading-[120%] mb-4"
+                        style={{ fontFamily: title.font }}>
+                        <div dangerouslySetInnerHTML={{ __html: title.text }} />
+                    </AnimateOnShow>}
+                    {caption && <AnimateOnShow
+                        animation="animate-fade-up50"
+                        divClass="text-base lg:text-2xl font-light leading-normal mb-4">
+                        <div dangerouslySetInnerHTML={{ __html: caption }} />
+                    </AnimateOnShow>}
 
             <div class="relative w-full ">
                 <div class="absolute top-[28vw] left-0 flex justify-end w-full lg:px-9 ">
@@ -218,9 +235,9 @@ function Carousel(props: Props) {
             </div>
             {props.dots && <Dots slides={slides} interval={interval} dotsColor={dotsColor} dotsProgressBarPlacement={dotsProgressBarPlacement}/>}{" "}
 
-            <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-0 md:py-9 md:px-9" rootId={id} interval={interval && interval * 1e3} infinite>
+            <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-0 md:py-9 md:px-9" rootId={rootId} interval={interval && interval * 1e3} infinite>
                 {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full">
-                    <SliderItem slide={slide} id={`${id}::${index}`}/>
+                    <SliderItem slide={slide} id={`${rootId}::${index}`}/>
                 </Slider.Item>))}
             </Slider>
             {cta && <AnimateOnShow animation="animate-fade-up" divClass="flex flex-wrap items-center justify-center gap-7 mt-4 px-7">

@@ -76,6 +76,8 @@ export interface Slide {
     title: string;
     /** @format color-input */
     titleColor?: string;
+    contentTitle?: Title;
+    caption?: Title;
     image?: IImage;
     video?: VideoWidget;
     use?: 'image' | 'video';
@@ -84,8 +86,6 @@ export interface Slide {
 export interface Props {
     id?: string;
     title?: Title;
-    /** @format color-input */
-    titleColor?: string;
     caption?: RichText;
     /** @format color-input */
     slides?: Slide[];
@@ -116,12 +116,11 @@ function SliderItem({ slide, id }: {
     slide: Slide;
     id: string;
 }) {
-    const { title, image, bulletPoints, video, use = 'image', titleColor } = slide;
+    const { title, contentTitle, caption, image, bulletPoints, video, use = 'image', titleColor } = slide;
     const leftColumnBulletPoints = bulletPoints?.items?.filter((_item, index) => index % 2 == 0);
     const rightColumnBulletPoints = bulletPoints?.items?.filter((_item, index) => index % 2 != 0);
     return (<AnimateOnShow animation="animate-fade-in" delay={150}>
         <div id={id} class="relative flex flex-col md:flex-row gap-[84px] md:gap-10 w-full min-h-[292px]">
-            <div class="max-w-[730px] flex-grow bg-primary-content bg-opacity-30 rounded-[30px] flex items-center overflow-hidden">
                 {use == 'image' && image && <Image width={image.width || 730} height={image.height || 553} src={image.src} alt={image.alt || ""}/>}
                 {use == 'video' && video && <video width="730" height="553" autoPlay playsInline muted loading="lazy" loop class="object-cover object-top h-full w-full">
                     <source src={video} type="video/mp4"/>
@@ -129,10 +128,12 @@ function SliderItem({ slide, id }: {
                         <embed width="730" height="553" src={video}/>
                     </object>
                 </video>}
-            </div>
 
             <div class="flex flex-col gap-7 md:max-w-[396px]">
-                <h2 class="text-primary text-xl md:text-[40px] font-bold leading-[120%] flex" style={{ color: titleColor }}>{title}</h2>
+                {contentTitle
+                    ? contentTitle.text && <div dangerouslySetInnerHTML={{__html: contentTitle.text}} class="text-[34px]" style={{fontFamily: contentTitle.font}}/>
+                    : <h2 class="text-primary text-xl md:text-[40px] font-bold leading-[120%] flex" style={{ color: titleColor }}>{title}</h2>}
+                {caption?.text && <div dangerouslySetInnerHTML={{__html: caption.text}} class="font-light text-2xl" style={{fontFamily: caption.font}}/>}
                 {/* mobile bullet points div */}
                 <div class="flex gap-1 justify-between lg:hidden">
                     <div class="flex flex-col  w-5/12 lg:w-auto">
@@ -213,7 +214,7 @@ function Buttons({ arrowsColor }: {
 function Carousel(props: Props) {
     const rootId = useId();
     const { id, title, caption, slides, interval, backgroundImage, cta, arrowsColor, dotsColor, dotsProgressBarPlacement } = { ...props };
-    return (<div id={id} class="relative mt-16">
+    return (<div id={id} class="relative">
         {backgroundImage && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={backgroundImage.width || 1440} height={backgroundImage.height || 1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-cover"/></div>}
         <div id={rootId} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
             {title?.text && <AnimateOnShow

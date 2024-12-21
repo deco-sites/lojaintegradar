@@ -10,6 +10,8 @@ export interface Props {
     tabs?: Tabs[];
     finalButtons?: Button[];
     background?: Background;
+    paddingTop?: string;
+    paddingBottom?: string;
     bottomSection?: Section;
 }
 
@@ -137,7 +139,7 @@ interface Background {
 
 
 function HeroWithTimer(props: Props) {
-
+    const { paddingBottom, paddingTop } = props;
     const getBackgroundStyle = () => {
         if (!props.background) return {};
 
@@ -164,7 +166,7 @@ function HeroWithTimer(props: Props) {
     };
 
     return (
-        <div id="heroTimeSection" style={getBackgroundStyle()} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
+        <div id="heroTimeSection" style={{ ...getBackgroundStyle(), paddingBottom, paddingTop }} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
             <HeroWithTime {...props} />
             {props.bottomSection && <props.bottomSection.Component {...props.bottomSection.props} />}
         </div>

@@ -52,6 +52,12 @@ export interface CTA {
     showIcon?: boolean;
 }
 
+export interface IVideo {
+    src?: VideoWidget;
+    width?: string;
+    height?: string;
+}
+
 export interface Title {
     text?: RichText;
     font?: string;
@@ -79,7 +85,7 @@ export interface Slide {
     contentTitle?: Title;
     caption?: Title;
     image?: IImage;
-    video?: VideoWidget;
+    video?: IVideo;
     use?: 'image' | 'video';
     bulletPoints?: BulletPoints;
 }
@@ -122,11 +128,11 @@ function SliderItem({ slide, id }: {
     return (<AnimateOnShow animation="animate-fade-in" delay={150}>
         <div id={id} class="relative flex flex-col md:flex-row gap-[84px] md:gap-10 w-full min-h-[292px]">
                 {use == 'image' && image && <Image width={image.width || 730} height={image.height || 553} src={image.src} alt={image.alt || ""}/>}
-                {use == 'video' && video && <video width="730" height="553" autoPlay playsInline muted loading="lazy" loop class="object-cover object-top h-full w-full">
-                    <source src={video} type="video/mp4"/>
-                    <object data="" width="730" height="553">
-                        <embed width="730" height="553" src={video}/>
-                    </object>
+                {use == 'video' && video?.src && <video width={video.width?.toString() || "730"} height={video.height?.toString() || "553"} autoPlay playsInline muted loading="lazy" loop class="object-cover object-top" style={{width: `${video.width}px`, height: `${video.height}px`}}>
+                    <source src={video.src} type="video/mp4"/>
+                    {/* <object data="" width="730" height="553">
+                        <embed width="730" height="553" src={video.src}/>
+                    </object> */}
                 </video>}
 
             <div class="flex flex-col gap-7 md:max-w-[396px]">

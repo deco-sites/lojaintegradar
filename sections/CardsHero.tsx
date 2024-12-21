@@ -159,7 +159,7 @@ export default function CardsHero({ id, paddingBottom, paddingTop, title, captio
         </AnimateOnShow>}
         {caption && <AnimateOnShow
             animation="animate-fade-up50"
-            divClass="text-base lg:text-2xl font-normal leading-normal mb-4">
+            divClass="text-base lg:text-2xl font-light leading-normal mb-4">
             <div dangerouslySetInnerHTML={{ __html: caption }} />
         </AnimateOnShow>}
         <div class={`max-w-[1220px] mx-auto py-20 px-7 lg:px-0 flex flex-wrap gap-y-7 justify-center lg:justify-between ${invertColumns && 'flex-row-reverse'}`}>

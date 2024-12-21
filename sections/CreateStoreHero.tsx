@@ -111,7 +111,7 @@ export default function CreateStoreHero({ id, title, caption, cta = [], ctaPlace
         </AnimateOnShow>}
         {caption && <AnimateOnShow
           animation="animate-fade-up50"
-          divClass="text-base lg:text-2xl font-normal leading-normal mb-4">
+          divClass="text-base lg:text-2xl font-light leading-normal mb-4">
           <div dangerouslySetInnerHTML={{ __html: caption }} />
         </AnimateOnShow>}
         <AnimateOnShow

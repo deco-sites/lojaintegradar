@@ -6,118 +6,120 @@ import * as $$$$$$$$$0 from "./actions/sendTcoUserData.ts";
 import * as $$$$$$$$$$$0 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/Accordion.tsx";
-import * as $$$$$$1 from "./sections/BackToTopButton.tsx";
-import * as $$$$$$2 from "./sections/BigImageHero.tsx";
-import * as $$$$$$3 from "./sections/BigImageHeroV2.tsx";
-import * as $$$$$$4 from "./sections/BlankSection.tsx";
-import * as $$$$$$5 from "./sections/BulletPointsHero.tsx";
-import * as $$$$$$6 from "./sections/CalculateYourCosts.tsx";
-import * as $$$$$$7 from "./sections/CampaignTimerHero.tsx";
-import * as $$$$$$8 from "./sections/CardsHero.tsx";
-import * as $$$$$$9 from "./sections/Carousel.tsx";
-import * as $$$$$$10 from "./sections/CollapseGroup.tsx";
-import * as $$$$$$11 from "./sections/CreateStoreHero.tsx";
-import * as $$$$$$12 from "./sections/DetailedCarousel.tsx";
-import * as $$$$$$13 from "./sections/DetailedHero.tsx";
-import * as $$$$$$14 from "./sections/Division.tsx";
-import * as $$$$$$15 from "./sections/Faq.tsx";
-import * as $$$$$$16 from "./sections/FloatingButtons.tsx";
-import * as $$$$$$17 from "./sections/Footer.tsx";
-import * as $$$$$$18 from "./sections/Footer2.tsx";
-import * as $$$$$$19 from "./sections/FooterV3.tsx";
-import * as $$$$$$20 from "./sections/Header.tsx";
-import * as $$$$$$21 from "./sections/Header2.tsx";
-import * as $$$$$$22 from "./sections/Hero.tsx";
-import * as $$$$$$23 from "./sections/HeroCard.tsx";
-import * as $$$$$$24 from "./sections/HeroInfo.tsx";
-import * as $$$$$$25 from "./sections/HeroTab.tsx";
-import * as $$$$$$26 from "./sections/HeroV2.tsx";
-import * as $$$$$$27 from "./sections/HeroWithTime.tsx";
-import * as $$$$$$28 from "./sections/ItWorks.tsx";
-import * as $$$$$$29 from "./sections/Logos.tsx";
-import * as $$$$$$30 from "./sections/MainHero.tsx";
-import * as $$$$$$31 from "./sections/MigrateToUs.tsx";
-import * as $$$$$$32 from "./sections/Partners.tsx";
-import * as $$$$$$33 from "./sections/PlanDetails.tsx";
-import * as $$$$$$34 from "./sections/PlanDetails2.tsx";
-import * as $$$$$$35 from "./sections/PlanDetailsV3.tsx";
-import * as $$$$$$36 from "./sections/Plans.tsx";
-import * as $$$$$$37 from "./sections/PlansV2.tsx";
-import * as $$$$$$38 from "./sections/Prices.tsx";
-import * as $$$$$$39 from "./sections/Quote.tsx";
-import * as $$$$$$41 from "./sections/ScrollableCards.tsx";
-import * as $$$$$$40 from "./sections/ScrollOnLoadScript.tsx";
-import * as $$$$$$42 from "./sections/SectionsInTabs.tsx";
-import * as $$$$$$43 from "./sections/SimpleHero.tsx";
-import * as $$$$$$44 from "./sections/TalkToAnExpert.tsx";
-import * as $$$$$$45 from "./sections/TalkToSpecialistModal.tsx";
-import * as $$$$$$46 from "./sections/TcoCalculator.tsx";
-import * as $$$$$$47 from "./sections/TcoCalculatorV2.tsx";
-import * as $$$$$$48 from "./sections/TcoCalculatorV3.tsx";
-import * as $$$$$$49 from "./sections/TcoCalculatorV4.tsx";
-import * as $$$$$$50 from "./sections/TcoCalculatorV5.tsx";
-import * as $$$$$$51 from "./sections/Testimonials.tsx";
-import * as $$$$$$52 from "./sections/TestimonialsWithBubbles.tsx";
-import * as $$$$$$53 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$54 from "./sections/TimeLine.tsx";
+import * as $$$$$$1 from "./sections/AutomaticCarousel.tsx";
+import * as $$$$$$2 from "./sections/BackToTopButton.tsx";
+import * as $$$$$$3 from "./sections/BigImageHero.tsx";
+import * as $$$$$$4 from "./sections/BigImageHeroV2.tsx";
+import * as $$$$$$5 from "./sections/BlankSection.tsx";
+import * as $$$$$$6 from "./sections/BulletPointsHero.tsx";
+import * as $$$$$$7 from "./sections/CalculateYourCosts.tsx";
+import * as $$$$$$8 from "./sections/CampaignTimerHero.tsx";
+import * as $$$$$$9 from "./sections/CardsHero.tsx";
+import * as $$$$$$10 from "./sections/Carousel.tsx";
+import * as $$$$$$11 from "./sections/CollapseGroup.tsx";
+import * as $$$$$$12 from "./sections/CreateStoreHero.tsx";
+import * as $$$$$$13 from "./sections/DetailedCarousel.tsx";
+import * as $$$$$$14 from "./sections/DetailedHero.tsx";
+import * as $$$$$$15 from "./sections/Division.tsx";
+import * as $$$$$$16 from "./sections/Faq.tsx";
+import * as $$$$$$17 from "./sections/FloatingButtons.tsx";
+import * as $$$$$$18 from "./sections/Footer.tsx";
+import * as $$$$$$19 from "./sections/Footer2.tsx";
+import * as $$$$$$20 from "./sections/FooterV3.tsx";
+import * as $$$$$$21 from "./sections/Header.tsx";
+import * as $$$$$$22 from "./sections/Header2.tsx";
+import * as $$$$$$23 from "./sections/Hero.tsx";
+import * as $$$$$$24 from "./sections/HeroCard.tsx";
+import * as $$$$$$25 from "./sections/HeroInfo.tsx";
+import * as $$$$$$26 from "./sections/HeroTab.tsx";
+import * as $$$$$$27 from "./sections/HeroV2.tsx";
+import * as $$$$$$28 from "./sections/HeroWithTime.tsx";
+import * as $$$$$$29 from "./sections/ItWorks.tsx";
+import * as $$$$$$30 from "./sections/Logos.tsx";
+import * as $$$$$$31 from "./sections/MainHero.tsx";
+import * as $$$$$$32 from "./sections/MigrateToUs.tsx";
+import * as $$$$$$33 from "./sections/Partners.tsx";
+import * as $$$$$$34 from "./sections/PlanDetails.tsx";
+import * as $$$$$$35 from "./sections/PlanDetails2.tsx";
+import * as $$$$$$36 from "./sections/PlanDetailsV3.tsx";
+import * as $$$$$$37 from "./sections/Plans.tsx";
+import * as $$$$$$38 from "./sections/PlansV2.tsx";
+import * as $$$$$$39 from "./sections/Prices.tsx";
+import * as $$$$$$40 from "./sections/Quote.tsx";
+import * as $$$$$$42 from "./sections/ScrollableCards.tsx";
+import * as $$$$$$41 from "./sections/ScrollOnLoadScript.tsx";
+import * as $$$$$$43 from "./sections/SectionsInTabs.tsx";
+import * as $$$$$$44 from "./sections/SimpleHero.tsx";
+import * as $$$$$$45 from "./sections/TalkToAnExpert.tsx";
+import * as $$$$$$46 from "./sections/TalkToSpecialistModal.tsx";
+import * as $$$$$$47 from "./sections/TcoCalculator.tsx";
+import * as $$$$$$48 from "./sections/TcoCalculatorV2.tsx";
+import * as $$$$$$49 from "./sections/TcoCalculatorV3.tsx";
+import * as $$$$$$50 from "./sections/TcoCalculatorV4.tsx";
+import * as $$$$$$51 from "./sections/TcoCalculatorV5.tsx";
+import * as $$$$$$52 from "./sections/Testimonials.tsx";
+import * as $$$$$$53 from "./sections/TestimonialsWithBubbles.tsx";
+import * as $$$$$$54 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$55 from "./sections/TimeLine.tsx";
 
 const manifest = {
   "sections": {
     "site/sections/Accordion.tsx": $$$$$$0,
-    "site/sections/BackToTopButton.tsx": $$$$$$1,
-    "site/sections/BigImageHero.tsx": $$$$$$2,
-    "site/sections/BigImageHeroV2.tsx": $$$$$$3,
-    "site/sections/BlankSection.tsx": $$$$$$4,
-    "site/sections/BulletPointsHero.tsx": $$$$$$5,
-    "site/sections/CalculateYourCosts.tsx": $$$$$$6,
-    "site/sections/CampaignTimerHero.tsx": $$$$$$7,
-    "site/sections/CardsHero.tsx": $$$$$$8,
-    "site/sections/Carousel.tsx": $$$$$$9,
-    "site/sections/CollapseGroup.tsx": $$$$$$10,
-    "site/sections/CreateStoreHero.tsx": $$$$$$11,
-    "site/sections/DetailedCarousel.tsx": $$$$$$12,
-    "site/sections/DetailedHero.tsx": $$$$$$13,
-    "site/sections/Division.tsx": $$$$$$14,
-    "site/sections/Faq.tsx": $$$$$$15,
-    "site/sections/FloatingButtons.tsx": $$$$$$16,
-    "site/sections/Footer.tsx": $$$$$$17,
-    "site/sections/Footer2.tsx": $$$$$$18,
-    "site/sections/FooterV3.tsx": $$$$$$19,
-    "site/sections/Header.tsx": $$$$$$20,
-    "site/sections/Header2.tsx": $$$$$$21,
-    "site/sections/Hero.tsx": $$$$$$22,
-    "site/sections/HeroCard.tsx": $$$$$$23,
-    "site/sections/HeroInfo.tsx": $$$$$$24,
-    "site/sections/HeroTab.tsx": $$$$$$25,
-    "site/sections/HeroV2.tsx": $$$$$$26,
-    "site/sections/HeroWithTime.tsx": $$$$$$27,
-    "site/sections/ItWorks.tsx": $$$$$$28,
-    "site/sections/Logos.tsx": $$$$$$29,
-    "site/sections/MainHero.tsx": $$$$$$30,
-    "site/sections/MigrateToUs.tsx": $$$$$$31,
-    "site/sections/Partners.tsx": $$$$$$32,
-    "site/sections/PlanDetails.tsx": $$$$$$33,
-    "site/sections/PlanDetails2.tsx": $$$$$$34,
-    "site/sections/PlanDetailsV3.tsx": $$$$$$35,
-    "site/sections/Plans.tsx": $$$$$$36,
-    "site/sections/PlansV2.tsx": $$$$$$37,
-    "site/sections/Prices.tsx": $$$$$$38,
-    "site/sections/Quote.tsx": $$$$$$39,
-    "site/sections/ScrollableCards.tsx": $$$$$$41,
-    "site/sections/ScrollOnLoadScript.tsx": $$$$$$40,
-    "site/sections/SectionsInTabs.tsx": $$$$$$42,
-    "site/sections/SimpleHero.tsx": $$$$$$43,
-    "site/sections/TalkToAnExpert.tsx": $$$$$$44,
-    "site/sections/TalkToSpecialistModal.tsx": $$$$$$45,
-    "site/sections/TcoCalculator.tsx": $$$$$$46,
-    "site/sections/TcoCalculatorV2.tsx": $$$$$$47,
-    "site/sections/TcoCalculatorV3.tsx": $$$$$$48,
-    "site/sections/TcoCalculatorV4.tsx": $$$$$$49,
-    "site/sections/TcoCalculatorV5.tsx": $$$$$$50,
-    "site/sections/Testimonials.tsx": $$$$$$51,
-    "site/sections/TestimonialsWithBubbles.tsx": $$$$$$52,
-    "site/sections/Theme/Theme.tsx": $$$$$$53,
-    "site/sections/TimeLine.tsx": $$$$$$54,
+    "site/sections/AutomaticCarousel.tsx": $$$$$$1,
+    "site/sections/BackToTopButton.tsx": $$$$$$2,
+    "site/sections/BigImageHero.tsx": $$$$$$3,
+    "site/sections/BigImageHeroV2.tsx": $$$$$$4,
+    "site/sections/BlankSection.tsx": $$$$$$5,
+    "site/sections/BulletPointsHero.tsx": $$$$$$6,
+    "site/sections/CalculateYourCosts.tsx": $$$$$$7,
+    "site/sections/CampaignTimerHero.tsx": $$$$$$8,
+    "site/sections/CardsHero.tsx": $$$$$$9,
+    "site/sections/Carousel.tsx": $$$$$$10,
+    "site/sections/CollapseGroup.tsx": $$$$$$11,
+    "site/sections/CreateStoreHero.tsx": $$$$$$12,
+    "site/sections/DetailedCarousel.tsx": $$$$$$13,
+    "site/sections/DetailedHero.tsx": $$$$$$14,
+    "site/sections/Division.tsx": $$$$$$15,
+    "site/sections/Faq.tsx": $$$$$$16,
+    "site/sections/FloatingButtons.tsx": $$$$$$17,
+    "site/sections/Footer.tsx": $$$$$$18,
+    "site/sections/Footer2.tsx": $$$$$$19,
+    "site/sections/FooterV3.tsx": $$$$$$20,
+    "site/sections/Header.tsx": $$$$$$21,
+    "site/sections/Header2.tsx": $$$$$$22,
+    "site/sections/Hero.tsx": $$$$$$23,
+    "site/sections/HeroCard.tsx": $$$$$$24,
+    "site/sections/HeroInfo.tsx": $$$$$$25,
+    "site/sections/HeroTab.tsx": $$$$$$26,
+    "site/sections/HeroV2.tsx": $$$$$$27,
+    "site/sections/HeroWithTime.tsx": $$$$$$28,
+    "site/sections/ItWorks.tsx": $$$$$$29,
+    "site/sections/Logos.tsx": $$$$$$30,
+    "site/sections/MainHero.tsx": $$$$$$31,
+    "site/sections/MigrateToUs.tsx": $$$$$$32,
+    "site/sections/Partners.tsx": $$$$$$33,
+    "site/sections/PlanDetails.tsx": $$$$$$34,
+    "site/sections/PlanDetails2.tsx": $$$$$$35,
+    "site/sections/PlanDetailsV3.tsx": $$$$$$36,
+    "site/sections/Plans.tsx": $$$$$$37,
+    "site/sections/PlansV2.tsx": $$$$$$38,
+    "site/sections/Prices.tsx": $$$$$$39,
+    "site/sections/Quote.tsx": $$$$$$40,
+    "site/sections/ScrollableCards.tsx": $$$$$$42,
+    "site/sections/ScrollOnLoadScript.tsx": $$$$$$41,
+    "site/sections/SectionsInTabs.tsx": $$$$$$43,
+    "site/sections/SimpleHero.tsx": $$$$$$44,
+    "site/sections/TalkToAnExpert.tsx": $$$$$$45,
+    "site/sections/TalkToSpecialistModal.tsx": $$$$$$46,
+    "site/sections/TcoCalculator.tsx": $$$$$$47,
+    "site/sections/TcoCalculatorV2.tsx": $$$$$$48,
+    "site/sections/TcoCalculatorV3.tsx": $$$$$$49,
+    "site/sections/TcoCalculatorV4.tsx": $$$$$$50,
+    "site/sections/TcoCalculatorV5.tsx": $$$$$$51,
+    "site/sections/Testimonials.tsx": $$$$$$52,
+    "site/sections/TestimonialsWithBubbles.tsx": $$$$$$53,
+    "site/sections/Theme/Theme.tsx": $$$$$$54,
+    "site/sections/TimeLine.tsx": $$$$$$55,
   },
   "actions": {
     "site/actions/sendTcoUserData.ts": $$$$$$$$$0,

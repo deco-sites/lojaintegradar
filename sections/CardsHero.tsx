@@ -26,6 +26,11 @@ export interface IImage {
     height?: number;
 }
 
+export interface Title {
+    text?: RichText;
+    font?: string;
+}
+
 export interface CreateStoreWithPlanCTA {
     planId: string;
     text?: string;
@@ -56,6 +61,21 @@ export interface Card {
     /** @format color-input */
     borderColor?: string;
     minHeight?: string;
+}
+
+export interface Props {
+    id?: string;
+    title?: Title;
+    caption?: RichText;
+    leftColumn?: {
+        cards?: Card[];
+    }
+    rightColumn?: {
+        cards?: Card[];
+    }
+    invertColumns?: boolean;
+    paddingTop?: string;
+    paddingBottom?: string;
 }
 
 export function CardColumn({ cards = [] }: { cards?: Card[] }) {
@@ -128,19 +148,25 @@ export function CardColumn({ cards = [] }: { cards?: Card[] }) {
     </div>
 }
 
-export interface Props {
-    leftColumn?: {
-        cards?: Card[];
-    }
-    rightColumn?: {
-        cards?: Card[];
-    }
-    invertColumns?: boolean;
-}
 
-export default function CardsHero({ leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
-    return <div class={`max-w-[1220px] mx-auto py-20 px-7 lg:px-0 flex flex-wrap gap-y-7 justify-center lg:justify-between ${invertColumns && 'flex-row-reverse'}`}>
-        <CardColumn cards={leftColumn.cards} />
-        <CardColumn cards={rightColumn.cards} />
+export default function CardsHero({ id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
+    return <div id={id} class="py-20" style={{ paddingBottom, paddingTop }}>
+        <div class="max-w-[1220px] mx-auto">
+            {title?.text && <AnimateOnShow
+                animation="animate-fade-up50"
+                divClass="text-5xl lg:text-[70px] leading-[120%] mb-4"
+                style={{ fontFamily: title.font }}>
+                <div dangerouslySetInnerHTML={{ __html: title.text }} />
+            </AnimateOnShow>}
+            {caption && <AnimateOnShow
+                animation="animate-fade-up50"
+                divClass="text-base lg:text-2xl font-light leading-normal mb-4">
+                <div dangerouslySetInnerHTML={{ __html: caption }} />
+            </AnimateOnShow>}
+        </div>
+        <div class={`max-w-[1220px] mx-auto px-7 lg:px-0 flex flex-wrap gap-y-7 justify-center lg:justify-between ${invertColumns && 'flex-row-reverse'}`}>
+            <CardColumn cards={leftColumn.cards} />
+            <CardColumn cards={rightColumn.cards} />
+        </div>
     </div>
 }

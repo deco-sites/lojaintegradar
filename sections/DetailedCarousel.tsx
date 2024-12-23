@@ -1,9 +1,10 @@
-import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, HTMLWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 import { useScript } from "@deco/deco/hooks";
 const refreshArrowsVisibility = () => {
     const currentTarget = event!.currentTarget as HTMLElement;
@@ -51,9 +52,40 @@ export interface CTA {
     ctaStyle: "button" | "link";
     showIcon?: boolean;
 }
+
+export interface CreateStoreWithPlanCTA {
+    planId: string;
+    text?: string;
+    underlineText?: string;
+    /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
+    textColor?: string;
+    /** @format color-input */
+    borderColor?: string;
+    ctaStyle?: "button" | "link";
+    showIcon?: boolean;
+    width?: string;
+    order?: number;
+}
+
+export interface IVideo {
+    src?: VideoWidget;
+    width?: string;
+    height?: string;
+}
+
+export interface Title {
+    text?: RichText;
+    font?: string;
+}
+
+
 export interface IImage {
     src: ImageWidget;
     alt?: string;
+    width?: number;
+    height?: number;
 }
 export interface BulletPoints {
     items?: string[];
@@ -68,15 +100,17 @@ export interface Slide {
     title: string;
     /** @format color-input */
     titleColor?: string;
+    contentTitle?: Title;
+    caption?: Title;
     image?: IImage;
-    video?: VideoWidget;
+    video?: IVideo;
     use?: 'image' | 'video';
     bulletPoints?: BulletPoints;
 }
 export interface Props {
-    title?: string;
-    /** @format color-input */
-    titleColor?: string;
+    id?: string;
+    title?: Title;
+    caption?: RichText;
     /** @format color-input */
     slides?: Slide[];
     /**
@@ -94,11 +128,14 @@ export interface Props {
     dotsProgressBarPlacement?: "above" | "below";
     /** @format color-input */
     dotsColor?: string;
+    /** @format color-input */
+    dotsProgressBarBackgroundColor?: string;
     /**
      * @title Autoplay interval
      * @description time (in seconds) to start the carousel autoplay
      */
     interval?: number;
+    createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     backgroundImage?: IImage;
 }
@@ -106,34 +143,35 @@ function SliderItem({ slide, id }: {
     slide: Slide;
     id: string;
 }) {
-    const { title, image, bulletPoints, video, use = 'image', titleColor } = slide;
+    const { title, contentTitle, caption, image, bulletPoints, video, use = 'image', titleColor } = slide;
     const leftColumnBulletPoints = bulletPoints?.items?.filter((_item, index) => index % 2 == 0);
     const rightColumnBulletPoints = bulletPoints?.items?.filter((_item, index) => index % 2 != 0);
     return (<AnimateOnShow animation="animate-fade-in" delay={150}>
         <div id={id} class="relative flex flex-col md:flex-row gap-[84px] md:gap-10 w-full min-h-[292px]">
-            <div class="max-w-[730px] flex-grow bg-primary-content bg-opacity-30 rounded-[30px] flex items-center overflow-hidden">
-                {use == 'image' && image && <Image width={730} height={553} src={image.src} alt={image.alt || ""}/>}
-                {use == 'video' && video && <video width="730" height="553" autoPlay playsInline muted loading="lazy" loop class="object-cover object-top h-full w-full">
-                    <source src={video} type="video/mp4"/>
-                    <object data="" width="730" height="553">
-                        <embed width="730" height="553" src={video}/>
-                    </object>
+                {use == 'image' && image && <Image width={image.width || 730} height={image.height || 553} src={image.src} alt={image.alt || ""}/>}
+                {use == 'video' && video?.src && <video width={video.width?.toString() || "730"} height={video.height?.toString() || "553"} autoPlay playsInline muted loading="lazy" loop class="object-cover object-top" style={{width: `${video.width}px`, height: `${video.height}px`}}>
+                    <source src={video.src} type="video/mp4"/>
+                    {/* <object data="" width="730" height="553">
+                        <embed width="730" height="553" src={video.src}/>
+                    </object> */}
                 </video>}
-            </div>
 
-            <div class="flex flex-col gap-7 md:max-w-[396px]">
-                <h2 class="text-primary text-xl md:text-[40px] font-bold leading-[120%] flex" style={{ color: titleColor }}>{title}</h2>
+            <div class="flex flex-col gap-7">
+                {contentTitle
+                    ? contentTitle.text && <div dangerouslySetInnerHTML={{__html: contentTitle.text}} class="text-[34px]" style={{fontFamily: contentTitle.font}}/>
+                    : <h2 class="text-primary text-xl md:text-[40px] font-bold leading-[120%] flex" style={{ color: titleColor }}>{title}</h2>}
+                {caption?.text && <div dangerouslySetInnerHTML={{__html: caption.text}} class="font-light text-2xl" style={{fontFamily: caption.font}}/>}
                 {/* mobile bullet points div */}
                 <div class="flex gap-1 justify-between lg:hidden">
                     <div class="flex flex-col  w-5/12 lg:w-auto">
                         {leftColumnBulletPoints?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] w-full">
-                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain"/></div>}
+                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
                             <p class="text-sm md:text-lg font-normal" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
                         </div>))}
                     </div>
                     <div class="flex flex-col  w-5/12 lg:w-auto">
                         {rightColumnBulletPoints?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] w-full">
-                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain"/></div>}
+                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
                             <p class="text-sm md:text-lg font-normal" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
                         </div>))}
                     </div>
@@ -141,7 +179,7 @@ function SliderItem({ slide, id }: {
                 {/* desktop bullet points div */}
                 <div>
                     {bulletPoints?.items?.map((bulletPoint) => (<div class="hidden lg:flex gap-[15px] md:gap-5 mt-[10px] w-5/12 md:w-auto">
-                        {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={20} height={20} class="object-contain"/></div>}
+                        {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
                         <p class="text-sm md:text-lg font-semibold" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
                     </div>))}
                 </div>
@@ -149,7 +187,7 @@ function SliderItem({ slide, id }: {
         </div>
     </AnimateOnShow>);
 }
-function Dots({ slides, interval = 0, dotsColor, dotsProgressBarPlacement = "below" }: Props) {
+function Dots({ slides, interval = 0, dotsColor, dotsProgressBarPlacement = "below", dotsProgressBarBackgroundColor }: Props) {
     return (<>
         <style dangerouslySetInnerHTML={{
             __html: `
@@ -160,16 +198,16 @@ function Dots({ slides, interval = 0, dotsColor, dotsProgressBarPlacement = "bel
           }
           `,
         }}/>
-        <div class="relative w-full">
+        <div class="relative w-full my-10">
             <div class="absolute top-[70vw] left-0 md:static w-full flex justify-center">
-                <ul class="flex gap-1 md:gap-6 z-10">
-                    {slides?.map((slide, index) => (<li class="w-11 md:w-auto">
+                <ul class="flex gap-1 md:gap-6 z-10 w-full justify-center">
+                    {slides?.map((slide, index) => (<li class="w-11 md:w-auto max-w-[213px]">
                         <Slider.Dot index={index}>
                             <div class={`py-5 h-full flex ${dotsProgressBarPlacement == "above" ? 'flex-col-reverse' : 'flex-col'}`}>
                                 <div class="h-0 w-11 opacity-0 md:opacity-100 md:h-auto md:w-auto">
                                     <p class="text-lg text-primary text-left font-semibold opacity-30 group-disabled:opacity-100" style={{ color: dotsColor }}>{slide.title}</p>
                                 </div>
-                                <div class="h-1 mt-2 rounded-full dot overflow-hidden bg-accent-content" style={{ backgroundColor: '#A1ABBC' }}>
+                                <div class="h-1 mt-2 rounded-full dot overflow-hidden bg-accent-content" style={{ background: dotsProgressBarBackgroundColor || '#A1ABBC' }}>
                                     <div class="h-full w-0 bg-primary group-disabled:animate-progress" style={{ animationDuration: `${interval}s`, backgroundColor: dotsColor }}/>
                                 </div>
                             </div>
@@ -201,41 +239,69 @@ function Buttons({ arrowsColor }: {
     </div>);
 }
 function Carousel(props: Props) {
-    const id = useId();
-    const { title, slides, interval, backgroundImage, cta, titleColor, arrowsColor, dotsColor, dotsProgressBarPlacement } = { ...props };
-    return (<div id="detailedCarousel" class="relative mt-16">
-        {backgroundImage && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={1440} height={1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-fill"/></div>}
-        <div id={id} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
-
-            {title && <AnimateOnShow divClass="max-w-[307px] md:max-w-full text-2xl md:text-5xl text-primary text-center font-semibold leading-snug pb-7 md:pb-12 lg:pb-16">
-                <h2 class="w-full" style={{ color: titleColor }}>{title}</h2>
-            </AnimateOnShow>}
+    const rootId = useId();
+    const { id, title, caption, slides, interval, backgroundImage, createStoreCta, cta = [], arrowsColor, dotsColor, dotsProgressBarPlacement, dotsProgressBarBackgroundColor } = { ...props };
+    return (<div id={id} class="relative">
+        {backgroundImage && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={backgroundImage.width || 1440} height={backgroundImage.height || 1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-cover"/></div>}
+        <div id={rootId} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
+            {title?.text && <AnimateOnShow
+                        animation="animate-fade-up50"
+                        divClass="text-5xl lg:text-[70px] leading-[120%] mb-4"
+                        style={{ fontFamily: title.font }}>
+                        <div dangerouslySetInnerHTML={{ __html: title.text }} />
+                    </AnimateOnShow>}
+                    {caption && <AnimateOnShow
+                        animation="animate-fade-up50"
+                        divClass="text-base lg:text-2xl font-light leading-normal mb-4">
+                        <div dangerouslySetInnerHTML={{ __html: caption }} />
+                    </AnimateOnShow>}
 
             <div class="relative w-full ">
                 <div class="absolute top-[28vw] left-0 flex justify-end w-full lg:px-9 ">
                     {props.arrows && <Buttons arrowsColor={arrowsColor}/>}
                 </div>
             </div>
-            {props.dots && <Dots slides={slides} interval={interval} dotsColor={dotsColor} dotsProgressBarPlacement={dotsProgressBarPlacement}/>}{" "}
+            {props.dots && <Dots slides={slides} interval={interval} dotsColor={dotsColor} dotsProgressBarPlacement={dotsProgressBarPlacement} dotsProgressBarBackgroundColor={dotsProgressBarBackgroundColor} />}{" "}
 
-            <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-0 md:py-9 md:px-9" rootId={id} interval={interval && interval * 1e3} infinite>
+            <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-0 md:py-9 md:px-9" rootId={rootId} interval={interval && interval * 1e3} infinite>
                 {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full">
-                    <SliderItem slide={slide} id={`${id}::${index}`}/>
+                    <SliderItem slide={slide} id={`${rootId}::${index}`}/>
                 </Slider.Item>))}
             </Slider>
-            {cta && <AnimateOnShow animation="animate-fade-up" divClass="flex flex-wrap items-center justify-center gap-7 mt-4 px-7">
-                {cta.map((button) => {
-                if (button.href == '/talkToSpecialist')
-                    return <TalkToSpecialistCta showIcon={button.showIcon} underlineText={button.underlineText} text={button.text} ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`} style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}/>;
-                return <a href={button?.href ?? "#"} target={button?.href.includes("http") ? "_blank" : "_self"} class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`} style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}>
-                        {button?.text}
-                        {button.underlineText && <span class="underline">{button.underlineText}</span>}
-                        {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z"/>
-                        </svg>}
-                    </a>;
-            })}
-            </AnimateOnShow>}
+            <AnimateOnShow divClass="flex flex-wrap justify-center items-center gap-7 mt-4 px-7" animation="animate-fade-up">
+                            {createStoreCta?.text && <CreateStoreCta
+                                period="anual"
+                                text={createStoreCta.text}
+                                planId={createStoreCta.planId}
+                                showIcon={createStoreCta.showIcon}
+                                underlineText={createStoreCta.underlineText}
+                                ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                                style={createStoreCta.ctaStyle != "link"
+                                    ? { background: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order }
+                                    : { color: createStoreCta.textColor, order: createStoreCta.order }}
+                            />}
+                            {cta.map((button, index) => {
+                                if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
+                                    showIcon={button.showIcon}
+                                    underlineText={button.underlineText}
+                                    text={button.text}
+                                    ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} h-auto flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
+                                />
+                                return <a
+                                    href={button?.href ?? "#"}
+                                    target={button?.href.includes("http") ? "_blank" : ""}
+                                    class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} h-auto flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                                    style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
+                                >
+                                    {button?.text}
+                                    {button.underlineText && <span class="underline">{button.underlineText}</span>}
+                                    {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z" />
+                                    </svg>}
+                                </a>
+                            })}
+                        </AnimateOnShow>
         </div>
 
     </div>);

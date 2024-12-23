@@ -210,10 +210,10 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
 function Carousel(props: Props) {
     const { id, title, titleFont, caption, slides, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop } = { ...props };
     const carouselId = useId();
-    return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative">
+    return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative pt-7 lg:pt-14">
         {/* <input type="text" value="0" /> */}
         <AnimateOnShow animation="animate-fade-up50" delay={300}>
-            <div id={carouselId} class="min-h-min flex flex-col items-center w-full pt-7 lg:pt-14 relative" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
+            <div id={carouselId} class="min-h-min flex flex-col items-center w-full relative" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
                 {backgroundImage?.src && <div class="absolute hidden md:block -z-50 top-0 left-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "background image"} height={backgroundImage.height || 780} width={backgroundImage.width || 460} class="h-full object-contain" /></div>}
 
                 <AnimateOnShow animation="animate-fade-up" delay={500}>

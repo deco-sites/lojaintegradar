@@ -5,7 +5,7 @@ import type { Props } from "../../sections/HeroWithTime.tsx";
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 import HeroTimeButtons from "site/islands/HeroTimeButtons.tsx";
 
-function HeroWithTime({ title, subTitle, tabs = [], finalButtons, background }: Props) {
+function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], background }: Props) {
     const rootId = tabs ? tabs[0].tabImage?.imageDesktop : "HeroWithTime";
 
     const [activeTab, setActiveTab] = useState(0);
@@ -18,19 +18,7 @@ function HeroWithTime({ title, subTitle, tabs = [], finalButtons, background }: 
 
     const nextTab = () => {
         setActiveTab((prev) => (prev + 1) % (tabs?.length || 1));
-        // restartImageAnimation();
     };
-
-    // const restartImageAnimation = () => {
-    //     const parent = document.getElementById(rootId || "HeroWithTime");
-    //     const desktopImage = parent?.querySelector(".desktopImage");
-    //     desktopImage?.classList.remove("animate-fade-up50");
-    //     desktopImage?.classList.add("opacity-0");
-    //     setTimeout(() => {
-    //         desktopImage?.classList.remove("opacity-0");
-    //         desktopImage?.classList.add("animate-fade-up50");
-    //     }, 20);
-    // }
 
     useEffect(() => {
         setProgress(0);
@@ -88,7 +76,7 @@ function HeroWithTime({ title, subTitle, tabs = [], finalButtons, background }: 
                     )}
                 </div>
                 <div class="flex justify-between items-center">
-                    <ul class="relative flex flex-col gap-6 min-h-[600px]">
+                    <ul class="relative flex flex-col gap-6 justify-center">
                         {tabs?.map((tab, index) => (
                             <li
                                 key={index}
@@ -254,19 +242,6 @@ function HeroWithTime({ title, subTitle, tabs = [], finalButtons, background }: 
                             />
                         )
                     ))}
-                    {/* {tabs && tabs[activeTab].useTab == "video" && <video width={tabs[activeTab].tabVideo?.widthDesktop || 606} height={tabs[activeTab].tabVideo?.heightDesktop || 627} autoPlay playsInline muted loading="lazy" loop
-                        class={"object-cover hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage " + tabs[activeTab].tabVideo}
-                        style={{ width: tabs[activeTab].tabVideo?.widthDesktop + "px" || "606px", height: tabs[activeTab].tabVideo?.heightDesktop + "px" || "627px", animationDuration: '300ms' }}>
-                        <source src={tabs[activeTab].tabVideo?.videoDesktop} type="video/mp4" />
-                    </video>}
-                    {tabs && tabs[activeTab].useTab == "image" && <Image
-                        src={tabs[activeTab].tabImage?.imageDesktop || ""}
-                        alt={tabs[activeTab].tabImage?.altDesktop || ""}
-                        height={tabs[activeTab].tabImage?.heightDesktop || 665}
-                        width={tabs[activeTab].tabImage?.widthDesktop || 606}
-                        className="hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage"
-                        style={{ animationDuration: '300ms' }}
-                    />} */}
 
                     {isModalOpen && currentVideoUrl && (
                         <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
@@ -289,9 +264,9 @@ function HeroWithTime({ title, subTitle, tabs = [], finalButtons, background }: 
                         </div>
                     )}
                 </div>
-                <div class="flex items-center justify-center gap-4 flex-wrap mt-[60px] lg:mt-[154px]">  {finalButtons?.map((button, index) => (
+                {finalButtons.length > 0 && <div class="flex items-center justify-center gap-4 flex-wrap mt-[60px] lg:mt-[154px]">  {finalButtons?.map((button, index) => (
                     <FlexibleButtons key={index} {...button} />
-                ))}</div>
+                ))}</div>}
             </div>
         </>
     );

@@ -3763,6 +3763,9 @@ details.collapse summary::-webkit-details-marker {
 .h-\[400px\] {
   height: 400px;
 }
+.h-\[400vw\] {
+  height: 400vw;
+}
 .h-\[47px\] {
   height: 47px;
 }
@@ -3777,6 +3780,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[63px\] {
   height: 63px;
+}
+.h-\[729px\] {
+  height: 729px;
 }
 .h-\[72px\] {
   height: 72px;
@@ -4138,6 +4144,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-w-\[78vw\] {
   min-width: 78vw;
+}
+.min-w-\[942px\] {
+  min-width: 942px;
 }
 .max-w-40 {
   max-width: 10rem;
@@ -5067,6 +5076,10 @@ details.collapse summary::-webkit-details-marker {
 .bg-primary-content {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-pc,oklch(var(--pc)/var(--tw-bg-opacity)));
+}
+.bg-purple-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
 }
 .bg-red-500 {
   --tw-bg-opacity: 1;

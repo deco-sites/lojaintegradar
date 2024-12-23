@@ -179,54 +179,123 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "site/sections/CreateStoreHero.tsx",
-              "title": {
-                "text": "<p><span style=\"color: rgb(250, 250, 245)\">A plataforma </span><em><span style=\"color: rgb(113, 219, 212)\">inteligente</span></em><span style=\"color: rgb(113, 219, 212)\"> </span><span style=\"color: rgb(250, 250, 245)\">que acelera sua operação para vender mais</span></p>",
-                "font": "Instrument serif"
-              },
-              "caption": "<p><span style=\"color: #fafaf5; font-weight:1.2;\">Transforme seu negócio com a plataforma que trabalha por você. Com machine learning, nossa tecnologia traduz o comportamento dos clientes em soluções automatizadas que <span style=\"color: #71DBD4\">impulsionam seus resultados.</span></p>",
-              "cta": [],
-              "paddingTop": "170px",
-              "backgroundMedia": {
-                "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
-                "use": "video"
-              },
-              "paddingBottom": "85px",
-              "ctaPlacement": "left",
-              "createStoreFormProps": {
-                "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
-                "planoId": "172",
-                "periodo": "anual",
-                "nameCaption": "Nome",
-                "emailCaption": "E-mail",
-                "passwordCaption": "Senha",
-                "confirmPasswordCaption": "Confirme sua senha",
-                "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
-                "namePlaceholder": "Seu nome",
-                "emailPlaceholder": "Insira seu e-mail",
-                "passwordPlaceholder": "Insira sua senha",
-                "confirmPasswordPlaceholder": "Confirme sua senha",
-                "inputsLabelColor": "#ffffff",
-                "inputsBellowTextColor": "#5F6E82",
-                "inputsTextColor": "#000000",
-                "agreeText1": "Ao clicar, você concorda com os ",
-                "agreeLink1": {
-                  "text": " Termos de Uso ",
-                  "href": "#"
+              "__resolveType": "website/flags/multivariate/section.ts",
+              "variants": [
+                {
+                  "value": {
+                    "__resolveType": "site/sections/CreateStoreHero.tsx",
+                    "title": {
+                      "text": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245); font-size: 28pt\">A plataforma </span><em><span style=\"color: rgb(113, 219, 212); font-size: 28pt\">inteligente</span></em><span style=\"color: rgb(113, 219, 212); font-size: 28pt\"> </span><span style=\"color: rgb(250, 250, 245); font-size: 28pt\">que acelera sua operação para vender mais</span></p>",
+                      "font": "Instrument serif"
+                    },
+                    "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Transforme seu negócio com a plataforma que trabalha por você. Com machine learning, nossa tecnologia traduz o comportamento dos clientes em soluções automatizadas que </span><span style=\"color: rgb(113, 219, 212)\">impulsionam seus resultados.</span></p>",
+                    "cta": [],
+                    "paddingTop": "170px",
+                    "backgroundMedia": {
+                      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
+                      "use": "video",
+                      "image": {
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/20b60aec-1e72-4842-aebe-9c8753662523/Group-21462605-(3).png"
+                      }
+                    },
+                    "paddingBottom": "85px",
+                    "ctaPlacement": "left",
+                    "createStoreFormProps": {
+                      "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
+                      "planoId": "172",
+                      "periodo": "anual",
+                      "nameCaption": "Nome",
+                      "emailCaption": "E-mail",
+                      "passwordCaption": "Senha",
+                      "confirmPasswordCaption": "Confirme sua senha",
+                      "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
+                      "namePlaceholder": "Seu nome",
+                      "emailPlaceholder": "Insira seu e-mail",
+                      "passwordPlaceholder": "Insira sua senha",
+                      "confirmPasswordPlaceholder": "Confirme sua senha",
+                      "inputsLabelColor": "#ffffff",
+                      "inputsBellowTextColor": "#5F6E82",
+                      "inputsTextColor": "#000000",
+                      "agreeText1": "Ao clicar, você concorda com os ",
+                      "agreeLink1": {
+                        "text": " Termos de Uso ",
+                        "href": "#"
+                      },
+                      "agreeText2": "e a ",
+                      "agreeLink2": {
+                        "text": "Política de Privacidade",
+                        "href": "#"
+                      },
+                      "agreeText3": ".",
+                      "linksColor": "",
+                      "buttonBackgroundColor": "#003037",
+                      "buttonTextColor": "#ffffff",
+                      "inputsBorderColor": ""
+                    },
+                    "paddingRight": "36px",
+                    "paddingLeft": "36px"
+                  },
+                  "rule": {
+                    "__resolveType": "website/matchers/device.ts",
+                    "mobile": true
+                  }
                 },
-                "agreeText2": "e a ",
-                "agreeLink2": {
-                  "text": "Política de Privacidade",
-                  "href": "#"
-                },
-                "agreeText3": ".",
-                "linksColor": "",
-                "buttonBackgroundColor": "#003037",
-                "buttonTextColor": "#ffffff",
-                "inputsBorderColor": ""
-              },
-              "paddingRight": "36px",
-              "paddingLeft": "36px"
+                {
+                  "value": {
+                    "__resolveType": "site/sections/CreateStoreHero.tsx",
+                    "title": {
+                      "text": "<p><span style=\"color: rgb(250, 250, 245)\">A plataforma </span><em><span style=\"color: rgb(113, 219, 212)\">inteligente</span></em><span style=\"color: rgb(113, 219, 212)\"> </span><span style=\"color: rgb(250, 250, 245)\">que acelera sua operação para vender mais</span></p>",
+                      "font": "Instrument serif"
+                    },
+                    "caption": "<p><span style=\"color: #fafaf5; font-weight:1.2;\">Transforme seu negócio com a plataforma que trabalha por você. Com machine learning, nossa tecnologia traduz o comportamento dos clientes em soluções automatizadas que <span style=\"color: #71DBD4\">impulsionam seus resultados.</span></p>",
+                    "cta": [],
+                    "paddingTop": "170px",
+                    "backgroundMedia": {
+                      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
+                      "use": "video"
+                    },
+                    "paddingBottom": "85px",
+                    "ctaPlacement": "left",
+                    "createStoreFormProps": {
+                      "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
+                      "planoId": "172",
+                      "periodo": "anual",
+                      "nameCaption": "Nome",
+                      "emailCaption": "E-mail",
+                      "passwordCaption": "Senha",
+                      "confirmPasswordCaption": "Confirme sua senha",
+                      "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
+                      "namePlaceholder": "Seu nome",
+                      "emailPlaceholder": "Insira seu e-mail",
+                      "passwordPlaceholder": "Insira sua senha",
+                      "confirmPasswordPlaceholder": "Confirme sua senha",
+                      "inputsLabelColor": "#ffffff",
+                      "inputsBellowTextColor": "#5F6E82",
+                      "inputsTextColor": "#000000",
+                      "agreeText1": "Ao clicar, você concorda com os ",
+                      "agreeLink1": {
+                        "text": " Termos de Uso ",
+                        "href": "#"
+                      },
+                      "agreeText2": "e a ",
+                      "agreeLink2": {
+                        "text": "Política de Privacidade",
+                        "href": "#"
+                      },
+                      "agreeText3": ".",
+                      "linksColor": "",
+                      "buttonBackgroundColor": "#003037",
+                      "buttonTextColor": "#ffffff",
+                      "inputsBorderColor": ""
+                    },
+                    "paddingRight": "36px",
+                    "paddingLeft": "36px"
+                  },
+                  "rule": {
+                    "__resolveType": "website/matchers/always.ts"
+                  }
+                }
+              ]
             }
           },
           {
@@ -235,18 +304,15 @@
               {
                 "value": {
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195)\">Mostre que sua marca entende o cliente</span></em><br><span style=\"color: rgb(0, 48, 55)\">Traduzindo dados em soluções inteligentes</span></p>",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight:300; \">Na Loja Integrada, unimos informações estruturadas a automação para maximizar<br></span><span style=\"color: rgb(40, 195, 195); font-size: 24px; line-height:300; \"> cada oportunidade de venda</span></p>",
-                  "image": {
-                    "width": 429,
-                    "height": 310
-                  },
+                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195); font-size: 16pt\">Mostre que sua marca entende o cliente</span></em><span style=\"font-size: 12pt\"><br></span><span style=\"color: rgb(0, 48, 55); font-size: 32pt\">Traduzindo dados em soluções inteligentes</span></p>",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 14pt\">Na Loja Integrada, unimos informações estruturadas a automação para maximizar </span><span style=\"color: rgb(40, 195, 195); font-size: 14pt\"> cada oportunidade de venda</span></p>",
+                  "image": {},
                   "titleFont": "Instrument serif",
                   "paddingTop": "42px",
                   "features": [],
                   "use": "image",
                   "cta": [],
-                  "paddingBottom": "42px"
+                  "paddingBottom": "0"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/device.ts",
@@ -1331,8 +1397,8 @@
                 "tabImage": {
                   "widthDesktop": 606,
                   "width": 0,
-                  "heightDesktop": 627,
-                  "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ad65e623-7b72-4549-90ea-f8052b1a32f0/usabilidade.png"
+                  "heightDesktop": 461,
+                  "imageDesktop": "https://data.decoassets.com/lojaintegradar/219a3d26-ec8d-4d58-a532-d05fee2d5dd0/usabilidade.png"
                 },
                 "videoOn": false,
                 "button": {},
@@ -2994,7 +3060,7 @@
                         "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
                         "avatarWidth": 399,
                         "avatarHeight": 46,
-                        "backgroundColor": "transparent"
+                        "backgroundColor": "#ffffff"
                       }
                     },
                     {
@@ -3007,7 +3073,7 @@
                         "quoteIconColor": "#003037",
                         "nameBackgroundColor": "#ffffff",
                         "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
-                        "backgroundColor": "transparent"
+                        "backgroundColor": "#ffffff"
                       }
                     },
                     {
@@ -3033,7 +3099,7 @@
                   "captionFont": "Instrument serif",
                   "backgroundMedia": {
                     "image": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33eb18cd-3071-4d34-9202-937feca15495/Testimonials-background.svg"
+                      "src": "https://data.decoassets.com/lojaintegradar/b4b4a91b-eda0-455e-a678-33d2ec226dc5/bg-dobra-resultados.png"
                     },
                     "use": "image"
                   }

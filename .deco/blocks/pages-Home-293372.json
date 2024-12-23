@@ -886,6 +886,12 @@
                 "type": "createStoreForm",
                 "text": "Criar minha loja",
                 "planId": "172"
+              },
+              {
+                "type": "link",
+                "changeType": true,
+                "link": "#plans",
+                "text": "Ver planos"
               }
             ],
             "bottomSection": {
@@ -1526,7 +1532,7 @@
                 "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
                   "titleColor": "#371E55",
-                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span><br><p style=\"text-align: center\"><span style=\"color: #5F6E82; font-size:24px; line-height:1; font-weight:300; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a</span><span style=\"color: #28C3C3; font-size:24px; line-height:1; font-weight:300; font-family: 'Inter'; \"> vender hoje mesmo</span></p>",
+                  "title": "<p style=\"font-family: 'Instrument Serif'; line-height: 1.2; \" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span><br><p style=\"text-align: center; line-height:1; \"><span style=\"color: #5F6E82; font-size:24px; line-height:1; font-weight:300; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a</span><span style=\"color: #28C3C3; font-size:24px; line-height:1; font-weight:300; font-family: 'Inter'; \"> vender hoje mesmo</span></p>",
                   "captionColor": "#371E55",
                   "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
                   "slides": [
@@ -2760,8 +2766,7 @@
                   "annualLabel": "Anual",
                   "montlyLabel": "Mensal",
                   "dots": false,
-                  "bottomCaption": "Que tal um impulso?",
-                  "bottomTitle": "Comece agora sem custo",
+                  "bottomTitle": "Ou comece agora sem custo",
                   "bottomButton": {
                     "text": "Começar no grátis",
                     "href": "#"
@@ -2783,11 +2788,11 @@
                     }
                   ],
                   "bottomCaptionColor": "#828CA0",
-                  "bottomTitleColor": "#371E55",
+                  "bottomTitleColor": "#003037",
                   "bottomCreateStoreCta": {
                     "planId": "172",
                     "text": "Acessar plano grátis",
-                    "backgroundColor": "#371E55",
+                    "backgroundColor": "#003037",
                     "textColor": "#ffffff",
                     "borderColor": "#371E55",
                     "ctaStyle": "button",
@@ -2798,7 +2803,9 @@
                   "annualTagTextColor": "#371E55",
                   "arrows": false,
                   "annualTag": "- 2O% FF",
-                  "annualTagPosition": "aside"
+                  "annualTagPosition": "aside",
+                  "paddingBottom": "80px",
+                  "paddingTop": "80px"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
@@ -2894,11 +2901,11 @@
                     }
                   ],
                   "arrows": true,
-                  "id": "nossoecossistema",
                   "titleColor": "",
-                  "captionColor": "#371E55",
                   "arrowsColor": "#003037",
                   "titleFont": "Instrument serif",
+                  "id": "nossoecossistema",
+                  "captionColor": "#371E55",
                   "cta": [
                     {
                       "ctaStyle": "button",
@@ -3059,7 +3066,7 @@
               {
                 "value": {
                   "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
-                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55); font-size:70px;\">Resultados que </span><em><span style=\"color: rgb(40, 195, 195); font-size:70px;\">falam por si </span></em></p>",
+                  "title": "<p><span style=\"color: rgb(0, 48, 55); font-size: 70px; line-height:1.2;\">Resultados que </span><em><span style=\"color: rgb(40, 195, 195); font-size: 70px; line-height:1.2;\">falam por si</span><span style=\"color: rgb(95, 110, 130); font-size: 24px; line-height:1.2;  \"><br>Nossos lojistas estão potencializando suas vendas com <br>soluções inteligentes e automação eficiente. Olha só:</span></em></p>",
                   "titleFont": "Instrument serif",
                   "slides": [
                     {
@@ -3089,31 +3096,18 @@
                         "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
                         "backgroundColor": "#ffffff"
                       }
-                    },
-                    {
-                      "content": {
-                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">No primeiro mês após-migração, minha taxa de conversão cresceu 60%. A plataforma é fácil de usar e o suporte é próximo e eficiente.</span><br></p>",
-                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
-                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>Livraria Florence</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca de&nbsp;<strong>30 dias</strong></span></p>",
-                        "alt": "livraria florence",
-                        "nameIconColor": "#371E55",
-                        "quoteIconColor": "#003037",
-                        "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
-                        "backgroundColor": "transparent"
-                      }
                     }
                   ],
                   "arrows": true,
                   "titleColor": "#371E55",
-                  "arrowsColor": "",
+                  "arrowsColor": "#003037",
                   "dots": false,
-                  "caption": "<p style=\"text-align: center; line-height: 60%; \"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight:300; line-height: 120%; font-family: 'Inter'; \">Nossos lojistas estão potencializando suas vendas com soluções inteligentes<br>e automação eficiente. Olha só:</span></p>",
+                  "caption": "<p></p>",
                   "bubbleImages": [],
                   "captionFont": "Instrument serif",
                   "backgroundMedia": {
                     "image": {
-                      "src": "https://data.decoassets.com/lojaintegradar/b4b4a91b-eda0-455e-a678-33d2ec226dc5/bg-dobra-resultados.png"
+                      "src": "https://data.decoassets.com/lojaintegradar/3ec10d60-b3a3-4d63-8be0-7a4fcb4d13ed/dobra2.png"
                     },
                     "use": "image"
                   }

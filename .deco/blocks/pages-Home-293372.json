@@ -323,7 +323,7 @@
                 "value": {
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
                   "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195)\">Mostre que sua marca entende o cliente.</span></em><br><span style=\"color: rgb(0, 48, 55)\">Traduza dados em inteligência.</span></p>",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight: 300;\">Na Loja Integrada, unimos informações estruturadas a automação para maximizar<br></span><span style=\"color: rgb(40, 195, 195); font-size: 24px; font-weight: 300;\"> cada oportunidade de venda</span></p>",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight: 300;\">Na Loja Integrada, unimos informações estruturadas a automação para<br> maximizar</span><span style=\"color: rgb(40, 195, 195); font-size: 24px; font-weight: 300;\"> cada oportunidade de venda</span></p>",
                   "image": {},
                   "titleFont": "Instrument serif",
                   "paddingTop": "120px",
@@ -440,7 +440,9 @@
                         "titleColor": "#003037",
                         "text": "<p style=\" line-height: 1.6; \"><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt;  \">Envie alertas de carrinho abandonado, personalize <br>campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
                         "minHeight": "211px",
-                        "backgroundImage": {}
+                        "backgroundImage": {
+                          "src": "https://data.decoassets.com/lojaintegradar/2d1f5c30-1e91-4814-a2a4-24d53e281837/bg-cards.png"
+                        }
                       },
                       {
                         "cta": [],
@@ -448,7 +450,10 @@
                         "title": "<p style=\" line-height: 1.2; \"><strong><span>Se mostre relevante em <br>todos os contatos</span></strong></p>",
                         "titleColor": "#003037",
                         "text": "<p style=\" line-height: 1.6; \"><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Leve ofertas contextualizadas para seu clientes<br> também via Whatsapp.</span></p></p>",
-                        "minHeight": "211px"
+                        "minHeight": "211px",
+                        "backgroundImage": {
+                          "src": "https://data.decoassets.com/lojaintegradar/2d1f5c30-1e91-4814-a2a4-24d53e281837/bg-cards.png"
+                        }
                       },
                       {
                         "cta": [],
@@ -1522,9 +1527,11 @@
                 "borderColor": "#ffffff",
                 "textColor": "#003037"
               },
-              "paddingTop": "0"
+              "paddingTop": "120"
             },
-            "paddingBottom": "0"
+            "paddingBottom": "120",
+            "tabsInterval": 30,
+            "paddingTop": "120"
           },
           {
             "__resolveType": "website/flags/multivariate/section.ts",

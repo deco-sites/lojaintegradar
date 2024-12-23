@@ -889,32 +889,7 @@
               }
             ],
             "bottomSection": {
-              "__resolveType": "site/sections/HeroV2.tsx",
-              "cta": [],
-              "tag": {
-                "placement": "left"
-              },
-              "title": {},
-              "bulletpoints": {
-                "items": [],
-                "bulletPointsIcon": {}
-              },
-              "ctaDiv": {
-                "contentPlacement": "left",
-                "icon": {}
-              },
-              "media": {
-                "use": "image",
-                "image": {},
-                "video": {}
-              },
-              "mediaPlacement": "right",
-              "backgroundMedia": {
-                "use": "image",
-                "image": {}
-              },
-              "paddingTop": "0",
-              "paddingBottom": "0"
+              "__resolveType": "site/sections/BlankSection.tsx"
             }
           },
           {
@@ -1539,8 +1514,10 @@
                 "backgroundColor": "#FFFFFF",
                 "borderColor": "#ffffff",
                 "textColor": "#003037"
-              }
-            }
+              },
+              "paddingTop": "0"
+            },
+            "paddingBottom": "0"
           },
           {
             "__resolveType": "website/flags/multivariate/section.ts",

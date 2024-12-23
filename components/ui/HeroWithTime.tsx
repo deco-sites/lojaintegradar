@@ -5,7 +5,7 @@ import type { Props } from "../../sections/HeroWithTime.tsx";
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 import HeroTimeButtons from "site/islands/HeroTimeButtons.tsx";
 
-function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props) {
+function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], background }: Props) {
     const rootId = tabs ? tabs[0].tabImage?.imageDesktop : "HeroWithTime";
 
     const [activeTab, setActiveTab] = useState(0);
@@ -18,19 +18,7 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
 
     const nextTab = () => {
         setActiveTab((prev) => (prev + 1) % (tabs?.length || 1));
-        restartImageAnimation();
     };
-
-    const restartImageAnimation = () => {
-        const parent = document.getElementById(rootId || "HeroWithTime");
-        const desktopImage = parent?.querySelector(".desktopImage");
-        desktopImage?.classList.remove("animate-fade-up50");
-        desktopImage?.classList.add("opacity-0");
-        setTimeout(() => {
-            desktopImage?.classList.remove("opacity-0");
-            desktopImage?.classList.add("animate-fade-up50");
-        }, 20);
-    }
 
     useEffect(() => {
         setProgress(0);
@@ -88,7 +76,7 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
                     )}
                 </div>
                 <div class="flex justify-between items-center">
-                    <ul class="relative flex flex-col gap-6 min-h-[600px]">
+                    <ul class="relative flex flex-col gap-6 justify-center">
                         {tabs?.map((tab, index) => (
                             <li
                                 key={index}
@@ -98,7 +86,7 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
                                 <div>
                                     <div
                                         class="flex items-center gap-4 cursor-pointer"
-                                        onClick={() => { setActiveTab(index); restartImageAnimation(); }}
+                                        onClick={() => { setActiveTab(index) }}
                                     >
                                         <Image
                                             src={tab.icon?.image || ""}
@@ -206,11 +194,13 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
                                 {activeTab === index && (
                                     <>
                                         {tabs[index].useTab == "video"
-                                            ? tabs && <video width={tabs[index].tabVideo?.width || 337} height={tabs[index].tabVideo?.height || 351} autoPlay playsInline muted loading="lazy" loop
-                                                class="object-cover lg:hidden shadow-md pb-[24px] lg:pb-0"
-                                                style={{ width: tabs[index].tabVideo?.width + "px" || "337px", height: tabs[index].tabVideo?.height + "px" || "351px", animationDuration: '300ms' }}>
-                                                <source src={tabs[index].tabVideo?.videoDesktop} type="video/mp4" />
-                                            </video>
+                                            ? <div>
+                                                <video width={tabs[index].tabVideo?.width || 337} height={tabs[index].tabVideo?.height || 351} autoPlay playsInline muted loading="lazy" loop
+                                                    class="object-cover lg:hidden shadow-md pb-[24px] lg:pb-0"
+                                                    style={{ width: tabs[index].tabVideo?.width + "px" || "337px", height: tabs[index].tabVideo?.height + "px" || "351px", animationDuration: '300ms' }}>
+                                                    <source src={tabs[index].tabVideo?.videoDesktop} type="video/mp4" />
+                                                </video>
+                                            </div>
                                             : <Image
                                                 src={tab.tabImage?.image || ""}
                                                 alt={tab.tabImage?.alt || ""}
@@ -234,20 +224,25 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
                             </li>
                         ))}
                     </ul>
-                    {tabs && tabs[activeTab].useTab == "video"
-                        ? tabs[activeTab].tabVideo?.videoDesktop && <video width={tabs[activeTab].tabVideo.widthDesktop || 606} height={tabs[activeTab].tabVideo.heightDesktop || 627} autoPlay playsInline muted loading="lazy" loop
-                            class="object-cover hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage"
-                            style={{ width: tabs[activeTab].tabVideo.widthDesktop + "px" || "606px", height: tabs[activeTab].tabVideo.heightDesktop + "px" || "627px", animationDuration: '300ms' }}>
-                            <source src={tabs[activeTab].tabVideo.videoDesktop} type="video/mp4" />
-                        </video>
-                        : tabs && <Image
-                            src={tabs[activeTab].tabImage?.imageDesktop || ""}
-                            alt={tabs[activeTab].tabImage?.altDesktop || ""}
-                            height={tabs[activeTab].tabImage?.heightDesktop || 665}
-                            width={tabs[activeTab].tabImage?.widthDesktop || 606}
-                            className="hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage"
-                            style={{ animationDuration: '300ms' }}
-                        />}
+                    {tabs.map((tab, index) => (
+                        index == activeTab &&
+                        (tab.useTab == "video"
+                            ? <video width={tab.tabVideo?.widthDesktop || 606} height={tab.tabVideo?.heightDesktop || 627} autoPlay playsInline muted loading="lazy" loop
+                                class={"object-cover hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage " + tab.tabVideo}
+                                style={{ width: tab.tabVideo?.widthDesktop + "px" || "606px", height: tab.tabVideo?.heightDesktop + "px" || "627px", animationDuration: '300ms' }}>
+                                <source src={tab.tabVideo?.videoDesktop} type="video/mp4" />
+                            </video>
+                            : <Image
+                                src={tab.tabImage?.imageDesktop || ""}
+                                alt={tab.tabImage?.altDesktop || ""}
+                                height={tab.tabImage?.heightDesktop || 665}
+                                width={tab.tabImage?.widthDesktop || 606}
+                                className="hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage"
+                                style={{ animationDuration: '300ms' }}
+                            />
+                        )
+                    ))}
+
                     {isModalOpen && currentVideoUrl && (
                         <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
                             <div class="bg-white p-4 rounded-lg relative w-[90%] max-w-[800px]">
@@ -269,9 +264,9 @@ function HeroWithTime({ title, subTitle, tabs, finalButtons, background }: Props
                         </div>
                     )}
                 </div>
-                <div class="flex items-center justify-center gap-4 flex-wrap mt-[60px] lg:mt-[154px]">  {finalButtons?.map((button, index) => (
+                {finalButtons.length > 0 && <div class="flex items-center justify-center gap-4 flex-wrap mt-[60px] lg:mt-[154px]">  {finalButtons?.map((button, index) => (
                     <FlexibleButtons key={index} {...button} />
-                ))}</div>
+                ))}</div>}
             </div>
         </>
     );

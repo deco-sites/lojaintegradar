@@ -556,10 +556,10 @@
             "__resolveType": "site/sections/HeroWithTime.tsx",
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro</span></p>",
-              "mobile": "<p></p>"
+              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:16px; font-style: italic; \">Fature enquanto eles trabalham</p>"
             },
             "subTitle": {
-              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24pt\">Recursos avançados </span><em><span style=\"color: rgb(113, 219, 212); font-size: 24pt\">de ponta a ponta</span></em></p>",
+              "mobile": "<p><span style=\"text-align: center; line-height:1.2; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
             },
             "tabs": [
@@ -853,14 +853,15 @@
                   "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
                 },
                 "tabImage": {
-                  "widthDesktop": 620,
                   "heightDesktop": 409,
                   "image": "https://data.decoassets.com/lojaintegradar/3b377100-39c3-4ce2-a58c-b575d9a4d61f/checkout-inteligente.png",
                   "imageDesktop": "https://data.decoassets.com/lojaintegradar/3b377100-39c3-4ce2-a58c-b575d9a4d61f/checkout-inteligente.png",
-                  "width": 620,
-                  "height": 409
+                  "width": 606,
+                  "height": 356,
+                  "widthDesktop": 620
                 },
-                "highlight": false
+                "highlight": false,
+                "useTab": "image"
               }
             ],
             "background": {
@@ -1180,7 +1181,7 @@
               "mobile": "<p></p>"
             },
             "subTitle": {
-              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24pt\">Recursos avançados </span><em><span style=\"color: rgb(113, 219, 212); font-size: 24pt\">de ponta a ponta</span></em></p>",
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-size: 24px; font-family: 'Inter'; line-height:120%; font-weight:100;\">Aproveite os benefícios de uma plataforma segura,<br> estável e descomplicada</span></p>"
             },
             "tabs": [

@@ -8,6 +8,7 @@ export interface Props {
     title?: Title;
     subTitle?: Subtitle;
     tabs?: Tabs[];
+    tabsInterval?: number;
     finalButtons?: Button[];
     background?: Background;
     paddingTop?: string;

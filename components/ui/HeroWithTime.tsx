@@ -5,7 +5,7 @@ import type { Props } from "../../sections/HeroWithTime.tsx";
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 import HeroTimeButtons from "site/islands/HeroTimeButtons.tsx";
 
-function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], background }: Props) {
+function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], background, tabsInterval = 10 }: Props) {
     const rootId = tabs ? tabs[0].tabImage?.imageDesktop : "HeroWithTime";
 
     const [activeTab, setActiveTab] = useState(0);
@@ -31,7 +31,7 @@ function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], backgroun
                 }
                 return prev + 1;
             });
-        }, 100);
+        }, tabsInterval * 10);
 
         return () => clearInterval(interval);
     }, [activeTab, tabs]);

@@ -1,6 +1,12 @@
 {
-  "name": "Home",
-  "path": "/home",
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "image": "",
+    "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/92453a09-1a8b-4ba4-8861-b84939dde7d3/favicon-li.png",
+    "type": "website",
+    "title": "Venda mais - Loja Integrada"
+  },
   "sections": {
     "__resolveType": "website/flags/multivariate.ts",
     "variants": [
@@ -133,7 +139,7 @@
                 ]
               },
               "href": "/venda-mais",
-              "alt": "logo"
+              "alt": "logo "
             },
             "initialButtons": [],
             "backgroundColor": "#003037",
@@ -244,21 +250,29 @@
                   "value": {
                     "__resolveType": "site/sections/CreateStoreHero.tsx",
                     "title": {
-                      "text": "<p><span style=\"color: rgb(250, 250, 245)\">Transforme seu negócio com a  </span><em><span style=\"color: rgb(113, 219, 212)\">plataforma  </span></em><span style=\"color: rgb(250, 250, 245)\">que trabalha por você</span></p>",
+                      "text": "<p><span style=\"color: rgb(250, 250, 245)\">A plataforma </span><em><span style=\"color: rgb(113, 219, 212)\">inteligente</span></em><span style=\"color: rgb(113, 219, 212)\"> </span><span style=\"color: rgb(250, 250, 245)\">que acelera sua operação para vender mais</span></p>",
                       "font": "Instrument serif"
                     },
-                    "caption": "<p><span style=\"color: rgb(250, 250, 245)\">Com machine learning, nossa tecnologia traduz o comportamento dos clientes em soluções automatizadas que </span><span style=\"color: rgb(113, 219, 212)\">impulsionam seus resultados.</span></p>",
-                    "cta": [],
+                    "caption": "<p><span style=\"color: #fafaf5; font-weight:1.2;\">Transforme seu negócio com a plataforma que trabalha por você. Com machine learning, nossa tecnologia traduz o comportamento dos clientes em soluções automatizadas que <span style=\"color: #71DBD4\">impulsionam seus resultados.</span></p>",
+                    "cta": [
+                      {
+                        "ctaStyle": "button",
+                        "href": "/",
+                        "backgroundColor": "#ffffff",
+                        "textColor": "#003037",
+                        "borderColor": "#ffffff",
+                        "text": "Experimente já"
+                      }
+                    ],
                     "paddingTop": "170px",
                     "backgroundMedia": {
                       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
                       "use": "video"
                     },
                     "paddingBottom": "85px",
-                    "ctaPlacement": "left",
+                    "ctaPlacement": "center",
                     "createStoreFormProps": {
                       "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
-                      "planoId": "172",
                       "periodo": "anual",
                       "nameCaption": "Nome",
                       "emailCaption": "E-mail",
@@ -277,7 +291,6 @@
                         "text": " Termos de Uso ",
                         "href": "#"
                       },
-                      "agreeText2": "e a ",
                       "agreeLink2": {
                         "text": "Política de Privacidade",
                         "href": "#"
@@ -304,7 +317,7 @@
               {
                 "value": {
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195); font-size: 16pt\">Mostre que sua marca entende o cliente.</span></em><span style=\"font-size: 12pt\"><br></span><span style=\"color: rgb(0, 48, 55); font-size: 32pt\">Traduza dados em inteligência</span></p>",
+                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195); font-size: 16pt\">Mostre que sua marca entende o cliente</span></em><span style=\"font-size: 12pt\"><br></span><span style=\"color: rgb(0, 48, 55); font-size: 32pt\">Traduzindo dados em soluções inteligentes</span></p>",
                   "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 14pt\">Na Loja Integrada, unimos informações estruturadas a automação para maximizar </span><span style=\"color: rgb(40, 195, 195); font-size: 14pt\"> cada oportunidade de venda</span></p>",
                   "image": {},
                   "titleFont": "Instrument serif",
@@ -322,7 +335,7 @@
               {
                 "value": {
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195)\">Mostre que sua marca entende o cliente.</span></em><br><span style=\"color: rgb(0, 48, 55)\">Traduza dados em inteligência.</span></p>",
+                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195)\">Mostre que sua marca entende o cliente</span></em><br><span style=\"color: rgb(0, 48, 55)\">Traduzindo dados em soluções inteligentes</span></p>",
                   "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight: 300;\">Na Loja Integrada, unimos informações estruturadas a automação para maximizar<br></span><span style=\"color: rgb(40, 195, 195); font-size: 24px; font-weight: 300;\"> cada oportunidade de venda</span></p>",
                   "image": {},
                   "titleFont": "Instrument serif",
@@ -370,7 +383,7 @@
                         "useBackground": "image",
                         "title": "<p><strong>Ações automatizadas que trabalham por você</strong></p>",
                         "titleColor": "#003037",
-                        "text": "<p><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt; line-height:180%; \">Envie alertas de carrinho abandonado, personalize <br>campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
+                        "text": "<p><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt; line-height:180%; \">Envie alertas de carrinho abandonado, personalize campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
                         "minHeight": "211px",
                         "backgroundImage": {}
                       },
@@ -436,18 +449,18 @@
                       {
                         "cta": [],
                         "useBackground": "image",
-                        "title": "<p style=\" line-height: 1.2; \"><strong>Ações automatizadas que</strong><br><strong>trabalham por você</strong></p>",
+                        "title": "<p><strong>Ações automatizadas que trabalham por você</strong></p>",
                         "titleColor": "#003037",
-                        "text": "<p style=\" line-height: 1.6; \"><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt;  \">Envie alertas de carrinho abandonado, personalize <br>campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
+                        "text": "<p><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt; line-height:180%; \">Envie alertas de carrinho abandonado, personalize campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
                         "minHeight": "211px",
                         "backgroundImage": {}
                       },
                       {
                         "cta": [],
                         "useBackground": "image",
-                        "title": "<p style=\" line-height: 1.2; \"><strong><span>Se mostre relevante em <br>todos os contatos</span></strong></p>",
+                        "title": "<p><strong><span>Se mostre relevante em todos os contatos</span></strong></p>",
                         "titleColor": "#003037",
-                        "text": "<p style=\" line-height: 1.6; \"><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Leve ofertas contextualizadas para seu clientes<br> também via Whatsapp.</span></p></p>",
+                        "text": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);line-height: 151%;\">Leve ofertas contextualizadas para seu clientes também via</span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Whatsapp.</span></p>",
                         "minHeight": "211px"
                       },
                       {
@@ -896,8 +909,7 @@
             ],
             "bottomSection": {
               "__resolveType": "site/sections/BlankSection.tsx"
-            },
-            "tabsInterval": 30
+            }
           },
           {
             "__resolveType": "website/flags/multivariate/section.ts",
@@ -3062,6 +3074,180 @@
             ]
           },
           {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
+                  "title": "<p><span style=\"color: rgb(0, 48, 55); font-size: 70px; line-height:1.2;\">Resultados que </span><em><span style=\"color: rgb(40, 195, 195); font-size: 70px; line-height:1.2;\">falam por si</span><span style=\"color: rgb(95, 110, 130); font-size: 24px; line-height:1.2;  \"><br>Nossos lojistas estão potencializando suas vendas com <br>soluções inteligentes e automação eficiente. Olha só:</span></em></p>",
+                  "titleFont": "Instrument serif",
+                  "slides": [
+                    {
+                      "content": {
+                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e com fácio integração à VTEX.</span></p>",
+                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
+                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>M. Camicado</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca&nbsp;<strong>de 60 dias</strong></span></p>",
+                        "alt": "m camicado",
+                        "quoteIconColor": "#003037",
+                        "nameIconColor": "#5F6E82",
+                        "nameBackgroundColor": "#ffffff",
+                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
+                        "avatarWidth": 399,
+                        "avatarHeight": 46,
+                        "backgroundColor": "#ffffff"
+                      }
+                    },
+                    {
+                      "content": {
+                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">No primeiro mês após-migração, minha taxa de conversão cresceu 60%. A plataforma é fácil de usar e o suporte é próximo e eficiente.</span><br></p>",
+                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
+                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>Livraria Florence</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca de&nbsp;<strong>30 dias</strong></span></p>",
+                        "alt": "livraria florence",
+                        "nameIconColor": "#371E55",
+                        "quoteIconColor": "#003037",
+                        "nameBackgroundColor": "#ffffff",
+                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
+                        "backgroundColor": "#ffffff"
+                      }
+                    }
+                  ],
+                  "arrows": true,
+                  "titleColor": "#371E55",
+                  "arrowsColor": "#003037",
+                  "dots": false,
+                  "caption": "<p></p>",
+                  "bubbleImages": [],
+                  "captionFont": "Instrument serif",
+                  "backgroundMedia": {
+                    "image": {
+                      "src": "https://data.decoassets.com/lojaintegradar/3ec10d60-b3a3-4d63-8be0-7a4fcb4d13ed/dobra2.png"
+                    },
+                    "use": "image"
+                  }
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
+          },
+          {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
+                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Temas e personalização para</span><em><span style=\"color: rgb(0, 48, 55)\"> </span><span style=\"color: rgb(40, 195, 195)\">elevar sua marca</span></em></p>",
+                  "titleFont": "Instrument serif",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130)\">Deixe sua loja com a cara do seu negócio! Explore uma seleção de temas personalizáveis para criar uma experiência única e atrativa.&nbsp;Aproveite opções gratuitas ou contrate layouts avançados para destacar seus produtos e conquistar mais clientes.</span></p>",
+                  "cta": [
+                    {
+                      "ctaStyle": "button",
+                      "text": "Ver planos",
+                      "backgroundColor": "#003037",
+                      "borderColor": "#003037",
+                      "textColor": "#ffffff",
+                      "href": "#plans"
+                    },
+                    {
+                      "ctaStyle": "link",
+                      "href": "/talkToSpecialist ",
+                      "underlineText": "Falar com especialista",
+                      "showIcon": true,
+                      "backgroundColor": "",
+                      "borderColor": "",
+                      "textColor": "#003037"
+                    }
+                  ],
+                  "paddingBottom": "42px",
+                  "paddingTop": "42px",
+                  "features": [
+                    {
+                      "icon": {
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                      },
+                      "title": "Recursos exclusivos",
+                      "titleColor": "#003037",
+                      "text": "Impulsione sua loja com funcionalidades únicas que otimizam a experiência do cliente",
+                      "textColor": "#5F6E82"
+                    },
+                    {
+                      "icon": {
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                      },
+                      "title": "Pague uma vez só",
+                      "titleColor": "#003037",
+                      "text": "Uma só contratação para aproveitar as ferramentas por tempo indeterminado",
+                      "textColor": "#5F6E82"
+                    },
+                    {
+                      "icon": {
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                      },
+                      "title": "Suporte estendido",
+                      "titleColor": "#003037",
+                      "text": "Um ano de atendimento com nossos parceiros",
+                      "textColor": "#5F6E82"
+                    },
+                    {
+                      "title": "Personalize do seu jeito",
+                      "icon": {
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                      },
+                      "titleColor": "#003037",
+                      "text": "Código aberto para edição livre, adaptável de acordo com o seu segmento",
+                      "textColor": "#5F6E82"
+                    }
+                  ],
+                  "image": {
+                    "width": 429,
+                    "height": 310,
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/35d81fbc-0a4f-498f-8dd9-2274c431a2e5/img-pod-pah-mobile.png"
+                  },
+                  "use": "image"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
+                  "title": "<p></p>",
+                  "titleFont": "Instrument serif",
+                  "cta": [
+                    {
+                      "ctaStyle": "button",
+                      "href": "#plans",
+                      "text": "Ver planos",
+                      "backgroundColor": "#003037",
+                      "borderColor": "#003037",
+                      "textColor": "#fffff",
+                      "showIcon": false
+                    }
+                  ],
+                  "paddingBottom": "120px",
+                  "caption": "<p></p>",
+                  "paddingTop": "0px",
+                  "features": [],
+                  "image": {},
+                  "use": "image",
+                  "createStoreCta": {
+                    "planId": "172",
+                    "text": "Abrir loja",
+                    "backgroundColor": "Transparent",
+                    "textColor": "#003037",
+                    "borderColor": "#003037"
+                  }
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
+          },
+          {
             "__resolveType": "site/sections/Footer2.tsx",
             "title": "<p><span style=\"color: #FAFAF5; font-size:70px; font-weight:100; \">O futuro do e-commerce começa com você.</span><br><span style=\"color: #FAFAF5; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \">Escolha soluções automatizadas e veja sua operação mais eficiente</span></p>",
             "titleFont": "Instrument serif",
@@ -3189,12 +3375,6 @@
       }
     ]
   },
-  "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "image": "",
-    "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/92453a09-1a8b-4ba4-8861-b84939dde7d3/favicon-li.png",
-    "type": "website",
-    "title": "Venda mais - Loja Integrada"
-  },
-  "__resolveType": "website/pages/Page.tsx"
+  "name": "Home Copy",
+  "path": "/home2"
 }

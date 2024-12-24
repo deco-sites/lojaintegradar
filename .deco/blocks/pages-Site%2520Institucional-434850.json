@@ -710,6 +710,73 @@
       "tabsInterval": 10
     },
     {
+      "__resolveType": "site/sections/AutomaticCarousel.tsx",
+      "title": {
+        "text": "<p><span style=\"color: #003037\">Nós queremos mais<br>é que você cresça!</span></p>",
+        "font": "Instrument serif"
+      },
+      "caption": "<p><span style=\"color: #5f6e82\">Uma plataforma que se adapta às suas necessidades,</span><span>&nbsp;</span><span style=\"color: #28c3c3\">seja qual for o tamanho do seu negócio.</span></p>",
+      "items": [
+        {
+          "media": {
+            "use": "image",
+            "image": {
+              "src": "https://data.decoassets.com/lojaintegradar/ba67df91-02be-4801-a09b-19dcd49c6009/automatic-carousel-1.png"
+            },
+            "video": {}
+          },
+          "title": {
+            "text": "<p><strong><span style=\"color: #ffffff\">Para quem já vende e quer</span></strong></p><p><strong><span style=\"color: #ffffff\">alcançar mais</span></strong></p>"
+          },
+          "caption": "<p><span style=\"color: #ffffff\">Já está em marketplaces ou redes sociais?&nbsp; Use a Loja Integrada para expandir suas vendas de forma eficiente e se beneficiar de um ecossistema completo para o seu negócio.</span></p>",
+          "textBackgroundColor": "#22454B",
+          "textBackgroundColorDegrade": true
+        },
+        {
+          "media": {
+            "use": "image",
+            "image": {
+              "src": "https://data.decoassets.com/lojaintegradar/4d7c5d9e-89e9-466a-8bcf-a0721de52aa2/automatic-carousel-2.png"
+            }
+          },
+          "textBackgroundColor": "#22454B",
+          "textBackgroundColorDegrade": true,
+          "title": {
+            "text": "<p><strong><span style=\"color: #ffffff\">Para quem está começando</span></strong></p><p><strong><span style=\"color: #ffffff\">no e-commerce</span></strong></p>"
+          },
+          "caption": "<p><span style=\"color: #ffffff\">Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>"
+        },
+        {
+          "media": {
+            "use": "image",
+            "image": {
+              "src": "https://data.decoassets.com/lojaintegradar/74ed9dd9-5653-41cf-bc5c-6a9284b8545f/automatic-carousel-3.png"
+            }
+          },
+          "textBackgroundColor": "#22454B",
+          "title": {
+            "text": "<p><strong><span style=\"color: #ffffff\">Para quem quer vende<br>sem estoque</span></strong></p>"
+          },
+          "caption": "<p><span style=\"color: #ffffff\">Com o Dropi, faça dropshipping com fornecedores do AliExpress. Acesse mais de 100 milhões de produtos e aproveite as menores taxas do mercado.</span></p>",
+          "textBackgroundColorDegrade": true
+        },
+        {
+          "media": {
+            "use": "image",
+            "image": {
+              "src": "https://data.decoassets.com/lojaintegradar/b1a32a4e-5c29-41f7-9a61-9ef8274b3e3a/automatic-carousel-4.png"
+            }
+          },
+          "title": {
+            "text": "<p><strong><span style=\"color: #ffffff\">Para quem quer levar a loja</span></strong></p><p><strong><span style=\"color: #ffffff\">física para o digital</span></strong><span><br></span></p>"
+          },
+          "textBackgroundColor": "#22454B",
+          "textBackgroundColorDegrade": true,
+          "caption": "<p><span style=\"color: #fcfcfc\">Transforme sua loja física em um e-commerce de sucesso, alcançando clientes em todo o Brasil com a tecnologia e suporte da Loja Integrada.</span></p>"
+        }
+      ]
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -821,8 +888,6 @@
             "__resolveType": "site/sections/Carousel.tsx",
             "title": "<p><span style=\"color: rgb(0, 48, 55); font-size: 15pt\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195); font-size: 15pt\">Dados e Automação</span></em></p>",
             "titleFont": "Instrument serif",
-            "titleColor": "",
-            "captionColor": "#371E55",
             "cta": [
               {
                 "ctaStyle": "button",
@@ -844,6 +909,8 @@
               }
             ],
             "paddingBottom": "50px",
+            "titleColor": "",
+            "captionColor": "#371E55",
             "slides": [
               {
                 "title": "Campanhas automatizadas para reengajar clientes",
@@ -940,8 +1007,6 @@
             "__resolveType": "site/sections/Carousel.tsx",
             "title": "<p><span style=\"color: rgb(0, 48, 55)\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195)\">Dados e Automação</span></em></p>",
             "titleFont": "Instrument serif",
-            "titleColor": "",
-            "captionColor": "#371E55",
             "cta": [
               {
                 "ctaStyle": "button",
@@ -963,6 +1028,8 @@
               }
             ],
             "paddingBottom": "50px",
+            "titleColor": "",
+            "captionColor": "#371E55",
             "slides": [
               {
                 "title": "Campanhas automatizadas para reengajar clientes",

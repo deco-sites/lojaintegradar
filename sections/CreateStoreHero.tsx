@@ -100,7 +100,7 @@ export default function CreateStoreHero({ id, title, caption, cta = [], ctaPlace
     "center": "justify-center",
     "right": "justify-end"
   }
-  return <div id={id} class="relative" style={{ paddingTop, paddingLeft, paddingRight, paddingBottom, minHeight: sectionMinHeight }}>
+  return <div id={id} class="relative pt-24 px-7 lg:pt-44 pb-16 lg:pb-20" style={{ paddingTop, paddingLeft, paddingRight, paddingBottom, minHeight: sectionMinHeight }}>
     <div class="max-w-[1250px] mx-auto flex flex-col items-center lg:flex-row justify-between">
       <div class="max-w-[620px]">
         {title?.text && <AnimateOnShow

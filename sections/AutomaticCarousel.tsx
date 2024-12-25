@@ -59,14 +59,16 @@ export interface Item {
 }
 
 export interface Props {
+  /** @format color-input */
+  backgroundColor?: string;
   title?: ITitle;
   caption?: RichText;
   items?: Item[];
 }
 
-export default function AutomaticCarousel({ title, caption, items = [] }: Props) {
+export default function AutomaticCarousel({ backgroundColor, title, caption, items = [] }: Props) {
   const rootId = useId();
-  return <div id={rootId} class={`relative min-h-[100vh] ${rootId}-container py-7 lg:py-0`}>
+  return <div id={rootId} class={`relative min-h-[100vh] ${rootId}-container `}>
     <script
       type="module"
       dangerouslySetInnerHTML={{ __html: useScript(onLoad, rootId) }}
@@ -79,7 +81,7 @@ export default function AutomaticCarousel({ title, caption, items = [] }: Props)
           }
         }
       `}} />
-    <div class="sticky top-0 min-h-[100vh] flex items-end pb-7 w-full lg:w-auto">
+    <div class="sticky top-0 min-h-[100vh] flex items-end pb-7 pt-7 lg:pt-0 w-full lg:w-auto" style={{ background: backgroundColor }}>
       <div class="automaticCarousel overflow-auto flex flex-col lg:flex-row items-center gap-4 lg:gap-24 w-full px-7 lg:px-20" style={{ scrollbarWidth: "none" }}>
         <div class="flex flex-col justify-center lg:min-w-[500px] w-full lg:w-[486px]">
           {title?.text && <div class="text-3xl lg:text-[70px] leading-[110%] font-normal" style={{ fontFamily: title.font }} dangerouslySetInnerHTML={{ __html: title.text }} />}

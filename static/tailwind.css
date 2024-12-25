@@ -3784,6 +3784,9 @@ details.collapse summary::-webkit-details-marker {
 .h-\[76px\] {
   height: 76px;
 }
+.h-\[77vw\] {
+  height: 77vw;
+}
 .h-\[86vw\] {
   height: 86vw;
 }
@@ -4027,9 +4030,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[400px\] {
   width: 400px;
-}
-.w-\[486px\] {
-  width: 486px;
 }
 .w-\[4px\] {
   width: 4px;
@@ -4665,9 +4665,6 @@ details.collapse summary::-webkit-details-marker {
 .gap-20 {
   gap: 5rem;
 }
-.gap-24 {
-  gap: 6rem;
-}
 .gap-3 {
   gap: 0.75rem;
 }
@@ -4831,9 +4828,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .rounded-\[3px\] {
   border-radius: 3px;
-}
-.rounded-\[45px\] {
-  border-radius: 45px;
 }
 .rounded-\[5px\] {
   border-radius: 5px;
@@ -5253,10 +5247,6 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 3rem;
   padding-right: 3rem;
 }
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -5268,10 +5258,6 @@ details.collapse summary::-webkit-details-marker {
 .px-2\.5 {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
-}
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 .px-3 {
   padding-left: 0.75rem;
@@ -5455,9 +5441,6 @@ details.collapse summary::-webkit-details-marker {
 .pb-0 {
   padding-bottom: 0px;
 }
-.pb-11 {
-  padding-bottom: 2.75rem;
-}
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -5611,6 +5594,9 @@ details.collapse summary::-webkit-details-marker {
 .pt-9 {
   padding-top: 2.25rem;
 }
+.pt-\[100px\] {
+  padding-top: 100px;
+}
 .pt-\[105px\] {
   padding-top: 105px;
 }
@@ -5619,9 +5605,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-\[121px\] {
   padding-top: 121px;
-}
-.pt-\[157px\] {
-  padding-top: 157px;
 }
 .pt-\[30px\] {
   padding-top: 30px;
@@ -5741,9 +5724,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .text-\[50px\] {
   font-size: 50px;
-}
-.text-\[70px\] {
-  font-size: 70px;
 }
 .text-\[80px\] {
   font-size: 80px;
@@ -6882,6 +6862,10 @@ details.collapse summary::-webkit-details-marker {
     height: 747px;
   }
 
+  .lg\:h-\[75vh\] {
+    height: 75vh;
+  }
+
   .lg\:max-h-\[600px\] {
     max-height: 600px;
   }
@@ -6946,6 +6930,10 @@ details.collapse summary::-webkit-details-marker {
     width: 456px;
   }
 
+  .lg\:w-\[486px\] {
+    width: 486px;
+  }
+
   .lg\:w-\[50\%\] {
     width: 50%;
   }
@@ -6964,6 +6952,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:w-\[911px\] {
     width: 911px;
+  }
+
+  .lg\:w-\[97vh\] {
+    width: 97vh;
   }
 
   .lg\:w-\[unset\] {
@@ -6986,8 +6978,16 @@ details.collapse summary::-webkit-details-marker {
     min-width: 0;
   }
 
+  .lg\:min-w-\[500px\] {
+    min-width: 500px;
+  }
+
   .lg\:min-w-\[606px\] {
     min-width: 606px;
+  }
+
+  .lg\:min-w-\[97vh\] {
+    min-width: 97vh;
   }
 
   .lg\:max-w-\[1256px\] {
@@ -7098,6 +7098,10 @@ details.collapse summary::-webkit-details-marker {
     gap: 4rem;
   }
 
+  .lg\:gap-24 {
+    gap: 6rem;
+  }
+
   .lg\:gap-5 {
     gap: 1.25rem;
   }
@@ -7154,6 +7158,10 @@ details.collapse summary::-webkit-details-marker {
     border-radius: 40px;
   }
 
+  .lg\:rounded-\[45px\] {
+    border-radius: 45px;
+  }
+
   .lg\:rounded-tl-none {
     border-top-left-radius: 0px;
   }
@@ -7179,6 +7187,11 @@ details.collapse summary::-webkit-details-marker {
   .lg\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .lg\:px-24 {
@@ -7234,6 +7247,11 @@ details.collapse summary::-webkit-details-marker {
   .lg\:px-\[30px\] {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:py-1 {
@@ -7304,6 +7322,10 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 2.5rem;
   }
 
+  .lg\:pb-11 {
+    padding-bottom: 2.75rem;
+  }
+
   .lg\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -7338,6 +7360,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pt-11 {
+    padding-top: 2.75rem;
   }
 
   .lg\:pt-14 {
@@ -7380,6 +7406,10 @@ details.collapse summary::-webkit-details-marker {
     padding-top: 123px;
   }
 
+  .lg\:pt-\[157px\] {
+    padding-top: 157px;
+  }
+
   .lg\:pt-\[160px\] {
     padding-top: 160px;
   }
@@ -7415,6 +7445,11 @@ details.collapse summary::-webkit-details-marker {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-5xl {

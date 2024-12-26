@@ -7,159 +7,335 @@
       {
         "value": [
           {
-            "__resolveType": "site/sections/Header2.tsx",
-            "navigation": {
-              "links": [
-                {
-                  "label": "Nosso ecossistema",
-                  "url": "#nossoecossistema",
-                  "textColor": "#371E55",
-                  "textHoverColor": "#C6B3CE"
-                },
-                {
-                  "label": "Recursos e Ferramentas",
-                  "url": "#recursosferramentas",
-                  "textColor": "#371E55"
-                },
-                {
-                  "label": "Calculadora TCO",
-                  "url": "#tcocalculator"
-                },
-                {
-                  "label": "Faça parte da Elite",
-                  "url": "#planoelite",
-                  "textColor": "#371E55"
-                },
-                {
-                  "label": "Planos",
-                  "url": "#plans",
-                  "textColor": "#371E55"
-                },
-                {
-                  "label": "Plano Expansão ",
-                  "url": "#plansdetails",
-                  "textColor": "#371E55"
-                },
-                {
-                  "label": "Plano Aceleração",
-                  "url": "#plansdetails",
-                  "textColor": "#371E55"
-                },
-                {
-                  "label": "Plano Crescimento",
-                  "url": "#plansdetails",
-                  "textColor": "#371E55"
-                },
-                {
-                  "label": "Ecossistema de conteúdo",
-                  "url": "#ecossistemaconteudo",
-                  "textColor": "#371E55"
-                }
-              ],
-              "buttons": [
-                {
-                  "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "text": "<p>Fazer login</p>",
-                  "ctaStyle": "button",
-                  "backgroundColor": "Transparent",
-                  "textColor": "#ffffff",
-                  "borderColor": "#ffffff",
-                  "outline": true
-                }
-              ],
-              "mobileButtons": [],
-              "asideMenuButtons": [
-                {
-                  "text": "<p>Abrir loja virtual</p>",
-                  "href": "#plans",
-                  "ctaStyle": "button",
-                  "backgroundColor": "#003037",
-                  "textColor": "#ffffff",
-                  "borderColor": "#003037"
-                },
-                {
-                  "text": "Fazer Login",
-                  "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "outline": true,
-                  "ctaStyle": "button",
-                  "backgroundColor": "Transparent",
-                  "textColor": "#003037",
-                  "borderColor": "#003037"
-                }
-              ],
-              "sideMenuButtons": [],
-              "linksBorderColor": "#D0DAD9",
-              "textHoverColor": "#D0DAD9",
-              "textColor": "#003037",
-              "mobileButtonsOnScrollColors": {
-                "textColor": "#ffffff",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
-              },
-              "createStoreCta": {
-                "ctaStyle": "button",
-                "planId": "172",
-                "backgroundColor": "#ffffff",
-                "textColor": "#003037",
-                "borderColor": "#ffffff",
-                "text": "Abrir loja",
-                "showIcon": false
-              },
-              "createStoreCtaMobile": {
-                "ctaStyle": "button",
-                "planId": "172",
-                "text": "Criar loja",
-                "backgroundColor": "rgba(255, 255, 255, 0.60)",
-                "textColor": "#003037",
-                "borderColor": "Transparent",
-                "showIcon": false
-              },
-              "createStoreCtaMobileOnScrollColors": {
-                "backgroundColor": "rgba(255, 255, 255, 0.60)",
-                "borderColor": "Transparent",
-                "textColor": "#003037"
-              }
-            },
-            "logo": {
-              "src": {
-                "__resolveType": "website/flags/multivariate/image.ts",
-                "variants": [
-                  {
-                    "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/051ff7e6-5058-4e08-a303-b41222f9773c/Loja-Integrada-RGB---Prioritaria---Fundo-Branco---LOGO-1.svg",
-                    "rule": {
-                      "__resolveType": "website/matchers/always.ts"
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/Header2.tsx",
+                  "navigation": {
+                    "links": [
+                      {
+                        "label": "Nosso ecossistema",
+                        "url": "#nossoecossistema",
+                        "textColor": "#371E55",
+                        "textHoverColor": "#C6B3CE"
+                      },
+                      {
+                        "label": "Recursos e Ferramentas",
+                        "url": "#recursosferramentas",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Calculadora TCO",
+                        "url": "#tcocalculator"
+                      },
+                      {
+                        "label": "Faça parte da Elite",
+                        "url": "#planoelite",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Planos",
+                        "url": "#plans",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Plano Expansão ",
+                        "url": "#plansdetails",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Plano Aceleração",
+                        "url": "#plansdetails",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Plano Crescimento",
+                        "url": "#plansdetails",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Ecossistema de conteúdo",
+                        "url": "#ecossistemaconteudo",
+                        "textColor": "#371E55"
+                      }
+                    ],
+                    "buttons": [
+                      {
+                        "href": "https://app.lojaintegrada.com.br/painel/login",
+                        "text": "<p>Fazer login</p>",
+                        "ctaStyle": "button",
+                        "backgroundColor": "Transparent",
+                        "textColor": "#ffffff",
+                        "borderColor": "#ffffff",
+                        "outline": true
+                      }
+                    ],
+                    "mobileButtons": [
+                      {
+                        "ctaStyle": "button",
+                        "href": "https://app.lojaintegrada.com.br/painel/login",
+                        "text": "<p>Fazer login</p>",
+                        "textColor": "#003037",
+                        "borderColor": "#ffffff",
+                        "backgroundColor": "#ffffff"
+                      }
+                    ],
+                    "asideMenuButtons": [
+                      {
+                        "text": "<p>Abrir loja virtual</p>",
+                        "href": "#plans",
+                        "ctaStyle": "button",
+                        "backgroundColor": "#003037",
+                        "textColor": "#ffffff",
+                        "borderColor": "#003037"
+                      },
+                      {
+                        "text": "Fazer Login",
+                        "href": "https://app.lojaintegrada.com.br/painel/login",
+                        "outline": true,
+                        "ctaStyle": "button",
+                        "backgroundColor": "Transparent",
+                        "textColor": "#003037",
+                        "borderColor": "#003037"
+                      }
+                    ],
+                    "sideMenuButtons": [],
+                    "linksBorderColor": "#D0DAD9",
+                    "textHoverColor": "#D0DAD9",
+                    "textColor": "#003037",
+                    "mobileButtonsOnScrollColors": {
+                      "textColor": "#ffffff",
+                      "backgroundColor": "#371E55",
+                      "borderColor": "#371E55"
+                    },
+                    "createStoreCta": {
+                      "ctaStyle": "link",
+                      "backgroundColor": "#ffffff",
+                      "textColor": "#003037",
+                      "borderColor": "#ffffff",
+                      "showIcon": false
+                    },
+                    "createStoreCtaMobile": {
+                      "ctaStyle": "link",
+                      "backgroundColor": "rgba(255, 255, 255, 0.60)",
+                      "textColor": "#003037",
+                      "borderColor": "Transparent",
+                      "showIcon": false
+                    },
+                    "createStoreCtaMobileOnScrollColors": {
+                      "backgroundColor": "",
+                      "borderColor": "",
+                      "textColor": ""
                     }
-                  }
-                ]
-              },
-              "href": "/venda-mais",
-              "alt": "logo"
-            },
-            "initialButtons": [],
-            "backgroundColor": "#003037",
-            "barsColor": "#ffffff",
-            "asideMenuTopBackgroundColor": "#D0DAD9",
-            "asideMenuBackgroundColor": "#ffffff",
-            "asideMenuCloseIconColor": "#003037",
-            "headerMessage": {
-              "show": false,
-              "text": "<p></p>",
-              "textColor": "#22454B",
-              "backgroundColor": "#D0DAD9",
-              "cta": [
-                {
-                  "ctaStyle": "link",
-                  "href": "#",
-                  "textColor": "#22454B",
-                  "text": "<p style=\"text-align: center\">🚀 Descubra como a loja do Neymar faturou R$ 300 milhões em apenas 10 dias. Acesse aqui</p>"
+                  },
+                  "logo": {
+                    "src": {
+                      "__resolveType": "website/flags/multivariate/image.ts",
+                      "variants": [
+                        {
+                          "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/051ff7e6-5058-4e08-a303-b41222f9773c/Loja-Integrada-RGB---Prioritaria---Fundo-Branco---LOGO-1.svg",
+                          "rule": {
+                            "__resolveType": "website/matchers/always.ts"
+                          }
+                        }
+                      ]
+                    },
+                    "href": "/home",
+                    "alt": "logo"
+                  },
+                  "initialButtons": [],
+                  "backgroundColor": "#003037",
+                  "barsColor": "#ffffff",
+                  "asideMenuTopBackgroundColor": "#D0DAD9",
+                  "asideMenuBackgroundColor": "#ffffff",
+                  "asideMenuCloseIconColor": "#003037",
+                  "headerMessage": {
+                    "show": false,
+                    "text": "<p></p>",
+                    "textColor": "#22454B",
+                    "backgroundColor": "#D0DAD9",
+                    "cta": [
+                      {
+                        "ctaStyle": "link",
+                        "href": "#",
+                        "textColor": "#22454B",
+                        "text": "<p style=\"text-align: center\">🚀 Descubra como a loja do Neymar faturou R$ 300 milhões em apenas 10 dias. Acesse aqui</p>"
+                      }
+                    ],
+                    "font": "Instrument Serif"
+                  },
+                  "campaignTimer": {
+                    "text": "Time left for a campaign to end with a link"
+                  },
+                  "hideAsideMenu": true
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
                 }
-              ],
-              "font": "Instrument Serif"
-            },
-            "campaignTimer": {
-              "text": "Time left for a campaign to end with a link"
-            },
-            "hideAsideMenu": true
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/Header2.tsx",
+                  "navigation": {
+                    "links": [
+                      {
+                        "label": "Nosso ecossistema",
+                        "url": "#nossoecossistema",
+                        "textColor": "#371E55",
+                        "textHoverColor": "#C6B3CE"
+                      },
+                      {
+                        "label": "Recursos e Ferramentas",
+                        "url": "#recursosferramentas",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Calculadora TCO",
+                        "url": "#tcocalculator"
+                      },
+                      {
+                        "label": "Faça parte da Elite",
+                        "url": "#planoelite",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Planos",
+                        "url": "#plans",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Plano Expansão ",
+                        "url": "#plansdetails",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Plano Aceleração",
+                        "url": "#plansdetails",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Plano Crescimento",
+                        "url": "#plansdetails",
+                        "textColor": "#371E55"
+                      },
+                      {
+                        "label": "Ecossistema de conteúdo",
+                        "url": "#ecossistemaconteudo",
+                        "textColor": "#371E55"
+                      }
+                    ],
+                    "buttons": [
+                      {
+                        "href": "https://app.lojaintegrada.com.br/painel/login",
+                        "text": "<p>Fazer login</p>",
+                        "ctaStyle": "button",
+                        "backgroundColor": "Transparent",
+                        "textColor": "#ffffff",
+                        "borderColor": "#ffffff",
+                        "outline": true
+                      }
+                    ],
+                    "mobileButtons": [],
+                    "asideMenuButtons": [
+                      {
+                        "text": "<p>Abrir loja virtual</p>",
+                        "href": "#plans",
+                        "ctaStyle": "button",
+                        "backgroundColor": "#003037",
+                        "textColor": "#ffffff",
+                        "borderColor": "#003037"
+                      },
+                      {
+                        "text": "Fazer Login",
+                        "href": "https://app.lojaintegrada.com.br/painel/login",
+                        "outline": true,
+                        "ctaStyle": "button",
+                        "backgroundColor": "Transparent",
+                        "textColor": "#003037",
+                        "borderColor": "#003037"
+                      }
+                    ],
+                    "sideMenuButtons": [],
+                    "linksBorderColor": "#D0DAD9",
+                    "textHoverColor": "#D0DAD9",
+                    "textColor": "#003037",
+                    "mobileButtonsOnScrollColors": {
+                      "textColor": "#ffffff",
+                      "backgroundColor": "#371E55",
+                      "borderColor": "#371E55"
+                    },
+                    "createStoreCta": {
+                      "ctaStyle": "button",
+                      "planId": "172",
+                      "backgroundColor": "#ffffff",
+                      "textColor": "#003037",
+                      "borderColor": "#ffffff",
+                      "text": "Abrir loja",
+                      "showIcon": false
+                    },
+                    "createStoreCtaMobile": {
+                      "ctaStyle": "button",
+                      "planId": "172",
+                      "text": "Criar loja",
+                      "backgroundColor": "rgba(255, 255, 255, 0.60)",
+                      "textColor": "#003037",
+                      "borderColor": "Transparent",
+                      "showIcon": false
+                    },
+                    "createStoreCtaMobileOnScrollColors": {
+                      "backgroundColor": "rgba(255, 255, 255, 0.60)",
+                      "borderColor": "Transparent",
+                      "textColor": "#003037"
+                    }
+                  },
+                  "logo": {
+                    "src": {
+                      "__resolveType": "website/flags/multivariate/image.ts",
+                      "variants": [
+                        {
+                          "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/051ff7e6-5058-4e08-a303-b41222f9773c/Loja-Integrada-RGB---Prioritaria---Fundo-Branco---LOGO-1.svg",
+                          "rule": {
+                            "__resolveType": "website/matchers/always.ts"
+                          }
+                        }
+                      ]
+                    },
+                    "href": "/home",
+                    "alt": "logo"
+                  },
+                  "initialButtons": [],
+                  "backgroundColor": "#003037",
+                  "barsColor": "#ffffff",
+                  "asideMenuTopBackgroundColor": "#D0DAD9",
+                  "asideMenuBackgroundColor": "#ffffff",
+                  "asideMenuCloseIconColor": "#003037",
+                  "headerMessage": {
+                    "show": false,
+                    "text": "<p></p>",
+                    "textColor": "#22454B",
+                    "backgroundColor": "#D0DAD9",
+                    "cta": [
+                      {
+                        "ctaStyle": "link",
+                        "href": "#",
+                        "textColor": "#22454B",
+                        "text": "<p style=\"text-align: center\">🚀 Descubra como a loja do Neymar faturou R$ 300 milhões em apenas 10 dias. Acesse aqui</p>"
+                      }
+                    ],
+                    "font": "Instrument Serif"
+                  },
+                  "campaignTimer": {
+                    "text": "Time left for a campaign to end with a link"
+                  },
+                  "hideAsideMenu": true
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
           },
           {
             "__resolveType": "site/sections/FloatingButtons.tsx",

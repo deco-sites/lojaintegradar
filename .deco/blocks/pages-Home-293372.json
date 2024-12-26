@@ -1332,13 +1332,13 @@
               {
                 "value": {
                   "__resolveType": "site/sections/Carousel.tsx",
-                  "title": "<p style=\"font-size:70px; \"><span style=\"color: rgb(0, 48, 55); font-size:70px; \"> Ganhe eficiência usando </span></p>",
+                  "title": "<p style=\"line-height:1; \"><span style=\"color: rgb(0, 48, 55); font-size:32pt;  font-weight:300; \">Nós queremos é mais que você cresça!</span><br><span style=\"color: #5F6E82; font-size:18px; font-weight:300; font-family: 'Inter'; \">Uma plataforma que se adapta às suas necessidades, seja qual for o tamanho do<br> seu negócio.</p>",
                   "slides": [
                     {
-                      "title": "Campanhas automatizadas para reengajar clientes",
-                      "caption": "<p style='line-height: 1.5;'>Venda mais e sem custo adicional com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento.</p>",
+                      "title": "Para quem já vende e quer alcançar mais",
+                      "caption": "<p style=\"line-height:160%; \">Já está em marketplaces ou redes sociais?  Use a Loja Integrada para expandir suas vendas de forma eficiente e se beneficiar de um ecossistema completo para o seu negócio.</p>",
                       "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/83ca92af-e89a-48ed-b87d-a09df9a9c6da/campanhas-para-engajar-clientes-.png",
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
                         "height": 456,
                         "width": 484
                       },
@@ -1349,10 +1349,10 @@
                       },
                       "textColor": "#ffffff",
                       "useBackground": "video",
-                      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5d7bf106-a77a-41e9-b1b6-d5531602ae93/campanhas-para-engajar-clientes.mp4"
+                      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/93a25b4d-c1a3-4389-b19e-2568a2d8899f/para-quem-quer-crescer.mp4"
                     },
                     {
-                      "title": "Anuncie seus produtos em diferentes canais",
+                      "title": "Para quem está começando no e-commerce",
                       "bulletPoints": {
                         "items": [],
                         "bulletPointsIcon": {
@@ -1360,42 +1360,44 @@
                           "alt": "check icon"
                         }
                       },
-                      "textPlacement": "Top",
+                      "textPlacement": "Bottom",
                       "icon": {
                         "alt": "white arrow",
                         "placement": "Top right"
                       },
-                      "caption": "<p><span style=\"font-size: 11pt\">Faturamento fácil e nas alturas: Hub de Canais para integração nativa com marketplaces, cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
+                      "caption": "<p><span style=\"font-size: 11pt; line-height:160%;\">Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>",
                       "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b30f13a5-0534-430f-96c3-919e7fee3ad2/Hub-de-canais.png",
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
                         "width": 484,
                         "height": 456
                       },
                       "textColor": "#ffffff",
-                      "useBackground": "image"
+                      "useBackground": "video",
+                      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/27c7d358-5c3e-4e5a-bcc5-dfa36fd0c7f2/para-quem-esta-comecando.mp4"
                     },
                     {
                       "bulletPoints": {
                         "items": []
                       },
-                      "title": "Frete e pagamento descomplicados",
+                      "title": "Para quem quer vender sem estoque",
                       "textColor": "#ffffff",
                       "textPlacement": "Bottom",
                       "icon": {
                         "placement": "Top right",
                         "alt": "purple arrow"
                       },
-                      "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt; line-height:160%;\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
+                      "caption": "<p><span style=\"font-size: 11pt; line-height:160%; \">Com o Dropi, faça dropshipping com fornecedores do AliExpress. Acesse mais de 100 milhões de produtos e aproveite as menores taxas do mercado.</span></p>",
                       "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e2e0bb9f-554f-4f0b-a650-042a87c860c5/enviali-pagali.png",
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
                         "height": 484,
                         "width": 456
                       },
-                      "useBackground": "image"
+                      "useBackground": "video",
+                      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7b56fa98-4033-46a5-aa48-91c5fc857e40/vender-sem-estoque.mp4"
                     },
                     {
                       "textColor": "#ffffff",
-                      "textPlacement": "Top",
+                      "textPlacement": "Bottom",
                       "icon": {
                         "placement": "Top right",
                         "alt": "white arrow"
@@ -1403,14 +1405,15 @@
                       "bulletPoints": {
                         "items": []
                       },
-                      "title": "Checkout rápido e aprimorado",
-                      "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
+                      "title": "Para quem quer levar a loja física para o digital",
+                      "caption": "<p><span style=\"font-size: 11pt; line-height:160%;\">Transforme sua loja física em um e-commerce de sucesso, alcançando clientes em todo o Brasil com a tecnologia e suporte da Loja Integrada.</span></p>",
                       "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10e605df-cef1-47f7-a057-78bb8a7cc2fe/checkout-inteligente.png",
+                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
                         "width": 484,
                         "height": 456
                       },
-                      "useBackground": "image"
+                      "useBackground": "video",
+                      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4a8e8af3-c76f-44fb-9e81-1950b3d9f731/levar-loja-para-o-digital.mp4"
                     }
                   ],
                   "arrows": true,
@@ -1423,25 +1426,27 @@
                     {
                       "ctaStyle": "button",
                       "text": "Ver planos",
-                      "backgroundColor": "#003037",
-                      "borderColor": "#003037",
-                      "textColor": "#fff5f5",
-                      "href": "#plans"
-                    },
-                    {
-                      "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
-                      "underlineText": "Falar com Especialista ",
-                      "showIcon": true,
                       "backgroundColor": "#ffffff",
                       "borderColor": "#003037",
                       "textColor": "#003037",
+                      "href": "#plans",
+                      "showIcon": false,
                       "outline": true
                     }
                   ],
-                  "paddingBottom": "50px",
-                  "backgroundImage": {},
-                  "interval": 0
+                  "paddingBottom": "120px",
+                  "backgroundImage": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8243ad-68f1-4e47-bdc5-d7abec141794/elemento-bg-1.png"
+                  },
+                  "interval": 0,
+                  "createStoreCta": {
+                    "order": 1,
+                    "planId": "172",
+                    "text": "Criar loja",
+                    "backgroundColor": "#003037",
+                    "borderColor": "#003037"
+                  },
+                  "paddingTop": "80px"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/device.ts",

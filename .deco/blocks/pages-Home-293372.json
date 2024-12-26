@@ -1581,11 +1581,11 @@
             "__resolveType": "site/sections/HeroWithTime.tsx",
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Já vende em outra plataforma?</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Motivos não faltam para migrar.</span></p>",
-              "mobile": "<p></p>"
+              "mobile": "<p style=\"text-align: center; line-height: 1.2;\"><span style=\"color: rgb(113, 219, 212); font-size: 24px; font-family: 'Instrument serif'; text-align:center;\">Já vende em outra plataforma?</span><br><span style=\"color: #FFFFFF; font-size: 32pt; font-family: 'Instrument serif'; text-align:center;\">Motivos não faltam <br>para migrar.</p>"
             },
             "subTitle": {
-              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro</p>",
-              "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-size: 24px; font-family: 'Inter'; line-height:120%; font-weight:100;\">Aproveite os benefícios de uma plataforma segura,<br> estável e descomplicada</span></p>"
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18px; font-family: 'Inter'; text-align:center; \">Aproveite os benefícios de uma plataforma segura, estável e descomplicada.</span></p>",
+              "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 24px\">Aproveite os benefícios de uma plataforma segura,<br>estável e descomplicada</span></p>"
             },
             "tabs": [
               {
@@ -1628,7 +1628,9 @@
                 "tabImage": {
                   "imageDesktop": "https://data.decoassets.com/lojaintegradar/eb5d1729-9b6c-4627-bf62-9274c3009101/liberdade-para-personalizar.png",
                   "widthDesktop": 606,
-                  "heightDesktop": 461
+                  "heightDesktop": 461,
+                  "image": "https://data.decoassets.com/lojaintegradar/eb5d1729-9b6c-4627-bf62-9274c3009101/liberdade-para-personalizar.png",
+                  "width": 506
                 },
                 "highlight": false,
                 "buttons": []
@@ -1836,9 +1838,10 @@
                 },
                 "tabImage": {
                   "widthDesktop": 606,
-                  "width": 0,
                   "heightDesktop": 461,
-                  "imageDesktop": "https://data.decoassets.com/lojaintegradar/219a3d26-ec8d-4d58-a532-d05fee2d5dd0/usabilidade.png"
+                  "imageDesktop": "https://data.decoassets.com/lojaintegradar/219a3d26-ec8d-4d58-a532-d05fee2d5dd0/usabilidade.png",
+                  "image": "https://data.decoassets.com/lojaintegradar/219a3d26-ec8d-4d58-a532-d05fee2d5dd0/usabilidade.png",
+                  "width": 506
                 },
                 "videoOn": false,
                 "button": {},
@@ -1933,7 +1936,7 @@
                   "borderColor": "#ffffff"
                 }
               ],
-              "arrows": false,
+              "arrows": true,
               "arrowsColor": "#FAFAF5",
               "id": "recursosferramentas",
               "createStoreCta": {

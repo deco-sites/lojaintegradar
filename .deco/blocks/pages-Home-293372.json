@@ -1958,7 +1958,7 @@
               {
                 "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
-                  "title": "<p style=\"font-family: 'Instrument Serif'; line-height: 1.2; \" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span><br><p style=\"text-align: center; line-height:1; \"><span style=\"color: #5F6E82; font-size:24px; line-height:1; font-weight:300; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
+                  "title": "<p style=\"font-family: 'Instrument Serif'; line-height: 1.2; \"><span>Planos que crescem com o seu negócio</span><br><p><span style=\"color: #5F6E82; font-size:18px; line-height:1; font-weight:300; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
                   "slides": [
                     {
                       "title": "<p>Elite</p>",
@@ -2285,7 +2285,7 @@
               {
                 "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
-                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span><br><p style=\"text-align: center\"><span style=\"color: #5F6E82; font-size:24px; line-height:1.2; font-weight:300; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a</span><span style=\"color: #28C3C3; font-size:24px; line-height:1; font-weight:300; font-family: 'Inter'; \"> vender hoje mesmo</span></p>",
+                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037; font-size: 32pt;\" data-mce-style=\"color: #003037; font-size: 32pt;\">Planos que crescem com <br>o seu negócio</span></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 18px; line-height: 1.2; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 18px; line-height: 1.2; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e <br>comece a vender hoje mesmo</span></p>",
                   "slides": [
                     {
                       "title": "<p>Elite</p>",
@@ -2557,7 +2557,7 @@
                   "titleColor": "#371E55",
                   "captionColor": "#371E55",
                   "arrowsColor": "#371E55",
-                  "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
+                  "caption": "<p></p>",
                   "dots": false,
                   "annualLabel": "Anual",
                   "montlyLabel": "Mensal",
@@ -2593,7 +2593,9 @@
                   },
                   "annualTagTextColor": "#371E55",
                   "annualTag": "-20% OFF",
-                  "annualTagPosition": "aside"
+                  "annualTagPosition": "aside",
+                  "paddingTop": "120px",
+                  "paddingBottom": "120px"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/device.ts",

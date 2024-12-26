@@ -1,0 +1,167 @@
+{
+  "__resolveType": "website/flags/multivariate/section.ts",
+  "variants": [
+    {
+      "value": {
+        "__resolveType": "site/sections/MainHero.tsx",
+        "title": "<div style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\" data-mce-style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\"><p style=\"font-family: 'Instrument Serif'; font-size: 28px; line-height: 1.4; font-weight: 200; text-align: center;\" data-mce-style=\"font-family: 'Instrument Serif'; font-size: 28px; line-height: 1.4; font-weight: 200; text-align: center;\"><span style=\"font-size: 28pt;\" data-mce-style=\"font-size: 28pt;\"> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">Escolha a plataforma com<br></span> <em>Dados e Automação&nbsp;</em> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><br>para faturar mais</span></span></p></div>",
+        "caption": "<p><br data-mce-bogus=\"1\"></p>",
+        "titleColor": "",
+        "inputPlaceHolder": "Digite seu email aqui para ganhar",
+        "inputButtonText": "Aproveitar",
+        "image": {
+          "alt": "top image",
+          "width": 925,
+          "height": 530
+        },
+        "backgroundImage": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33795203-2aed-4054-a781-3f33d62ebaed/main-hero-background-(2).svg",
+          "alt": "background image"
+        },
+        "inputLabelBackgroundColor": "#44656A",
+        "inputLabelColor": "#FAFAF5",
+        "hubspotFormButtonColor": "#71DBD4",
+        "hubspotFormButtonTextColor": "#003037",
+        "hubspotErrorMessageColor": "#F57E77",
+        "inputLabel": "⚡ Ganhe 20% OFF na assinatura",
+        "modal": {
+          "title": "Obrigado por se inscrever para receber nossa oferta especial!",
+          "titleColor": "#003037",
+          "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+          "textColor": "#5F6E82",
+          "backButton": {
+            "text": "Retomar a navegação ",
+            "backgroundColor": "#371E55",
+            "textColor": "#ffffff",
+            "borderColor": "#371E55",
+            "ctaStyle": "button"
+          },
+          "cta": [
+            {
+              "ctaStyle": "button",
+              "text": "Retomar a navegação ",
+              "backgroundColor": "#003037",
+              "textColor": "#ffffff",
+              "borderColor": "#003037",
+              "showIcon": false
+            },
+            {
+              "ctaStyle": "button",
+              "text": "Ver ofertas",
+              "backgroundColor": "#ffffff",
+              "textColor": "#003037",
+              "borderColor": "#003037",
+              "href": "#plans"
+            }
+          ]
+        },
+        "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
+        "hubspotForm": {
+          "portalId": "7112881",
+          "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
+          "region": "na1"
+        },
+        "bulletPoints": {
+          "show": false,
+          "title": "<div style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\" data-mce-style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\"><p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">O que você vai receber no Guia:</span></p></div>",
+          "items": [
+            "Como o consumidor decide na Black Friday ",
+            "Proposta de valor: produto vs. experiência do cliente",
+            "Estratégias que vão além de descontos",
+            "Dados e dicas práticas para suas campanhas"
+          ],
+          "textColor": "#ffffff",
+          "backgroundColor": "rgba(255, 255, 255, 0.09)",
+          "bulletPointsIcon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+            "alt": "check icon"
+          }
+        },
+        "htmlContent": "",
+        "captionAbove": "<p style=\"font-size: 16px; line-height: 120%; font-weight: bold; text-align: center;\" data-mce-style=\"font-size: 16px; line-height: 120%; font-weight: bold; text-align: center;\"><span style=\"color: rgb(250, 250, 245); font-size: 10pt;\" data-mce-style=\"color: rgb(250, 250, 245); font-size: 10pt;\">O futuro do e-commerce é inteligente</span></p>"
+      },
+      "rule": {
+        "__resolveType": "website/matchers/device.ts",
+        "mobile": true,
+        "tablet": false
+      }
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/MainHero.tsx",
+        "title": "<div style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\" data-mce-style=\"background: linear-gradient(90deg, #95E7EC 0.97%, #A1E3C5 32.78%); background-clip: text; color: transparent;\"><p style=\"font-family: 'Instrument Serif'; font-size: 50px; line-height: 1.4; font-weight: 200; text-align: center;\" data-mce-style=\"font-family: 'Instrument Serif'; font-size: 50px; line-height: 1.4; font-weight: 200; text-align: center;\"><span style=\"font-size: 50pt;\" data-mce-style=\"font-size: 50pt;\"> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">Escolha a plataforma com</span> <em><br>Dados e Automação&nbsp;</em> </span> <span style=\"font-size: 50pt; color: rgb(255, 255, 255);\" data-mce-style=\"font-size: 50pt; color: rgb(255, 255, 255);\">para faturar mais</span></p></div>",
+        "caption": "<p><br data-mce-bogus=\"1\"></p>",
+        "titleColor": "",
+        "inputPlaceHolder": "Digite seu email aqui para ganhar",
+        "inputButtonText": "Aproveitar",
+        "inputLabel": " ⚡ Ganhe 20% OFF na assinatura anual️",
+        "image": {
+          "alt": "top image",
+          "width": 925,
+          "height": 530
+        },
+        "backgroundImage": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33795203-2aed-4054-a781-3f33d62ebaed/main-hero-background-(2).svg",
+          "alt": "background image"
+        },
+        "inputLabelColor": "#FAFAF5",
+        "inputLabelBackgroundColor": "#44656A",
+        "hubspotFormButtonColor": "#71DBD4",
+        "hubspotFormButtonTextColor": "#003037",
+        "hubspotErrorMessageColor": "#F57E77",
+        "modal": {
+          "title": "Obrigado por se inscrever para receber nossa oferta especial!",
+          "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
+          "titleColor": "#003037",
+          "textColor": "#5F6E82",
+          "backButton": {
+            "text": "Retomar a navegação ",
+            "backgroundColor": "#371E55",
+            "textColor": "#ffffff",
+            "borderColor": "#371E55",
+            "ctaStyle": "button"
+          },
+          "cta": [
+            {
+              "ctaStyle": "button",
+              "text": "Retomar a navegação ",
+              "backgroundColor": "#003037",
+              "textColor": "#ffffff",
+              "borderColor": "#003037",
+              "showIcon": false
+            },
+            {
+              "ctaStyle": "button",
+              "text": "Ver planos",
+              "backgroundColor": "#ffffff",
+              "textColor": "#003037",
+              "borderColor": "#003037",
+              "href": "#plans"
+            }
+          ]
+        },
+        "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
+        "hubspotForm": {
+          "portalId": "7112881",
+          "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
+          "region": "na1"
+        },
+        "htmlContent": "",
+        "captionAbove": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">O futuro do e-commerce é inteligente</span><br></p>",
+        "bulletPoints": {
+          "show": false,
+          "title": "<div style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\" data-mce-style=\"background: linear-gradient(90deg, #ACEECE 0%, #82D1D6 100%); background-clip: text; color: transparent; font-family: 'Instrument Serif';\"><p>O que você vai receber no Guia</p></div>",
+          "items": [],
+          "textColor": "#ffffff",
+          "backgroundColor": "rgba(255, 255, 255, 0.09)",
+          "bulletPointsIcon": {
+            "alt": "check icon"
+          }
+        }
+      },
+      "rule": {
+        "__resolveType": "website/matchers/always.ts"
+      }
+    }
+  ]
+}

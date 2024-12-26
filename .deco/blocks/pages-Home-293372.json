@@ -367,19 +367,24 @@
                       {
                         "cta": [],
                         "useBackground": "image",
-                        "title": "<p><strong>Ações automatizadas que trabalham por você</strong></p>",
+                        "title": "<p><strong><span style=\"font-size: 14pt\">Ações automatizadas que trabalham por você</span></strong></p>",
                         "titleColor": "#003037",
-                        "text": "<p><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt; line-height:180%; \">Envie alertas de carrinho abandonado, personalize <br>campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
-                        "minHeight": "211px",
-                        "backgroundImage": {}
+                        "text": "<p><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt; line-height:180%; \">Envie alertas de carrinho abandonado, personalize&nbsp;campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
+                        "minHeight": "180",
+                        "backgroundImage": {
+                          "src": "https://data.decoassets.com/lojaintegradar/2d1f5c30-1e91-4814-a2a4-24d53e281837/bg-cards.png"
+                        }
                       },
                       {
                         "cta": [],
                         "useBackground": "image",
-                        "title": "<p><strong><span>Se mostre relevante em todos os contatos</span></strong></p>",
+                        "title": "<p><strong><span style=\"font-size: 14pt\">Se mostre relevante em todos</span></strong><br><strong><span style=\"font-size: 14pt\">os contatos</span></strong></p>",
                         "titleColor": "#003037",
-                        "text": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);line-height: 151%;\">Leve ofertas contextualizadas para seu clientes também via</span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Whatsapp.</span></p>",
-                        "minHeight": "211px"
+                        "text": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);line-height: 151%;\">Leve ofertas contextualizadas para seu clientes também via Whatsapp. </span></p>",
+                        "minHeight": "180px",
+                        "backgroundImage": {
+                          "src": "https://data.decoassets.com/lojaintegradar/2d1f5c30-1e91-4814-a2a4-24d53e281837/bg-cards.png"
+                        }
                       },
                       {
                         "cta": [],
@@ -401,7 +406,9 @@
                         }
                       }
                     ]
-                  }
+                  },
+                  "paddingTop": "0px",
+                  "paddingBottom": "0px"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/device.ts",

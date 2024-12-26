@@ -123,30 +123,20 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                             {inputLabel}
                         </p>}
                         <div class={hubspostFormId} dangerouslySetInnerHTML={{
-                            __html: `<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                            __html: `
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                             <script>
                             hbspt.forms.create({
                                 region: "${hubspotForm?.region || ""}",
                                 portalId: "${hubspotForm?.portalId}",
                                 formId: "${hubspotForm?.formId}",
-                                onFormSubmit: function($form){
+                                onFormSubmit: function($form) {
                                     const modal = document.getElementById("${modalId}");
-                                    if (modal) modal.classList.remove('hidden'); 
-                                    }
-                                    });
-                                    </script>
-                                    `
-                        }}/>
-                        {/* <div class={`bg-primary-content flex justify-between py-1.5 pr-1.5 text-base text-primary border border-base-200 rounded-xl shadow-spreaded ${inputLabel && 'md:rounded-tl-none'}`}>
-                <input
-                    type="email"
-                    class="w-1/2 md:w-auto md:flex-grow pl-2 md:pl-7 focus:outline-none text-sm md:text-base"
-                    placeholder={inputPlaceHolder}
-                    />
-                    <button class="btn btn-primary font-bold px-7 hover:scale-110 text-lg">
-                    {inputButtonText}
-                    </button>
-                    </div> */}
+                                    if (modal) modal.classList.remove('hidden');
+                                }
+                            });
+                            </script>` 
+                        }}/>                        
                     </label>
                 </div>
             </div>

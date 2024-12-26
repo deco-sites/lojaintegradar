@@ -80,6 +80,28 @@ const refreshArrowsVisibility = () => {
     }
 };
 
+export interface HubspotForm {
+  show?: boolean;
+  region?: string;
+  portalId?: string;
+  formId?: string;
+  /** @format color-input */
+  buttonColor?: string;
+  /** @format color-input */
+  buttonTextColor?: string;
+  /** @format color-input */
+  buttonIcon?: boolean;
+  buttonWidth?: 'min' | 'full';
+  /** @format color-input */
+  errorMessageColor?: string;
+  inputLabel?: string;
+  /** @format color-input */
+  inputLabelColor?: string;
+  /** @format color-input */
+  inputLabelBackgroundColor?: string;
+  inputLabelWidth?: 'min' | 'full';
+}
+
 /** @title {{alt}} */
 export interface IImage {
   src?: ImageWidget;
@@ -125,19 +147,20 @@ export interface Testimonial {
     content?: Content;
 }
 export interface Props {
-    title?: RichText;
-    titleFont?: string;
-    caption?: RichText;
-    captionFont?: string;
-    slides?: Testimonial[];
-    /**
-     * @title Show arrows
-     * @description show arrows to navigate through the images
-     */
-    arrows?: boolean;
-    /** @format color-input */
-    arrowsColor?: string;
-    backgroundMedia?: BackgroundMedia;
+  title?: RichText;
+  titleFont?: string;
+  caption?: RichText;
+  captionFont?: string;
+  hubspotForm?: HubspotForm;
+  slides?: Testimonial[];
+  /**
+   * @title Show arrows
+   * @description show arrows to navigate through the images
+  */
+  arrows?: boolean;
+  /** @format color-input */
+  arrowsColor?: string;
+  backgroundMedia?: BackgroundMedia;
   bubbleImages?: BubbleImage[];
 }
 const DEFAULT_PROPS = {
@@ -260,7 +283,8 @@ function Buttons({ arrowsColor }: {
 }
 function TestimonialsWithBubbles(props: Props) {
     const id = useId();
-    const { title, slides, titleFont, caption, captionFont, bubbleImages = [], backgroundMedia } = { ...DEFAULT_PROPS, ...props };
+    const hubspostFormId = id + "hubspotForm";
+    const { title, slides, titleFont, caption, captionFont, hubspotForm, bubbleImages = [], backgroundMedia } = { ...DEFAULT_PROPS, ...props };
     return (<div class="relative overflow-hidden" >
       <div id={id} class="min-h-min flex flex-col lg:container md:max-w-[1332px] lg:mx-auto pt-7 lg:pt-14" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
         <script
@@ -269,6 +293,26 @@ function TestimonialsWithBubbles(props: Props) {
             />
         {title && <div class="text-[110px] leading-[120%] mb-4 text-primary" style={{ fontFamily:  titleFont}} dangerouslySetInnerHTML={{ __html: title}}/>}
         {caption && <div class="text-6xl leading-[120%] text-primary" style={{ fontFamily:  captionFont}} dangerouslySetInnerHTML={{ __html: caption}}/>}
+
+        {hubspotForm?.show && <label class="pt-5 md:pt-10 lg:w-[600px] mx-auto">
+                        {hubspotForm?.inputLabel && <p 
+                            class={`bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 pl-2.5 lg:pl-4 text-sm lg:text-base text-primary inline-block ${hubspotForm?.inputLabelWidth == 'full' ? "w-full text-center px-1" : "pr-12"}`} 
+                            style={{ color: hubspotForm?.inputLabelColor, background: hubspotForm?.inputLabelBackgroundColor }}
+                        >
+                            {hubspotForm?.inputLabel}
+                        </p>}
+                        <div class={hubspostFormId} dangerouslySetInnerHTML={{
+                            __html: `
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                            <script>
+                            hbspt.forms.create({
+                                region: "${hubspotForm?.region || ""}",
+                                portalId: "${hubspotForm?.portalId}",
+                                formId: "${hubspotForm?.formId}"
+                            });
+                            </script>` 
+                        }}/>                                  
+                    </label>}
 
         <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-9 md:py-20 md:px-9" rootId={id} interval={0 && 0 * 1e3} infinite>
           {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item max-w-[608px] w-full">
@@ -302,6 +346,121 @@ function TestimonialsWithBubbles(props: Props) {
             class="object-cover absolute -z-50 top-0 left-0 h-full w-full">
             <source src={backgroundMedia.video} type="video/mp4" />
         </video>}
+
+        <style dangerouslySetInnerHTML={{
+                __html: `
+                    .${hubspostFormId} .hs-form-private {
+                        position: relative;
+                        display: flex; /* flex */
+                        flex-wrap: wrap !important;
+                        justify-content: space-between; /* justify-between */
+                        padding: 0.375rem;
+                        font-size: 1rem; /* text-base */
+                        border: 1px solid #EBEBEB;
+                        --tw-border-opacity: 1;
+                        border-radius: ${hubspotForm?.inputLabel ? '0 0.75rem 0.75rem 0.75rem' : '0.75rem'};
+                        ${hubspotForm?.inputLabel && hubspotForm?.inputLabelWidth == 'full' && 'border-radius: 0 0 0.75rem 0.75rem;'}
+                        box-shadow: 0px 5.5px 31.7px 0px rgba(0, 72, 82, 0.09);
+                        --tw-bg-opacity: 1;
+                        background-color: white;
+                    }
+                    
+                    .${hubspostFormId} .input {
+                        padding-right: 0px;
+                    } 
+
+                    .${hubspostFormId} .hs-form-private {
+                        flex-wrap: nowrap;
+                    }
+                        
+                    .${hubspostFormId} .hs-input {
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                    
+                    .${hubspostFormId} ${hubspotForm?.buttonIcon && '.actions::before'} {
+                        content: '';
+                        background-image: url("data:image/svg+xml,%3Csvg width='40' height='41' viewBox='0 0 40 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='0.5' width='40' height='40' rx='4' fill='white'/%3E%3Cpath d='M26.8087 19.3671L16.4581 12.8195C16.2836 12.709 16.0837 12.6487 15.8791 12.6447C15.6745 12.6408 15.4726 12.6934 15.2943 12.7972C15.1176 12.8993 14.9705 13.0483 14.868 13.2287C14.7654 13.4091 14.7112 13.6145 14.7109 13.8238V26.9175C14.7123 27.2314 14.8341 27.5319 15.0496 27.753C15.2652 27.9741 15.5568 28.0976 15.8604 28.0964C16.0723 28.0963 16.28 28.0359 16.461 27.9218L26.8087 21.3743C26.9751 21.2694 27.1125 21.1221 27.2079 20.9465C27.3033 20.7709 27.3534 20.5728 27.3534 20.3714C27.3534 20.17 27.3033 19.9719 27.2079 19.7963C27.1125 19.6207 26.9751 19.4734 26.8087 19.3685V19.3671Z' fill='%232F575C'/%3E%3C/svg%3E%0A");
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        width: 40px;
+                        height: 40px;
+                        display: block;
+                    }
+                            
+                    .${hubspostFormId} .hs-submit {
+                        ${hubspotForm?.buttonWidth == 'full' && 'width: 100%;'}
+                    }
+
+                    .${hubspostFormId} .actions {
+                        display: flex;
+                        align-items: center;
+                        height: 47px;
+                        background-color: ${hubspotForm?.buttonColor};
+                        cursor: pointer;
+                        border-radius: 8px;
+                        padding-left: 4px;
+                        transition: transform 0.2s ease-in-out;
+                    }
+                                
+                    .${hubspostFormId} .actions:hover {
+                        transform: scale(1.15);
+                    }
+
+                    .${hubspostFormId} .hs-button {
+                        color: ${hubspotForm?.buttonTextColor};
+                        padding: 0px 18px 0px 18px;
+                        height: 100%;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        cursor: pointer;
+                        text-align: center;
+                        ${hubspotForm?.buttonWidth == 'full' && 'width: 100%;'}
+                    }
+                                    
+                    
+                                        
+                    .${hubspostFormId} .hs-input {
+                        outline: none;
+                        font-size: 0.875rem; /* text-sm */
+                    }
+                                            
+                                            .${hubspostFormId} .input  {
+                                                outline: none; /* Remove a borda padrão */
+                                                border: none;
+                                                box-shadow: none; /* Remove qualquer sombra */
+                                                }
+                                                
+                                                .${hubspostFormId} .hs-error-msg {
+                                                    --tw-text-opacity: 1;
+                                                    color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity)));
+                                                    }
+                                                    
+                                                    .${hubspostFormId} .submitted-message {
+                                                        text-align: center;
+                                                        }
+                                                        
+                                                        .${hubspostFormId} .hs-error-msg {
+                                                            position: absolute;
+                                                            top: 60px;
+                                                            left: 24px;
+                                                            max-width: 50%;
+                                                            color: ${hubspotForm?.errorMessageColor}
+                                                            }
+                                                            
+                                                            .${hubspostFormId} .hs_error_rollup {
+                                                                display: none;
+                                                                }
+                
+                                                                @media (min-width: 768px) {
+                                                                    .${hubspostFormId} .hs-input {
+                                                                        width: auto;
+                                                                        flex-grow: 1;
+                                                                        font-size: 1rem; /* text-base */
+                                                                        }
+                                                                        `
+                                                                    }}/>
   </div>);
 }
 export default TestimonialsWithBubbles;

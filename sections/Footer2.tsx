@@ -30,14 +30,6 @@ export interface socialLink {
     href: string;
 }
 
-export interface emailForm {
-    inputName?: string;
-    inputLabel?: string;
-    inputPlaceHolder?: string;
-    submitText?: string;
-    action?: string;
-}
-
 export interface Props {
     id?: string;
     title?: RichText;
@@ -47,12 +39,12 @@ export interface Props {
     useBackground?: "video" | "image";
     backgroundHeight?: string;
     cards?: Card[];
+    showLogo?: boolean;
     logo?: IImage;
     logoCaption?: string;
+    socialLinksCaption?: RichText;
     socialLinks?: socialLink[];
     bottomLinks?: CTA[];
-    emailForm?: emailForm;
-    showForm?: boolean;
     bottomBackground?: IImage;
     /** @format color-input */
     color1?: string;
@@ -65,7 +57,7 @@ export interface Props {
     /** @format color-input */
 }
 
-export default function Footer2({ id, title, titleFont, backgroundImage, backgroundVideo, useBackground, cards = [], logo, backgroundHeight, logoCaption, socialLinks, bottomLinks, emailForm, color1, color2, color3, color4, showForm, bottomBackground }: Props) {
+export default function Footer2({ id, title, titleFont, backgroundImage, showLogo, socialLinksCaption, backgroundVideo, useBackground, cards = [], logo, backgroundHeight, logoCaption, socialLinks, bottomLinks, color1, color2, color3, color4, bottomBackground }: Props) {
     const backgroundColor = useBackground ? "transparent" : color1;
     return <footer id={id} class="text-primary" style={{ color: color1 }}>
         <div class={`relative w-full h-[56vw] lg:h-[42vw] flex justify-center items-end  ${!useBackground && "bg-primary"}`} style={{ backgroundColor: backgroundColor, height: backgroundHeight }}>
@@ -135,8 +127,8 @@ export default function Footer2({ id, title, titleFont, backgroundImage, backgro
                     </div>
                 ))}
             </AnimateOnShow>
-            <div class="max-w-[1240px] mx-auto flex flex-col lg:flex-row gap-4 justify-between items-center mt-9 lg:mt-20">
-                <AnimateOnShow divClass="max-w-[193px] order-1 lg:-order-none" animation="animate-fade-up" delay={100}>
+            <div class="max-w-[1240px] mx-auto flex flex-col lg:flex-row gap-4 lg:gap-20 justify-center items-center mt-9 lg:mt-20">
+                {showLogo && <AnimateOnShow divClass="max-w-[193px] order-1 lg:-order-none" animation="animate-fade-up" delay={100}>
                     {logo?.src && <Image
                         width={logo.width || 193}
                         height={logo.height || 31}
@@ -145,28 +137,12 @@ export default function Footer2({ id, title, titleFont, backgroundImage, backgro
                         class="object-contain mb-4"
                     />}
                     <p class="text-sm font-normal leading-normal">{logoCaption}</p>
-                </AnimateOnShow>
-
-                <AnimateOnShow animation="animate-fade-up" delay={250} animationDuration="animate-fade-up">
-                    {showForm && <form class="flex flex-wrap gap-5 items-center justify-center" action={emailForm?.action}>
-                        {emailForm?.inputLabel && <p class="text-base font-semibold max-w-[173px]">{emailForm?.inputLabel}</p>}
-                        <div class={`bg-primary-content flex justify-between py-1.5 pr-1.5 text-base text-primary border border-base-200 rounded-xl shadow-spreaded h-[63px] `} style={{ borderColor: color3 }}>
-                            <input
-                                type="email"
-                                required
-                                class="w-1/2 md:w-auto md:flex-grow h-[47px] pl-2 md:pl-7 focus:outline-none text-sm md:text-base"
-                                placeholder={emailForm?.inputPlaceHolder}
-                            />
-                            <button type="submit" class="btn btn-primary font-bold px-7 hover:scale-110 text-lg" style={{ backgroundColor: color1, borderColor: color1 }}>
-                                {emailForm?.submitText}
-                            </button>
-                        </div>
-                    </form>}
-                </AnimateOnShow>
+                </AnimateOnShow>}
 
                 <AnimateOnShow divClass="flex gap-5 order-3" delay={400} animation="animate-fade-up">
+                    {socialLinksCaption && <div class="text-2xl" dangerouslySetInnerHTML={{ __html: socialLinksCaption }} />}
                     {socialLinks?.map((link) => (
-                        <a href={link.href} target="_blank">
+                        <a href={link.href} target="_blank" class="flex">
                             <Image width={link.icon.width || 21} height={link.icon.height || 21} src={link.icon.src || ""} alt={link.icon.alt || "social media icon"} class="object-contain" />
                         </a>
                     ))}
@@ -174,9 +150,9 @@ export default function Footer2({ id, title, titleFont, backgroundImage, backgro
 
             </div>
 
-            <div class="mt-20 mx-auto pt-7 border-t border-t-base-200 max-w-[1240px] flex flex-col lg:flex-row flex-wrap gap-y-5 gap-7" style={{ borderColor: color4 }}>
+            <div class="mt-20 mx-auto pt-7 border-t border-t-base-200 max-w-[1240px] flex flex-col lg:flex-row justify-center flex-wrap gap-y-5 gap-7" style={{ borderColor: color4 }}>
                 {bottomLinks?.map((link) => {
-                    if (link.href == '/talkToSpecialist') return <TalkToSpecialistCta text={link.text} ctaClass="text-sm font-normal leading-normal cursor-pointer text-center mx-auto" divClass="text-center" />
+                    if (link.href == '/talkToSpecialist') return <TalkToSpecialistCta text={link.text} ctaClass="text-sm font-normal leading-normal cursor-pointer text-center" />
                     return <a
                         href={link.href}
                         target={link.href.includes("http") ? "_blank" : "_self"}

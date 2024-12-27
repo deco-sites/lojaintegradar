@@ -354,13 +354,117 @@
       "__resolveType": "Depoimentos-institucional"
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Logos.tsx",
+            "title": "<p><span style=\"color: rgb(0, 48, 55)\">Uma escolha estratégica para vender mais</span></p>",
+            "titleFont": "Instrument serif",
+            "titleColor": "#371E55",
+            "captionColor": "#5F6E82",
+            "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
+            "logos": [
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
+                "altText": "Forbes logo"
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
+                "altText": "Frutifica logo"
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
+                "altText": "Rock in Rio Logo"
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
+                "altText": "PodPah logo"
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
+                "altText": "Soldiers logo"
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
+                "altText": "Gorila Shield logo"
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
+                "altText": "+Mu logo"
+              }
+            ],
+            "paddingTop": "40px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Logos.tsx",
+            "title": "<p></p>",
+            "titleFont": "Instrument serif",
+            "titleColor": "#371E55",
+            "captionColor": "#5F6E82",
+            "caption": "<p></p>",
+            "logos": [
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
+                "altText": "Forbes logo"
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
+                "altText": "Frutifica logo",
+                "width": 119,
+                "height": 34
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
+                "altText": "Rock in Rio Logo"
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
+                "altText": "PodPah logo",
+                "width": 157,
+                "height": 72
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
+                "altText": "Soldiers logo",
+                "width": 157,
+                "height": 72
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
+                "altText": "Gorila Shield logo",
+                "width": 157,
+                "height": 72
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
+                "altText": "+Mu logo",
+                "width": 157,
+                "height": 72
+              }
+            ],
+            "paddingBottom": "123px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/HeroWithTime.tsx",
       "title": {
-        "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro</span></p>",
-        "mobile": "<p></p>"
+        "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
+        "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>"
       },
       "subTitle": {
-        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24pt\">Recursos avançados </span><em><span style=\"color: rgb(113, 219, 212); font-size: 24pt\">de ponta a ponta</span></em></p>",
+        "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
         "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
       },
       "tabs": [
@@ -562,37 +666,24 @@
             "161": "t",
             "162": "o",
             "163": ".",
-            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas:</span></p>",
-            "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas:</span></p>"
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+            "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>"
           },
-          "tabImage": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd021662-93ff-4b7e-86f1-f5dd4bb4e622/gerar-mais-receita.png",
-            "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd021662-93ff-4b7e-86f1-f5dd4bb4e622/gerar-mais-receita.png",
-            "widthDesktop": 606,
-            "heightDesktop": 627,
-            "width": 0
-          },
+          "tabImage": {},
           "videoOn": false,
           "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
           "button": {},
           "videoText": "Ver demo",
-          "tags": [
-            {
-              "text": "Carrinho e Produto Abandonado"
-            },
-            {
-              "text": "Desconto Progressivo"
-            },
-            {
-              "text": "Compre Junto",
-              "textColor": "",
-              "backgroundColor": "",
-              "borderColor": ""
-            },
-            {
-              "text": "E muito mais..."
-            }
-          ]
+          "tags": [],
+          "tabVideo": {
+            "width": 620,
+            "height": 409,
+            "widthDesktop": 620,
+            "heightDesktop": 409,
+            "video": "https://data.decoassets.com/lojaintegradar/0a82448d-d49f-47a0-afce-c8fa6ea5e840/reengaje-clientes.mp4",
+            "videoDesktop": "https://data.decoassets.com/lojaintegradar/0a82448d-d49f-47a0-afce-c8fa6ea5e840/reengaje-clientes.mp4"
+          },
+          "useTab": "video"
         },
         {
           "textContent": {
@@ -606,14 +697,18 @@
             "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Anuncie produtos em diferentes canais</span></p>",
             "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Anuncie produtos em diferentes canais</span></p>"
           },
-          "tabImage": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff813d3-defc-4339-83bc-52160b36cee9/vender-em-diferentes-canais.png",
-            "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff813d3-defc-4339-83bc-52160b36cee9/vender-em-diferentes-canais.png",
-            "widthDesktop": 606,
-            "heightDesktop": 627
-          },
+          "tabImage": {},
           "highlight": false,
-          "buttons": []
+          "buttons": [],
+          "tabVideo": {
+            "width": 620,
+            "height": 409,
+            "heightDesktop": 409,
+            "widthDesktop": 620,
+            "videoDesktop": "https://data.decoassets.com/lojaintegradar/cb4f4da6-0435-4721-8304-6fe797eae8e7/hub-canais.mp4",
+            "video": "https://data.decoassets.com/lojaintegradar/cb4f4da6-0435-4721-8304-6fe797eae8e7/hub-canais.mp4"
+          },
+          "useTab": "video"
         },
         {
           "textContent": {
@@ -628,8 +723,11 @@
             "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Frete e pagamento descomplicados</span></p>"
           },
           "tabImage": {
-            "widthDesktop": 606,
-            "heightDesktop": 627
+            "widthDesktop": 620,
+            "heightDesktop": 409,
+            "width": 506,
+            "imageDesktop": "https://data.decoassets.com/lojaintegradar/de57108d-0951-4627-934c-70e6ff037fcd/frete-envios.png",
+            "image": "https://data.decoassets.com/lojaintegradar/de57108d-0951-4627-934c-70e6ff037fcd/frete-envios.png"
           },
           "highlight": false,
           "buttons": []
@@ -647,12 +745,14 @@
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
           },
           "tabImage": {
-            "widthDesktop": 606,
-            "heightDesktop": 627,
-            "image": "https://data.decoassets.com/lojaintegradar/13e16970-09de-4f72-8d92-699b2ab9779e/checkout-inteligente.png",
-            "imageDesktop": "https://data.decoassets.com/lojaintegradar/13e16970-09de-4f72-8d92-699b2ab9779e/checkout-inteligente.png"
+            "widthDesktop": 620,
+            "heightDesktop": 409,
+            "image": "https://data.decoassets.com/lojaintegradar/a858c7c7-c890-4489-a802-edc441ecd62c/chekout-inteligente.png",
+            "imageDesktop": "https://data.decoassets.com/lojaintegradar/a858c7c7-c890-4489-a802-edc441ecd62c/chekout-inteligente.png",
+            "width": 506
           },
-          "highlight": false
+          "highlight": false,
+          "useTab": "image"
         }
       ],
       "background": {
@@ -677,42 +777,23 @@
           "type": "createStoreForm",
           "text": "Criar minha loja",
           "planId": "172"
+        },
+        {
+          "type": "link",
+          "changeType": true,
+          "link": "#plans",
+          "text": "Ver planos"
         }
       ],
       "bottomSection": {
-        "__resolveType": "site/sections/HeroV2.tsx",
-        "cta": [],
-        "tag": {
-          "placement": "left"
-        },
-        "title": {},
-        "bulletpoints": {
-          "items": [],
-          "bulletPointsIcon": {}
-        },
-        "ctaDiv": {
-          "contentPlacement": "left",
-          "icon": {}
-        },
-        "media": {
-          "use": "image",
-          "image": {},
-          "video": {}
-        },
-        "mediaPlacement": "right",
-        "backgroundMedia": {
-          "use": "image",
-          "image": {}
-        },
-        "paddingTop": "0",
-        "paddingBottom": "0"
+        "__resolveType": "site/sections/BlankSection.tsx"
       },
-      "tabsInterval": 10
+      "tabsInterval": 30
     },
     {
       "__resolveType": "site/sections/AutomaticCarousel.tsx",
       "title": {
-        "text": "<p><span style=\"color: #003037\">Nós queremos mais<br>é que você cresça!</span></p>",
+        "text": "<p><span style=\"color: rgb(0, 48, 55)\">Nós queremos mais<br>é que você cresça!</span></p>",
         "font": "Instrument serif"
       },
       "caption": "<p><span style=\"color: #5f6e82\">Uma plataforma que se adapta às suas necessidades,</span><span>&nbsp;</span><span style=\"color: #28c3c3\">seja qual for o tamanho do seu negócio.</span></p>",
@@ -782,425 +863,23 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/Logos.tsx",
-            "title": "<p><span style=\"color: rgb(0, 48, 55)\">Uma escolha estratégica para vender mais</span></p>",
+            "__resolveType": "site/sections/MainHero.tsx",
+            "captionAbove": "<p></p>",
+            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245); \">O futuro do e-commerce é inteligente</span></p><p style=\"text-align: center\"><span style=\"color: rgb(113, 219, 212); \">Escolha Dados e Automação</span></p>",
             "titleFont": "Instrument serif",
-            "titleColor": "#371E55",
-            "captionColor": "#5F6E82",
-            "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
-            "logos": [
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
-                "altText": "Forbes logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
-                "altText": "Frutifica logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
-                "altText": "Rock in Rio Logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
-                "altText": "PodPah logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
-                "altText": "Soldiers logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
-                "altText": "Gorila Shield logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
-                "altText": "+Mu logo"
-              }
-            ],
-            "paddingTop": "40px"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Logos.tsx",
-            "title": "<p><span style=\"color: rgb(0, 48, 55)\">Uma escolha estratégica para vender mais</span></p>",
-            "titleFont": "Instrument serif",
-            "titleColor": "#371E55",
-            "captionColor": "#5F6E82",
-            "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
-            "logos": [
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
-                "altText": "Forbes logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
-                "altText": "Frutifica logo",
-                "width": 119,
-                "height": 34
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
-                "altText": "Rock in Rio Logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
-                "altText": "PodPah logo",
-                "width": 157,
-                "height": 72
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
-                "altText": "Soldiers logo",
-                "width": 157,
-                "height": 72
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
-                "altText": "Gorila Shield logo",
-                "width": 157,
-                "height": 72
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
-                "altText": "+Mu logo",
-                "width": 157,
-                "height": 72
-              }
-            ],
-            "paddingTop": "120px"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Carousel.tsx",
-            "title": "<p><span style=\"color: rgb(0, 48, 55); font-size: 15pt\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195); font-size: 15pt\">Dados e Automação</span></em></p>",
-            "titleFont": "Instrument serif",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "text": "Ver planos",
-                "backgroundColor": "#003037",
-                "borderColor": "#003037",
-                "textColor": "#fff5f5",
-                "href": "#plans"
-              },
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "underlineText": "Falar com Especialista ",
-                "showIcon": true,
-                "backgroundColor": "#ffffff",
-                "borderColor": "#003037",
-                "textColor": "#003037",
-                "outline": true
-              }
-            ],
-            "paddingBottom": "50px",
-            "titleColor": "",
-            "captionColor": "#371E55",
-            "slides": [
-              {
-                "title": "Campanhas automatizadas para reengajar clientes",
-                "caption": "<p style='line-height: 1.5;'>Venda mais e sem custo adicional com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento.</p>",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/83ca92af-e89a-48ed-b87d-a09df9a9c6da/campanhas-para-engajar-clientes-.png",
-                  "height": 456,
-                  "width": 484
-                },
-                "textPlacement": "Bottom",
-                "icon": {
-                  "alt": "purple arrow",
-                  "placement": "Top right"
-                },
-                "textColor": "#ffffff",
-                "useBackground": "video",
-                "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5d7bf106-a77a-41e9-b1b6-d5531602ae93/campanhas-para-engajar-clientes.mp4"
-              },
-              {
-                "textPlacement": "Top",
-                "icon": {
-                  "alt": "white arrow",
-                  "placement": "Top right"
-                },
-                "title": "Anuncie seus produtos em diferentes canais",
-                "caption": "<p><span style=\"font-size: 11pt\">Faturamento fácil e nas alturas: Hub de Canais para integração nativa com marketplaces, cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b30f13a5-0534-430f-96c3-919e7fee3ad2/Hub-de-canais.png",
-                  "width": 484,
-                  "height": 456
-                },
-                "textColor": "#ffffff",
-                "bulletPoints": {
-                  "items": [],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/12f925ba-030b-498b-8aaf-ff031a1c765d/check-icon.png",
-                    "alt": "check icon"
-                  }
-                },
-                "useBackground": "image"
-              },
-              {
-                "textColor": "#ffffff",
-                "textPlacement": "Bottom",
-                "icon": {
-                  "placement": "Top right",
-                  "alt": "purple arrow"
-                },
-                "bulletPoints": {
-                  "items": []
-                },
-                "title": "Frete e pagamento descomplicados",
-                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e2e0bb9f-554f-4f0b-a650-042a87c860c5/enviali-pagali.png",
-                  "height": 484,
-                  "width": 456
-                },
-                "useBackground": "image"
-              },
-              {
-                "textColor": "#ffffff",
-                "textPlacement": "Top",
-                "icon": {
-                  "placement": "Top right",
-                  "alt": "white arrow"
-                },
-                "bulletPoints": {
-                  "items": []
-                },
-                "title": "Checkout rápido e aprimorado",
-                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10e605df-cef1-47f7-a057-78bb8a7cc2fe/checkout-inteligente.png",
-                  "width": 484,
-                  "height": 456
-                },
-                "useBackground": "image"
-              }
-            ],
-            "arrows": true,
-            "backgroundImage": {},
-            "interval": 0,
-            "id": "nossoecossistema",
-            "arrowsColor": "#003037"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Carousel.tsx",
-            "title": "<p><span style=\"color: rgb(0, 48, 55)\">Ganhe eficiência usando </span><em><span style=\"color: rgb(40, 195, 195)\">Dados e Automação</span></em></p>",
-            "titleFont": "Instrument serif",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "#plans",
-                "text": "Ver planos",
-                "backgroundColor": "#003037",
-                "borderColor": "#003037",
-                "textColor": "#fff5f5"
-              },
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "underlineText": "Falar com Especialista ",
-                "backgroundColor": "#ffffff",
-                "borderColor": "#003037",
-                "showIcon": true,
-                "textColor": "#003037",
-                "outline": true
-              }
-            ],
-            "paddingBottom": "50px",
-            "titleColor": "",
-            "captionColor": "#371E55",
-            "slides": [
-              {
-                "title": "Campanhas automatizadas para reengajar clientes",
-                "caption": "<p style='line-height: 1.5;'>Venda mais e sem custo adicional com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo, Compre Junto e Recuperação de pedidos sem pagamento.</p>",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/83ca92af-e89a-48ed-b87d-a09df9a9c6da/campanhas-para-engajar-clientes-.png",
-                  "height": 456,
-                  "width": 484
-                },
-                "textPlacement": "Bottom",
-                "icon": {
-                  "alt": "purple arrow",
-                  "placement": "Top right"
-                },
-                "textColor": "#ffffff",
-                "useBackground": "video",
-                "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5d7bf106-a77a-41e9-b1b6-d5531602ae93/campanhas-para-engajar-clientes.mp4"
-              },
-              {
-                "textPlacement": "Top",
-                "icon": {
-                  "alt": "white arrow",
-                  "placement": "Top right"
-                },
-                "title": "Anuncie seus produtos em diferentes canais",
-                "caption": "<p><span style=\"font-size: 11pt\">Faturamento fácil e nas alturas: Hub de Canais para integração nativa com marketplaces, cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b30f13a5-0534-430f-96c3-919e7fee3ad2/Hub-de-canais.png",
-                  "width": 484,
-                  "height": 456
-                },
-                "textColor": "#ffffff",
-                "bulletPoints": {
-                  "items": [],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/12f925ba-030b-498b-8aaf-ff031a1c765d/check-icon.png",
-                    "alt": "check icon"
-                  }
-                },
-                "useBackground": "image"
-              },
-              {
-                "textColor": "#ffffff",
-                "textPlacement": "Bottom",
-                "icon": {
-                  "placement": "Top right",
-                  "alt": "purple arrow"
-                },
-                "bulletPoints": {
-                  "items": []
-                },
-                "title": "Frete e pagamento descomplicados",
-                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e2e0bb9f-554f-4f0b-a650-042a87c860c5/enviali-pagali.png",
-                  "height": 484,
-                  "width": 456
-                },
-                "useBackground": "image"
-              },
-              {
-                "textColor": "#ffffff",
-                "textPlacement": "Top",
-                "icon": {
-                  "placement": "Top right",
-                  "alt": "white arrow"
-                },
-                "bulletPoints": {
-                  "items": []
-                },
-                "title": "Checkout rápido e aprimorado",
-                "caption": "<p style='line-height: 1.5;'><span style=\"font-size: 11pt\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10e605df-cef1-47f7-a057-78bb8a7cc2fe/checkout-inteligente.png",
-                  "width": 484,
-                  "height": 456
-                },
-                "useBackground": "image"
-              }
-            ],
-            "arrows": true,
-            "backgroundImage": {},
-            "interval": 0,
-            "id": "nossoecossistema",
-            "arrowsColor": "#003037",
-            "createStoreCta": {
-              "planId": "172",
-              "ctaStyle": "button"
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/BigImageHeroV2.tsx",
-            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Temas e personalização para</span><em><span style=\"color: rgb(0, 48, 55)\"> </span><span style=\"color: rgb(40, 195, 195)\">elevar sua marca</span></em></p>",
-            "titleFont": "Instrument serif",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "text": "Ver planos",
-                "backgroundColor": "#003037",
-                "borderColor": "#003037",
-                "textColor": "#ffffff",
-                "href": "#plans"
-              },
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist ",
-                "underlineText": "Falar com especialista",
-                "showIcon": true,
-                "backgroundColor": "",
-                "borderColor": "",
-                "textColor": "#003037"
-              }
-            ],
-            "paddingBottom": "42px",
-            "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130)\">Deixe sua loja com a cara do seu negócio! Explore uma seleção de temas personalizáveis para criar uma experiência única e atrativa.&nbsp;Aproveite opções gratuitas ou contrate layouts avançados para destacar seus produtos e conquistar mais clientes.</span></p>",
-            "paddingTop": "42px",
-            "features": [
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                },
-                "title": "Recursos exclusivos",
-                "titleColor": "#003037",
-                "text": "Impulsione sua loja com funcionalidades únicas que otimizam a experiência do cliente",
-                "textColor": "#5F6E82"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                },
-                "title": "Pague uma vez só",
-                "titleColor": "#003037",
-                "text": "Uma só contratação para aproveitar as ferramentas por tempo indeterminado",
-                "textColor": "#5F6E82"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                },
-                "title": "Suporte estendido",
-                "titleColor": "#003037",
-                "text": "Um ano de atendimento com nossos parceiros",
-                "textColor": "#5F6E82"
-              },
-              {
-                "title": "Personalize do seu jeito",
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                },
-                "titleColor": "#003037",
-                "text": "Código aberto para edição livre, adaptável de acordo com o seu segmento",
-                "textColor": "#5F6E82"
-              }
-            ],
-            "image": {
-              "width": 429,
-              "height": 310,
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/35d81fbc-0a4f-498f-8dd9-2274c431a2e5/img-pod-pah-mobile.png"
+            "hubspotForm": {
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d"
             },
-            "use": "image"
+            "hubspotFormButtonColor": "#71DBD4",
+            "hubspotFormButtonTextColor": "#003037",
+            "hubspotErrorMessageColor": "#F57E77",
+            "inputLabel": " ⚡ Ganhe 20% OFF na assinatura anual️",
+            "inputLabelColor": "#FAFAF5",
+            "inputLabelBackgroundColor": "#44656A",
+            "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
+            "useBackground": "video"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1209,83 +888,29 @@
         },
         {
           "value": {
-            "__resolveType": "site/sections/BigImageHeroV2.tsx",
-            "title": "<p style=\"text-align: center\"><span style=\"color: #003037\">Temas e personalização para</span><em><span style=\"color: #003037\"> </span><span style=\"color: #28c3c3\">elevar sua marca</span></em></p>",
+            "__resolveType": "site/sections/MainHero.tsx",
+            "captionAbove": "<p></p>",
+            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245); font-size: 54pt\">O futuro do e-commerce é inteligente</span></p><p style=\"text-align: center\"><span style=\"color: rgb(113, 219, 212); font-size: 54pt\">Escolha Dados e Automação</span></p>",
             "titleFont": "Instrument serif",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "#plans",
-                "text": "Ver planos",
-                "backgroundColor": "#003037",
-                "borderColor": "#003037",
-                "textColor": "#fffff",
-                "showIcon": false
-              },
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "underlineText": "Falar com especialista",
-                "backgroundColor": "",
-                "borderColor": "",
-                "showIcon": true,
-                "textColor": "#003037"
-              }
-            ],
-            "paddingBottom": "120px",
-            "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130)\">Deixe sua loja com a cara do seu negócio! Explore uma seleção de temas personalizáveis para criar uma experiência única e</span></p><p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130)\">atrativa.&nbsp;Aproveite opções gratuitas ou contrate layouts avançados para destacar seus produtos e conquistar mais clientes.</span></p>",
-            "paddingTop": "120px",
-            "features": [
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                },
-                "title": "Recursos exclusivos",
-                "titleColor": "#003037",
-                "text": "Impulsione sua loja com funcionalidades únicas que otimizam a experiência do cliente",
-                "textColor": "#5F6E82"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                },
-                "title": "Pague uma vez só",
-                "titleColor": "#003037",
-                "text": "Uma só contratação para aproveitar as ferramentas por tempo indeterminado",
-                "textColor": "#5F6E82"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                },
-                "title": "Suporte estendido",
-                "titleColor": "#003037",
-                "text": "Um ano de atendimento com nossos parceiros",
-                "textColor": "#5F6E82"
-              },
-              {
-                "title": "Personalize do seu jeito",
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                },
-                "titleColor": "#003037",
-                "text": "Código aberto para edição livre, adaptável de acordo com o seu segmento",
-                "textColor": "#5F6E82"
-              }
-            ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ed508e20-6379-4e62-aa01-30e70420dabb/img-pod-pah-desktop.png"
+            "hubspotForm": {
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d"
             },
-            "use": "image"
+            "hubspotFormButtonColor": "#71DBD4",
+            "hubspotFormButtonTextColor": "#003037",
+            "hubspotErrorMessageColor": "#F57E77",
+            "inputLabel": " ⚡ Ganhe 20% OFF na assinatura anual️",
+            "inputLabelColor": "#FAFAF5",
+            "inputLabelBackgroundColor": "#44656A",
+            "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
+            "useBackground": "video"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
           }
         }
       ]
-    },
-    {
-      "__resolveType": "TcoCalculatorV4"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -2566,7 +2191,8 @@
             "annualTagTextColor": "#371E55",
             "arrows": false,
             "annualTag": "- 2O% FF",
-            "annualTagPosition": "aside"
+            "annualTagPosition": "aside",
+            "paddingBottom": "120px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -2575,1369 +2201,290 @@
       ]
     },
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/PlanDetailsV3.tsx",
-            "id": "planoelite",
-            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Faça parte da Elite do</span> <br><span style=\"color: rgb(113, 219, 212)\">e-commerce</span></p>",
-            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
-            "slides": [
-              {
-                "bulletPoints": {
-                  "items": [],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                  }
-                },
-                "title": "Tarifa por venda reduzida",
-                "titleColor": "#ffffff",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff3a071-1f24-4ed3-ba7d-5628879e0e3c/slide-background.png"
-                },
-                "text": "<p><span style=\"color: #ffffff\">A menor tarifa por transação do mercado, com faixa de isenção disponível (valor sob consulta).</span></p>"
-              },
-              {
-                "bulletPoints": {
-                  "items": [],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                  },
-                  "textColor": ""
-                },
-                "title": "Ferramentas para maximizar vendas",
-                "titleColor": "#ffffff",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff3a071-1f24-4ed3-ba7d-5628879e0e3c/slide-background.png"
-                },
-                "text": "<p><span style=\"color: #ffffff\">Funcionalidades avançadas: Carrinho Abandonado, Compre Junto, Desconto Progressivo, Avaliação com imagem, Anúncios em Marketplaces e Segmentação de Preço por CEP.</span></p>"
-              },
-              {
-                "bulletPoints": {
-                  "items": [],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                  }
-                },
-                "title": "Pagali com a menor taxa",
-                "titleColor": "#ffffff",
-                "text": "<p><span style=\"color: #ffffff\">Usando o meio de pagamento nativo da Loja Integrada, a tarifa é de apenas 3,59%.</span></p>",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff3a071-1f24-4ed3-ba7d-5628879e0e3c/slide-background.png"
-                }
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/133ba8f6-dc32-4458-94f9-c878da9da993/elite-mobie-background.png",
-              "alt": "background ",
-              "width": 430,
-              "height": 1354
-            },
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "https://app.lojaintegrada.com.br/painel/login",
-                "textColor": "#ffffff",
-                "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
-                "underlineText": "Mude para o Elite agora",
-                "showIcon": true
-              }
-            ],
-            "planTag": {
-              "icon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
-              },
-              "text": "Plano Elite"
-            },
-            "useBackground": "video",
-            "showArrows": false,
-            "color3": "#003037",
-            "color1": "#8c00a8",
-            "color2": "#FAFAF5",
-            "imageText": "<p><span style=\"color: rgb(255, 255, 255)\">Tarifas ainda menores, uma infinidade de recursos para alavancar vendas</span> <em><span style=\"color: rgb(113, 219, 212)\">e suporte exclusivo</span></em></p>",
-            "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/02242ff2-6295-4aae-8aa9-733be43a0179/video-dobra-elite.mp4",
-            "useContent": "image",
-            "contentImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/df681f0f-8f68-422e-abc0-04952efdeb13/ELITE-MOBILE.png",
-              "height": 493
-            },
-            "annualValues": {
-              "title": "Anual",
-              "tag": "20% OFF",
-              "text": "<p><em><span style=\"color: rgb(250, 250, 245); font-size: 9pt\">Em até 12x</span></em><br><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 1.599</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 19.188</span></p>",
-              "saving": "⚡️ Economia de R$ 4.800/ano",
-              "titleColor": "#FAFAF5",
-              "tagTextColor": "#003037",
-              "tagBackgroundColor": "#FFE6A0",
-              "savingColor": "#FAFAF5"
-            },
-            "montlyValues": {
-              "title": "Mensal",
-              "text": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 1999</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 23.988</span></p>",
-              "cta": {
-                "href": "#",
-                "text": "Assinar plano",
-                "outline": false
-              },
-              "link": {
-                "textBefore": "Já tem uma loja?",
-                "text": " Ativar recursos",
-                "href": "#"
-              },
-              "titleColor": "#FAFAF5"
-            },
-            "color4": "#FFE6A0",
-            "link": {
-              "textBefore": "Já tem uma loja? ",
-              "href": "#",
-              "text": "Ativar recursos"
-            },
-            "color5": "#FAFAF5",
-            "color6": "#FFE6A0",
-            "color7": "#ffffff",
-            "color8": "#003037",
-            "createStoreCta": {
-              "planId": "180",
-              "ctaStyle": "button",
-              "text": "Fazer assinatura",
-              "backgroundColor": "#ffffff",
-              "borderColor": "#ffffff",
-              "textColor": "#003037"
-            },
-            "titleFont": "Instrument Serif",
-            "valuesBackgroundColor": "linear-gradient(180deg, #02333A 19.82%, #023D43 99.88%)",
-            "valuesTag": {
-              "textColor": "#ffffff",
-              "backgroundColor": "#00292E",
-              "text": "⚡️ Oferta plano anual"
-            },
-            "tabs": {
-              "0": {
-                "title": "<p><strong>Gerente de Performance</strong></p>",
-                "contentText": "<p><span>especialista dedicado para ajudar a crescer sua loja<br>e impulsionar resultados.</span></p>",
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/00055c53-0e40-425a-b20f-2d0ab764a3e2/tab-icon.svg"
-                }
-              },
-              "1": {
-                "title": "<p><strong>Atendimento Personalizado</strong></p>",
-                "contentText": "<p><strong>Lorem Ipsum</strong><span style=\"color: rgb(0, 0, 0); font-size: 14px\"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>",
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/00055c53-0e40-425a-b20f-2d0ab764a3e2/tab-icon.svg"
-                }
-              },
-              "tabs": [
-                {
-                  "title": "<p>Gerente de Performance</p>",
-                  "contentText": "<p>Especialista dedicado para ajudar a crescer sua loja e impulsionar resultados.</p>",
-                  "icon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/00055c53-0e40-425a-b20f-2d0ab764a3e2/tab-icon.svg"
-                  }
-                },
-                {
-                  "title": "<p>Atendimento Personalizado</p>",
-                  "contentText": "<p><span style=\"color: #ffffff; font-size: 11pt\">Suporte prioritário em todos os canais, além de atendimento por vídeo e telefone.</span></p>",
-                  "icon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/00055c53-0e40-425a-b20f-2d0ab764a3e2/tab-icon.svg"
-                  }
-                }
-              ],
-              "interval": 6,
-              "progressBarBackgroundColor": "rgba(217, 217, 217, 0.10)",
-              "progressBarColor": "#02333A"
-            },
-            "imageTextFont": "Instrument Serif"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/PlanDetailsV3.tsx",
-            "id": "planoelite",
-            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Faça parte da Elite do</span> <span style=\"color: rgb(113, 219, 212)\">e-commerce</span></p>",
-            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
-            "slides": [
-              {
-                "bulletPoints": {
-                  "items": [],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                  }
-                },
-                "title": "Tarifa por venda reduzida",
-                "titleColor": "#ffffff",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff3a071-1f24-4ed3-ba7d-5628879e0e3c/slide-background.png"
-                },
-                "text": "<p><span style=\"color: #ffffff\">A menor tarifa por transação do mercado, com faixa de isenção disponível (valor sob consulta).</span></p>"
-              },
-              {
-                "bulletPoints": {
-                  "items": [],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                  },
-                  "textColor": ""
-                },
-                "title": "Ferramentas para maximizar vendas",
-                "titleColor": "#ffffff",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff3a071-1f24-4ed3-ba7d-5628879e0e3c/slide-background.png"
-                },
-                "text": "<p><span style=\"color: #ffffff\">Funcionalidades avançadas: Carrinho Abandonado, Compre Junto, Desconto Progressivo, Avaliação com imagem, Anúncios em Marketplaces e Segmentação de Preço por CEP.</span></p>"
-              },
-              {
-                "bulletPoints": {
-                  "items": [],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                  }
-                },
-                "title": "Pagali com a menor taxa",
-                "titleColor": "#ffffff",
-                "text": "<p><span style=\"color: #ffffff\">Usando o meio de pagamento nativo da Loja Integrada, a tarifa é de apenas 3,59%.</span></p>",
-                "backgroundImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff3a071-1f24-4ed3-ba7d-5628879e0e3c/slide-background.png"
-                }
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/c0715300-7830-4ca6-8deb-5fe41d41fa7e/elite-background.png",
-              "alt": "background ",
-              "width": 2880,
-              "height": 2480
-            },
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "https://app.lojaintegrada.com.br/painel/login",
-                "textColor": "#ffffff",
-                "text": "<p><span>Já tem loja? </span><u><span >Mude para o Elite agora</span></u></p>",
-                "underlineText": "Mude para o Elite agora",
-                "showIcon": true
-              }
-            ],
-            "planTag": {
-              "icon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
-              },
-              "text": "Plano Elite"
-            },
-            "useBackground": "video",
-            "showArrows": false,
-            "color3": "#003037",
-            "color1": "#8c00a8",
-            "color2": "#FAFAF5",
-            "imageText": "<p><span style=\"color: #ffffff\">Tarifas ainda menores, uma infinidade de recursos para alavancar vendas</span><span> </span><span style=\"color: #71dbd4\">e suporte exclusivo</span></p>",
-            "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d5793810-d492-4b71-8dea-271812b992b2/Elite.mp4",
-            "useContent": "video",
-            "contentImage": {},
-            "annualValues": {
-              "title": "Anual",
-              "tag": "20% OFF",
-              "text": "<p><em><span style=\"color: rgb(250, 250, 245); font-size: 11pt\">em até 12x</span></em><br><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 1.599</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 19.188</span></p>",
-              "saving": "⚡️ Economia de R$ 4.800/ano",
-              "titleColor": "#FAFAF5",
-              "tagTextColor": "#003037",
-              "tagBackgroundColor": "#FFE6A0",
-              "savingColor": "#FAFAF5"
-            },
-            "montlyValues": {
-              "title": "Mensal",
-              "text": "<p><span style=\"color: #fafaf5; font-size: 18pt\">R$ 1999</span><span style=\"color: #fafaf5; font-size: 14pt\">/mês</span></p><p><span style=\"color: #fafaf5\">Por ano, sairia R$ 23.988</span></p>",
-              "cta": {
-                "href": "#",
-                "text": "Assinar plano",
-                "outline": false
-              },
-              "link": {
-                "textBefore": "Já tem uma loja?",
-                "text": " Ativar recursos",
-                "href": "#"
-              },
-              "titleColor": "#FAFAF5"
-            },
-            "color4": "#FFE6A0",
-            "link": {
-              "textBefore": "Já tem uma loja? ",
-              "href": "#",
-              "text": "Ativar recursos"
-            },
-            "color5": "#FAFAF5",
-            "color6": "#FFE6A0",
-            "color7": "#ffffff",
-            "color8": "#003037",
-            "createStoreCta": {
-              "planId": "180",
-              "text": "Fazer assinatura",
-              "ctaStyle": "button",
-              "textColor": "#003037",
-              "backgroundColor": "#ffffff",
-              "borderColor": "#ffffff"
-            },
-            "titleFont": "Instrument Serif",
-            "valuesBackgroundColor": "#02333A",
-            "valuesTag": {
-              "textColor": "#ffffff",
-              "backgroundColor": "#00292E",
-              "text": "⚡️ Oferta no plano anual"
-            },
-            "tabs": {
-              "0": {
-                "title": "<p><strong>Gerente de Performance</strong></p>",
-                "contentText": "<p><span>especialista dedicado para ajudar a crescer sua loja<br>e impulsionar resultados.</span></p>",
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/00055c53-0e40-425a-b20f-2d0ab764a3e2/tab-icon.svg"
-                }
-              },
-              "1": {
-                "title": "<p><strong>Atendimento Personalizado</strong></p>",
-                "contentText": "<p><strong>Lorem Ipsum</strong><span style=\"color: rgb(0, 0, 0); font-size: 14px\"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>",
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/00055c53-0e40-425a-b20f-2d0ab764a3e2/tab-icon.svg"
-                }
-              },
-              "tabs": [
-                {
-                  "title": "<p>Gerente de Performance</p>",
-                  "contentText": "<p><span style=\"color: #ffffff; font-size: 11pt\">Especialista dedicado para ajudar a crescer sua loja e impulsionar resultados.</span></p>",
-                  "icon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/00055c53-0e40-425a-b20f-2d0ab764a3e2/tab-icon.svg"
-                  }
-                },
-                {
-                  "title": "<p>Atendimento Personalizado</p>",
-                  "contentText": "<p><span style=\"color: #ffffff; font-size: 11pt\">Suporte prioritário em todos os canais, além de atendimento por vídeo e telefone.</span></p>",
-                  "icon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/00055c53-0e40-425a-b20f-2d0ab764a3e2/tab-icon.svg"
-                  }
-                }
-              ],
-              "interval": 6,
-              "progressBarBackgroundColor": "rgba(217, 217, 217, 0.10)",
-              "progressBarColor": "#02333A"
-            },
-            "imageTextFont": "Instrument Serif",
-            "marginTop": "120px"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/SectionsInTabs.tsx",
-            "id": "plansdetails",
-            "innerSection": {
-              "__resolveType": "site/sections/PlanDetailsV3.tsx",
-              "backgroundImage": {},
-              "contentImage": {},
-              "useContent": "video",
-              "tabs": {
-                "tabs": []
-              },
-              "planTag": {
-                "icon": {}
-              },
-              "slides": [],
-              "valuesTag": {},
-              "annualValues": {},
-              "montlyValues": {},
-              "createStoreCta": {
-                "ctaStyle": "button"
-              },
-              "cta": []
-            },
-            "sectionTabs": [
-              {
-                "section": {
-                  "__resolveType": "site/sections/PlanDetailsV3.tsx",
-                  "cta": [
-                    {
-                      "ctaStyle": "link",
-                      "href": "https://app.lojaintegrada.com.br/painel/login",
-                      "showIcon": true,
-                      "textColor": "#371E55",
-                      "text": "<p><u><span>Mude para o Expansão agora</span></u></p>"
-                    }
-                  ],
-                  "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/bee34ab5-8120-4c61-9a84-63503d7845b2/bg-exapansao-mobile.png",
-                    "width": 430,
-                    "height": 1354
-                  },
-                  "useContent": "image",
-                  "planTag": {
-                    "icon": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6ebac615-ff6e-43d6-879e-475960c20693/foguete-(1)-1.svg"
-                    },
-                    "text": "Plano Expansão "
-                  },
-                  "slides": [
-                    {
-                      "bulletPoints": {
-                        "items": [],
-                        "bulletPointsIcon": {}
-                      },
-                      "title": "Tarifas reduzidas e faixa de isenção",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: #371e55\">Pague apenas 0,70% de tarifa para transações em outros meios de pagamento, com isenção para faturamento de até R$ 3.500/mês.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Pagali com taxa reduzida",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      },
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: #371e55\">Usando o meio de pagamento nativo da Loja Integrada, a tarifa é de apenas 4,29%.</span></p>"
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Alteração em massa no painel",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: #371e55\">Otimize seu tempo e altere preço e estoque de vários produtos de uma só vez.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    }
-                  ],
-                  "annualValues": {
-                    "title": "Anual",
-                    "text": "<p><span style=\"color: rgb(250, 250, 245)\">em até 6x sem juros</span></p><p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 382</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 2.292</span></p>",
-                    "saving": "⚡️ Economia de R$ 576/ano",
-                    "titleColor": "#FAFAF5",
-                    "promoTag": {
-                      "borderColor": "linear-gradient(90deg, #BAB1E8 0%, #371E55 94.19%)",
-                      "textColor": "linear-gradient(90deg, #BAB1E8 0%, #75569B 100%)",
-                      "backgroundColor": "linear-gradient(90deg, #27153D 0%, #371E55 94.19%)"
-                    },
-                    "savingColor": "#FAFAF5",
-                    "tag": "20% OFF",
-                    "tagTextColor": "#371E55",
-                    "tagBackgroundColor": "#FFE6A0"
-                  },
-                  "montlyValues": {
-                    "text": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 239</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 2.868</span></p>",
-                    "title": "Mensal",
-                    "titleColor": "#FAFAF5"
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "176",
-                    "text": "Quero assinar",
-                    "backgroundColor": "#371E55",
-                    "textColor": "#FAFAF5",
-                    "borderColor": "#371E55"
-                  },
-                  "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/11926add-083a-4916-abf5-0f4d3f4e6378/video-dobra-expansao.webm",
-                  "imageText": "<p><span style=\"color: rgb(235, 235, 235)\">Pensado para quem busca mais alcance, agilidade na operação e ferramentas </span><span style=\"color: rgb(170, 130, 200)\">para crescer com inteligência</span></p>",
-                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(55, 30, 92)\">Viva a Expansão </span><em><span style=\"color: rgb(130, 90, 180)\">da sua loja</span></em></p>",
-                  "titleFont": "Instrument Serif",
-                  "valuesTag": {
-                    "text": "⚡️ Oferta no plano anual",
-                    "backgroundColor": "#27153D",
-                    "textColor": "#FAFAF5"
-                  },
-                  "valuesBackgroundColor": "#371E55",
-                  "imageTextFont": "Instrument Serif",
-                  "contentImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fc2f7ee2-e262-41bf-8c35-ccfcf22459ec/img-expansao-mobile.png",
-                    "height": 492
-                  },
-                  "tabs": {
-                    "tabs": [
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg",
-                          "width": 25,
-                          "height": 25
-                        },
-                        "title": "<p><span style=\"color: #371e55\">Atendimento prioritário</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85)\">Você é atendido mais rápido, com suporte facilitado pelos canais de atendimento - chat, e-mail e Whatsapp;</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: #371e55\">Amplo número de usuários</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Adicione até 10 pessoas para acompanhar o faturamento, pedidos e visitas da sua loja.</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: #371e55\">Tráfego otimizado com IA</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Enriqueça seu catálogo e crie descrições de produtos com Inteligência Artificial. Experimente gratuitamente em 50 produtos e aproveite o enriquecimento em massa.</span></p>"
-                      }
-                    ],
-                    "interval": 6,
-                    "progressBarColor": "#3F2656",
-                    "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  }
-                },
-                "title": "Plano Expansão",
-                "titleFont": "Instrument Serif",
-                "titleBackgroundColor": "#DDD5EB",
-                "titleDisabledBackgroundColor": "#EDEDED",
-                "titleColor": "#371E55",
-                "titleDisabledColor": "#5F6E82"
-              },
-              {
-                "section": {
-                  "__resolveType": "site/sections/PlanDetailsV3.tsx",
-                  "cta": [
-                    {
-                      "ctaStyle": "link",
-                      "href": "/talkToSpecialist",
-                      "showIcon": true,
-                      "textColor": "#371E55",
-                      "text": "<p><u>Mude para o Aceleração agora</u></p>"
-                    }
-                  ],
-                  "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/bee34ab5-8120-4c61-9a84-63503d7845b2/bg-exapansao-mobile.png",
-                    "width": 430,
-                    "height": 1354
-                  },
-                  "useContent": "image",
-                  "planTag": {
-                    "icon": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6ebac615-ff6e-43d6-879e-475960c20693/foguete-(1)-1.svg"
-                    },
-                    "text": "Plano Aceleração"
-                  },
-                  "slides": [
-                    {
-                      "bulletPoints": {
-                        "items": [],
-                        "bulletPointsIcon": {}
-                      },
-                      "title": "Tarifas reduzidas e faixa de isenção",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Pague apenas 0,90% de tarifa para transações em outros meios de pagamento, com isenção para faturamento de até R$ 2.800/mês.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Pagali com taxa reduzida",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      },
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Usando o meio de pagamento nativo da Loja Integrada, a tarifa é de apenas 4,49%.</span></p>"
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Tráfego otimizado com IA",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Usando o meio de pagamento nativo da Loja Integrada, a tarifa é de apenas 4,49% Enriqueça seu catálogo e crie descrições de produtos com Inteligência Artificial. Experimente gratuitamente em 50 produtos.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    }
-                  ],
-                  "annualValues": {
-                    "title": "Anual",
-                    "text": "<p><span style=\"color: rgb(250, 250, 245)\">em até 6x sem juros</span></p><p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 158</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 948</span></p>",
-                    "saving": "⚡️ Economia de R$ 240/ano",
-                    "titleColor": "#FAFAF5",
-                    "promoTag": {
-                      "borderColor": "linear-gradient(90deg, #BAB1E8 0%, #371E55 94.19%)",
-                      "textColor": "linear-gradient(90deg, #BAB1E8 0%, #75569B 100%)",
-                      "backgroundColor": "linear-gradient(90deg, #27153D 0%, #371E55 94.19%)"
-                    },
-                    "savingColor": "#FAFAF5",
-                    "tag": "20% OFF",
-                    "tagTextColor": "#371E55",
-                    "tagBackgroundColor": "#FFE6A0"
-                  },
-                  "montlyValues": {
-                    "text": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 99</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$1.188</span></p>",
-                    "title": "Mensal",
-                    "titleColor": "#FAFAF5"
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "174",
-                    "text": "Quero assinar",
-                    "backgroundColor": "#371E55",
-                    "textColor": "#FAFAF5",
-                    "borderColor": "#371E55"
-                  },
-                  "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/11926add-083a-4916-abf5-0f4d3f4e6378/video-dobra-expansao.webm",
-                  "imageText": "<p><span style=\"color: rgb(235, 235, 235)\">Para quem quer aumentar as vendas contando com insights </span><em><span style=\"color: rgb(170, 130, 200)\">e ferramentas estratégicas</span></em></p>",
-                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(55, 30, 92)\">Acelere </span><em><span style=\"color: rgb(130, 90, 180)\">seu negócio</span></em></p>",
-                  "titleFont": "Instrument Serif",
-                  "valuesTag": {
-                    "text": "⚡️ Oferta no plano anual",
-                    "backgroundColor": "#27153D",
-                    "textColor": "#FAFAF5"
-                  },
-                  "valuesBackgroundColor": "#371E55",
-                  "imageTextFont": "Instrument Serif",
-                  "contentImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/60c4287f-d8a5-4989-bad2-eb8f8f554024/aceleracao-mobile.png",
-                    "height": 492
-                  },
-                  "tabs": {
-                    "tabs": [
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg",
-                          "width": 25,
-                          "height": 25
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Suporte facilitado</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85)\">Atendimento por diferentes canais - chat, e-mail e Whatsapp;</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Controle de permissão de acesso</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Adicione até 3 pessoas para acompanhar o faturamento, pedidos e visitas da sua loja, com total segurança;</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Mais audiência</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Capacidade para expandir o tráfego da sua loja, suportando até 50 mil acessos mensais.</span></p>"
-                      }
-                    ],
-                    "interval": 6,
-                    "progressBarColor": "#3F2656",
-                    "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  }
-                },
-                "title": "Plano Aceleração",
-                "titleFont": "Instrument Serif",
-                "titleBackgroundColor": "#DDD5EB",
-                "titleDisabledBackgroundColor": "#EDEDED",
-                "titleColor": "#371E55",
-                "titleDisabledColor": "#5F6E82"
-              },
-              {
-                "section": {
-                  "__resolveType": "site/sections/PlanDetailsV3.tsx",
-                  "cta": [
-                    {
-                      "ctaStyle": "link",
-                      "href": "https://app.lojaintegrada.com.br/painel/login",
-                      "showIcon": true,
-                      "textColor": "#371E55",
-                      "text": "<p><u>Mude para o Crescimento agora</u></p>"
-                    }
-                  ],
-                  "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/bee34ab5-8120-4c61-9a84-63503d7845b2/bg-exapansao-mobile.png",
-                    "width": 430,
-                    "height": 1354
-                  },
-                  "useContent": "image",
-                  "planTag": {
-                    "icon": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6ebac615-ff6e-43d6-879e-475960c20693/foguete-(1)-1.svg"
-                    },
-                    "text": "Plano Crescimento"
-                  },
-                  "slides": [
-                    {
-                      "bulletPoints": {
-                        "items": [],
-                        "bulletPointsIcon": {}
-                      },
-                      "title": "Tarifas reduzidas e faixa de isenção",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Pague apenas 0,99% de tarifa para transações em outros meios de pagamento, com isenção para faturamento de até R$ 2.500/mês.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Pagali com taxa reduzida",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      },
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Usando o meio de pagamento nativo da Loja Integrada, a tarifa é de apenas 4,59%</span></p>"
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Tráfego otimizado com IA",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Enriqueça seu catálogo e crie descrições de produtos com Inteligência Artificial. Experimente gratuitamente em 30 produtos.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    }
-                  ],
-                  "annualValues": {
-                    "title": "Anual",
-                    "text": "<p><span style=\"color: rgb(250, 250, 245)\">em até 6x sem juros</span></p><p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 86</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 516</span></p>",
-                    "saving": "⚡️ Economia de R$ 132/ano",
-                    "titleColor": "#FAFAF5",
-                    "promoTag": {
-                      "borderColor": "linear-gradient(90deg, #BAB1E8 0%, #371E55 94.19%)",
-                      "textColor": "linear-gradient(90deg, #BAB1E8 0%, #75569B 100%)",
-                      "backgroundColor": "linear-gradient(90deg, #27153D 0%, #371E55 94.19%)"
-                    },
-                    "savingColor": "#FAFAF5",
-                    "tag": "20% OFF",
-                    "tagTextColor": "#371E55",
-                    "tagBackgroundColor": "#FFE6A0"
-                  },
-                  "montlyValues": {
-                    "text": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 54</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$648</span></p>",
-                    "title": "Mensal",
-                    "titleColor": "#FAFAF5"
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "173",
-                    "text": "Quero assinar",
-                    "backgroundColor": "#371E55",
-                    "textColor": "#FAFAF5",
-                    "borderColor": "#371E55"
-                  },
-                  "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/11926add-083a-4916-abf5-0f4d3f4e6378/video-dobra-expansao.webm",
-                  "imageText": "<p><span style=\"color: rgb(235, 235, 235)\">Tenha mais recursos, suporte dedicado </span><em><span style=\"color: rgb(170, 130, 200)\">e inteligência para impulsionar sua loja.</span></em></p>",
-                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(55, 30, 92)\">Investimento acessível </span><em><span style=\"color: rgb(130, 90, 180)\">para sua loja crescer</span></em></p>",
-                  "titleFont": "Instrument Serif",
-                  "valuesTag": {
-                    "text": "⚡️ Oferta no plano anual",
-                    "backgroundColor": "#27153D",
-                    "textColor": "#FAFAF5"
-                  },
-                  "valuesBackgroundColor": "#371E55",
-                  "imageTextFont": "Instrument Serif",
-                  "contentImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0f6216ef-9425-4124-9ce1-32c938268e2d/crescimento-mobile.png",
-                    "height": 492
-                  },
-                  "tabs": {
-                    "tabs": [
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg",
-                          "width": 25,
-                          "height": 25
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">5x mais produtos e acessos</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85)\">Tenha 250 produtos ativos à disposição e capacidade para receber até 25 mil visitas mensais, cinco vezes mais que no plano gratuito;</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Recursos para vender mais</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">A partir deste plano, tenha acesso ao Checkout sem Senha, Carrinho Abandonado e Compre Junto, aumentando seu ticket médio em até 21%;</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Suporte facilitado</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Conte com atendimento eficiente via chat e e-mail para sanar todas as suas dúvidas;</span></p>"
-                      }
-                    ],
-                    "interval": 6,
-                    "progressBarColor": "#3F2656",
-                    "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  }
-                },
-                "title": "Plano Crescimento",
-                "titleFont": "Instrument Serif",
-                "titleBackgroundColor": "#DDD5EB",
-                "titleDisabledBackgroundColor": "#EDEDED",
-                "titleColor": "#371E55",
-                "titleDisabledColor": "#5F6E82"
-              }
-            ]
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/SectionsInTabs.tsx",
-            "id": "plansdetails",
-            "innerSection": {
-              "__resolveType": "site/sections/PlanDetailsV3.tsx",
-              "backgroundImage": {},
-              "contentImage": {},
-              "useContent": "video",
-              "tabs": {
-                "tabs": []
-              },
-              "planTag": {
-                "icon": {}
-              },
-              "slides": [],
-              "valuesTag": {},
-              "annualValues": {},
-              "montlyValues": {},
-              "createStoreCta": {
-                "ctaStyle": "button"
-              },
-              "cta": []
-            },
-            "sectionTabs": [
-              {
-                "section": {
-                  "__resolveType": "site/sections/PlanDetailsV3.tsx",
-                  "cta": [
-                    {
-                      "ctaStyle": "link",
-                      "href": "https://app.lojaintegrada.com.br/painel/login",
-                      "showIcon": true,
-                      "textColor": "#371E55",
-                      "text": "<p><u><span>Mude para o Expansão agora</span></u></p>"
-                    }
-                  ],
-                  "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8bd78116-d5a4-47b2-a9ae-c7ebce5148ff/plan-details-slide-background.png",
-                    "width": 2880,
-                    "height": 2440
-                  },
-                  "useContent": "video",
-                  "planTag": {
-                    "icon": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6ebac615-ff6e-43d6-879e-475960c20693/foguete-(1)-1.svg"
-                    },
-                    "text": "Plano Expansão "
-                  },
-                  "slides": [
-                    {
-                      "bulletPoints": {
-                        "items": [],
-                        "bulletPointsIcon": {}
-                      },
-                      "title": "Tarifas reduzidas e faixa de isenção",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: #371e55\">Pague apenas 0,70% de tarifa para transações em outros meios de pagamento, com isenção para faturamento de até R$ 3.500/mês.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Pagali com taxa reduzida",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      },
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: #371e55\">Usando o meio de pagamento nativo da Loja Integrada, a tarifa é de apenas 4,29%.</span></p>"
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Alteração em massa no painel",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: #371e55\">Otimize seu tempo e altere preço e estoque de vários produtos de uma só vez.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    }
-                  ],
-                  "annualValues": {
-                    "title": "Anual",
-                    "text": "<p><span style=\"color: rgb(250, 250, 245)\">em até 6x sem juros</span></p><p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 382</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$2.292</span></p>",
-                    "saving": "⚡️ Economia de R$ 576/ano",
-                    "titleColor": "#FAFAF5",
-                    "promoTag": {
-                      "borderColor": "linear-gradient(90deg, #BAB1E8 0%, #371E55 94.19%)",
-                      "textColor": "linear-gradient(90deg, #BAB1E8 0%, #75569B 100%)",
-                      "backgroundColor": "linear-gradient(90deg, #27153D 0%, #371E55 94.19%)"
-                    },
-                    "savingColor": "#FAFAF5",
-                    "tag": "20% OFF",
-                    "tagTextColor": "#371E55",
-                    "tagBackgroundColor": "#FFE6A0"
-                  },
-                  "montlyValues": {
-                    "text": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 239</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 2.868</span></p>",
-                    "title": "Mensal",
-                    "titleColor": "#FAFAF5"
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "176",
-                    "text": "Quero assinar",
-                    "backgroundColor": "#371E55",
-                    "textColor": "#FAFAF5",
-                    "borderColor": "#371E55"
-                  },
-                  "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/41001ecf-8396-4a0b-a844-bbc424b82762/expansao.mp4",
-                  "imageText": "<p><span style=\"color: rgb(235, 235, 235)\">Pensado para quem busca mais alcance, agilidade na operação e ferramentas </span><em><span style=\"color: rgb(170, 130, 200)\">para crescer com inteligência</span></em></p>",
-                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(55, 30, 92)\">Viva a Expansão </span><em><span style=\"color: rgb(130, 90, 180)\">da sua loja</span></em></p>",
-                  "titleFont": "Instrument Serif",
-                  "valuesTag": {
-                    "text": "⚡️ Oferta no plano anual",
-                    "backgroundColor": "#27153D",
-                    "textColor": "#FAFAF5"
-                  },
-                  "valuesBackgroundColor": "#371E55",
-                  "imageTextFont": "Instrument Serif",
-                  "contentImage": {},
-                  "tabs": {
-                    "tabs": [
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg",
-                          "width": 25,
-                          "height": 25
-                        },
-                        "title": "<p><span style=\"color: #371e55\">Atendimento prioritário</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85)\">Você é atendido mais rápido, com suporte facilitado pelos canais de atendimento - chat, e-mail e Whatsapp;</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: #371e55\">Amplo número de usuários</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Adicione até 10 pessoas para acompanhar o faturamento, pedidos e visitas da sua loja.</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: #371e55\">Tráfego otimizado com IA</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Enriqueça seu catálogo e crie descrições de produtos com Inteligência Artificial. Experimente gratuitamente em 50 produtos e aproveite o enriquecimento em massa. </span></p>"
-                      }
-                    ],
-                    "interval": 6,
-                    "progressBarColor": "#3F2656",
-                    "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  },
-                  "id": "planoexpansao"
-                },
-                "title": "Plano Expansão",
-                "titleFont": "Instrument Serif",
-                "titleBackgroundColor": "#DDD5EB",
-                "titleDisabledBackgroundColor": "#EDEDED",
-                "titleColor": "#371E55",
-                "titleDisabledColor": "#5F6E82"
-              },
-              {
-                "section": {
-                  "__resolveType": "site/sections/PlanDetailsV3.tsx",
-                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(55, 30, 92)\">Acelere </span><span style=\"color: rgb(130, 90, 180)\">o </span><em><span style=\"color: rgb(130, 90, 180)\">seu negócio</span></em></p>",
-                  "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8bd78116-d5a4-47b2-a9ae-c7ebce5148ff/plan-details-slide-background.png",
-                    "width": 2880,
-                    "height": 2440
-                  },
-                  "cta": [
-                    {
-                      "ctaStyle": "link",
-                      "href": "https://app.lojaintegrada.com.br/painel/login",
-                      "textColor": "#371E55",
-                      "showIcon": true,
-                      "text": "<p><u>Mude para o Aceleração agora</u></p>"
-                    }
-                  ],
-                  "planTag": {
-                    "icon": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6ebac615-ff6e-43d6-879e-475960c20693/foguete-(1)-1.svg"
-                    },
-                    "text": "Plano Aceleração"
-                  },
-                  "slides": [
-                    {
-                      "bulletPoints": {
-                        "items": [],
-                        "bulletPointsIcon": {}
-                      },
-                      "title": "Tarifas reduzidas e faixa de isenção ",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Pague apenas 0,90% de tarifa para transações em outros meios de pagamento, com isenção para faturamento de até R$ 2.800/mês.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Pagali com taxa reduzida",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      },
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Usando o meio de pagamento nativo da Loja Integrada, a tarifa é de apenas 4,49%</span></p>"
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Tráfego otimizado com IA",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Enriqueça seu catálogo e crie descrições de produtos com Inteligência Artificial. Experimente gratuitamente em 50 produtos.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    }
-                  ],
-                  "imageText": "<p><span style=\"color: rgb(235, 235, 235)\">Para quem quer aumentar as vendas contando com insights </span><em><span style=\"color: rgb(170, 130, 200)\">e ferramentas estratégicas.</span></em></p>",
-                  "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b942e823-c68d-4bec-a862-0535c0c74fce/video-aceleracao.mp4",
-                  "useContent": "video",
-                  "contentImage": {},
-                  "annualValues": {
-                    "title": "Anual",
-                    "text": "<p><span style=\"color: rgb(250, 250, 245)\">em até 6x sem juros</span></p><p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 158</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 948</span></p>",
-                    "saving": "⚡️ Economia de R$ 240/ano",
-                    "titleColor": "#FAFAF5",
-                    "savingColor": "#FAFAF5",
-                    "promoTag": {
-                      "borderColor": "linear-gradient(90deg, #BAB1E8 0%, #371E55 94.19%)",
-                      "textColor": "linear-gradient(90deg, #BAB1E8 0%, #75569B 100%)",
-                      "backgroundColor": "linear-gradient(90deg, #27153D 0%, #371E55 94.19%)"
-                    },
-                    "tag": "20% OFF",
-                    "tagBackgroundColor": "#FFE6A0",
-                    "tagTextColor": "#371E55"
-                  },
-                  "montlyValues": {
-                    "title": "Mensal",
-                    "text": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 99</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 1.188</span></p>",
-                    "titleColor": "#FAFAF5"
-                  },
-                  "createStoreCta": {
-                    "planId": "174",
-                    "text": "Quero assinar",
-                    "ctaStyle": "button",
-                    "textColor": "#FAFAF5",
-                    "backgroundColor": "#371E55",
-                    "borderColor": "#371E55",
-                    "showIcon": false
-                  },
-                  "valuesTag": {
-                    "text": "⚡️ Oferta no plano anual",
-                    "textColor": "#FAFAF5",
-                    "backgroundColor": "#27153D"
-                  },
-                  "imageTextFont": "Instrument Serif",
-                  "titleFont": "Instrument Serif",
-                  "valuesBackgroundColor": "#371E55",
-                  "tabs": {
-                    "tabs": [
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg",
-                          "width": 25,
-                          "height": 25
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Suporte facilitado</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85)\">Atendimento por diferentes canais - chat, e-mail e Whatsapp;</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Controle de permissão de acesso</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Adicione até 3 pessoas para acompanhar o faturamento, pedidos e visitas da sua loja, com total segurança;</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Mais audiência</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Capacidade para expandir o tráfego da sua loja, suportando até 50 mil acessos mensais.</span></p>"
-                      }
-                    ],
-                    "interval": 6,
-                    "progressBarColor": "#3F2656",
-                    "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  },
-                  "id": "planoaceleracao"
-                },
-                "title": "Plano Aceleração",
-                "titleFont": "Instrument Serif",
-                "titleDisabledBackgroundColor": "#EDEDED",
-                "titleColor": "#371E55",
-                "titleDisabledColor": "#5F6E82",
-                "titleBackgroundColor": "#DDD5EB"
-              },
-              {
-                "title": "Plano Crescimento",
-                "section": {
-                  "__resolveType": "site/sections/PlanDetailsV3.tsx",
-                  "cta": [
-                    {
-                      "ctaStyle": "link",
-                      "href": "https://app.lojaintegrada.com.br/painel/login",
-                      "textColor": "#371E55",
-                      "showIcon": true,
-                      "text": "<p><u>Mude para o Crescimento agora</u></p>"
-                    }
-                  ],
-                  "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8bd78116-d5a4-47b2-a9ae-c7ebce5148ff/plan-details-slide-background.png",
-                    "width": 2880,
-                    "height": 2440
-                  },
-                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(55, 30, 92)\">Investimento acessível </span><em><span style=\"color: rgb(130, 90, 180)\">para sua loja crescer</span></em></p>",
-                  "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6fff644e-5753-4a45-8974-633d7f3b0473/video-crescimento.mp4",
-                  "useContent": "video",
-                  "planTag": {
-                    "text": "Plano Crescimento",
-                    "icon": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6ebac615-ff6e-43d6-879e-475960c20693/foguete-(1)-1.svg"
-                    }
-                  },
-                  "slides": [
-                    {
-                      "bulletPoints": {
-                        "items": [],
-                        "bulletPointsIcon": {}
-                      },
-                      "title": "Tarifas reduzidas e faixa de isenção",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Pague apenas 0,99% de tarifa para transações em outros meios de pagamento, com isenção para faturamento de até R$ 2.500/mês.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Pagali com taxa reduzida",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      },
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Usando o meio de pagamento nativo da Loja Integrada, a tarifa é de apenas 4,59%.</span></p>"
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": []
-                      },
-                      "title": "Tráfego otimizado com IA",
-                      "titleColor": "#371E55",
-                      "text": "<p><span style=\"color: rgb(55, 30, 85)\">Enriqueça seu catálogo e crie descrições de produtos com Inteligência Artificial. Experimente gratuitamente em 30 produtos.</span></p>",
-                      "backgroundImage": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aa8ed972-5fb3-4792-829d-b09b291411c9/plan-details-slide-background.png"
-                      }
-                    }
-                  ],
-                  "annualValues": {
-                    "title": "Anual",
-                    "saving": "⚡️ Economia de R$ 132/ano",
-                    "text": "<p><span style=\"color: rgb(250, 250, 245)\">em até 6x sem juros</span></p><p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 86</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 516</span></p>",
-                    "titleColor": "#FAFAF5",
-                    "savingColor": "#FAFAF5",
-                    "promoTag": {
-                      "borderColor": "linear-gradient(90deg, #BAB1E8 0%, #371E55 94.19%)",
-                      "textColor": "linear-gradient(90deg, #BAB1E8 0%, #75569B 100%)",
-                      "backgroundColor": "linear-gradient(90deg, #27153D 0%, #371E55 94.19%)"
-                    },
-                    "tagTextColor": "#371E55",
-                    "tagBackgroundColor": "#FFE6A0",
-                    "tag": "20% OFF"
-                  },
-                  "montlyValues": {
-                    "title": "Mensal",
-                    "text": "<p><span style=\"color: rgb(250, 250, 245); font-size: 18pt\">R$ 54</span><span style=\"color: rgb(250, 250, 245); font-size: 14pt\">/mês</span></p><p style=\"text-align: start\"><span style=\"color: rgb(250, 250, 245)\">Por ano, sairia R$ 648</span></p>",
-                    "titleColor": "#FAFAF5"
-                  },
-                  "createStoreCta": {
-                    "planId": "173",
-                    "text": "Quero assinar",
-                    "textColor": "#FAFAF5",
-                    "backgroundColor": "#371E55",
-                    "borderColor": "#371E55",
-                    "ctaStyle": "button"
-                  },
-                  "imageText": "<p><span style=\"color: rgb(235, 235, 235)\">Tenha mais recursos, suporte dedicado e </span><em><span style=\"color: rgb(170, 130, 200)\">Inteligência para impulsionar sua loja</span></em></p>",
-                  "valuesTag": {
-                    "textColor": "#FAFAF5",
-                    "backgroundColor": "#27153D",
-                    "text": "⚡️ Oferta no plano anual"
-                  },
-                  "imageTextFont": "Instrument Serif",
-                  "titleFont": "Instrument Serif",
-                  "valuesBackgroundColor": "#371E55",
-                  "contentImage": {},
-                  "tabs": {
-                    "tabs": [
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg",
-                          "width": 25,
-                          "height": 25
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">5x mais produtos e acessos</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85)\">Tenha 250 produtos ativos à disposição e capacidade para receber até 25 mil visitas mensais, cinco vezes mais que no plano gratuito;</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Recursos para vender mais</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">A partir deste plano, tenha acesso ao Checkout sem Senha, Carrinho Abandonado e Compre Junto, aumentando seu ticket médio em até 21%;</span></p>"
-                      },
-                      {
-                        "icon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6a790573-3718-499a-b57c-08b2a3b87bdd/purple-plus-icon.svg"
-                        },
-                        "title": "<p><span style=\"color: rgb(55, 30, 85)\">Suporte facilitado</span></p>",
-                        "contentText": "<p><span style=\"color: rgb(55, 30, 85); font-size: 14px\">Conte com atendimento eficiente via chat e e-mail para sanar todas as suas dúvidas;</span></p>"
-                      }
-                    ],
-                    "interval": 6,
-                    "progressBarColor": "#3F2656",
-                    "progressBarBackgroundColor": "rgba(59, 34, 90, 0.10)"
-                  },
-                  "id": "planocrescimento"
-                },
-                "titleFont": "Instrument Serif",
-                "titleColor": "#371E55",
-                "titleDisabledColor": "#5F6E82",
-                "titleBackgroundColor": "#DDD5EB",
-                "titleDisabledBackgroundColor": "#EDEDED"
-              }
-            ]
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/Footer2.tsx",
-      "title": "<p>O futuro do e-commerce começa com você.<br>Escolha soluções automatizadas e veja suas</p><p><span style=\"color: rgb(43, 195, 194)\">vendas decolarem</span></p>",
-      "titleFont": "Instrument serif",
-      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8fd0634d-265f-46c6-b006-2b75aa39d895/video-dobra-comunidade.mp4",
-      "backgroundImage": {},
-      "color1": "#371E55",
-      "color2": "#FFFFFF",
+      "__resolveType": "site/sections/ScrollableCards.tsx",
       "cards": [
         {
-          "cardIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
+          "title": {
+            "text": "<p><strong><span style=\"color: rgb(0, 48, 55); font-size: 22pt\">\"A estabilidade da Loja Integrada nos garante segurança</span></strong></p>"
           },
-          "title": "Hub de conteúdo",
-          "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
-          "CTA": {
-            "text": "Conhecer",
-            "href": "https://lojaintegrada.com.br/hub/"
+          "caption": "<p><span style=\"color: rgb(95, 110, 130); font-size: 16pt\">em períodos de alta demanda, como na Black Friday e campanhas especiais.\"</span></p>",
+          "image": {
+            "src": "https://data.decoassets.com/lojaintegradar/efbb5af5-4d2b-47f1-b2a7-1073c0ef8346/bubble-image-3.png"
+          },
+          "imageCaption": "<p><strong><span style=\"color: #003037\">Alexandre Capella</span></strong></p><p><span style=\"color: #5f6e82\">+Mu</span></p>"
+        },
+        {
+          "title": {
+            "text": "<p><strong><span style=\"color: rgb(0, 48, 55)\">\"Lorem Ipsum is simply dummy text of the printing and typesetting</span></strong></p>"
+          },
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\"</span></p>",
+          "image": {
+            "src": "https://data.decoassets.com/lojaintegradar/1717b427-b185-4602-83a9-54a9e3c2c788/Frame-1000002565.png"
+          },
+          "imageCaption": "<p><strong><span style=\"color: #003037\">Alexandre Capella</span></strong></p><p><span style=\"color: #5f6e82\">+Mu</span></p>"
+        },
+        {
+          "title": {
+            "text": "<p><strong><span style=\"color: rgb(0, 48, 55)\">\"Lorem Ipsum is simply dummy text of the printing and typesetting</span></strong></p>"
+          },
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\"</span></p>",
+          "image": {
+            "src": "https://data.decoassets.com/lojaintegradar/1717b427-b185-4602-83a9-54a9e3c2c788/Frame-1000002565.png"
+          },
+          "imageCaption": "<p><strong><span style=\"color: #003037\">Alexandre Capella</span></strong></p><p><span style=\"color: #5f6e82\">+Mu</span></p>"
+        }
+      ],
+      "title": {
+        "text": "<p><span style=\"color: #003037\">Resultados</span></p>",
+        "font": "Instrument serif"
+      },
+      "leftText": "<p><span style=\"color: rgb(0, 48, 55)\">Que falam</span></p>",
+      "rightText": "<p><span style=\"color: rgb(0, 48, 55)\">por si</span></p>",
+      "cta": [
+        {
+          "ctaStyle": "button",
+          "href": "linkhere",
+          "text": "Migrar minha loja",
+          "backgroundColor": "#003037",
+          "borderColor": "#003037"
+        },
+        {
+          "ctaStyle": "link",
+          "href": "/talkToSpecialist",
+          "underlineText": " Falar com especialista",
+          "textColor": "#003037",
+          "showIcon": true
+        }
+      ],
+      "createStoreCta": {
+        "planId": "172",
+        "order": 1
+      },
+      "ctaMargintop": "140px",
+      "cardWidth": "400px",
+      "cardsWidth": "390px",
+      "cardsMinHeight": "400px"
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Footer2.tsx",
+            "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 24px\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 24px; \">resultados que surpreendem.</span></em></p>",
+            "titleFont": "Instrument serif",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/20b60aec-1e72-4842-aebe-9c8753662523/Group-21462605-(3).png"
+            },
+            "color1": "#371E55",
+            "color2": "#FFFFFF",
+            "cards": [
+              {
+                "cardIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
+                },
+                "title": "Hub de conteúdo",
+                "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
+                "CTA": {
+                  "text": "Conhecer",
+                  "href": "https://lojaintegrada.com.br/hub/"
+                }
+              },
+              {
+                "cardIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
+                  "alt": "youtube green icon"
+                },
+                "title": "Canal no Youtube",
+                "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
+                "CTA": {
+                  "text": "Conhecer",
+                  "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
+                }
+              }
+            ],
+            "color3": "#EBEBEB",
+            "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
+            "logo": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
+            },
+            "showForm": false,
+            "emailForm": {
+              "inputName": "email",
+              "inputLabel": "Junte-se a mais de  2,7 milhões de lojistas",
+              "inputPlaceHolder": "Digite seu email aqui",
+              "submitText": "Fazer parte"
+            },
+            "socialLinks": [
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
+                  "alt": "linkein icon"
+                },
+                "href": "https://www.linkedin.com/company/lojaintegrada/"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
+                  "alt": "instgram icon"
+                },
+                "href": "https://www.instagram.com/lojaintegrada/"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
+                },
+                "href": "https://www.tiktok.com/@lojaintegrada"
+              }
+            ],
+            "color4": "#d4d4d4",
+            "bottomLinks": [
+              {
+                "href": "https://comunidade.lojaintegrada.com.br/",
+                "text": "Conheça nossa comunidade"
+              },
+              {
+                "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
+                "text": "Central de ajuda"
+              },
+              {
+                "text": "Fale com especialista",
+                "href": "/talkToSpecialist"
+              },
+              {
+                "href": "https://lojaintegrada.com.br/termos-de-uso",
+                "text": "Termos de uso"
+              },
+              {
+                "href": "https://lojaintegrada.com.br/privacidade",
+                "text": "Privacidade"
+              },
+              {
+                "href": "https://app.lojaintegrada.com.br/public/assinar",
+                "text": "Comece pelo grátis"
+              }
+            ],
+            "bottomBackground": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
+            },
+            "id": "ecossistemaconteudo",
+            "useBackground": "image",
+            "backgroundHeight": "160px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
           }
         },
         {
-          "cardIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
-            "alt": "youtube green icon"
+          "value": {
+            "__resolveType": "site/sections/Footer2.tsx",
+            "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 32pt\">resultados que surpreendem.</span></em></p>",
+            "titleFont": "Instrument serif",
+            "backgroundVideo": "https://data.decoassets.com/lojaintegradar/176913d3-a442-40c2-854e-aa31262d6880/rodape-novo.mp4",
+            "backgroundImage": {},
+            "color1": "#371E55",
+            "color2": "#FFFFFF",
+            "cards": [
+              {
+                "cardIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
+                },
+                "title": "Hub de conteúdo",
+                "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
+                "CTA": {
+                  "text": "Conhecer",
+                  "href": "https://lojaintegrada.com.br/hub/"
+                }
+              },
+              {
+                "cardIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
+                  "alt": "youtube green icon"
+                },
+                "title": "Canal no Youtube",
+                "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
+                "CTA": {
+                  "text": "Conhecer",
+                  "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
+                }
+              }
+            ],
+            "color3": "#EBEBEB",
+            "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
+            "logo": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
+            },
+            "showForm": false,
+            "emailForm": {
+              "inputName": "email",
+              "inputLabel": "Junte-se a mais de  2,7 milhões de lojistas",
+              "inputPlaceHolder": "Digite seu email aqui",
+              "submitText": "Fazer parte"
+            },
+            "socialLinks": [
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
+                  "alt": "linkein icon"
+                },
+                "href": "https://www.linkedin.com/company/lojaintegrada/"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
+                  "alt": "instgram icon"
+                },
+                "href": "https://www.instagram.com/lojaintegrada/"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
+                },
+                "href": "https://www.tiktok.com/@lojaintegrada"
+              }
+            ],
+            "color4": "#d4d4d4",
+            "bottomLinks": [
+              {
+                "href": "https://comunidade.lojaintegrada.com.br/",
+                "text": "Conheça nossa comunidade"
+              },
+              {
+                "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
+                "text": "Central de ajuda"
+              },
+              {
+                "text": "Fale com especialista",
+                "href": "/talkToSpecialist"
+              },
+              {
+                "href": "https://lojaintegrada.com.br/termos-de-uso",
+                "text": "Termos de uso"
+              },
+              {
+                "href": "https://lojaintegrada.com.br/privacidade",
+                "text": "Privacidade"
+              },
+              {
+                "href": "https://app.lojaintegrada.com.br/public/assinar",
+                "text": "Comece pelo grátis"
+              }
+            ],
+            "bottomBackground": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
+            },
+            "id": "ecossistemaconteudo",
+            "useBackground": "video",
+            "backgroundHeight": "400px",
+            "socialLinksCaption": "<p><strong><span>siga-nos nas redes sociais</span></strong></p>",
+            "showLogo": false
           },
-          "title": "Canal no Youtube",
-          "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
-          "CTA": {
-            "text": "Conhecer",
-            "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
         }
-      ],
-      "color3": "#EBEBEB",
-      "useBackground": "video",
-      "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
-      "logo": {
-        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
-      },
-      "showForm": true,
-      "emailForm": {
-        "inputName": "email",
-        "inputLabel": "Junte-se a mais de  2,7 milhões de lojistas",
-        "inputPlaceHolder": "Digite seu email aqui",
-        "submitText": "Fazer parte"
-      },
-      "socialLinks": [
-        {
-          "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
-            "alt": "linkein icon"
-          },
-          "href": "https://www.linkedin.com/company/lojaintegrada/"
-        },
-        {
-          "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
-            "alt": "instgram icon"
-          },
-          "href": "https://www.instagram.com/lojaintegrada/"
-        },
-        {
-          "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
-          },
-          "href": "https://www.tiktok.com/@lojaintegrada"
-        }
-      ],
-      "color4": "#d4d4d4",
-      "bottomLinks": [
-        {
-          "href": "https://comunidade.lojaintegrada.com.br/",
-          "text": "Conheça nossa comunidade"
-        },
-        {
-          "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
-          "text": "Central de ajuda"
-        },
-        {
-          "text": "Fale com especialista",
-          "href": "/talkToSpecialist"
-        },
-        {
-          "href": "https://lojaintegrada.com.br/termos-de-uso",
-          "text": "Termos de uso"
-        },
-        {
-          "href": "https://lojaintegrada.com.br/privacidade",
-          "text": "Privacidade"
-        },
-        {
-          "href": "https://app.lojaintegrada.com.br/public/assinar",
-          "text": "Comece pelo grátis"
-        }
-      ],
-      "bottomBackground": {
-        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
-      },
-      "id": "ecossistemaconteudo"
+      ]
     },
     {
       "__resolveType": "site/sections/TalkToSpecialistModal.tsx"

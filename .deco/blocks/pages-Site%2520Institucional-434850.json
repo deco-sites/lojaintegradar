@@ -460,11 +460,11 @@
     {
       "__resolveType": "site/sections/HeroWithTime.tsx",
       "title": {
-        "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro</span></p>",
-        "mobile": "<p></p>"
+        "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
+        "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>"
       },
       "subTitle": {
-        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24pt\">Recursos avançados </span><em><span style=\"color: rgb(113, 219, 212); font-size: 24pt\">de ponta a ponta</span></em></p>",
+        "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
         "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
       },
       "tabs": [
@@ -666,37 +666,24 @@
             "161": "t",
             "162": "o",
             "163": ".",
-            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas:</span></p>",
-            "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas:</span></p>"
+            "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+            "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>"
           },
-          "tabImage": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd021662-93ff-4b7e-86f1-f5dd4bb4e622/gerar-mais-receita.png",
-            "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cd021662-93ff-4b7e-86f1-f5dd4bb4e622/gerar-mais-receita.png",
-            "widthDesktop": 606,
-            "heightDesktop": 627,
-            "width": 0
-          },
+          "tabImage": {},
           "videoOn": false,
           "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
           "button": {},
           "videoText": "Ver demo",
-          "tags": [
-            {
-              "text": "Carrinho e Produto Abandonado"
-            },
-            {
-              "text": "Desconto Progressivo"
-            },
-            {
-              "text": "Compre Junto",
-              "textColor": "",
-              "backgroundColor": "",
-              "borderColor": ""
-            },
-            {
-              "text": "E muito mais..."
-            }
-          ]
+          "tags": [],
+          "tabVideo": {
+            "width": 620,
+            "height": 409,
+            "widthDesktop": 620,
+            "heightDesktop": 409,
+            "video": "https://data.decoassets.com/lojaintegradar/0a82448d-d49f-47a0-afce-c8fa6ea5e840/reengaje-clientes.mp4",
+            "videoDesktop": "https://data.decoassets.com/lojaintegradar/0a82448d-d49f-47a0-afce-c8fa6ea5e840/reengaje-clientes.mp4"
+          },
+          "useTab": "video"
         },
         {
           "textContent": {
@@ -710,14 +697,18 @@
             "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Anuncie produtos em diferentes canais</span></p>",
             "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Anuncie produtos em diferentes canais</span></p>"
           },
-          "tabImage": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff813d3-defc-4339-83bc-52160b36cee9/vender-em-diferentes-canais.png",
-            "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aff813d3-defc-4339-83bc-52160b36cee9/vender-em-diferentes-canais.png",
-            "widthDesktop": 606,
-            "heightDesktop": 627
-          },
+          "tabImage": {},
           "highlight": false,
-          "buttons": []
+          "buttons": [],
+          "tabVideo": {
+            "width": 620,
+            "height": 409,
+            "heightDesktop": 409,
+            "widthDesktop": 620,
+            "videoDesktop": "https://data.decoassets.com/lojaintegradar/cb4f4da6-0435-4721-8304-6fe797eae8e7/hub-canais.mp4",
+            "video": "https://data.decoassets.com/lojaintegradar/cb4f4da6-0435-4721-8304-6fe797eae8e7/hub-canais.mp4"
+          },
+          "useTab": "video"
         },
         {
           "textContent": {
@@ -732,8 +723,11 @@
             "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Frete e pagamento descomplicados</span></p>"
           },
           "tabImage": {
-            "widthDesktop": 606,
-            "heightDesktop": 627
+            "widthDesktop": 620,
+            "heightDesktop": 409,
+            "width": 506,
+            "imageDesktop": "https://data.decoassets.com/lojaintegradar/de57108d-0951-4627-934c-70e6ff037fcd/frete-envios.png",
+            "image": "https://data.decoassets.com/lojaintegradar/de57108d-0951-4627-934c-70e6ff037fcd/frete-envios.png"
           },
           "highlight": false,
           "buttons": []
@@ -751,12 +745,14 @@
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
           },
           "tabImage": {
-            "widthDesktop": 606,
-            "heightDesktop": 627,
-            "image": "https://data.decoassets.com/lojaintegradar/13e16970-09de-4f72-8d92-699b2ab9779e/checkout-inteligente.png",
-            "imageDesktop": "https://data.decoassets.com/lojaintegradar/13e16970-09de-4f72-8d92-699b2ab9779e/checkout-inteligente.png"
+            "widthDesktop": 620,
+            "heightDesktop": 409,
+            "image": "https://data.decoassets.com/lojaintegradar/a858c7c7-c890-4489-a802-edc441ecd62c/chekout-inteligente.png",
+            "imageDesktop": "https://data.decoassets.com/lojaintegradar/a858c7c7-c890-4489-a802-edc441ecd62c/chekout-inteligente.png",
+            "width": 506
           },
-          "highlight": false
+          "highlight": false,
+          "useTab": "image"
         }
       ],
       "background": {
@@ -781,37 +777,18 @@
           "type": "createStoreForm",
           "text": "Criar minha loja",
           "planId": "172"
+        },
+        {
+          "type": "link",
+          "changeType": true,
+          "link": "#plans",
+          "text": "Ver planos"
         }
       ],
       "bottomSection": {
-        "__resolveType": "site/sections/HeroV2.tsx",
-        "cta": [],
-        "tag": {
-          "placement": "left"
-        },
-        "title": {},
-        "bulletpoints": {
-          "items": [],
-          "bulletPointsIcon": {}
-        },
-        "ctaDiv": {
-          "contentPlacement": "left",
-          "icon": {}
-        },
-        "media": {
-          "use": "image",
-          "image": {},
-          "video": {}
-        },
-        "mediaPlacement": "right",
-        "backgroundMedia": {
-          "use": "image",
-          "image": {}
-        },
-        "paddingTop": "0",
-        "paddingBottom": "0"
+        "__resolveType": "site/sections/BlankSection.tsx"
       },
-      "tabsInterval": 10
+      "tabsInterval": 30
     },
     {
       "__resolveType": "site/sections/AutomaticCarousel.tsx",
@@ -2289,104 +2266,225 @@
       "cardsMinHeight": "400px"
     },
     {
-      "__resolveType": "site/sections/Footer2.tsx",
-      "title": "<p>O futuro do e-commerce começa com você.<br>Escolha soluções automatizadas e veja suas</p><p><span style=\"color: rgb(43, 195, 194)\">vendas decolarem</span></p>",
-      "titleFont": "Instrument serif",
-      "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8fd0634d-265f-46c6-b006-2b75aa39d895/video-dobra-comunidade.mp4",
-      "backgroundImage": {},
-      "color1": "#371E55",
-      "color2": "#FFFFFF",
-      "cards": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "cardIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
+          "value": {
+            "__resolveType": "site/sections/Footer2.tsx",
+            "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 24px\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 24px; \">resultados que surpreendem.</span></em></p>",
+            "titleFont": "Instrument serif",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/20b60aec-1e72-4842-aebe-9c8753662523/Group-21462605-(3).png"
+            },
+            "color1": "#371E55",
+            "color2": "#FFFFFF",
+            "cards": [
+              {
+                "cardIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
+                },
+                "title": "Hub de conteúdo",
+                "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
+                "CTA": {
+                  "text": "Conhecer",
+                  "href": "https://lojaintegrada.com.br/hub/"
+                }
+              },
+              {
+                "cardIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
+                  "alt": "youtube green icon"
+                },
+                "title": "Canal no Youtube",
+                "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
+                "CTA": {
+                  "text": "Conhecer",
+                  "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
+                }
+              }
+            ],
+            "color3": "#EBEBEB",
+            "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
+            "logo": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
+            },
+            "showForm": false,
+            "emailForm": {
+              "inputName": "email",
+              "inputLabel": "Junte-se a mais de  2,7 milhões de lojistas",
+              "inputPlaceHolder": "Digite seu email aqui",
+              "submitText": "Fazer parte"
+            },
+            "socialLinks": [
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
+                  "alt": "linkein icon"
+                },
+                "href": "https://www.linkedin.com/company/lojaintegrada/"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
+                  "alt": "instgram icon"
+                },
+                "href": "https://www.instagram.com/lojaintegrada/"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
+                },
+                "href": "https://www.tiktok.com/@lojaintegrada"
+              }
+            ],
+            "color4": "#d4d4d4",
+            "bottomLinks": [
+              {
+                "href": "https://comunidade.lojaintegrada.com.br/",
+                "text": "Conheça nossa comunidade"
+              },
+              {
+                "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
+                "text": "Central de ajuda"
+              },
+              {
+                "text": "Fale com especialista",
+                "href": "/talkToSpecialist"
+              },
+              {
+                "href": "https://lojaintegrada.com.br/termos-de-uso",
+                "text": "Termos de uso"
+              },
+              {
+                "href": "https://lojaintegrada.com.br/privacidade",
+                "text": "Privacidade"
+              },
+              {
+                "href": "https://app.lojaintegrada.com.br/public/assinar",
+                "text": "Comece pelo grátis"
+              }
+            ],
+            "bottomBackground": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
+            },
+            "id": "ecossistemaconteudo",
+            "useBackground": "image",
+            "backgroundHeight": "160px"
           },
-          "title": "Hub de conteúdo",
-          "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
-          "CTA": {
-            "text": "Conhecer",
-            "href": "https://lojaintegrada.com.br/hub/"
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
           }
         },
         {
-          "cardIcon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
-            "alt": "youtube green icon"
+          "value": {
+            "__resolveType": "site/sections/Footer2.tsx",
+            "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 32pt\">resultados que surpreendem.</span></em></p>",
+            "titleFont": "Instrument serif",
+            "backgroundVideo": "https://data.decoassets.com/lojaintegradar/176913d3-a442-40c2-854e-aa31262d6880/rodape-novo.mp4",
+            "backgroundImage": {},
+            "color1": "#371E55",
+            "color2": "#FFFFFF",
+            "cards": [
+              {
+                "cardIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
+                },
+                "title": "Hub de conteúdo",
+                "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
+                "CTA": {
+                  "text": "Conhecer",
+                  "href": "https://lojaintegrada.com.br/hub/"
+                }
+              },
+              {
+                "cardIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
+                  "alt": "youtube green icon"
+                },
+                "title": "Canal no Youtube",
+                "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
+                "CTA": {
+                  "text": "Conhecer",
+                  "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
+                }
+              }
+            ],
+            "color3": "#EBEBEB",
+            "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
+            "logo": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
+            },
+            "showForm": false,
+            "emailForm": {
+              "inputName": "email",
+              "inputLabel": "Junte-se a mais de  2,7 milhões de lojistas",
+              "inputPlaceHolder": "Digite seu email aqui",
+              "submitText": "Fazer parte"
+            },
+            "socialLinks": [
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
+                  "alt": "linkein icon"
+                },
+                "href": "https://www.linkedin.com/company/lojaintegrada/"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
+                  "alt": "instgram icon"
+                },
+                "href": "https://www.instagram.com/lojaintegrada/"
+              },
+              {
+                "icon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
+                },
+                "href": "https://www.tiktok.com/@lojaintegrada"
+              }
+            ],
+            "color4": "#d4d4d4",
+            "bottomLinks": [
+              {
+                "href": "https://comunidade.lojaintegrada.com.br/",
+                "text": "Conheça nossa comunidade"
+              },
+              {
+                "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
+                "text": "Central de ajuda"
+              },
+              {
+                "text": "Fale com especialista",
+                "href": "/talkToSpecialist"
+              },
+              {
+                "href": "https://lojaintegrada.com.br/termos-de-uso",
+                "text": "Termos de uso"
+              },
+              {
+                "href": "https://lojaintegrada.com.br/privacidade",
+                "text": "Privacidade"
+              },
+              {
+                "href": "https://app.lojaintegrada.com.br/public/assinar",
+                "text": "Comece pelo grátis"
+              }
+            ],
+            "bottomBackground": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
+            },
+            "id": "ecossistemaconteudo",
+            "useBackground": "video",
+            "backgroundHeight": "400px",
+            "socialLinksCaption": "<p><strong><span>siga-nos nas redes sociais</span></strong></p>",
+            "showLogo": false
           },
-          "title": "Canal no Youtube",
-          "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
-          "CTA": {
-            "text": "Conhecer",
-            "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
         }
-      ],
-      "color3": "#EBEBEB",
-      "useBackground": "video",
-      "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
-      "logo": {
-        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
-      },
-      "showForm": true,
-      "emailForm": {
-        "inputName": "email",
-        "inputLabel": "Junte-se a mais de  2,7 milhões de lojistas",
-        "inputPlaceHolder": "Digite seu email aqui",
-        "submitText": "Fazer parte"
-      },
-      "socialLinks": [
-        {
-          "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
-            "alt": "linkein icon"
-          },
-          "href": "https://www.linkedin.com/company/lojaintegrada/"
-        },
-        {
-          "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
-            "alt": "instgram icon"
-          },
-          "href": "https://www.instagram.com/lojaintegrada/"
-        },
-        {
-          "icon": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
-          },
-          "href": "https://www.tiktok.com/@lojaintegrada"
-        }
-      ],
-      "color4": "#d4d4d4",
-      "bottomLinks": [
-        {
-          "href": "https://comunidade.lojaintegrada.com.br/",
-          "text": "Conheça nossa comunidade"
-        },
-        {
-          "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
-          "text": "Central de ajuda"
-        },
-        {
-          "text": "Fale com especialista",
-          "href": "/talkToSpecialist"
-        },
-        {
-          "href": "https://lojaintegrada.com.br/termos-de-uso",
-          "text": "Termos de uso"
-        },
-        {
-          "href": "https://lojaintegrada.com.br/privacidade",
-          "text": "Privacidade"
-        },
-        {
-          "href": "https://app.lojaintegrada.com.br/public/assinar",
-          "text": "Comece pelo grátis"
-        }
-      ],
-      "bottomBackground": {
-        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
-      },
-      "id": "ecossistemaconteudo"
+      ]
     },
     {
       "__resolveType": "site/sections/TalkToSpecialistModal.tsx"

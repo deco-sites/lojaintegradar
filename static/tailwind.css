@@ -3760,9 +3760,6 @@ details.collapse summary::-webkit-details-marker {
 .h-\[400px\] {
   height: 400px;
 }
-.h-\[47px\] {
-  height: 47px;
-}
 .h-\[48px\] {
   height: 48px;
 }
@@ -3771,9 +3768,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[62vw\] {
   height: 62vw;
-}
-.h-\[63px\] {
-  height: 63px;
 }
 .h-\[72px\] {
   height: 72px;
@@ -7105,6 +7099,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:gap-16 {
     gap: 4rem;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
   }
 
   .lg\:gap-24 {

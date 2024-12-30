@@ -102,7 +102,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                 // style={{ objectPosition: "top right" }}
                 alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={"eager"} preload={true}
             />}
-            {useBackground == "video" && backgroundVideo && <video width="1280" height="720" autoPlay playsInline muted loading="lazy" loop class="absolute w-full h-full object-cover top-0 left-0 -z-50 ">
+            {useBackground == "video" && backgroundVideo && <video width="1280" height="720" autoPlay playsInline muted loading="eager" loop class="absolute w-full h-full object-cover top-0 left-0 -z-50 ">
                     <source src={backgroundVideo} type="video/mp4"/>
                 </video>}
             <div class={`lg:pb-20 flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-7 md:px-0 border-base`}>
@@ -144,7 +144,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
             <div class={`md:flex-grow md:flex flex-col justify-end items-end ${(use == "image" || use == "video") && "lg:w-1/2"}`}>
                 {htmlContent && <div class="px-7 flex justify-center w-[98vw] md:w-auto" dangerouslySetInnerHTML={{ __html: htmlContent }}/>}
                 {use == "image" && image?.src && <Image width={image.width || 697} height={image.height || 592} src={image.src} alt={image.src || ""} class=" object-contain hidden md:block"/>}
-                {use == "video" && video && <video width="697" height="592" autoPlay playsInline muted loading="eager" loop class="w-full xl:w-auto max-w-[809px] object-contain hidden md:block">
+                {use == "video" && video && <video width="697" height="592" autoPlay playsInline muted loading="lazy" loop class="w-full xl:w-auto max-w-[809px] object-contain hidden md:block">
                     <source src={video} type="video/mp4"/>
                 </video>}
             </div>

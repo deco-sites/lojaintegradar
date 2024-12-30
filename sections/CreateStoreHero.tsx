@@ -3,6 +3,7 @@ import Image from "apps/website/components/Image.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import CreateStoreForm from "../islands/CreateStoreForm.tsx";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
 /** @title {{text}} {{underlineText}} */
 export interface CTA {
@@ -18,6 +19,21 @@ export interface CTA {
   ctaStyle: "button" | "link";
   showIcon?: boolean;
   width?: string;
+}
+
+export interface CreateStoreWithPlanCTA {
+  planId: string;
+  text?: string;
+  underlineText?: string;
+  /** @format color-input */
+  backgroundColor?: string;
+  /** @format color-input */
+  textColor?: string;
+  /** @format color-input */
+  borderColor?: string;
+  ctaStyle?: "button" | "link";
+  showIcon?: boolean;
+  order?: number;
 }
 
 export interface IImage {
@@ -44,6 +60,7 @@ export interface createStoreFormLink {
 }
 
 export interface CreateStoreFormProps {
+  showForm?: boolean;
   planoId?: string;
   periodo?: string;
   nameCaption?: string;
@@ -83,6 +100,7 @@ export interface Props {
   id?: string;
   title?: Title;
   caption?: RichText;
+  createStoreCta?: CreateStoreWithPlanCTA;
   cta?: CTA[];
   ctaPlacement?: 'left' | 'center' | 'right';
   backgroundMedia?: BackgroundMedia;
@@ -94,7 +112,7 @@ export interface Props {
   createStoreFormProps?: CreateStoreFormProps;
 }
 
-export default function CreateStoreHero({ id, title, caption, cta = [], ctaPlacement, backgroundMedia, createStoreFormProps, paddingTop, paddingBottom, paddingLeft, paddingRight, sectionMinHeight }: Props) {
+export default function CreateStoreHero({ id, title, caption, createStoreCta, cta = [], ctaPlacement, backgroundMedia, createStoreFormProps, paddingTop, paddingBottom, paddingLeft, paddingRight, sectionMinHeight }: Props) {
   const placement = {
     "left": "justify-start",
     "center": "justify-center",
@@ -102,7 +120,7 @@ export default function CreateStoreHero({ id, title, caption, cta = [], ctaPlace
   }
   return <div id={id} class="relative pt-24 px-7 lg:pt-44 pb-16 lg:pb-20" style={{ paddingTop, paddingLeft, paddingRight, paddingBottom, minHeight: sectionMinHeight }}>
     <div class="max-w-[1250px] mx-auto flex flex-col items-center lg:flex-row justify-between">
-      <div class="max-w-[620px]">
+      <div class={`w-full ${createStoreFormProps?.showForm && 'max-w-[620px]'}`}>
         {title?.text && <AnimateOnShow
           animation="animate-fade-up50"
           divClass="text-2xl lg:text-[72px] leading-[120%] mb-4"
@@ -117,20 +135,31 @@ export default function CreateStoreHero({ id, title, caption, cta = [], ctaPlace
         <AnimateOnShow
           divClass={`relative flex flex-col rounded-xl lg:rounded-3xl`}
           animation="animate-fade-up50">
-          {cta.length > 0 && <div class={`mb-8 flex gap-4 flex-wrap ${placement[ctaPlacement || "left"]}`}>
-            {cta.map((button) => {
+          <div class={`mb-8 flex gap-4 flex-wrap ${placement[ctaPlacement || "left"]}`}>
+            {createStoreCta?.text && <CreateStoreCta
+              period="anual"
+              text={createStoreCta.text}
+              planId={createStoreCta.planId}
+              showIcon={createStoreCta.showIcon}
+              underlineText={createStoreCta.underlineText}
+              ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`}
+              style={createStoreCta.ctaStyle != "link"
+                ? { background: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order }
+                : { color: createStoreCta.textColor, order: createStoreCta.order }}
+            />}
+            {cta.map((button, index) => {
               if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                 showIcon={button.showIcon}
                 underlineText={button.underlineText}
                 text={button.text}
                 ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto cursor-pointer`}
-                style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content" } : { color: button.textColor, width: button.width || "fit-content" }}
+                style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content", order: index + 1 } : { color: button.textColor, width: button.width || "fit-content", order: index + 1 }}
               />
               return <a
                 href={button?.href ?? "#"}
                 target={button?.href.includes("http") ? "_blank" : ""}
                 class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto`}
-                style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content" } : { color: button.textColor, width: button.width || "fit-content" }}
+                style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content", order: index + 1 } : { color: button.textColor, width: button.width || "fit-content", order: index + 1 }}
               >
                 {button?.text}
                 {button.underlineText && <span class="underline">{button.underlineText}</span>}
@@ -139,10 +168,10 @@ export default function CreateStoreHero({ id, title, caption, cta = [], ctaPlace
                 </svg>}
               </a>
             })}
-          </div>}
+          </div>
         </AnimateOnShow>
       </div>
-      <CreateStoreForm {...createStoreFormProps} />
+      {createStoreFormProps?.showForm && <CreateStoreForm {...createStoreFormProps} />}
     </div>
     {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
       src={backgroundMedia.image.src}

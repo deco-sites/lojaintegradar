@@ -421,10 +421,10 @@
                   "value": {
                     "__resolveType": "site/sections/CreateStoreHero.tsx",
                     "title": {
-                      "text": "<p><span style=\"color: rgb(250, 250, 245)\">Transforme seu negócio com a  </span><em><span style=\"color: rgb(113, 219, 212)\">plataforma  </span></em><span style=\"color: rgb(250, 250, 245)\">que trabalha por você</span></p>",
+                      "text": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Transforme seu negócio com a </span><em><span style=\"color: rgb(113, 219, 212)\">plataforma </span></em><span style=\"color: rgb(250, 250, 245)\">que trabalha por você</span></p>",
                       "font": "Instrument serif"
                     },
-                    "caption": "<p><span style=\"color: rgb(250, 250, 245)\">Com machine learning, nossa tecnologia traduz o comportamento dos clientes em soluções automatizadas que </span><span style=\"color: rgb(113, 219, 212)\">impulsionam seus resultados.</span></p>",
+                    "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Com machine learning, nossa tecnologia traduz o comportamento dos clientes em soluções automatizadas que </span><span style=\"color: rgb(113, 219, 212)\">impulsionam seus resultados.</span></p>",
                     "cta": [],
                     "paddingTop": "170px",
                     "backgroundMedia": {
@@ -432,7 +432,7 @@
                       "use": "video"
                     },
                     "paddingBottom": "85px",
-                    "ctaPlacement": "left",
+                    "ctaPlacement": "center",
                     "createStoreFormProps": {
                       "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
                       "planoId": "172",
@@ -463,10 +463,18 @@
                       "linksColor": "",
                       "buttonBackgroundColor": "#003037",
                       "buttonTextColor": "#ffffff",
-                      "inputsBorderColor": ""
+                      "inputsBorderColor": "",
+                      "showForm": false
                     },
                     "paddingRight": "36px",
-                    "paddingLeft": "36px"
+                    "paddingLeft": "36px",
+                    "createStoreCta": {
+                      "planId": "172",
+                      "text": "Abrir loja",
+                      "backgroundColor": "#fafaf5",
+                      "textColor": "#003037",
+                      "borderColor": "#fafaf5"
+                    }
                   },
                   "rule": {
                     "__resolveType": "website/matchers/always.ts"

@@ -160,7 +160,7 @@ export default function Footer2({ id, cards = [], logo, logoCaption, socialLinks
 
                 <div class="mt-20 mx-auto pt-[62px] border-t border-t-base-200 max-w-[1240px] flex flex-col lg:flex-row flex-wrap gap-y-5 gap-7" style={{ borderColor: lineColor, color: bottomLinksColor }}>
                     {bottomLinks?.map((link) => {
-                        if (link.href == '/talkToSpecialist') return <TalkToSpecialistCta text={link.text} ctaClass="text-sm font-normal leading-normal cursor-pointer text-center mx-auto" divClass="text-center" />
+                        if (link.href == '/talkToSpecialist') return <TalkToSpecialistCta text={link.text} ctaClass="text-sm font-normal leading-normal cursor-pointer text-center" divClass="text-center" />
                         return <a
                             href={link.href}
                             target={link.href.includes("http") ? "_blank" : "_self"}

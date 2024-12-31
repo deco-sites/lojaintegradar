@@ -77,6 +77,7 @@ export interface Props {
     backgroundImage?: IImage;
     backgroundVideo?: VideoWidget;
     useBackground?: "image" | "video";
+    lcp?: boolean;
     hubspotForm?: HubspotForm;
     /** @format color-input */
     hubspotFormButtonColor?: string;
@@ -91,7 +92,7 @@ export interface Props {
     modal?: Modal;
     sectionMinHeight?: string;
 }
-export default function MainHero({ id, title, caption = "", inputLabel, hubspotFormButtonWidth, backgroundVideo, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
+export default function MainHero({ id, title, caption = "", inputLabel, hubspotFormButtonWidth, backgroundVideo, lcp, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
     const randomId = useId();
     const modalId = randomId + "modal";
     const hubspostFormId = randomId + "hubspotForm";
@@ -100,9 +101,9 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
             {useBackground == "image" && backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} 
                 class="w-full h-full absolute object-cover top-0 left-0 -z-50 object-right-top" 
                 // style={{ objectPosition: "top right" }}
-                alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={"eager"} preload={true}
+                alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={lcp ? "eager" : "lazy"} preload={true}
             />}
-            {useBackground == "video" && backgroundVideo && <video width="1280" height="720" autoPlay playsInline muted loading="eager" loop class="absolute w-full h-full object-cover top-0 left-0 -z-50 ">
+            {useBackground == "video" && backgroundVideo && <video width="1280" height="720" autoPlay playsInline muted loading={lcp ? "eager" : "lazy"} loop class="absolute w-full h-full object-cover top-0 left-0 -z-50 ">
                     <source src={backgroundVideo} type="video/mp4"/>
                 </video>}
             <div class={`lg:pb-20 flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-7 md:px-0 border-base`}>

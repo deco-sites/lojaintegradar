@@ -6,7 +6,7 @@ const openTalkToSpecialist = () => {
 
     const container = document.getElementById("talkToSpecialistFormContainer") as HTMLElement;
         
-        if (container) {
+        if (container.children.length == 0) {
             const script1 = document.createElement('script');
             script1.setAttribute('charset', 'utf-8');
             script1.setAttribute('type', 'text/javascript');

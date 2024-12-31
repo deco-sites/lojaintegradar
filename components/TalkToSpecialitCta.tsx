@@ -3,6 +3,28 @@ import { useScript } from "@deco/deco/hooks";
 const openTalkToSpecialist = () => {
     const form = document.getElementById("talkToSpecialistPopUpForm") as HTMLElement;
     form.classList.remove("hidden");
+
+    const container = document.getElementById("talkToSpecialistFormContainer") as HTMLElement;
+        
+        if (container.children.length == 0) {
+            const script1 = document.createElement('script');
+            script1.setAttribute('charset', 'utf-8');
+            script1.setAttribute('type', 'text/javascript');
+            script1.setAttribute('src', '//js.hsforms.net/forms/embed/v2.js');
+            
+            const script2 = document.createElement('script');
+            script2.textContent = `
+                hbspt.forms.create({
+                    region: "na1",
+                    portalId: "7112881",
+                    formId: "06d3df52-7c37-4749-aa27-5c7744917d89"
+                });
+            `;
+            
+            container.appendChild(script1);
+            container.appendChild(script2);
+            console.log("appended")
+        }
 };
 export interface Props {
     text?: string;

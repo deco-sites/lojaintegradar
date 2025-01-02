@@ -6,7 +6,7 @@ function TimeModal() {
     return (
         <div id="TimeModal" class="hidden w-screen heroCard fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50">
             <style dangerouslySetInnerHTML={{ __html: HEROCSS }}></style>
-            <div class="bg-white p-6 rounded-lg relative w-full max-w-[501px] mx-3 md:mx-0">
+            <div class="bg-white p-6 rounded-lg relative w-full max-w-[501px] mx-3 md:mx-0 formContainer">
                 <CloseButtonModal />
                 <script
                     charset="utf-8"

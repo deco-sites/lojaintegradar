@@ -21,6 +21,21 @@ function FlexibleButton({ text = "", type, planId, link, changeType }: ButtonPro
             if (getTalkModal) {
                 getTalkModal.classList.add("flex");
                 getTalkModal.classList.remove("hidden");
+
+                const formContainer = getTalkModal.querySelector(".formContainer");
+
+                const script1 = document.createElement('script');
+                script1.setAttribute('charset', 'utf-8');
+                script1.setAttribute('type', 'text/javascript');
+                script1.setAttribute('src', '//js.hsforms.net/forms/embed/v2.js');
+
+                const script2 = document.createElement('script');
+                script1.setAttribute('charset', 'utf-8');
+                script1.setAttribute('type', 'text/javascript');
+                script1.setAttribute('src', '/heroCardForm.js');
+
+                formContainer?.appendChild(script1);
+                formContainer?.appendChild(script2);
             }
         } else if (link) {
             window.location.href = link;

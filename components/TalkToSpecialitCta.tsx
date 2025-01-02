@@ -23,7 +23,6 @@ const openTalkToSpecialist = () => {
             
             container.appendChild(script1);
             container.appendChild(script2);
-            console.log("appended")
         }
 };
 export interface Props {

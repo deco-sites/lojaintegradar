@@ -1,5 +1,5 @@
 import { HEROCSS } from "site/static/herocss.ts";
-import CloseButtonModal from "site/islands/CloseButtonModal.tsx";
+import CloseButtonModal from "./CloseButtonModal.tsx";
 
 function TimeModal() {
 

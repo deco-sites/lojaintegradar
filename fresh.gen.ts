@@ -4,7 +4,6 @@
 
 import * as $_app from "./routes/_app.tsx";
 import * as $_middleware from "./routes/_middleware.ts";
-import * as $CloseButtonModal from "./islands/CloseButtonModal.tsx";
 import * as $CreateStoreForm from "./islands/CreateStoreForm.tsx";
 import * as $CreateStoreModal from "./islands/CreateStoreModal.tsx";
 import * as $FlexibleButtons from "./islands/FlexibleButtons.tsx";
@@ -22,7 +21,6 @@ const manifest = {
     "./routes/_middleware.ts": $_middleware,
   },
   islands: {
-    "./islands/CloseButtonModal.tsx": $CloseButtonModal,
     "./islands/CreateStoreForm.tsx": $CreateStoreForm,
     "./islands/CreateStoreModal.tsx": $CreateStoreModal,
     "./islands/FlexibleButtons.tsx": $FlexibleButtons,

@@ -179,9 +179,10 @@ export default function CreateStoreHero({ id, title, caption, createStoreCta, ct
       width={backgroundMedia.image.width || 1440}
       height={backgroundMedia.image.height || 960}
       loading={"eager"}
+      preload={true}
       class="absolute -z-50 top-0 left-0 h-full w-full object-cover"
     />}
-    {backgroundMedia?.use == "video" && backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading="eager" loop
+    {backgroundMedia?.use == "video" && backgroundMedia.video && <video width={1280} height={720} preload={"true"} autoPlay playsInline muted loading="eager" loop
       class="object-cover absolute -z-50 top-0 left-0 h-full w-full">
       <source src={backgroundMedia.video} type="video/mp4" />
     </video>}

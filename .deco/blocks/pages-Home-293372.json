@@ -971,22 +971,7 @@
                   "videoDesktop": "https://data.decoassets.com/lojaintegradar/cbb6ca8f-fb83-49d4-b37e-f4db7847381c/reengaje-clientes-(903kb).mp4"
                 },
                 "useTab": "video",
-                "buttons": [
-                  {
-                    "type": "one",
-                    "text": "teste 1",
-                    "changeType": false
-                  },
-                  {
-                    "type": "two",
-                    "text": "teste 2"
-                  },
-                  {
-                    "type": "link",
-                    "text": "test 3",
-                    "link": "https://google.com"
-                  }
-                ]
+                "buttons": []
               },
               {
                 "textContent": {
@@ -1086,10 +1071,6 @@
                 "changeType": true,
                 "link": "#plans",
                 "text": "Ver planos"
-              },
-              {
-                "type": "ctaForm",
-                "text": "teste"
               }
             ],
             "bottomSection": {

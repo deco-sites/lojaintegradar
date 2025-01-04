@@ -173,7 +173,54 @@
       "distanceBetweenButtons": 20
     },
     {
-      "__resolveType": "Hero-institucional"
+      "__resolveType": "site/sections/CreateStoreHero.tsx",
+      "title": {
+        "text": "<p><span style=\"color: rgb(250, 250, 245)\">A plataforma </span><span style=\"color: rgb(113, 219, 212)\">inteligente </span><span style=\"color: rgb(250, 250, 245)\">que acelera sua operação para vender mais</span></p>",
+        "font": "Instrument serif"
+      },
+      "caption": "<p><span style=\"color: rgb(250, 250, 245)\">Nossa tecnologia traduz o comportamento do</span></p><p><span style=\"color: rgb(250, 250, 245)\">seu mercado e clientes em técnicas de machine</span></p><p><span style=\"color: rgb(250, 250, 245)\">learning que automatiza e impulsiona suas</span></p><p><span style=\"color: rgb(250, 250, 245)\">vendas no </span><span style=\"color: rgb(113, 219, 212)\">e-commerce</span><span style=\"color: rgb(250, 250, 245)\">.</span></p>",
+      "cta": [],
+      "backgroundMedia": {
+        "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
+        "use": "video"
+      },
+      "ctaPlacement": "left",
+      "createStoreFormProps": {
+        "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
+        "planoId": "172",
+        "periodo": "anual",
+        "nameCaption": "Nome",
+        "emailCaption": "E-mail",
+        "passwordCaption": "Senha",
+        "confirmPasswordCaption": "Confirme sua senha",
+        "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
+        "namePlaceholder": "Seu nome",
+        "emailPlaceholder": "Insira seu e-mail",
+        "passwordPlaceholder": "Insira sua senha",
+        "confirmPasswordPlaceholder": "Confirme sua senha",
+        "inputsLabelColor": "#ffffff",
+        "inputsBellowTextColor": "#5F6E82",
+        "inputsTextColor": "#000000",
+        "agreeText1": "Ao clicar, você concorda com os ",
+        "agreeLink1": {
+          "text": " Termos de Uso ",
+          "href": "#"
+        },
+        "agreeText2": "e a ",
+        "agreeLink2": {
+          "text": "Política de Privacidade",
+          "href": "#"
+        },
+        "agreeText3": ".",
+        "linksColor": "",
+        "buttonBackgroundColor": "#003037",
+        "buttonTextColor": "#ffffff",
+        "inputsBorderColor": "",
+        "showForm": true
+      },
+      "createStoreCta": {
+        "ctaStyle": "button"
+      }
     },
     {
       "__resolveType": "site/sections/CardsHero.tsx",

@@ -3586,7 +3586,6 @@
                     }
                   ],
                   "color3": "#EBEBEB",
-                  "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
                   "logo": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
                   },
@@ -3651,7 +3650,8 @@
                   },
                   "id": "ecossistemaconteudo",
                   "useBackground": "video",
-                  "backgroundHeight": "400px"
+                  "backgroundHeight": "400px",
+                  "showLogo": true
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

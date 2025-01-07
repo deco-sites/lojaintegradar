@@ -374,7 +374,7 @@
                     }
                   },
                   "paddingBottom": "85px",
-                  "ctaPlacement": "left",
+                  "ctaPlacement": "center",
                   "createStoreFormProps": {
                     "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
                     "planoId": "172",
@@ -405,10 +405,17 @@
                     "linksColor": "",
                     "buttonBackgroundColor": "#003037",
                     "buttonTextColor": "#ffffff",
-                    "inputsBorderColor": ""
+                    "inputsBorderColor": "",
+                    "showForm": false
                   },
                   "paddingRight": "36px",
-                  "paddingLeft": "36px"
+                  "paddingLeft": "36px",
+                  "createStoreCta": {
+                    "text": "Abrir loja",
+                    "backgroundColor": "#fafaf5",
+                    "textColor": "#003037",
+                    "borderColor": "#fafaf5"
+                  }
                 },
                 "rule": {
                   "__resolveType": "website/matchers/device.ts",
@@ -419,10 +426,10 @@
                 "value": {
                   "__resolveType": "site/sections/CreateStoreHero.tsx",
                   "title": {
-                    "text": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Transforme seu negócio com a</span><br><em><span style=\"color: rgb(113, 219, 212)\">plataforma  </span></em><span style=\"color: rgb(250, 250, 245)\">que trabalha por você</span></p>",
+                    "text": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Transforme seu negócio com a</span><br><span style=\"color: rgb(250, 250, 245)\"> </span><em><span style=\"color: rgb(113, 219, 212)\">plataforma </span></em><span style=\"color: rgb(250, 250, 245)\">que trabalha por você</span></p>",
                     "font": "Instrument serif"
                   },
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Com machine learning, nossa tecnologia traduz o comportamento dos clientes</span><br><span style=\"color: rgb(250, 250, 245)\"> em soluções automatizadas que </span><span style=\"color: rgb(113, 219, 212)\">impulsionam seus resultados.</span></p>",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Com machine learning, nossa tecnologia traduz o comportamento dos clientes </span><br><span style=\"color: rgb(250, 250, 245)\">em soluções automatizadas que </span><span style=\"color: rgb(113, 219, 212)\">impulsionam seus resultados.</span></p>",
                   "cta": [],
                   "paddingTop": "170px",
                   "backgroundMedia": {
@@ -1527,7 +1534,7 @@
               {
                 "value": {
                   "__resolveType": "site/sections/Carousel.tsx",
-                  "title": "<p><span style=\"color: rgb(0, 48, 55); font-size:32pt;  font-weight:300; \">Nós queremos é mais que você cresça!</p></span><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:18px; font-weight:300; font-family: 'Inter'; line-height:0.5; \">Uma plataforma que se adapta às suas necessidades, seja qual for o tamanho do<br> seu negócio.</p>",
+                  "title": "<p><span style=\"color: rgb(0, 48, 55); font-size:32pt;  font-weight:300; \">Nós queremos é mais que você cresça!</span></p><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:18px; font-weight:300; font-family: 'Inter'; \">Uma plataforma que se adapta às suas necessidades, seja qual for o tamanho do<br> seu negócio.</p>",
                   "slides": [
                     {
                       "title": "Para quem já vende e quer alcançar mais",
@@ -1651,7 +1658,7 @@
               {
                 "value": {
                   "__resolveType": "site/sections/Carousel.tsx",
-                  "title": "<p><span style=\"color: rgb(0, 48, 55); font-size:70px;  font-weight:300;\">Nós queremos é mais que você cresça!</p></span><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:24px; font-weight:300; font-family: 'Inter'; line-height:0.5; \">Uma plataforma que se adapta às suas necessidades, seja qual for <br>o tamanho do seu negócio.</p>",
+                  "title": "<p><span style=\"color: rgb(0, 48, 55); font-size:70px;  font-weight:300; \">Nós queremos é mais que você cresça!</span><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:24px; font-weight:300; font-family: 'Inter'; \">Uma plataforma que se adapta às suas necessidades, seja qual for <br>o tamanho do seu negócio.</p>",
                   "slides": [
                     {
                       "title": "Para quem já vende e quer alcançar mais",
@@ -1775,12 +1782,12 @@
           {
             "__resolveType": "site/sections/HeroWithTime.tsx",
             "title": {
-              "desktop": "<p style=\"text-align: center; line-height: 1.2; font-family: 'Instrument serif'; \"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif'; \">Já vende em outra plataforma?</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Motivos não faltam para migrar.</span></p>",
-              "mobile": "<p style=\"text-align: center; line-height: 1.2; font-family: 'Instrument serif'; \"><span style=\"color: rgb(113, 219, 212); font-size: 24px; font-family: 'Instrument serif'; text-align:center;\">Já vende em outra plataforma?</span><br><span style=\"color: #FFFFFF; font-size: 32pt; font-family: 'Instrument serif'; text-align:center;\">Motivos não faltam <br>para migrar.</p>"
+              "desktop": "<p style=\"text-align: center; font-family: Instrument Serif;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: Instrument Serif; \">Já vende em outra plataforma?</span></em><br></p>",
+              "mobile": "<p style=\"text-align: center; font-family: Instrument Serif;\"><span style=\"color: rgb(113, 219, 212); font-size: 24px; font-family: Instrument Serif;\">Já vende em outra plataforma?</span><br></p>"
             },
             "subTitle": {
-              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18px; font-family: 'Inter'; text-align:center; font-weight: 100; \">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma segura, estável e descomplicada.</span></p>",
-              "desktop": "<p style=\"text-align: center; line-height:1.2; \"><span style=\"color: rgb(255, 255, 255);  font-weight: 100; font-size: 24px; font-family: 'Inter';\">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma segura,<br>estável e descomplicada</span></p>"
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18px; font-family: 'Inter'; text-align:center; font-weight:100; \">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma segura, estável e descomplicada.</span></p>",
+              "desktop": "<p style=\"text-align: center; line-height:1.2; \"><span style=\"color: rgb(255, 255, 255); font-size: 24px; font-family: 'Inter'; font-weight:100;\">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma<br> segura,estável e descomplicada</span></p>"
             },
             "tabs": [
               {
@@ -2140,8 +2147,7 @@
                 "backgroundColor": "#FFFFFF",
                 "borderColor": "#ffffff",
                 "textColor": "#003037"
-              },
-              "paddingTop": "120"
+              }
             },
             "paddingBottom": "120",
             "tabsInterval": 30,
@@ -2153,7 +2159,7 @@
               {
                 "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
-                  "title": "<p style=\"font-family: 'Instrument Serif'; line-height: 1.2; \"><span>Planos que crescem com o seu negócio</span><br><p><span style=\"color: #5F6E82; font-size:18px; line-height:1; font-weight:300; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
+                  "title": "<p style=\"font-family: 'Instrument Serif'; line-height: 1.2; \"><span>Planos que crescem com o seu negócio</span><br><p style=\" line-height:0.5; \"><span style=\"color: #5F6E82; font-size:18px; line-height:1; font-weight:300; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
                   "slides": [
                     {
                       "title": "<p>Elite</p>",
@@ -2492,7 +2498,7 @@
                         "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)",
                         "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
                         "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
-                        "fontFamily": "Instrument Serif",
+                        "fontFamily": "Inter",
                         "onlyAnnual": true
                       },
                       "montlyFee": "<p><span style=\"color: #fafaf5; font-size: 24pt\">R$</span><span style=\"color: #fafaf5\">&nbsp;</span><strong><span style=\"color: #fafaf5; font-size: 36pt\">1999</span></strong><span style=\"color: #fafaf5\">&nbsp;</span><span style=\"color: #fafaf5; font-size: 14pt\">/mês</span></p>",
@@ -2547,7 +2553,7 @@
                       "cutedMontlyFee": "de R$ 1999 /mês",
                       "annualSaving": {
                         "text": "Economia de R$ 4.800/ano",
-                        "fontFamily": "inter",
+                        "fontFamily": "Inter",
                         "backgroundColor": "#02393F",
                         "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
                         "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)"
@@ -2706,7 +2712,7 @@
                         "href": "#"
                       },
                       "tag": {
-                        "fontFamily": "Instrument Serif",
+                        "fontFamily": "Inter",
                         "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
                         "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
                         "borderColor": "linear-gradient(90deg, #B699D9 0%, #512F79 100%)",
@@ -3067,7 +3073,7 @@
                       "titleFont": "Instrument Serif"
                     }
                   ],
-                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span><br><p style=\"text-align: center\"><span style=\"color: #5F6E82; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a</span><span style=\"color: #28C3C3; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \"> vender hoje mesmo</span></p>",
+                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span><br><p style=\"text-align: center; line-height:0.5;\"><span style=\"color: #5F6E82; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a</span><span style=\"color: #28C3C3; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \"> vender hoje mesmo</span></p>",
                   "caption": "+2,7 milhões de lojistas escolheram a Loja Integrada",
                   "annualLabel": "Anual",
                   "montlyLabel": "Mensal",
@@ -3388,7 +3394,7 @@
                       "titleFont": "Instrument Serif"
                     }
                   ],
-                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037;\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
+                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037;\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span></p><p style=\"text-align: center; line-height:0.5; \" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 24px; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
                   "caption": "<p></p>",
                   "annualLabel": "Anual",
                   "montlyLabel": "Mensal",
@@ -3651,7 +3657,7 @@
                   "id": "ecossistemaconteudo",
                   "useBackground": "video",
                   "backgroundHeight": "400px",
-                  "showLogo": true
+                  "logoCaption": "A plataforma que investe de verdade em Dados e Automação"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
@@ -5456,8 +5462,8 @@
               "mobile": "<p style=\"text-align: center; font-family: Instrument Serif;\"><span style=\"color: rgb(113, 219, 212); font-size: 24px; font-family: Instrument Serif;\">Já vende em outra plataforma?</span><br></p>"
             },
             "subTitle": {
-              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18px; font-family: 'Inter'; text-align:center; \">Aproveite os benefícios de uma plataforma segura, estável e descomplicada.</span></p>",
-              "desktop": "<p style=\"text-align: center; line-height:1.2; \"><span style=\"color: rgb(255, 255, 255); font-size: 24px; font-family: 'Inter';\">Aproveite os benefícios de uma plataforma segura,<br>estável e descomplicada</span></p>"
+              "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18px; font-family: 'Inter'; text-align:center; font-weight:100; \">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma segura, estável e descomplicada.</span></p>",
+              "desktop": "<p style=\"text-align: center; line-height:1.2; \"><span style=\"color: rgb(255, 255, 255); font-size: 24px; font-family: 'Inter'; font-weight:100;\">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma<br> segura,estável e descomplicada</span></p>"
             },
             "tabs": [
               {
@@ -5829,7 +5835,7 @@
               {
                 "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
-                  "title": "<p style=\"font-family: 'Instrument Serif'; line-height: 1.2; \"><span>Planos que crescem com o seu negócio</span><br><p><span style=\"color: #5F6E82; font-size:18px; line-height:1; font-weight:300; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
+                  "title": "<p style=\"font-family: 'Instrument Serif'; line-height: 1.2; \"><span>Planos que crescem com o seu negócio</span><br><p style=\" line-height:0.5; \"><span style=\"color: #5F6E82; font-size:18px; line-height:1; font-weight:300; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
                   "slides": [
                     {
                       "title": "<p>Elite</p>",
@@ -6743,7 +6749,7 @@
                       "titleFont": "Instrument Serif"
                     }
                   ],
-                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span><br><p style=\"text-align: center\"><span style=\"color: #5F6E82; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a</span><span style=\"color: #28C3C3; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \"> vender hoje mesmo</span></p>",
+                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span><br><p style=\"text-align: center; line-height:0.5;\"><span style=\"color: #5F6E82; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \">Escolha a oferta ideal para a sua loja e comece a</span><span style=\"color: #28C3C3; font-size:24px; line-height:1; font-weight:100; font-family: 'Inter'; \"> vender hoje mesmo</span></p>",
                   "caption": "+2,7 milhões de lojistas escolheram a Loja Integrada",
                   "annualLabel": "Anual",
                   "montlyLabel": "Mensal",
@@ -7064,7 +7070,7 @@
                       "titleFont": "Instrument Serif"
                     }
                   ],
-                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037;\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
+                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037;\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span></p><p style=\"text-align: center; line-height:0.5; \" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 24px; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
                   "caption": "<p></p>",
                   "annualLabel": "Anual",
                   "montlyLabel": "Mensal",

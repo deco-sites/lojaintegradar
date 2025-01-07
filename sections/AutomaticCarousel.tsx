@@ -44,7 +44,7 @@ export interface ITitle {
 
 export interface IBackgroundMedia {
   image?: IImage;
-  video?: VideoWidget;
+  videoContent?: VideoWidget;
   use?: "image" | "video";
 }
 
@@ -98,9 +98,9 @@ export default function AutomaticCarousel({ backgroundColor, title, caption, ite
               height={item.media?.image?.height || 729}
               class="absolute top-0 left-0 h-full w-full -z-50 object-cover"
             />}
-            {item.media?.use == "video" && item.media.video && <video width={942} height={729} autoPlay playsInline muted loading="lazy" loop
+            {item.media?.use == "video" && item.media.videoContent && <video width={942} height={729} autoPlay playsInline muted loading="lazy" loop
               class="object-cover absolute top-0 left-0 h-full w-full -z-50">
-              <source src={item.media.video} type="video/mp4" />
+              <source src={item.media.videoContent} type="video/mp4" />
             </video>}
             <div
               class={`w-full p-4 ${item.textBackgroundColorDegrade ? 'pt-[100px] lg:pt-[157px]' : 'lg:pt-11'} lg:px-14 lg:pb-11`}

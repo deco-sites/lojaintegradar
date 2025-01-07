@@ -1,7 +1,7 @@
-import { AnalyticsItem } from "apps/commerce/types.ts";
+// import { AnalyticsItem } from "apps/commerce/types.ts";
 import { JSX } from 'preact';
 import { useScript } from "@deco/deco/hooks";
-import { useSendEvent } from "site/sdk/useSendEvent.ts";
+// import { useSendEvent } from "site/sdk/useSendEvent.ts";
 
 const openCreateStore = (planId: string, period?: string, coupon?: string) => {
     const getModal = document.getElementById("createStoreModal");
@@ -26,13 +26,13 @@ export interface Props {
     icon?: 'arrow' | 'long arrow';
 }
 export default function CreateStoreCta({ ctaClass, key, text, style, underlineText, showIcon, planId, period, coupon, icon = 'arrow' }: Props) {
-    const addToWishlistEvent = useSendEvent({
-        on: "click",
-        event: {
-          name: "view_item",
-          params: { items: [{item_id: "teste", quantity: 1}] },
-        },
-      });
+    // const addToWishlistEvent = useSendEvent({
+    //     on: "click",
+    //     event: {
+    //       name: "view_item",
+    //       params: { items: [{item_id: "teste", quantity: 1}] },
+    //     },
+    //   });
      
 
     return <a 

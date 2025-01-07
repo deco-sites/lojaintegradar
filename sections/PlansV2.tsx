@@ -97,7 +97,7 @@ export interface IImage {
 }
 /** @title {{text}} */
 export interface BulletPointItem {
-    text: string;
+    text: RichText;
     toolTipText?: string;
     icon?: IImage;
     fontWeight?: number;
@@ -255,7 +255,7 @@ function SliderItem({ slide, id }: {
                                     class="object-contain" src={item.icon?.src || bulletPoints.bulletPointsIcon?.src || ""} 
                                     alt={item.icon?.alt || bulletPoints.bulletPointsIcon?.alt || "bullet points icon"}/>}
                                 <div class="flex w-full justify-between">
-                                    <p class="text-lg font-normal leading-none" style={{color: bulletPoints.itemsTextColor, fontWeight: item.fontWeight}}>{item.text}</p>
+                                    <div class="text-lg font-normal leading-none" style={{color: bulletPoints.itemsTextColor, fontWeight: item.fontWeight}} dangerouslySetInnerHTML={{__html: item.text}}/>
                                     {item.toolTipText && <div class={`tooltip tooltip-left h-4`} data-tip={item.toolTipText} style={`--tooltip-text-color: ${bulletPoints.tooltipTextColor}; --tooltip-color: ${bulletPoints.tooltipBackgroundColor};`}>
                                         <InfoIcon color={bulletPoints.itemsTextColor || "white"} />
                                     </div>}

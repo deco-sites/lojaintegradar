@@ -78,7 +78,8 @@
           }
         },
         "htmlContent": "",
-        "captionAbove": "<p style=\"font-size: 16px; line-height: 120%; font-weight: bold; text-align: center;\" data-mce-style=\"font-size: 16px; line-height: 120%; font-weight: bold; text-align: center;\"><span style=\"color: rgb(250, 250, 245); font-size: 10pt;\" data-mce-style=\"color: rgb(250, 250, 245); font-size: 10pt;\">O futuro do e-commerce é inteligente</span></p>"
+        "captionAbove": "<p style=\"font-size: 16px; line-height: 120%; font-weight: bold; text-align: center;\" data-mce-style=\"font-size: 16px; line-height: 120%; font-weight: bold; text-align: center;\"><span style=\"color: rgb(250, 250, 245); font-size: 10pt;\" data-mce-style=\"color: rgb(250, 250, 245); font-size: 10pt;\">O futuro do e-commerce é inteligente</span></p>",
+        "lcp": true
       },
       "rule": {
         "__resolveType": "website/matchers/device.ts",
@@ -157,7 +158,8 @@
           "bulletPointsIcon": {
             "alt": "check icon"
           }
-        }
+        },
+        "lcp": true
       },
       "rule": {
         "__resolveType": "website/matchers/always.ts"

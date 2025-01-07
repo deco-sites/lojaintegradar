@@ -4,6 +4,7 @@ import Icon from "site/components/ui/Icon.tsx";
 import type { Props } from "../../sections/HeroWithTime.tsx";
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 import HeroTimeButtons from "site/islands/HeroTimeButtons.tsx";
+import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
 
 function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], background, tabsInterval = 10 }: Props) {
     const rootId = tabs ? tabs[0].tabImage?.imageDesktop : "HeroWithTime";
@@ -39,7 +40,7 @@ function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], backgroun
     return (
         <>
             <div id={rootId} className="customContainer">
-                <div data-aos="zoom-in" className="flex flex-col gap-4 mb-[60px]">
+                <AnimateOnShow animation="animate-pop-up" divClass="flex flex-col gap-4 mb-[60px]">
 
                     {title?.desktop && (
                         <span
@@ -74,7 +75,7 @@ function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], backgroun
                             }}
                         ></span>
                     )}
-                </div>
+                </AnimateOnShow>
                 <div class="flex justify-between items-center">
                     <ul class="relative flex flex-col gap-6 justify-center">
                         {tabs?.map((tab, index) => (

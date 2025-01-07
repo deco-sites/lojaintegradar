@@ -1,5 +1,8 @@
+// import { AnalyticsItem } from "apps/commerce/types.ts";
 import { JSX } from 'preact';
 import { useScript } from "@deco/deco/hooks";
+// import { useSendEvent } from "site/sdk/useSendEvent.ts";
+
 const openCreateStore = (planId: string, period?: string, coupon?: string) => {
     const getModal = document.getElementById("createStoreModal");
     if (getModal) {
@@ -23,7 +26,21 @@ export interface Props {
     icon?: 'arrow' | 'long arrow';
 }
 export default function CreateStoreCta({ ctaClass, key, text, style, underlineText, showIcon, planId, period, coupon, icon = 'arrow' }: Props) {
-    return <a key={key} class={ctaClass} hx-on:click={useScript(openCreateStore, planId, period, coupon)} style={style}>
+    // const addToWishlistEvent = useSendEvent({
+    //     on: "click",
+    //     event: {
+    //       name: "view_item",
+    //       params: { items: [{item_id: "teste", quantity: 1}] },
+    //     },
+    //   });
+     
+
+    return <a 
+        key={key} 
+        class={ctaClass} 
+        hx-on:click={useScript(openCreateStore, planId, period, coupon)}
+
+        style={style}>
             {text}
             {underlineText && <span class="underline">{underlineText}</span>}
             {showIcon && icon == "arrow" && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">

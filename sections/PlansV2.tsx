@@ -97,7 +97,7 @@ export interface IImage {
 }
 /** @title {{text}} */
 export interface BulletPointItem {
-    text: string;
+    text: RichText;
     toolTipText?: string;
     icon?: IImage;
     fontWeight?: number;
@@ -146,7 +146,7 @@ export interface CreateStoreWithPlanCTA {
 }
 
 export interface Tag {
-    text?: string;
+    text?: RichText;
     fontFamily?: string;
     icon?: IImage;
     /** @format color-input */
@@ -238,10 +238,10 @@ function SliderItem({ slide, id }: {
                         <div class="h-9">
                             {tag?.text && <div class={`inline-block rounded-[5px] overflow-hidden p-[1px] ${tag.onlyAnnual && 'annualTag'}`} style={{background: tag.borderColor}}>
                                 <div class="inline-block rounded-[5px]" style={{background: tag.backgroundColor}}>
-                                    <p class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `} style={{background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent', fontFamily: tag.fontFamily}}>
+                                    <div class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `} style={{background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent', fontFamily: tag.fontFamily}}>
                                         {tag?.icon?.src && <Image width={tag.icon.width || 20} height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.alt || "tag icon"} class="h-5 w-5 object-contain"/>}
-                                        {tag.text}
-                                    </p>
+                                        <div dangerouslySetInnerHTML={{__html: tag.text}}/>
+                                    </div>
                                 </div>
                             </div>}
                         </div>
@@ -255,7 +255,7 @@ function SliderItem({ slide, id }: {
                                     class="object-contain" src={item.icon?.src || bulletPoints.bulletPointsIcon?.src || ""} 
                                     alt={item.icon?.alt || bulletPoints.bulletPointsIcon?.alt || "bullet points icon"}/>}
                                 <div class="flex w-full justify-between">
-                                    <p class="text-lg font-normal leading-none" style={{color: bulletPoints.itemsTextColor, fontWeight: item.fontWeight}}>{item.text}</p>
+                                    <div class="text-lg font-normal leading-none" style={{color: bulletPoints.itemsTextColor, fontWeight: item.fontWeight}} dangerouslySetInnerHTML={{__html: item.text}}/>
                                     {item.toolTipText && <div class={`tooltip tooltip-left h-4`} data-tip={item.toolTipText} style={`--tooltip-text-color: ${bulletPoints.tooltipTextColor}; --tooltip-color: ${bulletPoints.tooltipBackgroundColor};`}>
                                         <InfoIcon color={bulletPoints.itemsTextColor || "white"} />
                                     </div>}
@@ -274,10 +274,10 @@ function SliderItem({ slide, id }: {
                             <div class="leading-tight" dangerouslySetInnerHTML={{ __html: annualMontlyFee || "" }}/>
                             {annualSaving?.text && <div class="inline-block rounded-[5px] overflow-hidden p-[1px]" style={{background: annualSaving.borderColor}}>
                                 <div class="inline-block rounded-[5px]" style={{background: annualSaving.backgroundColor}}>
-                                    <p class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `} style={{background: annualSaving.textColor, backgroundClip: "text", color: annualSaving.textColor && 'transparent', fontFamily: annualSaving.fontFamily}}>
+                                    <div class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `} style={{background: annualSaving.textColor, backgroundClip: "text", color: annualSaving.textColor && 'transparent', fontFamily: annualSaving.fontFamily}}>
                                         {annualSaving?.icon?.src && <Image width={annualSaving.icon.width || 20} height={annualSaving.icon.height || 20} src={annualSaving.icon.src} alt={annualSaving.icon.alt || "annualSaving icon"} class="h-5 w-5 object-contain"/>}
-                                        {annualSaving.text}
-                                    </p>
+                                        <div dangerouslySetInnerHTML={{__html: annualSaving.text}} />
+                                    </div>
                                 </div>
                             </div>}   
                         </div>

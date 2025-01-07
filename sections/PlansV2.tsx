@@ -274,10 +274,10 @@ function SliderItem({ slide, id }: {
                             <div class="leading-tight" dangerouslySetInnerHTML={{ __html: annualMontlyFee || "" }}/>
                             {annualSaving?.text && <div class="inline-block rounded-[5px] overflow-hidden p-[1px]" style={{background: annualSaving.borderColor}}>
                                 <div class="inline-block rounded-[5px]" style={{background: annualSaving.backgroundColor}}>
-                                    <p class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `} style={{background: annualSaving.textColor, backgroundClip: "text", color: annualSaving.textColor && 'transparent', fontFamily: annualSaving.fontFamily}}>
+                                    <div class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `} style={{background: annualSaving.textColor, backgroundClip: "text", color: annualSaving.textColor && 'transparent', fontFamily: annualSaving.fontFamily}}>
                                         {annualSaving?.icon?.src && <Image width={annualSaving.icon.width || 20} height={annualSaving.icon.height || 20} src={annualSaving.icon.src} alt={annualSaving.icon.alt || "annualSaving icon"} class="h-5 w-5 object-contain"/>}
-                                        {annualSaving.text}
-                                    </p>
+                                        <div dangerouslySetInnerHTML={{__html: annualSaving.text}} />
+                                    </div>
                                 </div>
                             </div>}   
                         </div>

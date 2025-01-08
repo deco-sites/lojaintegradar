@@ -367,8 +367,7 @@
                   "cta": [],
                   "paddingTop": "170px",
                   "backgroundMedia": {
-                    "video": "https://data.decoassets.com/lojaintegradar/4c35fa09-9008-4582-8321-466314b4d9b5/bg-site-(1mb).mp4",
-                    "use": "video",
+                    "use": "image",
                     "image": {
                       "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/20b60aec-1e72-4842-aebe-9c8753662523/Group-21462605-(3).png"
                     }
@@ -405,16 +404,16 @@
                     "linksColor": "",
                     "buttonBackgroundColor": "#003037",
                     "buttonTextColor": "#ffffff",
-                    "inputsBorderColor": "",
-                    "showForm": false
+                    "inputsBorderColor": ""
                   },
                   "paddingRight": "36px",
                   "paddingLeft": "36px",
                   "createStoreCta": {
-                    "text": "Abrir loja",
-                    "backgroundColor": "#fafaf5",
+                    "planId": "172",
+                    "text": "Criar Loja",
                     "textColor": "#003037",
-                    "borderColor": "#fafaf5"
+                    "backgroundColor": "#FAFAF5",
+                    "borderColor": "#FAFAF5"
                   }
                 },
                 "rule": {
@@ -426,10 +425,10 @@
                 "value": {
                   "__resolveType": "site/sections/CreateStoreHero.tsx",
                   "title": {
-                    "text": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Transforme seu negócio com a</span><br><span style=\"color: rgb(250, 250, 245)\"> </span><em><span style=\"color: rgb(113, 219, 212)\">plataforma </span></em><span style=\"color: rgb(250, 250, 245)\">que trabalha por você</span></p>",
+                    "text": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Transforme seu negócio com a </span><br><em><span style=\"color: rgb(113, 219, 212)\">plataforma </span></em><span style=\"color: rgb(250, 250, 245)\">que trabalha por você</span></p>",
                     "font": "Instrument serif"
                   },
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Com machine learning, nossa tecnologia traduz o comportamento dos clientes </span><br><span style=\"color: rgb(250, 250, 245)\">em soluções automatizadas que </span><span style=\"color: rgb(113, 219, 212)\">impulsionam seus resultados.</span></p>",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Com machine learning, nossa tecnologia traduz o comportamento dos clientes</span><br><span style=\"color: rgb(250, 250, 245)\">em soluções automatizadas que </span><span style=\"color: rgb(113, 219, 212)\">impulsionam seus resultados.</span></p>",
                   "cta": [],
                   "paddingTop": "170px",
                   "backgroundMedia": {
@@ -1567,7 +1566,7 @@
                         "alt": "purple arrow",
                         "placement": "Top right"
                       },
-                      "caption": "<p style=\" line-height:160%; \">Use a Loja Integrada para expandir suas vendas de forma eficiente e se beneficiar de um ecossistema completo para o seu negócio.</p>",
+                      "caption": "<p style=\"line-height:160%; \">Use a Loja Integrada para expandir suas vendas de forma eficiente e se beneficiar de um ecossistema completo para o seu negócio.</p>",
                       "backgroundImage": {
                         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
                         "width": 484,
@@ -1595,7 +1594,7 @@
                         "width": 456
                       },
                       "useBackground": "video",
-                      "backgroundVideo": "https://data.decoassets.com/lojaintegradar/ee9cc8ea-3f9c-4283-9d4c-f7ba5cfe6ef8/vender-sem-estoque-(1).mp4"
+                      "backgroundVideo": "https://data.decoassets.com/lojaintegradar/dc10ee01-5e25-4cc1-ab4e-53fc0a299cf0/vender-sem-estoque-(1)-(1).mp4"
                     },
                     {
                       "textColor": "#ffffff",
@@ -1691,7 +1690,7 @@
                         "alt": "purple arrow",
                         "placement": "Top right"
                       },
-                      "caption": "<p style=\" line-height:160%; \"> Use a Loja Integrada para expandir suas vendas de forma eficiente e se beneficiar de um ecossistema completo para o seu negócio.</p>",
+                      "caption": "<p style=\"line-height:160%; \"> Use a Loja Integrada para expandir suas vendas de forma eficiente e se beneficiar de um ecossistema completo para o seu negócio.</p>",
                       "backgroundImage": {
                         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
                         "width": 484,
@@ -1719,7 +1718,7 @@
                         "width": 456
                       },
                       "useBackground": "video",
-                      "backgroundVideo": "https://data.decoassets.com/lojaintegradar/ee9cc8ea-3f9c-4283-9d4c-f7ba5cfe6ef8/vender-sem-estoque-(1).mp4"
+                      "backgroundVideo": "https://data.decoassets.com/lojaintegradar/dc10ee01-5e25-4cc1-ab4e-53fc0a299cf0/vender-sem-estoque-(1)-(1).mp4"
                     },
                     {
                       "textColor": "#ffffff",
@@ -3242,7 +3241,7 @@
                       "bulletPoints": {
                         "items": [
                           {
-                            "text": "Produtos ilimitados e 300 mil visitas/mês"
+                            "text": "<p>Produtos ilimitados e 300 mil visitas/mês</p>"
                           },
                           {
                             "text": "Tarifa por transação negociável ou isenta ao usar o Pagali"
@@ -3276,14 +3275,14 @@
                         "borderColor": "#B699D9",
                         "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
                         "onlyAnnual": false,
-                        "text": "Mais recomendado"
+                        "text": "<p>Mais recomendado</p>"
                       },
                       "title": "<h2><span style=\"color: #371e55\">Expansão</span></h2>",
                       "montlyFee": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\"><span style=\"font-size: 24pt;\" data-mce-style=\"font-size: 24pt;\">R$</span>&nbsp;<span style=\"font-size: 48px;\" data-mce-style=\"font-size: 48px;\"><strong>239</strong></span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></span></p>",
                       "cutedMontlyFee": "de R$ 239/mês",
                       "annualMontlyFee": "<p><span style=\"color: rgb(55, 30, 85); font-size: 24pt\">R$</span><span style=\"color: rgb(55, 30, 85)\"> </span><strong><span style=\"color: rgb(55, 30, 85); font-size: 48px\">191</span></strong><span style=\"color: rgb(55, 30, 85); font-size: 14pt\">/mês</span></p>",
                       "annualSaving": {
-                        "text": "Economia de  R$ 576/ano",
+                        "text": "<p>Economia de R$ 576/ano</p>",
                         "fontFamily": "Inter",
                         "textColor": "linear-gradient(90deg, #371E55 38.15%, rgba(55, 30, 85, 0.80) 124.69%)",
                         "backgroundColor": "linear-gradient(90deg, rgb(191, 182, 213) 0.02%, rgb(245, 242, 248) 52.45%, rgb(255, 255, 255) 80.07%); ",
@@ -3563,7 +3562,8 @@
                   "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 32pt\">resultados que surpreendem.</span></em></p>",
                   "titleFont": "Instrument serif",
                   "backgroundImage": {
-                    "src": "https://data.decoassets.com/lojaintegradar/60bcf7e6-9049-4a2f-bb52-6aef4f7451ba/bg-footer.png"
+                    "src": "https://data.decoassets.com/lojaintegradar/e1e18a14-b5a2-4e26-a84c-9a492ae0552a/bgfooterpng.png",
+                    "height": "400px"
                   },
                   "color1": "#371E55",
                   "color2": "#FFFFFF",

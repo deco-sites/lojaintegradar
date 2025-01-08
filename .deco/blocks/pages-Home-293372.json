@@ -3562,8 +3562,9 @@
                   "__resolveType": "site/sections/Footer2.tsx",
                   "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 32pt\">resultados que surpreendem.</span></em></p>",
                   "titleFont": "Instrument serif",
-                  "backgroundVideo": "https://data.decoassets.com/lojaintegradar/6739c71f-057d-4e8d-84d9-03cc63cff35d/rodape-novo-(597kb).mp4",
-                  "backgroundImage": {},
+                  "backgroundImage": {
+                    "src": "https://data.decoassets.com/lojaintegradar/60bcf7e6-9049-4a2f-bb52-6aef4f7451ba/bg-footer.png"
+                  },
                   "color1": "#371E55",
                   "color2": "#FFFFFF",
                   "cards": [
@@ -3655,7 +3656,7 @@
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
                   },
                   "id": "ecossistemaconteudo",
-                  "useBackground": "video",
+                  "useBackground": "image",
                   "backgroundHeight": "400px",
                   "logoCaption": "A plataforma que investe de verdade em Dados e Automação"
                 },

@@ -39,42 +39,7 @@ function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], backgroun
     return (
         <>
             <div id={rootId} className="customContainer">
-                <div data-aos="zoom-in" className="flex flex-col gap-4 mb-[60px]">
 
-                    {title?.desktop && (
-                        <span
-                            className={`hidden lg:block`}
-                            dangerouslySetInnerHTML={{
-                                __html: title?.desktop,
-                            }}
-                        ></span>
-                    )}
-                    {title?.mobile && (
-                        <span
-                            className="lg:hidden"
-                            dangerouslySetInnerHTML={{
-                                __html: title?.mobile,
-                            }}
-                        ></span>
-                    )}
-
-                    {subTitle?.desktop && (
-                        <span
-                            className="hidden lg:block font-instrument leading-[68.5px]"
-                            dangerouslySetInnerHTML={{
-                                __html: subTitle?.desktop,
-                            }}
-                        ></span>
-                    )}
-                    {subTitle?.mobile && (
-                        <span
-                            className="lg:hidden font-instrument"
-                            dangerouslySetInnerHTML={{
-                                __html: subTitle?.mobile,
-                            }}
-                        ></span>
-                    )}
-                </div>
                 <div class="flex justify-between items-center">
                     <ul class="relative flex flex-col gap-6 justify-center">
                         {tabs?.map((tab, index) => (

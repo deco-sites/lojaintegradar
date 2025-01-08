@@ -7334,7 +7334,9 @@
                   },
                   "id": "ecossistemaconteudo",
                   "useBackground": "video",
-                  "backgroundHeight": "400px"
+                  "backgroundHeight": "400px",
+                  "showLogo": false,
+                  "logoPosition": "below"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

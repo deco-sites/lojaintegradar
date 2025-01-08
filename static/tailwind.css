@@ -4728,11 +4728,18 @@ details.collapse summary::-webkit-details-marker {
 .gap-\[84px\] {
   gap: 84px;
 }
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
 .gap-y-1 {
   row-gap: 0.25rem;
 }
 .gap-y-3 {
   row-gap: 0.75rem;
+}
+.gap-y-4 {
+  row-gap: 1rem;
 }
 .gap-y-5 {
   row-gap: 1.25rem;
@@ -7101,10 +7108,6 @@ details.collapse summary::-webkit-details-marker {
     gap: 4rem;
   }
 
-  .lg\:gap-20 {
-    gap: 5rem;
-  }
-
   .lg\:gap-24 {
     gap: 6rem;
   }
@@ -7139,6 +7142,11 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:gap-\[88px\] {
     gap: 88px;
+  }
+
+  .lg\:gap-x-20 {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
   }
 
   .lg\:overflow-visible {

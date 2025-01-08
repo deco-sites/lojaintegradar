@@ -42,6 +42,7 @@ export interface Props {
     showLogo?: boolean;
     logo?: IImage;
     logoCaption?: string;
+    logoPosition?: "below" | "above"
     socialLinksCaption?: RichText;
     socialLinks?: socialLink[];
     bottomLinks?: CTA[];
@@ -57,7 +58,7 @@ export interface Props {
     /** @format color-input */
 }
 
-export default function Footer2({ id, title, titleFont, backgroundImage, showLogo, socialLinksCaption, backgroundVideo, useBackground, cards = [], logo, backgroundHeight, logoCaption, socialLinks, bottomLinks, color1, color2, color3, color4, bottomBackground }: Props) {
+export default function Footer2({ id, title, titleFont, backgroundImage, showLogo, logoPosition = "below", socialLinksCaption, backgroundVideo, useBackground, cards = [], logo, backgroundHeight, logoCaption, socialLinks, bottomLinks, color1, color2, color3, color4, bottomBackground }: Props) {
     const backgroundColor = useBackground ? "transparent" : color1;
     return <footer id={id} class="text-primary" style={{ color: color1 }}>
         <div class={`relative w-full h-[56vw] lg:h-[42vw] flex justify-center items-end  ${!useBackground && "bg-primary"}`} style={{ backgroundColor: backgroundColor, height: backgroundHeight }}>
@@ -127,16 +128,19 @@ export default function Footer2({ id, title, titleFont, backgroundImage, showLog
                     </div>
                 ))}
             </AnimateOnShow>
-            <div class="max-w-[1240px] mx-auto flex flex-col lg:flex-row gap-4 lg:gap-20 justify-center items-center mt-9 lg:mt-20">
-                {showLogo && <AnimateOnShow divClass="max-w-[193px] order-1 lg:-order-none" animation="animate-fade-up" delay={100}>
-                    {logo?.src && <Image
-                        width={logo.width || 193}
-                        height={logo.height || 31}
-                        src={logo.src}
-                        alt={logo.alt || "footer logo"}
-                        class="object-contain mb-4"
-                    />}
-                    <p class="text-sm font-normal leading-normal">{logoCaption}</p>
+
+            <div class="max-w-[1240px] mx-auto flex flex-col lg:flex-row flex-wrap gap-x-4 lg:gap-x-20 gap-y-4 justify-center items-center mt-9 lg:mt-20">
+                {showLogo && <AnimateOnShow divClass={`w-full ${logoPosition == "below" && 'max-w-[193px]'} order-1 lg:-order-none`} animation="animate-fade-up" delay={100}>
+                    <div class="max-w-[193px] mx-auto">
+                        {logo?.src && <Image
+                            width={logo.width || 193}
+                            height={logo.height || 31}
+                            src={logo.src}
+                            alt={logo.alt || "footer logo"}
+                            class="object-contain mb-4"
+                        />}
+                        <p class="text-sm font-normal leading-normal">{logoCaption}</p>
+                    </div>
                 </AnimateOnShow>}
 
                 <AnimateOnShow divClass="flex gap-5 order-3" delay={400} animation="animate-fade-up">

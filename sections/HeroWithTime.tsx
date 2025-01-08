@@ -3,6 +3,7 @@ import { Section } from "deco/blocks/section.ts";
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import { Button } from "site/types/types.ts";
 import { ButtonProps } from "../islands/HeroTimeButtons.tsx";
+import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx"
 
 export interface Props {
     title?: Title;
@@ -140,7 +141,7 @@ interface Background {
 
 
 function HeroWithTimer(props: Props) {
-    const { paddingBottom, paddingTop } = props;
+    const { paddingBottom, paddingTop, title, subTitle } = props;
     const getBackgroundStyle = () => {
         if (!props.background) return {};
 
@@ -168,6 +169,42 @@ function HeroWithTimer(props: Props) {
 
     return (
         <div id="heroTimeSection" style={{ ...getBackgroundStyle(), paddingBottom, paddingTop }} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
+            <AnimateOnShow animation="animate-pop-up" divClass="flex flex-col gap-4 mb-[60px]">
+
+                {title?.desktop && (
+                    <span
+                        className={`hidden lg:block`}
+                        dangerouslySetInnerHTML={{
+                            __html: title?.desktop,
+                        }}
+                    ></span>
+                )}
+                {title?.mobile && (
+                    <span
+                        className="lg:hidden"
+                        dangerouslySetInnerHTML={{
+                            __html: title?.mobile,
+                        }}
+                    ></span>
+                )}
+
+                {subTitle?.desktop && (
+                    <span
+                        className="hidden lg:block font-instrument leading-[68.5px]"
+                        dangerouslySetInnerHTML={{
+                            __html: subTitle?.desktop,
+                        }}
+                    ></span>
+                )}
+                {subTitle?.mobile && (
+                    <span
+                        className="lg:hidden font-instrument"
+                        dangerouslySetInnerHTML={{
+                            __html: subTitle?.mobile,
+                        }}
+                    ></span>
+                )}
+            </AnimateOnShow>
             <HeroWithTime {...props} />
             {props.bottomSection && <props.bottomSection.Component {...props.bottomSection.props} />}
         </div>

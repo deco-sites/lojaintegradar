@@ -309,7 +309,13 @@
                   "borderColor": "#003037",
                   "showIcon": false
                 }
-              ]
+              ],
+              "media": {
+                "video": {
+                  "src": "https://www.youtube.com/embed/u31qwQUeGuM?si=mOwdEBMynMBjjKN1"
+                },
+                "use": "embed"
+              }
             },
             "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
             "hubspotForm": {

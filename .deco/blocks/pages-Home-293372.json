@@ -4061,7 +4061,7 @@
                     }
                   },
                   "paddingBottom": "85px",
-                  "ctaPlacement": "left",
+                  "ctaPlacement": "center",
                   "createStoreFormProps": {
                     "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
                     "planoId": "172",
@@ -4095,7 +4095,14 @@
                     "inputsBorderColor": ""
                   },
                   "paddingRight": "36px",
-                  "paddingLeft": "36px"
+                  "paddingLeft": "36px",
+                  "createStoreCta": {
+                    "planId": "172",
+                    "text": "Criar loja",
+                    "backgroundColor": "#FAFAF5",
+                    "textColor": "#003037",
+                    "borderColor": "#FAFAF5"
+                  }
                 },
                 "rule": {
                   "__resolveType": "website/matchers/device.ts",

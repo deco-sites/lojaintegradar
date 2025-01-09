@@ -3484,7 +3484,6 @@
                     }
                   ],
                   "color3": "#EBEBEB",
-                  "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
                   "logo": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
                   },
@@ -3549,7 +3548,9 @@
                   },
                   "id": "ecossistemaconteudo",
                   "useBackground": "image",
-                  "backgroundHeight": "160px"
+                  "backgroundHeight": "160px",
+                  "showLogo": true,
+                  "logoPosition": "above"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/device.ts",
@@ -3658,7 +3659,8 @@
                   "id": "ecossistemaconteudo",
                   "useBackground": "image",
                   "backgroundHeight": "400px",
-                  "logoCaption": "A plataforma que investe de verdade em Dados e Automação"
+                  "showLogo": true,
+                  "logoPosition": "above"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
@@ -7162,7 +7164,6 @@
                     }
                   ],
                   "color3": "#EBEBEB",
-                  "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
                   "logo": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
                   },
@@ -7227,7 +7228,9 @@
                   },
                   "id": "ecossistemaconteudo",
                   "useBackground": "image",
-                  "backgroundHeight": "160px"
+                  "backgroundHeight": "160px",
+                  "showLogo": true,
+                  "logoPosition": "above"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/device.ts",
@@ -7336,7 +7339,8 @@
                   "id": "ecossistemaconteudo",
                   "useBackground": "image",
                   "backgroundHeight": "400px",
-                  "showLogo": true
+                  "showLogo": true,
+                  "logoPosition": "above"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

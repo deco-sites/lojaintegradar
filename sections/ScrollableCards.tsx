@@ -13,7 +13,7 @@ const onLoad = (rootId: string) => {
   const cards = cardsContainer.querySelectorAll(".scrollCard") as NodeListOf<HTMLElement>
 
   let progressPercent = 0;
-  const numberOfCards = cardsContainer.children.length;
+  const numberOfCards = cards.length;
   const animationTriggersAtEach = 100 / numberOfCards;
 
   const handleScroll = () => {
@@ -24,11 +24,11 @@ const onLoad = (rootId: string) => {
     const parentHeight = parentRect.height - stickyRect.height;
 
     progressPercent = (distanceFromParentTop / parentHeight) * 100;
-
+    console.log(progressPercent);
     for (let i = 0; i < numberOfCards; i++) {
       const currentCard = cards[i];
       const currentCardInnerDiv = currentCard.firstElementChild as HTMLElement;
-      if (progressPercent > (animationTriggersAtEach * i) + animationTriggersAtEach / 2) {
+      if (progressPercent > animationTriggersAtEach * i + (animationTriggersAtEach * 0.7)) {
         currentCard.style.transform = 'translateY(-100vh)';
         currentCardInnerDiv.style.transform = 'rotate(-50deg)';
       } else {

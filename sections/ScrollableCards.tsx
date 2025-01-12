@@ -28,9 +28,10 @@ const onLoad = (rootId: string) => {
     for (let i = 0; i < numberOfCards; i++) {
       const currentCard = cards[i];
       const currentCardInnerDiv = currentCard.firstElementChild as HTMLElement;
-      if (progressPercent > animationTriggersAtEach * i + (animationTriggersAtEach * 0.7)) {
-        currentCard.style.transform = 'translateY(-100vh)';
-        currentCardInnerDiv.style.transform = 'rotate(-50deg)';
+      if (progressPercent > animationTriggersAtEach * i) {
+        //currentCard.style.transform = 'translateY(-100vh)';
+        currentCard.style.transform = `translateY(-${((progressPercent - animationTriggersAtEach * i) * 15)}px)`;
+        currentCardInnerDiv.style.transform = `rotate(-${((progressPercent - animationTriggersAtEach * i) + 5 * i) * 0.8}deg)`;
       } else {
         currentCard.style.transform = 'translateY(0)';
         currentCardInnerDiv.style.transform = `rotate(-${5 * i}deg)`;
@@ -112,8 +113,8 @@ export interface Props {
 
 export default function ScrollableCards({ id, title, leftText, rightText, createStoreCta, cta = [], cards = [], ctaMargintop, cardsWidth, cardsMinHeight, cardsMarginTop, paddingBottom, paddingTop }: Props) {
   const rootId = useId();
-  const transitionClass = "transition-transform duration-1000 ease-in-out";
-  return <div id={rootId} class="relative min-h-[120vh]" style={{ height: `${80 * cards.length}vh` }}>
+  const transitionClass = "transition-transform duration-50 ease-linear";
+  return <div id={rootId} class="relative min-h-[120vh]" style={{ height: `${100 * cards.length}vh` }}>
     <script
       type="module"
       dangerouslySetInnerHTML={{ __html: useScript(onLoad, rootId) }}

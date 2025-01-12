@@ -24,7 +24,7 @@ const onLoad = (rootId: string) => {
     const parentHeight = parentRect.height - stickyRect.height;
 
     progressPercent = (distanceFromParentTop / parentHeight) * 100;
-    console.log(progressPercent);
+
     for (let i = 0; i < numberOfCards; i++) {
       const currentCard = cards[i];
       const currentCardInnerDiv = currentCard.firstElementChild as HTMLElement;

@@ -30,7 +30,7 @@ const onLoad = (rootId: string) => {
       const currentCardInnerDiv = currentCard.firstElementChild as HTMLElement;
       if (progressPercent > animationTriggersAtEach * i) {
         //currentCard.style.transform = 'translateY(-100vh)';
-        currentCard.style.transform = `translateY(-${((progressPercent - animationTriggersAtEach * i) * 30)}px)`;
+        currentCard.style.transform = `translateY(-${((progressPercent - animationTriggersAtEach * i) * 50)}px)`;
         currentCardInnerDiv.style.transform = `rotate(-${((progressPercent - animationTriggersAtEach * i) + 5 * i) * 0.8}deg)`;
       } else {
         currentCard.style.transform = 'translateY(0)';

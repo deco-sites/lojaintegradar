@@ -110,6 +110,10 @@ export interface Link {
   url?: string;
 }
 
+export interface MenuLink extends Link {
+  text?: string;
+}
+
 export interface CTAColors {
   /** @format color-input */
   textColor?: string;
@@ -135,6 +139,31 @@ export interface Navigation {
   asideMenuButtons?: CTA[];
 }
 
+/** @title {{title}} */
+export interface Menu {
+  title: string;
+  titleLink?: string;
+  links: MenuLink[];
+}
+
+export interface DropdownMenus {
+  menus: Menu[];
+  /** @format color-input */
+  titlesTextColor?: string;
+  /** @format color-input */
+  titlesTextHoverColor?: string;
+  /** @format color-input */
+  menusBackgroundColor?: string;
+  /** @format color-input */
+  menusShadowColor?: string;
+  /** @format color-input */
+  menusTextColor?: string;
+  /** @format color-input */
+  menusItemsHoverBackgroundColor?: string;
+  /** @format color-input */
+  menusItemsHoverLineColor?: string;
+}
+
 export interface Nav {
   /** @format color-input */
   backgroundColor?: string;
@@ -143,6 +172,7 @@ export interface Nav {
     alt?: string;
     href?: string;
   };
+  dropdownMenus?: DropdownMenus;
   navigation?: Navigation;
   hideAsideMenu?: boolean;
   /** @format color-input */
@@ -160,7 +190,7 @@ export default function Header2({ logo = {
   src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
   alt: "Logo",
 },
-  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, backgroundColor, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
+  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, backgroundColor, dropdownMenus = {menus: []}, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
   navigation, }: Nav) {
   return (
   <header>
@@ -203,17 +233,45 @@ export default function Header2({ logo = {
           <a href={logo.href || "/"} class="min-w-32 h-5 md:min-w-64 md:h-10">
             <Image src={logo.src || ""} width={257} height={40} alt={logo.alt || "header logo"} class="h-full w-full" />
           </a>
-
-          {/* <div class="hidden items-center justify-between lg:flex w-full"> */}
-          <div class="items-center justify-between w-full">
-            {/* <ul class="flex"> */}
-            <ul class="hidden">
-              {navigation?.links.map((link) => (<li>
-                <a href={link.url} aria-label={link.label} class="link no-underline hover:underline p-4">
-                  {link.label}
+          
+          <ul class="flex items-center gap-4 text-sm flex-wrap h-full" style={{color: dropdownMenus.titlesTextColor}}>
+            {dropdownMenus.menus.map(menu => (
+              <li class="relative group" hx-on={`mouseleave: this.children[0].style.color='${dropdownMenus.titlesTextColor}'; this.children[1]?.classList.remove('animate-fade-down10')`}>
+                <a 
+                  href={menu.titleLink} 
+                  class={`text-center flex gap-2 items-start ${!menu.titleLink && 'cursor-default'}`}
+                  hx-on={`mouseenter: this.style.color='${dropdownMenus.titlesTextHoverColor}'; this.parentElement.children[1]?.classList.add('animate-fade-down10');`}
+                  target={menu?.titleLink?.includes("http") ? "_blank" : "_self"}
+                  >
+                  {menu.title}
+                  {menu.links.length > 0 && <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" class="fill-current mt-2 group-hover:rotate-180 transition-all duration-300">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4.29289 4.29289C4.68342 4.68342 5.31658 4.68342 5.70711 4.29289L10 0" />
+                  </svg>}
                 </a>
-              </li>))}
-            </ul>
+                {menu.links.length > 0 && <div 
+                  class="p-6 top-full left-0 invisible group-hover:visible absolute z-50 w-[552px] flex flex-wrap rounded-lg" 
+                  style={{background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor, boxShadow: `0 16px 40px ${dropdownMenus.menusShadowColor}`}}>
+                  {menu.links.map(link => (
+                    <a 
+                      class="max-w-[252px] min-h-[125px]" 
+                      href={link.url} target={link.url?.includes("http") ? "_blank" : "_self"} 
+                      hx-on={`mouseleave: this.children[0].style.background='none'; this.children[0].children[0].style.background='none'`}
+                      >
+                      <div 
+                        class="relative px-7 py-5 transition-colors rounded-lg" 
+                        hx-on={`mouseenter: this.style.background='${dropdownMenus.menusItemsHoverBackgroundColor}'; this.children[0].style.background='${dropdownMenus.menusItemsHoverLineColor}'`}>
+                        <div class="absolute w-1.5 h-[74px] top-6 left-0 rounded-tr-3xl rounded-br-3xl transition-colors" />
+                        <p class="mb-1 font-semibold">{link.label}</p>
+                        <p>{link.text}</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>}
+              </li>
+            ))}
+          </ul>
+
+          <div class="items-center justify-between">
             <ul class="flex md:hidden justify-end gap-7" >
             <div class="flex items-center gap-4">
               {navigation?.createStoreCtaMobile?.text && <CreateStoreCta 
@@ -246,7 +304,7 @@ export default function Header2({ logo = {
                 <Icon id="Bars3" size={25} strokeWidth={0.1} class="text-primary fill-current" style={{color: barsColor}} />
               </label>}
             </ul>
-            <ul class="hidden md:flex justify-end gap-7">
+            <ul class="hidden md:flex justify-end gap-7 flex-wrap">
               {navigation?.createStoreCta?.text && <CreateStoreCta 
                 period="anual"
                 planId={navigation.createStoreCta.planId}

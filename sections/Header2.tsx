@@ -175,6 +175,7 @@ export interface Nav {
   dropdownMenus?: DropdownMenus;
   navigation?: Navigation;
   hideAsideMenu?: boolean;
+  asideMenuOnlyMobile?: boolean;
   /** @format color-input */
   barsColor?: string;
   /** @format color-input */
@@ -191,7 +192,7 @@ export default function Header2({ logo = {
   alt: "Logo",
 },
   barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, backgroundColor, dropdownMenus = {menus: []}, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
-  navigation, }: Nav) {
+  navigation, asideMenuOnlyMobile }: Nav) {
   return (
   <header>
     {headerMessage?.show && <div class="h-16" />}
@@ -234,9 +235,9 @@ export default function Header2({ logo = {
             <Image src={logo.src || ""} width={257} height={40} alt={logo.alt || "header logo"} class="h-full w-full" />
           </a>
           
-          <ul class="flex items-center gap-4 text-sm flex-wrap h-full" style={{color: dropdownMenus.titlesTextColor}}>
+          <ul class="hidden lg:flex items-center gap-4 text-sm flex-wrap" style={{color: dropdownMenus.titlesTextColor}}>
             {dropdownMenus.menus.map(menu => (
-              <li class="relative group" hx-on={`mouseleave: this.children[0].style.color='${dropdownMenus.titlesTextColor}'; this.children[1]?.classList.remove('animate-fade-down10')`}>
+              <li class="relative group h-full" hx-on={`mouseleave: this.children[0].style.color='${dropdownMenus.titlesTextColor}'; this.children[1]?.classList.remove('animate-fade-down10')`}>
                 <a 
                   href={menu.titleLink} 
                   class={`text-center flex gap-2 items-start ${!menu.titleLink && 'cursor-default'}`}
@@ -272,7 +273,7 @@ export default function Header2({ logo = {
           </ul>
 
           <div class="items-center justify-between">
-            <ul class="flex md:hidden justify-end gap-7" >
+            <ul class="flex md:hidden justify-end gap-4" >
             <div class="flex items-center gap-4">
               {navigation?.createStoreCtaMobile?.text && <CreateStoreCta 
                 period="anual"
@@ -300,7 +301,7 @@ export default function Header2({ logo = {
                 </a>
               })}
               </div>
-              {!hideAsideMenu && <label htmlFor="mobile-drawer-nav" class="flex btn btn-ghost drawer-button px-0">
+              {!hideAsideMenu && <label htmlFor="mobile-drawer-nav" class={`btn btn-ghost drawer-button px-0`}>
                 <Icon id="Bars3" size={25} strokeWidth={0.1} class="text-primary fill-current" style={{color: barsColor}} />
               </label>}
             </ul>
@@ -338,7 +339,7 @@ export default function Header2({ logo = {
                   </svg>}
                 </a>
               })}
-              {!hideAsideMenu && <label htmlFor="mobile-drawer-nav" class="flex btn btn-ghost drawer-button px-0 order-last">
+              {!hideAsideMenu && <label htmlFor="mobile-drawer-nav" class={`flex btn btn-ghost drawer-button px-0 order-last ${asideMenuOnlyMobile && 'lg:hidden'}`}>
                 <Icon id="Bars3" size={46} strokeWidth={0.1} class="text-primary fill-current" style={{ color: barsColor }} />
               </label>}
             </ul>
@@ -375,7 +376,27 @@ export default function Header2({ logo = {
 
             <ul class="menu carousel px-8">
               <ul class="flex flex-col">
-
+              {dropdownMenus.menus.map(menu => {
+                if (menu.titleLink) return <a href={menu.titleLink} class="p-4 shadow-spreaded font-semibold text-sm rounded-2xl mb-5 text-center" style={{background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor}}>
+                  {menu.title}
+                </a>
+                return (
+                <div className="collapse bg-base-200 shadow-spreaded mb-7">
+                <input type="checkbox" class="!min-h-0 !p-4"/>
+                <div 
+                  className="collapse-title font-semibold text-sm !min-h-0 !p-4 text-center" 
+                  style={{background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor}}>
+                  {menu.title}
+                </div>
+                <div className="collapse-content" style={{background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor}}>
+                {menu.links.map(link => (
+                      <a class="block text-center mb-5" href={link.url}>
+                        {link.label}
+                      </a>
+                    ))}
+                </div>
+              </div>
+              )})}
                 {navigation?.links.map((link) => (<li class="border-b border-neutral last:border-none" style={{ borderColor: navigation.linksBorderColor }} hx-on={`mouseleave: this.children[0].style.color='${navigation.textColor}'`} >
                   <a href={link.url} aria-label={link.label} class="text-primary hover:text-accent hover:bg-transparent  text-base font-semibold flex justify-between py-6 rounded-none" style={{ color: navigation.textColor }} hx-on={`mouseenter: this.style.color='${navigation.textHoverColor}'`} >
                     <div class="w-full flex justify-between" hx-on:click="document.getElementById('mobile-drawer-nav').checked = false;">

@@ -167,7 +167,7 @@
             "campaignTimer": {
               "text": "Time left for a campaign to end with a link"
             },
-            "hideAsideMenu": true,
+            "hideAsideMenu": false,
             "dropdownMenus": {
               "menus": [
                 {
@@ -270,7 +270,8 @@
               "menusItemsHoverBackgroundColor": "#E9F9F9",
               "menusItemsHoverLineColor": "#2bc4c3",
               "menusShadowColor": "rgba(71, 193, 196, .50)"
-            }
+            },
+            "asideMenuOnlyMobile": true
           },
           {
             "__resolveType": "site/sections/FloatingButtons.tsx",

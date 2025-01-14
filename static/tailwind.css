@@ -4115,6 +4115,9 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[80px\] {
   max-height: 80px;
 }
+.\!min-h-0 {
+  min-height: 0px !important;
+}
 .min-h-0 {
   min-height: 0px;
 }
@@ -5372,6 +5375,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
 }
+.bg-base-200 {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+}
 .bg-base-300 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
@@ -5516,6 +5523,9 @@ details.collapse summary::-webkit-details-marker {
 .object-top {
   -o-object-position: top;
      object-position: top;
+}
+.\!p-4 {
+  padding: 1rem !important;
 }
 .p-1 {
   padding: 0.25rem;

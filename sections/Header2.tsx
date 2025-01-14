@@ -258,7 +258,7 @@ export default function Header2({ logo = {
                       hx-on={`mouseleave: this.children[0].style.background='none'; this.children[0].children[0].style.background='none'`}
                       >
                       <div 
-                        class="relative px-7 py-5 transition-colors rounded-lg" 
+                        class="relative px-7 py-5 transition-colors rounded-lg h-full" 
                         hx-on={`mouseenter: this.style.background='${dropdownMenus.menusItemsHoverBackgroundColor}'; this.children[0].style.background='${dropdownMenus.menusItemsHoverLineColor}'`}>
                         <div class="absolute w-1.5 h-[74px] top-6 left-0 rounded-tr-3xl rounded-br-3xl transition-colors" />
                         <p class="mb-1 font-semibold">{link.label}</p>

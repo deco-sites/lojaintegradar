@@ -136,6 +136,7 @@ export interface Navigation {
   createStoreCtaMobile?: CreateStoreWithPlanCTA;
   createStoreCtaMobileOnScrollColors?: CTAColors;
   mobileButtons: CTA[];
+  asideCreateStoreCta?: CreateStoreWithPlanCTA;
   asideMenuButtons?: CTA[];
 }
 
@@ -359,19 +360,39 @@ export default function Header2({ logo = {
                   <path d="M23.6357 21.4319C23.9528 21.749 24.1309 22.1789 24.1309 22.6273C24.1309 23.0756 23.9528 23.5056 23.6357 23.8226C23.3187 24.1396 22.8888 24.3177 22.4404 24.3177C21.9921 24.3177 21.5621 24.1396 21.2451 23.8226L12.3168 14.8915L3.38574 23.8198C3.06872 24.1368 2.63876 24.3149 2.19043 24.3149C1.7421 24.3149 1.31213 24.1368 0.995115 23.8198C0.678098 23.5027 0.5 23.0728 0.5 22.6245C0.5 22.1761 0.678098 21.7462 0.995115 21.4291L9.92621 12.5009L0.997927 3.56976C0.68091 3.25275 0.502813 2.82278 0.502813 2.37445C0.502813 1.92612 0.68091 1.49615 0.997927 1.17914C1.31494 0.862121 1.74491 0.684023 2.19324 0.684023C2.64157 0.684023 3.07154 0.862121 3.38855 1.17914L12.3168 10.1102L21.2479 1.17773C21.5649 0.860715 21.9949 0.682617 22.4432 0.682617C22.8916 0.682617 23.3215 0.860715 23.6385 1.17773C23.9556 1.49475 24.1337 1.92471 24.1337 2.37304C24.1337 2.82137 23.9556 3.25134 23.6385 3.56836L14.7075 12.5009L23.6357 21.4319Z" />
                 </svg>
               </label>
-              {navigation?.asideMenuButtons?.map((button) => (<a
-                href={button?.href ?? "#"}
-                hx-on:click="document.getElementById('mobile-drawer-nav').checked = false;"
-                target={button?.href.includes("http") ? "_blank" : "_self"}
-                class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
-                style={button.ctaStyle == "button" ? { background: button.backgroundColor, color: button.textColor, borderColor: button.borderColor } : { color: button.textColor }}
-              >
-                <div dangerouslySetInnerHTML={{__html: button.text || ""}}/>
-                {button.underlineText && <span class="underline">{button.underlineText}</span>}
-                {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z" />
-                </svg>}
-              </a>))}
+              {navigation?.asideCreateStoreCta?.text && <CreateStoreCta 
+                period="anual"
+                planId={navigation.asideCreateStoreCta.planId}
+                showIcon={navigation.asideCreateStoreCta.showIcon}
+                text={navigation.asideCreateStoreCta.text}
+                underlineText={navigation.asideCreateStoreCta.underlineText}
+                ctaClass={`${navigation.asideCreateStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                style={navigation.asideCreateStoreCta.ctaStyle == "button" 
+                  ? { backgroundColor: navigation.asideCreateStoreCta.backgroundColor, color: navigation.asideCreateStoreCta.textColor, borderColor: navigation.asideCreateStoreCta.borderColor, order: navigation.asideCreateStoreCta.order } 
+                  : { color: navigation.asideCreateStoreCta.textColor, order: navigation.asideCreateStoreCta.order }}
+              />}
+              {navigation?.asideMenuButtons?.map((button, index) => {
+                if (button.href == "/talkToSpecialist") return <TalkToSpecialistCta 
+                  showIcon={button.showIcon}
+                  underlineText={button.underlineText}
+                  text={button.text}
+                  ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                  style={button.ctaStyle == "button" ? { background: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
+                />
+
+                return <a
+                  href={button?.href ?? "#"}
+                  target={button?.href.includes("http") ? "_blank" : "_self"}
+                  class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                  style={button.ctaStyle == "button" ? { background: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
+                >
+                  <div dangerouslySetInnerHTML={{__html: button.text || ""}}/>
+                  {button.underlineText && <span class="underline">{button.underlineText}</span>}
+                  {button.showIcon && <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.3941 4.50977V12.2285C15.3941 12.386 15.3316 12.537 15.2202 12.6484C15.1089 12.7597 14.9579 12.8223 14.8004 12.8223C14.6429 12.8223 14.4919 12.7597 14.3805 12.6484C14.2692 12.537 14.2066 12.386 14.2066 12.2285V5.94293L5.72046 14.4298C5.60905 14.5413 5.45794 14.6038 5.30038 14.6038C5.14282 14.6038 4.99171 14.5413 4.8803 14.4298C4.76889 14.3184 4.7063 14.1673 4.7063 14.0098C4.7063 13.8522 4.76889 13.7011 4.8803 13.5897L13.3672 5.10352H7.08163C6.92416 5.10352 6.77313 5.04096 6.66178 4.92961C6.55043 4.81826 6.48788 4.66724 6.48788 4.50977C6.48788 4.35229 6.55043 4.20127 6.66178 4.08992C6.77313 3.97857 6.92416 3.91602 7.08163 3.91602H14.8004C14.9579 3.91602 15.1089 3.97857 15.2202 4.08992C15.3316 4.20127 15.3941 4.35229 15.3941 4.50977Z" />
+                  </svg>}
+                </a>
+              })}
             </ul>
 
             <ul class="menu carousel px-8">

@@ -33,22 +33,13 @@
               ],
               "asideMenuButtons": [
                 {
-                  "text": "<p>Abrir loja </p>",
-                  "ctaStyle": "button",
-                  "backgroundColor": "#003037",
-                  "textColor": "#ffffff",
-                  "borderColor": "#003037",
-                  "id": "172",
-                  "href": "#plans"
-                },
-                {
                   "text": "Fazer Login",
-                  "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "outline": true,
                   "ctaStyle": "button",
                   "backgroundColor": "Transparent",
                   "textColor": "#003037",
-                  "borderColor": "#003037"
+                  "borderColor": "#003037",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "outline": true
                 }
               ],
               "sideMenuButtons": [],
@@ -81,6 +72,14 @@
                 "backgroundColor": "rgba(255, 255, 255, 0.60)",
                 "borderColor": "Transparent",
                 "textColor": "#003037"
+              },
+              "asideCreateStoreCta": {
+                "planId": "172",
+                "text": "Abrir loja",
+                "ctaStyle": "button",
+                "backgroundColor": "#003037",
+                "borderColor": "#003037",
+                "textColor": "#ffffff"
               }
             },
             "logo": {

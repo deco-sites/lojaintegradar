@@ -9,7 +9,8 @@ export async function handler(request: Request, ctx: FreshContext) {
   ) {
     incomingOrigin = incomingOrigin.replace("http://", "https://");
   }
-  const originToRewrite = incomingOrigin === "https://lojaintegrada.com.br"
+  const originToRewrite = incomingOrigin === "https://lojaintegrada.com.br" ||
+      incomingOrigin === "https://landing.lojaintegrada.com.br"
     ? "https://lojaintegradar.deco.site"
     : incomingOrigin;
   const response = await ctx.next();

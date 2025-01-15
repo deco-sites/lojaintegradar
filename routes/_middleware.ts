@@ -26,6 +26,7 @@ export async function handler(request: Request, ctx: FreshContext) {
       .replaceAll(" /live/invoke", ` ${originToRewrite}/live/invoke`);
 
     response.headers.set("x-middleware-processed", "1");
+    response.headers.set("Access-Control-Allow-Origin", originToRewrite);
 
     return new Response(body, {
       headers: response.headers,

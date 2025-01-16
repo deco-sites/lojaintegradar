@@ -6,6 +6,20 @@ import CampaignTimer from "../components/CampaignTimerHeader.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
+const onChange = () => {
+  const element = event!.currentTarget as HTMLInputElement;
+  const arrow = element.parentElement?.querySelector(".collapse-arrow") as HTMLElement;
+  const secondaryHeaderItems = element.parentElement?.querySelectorAll(".secondaryHeaderItem");
+  if (element.checked) {
+      arrow.style.transform = 'rotate(-180deg)';
+      secondaryHeaderItems?.forEach((header) => header.classList.remove("hidden"));
+  }
+  else {
+      arrow.style.transform = 'rotate(0deg)';
+      secondaryHeaderItems?.forEach((header) => header.classList.add("hidden"));
+  }
+};
+
 const onLoad = (backgroundColor?: string, navigation?: Navigation) => {
   globalThis.addEventListener("scroll", () => {
     const headerContainer = document.querySelector("#headerContainer") as HTMLElement;
@@ -403,11 +417,15 @@ export default function Header2({ logo = {
                 </a>
                 return (
                 <div className="collapse bg-base-200 shadow-spreaded mb-7">
-                <input type="checkbox" class="!min-h-0 !p-4"/>
+                <input type="checkbox" class="!min-h-0 !p-4" hx-on:change={useScript(onChange)}/>
                 <div 
-                  className="collapse-title font-semibold text-sm !min-h-0 !p-4 text-center" 
+                  className="collapse-title font-semibold text-sm !min-h-0 !p-4 text-center flex justify-between" 
                   style={{background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor}}>
+                  <div />
                   {menu.title}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" class="fill-current mt-2 group-hover:rotate-180 transition-all duration-300 collapse-arrow">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4.29289 4.29289C4.68342 4.68342 5.31658 4.68342 5.70711 4.29289L10 0" />
+                  </svg>
                 </div>
                 <div className="collapse-content" style={{background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor}}>
                 {menu.links.map(link => (

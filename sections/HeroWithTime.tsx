@@ -1,4 +1,4 @@
-import HeroWithTime from "../islands/HeroWithTime.tsx";
+import HeroWithTime from "../components/ui/HeroWithTime.tsx";
 import { Section } from "deco/blocks/section.ts";
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import { Button } from "site/types/types.ts";

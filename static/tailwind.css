@@ -4762,21 +4762,6 @@ details.collapse summary::-webkit-details-marker {
 .animate-fade-down {
   animation: fade-down 1s ease-in-out;
 }
-@keyframes fade-down10 {
-
-  0% {
-    transform: translateY(-10%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-.animate-fade-down10 {
-  animation: fade-down10 0.3s ease-in-out;
-}
 @keyframes fade-down50 {
 
   0% {

@@ -252,11 +252,11 @@ export default function Header2({ logo = {
           
           <ul class="hidden lg:flex items-center gap-4 text-sm flex-wrap" style={{color: dropdownMenus.titlesTextColor}}>
             {dropdownMenus.menus.map(menu => (
-              <li class="relative group h-full" hx-on={`mouseleave: this.children[0].style.color='${dropdownMenus.titlesTextColor}'; this.children[1]?.classList.remove('animate-fade-down10')`}>
+              <li class="relative group h-full" hx-on={`mouseleave: this.children[0].style.color='${dropdownMenus.titlesTextColor}'; this.children[1]?.classList.remove('animate-fade-in')`}>
                 <a 
                   href={menu.titleLink} 
                   class={`text-center flex gap-2 items-start ${!menu.titleLink && 'cursor-default'}`}
-                  hx-on={`mouseenter: this.style.color='${dropdownMenus.titlesTextHoverColor}'; this.parentElement.children[1]?.classList.add('animate-fade-down10');`}
+                  hx-on={`mouseenter: this.style.color='${dropdownMenus.titlesTextHoverColor}'; this.parentElement.children[1]?.classList.add('animate-fade-in');`}
                   target={menu?.titleLink?.includes("http") ? "_blank" : "_self"}
                   >
                   {menu.title}
@@ -266,7 +266,7 @@ export default function Header2({ logo = {
                 </a>
                 {menu.links.length > 0 && <div 
                   class="p-6 top-full left-0 invisible group-hover:visible absolute z-50 w-[552px] flex flex-wrap rounded-lg" 
-                  style={{background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor, boxShadow: `0 16px 40px ${dropdownMenus.menusShadowColor}`}}>
+                  style={{background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor, boxShadow: `0 16px 40px ${dropdownMenus.menusShadowColor}`, animationDuration: '300ms'}}>
                   {menu.links.map(link => (
                     <a 
                       class="max-w-[252px] min-h-[125px]" 

@@ -28,10 +28,12 @@ const onLoad = (backgroundColor?: string, navigation?: Navigation) => {
       headerContainer.classList.add("!pt-6");
       headerContainer.style.background = backgroundColor || "";
 
-      const createStoreCtaMobile = document.querySelector(".createStoreMobile") as HTMLElement;
-      createStoreCtaMobile.style.color = navigation?.createStoreCtaMobileOnScrollColors?.textColor || "";
-      createStoreCtaMobile.style.background = navigation?.createStoreCtaMobileOnScrollColors?.backgroundColor || "";
-      createStoreCtaMobile.style.borderColor = navigation?.createStoreCtaMobileOnScrollColors?.borderColor || "";
+      const createStoreCtaMobile = document.querySelector(".createStoreMobile") as HTMLElement | undefined;
+      if (createStoreCtaMobile) {
+        createStoreCtaMobile.style.color = navigation?.createStoreCtaMobileOnScrollColors?.textColor || "";
+        createStoreCtaMobile.style.background = navigation?.createStoreCtaMobileOnScrollColors?.backgroundColor || "";
+        createStoreCtaMobile.style.borderColor = navigation?.createStoreCtaMobileOnScrollColors?.borderColor || "";
+      }
     }
     else {
       headerContainer.classList.add("bg-opacity-0");

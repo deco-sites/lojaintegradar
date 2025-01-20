@@ -212,25 +212,26 @@ function Carousel(props: Props) {
     const carouselId = useId();
     return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative pt-7 lg:pt-14">
         {/* <input type="text" value="0" /> */}
-        <AnimateOnShow animation="animate-fade-up50" delay={300}>
             <div id={carouselId} class="min-h-min flex flex-col items-center w-full relative" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
                 {backgroundImage?.src && <div class="absolute hidden md:block -z-50 top-0 left-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "background image"} height={backgroundImage.height || 780} width={backgroundImage.width || 460} class="h-full object-contain" /></div>}
 
-                <AnimateOnShow animation="animate-fade-up" delay={500}>
+                <AnimateOnShow animation="animate-fade-up" delay={200}>
                     {title && <div class="text-2xl md:text-5xl font-normal text-center text-primary leading-snug max-w-[942px] lg:pb-16" style={{ color: titleColor, fontFamily: titleFont }} dangerouslySetInnerHTML={{__html: title}} />}
 
                     {caption && <p class="text-xl md:text-2xl font-semibold text-center text-primary leading-snug max-w-[942px]" style={{ color: captionColor }}>
                         {caption}
                     </p>}
                 </AnimateOnShow>
-                <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:px-9 max-w-[1480px] relative" rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider">
-                    {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px]">
-                        <SliderItem slide={slide} id={`${carouselId}::${index}`} />
-                    </Slider.Item>))}
-                    {/* <Slider.Item index={slides?.length || 0} class="carousel-item w-[1px] lg:w-[456px] sm:block" >
-                        <div></div>
-                    </Slider.Item> */}
-                </Slider>
+                <AnimateOnShow animation="animate-fade-up50">
+                    <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:px-9 max-w-[1480px] relative" rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider">
+                        {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px]">
+                            <SliderItem slide={slide} id={`${carouselId}::${index}`} />
+                        </Slider.Item>))}
+                        {/* <Slider.Item index={slides?.length || 0} class="carousel-item w-[1px] lg:w-[456px] sm:block" >
+                            <div></div>
+                        </Slider.Item> */}
+                    </Slider>
+                </AnimateOnShow>
 
                 <AnimateOnShow animation="animate-fade-up" divClass="flex justify-end pr-[22px] lg:px-9 w-full max-w-[1332px] mx-auto">
                     {/* {props.dots && <Dots slides={slides} interval={interval} />}{" "} */}
@@ -271,7 +272,6 @@ function Carousel(props: Props) {
                     })}
                 </AnimateOnShow>}
             </div>
-        </AnimateOnShow>
     </div>);
 }
 export default Carousel;

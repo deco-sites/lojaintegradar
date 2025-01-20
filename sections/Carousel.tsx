@@ -222,16 +222,14 @@ function Carousel(props: Props) {
                         {caption}
                     </p>}
                 </AnimateOnShow>
-                <AnimateOnShow animation="animate-fade-up50">
-                    <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:px-9 max-w-[1480px] relative" rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider">
-                        {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px]">
-                            <SliderItem slide={slide} id={`${carouselId}::${index}`} />
-                        </Slider.Item>))}
-                        {/* <Slider.Item index={slides?.length || 0} class="carousel-item w-[1px] lg:w-[456px] sm:block" >
-                            <div></div>
-                        </Slider.Item> */}
-                    </Slider>
-                </AnimateOnShow>
+                <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:px-9 max-w-[1480px] relative" rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider">
+                    {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px]">
+                        <SliderItem slide={slide} id={`${carouselId}::${index}`} />
+                    </Slider.Item>))}
+                    {/* <Slider.Item index={slides?.length || 0} class="carousel-item w-[1px] lg:w-[456px] sm:block" >
+                        <div></div>
+                    </Slider.Item> */}
+                </Slider>
 
                 <AnimateOnShow animation="animate-fade-up" divClass="flex justify-end pr-[22px] lg:px-9 w-full max-w-[1332px] mx-auto">
                     {/* {props.dots && <Dots slides={slides} interval={interval} />}{" "} */}

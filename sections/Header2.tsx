@@ -128,6 +128,7 @@ export interface Link {
 
 export interface MenuLink extends Link {
   text?: string;
+  openIn: "current tab" | "new tab";
 }
 
 export interface CTAColors {
@@ -272,7 +273,7 @@ export default function Header2({ logo = {
                   {menu.links.map(link => (
                     <a 
                       class="max-w-[252px] min-h-[125px]" 
-                      href={link.url} target={link.url?.includes("http") ? "_blank" : "_self"} 
+                      href={link.url} target={link.openIn == "new tab" ? "_blank" : "_self"}
                       hx-on={`mouseleave: this.children[0].style.background='none'; this.children[0].children[0].style.background='none'`}
                       >
                       <div 
@@ -438,7 +439,7 @@ export default function Header2({ logo = {
                 </div>
                 <div className="collapse-content" style={{background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor}}>
                 {menu.links.map(link => (
-                      <a class="block text-center mb-5" href={link.url}>
+                      <a class="block text-center mb-5" href={link.url} target={link.openIn == "new tab" ? "_blank" : "_self"}>
                         {link.label}
                       </a>
                     ))}
@@ -457,7 +458,6 @@ export default function Header2({ logo = {
                 </li>))}
               </ul>
             </ul>
-
           </div>
         </aside>
       </nav>

@@ -159,6 +159,7 @@ const CreateStoreModal = () => {
                     className="w-full flex flex-col items-center justify-center"
                     onSubmit={handleSubmit}
                 >
+                    <input type="hidden" name="gcaptcha_site" value="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"></input>
                     <div className="mt-4 w-full max-w-[450px]">
                         <label className="block text-sm font-semibold text-[#371e56]">
                             Nome

@@ -40,10 +40,12 @@ const onLoad = (backgroundColor?: string, navigation?: Navigation) => {
       headerContainer.classList.remove("!pt-6");
       headerContainer.style.background = "transparent";
 
-      const createStoreCtaMobile = document.querySelector(".createStoreMobile") as HTMLElement;
-      createStoreCtaMobile.style.color = navigation?.createStoreCtaMobile?.textColor || "";
-      createStoreCtaMobile.style.background = navigation?.createStoreCtaMobile?.backgroundColor || "";
-      createStoreCtaMobile.style.borderColor = navigation?.createStoreCtaMobile?.borderColor || "";
+      const createStoreCtaMobile = document.querySelector(".createStoreMobile") as HTMLElement | undefined;
+      if (createStoreCtaMobile) {
+        createStoreCtaMobile.style.color = navigation?.createStoreCtaMobile?.textColor || "";
+        createStoreCtaMobile.style.background = navigation?.createStoreCtaMobile?.backgroundColor || "";
+        createStoreCtaMobile.style.borderColor = navigation?.createStoreCtaMobile?.borderColor || "";
+      }
     }
   });
 };

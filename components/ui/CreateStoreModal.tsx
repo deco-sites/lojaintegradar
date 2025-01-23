@@ -152,7 +152,7 @@ const CreateStoreModal = () => {
                 </button>
 
                 <form
-                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${getPeriod}&amp;plano_id=${getPlanId}${getCoupon && `&cupom=${getCoupon}`}`}
+                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${getPeriod}&plano_id=${getPlanId}${getCoupon && `&cupom=${getCoupon}`}`}
                     id="modal-no-check"
                     data-gtm-form-interact-id="0"
                     method="POST"

@@ -37,7 +37,7 @@ const CreateStoreModal = () => {
         confirmacao_senha: "",
     });
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e: any) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
 
@@ -132,7 +132,7 @@ const CreateStoreModal = () => {
         return !hasError;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
         if (validateForm()) {
             e.target.submit();
@@ -261,7 +261,7 @@ const CreateStoreModal = () => {
                         ></script>
                         <script dangerouslySetInnerHTML={{
                             __html: `
-                            function onSubmit(token) {
+                            function onSubmitModalForm(token) {
                                 document.getElementById('modal-no-check').submit();
                             }
 
@@ -271,7 +271,7 @@ const CreateStoreModal = () => {
                             className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha"
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
-                            data-callback="onSubmit"
+                            data-callback="onSubmitModalForm"
                         >
                             Abrir minha loja agora
                         </button>

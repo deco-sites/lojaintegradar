@@ -36,6 +36,11 @@ export default defineApp(async (_req, ctx) => {
     <TimeModal />
     <SecondTimeModal />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?v=1723036362098"
+      async
+      defer
+    ></script>
     <script dangerouslySetInnerHTML={{
       __html: `
       AOS.init({startEvent: 'load'});

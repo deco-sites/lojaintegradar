@@ -214,11 +214,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
                     </div>
 
                     <div className="w-full max-w-[450px] mt-6">
-                        <script
-                            src="https://www.google.com/recaptcha/api.js?v=1723036362098"
-                            async
-                            defer
-                        ></script>
+
                         <script dangerouslySetInnerHTML={{
                             __html: `
                             function onSubmitFormRecaptcha(token) {

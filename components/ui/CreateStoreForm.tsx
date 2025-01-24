@@ -19,17 +19,6 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
         confirmacao_senha: "",
     });
 
-    const [validated, setValidated] = useState(false);
-
-    useEffect(() => {
-        if (formData.nome == "" || formData.email == "" || formData.senha == "" || formData.confirmacao_senha == "") return setValidated(false);
-        if (errors.nome != "") return setValidated(false);
-        if (errors.email != "") return setValidated(false);
-        if (errors.senha != "") return setValidated(false);
-        if (errors.confirmacao_senha != "") return setValidated(false);
-        setValidated(true);
-    }, [errors]);
-
     const handleInputChange = (e: any) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
@@ -244,10 +233,8 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
                             data-callback="onSubmitFormRecaptcha"
                             style={{ background: buttonBackgroundColor, color: buttonTextColor }}
-                            disabled={!validated}
                         >
                             {buttonText || 'Abrir minha loja agora'}
-                            <a class={`absolute top-0 left-0 h-full w-full ${validated && 'hidden'}`} onClick={() => validateForm()} />
                         </button>
                     </div>
                 </form>

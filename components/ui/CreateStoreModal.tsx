@@ -37,6 +37,17 @@ const CreateStoreModal = () => {
         confirmacao_senha: "",
     });
 
+    const [validated, setValidated] = useState(false);
+
+    useEffect(() => {
+        if (formData.nome == "" || formData.email == "" || formData.senha == "" || formData.confirmacao_senha == "") return setValidated(false);
+        if (errors.nome != "") return setValidated(false);
+        if (errors.email != "") return setValidated(false);
+        if (errors.senha != "") return setValidated(false);
+        if (errors.confirmacao_senha != "") return setValidated(false);
+        setValidated(true);
+    }, [errors]);
+
     const handleInputChange = (e: any) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
@@ -63,14 +74,15 @@ const CreateStoreModal = () => {
             const hasLowerCase = /[a-z]/.test(value);
             const hasNumber = /\d/.test(value);
 
-            if (!hasMinLength || !hasUpperCase || !hasLowerCase || !hasNumber) {
-                setErrors({
-                    ...errors,
-                    senha: 'A senha deve ter pelo menos 8 caracteres, incluindo um número, uma letra maiúscula e uma letra minúscula.'
-                });
-            } else {
-                setErrors({ ...errors, senha: '' });
-            }
+            let senha_erro = '';
+            let confirmacao_senha_erro = '';
+
+            if (!hasMinLength || !hasUpperCase || !hasLowerCase || !hasNumber)
+                senha_erro = 'A senha deve ter pelo menos 8 caracteres, incluindo um número, uma letra maiúscula e uma letra minúscula.';
+            if (value !== formData.confirmacao_senha)
+                confirmacao_senha_erro = "As senhas não coincidem";
+
+            setErrors({ ...errors, confirmacao_senha: confirmacao_senha_erro, senha: senha_erro })
         }
 
         if (name === "confirmacao_senha" && value !== formData.senha) {
@@ -269,12 +281,14 @@ const CreateStoreModal = () => {
                             `}}></script>
                         <button
                             id="input-form-modal_no_check"
-                            className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha"
+                            className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative"
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
                             data-callback="onSubmitModalForm"
+                            disabled={!validated}
                         >
                             Abrir minha loja agora
+                            <a class={`absolute top-0 left-0 h-full w-full ${validated && 'hidden'}`} onClick={() => validateForm()} />
                         </button>
                     </div>
                 </form>

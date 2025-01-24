@@ -237,8 +237,8 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
                         <button
                             id="input-createStoreForm"
                             className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative"
-                            type="submit"
-                            data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
+                            // type="submit"
+                            // data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
                             // data-callback="onSubmitFormRecaptcha"
                             style={{ background: buttonBackgroundColor, color: buttonTextColor }}
                             onClick={handleSubmit}

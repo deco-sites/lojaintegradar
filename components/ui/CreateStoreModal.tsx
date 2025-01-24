@@ -265,6 +265,7 @@ const CreateStoreModal = () => {
                         <script dangerouslySetInnerHTML={{
                             __html: `
                             function onSubmitModalForm(token) {
+                                console.log("recaptcha submited");
                                 document.getElementById('modal-no-check').submit();
                             }
 

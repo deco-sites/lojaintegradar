@@ -2,7 +2,11 @@ import { useState, useEffect, useCallback } from "preact/hooks";
 import { CreateStoreFormProps } from "../../sections/CreateStoreHero.tsx"
 import { useId } from "site/sdk/useId.ts";
 
-
+declare global {
+    interface Window {
+        grecaptcha: any;
+    }
+}
 
 const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeText1, agreeLink1, agreeLink2, agreeText2, agreeText3, nameCaption, namePlaceholder, passwordCaption, passwordPlaceholder, passwordText, confirmPasswordCaption, confirmPasswordPlaceholder, emailCaption, emailPlaceholder, inputsLabelColor, inputsTextColor, inputsBorderColor, inputsBellowTextColor, linksColor, buttonBackgroundColor, buttonTextColor }: CreateStoreFormProps) => {
     const [formData, setFormData] = useState({
@@ -93,10 +97,14 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
     const handleSubmit = (e: any) => {
         e.preventDefault();
         if (validateForm()) {
-            e.target.submit();
-        } else {
-            console.error("Erros de validação encontrados, o formulário não será enviado.");
+            window.grecaptcha.ready(() => {
+                window.grecaptcha.execute('6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18', { action: 'submit' }).then((token: any) => {
+                    const form = document.getElementById('createStoreFormRecaptcha') as HTMLFormElement | undefined;
+                    form?.submit();
+                });
+            });
         }
+
     };
 
     return (
@@ -231,8 +239,9 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
                             className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative"
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
-                            data-callback="onSubmitFormRecaptcha"
+                            // data-callback="onSubmitFormRecaptcha"
                             style={{ background: buttonBackgroundColor, color: buttonTextColor }}
+                            onClick={handleSubmit}
                         >
                             {buttonText || 'Abrir minha loja agora'}
                         </button>

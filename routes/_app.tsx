@@ -27,11 +27,6 @@ export default defineApp(async (_req, ctx) => {
         __html: `html {
           scroll-behavior: smooth;
           }`}} />
-      <script
-        src="https://www.google.com/recaptcha/api.js?v=1715091331540"
-        async
-        defer
-      ></script>
     </Head>
 
     {/* Rest of Preact tree */}

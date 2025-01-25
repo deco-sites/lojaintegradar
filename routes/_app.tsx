@@ -32,6 +32,21 @@ export default defineApp(async (_req, ctx) => {
         async
         defer
       ></script>
+      <script defer dangerouslySetInnerHTML={{
+        __html: `var fired = false;
+      window.addEventListener('DOMContentLoaded', function () {
+        
+        if (fired === false) {
+          var recaptchaScript = document.createElement('script');
+          recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18';
+          recaptchaScript.defer = true;
+          document.body.appendChild(recaptchaScript);
+          fired = true;
+         
+          console.log('On scroll fired');
+        }
+      }, true);`}}>
+      </script>
     </Head>
 
     {/* Rest of Preact tree */}
@@ -46,20 +61,6 @@ export default defineApp(async (_req, ctx) => {
       AOS.init({startEvent: 'load'});
       `}}>
     </script>
-    <script defer dangerouslySetInnerHTML={{
-      __html: `var fired = false;
-      window.addEventListener('DOMContentLoaded', function () {
-        
-        if (fired === false) {
-          var recaptchaScript = document.createElement('script');
-          recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18';
-          recaptchaScript.defer = true;
-          document.body.appendChild(recaptchaScript);
-          fired = true;
-         
-          console.log('On scroll fired');
-        }
-      }, true);`}}>
-    </script>
+
   </>);
 });

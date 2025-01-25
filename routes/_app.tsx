@@ -25,15 +25,17 @@ export default defineApp(async (_req, ctx) => {
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
       <script defer dangerouslySetInnerHTML={{
         __html: `
+      var fired = false;
       window.addEventListener('DOMContentLoaded', function () {
         
-        
+        if (fired === false) {
           var recaptchaScript = document.createElement('script');
           recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18';
           recaptchaScript.defer = true;
           document.body.appendChild(recaptchaScript);
-
+          fired = true;
          
+          console.log('On scroll fired');
         }
       }, true);`}}>
       </script>

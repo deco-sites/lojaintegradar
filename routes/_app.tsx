@@ -28,7 +28,7 @@ export default defineApp(async (_req, ctx) => {
           scroll-behavior: smooth;
       }`}} />
       <script
-        src="https://www.google.com/recaptcha/api.js?v=1723036362098"
+        src="https://www.google.com/recaptcha/api.js?v=1715091331540"
         async
         defer
       ></script>

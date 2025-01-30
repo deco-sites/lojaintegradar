@@ -10,6 +10,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
         email: "",
         senha: "",
         confirmacao_senha: "",
+        termos: false,
     });
 
     const [errors, setErrors] = useState({
@@ -17,7 +18,19 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
         email: "",
         senha: "",
         confirmacao_senha: "",
+        termos: "",
     });
+
+    const [validated, setValidated] = useState(false);
+    useEffect(() => {
+        if (formData.termos == false || formData.nome == "" || formData.email == "" || formData.senha == "" || formData.confirmacao_senha == "") return setValidated(false);
+        if (errors.termos != "") return setValidated(false);
+        if (errors.nome != "") return setValidated(false);
+        if (errors.email != "") return setValidated(false);
+        if (errors.senha != "") return setValidated(false);
+        if (errors.confirmacao_senha != "") return setValidated(false);
+        setValidated(true);
+    }, [errors]);
 
     const handleInputChange = (e: any) => {
         const { name, value } = e.target;
@@ -62,6 +75,14 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
             setErrors({ ...errors, confirmacao_senha: "" });
         }
     };
+
+    const handleCheckboxChange = (e: any) => {
+        setFormData(prev => {
+            if (prev.termos == true) setErrors(prev => ({ ...prev, termos: "Você precisa concordar com os termos" }));
+            else setErrors(prev => ({ ...prev, termos: "" }));
+            return { ...prev, termos: !prev.termos }
+        });
+    }
 
     const validateForm = () => {
         const { nome, email, senha, confirmacao_senha } = formData;
@@ -198,7 +219,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
 
                     <div className="mt-4 w-full max-w-[450px]">
                         <label className="flex items-center">
-                            <input type="checkbox" className="form-checkbox" name="termos" required />
+                            <input type="checkbox" className="form-checkbox" name="termos" onChange={handleCheckboxChange} required />
                             <span className="ml-2 text-xs text-gray-600">
                                 {agreeText1}
                                 <a href={agreeLink1?.href} target='_blank' className="text-[#0C9898] font-bold" style={{ color: linksColor }}>
@@ -218,20 +239,27 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
                         <script dangerouslySetInnerHTML={{
                             __html: `
                             function onSubmitFormRecaptcha(token) {
-                                document.getElementById('createStoreFormRecaptcha').submit();
+                                console.log("teste");
+                                //document.getElementById('createStoreFormRecaptcha').submit();
                             }
 
                             `}}></script>
-                        <button
+                        {validated && <button
                             id="input-createStoreForm"
-                            className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative"
+                            className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative "
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
                             data-callback="onSubmitFormRecaptcha"
                             style={{ background: buttonBackgroundColor, color: buttonTextColor }}
                         >
                             {buttonText || 'Abrir minha loja agora'}
-                        </button>
+                        </button>}
+                        {!validated && <div
+                            className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative text-center"
+                            style={{ background: buttonBackgroundColor, color: buttonTextColor }}
+                        >
+                            {buttonText || 'Abrir minha loja agora'}
+                        </div>}
                     </div>
                 </form>
             </div>

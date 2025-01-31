@@ -286,21 +286,15 @@ const CreateStoreModal = () => {
                             }
 
                             `}}></script>
-                        {validated && <button
+                        <button
                             id="input-form-modal_no_check"
-                            className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative"
+                            className={`w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative ${!validated && 'pointer-events-none'}`}
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
                             data-callback="onSubmitModalForm"
                         >
                             Abrir minha loja agora
-                        </button>}
-                        {!validated && <div
-                            id="input-form-modal_no_check"
-                            className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative text-center"
-                        >
-                            Abrir minha loja agora
-                        </div>}
+                        </button>
                     </div>
                 </form>
             </div>

@@ -239,8 +239,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
                         <script dangerouslySetInnerHTML={{
                             __html: `
                             function onSubmitFormRecaptcha(token) {
-                                console.log("teste");
-                                //document.getElementById('createStoreFormRecaptcha').submit();
+                                document.getElementById('createStoreFormRecaptcha').submit();
                             }
 
                             `}}></script>

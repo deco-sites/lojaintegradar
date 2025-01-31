@@ -244,22 +244,16 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
                             }
 
                             `}}></script>
-                        {validated && <button
+                        <button
                             id="input-createStoreForm"
-                            className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative "
+                            className={`w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative ${!validated && 'pointer-events-none'}`}
                             type="submit"
                             data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
                             data-callback="onSubmitFormRecaptcha"
                             style={{ background: buttonBackgroundColor, color: buttonTextColor }}
                         >
                             {buttonText || 'Abrir minha loja agora'}
-                        </button>}
-                        {!validated && <div
-                            className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative text-center"
-                            style={{ background: buttonBackgroundColor, color: buttonTextColor }}
-                        >
-                            {buttonText || 'Abrir minha loja agora'}
-                        </div>}
+                        </button>
                     </div>
                 </form>
             </div>

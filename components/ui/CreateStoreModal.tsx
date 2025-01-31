@@ -28,6 +28,7 @@ const CreateStoreModal = () => {
         email: "",
         senha: "",
         confirmacao_senha: "",
+        termos: false,
     });
 
     const [errors, setErrors] = useState({
@@ -35,8 +36,19 @@ const CreateStoreModal = () => {
         email: "",
         senha: "",
         confirmacao_senha: "",
+        termos: "",
     });
 
+    const [validated, setValidated] = useState(false);
+    useEffect(() => {
+        if (formData.termos == false || formData.nome == "" || formData.email == "" || formData.senha == "" || formData.confirmacao_senha == "") return setValidated(false);
+        if (errors.termos != "") return setValidated(false);
+        if (errors.nome != "") return setValidated(false);
+        if (errors.email != "") return setValidated(false);
+        if (errors.senha != "") return setValidated(false);
+        if (errors.confirmacao_senha != "") return setValidated(false);
+        setValidated(true);
+    }, [errors]);
 
     const handleInputChange = (e: any) => {
         const { name, value } = e.target;
@@ -81,6 +93,14 @@ const CreateStoreModal = () => {
             setErrors({ ...errors, confirmacao_senha: "" });
         }
     };
+
+    const handleCheckboxChange = (e: any) => {
+        setFormData(prev => {
+            if (prev.termos == true) setErrors(prev => ({ ...prev, termos: "Você precisa concordar com os termos" }));
+            else setErrors(prev => ({ ...prev, termos: "" }));
+            return { ...prev, termos: !prev.termos }
+        });
+    }
 
     const handleClose = () => {
         const getModal = document.getElementById("createStoreModal");
@@ -241,14 +261,14 @@ const CreateStoreModal = () => {
 
                     <div className="mt-4 w-full max-w-[450px]">
                         <label className="flex items-center">
-                            <input type="checkbox" className="form-checkbox" name="termos" required />
+                            <input type="checkbox" className="form-checkbox" name="termos" onChange={handleCheckboxChange} required />
                             <span className="ml-2 text-xs text-gray-600">
                                 Ao clicar, você concorda com os{" "}
-                                <a href="#" className="text-[#0C9898] font-bold">
+                                <a href="https://lojaintegrada.com.br/termos-de-uso" target="_blank" className="text-[#0C9898] font-bold">
                                     Termos de Uso
                                 </a>{" "}
                                 e a{" "}
-                                <a href="#" className="text-[#0C9898] font-bold">
+                                <a href="https://lojaintegrada.com.br/privacidade/" target="_blank" className="text-[#0C9898] font-bold">
                                     Política de Privacidade
                                 </a>
                                 .
@@ -266,7 +286,7 @@ const CreateStoreModal = () => {
                             }
 
                             `}}></script>
-                        <button
+                        {validated && <button
                             id="input-form-modal_no_check"
                             className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative"
                             type="submit"
@@ -274,7 +294,13 @@ const CreateStoreModal = () => {
                             data-callback="onSubmitModalForm"
                         >
                             Abrir minha loja agora
-                        </button>
+                        </button>}
+                        {!validated && <div
+                            id="input-form-modal_no_check"
+                            className="w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative text-center"
+                        >
+                            Abrir minha loja agora
+                        </div>}
                     </div>
                 </form>
             </div>

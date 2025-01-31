@@ -184,6 +184,16 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                         background-color: white;
                     }
                     
+                    .${hubspostFormId} span {
+                        display: none;
+                    }
+
+                    .${hubspostFormId} .submitted-message {
+                        text-align: center;
+                        background: white;
+                        border-radius: 0 0 10px 10px;
+                    }
+
                     .${hubspostFormId} .input {
                         padding-right: 0px;
                     } 
@@ -262,7 +272,7 @@ export default function MainHero({ id, title, caption = "", inputLabel, hubspotF
                                                         
                                                         .${hubspostFormId} .hs-error-msg {
                                                             position: absolute;
-                                                            top: 60px;
+                                                            top: 83px;
                                                             left: 24px;
                                                             max-width: 50%;
                                                             color: ${hubspotErrorMessageColor}

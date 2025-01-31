@@ -204,16 +204,17 @@ function Header({
                                 {labelText}
                             </p>
                         )}
-                        <script
-                            charset="utf-8"
-                            type="text/javascript"
-                            src="//js.hsforms.net/forms/embed/v2.js"
-                        ></script>
-                        <script
-                            charset="utf-8"
-                            type="text/javascript"
-                            src="/headerSnippet.js"
-                        ></script>
+                        <div dangerouslySetInnerHTML={{
+                            __html: `
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                            <script>
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "7112881",
+                                formId: "c871137b-35fa-47d7-b15f-26b64c490e7f"
+                            });
+                            </script>`
+                        }} />
                     </label>
                 </div>
             </div>

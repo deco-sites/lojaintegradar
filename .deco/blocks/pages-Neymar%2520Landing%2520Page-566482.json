@@ -54,23 +54,24 @@
         ],
         "buttons": [
           {
-            "href": "#plans",
+            "href": "https://lojaintegrada.com.br/planos",
             "text": "<p>Ver planos</p>",
             "ctaStyle": "button",
-            "backgroundColor": "#71DBD4",
-            "textColor": "#3b1c58",
-            "borderColor": "#71DBD4",
+            "backgroundColor": "#3b1c58",
+            "textColor": "#FFFFF",
+            "borderColor": "#3b1c58",
             "outline": true
           }
         ],
         "mobileButtons": [
           {
             "ctaStyle": "button",
-            "href": "#plans",
             "text": "<p><span>Ver planos</span></p>",
-            "textColor": "#401A5B",
-            "backgroundColor": "#3ADED5",
-            "borderColor": "#3ADED5"
+            "textColor": "#ffffff",
+            "backgroundColor": "#371E55",
+            "borderColor": "#371E55",
+            "href": "https://lojaintegrada.com.br/planos",
+            "showIcon": false
           }
         ],
         "asideMenuButtons": [
@@ -142,7 +143,7 @@
         "alt": "logo"
       },
       "initialButtons": [],
-      "backgroundColor": "#003037",
+      "backgroundColor": "#A08BB4",
       "barsColor": "#ffffff",
       "asideMenuTopBackgroundColor": "#D0DAD9",
       "asideMenuBackgroundColor": "#ffffff",

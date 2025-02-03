@@ -121,6 +121,9 @@
           "backgroundColor": "rgba(255, 255, 255, 0.60)",
           "borderColor": "Transparent",
           "textColor": "#003037"
+        },
+        "asideCreateStoreCta": {
+          "showIcon": false
         }
       },
       "logo": {
@@ -161,7 +164,8 @@
       },
       "campaignTimer": {
         "text": "Time left for a campaign to end with a link"
-      }
+      },
+      "hideAsideMenu": true
     },
     {
       "__resolveType": "site/sections/FloatingButtons.tsx",

@@ -168,22 +168,6 @@
       "hideAsideMenu": true
     },
     {
-      "__resolveType": "site/sections/FloatingButtons.tsx",
-      "buttons": [
-        {
-          "image": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
-            "alt": "Whatsapp icon"
-          },
-          "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero+saber+mais+informações+sobre+a+Loja+Integrada...&type=phone_number&app_absent=0",
-          "size": 57
-        }
-      ],
-      "distanceFromRightEnd": 34,
-      "distanceFromBottom": 120,
-      "distanceBetweenButtons": 20
-    },
-    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -325,7 +309,7 @@
             "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
             "hubspotForm": {
               "portalId": "7112881",
-              "formId": "da90329f-c54b-4a42-bf6c-800a08b0ca27"
+              "formId": "ea7bceec-48af-49e7-97c4-e76c0b0aac07"
             },
             "htmlContent": "",
             "bulletPoints": {
@@ -674,8 +658,8 @@
             "backgroundMedia": {
               "image": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d3284d22-d1d3-4eae-b761-f693e186135f/hero-v2-mobile-background-2.svg",
-                "height": 878,
-                "width": 430
+                "width": 430,
+                "height": 878
               },
               "use": "image"
             },
@@ -761,37 +745,37 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV2.tsx",
-            "backgroundMedia": {
-              "image": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/77e41873-daff-4cd3-9ee8-04677cc14ffc/hero-v2-background-mobile-image-3.png",
-                "width": 860,
-                "height": 1240
-              },
-              "use": "image"
+            "paddingTop": "40px",
+            "tag": {
+              "marginTop": "3.5vw"
             },
             "title": {
               "text": "<p><span style=\"color: #ffffff\">Na cola da Frequência</span></p>",
               "font": "Instrument Serif"
-            },
-            "tag": {
-              "marginTop": "3.5vw"
             },
             "caption": "<p><span style=\"color: rgb(0, 50, 57)\">Confira o eBook que traz o case completo da Next 10 e outras estratégias de especialistas para aumentar a frequência de compras no seu e-commerce.</span></p>",
             "cta": [
               {
                 "ctaStyle": "button",
                 "href": "/linkhere",
+                "text": "Baixe agora",
                 "backgroundColor": "#003239",
-                "borderColor": "#003239",
-                "text": "Baixe agora"
+                "borderColor": "#003239"
               }
             ],
             "ctaDiv": {
               "backgroundColor": ""
             },
-            "paddingTop": "40px",
-            "paddingLeft": "56px",
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/77e41873-daff-4cd3-9ee8-04677cc14ffc/hero-v2-background-mobile-image-3.png",
+                "height": 1240,
+                "width": 860
+              },
+              "use": "image"
+            },
             "paddingRight": "56px",
+            "paddingLeft": "56px",
             "sectionMinHeight": "144vw"
           },
           "rule": {
@@ -802,28 +786,22 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV2.tsx",
-            "backgroundMedia": {
-              "image": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7a4b90b4-6a2d-45c4-a61e-713c79ecd852/hero-v2-background-image-3.svg"
-              },
-              "use": "image"
+            "tag": {
+              "textColor": "#be2d2d",
+              "marginTop": "3.5vw"
             },
             "title": {
               "text": "<p><span style=\"color: #ffffff\">Na cola da Frequência</span></p>",
               "font": "Instrument Serif"
-            },
-            "tag": {
-              "marginTop": "3.5vw",
-              "textColor": "#be2d2d"
             },
             "caption": "<p><span style=\"color: #003239\">Confira o eBook que traz o case completo da</span></p><p><span style=\"color: #003239\">Next 10 e outras estratégias de especialistas</span></p><p><span style=\"color: #003239\">para aumentar a frequência de compras no</span></p><p><span style=\"color: #003239\">seu e-commerce.</span></p>",
             "cta": [
               {
                 "ctaStyle": "button",
                 "href": "/linkhere",
+                "text": "Baixe agora",
                 "backgroundColor": "#003239",
-                "borderColor": "#003239",
-                "text": "Baixe agora"
+                "borderColor": "#003239"
               }
             ],
             "ctaDiv": {
@@ -831,6 +809,12 @@
             },
             "media": {
               "use": "video"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7a4b90b4-6a2d-45c4-a61e-713c79ecd852/hero-v2-background-image-3.svg"
+              },
+              "use": "image"
             },
             "sectionMinHeight": "33vw"
           },
@@ -846,31 +830,29 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV2.tsx",
-            "tag": {
-              "text": "03. Carrinho Abandonado",
-              "textColor": "#003239",
-              "backgroundColor": "#FFE596"
-            },
-            "media": {
-              "use": "image",
+            "backgroundMedia": {
               "image": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ab12de34-414b-4e59-abb9-796917f2459b/hero-v2-mobile-image-3.svg",
-                "width": 724,
-                "height": 785
-              }
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/abe6a92f-be85-4a7e-86df-a7b861d5a098/hero-v2-background-mobile-image-3.svg"
+              },
+              "use": "image"
             },
             "title": {
               "text": "<p><span style=\"color: rgb(64, 26, 91)\">Recuperando vendas que iriam ser perdidas</span></p>",
               "font": "Instrument serif"
+            },
+            "tag": {
+              "text": "03. Carrinho Abandonado",
+              "textColor": "#003239",
+              "backgroundColor": "#FFE596"
             },
             "caption": "<p><span style=\"color: #401a5b\">Ativando gatilhos que ajudam a recuperar vendas que escaparam por pouco, A Next 10 Recuperou clientes que deixaram produtos em seus carrinhos e também aqueles que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação de forma automática.</span></p>",
             "cta": [
               {
                 "ctaStyle": "button",
                 "href": "teste",
-                "text": "Experimente o Carrinho Abandonado no seu e-commerce",
                 "backgroundColor": "#00929F",
                 "borderColor": "#00929F",
+                "text": "Experimente o Carrinho Abandonado no seu e-commerce",
                 "width": "100%"
               }
             ],
@@ -878,6 +860,17 @@
               "backgroundColor": "#DBF5F3",
               "icon": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "paddingTop": "76px",
+            "paddingLeft": "59px",
+            "paddingRight": "52px",
+            "media": {
+              "use": "image",
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ab12de34-414b-4e59-abb9-796917f2459b/hero-v2-mobile-image-3.svg",
+                "width": 724,
+                "height": 785
               }
             },
             "bulletpoints": {
@@ -889,16 +882,7 @@
                 "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
               ]
             },
-            "paddingBottom": "38px",
-            "backgroundMedia": {
-              "image": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/abe6a92f-be85-4a7e-86df-a7b861d5a098/hero-v2-background-mobile-image-3.svg"
-              },
-              "use": "image"
-            },
-            "paddingRight": "52px",
-            "paddingLeft": "59px",
-            "paddingTop": "76px"
+            "paddingBottom": "38px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -908,32 +892,30 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV2.tsx",
-            "tag": {
-              "text": "03. Carrinho Abandonado",
-              "textColor": "#003239",
-              "backgroundColor": "#FFE596",
-              "marginTop": "76px"
-            },
-            "media": {
-              "use": "image",
+            "backgroundMedia": {
               "image": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f12d5345-ba53-4870-a793-f18497a1d773/hero-v2-image-3.png",
-                "width": 724,
-                "height": 785
-              }
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/559ca399-a2a0-4953-9011-a89178ebc480/hero-v2-background-image-3.svg"
+              },
+              "use": "image"
             },
             "title": {
               "text": "<p><span style=\"color: rgb(64, 26, 91)\">Recuperando vendas que iriam ser perdidas</span></p>",
               "font": "Instrument serif"
+            },
+            "tag": {
+              "marginTop": "76px",
+              "textColor": "#003239",
+              "text": "03. Carrinho Abandonado",
+              "backgroundColor": "#FFE596"
             },
             "caption": "<p><span style=\"color: #401a5b\">Ativando gatilhos que ajudam a recuperar vendas que escaparam por pouco, A Next 10 Recuperou clientes que deixaram produtos em seus carrinhos e também aqueles que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação de forma automática.</span></p>",
             "cta": [
               {
                 "ctaStyle": "button",
                 "href": "teste",
-                "text": "Experimente o Carrinho Abandonado no seu e-commerce",
                 "backgroundColor": "#00929F",
                 "borderColor": "#00929F",
+                "text": "Experimente o Carrinho Abandonado no seu e-commerce",
                 "width": "100%"
               }
             ],
@@ -941,6 +923,14 @@
               "backgroundColor": "#DBF5F3",
               "icon": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea99557c-9211-43fc-baae-20a636de6128/loja-integrada-icon.svg"
+              }
+            },
+            "media": {
+              "use": "image",
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f12d5345-ba53-4870-a793-f18497a1d773/hero-v2-image-3.png",
+                "width": 724,
+                "height": 785
               }
             },
             "bulletpoints": {
@@ -952,13 +942,7 @@
                 "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
               ]
             },
-            "paddingBottom": "155px",
-            "backgroundMedia": {
-              "image": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/559ca399-a2a0-4953-9011-a89178ebc480/hero-v2-background-image-3.svg"
-              },
-              "use": "image"
-            }
+            "paddingBottom": "155px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -972,13 +956,13 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
+            "title": "<p style=\"text-align: center\"><span style=\"font-size: 30pt\">Next 10 &amp; Loja</span></p><p style=\"text-align: center\"><span style=\"font-size: 30pt\">Integrada</span></p><p style=\"text-align: center\"><span style=\"font-size: 30pt\">Parceria campeã</span></p>",
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/093be4d6-3cd3-4e55-b7d3-428c294e60bd/neymar-mobile-background-2.svg",
               "width": 1440,
               "height": 618
             },
             "sectionMinHeight": "131vw",
-            "title": "<p style=\"text-align: center\"><span style=\"font-size: 30pt\">Next 10 &amp; Loja</span></p><p style=\"text-align: center\"><span style=\"font-size: 30pt\">Integrada</span></p><p style=\"text-align: center\"><span style=\"font-size: 30pt\">Parceria campeã</span></p>",
             "titleColor": "#FAFAF5",
             "inputLabel": "Veja os bastidores dessa colaboração ",
             "inputLabelColor": "#ffffff",
@@ -1023,13 +1007,13 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
+            "title": "<p style=\"text-align: center\"><strong><span>Next 10 &amp; Loja Integrada</span></strong></p><p style=\"text-align: center\"><strong><span>Parceria campeã</span></strong></p>",
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e7a1403f-946b-4674-b07b-2a3421249ea2/neymar-background-2.png",
               "width": 1440,
               "height": 618
             },
             "sectionMinHeight": "43vw",
-            "title": "<p style=\"text-align: center\"><strong><span>Next 10 &amp; Loja Integrada</span></strong></p><p style=\"text-align: center\"><strong><span>Parceria campeã</span></strong></p>",
             "titleColor": "#FAFAF5",
             "inputLabel": "Veja os bastidores dessa colaboração e inspire-se com novas ideias",
             "inputLabelColor": "#ffffff",
@@ -1077,6 +1061,10 @@
         {
           "value": {
             "__resolveType": "site/sections/BulletPointsHero.tsx",
+            "title": {
+              "text": "<p><span style=\"color: #fafaf5\">Invista em Dados e Automação</span></p>",
+              "font": "Instrument serif"
+            },
             "backgroundMedia": {
               "video": "https://data.decoassets.com/lojaintegradar/4c35fa09-9008-4582-8321-466314b4d9b5/bg-site-(1mb).mp4",
               "use": "video"
@@ -1093,10 +1081,6 @@
             },
             "paddingTop": "54px",
             "paddingBottom": "63px",
-            "title": {
-              "text": "<p><span style=\"color: #fafaf5\">Invista em Dados e Automação</span></p>",
-              "font": "Instrument serif"
-            },
             "caption": "<p><span style=\"color: #fafaf5\">Economize tempo e aumente a precisão na sua estratégia de negócios. A Loja Integrada é a plataforma de e-commerce que combina inteligência de dados e expertise no mercado para oferecer um SaaS adaptável às constantes mudanças do varejo.</span></p>",
             "bulletpointSections": [
               {
@@ -1152,6 +1136,10 @@
         {
           "value": {
             "__resolveType": "site/sections/BulletPointsHero.tsx",
+            "title": {
+              "text": "<p><span style=\"color: #fafaf5\">Invista em Dados e Automação</span></p>",
+              "font": "Instrument serif"
+            },
             "backgroundMedia": {
               "video": "https://data.decoassets.com/lojaintegradar/4c35fa09-9008-4582-8321-466314b4d9b5/bg-site-(1mb).mp4",
               "use": "video"
@@ -1169,10 +1157,6 @@
             },
             "paddingTop": "116px",
             "paddingBottom": "124px",
-            "title": {
-              "text": "<p><span style=\"color: #fafaf5\">Invista em Dados e Automação</span></p>",
-              "font": "Instrument serif"
-            },
             "caption": "<p><span style=\"color: #fafaf5\">Economize tempo e aumente a precisão na sua estratégia de negócios. A Loja Integrada é a plataforma de e-commerce que combina inteligência de dados e expertise no mercado para oferecer um SaaS adaptável às constantes mudanças do varejo.</span></p>",
             "bulletpointSections": [
               {

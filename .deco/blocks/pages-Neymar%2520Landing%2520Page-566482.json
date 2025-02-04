@@ -198,8 +198,8 @@
             "use": "image",
             "inputLabel": "Por que a Next 10 escolheu a Loja Integrada?",
             "modal": {
-              "title": "Obrigado por se inscrever ",
-              "titleColor": "#003037",
+              "title": "Obrigado! ",
+              "titleColor": "#371E55",
               "textColor": "#5F6E82",
               "backButton": {
                 "text": "Retomar a navegação ",
@@ -212,12 +212,19 @@
                 {
                   "ctaStyle": "button",
                   "text": "Retomar a navegação ",
-                  "backgroundColor": "#003037",
+                  "backgroundColor": "#371E55",
                   "textColor": "#ffffff",
-                  "borderColor": "#003037",
+                  "borderColor": "#371E55",
                   "showIcon": false
                 }
-              ]
+              ],
+              "text": "O videocase. está pronto para ser assistido!",
+              "media": {
+                "video": {
+                  "src": "https://www.youtube.com/embed/yStPUoIbKJk?si=6QaBXZSS4U7rQSx3"
+                },
+                "use": "embed"
+              }
             },
             "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
             "hubspotForm": {
@@ -280,8 +287,8 @@
             "hubspotFormButtonTextColor": "#003037",
             "hubspotErrorMessageColor": "#F57E77",
             "modal": {
-              "title": "Obrigado por se inscrever ",
-              "titleColor": "#003037",
+              "title": "Obrigado! ",
+              "titleColor": "#371E55",
               "textColor": "#5F6E82",
               "backButton": {
                 "text": "Retomar a navegação ",
@@ -294,18 +301,19 @@
                 {
                   "ctaStyle": "button",
                   "text": "Retomar a navegação ",
-                  "backgroundColor": "#003037",
+                  "backgroundColor": "#371E55",
                   "textColor": "#ffffff",
-                  "borderColor": "#003037",
+                  "borderColor": "#371E55",
                   "showIcon": false
                 }
               ],
               "media": {
                 "video": {
-                  "src": "https://www.youtube.com/embed/u31qwQUeGuM?si=mOwdEBMynMBjjKN1"
+                  "src": "https://www.youtube.com/embed/yStPUoIbKJk?si=6QaBXZSS4U7rQSx3"
                 },
                 "use": "embed"
-              }
+              },
+              "text": "O videocase. está pronto para ser assistido!"
             },
             "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
             "hubspotForm": {

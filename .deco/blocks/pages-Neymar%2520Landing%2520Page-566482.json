@@ -313,7 +313,7 @@
                 },
                 "use": "embed"
               },
-              "text": "O videocase. está pronto para ser assistido!"
+              "text": "O videocase. está pronto para ser assistido."
             },
             "hubspotScript": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>                     <script>                     hbspt.forms.create({                         region: \"na1\",                         portalId: \"7112881\",                         formId: \"51bbcad7-31d8-4a8f-ba76-845a10da854d\",                         onFormSubmit: function($form){                                     const modal = document.getElementById(\"${modalId}\");                                     if (modal) modal.classList.remove('hidden');                                  }                     });                     </script>",
             "hubspotForm": {
@@ -999,12 +999,18 @@
                 {
                   "ctaStyle": "button",
                   "text": "Retomar a navegação ",
-                  "backgroundColor": "#003037",
+                  "backgroundColor": "#371E55",
                   "textColor": "#ffffff",
-                  "borderColor": "#003037",
+                  "borderColor": "#371E55",
                   "showIcon": false
                 }
-              ]
+              ],
+              "media": {
+                "use": "embed",
+                "video": {
+                  "src": "https://www.youtube.com/embed/yStPUoIbKJk?si=CMwytnFzGdG1cIWo"
+                }
+              }
             },
             "hubspotFormButtonWidth": "full"
           },
@@ -1028,7 +1034,7 @@
             "inputLabelColor": "#ffffff",
             "inputLabelBackgroundColor": "rgba(235, 235, 235, 0.32)",
             "hubspotForm": {
-              "formId": "da90329f-c54b-4a42-bf6c-800a08b0ca27",
+              "formId": "ea7bceec-48af-49e7-97c4-e76c0b0aac07",
               "portalId": "7112881"
             },
             "inputLabelWidth": "full",
@@ -1036,8 +1042,8 @@
             "hubspotFormButtonColor": "#4FA8A6",
             "hubspotFormButtonIcon": true,
             "modal": {
-              "title": "Obrigado por se inscrever ",
-              "titleColor": "#003037",
+              "title": "Obrigado! ",
+              "titleColor": "#371E55",
               "textColor": "#5F6E82",
               "backButton": {
                 "text": "Retomar a navegação ",
@@ -1050,12 +1056,19 @@
                 {
                   "ctaStyle": "button",
                   "text": "Retomar a navegação ",
-                  "backgroundColor": "#003037",
+                  "backgroundColor": "#371E55",
                   "textColor": "#ffffff",
-                  "borderColor": "#003037",
+                  "borderColor": "#371E55",
                   "showIcon": false
                 }
-              ]
+              ],
+              "text": "O videocase. está pronto para ser assistido.",
+              "media": {
+                "use": "embed",
+                "video": {
+                  "src": "https://www.youtube.com/embed/yStPUoIbKJk?si=CMwytnFzGdG1cIWo"
+                }
+              }
             }
           },
           "rule": {

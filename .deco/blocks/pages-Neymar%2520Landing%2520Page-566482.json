@@ -566,17 +566,7 @@
               "font": "Instrument serif"
             },
             "caption": "<p><span style=\"color: #401a5b\">A Next 10 oferece descontos progressivos para incentivar seus clientes a comprarem mais: quanto mais itens no carrinho, maior o desconto aplicado. Mais economia para eles, mais vendas a loja!</span></p>",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "linkhere",
-                "text": "Leve Desconto Progressivo para seu e-commerce ",
-                "backgroundColor": "#00929F",
-                "borderColor": "#00929F",
-                "showIcon": false,
-                "width": "100%"
-              }
-            ],
+            "cta": [],
             "ctaAndBulletPointsDivColor": "#71DBD4",
             "bulletpoints": {
               "items": [
@@ -612,7 +602,8 @@
               "width": "100%",
               "backgroundColor": "#00929F",
               "borderColor": "#00929F",
-              "textColor": "#FFFFFF"
+              "textColor": "#FFFFFF",
+              "ctaStyle": "button"
             }
           },
           "rule": {

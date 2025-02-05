@@ -695,17 +695,7 @@
               "font": "Instrument serif"
             },
             "caption": "<p><span style=\"color: #401a5b\">A loja incentiva compras de maior valor e oferece uma experiência além do esperado com o Brinde Progressivo. Ao atingir um valor específico, seus clientes ganham um brinde exclusivo – uma forma eficaz de aumentar o ticket médio e incentivar novas compras.<br></span></p>",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "linkhere",
-                "text": "Ofereça Brinde Progressivo no seu e-commerce",
-                "backgroundColor": "#00929F",
-                "borderColor": "#00929F",
-                "showIcon": false,
-                "width": "100%"
-              }
-            ],
+            "cta": [],
             "ctaAndBulletPointsDivColor": "#71DBD4",
             "bulletpoints": {
               "items": [
@@ -738,7 +728,13 @@
             "mediaPlacement": "left",
             "createStoreCta": {
               "planId": "172",
-              "order": 0
+              "order": 0,
+              "text": "Ofereça Brinde Progressivo no seu e-commerce",
+              "ctaStyle": "button",
+              "backgroundColor": "#00929F",
+              "borderColor": "#00929F",
+              "textColor": "#FFFFFF",
+              "width": "100%"
             }
           },
           "rule": {
@@ -918,16 +914,7 @@
               "backgroundColor": "#FFE596"
             },
             "caption": "<p><span style=\"color: #401a5b\">Ativando gatilhos que ajudam a recuperar vendas que escaparam por pouco, A Next 10 Recuperou clientes que deixaram produtos em seus carrinhos e também aqueles que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação de forma automática.</span></p>",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "teste",
-                "backgroundColor": "#00929F",
-                "borderColor": "#00929F",
-                "text": "Experimente o Carrinho Abandonado no seu e-commerce",
-                "width": "100%"
-              }
-            ],
+            "cta": [],
             "ctaDiv": {
               "backgroundColor": "#DBF5F3",
               "icon": {
@@ -951,7 +938,16 @@
                 "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
               ]
             },
-            "paddingBottom": "155px"
+            "paddingBottom": "155px",
+            "createStoreCta": {
+              "backgroundColor": "#00929F",
+              "textColor": "#FFFFFF",
+              "borderColor": "#00929F",
+              "planId": "172",
+              "text": "Experimente o Carrinho Abandonado no seu e-commerce",
+              "ctaStyle": "button",
+              "width": "100%"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

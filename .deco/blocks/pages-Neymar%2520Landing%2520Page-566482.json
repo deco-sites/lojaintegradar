@@ -803,14 +803,16 @@
               "text": "<p><span style=\"color: #ffffff\">Na cola da Frequência</span></p>",
               "font": "Instrument Serif"
             },
-            "caption": "<p><span style=\"color: #003239\">Confira o eBook que traz o case completo da</span></p><p><span style=\"color: #003239\">Next 10 e outras estratégias de especialistas</span></p><p><span style=\"color: #003239\">para aumentar a frequência de compras no</span></p><p><span style=\"color: #003239\">seu e-commerce.</span></p>",
+            "caption": "<p><span style=\"color: rgb(0, 50, 57)\">Confira o eBook que traz o case completo da</span></p><p><span style=\"color: rgb(0, 50, 57)\">Next 10 e outras estratégias de especialistas</span></p><p><span style=\"color: rgb(0, 50, 57)\">para aumentar a frequência de compras no</span></p><p><span style=\"color: rgb(0, 50, 57)\">seu e-commerce.</span></p>",
             "cta": [
               {
                 "ctaStyle": "button",
                 "href": "/linkhere",
                 "text": "Baixe agora",
                 "backgroundColor": "#003239",
-                "borderColor": "#003239"
+                "borderColor": "#003239",
+                "showIcon": false,
+                "icon": {}
               }
             ],
             "ctaDiv": {
@@ -825,7 +827,13 @@
               },
               "use": "image"
             },
-            "sectionMinHeight": "33vw"
+            "sectionMinHeight": "33vw",
+            "createStoreCta": {
+              "showIcon": false,
+              "planId": "172",
+              "ctaStyle": "button",
+              "icon": {}
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1219,7 +1227,8 @@
                 "backgroundColor": "#ffffff",
                 "borderColor": "#ffffff",
                 "textColor": "#003239",
-                "showIcon": false
+                "showIcon": false,
+                "icon": {}
               }
             ],
             "mediaPlacement": "left",
@@ -1229,7 +1238,9 @@
               "backgroundColor": "#ffffff",
               "borderColor": "#ffffff",
               "textColor": "#003239",
-              "ctaStyle": "button"
+              "ctaStyle": "button",
+              "showIcon": false,
+              "icon": {}
             }
           },
           "rule": {

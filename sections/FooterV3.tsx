@@ -69,9 +69,8 @@ export interface Props {
     /** @format color-input */
     cardsButtonTextColor?: string;
     logo?: IImage;
-    logoCaption?: string;
-    /** @format color-input */
-    logoCaptionColor?: string;
+    logoCaption?: RichText;
+    logoCaptionFont?: string;
     socialLinks?: socialLink[];
     centralizeLogoAndSocialLinks?: boolean;
     bottomLinks?: CTA[];
@@ -85,7 +84,7 @@ export interface Props {
     lineColor?: string;
 }
 
-export default function Footer2({ id, centralizeCards = false, centralizeBottomLinks = false, centralizeLogoAndSocialLinks = false, cards = [], logo, logoCaption, socialLinks, bottomLinks, hubspotForm, logoCaptionColor, cardsButtonColor, cardsButtonTextColor, cardsTextColor, bottomLinksColor, cardsBackgroundColor, backgroundMedia, lineColor, showForm }: Props) {
+export default function Footer2({ id, centralizeCards = false, centralizeBottomLinks = false, centralizeLogoAndSocialLinks = false, cards = [], logo, logoCaption, socialLinks, bottomLinks, hubspotForm, logoCaptionFont, cardsButtonColor, cardsButtonTextColor, cardsTextColor, bottomLinksColor, cardsBackgroundColor, backgroundMedia, lineColor, showForm }: Props) {
     const randomId = useId();
     const hubspostFormId = randomId + "hubspotForm";
     return <footer id={id} class="relative text-primary pt-[105px]">
@@ -129,7 +128,7 @@ export default function Footer2({ id, centralizeCards = false, centralizeBottomL
                             alt={logo.alt || "footer logo"}
                             class="object-contain mb-4"
                         />}
-                        <p class="text-sm font-normal leading-normal" style={{ color: logoCaptionColor }}>{logoCaption}</p>
+                        {logoCaption && <div class="text-sm font-normal leading-normal" dangerouslySetInnerHTML={{ __html: logoCaption }} style={{ fontFamily: logoCaptionFont }} />}
                     </AnimateOnShow>
 
                     <AnimateOnShow animation="animate-fade-up" delay={250} animationDuration="animate-fade-up">

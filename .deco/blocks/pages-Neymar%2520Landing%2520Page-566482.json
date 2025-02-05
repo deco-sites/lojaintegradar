@@ -808,7 +808,11 @@
                 "text": "Baixe agora",
                 "backgroundColor": "#003239",
                 "borderColor": "#003239",
-                "showIcon": true
+                "showIcon": true,
+                "icon": {
+                  "src": "https://data.decoassets.com/lojaintegradar/105984c9-d4fa-497c-b749-0b2aae9347cb/Vector.svg",
+                  "width": 18
+                }
               }
             ],
             "ctaDiv": {
@@ -1177,7 +1181,8 @@
                   "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/290683e7-56fd-41c4-a278-a23da9223d85/mute-icon.png",
                   "width": 40,
                   "height": 40
-                }
+                },
+                "height": "580px"
               },
               "use": "video"
             },

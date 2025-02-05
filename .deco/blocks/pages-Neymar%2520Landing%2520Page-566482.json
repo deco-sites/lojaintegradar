@@ -1273,11 +1273,10 @@
       ],
       "color3": "#bf1212",
       "useBackground": "video",
-      "logoCaption": "A plataforma que investe de verdade em Dados e Automação",
       "logo": {
         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b5e42308-e3a7-4f5a-8aef-b7af2c3563bd/white-logo.svg"
       },
-      "showForm": true,
+      "showForm": false,
       "emailForm": {
         "inputName": "email",
         "inputLabel": "Junte-se a mais de  2,7 milhões de lojistas",
@@ -1355,7 +1354,10 @@
       "lineColor": "rgba(255, 255, 255, 0.10)",
       "cardsButtonColor": "#401A5B",
       "cardsButtonTextColor": "#ffffff",
-      "centralizeCards": true
+      "centralizeCards": true,
+      "centralizeBottomLinks": true,
+      "centralizeLogoAndSocialLinks": true,
+      "logoCaption": "A plataforma que investe de verdade em Dados e Automação"
     },
     {
       "__resolveType": "site/sections/TalkToSpecialistModal.tsx"

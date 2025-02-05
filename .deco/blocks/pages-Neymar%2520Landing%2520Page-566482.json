@@ -566,17 +566,7 @@
               "font": "Instrument serif"
             },
             "caption": "<p><span style=\"color: #401a5b\">A Next 10 oferece descontos progressivos para incentivar seus clientes a comprarem mais: quanto mais itens no carrinho, maior o desconto aplicado. Mais economia para eles, mais vendas a loja!</span></p>",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "linkhere",
-                "text": "Leve Desconto Progressivo para seu e-commerce ",
-                "backgroundColor": "#00929F",
-                "borderColor": "#00929F",
-                "showIcon": false,
-                "width": "100%"
-              }
-            ],
+            "cta": [],
             "ctaAndBulletPointsDivColor": "#71DBD4",
             "bulletpoints": {
               "items": [
@@ -605,6 +595,15 @@
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/61930679-94ab-4c26-94a6-e95b206ad75c/heroV2-background-image-1.svg"
               },
               "use": "image"
+            },
+            "createStoreCta": {
+              "planId": "172",
+              "text": "Leve desconto progressivo para seu e-commerce",
+              "width": "100%",
+              "backgroundColor": "#00929F",
+              "borderColor": "#00929F",
+              "textColor": "#FFFFFF",
+              "ctaStyle": "button"
             }
           },
           "rule": {
@@ -696,17 +695,7 @@
               "font": "Instrument serif"
             },
             "caption": "<p><span style=\"color: #401a5b\">A loja incentiva compras de maior valor e oferece uma experiência além do esperado com o Brinde Progressivo. Ao atingir um valor específico, seus clientes ganham um brinde exclusivo – uma forma eficaz de aumentar o ticket médio e incentivar novas compras.<br></span></p>",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "linkhere",
-                "text": "Ofereça Brinde Progressivo no seu e-commerce",
-                "backgroundColor": "#00929F",
-                "borderColor": "#00929F",
-                "showIcon": false,
-                "width": "100%"
-              }
-            ],
+            "cta": [],
             "ctaAndBulletPointsDivColor": "#71DBD4",
             "bulletpoints": {
               "items": [
@@ -739,7 +728,13 @@
             "mediaPlacement": "left",
             "createStoreCta": {
               "planId": "172",
-              "order": 0
+              "order": 0,
+              "text": "Ofereça Brinde Progressivo no seu e-commerce",
+              "ctaStyle": "button",
+              "backgroundColor": "#00929F",
+              "borderColor": "#00929F",
+              "textColor": "#FFFFFF",
+              "width": "100%"
             }
           },
           "rule": {
@@ -811,8 +806,7 @@
                 "text": "Baixe agora",
                 "backgroundColor": "#003239",
                 "borderColor": "#003239",
-                "showIcon": false,
-                "icon": {}
+                "showIcon": true
               }
             ],
             "ctaDiv": {
@@ -926,16 +920,7 @@
               "backgroundColor": "#FFE596"
             },
             "caption": "<p><span style=\"color: #401a5b\">Ativando gatilhos que ajudam a recuperar vendas que escaparam por pouco, A Next 10 Recuperou clientes que deixaram produtos em seus carrinhos e também aqueles que navegaram na página dos seus produtos, mas não finalizaram a compra. Envie mensagens personalizadas e transforme o interesse em ação de forma automática.</span></p>",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "teste",
-                "backgroundColor": "#00929F",
-                "borderColor": "#00929F",
-                "text": "Experimente o Carrinho Abandonado no seu e-commerce",
-                "width": "100%"
-              }
-            ],
+            "cta": [],
             "ctaDiv": {
               "backgroundColor": "#DBF5F3",
               "icon": {
@@ -959,7 +944,16 @@
                 "Faça o teste. Comece na Loja Integrada e conheça essa e outras funcionalidades nativas"
               ]
             },
-            "paddingBottom": "155px"
+            "paddingBottom": "155px",
+            "createStoreCta": {
+              "backgroundColor": "#00929F",
+              "textColor": "#FFFFFF",
+              "borderColor": "#00929F",
+              "planId": "172",
+              "text": "Experimente o Carrinho Abandonado no seu e-commerce",
+              "ctaStyle": "button",
+              "width": "100%"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1176,7 +1170,7 @@
             },
             "media": {
               "video": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b6944d7b-d171-4723-bb39-2ad6891d34d0/(FULL-HD-1080p)-ASUS-Zenfone-display-demo-video-portrait-mode.mp4",
+                "src": "https://data.decoassets.com/lojaintegradar/136ada99-4901-4edc-a634-752537b37a01/VTEX_LI_OBRIGADOEMPREENDEDOR_entrenolink-(1)-(1).mp4",
                 "mutedIcon": {
                   "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/290683e7-56fd-41c4-a278-a23da9223d85/mute-icon.png",
                   "width": 40,
@@ -1197,9 +1191,9 @@
                   "Prioridade no atendimento"
                 ],
                 "bulletPointsIcon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9d7ef9e9-ffbf-4dda-8ea7-a12a1d36a630/check-icon.svg"
                 },
-                "backgroundColor": "#ffffff",
+                "backgroundColor": "rgba(255, 255, 255, 0.4)",
                 "itemsTextColor": "#003239",
                 "title": "Para você migrar",
                 "titleColor": "#003239"
@@ -1212,25 +1206,14 @@
                 ],
                 "title": "Para você lucrar",
                 "titleColor": "#003239",
-                "backgroundColor": "#ffffff",
+                "backgroundColor": "rgba(255, 255, 255, 0.4)",
                 "itemsTextColor": "#003239",
                 "bulletPointsIcon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9d7ef9e9-ffbf-4dda-8ea7-a12a1d36a630/check-icon.svg"
                 }
               }
             ],
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "linkhere",
-                "text": "Abra sua loja ",
-                "backgroundColor": "#ffffff",
-                "borderColor": "#ffffff",
-                "textColor": "#003239",
-                "showIcon": false,
-                "icon": {}
-              }
-            ],
+            "cta": [],
             "mediaPlacement": "left",
             "createStoreCta": {
               "planId": "172",

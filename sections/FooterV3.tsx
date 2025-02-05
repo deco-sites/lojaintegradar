@@ -58,6 +58,7 @@ export interface HubspotForm {
 
 export interface Props {
     id?: string;
+    centralizeCards?: boolean;
     cards?: Card[];
     /** @format color-input */
     cardsBackgroundColor?: string;
@@ -82,14 +83,14 @@ export interface Props {
     lineColor?: string;
 }
 
-export default function Footer2({ id, cards = [], logo, logoCaption, socialLinks, bottomLinks, hubspotForm, logoCaptionColor, cardsButtonColor, cardsButtonTextColor, cardsTextColor, bottomLinksColor, cardsBackgroundColor, backgroundMedia, lineColor, showForm }: Props) {
+export default function Footer2({ id, centralizeCards = false, cards = [], logo, logoCaption, socialLinks, bottomLinks, hubspotForm, logoCaptionColor, cardsButtonColor, cardsButtonTextColor, cardsTextColor, bottomLinksColor, cardsBackgroundColor, backgroundMedia, lineColor, showForm }: Props) {
     const randomId = useId();
     const hubspostFormId = randomId + "hubspotForm";
     return <footer id={id} class="relative text-primary pt-[105px]">
 
         <div class="pb-32">
             <div class="max-w-[1250px] mx-auto">
-                <AnimateOnShow divClass="max-w-[1070px] pl-5 py-9 lg:p-0 flex lg:flex-wrap overflow-auto lg:overflow-visible gap-2.5 lg:gap-[42px]" animation="animate-fade-up">
+                <AnimateOnShow divClass={`${centralizeCards && 'mx-auto'} max-w-[1070px] pl-5 py-9 lg:p-0 flex lg:flex-wrap overflow-auto lg:overflow-visible gap-2.5 lg:gap-[42px]`} animation="animate-fade-up">
                     {cards.length > 0 && cards.map((card) => (
                         <div class="flex-grow min-w-[78vw] lg:min-w-0 lg:max-w-[500px] rounded-[30px] bg-primary-content py-7 lg:py-10 px-12 lg:px-14 shadow-spreaded3" style={{ background: cardsBackgroundColor, color: cardsTextColor }}>
                             <div class="flex gap-2.5 lg:gap-5 items-center">

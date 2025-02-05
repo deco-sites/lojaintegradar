@@ -73,9 +73,11 @@ export interface Props {
     /** @format color-input */
     logoCaptionColor?: string;
     socialLinks?: socialLink[];
+    centralizeLogoAndSocialLinks?: boolean;
     bottomLinks?: CTA[];
     /** @format color-input */
     bottomLinksColor?: string;
+    centralizeBottomLinks?: boolean;
     showForm?: boolean;
     hubspotForm?: HubspotForm;
     backgroundMedia?: BackgroundMedia;
@@ -83,7 +85,7 @@ export interface Props {
     lineColor?: string;
 }
 
-export default function Footer2({ id, centralizeCards = false, cards = [], logo, logoCaption, socialLinks, bottomLinks, hubspotForm, logoCaptionColor, cardsButtonColor, cardsButtonTextColor, cardsTextColor, bottomLinksColor, cardsBackgroundColor, backgroundMedia, lineColor, showForm }: Props) {
+export default function Footer2({ id, centralizeCards = false, centralizeBottomLinks = false, centralizeLogoAndSocialLinks = false, cards = [], logo, logoCaption, socialLinks, bottomLinks, hubspotForm, logoCaptionColor, cardsButtonColor, cardsButtonTextColor, cardsTextColor, bottomLinksColor, cardsBackgroundColor, backgroundMedia, lineColor, showForm }: Props) {
     const randomId = useId();
     const hubspostFormId = randomId + "hubspotForm";
     return <footer id={id} class="relative text-primary pt-[105px]">
@@ -118,7 +120,7 @@ export default function Footer2({ id, centralizeCards = false, cards = [], logo,
                         </div>
                     ))}
                 </AnimateOnShow>
-                <div class="max-w-[1240px] mx-auto flex flex-col lg:flex-row gap-4 justify-between items-center mt-9 lg:mt-20">
+                <div class={`max-w-[1240px] mx-auto flex flex-col gap-4 justify-between items-center mt-9 lg:mt-20 ${!centralizeLogoAndSocialLinks && 'lg:flex-row '}`}>
                     <AnimateOnShow divClass="max-w-[193px] order-1 lg:-order-none" animation="animate-fade-up" delay={100}>
                         {logo?.src && <Image
                             width={logo.width || 193}
@@ -159,7 +161,7 @@ export default function Footer2({ id, centralizeCards = false, cards = [], logo,
 
                 </div>
 
-                <div class="mt-20 mx-auto pt-[62px] border-t border-t-base-200 max-w-[1240px] flex flex-col lg:flex-row flex-wrap gap-y-5 gap-7" style={{ borderColor: lineColor, color: bottomLinksColor }}>
+                <div class={`mt-20 mx-auto pt-[62px] border-t border-t-base-200 max-w-[1240px] flex flex-col lg:flex-row flex-wrap gap-y-5 gap-7 ${centralizeBottomLinks && 'justify-center'}`} style={{ borderColor: lineColor, color: bottomLinksColor }}>
                     {bottomLinks?.map((link) => {
                         if (link.href == '/talkToSpecialist') return <TalkToSpecialistCta text={link.text} ctaClass="text-sm font-normal leading-normal cursor-pointer text-center" divClass="text-center" />
                         return <a

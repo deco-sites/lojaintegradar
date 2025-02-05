@@ -201,7 +201,7 @@ export default function BulletPointsHero({ id, title, paddingBottom, bulletpoint
                                 showIcon={createStoreCta.showIcon}
                                 icon={createStoreCta.icon}
                                 underlineText={createStoreCta.underlineText}
-                                ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base cursor-pointer`}
+                                ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-2.5 border-primary font-bold hover:scale-110 transition-transform text-base cursor-pointer`}
                                 style={createStoreCta.ctaStyle == "button"
                                     ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order, width: createStoreCta.width || "fit-content" }
                                     : { color: createStoreCta.textColor, order: createStoreCta.order, width: createStoreCta.width || "fit-content" }}
@@ -212,7 +212,7 @@ export default function BulletPointsHero({ id, title, paddingBottom, bulletpoint
                                       underlineText={button.underlineText}
                                       text={button.text}
                                       icon={createStoreCta?.icon}
-                                      ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto cursor-pointer`}
+                                      ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-2.5 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto cursor-pointer`}
                                       style={button.ctaStyle == "button" 
                                         ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content", order: index + 1 } 
                                         : { color: button.textColor, width: button.width || "fit-content", order: index + 1 }}
@@ -220,7 +220,7 @@ export default function BulletPointsHero({ id, title, paddingBottom, bulletpoint
                                   return <a
                                       href={button?.href ?? "#"}
                                       target={button?.href.includes("http") ? "_blank" : ""}
-                                      class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto`}
+                                      class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-2.5 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto`}
                                       style={button.ctaStyle == "button" 
                                         ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content", order: index + 1 } 
                                         : { color: button.textColor, width: button.width || "fit-content", order: index + 1 }}

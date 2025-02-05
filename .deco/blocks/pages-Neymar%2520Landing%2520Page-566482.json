@@ -1222,7 +1222,15 @@
                 "showIcon": false
               }
             ],
-            "mediaPlacement": "left"
+            "mediaPlacement": "left",
+            "createStoreCta": {
+              "planId": "172",
+              "text": "Abra sua loja",
+              "backgroundColor": "#ffffff",
+              "borderColor": "#ffffff",
+              "textColor": "#003239",
+              "ctaStyle": "button"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

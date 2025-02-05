@@ -3,6 +3,7 @@ import Image from "apps/website/components/Image.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useScript } from "@deco/deco/hooks";
+import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
 const onClick = () => {
   const parent = event!.currentTarget as HTMLElement;
@@ -36,6 +37,22 @@ export interface BulletPoints {
   bulletPointsIcon?: IImage;
   /** @format color-input */
   backgroundColor?: string;
+}
+
+export interface CreateStoreWithPlanCTA {
+  planId: string;
+  text?: string;
+  underlineText?: string;
+  /** @format color-input */
+  backgroundColor?: string;
+  /** @format color-input */
+  textColor?: string;
+  /** @format color-input */
+  borderColor?: string;
+  ctaStyle?: "button" | "link";
+  showIcon?: boolean;
+  width?: string;
+  order?: number;
 }
 
 /** @title {{text}} {{underlineText}} */
@@ -90,6 +107,7 @@ export interface Props {
   title?: Title;
   caption?: RichText;
   bulletpointSections?: BulletPoints[];
+  createStoreCta?: CreateStoreWithPlanCTA;
   cta?: CTA[];
   media?: Media;
   mediaPlacement?: "right" | "left";
@@ -135,7 +153,7 @@ export function HeroMedia({ media }: { media?: Media }) {
   </div>
 }
 
-export default function BulletPointsHero({ id, title, paddingBottom, bulletpointSections = [], cta = [], paddingLeft, caption, paddingRight, paddingTop, sectionMinHeight, backgroundMedia, media, mediaPlacement = "left" }: Props) {
+export default function BulletPointsHero({ id, title, paddingBottom, bulletpointSections = [], createStoreCta, cta = [], paddingLeft, caption, paddingRight, paddingTop, sectionMinHeight, backgroundMedia, media, mediaPlacement = "left" }: Props) {
   return <div id={id} style={{ paddingTop, paddingBottom, paddingRight, paddingLeft, minHeight: sectionMinHeight }} class="relative">
     <div class={`max-w-[1210px] mx-auto flex flex-wrap lg:flex-nowrap gap-7 ${media?.use ? 'justify-between' : 'justify-center' } ${mediaPlacement == "right" && 'flex-row-reverse'}`}>
       {media?.use && <AnimateOnShow
@@ -174,19 +192,34 @@ export default function BulletPointsHero({ id, title, paddingBottom, bulletpoint
           ))}
         </AnimateOnShow>
         <AnimateOnShow divClass="flex flex-wrap gap-4" animation={mediaPlacement == "right" ? "animate-fade-right" : "animate-fade-left"}>
-          {cta.map((button) => {
+        {createStoreCta?.text && <CreateStoreCta
+                                period="anual"
+                                text={createStoreCta.text}
+                                planId={createStoreCta.planId}
+                                showIcon={createStoreCta.showIcon}
+                                underlineText={createStoreCta.underlineText}
+                                ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-base cursor-pointer`}
+                                style={createStoreCta.ctaStyle == "button"
+                                    ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor, order: createStoreCta.order, width: createStoreCta.width || "fit-content" }
+                                    : { color: createStoreCta.textColor, order: createStoreCta.order, width: createStoreCta.width || "fit-content" }}
+                            />}
+          {cta.map((button, index) => {
                                   if (button.href == '/talkToSpecialist') return <TalkToSpecialistCta
                                       showIcon={button.showIcon}
                                       underlineText={button.underlineText}
                                       text={button.text}
                                       ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto cursor-pointer`}
-                                      style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content" } : { color: button.textColor, width: button.width || "fit-content" }}
+                                      style={button.ctaStyle == "button" 
+                                        ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content", order: index + 1 } 
+                                        : { color: button.textColor, width: button.width || "fit-content", order: index + 1 }}
                                   />
                                   return <a
                                       href={button?.href ?? "#"}
                                       target={button?.href.includes("http") ? "_blank" : ""}
                                       class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-sm lg:text-base h-auto`}
-                                      style={button.ctaStyle == "button" ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content" } : { color: button.textColor, width: button.width || "fit-content" }}
+                                      style={button.ctaStyle == "button" 
+                                        ? { backgroundColor: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, width: button.width || "fit-content", order: index + 1 } 
+                                        : { color: button.textColor, width: button.width || "fit-content", order: index + 1 }}
                                   >
                                       {button?.text}
                                       {button.underlineText && <span class="underline">{button.underlineText}</span>}

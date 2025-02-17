@@ -14,9 +14,9 @@ export async function handler(request: Request, ctx: FreshContext) {
     ? "https://lojaintegradar.deco.site"
     : incomingOrigin;
   const response = await ctx.next();
-
+  let body: string | undefined = undefined;
   if (response.headers.get("Content-Type")?.startsWith("text/html")) {
-    const body = (await response.text())
+    body = (await response.text())
       .replaceAll('src="//js', 'src="https://js')
       .replaceAll('href="/', `href="${originToRewrite}/`)
       .replaceAll('src="/', `src="${originToRewrite}/`)
@@ -29,16 +29,16 @@ export async function handler(request: Request, ctx: FreshContext) {
         "lojaintegrada.com.br/_frsh",
       )
       .replaceAll(" /live/invoke", ` ${originToRewrite}/live/invoke`);
-
-    response.headers.set("x-middleware-processed", "1");
-    response.headers.set("Access-Control-Allow-Origin", "*");
-
-    return new Response(body, {
-      headers: response.headers,
-      status: response.status,
-      statusText: response.statusText,
-    });
   }
+  response.headers.set("x-middleware-processed", "1");
+  response.headers.set(
+    "Access-Control-Allow-Origin",
+    "*.lojaintegrada.com.br,*",
+  );
 
-  return response;
+  return new Response(body ?? response.body, {
+    headers: response.headers,
+    status: response.status,
+    statusText: response.statusText,
+  });
 }

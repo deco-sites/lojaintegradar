@@ -1462,16 +1462,66 @@
             ]
           },
           {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/BigImageHeroV2.tsx",
+              "image": {
+                "src": "https://data.decoassets.com/lojaintegradar/70470975-95ae-495a-a953-5f56af8e60ef/img-case-neymar-desktop.png"
+              },
+              "title": "<p><span style=\"color: rgb(0, 48, 55)\">A loja do Neymar </span><em><span style=\"color: rgb(40, 195, 195)\">é da Loja Integrada!</span></em></p>",
+              "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight: 300;\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos e estratégias voltadas para engajamento e recompra. E-commerce automatizado e inteligência de dados<br>ao alcance de todo empreendedor.</span></p>",
+              "features": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "Carrinho Abandonado",
+                  "titleColor": "#003037",
+                  "text": "Recupere vendas automaticamente",
+                  "textColor": "#5F6E82"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "Compre Junto",
+                  "titleColor": "#003037",
+                  "text": "Aumente o ticket médio com combos de produtos",
+                  "textColor": "#5F6E82"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "Brindes",
+                  "titleColor": "#003037",
+                  "text": "Personalize a experiência enquanto incentiva pedidos maiores",
+                  "textColor": "#5F6E82"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "Desconto Progressivo",
+                  "titleColor": "#003037",
+                  "text": "Estimule compras em maior volume, com descontos que crescem",
+                  "textColor": "#5F6E82"
+                }
+              ]
+            }
+          },
+          {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
                 "value": {
                   "__resolveType": "site/sections/Carousel.tsx",
-                  "titleColor": "",
                   "title": "<p style=\"line-height:1; \"><span style=\"color: rgb(0, 48, 55); font-size:32pt;  font-weight:300; \">Nós queremos mais é<br> que você cresça!</span></p><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:18px; font-weight:300; font-family: 'Inter'; \">Uma plataforma que se adapta às suas necessidades, seja qual for o tamanho do<br> seu negócio.</p>",
+                  "paddingBottom": "120px",
+                  "paddingTop": "80px",
+                  "titleColor": "",
                   "titleFont": "Instrument serif",
                   "captionColor": "#371E55",
-                  "paddingTop": "80px",
                   "slides": [
                     {
                       "title": "Para quem está começando no e-commerce",
@@ -1570,7 +1620,6 @@
                       "outline": true
                     }
                   ],
-                  "paddingBottom": "120px",
                   "backgroundImage": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8243ad-68f1-4e47-bdc5-d7abec141794/elemento-bg-1.png"
                   },
@@ -1591,11 +1640,11 @@
               {
                 "value": {
                   "__resolveType": "site/sections/Carousel.tsx",
-                  "titleColor": "",
                   "title": "<p><span style=\"color: rgb(0, 48, 55); font-size:70px;  font-weight:300; \">Nós queremos mais é que você cresça!</span><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:24px; font-weight:300; font-family: 'Inter'; \"><br>Uma plataforma que se adapta às suas necessidades, seja qual for <br>o tamanho do seu negócio.</p>",
+                  "paddingBottom": "120px",
+                  "titleColor": "",
                   "captionColor": "#371E55",
                   "titleFont": "Instrument serif",
-                  "paddingBottom": "120px",
                   "slides": [
                     {
                       "title": "Para quem está começando no e-commerce",
@@ -2103,6 +2152,7 @@
                     "mobile": "<p style=\"text-align: center; font-family: Instrument Serif;\"><span style=\"color: rgb(113, 219, 212); font-size: 32pt; font-family: Instrument Serif; line-height:1;\">Já vende em outra plataforma?</span><br></p>"
                   },
                   "paddingBottom": "120",
+                  "paddingTop": "120",
                   "subTitle": {
                     "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18px; font-family: 'Inter'; text-align:center; font-weight:300; \">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma segura, estável e descomplicada.</span></p>",
                     "desktop": "<p style=\"text-align: center; line-height:1.2; \"><span style=\"color: rgb(255, 255, 255); font-size: 24px; font-family: 'Inter'; font-weight:100;\">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma<br> segura,estável e descomplicada</span></p>"
@@ -2467,8 +2517,7 @@
                       "textColor": "#003037"
                     }
                   },
-                  "tabsInterval": 30,
-                  "paddingTop": "120"
+                  "tabsInterval": 30
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
@@ -2483,6 +2532,7 @@
                 "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
                   "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037; font-size: 32pt; line-height: 1;\" data-mce-style=\"color: #003037; font-size: 32pt; line-height: 1;\">Planos que crescem<br>com o seu negócio</span></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 18px; line-height: 1.2; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 18px; line-height: 1.2; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e <br>comece a vender hoje mesmo</span></p>",
+                  "id": "plans",
                   "paddingBottom": "120px",
                   "paddingTop": "120px",
                   "slides": [
@@ -2757,7 +2807,6 @@
                   "arrows": true,
                   "titleColor": "#371E55",
                   "arrowsColor": "#371E55",
-                  "id": "plans",
                   "captionColor": "#371E55",
                   "caption": "<p></p>",
                   "dots": false,
@@ -2805,6 +2854,7 @@
                 "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
                   "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037;\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span></p><p style=\"text-align: center; line-height:0.5; \" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 24px; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
+                  "id": "plans",
                   "paddingBottom": "80px",
                   "paddingTop": "80px",
                   "slides": [
@@ -3078,7 +3128,6 @@
                     }
                   ],
                   "arrows": false,
-                  "id": "plans",
                   "titleColor": "#371E55",
                   "captionColor": "#371E55",
                   "arrowsColor": "#ca1616",

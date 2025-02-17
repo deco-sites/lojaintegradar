@@ -33,7 +33,7 @@ export async function handler(request: Request, ctx: FreshContext) {
   response.headers.set("x-middleware-processed", "1");
   response.headers.set(
     "Access-Control-Allow-Origin",
-    "landing.lojaintegrada.com.br",
+    "*.lojaintegrada.com.br,*",
   );
 
   return new Response(body ?? response.body, {

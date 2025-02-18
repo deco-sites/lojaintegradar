@@ -31,10 +31,19 @@ export async function handler(request: Request, ctx: FreshContext) {
       .replaceAll(" /live/invoke", ` ${originToRewrite}/live/invoke`);
   }
   response.headers.set("x-middleware-processed", "1");
-  response.headers.set(
-    "Access-Control-Allow-Origin",
-    "*.lojaintegrada.com.br,*",
-  );
+  if (
+    incomingOrigin === "lojaintegrada.com.br"
+  ) {
+    response.headers.set(
+      "Access-Control-Allow-Origin",
+      "landing.lojaintegrada.com.br",
+    );
+  } else {
+    response.headers.set(
+      "Access-Control-Allow-Origin",
+      "*",
+    );
+  }
 
   return new Response(body ?? response.body, {
     headers: response.headers,

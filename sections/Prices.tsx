@@ -8,6 +8,7 @@ import PricesButtons from "site/islands/PricesButtons.tsx";
 import { Button } from "site/types/types.ts";
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 export interface Props {
+    hideSection?: boolean;
     backgroundImage?: {
         firstBackground?: ImageWidget;
         secondBackground?: ImageWidget;
@@ -64,12 +65,14 @@ interface Subtitle {
 }
 
 function Prices({
+    hideSection,
     title,
     subTitle,
     cards,
     finalButtons,
     backgroundImage,
 }: Props) {
+    if (hideSection) return <></>
     const id = useId();
 
     return (

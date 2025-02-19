@@ -196,6 +196,7 @@ export interface Testimonial {
     content?: Content;
 }
 export interface Props {
+  hideSection?: boolean;
   title?: RichText;
   titleFont?: string;
   caption?: RichText;
@@ -332,6 +333,7 @@ function Buttons({ arrowsColor }: {
   </div>);
 }
 function TestimonialsWithBubbles(props: Props) {
+    if (props.hideSection) return <></>
     const id = useId();
     const modalId = id + "modal";
     const hubspostFormId = id + "hubspotForm";

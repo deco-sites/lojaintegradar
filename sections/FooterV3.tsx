@@ -57,6 +57,7 @@ export interface HubspotForm {
 }
 
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     centralizeCards?: boolean;
     cards?: Card[];
@@ -85,7 +86,8 @@ export interface Props {
     lineColor?: string;
 }
 
-export default function Footer2({ id, centralizeCards = false, centralizeBottomLinks = false, centralizeLogoAndSocialLinks = false, cards = [], logo, logoCaption, socialLinks, bottomLinks, hubspotForm, logoCaptionColor, cardsButtonColor, cardsButtonTextColor, cardsTextColor, bottomLinksColor, cardsBackgroundColor, backgroundMedia, lineColor, showForm }: Props) {
+export default function Footer2({ hideSection, id, centralizeCards = false, centralizeBottomLinks = false, centralizeLogoAndSocialLinks = false, cards = [], logo, logoCaption, socialLinks, bottomLinks, hubspotForm, logoCaptionColor, cardsButtonColor, cardsButtonTextColor, cardsTextColor, bottomLinksColor, cardsBackgroundColor, backgroundMedia, lineColor, showForm }: Props) {
+    if (hideSection) return <></>
     const randomId = useId();
     const hubspostFormId = randomId + "hubspotForm";
     return <footer id={id} class="relative text-primary pt-[105px]">

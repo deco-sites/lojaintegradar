@@ -165,7 +165,8 @@
                     {
                       "label": "Pagali",
                       "text": "A solução completa de pagamentos pra vender online. Menores taxas e maior velocidade.",
-                      "url": "https://www.pagali.com.br/"
+                      "url": "https://www.pagali.com.br/",
+                      "openIn": "new tab"
                     },
                     {
                       "label": "Enviali",
@@ -211,7 +212,8 @@
               "menusItemsHoverLineColor": "#2bc4c3",
               "menusShadowColor": "rgba(71, 193, 196, .50)"
             },
-            "asideMenuOnlyMobile": true
+            "asideMenuOnlyMobile": true,
+            "hideSection": false
           },
           {
             "__resolveType": "site/sections/FloatingButtons.tsx",

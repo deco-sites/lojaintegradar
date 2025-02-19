@@ -4,6 +4,7 @@ import Icon from "site/components/ui/Icon.tsx";
 import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
 
 interface Props {
+  hideSection?: boolean;
   cards?: {
     icon?: {
       image?: ImageWidget;
@@ -69,7 +70,8 @@ interface Policies {
   text?: string;
 }
 
-function Footer({ cards, logoImage, newsletter, socials, policies }: Props) {
+function Footer({ hideSection, cards, logoImage, newsletter, socials, policies }: Props) {
+  if (hideSection) return <></>
   return (
     <div
       id="footerSection"

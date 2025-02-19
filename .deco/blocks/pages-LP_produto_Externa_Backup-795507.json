@@ -15,11 +15,11 @@
         "desktop": "<p style=\"text-align: center\"><span style=\"color: rgb(252, 252, 252); font-size: 60pt\">Na dúvida sobre qual plataforma</span></p><p style=\"text-align: center\"><span style=\"color: rgb(252, 252, 252); font-size: 60pt\"> migrar, escolha quem aposta em</span><br><em><span style=\"color: rgb(40, 195, 195); font-size: 60pt\">Dados &amp; Automação</span></em></p>",
         "mobile": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 22pt\">Na dúvida sobre qual plataforma </span><br><span style=\"color: rgb(255, 255, 255); font-size: 22pt\">migrar, escolha quem aposta em </span><br><span style=\"color: rgb(255, 255, 255); font-size: 22pt\"> </span><em><span style=\"color: rgb(40, 195, 195); font-size: 22pt\">Dados &amp; Automação</span></em></p>"
       },
-      "buttons": {
-        "login": "Fazer Login",
-        "goin": "Migre já",
-        "knowmore": "Saiba mais"
-      },
+      "buttons": [
+        {
+          "type": "createStoreForm"
+        }
+      ],
       "initialButtons": [
         {
           "text": "Ver planos",
@@ -161,7 +161,8 @@
         "115": "4",
         "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a1e7683f-9df7-40db-907a-fed9b70f62aa/bg-site.mp4",
         "disableOnMobile": true
-      }
+      },
+      "hideSection": false
     },
     {
       "__resolveType": "site/sections/HeroWithTime.tsx",
@@ -624,7 +625,8 @@
       "secondImage": {
         "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/381f3492-afca-4ccb-9afc-1757c2ce1086/Bollico-.png",
         "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9035f5a3-f2ec-4d43-80fd-a6c5bc3de6ee/Bollico-desk.png"
-      }
+      },
+      "hideSection": false
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

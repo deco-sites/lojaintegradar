@@ -104,16 +104,19 @@ export interface CTA {
 }
 
 interface Props {
+  hideSection?: boolean;
   header: HeaderProps;
   features: FeatureProps[];
   cta?: CTA[];
 }
 
 export default function Migrate({
+  hideSection,
   header,
   features,
   cta = [],
 }: Props) {
+  if (hideSection) return <></>
   return (
     <div class="container mx-auto px-9 py-16 lg:py-8">
       <div class="max-w-[900px] mx-auto mb-12 lg:mb-20">

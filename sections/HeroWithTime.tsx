@@ -6,6 +6,7 @@ import { ButtonProps } from "../islands/HeroTimeButtons.tsx";
 import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx"
 
 export interface Props {
+    hideSection?: boolean;
     title?: Title;
     subTitle?: Subtitle;
     tabs?: Tabs[];
@@ -141,6 +142,7 @@ interface Background {
 
 
 function HeroWithTimer(props: Props) {
+    if (props.hideSection) return <></>
     const { paddingBottom, paddingTop, title, subTitle } = props;
     const getBackgroundStyle = () => {
         if (!props.background) return {};

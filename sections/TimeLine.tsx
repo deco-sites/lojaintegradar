@@ -23,6 +23,7 @@ export interface TimelineItem {
 }
 
 export interface Props {
+    hideSection?: boolean;
     caption?: HTMLWidget;
     title?: HTMLWidget;
     TimelineItems?: TimelineItem[];
@@ -37,7 +38,8 @@ export interface Props {
     dotedLineColor?: string;
 }
 
-export default function TimeLine({ caption, title, TimelineItems = [], backgroundImage, backgroundVideo, useBackground = "image", firstAndLastItemDotColor, itemsDotColor, dotedLineColor }: Props) {
+export default function TimeLine({ hideSection, caption, title, TimelineItems = [], backgroundImage, backgroundVideo, useBackground = "image", firstAndLastItemDotColor, itemsDotColor, dotedLineColor }: Props) {
+    if (hideSection) return <></>
     return <div class="relative min-h-[666px] px-7 pt-11 lg:pt-[92px]">
         {useBackground == "image" && backgroundImage?.src && <Image
             src={backgroundImage.src}

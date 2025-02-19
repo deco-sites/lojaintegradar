@@ -66,6 +66,7 @@ export interface Card {
 }
 
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     title?: Title;
     caption?: RichText;
@@ -153,7 +154,8 @@ export function CardColumn({ cards = [] }: { cards?: Card[] }) {
 }
 
 
-export default function CardsHero({ id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
+export default function CardsHero({ hideSection, id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
+    if (hideSection) return <></>
     return <div id={id} class="py-20" style={{ paddingBottom, paddingTop }}>
         <div class="max-w-[1220px] mx-auto">
             {title?.text && <AnimateOnShow

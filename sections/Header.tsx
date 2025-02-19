@@ -5,6 +5,7 @@ import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import FlexibleButton from "site/islands/FlexibleButtons.tsx";
 import { Button } from "site/types/types.ts";
 interface Props {
+    hideSection?: boolean;
     backgroundType: "image" | "video";
     /**
      * @description Só preencha os dados de tamanho caso seja necessário, senão, deixar vazio
@@ -47,6 +48,7 @@ interface Text {
 }
 
 function Header({
+    hideSection,
     backgroundType = "image",
     backgroundVideo,
     backgroundImage,
@@ -58,6 +60,7 @@ function Header({
     buttons,
     labelText,
 }: Props) {
+    if (hideSection) return <></>
     return (
         <header id="headerSection" class="customContainer headerMinHeight pt-[36px] flex flex-col items-center justify-normal">
             <style dangerouslySetInnerHTML={{

@@ -38,6 +38,7 @@ interface ImageProps {
 }
 
 interface Props {
+  hideSection?: boolean;
   /**
    * @title Título
    */
@@ -74,6 +75,7 @@ interface Props {
 }
 
 export default function TalkToAnExpert({
+  hideSection,
   title,
   titleColor = "#371E55",
   subtitle,
@@ -83,6 +85,7 @@ export default function TalkToAnExpert({
   leftImage,
   rightImage,
 }: Props) {
+  if (hideSection) return <></>
   return (
     <div
       class="overflow-clip relative "

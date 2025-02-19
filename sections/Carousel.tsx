@@ -106,6 +106,7 @@ export interface CreateStoreWithPlanCTA {
 }
 
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     title?: RichText;
     titleFont?: string;
@@ -208,6 +209,7 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
     </div>);
 }
 function Carousel(props: Props) {
+    if (props.hideSection) return <></>
     const { id, title, titleFont, caption, slides, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop } = { ...props };
     const carouselId = useId();
     return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative pt-7 lg:pt-14">

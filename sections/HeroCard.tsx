@@ -2,6 +2,7 @@ import HeroCard from "../islands/HeroCard.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import { Button } from "site/types/types.ts";
 export interface Props {
+    hideSection?: boolean;
     cardBackgroundImage?: {
         desktop?: ImageWidget;
         widthDesktop?: number;
@@ -64,6 +65,7 @@ interface Subtitle {
 }
 
 function HeroCards(props: Props) {
+    if (props.hideSection) return <></>
     const bgStyle = {
         background: `linear-gradient(to bottom, ${props.backgroundColors?.color1 || "#ffffff"
             } 50%, ${props.backgroundColors?.color2 || "#ffffff"} 50%)`,

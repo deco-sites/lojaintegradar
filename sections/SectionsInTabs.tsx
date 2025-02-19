@@ -40,11 +40,13 @@ export interface SectionTab {
 }
 
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     sectionTabs?: SectionTab[];
 }
 
-export default function SectionInTabs({ id, sectionTabs = [] }: Props) {
+export default function SectionInTabs({ hideSection, id, sectionTabs = [] }: Props) {
+    if (hideSection) return <></>
     const rootId = useId();
     return <div id={id} class="pt-[71px] lg:pt-[120px]">
         <div id={rootId}>

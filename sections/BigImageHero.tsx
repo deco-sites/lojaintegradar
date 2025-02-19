@@ -37,6 +37,7 @@ export interface Feature {
 }
 
 export interface Props {
+    hideSection?: boolean;
     title?: string;
     /** @format color-input */
     titleColor?: string;
@@ -52,7 +53,8 @@ export interface Props {
     bottomFloatingImage?: IImage;
 }
 
-export default function BigHeroImage({ title, titleColor, caption, captionColor, image, video, use, features, cta = [], backgroundImage, bottomFloatingImage }: Props) {
+export default function BigHeroImage({ hideSection, title, titleColor, caption, captionColor, image, video, use, features, cta = [], backgroundImage, bottomFloatingImage }: Props) {
+    if (hideSection) return <></>
     return <div class={`relative text-primary ${bottomFloatingImage?.src && 'mb-[157px]'} mt-[110px] px-7 lg:px-0`}>
         {backgroundImage?.src && <Image
             width={backgroundImage.width || 1440}

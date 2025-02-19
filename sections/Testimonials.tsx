@@ -60,6 +60,7 @@ export interface Testimonial {
     content?: Content;
 }
 export interface Props {
+    hideSection?: boolean;
     title?: RichText;
     titleFont?:string;
     slides?: Testimonial[];
@@ -190,6 +191,7 @@ function Buttons({ arrowsColor }: {
   </div>);
 }
 function Carousel(props: Props) {
+    if (props.hideSection) return <></>
     const id = useId();
     const { title, slides, titleFont } = { ...DEFAULT_PROPS, ...props };
     return (<AnimateOnShow animation="animate-fade-up50" delay={300}>

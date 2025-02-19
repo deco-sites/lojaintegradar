@@ -47,6 +47,7 @@ export interface IImage {
 }
 
 export interface Props {
+    hideSection?: boolean;
     title?: HTMLWidget;
     campaignTimer?: CampaignTimer;
     text?: HTMLWidget;
@@ -58,7 +59,8 @@ export interface Props {
     backgroundImage?: IImage;
 }
 
-export default function CampaignTimerHero({ campaignTimer, title, text, cta = [], image, use, video, backgroundImage, invertPlacement = false }: Props) {
+export default function CampaignTimerHero({ hideSection, campaignTimer, title, text, cta = [], image, use, video, backgroundImage, invertPlacement = false }: Props) {
+    if (hideSection) return <></>
     return <div class={`relative min-h-[550px] lg:min-h-[770px] flex justify-center flex-wrap py-5 gap-y-8 lg:py-[150px] px-7 ${invertPlacement && 'flex-row-reverse'}`}>
         <div class="max-w-[610px]">
             {title && <AnimateOnShow animation="animate-fade-up"><div class="text-2xl lg:text-5xl font-semibold text-center leading-[120%]" dangerouslySetInnerHTML={{ __html: title }} /></AnimateOnShow>}

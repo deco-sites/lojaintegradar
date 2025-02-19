@@ -31,6 +31,7 @@ export interface socialLink {
 }
 
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     title?: RichText;
     titleFont?: string;
@@ -58,7 +59,8 @@ export interface Props {
     /** @format color-input */
 }
 
-export default function Footer2({ id, title, titleFont, backgroundImage, showLogo, logoPosition = "below", socialLinksCaption, backgroundVideo, useBackground, cards = [], logo, backgroundHeight, logoCaption, socialLinks, bottomLinks, color1, color2, color3, color4, bottomBackground }: Props) {
+export default function Footer2({ hideSection, id, title, titleFont, backgroundImage, showLogo, logoPosition = "below", socialLinksCaption, backgroundVideo, useBackground, cards = [], logo, backgroundHeight, logoCaption, socialLinks, bottomLinks, color1, color2, color3, color4, bottomBackground }: Props) {
+    if (hideSection) return <></>
     const backgroundColor = useBackground ? "transparent" : color1;
     return <footer id={id} class="text-primary" style={{ color: color1 }}>
         <div class={`relative w-full h-[56vw] lg:h-[42vw] flex justify-center items-end  ${!useBackground && "bg-primary"}`} style={{ backgroundColor: backgroundColor, height: backgroundHeight }}>

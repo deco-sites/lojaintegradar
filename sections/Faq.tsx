@@ -39,6 +39,7 @@ export interface Question {
 }
 
 export interface Props {
+  hideSection?: boolean;
   /** @format color-input */
     backgroundColor?: string;
     title?: RichText;
@@ -62,7 +63,8 @@ export interface Props {
     cta?: CTA[];
 }
 
-export default function Faq({title, titleColor, titleFont, backgroundColor, caption, captionColor, questions = [], bottomTitle, bottomCaption, cta = [], questionsDivisionLineColor, questionsTitleColor, bottomCaptionColor, bottomTitleColor}: Props) {
+export default function Faq({ hideSection, title, titleColor, titleFont, backgroundColor, caption, captionColor, questions = [], bottomTitle, bottomCaption, cta = [], questionsDivisionLineColor, questionsTitleColor, bottomCaptionColor, bottomTitleColor}: Props) {
+    if (hideSection) return <></>
     return <div style={{background: backgroundColor}}>
       <div class="max-w-[1220px] mx-auto py-12 lg:py-20 px-7" >
           {title && <h2 class="text-2xl lg:text-5xl text-center leading-[120%] font-normal mb-6" style={{color: titleColor, fontFamily: titleFont}} dangerouslySetInnerHTML={{__html: title}}/>}

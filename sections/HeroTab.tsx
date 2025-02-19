@@ -3,6 +3,7 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import { Button } from "site/types/types.ts";
 
 export interface Props {
+  hideSection?: boolean;
   title?: Title;
   subTitle?: Subtitle;
   /**
@@ -65,6 +66,7 @@ export interface Buttons {
 }
 
 function HeroTabs(props: Props) {
+  if (props.hideSection) return <></>
   return (
     <div id="heroTabSection" class="bg-base-300 px-[10px] py-[60px] lg:pb-[124px] lg:pt-[160px]">
       <HeroTab {...props} />

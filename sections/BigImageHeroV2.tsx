@@ -53,6 +53,7 @@ export interface Feature {
 }
 
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     title?: RichText;
     titleFont?: string;
@@ -68,7 +69,8 @@ export interface Props {
     paddingBottom?: string;
 }
 
-export default function BigHeroImageV2({ title, createStoreCta, titleFont, caption, captionFont, image, video, use = "image", features, cta = [], paddingBottom, paddingTop, id }: Props) {
+export default function BigHeroImageV2({ hideSection, title, createStoreCta, titleFont, caption, captionFont, image, video, use = "image", features, cta = [], paddingBottom, paddingTop, id }: Props) {
+    if (hideSection) return <></>
     return <div id={id} style={{ paddingTop: paddingTop, paddingBottom: paddingBottom }} class="pt-10 lg:pt-28">
         <div class="max-w-[1440px] mx-auto">
             <div class="px-7 mb-5">

@@ -1513,7 +1513,8 @@
                     }
                   ],
                   "titleFont": "Instrument Serif",
-                  "paddingTop": "80px"
+                  "paddingTop": "80px",
+                  "hideSection": true
                 },
                 "rule": {
                   "__resolveType": "website/matchers/device.ts",
@@ -1571,7 +1572,7 @@
                   "titleFont": "Instrument Serif",
                   "paddingTop": "0",
                   "paddingBottom": "0",
-                  "hideSection": false
+                  "hideSection": true
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
@@ -3248,6 +3249,10 @@
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                },
                 "value": {
                   "__resolveType": "site/sections/Footer2.tsx",
                   "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 24px\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 24px; \">resultados que surpreendem.</span></em></p>",
@@ -3350,13 +3355,12 @@
                   "backgroundHeight": "160px",
                   "showLogo": true,
                   "logoPosition": "above"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
                 }
               },
               {
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                },
                 "value": {
                   "__resolveType": "site/sections/Footer2.tsx",
                   "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 32pt\">resultados que surpreendem.</span></em></p>",
@@ -3460,9 +3464,6 @@
                   "backgroundHeight": "400px",
                   "showLogo": true,
                   "logoPosition": "above"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
                 }
               }
             ]

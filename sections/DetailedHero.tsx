@@ -37,6 +37,7 @@ export interface Card {
 }
 
 export interface Props {
+    hideSection?: boolean;
     /** @format color-input */
     backgroundColor?: string;
     title?: HTMLWidget;
@@ -48,7 +49,8 @@ export interface Props {
     cta?: CTA[];
 }
 
-export default function DetailedHero({ backgroundColor, title, caption, captionColor, cards, cta = [], image }: Props) {
+export default function DetailedHero({ hideSection, backgroundColor, title, caption, captionColor, cards, cta = [], image }: Props) {
+    if (hideSection) return <></>
     return <div class="py-[52px] px-7 xl:px-24" style={{ background: backgroundColor }}>
         <div class="flex justify-center lg:justify-between flex-wrap lg:flex-nowrap">
             <div class="max-w-full lg:max-w-[764px]">

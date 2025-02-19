@@ -10,6 +10,7 @@ export interface IImage {
 }
 
 export interface Props {
+    hideSection?: boolean;
     title?: string;
     /** @format color-input */
     titleColor?: string;
@@ -22,7 +23,8 @@ export interface Props {
     sectionHeight?: string;
 }
 
-export default function Quote({ title, titleColor, quote, image, imageCaption, backgroundImage, backgroundVideo, useBackground, sectionHeight }: Props) {
+export default function Quote({ hideSection, title, titleColor, quote, image, imageCaption, backgroundImage, backgroundVideo, useBackground, sectionHeight }: Props) {
+    if (hideSection) return <></>
     return <div class="relative py-20 px-16 flex flex-col items-center gap-8" style={{ height: sectionHeight || "auto" }}>
         {useBackground == "image" && backgroundImage?.src && <Image
             src={backgroundImage.src}

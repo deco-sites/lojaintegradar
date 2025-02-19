@@ -16,13 +16,15 @@ export interface Button {
 }
 
 export interface Props {
+    hideSection?: boolean;
     buttons?: Button[];
     distanceFromBottom?: number;
     distanceFromRightEnd?: number;
     distanceBetweenButtons?: number;
 }
 
-export default function FloatingButtons({ buttons = [], distanceFromBottom, distanceFromRightEnd, distanceBetweenButtons }: Props) {
+export default function FloatingButtons({ hideSection, buttons = [], distanceFromBottom, distanceFromRightEnd, distanceBetweenButtons }: Props) {
+    if (hideSection) return <></>
     return <div class="fixed right-16 bottom-16 z-40 flex flex-col items-center" style={{ bottom: distanceFromBottom, right: distanceFromRightEnd, gap: distanceBetweenButtons }}>
         {buttons.map((button) => <a
             href={button.href}

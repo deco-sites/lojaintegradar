@@ -963,7 +963,8 @@
             "bottomSection": {
               "__resolveType": "site/sections/BlankSection.tsx"
             },
-            "tabsInterval": 30
+            "tabsInterval": 30,
+            "hideSection": false
           },
           {
             "__resolveType": "website/flags/multivariate/section.ts",
@@ -1822,7 +1823,8 @@
                     "text": "Criar loja",
                     "backgroundColor": "#003037",
                     "borderColor": "#003037"
-                  }
+                  },
+                  "hideSection": false
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

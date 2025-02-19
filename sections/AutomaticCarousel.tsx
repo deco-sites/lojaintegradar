@@ -59,6 +59,7 @@ export interface Item {
 }
 
 export interface Props {
+  hideSection?: boolean;
   /** @format color-input */
   backgroundColor?: string;
   title?: ITitle;
@@ -66,7 +67,8 @@ export interface Props {
   items?: Item[];
 }
 
-export default function AutomaticCarousel({ backgroundColor, title, caption, items = [] }: Props) {
+export default function AutomaticCarousel({ hideSection, backgroundColor, title, caption, items = [] }: Props) {
+  if (hideSection) return <></>
   const rootId = useId();
   return <div id={rootId} class={`relative min-h-[100vh] ${rootId}-container `}>
     <script

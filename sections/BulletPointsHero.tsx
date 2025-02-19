@@ -105,6 +105,7 @@ export interface BackgroundMedia {
 }
 
 export interface Props {
+  hideSection?: boolean;
   id?: string;
   title?: Title;
   caption?: RichText;
@@ -155,7 +156,8 @@ export function HeroMedia({ media }: { media?: Media }) {
   </div>
 }
 
-export default function BulletPointsHero({ id, title, paddingBottom, bulletpointSections = [], createStoreCta, cta = [], paddingLeft, caption, paddingRight, paddingTop, sectionMinHeight, backgroundMedia, media, mediaPlacement = "left" }: Props) {
+export default function BulletPointsHero({ hideSection, id, title, paddingBottom, bulletpointSections = [], createStoreCta, cta = [], paddingLeft, caption, paddingRight, paddingTop, sectionMinHeight, backgroundMedia, media, mediaPlacement = "left" }: Props) {
+  if (hideSection) return <></>
   return <div id={id} style={{ paddingTop, paddingBottom, paddingRight, paddingLeft, minHeight: sectionMinHeight }} class="relative">
     <div class={`max-w-[1210px] mx-auto flex flex-wrap lg:flex-nowrap gap-7 ${media?.use ? 'justify-between' : 'justify-center' } ${mediaPlacement == "right" && 'flex-row-reverse'}`}>
       {media?.use && <AnimateOnShow

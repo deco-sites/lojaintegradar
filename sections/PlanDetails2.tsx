@@ -95,6 +95,7 @@ export interface Slide {
     bulletPoints?: BulletPoints;
 }
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     backgroundImage?: IImage;
     contentVideo?: VideoWidget;
@@ -190,7 +191,8 @@ function Buttons({ buttonColor }: {
             </div>
         </div>);
 }
-export default function PlanDetails2({ id, color1, color2, color3, color4, color5, color6, title, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, caption, slides, showArrows, annualValues, montlyValues, createStoreCta }: Props) {
+export default function PlanDetails2({ hideSection, id, color1, color2, color3, color4, color5, color6, title, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, caption, slides, showArrows, annualValues, montlyValues, createStoreCta }: Props) {
+    if (hideSection) return <></>
     const backgroundColor = backgroundImage?.src ? "transparent" : color1;
     const contentBackgroundColor = useContent ? "transparent" : color1;
     const carouselId = useId();

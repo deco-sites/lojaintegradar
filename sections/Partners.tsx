@@ -2,6 +2,7 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
 interface Props {
+    hideSection?: boolean;
     title?: string;
     /**
 * @title Imagem mobile
@@ -25,7 +26,8 @@ interface Props {
     }[]
 }
 
-function Partners({ title, images, imagesDesktop }: Props) {
+function Partners({ hideSection, title, images, imagesDesktop }: Props) {
+    if (hideSection) return <></>
     return (
         <div id="partnersSection" class="bg-base-300 px-4">
             <div class="customContainer flex flex-col lg:flex-row gap-10 justify-between items-center lg:pt-0 pb-[60px] lg:pb-[124px]">

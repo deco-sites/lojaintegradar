@@ -96,6 +96,7 @@ export interface Card {
 }
 
 export interface Props {
+  hideSection?: boolean;
   id?: string;
   title?: Title;
   leftText?: RichText;
@@ -111,7 +112,8 @@ export interface Props {
   paddingBottom?: string;
 }
 
-export default function ScrollableCards({ id, title, leftText, rightText, createStoreCta, cta = [], cards = [], ctaMargintop, cardsWidth, cardsMinHeight, cardsMarginTop, paddingBottom, paddingTop }: Props) {
+export default function ScrollableCards({ hideSection, id, title, leftText, rightText, createStoreCta, cta = [], cards = [], ctaMargintop, cardsWidth, cardsMinHeight, cardsMarginTop, paddingBottom, paddingTop }: Props) {
+  if (hideSection) return <></>
   const rootId = useId();
   const transitionClass = "transition-transform duration-50 ease-linear";
   return <div id={rootId} class="relative min-h-[120vh]" style={{ height: `${100 * cards.length}vh` }}>

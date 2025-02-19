@@ -1,6 +1,7 @@
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 import { Button } from "site/types/types.ts";
 interface Props {
+    hideSection?: boolean;
     questions?: Questions[]
     buttons?: Button[]
 }
@@ -16,7 +17,8 @@ interface Questions {
     answer?: string;
 }
 
-function Accordion({ questions, buttons }: Props) {
+function Accordion({ hideSection, questions, buttons }: Props) {
+    if (hideSection) return <></>
     return (
         <div id="accordionSection" className="bg-base-300">
             <div className="join join-vertical w-full px-4 flex mx-auto xl:px-0 py-[60px] lg:py-40 max-w-[768px]">

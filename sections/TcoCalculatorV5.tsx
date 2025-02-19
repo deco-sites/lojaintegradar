@@ -41,6 +41,7 @@ export interface Benefit {
 }
 
 export interface Props {
+    hideSection?: boolean;
     sectionId?: string;
     /** @format color-input */
     backgroundColor?: string;
@@ -59,6 +60,7 @@ export interface Props {
 }
 
 function TcoCalculator(props: Props) {
+    if (props.hideSection) return <></>
     const id = useId();
     const { sectionId, backgroundColor, title, titleFont, benefits, caption, captionText, page1, page2, page3, page4, plans, paddingBottom, paddingTop } = { ...props };
 

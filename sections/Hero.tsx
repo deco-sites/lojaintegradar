@@ -43,6 +43,7 @@ export interface BigNumber {
 }
 
 export interface Props {
+  hideSection?: boolean;
   id?: string;
   title?: string;
   /** @format color-input */
@@ -72,6 +73,7 @@ export interface Props {
 
 
 export default function Hero({
+  hideSection,
   id,
   title,
   titleColor,
@@ -93,6 +95,7 @@ export default function Hero({
   marginBottom,
   marginTop,
 }: Props) {
+  if (hideSection) return <></>
   return (
     <div id={id} class={`relative flex flex-col lg:flex-row w-full mt-48 text-primary leading-[120%] ${placement == "left" ? 'lg:flex-row' : 'lg:flex-row-reverse'}`} style={{ marginTop: marginTop, marginBottom: marginBottom }}>
       <AnimateOnShow divClass={`lg:relative lg:w-1/2 flex flex-col lg:flex-row ${placement == "left" ? 'justify-start' : 'justify-end'}`} animation="animate-fade-right">

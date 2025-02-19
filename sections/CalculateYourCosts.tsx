@@ -78,6 +78,7 @@ export interface CTA {
 }
 
 interface Props {
+  hideSection?: boolean;
   /**
    * @title Título
    */
@@ -115,6 +116,7 @@ interface Props {
 }
 
 export default function CalculateYourCosts({
+  hideSection,
   title,
   titleColor,
   subtitle,
@@ -124,6 +126,7 @@ export default function CalculateYourCosts({
   cta = [],
   backgroundColor,
 }: Props) {
+  if (hideSection) return <></>
   return (
     <div
       class="px-8 py-10 md:px-24 md:py-20 min-h-[663px] overflow-clip mt-20"

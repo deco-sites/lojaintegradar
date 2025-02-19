@@ -97,6 +97,7 @@ export interface CreateStoreFormProps {
 }
 
 export interface Props {
+  hideSection?: boolean;
   id?: string;
   title?: Title;
   caption?: RichText;
@@ -112,7 +113,8 @@ export interface Props {
   createStoreFormProps?: CreateStoreFormProps;
 }
 
-export default function CreateStoreHero({ id, title, caption, createStoreCta, cta = [], ctaPlacement, backgroundMedia, createStoreFormProps, paddingTop, paddingBottom, paddingLeft, paddingRight, sectionMinHeight }: Props) {
+export default function CreateStoreHero({ hideSection, id, title, caption, createStoreCta, cta = [], ctaPlacement, backgroundMedia, createStoreFormProps, paddingTop, paddingBottom, paddingLeft, paddingRight, sectionMinHeight }: Props) {
+  if (hideSection) return <></>
   const placement = {
     "left": "justify-start",
     "center": "justify-center",

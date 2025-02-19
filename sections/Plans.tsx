@@ -169,6 +169,7 @@ export interface Plan {
 }
 
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     title?: string;
     /** @format color-input */
@@ -342,6 +343,7 @@ function Buttons({arrowsColor}: {arrowsColor?: string}) {
         </div>);
 }
 function Plans(props: Props) {
+    if (props.hideSection) return <></>
     const carouselId = useId();
     const id = props.id || carouselId;
     const { title, caption, slides, montlyLabel, annualLabel, annualTag, arrows, bottomCaption, bottomTitle, bottomCreateStoreCta, titleColor, captionColor, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, bottomCaptionColor, bottomTitleColor, arrowsColor } = { ...props };

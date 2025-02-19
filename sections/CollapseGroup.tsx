@@ -44,6 +44,7 @@ export interface Collapse {
     crossIcon?: IImage;
 }
 export interface Props {
+    hideSection?: boolean;
     caption?: string;
     /** @format color-input */
     captionColor?: string;
@@ -56,7 +57,8 @@ export interface Props {
     /** @format color-input */
     collapsesBorderColor?: string;
 }
-export default function CollapseGroup({ caption, title, collapses, captionColor, titleColor, collapsesBorderColor, collapsesTextColor}: Props) {
+export default function CollapseGroup({ hideSection, caption, title, collapses, captionColor, titleColor, collapsesBorderColor, collapsesTextColor}: Props) {
+    if (hideSection) return <></>
     return <div class="mt-32 lg:px-24 text-primary leading-[120%] hidden md:block" style={{color: collapsesTextColor}}>
         <h3 class="text-center text-neutral-content text-2xl font-semibold" style={{color: captionColor}}>{caption}</h3>
         <h2 class="text-center text-2xl font-semibold mt-2.5 mb-5" style={{color: titleColor}}>{title}</h2>

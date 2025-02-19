@@ -130,7 +130,7 @@ export interface Link {
 
 export interface MenuLink extends Link {
   text?: string;
-  openIn: "current tab" | "new tab";
+  openIn?: "current tab" | "new tab";
 }
 
 export interface CTAColors {
@@ -185,6 +185,7 @@ export interface DropdownMenus {
 }
 
 export interface Nav {
+  hideSection?: boolean;
   /** @format color-input */
   backgroundColor?: string;
   logo?: {
@@ -212,7 +213,8 @@ export default function Header2({ logo = {
   alt: "Logo",
 },
   barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, backgroundColor, dropdownMenus = {menus: []}, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
-  navigation, asideMenuOnlyMobile }: Nav) {
+  navigation, asideMenuOnlyMobile, hideSection }: Nav) {
+  if (hideSection) return <></>
   return (
   <header>
     {headerMessage?.show && <div class="h-16" />}

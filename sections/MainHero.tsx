@@ -73,6 +73,7 @@ export interface Modal {
     cta?: CTA[];
 }
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     captionAbove?: RichText;
     title: RichText;
@@ -108,7 +109,8 @@ export interface Props {
     modal?: Modal;
     sectionMinHeight?: string;
 }
-export default function MainHero({ id, title, caption = "", inputLabel, hubspotFormButtonWidth, backgroundVideo, lcp, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
+export default function MainHero({ hideSection, id, title, caption = "", inputLabel, hubspotFormButtonWidth, backgroundVideo, lcp, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
+    if (hideSection) return <></>
     const randomId = useId();
     const modalId = randomId + "modal";
     const hubspostFormId = randomId + "hubspotForm";

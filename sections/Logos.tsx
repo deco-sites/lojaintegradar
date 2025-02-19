@@ -11,6 +11,7 @@ export interface Logo {
   height?: number;
 }
 export interface Props {
+  hideSection?: boolean;
   title?: RichText;
   titleFont?: string;
   /** @format color-input */
@@ -26,7 +27,8 @@ const IMG_PLACEHODLER = Array(30).fill(0).map(() => ({
   src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/03fbcc78-ca86-4616-a59a-b8aa18331a9c",
   altText: "Logo",
 }));
-export default function Logos({ title, caption, logos = IMG_PLACEHODLER, titleFont, titleColor, captionColor, paddingBottom, paddingTop }: Props) {
+export default function Logos({ hideSection, title, caption, logos = IMG_PLACEHODLER, titleFont, titleColor, captionColor, paddingBottom, paddingTop }: Props) {
+  if (hideSection) return <></>
   logos = [...logos, ...logos];
   const slideContent = (<div id="logosSliderContent" class="flex items-center gap-7 md:gap-16">
     {logos?.map((logo) => {

@@ -7,6 +7,7 @@ import Icon from "site/components/ui/Icon.tsx";
 import { useState } from "preact/hooks";
 
 export interface Props {
+    hideSection?: boolean;
     /**
      * @format rich-text
      */
@@ -67,7 +68,8 @@ interface TextContent {
     mobile?: string;
 }
 
-function HeroInfo({ title, cards }: Props) {
+function HeroInfo({ hideSection, title, cards }: Props) {
+    if (hideSection) return <></>
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [currentVideoUrl, setCurrentVideoUrl] = useState<string | null>(null);
 

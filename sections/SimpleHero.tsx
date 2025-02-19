@@ -42,6 +42,7 @@ export interface IImage {
 }
 
 export interface Props {
+    hideSection?: boolean;
     text?: HTMLWidget;
     createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
@@ -51,7 +52,8 @@ export interface Props {
     sectionHeight?: string;
 }
 
-export default function FloatingImagesHero({ text, cta = [], createStoreCta, backgroundImage, backgroundVideo, sectionHeight, useBackground }: Props) {
+export default function FloatingImagesHero({ hideSection, text, cta = [], createStoreCta, backgroundImage, backgroundVideo, sectionHeight, useBackground }: Props) {
+    if (hideSection) return <></>
     return <div class="relative flex flex-col gap-5 lg:gap-10 lg:justify-center items-center overflow-hidden py-[38px] px-7" style={{ height: sectionHeight || "auto" }}>
         {useBackground == "image" && backgroundImage?.src && <Image
             src={backgroundImage.src}

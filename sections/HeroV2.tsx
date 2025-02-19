@@ -93,6 +93,7 @@ export interface Div {
 }
 
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     tag?: Tag;
     title?: Title;
@@ -136,7 +137,8 @@ export function HeroMedia({ media }: { media?: Media }) {
     </div>
 }
 
-export default function HeroV2({ id, tag, title, caption, createStoreCta, cta = [], bulletpoints, sectionMinHeight, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement = "right", paddingLeft, paddingRight }: Props) {
+export default function HeroV2({ hideSection, id, tag, title, caption, createStoreCta, cta = [], bulletpoints, sectionMinHeight, ctaDiv, media, backgroundMedia, paddingTop, paddingBottom, mediaPlacement = "right", paddingLeft, paddingRight }: Props) {
+    if (hideSection) return <></>
     const placement = {
         "left": "justify-start",
         "center": "justify-center",

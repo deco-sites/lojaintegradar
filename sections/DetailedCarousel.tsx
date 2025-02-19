@@ -108,6 +108,7 @@ export interface Slide {
     bulletPoints?: BulletPoints;
 }
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     title?: Title;
     caption?: RichText;
@@ -239,6 +240,7 @@ function Buttons({ arrowsColor }: {
     </div>);
 }
 function Carousel(props: Props) {
+    if (props.hideSection) return <></>
     const rootId = useId();
     const { id, title, caption, slides, interval, backgroundImage, createStoreCta, cta = [], arrowsColor, dotsColor, dotsProgressBarPlacement, dotsProgressBarBackgroundColor } = { ...props };
     return (<div id={id} class="relative">

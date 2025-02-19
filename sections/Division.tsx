@@ -15,6 +15,7 @@ export interface IVideo {
 }
 
 export interface Props {
+    hideSection?: boolean;
     divisionHeight?: string;
     divisionImage?: IImage;
     divisionVideo?: IVideo;
@@ -23,7 +24,8 @@ export interface Props {
     divisionColor?: string;
 }
 
-export default function Division({ divisionColor, divisionHeight, divisionImage, divisionVideo, useDivision }: Props) {
+export default function Division({ hideSection, divisionColor, divisionHeight, divisionImage, divisionVideo, useDivision }: Props) {
+    if (hideSection) return <></>
     return <div class="h-16" style={{ height: divisionHeight, background: divisionColor }}>
         {useDivision == "image" && divisionImage?.src && <Image
             src={divisionImage.src}

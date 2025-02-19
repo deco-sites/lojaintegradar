@@ -156,6 +156,7 @@ export interface Slide {
     bulletPoints?: BulletPoints;
 }
 export interface Props {
+    hideSection?: boolean;
     id?: string;
     backgroundVideo?: VideoWidget;
     backgroundImage?: IImage;
@@ -245,8 +246,8 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
         </div>
     </div>);
 }
-export default function PlanDetails({ id, title, titleColor, titleTyping = [], titleTypingColor, letterDelay, wordDelay, backgroundVideo, backgroundImage, useBackground, planTag, slidesTitle, slidesTitleColor, slidesTitleIcon, slides, showArrows = true, arrowsColor, annualValues, montlyValues, bottomBackground, cta = [], createStoreCta }: Props) {
-
+export default function PlanDetails({ hideSection, id, title, titleColor, titleTyping = [], titleTypingColor, letterDelay, wordDelay, backgroundVideo, backgroundImage, useBackground, planTag, slidesTitle, slidesTitleColor, slidesTitleIcon, slides, showArrows = true, arrowsColor, annualValues, montlyValues, bottomBackground, cta = [], createStoreCta }: Props) {
+    if (hideSection) return <></>
     const carouselId = useId();
     return (<div id={id} class={`overflow-hidden ${!useBackground && 'bg-primary'} leading-[120%] text-primary-content`}>
         <div class="relative flex justify-center items-center w-full h-[86vw] lg:h-[43vw]">

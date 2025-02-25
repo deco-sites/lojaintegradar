@@ -595,17 +595,7 @@
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
                   "title": "<p></p>",
                   "titleFont": "Instrument serif",
-                  "cta": [
-                    {
-                      "ctaStyle": "button",
-                      "href": "#plans",
-                      "text": "Ver planos",
-                      "backgroundColor": "#003037",
-                      "borderColor": "#003037",
-                      "textColor": "#fffff",
-                      "showIcon": false
-                    }
-                  ],
+                  "cta": [],
                   "paddingBottom": "120px",
                   "caption": "<p></p>",
                   "paddingTop": "0px",
@@ -614,9 +604,9 @@
                   "use": "image",
                   "createStoreCta": {
                     "planId": "172",
-                    "text": "Abrir loja",
-                    "backgroundColor": "Transparent",
-                    "textColor": "#003037",
+                    "text": "Começar no grátis",
+                    "backgroundColor": "#003037",
+                    "textColor": "#FFFFFF",
                     "borderColor": "#003037"
                   }
                 },
@@ -950,14 +940,8 @@
             "finalButtons": [
               {
                 "type": "createStoreForm",
-                "text": "Criar minha loja",
+                "text": "Começar no grátis",
                 "planId": "172"
-              },
-              {
-                "type": "link",
-                "changeType": true,
-                "link": "#plans",
-                "text": "Ver planos"
               }
             ],
             "bottomSection": {
@@ -1802,18 +1786,7 @@
                   "arrows": true,
                   "id": "nossoecossistema",
                   "arrowsColor": "#003037",
-                  "cta": [
-                    {
-                      "ctaStyle": "button",
-                      "href": "#plans",
-                      "backgroundColor": "#ffffff",
-                      "borderColor": "#003037",
-                      "textColor": "#003037",
-                      "showIcon": false,
-                      "outline": true,
-                      "text": "Ver planos"
-                    }
-                  ],
+                  "cta": [],
                   "backgroundImage": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8243ad-68f1-4e47-bdc5-d7abec141794/elemento-bg-1.png"
                   },
@@ -1821,7 +1794,7 @@
                   "createStoreCta": {
                     "order": 1,
                     "planId": "172",
-                    "text": "Criar loja",
+                    "text": "Começar no grátis",
                     "backgroundColor": "#003037",
                     "borderColor": "#003037"
                   },
@@ -2567,23 +2540,13 @@
                         "caption": "<p style='line-height: 1.5;'>Plataforma robusta e com baixo custo de manutenção. Você otimiza sua operação e foca no que realmente importa: vender mais.</p>"
                       }
                     ],
-                    "cta": [
-                      {
-                        "ctaStyle": "button",
-                        "textColor": "#ffffff",
-                        "showIcon": false,
-                        "href": "#plans",
-                        "text": "Ver planos",
-                        "backgroundColor": "transparent",
-                        "borderColor": "#ffffff"
-                      }
-                    ],
+                    "cta": [],
                     "arrows": false,
                     "arrowsColor": "#FAFAF5",
                     "id": "recursosferramentas",
                     "createStoreCta": {
                       "planId": "172",
-                      "text": "Abrir loja",
+                      "text": "Começar no grátis",
                       "backgroundColor": "#FFFFFF",
                       "borderColor": "#ffffff",
                       "textColor": "#003037"

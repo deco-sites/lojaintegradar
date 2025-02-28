@@ -106,7 +106,7 @@
                 ]
               },
               "href": "/home",
-              "alt": "logo "
+              "alt": "logo"
             },
             "initialButtons": [],
             "backgroundColor": "#003037",
@@ -2865,7 +2865,7 @@
                     "backgroundColor": "#003037",
                     "textColor": "#ffffff",
                     "borderColor": "#371E55",
-                    "ctaStyle": "button",
+                    "ctaStyle": "link",
                     "showIcon": false
                   },
                   "annualTagTextColor": "#371E55",
@@ -2896,7 +2896,8 @@
                         "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
                         "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
                         "fontFamily": "Instrument Serif",
-                        "onlyAnnual": true
+                        "onlyAnnual": true,
+                        "hideTag": true
                       },
                       "montlyFee": "<p></p>",
                       "chooseCta": {
@@ -2941,7 +2942,8 @@
                         "fontFamily": "Inter",
                         "backgroundColor": "",
                         "borderColor": "",
-                        "textColor": ""
+                        "textColor": "",
+                        "hideTag": false
                       },
                       "seeMoreButtonText": "Ver mais",
                       "backgroundColor": "radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), #55DCE6;",
@@ -3018,7 +3020,8 @@
                         "backgroundColor": "",
                         "borderColor": "",
                         "textColor": "",
-                        "onlyAnnual": false
+                        "onlyAnnual": false,
+                        "hideTag": true
                       },
                       "montlyFee": "<p><span style=\"color: rgb(12, 48, 56); font-size: 24pt\">R$</span><span style=\"color: rgb(12, 48, 56)\"> </span><strong><span style=\"color: rgb(12, 48, 56); font-size: 48px\">54</span></strong><span style=\"color: rgb(12, 48, 56); font-size: 14pt\">/mês</span></p>",
                       "cutedMontlyFee": "de R$ 54/mês",
@@ -3102,7 +3105,8 @@
                         "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
                         "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
                         "borderColor": "linear-gradient(90deg, #B699D9 0%, #512F79 100%)",
-                        "onlyAnnual": true
+                        "onlyAnnual": true,
+                        "hideTag": true
                       },
                       "montlyFee": "<p><span style=\"color: #0c3038; font-size: 24pt\">R$</span><span style=\"color: #0c3038\"> </span><strong><span style=\"color: #0c3038; font-size: 36pt\">99</span></strong><span style=\"color: #0c3038\"> </span><span style=\"color: #0c3038; font-size: 14pt\">/mês</span></p>",
                       "cutedMontlyFee": "de R$99/mês ",
@@ -3172,17 +3176,25 @@
                   "bottomCaptionColor": "#828CA0",
                   "bottomTitleColor": "#003037",
                   "bottomCreateStoreCta": {
-                    "text": "Saiba mais",
                     "backgroundColor": "#003037",
                     "textColor": "#ffffff",
                     "borderColor": "#371E55",
                     "ctaStyle": "button",
-                    "showIcon": false,
-                    "planId": "0"
+                    "showIcon": false
                   },
                   "annualTagTextColor": "#371E55",
                   "annualTag": "- 2O% FF",
-                  "annualTagPosition": "aside"
+                  "annualTagPosition": "aside",
+                  "bottomCta": [
+                    {
+                      "ctaStyle": "button",
+                      "href": "https://lojaintegrada.com.br/planos",
+                      "text": "Saiba mais",
+                      "backgroundColor": "#003037",
+                      "borderColor": "003037",
+                      "textColor": "#FFFFFF"
+                    }
+                  ]
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

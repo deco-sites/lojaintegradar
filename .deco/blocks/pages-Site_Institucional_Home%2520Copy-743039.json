@@ -3025,20 +3025,21 @@
                       },
                       "tag": {
                         "text": "<p></p>",
-                        "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
-                        "borderColor": "#B699D9",
-                        "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
+                        "backgroundColor": "",
+                        "borderColor": "",
+                        "textColor": "",
                         "onlyAnnual": false
                       },
-                      "montlyFee": "<p><span style=\"font-size: 24pt\">R$</span>&nbsp;<strong><span style=\"font-size: 48px\">54</span></strong><span style=\"font-size: 14pt\">/mês</span></p>",
+                      "montlyFee": "<p><span style=\"color: rgb(12, 48, 56); font-size: 24pt\">R$</span><span style=\"color: rgb(12, 48, 56)\"> </span><strong><span style=\"color: rgb(12, 48, 56); font-size: 48px\">54</span></strong><span style=\"color: rgb(12, 48, 56); font-size: 14pt\">/mês</span></p>",
                       "cutedMontlyFee": "de R$ 54/mês",
-                      "annualMontlyFee": "<p><span style=\"color: #0c3038; font-size: 24pt\">R$</span><span style=\"color: #0c3038\"> </span><strong><span style=\"color: #0c3038; font-size: 48px\">43</span></strong><span style=\"color: #0c3038; font-size: 14pt\">/mês</span></p>",
+                      "annualMontlyFee": "<p><span style=\"color: rgb(12, 48, 56); font-size: 24pt\">R$</span><span style=\"color: rgb(12, 48, 56)\"> </span><strong><span style=\"color: rgb(12, 48, 56); font-size: 48px\">43</span></strong><span style=\"color: rgb(12, 48, 56); font-size: 14pt\">/mês</span></p>",
                       "annualSaving": {
                         "text": "<p><em>Economia de R$ 152/ano</em></p>",
                         "fontFamily": "Inter",
                         "textColor": "#5F6E82",
                         "backgroundColor": "",
-                        "borderColor": ""
+                        "borderColor": "",
+                        "onlyAnnual": false
                       },
                       "seeMoreButtonText": "Ver mais",
                       "cta": [
@@ -3054,7 +3055,7 @@
                       "titleColor": "#371E55",
                       "cutedMontlyFeeColor": "#003037",
                       "createStoreWithPlanCta": {
-                        "planId": "176",
+                        "planId": "173",
                         "text": "Assinar",
                         "ctaStyle": "button",
                         "backgroundColor": "#003037",

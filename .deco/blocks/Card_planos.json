@@ -333,7 +333,8 @@
               "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
               "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
               "fontFamily": "Instrument Serif",
-              "onlyAnnual": true
+              "onlyAnnual": true,
+              "hideTag": false
             },
             "montlyFee": "<p></p>",
             "chooseCta": {
@@ -619,7 +620,8 @@
         },
         "annualTagTextColor": "#371E55",
         "annualTag": "- 2O% FF",
-        "annualTagPosition": "aside"
+        "annualTagPosition": "aside",
+        "bottomCta": []
       },
       "rule": {
         "__resolveType": "website/matchers/always.ts"

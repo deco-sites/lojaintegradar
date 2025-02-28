@@ -1,0 +1,629 @@
+{
+  "__resolveType": "website/flags/multivariate/section.ts",
+  "variants": [
+    {
+      "value": {
+        "__resolveType": "site/sections/PlansV2.tsx",
+        "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037;\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span></p><p style=\"text-align: center; line-height:0.5; \" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 24px; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
+        "id": "plans",
+        "paddingBottom": "80px",
+        "paddingTop": "80px",
+        "slides": [
+          {
+            "title": "<p style=\"font-size: 36pt; line-height:-1.2;\"><span>Comece sem<br> custos</span></p>",
+            "tag": {
+              "icon": {
+                "alt": "crown icon"
+              },
+              "textColor1": "#ce2c2c",
+              "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)",
+              "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
+              "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
+              "fontFamily": "Instrument Serif",
+              "onlyAnnual": true
+            },
+            "montlyFee": "<p></p>",
+            "chooseCta": {
+              "text": "Assinar",
+              "href": "#"
+            },
+            "detailsCta": {
+              "text": "Ver detalhes",
+              "href": "#"
+            },
+            "bulletPoints": {
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
+              },
+              "items": [
+                {
+                  "text": "<p>50 produtos</p>"
+                },
+                {
+                  "text": "<p>5.000 visitas</p>"
+                },
+                {
+                  "text": "<p>Loja completa</p>"
+                },
+                {
+                  "text": "<p>Meio de envio e pagamento</p>",
+                  "toolTipText": "Aplicável a vendas realizadas com meios de pagamento que não sejam o Pagali."
+                },
+                {
+                  "text": "<p>Sem cobrança de tarifa por venda no Pagali</p>"
+                },
+                {
+                  "text": "<p>Recursos de marketing</p>"
+                }
+              ],
+              "itemsTextColor": "#FAFAF5",
+              "tooltipTextColor": "#003037",
+              "tooltipBackgroundColor": "#FAFAF5"
+            },
+            "annualMontlyFee": "<p></p>",
+            "annualSaving": {
+              "text": "<p></p>",
+              "fontFamily": "Inter",
+              "backgroundColor": "",
+              "borderColor": "",
+              "textColor": ""
+            },
+            "seeMoreButtonText": "Ver mais",
+            "backgroundColor": "radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), #55DCE6;",
+            "titleColor": "#ffffff",
+            "cutedMontlyFeeColor": "#FAFAF5",
+            "annualSavingColor": "#FAFAf5",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "https://www.lojaintegrada.com.br/planos",
+                "textColor": "#FAFAF5",
+                "underlineText": "Ver detalhes"
+              }
+            ],
+            "createStoreWithPlanCta": {
+              "planId": "172",
+              "text": "Comece agora",
+              "backgroundColor": "#FAFAF5",
+              "textColor": "#003037",
+              "borderColor": "#FAFAF5",
+              "ctaStyle": "button"
+            },
+            "tagColor": "#371E55",
+            "tagBackgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%)",
+            "theme": "light",
+            "topImage": {
+              "width": 239,
+              "height": 134
+            },
+            "tagTextColor": {
+              "color1": "#71DBD4 ",
+              "color2": "#ABEECF "
+            },
+            "titleFont": "Instrument Serif"
+          },
+          {
+            "title": "<h2><span style=\"color: #0c3038; font-size: 36pt\">Crescimento</span></h2>",
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "<p>250 produtos</p>"
+                },
+                {
+                  "text": "<p>25.000 visitas</p>"
+                },
+                {
+                  "text": "<p>Tudo do plano grátis +</p>"
+                },
+                {
+                  "text": "<p>Checkout transparente</p>",
+                  "toolTipText": "Compra sem senha"
+                },
+                {
+                  "text": "<p>Ferramenta de avaliação, Compre Junto e recuperação de carrinho abandonado e produto</p>"
+                }
+              ],
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg",
+                "alt": "bullet points icon"
+              },
+              "itemsTextColor": "#5F6E82",
+              "tooltipTextColor": "#5F6E82",
+              "tooltipBackgroundColor": "#EAE7ED"
+            },
+            "chooseCta": {
+              "text": "Assinar",
+              "href": "#"
+            },
+            "detailsCta": {
+              "text": "Ver detalhes"
+            },
+            "tag": {
+              "text": "<p></p>",
+              "backgroundColor": "",
+              "borderColor": "",
+              "textColor": "",
+              "onlyAnnual": false
+            },
+            "montlyFee": "<p><span style=\"color: rgb(12, 48, 56); font-size: 24pt\">R$</span><span style=\"color: rgb(12, 48, 56)\"> </span><strong><span style=\"color: rgb(12, 48, 56); font-size: 48px\">54</span></strong><span style=\"color: rgb(12, 48, 56); font-size: 14pt\">/mês</span></p>",
+            "cutedMontlyFee": "de R$ 54/mês",
+            "annualMontlyFee": "<p><span style=\"color: rgb(12, 48, 56); font-size: 24pt\">R$</span><span style=\"color: rgb(12, 48, 56)\"> </span><strong><span style=\"color: rgb(12, 48, 56); font-size: 48px\">43</span></strong><span style=\"color: rgb(12, 48, 56); font-size: 14pt\">/mês</span></p>",
+            "annualSaving": {
+              "text": "<p><em>Economia de R$ 152/ano</em></p>",
+              "fontFamily": "Inter",
+              "textColor": "#5F6E82",
+              "backgroundColor": "",
+              "borderColor": "",
+              "onlyAnnual": false
+            },
+            "seeMoreButtonText": "Ver mais",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "https://www.lojaintegrada.com.br/planos",
+                "textColor": "#003037",
+                "underlineText": "Ver detalhes",
+                "borderColor": "#003037"
+              }
+            ],
+            "backgroundColor": "linear-gradient(172deg, #71DBD4 -46.43%, #FFF 31.59%)",
+            "titleColor": "#371E55",
+            "cutedMontlyFeeColor": "#003037",
+            "createStoreWithPlanCta": {
+              "planId": "173",
+              "text": "Assinar",
+              "ctaStyle": "button",
+              "backgroundColor": "#003037",
+              "textColor": "#ffffff",
+              "borderColor": "#003037",
+              "showIcon": false
+            },
+            "theme": "light",
+            "titleFont": "Instrument Serif"
+          },
+          {
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "<p>500 Produtos </p>"
+                },
+                {
+                  "text": "<p>50.000 visitas</p>"
+                },
+                {
+                  "text": "<p>Tudo do plano crescimento +</p>"
+                },
+                {
+                  "text": "<p>Enriquecimento de produtos com IA</p>"
+                },
+                {
+                  "text": "<p>Avaliação de produto com foto</p>"
+                },
+                {
+                  "text": "<p>3 usuários do painel</p>"
+                },
+                {
+                  "text": "<p>Edição de HTML</p>"
+                }
+              ],
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
+              },
+              "itemsTextColor": "#5F6E82",
+              "tooltipTextColor": "#5F6E82",
+              "tooltipBackgroundColor": "#EAE7ED"
+            },
+            "title": "<h2><span style=\"color: #0c3038; font-size: 36pt\">Aceleração</span></h2>",
+            "chooseCta": {
+              "text": "Assinar",
+              "href": "#"
+            },
+            "detailsCta": {
+              "text": "Ver detalhes",
+              "href": "#"
+            },
+            "tag": {
+              "fontFamily": "Instrument Serif",
+              "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
+              "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
+              "borderColor": "linear-gradient(90deg, #B699D9 0%, #512F79 100%)",
+              "onlyAnnual": true
+            },
+            "montlyFee": "<p><span style=\"color: #0c3038; font-size: 24pt\">R$</span><span style=\"color: #0c3038\"> </span><strong><span style=\"color: #0c3038; font-size: 36pt\">99</span></strong><span style=\"color: #0c3038\"> </span><span style=\"color: #0c3038; font-size: 14pt\">/mês</span></p>",
+            "cutedMontlyFee": "de R$99/mês ",
+            "annualMontlyFee": "<p><span style=\"color: #0c3038; font-size: 24pt\">R$</span><span style=\"color: #0c3038\"> </span><strong><span style=\"color: #0c3038; font-size: 36pt\">79</span></strong><span style=\"color: #0c3038\"> </span><span style=\"color: #0c3038; font-size: 14pt\">/mês</span><span style=\"color: rgb(55, 30, 85); font-size: 14pt\"><br></span></p>",
+            "seeMoreButtonText": "Ver mais",
+            "backgroundColor": "linear-gradient(172deg, #71DBD4 -46.43%, #FFF 31.59%)",
+            "titleColor": "#FAFAF5",
+            "cutedMontlyFeeColor": "#003037",
+            "annualSaving": {
+              "text": "<p><em>Economia de R$ 240/ano</em></p>",
+              "fontFamily": "Inter",
+              "textColor": "#5F6E82",
+              "backgroundColor": "",
+              "borderColor": ""
+            },
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "https://www.lojaintegrada.com.br/planos",
+                "textColor": "#003037",
+                "underlineText": "Ver detalhes"
+              }
+            ],
+            "createStoreWithPlanCta": {
+              "planId": "174",
+              "text": "Assinar",
+              "ctaStyle": "button",
+              "backgroundColor": "#003037",
+              "textColor": "#ffffff",
+              "borderColor": "#003037"
+            },
+            "annualFee": 79,
+            "annualMontlyFeeFee": 79,
+            "seeMoreTag": "Ver mais",
+            "tagColor": "#FAFAF5",
+            "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
+            "titleFont": "Instrument Serif"
+          }
+        ],
+        "arrows": false,
+        "titleColor": "#371E55",
+        "arrowsColor": "#ca1616",
+        "captionColor": "#371E55",
+        "caption": "<p></p>",
+        "dots": false,
+        "annualLabel": "Anual",
+        "montlyLabel": "Mensal",
+        "bottomTitle": "Ou comece agora sem custo",
+        "bottomButton": {
+          "text": "Começar no grátis",
+          "href": "#"
+        },
+        "labelColor": "#371E55",
+        "disabledLabelColor": "#828CA0",
+        "annualTagColor": "#FFE6A0",
+        "annualTagDisabledColor": "#EBEBEB",
+        "bottomButtons": [
+          {
+            "ctaStyle": "button",
+            "href": "#",
+            "text": "Começar no grátis",
+            "backgroundColor": "#371E55",
+            "textColor": "#ffffff",
+            "borderColor": "#371E55"
+          }
+        ],
+        "bottomCaptionColor": "#828CA0",
+        "bottomTitleColor": "#003037",
+        "bottomCreateStoreCta": {
+          "planId": "172",
+          "text": "Acessar plano grátis",
+          "backgroundColor": "#003037",
+          "textColor": "#ffffff",
+          "borderColor": "#371E55",
+          "ctaStyle": "button",
+          "showIcon": false
+        },
+        "annualTagTextColor": "#371E55",
+        "annualTag": "- 2O% FF",
+        "annualTagPosition": "aside"
+      },
+      "rule": {
+        "__resolveType": "website/matchers/device.ts",
+        "mobile": true
+      }
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/PlansV2.tsx",
+        "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037;\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span></p><p style=\"text-align: center; line-height:0.5; \" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 24px; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
+        "id": "plans",
+        "paddingBottom": "80px",
+        "paddingTop": "80px",
+        "slides": [
+          {
+            "title": "<p style=\"font-size: 36pt; line-height:-1.2;\"><span>Comece sem<br> custos</span></p>",
+            "tag": {
+              "icon": {
+                "alt": "crown icon"
+              },
+              "textColor1": "#ce2c2c",
+              "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)",
+              "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
+              "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
+              "fontFamily": "Instrument Serif",
+              "onlyAnnual": true
+            },
+            "montlyFee": "<p></p>",
+            "chooseCta": {
+              "text": "Assinar",
+              "href": "#"
+            },
+            "detailsCta": {
+              "text": "Ver detalhes",
+              "href": "#"
+            },
+            "bulletPoints": {
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
+              },
+              "items": [
+                {
+                  "text": "<p>50 produtos</p>"
+                },
+                {
+                  "text": "<p>5.000 visitas</p>"
+                },
+                {
+                  "text": "<p>Loja completa</p>"
+                },
+                {
+                  "text": "<p>Meio de envio e pagamento</p>"
+                },
+                {
+                  "text": "<p>Sem cobrança de tarifa por venda no Pagali</p>"
+                },
+                {
+                  "text": "<p>Recursos de marketing</p>"
+                }
+              ],
+              "itemsTextColor": "#FAFAF5",
+              "tooltipTextColor": "#003037",
+              "tooltipBackgroundColor": "#FAFAF5"
+            },
+            "annualMontlyFee": "<p></p>",
+            "annualSaving": {
+              "text": "<p></p>",
+              "fontFamily": "Inter",
+              "backgroundColor": "",
+              "borderColor": "",
+              "textColor": ""
+            },
+            "seeMoreButtonText": "Ver mais",
+            "backgroundColor": "radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), #55DCE6;",
+            "titleColor": "#ffffff",
+            "cutedMontlyFeeColor": "#FAFAF5",
+            "annualSavingColor": "#FAFAf5",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "https://www.lojaintegrada.com.br/planos",
+                "textColor": "#FAFAF5",
+                "underlineText": "Ver detalhes"
+              }
+            ],
+            "createStoreWithPlanCta": {
+              "planId": "172",
+              "text": "Comece agora",
+              "backgroundColor": "#FAFAF5",
+              "textColor": "#003037",
+              "borderColor": "#FAFAF5",
+              "ctaStyle": "button"
+            },
+            "tagColor": "#371E55",
+            "tagBackgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%)",
+            "theme": "light",
+            "topImage": {
+              "width": 239,
+              "height": 134
+            },
+            "tagTextColor": {
+              "color1": "#71DBD4 ",
+              "color2": "#ABEECF "
+            },
+            "titleFont": "Instrument Serif"
+          },
+          {
+            "title": "<h2><span style=\"color: #0c3038; font-size: 36pt\">Crescimento</span></h2>",
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "<p>250 produtos</p>"
+                },
+                {
+                  "text": "<p>25.000 visitas</p>"
+                },
+                {
+                  "text": "<p>Tudo do plano grátis +</p>"
+                },
+                {
+                  "text": "<p>Checkout transparente</p>",
+                  "toolTipText": "Compra sem senha"
+                },
+                {
+                  "text": "<p>Ferramenta de avaliação, Compre Junto e recuperação de carrinho abandonado e produto</p>"
+                }
+              ],
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg",
+                "alt": "bullet points icon"
+              },
+              "itemsTextColor": "#5F6E82",
+              "tooltipTextColor": "#5F6E82",
+              "tooltipBackgroundColor": "#EAE7ED"
+            },
+            "chooseCta": {
+              "text": "Assinar",
+              "href": "#"
+            },
+            "detailsCta": {
+              "text": "Ver detalhes"
+            },
+            "tag": {
+              "text": "<p></p>",
+              "backgroundColor": "",
+              "borderColor": "",
+              "textColor": "",
+              "onlyAnnual": false
+            },
+            "montlyFee": "<p><span style=\"color: rgb(12, 48, 56); font-size: 24pt\">R$</span><span style=\"color: rgb(12, 48, 56)\"> </span><strong><span style=\"color: rgb(12, 48, 56); font-size: 48px\">54</span></strong><span style=\"color: rgb(12, 48, 56); font-size: 14pt\">/mês</span></p>",
+            "cutedMontlyFee": "de R$ 54/mês",
+            "annualMontlyFee": "<p><span style=\"color: rgb(12, 48, 56); font-size: 24pt\">R$</span><span style=\"color: rgb(12, 48, 56)\"> </span><strong><span style=\"color: rgb(12, 48, 56); font-size: 48px\">43</span></strong><span style=\"color: rgb(12, 48, 56); font-size: 14pt\">/mês</span></p>",
+            "annualSaving": {
+              "text": "<p><em>Economia de R$ 152/ano</em></p>",
+              "fontFamily": "Inter",
+              "textColor": "#5F6E82",
+              "backgroundColor": "",
+              "borderColor": "",
+              "onlyAnnual": false
+            },
+            "seeMoreButtonText": "Ver mais",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "https://www.lojaintegrada.com.br/planos",
+                "textColor": "#003037",
+                "underlineText": "Ver detalhes",
+                "borderColor": "#003037"
+              }
+            ],
+            "backgroundColor": "linear-gradient(172deg, #71DBD4 -46.43%, #FFF 31.59%)",
+            "titleColor": "#371E55",
+            "cutedMontlyFeeColor": "#003037",
+            "createStoreWithPlanCta": {
+              "planId": "173",
+              "text": "Assinar",
+              "ctaStyle": "button",
+              "backgroundColor": "#003037",
+              "textColor": "#ffffff",
+              "borderColor": "#003037",
+              "showIcon": false
+            },
+            "theme": "light",
+            "titleFont": "Instrument Serif"
+          },
+          {
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "<p>500 Produtos </p>"
+                },
+                {
+                  "text": "<p>50.000 visitas</p>"
+                },
+                {
+                  "text": "<p>Tudo do plano crescimento +</p>"
+                },
+                {
+                  "text": "<p>Enriquecimento de produtos com IA</p>"
+                },
+                {
+                  "text": "<p>Avaliação de produto com foto</p>"
+                },
+                {
+                  "text": "<p>3 usuários do painel</p>"
+                },
+                {
+                  "text": "<p>Edição de HTML</p>"
+                }
+              ],
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
+              },
+              "itemsTextColor": "#5F6E82",
+              "tooltipTextColor": "#5F6E82",
+              "tooltipBackgroundColor": "#EAE7ED"
+            },
+            "title": "<h2><span style=\"color: #0c3038; font-size: 36pt\">Aceleração</span></h2>",
+            "chooseCta": {
+              "text": "Assinar",
+              "href": "#"
+            },
+            "detailsCta": {
+              "text": "Ver detalhes",
+              "href": "#"
+            },
+            "tag": {
+              "fontFamily": "Instrument Serif",
+              "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
+              "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
+              "borderColor": "linear-gradient(90deg, #B699D9 0%, #512F79 100%)",
+              "onlyAnnual": true
+            },
+            "montlyFee": "<p><span style=\"color: #0c3038; font-size: 24pt\">R$</span><span style=\"color: #0c3038\"> </span><strong><span style=\"color: #0c3038; font-size: 36pt\">99</span></strong><span style=\"color: #0c3038\"> </span><span style=\"color: #0c3038; font-size: 14pt\">/mês</span></p>",
+            "cutedMontlyFee": "de R$99/mês ",
+            "annualMontlyFee": "<p><span style=\"color: #0c3038; font-size: 24pt\">R$</span><span style=\"color: #0c3038\"> </span><strong><span style=\"color: #0c3038; font-size: 36pt\">79</span></strong><span style=\"color: #0c3038\"> </span><span style=\"color: #0c3038; font-size: 14pt\">/mês</span><span style=\"color: rgb(55, 30, 85); font-size: 14pt\"><br></span></p>",
+            "seeMoreButtonText": "Ver mais",
+            "backgroundColor": "linear-gradient(172deg, #71DBD4 -46.43%, #FFF 31.59%)",
+            "titleColor": "#FAFAF5",
+            "cutedMontlyFeeColor": "#003037",
+            "annualSaving": {
+              "text": "<p><em>Economia de R$ 240/ano</em></p>",
+              "fontFamily": "Inter",
+              "textColor": "#5F6E82",
+              "backgroundColor": "",
+              "borderColor": ""
+            },
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "https://www.lojaintegrada.com.br/planos",
+                "textColor": "#003037",
+                "underlineText": "Ver detalhes"
+              }
+            ],
+            "createStoreWithPlanCta": {
+              "planId": "174",
+              "text": "Assinar",
+              "ctaStyle": "button",
+              "backgroundColor": "#003037",
+              "textColor": "#ffffff",
+              "borderColor": "#003037"
+            },
+            "annualFee": 79,
+            "annualMontlyFeeFee": 79,
+            "seeMoreTag": "Ver mais",
+            "tagColor": "#FAFAF5",
+            "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
+            "titleFont": "Instrument Serif"
+          }
+        ],
+        "arrows": false,
+        "titleColor": "#371E55",
+        "captionColor": "#371E55",
+        "arrowsColor": "#ca1616",
+        "caption": "<p></p>",
+        "dots": false,
+        "annualLabel": "Anual",
+        "montlyLabel": "Mensal",
+        "bottomTitle": "Ou comece agora sem custo",
+        "bottomButton": {
+          "text": "Começar no grátis",
+          "href": "#"
+        },
+        "labelColor": "#371E55",
+        "disabledLabelColor": "#828CA0",
+        "annualTagColor": "#FFE6A0",
+        "annualTagDisabledColor": "#EBEBEB",
+        "bottomButtons": [
+          {
+            "ctaStyle": "button",
+            "href": "#",
+            "text": "Começar no grátis",
+            "backgroundColor": "#371E55",
+            "textColor": "#ffffff",
+            "borderColor": "#371E55"
+          }
+        ],
+        "bottomCaptionColor": "#828CA0",
+        "bottomTitleColor": "#003037",
+        "bottomCreateStoreCta": {
+          "planId": "172",
+          "text": "Acessar plano grátis",
+          "backgroundColor": "#003037",
+          "textColor": "#ffffff",
+          "borderColor": "#371E55",
+          "ctaStyle": "button",
+          "showIcon": false
+        },
+        "annualTagTextColor": "#371E55",
+        "annualTag": "- 2O% FF",
+        "annualTagPosition": "aside"
+      },
+      "rule": {
+        "__resolveType": "website/matchers/always.ts"
+      }
+    }
+  ]
+}

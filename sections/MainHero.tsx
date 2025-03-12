@@ -81,6 +81,7 @@ export interface Props {
     /** @format color-input */
     titleColor?: string;
     caption?: RichText;
+    captionFontSize?: string;
     inputLabel?: string;
     /** @format color-input */
     inputLabelColor?: string;
@@ -91,7 +92,10 @@ export interface Props {
     video?: VideoWidget;
     use?: "image" | "video";
     htmlContent?: HTMLWidget;
+    /** @format color-input */
+    backgroundColor?: string;
     backgroundImage?: IImage;
+    backgroundAnimation?: boolean;
     backgroundVideo?: VideoWidget;
     useBackground?: "image" | "video";
     lcp?: boolean;
@@ -109,16 +113,15 @@ export interface Props {
     modal?: Modal;
     sectionMinHeight?: string;
 }
-export default function MainHero({ hideSection, id, title, caption = "", inputLabel, hubspotFormButtonWidth, backgroundVideo, lcp, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
+export default function MainHero({ hideSection, id, title, caption = "", backgroundAnimation, inputLabel, captionFontSize, backgroundColor, hubspotFormButtonWidth, backgroundVideo, lcp, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
     if (hideSection) return <></>
     const randomId = useId();
     const modalId = randomId + "modal";
     const hubspostFormId = randomId + "hubspotForm";
-    return <div class="relative">
-        <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`} style={{minHeight: sectionMinHeight}}>
+    return <div class="relative overflow-hidden">
+        <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`} style={{minHeight: sectionMinHeight, background: backgroundColor}}>
             {useBackground == "image" && backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} 
-                class="w-full h-full absolute object-cover top-0 left-0 -z-50 object-right-top" 
-                // style={{ objectPosition: "top right" }}
+                class={`w-full h-full absolute object-cover top-0 left-0 -z-50 object-right-top ${backgroundAnimation && 'animate-background-animation'}` }
                 alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={lcp ? "eager" : "lazy"} preload={true}
             />}
             {useBackground == "video" && backgroundVideo && <video width="1280" height="720" autoPlay playsInline muted loading={lcp ? "eager" : "lazy"} loop class="absolute w-full h-full object-cover top-0 left-0 -z-50 ">
@@ -133,7 +136,7 @@ export default function MainHero({ hideSection, id, title, caption = "", inputLa
                         style={{ background: titleColor, backgroundClip: "text", color: titleColor && 'transparent', fontFamily: titleFont }} 
                         dangerouslySetInnerHTML={{ __html: title }}
                     />
-                    <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: caption }}/>
+                    <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[1.2] w-full" dangerouslySetInnerHTML={{ __html: caption }} style={{fontSize: captionFontSize}}/>
                     <label class="pt-5 md:pt-10 lg:w-[600px]">
                         {inputLabel && <p 
                             class={`bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 pl-2.5 lg:pl-4 text-sm lg:text-base text-primary inline-block ${inputLabelWidth == 'full' ? "w-full text-center px-1" : "pr-12"}`} 

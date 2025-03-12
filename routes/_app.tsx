@@ -27,6 +27,79 @@ export default defineApp(async (_req, ctx) => {
         __html: `html {
           scroll-behavior: smooth;
           }`}} />
+      <style dangerouslySetInnerHTML={{
+        __html: `
+        @font-face {
+            font-family: "Galaxie Copernicus";
+            src: url("/fonts/GalaxieCopernicus-Bold.otf") format("opentype");
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Galaxie Copernicus";
+            src: url("/fonts/GalaxieCopernicus-BoldItalic.otf") format("opentype");
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: "Galaxie Copernicus";
+            src: url("/fonts/GalaxieCopernicus-Medium.otf") format("opentype");
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Galaxie Copernicus";
+            src: url("/fonts/GalaxieCopernicus-MediumItalic.otf") format("opentype");
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: "Galaxie Copernicus";
+            src: url("/fonts/GalaxieCopernicus-Extrabold.otf") format("opentype");
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Galaxie Copernicus";
+            src: url("/fonts/GalaxieCopernicus-ExtraboldItalic.otf") format("opentype");
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: "Galaxie Copernicus";
+            src: url("/fonts/GalaxieCopernicus-Heavy.otf") format("opentype");
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Galaxie Copernicus";
+            src: url("/fonts/GalaxieCopernicus-HeavyItalic.otf") format("opentype");
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: "Galaxie Copernicus";
+            src: url("/fonts/GalaxieCopernicus-Semibold.otf") format("opentype");
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Galaxie Copernicus";
+            src: url("/fonts/GalaxieCopernicus-SemiboldItalic.otf") format("opentype");
+            font-weight: 600;
+            font-style: italic;
+        }
+
+      `}} />
     </Head>
 
     {/* Rest of Preact tree */}

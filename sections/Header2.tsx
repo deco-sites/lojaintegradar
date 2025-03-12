@@ -152,6 +152,7 @@ export interface Navigation {
   textHoverColor?: string;
   createStoreCta?: CreateStoreWithPlanCTA;
   buttons: CTA[];
+  buttonsHeight?: string;
   createStoreCtaMobile?: CreateStoreWithPlanCTA;
   createStoreCtaMobileOnScrollColors?: CTAColors;
   mobileButtons: CTA[];
@@ -192,6 +193,8 @@ export interface Nav {
     src?: ImageWidget;
     alt?: string;
     href?: string;
+    height?: number;
+    width?: number;
   };
   dropdownMenus?: DropdownMenus;
   navigation?: Navigation;
@@ -253,8 +256,8 @@ export default function Header2({ logo = {
 
           <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, navigation) }} />
 
-          <a href={logo.href || "/"} class="min-w-32 h-5 md:min-w-64 md:h-10">
-            <Image src={logo.src || ""} width={257} height={40} alt={logo.alt || "header logo"} class="h-full w-full" />
+          <a href={logo.href || "/"} class="min-w-32 h-5 md:min-w-64 md:h-10 flex items-center">
+            <Image src={logo.src || ""} width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
           </a>
           
           <ul class="hidden lg:flex items-center gap-4 text-sm flex-wrap" style={{color: dropdownMenus.titlesTextColor}}>
@@ -338,25 +341,29 @@ export default function Header2({ logo = {
                 showIcon={navigation.createStoreCta.showIcon}
                 text={navigation.createStoreCta.text}
                 underlineText={navigation.createStoreCta.underlineText}
-                ctaClass={`${navigation.createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                ctaClass={`${navigation.createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} ${navigation.buttonsHeight && 'min-h-0'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
                 style={navigation.createStoreCta.ctaStyle == "button" 
-                  ? { backgroundColor: navigation.createStoreCta.backgroundColor, color: navigation.createStoreCta.textColor, borderColor: navigation.createStoreCta.borderColor, order: navigation.createStoreCta.order } 
-                  : { color: navigation.createStoreCta.textColor, order: navigation.createStoreCta.order }}
+                  ? { backgroundColor: navigation.createStoreCta.backgroundColor, color: navigation.createStoreCta.textColor, borderColor: navigation.createStoreCta.borderColor, height: navigation.buttonsHeight, order: navigation.createStoreCta.order } 
+                  : { color: navigation.createStoreCta.textColor, height: navigation.buttonsHeight, order: navigation.createStoreCta.order }}
               />}
               {navigation?.buttons?.map((button, index) => {
                 if (button.href == "/talkToSpecialist") return <TalkToSpecialistCta 
                   showIcon={button.showIcon}
                   underlineText={button.underlineText}
                   text={button.text}
-                  ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
-                  style={button.ctaStyle == "button" ? { background: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
+                  ctaClass={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} ${navigation.buttonsHeight && 'min-h-0'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                  style={button.ctaStyle == "button" 
+                    ? { background: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, height: navigation.buttonsHeight , order: index + 1 } 
+                    : { color: button.textColor, height: navigation.buttonsHeight, order: index + 1 }}
                 />
 
                 return <a
                   href={button?.href ?? "#"}
                   target={button?.href.includes("http") ? "_blank" : "_self"}
-                  class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
-                  style={button.ctaStyle == "button" ? { background: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, order: index + 1 } : { color: button.textColor, order: index + 1 }}
+                  class={`${button.ctaStyle != "link" && 'btn btn-primary px-7'} ${navigation.buttonsHeight && 'min-h-0'} flex items-center self-start gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg`}
+                  style={button.ctaStyle == "button" 
+                    ? { background: button.backgroundColor, color: button.textColor, borderColor: button.borderColor, height: navigation.buttonsHeight , order: index + 1 } 
+                    : { color: button.textColor, height: navigation.buttonsHeight, order: index + 1 }}
                 >
                   <div dangerouslySetInnerHTML={{__html: button.text || ""}}/>
                   {button.underlineText && <span class="underline">{button.underlineText}</span>}

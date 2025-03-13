@@ -406,138 +406,28 @@
             "variants": [
               {
                 "value": {
-                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "paddingTop": "42px",
-                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195); font-size: 18pt\">Mostre que sua marca entende o cliente.</span></em><span style=\"font-size: 12pt\"><br></span><span style=\"color: rgb(0, 48, 55); font-size: 32pt\">Traduza dados em inteligência.</span></p>",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 13pt\">Na Loja Integrada, unimos informações estruturadas a automação para maximizar </span><span style=\"color: rgb(40, 195, 195); font-size: 14pt\"> cada oportunidade de venda</span></p>",
-                  "cta": [],
-                  "image": {},
-                  "titleFont": "Instrument serif",
-                  "features": [],
-                  "use": "image"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195)\">Mostre que sua marca entende o cliente.</span></em><br><span style=\"color: rgb(0, 48, 55)\">Traduza dados em inteligência.</span></p>",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight: 300;\">Na Loja Integrada, unimos informações estruturadas a automação para<br> maximizar</span><span style=\"color: rgb(40, 195, 195); font-size: 24px; font-weight: 300;\"> cada oportunidade de venda</span></p>",
-                  "cta": [],
-                  "paddingTop": "120px",
-                  "paddingBottom": "0px",
-                  "image": {},
-                  "titleFont": "Instrument serif",
-                  "features": [],
-                  "use": "image"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
                   "__resolveType": "site/sections/CardsHero.tsx",
-                  "paddingTop": "0px",
-                  "paddingBottom": "0px",
                   "leftColumn": {
                     "cards": [
                       {
                         "cta": [],
-                        "useBackground": "image",
-                        "title": "<p><span style=\"font-size: 32pt\">“Leram meu pensamento!”</span></p>",
+                        "title": "<p><span style=\"color: #00363a; font-size: 28pt\">Cadastro e catálogo</span></p>",
                         "titleColor": "#ffffff",
                         "backgroundImage": {
-                          "src": "https://data.decoassets.com/lojaintegradar/8eb604a4-00d6-454e-88bd-1ce36ccd8032/leram-meu-pensamento-mobile.png",
-                          "width": 431,
-                          "height": 633
-                        },
-                        "minHeight": "876px",
-                        "titleFont": "Instrument serif",
-                        "text": "<p><span style=\"font-size: 20px; color: rgb(250, 250, 245); line-height:160%;\" data-mce-style=\"font-size: 20px; color: rgb(250, 250, 245);\">Entenda o comportamento do cliente e transforme cada interação em uma chance <br>de conversão.</p>",
-                        "spaceBetweenTitleAndText": "30px"
-                      }
-                    ]
-                  },
-                  "rightColumn": {
-                    "cards": [
-                      {
-                        "cta": [],
-                        "useBackground": "image",
-                        "title": "<p><strong><span style=\"font-size: 14pt\">Ações automatizadas que trabalham por você</span></strong></p>",
-                        "titleColor": "#003037",
-                        "text": "<p><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt; line-height:180%; \">Envie alertas de carrinho abandonado, personalize&nbsp;campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
-                        "minHeight": "180",
-                        "backgroundImage": {
-                          "src": "https://data.decoassets.com/lojaintegradar/2d1f5c30-1e91-4814-a2a4-24d53e281837/bg-cards.png"
-                        }
-                      },
-                      {
-                        "cta": [],
-                        "useBackground": "image",
-                        "title": "<p><strong><span style=\"font-size: 14pt\">Mostre-se relevante em todos</span></strong><br><strong><span style=\"font-size: 14pt\">os contatos</span></strong></p>",
-                        "titleColor": "#003037",
-                        "text": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);line-height: 151%;\">Leve ofertas contextualizadas para seus clientes também via WhatsApp. </span></p>",
-                        "minHeight": "180px",
-                        "backgroundImage": {
-                          "src": "https://data.decoassets.com/lojaintegradar/2d1f5c30-1e91-4814-a2a4-24d53e281837/bg-cards.png"
-                        }
-                      },
-                      {
-                        "cta": [],
-                        "useBackground": "image",
-                        "title": "<p><span style=\"font-size: 18pt; line-height:1.4; font-family: 'Instrument serif';\">Em 2024, milhares de lojistas<br> recuperaram R$ 30 milhões em <br>vendas com ferramentas de<br> automação de marketing <br>da Loja Integrada.</span></p>",
-                        "titleColor": "linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%)",
-                        "minHeight": "350px",
-                        "backgroundImage": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1e295d52-64ee-42c2-999b-e8b0147f8f86/card-image-2.png",
-                          "height": 350,
-                          "width": 497
-                        },
-                        "createStoreCta": {
-                          "planId": "172",
-                          "ctaStyle": "link",
-                          "text": "Criar loja",
-                          "textColor": "#003037",
-                          "showIcon": true
-                        }
-                      }
-                    ]
-                  }
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/CardsHero.tsx",
-                  "title": {},
-                  "leftColumn": {
-                    "cards": [
-                      {
-                        "cta": [],
-                        "useBackground": "image",
-                        "title": "<p><span style=\"font-size: 58pt\">“Leram meu pensamento!”</span></p>",
-                        "titleColor": "#ffffff",
-                        "backgroundImage": {
-                          "src": "https://data.decoassets.com/lojaintegradar/aa598e39-8570-4362-8b74-907709e47f8d/leram-meu-pensamento.png",
                           "width": 597,
                           "height": 876
                         },
-                        "minHeight": "876px",
-                        "titleFont": "Instrument serif",
-                        "text": "<p><span style=\"font-size: 20px; color: rgb(250, 250, 245); line-height:160%;\" data-mce-style=\"font-size: 20px; color: rgb(250, 250, 245);\">Entenda o comportamento do cliente e<br> transforme cada interação em uma chance <br>de conversão.</p>",
-                        "spaceBetweenTitleAndText": "30px"
+                        "minHeight": "384px",
+                        "titleFont": "Galaxie Copernicus",
+                        "text": "<p><span style=\"color: rgb(0, 54, 58);\" data-mce-style=\"color: rgb(0, 54, 58);\">Estamos desenvolvendo ferramentas avançadas para tornar o cadastro de produtos mais eficiente e seu catálogo mais inteligente, permitindo melhor organização e apresentação dos seus produtos.</span><br></p>",
+                        "spaceBetweenTitleAndText": "30px",
+                        "titleFontSize": "38px",
+                        "titleTag": {
+                          "text": "<p><span style=\"color: #7a2d0d\">Em breve</span></p>",
+                          "backgroundColor": "#FFE6A0"
+                        },
+                        "backgroundColor": "linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%)",
+                        "borderRadius": "20px"
                       }
                     ]
                   },
@@ -546,49 +436,22 @@
                       {
                         "cta": [],
                         "useBackground": "image",
-                        "title": "<p style=\" line-height: 1.2; \"><strong>Ações automatizadas que</strong><br><strong>trabalham por você</strong></p>",
+                        "title": "<p><strong>Ações automatizadas que</strong><br><strong>trabalham por você</strong></p>",
                         "titleColor": "#003037",
                         "text": "<p style=\" line-height: 1.6; \"><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt;  \">Envie alertas de carrinho abandonado, personalize <br>campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
-                        "minHeight": "211px",
+                        "minHeight": "384px",
                         "backgroundImage": {
                           "src": "https://data.decoassets.com/lojaintegradar/2d1f5c30-1e91-4814-a2a4-24d53e281837/bg-cards.png"
-                        }
-                      },
-                      {
-                        "cta": [],
-                        "useBackground": "image",
-                        "title": "<p><strong>Mostre-se relevante em <br>todos os contatos</strong></p>",
-                        "titleColor": "#003037",
-                        "text": "<p style=\"line-height: 1.6;\" data-mce-style=\"line-height: 1.6;\"><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Leve ofertas contextualizadas para seus clientes<br>também via WhatsApp.</span></p><p><br data-mce-bogus=\"1\"></p>",
-                        "minHeight": "211px",
-                        "backgroundImage": {
-                          "src": "https://data.decoassets.com/lojaintegradar/2d1f5c30-1e91-4814-a2a4-24d53e281837/bg-cards.png"
-                        }
-                      },
-                      {
-                        "cta": [],
-                        "useBackground": "image",
-                        "title": "<p><span style=\"font-size: 28pt; line-height:1.4; font-family: 'Instrument serif';\">Em 2024, milhares de lojistas<br> recuperaram R$ 30 milhões em <br>vendas com ferramentas de<br> automação de marketing <br>da Loja Integrada.</span></p>",
-                        "titleColor": "linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%)",
-                        "minHeight": "414px",
-                        "backgroundImage": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1e295d52-64ee-42c2-999b-e8b0147f8f86/card-image-2.png",
-                          "width": 597,
-                          "height": 414
-                        },
-                        "createStoreCta": {
-                          "planId": "172",
-                          "ctaStyle": "link",
-                          "text": "Criar loja",
-                          "textColor": "#003037",
-                          "showIcon": true,
-                          "icon": {
-                            "src": "https://data.decoassets.com/lojaintegradar/4bf406dd-939e-4a7e-8a91-5c5792dba76f/Arrow-5.svg",
-                            "width": 25
-                          }
                         }
                       }
                     ]
+                  },
+                  "title": {
+                    "text": "<p style=\"text-align: center\"><span style=\"color: #00363a; font-size: 42pt\">Enriquecimento de oferta e</span></p><p style=\"text-align: center\"><em><span style=\"color: #00b7b5; font-size: 42pt\">cadastro de produto inteligente</span></em></p>",
+                    "font": "Galaxie Copernicus"
+                  },
+                  "tag": {
+                    "text": "<p><strong><span style=\"color: #5f6e82\">Nosso compromisso é com o seu crescimento em 2025</span></strong></p>"
                   }
                 },
                 "rule": {
@@ -1395,9 +1258,9 @@
                   "__resolveType": "site/sections/Logos.tsx",
                   "title": "<p></p>",
                   "titleFont": "Instrument serif",
-                  "paddingTop": "0px",
                   "caption": "<p></p>",
                   "titleColor": "#371E55",
+                  "paddingTop": "0px",
                   "captionColor": "#5F6E82",
                   "logos": [
                     {
@@ -1440,9 +1303,9 @@
                   "__resolveType": "site/sections/Logos.tsx",
                   "title": "<p></p>",
                   "titleFont": "Instrument serif",
-                  "paddingBottom": "120px",
                   "caption": "<p></p>",
                   "titleColor": "#371E55",
+                  "paddingBottom": "120px",
                   "captionColor": "#5F6E82",
                   "logos": [
                     {
@@ -1498,14 +1361,14 @@
                 "value": {
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
                   "title": "<p style=\"text-align: center; font-size: 32pt; \"><span style=\"color: rgb(0, 48, 55);\">A loja do Neymar </span><em><span style=\"color: rgb(40, 195, 195)\">é da Loja Integrada!</span></em></p>",
-                  "paddingTop": "80px",
                   "titleFont": "Instrument Serif",
+                  "paddingTop": "80px",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size:14pt; font-weight: 300;\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos e estratégias voltadas para engajamento e recompra.</span></p>",
                   "image": {
                     "src": "https://data.decoassets.com/lojaintegradar/6486e35a-f5b7-4354-b5bd-2044defd3b57/img-case-neymar-mobile.png",
                     "width": 390,
                     "height": 311
                   },
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size:14pt; font-weight: 300;\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos e estratégias voltadas para engajamento e recompra.</span></p>",
                   "features": [
                     {
                       "icon": {
@@ -1555,15 +1418,15 @@
                 "value": {
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
                   "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">A loja do Neymar </span><em><span style=\"color: rgb(40, 195, 195)\">é da Loja Integrada!</span></em></p>",
-                  "paddingBottom": "0",
                   "titleFont": "Instrument Serif",
+                  "paddingBottom": "0",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight: 300;\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos<br> e estratégias voltadas para engajamento e recompra.</span></p>",
                   "hideSection": false,
                   "image": {
                     "src": "https://data.decoassets.com/lojaintegradar/69b21891-6702-4763-bbbd-3d961c058646/img-case-neymar-desktop.png",
                     "height": 878,
                     "width": 1331
                   },
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight: 300;\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos<br> e estratégias voltadas para engajamento e recompra.</span></p>",
                   "features": [
                     {
                       "icon": {
@@ -1617,10 +1480,10 @@
                 "value": {
                   "__resolveType": "site/sections/Carousel.tsx",
                   "title": "<p style=\"line-height:1; \"><span style=\"color: rgb(0, 48, 55); font-size:32pt;  font-weight:300; \">Nós queremos mais é<br> que você cresça!</span></p><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:18px; font-weight:300; font-family: 'Inter'; \">Uma plataforma que se adapta às suas necessidades, seja qual for o tamanho do<br> seu negócio.</p>",
-                  "paddingBottom": "120px",
                   "paddingTop": "80px",
-                  "titleColor": "",
                   "titleFont": "Instrument serif",
+                  "paddingBottom": "120px",
+                  "titleColor": "",
                   "captionColor": "#371E55",
                   "slides": [
                     {
@@ -1742,9 +1605,10 @@
                   "__resolveType": "site/sections/Carousel.tsx",
                   "title": "<p><span style=\"color: rgb(0, 48, 55); font-size:70px;  font-weight:300; \">Nós queremos mais é que você cresça!</span><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:24px; font-weight:300; font-family: 'Inter'; \"><br>Uma plataforma que se adapta às suas necessidades, seja qual for <br>o tamanho do seu negócio.</p>",
                   "paddingBottom": "120px",
+                  "titleFont": "Instrument serif",
+                  "hideSection": false,
                   "titleColor": "",
                   "captionColor": "#371E55",
-                  "titleFont": "Instrument serif",
                   "slides": [
                     {
                       "title": "Para quem está começando no e-commerce",
@@ -1842,8 +1706,7 @@
                     "text": "Começar no grátis",
                     "backgroundColor": "#003037",
                     "borderColor": "#003037"
-                  },
-                  "hideSection": false
+                  }
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
@@ -2599,16 +2462,12 @@
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                },
                 "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
                   "title": "<p style=\"font-family: 'Instrument Serif'; color:#003037; font-size:32pt; line-height:1.2; \"><span>Planos que crescem<br> com o seu negócio</span></p>",
-                  "id": "plans",
                   "paddingBottom": "80px",
                   "paddingTop": "80px",
+                  "id": "plans",
                   "slides": [
                     {
                       "title": "<p style=\"font-size: 36pt; line-height:-1.2;\"><span>Comece sem<br> custos</span></p>",
@@ -2909,18 +2768,19 @@
                   "annualTagTextColor": "#371E55",
                   "annualTag": "- 2O% FF",
                   "annualTagPosition": "aside"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
                 }
               },
               {
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                },
                 "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
                   "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037;\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span></p><p style=\"text-align: center; line-height:0.5; \" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 24px; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
-                  "id": "plans",
                   "paddingBottom": "80px",
                   "paddingTop": "80px",
+                  "id": "plans",
                   "slides": [
                     {
                       "title": "<p style=\"font-size: 36pt; line-height:-1.2;\"><span>Comece sem<br> custos</span></p>",
@@ -3233,6 +3093,9 @@
                       "textColor": "#FFFFFF"
                     }
                   ]
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
                 }
               }
             ]

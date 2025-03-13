@@ -50,7 +50,7 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
 
       <AnimateOnShow animation="animate-fade-up50">
         {tag?.text && <div
-          class="rounded-[20px] mb-5 w-fit mx-auto font-normal px-4 text-sm lg:text-lg"
+          class="rounded-[20px] mb-5 w-fit mx-auto font-normal px-4 py-1 text-sm lg:text-lg"
           style={{ background: tag.backgroundColor }}
           dangerouslySetInnerHTML={{ __html: tag.text }} />
         }

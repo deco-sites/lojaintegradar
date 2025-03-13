@@ -32,6 +32,12 @@ export interface Title {
     font?: string;
 }
 
+export interface Tag {
+    text?: RichText;
+    /** @format color-input */
+    backgroundColor?: string;
+}
+
 export interface CreateStoreWithPlanCTA {
     planId: string;
     text?: string;
@@ -53,6 +59,8 @@ export interface Card {
     /** @format color-input */
     titleColor?: string;
     titleFont?: string;
+    titleFontSize?: string;
+    titleTag?: Tag;
     spaceBetweenTitleAndText?: string;
     text?: HTMLWidget;
     createStoreCta?: CreateStoreWithPlanCTA;
@@ -61,12 +69,16 @@ export interface Card {
     backgroundVideo?: VideoWidget;
     useBackground?: 'image' | 'video';
     /** @format color-input */
+    backgroundColor?: string;
+    /** @format color-input */
     borderColor?: string;
+    borderRadius?: string;
     minHeight?: string;
 }
 
 export interface Props {
     hideSection?: boolean;
+    tag?: Tag;
     id?: string;
     title?: Title;
     caption?: RichText;
@@ -84,13 +96,24 @@ export interface Props {
 export function CardColumn({ cards = [] }: { cards?: Card[] }) {
     return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow">
         {cards.map((card, index) => (
-            <AnimateOnShow animation="animate-fade-up50" divClass="relative rounded-md border py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 flex flex-col overflow-hidden" style={{ borderColor: card.borderColor, minHeight: card.minHeight }} delay={100 * index}>
-                {card.title && <div
-                    class="text-2xl text-primary font-normal leading-none"
-                    style={{ background: card.titleColor, backgroundClip: "text", color: "transparent", fontFamily: card.titleFont }}
-                    dangerouslySetInnerHTML={{ __html: card.title }}
-                />}
-                <div dangerouslySetInnerHTML={{ __html: card.text || "" }} class="mt-2.5 text-base font-normal leading-[120%]" style={{ marginTop: card.spaceBetweenTitleAndText }} />
+            <AnimateOnShow
+                animation="animate-fade-up50"
+                divClass="relative rounded-md border py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 flex flex-col overflow-hidden"
+                style={{ borderColor: card.borderColor, minHeight: card.minHeight, background: card.backgroundColor, borderRadius: card.borderRadius }}
+                delay={100 * index}>
+                <div class="flex gap-5 items-center">
+                    {card.title && <div
+                        class="text-2xl py-1 text-primary font-normal w-fit leading-none"
+                        style={{ background: card.titleColor, backgroundClip: "text", color: "transparent", fontFamily: card.titleFont, fontSize: card.titleFontSize }}
+                        dangerouslySetInnerHTML={{ __html: card.title }}
+                    />}
+                    {card.titleTag?.text && <div
+                        class="rounded-[20px] w-fit mx-auto font-normal px-4 py-1 text-sm lg:text-lg"
+                        style={{ background: card.titleTag.backgroundColor }}
+                        dangerouslySetInnerHTML={{ __html: card.titleTag.text }} />
+                    }
+                </div>
+                <div dangerouslySetInnerHTML={{ __html: card.text || "" }} class="mt-2.5 text-base font-normal" style={{ marginTop: card.spaceBetweenTitleAndText }} />
                 <div class="flex flex-wrap gap-7 mt-auto">
                     {card.createStoreCta?.text && <CreateStoreCta
                         period="anual"
@@ -154,15 +177,19 @@ export function CardColumn({ cards = [] }: { cards?: Card[] }) {
 }
 
 
-export default function CardsHero({ hideSection, id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
+export default function CardsHero({ hideSection, tag, id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
     if (hideSection) return <></>
     return <div id={id} class="py-20" style={{ paddingBottom, paddingTop }}>
         <div class="max-w-[1220px] mx-auto">
             {title?.text && <AnimateOnShow
                 animation="animate-fade-up50"
-                divClass="text-5xl lg:text-[70px] leading-[120%] mb-4"
-                style={{ fontFamily: title.font }}>
-                <div dangerouslySetInnerHTML={{ __html: title.text }} />
+                divClass={`text-5xl lg:text-[70px] leading-[120%] ${caption ? 'mb-4' : 'mb-[120px]'}`}>
+                {tag?.text && <div
+                    class="rounded-[20px] w-fit mx-auto font-normal px-4 py-1 text-sm lg:text-lg"
+                    style={{ background: tag.backgroundColor }}
+                    dangerouslySetInnerHTML={{ __html: tag.text }} />
+                }
+                <div dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font }} />
             </AnimateOnShow>}
             {caption && <AnimateOnShow
                 animation="animate-fade-up50"

@@ -279,10 +279,127 @@
             ]
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/GridCards.tsx"
-            }
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/GridCards.tsx",
+                  "hideSection": false,
+                  "title": {
+                    "text": "<p style=\"text-align: center\"><em><span style=\"color: #00b7b5\">Nós te ouvimos!</span></em><span style=\"color: #00363a\"> Confira as próximas</span></p><p style=\"text-align: center\"><span style=\"color: #00363a\">entregas pedidas pela comunidade</span></p>",
+                    "font": "Galaxie Copernicus"
+                  },
+                  "tag": {
+                    "text": "<p><span style=\"color: #7a2d0d\">Em desenvolvimento</span></p>",
+                    "backgroundColor": "#FFE6A0"
+                  },
+                  "cards": [
+                    {
+                      "image": {
+                        "position": "left",
+                        "src": "https://data.decoassets.com/lojaintegradar/c93a01c7-e029-4096-9c6c-426111bfb3a2/card-icon-1.svg",
+                        "alt": "truck icon",
+                        "width": 35,
+                        "height": 35
+                      },
+                      "backgroundColor": "#B7FBDB",
+                      "title": "<p><span style=\"color: #00363a\">Múltiplas tabela<br>de frete</span></p>",
+                      "text": "<p><span style=\"color: #00363a\">Integração com diversas transportadoras para oferecer mais opções de frete aos seus clientes, otimizando custos e prazos de entrega.</span></p>"
+                    },
+                    {
+                      "image": {
+                        "position": "left",
+                        "src": "https://data.decoassets.com/lojaintegradar/87aba8bc-1880-4b02-a795-3ddb3e2bef23/card-icon-2.svg",
+                        "width": 35
+                      },
+                      "backgroundColor": "#FAFAF5",
+                      "title": "<p><span style=\"color: #00363a\">Relatórios<br>avançados</span></p>",
+                      "text": "<p><span style=\"color: #5f6e82\">Estamos expandindo nosso sistema de relatórios, adicionando novos campos aos 3 existentes e desenvolvendo 7 novos relatórios para dar mais visibilidade ao seu negócio.</span></p>"
+                    },
+                    {
+                      "image": {
+                        "position": "left",
+                        "src": "https://data.decoassets.com/lojaintegradar/31b92802-1090-40a7-abb8-742a77c8b0ee/card-icon-3.svg",
+                        "width": 35,
+                        "height": 35
+                      },
+                      "title": "<p><span style=\"color: #00363a\">Cadastro de produto melhorado</span></p>",
+                      "text": "<p><span style=\"color: #5f6e82\">Novos recursos para gerenciamento de produtos, incluindo opções de 'não à venda' e 'não visível', permitindo cadastrar produtos como brindes ou mantê-los escondidos.</span></p>",
+                      "backgroundColor": "#FAFAF5"
+                    },
+                    {
+                      "image": {
+                        "position": "left",
+                        "src": "https://data.decoassets.com/lojaintegradar/1d57305d-0222-4676-821d-5cc0da5917ce/card-icon-4.svg",
+                        "width": 35,
+                        "height": 35
+                      },
+                      "title": "<p><span style=\"color: #00363a\">Log de alteração de estoque via API</span></p>",
+                      "text": "<p><span style=\"color: #5f6e82\">Acompanhamento detalhado das alterações de estoque realizadas via API, proporcionando maior controle e segurança para o seu inventário.</span></p>",
+                      "backgroundColor": "#FAFAF5"
+                    }
+                  ]
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/GridCards.tsx",
+                  "hideSection": false,
+                  "title": {
+                    "text": "<p style=\"text-align: center\"><em><span style=\"color: #00b7b5\">Nós te ouvimos!</span></em><span style=\"color: #00363a\"> Confira as próximas</span></p><p style=\"text-align: center\"><span style=\"color: #00363a\">entregas pedidas pela comunidade</span></p>",
+                    "font": "Galaxie Copernicus"
+                  },
+                  "tag": {
+                    "text": "<p><span style=\"color: #7a2d0d\">Em desenvolvimento</span></p>",
+                    "backgroundColor": "#FFE6A0"
+                  },
+                  "cards": [
+                    {
+                      "image": {
+                        "position": "left",
+                        "src": "https://data.decoassets.com/lojaintegradar/c93a01c7-e029-4096-9c6c-426111bfb3a2/card-icon-1.svg",
+                        "alt": "truck icon"
+                      },
+                      "backgroundColor": "#B7FBDB",
+                      "title": "<p><span style=\"color: #00363a\">Múltiplas tabela<br>de frete</span></p>",
+                      "text": "<p><span style=\"color: #00363a\">Integração com diversas transportadoras para oferecer mais opções de frete aos seus clientes, otimizando custos e prazos de entrega.</span></p>"
+                    },
+                    {
+                      "image": {
+                        "position": "left",
+                        "src": "https://data.decoassets.com/lojaintegradar/87aba8bc-1880-4b02-a795-3ddb3e2bef23/card-icon-2.svg"
+                      },
+                      "backgroundColor": "",
+                      "title": "<p><span style=\"color: #00363a\">Relatórios<br>avançados</span></p>",
+                      "text": "<p><span style=\"color: #5f6e82\">Estamos expandindo nosso sistema de relatórios, adicionando novos campos aos 3 existentes e desenvolvendo 7 novos relatórios para dar mais visibilidade ao seu negócio.</span></p>"
+                    },
+                    {
+                      "image": {
+                        "position": "left",
+                        "src": "https://data.decoassets.com/lojaintegradar/31b92802-1090-40a7-abb8-742a77c8b0ee/card-icon-3.svg"
+                      },
+                      "title": "<p><span style=\"color: #00363a\">Cadastro de produto melhorado</span></p>",
+                      "text": "<p><span style=\"color: #5f6e82\">Novos recursos para gerenciamento de produtos, incluindo opções de 'não à venda' e 'não visível', permitindo cadastrar produtos como brindes ou mantê-los escondidos.</span></p>"
+                    },
+                    {
+                      "image": {
+                        "position": "left",
+                        "src": "https://data.decoassets.com/lojaintegradar/1d57305d-0222-4676-821d-5cc0da5917ce/card-icon-4.svg"
+                      },
+                      "title": "<p><span style=\"color: #00363a\">Log de alteração de estoque via API</span></p>",
+                      "text": "<p><span style=\"color: #5f6e82\">Acompanhamento detalhado das alterações de estoque realizadas via API, proporcionando maior controle e segurança para o seu inventário.</span></p>"
+                    }
+                  ]
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
           },
           {
             "__resolveType": "website/flags/multivariate/section.ts",

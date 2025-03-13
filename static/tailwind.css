@@ -3794,8 +3794,14 @@ details.collapse summary::-webkit-details-marker {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mb-\[120px\] {
+  margin-bottom: 120px;
+}
 .mb-\[157px\] {
   margin-bottom: 157px;
+}
+.mb-\[17px\] {
+  margin-bottom: 17px;
 }
 .mb-\[21px\] {
   margin-bottom: 21px;
@@ -4482,6 +4488,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[1260px\] {
   max-width: 1260px;
 }
+.max-w-\[1282px\] {
+  max-width: 1282px;
+}
 .max-w-\[1305px\] {
   max-width: 1305px;
 }
@@ -4499,6 +4508,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[1480px\] {
   max-width: 1480px;
+}
+.max-w-\[162px\] {
+  max-width: 162px;
 }
 .max-w-\[173px\] {
   max-width: 173px;
@@ -5068,6 +5080,9 @@ details.collapse summary::-webkit-details-marker {
 .gap-y-1 {
   row-gap: 0.25rem;
 }
+.gap-y-12 {
+  row-gap: 3rem;
+}
 .gap-y-3 {
   row-gap: 0.75rem;
 }
@@ -5556,6 +5571,9 @@ details.collapse summary::-webkit-details-marker {
 .p-4 {
   padding: 1rem;
 }
+.p-5 {
+  padding: 1.25rem;
+}
 .p-6 {
   padding: 1.5rem;
 }
@@ -5922,6 +5940,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-24 {
   padding-top: 6rem;
+}
+.pt-28 {
+  padding-top: 7rem;
 }
 .pt-36 {
   padding-top: 9rem;
@@ -7128,6 +7149,10 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 1.25rem;
   }
 
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .lg\:ml-0 {
     margin-left: 0px;
   }
@@ -7340,6 +7365,10 @@ details.collapse summary::-webkit-details-marker {
     min-width: 0;
   }
 
+  .lg\:min-w-\[284px\] {
+    min-width: 284px;
+  }
+
   .lg\:min-w-\[500px\] {
     min-width: 500px;
   }
@@ -7358,6 +7387,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:max-w-\[235px\] {
     max-width: 235px;
+  }
+
+  .lg\:max-w-\[284px\] {
+    max-width: 284px;
   }
 
   .lg\:max-w-\[342px\] {
@@ -7450,6 +7483,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
   }
 
   .lg\:gap-14 {
@@ -7828,6 +7865,10 @@ details.collapse summary::-webkit-details-marker {
     font-size: 14px;
   }
 
+  .lg\:text-\[22px\] {
+    font-size: 22px;
+  }
+
   .lg\:text-\[26px\] {
     font-size: 26px;
   }
@@ -7890,6 +7931,10 @@ details.collapse summary::-webkit-details-marker {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:font-bold {
+    font-weight: 700;
   }
 
   .lg\:font-medium {

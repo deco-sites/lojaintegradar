@@ -127,7 +127,7 @@ export default function MainHero({ hideSection, id, title, caption = "", backgro
             {useBackground == "video" && backgroundVideo && <video width="1280" height="720" autoPlay playsInline muted loading={lcp ? "eager" : "lazy"} loop class="absolute w-full h-full object-cover top-0 left-0 -z-50 ">
                     <source src={backgroundVideo} type="video/mp4"/>
                 </video>}
-            <div class={`lg:pb-20 flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-7 md:px-0 border-base`}>
+            <div class={`lg:pb-20 flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-6 md:px-0 border-base`}>
                 <script dangerouslySetInnerHTML={{ __html: useScript(openModal, modalId) }}/>
                 <div class={`flex-grow flex flex-col gap-2.5 ${(use == "image" || use == "video") ? "max-w-[630px]" : "items-center max-w-[1220px]"} z-10`}>
                     {captionAbove && <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: captionAbove }}/>}

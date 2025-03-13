@@ -36,9 +36,9 @@
                   "ctaStyle": "button",
                   "text": "<p>Fazer login</p>",
                   "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "backgroundColor": "#ffffff",
-                  "borderColor": "#ffffff",
-                  "textColor": "#003037"
+                  "backgroundColor": "#B7FBDB",
+                  "borderColor": "#B7FBDB",
+                  "textColor": "#00363A"
                 }
               ],
               "asideMenuButtons": [
@@ -235,17 +235,48 @@
             "asideMenuOnlyMobile": true
           },
           {
-            "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<p style=\"text-align: center\"><em><span style=\"color: #b7fbdb; font-size: 60pt\">Novas funcionalidades</span></em><span style=\"color: #b7fbdb; font-size: 60pt\"> </span><span style=\"color: #00363a; font-size: 60pt\">chegando para você</span></p>",
-            "backgroundColor": "",
-            "backgroundImage": {
-              "src": "https://data.decoassets.com/lojaintegradar/b51627f2-fe88-4501-8df9-8836f6994310/main-background.svg"
-            },
-            "caption": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Acompanhe as últimas atualizações que estarão disponível na sua operação</span></p>",
-            "captionFontSize": "16px",
-            "backgroundAnimation": true,
-            "lcp": true,
-            "titleFont": "Galaxie Copernicus"
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/MainHero.tsx",
+                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(183, 251, 219); font-size: 24pt\">Novas funcionalidades</span></em></p><p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58); font-size: 24pt\">chegando para você</span></p>",
+                  "backgroundColor": "",
+                  "backgroundImage": {
+                    "src": "https://data.decoassets.com/lojaintegradar/762db39d-9da6-4290-9035-3306db74c117/mobile-main-background.svg",
+                    "width": 375,
+                    "height": 370
+                  },
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Acompanhe as últimas atualizações que estarão disponível na sua operação</span></p>",
+                  "captionFontSize": "16px",
+                  "backgroundAnimation": true,
+                  "lcp": true,
+                  "titleFont": "Galaxie Copernicus"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/MainHero.tsx",
+                  "title": "<p style=\"text-align: center\"><em><span style=\"color: #b7fbdb; font-size: 60pt\">Novas funcionalidades</span></em><span style=\"color: #b7fbdb; font-size: 60pt\"> </span><span style=\"color: #00363a; font-size: 60pt\">chegando para você</span></p>",
+                  "backgroundColor": "",
+                  "backgroundImage": {
+                    "src": "https://data.decoassets.com/lojaintegradar/b51627f2-fe88-4501-8df9-8836f6994310/main-background.svg"
+                  },
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Acompanhe as últimas atualizações que estarão disponível na sua operação</span></p>",
+                  "captionFontSize": "16px",
+                  "backgroundAnimation": true,
+                  "lcp": true,
+                  "titleFont": "Galaxie Copernicus"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
           },
           {
             "__resolveType": "website/flags/multivariate/section.ts",

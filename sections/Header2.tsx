@@ -252,11 +252,11 @@ export default function Header2({ logo = {
         <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
         {/* main content */}
-        <div class="drawer-content mx-auto w-full lg:px-0 px-4 py-0 flex gap-8 items-center justify-between max-w-[1260px] ">
+        <div class="drawer-content mx-auto w-full lg:px-0 px-4 py-0 flex gap-8 items-center justify-between max-w-[1305px]">
 
           <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, navigation) }} />
 
-          <a href={logo.href || "/"} class="min-w-32 h-5 md:min-w-64 md:h-10 flex items-center">
+          <a href={logo.href || "/"} class="w-28 h-5 md:w-64 md:h-10 flex items-center">
             <Image src={logo.src || ""} width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
           </a>
           

@@ -8,6 +8,11 @@ export default {
     container: { center: true },
     extend: {
       keyframes: {
+        "background-animation": {
+          "0%": { transform: "translate(0%, 0%) scale(4)" },
+          "50%": { transform: "translate(-100%, 0%) scale(4)" },
+          "100%": { transform: "translate(0%, 0%) scale(4)" },
+        },
         sliding: {
           "0%": { left: 0 },
           "100%": { transform: "translateX(-50%)" },
@@ -70,6 +75,7 @@ export default {
         "spreaded4": "0px 4px 24px 0px rgba(0, 0, 0, 0.06)",
       },
       animation: {
+        "background-animation": "background-animation 15s ease infinite",
         sliding: "sliding 30s linear infinite",
         slidingFast: "slidingFast 20s linear infinite",
         "fade-in": "fade-in 2s ease-in-out",

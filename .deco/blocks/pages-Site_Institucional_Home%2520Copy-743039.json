@@ -538,7 +538,6 @@
                         "useBackground": "image",
                         "title": "<p><span style=\"font-size: 28pt; line-height:1.4; font-family: 'Instrument serif';\">Em 2024, milhares de lojistas<br> recuperaram R$ 30 milhões em <br>vendas com ferramentas de<br> automação de marketing <br>da Loja Integrada.</span></p>",
                         "titleColor": "linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%)",
-                        "minHeight": "414px",
                         "backgroundImage": {
                           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1e295d52-64ee-42c2-999b-e8b0147f8f86/card-image-2.png",
                           "width": 597,
@@ -554,7 +553,8 @@
                             "src": "https://data.decoassets.com/lojaintegradar/4bf406dd-939e-4a7e-8a91-5c5792dba76f/Arrow-5.svg",
                             "width": 25
                           }
-                        }
+                        },
+                        "minHeight": "383px"
                       }
                     ]
                   }

@@ -27,9 +27,14 @@ export interface IImage {
     height?: number;
 }
 
+export interface CardImage extends IImage {
+    imagePlacement?: 'top' | 'bottom';
+}
+
 export interface Title {
     text?: RichText;
     font?: string;
+    fontSize?: string;
 }
 
 export interface Tag {
@@ -54,15 +59,29 @@ export interface CreateStoreWithPlanCTA {
     order?: number;
 }
 
+/** @title {{text}} */
+export interface BulletPointsItem {
+    text: string;
+}
+export interface BulletPoints {
+    items?: BulletPointsItem[];
+    /** @format color-input */
+    bulletPointsColor?: string;
+    bulletPointsIcon?: IImage;
+}
+
 export interface Card {
+    image?: CardImage;
     title?: RichText;
     /** @format color-input */
     titleColor?: string;
     titleFont?: string;
     titleFontSize?: string;
+    titleLetterSpacing?: string;
     titleTag?: Tag;
     spaceBetweenTitleAndText?: string;
-    text?: HTMLWidget;
+    text?: RichText;
+    bulletPoints?: BulletPoints;
     createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     backgroundImage?: IImage;
@@ -74,6 +93,13 @@ export interface Card {
     borderColor?: string;
     borderRadius?: string;
     minHeight?: string;
+    padding?: string;
+    contentPlacement?: 'top' | 'bottom';
+}
+
+export interface Column {
+    cards?: Card[];
+    cardsMaxWidth?: string;
 }
 
 export interface Props {
@@ -82,39 +108,62 @@ export interface Props {
     id?: string;
     title?: Title;
     caption?: RichText;
-    leftColumn?: {
-        cards?: Card[];
-    }
-    rightColumn?: {
-        cards?: Card[];
-    }
+    leftColumn?: Column;
+    rightColumn?: Column;
     invertColumns?: boolean;
     paddingTop?: string;
     paddingBottom?: string;
+    distanceBetweenColums?: string;
 }
 
-export function CardColumn({ cards = [] }: { cards?: Card[] }) {
-    return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow">
+export function CardColumn({ cards = [], cardsMaxWidth }: Column) {
+    return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow" style={{ maxWidth: cardsMaxWidth }}>
         {cards.map((card, index) => (
             <AnimateOnShow
                 animation="animate-fade-up50"
-                divClass="relative rounded-md border py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 flex flex-col overflow-hidden"
-                style={{ borderColor: card.borderColor, minHeight: card.minHeight, background: card.backgroundColor, borderRadius: card.borderRadius }}
+                divClass={`relative rounded-md ${card.borderColor && 'border'} py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 flex flex-col overflow-hidden ${card.contentPlacement != "bottom" ? '' : 'justify-end'}`}
+                style={{ borderColor: card.borderColor, minHeight: card.minHeight, background: card.backgroundColor, borderRadius: card.borderRadius, padding: card.padding, animationDuration: '1s' }}
                 delay={100 * index}>
-                <div class="flex gap-5 items-center">
+
+                {card.image?.src && card.image.imagePlacement !== "bottom" && <div class="flex w-full justify-center mb-4">
+                    <Image
+                        src={card.image.src}
+                        alt={card.image.alt}
+                        width={card.image.width || 539}
+                        height={card.image.height || 297}
+                    />
+                </div>}
+
+                <div class="flex flex-wrap-reverse gap-5 items-center">
                     {card.title && <div
-                        class="text-2xl py-1 text-primary font-normal w-fit leading-none"
-                        style={{ background: card.titleColor, backgroundClip: "text", color: "transparent", fontFamily: card.titleFont, fontSize: card.titleFontSize }}
+                        class="text-2xl py-1 text-primary font-normal w-full lg:w-fit leading-none"
+                        style={{ background: card.titleColor, backgroundClip: "text", color: "transparent", fontFamily: card.titleFont, fontSize: card.titleFontSize, letterSpacing: card.titleLetterSpacing }}
                         dangerouslySetInnerHTML={{ __html: card.title }}
                     />}
                     {card.titleTag?.text && <div
-                        class="rounded-[20px] w-fit mx-auto font-normal px-4 py-1 text-sm lg:text-lg"
+                        class="rounded-[20px] w-fit font-normal px-4 py-1 text-sm lg:text-lg"
                         style={{ background: card.titleTag.backgroundColor }}
                         dangerouslySetInnerHTML={{ __html: card.titleTag.text }} />
                     }
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: card.text || "" }} class="mt-2.5 text-base font-normal" style={{ marginTop: card.spaceBetweenTitleAndText }} />
-                <div class="flex flex-wrap gap-7 mt-auto">
+
+                {card.text && <div dangerouslySetInnerHTML={{ __html: card.text }} class="mt-2.5 text-base font-normal mb-5" style={{ marginTop: card.spaceBetweenTitleAndText }} />}
+
+                <div class="flex flex-col gap-4">
+                    {card.bulletPoints?.items?.map((item) => (
+                        <p class="flex gap-2 text-sm font-normal" style={{ color: card.bulletPoints?.bulletPointsColor }}>
+                            {card.bulletPoints?.bulletPointsIcon?.src && <Image
+                                height={card.bulletPoints?.bulletPointsIcon?.height || 15}
+                                width={card.bulletPoints?.bulletPointsIcon?.width || 15}
+                                src={card.bulletPoints?.bulletPointsIcon?.src}
+                                alt={card.bulletPoints?.bulletPointsIcon.alt || "bullet point icon"}
+                            />}
+                            {item.text}
+                        </p>
+                    ))}
+                </div>
+
+                <div class={`flex flex-wrap gap-7 ${card.contentPlacement != "bottom" ? 'mt-auto' : ''}`}>
                     {card.createStoreCta?.text && <CreateStoreCta
                         period="anual"
                         text={card.createStoreCta.text}
@@ -152,6 +201,16 @@ export function CardColumn({ cards = [] }: { cards?: Card[] }) {
                         </a>
                     })}
                 </div>
+
+                {card.image?.src && card.image.imagePlacement === "bottom" && <div class="flex w-full justify-center mb-4">
+                    <Image
+                        src={card.image.src}
+                        alt={card.image.alt}
+                        width={card.image.width || 539}
+                        height={card.image.height || 297}
+                    />
+                </div>}
+
                 {card.useBackground == "image" && card.backgroundImage?.src && <Image
                     width={card.backgroundImage.width || 597}
                     height={card.backgroundImage.height || 211}
@@ -177,29 +236,29 @@ export function CardColumn({ cards = [] }: { cards?: Card[] }) {
 }
 
 
-export default function CardsHero({ hideSection, tag, id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
+export default function CardsHero({ hideSection, tag, distanceBetweenColums, id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
     if (hideSection) return <></>
     return <div id={id} class="py-20" style={{ paddingBottom, paddingTop }}>
-        <div class="max-w-[1220px] mx-auto">
-            {title?.text && <AnimateOnShow
+        <div class="mb-">
+            <AnimateOnShow
                 animation="animate-fade-up50"
-                divClass={`text-5xl lg:text-[70px] leading-[120%] ${caption ? 'mb-4' : 'mb-[120px]'}`}>
+                divClass={`text-5xl lg:text-[70px] leading-[120%] ${caption ? 'mb-4' : 'mb-12 lg:mb-[120px]'}`}>
                 {tag?.text && <div
                     class="rounded-[20px] w-fit mx-auto font-normal px-4 py-1 text-sm lg:text-lg"
                     style={{ background: tag.backgroundColor }}
                     dangerouslySetInnerHTML={{ __html: tag.text }} />
                 }
-                <div dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font }} />
-            </AnimateOnShow>}
+                {title?.text && <div class="leading-normal" dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font, fontSize: title.fontSize }} />}
+            </AnimateOnShow>
             {caption && <AnimateOnShow
                 animation="animate-fade-up50"
                 divClass="text-base lg:text-2xl font-light leading-normal mb-4">
                 <div dangerouslySetInnerHTML={{ __html: caption }} />
             </AnimateOnShow>}
         </div>
-        <div class={`max-w-[1220px] mx-auto px-7 lg:px-0 flex flex-wrap gap-y-7 justify-center lg:justify-between ${invertColumns && 'flex-row-reverse'}`}>
-            <CardColumn cards={leftColumn.cards} />
-            <CardColumn cards={rightColumn.cards} />
+        <div class={`px-5 lg:px-0 flex flex-wrap lg:flex-nowrap gap-y-7 justify-center gap-5 ${invertColumns && 'flex-row-reverse'}`} style={{ columnGap: distanceBetweenColums }}>
+            <CardColumn {...leftColumn} />
+            <CardColumn {...rightColumn} />
         </div>
     </div>
 }

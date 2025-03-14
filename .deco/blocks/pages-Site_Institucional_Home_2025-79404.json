@@ -262,15 +262,17 @@
                 "value": {
                   "__resolveType": "site/sections/MainHero.tsx",
                   "title": "<p style=\"text-align: center\"><em><span style=\"color: #b7fbdb; font-size: 60pt\">Novas funcionalidades</span></em><span style=\"color: #b7fbdb; font-size: 60pt\"> </span><span style=\"color: #00363a; font-size: 60pt\">chegando para você</span></p>",
-                  "backgroundColor": "",
+                  "backgroundColor": "linear-gradient(     -135deg,     #55DCE6 ,     #198CE8 ,         #7CE8B0 ,     rgba(124, 232, 176, 0.2) )",
                   "backgroundImage": {
-                    "src": "https://data.decoassets.com/lojaintegradar/b51627f2-fe88-4501-8df9-8836f6994310/main-background.svg"
+                    "width": 1140,
+                    "height": 615
                   },
                   "caption": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Acompanhe as últimas atualizações que estarão disponível na sua operação</span></p>",
                   "captionFontSize": "16px",
                   "backgroundAnimation": true,
                   "lcp": true,
-                  "titleFont": "Galaxie Copernicus"
+                  "titleFont": "Galaxie Copernicus",
+                  "image": {}
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
@@ -419,7 +421,7 @@
                         },
                         "minHeight": "384px",
                         "titleFont": "Galaxie Copernicus",
-                        "text": "<p><span style=\"color: rgb(0, 54, 58);\" data-mce-style=\"color: rgb(0, 54, 58);\">Estamos desenvolvendo ferramentas avançadas para tornar o cadastro de produtos mais eficiente e seu catálogo mais inteligente, permitindo melhor organização e apresentação dos seus produtos.</span><br></p>",
+                        "text": "<p><span style=\"color: rgb(0, 54, 58)\">Estamos desenvolvendo ferramentas avançadas para tornar o cadastro de produtos mais eficiente e seu catálogo mais inteligente, permitindo melhor organização e apresentação dos seus produtos.</span><br></p>",
                         "spaceBetweenTitleAndText": "30px",
                         "titleFontSize": "38px",
                         "titleTag": {
@@ -427,32 +429,185 @@
                           "backgroundColor": "#FFE6A0"
                         },
                         "backgroundColor": "linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%)",
-                        "borderRadius": "20px"
+                        "borderRadius": "20px",
+                        "bulletPoints": {
+                          "items": [
+                            {
+                              "text": "Cadastro simplificado com sugestões inteligentes"
+                            },
+                            {
+                              "text": "Gestão de variações de produtos com facilidade"
+                            },
+                            {
+                              "text": "Importação e exportação em massa"
+                            }
+                          ],
+                          "bulletPointsIcon": {
+                            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                          },
+                          "bulletPointsColor": "#00363A"
+                        },
+                        "padding": "48px"
                       }
-                    ]
+                    ],
+                    "cardsMaxWidth": "621px"
                   },
                   "rightColumn": {
                     "cards": [
                       {
                         "cta": [],
                         "useBackground": "image",
-                        "title": "<p><strong>Ações automatizadas que</strong><br><strong>trabalham por você</strong></p>",
+                        "title": "<p><span>Oferta</span></p>",
                         "titleColor": "#003037",
-                        "text": "<p style=\" line-height: 1.6; \"><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt;  \">Envie alertas de carrinho abandonado, personalize <br>campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
+                        "text": "<p><span style=\"color: #00363a\">Ferramentas para aprimorar a apresentação e precificação dos seus produtos, focando nos principais atributos que impactam a decisão de compra: imagens, nome e preços.</span></p>",
                         "minHeight": "384px",
-                        "backgroundImage": {
-                          "src": "https://data.decoassets.com/lojaintegradar/2d1f5c30-1e91-4814-a2a4-24d53e281837/bg-cards.png"
-                        }
+                        "backgroundImage": {},
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "38px",
+                        "spaceBetweenTitleAndText": "30px",
+                        "titleTag": {
+                          "text": "<p><span>Em breve</span></p>",
+                          "backgroundColor": "#FFE6A0"
+                        },
+                        "backgroundColor": "linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%)",
+                        "borderRadius": "20px",
+                        "padding": "48px",
+                        "bulletPoints": {
+                          "items": [
+                            {
+                              "text": "Otimização de imagens para melhor conversão"
+                            },
+                            {
+                              "text": "Sugestões de títulos otimizados para SEO"
+                            },
+                            {
+                              "text": "Estratégias de precificação dinâmica"
+                            }
+                          ],
+                          "bulletPointsColor": "#00363A",
+                          "bulletPointsIcon": {
+                            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                          }
+                        },
+                        "borderColor": ""
                       }
-                    ]
+                    ],
+                    "cardsMaxWidth": "621px"
                   },
                   "title": {
-                    "text": "<p style=\"text-align: center\"><span style=\"color: #00363a; font-size: 42pt\">Enriquecimento de oferta e</span></p><p style=\"text-align: center\"><em><span style=\"color: #00b7b5; font-size: 42pt\">cadastro de produto inteligente</span></em></p>",
-                    "font": "Galaxie Copernicus"
+                    "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Enriquecimento de oferta e</span></p><p style=\"text-align: center\"><em><span style=\"color: rgb(0, 183, 181)\">cadastro de produto inteligente</span></em></p>",
+                    "font": "Galaxie Copernicus",
+                    "fontSize": "32px"
+                  },
+                  "tag": {
+                    "text": "<p></p>",
+                    "backgroundColor": ""
+                  },
+                  "paddingBottom": "0px"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/CardsHero.tsx",
+                  "leftColumn": {
+                    "cards": [
+                      {
+                        "cta": [],
+                        "title": "<p><span style=\"color: #00363a; font-size: 28pt\">Cadastro e catálogo</span></p>",
+                        "titleColor": "#ffffff",
+                        "backgroundImage": {
+                          "width": 597,
+                          "height": 876
+                        },
+                        "minHeight": "384px",
+                        "titleFont": "Galaxie Copernicus",
+                        "text": "<p><span style=\"color: rgb(0, 54, 58)\">Estamos desenvolvendo ferramentas avançadas para tornar o cadastro de produtos mais eficiente e seu catálogo mais inteligente, permitindo melhor organização e apresentação dos seus produtos.</span><br></p>",
+                        "spaceBetweenTitleAndText": "30px",
+                        "titleFontSize": "38px",
+                        "titleTag": {
+                          "text": "<p><span style=\"color: #7a2d0d\">Em breve</span></p>",
+                          "backgroundColor": "#FFE6A0"
+                        },
+                        "backgroundColor": "linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%)",
+                        "borderRadius": "20px",
+                        "bulletPoints": {
+                          "items": [
+                            {
+                              "text": "Cadastro simplificado com sugestões inteligentes"
+                            },
+                            {
+                              "text": "Gestão de variações de produtos com facilidade"
+                            },
+                            {
+                              "text": "Importação e exportação em massa"
+                            }
+                          ],
+                          "bulletPointsIcon": {
+                            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                          },
+                          "bulletPointsColor": "#00363A"
+                        },
+                        "padding": "48px"
+                      }
+                    ],
+                    "cardsMaxWidth": "621px"
+                  },
+                  "rightColumn": {
+                    "cards": [
+                      {
+                        "cta": [],
+                        "useBackground": "image",
+                        "title": "<p><span>Oferta</span></p>",
+                        "titleColor": "#003037",
+                        "text": "<p><span style=\"color: #00363a\">Ferramentas para aprimorar a apresentação e precificação dos seus produtos, focando nos principais atributos que impactam a decisão de compra: imagens, nome e preços.</span></p>",
+                        "minHeight": "384px",
+                        "backgroundImage": {},
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "38px",
+                        "spaceBetweenTitleAndText": "30px",
+                        "titleTag": {
+                          "text": "<p><span>Em breve</span></p>",
+                          "backgroundColor": "#FFE6A0"
+                        },
+                        "backgroundColor": "linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%)",
+                        "borderRadius": "20px",
+                        "padding": "48px",
+                        "bulletPoints": {
+                          "items": [
+                            {
+                              "text": "Otimização de imagens para melhor conversão"
+                            },
+                            {
+                              "text": "Sugestões de títulos otimizados para SEO"
+                            },
+                            {
+                              "text": "Estratégias de precificação dinâmica"
+                            }
+                          ],
+                          "bulletPointsColor": "#00363A",
+                          "bulletPointsIcon": {
+                            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                          }
+                        },
+                        "borderColor": ""
+                      }
+                    ],
+                    "cardsMaxWidth": "621px"
+                  },
+                  "title": {
+                    "text": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Enriquecimento de oferta e</span></p><p style=\"text-align: center\"><em><span style=\"color: #00b7b5\">cadastro de produto inteligente</span></em></p>",
+                    "font": "Galaxie Copernicus",
+                    "fontSize": "56px"
                   },
                   "tag": {
                     "text": "<p><strong><span style=\"color: #5f6e82\">Nosso compromisso é com o seu crescimento em 2025</span></strong></p>"
-                  }
+                  },
+                  "paddingBottom": "0px",
+                  "distanceBetweenColums": "40px"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
@@ -465,597 +620,128 @@
             "variants": [
               {
                 "value": {
-                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "paddingTop": "0px",
-                  "paddingBottom": "120px",
-                  "title": "<p></p>",
-                  "titleFont": "Instrument serif",
-                  "cta": [
-                    {
-                      "ctaStyle": "button",
-                      "text": "Ver planos",
-                      "backgroundColor": "#003037",
-                      "borderColor": "#003037",
-                      "textColor": "#fffff",
-                      "href": "#plans",
-                      "showIcon": false
-                    }
-                  ],
-                  "caption": "<p></p>",
-                  "features": [],
-                  "image": {},
-                  "use": "image",
-                  "createStoreCta": {
-                    "planId": "172",
-                    "text": "Abrir loja",
-                    "backgroundColor": "Transparent",
-                    "textColor": "#003037",
-                    "borderColor": "#003037"
-                  }
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p></p>",
-                  "titleFont": "Instrument serif",
-                  "cta": [],
-                  "paddingBottom": "120px",
-                  "caption": "<p></p>",
-                  "paddingTop": "0px",
-                  "features": [],
-                  "image": {},
-                  "use": "image",
-                  "createStoreCta": {
-                    "planId": "172",
-                    "text": "Começar no grátis",
-                    "backgroundColor": "#003037",
-                    "textColor": "#FFFFFF",
-                    "borderColor": "#003037"
-                  }
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "site/sections/HeroWithTime.tsx",
-            "title": {
-              "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
-              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>"
-            },
-            "subTitle": {
-              "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
-              "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
-            },
-            "tabs": [
-              {
-                "icon": {
-                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg",
-                  "alt": "Tab icon"
-                },
-                "title": {
-                  "0": "R",
-                  "1": "e",
-                  "2": "c",
-                  "3": "u",
-                  "4": "p",
-                  "5": "e",
-                  "6": "r",
-                  "7": "e",
-                  "8": " ",
-                  "9": "v",
-                  "10": "e",
-                  "11": "n",
-                  "12": "d",
-                  "13": "a",
-                  "14": "s",
-                  "15": " ",
-                  "16": "p",
-                  "17": "e",
-                  "18": "r",
-                  "19": "d",
-                  "20": "i",
-                  "21": "d",
-                  "22": "a",
-                  "23": "s",
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>"
-                },
-                "textContent": {
-                  "0": "c",
-                  "1": "o",
-                  "2": "m",
-                  "3": " ",
-                  "4": "g",
-                  "5": "a",
-                  "6": "t",
-                  "7": "i",
-                  "8": "l",
-                  "9": "h",
-                  "10": "o",
-                  "11": "s",
-                  "12": " ",
-                  "13": "d",
-                  "14": "e",
-                  "15": " ",
-                  "16": "m",
-                  "17": "a",
-                  "18": "r",
-                  "19": "k",
-                  "20": "e",
-                  "21": "t",
-                  "22": "i",
-                  "23": "n",
-                  "24": "g",
-                  "25": " ",
-                  "26": "q",
-                  "27": "u",
-                  "28": "e",
-                  "29": " ",
-                  "30": "p",
-                  "31": "o",
-                  "32": "d",
-                  "33": "e",
-                  "34": "m",
-                  "35": " ",
-                  "36": "s",
-                  "37": "e",
-                  "38": "r",
-                  "39": " ",
-                  "40": "c",
-                  "41": "o",
-                  "42": "n",
-                  "43": "f",
-                  "44": "i",
-                  "45": "g",
-                  "46": "u",
-                  "47": "r",
-                  "48": "a",
-                  "49": "d",
-                  "50": "o",
-                  "51": "s",
-                  "52": " ",
-                  "53": "d",
-                  "54": "i",
-                  "55": "r",
-                  "56": "e",
-                  "57": "t",
-                  "58": "o",
-                  "59": " ",
-                  "60": "d",
-                  "61": "a",
-                  "62": " ",
-                  "63": "p",
-                  "64": "l",
-                  "65": "a",
-                  "66": "t",
-                  "67": "a",
-                  "68": "f",
-                  "69": "o",
-                  "70": "r",
-                  "71": "m",
-                  "72": "a",
-                  "73": " ",
-                  "74": "d",
-                  "75": "e",
-                  "76": " ",
-                  "77": "e",
-                  "78": "c",
-                  "79": "o",
-                  "80": "m",
-                  "81": "m",
-                  "82": "e",
-                  "83": "r",
-                  "84": "c",
-                  "85": "e",
-                  "86": ":",
-                  "87": " ",
-                  "88": "c",
-                  "89": "a",
-                  "90": "r",
-                  "91": "r",
-                  "92": "i",
-                  "93": "n",
-                  "94": "h",
-                  "95": "o",
-                  "96": " ",
-                  "97": "e",
-                  "98": " ",
-                  "99": "p",
-                  "100": "r",
-                  "101": "o",
-                  "102": "d",
-                  "103": "u",
-                  "104": "t",
-                  "105": "o",
-                  "106": " ",
-                  "107": "a",
-                  "108": "b",
-                  "109": "a",
-                  "110": "n",
-                  "111": "d",
-                  "112": "o",
-                  "113": "n",
-                  "114": "a",
-                  "115": "d",
-                  "116": "o",
-                  "117": "s",
-                  "118": ",",
-                  "119": " ",
-                  "120": "c",
-                  "121": "o",
-                  "122": "m",
-                  "123": "p",
-                  "124": "r",
-                  "125": "a",
-                  "126": "s",
-                  "127": " ",
-                  "128": "c",
-                  "129": "a",
-                  "130": "n",
-                  "131": "c",
-                  "132": "e",
-                  "133": "l",
-                  "134": "a",
-                  "135": "d",
-                  "136": "a",
-                  "137": "s",
-                  "138": ",",
-                  "139": " ",
-                  "140": "r",
-                  "141": "e",
-                  "142": "c",
-                  "143": "o",
-                  "144": "m",
-                  "145": "e",
-                  "146": "n",
-                  "147": "d",
-                  "148": "a",
-                  "149": "ç",
-                  "150": "ã",
-                  "151": "o",
-                  "152": " ",
-                  "153": "d",
-                  "154": "e",
-                  "155": " ",
-                  "156": "p",
-                  "157": "r",
-                  "158": "o",
-                  "159": "d",
-                  "160": "u",
-                  "161": "t",
-                  "162": "o",
-                  "163": ".",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>"
-                },
-                "tabImage": {},
-                "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
-                "button": {},
-                "videoText": "Ver demo",
-                "tags": [],
-                "tabVideo": {
-                  "width": 620,
-                  "height": 409,
-                  "widthDesktop": 620,
-                  "heightDesktop": 409,
-                  "video": "https://data.decoassets.com/lojaintegradar/cbb6ca8f-fb83-49d4-b37e-f4db7847381c/reengaje-clientes-(903kb).mp4",
-                  "videoDesktop": "https://data.decoassets.com/lojaintegradar/cbb6ca8f-fb83-49d4-b37e-f4db7847381c/reengaje-clientes-(903kb).mp4"
-                },
-                "useTab": "video",
-                "buttons": [],
-                "highlight": false
-              },
-              {
-                "textContent": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Faturamento fácil e nas alturas: Cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Faturamento fácil e nas alturas: Cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>"
-                },
-                "icon": {
-                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
-                },
-                "title": {
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Anuncie produtos em diferentes canais</span></p>",
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Anuncie produtos em diferentes canais</span></p>"
-                },
-                "tabImage": {
-                  "imageDesktop": "https://data.decoassets.com/lojaintegradar/1dae357c-62f4-4584-8c3b-9f1f80c3f776/link-carrinho-compartilhavel.png",
-                  "image": "https://data.decoassets.com/lojaintegradar/1dae357c-62f4-4584-8c3b-9f1f80c3f776/link-carrinho-compartilhavel.png",
-                  "width": 506,
-                  "widthDesktop": 620,
-                  "heightDesktop": 409
-                },
-                "highlight": false,
-                "buttons": [],
-                "tabVideo": {
-                  "width": 620,
-                  "height": 409,
-                  "heightDesktop": 409,
-                  "widthDesktop": 620
-                },
-                "useTab": "image"
-              },
-              {
-                "textContent": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>"
-                },
-                "icon": {
-                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
-                },
-                "title": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Frete e pagamento descomplicados</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Frete e pagamento descomplicados</span></p>"
-                },
-                "tabImage": {
-                  "widthDesktop": 620,
-                  "width": 506,
-                  "imageDesktop": "https://data.decoassets.com/lojaintegradar/de57108d-0951-4627-934c-70e6ff037fcd/frete-envios.png",
-                  "image": "https://data.decoassets.com/lojaintegradar/de57108d-0951-4627-934c-70e6ff037fcd/frete-envios.png",
-                  "heightDesktop": 409
-                },
-                "highlight": false,
-                "buttons": []
-              },
-              {
-                "textContent": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>"
-                },
-                "title": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Checkout rápido e aprimorado</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Checkout rápido e aprimorado</span></p>"
-                },
-                "icon": {
-                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
-                },
-                "tabImage": {
-                  "heightDesktop": 409,
-                  "image": "https://data.decoassets.com/lojaintegradar/a858c7c7-c890-4489-a802-edc441ecd62c/chekout-inteligente.png",
-                  "imageDesktop": "https://data.decoassets.com/lojaintegradar/a858c7c7-c890-4489-a802-edc441ecd62c/chekout-inteligente.png",
-                  "widthDesktop": 620,
-                  "width": 506
-                },
-                "highlight": false,
-                "useTab": "image"
-              }
-            ],
-            "background": {
-              "type": "gradient",
-              "gradient": {
-                "type": "linear",
-                "angle": 180,
-                "stops": [
-                  {
-                    "color": "#005F5F",
-                    "position": 2.19
+                  "__resolveType": "site/sections/CardsHero.tsx",
+                  "tag": {
+                    "text": "<p><span style=\"color: rgb(91, 34, 129)\">Lançamentos</span></p>",
+                    "backgroundColor": "#E7D0FC"
                   },
-                  {
-                    "color": "#003037",
-                    "position": 56.08
-                  }
-                ]
-              }
-            },
-            "finalButtons": [
-              {
-                "type": "createStoreForm",
-                "text": "Começar no grátis",
-                "planId": "172"
-              }
-            ],
-            "bottomSection": {
-              "__resolveType": "site/sections/BlankSection.tsx"
-            },
-            "tabsInterval": 30,
-            "hideSection": false
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
-                  "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
-                  "title": "<p style=\"text-align: center; font-size:32pt; line-height:1;\"><span style=\"color: #003037\">Junte-se a mais de<br>2,7 milhões de lojas</span></p>",
-                  "titleFont": "Instrument serif",
-                  "caption": "<p style=\"text-align: center; font-size:18pt; line-height:1.5;\"><span style=\"color: #003037\">que escolheram a forma mais eficiente de<br>vender online</span></p>",
-                  "titleColor": "#371E55",
-                  "slides": [
-                    {
-                      "content": {
-                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e com fácil integração à VTEX.</span></p>",
-                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
-                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>M. Camicado</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca&nbsp;<strong>de 60 dias</strong></span></p>",
-                        "alt": "m camicado",
-                        "quoteIconColor": "#003037",
-                        "nameIconColor": "#5F6E82",
-                        "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
-                        "avatarWidth": 399,
-                        "avatarHeight": 46,
-                        "backgroundColor": ""
-                      }
-                    },
-                    {
-                      "content": {
-                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">No primeiro mês pós-migração, minha taxa de conversão cresceu 60%. A plataforma é fácil de usar e o suporte é próximo e eficiente.</span><br></p>",
-                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
-                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>Livraria Florence</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca de&nbsp;<strong>30 dias</strong></span></p>",
-                        "alt": "livraria florence",
-                        "nameIconColor": "#371E55",
-                        "quoteIconColor": "#003037",
-                        "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
-                      }
-                    }
-                  ],
-                  "arrows": true,
-                  "arrowsColor": "#003037",
-                  "dots": false,
-                  "bubbleImages": [
-                    {
-                      "src": "https://data.decoassets.com/lojaintegradar/d09e75a4-38e2-4117-933e-c0537880794d/Frame-1000002574.png",
-                      "horizontalPosition": "16%",
-                      "verticalPosition": "5%",
-                      "alt": "oldman on laptop",
-                      "speed": "fast",
-                      "width": 30,
-                      "height": 30
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d5f1a647-cbf8-4ba9-bc36-16b01ac784bf/bubble-image-3.jpg",
-                      "horizontalPosition": "2%",
-                      "alt": "lady holding phone",
-                      "comeFrom": "top left",
-                      "speed": "slow",
-                      "verticalPosition": "8%",
-                      "width": 30,
-                      "height": 30
-                    },
-                    {
-                      "comeFrom": "top left",
-                      "speed": "normal",
-                      "src": "https://data.decoassets.com/lojaintegradar/60c2bed2-16c0-4bba-b4b5-99dbddb387f5/2.png",
-                      "verticalPosition": "20%",
-                      "horizontalPosition": "10%",
-                      "alt": "man on opening laptop",
-                      "width": 30,
-                      "height": 30
-                    },
-                    {
-                      "comeFrom": "bottom left",
-                      "speed": "fast",
-                      "src": "https://data.decoassets.com/lojaintegradar/4db20f68-f1e0-48ad-b6fc-1c1dc33e00fa/Frame-1000002579.png",
-                      "alt": "lady holding phone",
-                      "verticalPosition": "34%",
-                      "horizontalPosition": "13%",
-                      "width": 30,
-                      "height": 30
-                    },
-                    {
-                      "comeFrom": "bottom left",
-                      "speed": "slow",
-                      "src": "https://data.decoassets.com/lojaintegradar/0fb0a595-19da-46bc-aba5-fb34c636428f/fabrizzio.png",
-                      "verticalPosition": "37%",
-                      "horizontalPosition": "2%",
-                      "alt": "man holding sheets",
-                      "width": 30,
-                      "height": 30
-                    },
-                    {
-                      "comeFrom": "bottom left",
-                      "speed": "slow",
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea2d2fac-5029-4de9-b739-f935f947ec58/bubble-image-6.png",
-                      "alt": "man holding pencil",
-                      "verticalPosition": "53%",
-                      "horizontalPosition": "1%",
-                      "width": 30,
-                      "height": 30
-                    },
-                    {
-                      "comeFrom": "top right",
-                      "speed": "slow",
-                      "src": "https://data.decoassets.com/lojaintegradar/25884396-baae-4687-8e0a-e133721c82d5/Frame-1000002568.png",
-                      "alt": "woman on laptop",
-                      "horizontalPosition": "92%",
-                      "verticalPosition": "2%",
-                      "width": 30,
-                      "height": 30
-                    },
-                    {
-                      "comeFrom": "top right",
-                      "speed": "fast",
-                      "src": "https://data.decoassets.com/lojaintegradar/7d0c210b-f20c-4fe0-9b63-bed358be0a8f/5.png",
-                      "alt": "man with blue shirt",
-                      "horizontalPosition": "77%",
-                      "verticalPosition": "4%",
-                      "width": 30,
-                      "height": 30
-                    },
-                    {
-                      "comeFrom": "top right",
-                      "speed": "fast",
-                      "src": "https://data.decoassets.com/lojaintegradar/eed7a6b5-2d47-42a4-8441-e4e28dac2819/Frame-1000002566.png",
-                      "alt": "man holding tablet",
-                      "horizontalPosition": "77%",
-                      "verticalPosition": "23%",
-                      "width": 30,
-                      "height": 30
-                    },
-                    {
-                      "comeFrom": "bottom right",
-                      "speed": "slow",
-                      "src": "https://data.decoassets.com/lojaintegradar/e887dafa-3ecf-436e-94be-cad88e3a8c17/Frame-1000002580.png",
-                      "horizontalPosition": "90%",
-                      "verticalPosition": "27%",
-                      "alt": "man holding notebook",
-                      "width": 30,
-                      "height": 30
-                    },
-                    {
-                      "comeFrom": "bottom right",
-                      "speed": "normal",
-                      "src": "https://data.decoassets.com/lojaintegradar/fe7cccc2-5a7b-4077-9e79-352ccddb1a33/Frame-1000002571.png",
-                      "horizontalPosition": "83%",
-                      "verticalPosition": "40%",
-                      "alt": "man holding paper",
-                      "width": 30,
-                      "height": 30
-                    },
-                    {
-                      "comeFrom": "bottom right",
-                      "speed": "slow",
-                      "src": "https://data.decoassets.com/lojaintegradar/1717b427-b185-4602-83a9-54a9e3c2c788/Frame-1000002565.png",
-                      "horizontalPosition": "91%",
-                      "verticalPosition": "54%",
-                      "alt": "woman holding folder",
-                      "height": 30,
-                      "width": 30
-                    }
-                  ],
-                  "captionFont": "Instrument serif",
-                  "backgroundMedia": {
-                    "image": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33eb18cd-3071-4d34-9202-937feca15495/Testimonials-background.svg"
-                    },
-                    "use": "image"
+                  "title": {
+                    "text": "<p style=\"text-align: center\"><em><span style=\"color: rgb(0, 183, 181)\">Fique em dia!</span></em> </p><p style=\"text-align: center\">Recursos que já estão<br>disponíveis pra você!</p>",
+                    "font": "Galaxie Copernicus",
+                    "fontSize": "32px"
                   },
-                  "modal": {
-                    "title": "Obrigado por se inscrever para receber nossa oferta especial!",
-                    "titleColor": "#003037",
-                    "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
-                    "textColor": "#5F6E82",
-                    "backButton": {
-                      "text": "Retomar a navegação ",
-                      "backgroundColor": "#371E55",
-                      "textColor": "#ffffff",
-                      "borderColor": "#371E55",
-                      "ctaStyle": "button"
-                    },
-                    "cta": [
+                  "paddingTop": "124px",
+                  "leftColumn": {
+                    "cardsMaxWidth": "630px",
+                    "cards": [
                       {
-                        "ctaStyle": "button",
-                        "text": "Retomar a navegação ",
-                        "backgroundColor": "#003037",
-                        "textColor": "#ffffff",
-                        "borderColor": "#003037",
-                        "showIcon": false
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "cta": [],
+                        "useBackground": "image",
+                        "image": {
+                          "src": "https://data.decoassets.com/lojaintegradar/af450da0-d5d6-4e5e-a6eb-550e12401f75/card-image-1-mobile.png",
+                          "imagePlacement": "bottom",
+                          "width": 287,
+                          "height": 210
+                        },
+                        "title": "<p><span style=\"color: rgb(0, 54, 58)\">Promoção </span><em><span style=\"color: rgb(0, 183, 181)\">de Brinde</span></em></p>",
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "32px",
+                        "titleTag": {
+                          "text": "<p></p>"
+                        },
+                        "text": "<p><span style=\"color: #00363a\">Adicione brindes automaticamente aos pedidos que atenderem a critérios específicos, como valor mínimo ou produtos, marcas e categorias específicas.</span></p>",
+                        "backgroundColor": "linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%)",
+                        "borderRadius": "20px",
+                        "padding": "24px",
+                        "titleLetterSpacing": "-3px"
                       },
                       {
-                        "ctaStyle": "button",
-                        "text": "Ver ofertas",
-                        "backgroundColor": "#ffffff",
-                        "textColor": "#003037",
-                        "borderColor": "#003037",
-                        "href": "#plans"
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "cta": [],
+                        "useBackground": "image",
+                        "image": {
+                          "src": "https://data.decoassets.com/lojaintegradar/89b2e193-2983-4264-ae2e-bc82d8664937/card-top-image-2.svg",
+                          "imagePlacement": "bottom"
+                        },
+                        "title": "<p><span style=\"color: rgb(0, 54, 58)\">Desconto</span></p><p><em><span style=\"color: rgb(0, 183, 181)\">progressivo</span></em></p>",
+                        "titleFontSize": "32px",
+                        "titleFont": "Galaxie Copernicus",
+                        "text": "<p><span style=\"color: #00363a\">Ofereça descontos que aumentam conforme o valor da compra ou pela quantidade de produtos adicionados ao carrinho.</span></p>",
+                        "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))",
+                        "borderRadius": "20px",
+                        "titleLetterSpacing": "-3px"
+                      }
+                    ]
+                  },
+                  "rightColumn": {
+                    "cardsMaxWidth": "630px",
+                    "cards": [
+                      {
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "cta": [],
+                        "title": "<p><span style=\"color: rgb(0, 54, 58)\">Avaliação</span></p><p><span style=\"color: #b7fbdb\">de Produtos</span></p>",
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "32px",
+                        "text": "<p><span style=\"color: #ffffff\">Sistema avançado para coleta e exibição de avaliações de produtos, aumentando a confiança dos consumidores.</span></p>",
+                        "borderRadius": "20px",
+                        "minHeight": "523px",
+                        "backgroundImage": {
+                          "width": 630,
+                          "height": 483
+                        },
+                        "titleColor": "#000000",
+                        "contentPlacement": "bottom",
+                        "padding": "48px",
+                        "image": {
+                          "src": "https://data.decoassets.com/lojaintegradar/d134b4d2-1bbc-4264-82d2-65418d7cfc43/card-image-4-mobile.png",
+                          "imagePlacement": "bottom",
+                          "width": 288,
+                          "height": 197
+                        },
+                        "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
+                        "titleLetterSpacing": "-3px"
+                      },
+                      {
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "cta": [],
+                        "useBackground": "image",
+                        "borderRadius": "20px",
+                        "title": "<p><span style=\"color: rgb(0, 54, 58)\">Link de </span><em><span style=\"color: rgb(0, 183, 181)\">carrinho</span></em></p>",
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "32px",
+                        "text": "<p><span style=\"color: #00363a\">Crie links diretos para carrinhos pré-configurados, facilitando campanhas de marketing e vendas diretas.</span></p>",
+                        "image": {
+                          "src": "https://data.decoassets.com/lojaintegradar/9ca662bb-6a62-4ef6-80f0-c509e67c77d3/card-image-3-mobile.png",
+                          "width": 264,
+                          "height": 55,
+                          "imagePlacement": "bottom"
+                        },
+                        "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))"
                       }
                     ]
                   }
@@ -1067,405 +753,122 @@
               },
               {
                 "value": {
-                  "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
-                  "title": "<p style=\"text-align: center\"><span style=\"color: #003037\">Junte-se a mais de<br>2,7 milhões de lojas</span></p>",
-                  "titleFont": "Instrument serif",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: #003037\">que escolheram a forma mais eficiente <br>de vender online</span></p>",
-                  "titleColor": "#371E55",
-                  "slides": [
-                    {
-                      "content": {
-                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e com fácil integração à VTEX.</span></p>",
-                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
-                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>M. Camicado</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca&nbsp;<strong>de 60 dias</strong></span></p>",
-                        "alt": "m camicado",
-                        "quoteIconColor": "#003037",
-                        "nameIconColor": "#5F6E82",
-                        "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
-                        "avatarWidth": 399,
-                        "avatarHeight": 46,
-                        "backgroundColor": ""
-                      }
-                    },
-                    {
-                      "content": {
-                        "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">No primeiro mês pós-migração, minha taxa de conversão cresceu 60%. A plataforma é fácil de usar e o suporte é próximo e eficiente.</span><br></p>",
-                        "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
-                        "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>Livraria Florence</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca de&nbsp;<strong>30 dias</strong></span></p>",
-                        "alt": "livraria florence",
-                        "nameIconColor": "#371E55",
-                        "quoteIconColor": "#003037",
-                        "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
-                      }
-                    }
-                  ],
-                  "arrows": false,
-                  "arrowsColor": "",
-                  "dots": false,
-                  "bubbleImages": [
-                    {
-                      "src": "https://data.decoassets.com/lojaintegradar/d09e75a4-38e2-4117-933e-c0537880794d/Frame-1000002574.png",
-                      "horizontalPosition": "16%",
-                      "verticalPosition": "5%",
-                      "alt": "oldman on laptop",
-                      "speed": "fast"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d5f1a647-cbf8-4ba9-bc36-16b01ac784bf/bubble-image-3.jpg",
-                      "horizontalPosition": "2%",
-                      "alt": "lady holding phone",
-                      "comeFrom": "top left",
-                      "speed": "slow",
-                      "verticalPosition": "8%"
-                    },
-                    {
-                      "comeFrom": "top left",
-                      "speed": "normal",
-                      "src": "https://data.decoassets.com/lojaintegradar/60c2bed2-16c0-4bba-b4b5-99dbddb387f5/2.png",
-                      "verticalPosition": "20%",
-                      "horizontalPosition": "10%",
-                      "alt": "man on opening laptop"
-                    },
-                    {
-                      "comeFrom": "bottom left",
-                      "speed": "fast",
-                      "src": "https://data.decoassets.com/lojaintegradar/4db20f68-f1e0-48ad-b6fc-1c1dc33e00fa/Frame-1000002579.png",
-                      "alt": "lady holding phone",
-                      "verticalPosition": "34%",
-                      "horizontalPosition": "13%"
-                    },
-                    {
-                      "comeFrom": "bottom left",
-                      "speed": "slow",
-                      "src": "https://data.decoassets.com/lojaintegradar/0fb0a595-19da-46bc-aba5-fb34c636428f/fabrizzio.png",
-                      "verticalPosition": "37%",
-                      "horizontalPosition": "2%",
-                      "alt": "man holding sheets"
-                    },
-                    {
-                      "comeFrom": "bottom left",
-                      "speed": "slow",
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea2d2fac-5029-4de9-b739-f935f947ec58/bubble-image-6.png",
-                      "alt": "man holding pencil",
-                      "verticalPosition": "53%",
-                      "horizontalPosition": "1%"
-                    },
-                    {
-                      "comeFrom": "top right",
-                      "speed": "slow",
-                      "src": "https://data.decoassets.com/lojaintegradar/25884396-baae-4687-8e0a-e133721c82d5/Frame-1000002568.png",
-                      "alt": "woman on laptop",
-                      "horizontalPosition": "92%",
-                      "verticalPosition": "2%"
-                    },
-                    {
-                      "comeFrom": "top right",
-                      "speed": "fast",
-                      "src": "https://data.decoassets.com/lojaintegradar/7d0c210b-f20c-4fe0-9b63-bed358be0a8f/5.png",
-                      "alt": "man with blue shirt",
-                      "horizontalPosition": "77%",
-                      "verticalPosition": "4%"
-                    },
-                    {
-                      "comeFrom": "top right",
-                      "speed": "fast",
-                      "src": "https://data.decoassets.com/lojaintegradar/eed7a6b5-2d47-42a4-8441-e4e28dac2819/Frame-1000002566.png",
-                      "alt": "man holding tablet",
-                      "horizontalPosition": "77%",
-                      "verticalPosition": "23%"
-                    },
-                    {
-                      "comeFrom": "bottom right",
-                      "speed": "slow",
-                      "src": "https://data.decoassets.com/lojaintegradar/e887dafa-3ecf-436e-94be-cad88e3a8c17/Frame-1000002580.png",
-                      "horizontalPosition": "90%",
-                      "verticalPosition": "27%",
-                      "alt": "man holding notebook"
-                    },
-                    {
-                      "comeFrom": "bottom right",
-                      "speed": "normal",
-                      "src": "https://data.decoassets.com/lojaintegradar/fe7cccc2-5a7b-4077-9e79-352ccddb1a33/Frame-1000002571.png",
-                      "horizontalPosition": "83%",
-                      "verticalPosition": "40%",
-                      "alt": "man holding paper"
-                    },
-                    {
-                      "comeFrom": "bottom right",
-                      "speed": "slow",
-                      "src": "https://data.decoassets.com/lojaintegradar/1717b427-b185-4602-83a9-54a9e3c2c788/Frame-1000002565.png",
-                      "horizontalPosition": "91%",
-                      "verticalPosition": "54%",
-                      "alt": "woman holding folder"
-                    }
-                  ],
-                  "captionFont": "Instrument serif",
-                  "backgroundMedia": {
-                    "image": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33eb18cd-3071-4d34-9202-937feca15495/Testimonials-background.svg"
-                    },
-                    "use": "image"
+                  "__resolveType": "site/sections/CardsHero.tsx",
+                  "tag": {
+                    "text": "<p><span style=\"color: #5b2281\">Lançamentos</span></p>",
+                    "backgroundColor": "#E7D0FC"
                   },
-                  "hubspotForm": {
-                    "inputLabel": " ⚡ Ganhe 20% OFF na assinatura anual️",
-                    "inputLabelColor": "#FAFAF5",
-                    "inputLabelBackgroundColor": "#44656A",
-                    "errorMessageColor": "#F57E77",
-                    "buttonTextColor": "#003037",
-                    "buttonColor": "#71DBD4",
-                    "region": "na1",
-                    "portalId": "7112881",
-                    "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
-                    "show": true
+                  "title": {
+                    "text": "<p style=\"text-align: center\"><em><span style=\"color: #00b7b5\">Fique em dia!</span></em><span> Recursos que já estão<br>disponíveis pra você!</span></p>",
+                    "font": "Galaxie Copernicus",
+                    "fontSize": "56px"
                   },
-                  "modal": {
-                    "title": "Obrigado por se inscrever para receber nossa oferta especial!",
-                    "titleColor": "#003037",
-                    "text": "Em breve, você receberá um e-mail com seu desconto exclusivo de 20% OFF para assinar um plano. Continue explorando nossa página para saber mais sobre nossos serviços!",
-                    "textColor": "#5F6E82",
-                    "backButton": {
-                      "text": "Retomar a navegação ",
-                      "backgroundColor": "#371E55",
-                      "textColor": "#ffffff",
-                      "borderColor": "#371E55",
-                      "ctaStyle": "button"
-                    },
-                    "cta": [
+                  "paddingTop": "124px",
+                  "leftColumn": {
+                    "cardsMaxWidth": "630px",
+                    "cards": [
                       {
-                        "ctaStyle": "button",
-                        "text": "Retomar a navegação ",
-                        "backgroundColor": "#003037",
-                        "textColor": "#ffffff",
-                        "borderColor": "#003037",
-                        "showIcon": false
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "cta": [],
+                        "useBackground": "image",
+                        "image": {
+                          "src": "https://data.decoassets.com/lojaintegradar/2faf9f79-4463-45ae-8117-80962686f8a5/card-top-image-1.png"
+                        },
+                        "title": "<p><span style=\"color: rgb(0, 54, 58)\">Promoção </span><em><span style=\"color: rgb(0, 183, 181)\">de Brinde</span></em></p>",
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "32px",
+                        "titleTag": {
+                          "text": "<p></p>"
+                        },
+                        "text": "<p><span style=\"color: #00363a\">Adicione brindes automaticamente aos pedidos que atenderem a critérios específicos, como valor mínimo ou produtos, marcas e categorias específicas.</span></p>",
+                        "backgroundColor": "linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%)",
+                        "borderRadius": "20px",
+                        "padding": "48px",
+                        "titleLetterSpacing": "-3px"
+                      },
+                      {
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "cta": [],
+                        "useBackground": "image",
+                        "image": {
+                          "src": "https://data.decoassets.com/lojaintegradar/89b2e193-2983-4264-ae2e-bc82d8664937/card-top-image-2.svg"
+                        },
+                        "title": "<p><span style=\"color: #00363a\">Desconto</span><span> </span><em><span style=\"color: #00b7b5\">progressivo</span></em></p>",
+                        "titleFontSize": "32px",
+                        "titleFont": "Galaxie Copernicus",
+                        "text": "<p><span style=\"color: #00363a\">Ofereça descontos que aumentam conforme o valor da compra ou pela quantidade de produtos adicionados ao carrinho.</span></p>",
+                        "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))",
+                        "borderRadius": "20px",
+                        "titleLetterSpacing": "-3px"
+                      }
+                    ]
+                  },
+                  "rightColumn": {
+                    "cardsMaxWidth": "630px",
+                    "cards": [
+                      {
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "cta": [],
+                        "useBackground": "image",
+                        "image": {
+                          "src": "https://data.decoassets.com/lojaintegradar/cfe06ed1-040e-422a-b73a-4db64608ff41/card-top-image-3.png",
+                          "width": 554,
+                          "height": 69
+                        },
+                        "title": "<p><span style=\"color: rgb(0, 54, 58)\">Link de </span><em><span style=\"color: rgb(0, 183, 181)\">carrinho</span></em></p>",
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "32px",
+                        "text": "<p><span style=\"color: #00363a\">Crie links diretos para carrinhos pré-configurados, facilitando campanhas de marketing e vendas diretas.</span></p>",
+                        "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))",
+                        "borderRadius": "20px",
+                        "titleLetterSpacing": "-3px"
+                      },
+                      {
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "cta": [],
+                        "useBackground": "image",
+                        "minHeight": "523px",
+                        "backgroundImage": {
+                          "src": "https://data.decoassets.com/lojaintegradar/dfe70bfc-3f1e-4244-85d8-8588097cd28d/card-background-image-2x.png",
+                          "width": 630,
+                          "height": 483
+                        },
+                        "borderRadius": "20px",
+                        "title": "<p><span style=\"color: #00363a\">Avaliação </span><span style=\"color: #f2f4f5\">de Produtos</span></p>",
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "32px",
+                        "titleColor": "#000000",
+                        "contentPlacement": "bottom",
+                        "text": "<p><span style=\"color: #00363a\">Sistema avançado para coleta e exibição de avaliações de produtos, aumentando a confiança dos consumidores.</span></p>",
+                        "padding": "48px",
+                        "titleLetterSpacing": "-3px"
                       }
                     ]
                   }
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
-                  "__resolveType": "site/sections/Logos.tsx",
-                  "title": "<p></p>",
-                  "titleFont": "Instrument serif",
-                  "caption": "<p></p>",
-                  "titleColor": "#371E55",
-                  "paddingTop": "0px",
-                  "captionColor": "#5F6E82",
-                  "logos": [
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
-                      "altText": "Forbes logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
-                      "altText": "Frutifica logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
-                      "altText": "Rock in Rio Logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
-                      "altText": "PodPah logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
-                      "altText": "Soldiers logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
-                      "altText": "Gorila Shield logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
-                      "altText": "+Mu logo"
-                    }
-                  ]
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/Logos.tsx",
-                  "title": "<p></p>",
-                  "titleFont": "Instrument serif",
-                  "caption": "<p></p>",
-                  "titleColor": "#371E55",
-                  "paddingBottom": "120px",
-                  "captionColor": "#5F6E82",
-                  "logos": [
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
-                      "altText": "Forbes logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
-                      "altText": "Frutifica logo",
-                      "width": 119,
-                      "height": 34
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
-                      "altText": "Rock in Rio Logo"
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
-                      "altText": "PodPah logo",
-                      "width": 157,
-                      "height": 72
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
-                      "altText": "Soldiers logo",
-                      "width": 157,
-                      "height": 72
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
-                      "altText": "Gorila Shield logo",
-                      "width": 157,
-                      "height": 72
-                    },
-                    {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
-                      "altText": "+Mu logo",
-                      "width": 157,
-                      "height": 72
-                    }
-                  ]
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
-                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p style=\"text-align: center; font-size: 32pt; \"><span style=\"color: rgb(0, 48, 55);\">A loja do Neymar </span><em><span style=\"color: rgb(40, 195, 195)\">é da Loja Integrada!</span></em></p>",
-                  "titleFont": "Instrument Serif",
-                  "paddingTop": "80px",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size:14pt; font-weight: 300;\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos e estratégias voltadas para engajamento e recompra.</span></p>",
-                  "image": {
-                    "src": "https://data.decoassets.com/lojaintegradar/6486e35a-f5b7-4354-b5bd-2044defd3b57/img-case-neymar-mobile.png",
-                    "width": 390,
-                    "height": 311
-                  },
-                  "features": [
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                      },
-                      "title": "Carrinho Abandonado",
-                      "titleColor": "#003037",
-                      "text": "Recupere vendas automaticamente",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                      },
-                      "title": "Compre Junto",
-                      "titleColor": "#003037",
-                      "text": "Aumente o ticket médio com combos de produtos",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                      },
-                      "title": "Brindes",
-                      "titleColor": "#003037",
-                      "text": "Personalize a experiência enquanto incentiva pedidos maiores",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                      },
-                      "title": "Desconto Progressivo",
-                      "titleColor": "#003037",
-                      "text": "Estimule compras em maior volume, com descontos que crescem",
-                      "textColor": "#5F6E82"
-                    }
-                  ],
-                  "hideSection": false
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">A loja do Neymar </span><em><span style=\"color: rgb(40, 195, 195)\">é da Loja Integrada!</span></em></p>",
-                  "titleFont": "Instrument Serif",
-                  "paddingBottom": "0",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight: 300;\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos<br> e estratégias voltadas para engajamento e recompra.</span></p>",
-                  "hideSection": false,
-                  "image": {
-                    "src": "https://data.decoassets.com/lojaintegradar/69b21891-6702-4763-bbbd-3d961c058646/img-case-neymar-desktop.png",
-                    "height": 878,
-                    "width": 1331
-                  },
-                  "features": [
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                      },
-                      "title": "Carrinho Abandonado",
-                      "titleColor": "#003037",
-                      "text": "Recupere vendas automaticamente",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                      },
-                      "title": "Compre Junto",
-                      "titleColor": "#003037",
-                      "text": "Aumente o ticket médio com combos de produtos",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                      },
-                      "title": "Brindes",
-                      "titleColor": "#003037",
-                      "text": "Personalize a experiência enquanto incentiva pedidos maiores",
-                      "textColor": "#5F6E82"
-                    },
-                    {
-                      "icon": {
-                        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-                      },
-                      "title": "Desconto Progressivo",
-                      "titleColor": "#003037",
-                      "text": "Estimule compras em maior volume, com descontos que crescem",
-                      "textColor": "#5F6E82"
-                    }
-                  ],
-                  "paddingTop": "0"
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
@@ -1480,8 +883,12 @@
                 "value": {
                   "__resolveType": "site/sections/Carousel.tsx",
                   "title": "<p style=\"line-height:1; \"><span style=\"color: rgb(0, 48, 55); font-size:32pt;  font-weight:300; \">Nós queremos mais é<br> que você cresça!</span></p><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:18px; font-weight:300; font-family: 'Inter'; \">Uma plataforma que se adapta às suas necessidades, seja qual for o tamanho do<br> seu negócio.</p>",
-                  "paddingTop": "80px",
+                  "id": "nossoecossistema",
                   "titleFont": "Instrument serif",
+                  "backgroundImage": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8243ad-68f1-4e47-bdc5-d7abec141794/elemento-bg-1.png"
+                  },
+                  "paddingTop": "80px",
                   "paddingBottom": "120px",
                   "titleColor": "",
                   "captionColor": "#371E55",
@@ -1570,7 +977,6 @@
                   ],
                   "arrows": true,
                   "arrowsColor": "#003037",
-                  "id": "nossoecossistema",
                   "cta": [
                     {
                       "ctaStyle": "button",
@@ -1583,9 +989,6 @@
                       "outline": true
                     }
                   ],
-                  "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8243ad-68f1-4e47-bdc5-d7abec141794/elemento-bg-1.png"
-                  },
                   "interval": 0,
                   "createStoreCta": {
                     "order": 1,
@@ -1604,8 +1007,12 @@
                 "value": {
                   "__resolveType": "site/sections/Carousel.tsx",
                   "title": "<p><span style=\"color: rgb(0, 48, 55); font-size:70px;  font-weight:300; \">Nós queremos mais é que você cresça!</span><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:24px; font-weight:300; font-family: 'Inter'; \"><br>Uma plataforma que se adapta às suas necessidades, seja qual for <br>o tamanho do seu negócio.</p>",
-                  "paddingBottom": "120px",
+                  "id": "nossoecossistema",
                   "titleFont": "Instrument serif",
+                  "backgroundImage": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8243ad-68f1-4e47-bdc5-d7abec141794/elemento-bg-1.png"
+                  },
+                  "paddingBottom": "120px",
                   "hideSection": false,
                   "titleColor": "",
                   "captionColor": "#371E55",
@@ -1693,12 +1100,8 @@
                     }
                   ],
                   "arrows": true,
-                  "id": "nossoecossistema",
                   "arrowsColor": "#003037",
                   "cta": [],
-                  "backgroundImage": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8243ad-68f1-4e47-bdc5-d7abec141794/elemento-bg-1.png"
-                  },
                   "interval": 0,
                   "createStoreCta": {
                     "order": 1,
@@ -1718,1396 +1121,6 @@
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
-                "value": {
-                  "__resolveType": "site/sections/HeroWithTime.tsx",
-                  "title": {
-                    "desktop": "<p style=\"text-align: center; font-family: Instrument Serif;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: Instrument Serif; \">Já vende em outra plataforma?</span></em><br></p>",
-                    "mobile": "<p style=\"text-align: center; font-family: Instrument Serif;\"><span style=\"color: rgb(113, 219, 212); font-size: 32pt; font-family: Instrument Serif; line-height:1;\">Já vende em outra plataforma?</span><br></p>"
-                  },
-                  "paddingBottom": "120",
-                  "paddingTop": "120",
-                  "subTitle": {
-                    "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18px; font-family: 'Inter'; text-align:center; font-weight:300; \">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma segura, estável e descomplicada.</span></p>",
-                    "desktop": "<p style=\"text-align: center; line-height:1.2; \"><span style=\"color: rgb(255, 255, 255); font-size: 24px; font-family: 'Inter'; font-weight:100;\">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma<br> segura, estável e descomplicada</span></p>"
-                  },
-                  "tabs": [
-                    {
-                      "icon": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
-                      },
-                      "title": {
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Crescimento inteligente</span></p>",
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Crescimento Inteligente</span></p>"
-                      },
-                      "textContent": {
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</span></p>",
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</span></p>"
-                      },
-                      "tabImage": {},
-                      "highlight": false,
-                      "buttons": [],
-                      "tabVideo": {
-                        "width": 606,
-                        "height": 461,
-                        "widthDesktop": 606,
-                        "heightDesktop": 461,
-                        "video": "https://data.decoassets.com/lojaintegradar/5d29881f-b20a-4a8a-a72e-02a12868eaaf/crescimento-inteligente(1mb).mp4",
-                        "videoDesktop": "https://data.decoassets.com/lojaintegradar/5d29881f-b20a-4a8a-a72e-02a12868eaaf/crescimento-inteligente(1mb).mp4"
-                      },
-                      "useTab": "video"
-                    },
-                    {
-                      "textContent": {
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Adicione banners, faixas e páginas para atrair e converter clientes com facilidade.</span></p>",
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Adicione banners, faixas e páginas para atrair e converter clientes com facilidade.</span></p>"
-                      },
-                      "icon": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
-                      },
-                      "title": {
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Liberdade para personalizar</span></p>",
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Liberdade para personalizar</span></p>"
-                      },
-                      "tabImage": {
-                        "imageDesktop": "https://data.decoassets.com/lojaintegradar/eb5d1729-9b6c-4627-bf62-9274c3009101/liberdade-para-personalizar.png",
-                        "widthDesktop": 606,
-                        "heightDesktop": 461,
-                        "image": "https://data.decoassets.com/lojaintegradar/eb5d1729-9b6c-4627-bf62-9274c3009101/liberdade-para-personalizar.png",
-                        "width": 506
-                      },
-                      "highlight": false,
-                      "buttons": []
-                    },
-                    {
-                      "textContent": {
-                        "0": "c",
-                        "1": "o",
-                        "2": "m",
-                        "3": " ",
-                        "4": "g",
-                        "5": "a",
-                        "6": "t",
-                        "7": "i",
-                        "8": "l",
-                        "9": "h",
-                        "10": "o",
-                        "11": "s",
-                        "12": " ",
-                        "13": "d",
-                        "14": "e",
-                        "15": " ",
-                        "16": "m",
-                        "17": "a",
-                        "18": "r",
-                        "19": "k",
-                        "20": "e",
-                        "21": "t",
-                        "22": "i",
-                        "23": "n",
-                        "24": "g",
-                        "25": " ",
-                        "26": "q",
-                        "27": "u",
-                        "28": "e",
-                        "29": " ",
-                        "30": "p",
-                        "31": "o",
-                        "32": "d",
-                        "33": "e",
-                        "34": "m",
-                        "35": " ",
-                        "36": "s",
-                        "37": "e",
-                        "38": "r",
-                        "39": " ",
-                        "40": "c",
-                        "41": "o",
-                        "42": "n",
-                        "43": "f",
-                        "44": "i",
-                        "45": "g",
-                        "46": "u",
-                        "47": "r",
-                        "48": "a",
-                        "49": "d",
-                        "50": "o",
-                        "51": "s",
-                        "52": " ",
-                        "53": "d",
-                        "54": "i",
-                        "55": "r",
-                        "56": "e",
-                        "57": "t",
-                        "58": "o",
-                        "59": " ",
-                        "60": "d",
-                        "61": "a",
-                        "62": " ",
-                        "63": "p",
-                        "64": "l",
-                        "65": "a",
-                        "66": "t",
-                        "67": "a",
-                        "68": "f",
-                        "69": "o",
-                        "70": "r",
-                        "71": "m",
-                        "72": "a",
-                        "73": " ",
-                        "74": "d",
-                        "75": "e",
-                        "76": " ",
-                        "77": "e",
-                        "78": "c",
-                        "79": "o",
-                        "80": "m",
-                        "81": "m",
-                        "82": "e",
-                        "83": "r",
-                        "84": "c",
-                        "85": "e",
-                        "86": ":",
-                        "87": " ",
-                        "88": "c",
-                        "89": "a",
-                        "90": "r",
-                        "91": "r",
-                        "92": "i",
-                        "93": "n",
-                        "94": "h",
-                        "95": "o",
-                        "96": " ",
-                        "97": "e",
-                        "98": " ",
-                        "99": "p",
-                        "100": "r",
-                        "101": "o",
-                        "102": "d",
-                        "103": "u",
-                        "104": "t",
-                        "105": "o",
-                        "106": " ",
-                        "107": "a",
-                        "108": "b",
-                        "109": "a",
-                        "110": "n",
-                        "111": "d",
-                        "112": "o",
-                        "113": "n",
-                        "114": "a",
-                        "115": "d",
-                        "116": "o",
-                        "117": "s",
-                        "118": ",",
-                        "119": " ",
-                        "120": "c",
-                        "121": "o",
-                        "122": "m",
-                        "123": "p",
-                        "124": "r",
-                        "125": "a",
-                        "126": "s",
-                        "127": " ",
-                        "128": "c",
-                        "129": "a",
-                        "130": "n",
-                        "131": "c",
-                        "132": "e",
-                        "133": "l",
-                        "134": "a",
-                        "135": "d",
-                        "136": "a",
-                        "137": "s",
-                        "138": ",",
-                        "139": " ",
-                        "140": "r",
-                        "141": "e",
-                        "142": "c",
-                        "143": "o",
-                        "144": "m",
-                        "145": "e",
-                        "146": "n",
-                        "147": "d",
-                        "148": "a",
-                        "149": "ç",
-                        "150": "ã",
-                        "151": "o",
-                        "152": " ",
-                        "153": "d",
-                        "154": "e",
-                        "155": " ",
-                        "156": "p",
-                        "157": "r",
-                        "158": "o",
-                        "159": "d",
-                        "160": "u",
-                        "161": "t",
-                        "162": "o",
-                        "163": ".",
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">A melhor usabilidade para navegar e controlar seu e-commerce de forma simples e prática.</span></p>",
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">A melhor usabilidade para navegar e controlar seu e-commerce de forma simples e prática.</span></p>"
-                      },
-                      "icon": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg",
-                        "alt": "Tab icon"
-                      },
-                      "title": {
-                        "0": "R",
-                        "1": "e",
-                        "2": "c",
-                        "3": "u",
-                        "4": "p",
-                        "5": "e",
-                        "6": "r",
-                        "7": "e",
-                        "8": " ",
-                        "9": "v",
-                        "10": "e",
-                        "11": "n",
-                        "12": "d",
-                        "13": "a",
-                        "14": "s",
-                        "15": " ",
-                        "16": "p",
-                        "17": "e",
-                        "18": "r",
-                        "19": "d",
-                        "20": "i",
-                        "21": "d",
-                        "22": "a",
-                        "23": "s",
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Usabilidade simplificada</span></p>",
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Usabilidade simplificada</span></p>"
-                      },
-                      "tabImage": {
-                        "widthDesktop": 606,
-                        "heightDesktop": 461,
-                        "imageDesktop": "https://data.decoassets.com/lojaintegradar/219a3d26-ec8d-4d58-a532-d05fee2d5dd0/usabilidade.png",
-                        "image": "https://data.decoassets.com/lojaintegradar/219a3d26-ec8d-4d58-a532-d05fee2d5dd0/usabilidade.png",
-                        "width": 506
-                      },
-                      "videoOn": false,
-                      "button": {},
-                      "videoText": "Ver demo",
-                      "tags": []
-                    }
-                  ],
-                  "background": {
-                    "type": "gradient",
-                    "gradient": {
-                      "type": "linear",
-                      "angle": 180,
-                      "stops": [
-                        {
-                          "color": "#005F5F",
-                          "position": 2.19
-                        },
-                        {
-                          "color": "#003037",
-                          "position": 56.08
-                        }
-                      ]
-                    }
-                  },
-                  "finalButtons": [],
-                  "bottomSection": {
-                    "__resolveType": "site/sections/Carousel.tsx",
-                    "slides": [
-                      {
-                        "textPlacement": "Bottom",
-                        "icon": {
-                          "placement": "Top right"
-                        },
-                        "useBackground": "image",
-                        "bulletPoints": {
-                          "items": []
-                        },
-                        "caption": "<p style='line-height: 1.5;'>Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via Chat e WhatsApp.</p>",
-                        "backgroundImage": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb7d8d6-b1ed-4a95-b53d-28d0b26852de/suporte-facilitado.png",
-                          "height": 456,
-                          "width": 484
-                        },
-                        "textColor": "#FAFAF5",
-                        "title": "Suporte facilitado"
-                      },
-                      {
-                        "textPlacement": "Bottom",
-                        "icon": {
-                          "placement": "Top right"
-                        },
-                        "useBackground": "image",
-                        "bulletPoints": {
-                          "items": []
-                        },
-                        "title": "Ecossistema completo",
-                        "textColor": "#FAFAF5",
-                        "backgroundImage": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d8939915-c422-44fa-a2f8-f8d7c35724d4/Ecossistema-completo.png",
-                          "height": 456,
-                          "width": 484
-                        },
-                        "caption": "<p style='line-height: 1.5;'>Soluções integradas com ERPs, canais de vendas, operação omnichannel, redes sociais, parceiros e agências — tudo em um só lugar.</p>"
-                      },
-                      {
-                        "textPlacement": "Bottom",
-                        "icon": {
-                          "placement": "Top right"
-                        },
-                        "useBackground": "image",
-                        "bulletPoints": {
-                          "items": []
-                        },
-                        "title": "Manutenção econômica",
-                        "textColor": "#FAFAF5",
-                        "backgroundImage": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e9014575-b95f-4b05-acf4-7d6a277aea0a/manutencao-economica.png",
-                          "height": 456,
-                          "width": 484
-                        },
-                        "caption": "<p style='line-height: 1.5;'>Plataforma robusta e com baixo custo de manutenção. Você otimiza sua operação e foca no que realmente importa: vender mais.</p>"
-                      }
-                    ],
-                    "cta": [],
-                    "arrows": true,
-                    "arrowsColor": "#FAFAF5",
-                    "id": "recursosferramentas",
-                    "createStoreCta": {
-                      "planId": "172",
-                      "text": "Começar no grátis",
-                      "backgroundColor": "#FFFFFF",
-                      "borderColor": "#ffffff",
-                      "textColor": "#003037"
-                    }
-                  },
-                  "tabsInterval": 30
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/HeroWithTime.tsx",
-                  "title": {
-                    "desktop": "<p style=\"text-align: center; font-family: Instrument Serif;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: Instrument Serif; \">Já vende em outra plataforma?</span></em><br></p>",
-                    "mobile": "<p style=\"text-align: center; font-family: Instrument Serif;\"><span style=\"color: rgb(113, 219, 212); font-size: 32pt; font-family: Instrument Serif; line-height:1;\">Já vende em outra plataforma?</span><br></p>"
-                  },
-                  "paddingBottom": "120",
-                  "paddingTop": "120",
-                  "subTitle": {
-                    "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18px; font-family: 'Inter'; text-align:center; font-weight:300; \">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma segura, estável e descomplicada.</span></p>",
-                    "desktop": "<p style=\"text-align: center; line-height:1.2; \"><span style=\"color: rgb(255, 255, 255); font-size: 24px; font-family: 'Inter'; font-weight:100;\">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma<br> segura,estável e descomplicada</span></p>"
-                  },
-                  "tabs": [
-                    {
-                      "icon": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
-                      },
-                      "title": {
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Crescimento inteligente</span></p>",
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Crescimento inteligente</span></p>"
-                      },
-                      "textContent": {
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</span></p>",
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</span></p>"
-                      },
-                      "tabImage": {},
-                      "highlight": false,
-                      "buttons": [],
-                      "tabVideo": {
-                        "width": 606,
-                        "height": 461,
-                        "widthDesktop": 606,
-                        "heightDesktop": 461,
-                        "video": "https://data.decoassets.com/lojaintegradar/5d29881f-b20a-4a8a-a72e-02a12868eaaf/crescimento-inteligente(1mb).mp4",
-                        "videoDesktop": "https://data.decoassets.com/lojaintegradar/5d29881f-b20a-4a8a-a72e-02a12868eaaf/crescimento-inteligente(1mb).mp4"
-                      },
-                      "useTab": "video"
-                    },
-                    {
-                      "textContent": {
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Adicione banners, faixas e páginas para atrair e converter clientes com facilidade.</span></p>",
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Adicione banners, faixas e páginas para atrair e converter clientes com facilidade.</span></p>"
-                      },
-                      "icon": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg"
-                      },
-                      "title": {
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Liberdade para personalizar</span></p>",
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Liberdade para personalizar</span></p>"
-                      },
-                      "tabImage": {
-                        "imageDesktop": "https://data.decoassets.com/lojaintegradar/eb5d1729-9b6c-4627-bf62-9274c3009101/liberdade-para-personalizar.png",
-                        "widthDesktop": 606,
-                        "heightDesktop": 461,
-                        "image": "https://data.decoassets.com/lojaintegradar/eb5d1729-9b6c-4627-bf62-9274c3009101/liberdade-para-personalizar.png",
-                        "width": 506
-                      },
-                      "highlight": false,
-                      "buttons": []
-                    },
-                    {
-                      "textContent": {
-                        "0": "c",
-                        "1": "o",
-                        "2": "m",
-                        "3": " ",
-                        "4": "g",
-                        "5": "a",
-                        "6": "t",
-                        "7": "i",
-                        "8": "l",
-                        "9": "h",
-                        "10": "o",
-                        "11": "s",
-                        "12": " ",
-                        "13": "d",
-                        "14": "e",
-                        "15": " ",
-                        "16": "m",
-                        "17": "a",
-                        "18": "r",
-                        "19": "k",
-                        "20": "e",
-                        "21": "t",
-                        "22": "i",
-                        "23": "n",
-                        "24": "g",
-                        "25": " ",
-                        "26": "q",
-                        "27": "u",
-                        "28": "e",
-                        "29": " ",
-                        "30": "p",
-                        "31": "o",
-                        "32": "d",
-                        "33": "e",
-                        "34": "m",
-                        "35": " ",
-                        "36": "s",
-                        "37": "e",
-                        "38": "r",
-                        "39": " ",
-                        "40": "c",
-                        "41": "o",
-                        "42": "n",
-                        "43": "f",
-                        "44": "i",
-                        "45": "g",
-                        "46": "u",
-                        "47": "r",
-                        "48": "a",
-                        "49": "d",
-                        "50": "o",
-                        "51": "s",
-                        "52": " ",
-                        "53": "d",
-                        "54": "i",
-                        "55": "r",
-                        "56": "e",
-                        "57": "t",
-                        "58": "o",
-                        "59": " ",
-                        "60": "d",
-                        "61": "a",
-                        "62": " ",
-                        "63": "p",
-                        "64": "l",
-                        "65": "a",
-                        "66": "t",
-                        "67": "a",
-                        "68": "f",
-                        "69": "o",
-                        "70": "r",
-                        "71": "m",
-                        "72": "a",
-                        "73": " ",
-                        "74": "d",
-                        "75": "e",
-                        "76": " ",
-                        "77": "e",
-                        "78": "c",
-                        "79": "o",
-                        "80": "m",
-                        "81": "m",
-                        "82": "e",
-                        "83": "r",
-                        "84": "c",
-                        "85": "e",
-                        "86": ":",
-                        "87": " ",
-                        "88": "c",
-                        "89": "a",
-                        "90": "r",
-                        "91": "r",
-                        "92": "i",
-                        "93": "n",
-                        "94": "h",
-                        "95": "o",
-                        "96": " ",
-                        "97": "e",
-                        "98": " ",
-                        "99": "p",
-                        "100": "r",
-                        "101": "o",
-                        "102": "d",
-                        "103": "u",
-                        "104": "t",
-                        "105": "o",
-                        "106": " ",
-                        "107": "a",
-                        "108": "b",
-                        "109": "a",
-                        "110": "n",
-                        "111": "d",
-                        "112": "o",
-                        "113": "n",
-                        "114": "a",
-                        "115": "d",
-                        "116": "o",
-                        "117": "s",
-                        "118": ",",
-                        "119": " ",
-                        "120": "c",
-                        "121": "o",
-                        "122": "m",
-                        "123": "p",
-                        "124": "r",
-                        "125": "a",
-                        "126": "s",
-                        "127": " ",
-                        "128": "c",
-                        "129": "a",
-                        "130": "n",
-                        "131": "c",
-                        "132": "e",
-                        "133": "l",
-                        "134": "a",
-                        "135": "d",
-                        "136": "a",
-                        "137": "s",
-                        "138": ",",
-                        "139": " ",
-                        "140": "r",
-                        "141": "e",
-                        "142": "c",
-                        "143": "o",
-                        "144": "m",
-                        "145": "e",
-                        "146": "n",
-                        "147": "d",
-                        "148": "a",
-                        "149": "ç",
-                        "150": "ã",
-                        "151": "o",
-                        "152": " ",
-                        "153": "d",
-                        "154": "e",
-                        "155": " ",
-                        "156": "p",
-                        "157": "r",
-                        "158": "o",
-                        "159": "d",
-                        "160": "u",
-                        "161": "t",
-                        "162": "o",
-                        "163": ".",
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">A melhor usabilidade para navegar e controlar seu e-commerce de forma simples e prática.</span></p>",
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">A melhor usabilidade para navegar e controlar seu e-commerce de forma simples e prática.</span></p>"
-                      },
-                      "icon": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0b5f63ee-dfd1-4c23-a708-3084f642daa0/icone-tabs.svg",
-                        "alt": "Tab icon"
-                      },
-                      "title": {
-                        "0": "R",
-                        "1": "e",
-                        "2": "c",
-                        "3": "u",
-                        "4": "p",
-                        "5": "e",
-                        "6": "r",
-                        "7": "e",
-                        "8": " ",
-                        "9": "v",
-                        "10": "e",
-                        "11": "n",
-                        "12": "d",
-                        "13": "a",
-                        "14": "s",
-                        "15": " ",
-                        "16": "p",
-                        "17": "e",
-                        "18": "r",
-                        "19": "d",
-                        "20": "i",
-                        "21": "d",
-                        "22": "a",
-                        "23": "s",
-                        "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Usabilidade simplificada</span></p>",
-                        "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Usabilidade simplificada</span></p>"
-                      },
-                      "tabImage": {
-                        "widthDesktop": 606,
-                        "heightDesktop": 461,
-                        "imageDesktop": "https://data.decoassets.com/lojaintegradar/219a3d26-ec8d-4d58-a532-d05fee2d5dd0/usabilidade.png",
-                        "image": "https://data.decoassets.com/lojaintegradar/219a3d26-ec8d-4d58-a532-d05fee2d5dd0/usabilidade.png",
-                        "width": 506
-                      },
-                      "videoOn": false,
-                      "button": {},
-                      "videoText": "Ver demo",
-                      "tags": []
-                    }
-                  ],
-                  "background": {
-                    "type": "gradient",
-                    "gradient": {
-                      "type": "linear",
-                      "angle": 180,
-                      "stops": [
-                        {
-                          "color": "#005F5F",
-                          "position": 2.19
-                        },
-                        {
-                          "color": "#003037",
-                          "position": 56.08
-                        }
-                      ]
-                    }
-                  },
-                  "finalButtons": [],
-                  "bottomSection": {
-                    "__resolveType": "site/sections/Carousel.tsx",
-                    "slides": [
-                      {
-                        "textPlacement": "Bottom",
-                        "icon": {
-                          "placement": "Top right"
-                        },
-                        "useBackground": "image",
-                        "bulletPoints": {
-                          "items": []
-                        },
-                        "caption": "<p style='line-height: 1.5;'>Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via Chat e WhatsApp.</p>",
-                        "backgroundImage": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb7d8d6-b1ed-4a95-b53d-28d0b26852de/suporte-facilitado.png",
-                          "height": 456,
-                          "width": 484
-                        },
-                        "textColor": "#FAFAF5",
-                        "title": "Suporte facilitado"
-                      },
-                      {
-                        "textPlacement": "Bottom",
-                        "icon": {
-                          "placement": "Top right"
-                        },
-                        "useBackground": "image",
-                        "bulletPoints": {
-                          "items": []
-                        },
-                        "title": "Ecossistema completo",
-                        "textColor": "#FAFAF5",
-                        "backgroundImage": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d8939915-c422-44fa-a2f8-f8d7c35724d4/Ecossistema-completo.png",
-                          "height": 456,
-                          "width": 484
-                        },
-                        "caption": "<p style='line-height: 1.5;'>Soluções integradas com ERPs, canais de vendas, operação omnichannel, redes sociais, parceiros e agências — tudo em um só lugar.</p>"
-                      },
-                      {
-                        "textPlacement": "Bottom",
-                        "icon": {
-                          "placement": "Top right"
-                        },
-                        "useBackground": "image",
-                        "bulletPoints": {
-                          "items": []
-                        },
-                        "title": "Manutenção econômica",
-                        "textColor": "#FAFAF5",
-                        "backgroundImage": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e9014575-b95f-4b05-acf4-7d6a277aea0a/manutencao-economica.png",
-                          "height": 456,
-                          "width": 484
-                        },
-                        "caption": "<p style='line-height: 1.5;'>Plataforma robusta e com baixo custo de manutenção. Você otimiza sua operação e foca no que realmente importa: vender mais.</p>"
-                      }
-                    ],
-                    "cta": [],
-                    "arrows": false,
-                    "arrowsColor": "#FAFAF5",
-                    "id": "recursosferramentas",
-                    "createStoreCta": {
-                      "planId": "172",
-                      "text": "Começar no grátis",
-                      "backgroundColor": "#FFFFFF",
-                      "borderColor": "#ffffff",
-                      "textColor": "#003037"
-                    }
-                  },
-                  "tabsInterval": 30
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
-                  "__resolveType": "site/sections/PlansV2.tsx",
-                  "title": "<p style=\"font-family: 'Instrument Serif'; color:#003037; font-size:32pt; line-height:1.2; \"><span>Planos que crescem<br> com o seu negócio</span></p>",
-                  "paddingBottom": "80px",
-                  "paddingTop": "80px",
-                  "id": "plans",
-                  "slides": [
-                    {
-                      "title": "<p style=\"font-size: 36pt; line-height:-1.2;\"><span>Comece sem<br> custos</span></p>",
-                      "tag": {
-                        "icon": {
-                          "alt": "crown icon"
-                        },
-                        "textColor1": "#ce2c2c",
-                        "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)",
-                        "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
-                        "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
-                        "fontFamily": "Instrument Serif",
-                        "onlyAnnual": true
-                      },
-                      "montlyFee": "<p></p>",
-                      "chooseCta": {
-                        "text": "Assinar",
-                        "href": "#"
-                      },
-                      "detailsCta": {
-                        "text": "Ver detalhes",
-                        "href": "#"
-                      },
-                      "bulletPoints": {
-                        "bulletPointsIcon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
-                        },
-                        "items": [
-                          {
-                            "text": "<p>50 produtos</p>"
-                          },
-                          {
-                            "text": "<p>5.000 visitas</p>"
-                          },
-                          {
-                            "text": "<p>Loja completa</p>"
-                          },
-                          {
-                            "text": "<p>Meio de envio e pagamento</p>",
-                            "toolTipText": "Aplicável a vendas realizadas com meios de pagamento que não sejam o Pagali."
-                          },
-                          {
-                            "text": "<p>Sem cobrança de tarifa por venda no Pagali</p>"
-                          },
-                          {
-                            "text": "<p>Recursos de marketing</p>"
-                          }
-                        ],
-                        "itemsTextColor": "#FAFAF5",
-                        "tooltipTextColor": "#003037",
-                        "tooltipBackgroundColor": "#FAFAF5"
-                      },
-                      "annualMontlyFee": "<p></p>",
-                      "annualSaving": {
-                        "text": "<p></p>",
-                        "fontFamily": "Inter",
-                        "backgroundColor": "",
-                        "borderColor": "",
-                        "textColor": ""
-                      },
-                      "seeMoreButtonText": "Ver mais",
-                      "backgroundColor": "radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), #55DCE6;",
-                      "titleColor": "#ffffff",
-                      "cutedMontlyFeeColor": "#FAFAF5",
-                      "annualSavingColor": "#FAFAf5",
-                      "cta": [
-                        {
-                          "ctaStyle": "link",
-                          "href": "https://www.lojaintegrada.com.br/planos",
-                          "textColor": "#FAFAF5",
-                          "underlineText": "Ver detalhes"
-                        }
-                      ],
-                      "createStoreWithPlanCta": {
-                        "planId": "172",
-                        "text": "Comece agora",
-                        "backgroundColor": "#FAFAF5",
-                        "textColor": "#003037",
-                        "borderColor": "#FAFAF5",
-                        "ctaStyle": "button"
-                      },
-                      "tagColor": "#371E55",
-                      "tagBackgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%)",
-                      "theme": "light",
-                      "topImage": {
-                        "width": 239,
-                        "height": 134
-                      },
-                      "tagTextColor": {
-                        "color1": "#71DBD4 ",
-                        "color2": "#ABEECF "
-                      },
-                      "titleFont": "Instrument Serif"
-                    },
-                    {
-                      "title": "<h2><span style=\"color: #0c3038; font-size: 36pt\">Crescimento</span></h2>",
-                      "bulletPoints": {
-                        "items": [
-                          {
-                            "text": "<p>250 produtos</p>"
-                          },
-                          {
-                            "text": "<p>25.000 visitas</p>"
-                          },
-                          {
-                            "text": "<p>Tudo do plano grátis +</p>"
-                          },
-                          {
-                            "text": "<p>Checkout transparente</p>",
-                            "toolTipText": "Compra sem senha"
-                          },
-                          {
-                            "text": "<p>Ferramenta de avaliação, Compre Junto e recuperação de carrinho abandonado e produto</p>"
-                          }
-                        ],
-                        "bulletPointsIcon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg",
-                          "alt": "bullet points icon"
-                        },
-                        "itemsTextColor": "#5F6E82",
-                        "tooltipTextColor": "#5F6E82",
-                        "tooltipBackgroundColor": "#EAE7ED"
-                      },
-                      "chooseCta": {
-                        "text": "Assinar",
-                        "href": "#"
-                      },
-                      "detailsCta": {
-                        "text": "Ver detalhes"
-                      },
-                      "tag": {
-                        "text": "<p></p>",
-                        "backgroundColor": "",
-                        "borderColor": "",
-                        "textColor": "",
-                        "onlyAnnual": false
-                      },
-                      "montlyFee": "<p><span style=\"color: rgb(12, 48, 56); font-size: 24pt\">R$</span><span style=\"color: rgb(12, 48, 56)\"> </span><strong><span style=\"color: rgb(12, 48, 56); font-size: 48px\">54</span></strong><span style=\"color: rgb(12, 48, 56); font-size: 14pt\">/mês</span></p>",
-                      "cutedMontlyFee": "de R$ 54/mês",
-                      "annualMontlyFee": "<p><span style=\"color: rgb(12, 48, 56); font-size: 24pt\">R$</span><span style=\"color: rgb(12, 48, 56)\"> </span><strong><span style=\"color: rgb(12, 48, 56); font-size: 48px\">43</span></strong><span style=\"color: rgb(12, 48, 56); font-size: 14pt\">/mês</span></p>",
-                      "annualSaving": {
-                        "text": "<p><em>Economia de R$ 152/ano</em></p>",
-                        "fontFamily": "Inter",
-                        "textColor": "#5F6E82",
-                        "backgroundColor": "",
-                        "borderColor": "",
-                        "onlyAnnual": false
-                      },
-                      "seeMoreButtonText": "Ver mais",
-                      "cta": [
-                        {
-                          "ctaStyle": "link",
-                          "href": "https://www.lojaintegrada.com.br/planos",
-                          "textColor": "#003037",
-                          "underlineText": "Ver detalhes",
-                          "borderColor": "#003037"
-                        }
-                      ],
-                      "backgroundColor": "linear-gradient(172deg, #71DBD4 -46.43%, #FFF 31.59%)",
-                      "titleColor": "#371E55",
-                      "cutedMontlyFeeColor": "#003037",
-                      "createStoreWithPlanCta": {
-                        "planId": "173",
-                        "text": "Assinar",
-                        "ctaStyle": "button",
-                        "backgroundColor": "#003037",
-                        "textColor": "#ffffff",
-                        "borderColor": "#003037",
-                        "showIcon": false
-                      },
-                      "theme": "light",
-                      "titleFont": "Instrument Serif"
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": [
-                          {
-                            "text": "<p>500 Produtos </p>"
-                          },
-                          {
-                            "text": "<p>50.000 visitas</p>"
-                          },
-                          {
-                            "text": "<p>Tudo do plano crescimento +</p>"
-                          },
-                          {
-                            "text": "<p>Enriquecimento de produtos com IA</p>"
-                          },
-                          {
-                            "text": "<p>Avaliação de produto com foto</p>"
-                          },
-                          {
-                            "text": "<p>3 usuários do painel</p>"
-                          },
-                          {
-                            "text": "<p>Edição de HTML</p>"
-                          }
-                        ],
-                        "bulletPointsIcon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
-                        },
-                        "itemsTextColor": "#5F6E82",
-                        "tooltipTextColor": "#5F6E82",
-                        "tooltipBackgroundColor": "#EAE7ED"
-                      },
-                      "title": "<h2><span style=\"color: #0c3038; font-size: 36pt\">Aceleração</span></h2>",
-                      "chooseCta": {
-                        "text": "Assinar",
-                        "href": "#"
-                      },
-                      "detailsCta": {
-                        "text": "Ver detalhes",
-                        "href": "#"
-                      },
-                      "tag": {
-                        "fontFamily": "Instrument Serif",
-                        "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
-                        "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
-                        "borderColor": "linear-gradient(90deg, #B699D9 0%, #512F79 100%)",
-                        "onlyAnnual": true
-                      },
-                      "montlyFee": "<p><span style=\"color: #0c3038; font-size: 24pt\">R$</span><span style=\"color: #0c3038\"> </span><strong><span style=\"color: #0c3038; font-size: 36pt\">99</span></strong><span style=\"color: #0c3038\"> </span><span style=\"color: #0c3038; font-size: 14pt\">/mês</span></p>",
-                      "cutedMontlyFee": "de R$99/mês ",
-                      "annualMontlyFee": "<p><span style=\"color: #0c3038; font-size: 24pt\">R$</span><span style=\"color: #0c3038\"> </span><strong><span style=\"color: #0c3038; font-size: 36pt\">79</span></strong><span style=\"color: #0c3038\"> </span><span style=\"color: #0c3038; font-size: 14pt\">/mês</span><span style=\"color: rgb(55, 30, 85); font-size: 14pt\"><br></span></p>",
-                      "seeMoreButtonText": "Ver mais",
-                      "backgroundColor": "linear-gradient(172deg, #71DBD4 -46.43%, #FFF 31.59%)",
-                      "titleColor": "#FAFAF5",
-                      "cutedMontlyFeeColor": "#003037",
-                      "annualSaving": {
-                        "text": "<p><em>Economia de R$ 240/ano</em></p>",
-                        "fontFamily": "Inter",
-                        "textColor": "#5F6E82",
-                        "backgroundColor": "",
-                        "borderColor": ""
-                      },
-                      "cta": [
-                        {
-                          "ctaStyle": "link",
-                          "href": "https://www.lojaintegrada.com.br/planos",
-                          "textColor": "#003037",
-                          "underlineText": "Ver detalhes"
-                        }
-                      ],
-                      "createStoreWithPlanCta": {
-                        "planId": "174",
-                        "text": "Assinar",
-                        "ctaStyle": "button",
-                        "backgroundColor": "#003037",
-                        "textColor": "#ffffff",
-                        "borderColor": "#003037"
-                      },
-                      "annualFee": 79,
-                      "annualMontlyFeeFee": 79,
-                      "seeMoreTag": "Ver mais",
-                      "tagColor": "#FAFAF5",
-                      "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
-                      "titleFont": "Instrument Serif"
-                    }
-                  ],
-                  "arrows": false,
-                  "titleColor": "#371E55",
-                  "arrowsColor": "#ca1616",
-                  "captionColor": "#371E55",
-                  "caption": "<p></p>",
-                  "dots": false,
-                  "annualLabel": "Anual",
-                  "montlyLabel": "Mensal",
-                  "bottomTitle": "Ou comece agora sem custo",
-                  "bottomButton": {
-                    "text": "Começar no grátis",
-                    "href": "#"
-                  },
-                  "labelColor": "#371E55",
-                  "disabledLabelColor": "#828CA0",
-                  "annualTagColor": "#FFE6A0",
-                  "annualTagDisabledColor": "#EBEBEB",
-                  "bottomButtons": [
-                    {
-                      "ctaStyle": "button",
-                      "href": "#",
-                      "text": "Começar no grátis",
-                      "backgroundColor": "#371E55",
-                      "textColor": "#ffffff",
-                      "borderColor": "#371E55"
-                    }
-                  ],
-                  "bottomCaptionColor": "#828CA0",
-                  "bottomTitleColor": "#003037",
-                  "bottomCreateStoreCta": {
-                    "planId": "172",
-                    "text": "Acessar plano grátis",
-                    "backgroundColor": "#003037",
-                    "textColor": "#ffffff",
-                    "borderColor": "#371E55",
-                    "ctaStyle": "link",
-                    "showIcon": false
-                  },
-                  "annualTagTextColor": "#371E55",
-                  "annualTag": "- 2O% FF",
-                  "annualTagPosition": "aside"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/PlansV2.tsx",
-                  "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037;\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span></p><p style=\"text-align: center; line-height:0.5; \" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 24px; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
-                  "paddingBottom": "80px",
-                  "paddingTop": "80px",
-                  "id": "plans",
-                  "slides": [
-                    {
-                      "title": "<p style=\"font-size: 36pt; line-height:-1.2;\"><span>Comece sem<br> custos</span></p>",
-                      "tag": {
-                        "icon": {
-                          "alt": "crown icon"
-                        },
-                        "textColor1": "#ce2c2c",
-                        "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)",
-                        "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
-                        "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
-                        "fontFamily": "Instrument Serif",
-                        "onlyAnnual": true,
-                        "hideTag": true
-                      },
-                      "montlyFee": "<p></p>",
-                      "chooseCta": {
-                        "text": "Assinar",
-                        "href": "#"
-                      },
-                      "detailsCta": {
-                        "text": "Ver detalhes",
-                        "href": "#"
-                      },
-                      "bulletPoints": {
-                        "bulletPointsIcon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
-                        },
-                        "items": [
-                          {
-                            "text": "<p>50 produtos</p>"
-                          },
-                          {
-                            "text": "<p>5.000 visitas</p>"
-                          },
-                          {
-                            "text": "<p>Loja completa</p>"
-                          },
-                          {
-                            "text": "<p>Meio de envio e pagamento</p>"
-                          },
-                          {
-                            "text": "<p>Sem cobrança de tarifa por venda no Pagali</p>"
-                          },
-                          {
-                            "text": "<p>Recursos de marketing</p>"
-                          }
-                        ],
-                        "itemsTextColor": "#FAFAF5",
-                        "tooltipTextColor": "#003037",
-                        "tooltipBackgroundColor": "#FAFAF5"
-                      },
-                      "annualMontlyFee": "<p></p>",
-                      "annualSaving": {
-                        "text": "<p></p>",
-                        "fontFamily": "Inter",
-                        "backgroundColor": "",
-                        "borderColor": "",
-                        "textColor": "",
-                        "hideTag": false
-                      },
-                      "seeMoreButtonText": "Ver mais",
-                      "backgroundColor": "radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), #55DCE6;",
-                      "titleColor": "#ffffff",
-                      "cutedMontlyFeeColor": "#FAFAF5",
-                      "annualSavingColor": "#FAFAf5",
-                      "cta": [
-                        {
-                          "ctaStyle": "link",
-                          "href": "https://www.lojaintegrada.com.br/planos",
-                          "textColor": "#FAFAF5",
-                          "underlineText": "Ver detalhes"
-                        }
-                      ],
-                      "createStoreWithPlanCta": {
-                        "planId": "172",
-                        "text": "Comece agora",
-                        "backgroundColor": "#FAFAF5",
-                        "textColor": "#003037",
-                        "borderColor": "#FAFAF5",
-                        "ctaStyle": "button"
-                      },
-                      "tagColor": "#371E55",
-                      "tagBackgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%)",
-                      "theme": "light",
-                      "topImage": {
-                        "width": 239,
-                        "height": 134
-                      },
-                      "tagTextColor": {
-                        "color1": "#71DBD4 ",
-                        "color2": "#ABEECF "
-                      },
-                      "titleFont": "Instrument Serif"
-                    },
-                    {
-                      "title": "<h2><span style=\"color: #0c3038; font-size: 36pt\">Crescimento</span></h2>",
-                      "bulletPoints": {
-                        "items": [
-                          {
-                            "text": "<p>250 produtos</p>"
-                          },
-                          {
-                            "text": "<p>25.000 visitas</p>"
-                          },
-                          {
-                            "text": "<p>Tudo do plano grátis +</p>"
-                          },
-                          {
-                            "text": "<p>Checkout transparente</p>",
-                            "toolTipText": "Compra sem senha"
-                          },
-                          {
-                            "text": "<p>Ferramenta de avaliação, Compre Junto e recuperação de carrinho abandonado e produto</p>"
-                          }
-                        ],
-                        "bulletPointsIcon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg",
-                          "alt": "bullet points icon"
-                        },
-                        "itemsTextColor": "#5F6E82",
-                        "tooltipTextColor": "#5F6E82",
-                        "tooltipBackgroundColor": "#EAE7ED"
-                      },
-                      "chooseCta": {
-                        "text": "Assinar",
-                        "href": "#"
-                      },
-                      "detailsCta": {
-                        "text": "Ver detalhes"
-                      },
-                      "tag": {
-                        "text": "<p></p>",
-                        "backgroundColor": "",
-                        "borderColor": "",
-                        "textColor": "",
-                        "onlyAnnual": false,
-                        "hideTag": true
-                      },
-                      "montlyFee": "<p><span style=\"color: rgb(12, 48, 56); font-size: 24pt\">R$</span><span style=\"color: rgb(12, 48, 56)\"> </span><strong><span style=\"color: rgb(12, 48, 56); font-size: 48px\">54</span></strong><span style=\"color: rgb(12, 48, 56); font-size: 14pt\">/mês</span></p>",
-                      "cutedMontlyFee": "de R$ 54/mês",
-                      "annualMontlyFee": "<p><span style=\"color: rgb(12, 48, 56); font-size: 24pt\">R$</span><span style=\"color: rgb(12, 48, 56)\"> </span><strong><span style=\"color: rgb(12, 48, 56); font-size: 48px\">43</span></strong><span style=\"color: rgb(12, 48, 56); font-size: 14pt\">/mês</span></p>",
-                      "annualSaving": {
-                        "text": "<p><em>Economia de R$ 152/ano</em></p>",
-                        "fontFamily": "Inter",
-                        "textColor": "#5F6E82",
-                        "backgroundColor": "",
-                        "borderColor": "",
-                        "onlyAnnual": false
-                      },
-                      "seeMoreButtonText": "Ver mais",
-                      "cta": [
-                        {
-                          "ctaStyle": "link",
-                          "href": "https://www.lojaintegrada.com.br/planos",
-                          "textColor": "#003037",
-                          "underlineText": "Ver detalhes",
-                          "borderColor": "#003037"
-                        }
-                      ],
-                      "backgroundColor": "linear-gradient(172deg, #71DBD4 -46.43%, #FFF 31.59%)",
-                      "titleColor": "#371E55",
-                      "cutedMontlyFeeColor": "#003037",
-                      "createStoreWithPlanCta": {
-                        "planId": "173",
-                        "text": "Assinar",
-                        "ctaStyle": "button",
-                        "backgroundColor": "#003037",
-                        "textColor": "#ffffff",
-                        "borderColor": "#003037",
-                        "showIcon": false
-                      },
-                      "theme": "light",
-                      "titleFont": "Instrument Serif"
-                    },
-                    {
-                      "bulletPoints": {
-                        "items": [
-                          {
-                            "text": "<p>500 Produtos </p>"
-                          },
-                          {
-                            "text": "<p>50.000 visitas</p>"
-                          },
-                          {
-                            "text": "<p>Tudo do plano crescimento +</p>"
-                          },
-                          {
-                            "text": "<p>Enriquecimento de produtos com IA</p>"
-                          },
-                          {
-                            "text": "<p>Avaliação de produto com foto</p>"
-                          },
-                          {
-                            "text": "<p>3 usuários do painel</p>"
-                          },
-                          {
-                            "text": "<p>Edição de HTML</p>"
-                          }
-                        ],
-                        "bulletPointsIcon": {
-                          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6d2fade6-9360-4ce8-9148-3027176cc8f9/green-check-icon-degrade.svg"
-                        },
-                        "itemsTextColor": "#5F6E82",
-                        "tooltipTextColor": "#5F6E82",
-                        "tooltipBackgroundColor": "#EAE7ED"
-                      },
-                      "title": "<h2><span style=\"color: #0c3038; font-size: 36pt\">Aceleração</span></h2>",
-                      "chooseCta": {
-                        "text": "Assinar",
-                        "href": "#"
-                      },
-                      "detailsCta": {
-                        "text": "Ver detalhes",
-                        "href": "#"
-                      },
-                      "tag": {
-                        "fontFamily": "Instrument Serif",
-                        "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
-                        "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
-                        "borderColor": "linear-gradient(90deg, #B699D9 0%, #512F79 100%)",
-                        "onlyAnnual": true,
-                        "hideTag": true
-                      },
-                      "montlyFee": "<p><span style=\"color: #0c3038; font-size: 24pt\">R$</span><span style=\"color: #0c3038\"> </span><strong><span style=\"color: #0c3038; font-size: 36pt\">99</span></strong><span style=\"color: #0c3038\"> </span><span style=\"color: #0c3038; font-size: 14pt\">/mês</span></p>",
-                      "cutedMontlyFee": "de R$99/mês ",
-                      "annualMontlyFee": "<p><span style=\"color: #0c3038; font-size: 24pt\">R$</span><span style=\"color: #0c3038\"> </span><strong><span style=\"color: #0c3038; font-size: 36pt\">79</span></strong><span style=\"color: #0c3038\"> </span><span style=\"color: #0c3038; font-size: 14pt\">/mês</span><span style=\"color: rgb(55, 30, 85); font-size: 14pt\"><br></span></p>",
-                      "seeMoreButtonText": "Ver mais",
-                      "backgroundColor": "linear-gradient(172deg, #71DBD4 -46.43%, #FFF 31.59%)",
-                      "titleColor": "#FAFAF5",
-                      "cutedMontlyFeeColor": "#003037",
-                      "annualSaving": {
-                        "text": "<p><em>Economia de R$ 240/ano</em></p>",
-                        "fontFamily": "Inter",
-                        "textColor": "#5F6E82",
-                        "backgroundColor": "",
-                        "borderColor": ""
-                      },
-                      "cta": [
-                        {
-                          "ctaStyle": "link",
-                          "href": "https://www.lojaintegrada.com.br/planos",
-                          "textColor": "#003037",
-                          "underlineText": "Ver detalhes"
-                        }
-                      ],
-                      "createStoreWithPlanCta": {
-                        "planId": "174",
-                        "text": "Assinar",
-                        "ctaStyle": "button",
-                        "backgroundColor": "#003037",
-                        "textColor": "#ffffff",
-                        "borderColor": "#003037"
-                      },
-                      "annualFee": 79,
-                      "annualMontlyFeeFee": 79,
-                      "seeMoreTag": "Ver mais",
-                      "tagColor": "#FAFAF5",
-                      "tagBackgroundColor": "linear-gradient(90deg, rgba(136, 111, 162, 0.80) 29.86%, rgba(198, 179, 206, 0.40) 84.07%)",
-                      "titleFont": "Instrument Serif"
-                    }
-                  ],
-                  "arrows": false,
-                  "titleColor": "#371E55",
-                  "captionColor": "#371E55",
-                  "arrowsColor": "#ca1616",
-                  "caption": "<p></p>",
-                  "dots": false,
-                  "annualLabel": "Anual",
-                  "montlyLabel": "Mensal",
-                  "bottomTitle": "Conheça mais planos da Loja Integrada",
-                  "bottomButton": {
-                    "text": "Começar no grátis",
-                    "href": "#"
-                  },
-                  "labelColor": "#371E55",
-                  "disabledLabelColor": "#828CA0",
-                  "annualTagColor": "#FFE6A0",
-                  "annualTagDisabledColor": "#EBEBEB",
-                  "bottomButtons": [
-                    {
-                      "ctaStyle": "button",
-                      "href": "#",
-                      "text": "Começar no grátis",
-                      "backgroundColor": "#371E55",
-                      "textColor": "#ffffff",
-                      "borderColor": "#371E55"
-                    }
-                  ],
-                  "bottomCaptionColor": "#828CA0",
-                  "bottomTitleColor": "#003037",
-                  "bottomCreateStoreCta": {
-                    "backgroundColor": "#003037",
-                    "textColor": "#ffffff",
-                    "borderColor": "#371E55",
-                    "ctaStyle": "button",
-                    "showIcon": false,
-                    "planId": "172"
-                  },
-                  "annualTagTextColor": "#371E55",
-                  "annualTag": "- 2O% FF",
-                  "annualTagPosition": "aside",
-                  "bottomCta": [
-                    {
-                      "ctaStyle": "button",
-                      "href": "https://lojaintegrada.com.br/planos",
-                      "text": "Saiba mais",
-                      "backgroundColor": "#003037",
-                      "borderColor": "003037",
-                      "textColor": "#FFFFFF"
-                    }
-                  ]
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                },
                 "value": {
                   "__resolveType": "site/sections/Footer2.tsx",
                   "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 24px\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 24px; \">resultados que surpreendem.</span></em></p>",
@@ -3210,12 +1223,13 @@
                   "backgroundHeight": "160px",
                   "showLogo": true,
                   "logoPosition": "above"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
                 }
               },
               {
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                },
                 "value": {
                   "__resolveType": "site/sections/Footer2.tsx",
                   "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 32pt\">resultados que surpreendem.</span></em></p>",
@@ -3319,6 +1333,9 @@
                   "backgroundHeight": "400px",
                   "showLogo": true,
                   "logoPosition": "above"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
                 }
               }
             ]

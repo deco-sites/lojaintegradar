@@ -119,14 +119,22 @@ export default function MainHero({ hideSection, id, title, caption = "", backgro
     const modalId = randomId + "modal";
     const hubspostFormId = randomId + "hubspotForm";
     return <div class="relative overflow-hidden">
-        <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`} style={{minHeight: sectionMinHeight, background: backgroundColor}}>
+        <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`} style={{minHeight: sectionMinHeight}}>
+            
             {useBackground == "image" && backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} 
                 class={`w-full h-full absolute object-cover top-0 left-0 -z-50 object-right-top ${backgroundAnimation && 'animate-background-animation'}` }
                 alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={lcp ? "eager" : "lazy"} preload={true}
+                style={{animationDuration: '7s'}}
             />}
+            
             {useBackground == "video" && backgroundVideo && <video width="1280" height="720" autoPlay playsInline muted loading={lcp ? "eager" : "lazy"} loop class="absolute w-full h-full object-cover top-0 left-0 -z-50 ">
                     <source src={backgroundVideo} type="video/mp4"/>
                 </video>}
+            
+            {backgroundColor && <div 
+                class={`-z-40 absolute top-0 left-0 w-full h-full ${backgroundAnimation && 'animate-background-animation'}`} 
+                style={{background: backgroundColor, animationDuration: '7s'}}/>}
+            
             <div class={`lg:pb-20 flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-6 md:px-0 border-base`}>
                 <script dangerouslySetInnerHTML={{ __html: useScript(openModal, modalId) }}/>
                 <div class={`flex-grow flex flex-col gap-2.5 ${(use == "image" || use == "video") ? "max-w-[630px]" : "items-center max-w-[1220px]"} z-10`}>

@@ -4956,6 +4956,9 @@ details.collapse summary::-webkit-details-marker {
 .flex-wrap {
   flex-wrap: wrap;
 }
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
 .flex-nowrap {
   flex-wrap: nowrap;
 }
@@ -7153,6 +7156,10 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 2rem;
   }
 
+  .lg\:mb-\[120px\] {
+    margin-bottom: 120px;
+  }
+
   .lg\:ml-0 {
     margin-left: 0px;
   }
@@ -7351,6 +7358,11 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .lg\:w-full {

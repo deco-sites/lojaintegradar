@@ -116,9 +116,9 @@ export function CardColumn({ cards = [], cardsMaxWidth }: Column) {
                 divClass={`relative rounded-md ${card.borderColor && 'border'} py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 flex flex-col overflow-hidden`}
                 style={{ borderColor: card.borderColor, minHeight: card.minHeight, background: card.backgroundColor, borderRadius: card.borderRadius, padding: card.padding }}
                 delay={100 * index}>
-                <div class="flex flex-wrap gap-5 items-center">
+                <div class="flex flex-wrap-reverse gap-5 items-center">
                     {card.title && <div
-                        class="text-2xl py-1 text-primary font-normal w-fit leading-none"
+                        class="text-2xl py-1 text-primary font-normal w-full lg:w-fit leading-none"
                         style={{ background: card.titleColor, backgroundClip: "text", color: "transparent", fontFamily: card.titleFont, fontSize: card.titleFontSize }}
                         dangerouslySetInnerHTML={{ __html: card.title }}
                     />}

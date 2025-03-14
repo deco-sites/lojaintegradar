@@ -262,15 +262,17 @@
                 "value": {
                   "__resolveType": "site/sections/MainHero.tsx",
                   "title": "<p style=\"text-align: center\"><em><span style=\"color: #b7fbdb; font-size: 60pt\">Novas funcionalidades</span></em><span style=\"color: #b7fbdb; font-size: 60pt\"> </span><span style=\"color: #00363a; font-size: 60pt\">chegando para você</span></p>",
-                  "backgroundColor": "",
+                  "backgroundColor": "linear-gradient(     -135deg,     #55DCE6 ,     #198CE8 ,         #7CE8B0 ,     rgba(124, 232, 176, 0.2) )",
                   "backgroundImage": {
-                    "src": "https://data.decoassets.com/lojaintegradar/b51627f2-fe88-4501-8df9-8836f6994310/main-background.svg"
+                    "width": 1140,
+                    "height": 615
                   },
                   "caption": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Acompanhe as últimas atualizações que estarão disponível na sua operação</span></p>",
                   "captionFontSize": "16px",
                   "backgroundAnimation": true,
                   "lcp": true,
-                  "titleFont": "Galaxie Copernicus"
+                  "titleFont": "Galaxie Copernicus",
+                  "image": {}
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

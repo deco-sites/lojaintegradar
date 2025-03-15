@@ -9,9 +9,9 @@ export default {
     extend: {
       keyframes: {
         "background-animation": {
-          "0%": { transform: "translate(0%, 0%) scale(4)" },
-          "50%": { transform: "translate(-100%, 0%) scale(4)" },
-          "100%": { transform: "translate(0%, 0%) scale(4)" },
+          "0%": { transform: "translate(145%, 0%) scale(4)" },
+          "50%": { transform: "translate(-145%, 0%) scale(4)" },
+          "100%": { transform: "translate(145%, 0%) scale(4)" },
         },
         sliding: {
           "0%": { left: 0 },

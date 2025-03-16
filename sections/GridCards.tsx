@@ -17,8 +17,10 @@ export interface Tag {
 }
 
 export interface Title {
-  text?: RichText
+  text?: RichText;
   font?: string;
+  fontSize?: string;
+  letterSpacing?: string;
 }
 
 export interface Card {
@@ -57,7 +59,7 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
 
         {title?.text && <div
           class="font-medium w-full mb-[120px] text-[32px] lg:text-[56px]"
-          style={{ fontFamily: title.font }}
+          style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }}
           dangerouslySetInnerHTML={{ __html: title.text }}
         />}
       </AnimateOnShow>

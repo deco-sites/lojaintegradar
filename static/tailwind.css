@@ -3738,6 +3738,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -4494,6 +4498,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[1282px\] {
   max-width: 1282px;
 }
+.max-w-\[1288px\] {
+  max-width: 1288px;
+}
 .max-w-\[1305px\] {
   max-width: 1305px;
 }
@@ -4598,6 +4605,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[437px\] {
   max-width: 437px;
+}
+.max-w-\[448px\] {
+  max-width: 448px;
 }
 .max-w-\[450px\] {
   max-width: 450px;
@@ -5510,6 +5520,10 @@ details.collapse summary::-webkit-details-marker {
 .bg-cover {
   background-size: cover;
 }
+.\!bg-clip-text {
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+}
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
@@ -5600,6 +5614,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .p-\[27px\] {
   padding: 27px;
+}
+.p-\[30px\] {
+  padding: 30px;
 }
 .px-0 {
   padding-left: 0px;
@@ -6263,6 +6280,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .tracking-\[-3px\] {
   letter-spacing: -3px;
+}
+.\!text-transparent {
+  color: transparent !important;
 }
 .text-\[\#003037\] {
   --tw-text-opacity: 1;

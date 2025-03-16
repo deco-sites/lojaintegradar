@@ -35,6 +35,7 @@ export interface Title {
     text?: RichText;
     font?: string;
     fontSize?: string;
+    letterSpacing?: string;
 }
 
 export interface Tag {
@@ -248,7 +249,7 @@ export default function CardsHero({ hideSection, tag, distanceBetweenColums, id,
                     style={{ background: tag.backgroundColor }}
                     dangerouslySetInnerHTML={{ __html: tag.text }} />
                 }
-                {title?.text && <div class="leading-normal" dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font, fontSize: title.fontSize }} />}
+                {title?.text && <div class="leading-normal" dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }} />}
             </AnimateOnShow>
             {caption && <AnimateOnShow
                 animation="animate-fade-up50"

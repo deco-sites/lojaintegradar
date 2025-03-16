@@ -5,6 +5,7 @@ import { useId } from "../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 import CTA, {Props as CTAProps} from "site/components/ui/CTA.tsx";
+import { textShortner } from "apps/website/components/_seo/helpers/textShortner.tsx";
 
 const refreshArrowsVisibility = ({arrowsColor, arrowsBackgroundColor, arrowsDisableBackgroundColor, arrowsDisableColor}: Arrows) => {
     const currentTarget = event!.currentTarget as HTMLElement;
@@ -211,17 +212,22 @@ function Carousel(props: Props) {
     if (props.hideSection) return <></>
     const { id, title, caption, slides, paddingBottom, paddingTop, arrows } = { ...props };
     const carouselId = useId();
-    return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative">
+    return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative" 
+        hx-on:click={useScript(refreshArrowsVisibility, {...arrows})} 
+        hx-on:touchend={useScript(refreshArrowsVisibility, {...arrows})}>
         {/* <input type="text" value="0" /> */}
-            <div id={carouselId} class="min-h-min flex flex-col items-center w-full relative" hx-on:click={useScript(refreshArrowsVisibility, {...arrows})} hx-on:touchend={useScript(refreshArrowsVisibility, {...arrows})}>
-
-      
-                    {title?.text && <AnimateOnShow
+            <AnimateOnShow 
+                id={carouselId} 
+                divClass="min-h-min flex flex-col items-center w-full relative" 
+                style={{animationDuration: '700ms'}}
+                animation="animate-fade-up50"
+                delay={500}>
+                    {title?.text && title.text.length > 8 && <AnimateOnShow
                         animation="animate-fade-up50"
                         divClass={`text-5xl lg:text-[70px] leading-[120%] ${caption ? 'mb-4' : 'mb-12 lg:mb-[120px]'}`}>
-                        <div class="leading-normal" dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font, fontSize: title.fontSize }} />
+                        <div class="leading-normal" dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }} />
                     </AnimateOnShow>}
-                    {caption && <AnimateOnShow
+                    {caption && caption.length > 8 && <AnimateOnShow
                         animation="animate-fade-up50"
                         divClass="text-base lg:text-2xl font-light leading-normal mb-4">
                         <div dangerouslySetInnerHTML={{ __html: caption }} />
@@ -240,7 +246,7 @@ function Carousel(props: Props) {
                     {/* {props.dots && <Dots slides={slides} interval={interval} />}{" "} */}
                     {props.arrows?.show && <Buttons {...props.arrows} />}
                 </AnimateOnShow >
-            </div>
+            </AnimateOnShow>
     </div>);
 }
 export default Carousel;

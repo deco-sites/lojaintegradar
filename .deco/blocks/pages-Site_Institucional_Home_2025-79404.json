@@ -1376,7 +1376,10 @@
                 "borderColor": "#00363A"
               }
             ],
-            "ctaPlacement": "center"
+            "ctaPlacement": "center",
+            "container": {
+              "marginBottom": "0px"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

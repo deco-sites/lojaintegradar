@@ -881,7 +881,6 @@
         {
           "value": {
             "__resolveType": "site/sections/CarouselV2.tsx",
-            "title": "<p></p>",
             "id": "nossoecossistema",
             "titleFont": "Instrument serif",
             "backgroundImage": {},
@@ -1208,232 +1207,59 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "website/flags/multivariate/section.ts",
-        "variants": [
-          {
-            "value": {
-              "__resolveType": "site/sections/HeroV3.tsx",
-              "title": {
-                "text": "<p><span>Marketplace</span></p>",
-                "color": "#00363A",
-                "font": "Galaxie Copernicus",
-                "letterSpacing": "-3px"
-              },
-              "text": "<p><span style=\"color: rgb(246, 249, 249)\">Distribuição otimizada dos seus produtos em múltiplos canais de venda, como Mercado</span></p><p><span style=\"color: rgb(246, 249, 249)\">Livre, Magalu e canais de mídia social.</span></p>",
-              "bulletPoints": {
-                "items": [
-                  {
-                    "text": "Integração simplificada com novos marketplaces"
-                  },
-                  {
-                    "text": "Gestão centralizada de estoque e pedidos"
-                  },
-                  {
-                    "text": "Otimização de listagens para cada canal"
-                  }
-                ],
-                "bulletPointsColor": "#00363A",
-                "bulletPointsIcon": {
-                  "src": "https://data.decoassets.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
-                }
-              },
-              "cta": [
-                {
-                  "type": "Button",
-                  "size": "Medium",
-                  "href": "linkhere",
-                  "backgroundColor": "#B7FBDB",
-                  "textColor": "#00363A",
-                  "borderColor": "#B7FBDB",
-                  "text": "Testar agora"
-                }
-              ],
-              "media": {
-                "image": {
-                  "src": "https://data.decoassets.com/lojaintegradar/beabc247-5a98-45d4-a42b-58112b5fe070/hero-image-2.png",
-                  "width": 718,
-                  "height": 471
-                },
-                "use": "image",
-                "video": {}
-              },
-              "container": {
-                "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
-                "paddingRight": "0px"
-              }
-            },
-            "rule": {
-              "__resolveType": "website/matchers/device.ts",
-              "mobile": true
-            }
-          },
-          {
-            "value": {
-              "__resolveType": "site/sections/HeroV3.tsx",
-              "title": {
-                "text": "<p><span>Marketplace</span></p>",
-                "color": "#00363A",
-                "font": "Galaxie Copernicus",
-                "letterSpacing": "-3px"
-              },
-              "text": "<p><span style=\"color: #f6f9f9\">Distribuição otimizada dos seus produtos em múltiplos canais de venda, como Mercado Livre, Magalu e canais de mídia social.</span></p>",
-              "bulletPoints": {
-                "items": [
-                  {
-                    "text": "Integração simplificada com novos marketplaces"
-                  },
-                  {
-                    "text": "Gestão centralizada de estoque e pedidos"
-                  },
-                  {
-                    "text": "Otimização de listagens para cada canal"
-                  }
-                ],
-                "bulletPointsColor": "#00363A",
-                "bulletPointsIcon": {
-                  "src": "https://data.decoassets.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
-                }
-              },
-              "cta": [
-                {
-                  "type": "Button",
-                  "size": "Large",
-                  "href": "linkhere",
-                  "backgroundColor": "#B7FBDB",
-                  "textColor": "#00363A",
-                  "borderColor": "#B7FBDB",
-                  "text": "Testar agora"
-                }
-              ],
-              "media": {
-                "image": {
-                  "src": "https://data.decoassets.com/lojaintegradar/beabc247-5a98-45d4-a42b-58112b5fe070/hero-image-2.png",
-                  "width": 718,
-                  "height": 471
-                },
-                "use": "image",
-                "video": {}
-              },
-              "container": {
-                "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
-                "paddingRight": "0px"
-              }
-            },
-            "rule": {
-              "__resolveType": "website/matchers/always.ts"
-            }
-          }
-        ]
-      }
-    },
-    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/Footer2.tsx",
-            "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 24px\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 24px; \">resultados que surpreendem.</span></em></p>",
-            "id": "ecossistemaconteudo",
-            "titleFont": "Instrument serif",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/20b60aec-1e72-4842-aebe-9c8753662523/Group-21462605-(3).png"
+            "__resolveType": "site/sections/HeroV3.tsx",
+            "title": {
+              "text": "<p><span>Marketplace</span></p>",
+              "color": "#00363A",
+              "font": "Galaxie Copernicus",
+              "letterSpacing": "-3px"
             },
-            "color1": "#371E55",
-            "color2": "#FFFFFF",
-            "cards": [
-              {
-                "cardIcon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
+            "text": "<p><span style=\"color: rgb(246, 249, 249)\">Distribuição otimizada dos seus produtos em múltiplos canais de venda, como Mercado</span></p><p><span style=\"color: rgb(246, 249, 249)\">Livre, Magalu e canais de mídia social.</span></p>",
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "Integração simplificada com novos marketplaces"
                 },
-                "title": "Hub de conteúdo",
-                "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
-                "CTA": {
-                  "text": "Conhecer",
-                  "href": "https://lojaintegrada.com.br/hub/"
+                {
+                  "text": "Gestão centralizada de estoque e pedidos"
+                },
+                {
+                  "text": "Otimização de listagens para cada canal"
                 }
-              },
+              ],
+              "bulletPointsColor": "#00363A",
+              "bulletPointsIcon": {
+                "src": "https://data.decoassets.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
+              }
+            },
+            "cta": [
               {
-                "cardIcon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
-                  "alt": "youtube green icon"
-                },
-                "title": "Canal no Youtube",
-                "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
-                "CTA": {
-                  "text": "Conhecer",
-                  "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
-                }
+                "type": "Button",
+                "size": "Medium",
+                "href": "linkhere",
+                "backgroundColor": "#B7FBDB",
+                "textColor": "#00363A",
+                "borderColor": "#B7FBDB",
+                "text": "Testar agora"
               }
             ],
-            "color3": "#EBEBEB",
-            "logo": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
+            "media": {
+              "image": {
+                "src": "https://data.decoassets.com/lojaintegradar/beabc247-5a98-45d4-a42b-58112b5fe070/hero-image-2.png",
+                "width": 718,
+                "height": 471
+              },
+              "use": "image",
+              "video": {}
             },
-            "showForm": false,
-            "emailForm": {
-              "inputName": "email",
-              "inputLabel": "Junte-se a mais de  2,7 milhões de lojistas",
-              "inputPlaceHolder": "Digite seu email aqui",
-              "submitText": "Fazer parte"
-            },
-            "socialLinks": [
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
-                  "alt": "linkein icon"
-                },
-                "href": "https://www.linkedin.com/company/lojaintegrada/"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
-                  "alt": "instgram icon"
-                },
-                "href": "https://www.instagram.com/lojaintegrada/"
-              },
-              {
-                "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
-                },
-                "href": "https://www.tiktok.com/@lojaintegrada"
-              }
-            ],
-            "color4": "#d4d4d4",
-            "bottomLinks": [
-              {
-                "href": "https://comunidade.lojaintegrada.com.br/",
-                "text": "Conheça nossa comunidade"
-              },
-              {
-                "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
-                "text": "Central de ajuda"
-              },
-              {
-                "text": "Fale com especialista",
-                "href": "/talkToSpecialist"
-              },
-              {
-                "href": "https://lojaintegrada.com.br/termos-de-uso",
-                "text": "Termos de uso"
-              },
-              {
-                "href": "https://lojaintegrada.com.br/privacidade",
-                "text": "Privacidade"
-              },
-              {
-                "href": "https://app.lojaintegrada.com.br/public/assinar",
-                "text": "Comece pelo grátis"
-              }
-            ],
-            "bottomBackground": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
-            },
-            "useBackground": "image",
-            "backgroundHeight": "160px",
-            "showLogo": true,
-            "logoPosition": "above"
+            "container": {
+              "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
+              "paddingRight": "0px"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1442,7 +1268,128 @@
         },
         {
           "value": {
-            "__resolveType": "site/sections/Footer2.tsx",
+            "__resolveType": "site/sections/HeroV3.tsx",
+            "title": {
+              "text": "<p><span>Marketplace</span></p>",
+              "color": "#00363A",
+              "font": "Galaxie Copernicus",
+              "letterSpacing": "-3px"
+            },
+            "text": "<p><span style=\"color: #f6f9f9\">Distribuição otimizada dos seus produtos em múltiplos canais de venda, como Mercado Livre, Magalu e canais de mídia social.</span></p>",
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "Integração simplificada com novos marketplaces"
+                },
+                {
+                  "text": "Gestão centralizada de estoque e pedidos"
+                },
+                {
+                  "text": "Otimização de listagens para cada canal"
+                }
+              ],
+              "bulletPointsColor": "#00363A",
+              "bulletPointsIcon": {
+                "src": "https://data.decoassets.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
+              }
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "href": "linkhere",
+                "backgroundColor": "#B7FBDB",
+                "textColor": "#00363A",
+                "borderColor": "#B7FBDB",
+                "text": "Testar agora"
+              }
+            ],
+            "media": {
+              "image": {
+                "src": "https://data.decoassets.com/lojaintegradar/beabc247-5a98-45d4-a42b-58112b5fe070/hero-image-2.png",
+                "width": 718,
+                "height": 471
+              },
+              "use": "image",
+              "video": {}
+            },
+            "container": {
+              "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
+              "paddingRight": "0px"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV3.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\"><span>Continue contribuindo para a</span></p><p style=\"text-align: center\"><span>evolução da tecnologia da LI.</span></p>",
+              "color": "linear-gradient(  27deg, rgba(124, 232, 176, 1), rgba(85, 220, 230),  rgba(25, 140, 232, 1))",
+              "letterSpacing": "-3px",
+              "font": "Galaxie Copernicus"
+            },
+            "text": "<p style=\"text-align: center\"><span style=\"color: #5f6e82\">Queremos que você faça parte do nosso time de lojistas que influenciam o futuro da plataforma! Inscreva-se no</span></p><p style=\"text-align: center\"><span style=\"color: #5f6e82\">nosso Customer Advisory Board e tenha acesso antecipado às novidades, além de poder compartilhar insights</span></p><p style=\"text-align: center\"><span style=\"color: #5f6e82\">diretamente com nosso time de Produto.</span></p>",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "href": "linkhere",
+                "text": "Quero participar",
+                "backgroundColor": "#00363A",
+                "textColor": "#ffffff",
+                "borderColor": "#00363A"
+              }
+            ],
+            "ctaPlacement": "center"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV3.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\"><span>Continue contribuindo para a</span></p><p style=\"text-align: center\"><span>evolução da tecnologia da LI.</span></p>",
+              "color": "linear-gradient(  27deg, rgba(124, 232, 176, 1), rgba(85, 220, 230),  rgba(25, 140, 232, 1))",
+              "letterSpacing": "-3px",
+              "font": "Galaxie Copernicus"
+            },
+            "text": "<p style=\"text-align: center\"><span style=\"color: #5f6e82\">Queremos que você faça parte do nosso time de lojistas que influenciam o futuro da plataforma! Inscreva-se no</span></p><p style=\"text-align: center\"><span style=\"color: #5f6e82\">nosso Customer Advisory Board e tenha acesso antecipado às novidades, além de poder compartilhar insights</span></p><p style=\"text-align: center\"><span style=\"color: #5f6e82\">diretamente com nosso time de Produto.</span></p>",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "href": "linkhere",
+                "text": "Quero participar",
+                "backgroundColor": "#00363A",
+                "textColor": "#ffffff",
+                "borderColor": "#00363A"
+              }
+            ],
+            "ctaPlacement": "center"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/FooterV3.tsx",
             "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 32pt\">resultados que surpreendem.</span></em></p>",
             "id": "ecossistemaconteudo",
             "titleFont": "Instrument serif",
@@ -1461,8 +1408,14 @@
                 "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
                 "CTA": {
                   "text": "Conhecer",
-                  "href": "https://lojaintegrada.com.br/hub/"
-                }
+                  "href": "https://lojaintegrada.com.br/hub/",
+                  "showIcon": true,
+                  "textColor": "#00363A",
+                  "type": "Only text",
+                  "size": "Medium"
+                },
+                "titleColor": "#00363A",
+                "textColor": "#5F6E82"
               },
               {
                 "cardIcon": {
@@ -1473,8 +1426,15 @@
                 "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
                 "CTA": {
                   "text": "Conhecer",
-                  "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
-                }
+                  "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual",
+                  "textColor": "#00363A",
+                  "size": "Medium",
+                  "type": "Only text",
+                  "showIcon": true
+                },
+                "titleColor": "#00363A",
+                "backgroundColor": "",
+                "textColor": "#5F6E82"
               }
             ],
             "color3": "#EBEBEB",
@@ -1491,21 +1451,22 @@
             "socialLinks": [
               {
                 "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/be37e19b-c380-4d73-8a92-53d4cb651200/purple-linked-in-icon.svg",
+                  "src": "https://data.decoassets.com/lojaintegradar/f239d2bb-7a10-450d-a54e-2ba04fc663ca/linkedin-light-blue.svg",
                   "alt": "linkein icon"
                 },
                 "href": "https://www.linkedin.com/company/lojaintegrada/"
               },
               {
                 "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5c533b2a-49a3-43ec-a50b-17250fc374a4/purple-instagran-icon.svg",
+                  "src": "https://data.decoassets.com/lojaintegradar/0076ec04-11df-4e04-939c-2cdc3610becc/instagram-light-blue.svg",
                   "alt": "instgram icon"
                 },
                 "href": "https://www.instagram.com/lojaintegrada/"
               },
               {
                 "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/42898300-7163-4836-ac3b-7130a20239b8/purple-tiktok-icon.svg"
+                  "src": "https://data.decoassets.com/lojaintegradar/5df9b079-577c-47a2-a1e0-b58babc76038/tiktok-light-blue.svg",
+                  "alt": "tiktok icon"
                 },
                 "href": "https://www.tiktok.com/@lojaintegrada"
               }
@@ -1543,7 +1504,10 @@
             "useBackground": "image",
             "backgroundHeight": "400px",
             "showLogo": true,
-            "logoPosition": "above"
+            "logoPosition": "above",
+            "cardsTextColor": "#00363A",
+            "centralizeBottomLinks": true,
+            "bottomLinksColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

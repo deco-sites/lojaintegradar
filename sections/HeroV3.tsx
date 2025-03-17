@@ -60,6 +60,7 @@ export interface Props {
   text?: RichText;
   bulletPoints?: BulletPoints;
   cta?: CTAProps[];
+  ctaPlacement?: 'left' | 'center' | 'right';
   media?: Media;
   container?: Container;
 }
@@ -89,8 +90,12 @@ export function HeroMedia({ media }: { media?: Media }) {
   </div>
 }
 
-export default function HeroV3({ title, text, bulletPoints, cta = [], media, container }: Props) {
-
+export default function HeroV3({ title, text, bulletPoints, cta = [], media, container, ctaPlacement }: Props) {
+  const placement = {
+    "left": "justify-start",
+    "center": "justify-center",
+    "right": "justify-end"
+  }
   return <div class="px-5 lg:px-0">
     <div
       class={`max-w-[1288px] mx-auto rounded-[20px] p-[30px] lg:p-12 my-12 flex flex-wrap-reverse lg:flex-nowrap items-center justify-center lg:justify-between ${media?.placement == "left" && 'flex-row-reverse'}`}
@@ -118,7 +123,7 @@ export default function HeroV3({ title, text, bulletPoints, cta = [], media, con
           ))}
         </div>}
 
-        {cta.length > 0 && <div class="flex flex-wrap gap-4 mt-auto">
+        {cta.length > 0 && <div class={`flex flex-wrap gap-4 mt-auto ${placement[ctaPlacement || "left"]}`}>
           {cta.map(cta => (
             <CTA {...cta} />
           ))}

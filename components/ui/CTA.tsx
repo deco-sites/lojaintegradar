@@ -13,7 +13,7 @@ export interface Props {
   type?: 'Button' | 'Only text';
   size?: 'Large' | 'Medium' | 'Small';
   showIcon?: boolean;
-  openModal?: 'Talk to specialist' | 'Create Store';
+  openModal?: 'Talk to specialist' | 'Create Store' | 'Customer Advisory Board Modal';
   createStorePlanId?: string;
 }
 
@@ -53,6 +53,9 @@ const openModalFunction = (modal: string, planId: string) => {
         getModal.setAttribute("data-period", period ?? "anual");
         getModal.setAttribute("data-coupon", coupon ?? "");
     }
+  } else if (modal == "Customer Advisory Board Modal") {
+    const customerAdvisoryBoardModal = document.getElementById("customerAdvisoryBoardModal") as HTMLElement;
+    customerAdvisoryBoardModal.style.display = "flex";
   }
 
 };

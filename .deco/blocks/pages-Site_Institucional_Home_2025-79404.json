@@ -1159,7 +1159,13 @@
             "container": {
               "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
               "paddingTop": "0px",
-              "marginTop": "0px"
+              "marginTop": "0px",
+              "backgroundMedia": {
+                "image": {
+                  "src": "https://data.decoassets.com/lojaintegradar/af450da0-d5d6-4e5e-a6eb-550e12401f75/card-image-1-mobile.png"
+                },
+                "use": "image"
+              }
             },
             "text": "<p><span style=\"color: rgb(246, 248, 249)\">Ferramentas automatizadas para recuperação de carrinhos abandonados, recomendação de produtos e comunicação com clientes via email e WhatsApp.</span></p>",
             "bulletPoints": {
@@ -1197,7 +1203,8 @@
                 "width": 625
               },
               "use": "image",
-              "placement": "left"
+              "placement": "left",
+              "video": {}
             }
           },
           "rule": {
@@ -1306,16 +1313,19 @@
             ],
             "media": {
               "image": {
-                "src": "https://data.decoassets.com/lojaintegradar/beabc247-5a98-45d4-a42b-58112b5fe070/hero-image-2.png",
                 "width": 718,
-                "height": 471
+                "height": 471,
+                "src": "https://data.decoassets.com/lojaintegradar/beabc247-5a98-45d4-a42b-58112b5fe070/hero-image-2.png"
               },
               "use": "image",
               "video": {}
             },
             "container": {
-              "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
-              "paddingRight": "0px"
+              "backgroundColor": "var(--Gradient-blue-teal-turquoise,      radial-gradient(50.27% 50.07% at 31.93% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%),     radial-gradient(56.46% 71.32% at 68.58% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%),     radial-gradient(221.46% 120.15% at 25.42% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%),     linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%),      #FFF)",
+              "paddingRight": "0px",
+              "backgroundMedia": {
+                "image": {}
+              }
             }
           },
           "rule": {

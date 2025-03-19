@@ -9,27 +9,27 @@ const onLoad = () => {
   const page1 = modal.querySelector(".page1") as HTMLElement;
   const page2 = modal.querySelector(".page2") as HTMLElement;
   const page3 = modal.querySelector(".page3") as HTMLElement;
+  const page4 = modal.querySelector(".page4") as HTMLElement;
 
   const progressBar = modal.querySelector(".progressBar") as HTMLElement;
   const formStep = modal.querySelector(".formStep") as HTMLElement;
 
   const fields = modal.querySelectorAll("label");
 
-  const nameInput = modal.querySelector('input[name="nome"]') as HTMLInputElement;
+  const nameInput = modal.querySelector('input[name="name"]') as HTMLInputElement;
   const emailInput = modal.querySelector('input[name="email"]') as HTMLInputElement;
   const dddInput = modal.querySelector('input[name="ddd"]') as HTMLInputElement;
   const telefoneInput = modal.querySelector('input[name="telefone"]') as HTMLInputElement;
-  const nomeLojaInput = modal.querySelector('input[name="nome_loja"]') as HTMLInputElement;
-  const urlInput = modal.querySelector('input[name="url_loja"]') as HTMLInputElement;
-  const segmentoInput = modal.querySelector('input[name="segmento"]') as HTMLInputElement; 
-  const tempoAtuacaoInput = modal.querySelector('input[name="tempo_atuacao"]') as HTMLInputElement; 
-  const faturamentoMedioInput = modal.querySelector('select[name="faturamento_medio"]') as HTMLInputElement; 
-  const participouAntesInput = modal.querySelector('input[name="participou_antes"]') as HTMLInputElement; 
+  // const nomeLojaInput = modal.querySelector('input[name="nome_loja"]') as HTMLInputElement;
+  // const urlInput = modal.querySelector('input[name="url_loja"]') as HTMLInputElement;
+  // const segmentoInput = modal.querySelector('input[name="segmento"]') as HTMLInputElement; 
+  // const tempoAtuacaoInput = modal.querySelector('input[name="tempo_atuacao"]') as HTMLInputElement; 
+  // const faturamentoMedioInput = modal.querySelector('select[name="faturamento_medio"]') as HTMLInputElement; 
+  // const participouAntesInput = modal.querySelector('input[name="participou_antes"]') as HTMLInputElement; 
 
   let currentPage = 1;
 
-  cancelButton?.addEventListener("click", (e) => {
-    e.preventDefault();
+  const closeModal = () => {
     modal.style.display = "none";
 
     fields.forEach(field => {
@@ -43,14 +43,18 @@ const onLoad = () => {
     progressBar.style.width = ("33%");
     currentPage = 1;
     formStep.textContent = "Etapa 1 "
+    cancelButton?.classList.remove("hidden");
+  }
+
+  cancelButton?.addEventListener("click", (e) => {
+    e.preventDefault();
+    closeModal();
   });
 
   form?.addEventListener("submit", (e) => {
     e.preventDefault();
     if (currentPage == 1) {
       let validated = true;
-
-     
 
       if (nameInput.value.length < 3) {
         const errorMessage = nameInput.parentElement?.querySelector(".error") as HTMLElement;
@@ -91,6 +95,14 @@ const onLoad = () => {
       currentPage = 3;
       formStep.textContent = "Etapa 3 "
     } else if (currentPage == 3) {
+
+      page3.classList.add("hidden");
+      page4.classList.remove("hidden");
+      currentPage = 4;
+      cancelButton?.classList.add("hidden");
+
+      const inlineMessage = modal.querySelector(".inlineMessage") as HTMLElement;
+
       const formData = new FormData(e.target as HTMLFormElement); // Obtém os dados do formulário.
   
       const data:any = {};
@@ -98,7 +110,37 @@ const onLoad = () => {
         data[key] = value; // Popula o objeto com os pares chave-valor do formulário.
       });
 
-      console.log(data);
+      //monta o objeto a ser enviado par ao hubspot
+      const objectToSend = {
+        firstname: data.name,
+        email: data.email,
+        mobilephone: `${data.ddd}${data.telefone}`,
+        company: data.nome_loja,
+        url_da_loja: data.url_loja,
+        segmento_loja: data.segmento,
+        tempo_de_atuacao_no_ecommerce: data.tempo_atuacao,
+        pd__faturamento_mensal_no_ecommerce: data.faturamento_medio,
+        ja_participou_de_testes_ou_pesquisas_com_a_equipe_da_loja_integrada_: data.participou_antes,
+        quais_sao_suas_maiores_dores_ou_desafios_hoje_na_plataforma_: data.dores
+      }
+
+      //envia os dados para o hubspot
+      const hutk = document.cookie.replace(/(?:(?:^|.;\s)hubspotutk\s=\s([^;]).$)|^.*$/, "$1");
+      const context = {
+          "hutk": hutk,
+          "pageUri": window.location.href,
+          "pageName": document.title
+      };
+      fetch('/live/invoke/site/actions/sendTcoUserData.ts', {
+          body: JSON.stringify({ fields: objectToSend, formGuid: '4d3d5f57-9dac-4b07-9565-8a4b196d4b13', portalId: '7112881', context: context }),
+          method: 'POST',
+          headers: { 'content-type': 'application/json' }
+      }).then((r) => r.json()).then((r) => {
+        console.log(r)
+        inlineMessage.innerText = r.Success ? "Enviado" : "Erro ao enviar";
+      });
+    } else if (currentPage == 4) {
+      closeModal();
     }
   });
 };
@@ -158,7 +200,7 @@ export default function CustomerAdvisoryBoardModal() {
           <p class={labelClass}>Nome</p>
           <input
             type="text"
-            name="nome"
+            name="name"
             placeholder="Nome"
             class={inputClass}
             hx-on:keyup={useScript(onKeyUp)}
@@ -168,7 +210,7 @@ export default function CustomerAdvisoryBoardModal() {
         <label class="group">
           <p class={labelClass}>E-mail</p>
           <input
-            type="email"
+            type="text"
             name="email"
             placeholder="E-mail"
             class={inputClass}
@@ -270,6 +312,10 @@ export default function CustomerAdvisoryBoardModal() {
             hoje na plataforma?</p>
             <textarea name="dores" class={`${inputClass} h-40`}/>
           </label>
+      </div>
+
+      <div class="page4 mb-10 hidden">
+        <p class="inlineMessage text-[#00363A] text-[22px] font-bold mb-6">Enviando...</p>
       </div>
 
       <div class="flex w-full gap-5">

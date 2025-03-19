@@ -155,19 +155,19 @@ const onClickNext = (rootId: string, plans: Plan[], inputsErrorMessageColor: str
             migrateCta?.classList.remove("hidden");
         }
         //seleciona a devolutiva baseado no faturamento mensal
-        const topSellerFeedback = (parent?.querySelector("#" + rootId + "topSellerFeedback") as HTMLElement);
-        const midTailFeedback = (parent?.querySelector("#" + rootId + "midTailFeedback") as HTMLElement);
-        const longTailFeedback = (parent?.querySelector("#" + rootId + "longTailFeedback") as HTMLElement);
-        console.log(moneyToNumber(gmvInput));
-        if (moneyToNumber(gmvInput) >= 100000) {
-            topSellerFeedback.classList.remove("hidden");
-            const migrateCta = (parent?.querySelector("#" + rootId + "migrateCta") as HTMLElement).querySelector(".migrateToTalk");
-            migrateCta?.classList.remove("hidden");
-        }
-        else if (moneyToNumber(gmvInput) >= 10000)
-            midTailFeedback.classList.remove("hidden");
-        else
-            longTailFeedback.classList.remove("hidden");
+        // const topSellerFeedback = (parent?.querySelector("#" + rootId + "topSellerFeedback") as HTMLElement);
+        // const midTailFeedback = (parent?.querySelector("#" + rootId + "midTailFeedback") as HTMLElement);
+        // const longTailFeedback = (parent?.querySelector("#" + rootId + "longTailFeedback") as HTMLElement);
+        // console.log(moneyToNumber(gmvInput));
+        // if (moneyToNumber(gmvInput) >= 100000) {
+        //     topSellerFeedback.classList.remove("hidden");
+        //     const migrateCta = (parent?.querySelector("#" + rootId + "migrateCta") as HTMLElement).querySelector(".migrateToTalk");
+        //     migrateCta?.classList.remove("hidden");
+        // }
+        // else if (moneyToNumber(gmvInput) >= 10000)
+        //     midTailFeedback.classList.remove("hidden");
+        // else
+        //     longTailFeedback.classList.remove("hidden");
         //envia os dados para o hubspot
         const fields = {
             email: emailInput,

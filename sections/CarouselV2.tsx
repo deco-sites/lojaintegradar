@@ -143,9 +143,10 @@ function SliderItem({ slide, id }: {
             alt={image.alt}
             width={image.width || 414}
             height={image.height || 331}
-            class="w-full group-hover:scale-110 transition-transform"
+            class="w-full group-hover:scale-110 transition-transform ease-in-out duration-300"
         /></div>}
-        {use == "video" && <div class="overflow-hidden"><video width="414" height="331" autoPlay playsInline muted loading="lazy" loop class="w-full group-hover:scale-110 transition-transform">
+        {use == "video" && <div class="overflow-hidden"><video width="414" height="331" autoPlay playsInline muted loading="lazy" loop 
+        class="w-full group-hover:scale-110 transition-transform ease-in-out duration-300">
             <source src={video} type="video/mp4" />
             <object data="" width="320" height="240">
                 <embed width="320" height="240" src={video} />

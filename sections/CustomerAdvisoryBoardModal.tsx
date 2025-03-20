@@ -173,7 +173,7 @@ export function CustomRadio({name, value}: {value: string, name: string}) {
 
 export default function CustomerAdvisoryBoardModal() {
   const labelClass = "mb-2 text-transparent group-focus-within:text-[#00B7B5] transition-colors text-xs";
-  const inputClass = "rounded-lg outline-none border py-2 px-4 text-[#5F6E82] border-[#5F6E82] focus:border-[#00B7B5] w-full mb-1.5";
+  const inputClass = "rounded-lg outline-none border py-2 px-4 text-[#5F6E82] placeholder:text-[#CBCBC1] border-[#5F6E82] focus:border-[#00B7B5] w-full mb-1.5";
 
   return <div
     id="customerAdvisoryBoardModal"

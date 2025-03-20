@@ -6709,6 +6709,14 @@ details.collapse summary::-webkit-details-marker {
 .placeholder\:flex::placeholder {
   display: flex;
 }
+.placeholder\:text-\[\#CBCBC1\]::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(203 203 193 / var(--tw-text-opacity));
+}
+.placeholder\:text-\[\#CBCBC1\]::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(203 203 193 / var(--tw-text-opacity));
+}
 .last\:border-none:last-child {
   border-style: none;
 }

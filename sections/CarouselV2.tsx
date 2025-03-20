@@ -137,20 +137,20 @@ function SliderItem({ slide, id }: {
 }) {
     const { title, caption, image, video, use = "image", cta = [] } = slide;
   
-    return (<div id={id} class={`relative w-full rounded-[20px] shadow-spreaded4 flex flex-col`}>
-        {use == "image" && image?.src && <Image 
+    return (<div id={id} class={`relative w-full rounded-[20px] shadow-spreaded4 flex flex-col group overflow-hidden`}>
+        {use == "image" && image?.src && <div class="overflow-hidden"><Image 
             src={image.src}
             alt={image.alt}
             width={image.width || 414}
             height={image.height || 331}
-            class="w-full"
-        />}
-        {use == "video" && <video width="414" height="331" autoPlay playsInline muted loading="lazy" loop class="w-full">
+            class="w-full group-hover:scale-110 transition-transform"
+        /></div>}
+        {use == "video" && <div class="overflow-hidden"><video width="414" height="331" autoPlay playsInline muted loading="lazy" loop class="w-full group-hover:scale-110 transition-transform">
             <source src={video} type="video/mp4" />
             <object data="" width="320" height="240">
                 <embed width="320" height="240" src={video} />
             </object>
-        </video>}
+        </video></div>}
         
         <div class="py-[34px] lg:py-11 px-6 flex flex-col gap-1.5 lg:gap-5 flex-grow">
             {title?.text && <div 

@@ -1,6 +1,7 @@
 import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
+import { useId } from "../sdk/useId.ts";
 
 export interface IImage {
   src?: ImageWidget;
@@ -27,8 +28,6 @@ export interface Card {
   image?: IImage;
   title?: RichText;
   text?: RichText;
-  /** @format color-input */
-  backgroundColor?: string;
 }
 
 export interface Props {
@@ -36,17 +35,28 @@ export interface Props {
   tag?: Tag;
   title?: Title;
   cards?: Card[];
+  /** @format color-input */
+  cardsBackgroundColor?: string;
+  /** @format color-input */
+  cardsHoverBackgroundColor?: string;
+  /** @format color-input */
+  cardsIconBackgroundColor?: string;
+  /** @format color-input */
+  cardsHoverIconBackgroundColor?: string;
   paddingTop?: string;
   paddingBottom?: string;
 }
 
-export default function GridCards({ hideSection, tag, title, cards = [], paddingBottom, paddingTop }: Props) {
+export default function GridCards({ hideSection, tag, title, cards = [], paddingBottom, paddingTop, cardsBackgroundColor, cardsHoverBackgroundColor, cardsHoverIconBackgroundColor, cardsIconBackgroundColor }: Props) {
   if (hideSection) return <></>
   const position = {
     "left": "justify-start",
     "center": "justify-center",
     "right": "justify-end"
   }
+
+  const cardsClass = `GridCards-${useId()}`;
+
   return <div style={{ paddingBottom, paddingTop }}>
     <div class="max-w-[1282px] mx-auto pt-28" >
 
@@ -68,17 +78,18 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
       <div class="w-full flex flex-wrap gap-2 lg:gap-12 gap-y-12 justify-center lg:justify-start">
         {cards.map((card, index) => (
           <AnimateOnShow
-            divClass="rounded-[20px] max-w-[162px] lg:min-w-[284px] lg:max-w-[284px] p-5"
-            style={{ background: card.backgroundColor }}
+            divClass={`rounded-[20px] max-w-[162px] lg:min-w-[284px] lg:max-w-[284px] p-5 ${cardsClass} transition-colors`}
             delay={index * 100}
             animation="animate-fade-up"
           >
             {card.image?.src && <div class={`flex mb-[17px] lg:mb-8 ${position[card.image?.position || "left"]}`}>
-              <Image
-                src={card.image.src}
-                alt={card.image.alt || ""}
-                width={card.image.width || 60}
-                height={card.image.height || 60} />
+              <div class="p-2.5 lg:p-5 cardIcon rounded-[10px]">
+                <Image
+                  src={card.image.src}
+                  alt={card.image.alt || ""}
+                  width={card.image.width || 20}
+                  height={card.image.height || 20} />
+              </div>
             </div>}
             <div class="font-normal lg:font-bold text-sm lg:text-[22px] leading-normal mb-4 w-full" dangerouslySetInnerHTML={{ __html: card.title || "" }} />
             <div class="font-normal text-xs lg:text-base w-full" dangerouslySetInnerHTML={{ __html: card.text || "" }} />
@@ -87,5 +98,22 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
       </div>
 
     </div>
+    <style dangerouslySetInnerHTML={{
+      __html: `
+      .${cardsClass} {
+        background: ${cardsBackgroundColor}
+      }
+
+      .${cardsClass}:hover {
+        background: ${cardsHoverBackgroundColor};
+      }
+
+      .${cardsClass} .cardIcon {
+        background: ${cardsIconBackgroundColor};
+      }
+
+      .${cardsClass}:hover .cardIcon {
+        background: ${cardsHoverIconBackgroundColor};
+      `}} />
   </div>
 }

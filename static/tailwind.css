@@ -6709,6 +6709,14 @@ details.collapse summary::-webkit-details-marker {
 .placeholder\:flex::placeholder {
   display: flex;
 }
+.placeholder\:text-\[\#CBCBC1\]::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(203 203 193 / var(--tw-text-opacity));
+}
+.placeholder\:text-\[\#CBCBC1\]::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(203 203 193 / var(--tw-text-opacity));
+}
 .last\:border-none:last-child {
   border-style: none;
 }
@@ -6788,6 +6796,11 @@ details.collapse summary::-webkit-details-marker {
 }
 .group:hover .group-hover\:rotate-180 {
   --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.group:hover .group-hover\:scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .group:hover .group-hover\:opacity-100 {
@@ -7740,6 +7753,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:p-20 {
     padding: 5rem;
+  }
+
+  .lg\:p-5 {
+    padding: 1.25rem;
   }
 
   .lg\:px-0 {

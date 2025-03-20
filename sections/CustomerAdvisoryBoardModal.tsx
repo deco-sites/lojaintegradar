@@ -20,12 +20,12 @@ const onLoad = () => {
   const emailInput = modal.querySelector('input[name="email"]') as HTMLInputElement;
   const dddInput = modal.querySelector('input[name="ddd"]') as HTMLInputElement;
   const telefoneInput = modal.querySelector('input[name="telefone"]') as HTMLInputElement;
-  // const nomeLojaInput = modal.querySelector('input[name="nome_loja"]') as HTMLInputElement;
-  // const urlInput = modal.querySelector('input[name="url_loja"]') as HTMLInputElement;
-  // const segmentoInput = modal.querySelector('input[name="segmento"]') as HTMLInputElement; 
-  // const tempoAtuacaoInput = modal.querySelector('input[name="tempo_atuacao"]') as HTMLInputElement; 
-  // const faturamentoMedioInput = modal.querySelector('select[name="faturamento_medio"]') as HTMLInputElement; 
-  // const participouAntesInput = modal.querySelector('input[name="participou_antes"]') as HTMLInputElement; 
+  const nomeLojaInput = modal.querySelector('input[name="nome_loja"]') as HTMLInputElement;
+  const urlInput = modal.querySelector('input[name="url_loja"]') as HTMLInputElement;
+  const segmentoInput = modal.querySelector('input[name="segmento"]') as HTMLInputElement; 
+  const tempoAtuacaoInput = modal.querySelector('input[name="tempo_atuacao"]') as HTMLInputElement; 
+  const faturamentoMedioInput = modal.querySelector('select[name="faturamento_medio"]') as HTMLInputElement; 
+  const participouAntesInputs = modal.querySelectorAll('input[name="participou_antes"]') as NodeListOf<HTMLInputElement>; 
 
   let currentPage = 1;
 
@@ -80,6 +80,7 @@ const onLoad = () => {
         telefoneInput.style.borderColor = "#F57E77";
         validated = false;
       }
+      
 
       if (validated) {
         page1.classList.add("hidden");
@@ -89,56 +90,113 @@ const onLoad = () => {
         formStep.textContent = "Etapa 2 "
       }
     } else if (currentPage == 2) {
-      page2.classList.add("hidden");
-      page3.classList.remove("hidden");
-      progressBar.style.width = ("100%");
-      currentPage = 3;
-      formStep.textContent = "Etapa 3 "
-    } else if (currentPage == 3) {
+      let validated = true;
 
-      page3.classList.add("hidden");
-      page4.classList.remove("hidden");
-      currentPage = 4;
-      cancelButton?.classList.add("hidden");
-
-      const inlineMessage = modal.querySelector(".inlineMessage") as HTMLElement;
-
-      const formData = new FormData(e.target as HTMLFormElement); // Obtém os dados do formulário.
-  
-      const data:any = {};
-      formData.forEach((value, key) => {
-        data[key] = value; // Popula o objeto com os pares chave-valor do formulário.
-      });
-
-      //monta o objeto a ser enviado par ao hubspot
-      const objectToSend = {
-        firstname: data.name,
-        email: data.email,
-        mobilephone: `${data.ddd}${data.telefone}`,
-        company: data.nome_loja,
-        url_da_loja: data.url_loja,
-        segmento_loja: data.segmento,
-        tempo_de_atuacao_no_ecommerce: data.tempo_atuacao,
-        pd__faturamento_mensal_no_ecommerce: data.faturamento_medio,
-        ja_participou_de_testes_ou_pesquisas_com_a_equipe_da_loja_integrada_: data.participou_antes,
-        quais_sao_suas_maiores_dores_ou_desafios_hoje_na_plataforma_: data.dores
+      if (nomeLojaInput.value == "") {
+        const errorMessage = nomeLojaInput.parentElement?.querySelector(".error") as HTMLElement;
+        errorMessage.classList.remove("hidden");
+        errorMessage.innerText = "Preencha esse campo obrigatório";
+        nomeLojaInput.style.borderColor = "#F57E77";
+        validated = false;
+      } 
+      
+      if (urlInput.value == "") {
+        const errorMessage = urlInput.parentElement?.querySelector(".error") as HTMLElement;
+        errorMessage.classList.remove("hidden");
+        errorMessage.innerText = "Preencha esse campo obrigatório";
+        urlInput.style.borderColor = "#F57E77";
+        validated = false;
       }
 
-      //envia os dados para o hubspot
-      const hutk = document.cookie.replace(/(?:(?:^|.;\s)hubspotutk\s=\s([^;]).$)|^.*$/, "$1");
-      const context = {
-          "hutk": hutk,
-          "pageUri": window.location.href,
-          "pageName": document.title
-      };
-      fetch('/live/invoke/site/actions/sendTcoUserData.ts', {
-          body: JSON.stringify({ fields: objectToSend, formGuid: '4d3d5f57-9dac-4b07-9565-8a4b196d4b13', portalId: '7112881', context: context }),
-          method: 'POST',
-          headers: { 'content-type': 'application/json' }
-      }).then((r) => r.json()).then((r) => {
-        console.log(r)
-        inlineMessage.innerText = r.Success ? "Enviado" : "Erro ao enviar";
-      });
+      if (segmentoInput.value == "") {
+        const errorMessage = segmentoInput.parentElement?.querySelector(".error") as HTMLElement;
+        errorMessage.classList.remove("hidden");
+        errorMessage.innerText = "Preencha esse campo obrigatório";
+        segmentoInput.style.borderColor = "#F57E77";
+        validated = false;
+      }
+
+      if (tempoAtuacaoInput.value == "") {
+        const errorMessage = tempoAtuacaoInput.parentElement?.querySelector(".error") as HTMLElement;
+        errorMessage.classList.remove("hidden");
+        errorMessage.innerText = "Preencha esse campo obrigatório";
+        tempoAtuacaoInput.style.borderColor = "#F57E77";
+        validated = false;
+      }
+
+      if (faturamentoMedioInput.value == "") {
+        const errorMessage = faturamentoMedioInput.parentElement?.querySelector(".error") as HTMLElement;
+        errorMessage.classList.remove("hidden");
+        errorMessage.innerText = "Escolha uma opção";
+        faturamentoMedioInput.style.borderColor = "#F57E77";
+        validated = false;
+      }
+
+      if (validated) {
+        page2.classList.add("hidden");
+        page3.classList.remove("hidden");
+        progressBar.style.width = ("100%");
+        currentPage = 3;
+        formStep.textContent = "Etapa 3 "
+      }
+    
+    } else if (currentPage == 3) {
+      let validated = true;
+
+      if (!participouAntesInputs[0].checked && !participouAntesInputs[1].checked) {
+        const errorMessage = participouAntesInputs[0].parentElement?.parentElement?.parentElement?.querySelector(".error") as HTMLElement;
+        errorMessage.classList.remove("hidden");
+        errorMessage.innerText = "Escolha uma opção";
+        participouAntesInputs[0].style.borderColor = "#F57E77";
+        validated = false;
+      }
+
+      if (validated) {
+
+        page3.classList.add("hidden");
+        page4.classList.remove("hidden");
+        currentPage = 4;
+        cancelButton?.classList.add("hidden");
+  
+        const inlineMessage = modal.querySelector(".inlineMessage") as HTMLElement;
+  
+        const formData = new FormData(e.target as HTMLFormElement); // Obtém os dados do formulário.
+    
+        const data:any = {};
+        formData.forEach((value, key) => {
+          data[key] = value; // Popula o objeto com os pares chave-valor do formulário.
+        });
+  
+        //monta o objeto a ser enviado par ao hubspot
+        const objectToSend = {
+          firstname: data.name,
+          email: data.email,
+          mobilephone: `${data.ddd}${data.telefone}`,
+          company: data.nome_loja,
+          url_da_loja: data.url_loja,
+          segmento_loja: data.segmento,
+          tempo_de_atuacao_no_ecommerce: data.tempo_atuacao,
+          pd__faturamento_mensal_no_ecommerce: data.faturamento_medio,
+          ja_participou_de_testes_ou_pesquisas_com_a_equipe_da_loja_integrada_: data.participou_antes,
+          quais_sao_suas_maiores_dores_ou_desafios_hoje_na_plataforma_: data.dores
+        }
+  
+        //envia os dados para o hubspot
+        const hutk = document.cookie.replace(/(?:(?:^|.;\s)hubspotutk\s=\s([^;]).$)|^.*$/, "$1");
+        const context = {
+            "hutk": hutk,
+            "pageUri": window.location.href,
+            "pageName": document.title
+        };
+        fetch('/live/invoke/site/actions/sendTcoUserData.ts', {
+            body: JSON.stringify({ fields: objectToSend, formGuid: '4d3d5f57-9dac-4b07-9565-8a4b196d4b13', portalId: '7112881', context: context }),
+            method: 'POST',
+            headers: { 'content-type': 'application/json' }
+        }).then((r) => r.json()).then((r) => {
+          console.log(r)
+          inlineMessage.innerText = r.Success ? "Enviado" : "Erro ao enviar";
+        });
+      }
     } else if (currentPage == 4) {
       closeModal();
     }
@@ -173,7 +231,7 @@ export function CustomRadio({name, value}: {value: string, name: string}) {
 
 export default function CustomerAdvisoryBoardModal() {
   const labelClass = "mb-2 text-transparent group-focus-within:text-[#00B7B5] transition-colors text-xs";
-  const inputClass = "rounded-lg outline-none border py-2 px-4 text-[#5F6E82] border-[#5F6E82] focus:border-[#00B7B5] w-full mb-1.5";
+  const inputClass = "rounded-lg outline-none border py-2 px-4 text-[#5F6E82] placeholder:text-[#CBCBC1] border-[#5F6E82] focus:border-[#00B7B5] w-full mb-1.5";
 
   return <div
     id="customerAdvisoryBoardModal"
@@ -248,7 +306,9 @@ export default function CustomerAdvisoryBoardModal() {
             name="nome_loja"
             placeholder="Nome da Loja"
             class={inputClass}
+            hx-on:keyup={useScript(onKeyUp)}
           />
+          <p class="error text-[#F57E77] text-xs hidden" />
         </label>
 
         <label class="group">
@@ -258,7 +318,9 @@ export default function CustomerAdvisoryBoardModal() {
             name="url_loja"
             placeholder="Url da loja"
             class={inputClass}
+            hx-on:keyup={useScript(onKeyUp)}
           />
+          <p class="error text-[#F57E77] text-xs hidden" />
         </label>
 
         <label class="group">
@@ -268,7 +330,9 @@ export default function CustomerAdvisoryBoardModal() {
             name="segmento"
             placeholder="Segmento"
             class={inputClass}
+            hx-on:keyup={useScript(onKeyUp)}
           />
+          <p class="error text-[#F57E77] text-xs hidden" />
         </label>
 
         <label class="group">
@@ -278,12 +342,14 @@ export default function CustomerAdvisoryBoardModal() {
             name="tempo_atuacao"
             placeholder="Tempo de atuação no e-commerce"
             class={inputClass}
+            hx-on:keyup={useScript(onKeyUp)}
           />
+          <p class="error text-[#F57E77] text-xs hidden" />
         </label>
 
         <label class="group">
           <p class={labelClass}>Faturamento médio mensal</p>
-          <select name="faturamento_medio" class={`${inputClass} min-h-[42px]`}>
+          <select name="faturamento_medio" class={`${inputClass} min-h-[42px]`} hx-on:change={useScript(onKeyUp)}>
             <option value="">Faturamento médio mensal</option>
             <option value="Acima de R$ 500K">Acima de R$ 500K</option>
             <option value="Entre R$ 200K e R$ 500K">Entre R$ 200K e R$ 500K</option>
@@ -291,20 +357,25 @@ export default function CustomerAdvisoryBoardModal() {
             <option value="Entre R$ 51K e R$ 99K">Entre R$ 51K e R$ 99K</option>
             <option value="Até R$ 50K">Até R$ 50K</option>
           </select>
+          <p class="error text-[#F57E77] text-xs hidden" />
         </label>
+
       </div>
 
       <div class="page3 mb-10 hidden">
           <p class="mb-6">Já participou de testes ou pesquisas com a equipeda Loja Integrada?</p>
-          <div class="flex gap-5 mb-6">
-            <label class="flex gap-5">
-              <CustomRadio name="participou_antes" value="sim" />
-              Sim
-            </label>
-            <label class="flex gap-5">
-              <CustomRadio name="participou_antes" value="nao" />
-              Não
-            </label>
+          <div class="mb-6">
+            <div class="flex gap-5" hx-on:click={useScript(onKeyUp)}>
+              <label class="flex gap-5">
+                <CustomRadio name="participou_antes" value="sim" />
+                Sim
+              </label>
+              <label class="flex gap-5">
+                <CustomRadio name="participou_antes" value="nao" />
+                Não
+              </label>
+            </div>
+            <p class="error text-[#F57E77] text-xs hidden mt-2" />
           </div>
 
           <label>

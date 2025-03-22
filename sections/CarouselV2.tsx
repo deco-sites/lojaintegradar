@@ -81,6 +81,7 @@ export interface Title {
 }
 
 export interface CarouselItem {
+    icon?: CarouselIcon;
     image?: IImage;
     video?: VideoWidget;
     use?: 'image' | 'video';
@@ -135,23 +136,37 @@ function SliderItem({ slide, id }: {
     slide: CarouselItem;
     id: string;
 }) {
-    const { title, caption, image, video, use = "image", cta = [] } = slide;
-  
+    const { title, caption, image, video, use = "image", cta = [], icon } = slide;
+    const placement = {
+        "Top left": "top-5 left-6",
+        "Top right": "top-6 right-6",
+        "Bottom right": "bottom-5 right-6",
+        "Bottom left": "bottom-5 left-6"
+    }
     return (<div id={id} class={`relative w-full rounded-[20px] shadow-spreaded4 flex flex-col group overflow-hidden`}>
-        {use == "image" && image?.src && <div class="overflow-hidden"><Image 
-            src={image.src}
-            alt={image.alt}
-            width={image.width || 414}
-            height={image.height || 331}
-            class="w-full group-hover:scale-110 transition-transform ease-in-out duration-300"
-        /></div>}
-        {use == "video" && <div class="overflow-hidden"><video width="414" height="331" autoPlay playsInline muted loading="lazy" loop 
-        class="w-full group-hover:scale-110 transition-transform ease-in-out duration-300">
-            <source src={video} type="video/mp4" />
-            <object data="" width="320" height="240">
-                <embed width="320" height="240" src={video} />
-            </object>
-        </video></div>}
+        <div class="overflow-hidden relative">
+            {use == "image" && image?.src && <Image 
+                src={image.src}
+                alt={image.alt}
+                width={image.width || 414}
+                height={image.height || 331}
+                class="w-full group-hover:scale-110 transition-transform ease-in-out duration-300"
+            />}
+            {use == "video" && <video width="414" height="331" autoPlay playsInline muted loading="lazy" loop 
+            class="w-full group-hover:scale-110 transition-transform ease-in-out duration-300">
+                <source src={video} type="video/mp4" />
+                <object data="" width="320" height="240">
+                    <embed width="320" height="240" src={video} />
+                </object>
+            </video>}
+            {icon?.src && <Image 
+                src={icon.src}
+                alt={icon.alt || "floating icon"}
+                width={icon.width || 40}
+                height={icon.height || 40}
+                class={`absolute ${placement[icon.placement || "Top left"]}`}
+            />}
+        </div>
         
         <div class="py-[34px] lg:py-11 px-6 flex flex-col gap-1.5 lg:gap-5 flex-grow">
             {title?.text && <div 

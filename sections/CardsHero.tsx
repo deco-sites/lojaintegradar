@@ -101,6 +101,8 @@ export interface Card {
 export interface Column {
     cards?: Card[];
     cardsMaxWidth?: string;
+    /** @hide true */
+    distanceBetweenCards?: string;
 }
 
 export interface Props {
@@ -115,18 +117,19 @@ export interface Props {
     paddingTop?: string;
     paddingBottom?: string;
     distanceBetweenColums?: string;
+    distanceBetweenCards?: string;
 }
 
-export function CardColumn({ cards = [], cardsMaxWidth }: Column) {
-    return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow" style={{ maxWidth: cardsMaxWidth }}>
+export function CardColumn({ cards = [], cardsMaxWidth, distanceBetweenCards }: Column) {
+    return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow" style={{ maxWidth: cardsMaxWidth, rowGap: distanceBetweenCards }}>
         {cards.map((card, index) => (
             <AnimateOnShow
                 animation="animate-fade-up50"
-                divClass={`relative rounded-md ${card.borderColor && 'border'} py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 flex flex-col overflow-hidden ${card.contentPlacement != "bottom" ? '' : 'justify-end'}`}
+                divClass={`relative rounded-md ${card.borderColor && 'border'} group py-5 lg:py-10 px-4 lg:px-7 shadow-spreaded4 flex flex-col overflow-hidden ${card.contentPlacement != "bottom" ? '' : 'justify-end'}`}
                 style={{ borderColor: card.borderColor, minHeight: card.minHeight, background: card.backgroundColor, borderRadius: card.borderRadius, padding: card.padding, animationDuration: '1s' }}
                 delay={100 * index}>
 
-                {card.image?.src && card.image.imagePlacement !== "bottom" && <div class="flex w-full justify-center mb-4">
+                {card.image?.src && card.image.imagePlacement !== "bottom" && <div class="flex w-full justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Image
                         src={card.image.src}
                         alt={card.image.alt}
@@ -217,7 +220,7 @@ export function CardColumn({ cards = [], cardsMaxWidth }: Column) {
                     height={card.backgroundImage.height || 211}
                     src={card.backgroundImage.src}
                     alt={card.backgroundImage.alt || "card background image"}
-                    class="absolute w-full h-full top-0 left-0 object-cover object-top -z-50"
+                    class="absolute w-full h-full top-0 left-0 object-cover object-top -z-50 group-hover:scale-110 duration-300"
                 />}
                 {card.useBackground == 'video' && card.backgroundVideo && <video
                     width="1280"
@@ -227,7 +230,7 @@ export function CardColumn({ cards = [], cardsMaxWidth }: Column) {
                     muted
                     loading="lazy"
                     loop
-                    class="absolute top-0 left-0 w-full h-full object-cover -z-50"
+                    class="absolute top-0 left-0 w-full h-full object-cover -z-50 group-hover:scale-110 duration-300"
                 >
                     <source src={card.backgroundVideo} type="video/mp4" />
                 </video>}
@@ -237,8 +240,10 @@ export function CardColumn({ cards = [], cardsMaxWidth }: Column) {
 }
 
 
-export default function CardsHero({ hideSection, tag, distanceBetweenColums, id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
+export default function CardsHero({ hideSection, tag, distanceBetweenCards, distanceBetweenColums, id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
     if (hideSection) return <></>
+    leftColumn.distanceBetweenCards = distanceBetweenCards;
+    rightColumn.distanceBetweenCards = distanceBetweenCards;
     return <div id={id} class="py-20" style={{ paddingBottom, paddingTop }}>
         <div class="mb-">
             <AnimateOnShow
@@ -249,7 +254,7 @@ export default function CardsHero({ hideSection, tag, distanceBetweenColums, id,
                     style={{ background: tag.backgroundColor }}
                     dangerouslySetInnerHTML={{ __html: tag.text }} />
                 }
-                {title?.text && <div class="leading-normal" dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }} />}
+                {title?.text && <div class="leading-normal lg:leading-[1.2]" dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }} />}
             </AnimateOnShow>
             {caption && <AnimateOnShow
                 animation="animate-fade-up50"
@@ -257,7 +262,7 @@ export default function CardsHero({ hideSection, tag, distanceBetweenColums, id,
                 <div dangerouslySetInnerHTML={{ __html: caption }} />
             </AnimateOnShow>}
         </div>
-        <div class={`px-5 lg:px-0 flex flex-wrap lg:flex-nowrap gap-y-7 justify-center gap-5 ${invertColumns && 'flex-row-reverse'}`} style={{ columnGap: distanceBetweenColums }}>
+        <div class={`px-5 lg:px-0 flex flex-wrap lg:flex-nowrap gap-y-7 justify-center gap-5 ${invertColumns && 'flex-row-reverse'}`} style={{ columnGap: distanceBetweenColums, rowGap: distanceBetweenCards }}>
             <CardColumn {...leftColumn} />
             <CardColumn {...rightColumn} />
         </div>

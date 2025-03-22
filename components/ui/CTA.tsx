@@ -55,7 +55,9 @@ const openModalFunction = (modal: string, planId: string) => {
     }
   } else if (modal == "Customer Advisory Board Modal") {
     const customerAdvisoryBoardModal = document.getElementById("customerAdvisoryBoardModal") as HTMLElement;
+    const nameInput = customerAdvisoryBoardModal.querySelector('input[name="name"]') as HTMLInputElement;
     customerAdvisoryBoardModal.style.display = "flex";
+    nameInput.focus();
   }
 
 };

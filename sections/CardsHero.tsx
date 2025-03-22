@@ -101,6 +101,8 @@ export interface Card {
 export interface Column {
     cards?: Card[];
     cardsMaxWidth?: string;
+    /** @hide true */
+    distanceBetweenCards?: string;
 }
 
 export interface Props {
@@ -115,10 +117,11 @@ export interface Props {
     paddingTop?: string;
     paddingBottom?: string;
     distanceBetweenColums?: string;
+    distanceBetweenCards?: string;
 }
 
-export function CardColumn({ cards = [], cardsMaxWidth }: Column) {
-    return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow" style={{ maxWidth: cardsMaxWidth }}>
+export function CardColumn({ cards = [], cardsMaxWidth, distanceBetweenCards }: Column) {
+    return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow" style={{ maxWidth: cardsMaxWidth, rowGap: distanceBetweenCards }}>
         {cards.map((card, index) => (
             <AnimateOnShow
                 animation="animate-fade-up50"
@@ -237,8 +240,10 @@ export function CardColumn({ cards = [], cardsMaxWidth }: Column) {
 }
 
 
-export default function CardsHero({ hideSection, tag, distanceBetweenColums, id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
+export default function CardsHero({ hideSection, tag, distanceBetweenCards, distanceBetweenColums, id, paddingBottom, paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
     if (hideSection) return <></>
+    leftColumn.distanceBetweenCards = distanceBetweenCards;
+    rightColumn.distanceBetweenCards = distanceBetweenCards;
     return <div id={id} class="py-20" style={{ paddingBottom, paddingTop }}>
         <div class="mb-">
             <AnimateOnShow
@@ -257,7 +262,7 @@ export default function CardsHero({ hideSection, tag, distanceBetweenColums, id,
                 <div dangerouslySetInnerHTML={{ __html: caption }} />
             </AnimateOnShow>}
         </div>
-        <div class={`px-5 lg:px-0 flex flex-wrap lg:flex-nowrap gap-y-7 justify-center gap-5 ${invertColumns && 'flex-row-reverse'}`} style={{ columnGap: distanceBetweenColums }}>
+        <div class={`px-5 lg:px-0 flex flex-wrap lg:flex-nowrap gap-y-7 justify-center gap-5 ${invertColumns && 'flex-row-reverse'}`} style={{ columnGap: distanceBetweenColums, rowGap: distanceBetweenCards }}>
             <CardColumn {...leftColumn} />
             <CardColumn {...rightColumn} />
         </div>

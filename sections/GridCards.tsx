@@ -58,7 +58,7 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
   const cardsClass = `GridCards-${useId()}`;
 
   return <div style={{ paddingBottom, paddingTop }}>
-    <div class="max-w-[1282px] mx-auto pt-28" >
+    <div class="max-w-[1282px] mx-auto pt-16 lg:pt-28" >
 
       <AnimateOnShow animation="animate-fade-up50">
         {tag?.text && <div
@@ -68,7 +68,7 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
         }
 
         {title?.text && <div
-          class="font-medium w-full mb-[120px] text-[32px] lg:text-[56px] lg:leading-[1.2]"
+          class="font-medium w-full mb-12 lg:mb-[120px] text-[32px] lg:text-[56px] lg:leading-[1.2]"
           style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }}
           dangerouslySetInnerHTML={{ __html: title.text }}
         />}
@@ -78,7 +78,7 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
       <div class="w-full flex flex-wrap gap-2 lg:gap-12 gap-y-12 justify-center lg:justify-start">
         {cards.map((card, index) => (
           <AnimateOnShow
-            divClass={`rounded-[20px] max-w-[162px] lg:min-w-[284px] lg:max-w-[284px] p-5 ${cardsClass} transition-colors`}
+            divClass={`rounded-[20px] max-w-[43.1vw] lg:min-w-[284px] lg:max-w-[284px] p-5 ${cardsClass} transition-colors`}
             delay={index * 100}
             animation="animate-fade-up"
           >

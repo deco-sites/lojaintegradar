@@ -90,13 +90,13 @@ export default function Footer2({ hideSection, id, centralizeCards = false, show
     if (hideSection) return <></>
     const randomId = useId();
     const hubspostFormId = randomId + "hubspotForm";
-    return <footer id={id} class="relative text-primary pt-[105px]">
+    return <footer id={id} class="relative text-primary pt-14 lg:pt-[105px]">
 
         <div class="pb-32">
             <div class="max-w-[1250px] mx-auto">
-                <AnimateOnShow divClass={`${centralizeCards && 'mx-auto'} w-full justify-center pl-5 py-9 lg:p-0 flex flex-wrap gap-2.5 lg:gap-[42px]`} animation="animate-fade-up">
+                <AnimateOnShow divClass={`${centralizeCards && 'mx-auto'} w-full justify-center px-5 lg:p-0 flex flex-wrap gap-[42px]`} animation="animate-fade-up">
                     {cards.length > 0 && cards.map((card) => (
-                        <div class="flex-grow min-w-[78vw] lg:min-w-0 lg:max-w-[500px] rounded-[30px] bg-primary-content py-7 lg:py-10 px-12 lg:px-14 shadow-spreaded3" style={{ background: card.backgroundColor }}>
+                        <div class="flex-grow min-w-[78vw] lg:min-w-0 lg:max-w-[500px] rounded-[20px] bg-primary-content py-7 lg:py-10 px-12 lg:px-14 shadow-spreaded4 lg:shadow-spreaded3" style={{ background: card.backgroundColor }}>
                             <div class="flex gap-2.5 lg:gap-5 items-center">
                                 {card.cardIcon?.src && <Image
                                     width={card.cardIcon.width || 40}
@@ -140,7 +140,7 @@ export default function Footer2({ hideSection, id, centralizeCards = false, show
 
                 </div>
 
-                <div class={`mt-20 mx-auto pt-[62px] border-t border-t-base-200 max-w-[1240px] flex flex-col lg:flex-row flex-wrap gap-y-5 gap-7 ${centralizeBottomLinks && 'justify-center'}`} style={{ borderColor: lineColor, color: bottomLinksColor }}>
+                <div class={`mt-20 mx-5 lg:mx-auto pt-[62px] border-t border-t-base-200 max-w-[1240px] flex flex-col lg:flex-row flex-wrap gap-y-5 gap-7 ${centralizeBottomLinks && 'justify-center'}`} style={{ borderColor: lineColor, color: bottomLinksColor }}>
                     {bottomLinks?.map((link) => {
                         if (link.href == '/talkToSpecialist') return <TalkToSpecialistCta text={link.text} ctaClass="text-sm font-normal leading-normal cursor-pointer text-center" divClass="text-center" />
                         return <a

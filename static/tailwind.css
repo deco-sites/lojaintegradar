@@ -3728,6 +3728,10 @@ details.collapse summary::-webkit-details-marker {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
 .mx-\[10px\] {
   margin-left: 10px;
   margin-right: 10px;
@@ -3809,9 +3813,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .mb-8 {
   margin-bottom: 2rem;
-}
-.mb-\[120px\] {
-  margin-bottom: 120px;
 }
 .mb-\[157px\] {
   margin-bottom: 157px;
@@ -4559,9 +4560,6 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[1480px\] {
   max-width: 1480px;
 }
-.max-w-\[162px\] {
-  max-width: 162px;
-}
 .max-w-\[176px\] {
   max-width: 176px;
 }
@@ -4636,6 +4634,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[420px\] {
   max-width: 420px;
+}
+.max-w-\[43\.1vw\] {
+  max-width: 43.1vw;
 }
 .max-w-\[437px\] {
   max-width: 437px;
@@ -5122,6 +5123,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-\[40px\] {
   gap: 40px;
+}
+.gap-\[42px\] {
+  gap: 42px;
 }
 .gap-\[4px\] {
   gap: 4px;
@@ -5978,9 +5982,6 @@ details.collapse summary::-webkit-details-marker {
 .pl-4 {
   padding-left: 1rem;
 }
-.pl-5 {
-  padding-left: 1.25rem;
-}
 .pl-7 {
   padding-left: 1.75rem;
 }
@@ -6038,6 +6039,9 @@ details.collapse summary::-webkit-details-marker {
 .pt-12 {
   padding-top: 3rem;
 }
+.pt-14 {
+  padding-top: 3.5rem;
+}
 .pt-16 {
   padding-top: 4rem;
 }
@@ -6049,9 +6053,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-24 {
   padding-top: 6rem;
-}
-.pt-28 {
-  padding-top: 7rem;
 }
 .pt-36 {
   padding-top: 9rem;
@@ -6073,9 +6074,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-\[100px\] {
   padding-top: 100px;
-}
-.pt-\[105px\] {
-  padding-top: 105px;
 }
 .pt-\[109px\] {
   padding-top: 109px;
@@ -8017,6 +8015,10 @@ details.collapse summary::-webkit-details-marker {
     padding-top: 2.25rem;
   }
 
+  .lg\:pt-\[105px\] {
+    padding-top: 105px;
+  }
+
   .lg\:pt-\[116px\] {
     padding-top: 116px;
   }
@@ -8179,6 +8181,12 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:leading-\[57px\] {
     line-height: 57px;
+  }
+
+  .lg\:shadow-spreaded3 {
+    --tw-shadow: 11px 4px 44px 0px rgba(29, 26, 26, 0.15);
+    --tw-shadow-colored: 11px 4px 44px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 @media (min-width: 1280px) {

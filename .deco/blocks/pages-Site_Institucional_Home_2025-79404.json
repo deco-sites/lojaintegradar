@@ -509,7 +509,9 @@
               "text": "<p></p>",
               "backgroundColor": ""
             },
-            "paddingBottom": "0px"
+            "paddingBottom": "0px",
+            "paddingTop": "48px",
+            "distanceBetweenCards": "48px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -636,7 +638,7 @@
               "font": "Galaxie Copernicus",
               "fontSize": "32px"
             },
-            "paddingTop": "124px",
+            "paddingTop": "52px",
             "leftColumn": {
               "cardsMaxWidth": "630px",
               "cards": [
@@ -751,7 +753,8 @@
                 }
               ]
             },
-            "paddingBottom": "20px"
+            "paddingBottom": "20px",
+            "distanceBetweenCards": "48px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -893,14 +896,14 @@
             "id": "nossoecossistema",
             "titleFont": "Instrument serif",
             "backgroundImage": {},
-            "paddingBottom": "120px",
+            "paddingBottom": "56px",
             "titleColor": "",
             "captionColor": "#371E55",
             "slides": [
               {
                 "use": "image",
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/e9f2596d-4a3f-4999-88ad-aca46434d416/carousel-top-image-1.svg"
+                  "src": "https://assets.decocache.com/lojaintegradar/5c1915a4-e0ec-46eb-9761-4d2e580f2abb/carousel-top-image-1.svg"
                 },
                 "title": {
                   "text": "<p><span style=\"color: #00363a\">Segmentação<br>por CEP</span></p>",
@@ -919,7 +922,11 @@
                     "borderColor": "",
                     "showIcon": true
                   }
-                ]
+                ],
+                "icon": {
+                  "src": "https://assets.decocache.com/lojaintegradar/c1198dda-920e-415b-bb62-0520c6989d87/3-green-dots.svg",
+                  "width": 27
+                }
               },
               {
                 "use": "image",
@@ -934,14 +941,18 @@
                   }
                 ],
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/47dc5d86-4d2c-41fa-9fde-6a40a2991296/carousel-top-image-2.svg"
+                  "src": "https://assets.decocache.com/lojaintegradar/8ec1c515-8f55-4cc5-83b7-ef32a56182c9/carousel-top-image-2.svg"
                 },
                 "title": {
                   "text": "<p><span style=\"color: #00363a\">Busca <br>Aprimorada</span></p>",
                   "font": "Galaxie Copernicus",
                   "letterSpacing": "-3px"
                 },
-                "caption": "<p><span style=\"color: #5f6e82\">Motor de busca mais inteligente que entende melhor a intenção do usuário e apresenta resultados mais relevantes.</span></p>"
+                "caption": "<p><span style=\"color: #5f6e82\">Motor de busca mais inteligente que entende melhor a intenção do usuário e apresenta resultados mais relevantes.</span></p>",
+                "icon": {
+                  "src": "https://assets.decocache.com/lojaintegradar/c1198dda-920e-415b-bb62-0520c6989d87/3-green-dots.svg",
+                  "width": 27
+                }
               },
               {
                 "use": "image",
@@ -956,14 +967,18 @@
                   }
                 ],
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/9d90fa7d-0a1e-48e4-bdd1-ce9947f38056/carousel-top-image-3.svg"
+                  "src": "https://assets.decocache.com/lojaintegradar/673b0849-1149-4610-8ca6-c3c152194c04/carousel-top-image-3.svg"
                 },
                 "title": {
                   "text": "<p><span style=\"color: #00363a\">Solicitação de suspensão<br>de entrega no Enviali</span></p>",
                   "font": "Galaxie Copernicus",
                   "letterSpacing": "-3px"
                 },
-                "caption": "<p><span style=\"color: #5f6e82\">Solicite a suspensão temporária de entregas diretamente pela plataforma Enviali, sem necessidade de contato com o suporte.</span></p>"
+                "caption": "<p><span style=\"color: #5f6e82\">Solicite a suspensão temporária de entregas diretamente pela plataforma Enviali, sem necessidade de contato com o suporte.</span></p>",
+                "icon": {
+                  "src": "https://assets.decocache.com/lojaintegradar/c1198dda-920e-415b-bb62-0520c6989d87/3-green-dots.svg",
+                  "width": 27
+                }
               }
             ],
             "arrows": {
@@ -1289,7 +1304,8 @@
             },
             "container": {
               "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
-              "paddingRight": "0px"
+              "paddingRight": "0px",
+              "marginBottom": "0"
             }
           },
           "rule": {
@@ -1383,7 +1399,12 @@
                 "openModal": "Customer Advisory Board Modal"
               }
             ],
-            "ctaPlacement": "center"
+            "ctaPlacement": "center",
+            "container": {
+              "marginTop": "0",
+              "marginBottom": "0",
+              "paddingBottom": "0"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

@@ -254,7 +254,7 @@ const onKeyUp = () => {
     errorMessage = target.parentElement?.parentElement?.querySelector(".error") as HTMLElement | undefined;
     errorMessage?.classList.add("hidden");
   }
-  target.style.borderColor = "#5F6E82";
+  target.style.borderColor = "";
 };
 
 export function CustomRadio({name, value}: {value: string, name: string}) {

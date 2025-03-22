@@ -1,10 +1,39 @@
 import { useScript } from "deco/hooks/useScript.ts";
 
+const openAndCloseDropdown = () => {
+  const modal = document.getElementById("customerAdvisoryBoardModal") as HTMLElement;
+  const form = modal.querySelector("form") as HTMLElement;
+  const currentTarget = event!.currentTarget as HTMLElement;
+  const parentElement = currentTarget.closest("label");
+  const error = parentElement?.querySelector(".error");
+  const dropDown = parentElement?.querySelector(".dropDownDiv") as HTMLElement;
+  const input = parentElement?.querySelector("input") as HTMLElement;
+  input.style.borderColor = "#5F6E82";
+  error?.classList.add("hidden");
+  
+  if (dropDown.classList.contains("hidden")) dropDown.classList.remove("hidden")
+  else dropDown.classList.add("hidden");
+  form.scrollTo({
+    top: form.scrollHeight,
+    behavior: 'smooth' // Rola suavemente
+});
+
+}
+
+const dropDownSelect = (value: string) => {
+  const currentTarget = event!.currentTarget as HTMLElement;
+  const parentLabel = currentTarget.closest("label");
+  console.log("parentLabel: ", parentLabel);
+  const input = parentLabel?.querySelector("input") as HTMLInputElement | undefined;
+  console.log("input:", input);
+  if (input) input.value = value; 
+}
+
 const onLoad = () => {
   const modal = document.getElementById("customerAdvisoryBoardModal") as HTMLElement;
   const form = modal.querySelector("form") as HTMLElement;
   const cancelButton = modal?.querySelector(".cancelButton");
-  const nextButton = modal?.querySelector(".nextButton");
+  const nextButton = modal?.querySelector(".nextButton") as HTMLElement;
 
   const page1 = modal.querySelector(".page1") as HTMLElement;
   const page2 = modal.querySelector(".page2") as HTMLElement;
@@ -24,8 +53,11 @@ const onLoad = () => {
   const urlInput = modal.querySelector('input[name="url_loja"]') as HTMLInputElement;
   const segmentoInput = modal.querySelector('input[name="segmento"]') as HTMLInputElement; 
   const tempoAtuacaoInput = modal.querySelector('input[name="tempo_atuacao"]') as HTMLInputElement; 
-  const faturamentoMedioInput = modal.querySelector('select[name="faturamento_medio"]') as HTMLInputElement; 
+  const faturamentoMedioInput = modal.querySelector('input[name="faturamento_medio"]') as HTMLInputElement; 
   const participouAntesInputs = modal.querySelectorAll('input[name="participou_antes"]') as NodeListOf<HTMLInputElement>; 
+  
+
+  const inlineMessage = modal.querySelector(".inlineMessage") as HTMLElement;
 
   let currentPage = 1;
 
@@ -33,17 +65,25 @@ const onLoad = () => {
     modal.style.display = "none";
 
     fields.forEach(field => {
-      const input = field.querySelector("input");
-      if (input) input.value = "";
+      const input = field.querySelectorAll("input");
+      if (input[0]) input[0].value = "";
+      if (input[1]) input[1].value = "";
     });
+
+    faturamentoMedioInput.value = "Faturamento médio mensal";
 
     page1.classList.remove("hidden");
     page2.classList.add("hidden");
     page3.classList.add("hidden");
+    page4.classList.add("hidden");
     progressBar.style.width = ("33%");
     currentPage = 1;
     formStep.textContent = "Etapa 1 "
     cancelButton?.classList.remove("hidden");
+    nextButton.textContent = "Continuar";
+    inlineMessage.innerText = "Enviando...";
+    participouAntesInputs[0].checked = false;
+    participouAntesInputs[1].checked = false;
   }
 
   cancelButton?.addEventListener("click", (e) => {
@@ -124,8 +164,8 @@ const onLoad = () => {
         validated = false;
       }
 
-      if (faturamentoMedioInput.value == "") {
-        const errorMessage = faturamentoMedioInput.parentElement?.querySelector(".error") as HTMLElement;
+      if (faturamentoMedioInput.value == "Faturamento médio mensal") {
+        const errorMessage = faturamentoMedioInput.parentElement?.parentElement?.querySelector(".error") as HTMLElement;
         errorMessage.classList.remove("hidden");
         errorMessage.innerText = "Escolha uma opção";
         faturamentoMedioInput.style.borderColor = "#F57E77";
@@ -157,8 +197,9 @@ const onLoad = () => {
         page4.classList.remove("hidden");
         currentPage = 4;
         cancelButton?.classList.add("hidden");
+        nextButton.textContent = "Retomar a navegação";
   
-        const inlineMessage = modal.querySelector(".inlineMessage") as HTMLElement;
+        
   
         const formData = new FormData(e.target as HTMLFormElement); // Obtém os dados do formulário.
     
@@ -194,7 +235,7 @@ const onLoad = () => {
             headers: { 'content-type': 'application/json' }
         }).then((r) => r.json()).then((r) => {
           console.log(r)
-          inlineMessage.innerText = r.Success ? "Enviado" : "Erro ao enviar";
+          inlineMessage.innerText = r.Success ? "Obrigado! seus dados foram enviados, em breve entraremos em contato!" : "Erro ao enviar";
         });
       }
     } else if (currentPage == 4) {
@@ -232,6 +273,7 @@ export function CustomRadio({name, value}: {value: string, name: string}) {
 export default function CustomerAdvisoryBoardModal() {
   const labelClass = "mb-2 text-transparent group-focus-within:text-[#00B7B5] transition-colors text-xs";
   const inputClass = "rounded-lg outline-none border py-2 px-4 text-[#5F6E82] placeholder:text-[#CBCBC1] border-[#5F6E82] focus:border-[#00B7B5] w-full mb-1.5";
+  const selectOptionClass = "px-2.5 py-2 hover:bg-[#00B7B5] hover:text-white cursor-pointer";
 
   return <div
     id="customerAdvisoryBoardModal"
@@ -240,7 +282,7 @@ export default function CustomerAdvisoryBoardModal() {
       type="module"
       dangerouslySetInnerHTML={{ __html: useScript(onLoad) }}
     />
-    <form id="customerAdvisoryBoardModalForm" class="max-w-[582px] w-full h-fit p-5 lg:p-20 bg-white max-h-screen overflow-auto rounded-[20px] animate-pop-up" style={{ animationDuration: "0.3s" }}>
+    <form id="customerAdvisoryBoardModalForm" class="max-w-[582px] w-full h-fit p-5 lg:p-20 bg-white max-h-[92vh] overflow-auto rounded-[20px] animate-pop-up" style={{ animationDuration: "0.3s" }}>
 
       <h2 class="text-[#00363A] text-[22px] font-bold mb-6">Preencha o formulário para participar</h2>
 
@@ -346,18 +388,24 @@ export default function CustomerAdvisoryBoardModal() {
           />
           <p class="error text-[#F57E77] text-xs hidden" />
         </label>
-
+        
         <label class="group">
-          <p class={labelClass}>Faturamento médio mensal</p>
-          <select name="faturamento_medio" class={`${inputClass} min-h-[42px]`} hx-on:change={useScript(onKeyUp)}>
-            <option value="">Faturamento médio mensal</option>
-            <option value="Acima de R$ 500K">Acima de R$ 500K</option>
-            <option value="Entre R$ 200K e R$ 500K">Entre R$ 200K e R$ 500K</option>
-            <option value="Entre R$ 100K e R$ 199K">Entre R$ 100K e R$ 199K</option>
-            <option value="Entre R$ 51K e R$ 99K">Entre R$ 51K e R$ 99K</option>
-            <option value="Até R$ 50K">Até R$ 50K</option>
-          </select>
-          <p class="error text-[#F57E77] text-xs hidden" />
+          <div class="relative w-full">
+            <p class={labelClass}>Faturamento médio mensal</p>
+            <input readonly name="faturamento_medio" value="Faturamento médio mensal" class={`!mb-0 ${inputClass} cursor-pointer min-h-[42px]`} hx-on:click={useScript(openAndCloseDropdown)} />
+              <div class="absolute dropDownDiv hidden w-full bg-white py-5 px-4 border border-[#CFD3D4] flex flex-col top-full rounded-br-lg rounded-bl-lg">
+                <p hx-on:click={useScript(dropDownSelect, "Acima de R$ 500K")} class={selectOptionClass}>Acima de R$ 500K</p>
+                <p hx-on:click={useScript(dropDownSelect, "Entre R$ 200K e R$ 500K")} class={selectOptionClass}>Entre R$ 200K e R$ 500K</p>
+                <p hx-on:click={useScript(dropDownSelect, "Entre R$ 100K e R$ 199K")} class={selectOptionClass}>Entre R$ 100K e R$ 199K</p>
+                <p hx-on:click={useScript(dropDownSelect, "Entre R$ 51K e R$ 99K")} class={selectOptionClass}>Entre R$ 51K e R$ 99K</p>
+                <p hx-on:click={useScript(dropDownSelect, "Até R$ 50K")} class={selectOptionClass}>Até R$ 50K</p>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute right-4 top-[34px]">
+              <path d="M6 9L12 15L18 9" stroke="#5F6E82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+
+          <p class="error text-[#F57E77] text-xs hidden mt-1.5" />
         </label>
 
       </div>

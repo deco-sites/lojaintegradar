@@ -410,8 +410,8 @@ export default function CustomerAdvisoryBoardModal() {
 
       </div>
 
-      <div class="page3 mb-10 hidden">
-          <p class="mb-6">Já participou de testes ou pesquisas com a equipeda Loja Integrada?</p>
+      <div class="page3 mb-10 hidden text-[#5F6E82]">
+          <p class="mb-6 ">Já participou de testes ou pesquisas com a equipeda Loja Integrada?</p>
           <div class="mb-6">
             <div class="flex gap-5" hx-on:click={useScript(onKeyUp)}>
               <label class="flex gap-5">
@@ -427,7 +427,7 @@ export default function CustomerAdvisoryBoardModal() {
           </div>
 
           <label>
-            <p class="text-[#5F6E82]">Quais sao suas maiores dores ou desafios
+            <p >Quais sao suas maiores dores ou desafios
             hoje na plataforma?</p>
             <textarea name="dores" class={`${inputClass} h-40`}/>
           </label>

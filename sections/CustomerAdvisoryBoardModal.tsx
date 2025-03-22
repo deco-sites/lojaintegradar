@@ -128,6 +128,7 @@ const onLoad = () => {
         progressBar.style.width = ("66%");
         currentPage = 2;
         formStep.textContent = "Etapa 2 "
+        nomeLojaInput.focus();
       }
     } else if (currentPage == 2) {
       let validated = true;

@@ -111,7 +111,7 @@ export default function HeroV3({ title, text, bulletPoints, cta = [], media, con
 
         {title?.text && <div
           dangerouslySetInnerHTML={{ __html: title.text }}
-          class={`w-full text-[32px] lg:text-[56px] !text-transparent !bg-clip-text`}
+          class={`w-full text-[32px] lg:text-[56px] lg:leading-[1.2] !text-transparent !bg-clip-text`}
           style={{ fontSize: title.fontSize, fontFamily: title.font, letterSpacing: title.letterSpacing, background: title.color }} />}
 
         {text && <div dangerouslySetInnerHTML={{ __html: text }} class="text-sm lg:text-lg w-full" />}

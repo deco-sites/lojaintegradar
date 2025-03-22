@@ -68,7 +68,7 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
         }
 
         {title?.text && <div
-          class="font-medium w-full mb-[120px] text-[32px] lg:text-[56px]"
+          class="font-medium w-full mb-[120px] text-[32px] lg:text-[56px] lg:leading-[1.2]"
           style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }}
           dangerouslySetInnerHTML={{ __html: title.text }}
         />}

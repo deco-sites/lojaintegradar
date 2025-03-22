@@ -249,7 +249,7 @@ export default function CardsHero({ hideSection, tag, distanceBetweenColums, id,
                     style={{ background: tag.backgroundColor }}
                     dangerouslySetInnerHTML={{ __html: tag.text }} />
                 }
-                {title?.text && <div class="leading-normal" dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }} />}
+                {title?.text && <div class="leading-normal lg:leading-[1.2]" dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }} />}
             </AnimateOnShow>
             {caption && <AnimateOnShow
                 animation="animate-fade-up50"

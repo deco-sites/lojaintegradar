@@ -121,7 +121,7 @@ export interface Props {
 }
 
 export function CardColumn({ cards = [], cardsMaxWidth, distanceBetweenCards }: Column) {
-    return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow" style={{ maxWidth: cardsMaxWidth, rowGap: distanceBetweenCards }}>
+    return <div class="flex flex-col gap-y-5 max-w-[597px] flex-grow relative z-10" style={{ maxWidth: cardsMaxWidth, rowGap: distanceBetweenCards }}>
         {cards.map((card, index) => (
             <AnimateOnShow
                 animation="animate-fade-up50"

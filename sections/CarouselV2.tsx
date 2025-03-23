@@ -81,6 +81,8 @@ export interface Title {
 }
 
 export interface CarouselItem {
+    /** @format color-input */
+    backgroundColor?: string;
     icon?: CarouselIcon;
     image?: IImage;
     video?: VideoWidget;
@@ -136,14 +138,14 @@ function SliderItem({ slide, id }: {
     slide: CarouselItem;
     id: string;
 }) {
-    const { title, caption, image, video, use = "image", cta = [], icon } = slide;
+    const { title, caption, image, video, use = "image", cta = [], icon, backgroundColor } = slide;
     const placement = {
         "Top left": "top-5 left-6",
         "Top right": "top-6 right-6",
         "Bottom right": "bottom-5 right-6",
         "Bottom left": "bottom-5 left-6"
     }
-    return (<div id={id} class={`relative w-full rounded-[20px] shadow-spreaded4 flex flex-col group overflow-hidden`}>
+    return (<div id={id} class={`relative w-full rounded-[20px] shadow-spreaded4 flex flex-col group overflow-hidden z-10`} style={{background: backgroundColor}}>
         <div class="overflow-hidden relative">
             {use == "image" && image?.src && <Image 
                 src={image.src}

@@ -105,7 +105,7 @@ export default function HeroV3({ title, text, bulletPoints, cta = [], media, con
   }
   return <div class="px-5 lg:px-0">
     <div
-      class={`max-w-[1288px] relative mx-auto rounded-[20px] p-[30px] lg:p-12 my-12 flex gap-5 flex-wrap-reverse lg:flex-nowrap items-center justify-center lg:justify-between ${media?.placement == "left" && 'flex-row-reverse'}`}
+      class={`max-w-[1288px] relative z-10 mx-auto rounded-[20px] overflow-hidden p-[30px] lg:p-12 my-12 flex gap-5 flex-wrap-reverse lg:flex-nowrap items-center justify-center lg:justify-between ${media?.placement == "left" && 'flex-row-reverse'}`}
       style={{ background: container?.backgroundColor, marginTop: container?.marginTop, marginBottom: container?.marginBottom, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight }}>
       <AnimateOnShow animation="animate-fade-up50" divClass={`${media?.use && 'max-w-[448px]'} w-full flex flex-col gap-6`} style={{ animationDuration: '1s' }}>
 
@@ -137,14 +137,13 @@ export default function HeroV3({ title, text, bulletPoints, cta = [], media, con
         </div>}
       </AnimateOnShow>
 
-      <div>
-        {media?.use && <AnimateOnShow
-          delay={200}
-          style={{ animationDuration: "1s" }}
-          animation={"animate-fade-up50"}>
-          <HeroMedia media={media} />
-        </AnimateOnShow>}
-      </div>
+
+      {media?.use && <AnimateOnShow
+        delay={200}
+        style={{ animationDuration: "1s" }}
+        animation={"animate-fade-up50"}>
+        <HeroMedia media={media} />
+      </AnimateOnShow>}
 
 
       {container?.backgroundMedia?.use == "image" && container?.backgroundMedia.image?.src && <Image

@@ -256,11 +256,11 @@ export default function Header2({ logo = {
 
           <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, navigation) }} />
 
-          <a href={logo.href || "/"} class="w-28 h-5 md:w-64 md:h-10 flex items-center">
+          <a href={logo.href || "/"} class="w-28 h-5 md:w-auto md:h-10 flex items-center">
             <Image src={logo.src || ""} width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
           </a>
           
-          <ul class="hidden lg:flex items-center gap-4 text-sm flex-wrap" style={{color: dropdownMenus.titlesTextColor}}>
+          <ul class="hidden lg:flex items-center gap-10 text-sm flex-wrap" style={{color: dropdownMenus.titlesTextColor}}>
             {dropdownMenus.menus.map(menu => (
               <li class="relative group h-full" hx-on={`mouseleave: this.children[0].style.color='${dropdownMenus.titlesTextColor}'; this.children[1]?.classList.remove('animate-fade-in')`}>
                 <a 

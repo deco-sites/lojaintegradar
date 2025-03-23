@@ -90,7 +90,7 @@ export default function Footer2({ hideSection, id, centralizeCards = false, show
     if (hideSection) return <></>
     const randomId = useId();
     const hubspostFormId = randomId + "hubspotForm";
-    return <footer id={id} class="relative text-primary pt-14 lg:pt-[105px]">
+    return <footer id={id} class="relative text-primary pt-14 lg:pt-[105px] z-10">
 
         <div class="pb-32">
             <div class="max-w-[1250px] mx-auto">

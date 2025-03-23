@@ -24,9 +24,17 @@ export default defineApp(async (_req, ctx) => {
       <link rel="manifest" href={asset("/site.webmanifest")} />
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
       <style dangerouslySetInnerHTML={{
-        __html: `html {
+        __html: `
+        html {
           scroll-behavior: smooth;
-          }`}} />
+          }
+
+          html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+          `}} />
       <style dangerouslySetInnerHTML={{
         __html: `
         @font-face {

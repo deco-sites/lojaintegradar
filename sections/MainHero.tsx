@@ -78,6 +78,7 @@ export interface Props {
     captionAbove?: RichText;
     title: RichText;
     titleFont?: string;
+    titleLetterSpacing?: string;
     /** @format color-input */
     titleColor?: string;
     caption?: RichText;
@@ -112,14 +113,16 @@ export interface Props {
     bulletPoints?: BulletPoints;
     modal?: Modal;
     sectionMinHeight?: string;
+    paddingTop?: string;
+    paddingBottom?: string;
 }
-export default function MainHero({ hideSection, id, title, caption = "", backgroundAnimation, inputLabel, captionFontSize, backgroundColor, hubspotFormButtonWidth, backgroundVideo, lcp, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
+export default function MainHero({ hideSection, id, title, caption = "", paddingBottom, paddingTop,titleLetterSpacing, backgroundAnimation, inputLabel, captionFontSize, backgroundColor, hubspotFormButtonWidth, backgroundVideo, lcp, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
     if (hideSection) return <></>
     const randomId = useId();
     const modalId = randomId + "modal";
     const hubspostFormId = randomId + "hubspotForm";
     return <div class="relative overflow-hidden">
-        <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`} style={{minHeight: sectionMinHeight}}>
+        <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`} style={{minHeight: sectionMinHeight, paddingBottom, paddingTop}}>
             
             {useBackground == "image" && backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} 
                 class={`w-full h-full absolute object-cover top-0 left-0 -z-40 object-right-top ${backgroundAnimation && 'animate-background-animation'}` }
@@ -141,7 +144,7 @@ export default function MainHero({ hideSection, id, title, caption = "", backgro
                     {captionAbove && <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: captionAbove }}/>}
                     <div 
                         class="text-primary w-full text-2xl md:text-[56px] font-normal leading-[1.2] pt-2 lg:pt-0" 
-                        style={{ background: titleColor, backgroundClip: "text", color: titleColor && 'transparent', fontFamily: titleFont }} 
+                        style={{ background: titleColor, backgroundClip: "text", color: titleColor && 'transparent', fontFamily: titleFont, letterSpacing: titleLetterSpacing }} 
                         dangerouslySetInnerHTML={{ __html: title }}
                     />
                     <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[1.2] w-full" dangerouslySetInnerHTML={{ __html: caption }} style={{fontSize: captionFontSize}}/>

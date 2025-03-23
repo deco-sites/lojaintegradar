@@ -247,7 +247,9 @@
             "captionFontSize": "16px",
             "backgroundAnimation": true,
             "lcp": true,
-            "titleFont": "Galaxie Copernicus"
+            "titleFont": "Galaxie Copernicus",
+            "titleLetterSpacing": "-3px",
+            "sectionMinHeight": "365px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -269,7 +271,8 @@
             "backgroundAnimation": true,
             "lcp": true,
             "titleFont": "Galaxie Copernicus",
-            "image": {}
+            "image": {},
+            "titleLetterSpacing": "-3px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1595,6 +1598,9 @@
     },
     {
       "__resolveType": "site/sections/CustomerAdvisoryBoardModal.tsx"
+    },
+    {
+      "__resolveType": "site/sections/GridOverlay.tsx"
     }
   ]
 }

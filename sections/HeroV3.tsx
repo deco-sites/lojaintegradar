@@ -72,6 +72,7 @@ export interface Props {
   media?: Media;
   container?: Container;
   sectionBackground?: BackgroundMedia;
+  lcp?: boolean;
 }
 
 export function HeroMedia({ media }: { media?: Media }) {
@@ -99,7 +100,7 @@ export function HeroMedia({ media }: { media?: Media }) {
   </div>
 }
 
-export default function HeroV3({ title, text, bulletPoints, cta = [], media, container, ctaPlacement, sectionBackground }: Props) {
+export default function HeroV3({ title, text, bulletPoints, cta = [], media, container, ctaPlacement, sectionBackground, lcp }: Props) {
   const placement = {
     "left": "justify-start",
     "center": "justify-center",
@@ -171,8 +172,9 @@ export default function HeroV3({ title, text, bulletPoints, cta = [], media, con
       width={sectionBackground.image.width || 1277}
       height={sectionBackground.image.height || 630}
       class="absolute -z-50 top-0 left-0 h-full w-full object-cover"
+      loading={lcp ? "eager" : "lazy"}
     />}
-    {sectionBackground?.use == "video" && sectionBackground.video && <video width={1280} height={720} autoPlay playsInline muted loading="lazy" loop
+    {sectionBackground?.use == "video" && sectionBackground.video && <video width={1280} height={720} autoPlay playsInline muted loading={lcp ? "eager" : "lazy"} loop
       class="object-cover absolute -z-50 top-0 left-0 h-full w-full">
       <source src={sectionBackground.video} type="video/mp4" />
     </video>}

@@ -20,12 +20,12 @@ const onChange = () => {
   }
 };
 
-const onLoad = (backgroundColor?: string, navigation?: Navigation) => {
+const onLoad = (backgroundColor?: string, navigation?: Navigation, noScrollBackgroundColor?: string) => {
   globalThis.addEventListener("scroll", () => {
     const headerContainer = document.querySelector("#headerContainer") as HTMLElement;
     if (globalThis.scrollY > 0 && headerContainer) {
-      headerContainer.classList.remove("bg-opacity-0");
-      headerContainer.classList.add("!pt-6");
+      headerContainer.style.background = backgroundColor || 'transparent';
+      headerContainer.classList.add("lg:!py-5");
       headerContainer.style.background = backgroundColor || "";
 
       const createStoreCtaMobile = document.querySelector(".createStoreMobile") as HTMLElement | undefined;
@@ -36,9 +36,8 @@ const onLoad = (backgroundColor?: string, navigation?: Navigation) => {
       }
     }
     else {
-      headerContainer.classList.add("bg-opacity-0");
-      headerContainer.classList.remove("!pt-6");
-      headerContainer.style.background = "transparent";
+      headerContainer.style.background = noScrollBackgroundColor || 'transparent';
+      headerContainer.classList.remove("lg:!py-5");
 
       const createStoreCtaMobile = document.querySelector(".createStoreMobile") as HTMLElement | undefined;
       if (createStoreCtaMobile) {
@@ -94,6 +93,8 @@ export interface HeaderMessage {
 
 export interface CampaignTimer {
   show?: boolean;
+  /** @format color-input */
+  noScrollBackgroundColor?: string;
   /** @format color-input */
   backgroundColor?: string;
   /**
@@ -188,6 +189,8 @@ export interface DropdownMenus {
 export interface Nav {
   hideSection?: boolean;
   /** @format color-input */
+  noScrollBackgroundColor?: string;
+  /** @format color-input */
   backgroundColor?: string;
   logo?: {
     src?: ImageWidget;
@@ -215,7 +218,7 @@ export default function Header2({ logo = {
   src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
   alt: "Logo",
 },
-  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, backgroundColor, dropdownMenus = {menus: []}, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
+  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, noScrollBackgroundColor, backgroundColor, dropdownMenus = {menus: []}, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
   navigation, asideMenuOnlyMobile, hideSection }: Nav) {
   if (hideSection) return <></>
   return (
@@ -248,13 +251,13 @@ export default function Header2({ logo = {
         <CampaignTimer {...campaignTimer} labelsColor={campaignTimer.labelsColor} numbersColor={campaignTimer.numbersColor} />
       </div>}
 
-      <nav id="headerContainer" class="drawer drawer-end top-0 left-0 bg-primary-content bg-opacity-0 transition-all duration-300 ease-in-out pt-4 lg:pt-9 pb-5 ">
+      <nav id="headerContainer" class="drawer drawer-end top-0 left-0 bg-primary-content transition-all duration-300 ease-in-out py-4 lg:py-7 " style={{background: noScrollBackgroundColor || 'transparent'}} >
         <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
         {/* main content */}
         <div class="drawer-content mx-auto w-full lg:px-0 px-4 py-0 flex gap-8 items-center justify-between max-w-[1305px]">
 
-          <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, navigation) }} />
+          <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, navigation, noScrollBackgroundColor) }} />
 
           <a href={logo.href || "/"} class="w-28 h-5 md:w-auto md:h-10 flex items-center">
             <Image src={logo.src || ""} width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />

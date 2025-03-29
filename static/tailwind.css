@@ -5565,9 +5565,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-opacity-0 {
-  --tw-bg-opacity: 0;
-}
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -5911,9 +5908,6 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 7px;
   padding-bottom: 7px;
 }
-.\!pt-6 {
-  padding-top: 1.5rem !important;
-}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -5937,9 +5931,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .pb-4 {
   padding-bottom: 1rem;
-}
-.pb-5 {
-  padding-bottom: 1.25rem;
 }
 .pb-6 {
   padding-bottom: 1.5rem;
@@ -7794,6 +7785,11 @@ details.collapse summary::-webkit-details-marker {
     padding: 1.25rem;
   }
 
+  .lg\:\!py-5 {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -7902,6 +7898,11 @@ details.collapse summary::-webkit-details-marker {
   .lg\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+
+  .lg\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
   }
 
   .lg\:py-8 {
@@ -8016,10 +8017,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pt-7 {
     padding-top: 1.75rem;
-  }
-
-  .lg\:pt-9 {
-    padding-top: 2.25rem;
   }
 
   .lg\:pt-\[105px\] {

@@ -17,6 +17,7 @@ export interface Title {
   font?: string;
   fontSize?: string;
   letterSpacing?: string;
+  titleMaxWidth?: string;
 }
 
 export interface IVideo {
@@ -40,7 +41,7 @@ export interface Media {
   image?: IImage;
   video?: IVideo;
   use?: "image" | "video" | "embed";
-  placement?: "right" | "left";
+  placement?: "right" | "left" | "bellow";
 }
 
 export interface BackgroundMedia {
@@ -70,6 +71,7 @@ export interface Props {
   ctaPlacement?: 'left' | 'center' | 'right';
   media?: Media;
   container?: Container;
+  sectionBackground?: BackgroundMedia;
 }
 
 export function HeroMedia({ media }: { media?: Media }) {
@@ -97,17 +99,22 @@ export function HeroMedia({ media }: { media?: Media }) {
   </div>
 }
 
-export default function HeroV3({ title, text, bulletPoints, cta = [], media, container, ctaPlacement }: Props) {
+export default function HeroV3({ title, text, bulletPoints, cta = [], media, container, ctaPlacement, sectionBackground }: Props) {
   const placement = {
     "left": "justify-start",
     "center": "justify-center",
     "right": "justify-end"
   }
-  return <div class="px-5 lg:px-0">
+  const mediaPlacement = {
+    "left": "lg:justify-between flex-row-reverse",
+    "right": "lg:justify-between flex-row",
+    "bellow": "lg:flex-col"
+  }
+  return <div class="px-5 lg:px-0 relative">
     <div
-      class={`max-w-[1288px] relative z-10 mx-auto rounded-[20px] overflow-hidden p-[30px] lg:p-12 my-12 flex gap-5 flex-wrap-reverse lg:flex-nowrap items-center justify-center lg:justify-between ${media?.placement == "left" && 'flex-row-reverse'}`}
+      class={`max-w-[1288px] relative z-10 mx-auto rounded-[20px] overflow-hidden p-[30px] lg:p-12 my-12 flex gap-5 flex-wrap-reverse lg:flex-nowrap items-center justify-center ${mediaPlacement[media?.placement || "right"]}`}
       style={{ background: container?.backgroundColor, marginTop: container?.marginTop, marginBottom: container?.marginBottom, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight }}>
-      <AnimateOnShow animation="animate-fade-up50" divClass={`${media?.use && 'max-w-[448px]'} w-full flex flex-col gap-6`} style={{ animationDuration: '1s' }}>
+      <AnimateOnShow animation="animate-fade-up50" divClass={`${(media?.use && media.placement != "bellow") && 'max-w-[448px]'} w-full flex flex-col gap-6`} style={{ animationDuration: '1s', maxWidth: title?.titleMaxWidth }}>
 
         {title?.text && <div
           dangerouslySetInnerHTML={{ __html: title.text }}
@@ -158,5 +165,16 @@ export default function HeroV3({ title, text, bulletPoints, cta = [], media, con
         <source src={container?.backgroundMedia.video} type="video/mp4" />
       </video>}
     </div>
+    {sectionBackground?.use == "image" && sectionBackground.image?.src && <Image
+      src={sectionBackground.image.src}
+      alt={sectionBackground.image.alt || "background image"}
+      width={sectionBackground.image.width || 1277}
+      height={sectionBackground.image.height || 630}
+      class="absolute -z-50 top-0 left-0 h-full w-full object-cover"
+    />}
+    {sectionBackground?.use == "video" && sectionBackground.video && <video width={1280} height={720} autoPlay playsInline muted loading="lazy" loop
+      class="object-cover absolute -z-50 top-0 left-0 h-full w-full">
+      <source src={sectionBackground.video} type="video/mp4" />
+    </video>}
   </div>
 }

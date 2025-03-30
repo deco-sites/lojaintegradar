@@ -281,7 +281,8 @@
           "src": "https://assets.decocache.com/lojaintegradar/148d9cbd-c57d-43de-95f9-ddc6194fdf9b/background-green-pattern.svg"
         },
         "use": "image"
-      }
+      },
+      "lcp": true
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -290,26 +291,23 @@
           "value": {
             "__resolveType": "site/sections/CardsHero.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\"><em><span style=\"color: #00b7b5\">Fique em dia!</span></em><span> Recursos que já estão<br>disponíveis pra você!</span></p>",
+              "text": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Mostre que sua marca entende o cliente.<br>Traduza dados&nbsp; em </span><em><span style=\"color: #00363a\">soluções inteligentes</span></em></p>",
               "font": "Galaxie Copernicus",
-              "fontSize": "56px"
-            },
-            "tag": {
-              "text": "<p><span style=\"color: #5b2281\">Lançamentos</span></p>",
-              "backgroundColor": "#E7D0FC"
+              "fontSize": "56px",
+              "letterSpacing": "-3px"
             },
             "leftColumn": {
               "cards": [
                 {
                   "cta": [],
-                  "title": "<p><span>“Leram meu pensamento!”</span></p>",
+                  "title": "<p><em>“Leram meu pensamento!”</em></p>",
                   "titleFont": "Galaxie Copernicus",
-                  "text": "<p><span style=\"color: #00363a\">Adicione brindes automaticamente aos pedidos que atenderem a critérios específicos, como valor mínimo ou produtos, marcas e categorias específicas.</span></p>",
+                  "text": "<p><span style=\"color: #f2f4f5; font-size: 16pt\">Entenda o comportamento do cliente e transforme cada interação em uma chance de conversão.</span></p>",
                   "titleFontSize": "46px",
                   "titleTag": {
                     "text": "<p></p>"
                   },
-                  "backgroundColor": "linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%)",
+                  "backgroundColor": "",
                   "borderRadius": "20px",
                   "bulletPoints": {
                     "items": []
@@ -320,23 +318,30 @@
                     "planId": "172"
                   },
                   "useBackground": "image",
-                  "image": {},
+                  "image": {
+                    "imagePlacement": "bottom"
+                  },
                   "titleLetterSpacing": "-3px",
                   "minHeight": "876px",
-                  "titleColor": "#B7FBDB"
+                  "titleColor": "#B7FBDB",
+                  "backgroundImage": {
+                    "src": "https://assets.decocache.com/lojaintegradar/523c1929-8fa4-42ae-baa2-4e9ab23dccae/cards-hero-card-1-background-image.png",
+                    "width": 597,
+                    "height": 876
+                  },
+                  "spaceBetweenTitleAndText": "30px"
                 }
               ],
-              "cardsMaxWidth": "630px"
+              "cardsMaxWidth": "597px"
             },
             "rightColumn": {
               "cards": [
                 {
                   "cta": [],
-                  "title": "<p><span style=\"color: rgb(0, 54, 58)\">Link de </span><em><span style=\"color: rgb(0, 183, 181)\">carrinho</span></em></p>",
-                  "text": "<p><span style=\"color: #00363a\">Crie links diretos para carrinhos pré-configurados, facilitando campanhas de marketing e vendas diretas.</span></p>",
-                  "titleFont": "Galaxie Copernicus",
-                  "titleFontSize": "32px",
-                  "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))",
+                  "title": "<p><span>Ações automatizadas que</span></p><p><span>trabalham por você</span></p>",
+                  "text": "<p><span style=\"color: #5f6e82\">Envie alertas de carrinho abandonado, personalize campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
+                  "titleFontSize": "22px",
+                  "backgroundColor": "",
                   "borderRadius": "20px",
                   "bulletPoints": {
                     "items": []
@@ -346,14 +351,47 @@
                     "planId": "172"
                   },
                   "image": {
-                    "src": "https://assets.decocache.com/lojaintegradar/cfe06ed1-040e-422a-b73a-4db64608ff41/card-top-image-3.png",
                     "width": 554,
                     "height": 69
                   },
-                  "titleLetterSpacing": "-3px",
-                  "useBackground": "image"
+                  "useBackground": "image",
+                  "titleColor": "#00363A",
+                  "borderColor": "#F2F4F5",
+                  "titleFontWeight": "500",
+                  "minHeight": "0",
+                  "titleLineHeight": "150%",
+                  "padding": "37px 35px"
                 },
                 {
+                  "cta": [],
+                  "title": "<p><span>Se mostre relevante em </span></p><p><span>todos os contatos</span></p>",
+                  "text": "<p><span style=\"color: #5f6e82\">Leve ofertas contextualizadas para seus clientes também via WhatsApp.</span></p>",
+                  "titleFontSize": "22px",
+                  "backgroundColor": "",
+                  "borderRadius": "20px",
+                  "bulletPoints": {
+                    "items": []
+                  },
+                  "createStoreCta": {
+                    "ctaStyle": "button",
+                    "planId": "172"
+                  },
+                  "image": {
+                    "width": 554,
+                    "height": 69
+                  },
+                  "useBackground": "image",
+                  "titleColor": "#00363A",
+                  "borderColor": "#F2F4F5",
+                  "titleFontWeight": "500",
+                  "minHeight": "0",
+                  "titleLineHeight": "150%",
+                  "padding": "36px 35px"
+                },
+                {
+                  "image": {
+                    "imagePlacement": "top"
+                  },
                   "bulletPoints": {
                     "items": []
                   },
@@ -363,27 +401,43 @@
                   },
                   "cta": [],
                   "useBackground": "image",
-                  "borderRadius": "20px",
-                  "title": "<p><span style=\"color: rgb(0, 54, 58)\">Avaliação </span><em><span style=\"color: rgb(242, 244, 245)\">de Produtos</span></em></p>",
-                  "titleFont": "Galaxie Copernicus",
-                  "titleFontSize": "32px",
-                  "text": "<p><span style=\"color: #00363a\">Sistema avançado para coleta e exibição de avaliações de produtos, aumentando a confiança dos consumidores.</span></p>",
-                  "minHeight": "523px",
+                  "contentPlacement": "top",
                   "backgroundImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/dfe70bfc-3f1e-4244-85d8-8588097cd28d/card-background-image-2x.png",
-                    "width": 630,
-                    "height": 483
+                    "src": "https://assets.decocache.com/lojaintegradar/531c9147-068b-4f4b-a73c-794c8324eb6d/cards-hero-card-4-background-image.png",
+                    "width": 620,
+                    "height": 414
                   },
-                  "titleColor": "#000000",
-                  "contentPlacement": "bottom",
-                  "padding": "48px",
-                  "titleLetterSpacing": "-3px"
+                  "borderRadius": "20px",
+                  "title": "<p><span>+ R$ 30</span></p><p><span>milhões</span></p>",
+                  "titleColor": "#ffffff",
+                  "titleFont": "Galaxie Copernicus",
+                  "titleFontSize": "56px",
+                  "titleLineHeight": "67px",
+                  "titleLetterSpacing": "-3px",
+                  "padding": "87px 35px",
+                  "text": "<p><span style=\"color: #00363a\">de vendas recuperadas<br>em 2024 com ferramentas <br>de automação de marketing<br>da Loja Integrada.</span></p>"
                 }
               ],
-              "cardsMaxWidth": "630px"
+              "cardsMaxWidth": "597px"
             },
-            "paddingBottom": "90px",
-            "paddingTop": "124px"
+            "paddingBottom": "120px",
+            "paddingTop": "120px",
+            "caption": "<p style=\"text-align: center\"><span>Na Loja Integrada, unimos informações estruturadas a automação para<br>maximizar cada oportunidade de venda.</span></p>",
+            "distanceBetweenColums": "56px",
+            "bottomCta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Create Store",
+                "text": "Começar sem custos",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "createStorePlanId": "172",
+                "showIcon": false,
+                "customIcon": {}
+              }
+            ]
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -392,78 +446,9 @@
       ]
     },
     {
-      "__resolveType": "site/sections/CardsHero.tsx",
-      "title": {
-        "text": "<p style=\"text-align: center\"><em><span style=\"color: #71dbd4\">Mostre que sua marca entende o cliente</span></em></p><p style=\"text-align: center\"><span style=\"color: #003037\">Traduzindo dados&nbsp; em soluções inteligentes</span></p>",
-        "font": "Instrument serif"
-      },
-      "caption": "<p style=\"text-align: center\"><span style=\"color: #5f6e82\">Na Loja Integrada, unimos informações estruturadas a automação para maximizar</span></p><p style=\"text-align: center\"><span style=\"color: #5f6e82\">cada oportunidade de venda.</span></p>",
-      "leftColumn": {
-        "cards": [
-          {
-            "cta": [],
-            "useBackground": "image",
-            "title": "<p><span style=\"font-size: 58pt\">“Leram meu pensamento!”</span></p>",
-            "titleColor": "#ffffff",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/3bab4a20-361f-489a-be60-6d600467701e/card-image-1.png",
-              "width": 597,
-              "height": 960
-            },
-            "minHeight": "960px",
-            "titleFont": "Instrument serif",
-            "text": "<p><span style=\"font-size: 20px; color: rgb(250, 250, 245);\" data-mce-style=\"font-size: 20px; color: rgb(250, 250, 245);\">Entenda o comportamento do</span></p><p><span style=\"font-size: 20px; color: rgb(250, 250, 245);\" data-mce-style=\"font-size: 20px; color: rgb(250, 250, 245);\">cliente e transforme cada</span></p><p><span style=\"font-size: 20px; color: rgb(250, 250, 245);\" data-mce-style=\"font-size: 20px; color: rgb(250, 250, 245);\">interação em uma chance de</span></p><p><span style=\"font-size: 20px; color: rgb(250, 250, 245);\" data-mce-style=\"font-size: 20px; color: rgb(250, 250, 245);\">conversão.</span></p>",
-            "spaceBetweenTitleAndText": "30px"
-          }
-        ]
-      },
-      "rightColumn": {
-        "cards": [
-          {
-            "cta": [],
-            "useBackground": "image",
-            "title": "<p><strong><span>Ações automatizadas que trabalha por você</span></strong></p>",
-            "titleColor": "#003037",
-            "text": "<p><span style=\"color: rgb(95, 110, 130); font-size: 12pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 12pt;\">Envie alertas de carrinho abandonado, personalize campanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
-            "minHeight": "254px",
-            "backgroundImage": {}
-          },
-          {
-            "cta": [],
-            "useBackground": "image",
-            "title": "<p><strong><span>Se mostre relevante em todos os contatos</span></strong></p>",
-            "titleColor": "#003037",
-            "text": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Leve ofertas contextualizadas para seu clientes também via</span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Whatsapp.</span></p>",
-            "minHeight": "254px"
-          },
-          {
-            "cta": [],
-            "useBackground": "image",
-            "title": "<p><span>Em um ano, milhares de</span></p><p><span>lojistas recuperaram<br>R$ 23 milhões em vendas</span></p><p><span>com ferramentas de</span></p><p><span>automação de marketing</span></p><p><span>da Loja Integrada.</span></p>",
-            "titleColor": "linear-gradient(152deg, #2CB9B8 18.51%, #0F9B9A 46.17%, #145756 94.47%)",
-            "minHeight": "414px",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1e295d52-64ee-42c2-999b-e8b0147f8f86/card-image-2.png",
-              "width": 597,
-              "height": 414
-            },
-            "createStoreCta": {
-              "planId": "172",
-              "ctaStyle": "link",
-              "text": "Criar loja",
-              "textColor": "#003037",
-              "showIcon": true
-            }
-          }
-        ]
-      },
-      "paddingTop": "120px",
-      "paddingBottom": "80px"
-    },
-    {
       "__resolveType": "site/sections/DetailedCarousel.tsx",
       "title": {
-        "text": "<p style=\"text-align: center\"><span style=\"color: rgb(113, 219, 212)\">Fature enquanto eles trabalham</span></p><p style=\"text-align: center\"><span style=\"color: #fafaf5\">Automatize formas de ganhar vendas</span></p>",
+        "text": "<p style=\"text-align: center\"><span>Fature enquanto eles trabalham.<br>Automatize formas de ganhar dinheiro.</span></p>",
         "font": "Instrument serif"
       },
       "caption": "<p style=\"text-align: center\"><span style=\"color: #fafaf5\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>",
@@ -1134,8 +1119,8 @@
         {
           "value": {
             "__resolveType": "site/sections/PlansV2.tsx",
-            "id": "plans",
             "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
+            "id": "plans",
             "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
             "slides": [
               {
@@ -1461,8 +1446,8 @@
         {
           "value": {
             "__resolveType": "site/sections/PlansV2.tsx",
-            "id": "plans",
             "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Planos que crescem com o seu negócio</span></p>",
+            "id": "plans",
             "caption": "<p style=\"text-align: center\">+2,7 milhões de lojistas escolheram a Loja Integrada</p>",
             "slides": [
               {

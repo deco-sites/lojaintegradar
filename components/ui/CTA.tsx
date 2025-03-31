@@ -1,4 +1,14 @@
 import { useScript } from "@deco/deco/hooks";
+import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
+
+export interface IImage {
+  src?: ImageWidget;
+  alt?: string;
+  width?: number;
+  height?: number;
+}
+
 
 /** @title {{text}} */
 export interface Props {
@@ -12,9 +22,10 @@ export interface Props {
   borderColor?: string;
   type?: 'Button' | 'Only text';
   size?: 'Large' | 'Medium' | 'Small';
-  showIcon?: boolean;
   openModal?: 'Talk to specialist' | 'Create Store' | 'Customer Advisory Board Modal';
   createStorePlanId?: string;
+  showIcon?: boolean;
+  customIcon?: IImage;
 }
 
 const openModalFunction = (modal: string, planId: string) => {
@@ -63,7 +74,7 @@ const openModalFunction = (modal: string, planId: string) => {
 };
 
 
-export default function CTA({ href = "", text, textColor, backgroundColor, borderColor, size = "Medium", type = "Button", showIcon = false, openModal, createStorePlanId}: Props) {
+export default function CTA({ href = "", text, textColor, backgroundColor, borderColor, size = "Medium", type = "Button", showIcon = false, openModal, createStorePlanId, customIcon}: Props) {
   const sizeClasses = {
     "Large": "py-4 px-8 text-base font-semibold border",
     "Medium": "py-2 px-8 text-sm font-semibold leading-[171%] border",
@@ -78,15 +89,17 @@ export default function CTA({ href = "", text, textColor, backgroundColor, borde
 
   return <a
     hx-on:click={openModal && useScript(openModalFunction, openModal, createStorePlanId || '172')}
-    class={`${sizeClasses[size]} rounded-lg hover:scale-110 transition-transform cursor-pointer`}
+    class={`${sizeClasses[size]} rounded-lg hover:scale-110 transition-transform cursor-pointer flex gap-2.5`}
     style={type == "Button"
       ? { background: backgroundColor, color: textColor, borderColor }
       : { color: textColor, border: 'none', padding: 0 }}
     href={openModal ? undefined : href}
     target={href.includes("http") ? "_blank" : "_self"}>
     {text}
-    {showIcon && <svg xmlns="http://www.w3.org/2000/svg" width={iconSizes[size]} height={iconSizes[size]} viewBox="0 0 24 25" fill="none" class="inline-block ml-2">
+    {showIcon && ( customIcon?.src 
+      ? <Image src={customIcon.src} width={customIcon.width || 20} height={customIcon.height || 20} alt={customIcon.alt || "button icon"} /> 
+      : <svg xmlns="http://www.w3.org/2000/svg" width={iconSizes[size]} height={iconSizes[size]} viewBox="0 0 24 25" fill="none" class="inline-block ml-2">
       <path d="M9 17.9028L15 11.9028L9 5.90283" stroke={textColor} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>}
+    </svg>)}
   </a>
 }

@@ -199,8 +199,16 @@ export interface Props {
   hideSection?: boolean;
   title?: RichText;
   titleFont?: string;
+  titleFontSize?: string;
+  titleFontWeight?: string;
+  titleLetterSpacing?: string;
+  titleLineHeight?: string;
   caption?: RichText;
   captionFont?: string;
+  captionFontSize?: string;
+  captionFontWeight?: string;
+  captionLetterSpacing?: string;
+  captionLineHeight?: string;
   hubspotForm?: HubspotForm;
   slides?: Testimonial[];
   /**
@@ -213,6 +221,8 @@ export interface Props {
   backgroundMedia?: BackgroundMedia;
   bubbleImages?: BubbleImage[];
   modal?: Modal;
+  paddingTop?: string;
+  paddingBottom?: string;
 }
 const DEFAULT_PROPS = {
     slides: [
@@ -337,15 +347,22 @@ function TestimonialsWithBubbles(props: Props) {
     const id = useId();
     const modalId = id + "modal";
     const hubspostFormId = id + "hubspotForm";
-    const { title, slides, titleFont, caption, captionFont, hubspotForm, bubbleImages = [], backgroundMedia, modal } = { ...DEFAULT_PROPS, ...props };
+    const { title, slides, titleFont, caption, captionFont, hubspotForm, bubbleImages = [], captionFontSize, captionFontWeight, captionLetterSpacing, captionLineHeight, backgroundMedia, modal, paddingBottom, paddingTop, titleLineHeight, titleFontSize, titleFontWeight, titleLetterSpacing } = { ...DEFAULT_PROPS, ...props };
     return (<div class="relative overflow-hidden" >
-      <div id={id} class="min-h-min flex flex-col lg:container md:max-w-[1332px] lg:mx-auto pt-7 lg:pt-14" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
+      <div id={id} class="min-h-min flex flex-col lg:container md:max-w-[1332px] lg:mx-auto pt-7 lg:pt-14" 
+        style={{paddingTop}}
+        hx-on:click={useScript(refreshArrowsVisibility)} 
+        hx-on:touchend={useScript(refreshArrowsVisibility)}>
         <script
               type="module"
               dangerouslySetInnerHTML={{ __html: useScript(onLoad, id, bubbleImages) }}
             />
-        {title && <div class="text-[110px] leading-[120%] mb-4 text-primary" style={{ fontFamily:  titleFont}} dangerouslySetInnerHTML={{ __html: title}}/>}
-        {caption && <div class="text-6xl leading-[120%] text-primary" style={{ fontFamily:  captionFont}} dangerouslySetInnerHTML={{ __html: caption}}/>}
+        {title && <div class="text-[110px] leading-[120%] mb-4 text-primary" 
+          style={{ fontFamily:  titleFont, fontSize: titleFontSize, fontWeight: titleFontWeight, letterSpacing: titleLetterSpacing, lineHeight: titleLineHeight}} 
+          dangerouslySetInnerHTML={{ __html: title}}/>}
+        {caption && <div class="text-6xl leading-[120%] text-primary" 
+          style={{ fontFamily:  captionFont, fontSize: captionFontSize, fontWeight: captionFontWeight, letterSpacing: captionLetterSpacing, lineHeight: captionLineHeight}} 
+          dangerouslySetInnerHTML={{ __html: caption}}/>}
 
         {hubspotForm?.show && <label class="pt-5 md:pt-10 lg:w-[600px] mx-auto">
                         {hubspotForm?.inputLabel && <p 
@@ -371,7 +388,7 @@ function TestimonialsWithBubbles(props: Props) {
                         }}/>                                  
                     </label>}
 
-        <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-9 md:py-20 md:px-9" rootId={id} interval={0 && 0 * 1e3} infinite>
+        <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-9 md:py-20 md:px-9" rootId={id} interval={0 && 0 * 1e3} infinite style={{paddingBottom}}>
           {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item max-w-[608px] w-full">
             <SliderItem slide={slide} id={`${id}::${index}`}/>
           </Slider.Item>))}

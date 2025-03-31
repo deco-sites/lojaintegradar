@@ -184,7 +184,7 @@ function Dot({ index, children }: {
     index: number;
     children: ComponentChildren;
 }) {
-    return (<button data-dot={index} aria-label={`go to slider item ${index}`} class="focus:outline-none group">
+    return (<button data-dot={index} aria-label={`go to slider item ${index}`} class="focus:outline-none group hover:!scale-100">
         {children}
     </button>);
 }

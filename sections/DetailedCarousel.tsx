@@ -78,6 +78,10 @@ export interface IVideo {
 export interface Title {
     text?: RichText;
     font?: string;
+    fontSize?: string;
+    fontWeight?: string;
+    lineHeight?: string;
+    letterSpacing?: string;
 }
 
 
@@ -111,7 +115,7 @@ export interface Props {
     hideSection?: boolean;
     id?: string;
     title?: Title;
-    caption?: RichText;
+    caption?: Title;
     /** @format color-input */
     slides?: Slide[];
     /**
@@ -139,6 +143,10 @@ export interface Props {
     createStoreCta?: CreateStoreWithPlanCTA;
     cta?: CTA[];
     backgroundImage?: IImage;
+    /** @format color-input */
+    backgroundColor?: string;
+    paddingTop?: string;
+    paddingBottom?: string;
 }
 function SliderItem({ slide, id }: {
     slide: Slide;
@@ -242,21 +250,22 @@ function Buttons({ arrowsColor }: {
 function Carousel(props: Props) {
     if (props.hideSection) return <></>
     const rootId = useId();
-    const { id, title, caption, slides, interval, backgroundImage, createStoreCta, cta = [], arrowsColor, dotsColor, dotsProgressBarPlacement, dotsProgressBarBackgroundColor } = { ...props };
-    return (<div id={id} class="relative">
-        {backgroundImage && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={backgroundImage.width || 1440} height={backgroundImage.height || 1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-cover"/></div>}
-        <div id={rootId} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
+    const { id, title, caption, slides, interval, backgroundImage, createStoreCta, cta = [], arrowsColor, backgroundColor, dotsColor, dotsProgressBarPlacement, dotsProgressBarBackgroundColor, paddingBottom, paddingTop } = { ...props };
+    return (<div id={id} class="relative" style={{background: backgroundColor}}>
+        {backgroundImage?.src && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={backgroundImage.width || 1440} height={backgroundImage.height || 1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-cover"/></div>}
+        <div id={rootId} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)} style={{paddingBottom, paddingTop}}>
             {title?.text && <AnimateOnShow
                         animation="animate-fade-up50"
                         divClass="text-5xl lg:text-[70px] leading-[120%] mb-4"
-                        style={{ fontFamily: title.font }}>
+                        style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing, lineHeight: title.lineHeight, fontWeight: title.fontWeight }}>
                         <div dangerouslySetInnerHTML={{ __html: title.text }} />
                     </AnimateOnShow>}
-                    {caption && <AnimateOnShow
-                        animation="animate-fade-up50"
-                        divClass="text-base lg:text-2xl font-light leading-normal mb-4">
-                        <div dangerouslySetInnerHTML={{ __html: caption }} />
-                    </AnimateOnShow>}
+            {caption?.text && <AnimateOnShow
+                animation="animate-fade-up50"
+                divClass="text-base lg:text-2xl font-light leading-normal mb-4">
+                <div dangerouslySetInnerHTML={{ __html: caption.text }} 
+                style={{ fontFamily: caption.font, fontSize: caption.fontSize, letterSpacing: caption.letterSpacing, lineHeight: caption.lineHeight, fontWeight: caption.fontWeight }}/>
+            </AnimateOnShow>}
 
             <div class="relative w-full ">
                 <div class="absolute top-[28vw] left-0 flex justify-end w-full lg:px-9 ">

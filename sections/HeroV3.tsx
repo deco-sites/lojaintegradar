@@ -76,7 +76,7 @@ export interface Props {
 }
 
 export function HeroMedia({ media }: { media?: Media }) {
-  return <div>
+  return <>
     {media?.use == "image" && media.image?.src && <Image
       src={media.image.src}
       alt={media.image.alt || "image"}
@@ -97,7 +97,7 @@ export function HeroMedia({ media }: { media?: Media }) {
       style={{ width: media.video?.width || 854, height: media.video?.height || 480 }}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen gyroscope; picture-in-picture"
     />}
-  </div>
+  </>
 }
 
 export default function HeroV3({ title, text, bulletPoints, cta = [], media, container, ctaPlacement, sectionBackground, lcp }: Props) {

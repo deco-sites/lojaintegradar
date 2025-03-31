@@ -839,7 +839,175 @@
       "arrows": false
     },
     {
-      "__resolveType": "Depoimentos-institucional"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
+            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: #00363a\">lojistas</span></p>",
+            "titleColor": "#371E55",
+            "titleFont": "Galaxie Copernicus",
+            "caption": "<p style=\"text-align: center\"><span style=\"color: #5f6e82\">que escolheram a forma mais eficiente  de vender online</span></p>",
+            "slides": [
+              {
+                "content": {
+                  "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">Com a migração, aumentamos nosso ticket médio em 15% e reduzimos os custos operacionais em R$ 9 mil. Nossas expectativas foram atendidas pela plataforma intuitiva e com fácil integração à VTEX.</span></p>",
+                  "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
+                  "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>M. Camicado</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca&nbsp;<strong>de 60 dias</strong></span></p>",
+                  "alt": "m camicado",
+                  "quoteIconColor": "#003037",
+                  "nameIconColor": "#5F6E82",
+                  "nameBackgroundColor": "#ffffff",
+                  "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
+                  "avatarWidth": 399,
+                  "avatarHeight": 46,
+                  "backgroundColor": ""
+                }
+              },
+              {
+                "content": {
+                  "description": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\">No primeiro mês pós-migração, minha taxa de conversão aumentou 60%. Encontrei uma plataforma fácil de usar e um time com suporte próximo, otimizando meu investimento.</span><br></p>",
+                  "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
+                  "name": "<p><span style=\"color: rgb(0, 48, 55);\" data-mce-style=\"color: rgb(0, 48, 55);\"><strong>Livraria Florence</strong></span></p><p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Loja no ar em cerca de&nbsp;<strong>30 dias</strong></span></p>",
+                  "alt": "livraria florence",
+                  "nameIconColor": "#371E55",
+                  "quoteIconColor": "#003037",
+                  "nameBackgroundColor": "#ffffff",
+                  "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
+                }
+              }
+            ],
+            "arrows": false,
+            "arrowsColor": "",
+            "dots": false,
+            "bubbleImages": [
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10c91eb1-0f78-465d-9fa6-49438978da81/bubble-image-1.jpg",
+                "horizontalPosition": "16%",
+                "verticalPosition": "5%",
+                "alt": "oldman on laptop",
+                "speed": "fast"
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d5f1a647-cbf8-4ba9-bc36-16b01ac784bf/bubble-image-3.jpg",
+                "horizontalPosition": "2%",
+                "alt": "lady holding phone",
+                "comeFrom": "top left",
+                "speed": "slow",
+                "verticalPosition": "8%"
+              },
+              {
+                "comeFrom": "top left",
+                "speed": "normal",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/dea1f370-0fde-40bc-a99f-f824dd35d68d/bubble-image-4.png",
+                "verticalPosition": "20%",
+                "horizontalPosition": "10%",
+                "alt": "man on opening laptop"
+              },
+              {
+                "comeFrom": "bottom left",
+                "speed": "fast",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d5f1a647-cbf8-4ba9-bc36-16b01ac784bf/bubble-image-3.jpg",
+                "alt": "lady holding phone",
+                "verticalPosition": "34%",
+                "horizontalPosition": "13%"
+              },
+              {
+                "comeFrom": "bottom left",
+                "speed": "slow",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8c74a035-4f59-434e-894b-61beee1d7301/bubble-image-5.jpg",
+                "verticalPosition": "37%",
+                "horizontalPosition": "2%",
+                "alt": "man holding sheets"
+              },
+              {
+                "comeFrom": "bottom left",
+                "speed": "slow",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea2d2fac-5029-4de9-b739-f935f947ec58/bubble-image-6.png",
+                "alt": "man holding pencil",
+                "verticalPosition": "53%",
+                "horizontalPosition": "1%"
+              },
+              {
+                "comeFrom": "top right",
+                "speed": "slow",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e9719f1e-a26e-4006-b720-92b9a0ccf46c/bubble-image-7.jpg",
+                "alt": "woman on laptop",
+                "horizontalPosition": "92%",
+                "verticalPosition": "2%"
+              },
+              {
+                "comeFrom": "top right",
+                "speed": "fast",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e437c963-677d-417b-9530-414d819e9311/bubble-image-8.jpg",
+                "alt": "man with blue shirt",
+                "horizontalPosition": "77%",
+                "verticalPosition": "4%"
+              },
+              {
+                "comeFrom": "top right",
+                "speed": "fast",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aab535f6-b04a-4827-ae41-dfd92db98793/bubble-image-9.jpg",
+                "alt": "man holding tablet",
+                "horizontalPosition": "77%",
+                "verticalPosition": "23%"
+              },
+              {
+                "comeFrom": "bottom right",
+                "speed": "slow",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec9b56b2-a0eb-48ea-a418-73f63562182e/bubble-image-10.jpg",
+                "horizontalPosition": "90%",
+                "verticalPosition": "27%",
+                "alt": "man holding notebook"
+              },
+              {
+                "comeFrom": "bottom right",
+                "speed": "normal",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a39c4644-5ccf-4c81-8a93-ab765f68c65a/bubble-image-11.jpg",
+                "horizontalPosition": "83%",
+                "verticalPosition": "40%",
+                "alt": "man holding paper"
+              },
+              {
+                "comeFrom": "bottom right",
+                "speed": "slow",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1a0b5443-1820-4d69-95c7-bb0bd79d6bd9/bubble-image-12.jpg",
+                "horizontalPosition": "91%",
+                "verticalPosition": "54%",
+                "alt": "woman holding folder"
+              }
+            ],
+            "backgroundMedia": {
+              "image": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33eb18cd-3071-4d34-9202-937feca15495/Testimonials-background.svg"
+              },
+              "use": "image"
+            },
+            "hubspotForm": {
+              "inputLabel": " ⚡ Ganhe 20% OFF na assinatura anual️",
+              "inputLabelColor": "#00363A",
+              "inputLabelBackgroundColor": "#B7FBDB",
+              "errorMessageColor": "#F57E77",
+              "buttonTextColor": "#ffffff",
+              "buttonColor": "#00363A",
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
+              "show": true
+            },
+            "paddingTop": "120px",
+            "paddingBottom": "80px",
+            "titleFontSize": "46px",
+            "titleLetterSpacing": "-3px",
+            "titleFontWeight": "500",
+            "titleLineHeight": "58px",
+            "captionFontSize": "22px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

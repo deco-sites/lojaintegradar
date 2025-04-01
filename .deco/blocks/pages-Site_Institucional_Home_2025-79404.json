@@ -13,28 +13,30 @@
   },
   "sections": [
     {
-      "__resolveType": "site/sections/Header2.tsx",
+      "__resolveType": "site/sections/HeaderV3.tsx",
       "navigation": {
         "links": [],
         "buttons": [
           {
             "href": "https://app.lojaintegrada.com.br/painel/login",
-            "text": "<p><span style=\"font-size: 10pt\">Fazer login</span></p>",
+            "text": "Fazer login",
             "ctaStyle": "button",
             "backgroundColor": "#B7FBDB",
             "textColor": "#00363A",
             "borderColor": "#B7FBDB",
-            "outline": true
+            "outline": true,
+            "size": "Small"
           }
         ],
         "mobileButtons": [
           {
             "ctaStyle": "button",
-            "text": "<p>Fazer login</p>",
+            "text": "Fazer login",
             "href": "https://app.lojaintegrada.com.br/painel/login",
             "backgroundColor": "#B7FBDB",
             "borderColor": "#B7FBDB",
-            "textColor": "#00363A"
+            "textColor": "#00363A",
+            "size": "Small"
           }
         ],
         "asideMenuButtons": [
@@ -45,7 +47,17 @@
             "textColor": "#003037",
             "borderColor": "#003037",
             "href": "https://app.lojaintegrada.com.br/painel/login",
-            "outline": true
+            "outline": true,
+            "size": "Small"
+          },
+          {
+            "type": "Button",
+            "size": "Small",
+            "openModal": "Talk to specialist",
+            "text": "Abrir loja grátis",
+            "textColor": "#ffffff",
+            "backgroundColor": "#003037",
+            "borderColor": "#003037"
           }
         ],
         "sideMenuButtons": [],

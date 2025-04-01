@@ -3,39 +3,64 @@
   "path": "/home3",
   "sections": [
     {
-      "__resolveType": "site/sections/Header2.tsx",
+      "__resolveType": "site/sections/HeaderV3.tsx",
       "navigation": {
         "links": [],
         "buttons": [
           {
-            "ctaStyle": "button",
-            "href": "https://app.lojaintegrada.com.br/painel/login",
-            "text": "<p><span style=\"font-size: 10pt\">Fazer login</span></p>",
+            "text": "Criar loja gráis",
             "backgroundColor": "#B7FBDB",
             "textColor": "#00363A",
             "borderColor": "#B7FBDB",
+            "size": "Small",
+            "type": "Button",
+            "openModal": "Create Store",
+            "createStorePlanId": "172",
+            "showIcon": false
+          },
+          {
+            "type": "Button",
+            "size": "Small",
+            "text": "Fazer login",
+            "textColor": "#00363A",
+            "backgroundColor": "transparent",
+            "borderColor": "#00363A",
+            "ctaStyle": "button",
+            "href": "https://app.lojaintegrada.com.br/painel/login",
             "outline": true
           }
         ],
         "mobileButtons": [
           {
             "ctaStyle": "button",
-            "text": "<p>Fazer login</p>",
+            "text": "Fazer login",
             "href": "https://app.lojaintegrada.com.br/painel/login",
             "backgroundColor": "#B7FBDB",
             "borderColor": "#B7FBDB",
-            "textColor": "#00363A"
+            "textColor": "#00363A",
+            "size": "Small"
           }
         ],
         "asideMenuButtons": [
           {
+            "text": "Abrir loja grátis",
+            "backgroundColor": "#003037",
+            "textColor": "#ffffff",
+            "borderColor": "#003037",
+            "type": "Button",
+            "size": "Small",
+            "openModal": "Create Store",
+            "createStorePlanId": "172"
+          },
+          {
             "text": "Fazer Login",
+            "textColor": "#003037",
+            "backgroundColor": "Transparent",
+            "borderColor": "#003037",
             "href": "https://app.lojaintegrada.com.br/painel/login",
             "ctaStyle": "button",
-            "backgroundColor": "Transparent",
-            "textColor": "#003037",
-            "borderColor": "#003037",
-            "outline": true
+            "outline": true,
+            "size": "Small"
           }
         ],
         "sideMenuButtons": [],
@@ -96,24 +121,17 @@
         "width": 188
       },
       "initialButtons": [],
-      "backgroundColor": "#003037",
+      "backgroundColor": "rgba(0, 54, 58, 0.3)",
       "barsColor": "#ffffff",
       "asideMenuTopBackgroundColor": "#D0DAD9",
       "asideMenuBackgroundColor": "#ffffff",
       "asideMenuCloseIconColor": "#003037",
       "headerMessage": {
         "show": false,
-        "text": "<p></p>",
+        "text": "<p>Message</p>",
         "textColor": "#22454B",
         "backgroundColor": "#D0DAD9",
-        "cta": [
-          {
-            "ctaStyle": "link",
-            "href": "#",
-            "textColor": "#22454B",
-            "text": "<p style=\"text-align: center\">🚀 Descubra como a loja do Neymar faturou R$ 300 milhões em apenas 10 dias. Acesse aqui</p>"
-          }
-        ],
+        "cta": [],
         "font": "Instrument Serif"
       },
       "campaignTimer": {
@@ -780,7 +798,7 @@
           "bulletPoints": {
             "items": []
           },
-          "title": "Frete e pagamento e aprimorado",
+          "title": "Frete e pagamentoe aprimorado",
           "image": {
             "src": "https://assets.decocache.com/lojaintegradar/743ede52-527d-4d42-ad39-dc3c9b92f82c/detailed-carousel-image-1.svg",
             "width": 549,

@@ -869,7 +869,7 @@
             "slides": [
               {
                 "content": {
-                  "description": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Aumentamos nosso ticket médio em 15% e reduzimos  custos em R$ 9 mil. A plataforma é intuitiva e com fácil integração à VTEX.</span></p>",
+                  "description": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e comfácil integração à VTEX.</span></p>",
                   "avatar": "https://assets.decocache.com/lojaintegradar/37649613-97b8-4dac-b902-c83f74b53c62/testimonial-avatar.png",
                   "name": "<p><span style=\"color: rgb(0, 54, 58);\" data-mce-style=\"color: rgb(0, 54, 58);\">Matheus da M.Camicado</span><span style=\"color: rgb(95, 110, 130); font-size: 10pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 10pt;\"></span></p>",
                   "alt": "m camicado",
@@ -887,7 +887,7 @@
               },
               {
                 "content": {
-                  "description": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Aumentamos nosso ticket médio em 15% e reduzimos  custos em R$ 9 mil. A plataforma é intuitiva e com fácil integração à VTEX.</span></p>",
+                  "description": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e comfácil integração à VTEX.</span></p>",
                   "avatar": "https://assets.decocache.com/lojaintegradar/37649613-97b8-4dac-b902-c83f74b53c62/testimonial-avatar.png",
                   "name": "<p><span style=\"color: rgb(0, 54, 58);\" data-mce-style=\"color: rgb(0, 54, 58);\">Matheus da M.Camicado</span><span style=\"color: rgb(95, 110, 130); font-size: 10pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 10pt;\"></span></p>",
                   "alt": "m camicado",
@@ -901,23 +901,6 @@
                   "roundedAvatar": false,
                   "nameCaption": "<p><span style=\"color: #5f6e82\">Loja no ar em cerca de 60 dias</span></p>",
                   "borderColor": "#CBCBC1"
-                }
-              },
-              {
-                "content": {
-                  "description": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Aumentamos nosso ticket médio em 15% e reduzimos  custos em R$ 9 mil. A plataforma é intuitiva e com fácil integração à VTEX.</span></p>",
-                  "avatar": "https://assets.decocache.com/lojaintegradar/37649613-97b8-4dac-b902-c83f74b53c62/testimonial-avatar.png",
-                  "name": "<p><span style=\"color: rgb(0, 54, 58);\" data-mce-style=\"color: rgb(0, 54, 58);\">Matheus da M.Camicado</span><span style=\"color: rgb(95, 110, 130); font-size: 10pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 10pt;\"></span></p>",
-                  "alt": "m camicado",
-                  "quoteIconColor": "",
-                  "nameIconColor": "#5F6E82",
-                  "nameBackgroundColor": "",
-                  "avaterBorderColor": "",
-                  "avatarWidth": 63,
-                  "backgroundColor": "",
-                  "avatarHeight": 63,
-                  "roundedAvatar": false,
-                  "nameCaption": "<p><span style=\"color: #5f6e82\">Loja no ar em cerca de 60 dias</span></p>"
                 }
               }
             ],
@@ -1102,11 +1085,9 @@
         {
           "value": {
             "__resolveType": "site/sections/Logos.tsx",
-            "title": "<p></p>",
             "titleFont": "Instrument serif",
             "titleColor": "#371E55",
             "captionColor": "#5F6E82",
-            "caption": "<p></p>",
             "logos": [
               {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
@@ -1147,7 +1128,9 @@
                 "height": 72
               }
             ],
-            "paddingBottom": "123px"
+            "paddingBottom": "0",
+            "paddingTop": "0",
+            "blackAndWhiteLogos": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

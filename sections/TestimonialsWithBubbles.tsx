@@ -282,7 +282,7 @@ function SliderItem({ slide, id }: {
     return (<div id={id} class="relative w-full z-10">
     <div 
       class={`${content?.borderColor && "border"} flex flex-col justify-between rounded-xl h-full gap-4 shadow-spreaded4 overflow-hidden pt-7`} 
-      style={{background: content?.backgroundColor, borderColor: content?.borderColor}}>
+      style={{background: content?.backgroundColor, borderColor: content?.borderColor, boxShadow: "0px 4px 24px 0px rgba(0, 0, 0, 0.05), 0px 5.563px 31.72px 0px rgba(0, 72, 82, 0.09)"}}>
 
       <div class="px-7">
         {content?.quoteIconColor && <svg width="31" height="22" viewBox="0 0 31 22" class="text-primary fill-current mb-3.5" xmlns="http://www.w3.org/2000/svg" style={{ color: content?.quoteIconColor }}>

@@ -998,9 +998,9 @@
                         "quoteIconColor": "#003037",
                         "nameIconColor": "#5F6E82",
                         "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
-                        "avatarWidth": 399,
-                        "avatarHeight": 46,
+                        "avaterBorderColor": "",
+                        "avatarWidth": 70,
+                        "avatarHeight": 6,
                         "backgroundColor": ""
                       }
                     },
@@ -1013,7 +1013,9 @@
                         "nameIconColor": "#371E55",
                         "quoteIconColor": "#003037",
                         "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
+                        "avaterBorderColor": "",
+                        "avatarWidth": 70,
+                        "avatarHeight": 13
                       }
                     }
                   ],
@@ -1143,9 +1145,7 @@
                   ],
                   "captionFont": "Instrument serif",
                   "backgroundMedia": {
-                    "image": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/33eb18cd-3071-4d34-9202-937feca15495/Testimonials-background.svg"
-                    },
+                    "image": {},
                     "use": "image"
                   },
                   "modal": {
@@ -1202,10 +1202,11 @@
                         "quoteIconColor": "#003037",
                         "nameIconColor": "#5F6E82",
                         "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)",
-                        "avatarWidth": 399,
-                        "avatarHeight": 46,
-                        "backgroundColor": ""
+                        "avaterBorderColor": "",
+                        "avatarWidth": 94,
+                        "avatarHeight": 9,
+                        "backgroundColor": "",
+                        "roundedAvatar": true
                       }
                     },
                     {
@@ -1217,7 +1218,10 @@
                         "nameIconColor": "#371E55",
                         "quoteIconColor": "#003037",
                         "nameBackgroundColor": "#ffffff",
-                        "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
+                        "avaterBorderColor": "",
+                        "roundedAvatar": true,
+                        "avatarWidth": 94,
+                        "avatarHeight": 20
                       }
                     }
                   ],

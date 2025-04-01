@@ -182,14 +182,15 @@ export interface Content {
     avatarHeight?: number;
     /** @format color-input */
     avaterBorderColor?: string;
+    roundedAvatar?: boolean;
     name?: HTMLWidget;
-    /** @format color-input */
-    nameBackgroundColor?: string;
-    position?: string;
+    nameCaption?: RichText;
     /** @format color-input */
     quoteIconColor?: string;
     /** @format color-input */
     backgroundColor?: string;
+    /** @format color-input */
+    borderColor?: string;
 }
 /** @title {{content.alt}} */
 export interface Testimonial {
@@ -278,23 +279,25 @@ function SliderItem({ slide, id }: {
     id: string;
 }) {
     const { content, } = slide;
-    return (<div id={id} class="relative w-full min-h-[292px] z-10">
-    <div class="flex flex-col justify-between rounded-[32px] h-full shadow-spreaded2 overflow-hidden pt-7" style={{background: content?.backgroundColor}}>
+    return (<div id={id} class="relative w-full z-10">
+    <div 
+      class={`${content?.borderColor && "border"} flex flex-col justify-between rounded-xl h-full gap-4 shadow-spreaded4 overflow-hidden pt-7`} 
+      style={{background: content?.backgroundColor, borderColor: content?.borderColor}}>
 
-      <div class="px-6 md:pl-12 md:pr-7">
-        <svg width="31" height="22" viewBox="0 0 31 22" class="text-primary fill-current" xmlns="http://www.w3.org/2000/svg" style={{ color: content?.quoteIconColor }}>
+      <div class="px-7">
+        {content?.quoteIconColor && <svg width="31" height="22" viewBox="0 0 31 22" class="text-primary fill-current mb-3.5" xmlns="http://www.w3.org/2000/svg" style={{ color: content?.quoteIconColor }}>
           <path d="M6.54688 21.7734C4.71354 21.7734 3.2526 21.1576 2.16406 19.9258C1.10417 18.6654 0.574219 17.0326 0.574219 15.0273C0.574219 12.1341 1.30469 9.34115 2.76562 6.64844C4.25521 3.95573 6.0026 1.75 8.00781 0.03125L12.6914 2.30859C11.0013 4.11328 9.71224 5.91797 8.82422 7.72266C7.96484 9.52734 7.53516 11.1029 7.53516 12.4492H12.6914V16.6172C12.6914 17.849 12.1185 19.0234 10.9727 20.1406C9.85547 21.2292 8.38021 21.7734 6.54688 21.7734ZM24.293 21.7734C22.4596 21.7734 20.9987 21.1576 19.9102 19.9258C18.8503 18.6654 18.3203 17.0326 18.3203 15.0273C18.3203 12.1341 19.0508 9.34115 20.5117 6.64844C21.9727 3.95573 23.7057 1.75 25.7109 0.03125L30.3945 2.30859C28.7044 4.11328 27.4154 5.91797 26.5273 7.72266C25.668 9.52734 25.2383 11.1029 25.2383 12.4492H30.3945V16.6172C30.3945 17.849 29.8216 19.0234 28.6758 20.1406C27.5586 21.2292 26.0977 21.7734 24.293 21.7734Z"/>
-        </svg>
+        </svg>}
 
-        <div class="text-base text-primary md:text-lg mt-3.5" dangerouslySetInnerHTML={{ __html: content?.description || "" }}/>
+        <div class="text-base text-primary " dangerouslySetInnerHTML={{ __html: content?.description || "" }}/>
       </div>
-      <div class="flex gap-4 md:gap-5 mt-5 md:mt-11 bg-secondary-content px-6 md:pl-12 md:pr-7 min-h-[86px]" style={{ backgroundColor: content?.nameBackgroundColor }}>
-        <div class="h-[72px] md:h-24 w-[72px] md:w-24 min-w-[72px] bg-primary-content rounded-full overflow-hidden mt-[-14px] md:mt-[-26px] border border-secondary-content" style={{ borderColor: content?.avaterBorderColor }}>
-          <Image class="object-contain h-full" alt={content?.alt} src={content?.avatar || ""} width={content?.avatarWidth || 188} height={content?.avatarHeight || 68}/>
+      <div class="flex gap-4 md:gap-5 px-7 pb-7">
+        <div class={`${content?.roundedAvatar && "rounded-full"} overflow-hidden ${content?.avaterBorderColor && 'border'}`} style={{ borderColor: content?.avaterBorderColor }}>
+          <Image class="object-contain h-full" alt={content?.alt} src={content?.avatar || ""} width={content?.avatarWidth || 68} height={content?.avatarHeight || 68}/>
         </div>
-        <div class="flex flex-col">
-          <div class="font-semibold text-sm md:text-base" dangerouslySetInnerHTML={{ __html: content?.name || "" }}/>
-          <p class="text-base">{content?.position}</p>
+        <div class="flex flex-col justify-center gap-1">
+          <div class="font-normal text-sm md:text-base" dangerouslySetInnerHTML={{ __html: content?.name || "" }}/>
+          {content?.nameCaption &&<div class="font-normal text-sm" dangerouslySetInnerHTML={{ __html: content?.nameCaption }}/>}
         </div>
       </div>
     </div>
@@ -388,8 +391,8 @@ function TestimonialsWithBubbles(props: Props) {
                         }}/>                                  
                     </label>}
 
-        <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-9 pl-[30px] pr-[22px] py-9 md:py-20 md:px-9" rootId={id} interval={0 && 0 * 1e3} infinite style={{paddingBottom}}>
-          {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item max-w-[608px] w-full">
+        <Slider class="carousel relative carousel-center w-full col-span-full row-span-full gap-8 mx-auto px-5 md:px-9 max-w-[1105px] py-9 md:py-20" rootId={id} interval={0 && 0 * 1e3} infinite style={{paddingBottom}}>
+          {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item max-w-[510px] w-full">
             <SliderItem slide={slide} id={`${id}::${index}`}/>
           </Slider.Item>))}
         </Slider>

@@ -3519,6 +3519,9 @@ details.collapse summary::-webkit-details-marker {
 .bottom-6 {
   bottom: 1.5rem;
 }
+.bottom-\[-100\%\] {
+  bottom: -100%;
+}
 .left-0 {
   left: 0px;
 }
@@ -3551,6 +3554,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .right-2 {
   right: 0.5rem;
+}
+.right-2\.5 {
+  right: 0.625rem;
 }
 .right-2\/4 {
   right: 50%;
@@ -3641,6 +3647,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .top-\[5px\] {
   top: 5px;
+}
+.top-\[5vh\] {
+  top: 5vh;
 }
 .top-\[70px\] {
   top: 70px;
@@ -3804,6 +3813,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+.mb-3\.5 {
+  margin-bottom: 0.875rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -4533,6 +4545,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[1070px\] {
   max-width: 1070px;
 }
+.max-w-\[1105px\] {
+  max-width: 1105px;
+}
 .max-w-\[1130px\] {
   max-width: 1130px;
 }
@@ -4694,6 +4709,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[50px\] {
   max-width: 50px;
+}
+.max-w-\[510px\] {
+  max-width: 510px;
 }
 .max-w-\[522px\] {
   max-width: 522px;
@@ -6576,11 +6594,20 @@ details.collapse summary::-webkit-details-marker {
   --tw-blur: blur(24px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .backdrop-blur-3xl {
   --tw-backdrop-blur: blur(64px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.backdrop-blur-\[10px\] {
+  --tw-backdrop-blur: blur(10px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -6863,6 +6890,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .group:hover .group-hover\:visible {
   visibility: visible;
+}
+.group:hover .group-hover\:bottom-0 {
+  bottom: 0px;
 }
 .group:hover .group-hover\:rotate-180 {
   --tw-rotate: 180deg;
@@ -7511,6 +7541,10 @@ details.collapse summary::-webkit-details-marker {
     height: 75vh;
   }
 
+  .lg\:h-\[83vh\] {
+    height: 83vh;
+  }
+
   .lg\:max-h-\[600px\] {
     max-height: 600px;
   }
@@ -7579,6 +7613,10 @@ details.collapse summary::-webkit-details-marker {
     width: 414px;
   }
 
+  .lg\:w-\[44\.68vh\] {
+    width: 44.68vh;
+  }
+
   .lg\:w-\[456px\] {
     width: 456px;
   }
@@ -7638,6 +7676,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:min-w-\[284px\] {
     min-width: 284px;
+  }
+
+  .lg\:min-w-\[49\.45vh\] {
+    min-width: 49.45vh;
   }
 
   .lg\:min-w-\[500px\] {
@@ -8071,6 +8113,10 @@ details.collapse summary::-webkit-details-marker {
     padding-top: 3.5rem;
   }
 
+  .lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .lg\:pt-24 {
     padding-top: 6rem;
   }
@@ -8193,6 +8239,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .lg\:text-\[46px\] {
+    font-size: 46px;
   }
 
   .lg\:text-\[56px\] {

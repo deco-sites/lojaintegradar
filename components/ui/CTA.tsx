@@ -89,7 +89,7 @@ export default function CTA({ href = "", text, textColor, backgroundColor, borde
 
   return <a
     hx-on:click={openModal && useScript(openModalFunction, openModal, createStorePlanId || '172')}
-    class={`${sizeClasses[size]} rounded-lg hover:scale-110 transition-transform cursor-pointer flex gap-2.5`}
+    class={`${sizeClasses[size]} rounded-lg hover:scale-110 transition-transform cursor-pointer flex items-center gap-2.5`}
     style={type == "Button"
       ? { background: backgroundColor, color: textColor, borderColor }
       : { color: textColor, border: 'none', padding: 0 }}

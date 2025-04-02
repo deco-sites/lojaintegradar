@@ -75,9 +75,13 @@ export interface BulletPoints {
 
 export interface Title {
     text?: RichText;
+    /** @format color-input */
+    color?: string;
     font?: string;
+    fontWeight?: string;
     fontSize?: string;
     letterSpacing?: string;
+    lineHeight?: string;
 }
 
 export interface CarouselItem {
@@ -131,6 +135,7 @@ export interface Props {
     arrows?: Arrows;
     // dots?: boolean;
     // interval?: number;
+    cta?: CTAProps[];
     paddingTop?: string;
     paddingBottom?: string;
 }
@@ -145,8 +150,8 @@ function SliderItem({ slide, id }: {
         "Bottom right": "bottom-5 right-6",
         "Bottom left": "bottom-5 left-6"
     }
-    return (<div id={id} class={`relative w-full rounded-[20px] shadow-spreaded4 flex flex-col group overflow-hidden z-10`} style={{background: backgroundColor}}>
-        <div class="overflow-hidden relative">
+    return (<div id={id} class={`relative w-full rounded-[20px] shadow-spreaded4 flex flex-col group overflow-hidden z-10 lg:min-h-[600px]`} style={{background: backgroundColor}}>
+        <div class="overflow-hidden relative ">
             {use == "image" && image?.src && <Image 
                 src={image.src}
                 alt={image.alt}
@@ -170,11 +175,11 @@ function SliderItem({ slide, id }: {
             />}
         </div>
         
-        <div class="py-[34px] lg:py-11 px-6 flex flex-col gap-1.5 lg:gap-5 flex-grow">
+        <div class="py-[34px] lg:py-8 px-6 flex flex-col gap-1.5 lg:gap-5 flex-grow">
             {title?.text && <div 
                 dangerouslySetInnerHTML={{__html: title.text}} 
                 class="w-full text-2xl lg:text-[32px]"
-                style={{fontSize: title.fontSize, fontFamily: title.font, letterSpacing: title.letterSpacing}}/>}
+                style={{color: title.color, fontFamily: title?.font, fontWeight: title?.fontWeight, fontSize: title?.fontSize, letterSpacing: title?.letterSpacing, lineHeight: title?.lineHeight}}/>}
 
             {caption && <div dangerouslySetInnerHTML={{__html: caption}} class="text-xs lg:text-base w-full"/>}
             <div class="flex flex-wrap gap-4 mt-auto">
@@ -228,7 +233,7 @@ function Buttons({ arrowsColor, arrowsBackgroundColor, arrowsDisableBackgroundCo
 }
 function Carousel(props: Props) {
     if (props.hideSection) return <></>
-    const { id, title, caption, slides, paddingBottom, paddingTop, arrows } = { ...props };
+    const { id, title, caption, slides, paddingBottom, paddingTop, arrows, cta = [] } = { ...props };
     const carouselId = useId();
     return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative" 
         hx-on:click={useScript(refreshArrowsVisibility, {...arrows})} 
@@ -264,6 +269,11 @@ function Carousel(props: Props) {
                     {/* {props.dots && <Dots slides={slides} interval={interval} />}{" "} */}
                     {props.arrows?.show && <Buttons {...props.arrows} />}
                 </AnimateOnShow >
+            </AnimateOnShow>
+            <AnimateOnShow divClass="flex flex-wrap justify-center items-center gap-7 mt-4 lg:mt-11 px-7" animation="animate-fade-up">
+                {cta.map(cta => (
+                    <CTA {...cta} />
+                ))}
             </AnimateOnShow>
     </div>);
 }

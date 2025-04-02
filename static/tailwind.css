@@ -3778,6 +3778,9 @@ details.collapse summary::-webkit-details-marker {
 .\!mt-12 {
   margin-top: 3rem !important;
 }
+.\!mt-20 {
+  margin-top: 5rem !important;
+}
 .-mt-\[68px\] {
   margin-top: -68px;
 }
@@ -4347,6 +4350,9 @@ details.collapse summary::-webkit-details-marker {
 .w-5\/12 {
   width: 41.666667%;
 }
+.w-6 {
+  width: 1.5rem;
+}
 .w-7 {
   width: 1.75rem;
 }
@@ -4535,6 +4541,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-w-\[78vw\] {
   min-width: 78vw;
+}
+.\!max-w-\[1310px\] {
+  max-width: 1310px !important;
 }
 .max-w-40 {
   max-width: 10rem;
@@ -7473,6 +7482,10 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 0px;
   }
 
+  .lg\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
   .lg\:mt-20 {
     margin-top: 5rem;
   }
@@ -7563,6 +7576,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:min-h-\[284px\] {
     min-height: 284px;
+  }
+
+  .lg\:min-h-\[600px\] {
+    min-height: 600px;
   }
 
   .lg\:min-h-\[715px\] {
@@ -7992,11 +8009,6 @@ details.collapse summary::-webkit-details-marker {
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:py-11 {
-    padding-top: 2.75rem;
-    padding-bottom: 2.75rem;
   }
 
   .lg\:py-20 {

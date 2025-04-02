@@ -149,7 +149,7 @@ function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressB
                                                     dangerouslySetInnerHTML={{
                                                         __html: tab.title?.text,
                                                     }}
-                                                    style={{fontFamily: tab.title?.font, fontWeight: tab.title?.fontWeight, fontSize: tab.title?.fontSize, letterSpacing: tab.title?.letterSpacing, lineHeight: tab.title?.lineHeight}}
+                                                    style={{color: tab.title?.color, fontFamily: tab.title?.font, fontWeight: tab.title?.fontWeight, fontSize: tab.title?.fontSize, letterSpacing: tab.title?.letterSpacing, lineHeight: tab.title?.lineHeight}}
                                                 ></span>
                                             )}
 
@@ -173,7 +173,7 @@ function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressB
                                                 dangerouslySetInnerHTML={{
                                                     __html: tab.textContent?.text,
                                                 }}
-                                                style={{fontFamily: tab.textContent.font, fontWeight: tab.textContent.fontWeight, fontSize: tab.textContent.fontSize, letterSpacing: tab.textContent.letterSpacing, lineHeight: tab.textContent.lineHeight}}
+                                                style={{color: tab.textContent.color, fontFamily: tab.textContent.font, fontWeight: tab.textContent.fontWeight, fontSize: tab.textContent.fontSize, letterSpacing: tab.textContent.letterSpacing, lineHeight: tab.textContent.lineHeight}}
                                             ></span>
                                         )}
                                         <div class="flex flex-wrap gap-4 mt-4">

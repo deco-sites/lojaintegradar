@@ -7482,6 +7482,10 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 0px;
   }
 
+  .lg\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
   .lg\:mt-20 {
     margin-top: 5rem;
   }
@@ -7572,6 +7576,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:min-h-\[284px\] {
     min-height: 284px;
+  }
+
+  .lg\:min-h-\[600px\] {
+    min-height: 600px;
   }
 
   .lg\:min-h-\[715px\] {
@@ -8001,11 +8009,6 @@ details.collapse summary::-webkit-details-marker {
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:py-11 {
-    padding-top: 2.75rem;
-    padding-bottom: 2.75rem;
   }
 
   .lg\:py-20 {

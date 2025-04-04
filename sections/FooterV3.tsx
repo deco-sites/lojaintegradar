@@ -84,19 +84,20 @@ export interface Props {
     backgroundMedia?: BackgroundMedia;
     /** @format color-input */
     lineColor?: string;
+    paddingTop?: string;
 }
 
-export default function Footer2({ hideSection, id, centralizeCards = false, showLogo, centralizeBottomLinks = false, centralizeLogoAndSocialLinks = false, cards = [], logo, socialLinksCaption, logoCaption, logoPosition, socialLinks, bottomLinks, logoCaptionColor, bottomLinksColor, backgroundMedia, lineColor }: Props) {
+export default function Footer2({ hideSection, id, centralizeCards = false, showLogo, paddingTop, centralizeBottomLinks = false, centralizeLogoAndSocialLinks = false, cards = [], logo, socialLinksCaption, logoCaption, logoPosition, socialLinks, bottomLinks, logoCaptionColor, bottomLinksColor, backgroundMedia, lineColor }: Props) {
     if (hideSection) return <></>
-    const randomId = useId();
-    const hubspostFormId = randomId + "hubspotForm";
-    return <footer id={id} class="relative text-primary pt-14 lg:pt-[105px] z-10">
+    //const randomId = useId();
+    //const hubspostFormId = randomId + "hubspotForm";
+    return <footer id={id} class="relative text-primary pt-14 lg:pt-[105px] z-10" style={{ paddingTop }}>
 
         <div class="pb-32">
             <div class="max-w-[1250px] mx-auto">
                 <AnimateOnShow divClass={`${centralizeCards && 'mx-auto'} w-full justify-center px-5 lg:p-0 flex flex-wrap gap-[42px]`} animation="animate-fade-up">
                     {cards.length > 0 && cards.map((card) => (
-                        <div class="flex-grow min-w-[78vw] lg:min-w-0 lg:max-w-[500px] rounded-[20px] bg-primary-content py-7 lg:py-10 px-12 lg:px-14 shadow-spreaded4 lg:shadow-spreaded3" style={{ background: card.backgroundColor }}>
+                        <div class="flex-grow min-w-[78vw] lg:min-w-0 lg:max-w-[500px] rounded-[20px] bg-primary-content py-7 lg:py-10 px-12 lg:px-14 shadow-spreaded4 lg:shadow-spreaded5" style={{ background: card.backgroundColor }}>
                             <div class="flex gap-2.5 lg:gap-5 items-center">
                                 {card.cardIcon?.src && <Image
                                     width={card.cardIcon.width || 40}

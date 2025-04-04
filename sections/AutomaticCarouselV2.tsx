@@ -117,7 +117,7 @@ export default function AutomaticCarousel({ hideSection, backgroundColor, title,
 
           {items.map((item) => (
             <div
-              class="relative p-7 rounded-xl lg:rounded-[30px] overflow-hidden w-full lg:min-w-[49.45vh] lg:w-[44.68vh] h-[77vw] lg:h-[83vh] group"
+              class="relative p-7 rounded-xl lg:rounded-[30px] overflow-hidden w-full h-[167vw] lg:min-w-[49.45vh] lg:w-[49.45vh] lg:h-[83vh] group"
             >
               {item.media?.use == "image" && <Image
                 src={item.media.image?.src || ""}
@@ -137,7 +137,7 @@ export default function AutomaticCarousel({ hideSection, backgroundColor, title,
                 style={{ fontFamily: item.title?.font, fontSize: item.title?.fontSize, lineHeight: item.title?.lineHeight, fontWeight: item.title?.fontWeight, letterSpacing: item.title?.letterSpacing, color: item.title?.color }} />}
 
               {item.caption?.text && <div
-                class="absolute bottom-[-100%] w-full left-0 px-7 pb-14 pt-20 group-hover:bottom-0 transition-all duration-300 backdrop-blur-[10px]"
+                class="absolute  w-full left-0 px-7 pb-14 pt-20 bottom-0 lg:bottom-[-100%] group-hover:lg:bottom-0 transition-all duration-300 backdrop-blur-[10px]"
                 dangerouslySetInnerHTML={{ __html: item.caption?.text }}
                 style={{ fontFamily: item.caption?.font, fontSize: item.caption?.fontSize, lineHeight: item.caption?.lineHeight, fontWeight: item.caption?.fontWeight, letterSpacing: item.caption?.letterSpacing, color: item.caption?.color, background: item.caption?.backgroundColor }} />}
             </div>

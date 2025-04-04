@@ -10,6 +10,11 @@ export interface IImage {
   height?: number;
 }
 
+export interface FloatingImage extends IImage {
+  horizontalPosition?: string;
+  verticalPosition?: string;
+}
+
 export interface Title {
   text?: RichText;
   /** @format color-input */
@@ -66,6 +71,7 @@ export interface Container {
 
 export interface Props {
   title?: Title;
+  distanceBetweenTitleAndText?: string;
   text?: RichText;
   bulletPoints?: BulletPoints;
   cta?: CTAProps[];
@@ -73,6 +79,7 @@ export interface Props {
   media?: Media;
   container?: Container;
   sectionBackground?: BackgroundMedia;
+  floatingImage?: FloatingImage;
   lcp?: boolean;
 }
 
@@ -101,7 +108,7 @@ export function HeroMedia({ media }: { media?: Media }) {
   </>
 }
 
-export default function HeroV3({ title, text, bulletPoints, cta = [], media, container, ctaPlacement, sectionBackground, lcp }: Props) {
+export default function HeroV3({ title, text, bulletPoints, cta = [], media, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, lcp, floatingImage }: Props) {
   const placement = {
     "left": "justify-start",
     "center": "justify-center",
@@ -118,10 +125,19 @@ export default function HeroV3({ title, text, bulletPoints, cta = [], media, con
       style={{ background: container?.backgroundColor, marginTop: container?.marginTop, marginBottom: container?.marginBottom, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight }}>
       <AnimateOnShow animation="animate-fade-up50" divClass={`${(media?.use && media.placement != "bellow") && 'max-w-[448px]'} w-full flex flex-col gap-6`} style={{ animationDuration: '1s', maxWidth: title?.titleMaxWidth }}>
 
+        {floatingImage?.src && <Image
+          src={floatingImage.src}
+          alt={floatingImage.alt || "floating image"}
+          width={floatingImage.width || 378}
+          height={floatingImage.height || 168}
+          class="absolute z-10"
+          style={{ top: floatingImage.verticalPosition, left: floatingImage.horizontalPosition }}
+        />}
+
         {title?.text && <div
           dangerouslySetInnerHTML={{ __html: title.text }}
           class={`w-full text-[32px] lg:text-[56px] lg:leading-[1.2] !text-transparent !bg-clip-text`}
-          style={{ fontSize: title.fontSize, fontFamily: title.font, letterSpacing: title.letterSpacing, background: title.color, lineHeight: title.lineHeight }} />}
+          style={{ fontSize: title.fontSize, fontFamily: title.font, letterSpacing: title.letterSpacing, background: title.color, lineHeight: title.lineHeight, marginBottom: distanceBetweenTitleAndText }} />}
 
         {text && <div dangerouslySetInnerHTML={{ __html: text }} class="text-sm lg:text-lg w-full" />}
 

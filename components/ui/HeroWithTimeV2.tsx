@@ -226,7 +226,6 @@ function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressB
                                                 alt={tab.tabImage?.alt || ""}
                                                 height={tab.tabImage?.height || 351}
                                                 width={tab.tabImage?.width || 337}
-                                                style={{ minHeight: tab.tabImage?.height || 351 }}
                                                 class="lg:hidden shadow-md pb-[24px] lg:pb-0 rounded-2xl"
                                             />
                                         }

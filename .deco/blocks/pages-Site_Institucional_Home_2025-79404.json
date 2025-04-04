@@ -732,8 +732,7 @@
                     "height": 483
                   },
                   "titleColor": "#000000",
-                  "contentPlacement": "bottom",
-                  "padding": "48px",
+                  "contentPlacement": "top",
                   "image": {
                     "src": "https://assets.decocache.com/lojaintegradar/d134b4d2-1bbc-4264-82d2-65418d7cfc43/card-image-4-mobile.png",
                     "imagePlacement": "bottom",
@@ -741,7 +740,8 @@
                     "height": 197
                   },
                   "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
-                  "titleLetterSpacing": "-3px"
+                  "titleLetterSpacing": "-3px",
+                  "padding": "40px 20px"
                 },
                 {
                   "bulletPoints": {
@@ -1197,7 +1197,7 @@
                 "width": 625
               },
               "use": "image",
-              "placement": "right"
+              "placement": "left"
             }
           },
           "rule": {
@@ -1323,7 +1323,8 @@
                 "height": 471
               },
               "use": "image",
-              "video": {}
+              "video": {},
+              "placement": "left"
             },
             "container": {
               "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",

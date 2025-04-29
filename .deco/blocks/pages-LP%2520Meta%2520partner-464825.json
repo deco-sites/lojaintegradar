@@ -346,11 +346,21 @@
                 "type": "Button",
                 "size": "Large",
                 "openModal": "Create Store",
-                "text": "Comece agora sem custos",
+                "text": "Assine agora",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
                 "createStorePlanId": "172"
+              },
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Talk to specialist",
+                "text": "Como configurar API",
+                "href": "https://ajuda.lojaintegrada.com.br/pt-BR/articles/9088500-api-de-conversoes-pixel-meta",
+                "textColor": "#00363A",
+                "borderColor": "#00363A",
+                "backgroundColor": "transparent"
               }
             ],
             "ctaPlacement": "center",
@@ -363,17 +373,16 @@
               "use": "image",
               "placement": "bellow"
             },
-            "text": "<p style=\"text-align: center\">Meta e Loja Integrada reservam esta oportunidade a poucos novos lojistas; <br>garanta a sua antes que acabe.</p>",
+            "text": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Meta e Loja Integrada reservam esta oportunidade a poucos novos lojistas; <br>garanta a sua antes que acabe.</span></p>",
             "container": {
               "marginTop": "0",
               "paddingBottom": "0",
               "paddingTop": "124px",
-              "marginBottom": "0"
+              "marginBottom": "0",
+              "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%));"
             },
             "sectionBackground": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/148d9cbd-c57d-43de-95f9-ddc6194fdf9b/background-green-pattern.svg"
-              },
+              "image": {},
               "use": "image"
             },
             "lcp": true,
@@ -381,7 +390,7 @@
               "horizontalPosition": "46%",
               "verticalPosition": "20%"
             },
-            "distanceBetweenTitleAndText": "40px"
+            "distanceBetweenTitleAndText": "0px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

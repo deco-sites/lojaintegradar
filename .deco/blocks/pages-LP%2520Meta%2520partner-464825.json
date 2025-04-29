@@ -334,12 +334,12 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\">25% de desconto para turbinar sua loja</p>",
+              "text": "<p>25% de desconto para turbinar<br>sua loja</p>",
               "font": "Galaxie Copernicus",
               "color": "#00363A",
-              "fontSize": "80px",
+              "fontSize": "60px",
               "letterSpacing": "-3px",
-              "titleMaxWidth": "874px"
+              "titleMaxWidth": "600px"
             },
             "cta": [
               {
@@ -363,22 +363,26 @@
                 "backgroundColor": "transparent"
               }
             ],
-            "ctaPlacement": "center",
+            "ctaPlacement": "left",
             "media": {
               "image": {
-                "width": 922,
-                "height": 432
+                "src": "https://assets.decocache.com/lojaintegradar/e1fc714e-cff8-45ef-94c4-c4bfacc8676c/API-CONVERSAO-META-LOJAINTEGRADA.png",
+                "width": "100%"
               },
               "use": "image",
-              "placement": "bellow"
+              "placement": "right"
             },
-            "text": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Meta e Loja Integrada reservam esta oportunidade a poucos novos lojistas; <br>garanta a sua antes que acabe.</span></p>",
+            "text": "<p style=\"text-align: justify\"><span style=\"color: rgb(0, 54, 58)\">Meta e Loja Integrada reservam esta oportunidade a poucos</span><br><span style=\"color: rgb(0, 54, 58)\">novos lojistas; garanta a sua antes que acabe.</span></p>",
             "container": {
               "marginTop": "0",
-              "paddingBottom": "0",
               "paddingTop": "124px",
               "marginBottom": "0",
-              "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%));"
+              "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%));",
+              "backgroundMedia": {
+                "image": {},
+                "use": "image"
+              },
+              "paddingBottom": "124px"
             },
             "sectionBackground": {
               "image": {},

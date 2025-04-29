@@ -214,6 +214,7 @@ export interface Props {
     /** @format color-input */
     annualTagTextColor?: string;
     annualTagPosition?: "below" | "aside";
+    centralizeSlides?: boolean;
     slides?: Plan[];
     /**
      * @title Show arrows
@@ -377,7 +378,7 @@ function Plans(props: Props) {
     if (props.hideSection) return <></>
     const carouselId = useId();
     const id = props.id || carouselId;
-    const { title, caption, bottomCta = [], slides, backgroundImage, montlyLabel, annualLabel, annualTagPosition = "below", annualTag, switchBackgroundColor, switchBallColor, annualTagTextColor, arrows, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, arrowsColor, paddingBottom, paddingTop } = props;
+    const { title, caption, bottomCta = [], slides, centralizeSlides, backgroundImage, montlyLabel, annualLabel, annualTagPosition = "below", annualTag, switchBackgroundColor, switchBallColor, annualTagTextColor, arrows, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, arrowsColor, paddingBottom, paddingTop } = props;
     return (<div id={id} class="relative">
             {backgroundImage?.src && <Image 
                     src={backgroundImage.src}
@@ -423,8 +424,8 @@ function Plans(props: Props) {
                 </div>
 
                 <AnimateOnShow animation="animate-pop-up" divClass="w-full" delay={400}>
-                    <Slider class="carousel carousel-center py-9 w-full" rootId={carouselId} infinite>
-                        {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-[90%] lg:w-1/3">
+                    <Slider class={`carousel carousel-center py-9 w-full ${centralizeSlides && 'justify-center'}`} rootId={carouselId} infinite>
+                        {slides?.map((slide, index) => (<Slider.Item index={index} class={"carousel-item w-[90%] lg:w-1/3"}>
                                 <SliderItem slide={slide} id={`${carouselId}-${index}`}/>
                             </Slider.Item>))}
                     </Slider>

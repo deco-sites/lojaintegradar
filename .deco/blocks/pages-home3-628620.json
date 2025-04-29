@@ -8841,11 +8841,13 @@
           "value": {
             "__resolveType": "site/sections/FooterV3.tsx",
             "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 32pt\">resultados que surpreendem.</span></em></p>",
-            "titleFont": "Instrument serif",
             "backgroundImage": {
               "src": "https://assets.decocache.com/lojaintegradar/e1e18a14-b5a2-4e26-a84c-9a492ae0552a/bgfooterpng.png",
               "height": 400
             },
+            "id": "ecossistemaconteudo",
+            "paddingTop": "0",
+            "titleFont": "Instrument serif",
             "color1": "#371E55",
             "color2": "#FFFFFF",
             "cards": [
@@ -8950,15 +8952,13 @@
             "bottomBackground": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
             },
-            "id": "ecossistemaconteudo",
             "useBackground": "image",
             "backgroundHeight": "400px",
             "showLogo": true,
             "logoPosition": "above",
             "cardsTextColor": "#00363A",
             "centralizeBottomLinks": true,
-            "bottomLinksColor": "#5F6E82",
-            "paddingTop": "0"
+            "bottomLinksColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

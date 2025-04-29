@@ -1411,7 +1411,7 @@
             "value": {
               "__resolveType": "site/sections/Carousel.tsx",
               "title": "<p><span style=\"color: rgb(0, 48, 55); font-size: 46px\">Nós queremos mais é</span><br><span style=\"color: rgb(0, 48, 55); font-size: 46px\">que você cresça!</span></p><p style=\"color: #5F6E82; font-size: 22px; font-family:Inter; line-height:33px; \"><span><br>Uma plataforma que se adapta às suas necessidades, seja qual for<br> o tamanho do seu negócio.</span></p>",
-              "paddingBottom": "0px",
+              "paddingBottom": "60px",
               "titleColor": "",
               "captionColor": "#371E55",
               "slides": [
@@ -1511,7 +1511,9 @@
                 "borderColor": "#00363A"
               },
               "hideSection": false,
-              "titleFont": "Galaxie Copernicus"
+              "titleFont": "Galaxie Copernicus",
+              "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%));",
+              "paddingTop": "60px"
             },
             "rule": {
               "__resolveType": "website/matchers/always.ts"

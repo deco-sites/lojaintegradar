@@ -1284,161 +1284,12 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p style=\"text-align: justify\"><span>Automações</span></p>",
-              "color": "#00363A",
-              "font": "Galaxie Copernicus",
-              "letterSpacing": "-3px"
-            },
-            "text": "<p><span style=\"color: #f6f8f9\">Ferramentas automatizadas para recuperação de carrinhos abandonados, recomendação de produtos e comunicação com clientes via email e WhatsApp.</span></p>",
-            "bulletPoints": {
-              "items": [
-                {
-                  "text": "Recuperação de carrinhos abandonados via email e WhatsApp"
-                },
-                {
-                  "text": "Recomendações personalizadas de produtos"
-                },
-                {
-                  "text": "Lembretes automatizados para pedidos sem pagamento"
-                }
-              ],
-              "bulletPointsColor": "#00363A",
-              "bulletPointsIcon": {
-                "src": "https://assets.decocache.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
-              }
-            },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Medium",
-                "href": "linkhere",
-                "backgroundColor": "#B7FBDB",
-                "textColor": "#00363A",
-                "borderColor": "#B7FBDB",
-                "text": "Testar agora",
-                "showIcon": false
-              }
-            ],
-            "media": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/7e19c2c6-4589-4962-a2fc-920c83910eba/hero-image.png",
-                "width": 625
-              },
-              "use": "image",
-              "placement": "left"
-            },
-            "container": {
-              "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
-              "paddingTop": "0px",
-              "marginTop": "0px"
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroV3.tsx",
-            "title": {
-              "text": "<p style=\"text-align: justify\">Automações</p>",
-              "color": "#00363A",
-              "font": "Galaxie Copernicus",
-              "letterSpacing": "-3px"
-            },
-            "text": "<p><span style=\"color: rgb(246, 248, 249)\">Ferramentas automatizadas para recuperação de carrinhos abandonados, recomendação de produtos e comunicação com clientes via email e WhatsApp.</span></p>",
-            "bulletPoints": {
-              "items": [
-                {
-                  "text": "Recuperação de carrinhos abandonados via email e WhatsApp"
-                },
-                {
-                  "text": "Recomendações personalizadas de produtos"
-                },
-                {
-                  "text": "Lembretes automatizados para pedidos sem pagamento"
-                }
-              ],
-              "bulletPointsColor": "#00363A",
-              "bulletPointsIcon": {
-                "src": "https://assets.decocache.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
-              }
-            },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Large",
-                "href": "linkhere",
-                "backgroundColor": "#B7FBDB",
-                "textColor": "#00363A",
-                "borderColor": "#B7FBDB",
-                "text": "Testar agora",
-                "showIcon": false
-              }
-            ],
-            "media": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/7e19c2c6-4589-4962-a2fc-920c83910eba/hero-image.png",
-                "width": 625
-              },
-              "use": "image",
-              "video": {},
-              "placement": "left"
-            },
-            "container": {
-              "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
-              "paddingRight": "85px",
-              "backgroundMedia": {
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/41bf2fa4-242d-4fcc-bbb3-27bf30782e88/hero-v3-background.svg",
-                  "width": 1278,
-                  "height": 631
-                },
-                "use": "image"
-              },
-              "paddingTop": "0px",
-              "paddingLeft": "85px"
-            },
-            "sectionBackground": {
-              "backgroundColor": ""
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroV3.tsx",
-            "title": {
               "text": "<p><span>Marketplace</span></p>",
               "color": "#00363A",
-              "letterSpacing": "-3px",
-              "font": "Galaxie Copernicus"
+              "font": "Galaxie Copernicus",
+              "letterSpacing": "-3px"
             },
             "text": "<p><span style=\"color: rgb(246, 249, 249)\">Distribuição otimizada dos seus produtos em múltiplos canais de venda, como Mercado</span></p><p><span style=\"color: rgb(246, 249, 249)\">Livre, Magalu e canais de mídia social.</span></p>",
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Medium",
-                "href": "linkhere",
-                "text": "Testar agora",
-                "backgroundColor": "#B7FBDB",
-                "textColor": "#00363A",
-                "borderColor": "#B7FBDB"
-              }
-            ],
-            "container": {
-              "marginBottom": "0",
-              "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
-              "paddingRight": "0px"
-            },
             "bulletPoints": {
               "items": [
                 {
@@ -1456,6 +1307,17 @@
                 "src": "https://assets.decocache.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
               }
             },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Medium",
+                "href": "linkhere",
+                "backgroundColor": "#B7FBDB",
+                "textColor": "#00363A",
+                "borderColor": "#B7FBDB",
+                "text": "Testar agora"
+              }
+            ],
             "media": {
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/beabc247-5a98-45d4-a42b-58112b5fe070/hero-image-2.png",
@@ -1463,8 +1325,13 @@
                 "height": 471
               },
               "use": "image",
-              "video": {},
-              "placement": "left"
+              "placement": "left",
+              "video": {}
+            },
+            "container": {
+              "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
+              "paddingRight": "0px",
+              "marginBottom": "0"
             }
           },
           "rule": {
@@ -1478,21 +1345,47 @@
             "title": {
               "text": "<p><span>Marketplace</span></p>",
               "color": "#00363A",
-              "letterSpacing": "-3px",
-              "font": "Galaxie Copernicus"
+              "font": "Galaxie Copernicus",
+              "letterSpacing": "-3px"
             },
             "text": "<p><span style=\"color: #f6f9f9\">Distribuição otimizada dos seus produtos em múltiplos canais de venda, como Mercado Livre, Magalu e canais de mídia social.</span></p>",
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "Integração simplificada com novos marketplaces"
+                },
+                {
+                  "text": "Gestão centralizada de estoque e pedidos"
+                },
+                {
+                  "text": "Otimização de listagens para cada canal"
+                }
+              ],
+              "bulletPointsColor": "#00363A",
+              "bulletPointsIcon": {
+                "src": "https://assets.decocache.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
+              }
+            },
             "cta": [
               {
                 "type": "Button",
                 "size": "Large",
                 "href": "linkhere",
-                "text": "Testar agora",
                 "backgroundColor": "#B7FBDB",
                 "textColor": "#00363A",
-                "borderColor": "#B7FBDB"
+                "borderColor": "#B7FBDB",
+                "text": "Testar agora"
               }
             ],
+            "media": {
+              "image": {
+                "src": "https://data.decoassets.com/lojaintegradar/beabc247-5a98-45d4-a42b-58112b5fe070/hero-image-2.png",
+                "width": 718,
+                "height": 471
+              },
+              "use": "image",
+              "video": {}
+            },
             "container": {
               "backgroundColor": "var(--Gradient-blue-teal-turquoise,      radial-gradient(50.27% 50.07% at 31.93% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%),     radial-gradient(56.46% 71.32% at 68.58% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%),     radial-gradient(221.46% 120.15% at 25.42% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%),     linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%),      #FFF)",
               "paddingRight": "0px",
@@ -1502,32 +1395,6 @@
                 },
                 "use": "image"
               }
-            },
-            "bulletPoints": {
-              "items": [
-                {
-                  "text": "Integração simplificada com novos marketplaces"
-                },
-                {
-                  "text": "Gestão centralizada de estoque e pedidos"
-                },
-                {
-                  "text": "Otimização de listagens para cada canal"
-                }
-              ],
-              "bulletPointsColor": "#00363A",
-              "bulletPointsIcon": {
-                "src": "https://assets.decocache.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
-              }
-            },
-            "media": {
-              "image": {
-                "src": "https://data.decoassets.com/lojaintegradar/beabc247-5a98-45d4-a42b-58112b5fe070/hero-image-2.png",
-                "width": 718,
-                "height": 471
-              },
-              "use": "image",
-              "video": {}
             }
           },
           "rule": {
@@ -1561,12 +1428,12 @@
                 "openModal": "Customer Advisory Board Modal"
               }
             ],
-            "ctaPlacement": "center",
             "container": {
-              "marginTop": "0",
               "marginBottom": "0",
+              "marginTop": "0",
               "paddingBottom": "0"
-            }
+            },
+            "ctaPlacement": "center"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1595,11 +1462,11 @@
                 "openModal": "Customer Advisory Board Modal"
               }
             ],
-            "ctaPlacement": "center",
             "container": {
               "marginBottom": "0px",
               "paddingBottom": "15px"
-            }
+            },
+            "ctaPlacement": "center"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1763,6 +1630,139 @@
       "__resolveType": "site/sections/GridOverlay.tsx",
       "linesColor": "",
       "mouseShineColor": ""
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV3.tsx",
+            "title": {
+              "text": "<p style=\"text-align: justify\"><span>Automações</span></p>",
+              "color": "#00363A",
+              "font": "Galaxie Copernicus",
+              "letterSpacing": "-3px"
+            },
+            "container": {
+              "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
+              "paddingTop": "0px",
+              "marginTop": "0px"
+            },
+            "text": "<p><span style=\"color: #f6f8f9\">Ferramentas automatizadas para recuperação de carrinhos abandonados, recomendação de produtos e comunicação com clientes via email e WhatsApp.</span></p>",
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "Recuperação de carrinhos abandonados via email e WhatsApp"
+                },
+                {
+                  "text": "Recomendações personalizadas de produtos"
+                },
+                {
+                  "text": "Lembretes automatizados para pedidos sem pagamento"
+                }
+              ],
+              "bulletPointsColor": "#00363A",
+              "bulletPointsIcon": {
+                "src": "https://assets.decocache.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
+              }
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Medium",
+                "text": "Testar agora",
+                "href": "linkhere",
+                "textColor": "#00363A",
+                "backgroundColor": "#B7FBDB",
+                "borderColor": "#B7FBDB",
+                "showIcon": false
+              }
+            ],
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/7e19c2c6-4589-4962-a2fc-920c83910eba/hero-image.png",
+                "width": 625
+              },
+              "use": "image",
+              "placement": "left"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV3.tsx",
+            "title": {
+              "text": "<p style=\"text-align: justify\">Automações</p>",
+              "color": "#00363A",
+              "font": "Galaxie Copernicus",
+              "letterSpacing": "-3px"
+            },
+            "container": {
+              "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
+              "paddingTop": "0px",
+              "backgroundMedia": {
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/41bf2fa4-242d-4fcc-bbb3-27bf30782e88/hero-v3-background.svg",
+                  "width": 1278,
+                  "height": 631
+                },
+                "use": "image"
+              },
+              "paddingLeft": "85px",
+              "paddingRight": "85px"
+            },
+            "text": "<p><span style=\"color: rgb(246, 248, 249)\">Ferramentas automatizadas para recuperação de carrinhos abandonados, recomendação de produtos e comunicação com clientes via email e WhatsApp.</span></p>",
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "Recuperação de carrinhos abandonados via email e WhatsApp"
+                },
+                {
+                  "text": "Recomendações personalizadas de produtos"
+                },
+                {
+                  "text": "Lembretes automatizados para pedidos sem pagamento"
+                }
+              ],
+              "bulletPointsColor": "#00363A",
+              "bulletPointsIcon": {
+                "src": "https://assets.decocache.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
+              }
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "text": "Testar agora",
+                "href": "linkhere",
+                "textColor": "#00363A",
+                "backgroundColor": "#B7FBDB",
+                "borderColor": "#B7FBDB",
+                "showIcon": false
+              }
+            ],
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/7e19c2c6-4589-4962-a2fc-920c83910eba/hero-image.png",
+                "width": 625
+              },
+              "use": "image",
+              "placement": "left",
+              "video": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": ""
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     }
   ]
 }

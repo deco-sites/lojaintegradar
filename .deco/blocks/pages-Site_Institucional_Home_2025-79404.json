@@ -1217,7 +1217,6 @@
             "container": {
               "backgroundColor": "var(--Gradient-blue-teal-turquoise, radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(221.46% 120.15% at 74.58% 15.91%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF)",
               "paddingTop": "0px",
-              "marginTop": "0px",
               "backgroundMedia": {
                 "image": {
                   "src": "https://assets.decocache.com/lojaintegradar/41bf2fa4-242d-4fcc-bbb3-27bf30782e88/hero-v3-background.svg",
@@ -1267,6 +1266,9 @@
               "use": "image",
               "placement": "left",
               "video": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": ""
             }
           },
           "rule": {

@@ -1,10 +1,9 @@
 import HeroWithTime from "../components/ui/HeroWithTime.tsx";
-import { Section } from "deco/blocks/section.ts";
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import { Button } from "site/types/types.ts";
 import { ButtonProps } from "../islands/HeroTimeButtons.tsx";
-import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx"
-
+import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
+import { type Section } from "@deco/deco/blocks";
 export interface Props {
     hideSection?: boolean;
     title?: Title;
@@ -17,7 +16,6 @@ export interface Props {
     paddingBottom?: string;
     bottomSection?: Section;
 }
-
 export interface IVideo {
     video?: VideoWidget;
     width?: number;
@@ -26,7 +24,6 @@ export interface IVideo {
     widthDesktop?: number;
     heightDesktop?: number;
 }
-
 /** @title {{text}} */
 export interface Tag {
     text?: string;
@@ -38,7 +35,6 @@ export interface Tag {
     /** @format color-input */
     borderColor?: string;
 }
-
 interface Title {
     /**
      * @format rich-text
@@ -49,7 +45,6 @@ interface Title {
      */
     mobile?: string;
 }
-
 interface Subtitle {
     /**
      * @format rich-text
@@ -60,7 +55,6 @@ interface Subtitle {
      */
     mobile?: string;
 }
-
 interface Tabs {
     icon?: {
         image?: ImageWidget;
@@ -102,7 +96,6 @@ interface Tabs {
     videoUrl?: VideoWidget;
     buttons?: ButtonProps[];
 }
-
 interface TabsTitle {
     /**
      * @format rich-text
@@ -113,7 +106,6 @@ interface TabsTitle {
      */
     mobile?: string;
 }
-
 interface TabsTextContent {
     /**
      * @format rich-text
@@ -124,7 +116,6 @@ interface TabsTextContent {
      */
     mobile?: string;
 }
-
 interface Background {
     type: 'solid' | 'gradient';
     color?: string;
@@ -138,79 +129,51 @@ interface Background {
         }[];
     };
 }
-
-
-
 function HeroWithTimer(props: Props) {
-    if (props.hideSection) return <></>
+    if (props.hideSection)
+        return <></>;
     const { paddingBottom, paddingTop, title, subTitle } = props;
     const getBackgroundStyle = () => {
-        if (!props.background) return {};
-
+        if (!props.background)
+            return {};
         if (props.background.type === 'solid') {
             return { backgroundColor: props.background.color };
         }
-
         if (props.background.type === 'gradient' && props.background.gradient) {
             const { type, stops, angle, shape } = props.background.gradient;
             const colorStops = stops?.map(stop => `${stop.color} ${stop.position}%`).join(', ');
-
             if (type === 'linear') {
                 return {
                     backgroundImage: `linear-gradient(${angle || 0}deg, ${colorStops})`
                 };
-            } else if (type === 'radial') {
+            }
+            else if (type === 'radial') {
                 return {
                     backgroundImage: `radial-gradient(${shape || 'circle'}, ${colorStops})`
                 };
             }
         }
-
         return {};
     };
-
-    return (
-        <div id="heroTimeSection" style={{ ...getBackgroundStyle(), paddingBottom, paddingTop }} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
+    return (<div id="heroTimeSection" style={{ ...getBackgroundStyle(), paddingBottom, paddingTop }} className="bg-base-300 px-[10px] py-[60px] lg:py-[160px]">
             <AnimateOnShow animation="animate-pop-up" divClass="flex flex-col gap-4 mb-[60px]">
 
-                {title?.desktop && (
-                    <span
-                        className={`hidden lg:block`}
-                        dangerouslySetInnerHTML={{
-                            __html: title?.desktop,
-                        }}
-                    ></span>
-                )}
-                {title?.mobile && (
-                    <span
-                        className="lg:hidden"
-                        dangerouslySetInnerHTML={{
-                            __html: title?.mobile,
-                        }}
-                    ></span>
-                )}
+                {title?.desktop && (<span className={`hidden lg:block`} dangerouslySetInnerHTML={{
+                __html: title?.desktop,
+            }}></span>)}
+                {title?.mobile && (<span className="lg:hidden" dangerouslySetInnerHTML={{
+                __html: title?.mobile,
+            }}></span>)}
 
-                {subTitle?.desktop && (
-                    <span
-                        className="hidden lg:block font-instrument leading-[68.5px]"
-                        dangerouslySetInnerHTML={{
-                            __html: subTitle?.desktop,
-                        }}
-                    ></span>
-                )}
-                {subTitle?.mobile && (
-                    <span
-                        className="lg:hidden font-instrument"
-                        dangerouslySetInnerHTML={{
-                            __html: subTitle?.mobile,
-                        }}
-                    ></span>
-                )}
+                {subTitle?.desktop && (<span className="hidden lg:block font-instrument leading-[68.5px]" dangerouslySetInnerHTML={{
+                __html: subTitle?.desktop,
+            }}></span>)}
+                {subTitle?.mobile && (<span className="lg:hidden font-instrument" dangerouslySetInnerHTML={{
+                __html: subTitle?.mobile,
+            }}></span>)}
             </AnimateOnShow>
-            <HeroWithTime {...props} />
-            {props.bottomSection && <props.bottomSection.Component {...props.bottomSection.props} />}
-        </div>
-    )
+            <HeroWithTime {...props}/>
+            {props.bottomSection && <props.bottomSection.Component {...props.bottomSection.props}/>}
+        </div>);
 }
-
-export default HeroWithTimer
+export default HeroWithTimer;

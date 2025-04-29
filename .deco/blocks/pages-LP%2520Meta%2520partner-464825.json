@@ -1411,7 +1411,7 @@
             "value": {
               "__resolveType": "site/sections/Carousel.tsx",
               "title": "<p><span style=\"color: rgb(0, 48, 55); font-size: 46px\">Nós queremos mais é</span><br><span style=\"color: rgb(0, 48, 55); font-size: 46px\">que você cresça!</span></p><p style=\"color: #5F6E82; font-size: 22px; font-family:Inter; line-height:33px; \"><span><br>Uma plataforma que se adapta às suas necessidades, seja qual for<br> o tamanho do seu negócio.</span></p>",
-              "paddingBottom": "120px",
+              "paddingBottom": "0px",
               "titleColor": "",
               "captionColor": "#371E55",
               "slides": [
@@ -1501,16 +1501,14 @@
               "id": "nossoecossistema",
               "arrowsColor": "#003037",
               "cta": [],
-              "backgroundImage": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8243ad-68f1-4e47-bdc5-d7abec141794/elemento-bg-1.png"
-              },
+              "backgroundImage": {},
               "interval": 0,
               "createStoreCta": {
                 "order": 1,
                 "planId": "172",
                 "text": "Começar no grátis",
-                "backgroundColor": "#003037",
-                "borderColor": "#003037"
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A"
               },
               "hideSection": false,
               "titleFont": "Galaxie Copernicus"

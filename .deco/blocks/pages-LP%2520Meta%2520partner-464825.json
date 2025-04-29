@@ -284,12 +284,11 @@
               {
                 "type": "Button",
                 "size": "Large",
-                "openModal": "Create Store",
                 "text": "Assine Agora    ",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
-                "createStorePlanId": "172"
+                "href": "https://app.lojaintegrada.com.br/public/assinar?plano_id=174&periodo=mensal&cupom=META-PARTNER"
               },
               {
                 "type": "Button",
@@ -342,7 +341,7 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p style=\"font-size:18px; font-family: Inter; lett\">Somente até 15/05</p><p>25% de desconto para turbinar<br>sua loja</p>",
+              "text": "<p>25% de desconto para turbinar<br>sua loja</p>",
               "font": "Galaxie Copernicus",
               "fontSize": "60px",
               "letterSpacing": "-3px",
@@ -353,12 +352,11 @@
               {
                 "type": "Button",
                 "size": "Large",
-                "openModal": "Create Store",
                 "text": "Assine agora",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
-                "createStorePlanId": "172"
+                "href": "https://app.lojaintegrada.com.br/public/assinar?plano_id=174&periodo=mensal&cupom=META-PARTNER"
               },
               {
                 "size": "Large",

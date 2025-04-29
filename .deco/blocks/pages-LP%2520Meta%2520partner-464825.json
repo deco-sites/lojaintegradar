@@ -377,7 +377,7 @@
               "marginTop": "0",
               "paddingTop": "124px",
               "marginBottom": "0",
-              "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%));",
+              "backgroundColor": "",
               "backgroundMedia": {
                 "image": {},
                 "use": "image"
@@ -385,7 +385,8 @@
             },
             "sectionBackground": {
               "image": {},
-              "use": "image"
+              "use": "image",
+              "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%));"
             },
             "lcp": true,
             "floatingImage": {

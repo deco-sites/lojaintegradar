@@ -4893,8 +4893,7 @@
                       "text": "<p><span>3 usuários do painel</span></p>"
                     },
                     {
-                      "text": "<p><span>Edição de HTML</span></p>",
-                      "toolTipText": "tool tip text"
+                      "text": "<p><span>Edição de HTML</span></p>"
                     }
                   ],
                   "bulletPointsIcon": {
@@ -5572,8 +5571,6 @@
                 "borderColor": "#F2F4F5"
               }
             ],
-            "annualLabel": "Anual",
-            "montlyLabel": "Mensal",
             "dots": false,
             "bottomCaption": "Que tal um impulso?",
             "bottomTitle": "Comece agora sem custo",
@@ -5610,9 +5607,7 @@
             },
             "arrowsColor": "#ca1616",
             "annualTagTextColor": "#7A2D0D",
-            "annualTag": "- 2O% OFF",
             "arrows": false,
-            "annualTagPosition": "aside",
             "paddingTop": "120px",
             "switchBackgroundColor": "#DFE4E6",
             "switchBallColor": "#00363A",
@@ -5632,7 +5627,12 @@
                 "borderColor": "#00363A",
                 "size": "Large"
               }
-            ]
+            ],
+            "centralizeSlides": true,
+            "annualTag": "- 25% OFF",
+            "annualLabel": "Anual",
+            "montlyLabel": "Mensal",
+            "annualTagPosition": "aside"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

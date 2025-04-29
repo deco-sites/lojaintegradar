@@ -1,0 +1,241 @@
+{
+  "__resolveType": "website/flags/multivariate/section.ts",
+  "variants": [
+    {
+      "value": {
+        "__resolveType": "site/sections/Carousel.tsx",
+        "title": "<p style=\"line-height:1; \"><span style=\"color: rgb(0, 48, 55); font-size:32pt;  font-weight:300; \">Nós queremos mais é<br> que você cresça!</span></p><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:18px; font-weight:300; font-family: 'Inter'; \">Uma plataforma que se adapta às suas necessidades, seja qual for o tamanho do<br> seu negócio.</p>",
+        "paddingBottom": "120px",
+        "paddingTop": "80px",
+        "titleColor": "",
+        "titleFont": "Instrument serif",
+        "captionColor": "#371E55",
+        "slides": [
+          {
+            "title": "Para quem está começando no e-commerce",
+            "caption": "<p><span style=\"font-size: 11pt; line-height:160%;\">Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
+              "height": 456,
+              "width": 484
+            },
+            "textPlacement": "Bottom",
+            "icon": {
+              "alt": "white arrow",
+              "placement": "Top right"
+            },
+            "textColor": "#ffffff",
+            "useBackground": "video",
+            "backgroundVideo": "https://assets.decocache.com/lojaintegradar/b68a2f75-71a3-4b5f-ae66-8fa384aba897/para-quem-esta-comecando-(2mb).mp4",
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/12f925ba-030b-498b-8aaf-ff031a1c765d/check-icon.png",
+                "alt": "check icon"
+              }
+            }
+          },
+          {
+            "title": "Para quem quer vender em marketplaces e redes sociais",
+            "textPlacement": "Bottom",
+            "icon": {
+              "alt": "purple arrow",
+              "placement": "Top right"
+            },
+            "caption": "<p style=\"line-height:160%; \">Use a Loja Integrada para expandir suas vendas de forma eficiente e se beneficiar de um ecossistema completo para o seu negócio.</p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
+              "width": 484,
+              "height": 456
+            },
+            "textColor": "#ffffff",
+            "useBackground": "video",
+            "backgroundVideo": "https://assets.decocache.com/lojaintegradar/7cc51fe9-7e62-4d8a-b1b2-1d38e955369d/para-quem-quer-crescer-(1mb).mp4"
+          },
+          {
+            "bulletPoints": {
+              "items": []
+            },
+            "title": "Para quem quer vender sem estoque",
+            "textColor": "#ffffff",
+            "textPlacement": "Bottom",
+            "icon": {
+              "placement": "Top right",
+              "alt": "purple arrow"
+            },
+            "caption": "<p><span style=\"font-size: 11pt; line-height:160%; \">Com o Dropi, faça dropshipping com fornecedores do AliExpress. Acesse mais de 100 milhões de produtos e aproveite as menores taxas do mercado.</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
+              "height": 484,
+              "width": 456
+            },
+            "useBackground": "video",
+            "backgroundVideo": "https://assets.decocache.com/lojaintegradar/dc10ee01-5e25-4cc1-ab4e-53fc0a299cf0/vender-sem-estoque-(1)-(1).mp4"
+          },
+          {
+            "textColor": "#ffffff",
+            "textPlacement": "Bottom",
+            "icon": {
+              "placement": "Top right",
+              "alt": "white arrow"
+            },
+            "bulletPoints": {
+              "items": []
+            },
+            "title": "Para quem quer levar a loja física para o digital",
+            "caption": "<p><span style=\"font-size: 11pt; line-height:160%;\">Transforme sua loja física em um e-commerce de sucesso, alcançando clientes em todo o Brasil com a tecnologia e suporte da Loja Integrada.</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
+              "width": 484,
+              "height": 456
+            },
+            "useBackground": "video",
+            "backgroundVideo": "https://assets.decocache.com/lojaintegradar/b3df831a-c88a-40d9-8f52-839444903d46/levar-loja-para-o-digital-(2mb).mp4"
+          }
+        ],
+        "arrows": true,
+        "arrowsColor": "#003037",
+        "id": "nossoecossistema",
+        "cta": [
+          {
+            "ctaStyle": "button",
+            "text": "Ver planos",
+            "backgroundColor": "#ffffff",
+            "borderColor": "#003037",
+            "textColor": "#003037",
+            "href": "#plans",
+            "showIcon": false,
+            "outline": true
+          }
+        ],
+        "backgroundImage": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8243ad-68f1-4e47-bdc5-d7abec141794/elemento-bg-1.png"
+        },
+        "interval": 0,
+        "createStoreCta": {
+          "order": 1,
+          "planId": "172",
+          "text": "Criar loja",
+          "backgroundColor": "#003037",
+          "borderColor": "#003037"
+        }
+      },
+      "rule": {
+        "__resolveType": "website/matchers/device.ts",
+        "mobile": true
+      }
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/Carousel.tsx",
+        "title": "<p><span style=\"color: rgb(0, 48, 55); font-size:70px;  font-weight:300; \">Nós queremos mais é que você cresça!</span><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:24px; font-weight:300; font-family: 'Inter'; \"><br>Uma plataforma que se adapta às suas necessidades, seja qual for <br>o tamanho do seu negócio.</p>",
+        "paddingBottom": "120px",
+        "titleColor": "",
+        "captionColor": "#371E55",
+        "titleFont": "Instrument serif",
+        "slides": [
+          {
+            "title": "Para quem está começando no e-commerce",
+            "caption": "<p><span style=\"font-size: 11pt; line-height:160%;\">Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
+              "height": 456,
+              "width": 484
+            },
+            "textPlacement": "Bottom",
+            "icon": {
+              "alt": "white arrow",
+              "placement": "Top right"
+            },
+            "textColor": "#ffffff",
+            "useBackground": "video",
+            "backgroundVideo": "https://assets.decocache.com/lojaintegradar/b68a2f75-71a3-4b5f-ae66-8fa384aba897/para-quem-esta-comecando-(2mb).mp4",
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/12f925ba-030b-498b-8aaf-ff031a1c765d/check-icon.png",
+                "alt": "check icon"
+              }
+            }
+          },
+          {
+            "title": "Para quem quer vender em marketplaces e redes sociais",
+            "textPlacement": "Bottom",
+            "icon": {
+              "alt": "purple arrow",
+              "placement": "Top right"
+            },
+            "caption": "<p style=\"line-height:160%; \"> Use a Loja Integrada para expandir suas vendas de forma eficiente e se beneficiar de um ecossistema completo para o seu negócio.</p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
+              "width": 484,
+              "height": 456
+            },
+            "textColor": "#ffffff",
+            "useBackground": "video",
+            "backgroundVideo": "https://assets.decocache.com/lojaintegradar/7cc51fe9-7e62-4d8a-b1b2-1d38e955369d/para-quem-quer-crescer-(1mb).mp4"
+          },
+          {
+            "bulletPoints": {
+              "items": []
+            },
+            "title": "Para quem quer vender sem estoque",
+            "textColor": "#ffffff",
+            "textPlacement": "Bottom",
+            "icon": {
+              "placement": "Top right",
+              "alt": "purple arrow"
+            },
+            "caption": "<p><span style=\"font-size: 11pt; line-height:160%; \">Com o Dropi, faça dropshipping com fornecedores do AliExpress. Acesse mais de 100 milhões de produtos e aproveite as menores taxas do mercado.</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
+              "height": 484,
+              "width": 456
+            },
+            "useBackground": "video",
+            "backgroundVideo": "https://assets.decocache.com/lojaintegradar/dc10ee01-5e25-4cc1-ab4e-53fc0a299cf0/vender-sem-estoque-(1)-(1).mp4"
+          },
+          {
+            "textColor": "#ffffff",
+            "textPlacement": "Bottom",
+            "icon": {
+              "placement": "Top right",
+              "alt": "white arrow"
+            },
+            "bulletPoints": {
+              "items": []
+            },
+            "title": "Para quem quer levar a loja física para o digital",
+            "caption": "<p><span style=\"font-size: 11pt; line-height:160%;\">Transforme sua loja física em um e-commerce de sucesso, alcançando clientes em todo o Brasil com a tecnologia e suporte da Loja Integrada.</span></p>",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
+              "width": 484,
+              "height": 456
+            },
+            "useBackground": "video",
+            "backgroundVideo": "https://assets.decocache.com/lojaintegradar/b3df831a-c88a-40d9-8f52-839444903d46/levar-loja-para-o-digital-(2mb).mp4"
+          }
+        ],
+        "arrows": true,
+        "id": "nossoecossistema",
+        "arrowsColor": "#003037",
+        "cta": [],
+        "backgroundImage": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8243ad-68f1-4e47-bdc5-d7abec141794/elemento-bg-1.png"
+        },
+        "interval": 0,
+        "createStoreCta": {
+          "order": 1,
+          "planId": "172",
+          "text": "Começar no grátis",
+          "backgroundColor": "#003037",
+          "borderColor": "#003037"
+        },
+        "hideSection": false
+      },
+      "rule": {
+        "__resolveType": "website/matchers/always.ts"
+      }
+    }
+  ]
+}

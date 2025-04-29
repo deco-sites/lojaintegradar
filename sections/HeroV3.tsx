@@ -69,6 +69,11 @@ export interface Container {
   minHeight?: string;
 }
 
+export interface backgroundMediaWithColor extends BackgroundMedia {
+  /** @format color-input */
+  backgroundColor?: string;
+}
+
 export interface Props {
   title?: Title;
   distanceBetweenTitleAndText?: string;
@@ -78,7 +83,7 @@ export interface Props {
   ctaPlacement?: 'left' | 'center' | 'right';
   media?: Media;
   container?: Container;
-  sectionBackground?: BackgroundMedia;
+  sectionBackground?: backgroundMediaWithColor;
   floatingImage?: FloatingImage;
   lcp?: boolean;
 }
@@ -119,10 +124,10 @@ export default function HeroV3({ title, text, bulletPoints, cta = [], media, dis
     "right": "lg:justify-between flex-row flex-wrap",
     "bellow": "flex-row flex-wrap lg:flex-col"
   }
-  return <div class="px-5 lg:px-0 relative">
+  return <div class="px-5 lg:px-0 relative py-12" style={{ backgroundColor: sectionBackground?.backgroundColor, paddintTop: container?.marginTop, paddingBottom: container?.marginBottom }}>
     <div
-      class={`max-w-[1288px] relative z-10 mx-auto rounded-[20px] overflow-hidden p-[30px] lg:p-12 my-12 flex gap-5 lg:gap-y-9 lg:flex-nowrap items-center justify-center ${mediaPlacement[media?.placement || "right"]}`}
-      style={{ background: container?.backgroundColor, marginTop: container?.marginTop, marginBottom: container?.marginBottom, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight }}>
+      class={`max-w-[1288px] relative z-10 mx-auto rounded-[20px] overflow-hidden p-[30px] lg:p-12 flex gap-5 lg:gap-y-9 lg:flex-nowrap items-center justify-center ${mediaPlacement[media?.placement || "right"]}`}
+      style={{ background: container?.backgroundColor, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight }}>
       <AnimateOnShow animation="animate-fade-up50" divClass={`${(media?.use && media.placement != "bellow") && 'max-w-[448px]'} w-full flex flex-col gap-6`} style={{ animationDuration: '1s', maxWidth: title?.titleMaxWidth }}>
 
         {floatingImage?.src && <Image

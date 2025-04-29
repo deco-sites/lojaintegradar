@@ -1,8 +1,13 @@
 import { FreshContext } from "$fresh/server.ts";
 
 export async function handler(request: Request, ctx: FreshContext) {
-  console.log("MIDDLEWARE: " + new URL(request.url).pathname);
-  let incomingOrigin = new URL(request.url).origin;
+  const response = await ctx.next();
+  const newUrl = new URL(request.url);
+  // console.log("MIDDLEWARE: " + newUrl.pathname);
+  if (newUrl.pathname.includes("previews")) {
+    return response;
+  }
+  let incomingOrigin = newUrl.origin;
   if (
     (incomingOrigin.includes(".deco.site") ||
       incomingOrigin.includes(".decocdn.com")) &&
@@ -13,7 +18,6 @@ export async function handler(request: Request, ctx: FreshContext) {
   const originToRewrite = incomingOrigin === "https://lojaintegrada.com.br"
     ? "https://lojaintegradar.deco.site"
     : incomingOrigin;
-  const response = await ctx.next();
   let body: string | undefined = undefined;
   if (response.headers.get("Content-Type")?.startsWith("text/html")) {
     body = (await response.text())

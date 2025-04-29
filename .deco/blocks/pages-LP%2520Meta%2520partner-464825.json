@@ -272,53 +272,61 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p>Opere seu ecommerce como um</p>",
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgba(0, 0, 0, 0); font-size: 32pt\">25% de desconto para turbinar</span><span style=\"font-size: 32pt\"><br></span><span style=\"color: rgba(0, 0, 0, 0); font-size: 32pt\">sua loja</span></p>",
               "font": "Galaxie Copernicus",
               "fontSize": "32px",
               "letterSpacing": "-3px",
               "color": "#00363A",
-              "titleMaxWidth": "874px"
+              "titleMaxWidth": "874px",
+              "lineHeight": "48px"
             },
             "cta": [
               {
                 "type": "Button",
                 "size": "Large",
                 "openModal": "Create Store",
-                "text": "Comece agora sem custos",
+                "text": "Assine Agora    ",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
                 "createStorePlanId": "172"
+              },
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Talk to specialist",
+                "text": "Como configurar API",
+                "backgroundColor": "",
+                "borderColor": "#00363A",
+                "href": "https://ajuda.lojaintegrada.com.br/pt-BR/articles/9088500-api-de-conversoes-pixel-meta",
+                "textColor": "#00363A"
               }
             ],
             "ctaPlacement": "center",
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/e3793e43-fdc3-411c-997c-153910a489fb/hero-image-3.svg",
-                "width": 922,
-                "height": 432
+                "src": "https://assets.decocache.com/lojaintegradar/4a5585d6-fc28-4a08-b3b6-20059056b31b/API-CONVERSAO-META-LOJAINTEGRADA.png",
+                "width": "100%"
               },
               "use": "image",
               "placement": "bellow"
             },
-            "text": "<p style=\"text-align: center\"><span>Conheça a Plataforma de e-commerce facilitada com IA.</span></p>",
+            "text": "<p style=\"text-align: center\">Meta e Loja Integrada reservam esta oportunidade a poucos novos lojistas; garanta a sua antes que acabe.</p>",
             "container": {
               "marginTop": "0",
-              "paddingBottom": "0",
-              "paddingTop": "124px",
+              "paddingBottom": "60px",
+              "paddingTop": "80px",
               "marginBottom": "0",
               "paddingLeft": "0",
               "paddingRight": "0"
             },
             "sectionBackground": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/148d9cbd-c57d-43de-95f9-ddc6194fdf9b/background-green-pattern.svg"
-              },
-              "use": "image"
+              "image": {},
+              "use": "image",
+              "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%)); Selection colors Hex Hex  Color/neutral/white #FFFFFF  18th Century Green/950 #00363A  Color/secondary/dark-teal #00363A   fg.action/neutral.onPrimary #000000  Show 22 more colors Export        Re-center ⇧2"
             },
             "lcp": true,
             "floatingImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/b4976450-11e5-43b8-99db-47d6a278f24b/expert-word.svg",
               "horizontalPosition": "38%",
               "verticalPosition": "28%",
               "width": 170

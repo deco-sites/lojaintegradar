@@ -4,29 +4,22 @@ import Icon from "site/components/ui/Icon.tsx";
 import type { Props } from "../../sections/HeroWithTimeV2.tsx";
 import CTA from "site/components/ui/CTA.tsx";
 import HeroTimeButtons from "site/islands/HeroTimeButtons.tsx";
-import { useScript } from "deco/hooks/useScript.ts";
-
+import { useScript } from "@deco/deco/hooks";
 const onLoad = (rootId: string, interval: number) => {
     const parent = document.getElementById(rootId) as HTMLElement;
     const tabs = parent.querySelectorAll(".heroWithTimeTab") as NodeListOf<Element> || undefined;
     const tabsContent = parent.querySelectorAll(".heroWithTimeTabContent") as NodeListOf<Element> || undefined;
     const tabsContent2 = parent.querySelectorAll(".tabSecondContent") as NodeListOf<Element> || undefined;
     const medias = parent.querySelectorAll(".mediaContainer") as NodeListOf<Element> || undefined;
-
     let intervalObj: string | number | NodeJS.Timeout | undefined;
     let currentTab = 0;
-
     setActiveTab(currentTab);
-
-
     tabs.forEach((tab, index) => {
         tab.addEventListener("click", () => {
             setActiveTab(index);
-        })
+        });
     });
-
     function setActiveTab(index: number) {
-
         //desativant a tab atual
         tabsContent[currentTab].classList.add("hidden");
         tabs[currentTab].querySelector(".desktopTitle")?.classList.add("opacity-50");
@@ -36,7 +29,6 @@ const onLoad = (rootId: string, interval: number) => {
         tabs[currentTab].classList.add("border-bar");
         tabs[currentTab].classList.remove("active");
         tabs[currentTab].querySelector(".progressBar")?.classList.remove("animate-progress");
-
         //ativando a nova tab
         tabsContent[index].classList.remove("hidden");
         tabs[index].querySelector(".desktopTitle")?.classList.remove("opacity-50");
@@ -46,20 +38,17 @@ const onLoad = (rootId: string, interval: number) => {
         tabs[index].classList.remove("border-bar");
         tabs[index].classList.add("active");
         tabs[index].querySelector(".progressBar")?.classList.add("animate-progress");
-
         currentTab = index;
         clearInterval(intervalObj);
         intervalObj = setInterval(nextTab, (interval * 1000));
     }
-
     function nextTab() {
-        if (currentTab == tabs.length - 1) setActiveTab(0);
-        else setActiveTab(currentTab + 1);
-
+        if (currentTab == tabs.length - 1)
+            setActiveTab(0);
+        else
+            setActiveTab(currentTab + 1);
     }
-
 };
-
 const openModal = (rootId: string, videoUrl: string) => {
     const parent = document.getElementById(rootId);
     const modal = parent?.querySelector(".videoModal") as HTMLElement;
@@ -67,8 +56,7 @@ const openModal = (rootId: string, videoUrl: string) => {
     iframe.src = videoUrl;
     modal.classList.remove("hidden");
     modal.classList.add("flex");
-}
-
+};
 function closeModal(rootId: string) {
     const parent = document.getElementById(rootId);
     const modal = parent?.querySelector(".videoModal") as HTMLElement;
@@ -77,30 +65,23 @@ function closeModal(rootId: string) {
     modal.classList.add("hidden");
     modal.classList.remove("flex");
 }
-
 function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressBarColor, progressBarBackgroundColor, disabledProgressBarBackgroundColor }: Props) {
     const rootId = tabs ? tabs[0].tabImage?.image || tabs[0].tabVideo?.video : "HeroWithTime";
-
     const activeTab = 0;
     const progress = 50;
     const isModalOpen = false;
     const currentVideoUrl = "";
-
     // const [activeTab, setActiveTab] = useState(0);
     // const [progress, setProgress] = useState(0);
     // const [isModalOpen, setIsModalOpen] = useState(false);
     // const [currentVideoUrl, setCurrentVideoUrl] = useState<string | null>(null);
-
     // const openModal = () => setIsModalOpen(true);
     // const closeModal = () => setIsModalOpen(false);
-
     // const nextTab = () => {
     //     setActiveTab((prev) => (prev + 1) % (tabs?.length || 1));
     // };
-
     // useEffect(() => {
     //     setProgress(0);
-
     //     const interval = setInterval(() => {
     //         setProgress((prev) => {
     //             if (prev >= 100) {
@@ -110,188 +91,99 @@ function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressB
     //             return prev + 1;
     //         });
     //     }, tabsInterval * 10);
-
     //     return () => clearInterval(interval);
     // }, [activeTab, tabs]);
-
-    return (
-        <>
+    return (<>
             <div id={rootId} className={`${title?.text && '!mt-20'} !max-w-[1310px] customContainer`}>
-                <script
-                    type="module"
-                    dangerouslySetInnerHTML={{ __html: useScript(onLoad, rootId || "HeroWithTime", tabsInterval) }}
-                />
+                <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, rootId || "HeroWithTime", tabsInterval) }}/>
                 <div class="flex justify-between gap-14 items-center">
                     <ul class="relative flex flex-col gap-6 justify-center">
-                        {tabs?.map((tab, index) => (
-                            <li
-                                key={index}
-                                className={`heroWithTimeTab flex flex-col max-w-[550px] ${index ? "border-bar pb-6" : "active"
-                                    }`}
-                                style={{borderColor: disabledProgressBarBackgroundColor}}
-                            >
+                        {tabs?.map((tab, index) => (<li key={index} className={`heroWithTimeTab flex flex-col max-w-[550px] ${index ? "border-bar pb-6" : "active"}`} style={{ borderColor: disabledProgressBarBackgroundColor }}>
                                 <div>
-                                    <div
-                                        class="flex items-center gap-4 cursor-pointer"
-                                    >
-                                        <Image
-                                            src={tab.icon?.image || ""}
-                                            alt={tab.icon?.alt || ""}
-                                            height={tab.icon?.height || 20}
-                                            width={tab.icon?.width || 20}
-                                        />
+                                    <div class="flex items-center gap-4 cursor-pointer">
+                                        <Image src={tab.icon?.image || ""} alt={tab.icon?.alt || ""} height={tab.icon?.height || 20} width={tab.icon?.width || 20}/>
 
                                         <div class="flex flex-col-reverse">
-                                            {tab.title?.text && (
-                                                <span
-                                                    class={`desktopTitle text-[32px] ${index ? "opacity-50" : ""
-                                                        }`}
-                                                    dangerouslySetInnerHTML={{
-                                                        __html: tab.title?.text,
-                                                    }}
-                                                    style={{color: tab.title?.color, fontFamily: tab.title?.font, fontWeight: tab.title?.fontWeight, fontSize: tab.title?.fontSize, letterSpacing: tab.title?.letterSpacing, lineHeight: tab.title?.lineHeight}}
-                                                ></span>
-                                            )}
+                                            {tab.title?.text && (<span class={`desktopTitle text-[32px] ${index ? "opacity-50" : ""}`} dangerouslySetInnerHTML={{
+                    __html: tab.title?.text,
+                }} style={{ color: tab.title?.color, fontFamily: tab.title?.font, fontWeight: tab.title?.fontWeight, fontSize: tab.title?.fontSize, letterSpacing: tab.title?.letterSpacing, lineHeight: tab.title?.lineHeight }}></span>)}
 
-                                            {tab.highlight && (
-                                                <span
-                                                    class={`text-[#866300] ${activeTab === index
-                                                        ? "bg-[#FFE6A0]"
-                                                        : "background-df"
-                                                        } px-3 py-[2px] font-bold rounded-[200px] w-fit text-xs`}
-                                                >
+                                            {tab.highlight && (<span class={`text-[#866300] ${activeTab === index
+                    ? "bg-[#FFE6A0]"
+                    : "background-df"} px-3 py-[2px] font-bold rounded-[200px] w-fit text-xs`}>
                                                     Beta
-                                                </span>
-                                            )}
+                                                </span>)}
                                         </div>
                                     </div>
 
                                     <div class={`my-4 heroWithTimeTabContent ${index && 'hidden'}`}>
-                                        {tab.textContent?.text && (
-                                            <span
-                                                class="text-base"
-                                                dangerouslySetInnerHTML={{
-                                                    __html: tab.textContent?.text,
-                                                }}
-                                                style={{color: tab.textContent.color, fontFamily: tab.textContent.font, fontWeight: tab.textContent.fontWeight, fontSize: tab.textContent.fontSize, letterSpacing: tab.textContent.letterSpacing, lineHeight: tab.textContent.lineHeight}}
-                                            ></span>
-                                        )}
+                                        {tab.textContent?.text && (<span class="text-base" dangerouslySetInnerHTML={{
+                    __html: tab.textContent?.text,
+                }} style={{ color: tab.textContent.color, fontFamily: tab.textContent.font, fontWeight: tab.textContent.fontWeight, fontSize: tab.textContent.fontSize, letterSpacing: tab.textContent.letterSpacing, lineHeight: tab.textContent.lineHeight }}></span>)}
                                         <div class="flex flex-wrap gap-4 mt-4">
-                                            {tab.tags?.map(tag => (
-                                                <div class="inline-block rounded-[5px] overflow-hidden p-[1px]" style={{ background: tag.borderColor || "linear-gradient(90deg, #71DBD4 0%, #204E53 100%)" }}>
+                                            {tab.tags?.map(tag => (<div class="inline-block rounded-[5px] overflow-hidden p-[1px]" style={{ background: tag.borderColor || "linear-gradient(90deg, #71DBD4 0%, #204E53 100%)" }}>
                                                     <div class="inline-block rounded-[5px]" style={{ background: tag.backgroundColor || "linear-gradient(90deg, #13393D 0%, #204E53 100%)" }}>
-                                                        <p
-                                                            class={`flex gap-2.5 items-center h-full py-1 text-xl px-4 bg-primary-content text-primary-content font-normal `}
-                                                            style={{ background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent', fontFamily: tag.fontFamily || "Instrument serif" }}>
+                                                        <p class={`flex gap-2.5 items-center h-full py-1 text-xl px-4 bg-primary-content text-primary-content font-normal `} style={{ background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent', fontFamily: tag.fontFamily || "Instrument serif" }}>
                                                             {tag.text}
                                                         </p>
                                                     </div>
-                                                </div>
-                                            ))}
+                                                </div>))}
                                         </div>
-                                        <div class="flex items-center mt-4 mb-6 gap-[10px]">  {tab.videoOn && (
-                                            <button class="bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 pr-[18px] flex items-center gap-[18px] h-[48px]" 
-                                            hx-on:click={useScript(openModal, rootId || "HeroWithTime", tab.videoUrl || "")}>
+                                        <div class="flex items-center mt-4 mb-6 gap-[10px]">  {tab.videoOn && (<button class="bg-[#86D7D6] rounded-lg border-[1px] border-solid border-[#66A6A5] p-1 pr-[18px] flex items-center gap-[18px] h-[48px]" hx-on:click={useScript(openModal, rootId || "HeroWithTime", tab.videoUrl || "")}>
                                                 {" "}
-                                                <Icon
-                                                    class=""
-                                                    size={40}
-                                                    id="PlayButton"
-                                                    strokeWidth={3}
-                                                />{" "}
+                                                <Icon class="" size={40} id="PlayButton" strokeWidth={3}/>{" "}
                                                 <span class="text-[#22454B] font-bold text-[17px] text-center">
                                                     {tab.videoText}
                                                 </span>
-                                            </button>
-                                        )}
+                                            </button>)}
 
-                                            {tab.buttons?.map((button, index) => (
-                                                <HeroTimeButtons key={index} {...button} />
-                                            ))}
+                                            {tab.buttons?.map((button, index) => (<HeroTimeButtons key={index} {...button}/>))}
                                         </div>
                                     </div>
                                 </div>
                                 <div class={`tabSecondContent ${index && 'hidden'}`}>
                                     <>
                                         {tabs[index].useTab == "video"
-                                            ? <div>
-                                                <video width={tabs[index].tabVideo?.width || 337} height={tabs[index].tabVideo?.height || 351} autoPlay playsInline muted loading="lazy" loop
-                                                    class="object-cover lg:hidden shadow-md pb-[24px] lg:pb-0 rounded-2xl"
-                                                    style={{ width: tabs[index].tabVideo?.width + "px" || "337px", height: tabs[index].tabVideo?.height + "px" || "351px", animationDuration: '300ms' }}>
-                                                    <source src={tabs[index].tabVideo?.video} type="video/mp4" />
+                ? <div>
+                                                <video width={tabs[index].tabVideo?.width || 337} height={tabs[index].tabVideo?.height || 351} autoPlay playsInline muted loading="lazy" loop class="object-cover lg:hidden shadow-md pb-[24px] lg:pb-0 rounded-2xl" style={{ width: tabs[index].tabVideo?.width + "px" || "337px", height: tabs[index].tabVideo?.height + "px" || "351px", animationDuration: '300ms' }}>
+                                                    <source src={tabs[index].tabVideo?.video} type="video/mp4"/>
                                                 </video>
                                             </div>
-                                            : <Image
-                                                src={tab.tabImage?.image || ""}
-                                                alt={tab.tabImage?.alt || ""}
-                                                height={tab.tabImage?.height || 351}
-                                                width={tab.tabImage?.width || 337}
-                                                class="lg:hidden shadow-md pb-[24px] lg:pb-0 rounded-2xl"
-                                            />
-                                        }
+                : <Image src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 351} width={tab.tabImage?.width || 337} class="lg:hidden shadow-md pb-[24px] lg:pb-0 rounded-2xl"/>}
 
-                                        <div className="w-full h-0.5 background-bar overflow-hidden" style={{background: progressBarBackgroundColor}}>
-                                            <div
-                                                className="h-full bg-[#D9D9D9] transition-all ease-linear progressBar w-0 relative"
-                                                style={{ animationDuration: `${tabsInterval}s`, background: progressBarColor }}
-                                            >
-                                                <div class="absolute w-6 h-full top-0 left-full " style={{background: `linear-gradient(to right, ${progressBarColor}, transparent)`}}/>
+                                        <div className="w-full h-0.5 background-bar overflow-hidden" style={{ background: progressBarBackgroundColor }}>
+                                            <div className="h-full bg-[#D9D9D9] transition-all ease-linear progressBar w-0 relative" style={{ animationDuration: `${tabsInterval}s`, background: progressBarColor }}>
+                                                <div class="absolute w-6 h-full top-0 left-full " style={{ background: `linear-gradient(to right, ${progressBarColor}, transparent)` }}/>
                                             </div>
                                         </div>
                                     </>
                                 </div>
-                            </li>
-                        ))}
+                            </li>))}
                     </ul>
-                    {tabs.map((tab, index) => (
-                        <div class={`${index && 'hidden'} mediaContainer`}>
+                    {tabs.map((tab, index) => (<div class={`${index && 'hidden'} mediaContainer`}>
                             {tab.useTab == "video"
-                                ? <video width={tab.tabVideo?.width || 606} height={tab.tabVideo?.height || 627} autoPlay playsInline muted loading="lazy" loop
-                                    class={"object-cover hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage rounded-2xl " + tab.tabVideo}
-                                    style={{ width: (tab.tabVideo?.width || 606) + "px", height: (tab.tabVideo?.height || 627) + "px", animationDuration: '300ms' }}>
-                                    <source src={tab.tabVideo?.video} type="video/mp4" />
+                ? <video width={tab.tabVideo?.width || 606} height={tab.tabVideo?.height || 627} autoPlay playsInline muted loading="lazy" loop class={"object-cover hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage rounded-2xl " + tab.tabVideo} style={{ width: (tab.tabVideo?.width || 606) + "px", height: (tab.tabVideo?.height || 627) + "px", animationDuration: '300ms' }}>
+                                    <source src={tab.tabVideo?.video} type="video/mp4"/>
                                 </video>
-                                : <Image
-                                    src={tab.tabImage?.image || ""}
-                                    alt={tab.tabImage?.alt || ""}
-                                    height={tab.tabImage?.height || 665}
-                                    width={tab.tabImage?.width || 606}
-                                    className="hidden lg:block hoverScale shadow-md animate-fade-up50 rounded-2xl desktopImage"
-                                    style={{ animationDuration: '300ms' }}
-                                />}
-                        </div>
-
-                    ))}
+                : <Image src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 665} width={tab.tabImage?.width || 606} className="hidden lg:block hoverScale shadow-md animate-fade-up50 rounded-2xl desktopImage" style={{ animationDuration: '300ms' }}/>}
+                        </div>))}
 
                     
                         <div class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50 videoModal">
                             <div class="bg-white p-4 rounded-lg relative w-[90%] max-w-[800px]">
-                                <button
-                                    class="absolute top-[-25px] right-0 text-black font-bold text-xs bg-primary-content rounded-lg p-2 rounded-br-none hover:transform-none"
-                                    hx-on:click={useScript(closeModal, rootId || "HeroWithTime")}
-                                >
+                                <button class="absolute top-[-25px] right-0 text-black font-bold text-xs bg-primary-content rounded-lg p-2 rounded-br-none hover:transform-none" hx-on:click={useScript(closeModal, rootId || "HeroWithTime")}>
                                     Fechar
                                 </button>
-                                <iframe
-                                    width="100%"
-                                    height="450"
-                                    src={currentVideoUrl}
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                ></iframe>
+                                <iframe width="100%" height="450" src={currentVideoUrl} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
                             </div>
                         </div>
                     
                 </div>
                 {cta.length > 0 && <div class="flex items-center justify-center gap-4 flex-wrap mt-5 lg:mt-20"> 
-                    {cta.map(cta => (
-                        <CTA {...cta} />
-                      ))}
+                    {cta.map(cta => (<CTA {...cta}/>))}
                 </div>}
             </div>
-        </>
-    );
+        </>);
 }
-
 export default HeroWithTime;

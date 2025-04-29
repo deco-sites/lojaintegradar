@@ -1,5 +1,4 @@
-import { useScript } from "deco/hooks/useScript.ts";
-
+import { useScript } from "@deco/deco/hooks";
 const handleClose = () => {
     const modalIds = ["talkModal", "SecondTimeModal", "TimeModal"];
     modalIds.forEach((modalId) => {
@@ -10,17 +9,9 @@ const handleClose = () => {
         }
     });
 };
-
 function CloseButtonModal() {
-
-    return (
-        <button
-            hx-on:click={useScript(handleClose)}
-            className="absolute top-2 right-2 text-black"
-        >
+    return (<button hx-on:click={useScript(handleClose)} className="absolute top-2 right-2 text-black">
             X
-        </button>
-    );
+        </button>);
 }
-
 export default CloseButtonModal;

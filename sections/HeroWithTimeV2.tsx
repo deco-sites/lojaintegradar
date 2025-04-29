@@ -1,18 +1,14 @@
 import HeroWithTime from "../components/ui/HeroWithTimeV2.tsx";
-import { Section } from "deco/blocks/section.ts";
 import { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
 import { Props as CTAProps } from "site/components/ui/CTA.tsx";
 import { ButtonProps } from "../islands/HeroTimeButtons.tsx";
-import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx"
-import { TraceIdRatioBasedSampler } from "deco/deps.ts";
-
-
+import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
+import { type Section } from "@deco/deco/blocks";
 export interface IVideo {
     video?: VideoWidget;
     width?: number;
     height?: number;
 }
-
 /** @title {{text}} */
 export interface Tag {
     text?: string;
@@ -24,7 +20,6 @@ export interface Tag {
     /** @format color-input */
     borderColor?: string;
 }
-
 export interface Title {
     text?: RichText;
     /** @format color-input */
@@ -35,8 +30,6 @@ export interface Title {
     letterSpacing?: string;
     lineHeight?: string;
 }
-
-
 interface Subtitle {
     /**
      * @format rich-text
@@ -47,7 +40,6 @@ interface Subtitle {
     */
     mobile?: string;
 }
-
 interface Tabs {
     icon?: {
         image?: ImageWidget;
@@ -87,7 +79,6 @@ interface Tabs {
     videoUrl?: VideoWidget;
     buttons?: ButtonProps[];
 }
-
 interface TabsTextContent {
     /**
      * @format rich-text
@@ -98,7 +89,6 @@ interface TabsTextContent {
     */
     mobile?: string;
 }
-
 export interface Props {
     hideSection?: boolean;
     title?: Title;
@@ -118,30 +108,19 @@ export interface Props {
     paddingBottom?: string;
     bottomSection?: Section;
 }
-
-
 function HeroWithTimer(props: Props) {
-    if (props.hideSection) return <></>
+    if (props.hideSection)
+        return <></>;
     const { paddingBottom, paddingTop, title, caption, backgroundColor } = props;
+    return (<div id="heroTimeSection" style={{ background: backgroundColor, paddingBottom, paddingTop }} className="px-[10px] py-[60px] lg:py-[160px]">
+        <AnimateOnShow animation="animate-fade-up">
 
-    return (
-        <div id="heroTimeSection" style={{ background: backgroundColor, paddingBottom, paddingTop }} className="px-[10px] py-[60px] lg:py-[160px]">
-            <AnimateOnShow animation="animate-fade-up">
+            {title?.text && <div class="text-3xl lg:text-[46px] leading-[110%] font-normal" style={{ fontFamily: title.font, fontSize: title.fontSize, lineHeight: title.lineHeight, fontWeight: title.fontWeight, letterSpacing: title.letterSpacing, color: title.color }} dangerouslySetInnerHTML={{ __html: title.text }} />}
 
-                {title?.text && <div
-                    class="text-3xl lg:text-[46px] leading-[110%] font-normal"
-                    style={{ fontFamily: title.font, fontSize: title.fontSize, lineHeight: title.lineHeight, fontWeight: title.fontWeight, letterSpacing: title.letterSpacing, color: title.color }}
-                    dangerouslySetInnerHTML={{ __html: title.text }} />}
-
-                {caption?.text && <div
-                    class="text-lg lg:text-[22px] leading-[120%] font-medium mt-5"
-                    style={{ fontFamily: caption.font, fontSize: caption.fontSize, lineHeight: caption.lineHeight, fontWeight: caption.fontWeight, letterSpacing: caption.letterSpacing, color: caption.color }}
-                    dangerouslySetInnerHTML={{ __html: caption.text }} />}
-            </AnimateOnShow>
-            <HeroWithTime {...props} />
-            {props.bottomSection && <props.bottomSection.Component {...props.bottomSection.props} />}
-        </div>
-    )
+            {caption?.text && <div class="text-lg lg:text-[22px] leading-[120%] font-medium mt-5" style={{ fontFamily: caption.font, fontSize: caption.fontSize, lineHeight: caption.lineHeight, fontWeight: caption.fontWeight, letterSpacing: caption.letterSpacing, color: caption.color }} dangerouslySetInnerHTML={{ __html: caption.text }} />}
+        </AnimateOnShow>
+        <HeroWithTime {...props} />
+        {props.bottomSection && <props.bottomSection.Component {...props.bottomSection.props} />}
+    </div>);
 }
-
-export default HeroWithTimer
+export default HeroWithTimer;

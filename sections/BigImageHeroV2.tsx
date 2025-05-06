@@ -41,15 +41,35 @@ export interface CreateStoreWithPlanCTA {
     order?: number;
 }
 
+export interface FeatureTextProps {
+    font?: string;
+    fontSize?: string;
+    fontWeight?: string;
+    letterSpacing?: string;
+    lineHeight?: string;
+}
+
+
 /** @title {{title}} */
 export interface Feature {
     icon?: IImage;
     title?: string;
     /** @format color-input */
     titleColor?: string;
+    titleProps?: FeatureTextProps;
     text?: string;
     /** @format color-input */
     textColor?: string;
+    textProps?: FeatureTextProps;
+}
+
+export interface TextProps {
+    /** @format color-input */
+    color?: string;
+    fontSize?: string;
+    fontWeight?: string;
+    letterSpacing?: string;
+    lineHeight?: string;
 }
 
 export interface Props {
@@ -57,8 +77,10 @@ export interface Props {
     id?: string;
     title?: RichText;
     titleFont?: string;
+    titleProps?: TextProps;
     caption?: RichText;
     captionFont?: string;
+    captionProps?: TextProps;
     features?: Feature[];
     image?: IImage;
     video?: VideoWidget;
@@ -69,32 +91,43 @@ export interface Props {
     paddingBottom?: string;
 }
 
-export default function BigHeroImageV2({ hideSection, title, createStoreCta, titleFont, caption, captionFont, image, video, use = "image", features, cta = [], paddingBottom, paddingTop, id }: Props) {
+export default function BigHeroImageV2({ hideSection, title, createStoreCta, titleFont, titleProps, caption, captionFont, captionProps, image, video, use = "image", features, cta = [], paddingBottom, paddingTop, id }: Props) {
     if (hideSection) return <></>
     return <div id={id} style={{ paddingTop: paddingTop, paddingBottom: paddingBottom }} class="pt-10 lg:pt-28">
         <div class="max-w-[1440px] mx-auto">
             <div class="px-7 mb-5">
                 <AnimateOnShow animation="animate-fade-up50">
-                    {title && <div class="text-[32px] lg:text-[70px] font-normal mb-7 leading-[120%]" style={{ fontFamily: titleFont }} dangerouslySetInnerHTML={{ __html: title }} />}
-                    {caption && <div class="text-base font-normal leading-normal" style={{ fontFamily: captionFont }} dangerouslySetInnerHTML={{ __html: caption }} />}
+                    {title && <div class="text-[32px] lg:text-[70px] font-normal mb-7 leading-[120%]"
+                        style={{ fontFamily: titleFont, color: titleProps?.color, fontSize: titleProps?.fontSize, letterSpacing: titleProps?.letterSpacing, lineHeight: titleProps?.letterSpacing, fontWeight: titleProps?.fontWeight }}
+                        dangerouslySetInnerHTML={{ __html: title }} />}
+                    {caption && <div class="text-base font-normal leading-normal"
+                        style={{ fontFamily: captionFont, color: captionProps?.color, fontSize: captionProps?.fontSize, letterSpacing: captionProps?.letterSpacing, lineHeight: captionProps?.lineHeight, fontWeight: captionProps?.fontWeight }}
+                        dangerouslySetInnerHTML={{ __html: caption }} />}
                 </AnimateOnShow>
                 <div class="mt-11 flex justify-between gap-7 overflow-auto lg:overflow-visible">
-                    {features?.map((feature, index) => (
-                        <AnimateOnShow divClass="min-w-[251px] w-[251px]" animation="animate-fade-up" delay={index * 100}>
-                            <div class="flex gap-2.5">
-                                {feature.icon?.src && <Image
-                                    width={feature.icon.width || 20}
-                                    height={feature.icon.height || 20}
-                                    src={feature.icon.src}
-                                    alt={feature.icon.alt || "feature title icon"}
-                                />}
-                                <h3 class="text-base lg:text-lg font-semibold leading-[120%]" style={{ color: feature.titleColor }}>{feature.title}</h3>
-                            </div>
-                            <p class="mt-2.5 text-sm font-normal leading-normal" style={{ color: feature.textColor }}>
-                                {feature.text}
-                            </p>
-                        </AnimateOnShow>
-                    ))}
+                    {features?.map((feature, index) => {
+                        const { titleProps, textProps } = feature;
+                        return (
+                            <AnimateOnShow divClass="min-w-[251px] w-[251px]" animation="animate-fade-up" delay={index * 100}>
+                                <div class="flex gap-2.5">
+                                    {feature.icon?.src && <Image
+                                        width={feature.icon.width || 20}
+                                        height={feature.icon.height || 20}
+                                        src={feature.icon.src}
+                                        alt={feature.icon.alt || "feature title icon"}
+                                    />}
+                                    <h3 class="text-base lg:text-lg font-semibold leading-[120%]"
+                                        style={{ color: feature.titleColor, font: titleProps?.font, fontWeight: titleProps?.fontWeight, lineHeight: titleProps?.fontWeight, letterSpacing: titleProps?.letterSpacing }}>
+                                        {feature.title}
+                                    </h3>
+                                </div>
+                                <p class="mt-2.5 text-sm font-normal leading-normal"
+                                    style={{ color: feature.textColor, font: textProps?.font, fontWeight: textProps?.fontWeight, lineHeight: textProps?.lineHeight, letterSpacing: titleProps?.letterSpacing }}>
+                                    {feature.text}
+                                </p>
+                            </AnimateOnShow>
+                        )
+                    })}
                 </div>
             </div>
             <AnimateOnShow animation="animate-pop-up" delay={300}>

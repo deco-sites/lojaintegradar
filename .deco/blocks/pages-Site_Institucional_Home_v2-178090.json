@@ -718,8 +718,8 @@
               "text": "<p style=\"text-align: center\"><em><span style=\"color: rgb(0, 54, 58)\">Fature enquanto eles trabalham.<br></span></em><span style=\"color: rgb(0, 54, 58)\">Automatize formas de ganhar dinheiro.</span></p>",
               "font": "Galaxie Copernicus",
               "fontSize": "32px",
-              "lineHeight": "120%",
               "letterSpacing": "-3px",
+              "lineHeight": "120%",
               "fontWeight": "500"
             },
             "caption": {
@@ -727,6 +727,8 @@
               "fontWeight": "500",
               "fontSize": "16px"
             },
+            "paddingTop": "40px",
+            "paddingBottom": "40px",
             "slides": [
               {
                 "use": "image",
@@ -881,8 +883,6 @@
               "borderColor": "#FAFAF5",
               "ctaStyle": "button"
             },
-            "paddingTop": "40px",
-            "paddingBottom": "40px",
             "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))",
             "dotsTextColor": "#00363A",
             "arrows": false
@@ -899,8 +899,8 @@
               "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Plataforma com IA que agiliza sua rotina,</span><br><span style=\"color: rgb(0, 54, 58)\"> com tudo que você precisa,</span><em><span style=\"color: rgb(0, 54, 58)\"> em um só lugar.</span></em></p>",
               "font": "Galaxie Copernicus",
               "fontSize": "46px",
-              "lineHeight": "58px",
               "letterSpacing": "-3px",
+              "lineHeight": "58px",
               "fontWeight": "500"
             },
             "caption": {
@@ -908,6 +908,8 @@
               "fontWeight": "500",
               "fontSize": "22px"
             },
+            "paddingTop": "80px",
+            "paddingBottom": "80px",
             "slides": [
               {
                 "use": "image",
@@ -1062,8 +1064,6 @@
               "borderColor": "#FAFAF5",
               "ctaStyle": "button"
             },
-            "paddingTop": "80px",
-            "paddingBottom": "80px",
             "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))",
             "dotsTextColor": "#00363A",
             "arrows": false
@@ -1081,8 +1081,6 @@
           "value": {
             "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
             "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: #00363a\">lojistas</span></p>",
-            "titleColor": "#371E55",
-            "titleFont": "Galaxie Copernicus",
             "caption": "<p style=\"text-align: center\"><span style=\"color: #5f6e82\">que escolheram a forma mais eficiente  de vender online</span></p>",
             "slides": [
               {
@@ -1123,8 +1121,12 @@
               }
             ],
             "arrows": false,
-            "arrowsColor": "",
             "dots": false,
+            "paddingTop": "80px",
+            "paddingBottom": "80px",
+            "titleColor": "#371E55",
+            "titleFont": "Galaxie Copernicus",
+            "arrowsColor": "",
             "bubbleImages": [
               {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10c91eb1-0f78-465d-9fa6-49438978da81/bubble-image-1.jpg",
@@ -1262,8 +1264,6 @@
               "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
               "show": true
             },
-            "paddingTop": "80px",
-            "paddingBottom": "80px",
             "titleFontSize": "32px",
             "titleLetterSpacing": "-3px",
             "titleFontWeight": "500",
@@ -1279,8 +1279,6 @@
           "value": {
             "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
             "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: #00363a\">lojistas</span></p>",
-            "titleColor": "#371E55",
-            "titleFont": "Galaxie Copernicus",
             "caption": "<p style=\"text-align: center\"><span style=\"color: #5f6e82\">que escolheram a forma mais eficiente  de vender online</span></p>",
             "slides": [
               {
@@ -1321,8 +1319,12 @@
               }
             ],
             "arrows": false,
-            "arrowsColor": "",
             "dots": false,
+            "paddingTop": "120px",
+            "paddingBottom": "80px",
+            "titleColor": "#371E55",
+            "titleFont": "Galaxie Copernicus",
+            "arrowsColor": "",
             "bubbleImages": [
               {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10c91eb1-0f78-465d-9fa6-49438978da81/bubble-image-1.jpg",
@@ -1436,8 +1438,6 @@
               "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
               "show": true
             },
-            "paddingTop": "120px",
-            "paddingBottom": "80px",
             "titleFontSize": "46px",
             "titleLetterSpacing": "-3px",
             "titleFontWeight": "500",
@@ -1510,22 +1510,37 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "lojaNeymar"
+      }
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "value": {
             "__resolveType": "site/sections/HeroWithTimeV2.tsx",
             "title": {
-              "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
-              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
               "text": "<p style=\"text-align: center\">Já vende em outra plataforma?</p>",
               "font": "Galaxie Copernicus",
               "lineHeight": "120%",
-              "fontSize": "32px",
               "letterSpacing": "-3px",
-              "fontWeight": "550",
-              "color": "#00363A"
+              "color": "#00363A",
+              "fontSize": "32px",
+              "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
+              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
+              "fontWeight": "550"
             },
+            "backgroundColor": "",
+            "paddingTop": "40px",
+            "paddingBottom": "0",
+            "caption": {
+              "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
+              "color": "#5F6E82",
+              "fontSize": "16px"
+            },
+            "cta": [],
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -1683,18 +1698,9 @@
               "__resolveType": "site/sections/BlankSection.tsx"
             },
             "tabsInterval": 30,
-            "backgroundColor": "",
-            "paddingTop": "40px",
-            "paddingBottom": "0",
-            "caption": {
-              "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
-              "fontSize": "16px",
-              "color": "#5F6E82"
-            },
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
-            "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1705,16 +1711,25 @@
           "value": {
             "__resolveType": "site/sections/HeroWithTimeV2.tsx",
             "title": {
-              "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
-              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
               "text": "<p style=\"text-align: center\">Já vende em outra plataforma?</p>",
               "font": "Galaxie Copernicus",
               "lineHeight": "58px",
-              "fontSize": "46px",
               "letterSpacing": "-3px",
-              "fontWeight": "550",
-              "color": "#00363A"
+              "color": "#00363A",
+              "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
+              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
+              "fontSize": "46px",
+              "fontWeight": "550"
             },
+            "backgroundColor": "",
+            "paddingTop": "120px",
+            "paddingBottom": "0",
+            "caption": {
+              "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
+              "color": "#5F6E82",
+              "fontSize": "22px"
+            },
+            "cta": [],
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -1872,18 +1887,9 @@
               "__resolveType": "site/sections/BlankSection.tsx"
             },
             "tabsInterval": 30,
-            "backgroundColor": "",
-            "paddingTop": "120px",
-            "paddingBottom": "0",
-            "caption": {
-              "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
-              "fontSize": "22px",
-              "color": "#5F6E82"
-            },
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
-            "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -4007,7 +4013,12 @@
               "letterSpacing": "-3px",
               "fontWeight": "500"
             },
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/7b491429-e34e-41cb-83c3-be75d3ced3c7/plans-background-2.svg",
+              "verticalPosition": "115px"
+            },
             "id": "plans",
+            "paddingTop": "40px",
             "caption": {
               "0": "+",
               "1": "2",
@@ -6279,14 +6290,9 @@
             "annualTag": "- 2O% OFF",
             "arrows": true,
             "annualTagPosition": "aside",
-            "paddingTop": "40px",
             "switchBackgroundColor": "#DFE4E6",
             "switchBallColor": "#00363A",
             "hideSection": false,
-            "backgroundImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/7b491429-e34e-41cb-83c3-be75d3ced3c7/plans-background-2.svg",
-              "verticalPosition": "115px"
-            },
             "paddingBottom": "40px",
             "bottomCta": [
               {

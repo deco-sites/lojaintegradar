@@ -906,7 +906,8 @@
             "caption": {
               "text": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces<br>e aumente a retenção de clientes com a tecnologia que trabalha por você.</span></p>",
               "fontWeight": "500",
-              "fontSize": "22px"
+              "fontSize": "22px",
+              "font": "Inter"
             },
             "paddingTop": "80px",
             "paddingBottom": "80px",
@@ -1581,7 +1582,7 @@
                 "width": 1331
               },
               "title": "<p><span style=\"color: rgb(0, 48, 55)\">O que você e o Neymar podem ter em comum?</span><br><span style=\"color: rgb(0, 48, 55)\">Acesso à mesma tecnologia para criar o seu negócio online</span></p>",
-              "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight: 300;\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos<br> e estratégias voltadas para engajamento e recompra.</span></p>",
+              "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes</span><br><span style=\"color: rgb(95, 110, 130); font-size: 24px\">de acessos e estratégias voltadas para engajamento e recompra.</span></p>",
               "features": [
                 {
                   "icon": {
@@ -1632,388 +1633,6 @@
           }
         ]
       }
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroWithTimeV2.tsx",
-            "title": {
-              "text": "<p style=\"text-align: center\">Já vende em outra plataforma?</p>",
-              "font": "Galaxie Copernicus",
-              "lineHeight": "120%",
-              "letterSpacing": "-3px",
-              "color": "#00363A",
-              "fontSize": "32px",
-              "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
-              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "fontWeight": "550"
-            },
-            "backgroundColor": "",
-            "paddingTop": "40px",
-            "paddingBottom": "0",
-            "caption": {
-              "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
-              "color": "#5F6E82",
-              "fontSize": "16px"
-            },
-            "cta": [],
-            "subTitle": {
-              "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
-              "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
-            },
-            "tabs": [
-              {
-                "icon": {
-                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
-                  "alt": "Tab icon"
-                },
-                "title": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Crescimento inteligente</p>",
-                  "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "letterSpacing": "-3px"
-                },
-                "textContent": {
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p>Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</p>",
-                  "color": "#5F6E82"
-                },
-                "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
-                  "width": 664,
-                  "height": 520
-                },
-                "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
-                "button": {},
-                "videoText": "Ver demo",
-                "tags": [],
-                "tabVideo": {
-                  "width": 664,
-                  "height": 520,
-                  "widthDesktop": 620,
-                  "heightDesktop": 409,
-                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
-                },
-                "useTab": "image"
-              },
-              {
-                "icon": {
-                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
-                  "alt": "Tab icon"
-                },
-                "title": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p><span>Liberdade para personalizar</span></p>",
-                  "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "letterSpacing": "-3px"
-                },
-                "textContent": {
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
-                  "color": "#5F6E82"
-                },
-                "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
-                  "width": 664,
-                  "height": 520
-                },
-                "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
-                "button": {},
-                "videoText": "Ver demo",
-                "tags": [],
-                "tabVideo": {
-                  "width": 664,
-                  "height": 520,
-                  "widthDesktop": 620,
-                  "heightDesktop": 409,
-                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
-                },
-                "useTab": "image"
-              },
-              {
-                "icon": {
-                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
-                  "alt": "Tab icon"
-                },
-                "title": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p><span>Usabilidade simplificada</span></p>",
-                  "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "letterSpacing": "-3px"
-                },
-                "textContent": {
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
-                  "color": "#5F6E82"
-                },
-                "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
-                  "width": 664,
-                  "height": 520
-                },
-                "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
-                "button": {},
-                "videoText": "Ver demo",
-                "tags": [],
-                "tabVideo": {
-                  "width": 664,
-                  "height": 520,
-                  "widthDesktop": 620,
-                  "heightDesktop": 409,
-                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
-                },
-                "useTab": "image"
-              }
-            ],
-            "background": {
-              "type": "gradient",
-              "gradient": {
-                "type": "linear",
-                "angle": 180,
-                "stops": [
-                  {
-                    "color": "#005F5F",
-                    "position": 2.19
-                  },
-                  {
-                    "color": "#003037",
-                    "position": 56.08
-                  }
-                ]
-              }
-            },
-            "finalButtons": [
-              {
-                "type": "createStoreForm",
-                "text": "Criar minha loja",
-                "planId": "172"
-              },
-              {
-                "type": "link",
-                "changeType": true,
-                "link": "#plans",
-                "text": "Ver planos"
-              }
-            ],
-            "bottomSection": {
-              "__resolveType": "site/sections/BlankSection.tsx"
-            },
-            "tabsInterval": 30,
-            "progressBarColor": "#030C0B ",
-            "progressBarBackgroundColor": "#A9CBD1",
-            "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroWithTimeV2.tsx",
-            "title": {
-              "text": "<p style=\"text-align: center\">Já vende em outra plataforma?</p>",
-              "font": "Galaxie Copernicus",
-              "lineHeight": "58px",
-              "letterSpacing": "-3px",
-              "color": "#00363A",
-              "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
-              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "fontSize": "46px",
-              "fontWeight": "550"
-            },
-            "backgroundColor": "",
-            "paddingTop": "120px",
-            "paddingBottom": "0",
-            "caption": {
-              "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
-              "color": "#5F6E82",
-              "fontSize": "22px"
-            },
-            "cta": [],
-            "subTitle": {
-              "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
-              "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
-            },
-            "tabs": [
-              {
-                "icon": {
-                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
-                  "alt": "Tab icon"
-                },
-                "title": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Crescimento inteligente</p>",
-                  "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "letterSpacing": "-3px"
-                },
-                "textContent": {
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p>Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</p>",
-                  "color": "#5F6E82"
-                },
-                "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
-                  "width": 664,
-                  "height": 520
-                },
-                "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
-                "button": {},
-                "videoText": "Ver demo",
-                "tags": [],
-                "tabVideo": {
-                  "width": 664,
-                  "height": 520,
-                  "widthDesktop": 620,
-                  "heightDesktop": 409,
-                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
-                },
-                "useTab": "image"
-              },
-              {
-                "icon": {
-                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
-                  "alt": "Tab icon"
-                },
-                "title": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p><span>Liberdade para personalizar</span></p>",
-                  "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "letterSpacing": "-3px"
-                },
-                "textContent": {
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
-                  "color": "#5F6E82"
-                },
-                "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
-                  "width": 664,
-                  "height": 520
-                },
-                "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
-                "button": {},
-                "videoText": "Ver demo",
-                "tags": [],
-                "tabVideo": {
-                  "width": 664,
-                  "height": 520,
-                  "widthDesktop": 620,
-                  "heightDesktop": 409,
-                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
-                },
-                "useTab": "image"
-              },
-              {
-                "icon": {
-                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
-                  "alt": "Tab icon"
-                },
-                "title": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p><span>Usabilidade simplificada</span></p>",
-                  "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "letterSpacing": "-3px"
-                },
-                "textContent": {
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
-                  "color": "#5F6E82"
-                },
-                "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
-                  "width": 664,
-                  "height": 520
-                },
-                "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
-                "button": {},
-                "videoText": "Ver demo",
-                "tags": [],
-                "tabVideo": {
-                  "width": 664,
-                  "height": 520,
-                  "widthDesktop": 620,
-                  "heightDesktop": 409,
-                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
-                },
-                "useTab": "image"
-              }
-            ],
-            "background": {
-              "type": "gradient",
-              "gradient": {
-                "type": "linear",
-                "angle": 180,
-                "stops": [
-                  {
-                    "color": "#005F5F",
-                    "position": 2.19
-                  },
-                  {
-                    "color": "#003037",
-                    "position": 56.08
-                  }
-                ]
-              }
-            },
-            "finalButtons": [
-              {
-                "type": "createStoreForm",
-                "text": "Criar minha loja",
-                "planId": "172"
-              },
-              {
-                "type": "link",
-                "changeType": true,
-                "link": "#plans",
-                "text": "Ver planos"
-              }
-            ],
-            "bottomSection": {
-              "__resolveType": "site/sections/BlankSection.tsx"
-            },
-            "tabsInterval": 30,
-            "progressBarColor": "#030C0B ",
-            "progressBarBackgroundColor": "#A9CBD1",
-            "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -2962,7 +2581,7 @@
                   "letterSpacing": "-3px"
                 },
                 "caption": {
-                  "text": "<p><span>Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>",
+                  "text": "<p>Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</p>",
                   "backgroundColor": "rgba(222, 231, 211, 0.60)",
                   "color": "#00363A",
                   "fontWeight": "500",
@@ -2990,7 +2609,7 @@
                   "letterSpacing": "-3px"
                 },
                 "caption": {
-                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
+                  "text": "<p>Use a Loja Integrada para expandir suas vendas de forma eficiente e se beneficiar de um ecossistema completo para o seu negócio.</p>",
                   "backgroundColor": "rgba(222, 231, 211, 0.60)",
                   "color": "#00363A",
                   "fontWeight": "500",
@@ -3248,7 +2867,7 @@
                   "227": "/",
                   "228": "p",
                   "229": ">",
-                  "text": "<p><span>Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>",
+                  "text": "<p>Com o Dropi, faça dropshipping com fornecedores do AliExpress. Acesse mais de 100 milhões de produtos e aproveite as menores taxas do mercado.</p>",
                   "backgroundColor": "rgba(222, 231, 211, 0.60)",
                   "color": "#00363A",
                   "fontWeight": "500",
@@ -3267,7 +2886,7 @@
                   "video": {}
                 },
                 "title": {
-                  "text": "<p><span>Para quem quer vender em</span></p><p><span>marketplace e redes</span></p><p><span>sociais</span></p>",
+                  "text": "<p>Para quem quer levar a loja física para o digital</p>",
                   "color": "#00363A",
                   "font": "Galaxie Copernicus",
                   "fontWeight": "500",
@@ -3506,293 +3125,7 @@
                   "227": "/",
                   "228": "p",
                   "229": ">",
-                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
-                  "backgroundColor": "rgba(222, 231, 211, 0.60)",
-                  "color": "#00363A",
-                  "fontWeight": "500",
-                  "fontSize": "18px",
-                  "lineHeight": "27px"
-                },
-                "textBackgroundColor": "#22454B",
-                "textBackgroundColorDegrade": true
-              },
-              {
-                "media": {
-                  "use": "image",
-                  "image": {
-                    "src": "https://assets.decocache.com/lojaintegradar/45865325-408d-4227-866a-4b365dc3b049/Card-1.svg"
-                  },
-                  "video": {}
-                },
-                "title": {
-                  "text": "<p><span>Para quem está<br>começando no<br>e-commerce</span></p>",
-                  "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "fontSize": "32px",
-                  "lineHeight": "36px",
-                  "letterSpacing": "-3px"
-                },
-                "caption": {
-                  "text": "<p><span>Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>",
-                  "backgroundColor": "rgba(222, 231, 211, 0.60)",
-                  "color": "#00363A",
-                  "fontWeight": "500",
-                  "fontSize": "18px",
-                  "lineHeight": "27px"
-                },
-                "textBackgroundColor": "#22454B",
-                "textBackgroundColorDegrade": true
-              },
-              {
-                "media": {
-                  "use": "image",
-                  "image": {
-                    "src": "https://assets.decocache.com/lojaintegradar/10ecf901-04de-49a3-ae17-8df15bdcba22/Card-3.svg"
-                  },
-                  "video": {}
-                },
-                "title": {
-                  "text": "<p><span>Para quem quer <br>vender sem<br>estoque</span></p>",
-                  "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "fontSize": "32px",
-                  "lineHeight": "36px",
-                  "letterSpacing": "-3px"
-                },
-                "caption": {
-                  "0": "<",
-                  "1": "p",
-                  "2": ">",
-                  "3": "<",
-                  "4": "s",
-                  "5": "p",
-                  "6": "a",
-                  "7": "n",
-                  "8": " ",
-                  "9": "s",
-                  "10": "t",
-                  "11": "y",
-                  "12": "l",
-                  "13": "e",
-                  "14": "=",
-                  "15": "\"",
-                  "16": "c",
-                  "17": "o",
-                  "18": "l",
-                  "19": "o",
-                  "20": "r",
-                  "21": ":",
-                  "22": " ",
-                  "23": "r",
-                  "24": "g",
-                  "25": "b",
-                  "26": "(",
-                  "27": "2",
-                  "28": "5",
-                  "29": "5",
-                  "30": ",",
-                  "31": " ",
-                  "32": "2",
-                  "33": "5",
-                  "34": "5",
-                  "35": ",",
-                  "36": " ",
-                  "37": "2",
-                  "38": "5",
-                  "39": "5",
-                  "40": ")",
-                  "41": "\"",
-                  "42": ">",
-                  "43": "J",
-                  "44": "á",
-                  "45": " ",
-                  "46": "e",
-                  "47": "s",
-                  "48": "t",
-                  "49": "á",
-                  "50": " ",
-                  "51": "e",
-                  "52": "m",
-                  "53": " ",
-                  "54": "m",
-                  "55": "a",
-                  "56": "r",
-                  "57": "k",
-                  "58": "e",
-                  "59": "t",
-                  "60": "p",
-                  "61": "l",
-                  "62": "a",
-                  "63": "c",
-                  "64": "e",
-                  "65": "s",
-                  "66": " ",
-                  "67": "o",
-                  "68": "u",
-                  "69": " ",
-                  "70": "r",
-                  "71": "e",
-                  "72": "d",
-                  "73": "e",
-                  "74": "s",
-                  "75": " ",
-                  "76": "s",
-                  "77": "o",
-                  "78": "c",
-                  "79": "i",
-                  "80": "a",
-                  "81": "i",
-                  "82": "s",
-                  "83": "?",
-                  "84": "&",
-                  "85": "n",
-                  "86": "b",
-                  "87": "s",
-                  "88": "p",
-                  "89": ";",
-                  "90": " ",
-                  "91": "U",
-                  "92": "s",
-                  "93": "e",
-                  "94": " ",
-                  "95": "a",
-                  "96": " ",
-                  "97": "L",
-                  "98": "o",
-                  "99": "j",
-                  "100": "a",
-                  "101": " ",
-                  "102": "I",
-                  "103": "n",
-                  "104": "t",
-                  "105": "e",
-                  "106": "g",
-                  "107": "r",
-                  "108": "a",
-                  "109": "d",
-                  "110": "a",
-                  "111": " ",
-                  "112": "p",
-                  "113": "a",
-                  "114": "r",
-                  "115": "a",
-                  "116": " ",
-                  "117": "e",
-                  "118": "x",
-                  "119": "p",
-                  "120": "a",
-                  "121": "n",
-                  "122": "d",
-                  "123": "i",
-                  "124": "r",
-                  "125": " ",
-                  "126": "s",
-                  "127": "u",
-                  "128": "a",
-                  "129": "s",
-                  "130": " ",
-                  "131": "v",
-                  "132": "e",
-                  "133": "n",
-                  "134": "d",
-                  "135": "a",
-                  "136": "s",
-                  "137": " ",
-                  "138": "d",
-                  "139": "e",
-                  "140": " ",
-                  "141": "f",
-                  "142": "o",
-                  "143": "r",
-                  "144": "m",
-                  "145": "a",
-                  "146": " ",
-                  "147": "e",
-                  "148": "f",
-                  "149": "i",
-                  "150": "c",
-                  "151": "i",
-                  "152": "e",
-                  "153": "n",
-                  "154": "t",
-                  "155": "e",
-                  "156": " ",
-                  "157": "e",
-                  "158": " ",
-                  "159": "s",
-                  "160": "e",
-                  "161": " ",
-                  "162": "b",
-                  "163": "e",
-                  "164": "n",
-                  "165": "e",
-                  "166": "f",
-                  "167": "i",
-                  "168": "c",
-                  "169": "i",
-                  "170": "a",
-                  "171": "r",
-                  "172": " ",
-                  "173": "d",
-                  "174": "e",
-                  "175": " ",
-                  "176": "u",
-                  "177": "m",
-                  "178": " ",
-                  "179": "e",
-                  "180": "c",
-                  "181": "o",
-                  "182": "s",
-                  "183": "s",
-                  "184": "i",
-                  "185": "s",
-                  "186": "t",
-                  "187": "e",
-                  "188": "m",
-                  "189": "a",
-                  "190": " ",
-                  "191": "c",
-                  "192": "o",
-                  "193": "m",
-                  "194": "p",
-                  "195": "l",
-                  "196": "e",
-                  "197": "t",
-                  "198": "o",
-                  "199": " ",
-                  "200": "p",
-                  "201": "a",
-                  "202": "r",
-                  "203": "a",
-                  "204": " ",
-                  "205": "o",
-                  "206": " ",
-                  "207": "s",
-                  "208": "e",
-                  "209": "u",
-                  "210": " ",
-                  "211": "n",
-                  "212": "e",
-                  "213": "g",
-                  "214": "ó",
-                  "215": "c",
-                  "216": "i",
-                  "217": "o",
-                  "218": ".",
-                  "219": "<",
-                  "220": "/",
-                  "221": "s",
-                  "222": "p",
-                  "223": "a",
-                  "224": "n",
-                  "225": ">",
-                  "226": "<",
-                  "227": "/",
-                  "228": "p",
-                  "229": ">",
-                  "text": "<p><span>Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>",
+                  "text": "<p>Transforme sua loja física em um e-commerce de sucesso, alcançando clientes em todo o Brasil com a tecnologia e suporte da Loja Integrada.</p>",
                   "backgroundColor": "rgba(222, 231, 211, 0.60)",
                   "color": "#00363A",
                   "fontWeight": "500",
@@ -3803,6 +3136,388 @@
                 "textBackgroundColorDegrade": true
               }
             ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroWithTimeV2.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\">Já vende em outra plataforma?</p>",
+              "font": "Galaxie Copernicus",
+              "lineHeight": "120%",
+              "letterSpacing": "-3px",
+              "color": "#00363A",
+              "fontSize": "32px",
+              "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
+              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
+              "fontWeight": "550"
+            },
+            "backgroundColor": "",
+            "paddingTop": "40px",
+            "paddingBottom": "0",
+            "caption": {
+              "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
+              "color": "#5F6E82",
+              "fontSize": "16px"
+            },
+            "cta": [],
+            "subTitle": {
+              "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
+              "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
+            },
+            "tabs": [
+              {
+                "icon": {
+                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Crescimento inteligente</p>",
+                  "color": "#00363A",
+                  "font": "Galaxie Copernicus",
+                  "fontWeight": "500",
+                  "letterSpacing": "-3px"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</p>",
+                  "color": "#5F6E82"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
+                  "width": 664,
+                  "height": 520
+                },
+                "videoOn": false,
+                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "width": 664,
+                  "height": 520,
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p><span>Liberdade para personalizar</span></p>",
+                  "color": "#00363A",
+                  "font": "Galaxie Copernicus",
+                  "fontWeight": "500",
+                  "letterSpacing": "-3px"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
+                  "color": "#5F6E82"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
+                  "width": 664,
+                  "height": 520
+                },
+                "videoOn": false,
+                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "width": 664,
+                  "height": 520,
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p><span>Usabilidade simplificada</span></p>",
+                  "color": "#00363A",
+                  "font": "Galaxie Copernicus",
+                  "fontWeight": "500",
+                  "letterSpacing": "-3px"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
+                  "color": "#5F6E82"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
+                  "width": 664,
+                  "height": 520
+                },
+                "videoOn": false,
+                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "width": 664,
+                  "height": 520,
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              }
+            ],
+            "background": {
+              "type": "gradient",
+              "gradient": {
+                "type": "linear",
+                "angle": 180,
+                "stops": [
+                  {
+                    "color": "#005F5F",
+                    "position": 2.19
+                  },
+                  {
+                    "color": "#003037",
+                    "position": 56.08
+                  }
+                ]
+              }
+            },
+            "finalButtons": [
+              {
+                "type": "createStoreForm",
+                "text": "Criar minha loja",
+                "planId": "172"
+              },
+              {
+                "type": "link",
+                "changeType": true,
+                "link": "#plans",
+                "text": "Ver planos"
+              }
+            ],
+            "bottomSection": {
+              "__resolveType": "site/sections/BlankSection.tsx"
+            },
+            "tabsInterval": 30,
+            "progressBarColor": "#030C0B ",
+            "progressBarBackgroundColor": "#A9CBD1",
+            "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroWithTimeV2.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\">Já vende em outra plataforma?</p>",
+              "font": "Galaxie Copernicus",
+              "lineHeight": "58px",
+              "letterSpacing": "-3px",
+              "color": "#00363A",
+              "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
+              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
+              "fontSize": "46px",
+              "fontWeight": "550"
+            },
+            "backgroundColor": "",
+            "paddingTop": "120px",
+            "paddingBottom": "0",
+            "caption": {
+              "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
+              "color": "#5F6E82",
+              "fontSize": "22px"
+            },
+            "cta": [],
+            "subTitle": {
+              "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
+              "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
+            },
+            "tabs": [
+              {
+                "icon": {
+                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Crescimento inteligente</p>",
+                  "color": "#00363A",
+                  "font": "Galaxie Copernicus",
+                  "fontWeight": "500",
+                  "letterSpacing": "-3px"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</p>",
+                  "color": "#5F6E82"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
+                  "width": 664,
+                  "height": 520
+                },
+                "videoOn": false,
+                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "width": 664,
+                  "height": 520,
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p><span>Liberdade para personalizar</span></p>",
+                  "color": "#00363A",
+                  "font": "Galaxie Copernicus",
+                  "fontWeight": "500",
+                  "letterSpacing": "-3px"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
+                  "color": "#5F6E82"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
+                  "width": 664,
+                  "height": 520
+                },
+                "videoOn": false,
+                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "width": 664,
+                  "height": 520,
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p><span>Usabilidade simplificada</span></p>",
+                  "color": "#00363A",
+                  "font": "Galaxie Copernicus",
+                  "fontWeight": "500",
+                  "letterSpacing": "-3px"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
+                  "color": "#5F6E82"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
+                  "width": 664,
+                  "height": 520
+                },
+                "videoOn": false,
+                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "width": 664,
+                  "height": 520,
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              }
+            ],
+            "background": {
+              "type": "gradient",
+              "gradient": {
+                "type": "linear",
+                "angle": 180,
+                "stops": [
+                  {
+                    "color": "#005F5F",
+                    "position": 2.19
+                  },
+                  {
+                    "color": "#003037",
+                    "position": 56.08
+                  }
+                ]
+              }
+            },
+            "finalButtons": [
+              {
+                "type": "createStoreForm",
+                "text": "Criar minha loja",
+                "planId": "172"
+              },
+              {
+                "type": "link",
+                "changeType": true,
+                "link": "#plans",
+                "text": "Ver planos"
+              }
+            ],
+            "bottomSection": {
+              "__resolveType": "site/sections/BlankSection.tsx"
+            },
+            "tabsInterval": 30,
+            "progressBarColor": "#030C0B ",
+            "progressBarBackgroundColor": "#A9CBD1",
+            "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

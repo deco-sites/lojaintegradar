@@ -106,7 +106,8 @@
                 "textColor": "#ffffff",
                 "showIcon": false
               },
-              "buttonsHeight": "32px"
+              "buttonsHeight": "32px",
+              "linksTextProps": {}
             },
             "logo": {
               "src": {
@@ -132,14 +133,26 @@
             "asideMenuCloseIconColor": "#003037",
             "headerMessage": {
               "show": false,
-              "text": "<p>Message</p>",
+              "text": "<p>teste</p>",
               "textColor": "#22454B",
               "backgroundColor": "#D0DAD9",
               "cta": [],
-              "font": "Instrument Serif"
+              "font": "Instrument Serif",
+              "textProps": {
+                "color": ""
+              }
             },
             "campaignTimer": {
-              "text": "Time left for a campaign to end with a link"
+              "text": "<p>Time left for a campaign to end</p>",
+              "show": false,
+              "labelsColor": "",
+              "numbersColor": "",
+              "noScrollBackgroundColor": "",
+              "backgroundColor": "",
+              "textProps": {
+                "font": "Galaxie Copernicus",
+                "color": ""
+              }
             },
             "hideAsideMenu": false,
             "dropdownMenus": {
@@ -238,7 +251,8 @@
               "menusTextColor": "#371E56",
               "menusItemsHoverBackgroundColor": "#E9F9F9",
               "menusItemsHoverLineColor": "#2bc4c3",
-              "menusShadowColor": "rgba(71, 193, 196, .50)"
+              "menusShadowColor": "rgba(71, 193, 196, .50)",
+              "titlesTextProps": {}
             },
             "asideMenuOnlyMobile": true,
             "noScrollBackgroundColor": "rgba(0, 54, 58, 0.3)"

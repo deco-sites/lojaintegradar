@@ -1531,7 +1531,11 @@
             ],
             "paddingTop": "0",
             "paddingBottom": "0",
-            "blackAndWhiteLogos": true
+            "blackAndWhiteLogos": true,
+            "titleTextProps": {},
+            "captionTextProps": {
+              "color": ""
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

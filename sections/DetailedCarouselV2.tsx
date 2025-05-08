@@ -48,7 +48,6 @@ export interface TextProps {
     lineHeight?: string;
 }
 
-
 export interface IVideo {
     src?: VideoWidget;
     width?: string;

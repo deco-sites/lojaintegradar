@@ -1303,8 +1303,8 @@
         {
           "value": {
             "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
-            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: #00363a\">lojistas</span></p>",
-            "titleColor": "#371E55",
+            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: rgb(0, 54, 58)\">lojistas</span></p>",
+            "titleColor": "",
             "titleFont": "Galaxie Copernicus",
             "caption": "<p style=\"text-align: center\"><span style=\"color: #5f6e82\">que escolheram a forma mais eficiente  de vender online</span></p>",
             "slides": [
@@ -1323,7 +1323,12 @@
                   "avatarHeight": 63,
                   "roundedAvatar": false,
                   "nameCaption": "<p><span style=\"color: #5f6e82\">Loja no ar em cerca de 60 dias</span></p>",
-                  "borderColor": "#CBCBC1"
+                  "borderColor": "#CBCBC1",
+                  "descriptionTextProps": {
+                    "color": ""
+                  },
+                  "nameTextProps": {},
+                  "nameCaptionTextProps": {}
                 }
               },
               {

@@ -26,6 +26,7 @@ export interface Title {
 export interface TextProps {
     /** @format color-input */
     color?: string;
+    fontFamily?: string;
     fontSize?: string;
     fontWeight?: string;
     letterSpacing?: string;
@@ -45,9 +46,8 @@ export interface BulletPointsItem {
 }
 export interface BulletPoints {
     items?: BulletPointsItem[];
-    /** @format color-input */
-    bulletPointsColor?: string;
     bulletPointsIcon?: IImage;
+    bulletPointsTextProps?: TextProps;
 }
 
 export interface Card {
@@ -63,6 +63,7 @@ export interface Card {
     titleTag?: Tag;
     spaceBetweenTitleAndText?: string;
     text?: RichText;
+    textProps?: TextProps;
     bulletPoints?: BulletPoints;
     cta?: CTAProps[];
     backgroundImage?: IImage;
@@ -133,11 +134,11 @@ export function CardColumn({ cards = [], cardsMaxWidth, distanceBetweenCards }: 
                     }
                 </div>
 
-                {card.text && <div dangerouslySetInnerHTML={{ __html: card.text }} class="mt-2.5 text-base font-normal" style={{ marginTop: card.spaceBetweenTitleAndText }} />}
+                {card.text && <div dangerouslySetInnerHTML={{ __html: card.text }} class="mt-2.5 text-base font-normal" style={{ marginTop: card.spaceBetweenTitleAndText, ...card.textProps }} />}
 
                 {card.bulletPoints?.items && card.bulletPoints.items.length > 0 && <div class="flex flex-col gap-4 mt-5">
                     {card.bulletPoints?.items?.map((item) => (
-                        <p class="flex gap-2 text-sm font-normal" style={{ color: card.bulletPoints?.bulletPointsColor }}>
+                        <p class="flex gap-2 text-sm font-normal" style={{ ...card.bulletPoints?.bulletPointsTextProps }}>
                             {card.bulletPoints?.bulletPointsIcon?.src && <Image
                                 height={card.bulletPoints?.bulletPointsIcon?.height || 15}
                                 width={card.bulletPoints?.bulletPointsIcon?.width || 15}

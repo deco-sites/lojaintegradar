@@ -588,7 +588,10 @@
                   "backgroundColor": "",
                   "borderRadius": "20px",
                   "bulletPoints": {
-                    "items": []
+                    "items": [],
+                    "bulletPointsTextProps": {
+                      "color": ""
+                    }
                   },
                   "padding": "48px",
                   "createStoreCta": {
@@ -607,7 +610,8 @@
                     "width": 597,
                     "height": 876
                   },
-                  "spaceBetweenTitleAndText": "30px"
+                  "spaceBetweenTitleAndText": "30px",
+                  "textProps": {}
                 }
               ],
               "cardsMaxWidth": "597px"

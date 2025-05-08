@@ -38,6 +38,17 @@ const refreshArrowsVisibility = () => {
     }
 };
 
+export interface TextProps {
+    /** @format color-input */
+    color?: string;
+    fontFamily?: string;
+    fontSize?: string;
+    fontWeight?: string;
+    letterSpacing?: string;
+    lineHeight?: string;
+}
+
+
 export interface IVideo {
     src?: VideoWidget;
     width?: string;
@@ -46,6 +57,8 @@ export interface IVideo {
 
 export interface Title {
     text?: RichText;
+     /** @format color-input */
+    color?: string;
     font?: string;
     fontSize?: string;
     fontWeight?: string;
@@ -62,8 +75,7 @@ export interface IImage {
 }
 export interface BulletPoints {
     items?: string[];
-    /** @format color-input */
-    textColor?: string;
+    textProps?: TextProps;
     bulletPointsIcon?: IImage;
 }
 
@@ -162,7 +174,7 @@ function SliderItem({ slide, id }: {
                 <div>
                     {bulletPoints?.items?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] md:w-auto">
                         {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
-                        <p class="text-sm md:text-lg font-semibold" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
+                        <p class="text-sm md:text-lg font-semibold" style={{ ...slide.bulletPoints?.textProps }}>{bulletPoint}</p>
                     </div>))}
                 </div>
             </div>
@@ -232,14 +244,14 @@ function Carousel(props: Props) {
             {title?.text && <AnimateOnShow
                         animation="animate-fade-up50"
                         divClass="text-5xl lg:text-[70px] leading-[120%] mb-4"
-                        style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing, lineHeight: title.lineHeight, fontWeight: title.fontWeight }}>
+                        style={{ fontFamily: title.font, color: title.color, fontSize: title.fontSize, letterSpacing: title.letterSpacing, lineHeight: title.lineHeight, fontWeight: title.fontWeight }}>
                         <div dangerouslySetInnerHTML={{ __html: title.text }} />
                     </AnimateOnShow>}
             {caption?.text && <AnimateOnShow
                 animation="animate-fade-up50"
                 divClass="text-base lg:text-2xl font-light leading-normal mb-4">
                 <div dangerouslySetInnerHTML={{ __html: caption.text }} 
-                style={{ fontFamily: caption.font, fontSize: caption.fontSize, letterSpacing: caption.letterSpacing, lineHeight: caption.lineHeight, fontWeight: caption.fontWeight }}/>
+                style={{ fontFamily: caption.font, color: caption.color, fontSize: caption.fontSize, letterSpacing: caption.letterSpacing, lineHeight: caption.lineHeight, fontWeight: caption.fontWeight }}/>
             </AnimateOnShow>}
 
             {props.dots && <Dots slides={slides} dotsColor={dotsColor} dotsTextColor={dotsTextColor} dotsProgressBarPlacement={dotsProgressBarPlacement} />}{" "}

@@ -1,8 +1,6 @@
 import type { ImageWidget, VideoWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import Image from "apps/website/components/Image.tsx";
-import CreateStoreCta from "site/components/CreateStoreCta.tsx";
-import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 
 export interface IImage {
@@ -21,14 +19,25 @@ export interface Title {
     font?: string;
     fontSize?: string;
     letterSpacing?: string;
+    fontWeight?: string;
+    lineHeight?: string;
+}
+
+export interface TextProps {
+    /** @format color-input */
+    color?: string;
+    fontSize?: string;
+    fontWeight?: string;
+    letterSpacing?: string;
+    lineHeight?: string;
 }
 
 export interface Tag {
     text?: RichText;
     /** @format color-input */
     backgroundColor?: string;
+    textProps?: TextProps;
 }
-
 
 /** @title {{text}} */
 export interface BulletPointsItem {
@@ -82,6 +91,7 @@ export interface Props {
     id?: string;
     title?: Title;
     caption?: RichText;
+    captionTextProps?: TextProps;
     leftColumn?: Column;
     rightColumn?: Column;
     invertColumns?: boolean;
@@ -179,7 +189,7 @@ export function CardColumn({ cards = [], cardsMaxWidth, distanceBetweenCards }: 
 }
 
 
-export default function CardsHero({ hideSection, tag, distanceBetweenCards, distanceBetweenColums, id, paddingBottom, bottomCta = [], paddingTop, title, caption, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
+export default function CardsHero({ hideSection, tag, distanceBetweenCards, distanceBetweenColums, id, paddingBottom, bottomCta = [], paddingTop, title, caption, captionTextProps, leftColumn = { cards: [] }, rightColumn = { cards: [] }, invertColumns = false }: Props) {
     if (hideSection) return <></>
     leftColumn.distanceBetweenCards = distanceBetweenCards;
     rightColumn.distanceBetweenCards = distanceBetweenCards;
@@ -190,15 +200,17 @@ export default function CardsHero({ hideSection, tag, distanceBetweenCards, dist
                 divClass={`text-5xl lg:text-[70px] leading-[120%] ${caption ? 'mb-4' : 'mb-12 lg:mb-[120px]'}`}>
                 {tag?.text && <div
                     class="rounded-[20px] w-fit mx-auto font-normal px-4 py-1 text-sm lg:text-lg"
-                    style={{ background: tag.backgroundColor }}
+                    style={{ background: tag.backgroundColor, ...tag.textProps }}
                     dangerouslySetInnerHTML={{ __html: tag.text }} />
                 }
-                {title?.text && <div class="leading-normal lg:leading-[1.2]" dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }} />}
+                {title?.text && <div class="leading-normal lg:leading-[1.2]"
+                    dangerouslySetInnerHTML={{ __html: title.text }}
+                    style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing, fontWeight: title.fontWeight, lineHeight: title.lineHeight }} />}
             </AnimateOnShow>
             {caption && <AnimateOnShow
                 animation="animate-fade-up50"
                 divClass="text-base lg:text-2xl font-light leading-normal mb-20">
-                <div dangerouslySetInnerHTML={{ __html: caption }} />
+                <div dangerouslySetInnerHTML={{ __html: caption }} style={{ ...captionTextProps }} />
             </AnimateOnShow>}
         </div>
         <div class={`px-5 lg:px-0 flex flex-wrap lg:flex-nowrap gap-y-7 justify-center gap-5 ${invertColumns && 'flex-row-reverse'}`} style={{ columnGap: distanceBetweenColums, rowGap: distanceBetweenCards }}>

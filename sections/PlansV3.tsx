@@ -102,6 +102,7 @@ export interface BulletPoints {
     items?: BulletPointItem[];
     /** @format color-input */
     itemsTextColor?: string;
+    itemsTextProps?: BulletPointsTextProps;
     /** @format color-input */
     tooltipIconColor?: string;
     /** @format color-input */
@@ -142,13 +143,28 @@ export interface CreateStoreWithPlanCTA {
     order?: number;
 }
 
+export interface TagTextProps {
+    fontSize?: string;
+    fontWeight?: string;
+    letterSpacing?: string;
+    lineHeight?: string;
+  }
+
+  export interface BulletPointsTextProps {
+    fontFamily?: string;
+    fontSize?: string;
+    letterSpacing?: string;
+    lineHeight?: string;
+  }
+
 export interface Tag {
     hideTag?: boolean;
     text?: RichText;
-    fontFamily?: string;
-    icon?: IImage;
     /** @format color-input */
     textColor?: string;
+    fontFamily?: string;
+    textProps?: TagTextProps;
+    icon?: IImage;
     /** @format color-input */
     backgroundColor?: string;
     /** @format color-input */
@@ -260,8 +276,10 @@ function SliderItem({ slide, id }: {
                         {!tag?.hideTag && <div class="h-9">
                             {tag?.text && <div class={`inline-block rounded-[5px] overflow-hidden p-[1px] ${tag.onlyAnnual && 'annualTag'}`} style={{background: tag.borderColor}}>
                                 <div class="inline-block rounded-[5px]" style={{background: tag.backgroundColor}}>
-                                    <div class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `} style={{background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent', fontFamily: tag.fontFamily}}>
-                                        {tag?.icon?.src && <Image width={tag.icon.width || 20} height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.alt || "tag icon"} class="h-5 w-5 object-contain"/>}
+                                    <div class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `} 
+                                        style={{background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent', fontFamily: tag.fontFamily, ...tag.textProps}}>
+                                        {tag?.icon?.src && <Image width={tag.icon.width || 20} height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.alt || "tag icon"} 
+                                        class="h-5 w-5 object-contain"/>}
                                         <div dangerouslySetInnerHTML={{__html: tag.text}}/>
                                     </div>
                                 </div>
@@ -343,7 +361,7 @@ function SliderItem({ slide, id }: {
                                         class="object-contain" src={item.icon?.src || bulletPoints.bulletPointsIcon?.src || ""} 
                                         alt={item.icon?.alt || bulletPoints.bulletPointsIcon?.alt || "bullet points icon"}/>}
                                     <div class="flex w-full gap-2.5">
-                                        <div class="text-xs font-normal leading-none flex-shrink" style={{color: bulletPoints.itemsTextColor, fontWeight: item.fontWeight}} dangerouslySetInnerHTML={{__html: item.text}}/>
+                                        <div class="text-xs font-normal leading-none flex-shrink" style={{color: bulletPoints.itemsTextColor, fontWeight: item.fontWeight, ...bulletPoints.itemsTextProps}} dangerouslySetInnerHTML={{__html: item.text}}/>
                                         {item.toolTipText && <div class={`tooltip tooltip-left h-4 inline-block`} data-tip={item.toolTipText} style={`--tooltip-text-color: ${bulletPoints.tooltipTextColor}; --tooltip-color: ${bulletPoints.tooltipBackgroundColor};`}>
                                             <InfoIcon color={bulletPoints.tooltipIconColor || "white"} />
                                         </div>}

@@ -91,6 +91,16 @@ const refreshArrowsVisibility = () => {
     }
 };
 
+export interface TextProps {
+  fontFamily?: string;
+  /** @format color-input */
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
 export interface HubspotForm {
   show?: boolean;
   region?: string;
@@ -174,7 +184,8 @@ export interface Modal {
 }
 
 export interface Content {
-    description?: HTMLWidget;
+    description?: RichText;
+    descriptionTextProps?: TextProps;
     avatar?: ImageWidget;
     /** @description Image's alt text */
     alt?: string;
@@ -183,8 +194,10 @@ export interface Content {
     /** @format color-input */
     avaterBorderColor?: string;
     roundedAvatar?: boolean;
-    name?: HTMLWidget;
+    name?: RichText;
+    nameTextProps?: TextProps;
     nameCaption?: RichText;
+    nameCaptionTextProps?: TextProps;
     /** @format color-input */
     quoteIconColor?: string;
     /** @format color-input */
@@ -199,12 +212,16 @@ export interface Testimonial {
 export interface Props {
   hideSection?: boolean;
   title?: RichText;
+  /** @format color-input */
+  titleColor?: string;
   titleFont?: string;
   titleFontSize?: string;
   titleFontWeight?: string;
   titleLetterSpacing?: string;
   titleLineHeight?: string;
   caption?: RichText;
+  /** @format color-input */
+  captionColor?: string;
   captionFont?: string;
   captionFontSize?: string;
   captionFontWeight?: string;
@@ -289,15 +306,15 @@ function SliderItem({ slide, id }: {
           <path d="M6.54688 21.7734C4.71354 21.7734 3.2526 21.1576 2.16406 19.9258C1.10417 18.6654 0.574219 17.0326 0.574219 15.0273C0.574219 12.1341 1.30469 9.34115 2.76562 6.64844C4.25521 3.95573 6.0026 1.75 8.00781 0.03125L12.6914 2.30859C11.0013 4.11328 9.71224 5.91797 8.82422 7.72266C7.96484 9.52734 7.53516 11.1029 7.53516 12.4492H12.6914V16.6172C12.6914 17.849 12.1185 19.0234 10.9727 20.1406C9.85547 21.2292 8.38021 21.7734 6.54688 21.7734ZM24.293 21.7734C22.4596 21.7734 20.9987 21.1576 19.9102 19.9258C18.8503 18.6654 18.3203 17.0326 18.3203 15.0273C18.3203 12.1341 19.0508 9.34115 20.5117 6.64844C21.9727 3.95573 23.7057 1.75 25.7109 0.03125L30.3945 2.30859C28.7044 4.11328 27.4154 5.91797 26.5273 7.72266C25.668 9.52734 25.2383 11.1029 25.2383 12.4492H30.3945V16.6172C30.3945 17.849 29.8216 19.0234 28.6758 20.1406C27.5586 21.2292 26.0977 21.7734 24.293 21.7734Z"/>
         </svg>}
 
-        <div class="text-base text-primary " dangerouslySetInnerHTML={{ __html: content?.description || "" }}/>
+        <div class="text-base text-primary " dangerouslySetInnerHTML={{ __html: content?.description || "" }} style={{...content?.descriptionTextProps}}/>
       </div>
       <div class="flex gap-4 md:gap-5 px-7 pb-7">
         <div class={`${content?.roundedAvatar && "rounded-full"} overflow-hidden ${content?.avaterBorderColor && 'border'}`} style={{ borderColor: content?.avaterBorderColor }}>
           <Image class="object-contain h-full" alt={content?.alt} src={content?.avatar || ""} width={content?.avatarWidth || 68} height={content?.avatarHeight || 68}/>
         </div>
         <div class="flex flex-col justify-center gap-1">
-          <div class="font-normal text-sm md:text-base" dangerouslySetInnerHTML={{ __html: content?.name || "" }}/>
-          {content?.nameCaption &&<div class="font-normal text-sm" dangerouslySetInnerHTML={{ __html: content?.nameCaption }}/>}
+          <div class="font-normal text-sm md:text-base" dangerouslySetInnerHTML={{ __html: content?.name || "" }} style={{...content?.nameTextProps}}/>
+          {content?.nameCaption &&<div class="font-normal text-sm" dangerouslySetInnerHTML={{ __html: content?.nameCaption }} style={{...content?.nameCaptionTextProps}} />}
         </div>
       </div>
     </div>
@@ -350,7 +367,7 @@ function TestimonialsWithBubbles(props: Props) {
     const id = useId();
     const modalId = id + "modal";
     const hubspostFormId = id + "hubspotForm";
-    const { title, slides, titleFont, caption, captionFont, hubspotForm, bubbleImages = [], captionFontSize, captionFontWeight, captionLetterSpacing, captionLineHeight, backgroundMedia, modal, paddingBottom, paddingTop, titleLineHeight, titleFontSize, titleFontWeight, titleLetterSpacing } = { ...DEFAULT_PROPS, ...props };
+    const { title, titleColor, slides, titleFont, caption, captionColor, captionFont, hubspotForm, bubbleImages = [], captionFontSize, captionFontWeight, captionLetterSpacing, captionLineHeight, backgroundMedia, modal, paddingBottom, paddingTop, titleLineHeight, titleFontSize, titleFontWeight, titleLetterSpacing } = { ...DEFAULT_PROPS, ...props };
     return (<div class="relative overflow-hidden" >
       <div id={id} class="min-h-min flex flex-col lg:container md:max-w-[1332px] lg:mx-auto pt-7 lg:pt-14" 
         style={{paddingTop}}
@@ -361,10 +378,10 @@ function TestimonialsWithBubbles(props: Props) {
               dangerouslySetInnerHTML={{ __html: useScript(onLoad, id, bubbleImages) }}
             />
         {title && <div class="text-[110px] leading-[120%] mb-4 text-primary" 
-          style={{ fontFamily:  titleFont, fontSize: titleFontSize, fontWeight: titleFontWeight, letterSpacing: titleLetterSpacing, lineHeight: titleLineHeight}} 
+          style={{ color: titleColor, fontFamily:  titleFont, fontSize: titleFontSize, fontWeight: titleFontWeight, letterSpacing: titleLetterSpacing, lineHeight: titleLineHeight}} 
           dangerouslySetInnerHTML={{ __html: title}}/>}
         {caption && <div class="text-6xl leading-[120%] text-primary" 
-          style={{ fontFamily:  captionFont, fontSize: captionFontSize, fontWeight: captionFontWeight, letterSpacing: captionLetterSpacing, lineHeight: captionLineHeight}} 
+          style={{ color: captionColor, fontFamily:  captionFont, fontSize: captionFontSize, fontWeight: captionFontWeight, letterSpacing: captionLetterSpacing, lineHeight: captionLineHeight}} 
           dangerouslySetInnerHTML={{ __html: caption}}/>}
 
         {hubspotForm?.show && <label class="pt-5 md:pt-10 lg:w-[600px] mx-auto">

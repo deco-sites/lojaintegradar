@@ -36,13 +36,28 @@ const onLoad = (backgroundColor?: string, noScrollBackgroundColor?: string) => {
   });
 };
 
+export interface TextProps {
+  fontFamily?: string;
+  /** @format color-input */
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
+export interface MenuTitleTextProps {
+  fontFamily?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
 
 export interface HeaderMessage {
   show?: boolean;
   text?: RichText;
-  font?: string;
-  /** @format color-input */
-  textColor?: string;
+  textProps?: TextProps;
   /** @format color-input */
   backgroundColor?: string;
   cta?: CTAProps[];
@@ -51,16 +66,12 @@ export interface HeaderMessage {
 export interface CampaignTimer {
   show?: boolean;
   /** @format color-input */
-  noScrollBackgroundColor?: string;
-  /** @format color-input */
   backgroundColor?: string;
   /**
    * @title Text
-   * @default Time left for a campaign to end with a link
    */
-  text?: string;
-  /** @format color-input */
-  textColor?: string;
+  text?: RichText;
+  textProps?: TextProps;
 
   /** @format rich-text */
   expiredText?: string;
@@ -99,6 +110,7 @@ export interface Navigation {
   textColor?: string;
   /** @format color-input */
   textHoverColor?: string;
+  linksTextProps?: MenuTitleTextProps;
   buttons: CTAProps[];
   mobileButtons: CTAProps[];
   asideMenuButtons: CTAProps[];
@@ -117,6 +129,7 @@ export interface DropdownMenus {
   titlesTextColor?: string;
   /** @format color-input */
   titlesTextHoverColor?: string;
+  titlesTextProps?: MenuTitleTextProps;
   /** @format color-input */
   menusBackgroundColor?: string;
   /** @format color-input */
@@ -170,9 +183,9 @@ export default function Header2({ logo = {
     {campaignTimer?.show && <div class="h-[76px]" />}
     <div class="fixed top-0 left-0 w-full z-50 justify-center ">
       
-      {headerMessage?.show && <div class="h-16 w-full bg-primary text-primary-content px-1 lg:px-11 py-2 flex items-center justify-center gap-1" style={{background: headerMessage?.backgroundColor, color: headerMessage?.textColor, fontFamily: headerMessage.font}}>
+      {headerMessage?.show && <div class="h-16 w-full bg-primary text-primary-content px-1 lg:px-11 py-2 flex items-center justify-center gap-1" style={{background: headerMessage?.backgroundColor}}>
         <p class="text-xs lg:text-2xl text-center font-semibold leading-[120%] flex items-center justify-center">
-          <div class="text-lg lg:text-2xl" dangerouslySetInnerHTML={{__html: headerMessage.text || ""}}/>
+          <div class="text-lg lg:text-2xl" dangerouslySetInnerHTML={{__html: headerMessage.text || ""}} style={{ ...headerMessage.textProps}}/>
           {headerMessage?.cta?.map(cta => (
                   <div class="flex items-center"><CTA {...cta} /></div>
               ))}
@@ -180,9 +193,9 @@ export default function Header2({ logo = {
       </div>}
 
       {campaignTimer?.show && <div class="min-h-[76px] bg-primary text-primary-content py-2 flex flex-wrap items-center justify-center gap-2.5 lg:gap-7" style={{background: campaignTimer.backgroundColor}}>
-        {campaignTimer.text && <p class="text-xs lg:text-base text-primary-content font-semibold leading-[120%]" style={{color: campaignTimer.textColor}}>
-          {campaignTimer.text}
-        </p>}
+        {campaignTimer.text && <div class="text-xs lg:text-base text-primary-content font-semibold leading-[120%]" style={{...campaignTimer.textProps}}
+          dangerouslySetInnerHTML={{__html: campaignTimer.text}}/>  
+        }
         <CampaignTimer {...campaignTimer} labelsColor={campaignTimer.labelsColor} numbersColor={campaignTimer.numbersColor} />
       </div>}
 
@@ -206,6 +219,7 @@ export default function Header2({ logo = {
                   class={`text-center flex gap-2 items-start ${!menu.titleLink && 'cursor-default'}`}
                   hx-on={`mouseenter: this.style.color='${dropdownMenus.titlesTextHoverColor}'; this.parentElement.children[1]?.classList.add('animate-fade-in');`}
                   target={menu?.titleLink?.includes("http") ? "_blank" : "_self"}
+                  style={{...dropdownMenus.titlesTextProps}}
                   >
                   {menu.title}
                   {menu.links.length > 0 && <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" class="fill-current mt-2 group-hover:rotate-180 transition-all duration-300">
@@ -310,7 +324,10 @@ export default function Header2({ logo = {
               </div>
               )})}
                 {navigation?.links.map((link) => (<li class="border-b border-neutral last:border-none" style={{ borderColor: navigation.linksBorderColor }} hx-on={`mouseleave: this.children[0].style.color='${navigation.textColor}'`} >
-                  <a href={link.url} aria-label={link.label} class="text-primary hover:text-accent hover:bg-transparent  text-base font-semibold flex justify-between py-6 rounded-none" style={{ color: navigation.textColor }} hx-on={`mouseenter: this.style.color='${navigation.textHoverColor}'`} >
+                  <a href={link.url} aria-label={link.label} 
+                    class="text-primary hover:text-accent hover:bg-transparent  text-base font-semibold flex justify-between py-6 rounded-none" 
+                    style={{ color: navigation.textColor, ...navigation.linksTextProps }} 
+                    hx-on={`mouseenter: this.style.color='${navigation.textHoverColor}'`} >
                     <div class="w-full flex justify-between" hx-on:click="document.getElementById('mobile-drawer-nav').checked = false;">
                       {link.label}
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" class="fill-current" viewBox="0 0 11 20">

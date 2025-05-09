@@ -26,6 +26,16 @@ export interface Title {
   titleMaxWidth?: string;
 }
 
+export interface TextProps {
+  fontFamily?: string;
+  /** @format color-input */
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
 export interface IVideo {
   src?: VideoWidget;
   width?: string;
@@ -78,6 +88,7 @@ export interface Props {
   title?: Title;
   distanceBetweenTitleAndText?: string;
   text?: RichText;
+  textProps?: TextProps;
   bulletPoints?: BulletPoints;
   cta?: CTAProps[];
   ctaPlacement?: 'left' | 'center' | 'right';
@@ -113,7 +124,7 @@ export function HeroMedia({ media }: { media?: Media }) {
   </>
 }
 
-export default function HeroV3({ title, text, bulletPoints, cta = [], media, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, lcp, floatingImage }: Props) {
+export default function HeroV3({ title, text, textProps, bulletPoints, cta = [], media, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, lcp, floatingImage }: Props) {
   const placement = {
     "left": "justify-start",
     "center": "justify-center",
@@ -144,7 +155,7 @@ export default function HeroV3({ title, text, bulletPoints, cta = [], media, dis
           class={`w-full text-[32px] lg:text-[56px] lg:leading-[1.2] !text-transparent !bg-clip-text`}
           style={{ fontSize: title.fontSize, fontFamily: title.font, letterSpacing: title.letterSpacing, background: title.color, lineHeight: title.lineHeight, marginBottom: distanceBetweenTitleAndText }} />}
 
-        {text && <div dangerouslySetInnerHTML={{ __html: text }} class="text-sm lg:text-lg w-full" />}
+        {text && <div dangerouslySetInnerHTML={{ __html: text }} class="text-sm lg:text-lg w-full" style={{ ...textProps }} />}
 
         {bulletPoints?.items && <div class="flex flex-col gap-4">
           {bulletPoints?.items?.map((item) => (

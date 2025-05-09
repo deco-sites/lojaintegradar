@@ -106,7 +106,8 @@
                 "textColor": "#ffffff",
                 "showIcon": false
               },
-              "buttonsHeight": "32px"
+              "buttonsHeight": "32px",
+              "linksTextProps": {}
             },
             "logo": {
               "src": {
@@ -132,14 +133,26 @@
             "asideMenuCloseIconColor": "#003037",
             "headerMessage": {
               "show": false,
-              "text": "<p>Message</p>",
+              "text": "<p>teste</p>",
               "textColor": "#22454B",
               "backgroundColor": "#D0DAD9",
               "cta": [],
-              "font": "Instrument Serif"
+              "font": "Instrument Serif",
+              "textProps": {
+                "color": ""
+              }
             },
             "campaignTimer": {
-              "text": "Time left for a campaign to end with a link"
+              "text": "<p>Time left for a campaign to end</p>",
+              "show": false,
+              "labelsColor": "",
+              "numbersColor": "",
+              "noScrollBackgroundColor": "",
+              "backgroundColor": "",
+              "textProps": {
+                "font": "Galaxie Copernicus",
+                "color": ""
+              }
             },
             "hideAsideMenu": false,
             "dropdownMenus": {
@@ -238,7 +251,8 @@
               "menusTextColor": "#371E56",
               "menusItemsHoverBackgroundColor": "#E9F9F9",
               "menusItemsHoverLineColor": "#2bc4c3",
-              "menusShadowColor": "rgba(71, 193, 196, .50)"
+              "menusShadowColor": "rgba(71, 193, 196, .50)",
+              "titlesTextProps": {}
             },
             "asideMenuOnlyMobile": true,
             "noScrollBackgroundColor": "rgba(0, 54, 58, 0.3)"
@@ -382,7 +396,8 @@
               "horizontalPosition": "46%",
               "verticalPosition": "20%"
             },
-            "distanceBetweenTitleAndText": "40px"
+            "distanceBetweenTitleAndText": "40px",
+            "textProps": {}
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -573,7 +588,10 @@
                   "backgroundColor": "",
                   "borderRadius": "20px",
                   "bulletPoints": {
-                    "items": []
+                    "items": [],
+                    "bulletPointsTextProps": {
+                      "color": ""
+                    }
                   },
                   "padding": "48px",
                   "createStoreCta": {
@@ -592,7 +610,8 @@
                     "width": 597,
                     "height": 876
                   },
-                  "spaceBetweenTitleAndText": "30px"
+                  "spaceBetweenTitleAndText": "30px",
+                  "textProps": {}
                 }
               ],
               "cardsMaxWidth": "597px"
@@ -700,7 +719,10 @@
                 "showIcon": false,
                 "customIcon": {}
               }
-            ]
+            ],
+            "captionTextProps": {
+              "color": ""
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -912,7 +934,10 @@
               {
                 "use": "image",
                 "bulletPoints": {
-                  "items": []
+                  "items": [],
+                  "textProps": {
+                    "color": ""
+                  }
                 },
                 "title": "Reengaje clientes com campanhas automáticas",
                 "image": {
@@ -1278,8 +1303,8 @@
         {
           "value": {
             "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
-            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: #00363a\">lojistas</span></p>",
-            "titleColor": "#371E55",
+            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: rgb(0, 54, 58)\">lojistas</span></p>",
+            "titleColor": "",
             "titleFont": "Galaxie Copernicus",
             "caption": "<p style=\"text-align: center\"><span style=\"color: #5f6e82\">que escolheram a forma mais eficiente  de vender online</span></p>",
             "slides": [
@@ -1298,7 +1323,12 @@
                   "avatarHeight": 63,
                   "roundedAvatar": false,
                   "nameCaption": "<p><span style=\"color: #5f6e82\">Loja no ar em cerca de 60 dias</span></p>",
-                  "borderColor": "#CBCBC1"
+                  "borderColor": "#CBCBC1",
+                  "descriptionTextProps": {
+                    "color": ""
+                  },
+                  "nameTextProps": {},
+                  "nameCaptionTextProps": {}
                 }
               },
               {
@@ -1501,7 +1531,11 @@
             ],
             "paddingTop": "0",
             "paddingBottom": "0",
-            "blackAndWhiteLogos": true
+            "blackAndWhiteLogos": true,
+            "titleTextProps": {},
+            "captionTextProps": {
+              "color": ""
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -3712,7 +3746,8 @@
             "letterSpacing": "-3px",
             "lineHeight": "36px"
           },
-          "caption": "<p><span style=\"color: #5f6e82\">Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via Chat e WhatsApp.</span></p>"
+          "caption": "<p><span style=\"color: #5f6e82\">Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via Chat e WhatsApp.</span></p>",
+          "captionTextProps": {}
         },
         {
           "icon": {
@@ -3781,226 +3816,6 @@
           "value": {
             "__resolveType": "site/sections/PlansV3.tsx",
             "title": {
-              "0": "<",
-              "1": "p",
-              "2": " ",
-              "3": "s",
-              "4": "t",
-              "5": "y",
-              "6": "l",
-              "7": "e",
-              "8": "=",
-              "9": "\"",
-              "10": "f",
-              "11": "o",
-              "12": "n",
-              "13": "t",
-              "14": "-",
-              "15": "f",
-              "16": "a",
-              "17": "m",
-              "18": "i",
-              "19": "l",
-              "20": "y",
-              "21": ":",
-              "22": " ",
-              "23": "'",
-              "24": "I",
-              "25": "n",
-              "26": "s",
-              "27": "t",
-              "28": "r",
-              "29": "u",
-              "30": "m",
-              "31": "e",
-              "32": "n",
-              "33": "t",
-              "34": " ",
-              "35": "S",
-              "36": "e",
-              "37": "r",
-              "38": "i",
-              "39": "f",
-              "40": "'",
-              "41": ";",
-              "42": "\"",
-              "43": " ",
-              "44": "d",
-              "45": "a",
-              "46": "t",
-              "47": "a",
-              "48": "-",
-              "49": "m",
-              "50": "c",
-              "51": "e",
-              "52": "-",
-              "53": "s",
-              "54": "t",
-              "55": "y",
-              "56": "l",
-              "57": "e",
-              "58": "=",
-              "59": "\"",
-              "60": "f",
-              "61": "o",
-              "62": "n",
-              "63": "t",
-              "64": "-",
-              "65": "f",
-              "66": "a",
-              "67": "m",
-              "68": "i",
-              "69": "l",
-              "70": "y",
-              "71": ":",
-              "72": " ",
-              "73": "'",
-              "74": "I",
-              "75": "n",
-              "76": "s",
-              "77": "t",
-              "78": "r",
-              "79": "u",
-              "80": "m",
-              "81": "e",
-              "82": "n",
-              "83": "t",
-              "84": " ",
-              "85": "S",
-              "86": "e",
-              "87": "r",
-              "88": "i",
-              "89": "f",
-              "90": "'",
-              "91": ";",
-              "92": "\"",
-              "93": ">",
-              "94": "<",
-              "95": "s",
-              "96": "p",
-              "97": "a",
-              "98": "n",
-              "99": " ",
-              "100": "s",
-              "101": "t",
-              "102": "y",
-              "103": "l",
-              "104": "e",
-              "105": "=",
-              "106": "\"",
-              "107": "c",
-              "108": "o",
-              "109": "l",
-              "110": "o",
-              "111": "r",
-              "112": ":",
-              "113": " ",
-              "114": "r",
-              "115": "g",
-              "116": "b",
-              "117": "(",
-              "118": "5",
-              "119": "5",
-              "120": ",",
-              "121": " ",
-              "122": "3",
-              "123": "0",
-              "124": ",",
-              "125": " ",
-              "126": "8",
-              "127": "5",
-              "128": ")",
-              "129": ";",
-              "130": "\"",
-              "131": " ",
-              "132": "d",
-              "133": "a",
-              "134": "t",
-              "135": "a",
-              "136": "-",
-              "137": "m",
-              "138": "c",
-              "139": "e",
-              "140": "-",
-              "141": "s",
-              "142": "t",
-              "143": "y",
-              "144": "l",
-              "145": "e",
-              "146": "=",
-              "147": "\"",
-              "148": "c",
-              "149": "o",
-              "150": "l",
-              "151": "o",
-              "152": "r",
-              "153": ":",
-              "154": " ",
-              "155": "r",
-              "156": "g",
-              "157": "b",
-              "158": "(",
-              "159": "5",
-              "160": "5",
-              "161": ",",
-              "162": " ",
-              "163": "3",
-              "164": "0",
-              "165": ",",
-              "166": " ",
-              "167": "8",
-              "168": "5",
-              "169": ")",
-              "170": ";",
-              "171": "\"",
-              "172": ">",
-              "173": "P",
-              "174": "l",
-              "175": "a",
-              "176": "n",
-              "177": "o",
-              "178": "s",
-              "179": " ",
-              "180": "q",
-              "181": "u",
-              "182": "e",
-              "183": " ",
-              "184": "c",
-              "185": "r",
-              "186": "e",
-              "187": "s",
-              "188": "c",
-              "189": "e",
-              "190": "m",
-              "191": " ",
-              "192": "c",
-              "193": "o",
-              "194": "m",
-              "195": " ",
-              "196": "o",
-              "197": " ",
-              "198": "s",
-              "199": "e",
-              "200": "u",
-              "201": " ",
-              "202": "n",
-              "203": "e",
-              "204": "g",
-              "205": "ó",
-              "206": "c",
-              "207": "i",
-              "208": "o",
-              "209": "<",
-              "210": "/",
-              "211": "s",
-              "212": "p",
-              "213": "a",
-              "214": "n",
-              "215": ">",
-              "216": "<",
-              "217": "/",
-              "218": "p",
-              "219": ">",
               "text": "<p style=\"text-align: center\"><span>Planos que crescem com o seu negócio</span></p>",
               "color": "#00363A",
               "font": "Galaxie Copernicus",
@@ -4009,58 +3824,6 @@
             },
             "id": "plans",
             "caption": {
-              "0": "+",
-              "1": "2",
-              "2": ",",
-              "3": "7",
-              "4": " ",
-              "5": "m",
-              "6": "i",
-              "7": "l",
-              "8": "h",
-              "9": "õ",
-              "10": "e",
-              "11": "s",
-              "12": " ",
-              "13": "d",
-              "14": "e",
-              "15": " ",
-              "16": "l",
-              "17": "o",
-              "18": "j",
-              "19": "i",
-              "20": "s",
-              "21": "t",
-              "22": "a",
-              "23": "s",
-              "24": " ",
-              "25": "e",
-              "26": "s",
-              "27": "c",
-              "28": "o",
-              "29": "l",
-              "30": "h",
-              "31": "e",
-              "32": "r",
-              "33": "a",
-              "34": "m",
-              "35": " ",
-              "36": "a",
-              "37": " ",
-              "38": "L",
-              "39": "o",
-              "40": "j",
-              "41": "a",
-              "42": " ",
-              "43": "I",
-              "44": "n",
-              "45": "t",
-              "46": "e",
-              "47": "g",
-              "48": "r",
-              "49": "a",
-              "50": "d",
-              "51": "a",
               "text": "<p style=\"text-align: center\"><span>Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
               "color": "#5F6E82",
               "fontWeight": "500"
@@ -6637,7 +6400,8 @@
                   "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
                   "fontFamily": "Instrument Serif",
                   "onlyAnnual": true,
-                  "hideTag": true
+                  "hideTag": true,
+                  "textProps": {}
                 },
                 "montlyFee": {
                   "0": "<",
@@ -8866,7 +8630,9 @@
                   "size": "Medium"
                 },
                 "titleColor": "#00363A",
-                "textColor": "#5F6E82"
+                "textColor": "#5F6E82",
+                "textProps": {},
+                "titleTextProps": {}
               },
               {
                 "cardIcon": {

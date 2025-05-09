@@ -6,6 +6,14 @@ import { useId } from "site/sdk/useId.ts";
 import { StringBufferWithCallbacks } from "@hono/hono/utils/html";
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 
+export interface TextProps {
+    fontFamily?: string;
+    fontSize?: string;
+    fontWeight?: string;
+    letterSpacing?: string;
+    lineHeight?: string;
+}
+
 export interface IImage {
     src?: ImageWidget;
     alt?: string;
@@ -27,9 +35,11 @@ export interface Card {
     title?: string;
     /** @format color-input */
     titleColor?: string;
+    titleTextProps?: TextProps;
     text?: string;
     /** @format color-input */
     textColor?: string;
+    textProps?: TextProps;
     CTA?: CTAProps;
 }
 
@@ -106,9 +116,9 @@ export default function Footer2({ hideSection, id, centralizeCards = false, show
                                     alt={card.cardIcon.alt || "card icon"}
                                     class="object-contain h-7 lg:h-10 w-7 lg:w-10"
                                 />}
-                                <h3 class="text-base lg:text-xl font-semibold leading-[120%]" style={{ color: card.titleColor }}>{card.title}</h3>
+                                <h3 class="text-base lg:text-xl font-semibold leading-[120%]" style={{ color: card.titleColor, ...card.titleTextProps }}>{card.title}</h3>
                             </div>
-                            <p class="text-sm lg:text-base font-normal leading-normal mt-2.5 py-2.5" style={{ color: card.textColor }}>{card.text}</p>
+                            <p class="text-sm lg:text-base font-normal leading-normal mt-2.5 py-2.5" style={{ color: card.textColor, ...card.textProps }}>{card.text}</p>
                             {card.CTA && <CTA {...card.CTA} />}
                         </div>
                     ))}

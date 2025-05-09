@@ -2,6 +2,16 @@ import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 
+export interface TextProps {
+  fontFamily?: string;
+  /** @format color-input */
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
 /** @title {{altText}} */
 export interface Logo {
   src?: ImageWidget;
@@ -13,12 +23,9 @@ export interface Logo {
 export interface Props {
   hideSection?: boolean;
   title?: RichText;
-  titleFont?: string;
-  /** @format color-input */
-  titleColor?: string;
+  titleTextProps?: TextProps;
   caption?: RichText;
-  /** @format color-input */
-  captionColor?: string;
+  captionTextProps?: TextProps;
   logos?: Logo[];
   blackAndWhiteLogos?: boolean;
   paddingTop?: string;
@@ -28,7 +35,7 @@ const IMG_PLACEHODLER = Array(30).fill(0).map(() => ({
   src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/03fbcc78-ca86-4616-a59a-b8aa18331a9c",
   altText: "Logo",
 }));
-export default function Logos({ hideSection, title, caption, logos = IMG_PLACEHODLER, titleFont, titleColor, captionColor, paddingBottom, paddingTop, blackAndWhiteLogos }: Props) {
+export default function Logos({ hideSection, title, caption, logos = IMG_PLACEHODLER, titleTextProps, captionTextProps, paddingBottom, paddingTop, blackAndWhiteLogos }: Props) {
   if (hideSection) return <></>
   logos = [...logos, ...logos];
   const slideContent = (<div id="logosSliderContent" class="flex items-center gap-7 md:gap-16">
@@ -41,10 +48,10 @@ export default function Logos({ hideSection, title, caption, logos = IMG_PLACEHO
   return (<div class="lg:container md:max-w-[1260px] lg:mx-auto px-7 md:px-0 overflow-hidden" style={{ paddingTop: paddingTop, paddingBottom: paddingBottom }}>
     <div class="flex flex-col gap-10">
       {title && <AnimateOnShow animation="animate-fade-up">
-        <div class="text-lg md:text-[32px] text-primary font-normal " dangerouslySetInnerHTML={{ __html: title }} style={{ fontFamily: titleFont, color: titleColor }} />
+        <div class="text-lg md:text-[32px] text-primary font-normal " dangerouslySetInnerHTML={{ __html: title }} style={{ ...titleTextProps }} />
       </AnimateOnShow>}
       {caption && <AnimateOnShow animation="animate-fade-up" delay={200}>
-        <div class="text-base md:text-2xl font-light mt-4" style={{ color: captionColor }} dangerouslySetInnerHTML={{ __html: caption }} />
+        <div class="text-base md:text-2xl font-light mt-4" style={{ ...captionTextProps }} dangerouslySetInnerHTML={{ __html: caption }} />
       </AnimateOnShow>}
       <AnimateOnShow divClass="relative w-full overflow-hidden h-20" animation="animate-fade-up">
         <div class="animate-sliding absolute top-0 left-0 flex flex-nowrap h-full">

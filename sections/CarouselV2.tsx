@@ -54,6 +54,16 @@ const refreshArrowsVisibility = ({arrowsColor, arrowsBackgroundColor, arrowsDisa
     }
 };
 
+export interface TextProps {
+    fontFamily?: string;
+    /** @format color-input */
+    color?: string;
+    fontSize?: string;
+    fontWeight?: string;
+    letterSpacing?: string;
+    lineHeight?: string;
+  }
+
 export interface CarouselIcon {
     src?: ImageWidget;
     alt?: string;
@@ -93,6 +103,7 @@ export interface CarouselItem {
     use?: 'image' | 'video';
     title?: Title;
     caption?: RichText;
+    captionTextProps?: TextProps;
     cta?: CTAProps[];
 }
 
@@ -127,6 +138,7 @@ export interface Props {
     id?: string;
     title?: Title;
     caption?: RichText;
+    captionTextProps?: TextProps;
     slides?: CarouselItem[];
     /**
      * @title Show arrows
@@ -143,7 +155,7 @@ function SliderItem({ slide, id }: {
     slide: CarouselItem;
     id: string;
 }) {
-    const { title, caption, image, video, use = "image", cta = [], icon, backgroundColor } = slide;
+    const { title, caption, captionTextProps, image, video, use = "image", cta = [], icon, backgroundColor } = slide;
     const placement = {
         "Top left": "top-5 left-6",
         "Top right": "top-6 right-6",
@@ -181,7 +193,7 @@ function SliderItem({ slide, id }: {
                 class="w-full text-2xl lg:text-[32px]"
                 style={{color: title.color, fontFamily: title?.font, fontWeight: title?.fontWeight, fontSize: title?.fontSize, letterSpacing: title?.letterSpacing, lineHeight: title?.lineHeight}}/>}
 
-            {caption && <div dangerouslySetInnerHTML={{__html: caption}} class="text-xs lg:text-base w-full"/>}
+            {caption && <div dangerouslySetInnerHTML={{__html: caption}} class="text-xs lg:text-base w-full" style={{...captionTextProps}}/>}
             <div class="flex flex-wrap gap-4 mt-auto">
                 {cta.map(cta => (
                     <CTA {...cta} />
@@ -233,7 +245,7 @@ function Buttons({ arrowsColor, arrowsBackgroundColor, arrowsDisableBackgroundCo
 }
 function Carousel(props: Props) {
     if (props.hideSection) return <></>
-    const { id, title, caption, slides, paddingBottom, paddingTop, arrows, cta = [] } = { ...props };
+    const { id, title, caption, captionTextProps, slides, paddingBottom, paddingTop, arrows, cta = [] } = { ...props };
     const carouselId = useId();
     return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative" 
         hx-on:click={useScript(refreshArrowsVisibility, {...arrows})} 
@@ -248,12 +260,12 @@ function Carousel(props: Props) {
                     {title?.text && title.text.length > 8 && <AnimateOnShow
                         animation="animate-fade-up50"
                         divClass={`text-5xl lg:text-[70px] leading-[120%] ${caption ? 'mb-4' : 'mb-12 lg:mb-[120px]'}`}>
-                        <div class="leading-normal" dangerouslySetInnerHTML={{ __html: title.text }} style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }} />
+                        <div class="leading-normal" dangerouslySetInnerHTML={{ __html: title.text }} style={{ color: title.color, fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }} />
                     </AnimateOnShow>}
                     {caption && caption.length > 8 && <AnimateOnShow
                         animation="animate-fade-up50"
                         divClass="text-base lg:text-2xl font-light leading-normal mb-4">
-                        <div dangerouslySetInnerHTML={{ __html: caption }} />
+                        <div dangerouslySetInnerHTML={{ __html: caption }} style={{...captionTextProps}} />
                     </AnimateOnShow>}
 
                 <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-2 lg:gap-5 px-5 lg:pl-[30px] lg:pr-[22px] py-9 md:px-2.5 max-w-[1340px] relative" rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider">

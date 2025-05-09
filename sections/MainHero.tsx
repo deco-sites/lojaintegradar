@@ -13,13 +13,24 @@ const closeModal = (modalId: string) => {
     const modal = document.getElementById(modalId) as HTMLElement;
     modal?.classList.add("hidden");
 };
+
+export interface TextProps {
+    fontFamily?: string;
+    /** @format color-input */
+    color?: string;
+    fontSize?: string;
+    fontWeight?: string;
+    letterSpacing?: string;
+    lineHeight?: string;
+  }
+
 export interface BulletPoints {
     show?: boolean;
-    title?: HTMLWidget;
+    title?: RichText;
+    titleTextProps?: TextProps;
     bulletPointsIcon?: IImage;
     items?: string[];
-    /** @format color-input */
-    textColor?: string;
+    textProps?: TextProps;
     /** @format color-input */
     backgroundColor?: string;
 }
@@ -76,13 +87,23 @@ export interface Props {
     hideSection?: boolean;
     id?: string;
     captionAbove?: RichText;
+    captionAboveTextProps?: TextProps;
     title: RichText;
-    titleFont?: string;
     titleLetterSpacing?: string;
     /** @format color-input */
     titleColor?: string;
+    titleFont?: string;
+    titleFontSize?: string;
+    titleFontWeight?: string;
+    titleLineHeight?: string;
     caption?: RichText;
+    captionLetterSpacing?: string;
+    /** @format color-input */
+    captionColor?: string;
     captionFontSize?: string;
+    captionFont?: string;
+    captionFontWeight?: string;
+    captionLineHeight?: string;
     inputLabel?: string;
     /** @format color-input */
     inputLabelColor?: string;
@@ -116,7 +137,7 @@ export interface Props {
     paddingTop?: string;
     paddingBottom?: string;
 }
-export default function MainHero({ hideSection, id, title, caption = "", paddingBottom, paddingTop,titleLetterSpacing, backgroundAnimation, inputLabel, captionFontSize, backgroundColor, hubspotFormButtonWidth, backgroundVideo, lcp, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove }: Props) {
+export default function MainHero({ hideSection, captionColor, captionFont, captionFontWeight, captionLetterSpacing, captionLineHeight, id, title, titleFontSize, titleFontWeight, titleLineHeight, caption = "", paddingBottom, paddingTop,titleLetterSpacing, backgroundAnimation, inputLabel, captionFontSize, backgroundColor, hubspotFormButtonWidth, backgroundVideo, lcp, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove, captionAboveTextProps, }: Props) {
     if (hideSection) return <></>
     const randomId = useId();
     const modalId = randomId + "modal";
@@ -141,13 +162,13 @@ export default function MainHero({ hideSection, id, title, caption = "", padding
             <div class={`lg:pb-20 flex-grow flex justify-center items-center w-full ${(use == "image" || use == "video") ? "xl:w-1/2 xl:justify-end" : "justify-center"} px-6 md:px-0 border-base`}>
                 <script dangerouslySetInnerHTML={{ __html: useScript(openModal, modalId) }}/>
                 <div class={`flex-grow flex flex-col gap-2.5 ${(use == "image" || use == "video") ? "max-w-[630px]" : "items-center max-w-[1220px]"} z-10`}>
-                    {captionAbove && <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: captionAbove }}/>}
+                    {captionAbove && <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: captionAbove }} style={{...captionAboveTextProps}}/>}
                     <div 
                         class="text-primary w-full text-2xl md:text-[56px] font-normal leading-[1.2] pt-2 lg:pt-0" 
-                        style={{ background: titleColor, backgroundClip: "text", color: titleColor && 'transparent', fontFamily: titleFont, letterSpacing: titleLetterSpacing }} 
+                        style={{ background: titleColor, backgroundClip: "text", color: titleColor && 'transparent', fontFamily: titleFont, letterSpacing: titleLetterSpacing, fontWeight: titleFontWeight, lineHeight: titleLineHeight, fontSize: titleFontSize }} 
                         dangerouslySetInnerHTML={{ __html: title }}
                     />
-                    <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[1.2] w-full" dangerouslySetInnerHTML={{ __html: caption }} style={{fontSize: captionFontSize}}/>
+                    <div class="text-base-300 text-lg md:text-[32px] font-normal leading-[1.2] w-full" dangerouslySetInnerHTML={{ __html: caption }} style={{fontSize: captionFontSize, fontFamily: captionFont, letterSpacing: captionLetterSpacing, fontWeight: captionFontWeight, lineHeight: captionLineHeight, color: captionColor}}/>
                     <label class="pt-5 md:pt-10 lg:w-[600px]">
                         {inputLabel && <p 
                             class={`bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 pl-2.5 lg:pl-4 text-sm lg:text-base text-primary inline-block ${inputLabelWidth == 'full' ? "w-full text-center px-1" : "pr-12"}`} 
@@ -334,7 +355,7 @@ export default function MainHero({ hideSection, id, title, caption = "", padding
         </div>
         {bulletPoints?.show && <div class="backdrop-blur-3xl py-9 px-7 mt-7 lg:mt-0" style={{background: bulletPoints?.backgroundColor}}>
             <div class="max-w-[1260px] mx-auto">
-                {bulletPoints?.title && <div class="leading-[130%] text-[32px]" dangerouslySetInnerHTML={{__html: bulletPoints.title}}/>}
+                {bulletPoints?.title && <div class="leading-[130%] text-[32px]" dangerouslySetInnerHTML={{__html: bulletPoints.title}} style={{...bulletPoints.titleTextProps}}/>}
                 <div class="flex overflow-auto lg:overflow-visible gap-7 lg:gap-[88px] mt-7 pb-4">
                     {bulletPoints?.items?.map((item) => (
                         <div class="flex gap-3.5 min-w-[210px] lg:min-w-0">
@@ -345,7 +366,7 @@ export default function MainHero({ hideSection, id, title, caption = "", padding
                                 height={bulletPoints?.bulletPointsIcon.height || 18}
                                 class="self-start"
                             />}
-                            <p class="font-normal lg:font-semibold text-sm lg:text-lg leading-[120%]" style={{color: bulletPoints.textColor}}>{item}</p>
+                            <p class="font-normal lg:font-semibold text-sm lg:text-lg leading-[120%]" style={{...bulletPoints.textProps}}>{item}</p>
                         </div>
                     ))}
                 </div>

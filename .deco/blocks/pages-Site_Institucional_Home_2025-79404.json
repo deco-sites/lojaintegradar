@@ -278,13 +278,22 @@
               "height": 615,
               "src": "https://assets.decocache.com/lojaintegradar/b51627f2-fe88-4501-8df9-8836f6994310/main-background.svg"
             },
-            "caption": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Acompanhe as últimas atualizações que estarão disponível na sua operação</span></p>",
+            "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Acompanhe as últimas atualizações que estarão disponível na sua operação</span></p>",
             "captionFontSize": "16px",
             "backgroundAnimation": true,
             "lcp": true,
             "titleFont": "Galaxie Copernicus",
             "image": {},
-            "titleLetterSpacing": "-3px"
+            "titleLetterSpacing": "-3px",
+            "captionAboveTextProps": {},
+            "bulletPoints": {
+              "show": false,
+              "items": [],
+              "title": "<p></p>",
+              "backgroundColor": "",
+              "textProps": {},
+              "titleTextProps": {}
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

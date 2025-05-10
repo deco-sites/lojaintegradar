@@ -3,6 +3,16 @@ import Image from "apps/website/components/Image.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useId } from "../sdk/useId.ts";
 
+export interface TextProps {
+  fontFamily?: string;
+  /** @format color-input */
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
 export interface IImage {
   src?: ImageWidget;
   alt?: string;
@@ -15,19 +25,26 @@ export interface Tag {
   text?: RichText;
   /** @format color-input */
   backgroundColor?: string;
+  textProps?: TextProps;
 }
 
 export interface Title {
   text?: RichText;
+  /** @format color-input */
+  color?: string;
   font?: string;
   fontSize?: string;
   letterSpacing?: string;
+  lineHeight?: string;
+  fontWeight?: string;
 }
 
 export interface Card {
   image?: IImage;
   title?: RichText;
+  titleTextProps?: TextProps;
   text?: RichText;
+  textProps?: TextProps;
 }
 
 export interface Props {
@@ -63,13 +80,13 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
       <AnimateOnShow animation="animate-fade-up50">
         {tag?.text && <div
           class="rounded-[20px] mb-5 w-fit mx-auto font-normal px-4 py-1 text-sm lg:text-lg"
-          style={{ background: tag.backgroundColor }}
+          style={{ background: tag.backgroundColor, ...tag.textProps }}
           dangerouslySetInnerHTML={{ __html: tag.text }} />
         }
 
         {title?.text && <div
           class="font-medium w-full mb-12 lg:mb-[120px] text-[32px] lg:text-[56px] lg:leading-[1.2]"
-          style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }}
+          style={{ fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing, color: title.color, lineHeight: title.lineHeight, fontWeight: title.fontWeight }}
           dangerouslySetInnerHTML={{ __html: title.text }}
         />}
       </AnimateOnShow>
@@ -91,8 +108,8 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
                   height={card.image.height || 20} />
               </div>
             </div>}
-            <div class="font-normal lg:font-bold text-sm lg:text-[22px] leading-normal mb-4 w-full" dangerouslySetInnerHTML={{ __html: card.title || "" }} />
-            <div class="font-normal text-xs lg:text-base w-full" dangerouslySetInnerHTML={{ __html: card.text || "" }} />
+            <div class="font-normal lg:font-bold text-sm lg:text-[22px] leading-normal mb-4 w-full" dangerouslySetInnerHTML={{ __html: card.title || "" }} style={{ ...card.titleTextProps }} />
+            <div class="font-normal text-xs lg:text-base w-full" dangerouslySetInnerHTML={{ __html: card.text || "" }} style={{ ...card.textProps }} />
           </AnimateOnShow>
         ))}
       </div>

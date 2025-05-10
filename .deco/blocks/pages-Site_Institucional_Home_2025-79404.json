@@ -383,7 +383,8 @@
             },
             "tag": {
               "text": "<p><span style=\"color: #7a2d0d\">Em desenvolvimento</span></p>",
-              "backgroundColor": "#FFE6A0"
+              "backgroundColor": "#FFE6A0",
+              "textProps": {}
             },
             "cards": [
               {
@@ -393,8 +394,12 @@
                   "alt": "truck icon"
                 },
                 "backgroundColor": "#B7FBDB",
-                "title": "<p><span style=\"color: #00363a\">Múltiplas tabela<br>de frete</span></p>",
-                "text": "<p><span style=\"color: #00363a\">Integração com diversas transportadoras para oferecer mais opções de frete aos seus clientes, otimizando custos e prazos de entrega.</span></p>"
+                "title": "<p><span style=\"color: rgb(0, 54, 58)\">Múltiplas tabela<br>de frete</span></p>",
+                "text": "<p><span style=\"color: rgb(95, 110, 130)\">Integração com diversas transportadoras para oferecer mais opções de frete aos seus clientes, otimizando custos e prazos de entrega.</span></p>",
+                "titleTextProps": {
+                  "color": ""
+                },
+                "textProps": {}
               },
               {
                 "image": {
@@ -403,7 +408,7 @@
                 },
                 "backgroundColor": "",
                 "title": "<p><span style=\"color: #00363a\">Relatórios<br>avançados</span></p>",
-                "text": "<p><span style=\"color: #5f6e82\">Estamos expandindo nosso sistema de relatórios, adicionando novos campos aos 3 existentes e desenvolvendo 7 novos relatórios para dar mais visibilidade ao seu negócio.</span></p>"
+                "text": "<p><span style=\"color: rgb(95, 110, 130)\">Estamos expandindo nosso sistema de relatórios, adicionando novos campos aos 3 existentes e desenvolvendo 7 novos relatórios para dar mais visibilidade ao seu negócio.</span></p>"
               },
               {
                 "image": {

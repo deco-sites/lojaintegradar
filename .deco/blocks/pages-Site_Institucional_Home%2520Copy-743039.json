@@ -307,7 +307,8 @@
                   "__resolveType": "site/sections/CreateStoreHero.tsx",
                   "title": {
                     "text": "<p><span style=\"color: rgb(250, 250, 245); line-height:1.2;\">Crie seu negócio com</span><br><span style=\"color: rgb(250, 250, 245)\">a </span><em><span style=\"color: rgb(113, 219, 212)\">plataforma </span></em><span style=\"color: rgb(250, 250, 245); line-height:1.2;\">que trabalha por você</span></p>",
-                    "font": "Instrument serif"
+                    "font": "Instrument serif",
+                    "color": ""
                   },
                   "caption": "<p><span style=\"color: rgb(250, 250, 245)\">Impulsione o seu crescimento de forma rápida - alcance, engaje e recupere vendas  </span><span style=\"color: rgb(113, 219, 212)\">com menos esforço, de forma automatizada.</span></p>",
                   "cta": [],
@@ -359,7 +360,8 @@
                     "backgroundColor": "#fafaf5",
                     "textColor": "#003037",
                     "borderColor": "#fafaf5"
-                  }
+                  },
+                  "captionTextProps": {}
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

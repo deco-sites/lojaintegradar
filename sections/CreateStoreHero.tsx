@@ -5,6 +5,17 @@ import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import CreateStoreForm from "../islands/CreateStoreForm.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
+export interface TextProps {
+  fontFamily?: string;
+  /** @format color-input */
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
+
 /** @title {{text}} {{underlineText}} */
 export interface CTA {
   href: string;
@@ -46,6 +57,12 @@ export interface IImage {
 export interface Title {
   text?: RichText;
   font?: string;
+  /** @format color-input */
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
 }
 
 export interface BackgroundMedia {
@@ -101,6 +118,7 @@ export interface Props {
   id?: string;
   title?: Title;
   caption?: RichText;
+  captionTextProps?: TextProps;
   createStoreCta?: CreateStoreWithPlanCTA;
   cta?: CTA[];
   ctaPlacement?: 'left' | 'center' | 'right';
@@ -113,7 +131,7 @@ export interface Props {
   createStoreFormProps?: CreateStoreFormProps;
 }
 
-export default function CreateStoreHero({ hideSection, id, title, caption, createStoreCta, cta = [], ctaPlacement, backgroundMedia, createStoreFormProps, paddingTop, paddingBottom, paddingLeft, paddingRight, sectionMinHeight }: Props) {
+export default function CreateStoreHero({ hideSection, id, title, caption, captionTextProps, createStoreCta, cta = [], ctaPlacement, backgroundMedia, createStoreFormProps, paddingTop, paddingBottom, paddingLeft, paddingRight, sectionMinHeight }: Props) {
   if (hideSection) return <></>
   const placement = {
     "left": "justify-start",
@@ -126,13 +144,13 @@ export default function CreateStoreHero({ hideSection, id, title, caption, creat
         {title?.text && <AnimateOnShow
           animation="animate-fade-up50"
           divClass="text-2xl lg:text-[72px] leading-[120%] mb-4"
-          style={{ fontFamily: title.font }}>
+          style={{ fontFamily: title.font, color: title.color, fontSize: title.fontSize, fontWeight: title.fontWeight, letterSpacing: title.letterSpacing, lineHeight: title.lineHeight }}>
           <div dangerouslySetInnerHTML={{ __html: title.text }} />
         </AnimateOnShow>}
         {caption && <AnimateOnShow
           animation="animate-fade-up50"
           divClass="text-base lg:text-2xl font-light leading-normal mb-4">
-          <div dangerouslySetInnerHTML={{ __html: caption }} />
+          <div dangerouslySetInnerHTML={{ __html: caption }} style={{ ...captionTextProps }} />
         </AnimateOnShow>}
         <AnimateOnShow
           divClass={`relative flex flex-col rounded-xl lg:rounded-3xl`}

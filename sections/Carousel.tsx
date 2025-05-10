@@ -44,6 +44,17 @@ const refreshArrowsVisibility = () => {
     }
 };
 
+export interface TextProps extends TitleTextProps {
+    fontFamily?: string;
+}
+
+export interface TitleTextProps {
+    fontSize?: string;
+    fontWeight?: string;
+    letterSpacing?: string;
+    lineHeight?: string;
+  }
+
 export interface CarouselIcon {
     src?: ImageWidget;
     alt?: string;
@@ -65,9 +76,11 @@ export interface BulletPoints {
 /** @title {{title}} */
 export interface CarouselItem {
     title?: string;
-    caption: RichText;
     /** @format color-input */
     textColor?: string;
+    titleTextProps?: TextProps;
+    caption: RichText;
+    captionTextProps?: TextProps;
     textPlacement: "Top" | "Bottom";
     icon?: CarouselIcon;
     backgroundImage?: IImage;
@@ -112,9 +125,12 @@ export interface Props {
     titleFont?: string;
     /** @format color-input */
     titleColor?: string;
-    caption?: string;
+    titleTextProps?: TitleTextProps;
+    caption?: RichText;
+    captionFont?: string;
     /** @format color-input */
     captionColor?: string;
+    captionTextProps?: TitleTextProps;
     slides?: CarouselItem[];
     /**
      * @title Show arrows
@@ -137,7 +153,7 @@ function SliderItem({ slide, id }: {
     slide: CarouselItem;
     id: string;
 }) {
-    const { title, caption, textPlacement, textColor, icon, backgroundImage, bulletPoints, useBackground = 'image', backgroundVideo } = slide;
+    const { title, titleTextProps, caption, captionTextProps, textPlacement, textColor, icon, backgroundImage, bulletPoints, useBackground = 'image', backgroundVideo } = slide;
     const iconPosition = {
         'Top left': 'top-0 left-0',
         'Top right': 'top-0 right-0',
@@ -157,8 +173,8 @@ function SliderItem({ slide, id }: {
         <div class={`relative w-full h-full flex justify-between ${textPlacement == 'Top' ? 'flex-col' : 'flex-col-reverse'}`}>
             {icon?.src && <Image src={icon.src} alt={icon.alt || "carousel item background image"} width={icon.width || 32} height={icon.width || 32} class={` object-contain absolute h-8 w-8 ${iconPosition[icon.placement || 'Top right']}`} />}
             <div>
-                {title && <h2 class="text-lg md:text-2xl pr-12 md:mb-5">{title}</h2>}
-                <div class="text-xs md:text-sm !leading-[100%]" dangerouslySetInnerHTML={{ __html: caption }} />
+                {title && <h2 class="text-lg md:text-2xl pr-12 md:mb-5" style={{...titleTextProps}}>{title}</h2>}
+                <div class="text-xs md:text-sm " dangerouslySetInnerHTML={{ __html: caption }} style={{...captionTextProps}}/>
             </div>
             <div>
                 {bulletPoints?.bulletPointsTitle && <p class="text-sm">{bulletPoints.bulletPointsTitle}</p>}
@@ -212,7 +228,7 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
 }
 function Carousel(props: Props) {
     if (props.hideSection) return <></>
-    const { id, title, titleFont, caption, slides, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
+    const { id, title, titleFont, titleTextProps, caption, captionFont, captionTextProps, slides, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
     const carouselId = useId();
     return (<div id={id} style={{background: backgroundColor, paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative pt-7 lg:pt-14">
         {/* <input type="text" value="0" /> */}
@@ -220,11 +236,17 @@ function Carousel(props: Props) {
                 {backgroundImage?.src && <div class="absolute hidden md:block -z-50 top-0 left-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "background image"} height={backgroundImage.height || 780} width={backgroundImage.width || 460} class="h-full object-contain" /></div>}
 
                 <AnimateOnShow animation="animate-fade-up" delay={200}>
-                    {title && <div class="text-2xl md:text-5xl font-normal text-center text-primary leading-snug max-w-[942px] lg:pb-16" style={{ color: titleColor, fontFamily: titleFont }} dangerouslySetInnerHTML={{__html: title}} />}
+                    {title && <div 
+                        class="text-2xl md:text-5xl font-normal text-center text-primary leading-snug max-w-[942px] lg:pb-16" 
+                        style={{ color: titleColor, fontFamily: titleFont, ...titleTextProps }} 
+                        dangerouslySetInnerHTML={{__html: title}} />}
 
-                    {caption && <p class="text-xl md:text-2xl font-semibold text-center text-primary leading-snug max-w-[942px]" style={{ color: captionColor }}>
-                        {caption}
-                    </p>}
+                    {caption && <div 
+                        class="text-xl md:text-2xl font-semibold text-center text-primary leading-snug max-w-[942px]" 
+                        style={{ color: captionColor, fontFamily: captionFont, ...captionTextProps }}
+                        dangerouslySetInnerHTML={{__html: caption}}
+                        />}
+
                 </AnimateOnShow>
                 <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:px-9 max-w-[1480px] relative" rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider">
                     {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px]">

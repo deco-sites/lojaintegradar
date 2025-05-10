@@ -3,6 +3,15 @@ import Image from "apps/website/components/Image.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 
+export interface TextProps {
+  fontFamily?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
+
 export interface IImage {
   src?: ImageWidget;
   alt?: string;
@@ -50,6 +59,7 @@ export interface BulletPoints {
   items?: BulletPointsItem[];
   /** @format color-input */
   bulletPointsColor?: string;
+  textProps?: TextProps;
   bulletPointsIcon?: IImage;
 }
 
@@ -159,7 +169,7 @@ export default function HeroV3({ title, text, textProps, bulletPoints, cta = [],
 
         {bulletPoints?.items && <div class="flex flex-col gap-4">
           {bulletPoints?.items?.map((item) => (
-            <p class="flex gap-2 text-sm font-normal" style={{ color: bulletPoints?.bulletPointsColor }}>
+            <p class="flex gap-2 text-sm font-normal" style={{ color: bulletPoints?.bulletPointsColor, ...bulletPoints.textProps }}>
               {bulletPoints?.bulletPointsIcon?.src && <Image
                 height={bulletPoints?.bulletPointsIcon?.height || 15}
                 width={bulletPoints?.bulletPointsIcon?.width || 15}

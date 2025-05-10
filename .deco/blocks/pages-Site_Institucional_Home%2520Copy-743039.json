@@ -1619,7 +1619,7 @@
                   "slides": [
                     {
                       "title": "Para quem está começando no e-commerce",
-                      "caption": "<p><span style=\"font-size: 11pt; line-height:160%;\">Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>",
+                      "caption": "<p><span style=\"line-height:160%;\">Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>",
                       "backgroundImage": {
                         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
                         "height": 456,
@@ -1737,12 +1737,12 @@
                   "title": "<p><span style=\"color: rgb(0, 48, 55); font-size:70px;  font-weight:300; \">Nós queremos mais é que você cresça!</span><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:24px; font-weight:300; font-family: 'Inter'; \"><br>Uma plataforma que se adapta às suas necessidades, seja qual for <br>o tamanho do seu negócio.</p>",
                   "paddingBottom": "120px",
                   "titleColor": "",
-                  "captionColor": "#371E55",
+                  "captionColor": "",
                   "titleFont": "Instrument serif",
                   "slides": [
                     {
                       "title": "Para quem está começando no e-commerce",
-                      "caption": "<p><span style=\"font-size: 11pt; line-height:160%;\">Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>",
+                      "caption": "<p><span style=\"font-size: 11pt\">Crie sua loja virtual de maneira simples e rápida, com suporte, comunidade ativa e materiais educativos para vender com confiança e tranquilidade.</span></p>",
                       "backgroundImage": {
                         "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/964cb107-636c-4e08-b1ef-599140c7c088/bg-lienar.png",
                         "height": 456,
@@ -1762,6 +1762,10 @@
                           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/12f925ba-030b-498b-8aaf-ff031a1c765d/check-icon.png",
                           "alt": "check icon"
                         }
+                      },
+                      "titleTextProps": {},
+                      "captionTextProps": {
+                        "lineHeight": "160%"
                       }
                     },
                     {
@@ -1837,7 +1841,11 @@
                     "backgroundColor": "#003037",
                     "borderColor": "#003037"
                   },
-                  "hideSection": false
+                  "hideSection": false,
+                  "titleTextProps": {
+                    "fontSize": "43px"
+                  },
+                  "captionTextProps": {}
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"

@@ -181,7 +181,7 @@ const CreateStoreModal = () => {
                     className="w-full flex flex-col items-center justify-center"
                     onSubmit={handleSubmit}
                 >
-                    <input type="hidden" name="gcaptcha_site" value="6LdRdTErAAAAAGkHeR-2TMdhWAyPtT8969wBaNnD"></input>
+                    <input type="hidden" name="gcaptcha_site" value="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"></input>
                     <div className="mt-4 w-full max-w-[450px]">
                         <label className="block text-sm font-semibold text-[#371e56]">
                             Nome
@@ -290,7 +290,7 @@ const CreateStoreModal = () => {
                             id="input-form-modal_no_check"
                             className={`w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative ${!validated && 'pointer-events-none'}`}
                             type="submit"
-                            data-sitekey="6LdRdTErAAAAAGkHeR-2TMdhWAyPtT8969wBaNnD"
+                            data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
                             data-callback="onSubmitModalForm"
                         >
                             Abrir minha loja agora

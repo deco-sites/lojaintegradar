@@ -569,9 +569,9 @@
           "value": {
             "__resolveType": "site/sections/CardsHero.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Mostre que sua marca entende o cliente.<br>Traduza dados&nbsp; em </span><em><span style=\"color: #00363a\">soluções inteligentes</span></em></p>",
-              "font": "Galaxie Copernicus",
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Mostre que sua marca entende o  cliente.<br>Traduza dados&nbsp; em </span><em><span style=\"color: rgb(0, 54, 58)\">soluções inteligentes</span></em></p>",
               "fontSize": "56px",
+              "font": "Galaxie Copernicus",
               "letterSpacing": "-3px"
             },
             "leftColumn": {
@@ -722,6 +722,9 @@
             ],
             "captionTextProps": {
               "color": ""
+            },
+            "tag": {
+              "textProps": {}
             }
           },
           "rule": {

@@ -739,10 +739,11 @@
                     {
                       "type": "Button",
                       "size": "Medium",
-                      "openModal": "Talk to specialist",
+                      "openModal": "Create Store",
                       "text": "Assinar",
                       "textColor": "#ffffff",
-                      "backgroundColor": "#00363A"
+                      "backgroundColor": "#00363A",
+                      "createStorePlanId": "172"
                     }
                   ],
                   "title": "<p><span style=\"color: rgb(0, 54, 58); font-size: 28pt\">Loja integrada</span></p>",
@@ -875,10 +876,11 @@
                     {
                       "type": "Button",
                       "size": "Medium",
-                      "openModal": "Talk to specialist",
+                      "openModal": "Create Store",
                       "text": "Assinar",
                       "textColor": "#ffffff",
-                      "backgroundColor": "#00363A"
+                      "backgroundColor": "#00363A",
+                      "createStorePlanId": "172"
                     }
                   ],
                   "title": "<p><span style=\"color: rgb(0, 54, 58); font-size: 28pt\">Loja integrada</span></p>",
@@ -1019,13 +1021,13 @@
               {
                 "type": "Button",
                 "size": "Large",
-                "href": "linkhere",
                 "text": "Comece sua loja com Loja Integrada + Dropi agora",
                 "backgroundColor": "#00363A",
                 "textColor": "#ffffff",
                 "borderColor": "#00363A",
-                "openModal": "Customer Advisory Board Modal",
-                "showIcon": true
+                "openModal": "Create Store",
+                "showIcon": true,
+                "createStorePlanId": "172"
               }
             ],
             "container": {
@@ -1064,7 +1066,8 @@
                 "backgroundColor": "#00363A",
                 "textColor": "#ffffff",
                 "borderColor": "#00363A",
-                "openModal": "Customer Advisory Board Modal"
+                "openModal": "Create Store",
+                "createStorePlanId": "172"
               }
             ],
             "container": {

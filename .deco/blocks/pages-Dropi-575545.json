@@ -311,41 +311,77 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/Logos.tsx",
-            "title": "Várias lojas já estão vendendo mais com Dados e Automação",
-            "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
-            "logos": [
+            "__resolveType": "site/sections/Hero.tsx",
+            "title": "Aumente a aprovação das suas vendas",
+            "caption": "Taxas competitivas em relação ao mercado,maiores taxas de aprovação",
+            "bigNumbers": [
               {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
-                "altText": "Forbes logo"
+                "text": "+ R$ 1,8 bilhão",
+                "caption": "transacionados",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
-                "altText": "Frutifica logo"
+                "text": "+ 12 mil lojistas",
+                "caption": "ativos no Pagali",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
               },
               {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
-                "altText": "Rock in Rio Logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
-                "altText": "PodPah logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
-                "altText": "Soldiers logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
-                "altText": "Gorila Shield logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
-                "altText": "+Mu logo"
+                "text": "+ 8,6 milhões ",
+                "caption": "de transações pagas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "underlineText": "Falar com especialista",
+                "textColor": "#371E55",
+                "href": "/talkToSpecialist",
+                "showIcon": true
+              }
+            ],
+            "links": [
+              {
+                "textBefore": "Já tem uma loja? ",
+                "text": "Ative agora",
+                "href": "#"
+              }
+            ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/06f5310e-1057-487a-8425-a02c83d3825c/hero-3-image-mobile.svg"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
+            },
             "titleColor": "#371E55",
-            "captionColor": "#371E55"
+            "captionColor": "#371E55",
+            "textBelowColor": "#5F6E82",
+            "description": "Venda mais com o Pagali, nosso meio de pagamento próprio. Reduza taxas, melhore sua taxa de aceitação e aprovação, e gerencie tudo no painel da sua loja de forma integrada.",
+            "placement": "right",
+            "bulletpoints": {
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+              },
+              "items": [
+                "Gestão financeira unificada",
+                "Sem tarifa adicional sobre transações feitas via Pagali;",
+                "Fácil de configurar"
+              ],
+              "itemsTextColor": "#5F6E82"
+            },
+            "descriptionColor": "#5F6E82",
+            "id": "pagali"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -354,90 +390,85 @@
         },
         {
           "value": {
-            "__resolveType": "site/sections/Logos.tsx",
-            "title": "Várias lojas já estão vendendo mais com Dados e Automação",
-            "caption": "Só nos últimos 6 meses, mais de 700 lojistas migraram para a Loja Integrada",
-            "logos": [
+            "__resolveType": "site/sections/Hero.tsx",
+            "title": "Por que escolher a Loja Integrada + Dropi para seu Dropshipping",
+            "bigNumbers": [
               {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
-                "altText": "Forbes logo"
+                "text": "+ R$ 1,8 bilhão",
+                "caption": "transacionados",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
-                "altText": "Frutifica logo",
-                "width": 119,
-                "height": 34
+                "text": "+ 12 mil lojistas",
+                "caption": "ativos no Pagali",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               },
               {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
-                "altText": "Rock in Rio Logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
-                "altText": "PodPah logo",
-                "width": 157,
-                "height": 72
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
-                "altText": "Soldiers logo",
-                "width": 157,
-                "height": 72
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
-                "altText": "Gorila Shield logo",
-                "width": 157,
-                "height": 72
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
-                "altText": "+Mu logo",
-                "width": 157,
-                "height": 72
+                "text": "+ 8,6 milhões ",
+                "caption": "de transações pagas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
               }
             ],
+            "ctaTitle": "Disponível em todos os planos",
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "underlineText": " Falar com especialista",
+                "textColor": "#371E55",
+                "showIcon": true,
+                "href": "/talkToSpecialist"
+              }
+            ],
+            "links": [
+              {
+                "textBefore": "Já tem uma loja? ",
+                "text": "Ative agora",
+                "href": "#"
+              }
+            ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a7020552-9bea-4573-a1c1-53f7a681e735/hero-3-image.svg"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
+            },
             "titleColor": "#371E55",
-            "captionColor": "#371E55"
+            "captionColor": "#371E55",
+            "textBelowColor": "#5F6E82",
+            "placement": "right",
+            "bulletpoints": {
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+              },
+              "items": [
+                " Integração Oficial com Dropi e principais fornecedores globais e nacionais",
+                "Estoque no Brasil com mais de 80 fornecedores nacionais",
+                "Suporte por WhatsApp e atendimento humanizado",
+                "Sem taxas sobre vendas no plano da Loja Integrada",
+                "Produtos do AliExpress com avaliações e reputação integradas"
+              ],
+              "itemsTextColor": "#5F6E82"
+            },
+            "id": "pagali",
+            "descriptionColor": "#5F6E82",
+            "use": "image"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
           }
         }
       ]
-    },
-    {
-      "__resolveType": "site/sections/Testimonials.tsx",
-      "titleColor": "#371E55",
-      "slides": [
-        {
-          "content": {
-            "description": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">\"Depois que migramos para a Loja Integrada, <em><strong>aumentamos nosso ticket médio em 15% e reduzimos nossos custos operacionais em 9 mil reais.</strong></em> Viemos pela fácil integração com a VTEX, em busca de redução de custo e uma plataforma mais fácil de usar e foi exatamente isso que encontramos\".</span></p>",
-            "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/c3896dc4-da5c-4496-a704-f5f37a2c759c/m-camicado-logo.png",
-            "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
-            "alt": "m camicado",
-            "quoteIconColor": "#371E55",
-            "nameIconColor": "#371E55",
-            "nameBackgroundColor": "#F1EAF4",
-            "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
-          }
-        },
-        {
-          "content": {
-            "description": "<p><em><strong>Logo no primeiro mês pós migração, vi um aumento</strong></em><br><em><strong>na taxa de conversão de 60%.</strong></em><br>Vim pela necessidade de otimizar meu investimento, em busca de uma plataforma fácil de usar. Encontrei ambos e ainda um time próximo, o que é muito bom\".</p>",
-            "avatar": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/afd6caee-5062-4712-a347-de06834ec8a8/livraria-florence-logo.png",
-            "name": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Loja no ar em <strong>menos de meses</strong></span></p>",
-            "alt": "liv",
-            "nameIconColor": "#371E55",
-            "quoteIconColor": "#371E55",
-            "nameBackgroundColor": "#F1EAF4",
-            "avaterBorderColor": "rgba(55, 30, 85, 0.05)"
-          }
-        }
-      ],
-      "arrows": false,
-      "dots": false,
-      "arrowsColor": ""
     },
     {
       "__resolveType": "site/sections/Carousel.tsx",
@@ -5781,6 +5812,7 @@
       "variants": [
         {
           "value": {
+            "__resolveType": "site/sections/TalkToAnExpert.tsx",
             "title": "O Monstro da Indecisão ainda te deixa com medo de mudar?",
             "titleColor": "#371E55",
             "subtitle": "Então talvez esteja na hora de você tirar algumas dúvidas.",
@@ -5799,7 +5831,6 @@
               "width": 239,
               "height": 310
             },
-            "__resolveType": "site/sections/TalkToAnExpert.tsx",
             "cta": [
               {
                 "ctaStyle": "button",
@@ -5818,6 +5849,7 @@
         },
         {
           "value": {
+            "__resolveType": "site/sections/TalkToAnExpert.tsx",
             "title": "O Monstro da Indecisão ainda te deixa com medo de mudar?",
             "titleColor": "#371E55",
             "subtitle": "Então talvez esteja na hora de você tirar algumas dúvidas.",
@@ -5841,7 +5873,6 @@
               "width": 315,
               "height": 310
             },
-            "__resolveType": "site/sections/TalkToAnExpert.tsx",
             "cta": [
               {
                 "ctaStyle": "button",
@@ -5947,14 +5978,6 @@
             "invertColumns": false,
             "rightColumn": {
               "cards": [
-                {
-                  "useBackground": "image",
-                  "title": "Ticket médio",
-                  "titleColor": "#371E55",
-                  "borderColor": "#ECEAEA",
-                  "text": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Gere mais receita por usuário com baixo esforço, aumentando seu ticket médio com ferramentas nativas como: Promoções, cupons, Carrinho Abandonado e Compre Junto;</span></p>",
-                  "minHeight": 211
-                },
                 {
                   "useBackground": "image",
                   "title": "Relacionamento com cliente",
@@ -6069,17 +6092,17 @@
         {
           "value": {
             "__resolveType": "site/sections/Quote.tsx",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/13262e36-0971-43cb-a09c-c6e378e698fb/1.svg"
+            },
+            "useBackground": "image",
             "title": "A opinião de quem já tá otimizando seus custos",
             "titleColor": "#371E55",
             "quote": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">“A Loja Integrada chamava atenção pelo que ela oferecia e pelo preço. Dá para ver que tem alguém ali pensando realmente no que o cliente precisa para crescer.”</span></p>",
             "image": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/40976a63-ce7b-4a08-a231-efb7d9e8a153/Avatar-Image.png"
             },
-            "imageCaption": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Priscila Torres,</span></strong></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Sócia da loja O Queijólatra</span></p>",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/13262e36-0971-43cb-a09c-c6e378e698fb/1.svg"
-            },
-            "useBackground": "image"
+            "imageCaption": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Priscila Torres,</span></strong></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Sócia da loja O Queijólatra</span></p>"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6089,6 +6112,11 @@
         {
           "value": {
             "__resolveType": "site/sections/Quote.tsx",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/31b5e1e9-0458-4085-be1b-5d5e23de2bb5/depoimentos.svg"
+            },
+            "useBackground": "image",
+            "sectionHeight": "39.82vw",
             "title": "A opinião de quem já tá otimizando seus custos",
             "titleColor": "#371E55",
             "quote": "<div style=\"background: linear-gradient(280deg, #825AB4 22.98%, #1B1525 79.04%); background-clip: text; color: transparent;\" data-mce-style=\"background: linear-gradient(280deg, #825AB4 22.98%, #1B1525 79.04%); background-clip: text; color: transparent;\"><p>“A Loja Integrada chamava atenção pelo que ela oferecia e pelo preço. Dá para ver que tem alguém ali pensando realmente no que o cliente precisa para crescer.”</p></div>",
@@ -6096,12 +6124,7 @@
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/40976a63-ce7b-4a08-a231-efb7d9e8a153/Avatar-Image.png"
             },
             "imageCaption": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Priscila Torres,</span></strong></p><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Sócia da loja O Queijólatra</span></p>",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/31b5e1e9-0458-4085-be1b-5d5e23de2bb5/depoimentos.svg"
-            },
-            "useBackground": "image",
-            "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8fd0634d-265f-46c6-b006-2b75aa39d895/video-dobra-comunidade.mp4",
-            "sectionHeight": "39.82vw"
+            "backgroundVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8fd0634d-265f-46c6-b006-2b75aa39d895/video-dobra-comunidade.mp4"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6168,49 +6191,7 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Faq.tsx",
-      "title": "Perguntas frequentes",
-      "titleColor": "#371E55",
-      "caption": "Encontre respostas para suas dúvidas mais comuns aqui.",
-      "captionColor": "#485565",
-      "questions": [
-        {
-          "question": "O que é TCO?",
-          "answear": "<div><p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div><div><br data-mce-bogus=\"1\"></div>"
-        },
-        {
-          "question": "Como calcular o TCO?",
-          "answear": "<div><p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div><div><br data-mce-bogus=\"1\"></div>"
-        },
-        {
-          "question": "Qual é o objetivo do cálculo de TCO?",
-          "answear": "<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
-        },
-        {
-          "question": "Como posso obter minha TCO?",
-          "answear": "<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
-        },
-        {
-          "question": "Ainda tem dúvidas?",
-          "answear": "<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
-        }
-      ],
-      "questionsTitleColor": "#371E55",
-      "questionsDivisionLineColor": "#E1E1E1",
-      "bottomTitle": "Ainda tem dúvidas?",
-      "bottomTitleColor": "#371E55",
-      "bottomCaptionColor": "#485565",
-      "bottomCaption": "Entre em contato conosco para mais informações.",
-      "cta": [
-        {
-          "ctaStyle": "button",
-          "href": "/talkToSpecialist",
-          "text": "Fale com um especialista",
-          "backgroundColor": "#371E55",
-          "borderColor": "#371E55",
-          "textColor": "#ffffff"
-        }
-      ]
+      "__resolveType": "Faq"
     },
     {
       "__resolveType": "site/sections/TimeLine.tsx",
@@ -6252,21 +6233,7 @@
         {
           "value": {
             "__resolveType": "site/sections/CampaignTimerHero.tsx",
-            "campaignTimer": {
-              "backgroundColor": "#de1717",
-              "text": "teste",
-              "expiresAt": "2025-01-25T03:00:00.000Z",
-              "labels": {
-                "days": "Dias",
-                "hours": "Horas",
-                "minutes": "Minutos",
-                "seconds": "Segundos"
-              },
-              "labelsColor": "#C8C8C8",
-              "numbersColor": "#371E55"
-            },
             "title": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Oferta por tempo limitado</span></p>",
-            "text": "<p><span style=\"color: rgb(156, 154, 182);\" data-mce-style=\"color: rgb(156, 154, 182);\">Inscreva-se para saber mais sobre o lançamento</span></p>",
             "cta": [
               {
                 "ctaStyle": "button",
@@ -6287,16 +6254,6 @@
               "width": 430,
               "height": 550
             },
-            "invertPlacement": true
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/CampaignTimerHero.tsx",
             "campaignTimer": {
               "backgroundColor": "#de1717",
               "text": "teste",
@@ -6310,8 +6267,18 @@
               "labelsColor": "#C8C8C8",
               "numbersColor": "#371E55"
             },
-            "title": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Oferta por tempo limitado</span></p>",
             "text": "<p><span style=\"color: rgb(156, 154, 182);\" data-mce-style=\"color: rgb(156, 154, 182);\">Inscreva-se para saber mais sobre o lançamento</span></p>",
+            "invertPlacement": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/CampaignTimerHero.tsx",
+            "title": "<p><span style=\"color: rgb(55, 30, 85);\" data-mce-style=\"color: rgb(55, 30, 85);\">Oferta por tempo limitado</span></p>",
             "cta": [
               {
                 "ctaStyle": "button",
@@ -6330,6 +6297,20 @@
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/86bd8a53-faff-4bbd-a70e-41768392c0f8/Countdown.svg"
             },
+            "campaignTimer": {
+              "backgroundColor": "#de1717",
+              "text": "teste",
+              "expiresAt": "2025-01-25T03:00:00.000Z",
+              "labels": {
+                "days": "Dias",
+                "hours": "Horas",
+                "minutes": "Minutos",
+                "seconds": "Segundos"
+              },
+              "labelsColor": "#C8C8C8",
+              "numbersColor": "#371E55"
+            },
+            "text": "<p><span style=\"color: rgb(156, 154, 182);\" data-mce-style=\"color: rgb(156, 154, 182);\">Inscreva-se para saber mais sobre o lançamento</span></p>",
             "invertPlacement": false
           },
           "rule": {
@@ -6345,6 +6326,35 @@
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
             "title": "Venda mais sem gastar com anúncios",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "#planoaceleracao",
+                "text": "Ver plano Aceleração ",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "style": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "underlineText": "Falar com Especialista ",
+                "showIcon": true,
+                "textColor": "#371E55",
+                "href": "/talkToSpecialist"
+              }
+            ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e1976be0-b8c1-441d-bfb6-8de773198dea/hero-1-image-mobile.svg",
+              "alt": "hero image"
+            },
+            "use": "image",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c599270-8b52-436d-a57d-1eb07092c562/carrinho-abandonado-after.webp",
+              "width": 818,
+              "height": 1395,
+              "alt": "background gradiente"
+            },
             "caption": "Conheça o “Compre Junto”, nossa ferramenta nativa",
             "description": "Aumente até 31% do seu faturamento, oferecendo produtos  complementares no momento da compra.",
             "bigNumbers": [
@@ -6367,29 +6377,7 @@
                 "textColor": "#371E55"
               }
             ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e1976be0-b8c1-441d-bfb6-8de773198dea/hero-1-image-mobile.svg",
-              "alt": "hero image"
-            },
             "placement": "left",
-            "cta": [
-              {
-                "text": "Ver plano Aceleração ",
-                "href": "#planoaceleracao",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "style": "button"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com Especialista ",
-                "showIcon": true,
-                "textColor": "#371E55",
-                "href": "/talkToSpecialist"
-              }
-            ],
             "links": [
               {
                 "textBefore": "Já tem uma loja?",
@@ -6397,16 +6385,9 @@
                 "href": "#"
               }
             ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/2c599270-8b52-436d-a57d-1eb07092c562/carrinho-abandonado-after.webp",
-              "alt": "background gradiente",
-              "width": 818,
-              "height": 1395
-            },
             "titleColor": "#371E55",
             "captionColor": "#371E55",
-            "descriptionColor": "#5F6E82",
-            "use": "image"
+            "descriptionColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6417,6 +6398,33 @@
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
             "title": "Venda mais sem gastar com anúncios",
+            "cta": [
+              {
+                "ctaStyle": "button",
+                "href": "#planoaceleracao",
+                "text": "Ver plano Aceleração ",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "style": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "underlineText": "Falar com Especialista ",
+                "textColor": "#371E55",
+                "showIcon": true,
+                "href": "/talkToSpecialist"
+              }
+            ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4d2a4a59-bf70-4c3b-850c-e11e59ef5e5a/hero1-image.svg",
+              "alt": "hero image"
+            },
+            "use": "image",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/774fda65-7da8-4ecc-a7f0-2c55c8e67f40/Ellipse-62.svg",
+              "alt": "background gradiente"
+            },
             "caption": "Conheça o “Compre Junto”, nossa ferramenta nativa",
             "description": "Aumente até 31% do seu faturamento, oferecendo produtos  complementares no momento da compra.",
             "bigNumbers": [
@@ -6439,28 +6447,6 @@
                 "textColor": "#371E55"
               }
             ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4d2a4a59-bf70-4c3b-850c-e11e59ef5e5a/hero1-image.svg",
-              "alt": "hero image"
-            },
-            "cta": [
-              {
-                "text": "Ver plano Aceleração ",
-                "href": "#planoaceleracao",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button",
-                "style": "button"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com Especialista ",
-                "textColor": "#371E55",
-                "showIcon": true,
-                "href": "/talkToSpecialist"
-              }
-            ],
             "links": [
               {
                 "textBefore": "Já tem uma loja?",
@@ -6468,15 +6454,10 @@
                 "href": "#"
               }
             ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/774fda65-7da8-4ecc-a7f0-2c55c8e67f40/Ellipse-62.svg",
-              "alt": "background gradiente"
-            },
             "placement": "left",
             "titleColor": "#371E55",
             "captionColor": "#371E55",
-            "descriptionColor": "#5F6E82",
-            "use": "image"
+            "descriptionColor": "#5F6E82"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6491,18 +6472,12 @@
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
             "title": "Recupere vendas com inteligência",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02b136e7-9e3f-48e6-874b-6284cf518868/Ellipse-61.png",
-              "alt": "green elipse",
-              "width": 797,
-              "height": 1227
-            },
             "caption": "Envie mensagens automáticas para reengajar clientes",
             "cta": [
               {
-                "ctaStyle": "button",
                 "href": "#planoaceleracao",
                 "textColor": "#ffffff",
+                "ctaStyle": "button",
                 "text": "Ver plano Aceleração ",
                 "backgroundColor": "#371E55",
                 "borderColor": "#371E55"
@@ -6515,6 +6490,12 @@
                 "href": "/talkToSpecialist"
               }
             ],
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02b136e7-9e3f-48e6-874b-6284cf518868/Ellipse-61.png",
+              "alt": "green elipse",
+              "width": 797,
+              "height": 1227
+            },
             "description": "Com as ferramentas de Produto e Carrinho Abandonado, você reativa facilmente quem navegou no site, mas não finalizou a compra, ou quem fez o pedido sem concluir o pagamento. Com disparos ilimitados, você não perde mais nenhuma venda.",
             "bigNumbers": [
               {
@@ -6561,18 +6542,12 @@
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
             "title": "Recupere vendas com inteligência",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02b136e7-9e3f-48e6-874b-6284cf518868/Ellipse-61.png",
-              "alt": "green elipse",
-              "width": 797,
-              "height": 1227
-            },
             "caption": "Envie mensagens automáticas para reengajar clientes",
             "cta": [
               {
-                "ctaStyle": "button",
                 "href": "#planoaceleracao",
                 "textColor": "#ffffff",
+                "ctaStyle": "button",
                 "text": "Ver plano Aceleração ",
                 "backgroundColor": "#371E55",
                 "borderColor": "#371E55"
@@ -6585,6 +6560,12 @@
                 "href": "/talkToSpecialist"
               }
             ],
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02b136e7-9e3f-48e6-874b-6284cf518868/Ellipse-61.png",
+              "alt": "green elipse",
+              "width": 797,
+              "height": 1227
+            },
             "description": "Com as ferramentas de Produto e Carrinho Abandonado, você reativa facilmente quem navegou no site, mas não finalizou a compra, ou quem fez o pedido sem concluir o pagamento. Com disparos ilimitados, você não perde mais nenhuma venda.",
             "bigNumbers": [
               {
@@ -6635,17 +6616,27 @@
           "value": {
             "__resolveType": "site/sections/PlanDetails2.tsx",
             "title": "Acelere o seu negócio",
-            "planTag": {
-              "icon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
-              },
-              "text": "Plano Aceleração"
-            },
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b3686d4f-c7c4-4a58-b5db-a6dd6ed51fc3/aceleracao-background-mobile-2.png",
               "alt": "background ",
               "width": 600,
               "height": 1700
+            },
+            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "textColor": "#ffffff",
+                "underlineText": "Falar com especialista",
+                "showIcon": true
+              }
+            ],
+            "planTag": {
+              "icon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
+              },
+              "text": "Plano Aceleração"
             },
             "useBackground": "video",
             "slides": [
@@ -6739,7 +6730,6 @@
             "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/fc9c24eb-f8d4-4810-a52b-bf2d4f180391/video-dobra-aceleracao-mobile.mp4",
             "useContent": "video",
             "contentImage": {},
-            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
             "annualValues": {
               "title": "Anual",
               "tag": "20% OFF",
@@ -6761,15 +6751,6 @@
               }
             },
             "color4": "#FFE6A0",
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "underlineText": "Falar com especialista",
-                "textColor": "#ffffff",
-                "showIcon": true
-              }
-            ],
             "link": {
               "textBefore": "Já tem uma loja? ",
               "href": "#",
@@ -6798,15 +6779,25 @@
           "value": {
             "__resolveType": "site/sections/PlanDetails2.tsx",
             "title": "Acelere o seu negócio",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4c9f864e-51e2-469e-a56b-5f02c2af1b6a/aceleracao-background.svg",
+              "alt": "background "
+            },
+            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "textColor": "#ffffff",
+                "underlineText": "Falar com especialista",
+                "showIcon": true
+              }
+            ],
             "planTag": {
               "icon": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8c10149a-a4ee-47cd-9d88-79f0ea02d017/aceleracao-plan-tag-icon.svg"
               },
               "text": "Plano Aceleração"
-            },
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/4c9f864e-51e2-469e-a56b-5f02c2af1b6a/aceleracao-background.svg",
-              "alt": "background "
             },
             "useBackground": "video",
             "slides": [
@@ -6900,7 +6891,6 @@
             "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/8fd3818a-e988-426b-9f8b-6c6c8dffa479/video-dobra-aceleracao.webm",
             "useContent": "video",
             "contentImage": {},
-            "caption": "Para quem quer vender mais e com mais eficiência. Acelere a capacidade do seu negócio em alcançar o próximo nível.",
             "annualValues": {
               "title": "Anual",
               "tag": "20% OFF",
@@ -6922,15 +6912,6 @@
               }
             },
             "color4": "#FFE6A0",
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com especialista",
-                "href": "/talkToSpecialist",
-                "textColor": "#ffffff",
-                "showIcon": true
-              }
-            ],
             "link": {
               "textBefore": "Já tem uma loja? ",
               "href": "#",
@@ -7462,198 +7443,8 @@
         {
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
-            "title": "Aumente a aprovação das suas vendas",
-            "caption": "Taxas competitivas em relação ao mercado,maiores taxas de aprovação",
-            "bigNumbers": [
-              {
-                "text": "+ R$ 1,8 bilhão",
-                "caption": "transacionados",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 12 mil lojistas",
-                "caption": "ativos no Pagali",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              },
-              {
-                "text": "+ 8,6 milhões ",
-                "caption": "de transações pagas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              }
-            ],
-            "cta": [
-              {
-                "href": "#plans",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "textColor": "#ffffff",
-                "borderColor": "#371E55",
-                "ctaStyle": "button"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com especialista",
-                "textColor": "#371E55",
-                "href": "/talkToSpecialist",
-                "showIcon": true
-              }
-            ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja? ",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/06f5310e-1057-487a-8425-a02c83d3825c/hero-3-image-mobile.svg"
-            },
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "textBelowColor": "#5F6E82",
-            "description": "Venda mais com o Pagali, nosso meio de pagamento próprio. Reduza taxas, melhore sua taxa de aceitação e aprovação, e gerencie tudo no painel da sua loja de forma integrada.",
-            "placement": "right",
-            "bulletpoints": {
-              "bulletPointsIcon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-              },
-              "items": [
-                "Gestão financeira unificada",
-                "Sem tarifa adicional sobre transações feitas via Pagali;",
-                "Fácil de configurar"
-              ],
-              "itemsTextColor": "#5F6E82"
-            },
-            "descriptionColor": "#5F6E82",
-            "id": "pagali"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Aumente a aprovação das suas vendas",
-            "bigNumbers": [
-              {
-                "text": "+ R$ 1,8 bilhão",
-                "caption": "transacionados",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 12 mil lojistas",
-                "caption": "ativos no Pagali",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 8,6 milhões ",
-                "caption": "de transações pagas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              }
-            ],
-            "ctaTitle": "Disponível em todos os planos",
-            "cta": [
-              {
-                "href": "#plans",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": " Falar com especialista",
-                "textColor": "#371E55",
-                "showIcon": true,
-                "href": "/talkToSpecialist"
-              }
-            ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja? ",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a7020552-9bea-4573-a1c1-53f7a681e735/hero-3-image.svg"
-            },
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "textBelowColor": "#5F6E82",
-            "description": "Venda mais com o Pagali, nosso meio de pagamento próprio. Reduza taxas, melhore sua taxa de aceitação e aprovação, e gerencie tudo no painel da sua loja de forma integrada.",
-            "placement": "right",
-            "bulletpoints": {
-              "bulletPointsIcon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-              },
-              "items": [
-                "Gestão financeira unificada ",
-                "Sem tarifa adicional sobre transações feitas via Pagali;",
-                "Fácil de configurar"
-              ],
-              "itemsTextColor": "#5F6E82"
-            },
-            "id": "pagali",
-            "descriptionColor": "#5F6E82",
-            "use": "image"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
             "title": "Reduza seus custos com frete e aumente suas vendas",
-            "titleColor": "#371E55",
             "caption": "Ofereça fretes mais competitivos com o Enviali",
-            "captionColor": "#371E55",
-            "cta": [
-              {
-                "href": "#plans",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "textColor": "#ffffff",
-                "borderColor": "#371E55",
-                "ctaStyle": "button"
-              },
-              {
-                "href": "/talkToSpecialist",
-                "textColor": "#371E55",
-                "underlineText": " Falar com especialista",
-                "ctaStyle": "link",
-                "showIcon": true
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/37ad2c84-9ed1-438c-bb7c-d0f1ac8eaed4/Ellipse-63.png",
-              "width": 430,
-              "height": 690
-            },
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/14a0d78a-9192-4fa1-8602-c9bbd427b019/hero-4-image-mobile.svg"
-            },
             "bigNumbers": [
               {
                 "text": "Fretes 70%  ",
@@ -7674,6 +7465,23 @@
                 "captionColor": "#5F6E82"
               }
             ],
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "underlineText": " Falar com especialista",
+                "textColor": "#371E55",
+                "href": "/talkToSpecialist",
+                "showIcon": true
+              }
+            ],
             "links": [
               {
                 "textBefore": "Já tem uma loja?",
@@ -7681,6 +7489,16 @@
                 "href": "#"
               }
             ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/14a0d78a-9192-4fa1-8602-c9bbd427b019/hero-4-image-mobile.svg"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/37ad2c84-9ed1-438c-bb7c-d0f1ac8eaed4/Ellipse-63.png",
+              "width": 430,
+              "height": 690
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
             "textBelowColor": "#5F6E82",
             "description": "Acesse as tabelas de frete mais vantajosas com Correios e Jadlog, negociadas pelo Enviali para maximizar suas conversões. Disponível em todos os planos."
           },
@@ -7693,34 +7511,6 @@
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
             "title": "Reduza seus custos com frete",
-            "titleColor": "#371E55",
-            "caption": "Ofereça fretes mais competitivos com Enviali e aumente suas vendas",
-            "captionColor": "#371E55",
-            "cta": [
-              {
-                "href": "#plans",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "textColor": "#ffffff",
-                "borderColor": "#371E55",
-                "ctaStyle": "button"
-              },
-              {
-                "textColor": "#371E55",
-                "underlineText": " Falar com especialista",
-                "ctaStyle": "link",
-                "showIcon": true,
-                "href": "/talkToSpecialist"
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/21ead906-16be-442f-a3ca-814d04e5561a/Ellipse-67.png",
-              "width": 880,
-              "height": 1295
-            },
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02de4eda-2931-42b8-9fbc-cd8ddea17749/hero-4-image.svg"
-            },
             "bigNumbers": [
               {
                 "text": "Fretes 70%  ",
@@ -7742,6 +7532,23 @@
               }
             ],
             "ctaTitle": "Tenha acesso a tabelas de preço mais competitivas com os Correios e com a transportadora Jadlog e aumente sua conversão. Os melhores valores de frete já negociados pelo Enviali para você vender mais. Disponível em todos os planos",
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "underlineText": " Falar com especialista",
+                "textColor": "#371E55",
+                "showIcon": true,
+                "href": "/talkToSpecialist"
+              }
+            ],
             "links": [
               {
                 "textBefore": "Já tem uma loja?",
@@ -7749,8 +7556,19 @@
                 "href": "#"
               }
             ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02de4eda-2931-42b8-9fbc-cd8ddea17749/hero-4-image.svg"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/21ead906-16be-442f-a3ca-814d04e5561a/Ellipse-67.png",
+              "width": 880,
+              "height": 1295
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
             "textBelowColor": "#5F6E82",
-            "use": "image"
+            "use": "image",
+            "caption": "Ofereça fretes mais competitivos com Enviali e aumente suas vendas"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -7764,31 +7582,34 @@
         {
           "value": {
             "__resolveType": "site/sections/BigImageHero.tsx",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
-            },
             "title": "Encante seu cliente",
             "caption": "Tenha um visual profissional em poucos cliques!",
             "cta": [
               {
-                "ctaStyle": "button",
                 "href": "#plans",
-                "textColor": "#ffffff",
-                "showIcon": false,
                 "text": "Ver planos ",
                 "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button",
+                "showIcon": false
               },
               {
-                "href": "/talkToSpecialist",
-                "textColor": "#371E55",
-                "underlineText": " Falar com especialista",
                 "ctaStyle": "link",
+                "underlineText": " Falar com especialista",
+                "textColor": "#371E55",
+                "href": "/talkToSpecialist",
                 "showIcon": true,
                 "backgroundColor": "",
                 "borderColor": ""
               }
             ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb8a0a0-826d-49a8-9c4f-87204f15ce0b/moda-tema-mobile-1.svg"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
+            },
             "titleColor": "#371E55",
             "captionColor": "#371E55",
             "features": [
@@ -7828,9 +7649,6 @@
                 "textColor": "#371E55"
               }
             ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb8a0a0-826d-49a8-9c4f-87204f15ce0b/moda-tema-mobile-1.svg"
-            },
             "use": "image",
             "bottomFloatingImage": {}
           },
@@ -7842,33 +7660,37 @@
         {
           "value": {
             "__resolveType": "site/sections/BigImageHero.tsx",
+            "title": "Personalização e visuais",
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos ",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button",
+                "showIcon": false
+              },
+              {
+                "ctaStyle": "link",
+                "underlineText": " Falar com especialista",
+                "textColor": "#371E55",
+                "showIcon": true,
+                "href": "/talkToSpecialist",
+                "backgroundColor": "",
+                "borderColor": ""
+              }
+            ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4db6d41b-a78e-45da-834d-1458bc900f19/big-image-hero-image.gif"
+            },
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
             },
-            "title": "Personalização e visuais",
-            "caption": "Uma loja de temas e serviços para seu negócio ficar incrível",
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "#plans",
-                "textColor": "#ffffff",
-                "showIcon": false,
-                "text": "Ver planos ",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
-              },
-              {
-                "backgroundColor": "",
-                "textColor": "#371E55",
-                "borderColor": "",
-                "underlineText": " Falar com especialista",
-                "ctaStyle": "link",
-                "showIcon": true,
-                "href": "/talkToSpecialist"
-              }
-            ],
             "titleColor": "#371E55",
             "captionColor": "#371E55",
+            "use": "image",
+            "caption": "Uma loja de temas e serviços para seu negócio ficar incrível",
             "features": [
               {
                 "icon": {
@@ -7906,10 +7728,6 @@
                 "textColor": "#371E55"
               }
             ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4db6d41b-a78e-45da-834d-1458bc900f19/big-image-hero-image.gif"
-            },
-            "use": "image",
             "bottomFloatingImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c36230b-5d85-4f99-af96-67f513e7c7d8/floating-bottom-image.svg"
             }
@@ -7926,19 +7744,28 @@
         {
           "value": {
             "__resolveType": "site/sections/PlanDetails2.tsx",
+            "title": "Comece pagando menos",
+            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
+            "cta": [
+              {
+                "href": "/talkToSpecialist",
+                "textColor": "#003037",
+                "ctaStyle": "link",
+                "showIcon": true,
+                "underlineText": "Falar com especialista"
+              }
+            ],
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d20efb42-545b-49e0-9acc-e12f5b6e0541/crescimento-background-mobile.svg"
             },
             "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/96963d3a-6c2e-4310-86bb-dcff7c4852de/video-dobra-crescimento-mobile.mp4",
             "useContent": "video",
-            "title": "Comece pagando menos",
             "planTag": {
               "text": "Plano Crescimento",
               "icon": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
               }
             },
-            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
             "showArrows": false,
             "slides": [
               {
@@ -7979,15 +7806,6 @@
               "title": "Mensal",
               "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p>"
             },
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "textColor": "#003037",
-                "underlineText": "Falar com especialista",
-                "showIcon": true
-              }
-            ],
             "link": {
               "textBefore": "Já tem uma loja?",
               "text": " Ative agora",
@@ -8020,19 +7838,28 @@
         {
           "value": {
             "__resolveType": "site/sections/PlanDetails2.tsx",
+            "title": "Comece pagando menos",
+            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
+            "cta": [
+              {
+                "href": "/talkToSpecialist",
+                "textColor": "#003037",
+                "ctaStyle": "link",
+                "showIcon": true,
+                "underlineText": "Falar com especialista"
+              }
+            ],
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f0ef7f54-f95f-4358-bf93-9882a6e34a4f/crescimento-background.svg"
             },
             "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f68f0cae-2879-4a82-95a1-85fc54ef8b68/video-dobra-crescimento.webm",
             "useContent": "video",
-            "title": "Comece pagando menos",
             "planTag": {
               "text": "Plano Crescimento",
               "icon": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
               }
             },
-            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
             "showArrows": false,
             "slides": [
               {
@@ -8073,15 +7900,6 @@
               "title": "Mensal",
               "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 99</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/ano</span></p>"
             },
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "underlineText": "Falar com especialista",
-                "textColor": "#003037",
-                "showIcon": true
-              }
-            ],
             "link": {
               "textBefore": "Já tem uma loja?",
               "text": " Ative agora",

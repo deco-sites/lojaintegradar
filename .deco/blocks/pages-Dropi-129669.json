@@ -271,23 +271,30 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<p>Como você ainda não tem produto, recomendamos dropshipping do jeito certo. Aqui. Agora.</p>",
+            "title": "<p>Seu e-commerce sem estoque começa aqui</p>",
             "backgroundColor": "",
             "backgroundImage": {
               "width": 1140,
               "height": 615,
               "src": "https://assets.decocache.com/lojaintegradar/b51627f2-fe88-4501-8df9-8836f6994310/main-background.svg"
             },
-            "caption": "<p>A única plataforma no Brasil com integração oficial com Dropi, AliExpress,<br>CJ Dropshipping e FForder.</p>",
+            "caption": "<p>A única plataforma no Brasil com integração oficial com Dropi, AliExpress,<br>CJ Dropshipping e FForder. Venda milhares de produtos sem se preocupar<br>com armazenamento e entrega</p>",
             "captionFontSize": "16px",
             "backgroundAnimation": true,
             "lcp": true,
             "titleFont": "Galaxie Copernicus",
             "image": {
-              "src": "https://assets.decocache.com/lojaintegradar/f3ca46f7-4c7a-4fac-94c5-0a79640b6e8c/manutencao-economica.png"
+              "src": "https://assets.decocache.com/lojaintegradar/08334c40-af8d-4c33-8c1c-42eb5a144e06/banner-dropi-final.webp",
+              "width": 543,
+              "height": 474
             },
             "titleLetterSpacing": "-3px",
-            "captionAboveTextProps": {},
+            "captionAboveTextProps": {
+              "fontFamily": "inter",
+              "color": "#00363A",
+              "fontSize": "22px",
+              "fontWeight": "500"
+            },
             "bulletPoints": {
               "show": true,
               "items": [
@@ -314,7 +321,9 @@
             "titleFontSize": "60px",
             "titleColor": "#00363A",
             "captionColor": "#ffffff",
-            "use": "image"
+            "use": "image",
+            "captionAbove": "<p>Sem ideia do que vender?</p>",
+            "captionLineHeight": "26px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -399,13 +408,15 @@
             "__resolveType": "site/sections/GridCards.tsx",
             "hideSection": false,
             "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Como Funciona:</span><br><em><span style=\"color: rgb(0, 183, 181)\">Simples, ágil e sem estoque</span></em></p>",
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Como funciona:</span><br><em><span style=\"color: rgb(0, 183, 181)\">Simples, ágil e sem estoque</span></em></p>",
               "font": "Galaxie Copernicus"
             },
             "tag": {
-              "text": "<p></p>",
-              "backgroundColor": "",
-              "textProps": {}
+              "text": "<p>passo a passo</p>",
+              "backgroundColor": "#FFE6A0",
+              "textProps": {
+                "color": "#7A2D0D"
+              }
             },
             "cards": [
               {
@@ -527,7 +538,7 @@
             "title": {
               "text": "<p>Por que escolher a Loja Integrada + Dropi para seu Dropshipping</p>",
               "font": "Galaxie Copernicus",
-              "color": "#00363A",
+              "color": "#ffffff",
               "letterSpacing": "-3px",
               "fontSize": "32px"
             },
@@ -584,8 +595,9 @@
             ],
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/7e19c2c6-4589-4962-a2fc-920c83910eba/hero-image.png",
-                "width": 625
+                "src": "https://assets.decocache.com/lojaintegradar/a2d565f5-2572-42a5-9feb-6aeb59d6fa63/Aliexpress.png",
+                "width": 424,
+                "height": 506
               },
               "use": "image",
               "placement": "left",

@@ -172,7 +172,7 @@ export default defineApp(async (_req, ctx) => {
           
           if (fired === false) {
             var recaptchaScript = document.createElement('script');
-            recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18';
+            recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=6LdRdTErAAAAAJTiQWhUzJxve5303X3lyy1UjA';
             recaptchaScript.defer = true;
             document.body.appendChild(recaptchaScript);
             fired = true;

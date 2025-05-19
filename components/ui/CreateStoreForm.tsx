@@ -134,7 +134,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
                     className="w-full flex flex-col items-center justify-center"
                     onSubmit={handleSubmit}
                 >
-                    <input type="hidden" name="gcaptcha_site" value="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"></input>
+                    <input type="hidden" name="gcaptcha_site" value="6LdRdTErAAAAAJTiQWhUzJxve5303X3lyy1UjA"></input>
                     <div className="mt-4 w-full max-w-[450px]">
                         <label className="block text-sm font-semibold ">
                             {nameCaption || 'Nome'}
@@ -247,7 +247,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
                             id="input-createStoreForm"
                             className={`w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative ${!validated && 'pointer-events-none'}`}
                             type="submit"
-                            data-sitekey="6LfheeYUAAAAAI0qgRFQjLgyj3HmMp1TXLNK2R18"
+                            data-sitekey="6LdRdTErAAAAAJTiQWhUzJxve5303X3lyy1UjA"
                             data-callback="onSubmitFormRecaptcha"
                             style={{ background: buttonBackgroundColor, color: buttonTextColor }}
                         >

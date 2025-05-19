@@ -163,6 +163,12 @@ const CreateStoreModal = () => {
         }
     };
 
+    function handleKeyDown(e: any): void {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+        }
+    }
+
     return (
         <div id="createStoreModal" className="hidden fixed z-[60] inset-0 bg-black bg-opacity-50 items-center justify-center z-5">
             <div className="relative mx-[10px] flex flex-col items-center p-6 w-full max-w-[550px] lg:mx-auto bg-white rounded-xl shadow-md overflow-hidden animate-pop-up" style={{ animationDuration: '0.3s' }}>
@@ -180,6 +186,7 @@ const CreateStoreModal = () => {
                     method="POST"
                     className="w-full flex flex-col items-center justify-center"
                     onSubmit={handleSubmit}
+                    onKeyDown={handleKeyDown}
                 >
                     <input type="hidden" name="gcaptcha_site" value="6LdRdTErAAAAAJTiQW_hUzJxve5303X3lyy1UjA_"></input>
                     <div className="mt-4 w-full max-w-[450px]">

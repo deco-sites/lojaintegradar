@@ -120,6 +120,12 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
         }
     };
 
+    function handleKeyDown(e: any): void {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+        }
+    }
+
     return (
         <div id="createStoreFormDiv" className="inset-0 bg-opacity-50 items-center justify-center z-5">
             <div
@@ -133,6 +139,7 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
                     method="POST"
                     className="w-full flex flex-col items-center justify-center"
                     onSubmit={handleSubmit}
+                    onKeyDown={handleKeyDown}
                 >
                     <input type="hidden" name="gcaptcha_site" value="6LdRdTErAAAAAJTiQW_hUzJxve5303X3lyy1UjA_"></input>
                     <div className="mt-4 w-full max-w-[450px]">

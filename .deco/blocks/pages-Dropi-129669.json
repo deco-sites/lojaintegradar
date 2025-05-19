@@ -252,13 +252,12 @@
             "backgroundColor": "",
             "backgroundImage": {
               "src": "https://assets.decocache.com/lojaintegradar/b51627f2-fe88-4501-8df9-8836f6994310/main-background.svg",
-              "width": 1140,
-              "height": 615
+              "width": 600
             },
             "caption": "<p style=\"text-align: center\">A única plataforma no Brasil com integração oficial com Dropi, AliExpress, CJ Dropshipping e FForder. Venda milhares de produtos sem se preocupar<br>com armazenamento e entrega</p>",
             "captionFontSize": "14px",
-            "backgroundAnimation": true,
-            "lcp": true,
+            "backgroundAnimation": false,
+            "lcp": false,
             "titleFont": "Galaxie Copernicus",
             "titleLetterSpacing": "-3px",
             "bulletPoints": {
@@ -292,7 +291,10 @@
             },
             "modal": {
               "media": {
-                "image": {}
+                "image": {
+                  "width": 600
+                },
+                "use": "image"
               }
             },
             "titleFontSize": "32px",

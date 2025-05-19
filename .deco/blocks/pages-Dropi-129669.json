@@ -18,25 +18,27 @@
         "links": [],
         "buttons": [
           {
-            "href": "https://app.lojaintegrada.com.br/painel/login",
-            "text": "Fazer login",
+            "text": "Criar loja",
             "ctaStyle": "button",
             "backgroundColor": "#B7FBDB",
             "textColor": "#00363A",
             "borderColor": "#B7FBDB",
             "outline": true,
-            "size": "Small"
+            "size": "Small",
+            "createStorePlanId": "172",
+            "openModal": "Create Store"
           }
         ],
         "mobileButtons": [
           {
             "ctaStyle": "button",
-            "text": "Fazer login",
-            "href": "https://app.lojaintegrada.com.br/painel/login",
+            "text": "Criar loja",
             "backgroundColor": "#B7FBDB",
             "borderColor": "#B7FBDB",
             "textColor": "#00363A",
-            "size": "Small"
+            "size": "Small",
+            "createStorePlanId": "172",
+            "openModal": "Create Store"
           }
         ],
         "asideMenuButtons": [

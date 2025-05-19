@@ -278,7 +278,7 @@
               "height": 615,
               "src": "https://assets.decocache.com/lojaintegradar/b51627f2-fe88-4501-8df9-8836f6994310/main-background.svg"
             },
-            "caption": "<p>A única plataforma no Brasil com integração oficial com Dropi, AliExpress, CJ Dropshipping e FForder.</p>",
+            "caption": "<p>A única plataforma no Brasil com integração oficial com Dropi, AliExpress,<br>CJ Dropshipping e FForder.</p>",
             "captionFontSize": "16px",
             "backgroundAnimation": true,
             "lcp": true,
@@ -295,9 +295,9 @@
                 "Mais de 80 fornecedores brasileiros disponíveis. Entregas rápidas e clientes satisfeitos."
               ],
               "title": "<p></p>",
-              "backgroundColor": "rgba(0, 54, 58, 0.50);",
+              "backgroundColor": " rgba(255, 255, 255, 0.30);",
               "textProps": {
-                "color": "#ffffff",
+                "color": "#00363A",
                 "fontSize": "16px",
                 "fontFamily": "inter"
               },
@@ -312,7 +312,7 @@
               }
             },
             "titleFontSize": "60px",
-            "titleColor": "#ffffff",
+            "titleColor": "#00363A",
             "captionColor": "#ffffff",
             "use": "image"
           },
@@ -399,12 +399,12 @@
             "__resolveType": "site/sections/GridCards.tsx",
             "hideSection": false,
             "title": {
-              "text": "<p style=\"text-align: center\"><em><span style=\"color: #00b7b5\">Nós te ouvimos!</span></em><span style=\"color: #00363a\"> Confira as próximas</span></p><p style=\"text-align: center\"><span style=\"color: #00363a\">entregas pedidas pela comunidade</span></p>",
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Como Funciona:</span><br><em><span style=\"color: rgb(0, 183, 181)\">Simples, ágil e sem estoque</span></em></p>",
               "font": "Galaxie Copernicus"
             },
             "tag": {
-              "text": "<p><span style=\"color: #7a2d0d\">Em desenvolvimento</span></p>",
-              "backgroundColor": "#FFE6A0",
+              "text": "<p></p>",
+              "backgroundColor": "",
               "textProps": {}
             },
             "cards": [
@@ -415,8 +415,8 @@
                   "alt": "truck icon"
                 },
                 "backgroundColor": "#B7FBDB",
-                "title": "<p><span style=\"color: rgb(0, 54, 58)\">Múltiplas tabela<br>de frete</span></p>",
-                "text": "<p><span style=\"color: rgb(95, 110, 130)\">Integração com diversas transportadoras para oferecer mais opções de frete aos seus clientes, otimizando custos e prazos de entrega.</span></p>",
+                "title": "<p><span style=\"color: rgb(0, 54, 58)\">Você cria sua loja virtual na Loja Integrada</span></p>",
+                "text": "<p></p>",
                 "titleTextProps": {
                   "color": ""
                 },
@@ -428,24 +428,24 @@
                   "src": "https://assets.decocache.com/lojaintegradar/bb22227b-a313-4b3a-bdee-51338a72463c/graphic-icon.svg"
                 },
                 "backgroundColor": "",
-                "title": "<p><span style=\"color: #00363a\">Relatórios<br>avançados</span></p>",
-                "text": "<p><span style=\"color: rgb(95, 110, 130)\">Estamos expandindo nosso sistema de relatórios, adicionando novos campos aos 3 existentes e desenvolvendo 7 novos relatórios para dar mais visibilidade ao seu negócio.</span></p>"
+                "title": "<p><span style=\"color: rgb(0, 54, 58)\">Conecta sua loja ao Dropi com um clique usando a chave API</span></p>",
+                "text": "<p></p>"
               },
               {
                 "image": {
                   "position": "left",
                   "src": "https://assets.decocache.com/lojaintegradar/7725089d-4783-4b1d-bbbd-27c31194c04a/box-with-check-icon.svg"
                 },
-                "title": "<p><span style=\"color: #00363a\">Cadastro de produto melhorado</span></p>",
-                "text": "<p><span style=\"color: #5f6e82\">Novos recursos para gerenciamento de produtos, incluindo opções de 'não à venda' e 'não visível', permitindo cadastrar produtos como brindes ou mantê-los escondidos.</span></p>"
+                "title": "<p><span style=\"color: rgb(0, 54, 58)\">Importa produtos com avaliações reais do AliExpress</span></p>",
+                "text": "<p></p>"
               },
               {
                 "image": {
                   "position": "left",
                   "src": "https://assets.decocache.com/lojaintegradar/f76ddb36-15d4-4854-a0e5-4da04c63644e/code-file-icon.svg"
                 },
-                "title": "<p><span style=\"color: #00363a\">Log de alteração de estoque via API</span></p>",
-                "text": "<p><span style=\"color: #5f6e82\">Acompanhamento detalhado das alterações de estoque realizadas via API, proporcionando maior controle e segurança para o seu inventário.</span></p>"
+                "title": "<p><span style=\"color: rgb(0, 54, 58)\">Começa a vender. O fornecedor envia direto para o seu cliente</span></p>",
+                "text": "<p></p>"
               }
             ],
             "cardsBackgroundColor": "#ffffff",

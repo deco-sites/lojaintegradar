@@ -957,8 +957,10 @@
             "ctaPlacement": "center",
             "textProps": {
               "fontFamily": "Inter",
-              "fontSize": "22px"
-            }
+              "fontSize": "22px",
+              "lineHeight": "60px"
+            },
+            "distanceBetweenTitleAndText": "20px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

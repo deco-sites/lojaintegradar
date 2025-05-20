@@ -113,6 +113,7 @@ export interface Props {
     image?: IImage;
     video?: VideoWidget;
     use?: "image" | "video";
+    mediaPosition?: "left" | "center" | "right";
     htmlContent?: HTMLWidget;
     /** @format color-input */
     backgroundColor?: string;
@@ -137,11 +138,16 @@ export interface Props {
     paddingTop?: string;
     paddingBottom?: string;
 }
-export default function MainHero({ hideSection, captionColor, captionFont, captionFontWeight, captionLetterSpacing, captionLineHeight, id, title, titleFontSize, titleFontWeight, titleLineHeight, caption = "", paddingBottom, paddingTop,titleLetterSpacing, backgroundAnimation, inputLabel, captionFontSize, backgroundColor, hubspotFormButtonWidth, backgroundVideo, lcp, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove, captionAboveTextProps, }: Props) {
+export default function MainHero({ hideSection, mediaPosition = "right", captionColor, captionFont, captionFontWeight, captionLetterSpacing, captionLineHeight, id, title, titleFontSize, titleFontWeight, titleLineHeight, caption = "", paddingBottom, paddingTop,titleLetterSpacing, backgroundAnimation, inputLabel, captionFontSize, backgroundColor, hubspotFormButtonWidth, backgroundVideo, lcp, useBackground = 'image', hubspotFormButtonIcon, titleFont, sectionMinHeight, backgroundImage, inputLabelWidth = 'min', image, hubspotForm, htmlContent, titleColor, bulletPoints, inputLabelColor, inputLabelBackgroundColor, hubspotErrorMessageColor, hubspotFormButtonColor, hubspotFormButtonTextColor, video, use, modal, captionAbove, captionAboveTextProps, }: Props) {
     if (hideSection) return <></>
     const randomId = useId();
     const modalId = randomId + "modal";
     const hubspostFormId = randomId + "hubspotForm";
+    const position = {
+        "left": "items-start",
+        "center": "items-center",
+        "right": "items-end"
+    }
     return <div class="relative overflow-hidden">
         <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`} style={{minHeight: sectionMinHeight, paddingBottom, paddingTop}}>
             
@@ -195,7 +201,7 @@ export default function MainHero({ hideSection, captionColor, captionFont, capti
                 </div>
             </div>
 
-            <div class={`md:flex-grow md:flex flex-col justify-end items-end ${(use == "image" || use == "video") && "lg:w-1/2"}`}>
+            <div class={`md:flex-grow md:flex flex-col justify-end ${position[mediaPosition]} ${(use == "image" || use == "video") && "lg:w-1/2"}`}>
                 {htmlContent && <div class="px-7 flex justify-center w-[98vw] md:w-auto" dangerouslySetInnerHTML={{ __html: htmlContent }}/>}
                 {use == "image" && image?.src && <Image width={image.width || 697} height={image.height || 592} src={image.src} alt={image.src || ""} class=" object-contain hidden md:block"/>}
                 {use == "video" && video && <video width="697" height="592" autoPlay playsInline muted loading="lazy" loop class="w-full xl:w-auto max-w-[809px] object-contain hidden md:block">

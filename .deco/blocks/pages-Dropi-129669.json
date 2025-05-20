@@ -4395,39 +4395,36 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Faq.tsx",
-        "title": "Perguntas frequentes",
-        "titleColor": "#00363A",
-        "captionColor": "#5F6E82",
-        "questions": [
-          {
-            "question": "Preciso ter estoque?",
-            "answear": "<p><span style=\"color: #5f6e82\">Não! Você vende e o fornecedor envia direto ao cliente.</span></p>"
-          },
-          {
-            "question": "Precisa pagar para usar o Dropi?",
-            "answear": "<p><span style=\"color: rgb(95, 110, 130)\">Você pode começar grátis. Quer mais produtos e zero taxa? R$45/mês.</span></p>"
-          },
-          {
-            "question": "Posso usar fornecedores nacionais?",
-            "answear": "<p><span style=\"color: rgb(95, 110, 130)\">Sim! Mais de 80 fornecedores brasileiros com entrega rápida.</span></p>"
-          },
-          {
-            "question": "Posso vender meus próprios produtos junto com o dropshipping?",
-            "answear": "<p><span style=\"color: rgb(95, 110, 130)\">Sim! A Loja Integrada permite vender seus produtos e dropshipping ao mesmo tempo.</span></p>"
-          }
-        ],
-        "questionsTitleColor": "#5F6E82",
-        "questionsDivisionLineColor": "#E1E1E1",
-        "bottomTitleColor": "#371E55",
-        "bottomCaptionColor": "#485565",
-        "cta": [],
-        "backgroundColor": "#F2F4F5",
-        "titleFont": "Galaxie Copernicus",
-        "caption": "Encontre respostas para suas dúvidas mais comuns aqui."
-      }
+      "__resolveType": "site/sections/Faq.tsx",
+      "title": "Perguntas frequentes",
+      "titleColor": "#00363A",
+      "captionColor": "#5F6E82",
+      "questions": [
+        {
+          "question": "Preciso ter estoque?",
+          "answear": "<p><span style=\"color: #5f6e82\">Não! Você vende e o fornecedor envia direto ao cliente.</span></p>"
+        },
+        {
+          "question": "Precisa pagar para usar o Dropi?",
+          "answear": "<p><span style=\"color: rgb(95, 110, 130)\">Você pode começar grátis. Quer mais produtos e zero taxa? R$45/mês.</span></p>"
+        },
+        {
+          "question": "Posso usar fornecedores nacionais?",
+          "answear": "<p><span style=\"color: rgb(95, 110, 130)\">Sim! Mais de 80 fornecedores brasileiros com entrega rápida.</span></p>"
+        },
+        {
+          "question": "Posso vender meus próprios produtos junto com o dropshipping?",
+          "answear": "<p><span style=\"color: rgb(95, 110, 130)\">Sim! A Loja Integrada permite vender seus produtos e dropshipping ao mesmo tempo.</span></p>"
+        }
+      ],
+      "questionsTitleColor": "#5F6E82",
+      "questionsDivisionLineColor": "#E1E1E1",
+      "bottomTitleColor": "#371E55",
+      "bottomCaptionColor": "#485565",
+      "cta": [],
+      "backgroundColor": "#F2F4F5",
+      "titleFont": "Galaxie Copernicus",
+      "caption": "Encontre respostas para suas dúvidas mais comuns aqui."
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

@@ -9,6 +9,16 @@ export interface IImage {
   height?: number;
 }
 
+export interface CustomProps {
+  width?: string;
+  height?: string;
+  borderRadius?: string;
+  padding?: string;
+  letterSpacing?: string;
+  fontFamily?: string;
+  fontSize?: string;
+  fontWeight?: string;
+}
 
 /** @title {{text}} */
 export interface Props {
@@ -26,6 +36,9 @@ export interface Props {
   createStorePlanId?: string;
   showIcon?: boolean;
   customIcon?: IImage;
+  iconGap?: string;
+  singleLine?: boolean;
+  customProps?: CustomProps;
 }
 
 const openModalFunction = (modal: string, planId: string) => {
@@ -74,7 +87,7 @@ const openModalFunction = (modal: string, planId: string) => {
 };
 
 
-export default function CTA({ href = "", text, textColor, backgroundColor, borderColor, size = "Medium", type = "Button", showIcon = false, openModal, createStorePlanId, customIcon}: Props) {
+export default function CTA({ href = "", text, textColor, backgroundColor, iconGap, borderColor, size = "Medium", type = "Button", singleLine = false, showIcon = false, openModal, createStorePlanId, customIcon, customProps}: Props) {
   const sizeClasses = {
     "Large": "py-4 px-8 text-base font-semibold border",
     "Medium": "py-2 px-8 text-sm font-semibold leading-[171%] border",
@@ -89,16 +102,16 @@ export default function CTA({ href = "", text, textColor, backgroundColor, borde
 
   return <a
     hx-on:click={openModal && useScript(openModalFunction, openModal, createStorePlanId || '172')}
-    class={`${sizeClasses[size]} rounded-lg hover:scale-110 transition-transform cursor-pointer flex items-center gap-2.5`}
+    class={`${sizeClasses[size]} rounded-lg hover:scale-110 transition-transform cursor-pointer flex justify-center items-center gap-2.5 text-center ${singleLine && 'whitespace-nowrap'}`}
     style={type == "Button"
-      ? { background: backgroundColor, color: textColor, borderColor }
-      : { color: textColor, border: 'none', padding: 0 }}
+      ? { background: backgroundColor, color: textColor, borderColor, gap: iconGap, ...customProps}
+      : { color: textColor, border: 'none', padding: 0, gap:iconGap, ...customProps }}
     href={openModal ? undefined : href}
     target={href.includes("http") ? "_blank" : "_self"}>
     {text}
     {showIcon && ( customIcon?.src 
       ? <Image src={customIcon.src} width={customIcon.width || 20} height={customIcon.height || 20} alt={customIcon.alt || "button icon"} /> 
-      : <svg xmlns="http://www.w3.org/2000/svg" width={iconSizes[size]} height={iconSizes[size]} viewBox="0 0 24 25" fill="none" class="inline-block ml-2">
+      : <svg xmlns="http://www.w3.org/2000/svg" width={iconSizes[size]} height={iconSizes[size]} viewBox="0 0 24 25" fill="none" class="inline-block">
       <path d="M9 17.9028L15 11.9028L9 5.90283" stroke={textColor} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </svg>)}
   </a>

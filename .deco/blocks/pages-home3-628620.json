@@ -742,8 +742,8 @@
               "text": "<p style=\"text-align: center\"><em><span style=\"color: rgb(0, 54, 58)\">Fature enquanto eles trabalham.<br></span></em><span style=\"color: rgb(0, 54, 58)\">Automatize formas de ganhar dinheiro.</span></p>",
               "font": "Galaxie Copernicus",
               "fontSize": "32px",
-              "lineHeight": "120%",
               "letterSpacing": "-3px",
+              "lineHeight": "120%",
               "fontWeight": "500"
             },
             "caption": {
@@ -751,6 +751,8 @@
               "fontWeight": "500",
               "fontSize": "16px"
             },
+            "paddingTop": "40px",
+            "paddingBottom": "40px",
             "slides": [
               {
                 "use": "image",
@@ -905,8 +907,6 @@
               "borderColor": "#FAFAF5",
               "ctaStyle": "button"
             },
-            "paddingTop": "40px",
-            "paddingBottom": "40px",
             "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))",
             "dotsTextColor": "#00363A",
             "arrows": false
@@ -921,10 +921,10 @@
             "__resolveType": "site/sections/DetailedCarouselV2.tsx",
             "title": {
               "text": "<p style=\"text-align: center\"><em><span style=\"color: rgb(0, 54, 58)\">Fature enquanto eles trabalham.<br></span></em><span style=\"color: rgb(0, 54, 58)\">Automatize formas de ganhar dinheiro.</span></p>",
-              "font": "Galaxie Copernicus",
               "fontSize": "46px",
-              "lineHeight": "58px",
               "letterSpacing": "-3px",
+              "font": "Galaxie Copernicus",
+              "lineHeight": "58px",
               "fontWeight": "500"
             },
             "caption": {
@@ -932,6 +932,8 @@
               "fontWeight": "500",
               "fontSize": "22px"
             },
+            "paddingTop": "80px",
+            "paddingBottom": "80px",
             "slides": [
               {
                 "use": "image",
@@ -1089,8 +1091,6 @@
               "borderColor": "#FAFAF5",
               "ctaStyle": "button"
             },
-            "paddingTop": "80px",
-            "paddingBottom": "80px",
             "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))",
             "dotsTextColor": "#00363A",
             "arrows": false
@@ -1108,8 +1108,6 @@
           "value": {
             "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
             "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: #00363a\">lojistas</span></p>",
-            "titleColor": "#371E55",
-            "titleFont": "Galaxie Copernicus",
             "caption": "<p style=\"text-align: center\"><span style=\"color: #5f6e82\">que escolheram a forma mais eficiente  de vender online</span></p>",
             "slides": [
               {
@@ -1150,8 +1148,12 @@
               }
             ],
             "arrows": false,
-            "arrowsColor": "",
             "dots": false,
+            "paddingTop": "80px",
+            "paddingBottom": "80px",
+            "titleColor": "#371E55",
+            "titleFont": "Galaxie Copernicus",
+            "arrowsColor": "",
             "bubbleImages": [
               {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10c91eb1-0f78-465d-9fa6-49438978da81/bubble-image-1.jpg",
@@ -1289,8 +1291,6 @@
               "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
               "show": true
             },
-            "paddingTop": "80px",
-            "paddingBottom": "80px",
             "titleFontSize": "32px",
             "titleLetterSpacing": "-3px",
             "titleFontWeight": "500",
@@ -1306,8 +1306,6 @@
           "value": {
             "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
             "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: rgb(0, 54, 58)\">lojistas</span></p>",
-            "titleColor": "",
-            "titleFont": "Galaxie Copernicus",
             "caption": "<p style=\"text-align: center\"><span style=\"color: #5f6e82\">que escolheram a forma mais eficiente  de vender online</span></p>",
             "slides": [
               {
@@ -1353,8 +1351,12 @@
               }
             ],
             "arrows": false,
-            "arrowsColor": "",
             "dots": false,
+            "paddingTop": "120px",
+            "paddingBottom": "80px",
+            "titleColor": "",
+            "titleFont": "Galaxie Copernicus",
+            "arrowsColor": "",
             "bubbleImages": [
               {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10c91eb1-0f78-465d-9fa6-49438978da81/bubble-image-1.jpg",
@@ -1468,8 +1470,6 @@
               "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
               "show": true
             },
-            "paddingTop": "120px",
-            "paddingBottom": "80px",
             "titleFontSize": "46px",
             "titleLetterSpacing": "-3px",
             "titleFontWeight": "500",
@@ -1490,6 +1490,8 @@
             "__resolveType": "site/sections/Logos.tsx",
             "titleFont": "Instrument serif",
             "titleColor": "#371E55",
+            "paddingTop": "0",
+            "paddingBottom": "0",
             "captionColor": "#5F6E82",
             "logos": [
               {
@@ -1531,8 +1533,6 @@
                 "height": 72
               }
             ],
-            "paddingTop": "0",
-            "paddingBottom": "0",
             "blackAndWhiteLogos": true,
             "titleTextProps": {},
             "captionTextProps": {
@@ -1551,6 +1551,8 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroWithTimeV2.tsx",
+            "paddingTop": "40px",
+            "paddingBottom": "0",
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
@@ -1720,8 +1722,6 @@
             },
             "tabsInterval": 30,
             "backgroundColor": "",
-            "paddingTop": "40px",
-            "paddingBottom": "0",
             "caption": {
               "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
               "fontSize": "16px",
@@ -8757,6 +8757,115 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/BulletPointsHero.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/FixedBottom.tsx",
+              "backgroundColor": "#D1CABD",
+              "logo": {
+                "src": "https://assets.decocache.com/lojaintegradar/ecbec128-dcda-40ee-a557-25559c5ed7de/Komea-logo.svg",
+                "width": 195,
+                "height": 36
+              },
+              "text": "<p><span>Comece a vender com a ajuda de múltiplos agentes especialistas</span></p>",
+              "textProps": {
+                "color": "#002621",
+                "letterSpacing": "-0.75px"
+              },
+              "cta": [
+                {
+                  "type": "Button",
+                  "size": "Large",
+                  "openModal": "Talk to specialist",
+                  "text": "Conheça o novo lançamento",
+                  "textColor": "#002621",
+                  "backgroundColor": "#EEFC58",
+                  "borderColor": "#EEFC58",
+                  "customWidth": "280px",
+                  "customProps": {
+                    "padding": "22px 14px",
+                    "letterSpacing": "-1px",
+                    "borderRadius": "1000px",
+                    "height": "50px",
+                    "width": "100%"
+                  },
+                  "showIcon": true,
+                  "singleLine": true,
+                  "customIcon": {
+                    "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
+                    "width": 7
+                  },
+                  "iconGap": "2px"
+                }
+              ],
+              "rightBackgroundImage": {
+                "src": "https://assets.decocache.com/lojaintegradar/19905ba0-6993-4640-8695-75907433af6e/right-few-bubbles.svg",
+                "width": 116,
+                "height": 158
+              },
+              "leftBackgroundImage": {
+                "src": "https://assets.decocache.com/lojaintegradar/27755367-bbfc-4b6e-8139-fe0984835856/left-few-bubbles.svg",
+                "width": 46,
+                "height": 147
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/FixedBottom.tsx",
+              "backgroundColor": "#D1CABD",
+              "logo": {
+                "src": "https://assets.decocache.com/lojaintegradar/ecbec128-dcda-40ee-a557-25559c5ed7de/Komea-logo.svg"
+              },
+              "text": "<p><span>Comece a vender com a ajuda de múltiplos agentes especialistas</span></p>",
+              "textProps": {
+                "color": "#002621",
+                "letterSpacing": "-0.75px"
+              },
+              "cta": [
+                {
+                  "type": "Button",
+                  "size": "Large",
+                  "openModal": "Talk to specialist",
+                  "text": "Conheça o novo lançamento",
+                  "textColor": "#002621",
+                  "backgroundColor": "#EEFC58",
+                  "borderColor": "#EEFC58",
+                  "customWidth": "280px",
+                  "customProps": {
+                    "padding": "22px 14px",
+                    "letterSpacing": "-1px",
+                    "borderRadius": "1000px",
+                    "height": "50px"
+                  },
+                  "showIcon": true,
+                  "singleLine": true,
+                  "customIcon": {
+                    "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
+                    "width": 7
+                  },
+                  "iconGap": "2px"
+                }
+              ],
+              "rightBackgroundImage": {
+                "src": "https://assets.decocache.com/lojaintegradar/352173ec-ab9f-4d76-aaba-276b30d22dfd/right-bubbles.svg"
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
+          }
+        ]
       }
     }
   ],

@@ -27,14 +27,16 @@ export default defineApp(async (_req, ctx) => {
         __html: `
         html {
           scroll-behavior: smooth;
-          }
+        }
 
-          html, body {
-        height: 100%;
-        margin: 0;
-    }
-
-          `}} />
+        html, body {
+          height: 100%;
+          margin: 0;
+        }
+        .grecaptcha-badge {
+          visibility: hidden;
+        }
+      `}} />
       <style dangerouslySetInnerHTML={{
         __html: `
         @font-face {

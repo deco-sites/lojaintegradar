@@ -700,272 +700,282 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/CardsHero.tsx",
-            "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Planos para começar</span><br><span style=\"color: rgb(0, 54, 58)\">com </span><em><span style=\"color: rgb(0, 183, 181)\">baixo investimento</span></em></p>",
-              "font": "Galaxie Copernicus",
-              "fontSize": "32px"
-            },
-            "tag": {
-              "text": "<p></p>"
-            },
-            "leftColumn": {
-              "cardsMaxWidth": "621px",
-              "cards": [
-                {
-                  "bulletPoints": {
-                    "items": [
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/CardsHero.tsx",
+                  "title": {
+                    "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Planos para começar</span><br><span style=\"color: rgb(0, 54, 58)\">com </span><em><span style=\"color: rgb(0, 183, 181)\">baixo investimento</span></em></p>",
+                    "font": "Galaxie Copernicus",
+                    "fontSize": "32px"
+                  },
+                  "tag": {
+                    "text": "<p></p>"
+                  },
+                  "leftColumn": {
+                    "cardsMaxWidth": "621px",
+                    "cards": [
                       {
-                        "text": "Plano Crescimento: R$54/mês"
-                      },
-                      {
-                        "text": "Pedidos ilimitados"
-                      },
-                      {
-                        "text": "Integração com marketplaces"
-                      },
-                      {
-                        "text": "Sem taxa sobre vendas"
+                        "bulletPoints": {
+                          "items": [
+                            {
+                              "text": "Plano Crescimento: R$54/mês"
+                            },
+                            {
+                              "text": "Pedidos ilimitados"
+                            },
+                            {
+                              "text": "Integração com marketplaces"
+                            },
+                            {
+                              "text": "Sem taxa sobre vendas"
+                            }
+                          ],
+                          "bulletPointsIcon": {
+                            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                          },
+                          "bulletPointsColor": "#00363A",
+                          "bulletPointsTextProps": {
+                            "color": "#00363A"
+                          }
+                        },
+                        "cta": [
+                          {
+                            "type": "Button",
+                            "size": "Medium",
+                            "openModal": "Create Store",
+                            "text": "Assinar",
+                            "textColor": "#ffffff",
+                            "backgroundColor": "#00363A",
+                            "createStorePlanId": "172"
+                          }
+                        ],
+                        "title": "<p><span style=\"color: rgb(0, 54, 58); font-size: 28pt\">Loja integrada</span></p>",
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "38px",
+                        "titleTag": {
+                          "text": "<p></p>",
+                          "backgroundColor": ""
+                        },
+                        "text": "<p></p>",
+                        "backgroundColor": "linear-gradient(76deg, rgba(0, 183, 181, 0.10) 4.2%, rgba(0, 183, 181, 0.50) 98.72%)",
+                        "borderRadius": "20px",
+                        "padding": "48px",
+                        "titleColor": "#ffffff",
+                        "backgroundImage": {},
+                        "minHeight": "384px",
+                        "spaceBetweenTitleAndText": "10px",
+                        "borderColor": "",
+                        "textProps": {}
                       }
-                    ],
-                    "bulletPointsIcon": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                    },
-                    "bulletPointsColor": "#00363A",
-                    "bulletPointsTextProps": {
-                      "color": "#00363A"
-                    }
+                    ]
                   },
-                  "cta": [
-                    {
-                      "type": "Button",
-                      "size": "Medium",
-                      "openModal": "Create Store",
-                      "text": "Assinar",
-                      "textColor": "#ffffff",
-                      "backgroundColor": "#00363A",
-                      "createStorePlanId": "172"
-                    }
-                  ],
-                  "title": "<p><span style=\"color: rgb(0, 54, 58); font-size: 28pt\">Loja integrada</span></p>",
-                  "titleFont": "Galaxie Copernicus",
-                  "titleFontSize": "38px",
-                  "titleTag": {
-                    "text": "<p></p>",
-                    "backgroundColor": ""
-                  },
-                  "text": "<p></p>",
-                  "backgroundColor": "linear-gradient(76deg, rgba(0, 183, 181, 0.10) 4.2%, rgba(0, 183, 181, 0.50) 98.72%)",
-                  "borderRadius": "20px",
-                  "padding": "48px",
-                  "titleColor": "#ffffff",
-                  "backgroundImage": {},
-                  "minHeight": "384px",
-                  "spaceBetweenTitleAndText": "10px",
-                  "borderColor": "",
-                  "textProps": {}
-                }
-              ]
-            },
-            "rightColumn": {
-              "cardsMaxWidth": "621px",
-              "cards": [
-                {
-                  "bulletPoints": {
-                    "items": [
+                  "rightColumn": {
+                    "cardsMaxWidth": "621px",
+                    "cards": [
                       {
-                        "text": "Plano Básico: R$0/mês + 2,5% de taxa por pedido"
-                      },
-                      {
-                        "text": "Plano Iniciante: R$45/mês, sem taxas por pedido, até 50 produtos"
+                        "bulletPoints": {
+                          "items": [
+                            {
+                              "text": "Plano Básico: R$0/mês + 2,5% de taxa por pedido"
+                            },
+                            {
+                              "text": "Plano Iniciante: R$45/mês, sem taxas por pedido, até 50 produtos"
+                            }
+                          ],
+                          "bulletPointsColor": "#00363A",
+                          "bulletPointsIcon": {
+                            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                          },
+                          "bulletPointsTextProps": {
+                            "color": "#00363A"
+                          }
+                        },
+                        "cta": [
+                          {
+                            "type": "Button",
+                            "size": "Medium",
+                            "openModal": "Talk to specialist",
+                            "text": "Assinar",
+                            "backgroundColor": "#00363A",
+                            "borderColor": "#00363A",
+                            "textColor": "#FFFFFF",
+                            "showIcon": false
+                          }
+                        ],
+                        "title": "<p>Dropi</p>",
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "38px",
+                        "text": "<p></p>",
+                        "borderRadius": "20px",
+                        "minHeight": "384px",
+                        "backgroundImage": {},
+                        "titleColor": "#003037",
+                        "backgroundColor": "linear-gradient(76deg, rgba(0, 183, 181, 0.10) 4.2%, rgba(0, 183, 181, 0.50) 98.72%)",
+                        "padding": "48px",
+                        "useBackground": "image",
+                        "spaceBetweenTitleAndText": "20px",
+                        "titleTag": {
+                          "text": "<p></p>",
+                          "backgroundColor": ""
+                        },
+                        "borderColor": ""
                       }
-                    ],
-                    "bulletPointsColor": "#00363A",
-                    "bulletPointsIcon": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                    },
-                    "bulletPointsTextProps": {
-                      "color": "#00363A"
-                    }
+                    ]
                   },
-                  "cta": [
-                    {
-                      "type": "Button",
-                      "size": "Medium",
-                      "openModal": "Talk to specialist",
-                      "text": "Assinar",
-                      "backgroundColor": "#00363A",
-                      "borderColor": "#00363A",
-                      "textColor": "#FFFFFF",
-                      "showIcon": false
-                    }
-                  ],
-                  "title": "<p>Dropi</p>",
-                  "titleFont": "Galaxie Copernicus",
-                  "titleFontSize": "38px",
-                  "text": "<p></p>",
-                  "borderRadius": "20px",
-                  "minHeight": "384px",
-                  "backgroundImage": {},
-                  "titleColor": "#003037",
-                  "backgroundColor": "linear-gradient(76deg, rgba(0, 183, 181, 0.10) 4.2%, rgba(0, 183, 181, 0.50) 98.72%)",
-                  "padding": "48px",
-                  "useBackground": "image",
-                  "spaceBetweenTitleAndText": "20px",
-                  "titleTag": {
-                    "text": "<p></p>",
-                    "backgroundColor": ""
-                  },
-                  "borderColor": ""
+                  "paddingBottom": "120px",
+                  "distanceBetweenColums": "40px",
+                  "caption": "<p style=\"text-align: center\">💡 São duas assinaturas separadas para<br>operação completa.</p>",
+                  "captionTextProps": {
+                    "color": "#5F6E82",
+                    "lineHeight": "33px",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px"
+                  }
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
                 }
-              ]
-            },
-            "paddingBottom": "120px",
-            "distanceBetweenColums": "40px",
-            "caption": "<p style=\"text-align: center\">💡 São duas assinaturas separadas para<br>operação completa.</p>",
-            "captionTextProps": {
-              "color": "#5F6E82",
-              "lineHeight": "33px",
-              "fontFamily": "Inter",
-              "fontSize": "14px"
-            }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/CardsHero.tsx",
+                  "title": {
+                    "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Planos para começar</span><br><span style=\"color: rgb(0, 54, 58)\">com </span><em><span style=\"color: rgb(0, 183, 181)\">baixo investimento</span></em></p>",
+                    "font": "Galaxie Copernicus",
+                    "fontSize": "56px"
+                  },
+                  "tag": {
+                    "text": "<p></p>"
+                  },
+                  "leftColumn": {
+                    "cardsMaxWidth": "621px",
+                    "cards": [
+                      {
+                        "bulletPoints": {
+                          "items": [
+                            {
+                              "text": "Plano Crescimento: R$54/mês"
+                            },
+                            {
+                              "text": "Pedidos ilimitados"
+                            },
+                            {
+                              "text": "Integração com marketplaces"
+                            },
+                            {
+                              "text": "Sem taxa sobre vendas"
+                            }
+                          ],
+                          "bulletPointsIcon": {
+                            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                          },
+                          "bulletPointsColor": "#00363A",
+                          "bulletPointsTextProps": {
+                            "color": "#00363A"
+                          }
+                        },
+                        "cta": [
+                          {
+                            "type": "Button",
+                            "size": "Medium",
+                            "openModal": "Create Store",
+                            "text": "Assinar",
+                            "textColor": "#ffffff",
+                            "backgroundColor": "#00363A",
+                            "createStorePlanId": "172"
+                          }
+                        ],
+                        "title": "<p><span style=\"color: rgb(0, 54, 58); font-size: 28pt\">Loja integrada</span></p>",
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "38px",
+                        "titleTag": {
+                          "text": "<p></p>",
+                          "backgroundColor": ""
+                        },
+                        "text": "<p></p>",
+                        "backgroundColor": "linear-gradient(76deg, rgba(0, 183, 181, 0.10) 4.2%, rgba(0, 183, 181, 0.50) 98.72%)",
+                        "borderRadius": "20px",
+                        "padding": "48px",
+                        "titleColor": "#ffffff",
+                        "backgroundImage": {},
+                        "minHeight": "384px",
+                        "spaceBetweenTitleAndText": "10px",
+                        "borderColor": ""
+                      }
+                    ]
+                  },
+                  "rightColumn": {
+                    "cardsMaxWidth": "621px",
+                    "cards": [
+                      {
+                        "bulletPoints": {
+                          "items": [
+                            {
+                              "text": "Plano Básico: R$0/mês + 2,5% de taxa por pedido"
+                            },
+                            {
+                              "text": "Plano Iniciante: R$45/mês, sem taxas por pedido, até 50 produtos"
+                            }
+                          ],
+                          "bulletPointsColor": "#00363A",
+                          "bulletPointsIcon": {
+                            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
+                          },
+                          "bulletPointsTextProps": {
+                            "color": "#00363A"
+                          }
+                        },
+                        "cta": [
+                          {
+                            "type": "Button",
+                            "size": "Medium",
+                            "openModal": "Talk to specialist",
+                            "text": "Assinar",
+                            "backgroundColor": "#00363A",
+                            "borderColor": "#00363A",
+                            "textColor": "#FFFFFF",
+                            "showIcon": false
+                          }
+                        ],
+                        "useBackground": "image",
+                        "title": "<p>Dropi</p>",
+                        "titleFont": "Galaxie Copernicus",
+                        "titleFontSize": "38px",
+                        "text": "<p></p>",
+                        "backgroundColor": "linear-gradient(76deg, rgba(0, 183, 181, 0.10) 4.2%, rgba(0, 183, 181, 0.50) 98.72%)",
+                        "borderRadius": "20px",
+                        "titleColor": "#003037",
+                        "minHeight": "384px",
+                        "backgroundImage": {},
+                        "spaceBetweenTitleAndText": "20px",
+                        "titleTag": {
+                          "text": "<p></p>",
+                          "backgroundColor": ""
+                        },
+                        "padding": "48px",
+                        "borderColor": ""
+                      }
+                    ]
+                  },
+                  "paddingBottom": "120px",
+                  "distanceBetweenColums": "40px",
+                  "caption": "<p style=\"text-align: center\">💡 São duas assinaturas separadas para operação completa.</p>",
+                  "captionTextProps": {
+                    "color": "#5F6E82",
+                    "lineHeight": "33px"
+                  }
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
           },
           "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/CardsHero.tsx",
-            "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Planos para começar</span><br><span style=\"color: rgb(0, 54, 58)\">com </span><em><span style=\"color: rgb(0, 183, 181)\">baixo investimento</span></em></p>",
-              "font": "Galaxie Copernicus",
-              "fontSize": "56px"
-            },
-            "tag": {
-              "text": "<p></p>"
-            },
-            "leftColumn": {
-              "cardsMaxWidth": "621px",
-              "cards": [
-                {
-                  "bulletPoints": {
-                    "items": [
-                      {
-                        "text": "Plano Crescimento: R$54/mês"
-                      },
-                      {
-                        "text": "Pedidos ilimitados"
-                      },
-                      {
-                        "text": "Integração com marketplaces"
-                      },
-                      {
-                        "text": "Sem taxa sobre vendas"
-                      }
-                    ],
-                    "bulletPointsIcon": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                    },
-                    "bulletPointsColor": "#00363A",
-                    "bulletPointsTextProps": {
-                      "color": "#00363A"
-                    }
-                  },
-                  "cta": [
-                    {
-                      "type": "Button",
-                      "size": "Medium",
-                      "openModal": "Create Store",
-                      "text": "Assinar",
-                      "textColor": "#ffffff",
-                      "backgroundColor": "#00363A",
-                      "createStorePlanId": "172"
-                    }
-                  ],
-                  "title": "<p><span style=\"color: rgb(0, 54, 58); font-size: 28pt\">Loja integrada</span></p>",
-                  "titleFont": "Galaxie Copernicus",
-                  "titleFontSize": "38px",
-                  "titleTag": {
-                    "text": "<p></p>",
-                    "backgroundColor": ""
-                  },
-                  "text": "<p></p>",
-                  "backgroundColor": "linear-gradient(76deg, rgba(0, 183, 181, 0.10) 4.2%, rgba(0, 183, 181, 0.50) 98.72%)",
-                  "borderRadius": "20px",
-                  "padding": "48px",
-                  "titleColor": "#ffffff",
-                  "backgroundImage": {},
-                  "minHeight": "384px",
-                  "spaceBetweenTitleAndText": "10px",
-                  "borderColor": ""
-                }
-              ]
-            },
-            "rightColumn": {
-              "cardsMaxWidth": "621px",
-              "cards": [
-                {
-                  "bulletPoints": {
-                    "items": [
-                      {
-                        "text": "Plano Básico: R$0/mês + 2,5% de taxa por pedido"
-                      },
-                      {
-                        "text": "Plano Iniciante: R$45/mês, sem taxas por pedido, até 50 produtos"
-                      }
-                    ],
-                    "bulletPointsColor": "#00363A",
-                    "bulletPointsIcon": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/eedda8ad-0b7a-452f-8b57-cea36f2a5a2f/green-check-icon.svg"
-                    },
-                    "bulletPointsTextProps": {
-                      "color": "#00363A"
-                    }
-                  },
-                  "cta": [
-                    {
-                      "type": "Button",
-                      "size": "Medium",
-                      "openModal": "Talk to specialist",
-                      "text": "Assinar",
-                      "backgroundColor": "#00363A",
-                      "borderColor": "#00363A",
-                      "textColor": "#FFFFFF",
-                      "showIcon": false
-                    }
-                  ],
-                  "useBackground": "image",
-                  "title": "<p>Dropi</p>",
-                  "titleFont": "Galaxie Copernicus",
-                  "titleFontSize": "38px",
-                  "text": "<p></p>",
-                  "backgroundColor": "linear-gradient(76deg, rgba(0, 183, 181, 0.10) 4.2%, rgba(0, 183, 181, 0.50) 98.72%)",
-                  "borderRadius": "20px",
-                  "titleColor": "#003037",
-                  "minHeight": "384px",
-                  "backgroundImage": {},
-                  "spaceBetweenTitleAndText": "20px",
-                  "titleTag": {
-                    "text": "<p></p>",
-                    "backgroundColor": ""
-                  },
-                  "padding": "48px",
-                  "borderColor": ""
-                }
-              ]
-            },
-            "paddingBottom": "120px",
-            "distanceBetweenColums": "40px",
-            "caption": "<p style=\"text-align: center\">💡 São duas assinaturas separadas para operação completa.</p>",
-            "captionTextProps": {
-              "color": "#5F6E82",
-              "lineHeight": "33px"
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
+            "__resolveType": "website/matchers/never.ts"
           }
         }
       ]
@@ -5188,7 +5198,7 @@
               "annualTagTextColor": "",
               "arrows": false,
               "annualTagPosition": "below",
-              "paddingTop": "120px",
+              "paddingTop": "60px",
               "switchBackgroundColor": "",
               "switchBallColor": "",
               "hideSection": false,

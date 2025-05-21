@@ -4092,6 +4092,9 @@ details.collapse summary::-webkit-details-marker {
 .h-\[-20px\] {
   height: -20px;
 }
+.h-\[100vh\] {
+  height: 100vh;
+}
 .h-\[10px\] {
   height: 10px;
 }
@@ -4127,6 +4130,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[400px\] {
   height: 400px;
+}
+.h-\[400vh\] {
+  height: 400vh;
 }
 .h-\[48px\] {
   height: 48px;
@@ -5572,6 +5578,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
 .bg-error-content {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-erc,oklch(var(--erc)/var(--tw-bg-opacity)));
@@ -5591,6 +5601,10 @@ details.collapse summary::-webkit-details-marker {
 .bg-primary-content {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-pc,oklch(var(--pc)/var(--tw-bg-opacity)));
+}
+.bg-purple-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
 }
 .bg-red-500 {
   --tw-bg-opacity: 1;

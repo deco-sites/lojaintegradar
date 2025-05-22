@@ -10,6 +10,7 @@ export interface IImage {
     height?: number;
 }
 
+
 /** @title {{title}} */
 export interface Card {
     cardIcon?: IImage;

@@ -122,7 +122,7 @@
                 ]
               },
               "href": "/home ",
-              "alt": "logo ",
+              "alt": "logo",
               "width": 188
             },
             "initialButtons": [],
@@ -348,12 +348,13 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p>Opere seu ecommerce<br>como um</p>",
-              "font": "Galaxie Copernicus",
+              "text": "<p style=\"text-align: center\">Opere seu ecommerce<br>como um Expert</p>",
+              "font": "Lektorat Display var",
               "color": "#00363A",
-              "fontSize": "80px",
+              "fontSize": "90px",
               "letterSpacing": "-3px",
-              "titleMaxWidth": "874px"
+              "titleMaxWidth": "874px",
+              "lineHeight": "96px"
             },
             "cta": [
               {
@@ -392,11 +393,10 @@
             },
             "lcp": true,
             "floatingImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/b4976450-11e5-43b8-99db-47d6a278f24b/expert-word.svg",
               "horizontalPosition": "46%",
               "verticalPosition": "20%"
             },
-            "distanceBetweenTitleAndText": "40px",
+            "distanceBetweenTitleAndText": "20px",
             "textProps": {}
           },
           "rule": {

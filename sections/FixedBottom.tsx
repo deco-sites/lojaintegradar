@@ -43,7 +43,7 @@ export default function FixedBottom({ backgroundColor, logo, text, textProps, le
     class="fixed bottom-0 left-0 w-full"
     style={{ background: backgroundColor, zIndex }}>
     <div class="relative">
-      <button class="absolute top-2 left-2 p-2 z-40" hx-on:click={useScript(onClick)}>
+      <button class="absolute top-2 right-2 p-2 z-40" hx-on:click={useScript(onClick)}>
         X
       </button>
       <div class="px-[46px] py-[18px] lg:py-[35px] lg:px-16 flex flex-wrap lg:flex-nowrap gap-16 gap-y-5 items-center justify-between relative peer-checked:hidden" style={{ zIndex: zIndex + 2 }}>

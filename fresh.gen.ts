@@ -12,7 +12,6 @@ import * as $HeroInfo from "./islands/HeroInfo.tsx";
 import * as $HeroTab from "./islands/HeroTab.tsx";
 import * as $HeroTimeButtons from "./islands/HeroTimeButtons.tsx";
 import * as $PricesButtons from "./islands/PricesButtons.tsx";
-import * as $TestGsap from "./islands/TestGsap.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -29,7 +28,6 @@ const manifest = {
     "./islands/HeroTab.tsx": $HeroTab,
     "./islands/HeroTimeButtons.tsx": $HeroTimeButtons,
     "./islands/PricesButtons.tsx": $PricesButtons,
-    "./islands/TestGsap.tsx": $TestGsap,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

@@ -73,6 +73,7 @@ import * as $$$$$$64 from "./sections/TestimonialsWithBubbles.tsx";
 import * as $$$$$$65 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$66 from "./sections/TimeLine.tsx";
 import * as $$$$$$67 from "./sections/TransitionSection.tsx";
+import * as $$$$$$68 from "./sections/VisualOptimizerScript.tsx";
 
 const manifest = {
   "sections": {
@@ -144,6 +145,7 @@ const manifest = {
     "site/sections/Theme/Theme.tsx": $$$$$$65,
     "site/sections/TimeLine.tsx": $$$$$$66,
     "site/sections/TransitionSection.tsx": $$$$$$67,
+    "site/sections/VisualOptimizerScript.tsx": $$$$$$68,
   },
   "actions": {
     "site/actions/sendTcoUserData.ts": $$$$$$$$$0,

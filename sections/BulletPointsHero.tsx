@@ -151,7 +151,7 @@ export function HeroMedia({ media }: { media?: Media }) {
       src={`${media.video?.src}`}
       frameborder="0"
       style={{ width: media.video?.width || 410, height: media.video?.height || 710 }}
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen gyroscope; picture-in-picture"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
     />}
   </div>
 }

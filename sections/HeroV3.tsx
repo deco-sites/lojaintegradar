@@ -130,7 +130,7 @@ export function HeroMedia({ media }: { media?: Media }) {
       src={media.video?.src}
       frameborder="0"
       style={{ width: media.video?.width || 854, height: media.video?.height || 480 }}
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen gyroscope; picture-in-picture"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
     />}
   </>
 }

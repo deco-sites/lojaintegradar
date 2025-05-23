@@ -121,7 +121,7 @@
                   }
                 ]
               },
-              "href": "/home ",
+              "href": "/home",
               "alt": "logo",
               "width": 188
             },
@@ -276,7 +276,7 @@
         }
       ],
       "distanceFromRightEnd": 34,
-      "distanceFromBottom": 120,
+      "distanceFromBottom": 180,
       "distanceBetweenButtons": 20
     },
     {
@@ -569,9 +569,11 @@
           "value": {
             "__resolveType": "site/sections/CardsHero.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Mostre que sua marca entende o  cliente.<br>Traduza dados&nbsp; em </span><em><span style=\"color: rgb(0, 54, 58)\">soluções inteligentes</span></em></p>",
-              "fontSize": "56px",
-              "letterSpacing": "-3px"
+              "text": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Vendas cada vez mais inteligentes<br>e simplificadas</span></p>",
+              "letterSpacing": "-1px",
+              "font": "Lektorat Display var",
+              "fontSize": "46px",
+              "fontWeight": "500"
             },
             "leftColumn": {
               "cards": [
@@ -703,7 +705,7 @@
             },
             "paddingBottom": "120px",
             "paddingTop": "120px",
-            "caption": "<p style=\"text-align: center\"><span>Na Loja Integrada, unimos informações estruturadas a automação para<br>maximizar cada oportunidade de venda.</span></p>",
+            "caption": "<p style=\"text-align: center\">Alcance, engaje e recupere vendas de forma automatizada com soluções<br>nativas já disponíveis na plataforma</p>",
             "distanceBetweenColums": "56px",
             "bottomCta": [
               {
@@ -720,7 +722,9 @@
               }
             ],
             "captionTextProps": {
-              "color": ""
+              "color": "#5F6E82",
+              "fontFamily": "Inter medium",
+              "fontSize": "22px"
             },
             "tag": {
               "textProps": {}
@@ -920,15 +924,16 @@
           "value": {
             "__resolveType": "site/sections/DetailedCarouselV2.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\"><em><span style=\"color: rgb(0, 54, 58)\">Fature enquanto eles trabalham.<br></span></em><span style=\"color: rgb(0, 54, 58)\">Automatize formas de ganhar dinheiro.</span></p>",
+              "text": "<p style=\"text-align: center\">Plataforma com IA que agiliza sua rotina,<br>com tudo que você precisa, em um só lugar.</p>",
               "fontSize": "46px",
-              "letterSpacing": "-3px",
-              "font": "Galaxie Copernicus",
+              "letterSpacing": "-1px",
+              "font": "Lektorat Display var",
               "lineHeight": "58px",
-              "fontWeight": "500"
+              "fontWeight": "500",
+              "color": "#00363A"
             },
             "caption": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces<br>e aumente a retenção de clientes com a tecnologia que trabalha por você.</span></p>",
+              "text": "<p></p>",
               "fontWeight": "500",
               "fontSize": "22px"
             },
@@ -960,10 +965,11 @@
                 },
                 "video": {},
                 "media": {
-                  "video": {
-                    "src": "https://data.decoassets.com/lojaintegradar/cbb6ca8f-fb83-49d4-b37e-f4db7847381c/reengaje-clientes-(903kb).mp4"
-                  },
-                  "use": "video"
+                  "video": {},
+                  "use": "image",
+                  "image": {
+                    "src": "https://assets.decocache.com/lojaintegradar/eae282f9-28eb-4a95-bf8b-268f11c0b61b/reengaje-clientes.png"
+                  }
                 },
                 "textContainer": {
                   "backgroundColor": "#FFE6A080"
@@ -1305,8 +1311,8 @@
         {
           "value": {
             "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
-            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: rgb(0, 54, 58)\">lojistas</span></p>",
-            "caption": "<p style=\"text-align: center\"><span style=\"color: #5f6e82\">que escolheram a forma mais eficiente  de vender online</span></p>",
+            "title": "<p style=\"text-align: center\">Junte-se a mais de 2,7<br>milhões de lojistas</p>",
+            "caption": "<p style=\"text-align: center\">Que escolheram a forma mais eficiente de vender online</p>",
             "slides": [
               {
                 "content": {
@@ -1354,8 +1360,8 @@
             "dots": false,
             "paddingTop": "120px",
             "paddingBottom": "80px",
-            "titleColor": "",
-            "titleFont": "Galaxie Copernicus",
+            "titleColor": "#00363A",
+            "titleFont": "Lektorat Display var",
             "arrowsColor": "",
             "bubbleImages": [
               {
@@ -1471,10 +1477,12 @@
               "show": true
             },
             "titleFontSize": "46px",
-            "titleLetterSpacing": "-3px",
+            "titleLetterSpacing": "-1px",
             "titleFontWeight": "500",
             "titleLineHeight": "58px",
-            "captionFontSize": "22px"
+            "captionFontSize": "22px",
+            "captionColor": "#5F6E82",
+            "captionFont": "Inter medium"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -8739,16 +8747,26 @@
       "__resolveType": "site/sections/TalkToSpecialistModal.tsx"
     },
     {
-      "__resolveType": "site/sections/BackToTopButton.tsx",
-      "text": "Voltar ao topo",
-      "textColor": "#FAFAF5",
-      "backgroundColor": "#371E55",
-      "appearAt": 1500,
-      "position": {
-        "distanceFromScreenBottom": 20,
-        "distanceFromScreenRightEnd": 20
-      },
-      "size": 84
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/BackToTopButton.tsx",
+            "text": "Voltar ao topo",
+            "textColor": "#FAFAF5",
+            "backgroundColor": "#371E55",
+            "appearAt": 1500,
+            "position": {
+              "distanceFromScreenBottom": 20,
+              "distanceFromScreenRightEnd": 20
+            },
+            "size": 84
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
@@ -8823,9 +8841,11 @@
             "__resolveType": "site/sections/FixedBottom.tsx",
             "backgroundColor": "#D1CABD",
             "logo": {
-              "src": "https://assets.decocache.com/lojaintegradar/ecbec128-dcda-40ee-a557-25559c5ed7de/Komea-logo.svg"
+              "src": "https://assets.decocache.com/lojaintegradar/ecbec128-dcda-40ee-a557-25559c5ed7de/Komea-logo.svg",
+              "width": 220,
+              "height": 40
             },
-            "text": "<p><span>Comece a vender com a ajuda de múltiplos agentes especialistas</span></p>",
+            "text": "<p>Conheça uma nova forma de vender online</p>",
             "textProps": {
               "color": "#002621",
               "letterSpacing": "-0.75px"
@@ -8835,7 +8855,7 @@
                 "type": "Button",
                 "size": "Large",
                 "openModal": "Talk to specialist",
-                "text": "Conheça o novo lançamento",
+                "text": "Saiba mais sobre o Komea",
                 "textColor": "#002621",
                 "backgroundColor": "#EEFC58",
                 "borderColor": "#EEFC58",

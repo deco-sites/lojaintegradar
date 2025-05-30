@@ -351,17 +351,18 @@
               "text": "<p style=\"text-align: center\">Opere seu ecommerce<br>como um Expert</p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
-              "fontSize": "90px",
-              "letterSpacing": "-3px",
-              "titleMaxWidth": "874px",
-              "lineHeight": "96px"
+              "fontSize": "62px",
+              "letterSpacing": "-0.3px",
+              "lineHeight": "100%",
+              "fontWeight": "750",
+              "titleMaxWidth": "874px"
             },
             "cta": [
               {
                 "type": "Button",
                 "size": "Large",
                 "openModal": "Create Store",
-                "text": "Comece agora sem custos",
+                "text": "Criar loja grátis",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
@@ -396,8 +397,10 @@
               "horizontalPosition": "46%",
               "verticalPosition": "20%"
             },
-            "distanceBetweenTitleAndText": "20px",
-            "textProps": {}
+            "textProps": {
+              "fontFamily": "Inter medium",
+              "fontSize": "16px"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -570,10 +573,11 @@
             "__resolveType": "site/sections/CardsHero.tsx",
             "title": {
               "text": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Vendas cada vez mais inteligentes<br>e simplificadas</span></p>",
-              "letterSpacing": "-1px",
+              "letterSpacing": "-0.3px",
               "font": "Lektorat Display var",
-              "fontSize": "46px",
-              "fontWeight": "500"
+              "fontSize": "62px",
+              "fontWeight": "750",
+              "lineHeight": "100%"
             },
             "leftColumn": {
               "cards": [
@@ -622,7 +626,7 @@
                 {
                   "cta": [],
                   "title": "<p><span>Ações automatizadas que</span></p><p><span>trabalham por você</span></p>",
-                  "text": "<p><span style=\"color: #5f6e82\">Envie alertas de carrinho abandonado, personalizecampanhas segmentadas e ajuste preços de forma inteligente.</span></p>",
+                  "text": "<p>Envie alertas de carrinho abandonado, personalize campanhas<br>segmentadas e ajuste preços de forma inteligente.</p>",
                   "titleFontSize": "22px",
                   "backgroundColor": "",
                   "borderRadius": "20px",
@@ -642,13 +646,19 @@
                   "borderColor": "#F2F4F5",
                   "titleFontWeight": "500",
                   "minHeight": "0",
-                  "titleLineHeight": "150%",
-                  "padding": "37px 35px"
+                  "titleLineHeight": "30px",
+                  "padding": "37px 35px",
+                  "titleFont": "inter medium",
+                  "textProps": {
+                    "color": "#5F6E82",
+                    "fontFamily": "Inter medium",
+                    "fontSize": "16px"
+                  }
                 },
                 {
                   "cta": [],
                   "title": "<p><span>Se mostre relevante em</span></p><p><span>todos os contatos</span></p>",
-                  "text": "<p><span style=\"color: #5f6e82\">Leve ofertas contextualizadas para seus clientestambém via WhatsApp.</span></p>",
+                  "text": "<p>Leve ofertas contextualizadas para seus clientes<br>também via WhatsApp.</p>",
                   "titleFontSize": "22px",
                   "backgroundColor": "",
                   "borderRadius": "20px",
@@ -666,10 +676,15 @@
                   "useBackground": "image",
                   "titleColor": "#00363A",
                   "borderColor": "#F2F4F5",
-                  "titleFontWeight": "500",
                   "minHeight": "0",
-                  "titleLineHeight": "150%",
-                  "padding": "36px 35px"
+                  "titleLineHeight": "30px",
+                  "padding": "36px 35px",
+                  "titleFont": "Inter medium",
+                  "textProps": {
+                    "color": "#5F6E82",
+                    "fontFamily": "Inter medium",
+                    "fontSize": "16px"
+                  }
                 },
                 {
                   "image": {
@@ -686,19 +701,26 @@
                   "useBackground": "image",
                   "contentPlacement": "top",
                   "backgroundImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/531c9147-068b-4f4b-a73c-794c8324eb6d/cards-hero-card-4-background-image.png",
-                    "width": 620,
-                    "height": 414
+                    "src": "https://assets.decocache.com/lojaintegradar/647c2084-1b00-49b3-b3ce-faa19013ea03/automacoes-marketing-LojaIntegrada.png",
+                    "height": 414,
+                    "width": 680
                   },
                   "borderRadius": "20px",
                   "title": "<p><span>+ R$ 30</span></p><p><span>milhões</span></p>",
-                  "titleColor": "#ffffff",
-                  "titleFont": "Galaxie Copernicus",
-                  "titleFontSize": "56px",
+                  "titleColor": " #00363A",
+                  "titleFont": "Lektorat Display var",
                   "titleLineHeight": "67px",
-                  "titleLetterSpacing": "-3px",
+                  "titleLetterSpacing": "-1px",
                   "padding": "87px 35px",
-                  "text": "<p><span style=\"color: #00363a\">de vendas recuperadas<br>em 2024 com ferramentas <br>de automação de marketing<br>da Loja Integrada.</span></p>"
+                  "text": "<p><span style=\"color: #00363a\">de vendas recuperadas<br>em 2024 com ferramentas <br>de automação de marketing<br>da Loja Integrada.</span></p>",
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "lineHeight": "100%"
+                  },
+                  "titleFontSize": "60px",
+                  "titleFontWeight": "750"
                 }
               ],
               "cardsMaxWidth": "597px"
@@ -724,7 +746,8 @@
             "captionTextProps": {
               "color": "#5F6E82",
               "fontFamily": "Inter medium",
-              "fontSize": "22px"
+              "fontSize": "16px",
+              "lineHeight": "125%"
             },
             "tag": {
               "textProps": {}
@@ -924,18 +947,17 @@
           "value": {
             "__resolveType": "site/sections/DetailedCarouselV2.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\">Plataforma com IA que agiliza sua rotina,<br>com tudo que você precisa, em um só lugar.</p>",
-              "fontSize": "46px",
-              "letterSpacing": "-1px",
+              "text": "<p style=\"text-align: center\">Plataforma com IA que agiliza sua rotina.<br>Tudo que você precisa, em um só lugar.</p>",
+              "fontSize": "62px",
               "font": "Lektorat Display var",
-              "lineHeight": "58px",
-              "fontWeight": "500",
-              "color": "#00363A"
+              "lineHeight": "100%",
+              "fontWeight": "750",
+              "color": "#00363A",
+              "letterSpacing": "-0.3px"
             },
             "caption": {
               "text": "<p></p>",
-              "fontWeight": "500",
-              "fontSize": "22px"
+              "color": ""
             },
             "paddingTop": "80px",
             "paddingBottom": "80px",
@@ -1476,13 +1498,13 @@
               "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
               "show": true
             },
-            "titleFontSize": "46px",
-            "titleLetterSpacing": "-1px",
-            "titleFontWeight": "500",
-            "titleLineHeight": "58px",
-            "captionFontSize": "22px",
+            "titleFontSize": "62px",
+            "titleFontWeight": "750",
+            "titleLineHeight": "100%",
+            "captionFontSize": "16px",
             "captionColor": "#5F6E82",
-            "captionFont": "Inter medium"
+            "captionFont": "Inter medium",
+            "titleLetterSpacing": "-0.3px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1752,11 +1774,11 @@
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
               "text": "<p style=\"text-align: center\">Já vende em outra plataforma?</p>",
-              "font": "Galaxie Copernicus",
-              "lineHeight": "58px",
-              "fontSize": "46px",
-              "letterSpacing": "-3px",
-              "fontWeight": "550",
+              "font": "Lektorat Display var",
+              "lineHeight": "100%",
+              "fontSize": "62px",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "750",
               "color": "#00363A"
             },
             "subTitle": {
@@ -1921,8 +1943,9 @@
             "paddingBottom": "0",
             "caption": {
               "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
-              "fontSize": "22px",
-              "color": "#5F6E82"
+              "fontSize": "16px",
+              "color": "#5F6E82",
+              "font": "inter medium"
             },
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
@@ -2838,25 +2861,29 @@
           "value": {
             "__resolveType": "site/sections/AutomaticCarouselV2.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\"><em><span>Nós queremos que você cresça! </span></em><span><br>Seja qual for o tamanho do seu negócio</span></p>",
-              "font": "Galaxie Copernicus",
-              "lineHeight": "58px",
-              "letterSpacing": "-3px",
-              "color": "#00363A"
+              "text": "<p style=\"text-align: center\">Nós queremos que você cresça! Seja qual for<br>o tamanho do seu negócio</p>",
+              "font": "Lektorat Display",
+              "lineHeight": "100%",
+              "letterSpacing": "-0.3px",
+              "color": "#00363A",
+              "fontWeight": "750",
+              "fontSize": "62px"
             },
             "backgroundColor": "",
             "paddingTop": "120px",
             "paddingBottom": "0",
             "caption": {
               "text": "<p style=\"text-align: center\"><span>A plataforma que se adapta às suas necessidades</span></p>",
-              "color": "#5F6E82"
+              "color": "#5F6E82",
+              "font": "Inter medium",
+              "fontSize": "16px"
             },
             "cta": [
               {
                 "type": "Button",
                 "size": "Large",
                 "openModal": "Create Store",
-                "text": "Começar agora sem custos",
+                "text": "Crie sua loja grátis",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
@@ -6304,9 +6331,11 @@
               "219": ">",
               "text": "<p style=\"text-align: center\"><span>Planos que crescem com o seu negócio</span></p>",
               "color": "#00363A",
-              "font": "Galaxie Copernicus",
-              "letterSpacing": "-3px",
-              "fontWeight": "500"
+              "font": "Lektorat Display var",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "750",
+              "fontSize": "62px",
+              "lineHeight": "100%"
             },
             "id": "plans",
             "caption": {
@@ -6364,7 +6393,8 @@
               "51": "a",
               "text": "<p style=\"text-align: center\"><span>Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
               "color": "#5F6E82",
-              "fontWeight": "500"
+              "font": "Inter medium",
+              "fontSize": "16px"
             },
             "slides": [
               {

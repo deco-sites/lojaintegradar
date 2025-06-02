@@ -8734,120 +8734,110 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "backgroundColor": "#EEFC58",
+            "logo": {
+              "src": "https://assets.decocache.com/lojaintegradar/ecbec128-dcda-40ee-a557-25559c5ed7de/Komea-logo.svg",
+              "width": 195,
+              "height": 36
+            },
+            "text": "<p>Comece a vender com um time de agentes especialistas</p>",
+            "textProps": {
+              "color": "#002621",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "lineHeight": "100%"
+            },
+            "cta": [
               {
-                "value": {
-                  "__resolveType": "site/sections/FixedBottom.tsx",
-                  "backgroundColor": "#D1CABD",
-                  "logo": {
-                    "src": "https://assets.decocache.com/lojaintegradar/ecbec128-dcda-40ee-a557-25559c5ed7de/Komea-logo.svg",
-                    "width": 195,
-                    "height": 36
-                  },
-                  "text": "<p>Agentes de IA operando lado a lado com você</p>",
-                  "textProps": {
-                    "color": "#002621",
-                    "fontFamily": "Inter medium",
-                    "fontSize": "16px",
-                    "lineHeight": "100%"
-                  },
-                  "cta": [
-                    {
-                      "type": "Button",
-                      "size": "Large",
-                      "openModal": "Talk to specialist",
-                      "text": "Conheça o novo lançamento",
-                      "textColor": "#002621",
-                      "backgroundColor": "#EEFC58",
-                      "borderColor": "#EEFC58",
-                      "customWidth": "280px",
-                      "customProps": {
-                        "padding": "22px 14px",
-                        "letterSpacing": "-1px",
-                        "borderRadius": "1000px",
-                        "height": "50px",
-                        "width": "100%"
-                      },
-                      "showIcon": true,
-                      "singleLine": true,
-                      "customIcon": {
-                        "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
-                        "width": 7
-                      },
-                      "iconGap": "2px"
-                    }
-                  ],
-                  "rightBackgroundImage": {
-                    "width": 116,
-                    "height": 158
-                  },
-                  "leftBackgroundImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/27755367-bbfc-4b6e-8139-fe0984835856/left-few-bubbles.svg",
-                    "width": 46,
-                    "height": 147
-                  }
+                "size": "Large",
+                "text": "Conheça o novo lançamento",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#002621",
+                "borderColor": "#002621",
+                "customWidth": "280px",
+                "customProps": {
+                  "padding": "22px 14px",
+                  "letterSpacing": "-1px",
+                  "borderRadius": "1000px",
+                  "height": "50px",
+                  "width": "100%"
                 },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/FixedBottom.tsx",
-                  "backgroundColor": "#EEFC58",
-                  "logo": {
-                    "src": "https://assets.decocache.com/lojaintegradar/56450c6c-8725-4133-819e-141a3f7bcb5e/komea.svg",
-                    "width": 234,
-                    "height": 44.47
-                  },
-                  "text": "<p>Comece a vender com um time de agentes especialistas, no seu bolso.</p>",
-                  "textProps": {
-                    "color": "#00363A",
-                    "letterSpacing": "-0.75px",
-                    "fontSize": "16px",
-                    "fontFamily": "Inter"
-                  },
-                  "cta": [
-                    {
-                      "type": "Button",
-                      "size": "Large",
-                      "text": "Saiba mais sobre a Komea",
-                      "textColor": "#FFFFFF",
-                      "backgroundColor": "#00363A",
-                      "borderColor": "#00363A",
-                      "customWidth": "280px",
-                      "customProps": {
-                        "padding": "22px 32px",
-                        "letterSpacing": "-1px",
-                        "borderRadius": "1000px",
-                        "height": "50px"
-                      },
-                      "showIcon": false,
-                      "singleLine": true,
-                      "customIcon": {
-                        "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
-                        "width": 7
-                      },
-                      "iconGap": "2px",
-                      "href": "https://www.komea.com.br/app"
-                    }
-                  ],
-                  "rightBackgroundImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/25057603-6955-429f-9232-ea842472cb71/home-komea-bg.png",
-                    "width": 506,
-                    "height": 120
-                  }
+                "showIcon": true,
+                "singleLine": true,
+                "customIcon": {
+                  "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
+                  "width": 7
                 },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
+                "iconGap": "2px",
+                "href": "https://www.komea.com.br/app",
+                "type": "Button"
               }
-            ]
+            ],
+            "rightBackgroundImage": {
+              "width": 116,
+              "height": 158
+            },
+            "leftBackgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/c9623cec-c0b7-40b6-a1f0-88c12597c488/home-komea-bg-mobile.png",
+              "width": 115,
+              "height": 147
+            }
           },
           "rule": {
-            "__resolveType": "website/matchers/never.ts"
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "backgroundColor": "#EEFC58",
+            "logo": {
+              "src": "https://assets.decocache.com/lojaintegradar/56450c6c-8725-4133-819e-141a3f7bcb5e/komea.svg",
+              "width": 234,
+              "height": 44.47
+            },
+            "text": "<p>Comece a vender com um time de agentes especialistas, no seu bolso.</p>",
+            "textProps": {
+              "color": "#00363A",
+              "letterSpacing": "-0.75px",
+              "fontSize": "16px",
+              "fontFamily": "Inter"
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "text": "Saiba mais sobre a Komea",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "customWidth": "280px",
+                "customProps": {
+                  "padding": "22px 32px",
+                  "letterSpacing": "-1px",
+                  "borderRadius": "1000px",
+                  "height": "50px"
+                },
+                "showIcon": false,
+                "singleLine": true,
+                "customIcon": {
+                  "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
+                  "width": 7
+                },
+                "iconGap": "2px",
+                "href": "https://www.komea.com.br/app"
+              }
+            ],
+            "rightBackgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/25057603-6955-429f-9232-ea842472cb71/home-komea-bg.png",
+              "width": 506,
+              "height": 120
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
         }
       ]

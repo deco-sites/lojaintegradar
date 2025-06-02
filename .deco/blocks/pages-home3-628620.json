@@ -264,20 +264,30 @@
       ]
     },
     {
-      "__resolveType": "site/sections/FloatingButtons.tsx",
-      "buttons": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "image": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
-            "alt": "Whatsapp icon"
+          "value": {
+            "__resolveType": "site/sections/FloatingButtons.tsx",
+            "buttons": [
+              {
+                "image": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
+                  "alt": "Whatsapp icon"
+                },
+                "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero+saber+mais+informações+sobre+a+Loja+Integrada...&type=phone_number&app_absent=0",
+                "size": 57
+              }
+            ],
+            "distanceFromRightEnd": 34,
+            "distanceFromBottom": 180,
+            "distanceBetweenButtons": 20
           },
-          "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero+saber+mais+informações+sobre+a+Loja+Integrada...&type=phone_number&app_absent=0",
-          "size": 57
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
         }
-      ],
-      "distanceFromRightEnd": 34,
-      "distanceFromBottom": 180,
-      "distanceBetweenButtons": 20
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -791,10 +801,10 @@
               },
               {
                 "content": {
-                  "description": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e comfácil integração à VTEX.</span></p>",
-                  "avatar": "https://assets.decocache.com/lojaintegradar/37649613-97b8-4dac-b902-c83f74b53c62/testimonial-avatar.png",
-                  "name": "<p><span style=\"color: rgb(0, 54, 58);\" data-mce-style=\"color: rgb(0, 54, 58);\">Matheus da M.Camicado</span><span style=\"color: rgb(95, 110, 130); font-size: 10pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 10pt;\"></span></p>",
-                  "alt": "m camicado",
+                  "description": "<p><span style=\"color: rgb(95, 110, 130)\">No primeiro mês pós-migração, minha taxa de conversão cresceu 60%. A plataforma é fácil de usar e o suporte é próximo e eficiente.</span></p>",
+                  "avatar": "https://assets.decocache.com/lojaintegradar/cb3f2aea-dc5a-4bfe-8218-c4291cf5c7c8/livraria-florence.png",
+                  "name": "<p><span style=\"color: rgb(0, 54, 58)\">Livraria Florence</span></p>",
+                  "alt": "livraria Florence",
                   "quoteIconColor": "",
                   "nameIconColor": "#5F6E82",
                   "nameBackgroundColor": "",
@@ -803,7 +813,7 @@
                   "backgroundColor": "",
                   "avatarHeight": 63,
                   "roundedAvatar": false,
-                  "nameCaption": "<p><span style=\"color: #5f6e82\">Loja no ar em cerca de 60 dias</span></p>",
+                  "nameCaption": "<p><span style=\"color: rgb(95, 110, 130)\">Loja no ar em cerca de 30 dias</span></p>",
                   "borderColor": "#CBCBC1"
                 }
               }
@@ -870,10 +880,10 @@
               },
               {
                 "content": {
-                  "description": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e comfácil integração à VTEX.</span></p>",
-                  "avatar": "https://assets.decocache.com/lojaintegradar/37649613-97b8-4dac-b902-c83f74b53c62/testimonial-avatar.png",
-                  "name": "<p><span style=\"color: rgb(0, 54, 58);\" data-mce-style=\"color: rgb(0, 54, 58);\">Matheus da M.Camicado</span><span style=\"color: rgb(95, 110, 130); font-size: 10pt;\" data-mce-style=\"color: rgb(95, 110, 130); font-size: 10pt;\"></span></p>",
-                  "alt": "m camicado",
+                  "description": "<p><span style=\"color: rgb(95, 110, 130)\">No primeiro mês pós-migração, minha taxa de conversão cresceu 60%. A plataforma é fácil de usar e o suporte é próximo e eficiente.</span></p>",
+                  "avatar": "https://assets.decocache.com/lojaintegradar/cb3f2aea-dc5a-4bfe-8218-c4291cf5c7c8/livraria-florence.png",
+                  "name": "<p><span style=\"color: rgb(0, 54, 58)\">Livraria Florence</span></p>",
+                  "alt": "livraria florence",
                   "quoteIconColor": "",
                   "nameIconColor": "#5F6E82",
                   "nameBackgroundColor": "",
@@ -882,7 +892,7 @@
                   "backgroundColor": "",
                   "avatarHeight": 63,
                   "roundedAvatar": false,
-                  "nameCaption": "<p><span style=\"color: #5f6e82\">Loja no ar em cerca de 60 dias</span></p>",
+                  "nameCaption": "<p><span style=\"color: rgb(95, 110, 130)\">Loja no ar em cerca de 30 dias</span></p>",
                   "borderColor": "#CBCBC1"
                 }
               }
@@ -1096,11 +1106,11 @@
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
               "text": "<p style=\"text-align: center\">Já vende em outra plataforma?</p>",
-              "font": "Galaxie Copernicus",
-              "lineHeight": "120%",
+              "font": "Lektorat Display var",
+              "lineHeight": "100%",
               "fontSize": "32px",
-              "letterSpacing": "-3px",
-              "fontWeight": "550",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "750",
               "color": "#00363A"
             },
             "subTitle": {
@@ -1118,15 +1128,17 @@
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "text": "<p>Crescimento inteligente</p>",
                   "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "letterSpacing": "-3px"
+                  "font": "inter",
+                  "fontSize": "18px",
+                  "fontWeight": "750"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
                   "text": "<p>Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</p>",
-                  "color": "#5F6E82"
+                  "color": "#5F6E82",
+                  "font": "inter",
+                  "fontSize": "14px"
                 },
                 "tabImage": {
                   "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
@@ -1139,8 +1151,6 @@
                 "videoText": "Ver demo",
                 "tags": [],
                 "tabVideo": {
-                  "width": 664,
-                  "height": 520,
                   "widthDesktop": 620,
                   "heightDesktop": 409,
                   "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
@@ -1157,15 +1167,17 @@
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "text": "<p><span>Liberdade para personalizar</span></p>",
                   "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "letterSpacing": "-3px"
+                  "font": "Inter",
+                  "fontWeight": "750",
+                  "fontSize": "18px"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
-                  "color": "#5F6E82"
+                  "text": "<p>Adicione banners, faixas e páginas para atrair e converter clientes com facilidade.</p>",
+                  "color": "#5F6E82",
+                  "font": "inter",
+                  "fontSize": "14px"
                 },
                 "tabImage": {
                   "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
@@ -1196,15 +1208,17 @@
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "text": "<p><span>Usabilidade simplificada</span></p>",
                   "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "letterSpacing": "-3px"
+                  "font": "Inter",
+                  "fontWeight": "750",
+                  "fontSize": "18px"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>",
-                  "color": "#5F6E82"
+                  "text": "<p>A melhor usabilidade para navegar e controlar seu e-commerce de forma simples e prática.</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px"
                 },
                 "tabImage": {
                   "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
@@ -1262,9 +1276,11 @@
             "tabsInterval": 30,
             "backgroundColor": "",
             "caption": {
-              "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
+              "text": "<p style=\"text-align: center\">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma segura,estável<br>e descomplicada</p>",
               "fontSize": "16px",
-              "color": "#5F6E82"
+              "color": "#5F6E82",
+              "font": "Inter",
+              "lineHeight": "125%"
             },
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
@@ -8331,110 +8347,120 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/FixedBottom.tsx",
-            "backgroundColor": "#D1CABD",
-            "logo": {
-              "src": "https://assets.decocache.com/lojaintegradar/ecbec128-dcda-40ee-a557-25559c5ed7de/Komea-logo.svg",
-              "width": 195,
-              "height": 36
-            },
-            "text": "<p>Agentes de IA operando lado a lado com você</p>",
-            "textProps": {
-              "color": "#002621",
-              "fontFamily": "Inter medium",
-              "fontSize": "16px",
-              "lineHeight": "100%"
-            },
-            "cta": [
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
               {
-                "type": "Button",
-                "size": "Large",
-                "openModal": "Talk to specialist",
-                "text": "Conheça o novo lançamento",
-                "textColor": "#002621",
-                "backgroundColor": "#EEFC58",
-                "borderColor": "#EEFC58",
-                "customWidth": "280px",
-                "customProps": {
-                  "padding": "22px 14px",
-                  "letterSpacing": "-1px",
-                  "borderRadius": "1000px",
-                  "height": "50px",
-                  "width": "100%"
+                "value": {
+                  "__resolveType": "site/sections/FixedBottom.tsx",
+                  "backgroundColor": "#D1CABD",
+                  "logo": {
+                    "src": "https://assets.decocache.com/lojaintegradar/ecbec128-dcda-40ee-a557-25559c5ed7de/Komea-logo.svg",
+                    "width": 195,
+                    "height": 36
+                  },
+                  "text": "<p>Agentes de IA operando lado a lado com você</p>",
+                  "textProps": {
+                    "color": "#002621",
+                    "fontFamily": "Inter medium",
+                    "fontSize": "16px",
+                    "lineHeight": "100%"
+                  },
+                  "cta": [
+                    {
+                      "type": "Button",
+                      "size": "Large",
+                      "openModal": "Talk to specialist",
+                      "text": "Conheça o novo lançamento",
+                      "textColor": "#002621",
+                      "backgroundColor": "#EEFC58",
+                      "borderColor": "#EEFC58",
+                      "customWidth": "280px",
+                      "customProps": {
+                        "padding": "22px 14px",
+                        "letterSpacing": "-1px",
+                        "borderRadius": "1000px",
+                        "height": "50px",
+                        "width": "100%"
+                      },
+                      "showIcon": true,
+                      "singleLine": true,
+                      "customIcon": {
+                        "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
+                        "width": 7
+                      },
+                      "iconGap": "2px"
+                    }
+                  ],
+                  "rightBackgroundImage": {
+                    "width": 116,
+                    "height": 158
+                  },
+                  "leftBackgroundImage": {
+                    "src": "https://assets.decocache.com/lojaintegradar/27755367-bbfc-4b6e-8139-fe0984835856/left-few-bubbles.svg",
+                    "width": 46,
+                    "height": 147
+                  }
                 },
-                "showIcon": true,
-                "singleLine": true,
-                "customIcon": {
-                  "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
-                  "width": 7
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/FixedBottom.tsx",
+                  "backgroundColor": "#EEFC58",
+                  "logo": {
+                    "src": "https://assets.decocache.com/lojaintegradar/56450c6c-8725-4133-819e-141a3f7bcb5e/komea.svg",
+                    "width": 234,
+                    "height": 44.47
+                  },
+                  "text": "<p>Comece a vender com um time de agentes especialistas, no seu bolso.</p>",
+                  "textProps": {
+                    "color": "#00363A",
+                    "letterSpacing": "-0.75px",
+                    "fontSize": "16px",
+                    "fontFamily": "Inter"
+                  },
+                  "cta": [
+                    {
+                      "type": "Button",
+                      "size": "Large",
+                      "text": "Saiba mais sobre a Komea",
+                      "textColor": "#FFFFFF",
+                      "backgroundColor": "#00363A",
+                      "borderColor": "#00363A",
+                      "customWidth": "280px",
+                      "customProps": {
+                        "padding": "22px 32px",
+                        "letterSpacing": "-1px",
+                        "borderRadius": "1000px",
+                        "height": "50px"
+                      },
+                      "showIcon": false,
+                      "singleLine": true,
+                      "customIcon": {
+                        "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
+                        "width": 7
+                      },
+                      "iconGap": "2px",
+                      "href": "https://www.komea.com.br/app"
+                    }
+                  ],
+                  "rightBackgroundImage": {
+                    "src": "https://assets.decocache.com/lojaintegradar/25057603-6955-429f-9232-ea842472cb71/home-komea-bg.png",
+                    "width": 506,
+                    "height": 120
+                  }
                 },
-                "iconGap": "2px"
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
               }
-            ],
-            "rightBackgroundImage": {
-              "width": 116,
-              "height": 158
-            },
-            "leftBackgroundImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/27755367-bbfc-4b6e-8139-fe0984835856/left-few-bubbles.svg",
-              "width": 46,
-              "height": 147
-            }
+            ]
           },
           "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/FixedBottom.tsx",
-            "backgroundColor": "#EEFC58",
-            "logo": {
-              "src": "https://assets.decocache.com/lojaintegradar/56450c6c-8725-4133-819e-141a3f7bcb5e/komea.svg",
-              "width": 234,
-              "height": 44.47
-            },
-            "text": "<p>Comece a vender com um time de agentes especialistas, no seu bolso.</p>",
-            "textProps": {
-              "color": "#00363A",
-              "letterSpacing": "-0.75px",
-              "fontSize": "16px",
-              "fontFamily": "Inter"
-            },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Large",
-                "text": "Saiba mais sobre a Komea",
-                "textColor": "#FFFFFF",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "customWidth": "280px",
-                "customProps": {
-                  "padding": "22px 32px",
-                  "letterSpacing": "-1px",
-                  "borderRadius": "1000px",
-                  "height": "50px"
-                },
-                "showIcon": false,
-                "singleLine": true,
-                "customIcon": {
-                  "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
-                  "width": 7
-                },
-                "iconGap": "2px",
-                "href": "https://www.komea.com.br/app"
-              }
-            ],
-            "rightBackgroundImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/25057603-6955-429f-9232-ea842472cb71/home-komea-bg.png",
-              "width": 506,
-              "height": 120
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
+            "__resolveType": "website/matchers/never.ts"
           }
         }
       ]

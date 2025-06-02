@@ -1,0 +1,397 @@
+{
+  "__resolveType": "website/flags/multivariate/section.ts",
+  "variants": [
+    {
+      "value": {
+        "__resolveType": "site/sections/CardsHero.tsx",
+        "title": {
+          "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Vendas cada vez mais inteligentes e simplificadas</span></p>",
+          "letterSpacing": "-0.3px",
+          "font": "Lektorat Display var",
+          "fontSize": "32px",
+          "fontWeight": "750",
+          "lineHeight": "100%"
+        },
+        "leftColumn": {
+          "cards": [
+            {
+              "cta": [],
+              "title": "<p>“Leram meu<br>pensamento!”</p>",
+              "titleFont": "Lektorat Display var",
+              "text": "<p>Entenda o comportamento do cliente e transforme cada interação em uma chance<br>de conversão.</p>",
+              "titleFontSize": "46px",
+              "titleTag": {
+                "text": "<p></p>"
+              },
+              "backgroundColor": "",
+              "bulletPoints": {
+                "items": [],
+                "bulletPointsTextProps": {
+                  "color": ""
+                }
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172"
+              },
+              "useBackground": "image",
+              "image": {
+                "imagePlacement": "bottom"
+              },
+              "titleLetterSpacing": "-0.3px",
+              "titleColor": "#FFFFFF",
+              "backgroundImage": {
+                "src": "https://assets.decocache.com/lojaintegradar/912f0cf9-6831-46db-819b-ef4dafe384db/leram-meu-pensamento-mobile.png",
+                "height": 461,
+                "width": 331
+              },
+              "spaceBetweenTitleAndText": "20px",
+              "borderRadius": "20px",
+              "padding": "10px",
+              "textProps": {
+                "fontFamily": "inter ",
+                "fontSize": "16px",
+                "color": "#00363A"
+              },
+              "titleFontWeight": "750",
+              "titleLineHeight": "47px",
+              "minHeight": "694px"
+            }
+          ],
+          "cardsMaxWidth": "597px"
+        },
+        "rightColumn": {
+          "cards": [
+            {
+              "cta": [],
+              "title": "<p><span>Ações automatizadas que</span></p><p><span>trabalham por você</span></p>",
+              "text": "<p>Envie alertas de carrinho abandonado, personalize campanhas segmentadas e ajuste preços de forma inteligente.</p>",
+              "titleFontSize": "22px",
+              "backgroundColor": "",
+              "borderRadius": "20px",
+              "bulletPoints": {
+                "items": []
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172"
+              },
+              "image": {
+                "width": 554,
+                "height": 69
+              },
+              "useBackground": "image",
+              "titleColor": "#00363A",
+              "borderColor": "#F2F4F5",
+              "titleFontWeight": "750",
+              "minHeight": "0",
+              "titleLineHeight": "30px",
+              "padding": "37px 35px",
+              "titleFont": "inter",
+              "textProps": {
+                "color": "#5F6E82",
+                "fontFamily": "Inter",
+                "fontSize": "16px"
+              }
+            },
+            {
+              "cta": [],
+              "title": "<p><span>Se mostre relevante em</span></p><p><span>todos os contatos</span></p>",
+              "text": "<p>Leve ofertas contextualizadas para seus clientes também via WhatsApp.</p>",
+              "titleFontSize": "22px",
+              "backgroundColor": "",
+              "borderRadius": "20px",
+              "bulletPoints": {
+                "items": []
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172"
+              },
+              "image": {
+                "width": 554,
+                "height": 69
+              },
+              "useBackground": "image",
+              "titleColor": "#00363A",
+              "borderColor": "#F2F4F5",
+              "minHeight": "0",
+              "titleLineHeight": "30px",
+              "padding": "36px 35px",
+              "titleFont": "Inter",
+              "textProps": {
+                "color": "#5F6E82",
+                "fontFamily": "Inter",
+                "fontSize": "16px"
+              },
+              "titleFontWeight": "750"
+            },
+            {
+              "image": {
+                "imagePlacement": "top"
+              },
+              "bulletPoints": {
+                "items": []
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172"
+              },
+              "cta": [],
+              "useBackground": "image",
+              "contentPlacement": "top",
+              "backgroundImage": {
+                "src": "https://assets.decocache.com/lojaintegradar/647c2084-1b00-49b3-b3ce-faa19013ea03/automacoes-marketing-LojaIntegrada.png",
+                "height": 414,
+                "width": 680
+              },
+              "borderRadius": "20px",
+              "title": "<p><span>+ R$ 30</span></p><p><span>milhões</span></p>",
+              "titleColor": " #00363A",
+              "titleFont": "Lektorat Display var",
+              "titleLineHeight": "42px",
+              "titleLetterSpacing": "-1px",
+              "padding": "87px 20px",
+              "text": "<p><span style=\"color: #00363a\">de vendas recuperadas<br>em 2024 com ferramentas <br>de automação de marketing<br>da Loja Integrada.</span></p>",
+              "titleFontSize": "42px",
+              "textProps": {
+                "color": "#00363A",
+                "fontFamily": "Inter",
+                "fontSize": "14px",
+                "lineHeight": "100%"
+              },
+              "titleFontWeight": "750"
+            }
+          ],
+          "cardsMaxWidth": "597px"
+        },
+        "paddingBottom": "86px",
+        "paddingTop": "86px",
+        "caption": "<p style=\"text-align: center\">Alcance, engaje e recupere vendas de forma automatizada com soluções nativas já disponíveis<br>na plataforma</p>",
+        "distanceBetweenColums": "56px",
+        "bottomCta": [
+          {
+            "type": "Button",
+            "size": "Large",
+            "openModal": "Create Store",
+            "text": "Começar sem custos",
+            "textColor": "#FFFFFF",
+            "backgroundColor": "#00363A",
+            "borderColor": "#00363A",
+            "createStorePlanId": "172",
+            "showIcon": false,
+            "customIcon": {}
+          }
+        ],
+        "captionTextProps": {
+          "color": "#5F6E82",
+          "fontFamily": "Inter",
+          "fontSize": "16px",
+          "lineHeight": "125%"
+        },
+        "tag": {
+          "textProps": {}
+        }
+      },
+      "rule": {
+        "__resolveType": "website/matchers/device.ts",
+        "mobile": true
+      }
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/CardsHero.tsx",
+        "title": {
+          "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Vendas cada vez mais inteligentes<br>e simplificadas</span></p>",
+          "letterSpacing": "-0.3px",
+          "font": "Lektorat Display var",
+          "fontSize": "62px",
+          "fontWeight": "750",
+          "lineHeight": "100%"
+        },
+        "leftColumn": {
+          "cards": [
+            {
+              "cta": [],
+              "title": "<p>“Leram meu<br>pensamento!”</p>",
+              "titleFont": "Lektorat Display var",
+              "text": "<p>Entenda o comportamento do cliente e transforme<br>cada interação em uma chance de conversão.</p>",
+              "titleFontSize": "46px",
+              "titleTag": {
+                "text": "<p></p>"
+              },
+              "backgroundColor": "",
+              "bulletPoints": {
+                "items": [],
+                "bulletPointsTextProps": {
+                  "color": ""
+                }
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172"
+              },
+              "useBackground": "image",
+              "image": {
+                "imagePlacement": "bottom"
+              },
+              "titleLetterSpacing": "-0.3px",
+              "titleColor": "#FFFFFF",
+              "backgroundImage": {
+                "src": "https://assets.decocache.com/lojaintegradar/b1e15422-356c-41f8-875d-4deb6f3e0238/leram-meu-pensamento-desktop.png",
+                "height": 876,
+                "width": 628
+              },
+              "spaceBetweenTitleAndText": "30px",
+              "textProps": {
+                "fontFamily": "inter ",
+                "fontSize": "16px",
+                "color": "#00363A"
+              },
+              "titleFontWeight": "750",
+              "titleLineHeight": "47px",
+              "borderRadius": "20px",
+              "minHeight": "832px",
+              "padding": "48px"
+            }
+          ],
+          "cardsMaxWidth": "597px"
+        },
+        "rightColumn": {
+          "cards": [
+            {
+              "cta": [],
+              "title": "<p><span>Ações automatizadas que</span></p><p><span>trabalham por você</span></p>",
+              "text": "<p>Envie alertas de carrinho abandonado, personalize campanhas<br>segmentadas e ajuste preços de forma inteligente.</p>",
+              "titleFontSize": "22px",
+              "backgroundColor": "",
+              "borderRadius": "20px",
+              "bulletPoints": {
+                "items": []
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172"
+              },
+              "image": {
+                "width": 554,
+                "height": 69
+              },
+              "useBackground": "image",
+              "titleColor": "#00363A",
+              "borderColor": "#F2F4F5",
+              "titleFontWeight": "500",
+              "minHeight": "0",
+              "titleLineHeight": "30px",
+              "padding": "37px 35px",
+              "titleFont": "inter medium",
+              "textProps": {
+                "color": "#5F6E82",
+                "fontFamily": "Inter medium",
+                "fontSize": "16px"
+              }
+            },
+            {
+              "cta": [],
+              "title": "<p><span>Se mostre relevante em</span></p><p><span>todos os contatos</span></p>",
+              "text": "<p>Leve ofertas contextualizadas para seus clientes<br>também via WhatsApp.</p>",
+              "titleFontSize": "22px",
+              "backgroundColor": "",
+              "borderRadius": "20px",
+              "bulletPoints": {
+                "items": []
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172"
+              },
+              "image": {
+                "width": 554,
+                "height": 69
+              },
+              "useBackground": "image",
+              "titleColor": "#00363A",
+              "borderColor": "#F2F4F5",
+              "minHeight": "0",
+              "titleLineHeight": "30px",
+              "padding": "36px 35px",
+              "titleFont": "Inter medium",
+              "textProps": {
+                "color": "#5F6E82",
+                "fontFamily": "Inter medium",
+                "fontSize": "16px"
+              }
+            },
+            {
+              "image": {
+                "imagePlacement": "top"
+              },
+              "bulletPoints": {
+                "items": []
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172"
+              },
+              "cta": [],
+              "useBackground": "image",
+              "contentPlacement": "top",
+              "backgroundImage": {
+                "src": "https://assets.decocache.com/lojaintegradar/909ff33c-b69b-4145-8a45-6bc33534b9ba/30-milhoes-recuperados.png",
+                "height": 414,
+                "width": 680
+              },
+              "borderRadius": "20px",
+              "title": "<p><span>+ R$ 30</span></p><p><span>milhões</span></p>",
+              "titleColor": " #00363A",
+              "titleFont": "Lektorat Display var",
+              "titleLineHeight": "67px",
+              "titleLetterSpacing": "-1px",
+              "padding": "87px 35px",
+              "text": "<p><span style=\"color: #00363a\">de vendas recuperadas<br>em 2024 com ferramentas <br>de automação de marketing<br>da Loja Integrada.</span></p>",
+              "textProps": {
+                "color": "#00363A",
+                "fontFamily": "Inter",
+                "fontSize": "16px",
+                "lineHeight": "100%"
+              },
+              "titleFontSize": "60px",
+              "titleFontWeight": "750"
+            }
+          ],
+          "cardsMaxWidth": "597px"
+        },
+        "paddingBottom": "120px",
+        "paddingTop": "120px",
+        "caption": "<p style=\"text-align: center\">Alcance, engaje e recupere vendas de forma automatizada com soluções<br>nativas já disponíveis na plataforma</p>",
+        "distanceBetweenColums": "56px",
+        "bottomCta": [
+          {
+            "type": "Button",
+            "size": "Large",
+            "openModal": "Create Store",
+            "text": "Começar sem custos",
+            "textColor": "#FFFFFF",
+            "backgroundColor": "#00363A",
+            "borderColor": "#00363A",
+            "createStorePlanId": "172",
+            "showIcon": false,
+            "customIcon": {}
+          }
+        ],
+        "captionTextProps": {
+          "color": "#5F6E82",
+          "fontFamily": "Inter medium",
+          "fontSize": "16px",
+          "lineHeight": "125%"
+        },
+        "tag": {
+          "textProps": {}
+        }
+      },
+      "rule": {
+        "__resolveType": "website/matchers/always.ts"
+      }
+    }
+  ]
+}

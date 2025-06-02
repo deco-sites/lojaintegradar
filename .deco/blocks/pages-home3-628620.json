@@ -13,9 +13,9 @@
               "buttons": [
                 {
                   "text": "Criar loja gráis",
-                  "backgroundColor": "#B7FBDB",
-                  "textColor": "#00363A",
-                  "borderColor": "#B7FBDB",
+                  "backgroundColor": "#00363A",
+                  "textColor": "#ffffff",
+                  "borderColor": "#00363A",
                   "size": "Small",
                   "type": "Button",
                   "openModal": "Create Store",
@@ -39,8 +39,8 @@
                   "ctaStyle": "button",
                   "text": "Fazer login",
                   "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "backgroundColor": "#B7FBDB",
-                  "borderColor": "#B7FBDB",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#00363A",
                   "textColor": "#00363A",
                   "size": "Small"
                 }
@@ -114,7 +114,7 @@
                 "__resolveType": "website/flags/multivariate/image.ts",
                 "variants": [
                   {
-                    "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/051ff7e6-5058-4e08-a303-b41222f9773c/Loja-Integrada-RGB---Prioritaria---Fundo-Branco---LOGO-1.svg",
+                    "value": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
                     "rule": {
                       "__resolveType": "website/matchers/always.ts"
                     }
@@ -126,7 +126,7 @@
               "width": 188
             },
             "initialButtons": [],
-            "backgroundColor": "rgba(0, 54, 58, 0.3)",
+            "backgroundColor": "#DFEEDD",
             "barsColor": "#ffffff",
             "asideMenuTopBackgroundColor": "#D0DAD9",
             "asideMenuBackgroundColor": "#ffffff",
@@ -246,7 +246,7 @@
               "textColor": "#ebeaea",
               "textHoverColor": "",
               "menusBackgroundColor": "#ffffff",
-              "titlesTextColor": "#ffffff",
+              "titlesTextColor": "#00363A",
               "titlesTextHoverColor": "",
               "menusTextColor": "#371E56",
               "menusItemsHoverBackgroundColor": "#E9F9F9",
@@ -255,7 +255,7 @@
               "titlesTextProps": {}
             },
             "asideMenuOnlyMobile": true,
-            "noScrollBackgroundColor": "rgba(0, 54, 58, 0.3)"
+            "noScrollBackgroundColor": ""
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

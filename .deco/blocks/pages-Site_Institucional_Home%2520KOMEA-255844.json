@@ -508,48 +508,6 @@
             "variants": [
               {
                 "value": {
-                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "paddingTop": "42px",
-                  "title": "<p style=\"text-align: center\"><em><span style=\"color: rgb(40, 195, 195); font-size: 18pt\">Mostre que sua marca entende o cliente.</span></em><span style=\"font-size: 12pt\"><br></span><span style=\"color: rgb(0, 48, 55); font-size: 32pt\">Traduza dados em inteligência.</span></p>",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 13pt\">Na Loja Integrada, unimos informações estruturadas a automação para maximizar </span><span style=\"color: rgb(40, 195, 195); font-size: 14pt\"> cada oportunidade de venda</span></p>",
-                  "cta": [],
-                  "image": {},
-                  "titleFont": "Instrument serif",
-                  "features": [],
-                  "use": "image"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/BigImageHeroV2.tsx",
-                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Vendas cada vez mais inteligentes<br>e simplificadas</span></p>",
-                  "paddingTop": "120px",
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px; font-weight: 300;\">Na Loja Integrada, unimos informações estruturadas a automação para<br> maximizar</span><span style=\"color: rgb(40, 195, 195); font-size: 24px; font-weight: 300;\"> cada oportunidade de venda</span></p>",
-                  "cta": [],
-                  "paddingBottom": "0px",
-                  "image": {},
-                  "titleFont": "Lektorat Display",
-                  "features": [],
-                  "use": "image",
-                  "titleProps": {
-                    "color": "#00363A"
-                  }
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
                   "__resolveType": "site/sections/CardsHero.tsx",
                   "paddingTop": "0px",
                   "paddingBottom": "0px",
@@ -627,8 +585,15 @@
               {
                 "value": {
                   "__resolveType": "site/sections/CardsHero.tsx",
-                  "title": {},
-                  "paddingTop": "0px",
+                  "title": {
+                    "text": "<p style=\"text-align: center\"><span style=\"color: #00363a\">Vendas cada vez mais inteligentes<br>e simplificadas</span></p>",
+                    "font": "Lektorat Display",
+                    "fontSize": "62px",
+                    "lineHeight": "100%",
+                    "letterSpacing": "-0.3px",
+                    "fontWeight": "750"
+                  },
+                  "paddingTop": "120px",
                   "leftColumn": {
                     "cards": [
                       {
@@ -666,7 +631,7 @@
                         "cta": [],
                         "useBackground": "image",
                         "title": "<p><strong>Mostre-se relevante em <br>todos os contatos</strong></p>",
-                        "titleColor": "#003037",
+                        "titleColor": "#00363A",
                         "text": "<p style=\"line-height: 1.6;\" data-mce-style=\"line-height: 1.6;\"><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Leve ofertas contextualizadas para seus clientes<br>também via WhatsApp.</span></p><p><br data-mce-bogus=\"1\"></p>",
                         "minHeight": "211px",
                         "backgroundImage": {
@@ -713,6 +678,17 @@
                         "titleFontSize": "32px"
                       }
                     ]
+                  },
+                  "tag": {
+                    "text": "<p></p>"
+                  },
+                  "paddingBottom": "0px",
+                  "caption": "<p style=\"text-align: center\"><span>Alcance, engaje e recupere vendas de forma automatizada com soluções</span><br><span>nativas já disponíveis na plataforma</span></p>",
+                  "captionTextProps": {
+                    "color": "#5F6E82",
+                    "fontFamily": "Inter medium",
+                    "fontSize": "16px",
+                    "lineHeight": "18px"
                   }
                 },
                 "rule": {
@@ -763,20 +739,20 @@
                 "value": {
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
                   "title": "<p></p>",
+                  "paddingTop": "0px",
                   "titleFont": "Instrument serif",
                   "cta": [],
                   "paddingBottom": "120px",
                   "caption": "<p></p>",
-                  "paddingTop": "0px",
                   "features": [],
                   "image": {},
                   "use": "image",
                   "createStoreCta": {
                     "planId": "172",
                     "text": "Começar no grátis",
-                    "backgroundColor": "#003037",
+                    "backgroundColor": "#00363A",
                     "textColor": "#FFFFFF",
-                    "borderColor": "#003037"
+                    "borderColor": "#00363A"
                   }
                 },
                 "rule": {
@@ -1522,10 +1498,10 @@
                 "value": {
                   "__resolveType": "site/sections/Logos.tsx",
                   "title": "<p></p>",
-                  "caption": "<p></p>",
-                  "titleFont": "Instrument serif",
-                  "paddingTop": "0px",
                   "titleColor": "#371E55",
+                  "titleFont": "Instrument serif",
+                  "caption": "<p></p>",
+                  "paddingTop": "0px",
                   "captionColor": "#5F6E82",
                   "logos": [
                     {
@@ -1567,10 +1543,10 @@
                 "value": {
                   "__resolveType": "site/sections/Logos.tsx",
                   "title": "<p></p>",
-                  "caption": "<p></p>",
-                  "titleFont": "Instrument serif",
-                  "paddingBottom": "120px",
                   "titleColor": "#371E55",
+                  "titleFont": "Instrument serif",
+                  "caption": "<p></p>",
+                  "paddingBottom": "120px",
                   "captionColor": "#5F6E82",
                   "logos": [
                     {
@@ -1626,15 +1602,15 @@
                 "value": {
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
                   "title": "<p style=\"text-align: center; font-size: 32pt; \"><span style=\"color: rgb(0, 48, 55);\">A loja do Neymar </span><em><span style=\"color: rgb(40, 195, 195)\">é da Loja Integrada!</span></em></p>",
-                  "paddingTop": "80px",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size:14pt; font-weight: 300;\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos e estratégias voltadas para engajamento e recompra.</span></p>",
                   "titleFont": "Instrument Serif",
+                  "paddingTop": "80px",
                   "id": "LojaNeymar",
                   "image": {
                     "src": "https://assets.decocache.com/lojaintegradar/6486e35a-f5b7-4354-b5bd-2044defd3b57/img-case-neymar-mobile.png",
                     "width": 390,
                     "height": 311
                   },
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size:14pt; font-weight: 300;\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos e estratégias voltadas para engajamento e recompra.</span></p>",
                   "features": [
                     {
                       "icon": {
@@ -1684,8 +1660,9 @@
                 "value": {
                   "__resolveType": "site/sections/BigImageHeroV2.tsx",
                   "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">A loja do Neymar </span><em><span style=\"color: rgb(40, 195, 195)\">é da Loja Integrada!</span></em></p>",
-                  "paddingBottom": "0",
+                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos<br>e estratégias voltadas para engajamento e recompra.</span></p>",
                   "titleFont": "Instrument Serif",
+                  "paddingBottom": "0",
                   "id": "LojaNeymar",
                   "hideSection": false,
                   "image": {
@@ -1693,7 +1670,6 @@
                     "height": 878,
                     "width": 1331
                   },
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130); font-size: 24px\">A operação da Next10 combina tecnologia avançada para sustentar até altos volumes de acessos<br>e estratégias voltadas para engajamento e recompra.</span></p>",
                   "features": [
                     {
                       "icon": {
@@ -1750,10 +1726,11 @@
                 "value": {
                   "__resolveType": "site/sections/Carousel.tsx",
                   "title": "<p style=\"line-height:1; \"><span style=\"color: rgb(0, 48, 55); font-size:32pt;  font-weight:300; \">Nós queremos mais é<br> que você cresça!</span></p><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:18px; font-weight:300; font-family: 'Inter'; \">Uma plataforma que se adapta às suas necessidades, seja qual for o tamanho do<br> seu negócio.</p>",
-                  "paddingBottom": "120px",
                   "paddingTop": "80px",
-                  "titleColor": "",
                   "titleFont": "Instrument serif",
+                  "id": "nossoecossistema",
+                  "paddingBottom": "120px",
+                  "titleColor": "",
                   "captionColor": "#371E55",
                   "slides": [
                     {
@@ -1840,7 +1817,6 @@
                   ],
                   "arrows": true,
                   "arrowsColor": "#003037",
-                  "id": "nossoecossistema",
                   "cta": [
                     {
                       "ctaStyle": "button",
@@ -1875,9 +1851,11 @@
                   "__resolveType": "site/sections/Carousel.tsx",
                   "title": "<p><span style=\"color: rgb(0, 48, 55); font-size:70px;  font-weight:300; \">Nós queremos mais é que você cresça!</span><p style=\"line-height:0.8 \"><span style=\"color: #5F6E82; font-size:24px; font-weight:300; font-family: 'Inter'; \"><br>Uma plataforma que se adapta às suas necessidades, seja qual for <br>o tamanho do seu negócio.</p>",
                   "paddingBottom": "120px",
+                  "titleFont": "Instrument serif",
+                  "hideSection": false,
+                  "id": "nossoecossistema",
                   "titleColor": "",
                   "captionColor": "",
-                  "titleFont": "Instrument serif",
                   "slides": [
                     {
                       "title": "Para quem está começando no e-commerce",
@@ -1966,7 +1944,6 @@
                     }
                   ],
                   "arrows": true,
-                  "id": "nossoecossistema",
                   "arrowsColor": "#003037",
                   "cta": [],
                   "backgroundImage": {
@@ -1980,7 +1957,6 @@
                     "backgroundColor": "#003037",
                     "borderColor": "#003037"
                   },
-                  "hideSection": false,
                   "titleTextProps": {
                     "fontSize": "43px"
                   },
@@ -2002,8 +1978,8 @@
                     "desktop": "<p style=\"text-align: center; font-family: Instrument Serif;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: Instrument Serif; \">Já vende em outra plataforma?</span></em><br></p>",
                     "mobile": "<p style=\"text-align: center; font-family: Instrument Serif;\"><span style=\"color: rgb(113, 219, 212); font-size: 32pt; font-family: Instrument Serif; line-height:1;\">Já vende em outra plataforma?</span><br></p>"
                   },
-                  "paddingBottom": "120",
                   "paddingTop": "120",
+                  "paddingBottom": "120",
                   "subTitle": {
                     "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18px; font-family: 'Inter'; text-align:center; font-weight:300; \">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma segura, estável e descomplicada.</span></p>",
                     "desktop": "<p style=\"text-align: center; line-height:1.2; \"><span style=\"color: rgb(255, 255, 255); font-size: 24px; font-family: 'Inter'; font-weight:100;\">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma<br> segura, estável e descomplicada</span></p>"
@@ -2740,16 +2716,12 @@
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                },
                 "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
                   "title": "<p style=\"font-family: 'Instrument Serif'; color:#003037; font-size:32pt; line-height:1.2; \"><span>Planos que crescem<br> com o seu negócio</span></p>",
-                  "id": "plans",
                   "paddingBottom": "80px",
                   "paddingTop": "80px",
+                  "id": "plans",
                   "slides": [
                     {
                       "title": "<p style=\"font-size: 36pt; line-height:-1.2;\"><span>Comece sem<br> custos</span></p>",
@@ -3050,18 +3022,19 @@
                   "annualTagTextColor": "#371E55",
                   "annualTag": "- 2O% FF",
                   "annualTagPosition": "aside"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
                 }
               },
               {
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                },
                 "value": {
                   "__resolveType": "site/sections/PlansV2.tsx",
                   "title": "<p style=\"font-family: 'Instrument Serif';\" data-mce-style=\"font-family: 'Instrument Serif';\"><span style=\"color: #003037;\" data-mce-style=\"color: #003037;\">Planos que crescem com o seu negócio</span></p><p style=\"text-align: center; line-height:0.5; \" data-mce-style=\"text-align: center;\"><span style=\"color: #5f6e82; font-size: 24px; font-weight: 300; font-family: 'Inter';\" data-mce-style=\"color: #5f6e82; font-size: 24px; line-height: 1; font-weight: 300; font-family: 'Inter';\">Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
-                  "id": "plans",
                   "paddingBottom": "80px",
                   "paddingTop": "80px",
+                  "id": "plans",
                   "slides": [
                     {
                       "title": "<p style=\"font-size: 36pt; line-height:-1.2;\"><span>Comece sem<br> custos</span></p>",
@@ -3374,6 +3347,9 @@
                       "textColor": "#FFFFFF"
                     }
                   ]
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
                 }
               }
             ]

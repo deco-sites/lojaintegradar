@@ -738,7 +738,7 @@
                 "type": "Button",
                 "size": "Medium",
                 "openModal": "Create Store",
-                "text": "Crie sua loja grátos",
+                "text": "Crie sua loja grátis",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
@@ -3377,7 +3377,7 @@
             "cta": [
               {
                 "type": "Button",
-                "size": "Large",
+                "size": "Medium",
                 "openModal": "Create Store",
                 "text": "Crie sua loja grátis",
                 "textColor": "#ffffff",
@@ -3507,11 +3507,13 @@
           "value": {
             "__resolveType": "site/sections/PlansV3.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\"><span>Planos que crescem com o seu negócio</span></p>",
+              "text": "<p style=\"text-align: center\">Planos que crescem com<br>o seu negócio</p>",
               "color": "#00363A",
-              "font": "Galaxie Copernicus",
-              "letterSpacing": "-3px",
-              "fontWeight": "500"
+              "font": "Lektorat Display var",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "750",
+              "fontSize": "32px",
+              "lineHeight": "100%"
             },
             "backgroundImage": {
               "src": "https://assets.decocache.com/lojaintegradar/7b491429-e34e-41cb-83c3-be75d3ced3c7/plans-background-2.svg",
@@ -3520,9 +3522,11 @@
             "id": "plans",
             "paddingTop": "40px",
             "caption": {
-              "text": "<p style=\"text-align: center\"><span>Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
+              "text": "<p style=\"text-align: center\">Escolha a oferta ideal para a sua loja<br>e comece a vender hoje mesmo</p>",
               "color": "#5F6E82",
-              "fontWeight": "500"
+              "font": "Inter",
+              "fontSize": "16px",
+              "lineHeight": "125%"
             },
             "slides": [
               {
@@ -5983,7 +5987,7 @@
               "217": "/",
               "218": "p",
               "219": ">",
-              "text": "<p style=\"text-align: center\"><span>Planos que crescem com o seu negócio</span></p>",
+              "text": "<p style=\"text-align: center\">Planos que crescem<br>com o seu negócio</p>",
               "color": "#00363A",
               "font": "Lektorat Display var",
               "letterSpacing": "-0.3px",
@@ -6089,7 +6093,7 @@
                     "alt": "crown icon"
                   },
                   "textColor1": "#ce2c2c",
-                  "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)",
+                  "textColor": "00363A",
                   "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
                   "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
                   "fontFamily": "Instrument Serif",
@@ -6785,16 +6789,16 @@
                   "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)"
                 },
                 "seeMoreButtonText": "Ver mais",
-                "backgroundColor": "",
+                "backgroundColor": "#B7FBDB",
                 "cutedMontlyFeeColor": "#FAFAF5",
                 "annualSavingColor": "#FAFAf5",
                 "cta": [],
                 "createStoreWithPlanCta": {
                   "planId": "180",
                   "text": "Teste agora",
-                  "backgroundColor": "#B7FBDB",
-                  "textColor": "#00363A",
-                  "borderColor": "#B7FBDB",
+                  "backgroundColor": "#00363A",
+                  "textColor": "#ffffff",
+                  "borderColor": "#00363A",
                   "ctaStyle": "button",
                   "showIcon": false
                 },
@@ -6813,15 +6817,15 @@
                 "titleFont": "Instrument Serif",
                 "title": {
                   "text": "<p><span>Comece<br>Grátis</span></p>",
-                  "color": "var(--Gradient-aqua-turquoise-light, linear-gradient(180deg, var(--Color-primary-aqua, #B7FBDB) 0%, var(--Color-primary-turquoise-light, #81FFFE) 100%))",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "fontSize": "46px",
-                  "letterSpacing": "-3px"
+                  "color": "#00363A",
+                  "font": "Lektorat Display var",
+                  "fontWeight": "750",
+                  "fontSize": "48px",
+                  "letterSpacing": "-0.3px",
+                  "lineHeight": "100%"
                 },
-                "borderColor": "#F2F4F5",
+                "borderColor": "",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/63f45309-8600-4476-b815-1661ee6b3c40/plan-background-image.svg",
                   "width": 298,
                   "height": 548
                 }
@@ -6840,19 +6844,16 @@
                       "text": "<p><span>Tudo do plano grátis +</span></p>"
                     },
                     {
-                      "text": "<p><span>Checkout transparente</span></p>",
-                      "toolTipText": "exemplo tooltip"
+                      "text": "<p><span>Checkout transparente</span></p>"
                     },
                     {
-                      "text": "<p><span>Ferramenta de avaliação, CompreJunto e recuperação de carrinho abandonado e produto</span></p>"
+                      "text": "<p>Ferramenta de avaliação</p>"
                     },
                     {
-                      "text": "<p><span>Lorem ipsum dolor sit amet</span></p>",
-                      "toolTipText": "tool tip text"
+                      "text": "<p>Compre Junto</p>"
                     },
                     {
-                      "text": "<p><span>Lorem ipsum dolor sit amet</span></p>",
-                      "toolTipText": "tool tip text"
+                      "text": "<p>Recuperação de carrinho abandonado e produto</p>"
                     }
                   ],
                   "bulletPointsIcon": {
@@ -7223,7 +7224,7 @@
                   "338": "/",
                   "339": "p",
                   "340": ">",
-                  "text": "<p><span style=\"font-size: 36pt\">R$43</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
+                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span><br><span style=\"font-size: 36pt\">R$54</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
                   "color": "#00363A"
                 },
                 "annualMontlyFee": {
@@ -7488,7 +7489,7 @@
                   "258": "/",
                   "259": "p",
                   "260": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span></p><p><span style=\"font-size: 36pt\">R$43</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ XX ao ano</span></p>",
+                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span></p><p><span style=\"font-size: 36pt\">R$43</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ 132 ao ano</span></p>",
                   "color": "#00363A"
                 },
                 "annualSaving": {
@@ -7506,19 +7507,20 @@
                   "planId": "176",
                   "text": "Criar minha loja",
                   "ctaStyle": "button",
-                  "backgroundColor": "Transparent",
-                  "textColor": "#00363A",
+                  "backgroundColor": "#00363A",
+                  "textColor": "#FFFFF",
                   "borderColor": "#00363A"
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
                 "title": {
-                  "text": "<p><span>Crescimento</span></p>",
+                  "text": "<p>Crescimento</p>",
                   "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "letterSpacing": "-3px",
-                  "fontSize": "38px"
+                  "font": "Lektorat Display var",
+                  "fontWeight": "750",
+                  "fontSize": "42px",
+                  "letterSpacing": "-0.3px",
+                  "lineHeight": "100%"
                 },
                 "borderColor": "#F2F4F5"
               },
@@ -7536,8 +7538,7 @@
                       "text": "<p><span>Tudo do plano crescimento +</span></p>"
                     },
                     {
-                      "text": "<p><span>Enriquecimento de produtos com IA</span></p>",
-                      "toolTipText": "exemplo tooltip"
+                      "text": "<p><span>Enriquecimento de produtos com IA</span></p>"
                     },
                     {
                       "text": "<p><span>Avaliação de produto com foto</span></p>"
@@ -7548,12 +7549,6 @@
                     {
                       "text": "<p><span>Edição de HTML</span></p>",
                       "toolTipText": "tool tip text"
-                    },
-                    {
-                      "text": "<p><span>Lorem ipsum dolor sit amet</span></p>"
-                    },
-                    {
-                      "text": "<p><span>Lorem ipsum dolor sit amet</span></p>"
                     }
                   ],
                   "bulletPointsIcon": {
@@ -7924,7 +7919,7 @@
                   "338": "/",
                   "339": "p",
                   "340": ">",
-                  "text": "<p><span style=\"font-size: 36pt\">R$79</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
+                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span><br><span style=\"font-size: 36pt\">R$99</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
                   "color": "#00363A"
                 },
                 "annualMontlyFee": {
@@ -8189,7 +8184,7 @@
                   "258": "/",
                   "259": "p",
                   "260": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span></p><p><span style=\"font-size: 36pt\">R$79</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ XX ao ano</span></p>",
+                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span></p><p><span style=\"font-size: 36pt\">R$79</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
                   "color": "#00363A"
                 },
                 "annualSaving": {
@@ -8207,19 +8202,20 @@
                   "planId": "174",
                   "text": "Criar minha loja",
                   "ctaStyle": "button",
-                  "backgroundColor": "Transparent",
-                  "textColor": "#00363A",
+                  "backgroundColor": "#00363A",
+                  "textColor": "#FFFFFF",
                   "borderColor": "#00363A"
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
                 "title": {
-                  "text": "<p><span>Crescimento</span></p>",
+                  "text": "<p>Aceleração</p>",
                   "color": "#00363A",
-                  "font": "Galaxie Copernicus",
-                  "fontWeight": "500",
-                  "letterSpacing": "-3px",
-                  "fontSize": "38px"
+                  "font": "Lektorat Display var",
+                  "fontWeight": "750",
+                  "letterSpacing": "-0.3px",
+                  "fontSize": "42px",
+                  "lineHeight": "100%"
                 },
                 "borderColor": "#F2F4F5"
               }

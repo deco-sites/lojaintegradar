@@ -369,19 +369,21 @@
                 "value": {
                   "__resolveType": "site/sections/HeroV3.tsx",
                   "title": {
-                    "text": "<p>Opere seu ecommerce como um</p>",
-                    "font": "Galaxie Copernicus",
+                    "text": "<p style=\"text-align: center\">Chega de corre!<br>Encontre o seu ritmo <br>de venda.</p>",
+                    "font": "Lektorat Display",
                     "color": "#00363A",
                     "fontSize": "32px",
-                    "letterSpacing": "-3px",
-                    "titleMaxWidth": "874px"
+                    "letterSpacing": "-0.3px",
+                    "titleMaxWidth": "874px",
+                    "fontWeight": "600",
+                    "lineHeight": "100%"
                   },
                   "cta": [
                     {
                       "type": "Button",
                       "size": "Large",
                       "openModal": "Create Store",
-                      "text": "Comece agora sem custos",
+                      "text": "Criar loja grátis",
                       "textColor": "#ffffff",
                       "backgroundColor": "#00363A",
                       "borderColor": "#00363A",
@@ -391,14 +393,14 @@
                   "ctaPlacement": "center",
                   "media": {
                     "image": {
-                      "src": "https://assets.decocache.com/lojaintegradar/e3793e43-fdc3-411c-997c-153910a489fb/hero-image-3.svg",
+                      "src": "https://assets.decocache.com/lojaintegradar/c2ad82b7-5157-46c5-b07f-2b02218e9800/img-hero-mobile.png",
                       "width": 922,
                       "height": 432
                     },
                     "use": "image",
                     "placement": "bellow"
                   },
-                  "text": "<p style=\"text-align: center\"><span>Conheça a Plataforma de e-commerce facilitada com IA.</span></p>",
+                  "text": "<p style=\"text-align: center\">Da loja própria aos marketplaces, a plataforma de ecommerce impulsionada por IA que executa tarefas, sugere melhorias e faz seu negócio crescer<br>todos os dias.</p>",
                   "container": {
                     "marginTop": "0",
                     "paddingBottom": "0",
@@ -415,7 +417,6 @@
                   },
                   "lcp": true,
                   "floatingImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/b4976450-11e5-43b8-99db-47d6a278f24b/expert-word.svg",
                     "horizontalPosition": "38%",
                     "verticalPosition": "28%",
                     "width": 170

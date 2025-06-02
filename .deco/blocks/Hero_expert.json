@@ -1,0 +1,129 @@
+{
+  "__resolveType": "website/flags/multivariate/section.ts",
+  "variants": [
+    {
+      "value": {
+        "__resolveType": "site/sections/HeroV3.tsx",
+        "title": {
+          "text": "<p>Opere seu ecommerce como um</p>",
+          "font": "Galaxie Copernicus",
+          "color": "#00363A",
+          "fontSize": "32px",
+          "letterSpacing": "-3px",
+          "titleMaxWidth": "874px"
+        },
+        "cta": [
+          {
+            "type": "Button",
+            "size": "Large",
+            "openModal": "Create Store",
+            "text": "Comece agora sem custos",
+            "textColor": "#ffffff",
+            "backgroundColor": "#00363A",
+            "borderColor": "#00363A",
+            "createStorePlanId": "172"
+          }
+        ],
+        "ctaPlacement": "center",
+        "media": {
+          "image": {
+            "src": "https://assets.decocache.com/lojaintegradar/e3793e43-fdc3-411c-997c-153910a489fb/hero-image-3.svg",
+            "width": 922,
+            "height": 432
+          },
+          "use": "image",
+          "placement": "bellow"
+        },
+        "text": "<p style=\"text-align: center\"><span>Conheça a Plataforma de e-commerce facilitada com IA.</span></p>",
+        "container": {
+          "marginTop": "0",
+          "paddingBottom": "0",
+          "paddingTop": "124px",
+          "marginBottom": "0",
+          "paddingLeft": "0",
+          "paddingRight": "0"
+        },
+        "sectionBackground": {
+          "image": {
+            "src": "https://assets.decocache.com/lojaintegradar/148d9cbd-c57d-43de-95f9-ddc6194fdf9b/background-green-pattern.svg"
+          },
+          "use": "image"
+        },
+        "lcp": true,
+        "floatingImage": {
+          "src": "https://assets.decocache.com/lojaintegradar/b4976450-11e5-43b8-99db-47d6a278f24b/expert-word.svg",
+          "horizontalPosition": "38%",
+          "verticalPosition": "28%",
+          "width": 170
+        },
+        "distanceBetweenTitleAndText": "0"
+      },
+      "rule": {
+        "__resolveType": "website/matchers/device.ts",
+        "mobile": true
+      }
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/HeroV3.tsx",
+        "title": {
+          "text": "<p style=\"text-align: center\">Opere seu ecommerce<br>como um Expert</p>",
+          "font": "Lektorat Display var",
+          "color": "#00363A",
+          "fontSize": "62px",
+          "letterSpacing": "-0.3px",
+          "lineHeight": "100%",
+          "fontWeight": "750",
+          "titleMaxWidth": "874px"
+        },
+        "cta": [
+          {
+            "type": "Button",
+            "size": "Large",
+            "openModal": "Create Store",
+            "text": "Criar loja grátis",
+            "textColor": "#ffffff",
+            "backgroundColor": "#00363A",
+            "borderColor": "#00363A",
+            "createStorePlanId": "172"
+          }
+        ],
+        "ctaPlacement": "center",
+        "media": {
+          "image": {
+            "src": "https://assets.decocache.com/lojaintegradar/e3793e43-fdc3-411c-997c-153910a489fb/hero-image-3.svg",
+            "width": 922,
+            "height": 432
+          },
+          "use": "image",
+          "placement": "bellow"
+        },
+        "text": "<p style=\"text-align: center\"><span>Conheça a Plataforma de e-commerce facilitada com IA.</span></p>",
+        "container": {
+          "marginTop": "0",
+          "paddingBottom": "0",
+          "paddingTop": "124px",
+          "marginBottom": "0"
+        },
+        "sectionBackground": {
+          "image": {
+            "src": "https://assets.decocache.com/lojaintegradar/148d9cbd-c57d-43de-95f9-ddc6194fdf9b/background-green-pattern.svg"
+          },
+          "use": "image"
+        },
+        "lcp": true,
+        "floatingImage": {
+          "horizontalPosition": "46%",
+          "verticalPosition": "20%"
+        },
+        "textProps": {
+          "fontFamily": "Inter medium",
+          "fontSize": "16px"
+        }
+      },
+      "rule": {
+        "__resolveType": "website/matchers/always.ts"
+      }
+    }
+  ]
+}

@@ -19,19 +19,20 @@ const onChange = () => {
 };
 
 const onLoad = (backgroundColor?: string, noScrollBackgroundColor?: string) => {
+  let lastScrollValue = 0;
+  const headerContainer = document.querySelector("#headerContainer") as HTMLElement;
+  const headerHeight = (headerContainer.parentElement as HTMLElement).offsetHeight;
+
   globalThis.addEventListener("scroll", () => {
-    const headerContainer = document.querySelector("#headerContainer") as HTMLElement;
-    if (globalThis.scrollY > 0 && headerContainer) {
-      headerContainer.style.background = backgroundColor || 'transparent';
-      headerContainer.classList.add("lg:!py-5");
-      headerContainer.style.background = backgroundColor || "";
-
-    
-    }
-    else {
-      headerContainer.style.background = noScrollBackgroundColor || 'transparent';
-      headerContainer.classList.remove("lg:!py-5");
-
+    if (headerContainer) {
+      if (globalThis.scrollY > lastScrollValue && globalThis.scrollY > headerHeight) {
+        headerContainer.style.transform = 'translateY(-100%)';
+        headerContainer.style.pointerEvents = "none";
+      } else {
+        headerContainer.style.transform = 'translateY(0)'
+        headerContainer.style.pointerEvents = "auto"
+      }
+      lastScrollValue = globalThis.scrollY;
     }
   });
 };

@@ -286,19 +286,21 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\">Chega de corre! Encontre o seu ritmo de venda.</p>",
-              "font": "Galaxie Copernicus",
+              "text": "<p style=\"text-align: center\">Chega de corre!<br>Encontre o seu ritmo<br>de venda.</p>",
+              "font": "Lektorat Display",
               "color": "#00363A",
               "fontSize": "32px",
-              "letterSpacing": "-3px",
-              "titleMaxWidth": "874px"
+              "letterSpacing": "-0.3px",
+              "titleMaxWidth": "874px",
+              "fontWeight": "600",
+              "lineHeight": "100%"
             },
             "cta": [
               {
                 "type": "Button",
-                "size": "Large",
+                "size": "Medium",
                 "openModal": "Create Store",
-                "text": "Comece agora sem custos",
+                "text": "Abrir loja grátis",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
@@ -314,11 +316,11 @@
               "use": "image",
               "placement": "bellow"
             },
-            "text": "<p style=\"text-align: center\"><span>Conheça a Plataforma de e-commerce facilitada com IA.</span></p>",
+            "text": "<p style=\"text-align: center\">Da loja própria aos marketplaces, a plataforma de ecommerce impulsionada por IA que executa tarefas, sugere melhorias e faz seu negócio crescer<br> todos os dias.</p>",
             "container": {
               "marginTop": "0",
               "paddingBottom": "0",
-              "paddingTop": "124px",
+              "paddingTop": "64px",
               "marginBottom": "0",
               "paddingLeft": "0",
               "paddingRight": "0"

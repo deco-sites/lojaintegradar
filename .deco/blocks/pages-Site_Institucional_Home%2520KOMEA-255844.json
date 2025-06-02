@@ -131,15 +131,27 @@
           {
             "__resolveType": "site/sections/HeaderV3.tsx",
             "navigation": {
-              "links": [],
+              "links": [
+                {}
+              ],
               "buttons": [
                 {
-                  "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "text": "<p>Fazer login</p>",
-                  "ctaStyle": "button",
+                  "text": "Criar loja",
+                  "backgroundColor": "#00363A",
+                  "textColor": "#FFFFFF",
+                  "borderColor": "#00363A",
+                  "type": "Button",
+                  "size": "Medium",
+                  "openModal": "Create Store",
+                  "createStorePlanId": "172"
+                },
+                {
+                  "textColor": "#00363A",
                   "backgroundColor": "Transparent",
-                  "textColor": "#ffffff",
-                  "borderColor": "#ffffff",
+                  "borderColor": "#00363A",
+                  "text": "Fazer login",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "ctaStyle": "button",
                   "outline": true
                 }
               ],
@@ -792,7 +804,10 @@
                     ]
                   },
                   "tag": {
-                    "text": "<p></p>"
+                    "text": "<p></p>",
+                    "textProps": {
+                      "color": "#000000 "
+                    }
                   },
                   "paddingBottom": "0px",
                   "caption": "<p style=\"text-align: center\"><span>Alcance, engaje e recupere vendas de forma automatizada com soluções</span><br><span>nativas já disponíveis na plataforma</span></p>",

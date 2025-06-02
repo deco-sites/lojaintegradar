@@ -394,8 +394,7 @@
                   "media": {
                     "image": {
                       "src": "https://assets.decocache.com/lojaintegradar/c2ad82b7-5157-46c5-b07f-2b02218e9800/img-hero-mobile.png",
-                      "width": 922,
-                      "height": 432
+                      "width": "100%"
                     },
                     "use": "image",
                     "placement": "bellow"
@@ -497,134 +496,144 @@
             "variants": [
               {
                 "value": {
-                  "__resolveType": "site/sections/CreateStoreHero.tsx",
-                  "title": {
-                    "text": "<p style=\"text-align: center; line-height:1.8;\"><span style=\"color: rgb(250, 250, 245); font-size: 32pt; \">Crie seu negócio com</span><span style=\"font-size: 32pt; \"><br></span><span style=\"color: rgb(250, 250, 245); font-size: 32pt; \">a </span><em><span style=\"color: rgb(113, 219, 212); font-size: 32pt\">plataforma</span></em><span style=\"color: rgb(113, 219, 212); font-size: 32pt\"> </span><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">que</span><span style=\"font-size: 32pt\"><br></span><span style=\"color: rgb(250, 250, 245); font-size: 32pt\"> trabalha pra você</span></p>",
-                    "font": "Instrument serif"
-                  },
-                  "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Impulsione o seu crescimento de forma rápida - alcance, engaje e recupere vendas </span><span style=\"color: rgb(113, 219, 212)\">com menos esforço, de forma automatizada.</span></p>",
-                  "cta": [],
-                  "paddingTop": "170px",
-                  "backgroundMedia": {
-                    "use": "video",
-                    "image": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/20b60aec-1e72-4842-aebe-9c8753662523/Group-21462605-(3).png"
+                  "__resolveType": "website/flags/multivariate/section.ts",
+                  "variants": [
+                    {
+                      "value": {
+                        "__resolveType": "site/sections/CreateStoreHero.tsx",
+                        "title": {
+                          "text": "<p style=\"text-align: center; line-height:1.8;\"><span style=\"color: rgb(250, 250, 245); font-size: 32pt; \">Crie seu negócio com</span><span style=\"font-size: 32pt; \"><br></span><span style=\"color: rgb(250, 250, 245); font-size: 32pt; \">a </span><em><span style=\"color: rgb(113, 219, 212); font-size: 32pt\">plataforma</span></em><span style=\"color: rgb(113, 219, 212); font-size: 32pt\"> </span><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">que</span><span style=\"font-size: 32pt\"><br></span><span style=\"color: rgb(250, 250, 245); font-size: 32pt\"> trabalha pra você</span></p>",
+                          "font": "Instrument serif"
+                        },
+                        "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 245)\">Impulsione o seu crescimento de forma rápida - alcance, engaje e recupere vendas </span><span style=\"color: rgb(113, 219, 212)\">com menos esforço, de forma automatizada.</span></p>",
+                        "cta": [],
+                        "paddingTop": "170px",
+                        "backgroundMedia": {
+                          "use": "video",
+                          "image": {
+                            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/20b60aec-1e72-4842-aebe-9c8753662523/Group-21462605-(3).png"
+                          },
+                          "video": "https://assets.decocache.com/lojaintegradar/4c35fa09-9008-4582-8321-466314b4d9b5/bg-site-(1mb).mp4"
+                        },
+                        "paddingBottom": "85px",
+                        "ctaPlacement": "center",
+                        "createStoreFormProps": {
+                          "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
+                          "planoId": "172",
+                          "periodo": "anual",
+                          "nameCaption": "Nome",
+                          "emailCaption": "E-mail",
+                          "passwordCaption": "Senha",
+                          "confirmPasswordCaption": "Confirme sua senha",
+                          "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
+                          "namePlaceholder": "Seu nome",
+                          "emailPlaceholder": "Insira seu e-mail",
+                          "passwordPlaceholder": "Insira sua senha",
+                          "confirmPasswordPlaceholder": "Confirme sua senha",
+                          "inputsLabelColor": "#ffffff",
+                          "inputsBellowTextColor": "#5F6E82",
+                          "inputsTextColor": "#000000",
+                          "agreeText1": "Ao clicar, você concorda com os ",
+                          "agreeLink1": {
+                            "text": " Termos de Uso ",
+                            "href": "#"
+                          },
+                          "agreeText2": "e a ",
+                          "agreeLink2": {
+                            "text": "Política de Privacidade",
+                            "href": "#"
+                          },
+                          "agreeText3": ".",
+                          "linksColor": "",
+                          "buttonBackgroundColor": "#003037",
+                          "buttonTextColor": "#ffffff",
+                          "inputsBorderColor": ""
+                        },
+                        "paddingRight": "36px",
+                        "paddingLeft": "36px",
+                        "createStoreCta": {
+                          "planId": "172",
+                          "text": "Abrir loja grátis",
+                          "textColor": "#003037",
+                          "backgroundColor": "#FAFAF5",
+                          "borderColor": "#FAFAF5"
+                        }
+                      },
+                      "rule": {
+                        "__resolveType": "website/matchers/device.ts",
+                        "mobile": true
+                      }
                     },
-                    "video": "https://assets.decocache.com/lojaintegradar/4c35fa09-9008-4582-8321-466314b4d9b5/bg-site-(1mb).mp4"
-                  },
-                  "paddingBottom": "85px",
-                  "ctaPlacement": "center",
-                  "createStoreFormProps": {
-                    "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
-                    "planoId": "172",
-                    "periodo": "anual",
-                    "nameCaption": "Nome",
-                    "emailCaption": "E-mail",
-                    "passwordCaption": "Senha",
-                    "confirmPasswordCaption": "Confirme sua senha",
-                    "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
-                    "namePlaceholder": "Seu nome",
-                    "emailPlaceholder": "Insira seu e-mail",
-                    "passwordPlaceholder": "Insira sua senha",
-                    "confirmPasswordPlaceholder": "Confirme sua senha",
-                    "inputsLabelColor": "#ffffff",
-                    "inputsBellowTextColor": "#5F6E82",
-                    "inputsTextColor": "#000000",
-                    "agreeText1": "Ao clicar, você concorda com os ",
-                    "agreeLink1": {
-                      "text": " Termos de Uso ",
-                      "href": "#"
-                    },
-                    "agreeText2": "e a ",
-                    "agreeLink2": {
-                      "text": "Política de Privacidade",
-                      "href": "#"
-                    },
-                    "agreeText3": ".",
-                    "linksColor": "",
-                    "buttonBackgroundColor": "#003037",
-                    "buttonTextColor": "#ffffff",
-                    "inputsBorderColor": ""
-                  },
-                  "paddingRight": "36px",
-                  "paddingLeft": "36px",
-                  "createStoreCta": {
-                    "planId": "172",
-                    "text": "Abrir loja grátis",
-                    "textColor": "#003037",
-                    "backgroundColor": "#FAFAF5",
-                    "borderColor": "#FAFAF5"
-                  }
+                    {
+                      "value": {
+                        "__resolveType": "site/sections/CreateStoreHero.tsx",
+                        "title": {
+                          "text": "<p><span style=\"color: rgb(250, 250, 245); line-height:1.2;\">Crie seu negócio com</span><br><span style=\"color: rgb(250, 250, 245)\">a </span><em><span style=\"color: rgb(113, 219, 212)\">plataforma </span></em><span style=\"color: rgb(250, 250, 245); line-height:1.2;\">que trabalha por você</span></p>",
+                          "font": "Instrument serif",
+                          "color": ""
+                        },
+                        "caption": "<p><span style=\"color: rgb(250, 250, 245)\">Impulsione o seu crescimento de forma rápida - alcance, engaje e recupere vendas  </span><span style=\"color: rgb(113, 219, 212)\">com menos esforço, de forma automatizada.</span></p>",
+                        "cta": [],
+                        "paddingTop": "170px",
+                        "paddingBottom": "85px",
+                        "backgroundMedia": {
+                          "video": "https://assets.decocache.com/lojaintegradar/4c35fa09-9008-4582-8321-466314b4d9b5/bg-site-(1mb).mp4",
+                          "use": "video"
+                        },
+                        "ctaPlacement": "center",
+                        "createStoreFormProps": {
+                          "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
+                          "planoId": "172",
+                          "periodo": "anual",
+                          "nameCaption": "Nome",
+                          "emailCaption": "E-mail",
+                          "passwordCaption": "Senha",
+                          "confirmPasswordCaption": "Confirme sua senha",
+                          "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
+                          "namePlaceholder": "Seu nome",
+                          "emailPlaceholder": "Insira seu e-mail",
+                          "passwordPlaceholder": "Insira sua senha",
+                          "confirmPasswordPlaceholder": "Confirme sua senha",
+                          "inputsLabelColor": "#ffffff",
+                          "inputsBellowTextColor": "#5F6E82",
+                          "inputsTextColor": "#000000",
+                          "agreeLink1": {
+                            "text": " Termos de Uso ",
+                            "href": "https://lojaintegrada.com.br/termos-de-uso"
+                          },
+                          "agreeLink2": {
+                            "text": "Política de Privacidade",
+                            "href": "https://lojaintegrada.com.br/privacidade/"
+                          },
+                          "agreeText3": ".",
+                          "linksColor": "",
+                          "buttonBackgroundColor": "#003037",
+                          "buttonTextColor": "#ffffff",
+                          "inputsBorderColor": "",
+                          "showForm": true,
+                          "agreeText1": "Ao clicar, você concorda com os ",
+                          "agreeText2": "e a ",
+                          "buttonText": "Abrir loja grátis"
+                        },
+                        "paddingRight": "36px",
+                        "paddingLeft": "36px",
+                        "createStoreCta": {
+                          "planId": "172",
+                          "backgroundColor": "#fafaf5",
+                          "textColor": "#003037",
+                          "borderColor": "#fafaf5"
+                        },
+                        "captionTextProps": {},
+                        "hideSection": true
+                      },
+                      "rule": {
+                        "__resolveType": "website/matchers/always.ts"
+                      }
+                    }
+                  ]
                 },
                 "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/CreateStoreHero.tsx",
-                  "title": {
-                    "text": "<p><span style=\"color: rgb(250, 250, 245); line-height:1.2;\">Crie seu negócio com</span><br><span style=\"color: rgb(250, 250, 245)\">a </span><em><span style=\"color: rgb(113, 219, 212)\">plataforma </span></em><span style=\"color: rgb(250, 250, 245); line-height:1.2;\">que trabalha por você</span></p>",
-                    "font": "Instrument serif",
-                    "color": ""
-                  },
-                  "caption": "<p><span style=\"color: rgb(250, 250, 245)\">Impulsione o seu crescimento de forma rápida - alcance, engaje e recupere vendas  </span><span style=\"color: rgb(113, 219, 212)\">com menos esforço, de forma automatizada.</span></p>",
-                  "cta": [],
-                  "paddingTop": "170px",
-                  "paddingBottom": "85px",
-                  "backgroundMedia": {
-                    "video": "https://assets.decocache.com/lojaintegradar/4c35fa09-9008-4582-8321-466314b4d9b5/bg-site-(1mb).mp4",
-                    "use": "video"
-                  },
-                  "ctaPlacement": "center",
-                  "createStoreFormProps": {
-                    "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
-                    "planoId": "172",
-                    "periodo": "anual",
-                    "nameCaption": "Nome",
-                    "emailCaption": "E-mail",
-                    "passwordCaption": "Senha",
-                    "confirmPasswordCaption": "Confirme sua senha",
-                    "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
-                    "namePlaceholder": "Seu nome",
-                    "emailPlaceholder": "Insira seu e-mail",
-                    "passwordPlaceholder": "Insira sua senha",
-                    "confirmPasswordPlaceholder": "Confirme sua senha",
-                    "inputsLabelColor": "#ffffff",
-                    "inputsBellowTextColor": "#5F6E82",
-                    "inputsTextColor": "#000000",
-                    "agreeLink1": {
-                      "text": " Termos de Uso ",
-                      "href": "https://lojaintegrada.com.br/termos-de-uso"
-                    },
-                    "agreeLink2": {
-                      "text": "Política de Privacidade",
-                      "href": "https://lojaintegrada.com.br/privacidade/"
-                    },
-                    "agreeText3": ".",
-                    "linksColor": "",
-                    "buttonBackgroundColor": "#003037",
-                    "buttonTextColor": "#ffffff",
-                    "inputsBorderColor": "",
-                    "showForm": true,
-                    "agreeText1": "Ao clicar, você concorda com os ",
-                    "agreeText2": "e a ",
-                    "buttonText": "Abrir loja grátis"
-                  },
-                  "paddingRight": "36px",
-                  "paddingLeft": "36px",
-                  "createStoreCta": {
-                    "planId": "172",
-                    "backgroundColor": "#fafaf5",
-                    "textColor": "#003037",
-                    "borderColor": "#fafaf5"
-                  },
-                  "captionTextProps": {},
-                  "hideSection": true
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
+                  "__resolveType": "website/matchers/never.ts"
                 }
               }
             ]

@@ -35,9 +35,9 @@ const onLoad = (backgroundColor?: string, noScrollBackgroundColor?: string) => {
       lastScrollValue = globalThis.scrollY;
 
       if (globalThis.scrollY > 0 && headerContainer) {
-        headerContainer.style.background = noScrollBackgroundColor || "";
+        headerContainer.style.background = backgroundColor || "transparent";
       } else {
-        headerContainer.style.background = backgroundColor || "";
+        headerContainer.style.background = noScrollBackgroundColor || "transparent";
       }
     }
   });

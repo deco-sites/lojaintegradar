@@ -33,6 +33,12 @@ const onLoad = (backgroundColor?: string, noScrollBackgroundColor?: string) => {
         headerContainer.style.pointerEvents = "auto"
       }
       lastScrollValue = globalThis.scrollY;
+
+      if (globalThis.scrollY > 0 && headerContainer) {
+        headerContainer.style.background = noScrollBackgroundColor || "";
+      } else {
+        headerContainer.style.background = backgroundColor || "";
+      }
     }
   });
 };

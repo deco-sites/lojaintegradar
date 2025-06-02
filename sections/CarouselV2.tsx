@@ -260,7 +260,7 @@ function Carousel(props: Props) {
                     {title?.text && title.text.length > 8 && <AnimateOnShow
                         animation="animate-fade-up50"
                         divClass={`text-5xl lg:text-[70px] leading-[120%] ${caption ? 'mb-4' : 'mb-12 lg:mb-[120px]'}`}>
-                        <div class="leading-normal" dangerouslySetInnerHTML={{ __html: title.text }} style={{ color: title.color, fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing }} />
+                        <div class="leading-normal" dangerouslySetInnerHTML={{ __html: title.text }} style={{ color: title.color, fontFamily: title.font, fontSize: title.fontSize, letterSpacing: title.letterSpacing, lineHeight: title.lineHeight}} />
                     </AnimateOnShow>}
                     {caption && caption.length > 8 && <AnimateOnShow
                         animation="animate-fade-up50"

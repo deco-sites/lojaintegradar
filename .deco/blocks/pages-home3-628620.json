@@ -445,7 +445,7 @@
             },
             "caption": {
               "text": "<p></p>",
-              "color": ""
+              "color": "#00363A"
             },
             "paddingTop": "80px",
             "paddingBottom": "80px",
@@ -465,15 +465,19 @@
                   "height": 399
                 },
                 "contentTitle": {
-                  "text": "<p><span style=\"color: rgb(0, 54, 58)\">Reengaje clientes</span></p><p><span style=\"color: rgb(0, 54, 58)\">com campanhas</span><br><span style=\"color: rgb(0, 54, 58)\">automáticas</span></p>",
-                  "font": "Inter medium",
-                  "fontSize": "26px"
+                  "text": "<p><span style=\"color: rgb(0, 54, 58)\">Reengaje clientes</span><br><span style=\"color: rgb(0, 54, 58)\">com campanhas</span><br><span style=\"color: rgb(0, 54, 58)\">automáticas</span></p>",
+                  "font": "Lektorat Display var",
+                  "fontSize": "28px",
+                  "color": "#00363A",
+                  "fontWeight": "750",
+                  "letterSpacing": "-0.3px",
+                  "lineHeight": "100%"
                 },
                 "caption": {
-                  "text": "<p>Venda mais – e sem custo adicional, com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</p>",
+                  "text": "<p style=\"text-align: justify\">Venda mais – e sem custo adicional, com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontSize": "16px"
+                  "fontSize": "14px"
                 },
                 "video": {},
                 "media": {
@@ -504,9 +508,12 @@
                 },
                 "contentTitle": {
                   "text": "<p><span style=\"color: rgb(0, 54, 58)\">Anuncie produtos</span><br><span style=\"color: rgb(0, 54, 58)\">em diferentes canais</span></p>",
-                  "font": "Inter medium",
-                  "fontSize": "26px",
-                  "color": "#00363A"
+                  "font": "Lektorat Display var",
+                  "fontSize": "28px",
+                  "color": "#00363A",
+                  "fontWeight": "750",
+                  "letterSpacing": "-0.3px",
+                  "lineHeight": "100%"
                 },
                 "caption": {
                   "text": "<p>Faturamento fácil e nas alturas: Cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</p>",
@@ -543,9 +550,12 @@
                 },
                 "contentTitle": {
                   "text": "<p><span style=\"color: rgb(0, 54, 58)\">Frete e pagamento</span><br><span style=\"color: rgb(0, 54, 58)\">descomplicados</span></p>",
-                  "font": "Inter medium",
-                  "fontSize": "26px",
-                  "color": "#00363A"
+                  "color": "#00363A",
+                  "font": "Lektorat Display var",
+                  "fontSize": "28px",
+                  "fontWeight": "750",
+                  "letterSpacing": "-0.3px",
+                  "lineHeight": "100%"
                 },
                 "caption": {
                   "text": "<p>Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</p>",
@@ -582,9 +592,12 @@
                 },
                 "contentTitle": {
                   "text": "<p><span style=\"color: rgb(0, 54, 58)\">Checkout rápido</span><br><span style=\"color: rgb(0, 54, 58)\">e aprimorado</span></p>",
-                  "font": "Inter medium",
-                  "fontSize": "26px",
-                  "color": "#00363A"
+                  "font": "Lektorat Display var",
+                  "fontSize": "28px",
+                  "color": "#00363A",
+                  "fontWeight": "750",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.3px"
                 },
                 "caption": {
                   "text": "<p>Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</p>",
@@ -632,7 +645,8 @@
             },
             "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))",
             "dotsTextColor": "#00363A",
-            "arrows": false
+            "arrows": false,
+            "arrowsColor": "#00363A"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -658,9 +672,7 @@
                 "use": "image",
                 "cta": [],
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/5b077fd3-a250-4725-940f-68403aacd3a9/img-reengaje-mobile.png",
-                  "height": "414px",
-                  "width": "331px"
+                  "src": "https://assets.decocache.com/lojaintegradar/5b077fd3-a250-4725-940f-68403aacd3a9/img-reengaje-mobile.png"
                 },
                 "title": {
                   "text": "<p>Reengaje clientes<br>com campanhas automáticas</p>",
@@ -680,9 +692,7 @@
                 "use": "image",
                 "cta": [],
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/47258e4c-ca39-4f7b-8921-619b6b22bda6/divulgue-em-diferentes-canais-mobile.png",
-                  "height": "414px",
-                  "width": "331px"
+                  "src": "https://assets.decocache.com/lojaintegradar/47258e4c-ca39-4f7b-8921-619b6b22bda6/divulgue-em-diferentes-canais-mobile.png"
                 },
                 "title": {
                   "text": "<p>Anuncie produtos em<br>diferentes canais</p>",
@@ -702,9 +712,7 @@
                 "use": "image",
                 "cta": [],
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/1ec0ce15-e052-4efd-9e4c-d908bc86a710/anuncie-diferentes-canais.png",
-                  "height": "414px",
-                  "width": "331px"
+                  "src": "https://assets.decocache.com/lojaintegradar/1ec0ce15-e052-4efd-9e4c-d908bc86a710/anuncie-diferentes-canais.png"
                 },
                 "title": {
                   "text": "<p>Frete e pagamento<br>descomplicados</p>",
@@ -724,9 +732,7 @@
                 "use": "image",
                 "cta": [],
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/66517d71-6a14-42f4-a769-e01b5573b3bf/CHECKOUT.png",
-                  "height": "414px",
-                  "width": "331px"
+                  "src": "https://assets.decocache.com/lojaintegradar/66517d71-6a14-42f4-a769-e01b5573b3bf/CHECKOUT.png"
                 },
                 "title": {
                   "text": "<p>Checkout rápido<br>e aprimorado</p>",
@@ -753,12 +759,13 @@
               }
             ],
             "title": {
-              "text": "<p style=\"text-align: center\"><strong>Plataforma com IA que<br>agiliza sua rotina.</strong></p>",
+              "text": "<p style=\"text-align: center\">Plataforma com IA que<br>agiliza sua rotina.</p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
               "fontSize": "32px",
               "letterSpacing": "-0.3px",
-              "fontWeight": "750"
+              "fontWeight": "750",
+              "lineHeight": "100%"
             },
             "caption": "<p style=\"text-align: center\">Tudo que você precisa, em um só lugar</p>",
             "captionTextProps": {
@@ -913,14 +920,14 @@
             "arrowsColor": "",
             "bubbleImages": [
               {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/10c91eb1-0f78-465d-9fa6-49438978da81/bubble-image-1.jpg",
+                "src": "https://data.decoassets.com/lojaintegradar/1717b427-b185-4602-83a9-54a9e3c2c788/Frame-1000002565.png",
                 "horizontalPosition": "16%",
                 "verticalPosition": "5%",
                 "alt": "oldman on laptop",
                 "speed": "fast"
               },
               {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d5f1a647-cbf8-4ba9-bc36-16b01ac784bf/bubble-image-3.jpg",
+                "src": "https://data.decoassets.com/lojaintegradar/0fb0a595-19da-46bc-aba5-fb34c636428f/fabrizzio.png",
                 "horizontalPosition": "2%",
                 "alt": "lady holding phone",
                 "comeFrom": "top left",
@@ -930,7 +937,7 @@
               {
                 "comeFrom": "top left",
                 "speed": "normal",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/dea1f370-0fde-40bc-a99f-f824dd35d68d/bubble-image-4.png",
+                "src": "https://data.decoassets.com/lojaintegradar/fe7cccc2-5a7b-4077-9e79-352ccddb1a33/Frame-1000002571.png",
                 "verticalPosition": "20%",
                 "horizontalPosition": "10%",
                 "alt": "man on opening laptop"
@@ -938,7 +945,7 @@
               {
                 "comeFrom": "bottom left",
                 "speed": "fast",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d5f1a647-cbf8-4ba9-bc36-16b01ac784bf/bubble-image-3.jpg",
+                "src": "https://data.decoassets.com/lojaintegradar/e887dafa-3ecf-436e-94be-cad88e3a8c17/Frame-1000002580.png",
                 "alt": "lady holding phone",
                 "verticalPosition": "34%",
                 "horizontalPosition": "13%"
@@ -946,7 +953,7 @@
               {
                 "comeFrom": "bottom left",
                 "speed": "slow",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/8c74a035-4f59-434e-894b-61beee1d7301/bubble-image-5.jpg",
+                "src": "https://data.decoassets.com/lojaintegradar/eed7a6b5-2d47-42a4-8441-e4e28dac2819/Frame-1000002566.png",
                 "verticalPosition": "37%",
                 "horizontalPosition": "2%",
                 "alt": "man holding sheets"
@@ -954,7 +961,7 @@
               {
                 "comeFrom": "bottom left",
                 "speed": "slow",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ea2d2fac-5029-4de9-b739-f935f947ec58/bubble-image-6.png",
+                "src": "https://data.decoassets.com/lojaintegradar/25884396-baae-4687-8e0a-e133721c82d5/Frame-1000002568.png",
                 "alt": "man holding pencil",
                 "verticalPosition": "53%",
                 "horizontalPosition": "1%"
@@ -978,7 +985,7 @@
               {
                 "comeFrom": "top right",
                 "speed": "fast",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/aab535f6-b04a-4827-ae41-dfd92db98793/bubble-image-9.jpg",
+                "src": "https://data.decoassets.com/lojaintegradar/4db20f68-f1e0-48ad-b6fc-1c1dc33e00fa/Frame-1000002579.png",
                 "alt": "man holding tablet",
                 "horizontalPosition": "77%",
                 "verticalPosition": "23%"
@@ -1002,7 +1009,7 @@
               {
                 "comeFrom": "bottom right",
                 "speed": "slow",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1a0b5443-1820-4d69-95c7-bb0bd79d6bd9/bubble-image-12.jpg",
+                "src": "https://data.decoassets.com/lojaintegradar/60c2bed2-16c0-4bba-b4b5-99dbddb387f5/2.png",
                 "horizontalPosition": "91%",
                 "verticalPosition": "54%",
                 "alt": "woman holding folder"

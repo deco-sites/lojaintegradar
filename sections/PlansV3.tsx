@@ -289,7 +289,7 @@ function SliderItem({ slide, id }: {
 
                         <div class="min-h-44">
                             {title?.text && <div
-                                class="text-3xl lg:text-[46px] w-full leading-tight font-normal !bg-clip-text text-transparent"
+                                class="text-3xl lg:text-[46px] w-full leading-tight font-normal !bg-clip-text text-transparent pb-1"
                                 style={{ fontFamily: title.font, fontSize: title.fontSize, lineHeight: title.lineHeight, fontWeight: title.fontWeight, letterSpacing: title.letterSpacing, background: title.color || "black" }}
                                 dangerouslySetInnerHTML={{ __html: title.text }} />}
 
@@ -415,7 +415,7 @@ function Plans(props: Props) {
                 style={{paddingBottom, paddingTop}}>
                 
                 {title?.text && <div
-                    class="text-3xl lg:text-[46px] w-full leading-tight font-normal !bg-clip-text text-transparent"
+                    class="text-3xl lg:text-[46px] w-full leading-tight font-normal !bg-clip-text text-transparent pb-1"
                     style={{ fontFamily: title.font, fontSize: title.fontSize, lineHeight: title.lineHeight, fontWeight: title.fontWeight, letterSpacing: title.letterSpacing, background: title.color || "black" }}
                     dangerouslySetInnerHTML={{ __html: title.text }} />}
 

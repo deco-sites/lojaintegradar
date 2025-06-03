@@ -163,10 +163,10 @@ export default function HeroV3({ title, text, textProps, bulletPoints, cta = [],
 
         {title?.text && <div
           dangerouslySetInnerHTML={{ __html: title.text }}
-          class={`w-full text-[32px] lg:text-[56px] lg:leading-[1.2] !text-transparent !bg-clip-text`}
+          class={`w-full text-[32px] lg:text-[56px] lg:leading-[1.2] !text-transparent !bg-clip-text pb-1`}
           style={{ fontSize: title.fontSize, fontFamily: title.font, fontWeight: title.fontWeight, letterSpacing: title.letterSpacing, background: title.color, lineHeight: title.lineHeight, marginBottom: distanceBetweenTitleAndText }} />}
 
-        {text && <div dangerouslySetInnerHTML={{ __html: text }} class="text-sm lg:text-lg w-full" style={{ ...textProps }} />}
+        {text && <div dangerouslySetInnerHTML={{ __html: text }} class="text-sm lg:text-lg w-full pb-1" style={{ ...textProps }} />}
 
         {bulletPoints?.items && <div class="flex flex-col gap-4">
           {bulletPoints?.items?.map((item) => (

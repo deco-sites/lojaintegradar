@@ -26,10 +26,10 @@ const onLoad = (backgroundColor?: string, noScrollBackgroundColor?: string) => {
   globalThis.addEventListener("scroll", () => {
     if (headerContainer) {
       if (globalThis.scrollY > lastScrollValue && globalThis.scrollY > headerHeight) {
-        headerContainer.style.transform = 'translateY(-100%)';
+        headerContainer.style.top = '-100%';
         headerContainer.style.pointerEvents = "none";
       } else {
-        headerContainer.style.transform = 'translateY(0)'
+        headerContainer.style.top = '0';
         headerContainer.style.pointerEvents = "auto"
       }
       lastScrollValue = globalThis.scrollY;
@@ -188,7 +188,7 @@ export default function Header2({ logo = {
   <header>
     {headerMessage?.show && <div class="h-16" />}
     {campaignTimer?.show && <div class="h-[76px]" />}
-    <div class="fixed top-0 left-0 w-full z-50 justify-center ">
+    <div id="headerContainer"  class="fixed top-0 left-0 w-full z-50 justify-center transition-all duration-300 ease-in-out">
       
       {headerMessage?.show && <div class="h-16 w-full bg-primary text-primary-content px-1 lg:px-11 py-2 flex items-center justify-center gap-1" style={{background: headerMessage?.backgroundColor}}>
         <p class="text-xs lg:text-2xl text-center font-semibold leading-[120%] flex items-center justify-center">
@@ -206,7 +206,7 @@ export default function Header2({ logo = {
         <CampaignTimer {...campaignTimer} labelsColor={campaignTimer.labelsColor} numbersColor={campaignTimer.numbersColor} />
       </div>}
 
-      <nav id="headerContainer" class="drawer drawer-end top-0 left-0 bg-primary-content transition-all duration-300 ease-in-out py-4 lg:py-7 " style={{background: noScrollBackgroundColor || 'transparent'}} >
+      <nav class="drawer drawer-end top-0 left-0 bg-primary-content py-4 lg:py-7 " style={{background: noScrollBackgroundColor || 'transparent'}} >
         <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
         {/* main content */}

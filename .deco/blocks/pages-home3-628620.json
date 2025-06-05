@@ -309,7 +309,7 @@
               "fontSize": "32px",
               "letterSpacing": "-0.3px",
               "titleMaxWidth": "874px",
-              "fontWeight": "600",
+              "fontWeight": "750",
               "lineHeight": "100%"
             },
             "cta": [
@@ -354,7 +354,13 @@
               "verticalPosition": "28%",
               "width": 170
             },
-            "distanceBetweenTitleAndText": "0"
+            "distanceBetweenTitleAndText": "0",
+            "textProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "100%"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -417,7 +423,8 @@
             "textProps": {
               "fontFamily": "Inter",
               "fontSize": "16px",
-              "lineHeight": "100%"
+              "lineHeight": "100%",
+              "fontWeight": "500"
             }
           },
           "rule": {
@@ -433,7 +440,7 @@
           "value": {
             "__resolveType": "site/sections/CardsHero.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Vendas cada vez mais inteligentes e simplificadas</span></p>",
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Vendas cada vez mais inteligentes</span><br><span style=\"color: rgb(0, 54, 58)\">e simplificadas</span></p>",
               "letterSpacing": "-0.3px",
               "font": "Lektorat Display var",
               "fontSize": "32px",
@@ -715,8 +722,10 @@
                   "titleFont": "inter",
                   "textProps": {
                     "color": "#5F6E82",
-                    "fontFamily": "Inter medium",
-                    "fontSize": "16px"
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "120%"
                   }
                 },
                 {
@@ -743,12 +752,15 @@
                   "minHeight": "0",
                   "titleLineHeight": "30px",
                   "padding": "36px 35px",
-                  "titleFont": "Inter medium",
+                  "titleFont": "Inter",
                   "textProps": {
                     "color": "#5F6E82",
-                    "fontFamily": "Inter medium",
-                    "fontSize": "16px"
-                  }
+                    "fontFamily": "Inter ",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "120%"
+                  },
+                  "titleFontWeight": "500"
                 },
                 {
                   "image": {
@@ -809,9 +821,10 @@
             ],
             "captionTextProps": {
               "color": "#5F6E82",
-              "fontFamily": "Inter medium",
+              "fontFamily": "Inter",
               "fontSize": "16px",
-              "lineHeight": "125%"
+              "lineHeight": "100%",
+              "fontWeight": "500"
             },
             "tag": {
               "textProps": {}
@@ -1167,7 +1180,8 @@
               "color": "#5F6E82",
               "fontSize": "16px",
               "fontFamily": "Inter",
-              "lineHeight": "125%"
+              "lineHeight": "125%",
+              "fontWeight": "500"
             }
           },
           "rule": {
@@ -1188,7 +1202,7 @@
             "paddingTop": "30px",
             "paddingBottom": "30px",
             "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: #00363a\">lojistas</span></p>",
-            "caption": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130)\">que escolheram a forma mais eficiente</span><br><span style=\"color: rgb(95, 110, 130)\">de vender online</span></p>",
+            "caption": "<p style=\"text-align: center\">que escolheram a forma mais eficiente<br>de vender online</p>",
             "slides": [
               {
                 "content": {
@@ -1251,7 +1265,10 @@
             "titleLetterSpacing": "-0.3px",
             "titleFontWeight": "750",
             "titleLineHeight": "100%",
-            "captionFontSize": "16px"
+            "captionFontSize": "16px",
+            "captionColor": "#5F6E82",
+            "captionFont": "500",
+            "captionLineHeight": "125%"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1431,8 +1448,10 @@
             "titleLineHeight": "100%",
             "captionFontSize": "16px",
             "captionColor": "#5F6E82",
-            "captionFont": "Inter medium",
-            "titleLetterSpacing": "-0.3px"
+            "captionFont": "Inter",
+            "titleLetterSpacing": "-0.3px",
+            "captionFontWeight": "500",
+            "captionLineHeight": "100%"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1684,7 +1703,8 @@
               "fontSize": "16px",
               "color": "#5F6E82",
               "font": "Inter",
-              "lineHeight": "125%"
+              "lineHeight": "125%",
+              "fontWeight": "500"
             },
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
@@ -1725,14 +1745,16 @@
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "text": "<p>Crescimento inteligente</p>",
                   "color": "#00363A",
-                  "font": "Inter medium",
-                  "fontSize": "22px"
+                  "font": "Inter",
+                  "fontSize": "22px",
+                  "fontWeight": "750"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
                   "text": "<p>Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</p>",
-                  "color": "#5F6E82"
+                  "color": "#5F6E82",
+                  "font": "Inter"
                 },
                 "tabImage": {
                   "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
@@ -1764,14 +1786,16 @@
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "text": "<p><span>Liberdade para personalizar</span></p>",
                   "color": "#00363A",
-                  "font": "Inter medium",
-                  "fontSize": "22px"
+                  "font": "Inter",
+                  "fontSize": "22px",
+                  "fontWeight": "750"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
                   "text": "<p>Adicione banners, faixas e páginas para atrair e converter clientes com facilidade.</p>",
-                  "color": "#5F6E82"
+                  "color": "#5F6E82",
+                  "font": "Inter"
                 },
                 "tabImage": {
                   "image": "https://data.decoassets.com/lojaintegradar/eb5d1729-9b6c-4627-bf62-9274c3009101/liberdade-para-personalizar.png",
@@ -1802,14 +1826,16 @@
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "text": "<p><span>Usabilidade simplificada</span></p>",
                   "color": "#00363A",
-                  "font": "Inter medium",
-                  "fontSize": "22px"
+                  "font": "Inter ",
+                  "fontSize": "22px",
+                  "fontWeight": "750"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
                   "text": "<p>A melhor usabilidade para navegar e controlar seu e-commerce de forma simples e prática.</p>",
-                  "color": "#5F6E82"
+                  "color": "#5F6E82",
+                  "font": "Inter"
                 },
                 "tabImage": {
                   "image": "https://assets.decocache.com/lojaintegradar/f6c8ca54-a8bb-4583-82e8-5902914ee39b/usabilidade--IA.png",
@@ -1872,7 +1898,9 @@
               "text": "<p style=\"text-align: center\"><span>Migre para a Loja Integrada e aproveite os benefícios de uma plataforma</span></p><p style=\"text-align: center\"><span>segura,estável e descomplicada</span></p>",
               "fontSize": "16px",
               "color": "#5F6E82",
-              "font": "inter medium"
+              "font": "inter ",
+              "fontWeight": "500",
+              "lineHeight": "100%"
             },
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
@@ -4206,7 +4234,8 @@
               "text": "<p style=\"text-align: center\">Escolha a oferta ideal para a sua loja e comece<br>a vender hoje mesmo</p>",
               "color": "#5F6E82",
               "font": "Inter",
-              "fontSize": "16px"
+              "fontSize": "16px",
+              "fontWeight": "500"
             },
             "slides": [
               {
@@ -6725,8 +6754,10 @@
               "51": "a",
               "text": "<p style=\"text-align: center\"><span>Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
               "color": "#5F6E82",
-              "font": "Inter medium",
-              "fontSize": "16px"
+              "font": "Inter",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "lineHeight": "100%"
             },
             "slides": [
               {

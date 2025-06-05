@@ -20,6 +20,8 @@ export default defineApp(async (_req, ctx) => {
       {/* Tailwind v3 CSS file */}
       <link href={asset(`/styles.css?revision=${revision}`)} rel="stylesheet" />
 
+      <link rel="stylesheet" href="/fontStyles.css" />
+
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -38,7 +40,6 @@ export default defineApp(async (_req, ctx) => {
         }
       `}} />
 
-      <link rel="stylesheet" href="/fontStyles.css" />
     </Head>
 
     {/* Rest of Preact tree */}

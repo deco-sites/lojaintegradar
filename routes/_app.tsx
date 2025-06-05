@@ -39,6 +39,11 @@ export default defineApp(async (_req, ctx) => {
       `}} />
       <style dangerouslySetInnerHTML={{
         __html: `
+        html {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+        }
+
         @font-face {
             font-family: "Galaxie Copernicus";
             src: url("/fonts/GalaxieCopernicus/GalaxieCopernicus-Bold.otf") format("opentype");
@@ -134,17 +139,17 @@ export default defineApp(async (_req, ctx) => {
         @font-face { font-family: 'Lektorat Narrow'; src: url('/fonts/Lektorat/Lektorat-NarrowSemibold.otf') format('opentype'); font-weight: 600; font-style: normal; }
 
         @font-face {
-            font-family: 'Lektorat Display';
+            font-family: 'Lektorat Display var';
             src: url('/fonts/Lektorat/Variable/LektoratDisplayVar.ttf') format('truetype');
         }
 
         @font-face {
-            font-family: 'Lektorat Text';
+            font-family: 'Lektorat Text var';
             src: url('/fonts/Lektorat/Variable/LektoratTextVar-Regular.ttf') format('truetype');
         }
 
         @font-face {
-            font-family: 'Lektorat Oblique';
+            font-family: 'Lektorat Oblique var';
             src: url('/fonts/Lektorat/Variable/LektoratTextVar-Oblique.ttf') format('truetype');
             font-style: oblique;
         }

@@ -6597,6 +6597,10 @@ details.collapse summary::-webkit-details-marker {
 .no-underline {
   text-decoration-line: none;
 }
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .opacity-0 {
   opacity: 0;
 }

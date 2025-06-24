@@ -5,7 +5,6 @@ import { useId } from "../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 import CTA, {Props as CTAProps} from "site/components/ui/CTA.tsx";
-import { textShortner } from "apps/website/components/_seo/helpers/textShortner.tsx";
 
 const refreshArrowsVisibility = ({arrowsColor, arrowsBackgroundColor, arrowsDisableBackgroundColor, arrowsDisableColor}: Arrows) => {
     const currentTarget = event!.currentTarget as HTMLElement;

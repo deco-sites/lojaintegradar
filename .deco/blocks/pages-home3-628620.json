@@ -12,7 +12,7 @@
               "links": [],
               "buttons": [
                 {
-                  "text": "Criar loja gráis",
+                  "text": "Criar loja grátis",
                   "backgroundColor": "#00363A",
                   "textColor": "#ffffff",
                   "borderColor": "#00363A",
@@ -20,7 +20,10 @@
                   "type": "Button",
                   "openModal": "Create Store",
                   "createStorePlanId": "172",
-                  "showIcon": false
+                  "showIcon": false,
+                  "customEvent": "header",
+                  "customEventCategory": "loja-integrada:institucional",
+                  "customEventLabel": "criar-loja-gratis"
                 },
                 {
                   "type": "Button",
@@ -31,7 +34,10 @@
                   "borderColor": "#00363A",
                   "ctaStyle": "button",
                   "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "outline": true
+                  "outline": true,
+                  "customEventCategory": "loja-integrada:institucional",
+                  "customEvent": "header",
+                  "customEventLabel": "fazer-login"
                 }
               ],
               "mobileButtons": [
@@ -42,7 +48,8 @@
                   "backgroundColor": "transparent",
                   "borderColor": "#00363A",
                   "textColor": "#00363A",
-                  "size": "Small"
+                  "size": "Small",
+                  "customEventLabel": "fazer-login"
                 }
               ],
               "asideMenuButtons": [
@@ -54,7 +61,10 @@
                   "type": "Button",
                   "size": "Small",
                   "openModal": "Create Store",
-                  "createStorePlanId": "172"
+                  "createStorePlanId": "172",
+                  "customEvent": "header",
+                  "customEventCategory": "loja-integrada:institucional",
+                  "customEventLabel": "criar-loja-gratis"
                 },
                 {
                   "text": "Fazer Login",
@@ -64,7 +74,8 @@
                   "href": "https://app.lojaintegrada.com.br/painel/login",
                   "ctaStyle": "button",
                   "outline": true,
-                  "size": "Small"
+                  "size": "Small",
+                  "customEventLabel": "fazer-login"
                 }
               ],
               "sideMenuButtons": [],

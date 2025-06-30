@@ -184,7 +184,7 @@ export default function HeroV3({ title, text, textProps, bulletPoints, cta = [],
 
         {cta.length > 0 && <div class={`flex flex-wrap gap-4 mt-auto ${placement[ctaPlacement || "left"]}`}>
           {cta.map(cta => (
-            <CTA {...cta} />
+            <CTA customEvent={"HeroV3"} customEventCategory={"loja-integrada:institucional"} customEventLabel={"criar-loja-gratis"} {...cta} />
           ))}
         </div>}
       </AnimateOnShow>

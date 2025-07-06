@@ -53,7 +53,30 @@ export interface Props {
   customEventLabel?: string;
 }
 
+const notModalFunction = (customEvent: string, customEventCategory: string, customEventLabel: string) => {
+  if (customEvent && customEventCategory && customEventLabel) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'clique',
+      'eventCategory': customEventCategory,
+      'eventAction': customEvent,
+      'eventLabel': customEventLabel
+    });
+  }
+
+}
+
 const openModalFunction = (modal: string, planId: string, customEvent: string, customEventCategory: string, customEventLabel: string) => {
+  if (customEvent && customEventCategory && customEventLabel) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'clique',
+      'eventCategory': customEventCategory,
+      'eventAction': customEvent,
+      'eventLabel': customEventLabel
+    });
+  }
+
   if (modal == 'Talk to specialist') {
     const form = document.getElementById("talkToSpecialistPopUpForm") as HTMLElement;
     form.classList.remove("hidden");
@@ -79,15 +102,6 @@ const openModalFunction = (modal: string, planId: string, customEvent: string, c
       container.appendChild(script2);
     }
   } else if (modal == 'Create Store') {
-    if (customEvent && customEventCategory && customEventLabel) {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        'event': 'clique',
-        'eventCategory': customEventCategory,
-        'eventAction': customEvent,
-        'eventLabel': customEventLabel
-      });
-    }
     const getModal = document.getElementById("createStoreModal");
     const period = null;
     const coupon = null;
@@ -122,7 +136,7 @@ export default function CTA({ href = "", text, textColor, backgroundColor, iconG
   }
 
   return <a
-    hx-on:click={openModal && useScript(openModalFunction, openModal, createStorePlanId || '172', customEvent || '', customEventCategory || '', customEventLabel || '')}
+    hx-on:click={openModal ? useScript(openModalFunction, openModal, createStorePlanId || '172', customEvent || '', customEventCategory || '', customEventLabel || '') : useScript(notModalFunction, customEvent || '', customEventCategory || '', customEventLabel || '')}
     class={`${sizeClasses[size]} rounded-lg hover:scale-110 transition-transform cursor-pointer flex justify-center items-center gap-2.5 text-center ${singleLine && 'whitespace-nowrap'}`}
     style={type == "Button"
       ? { background: backgroundColor, color: textColor, borderColor, gap: iconGap, ...customProps }

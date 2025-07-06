@@ -111,9 +111,22 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
         return !hasError;
     };
 
+    const sendCallbackEvent = () => {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'callback_cadastro_lead_institucional',
+            'user_data': {
+                nome: formData.nome,
+                email: formData.email,
+            }
+        });
+    }
+
+
     const handleSubmit = (e: any) => {
         e.preventDefault();
         if (validateForm()) {
+            sendCallbackEvent();
             e.target.submit();
         } else {
             console.error("Erros de validação encontrados, o formulário não será enviado.");

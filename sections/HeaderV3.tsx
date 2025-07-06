@@ -242,7 +242,7 @@ export default function Header2({ logo = {
 
             <ul class="hidden lg:flex items-center gap-10 text-sm flex-wrap" style={{ color: dropdownMenus.titlesTextColor }}>
               {dropdownMenus.menus.map(menu => (
-                <li class="relative group h-full" hx-on={`click: ${useScript(dataLayerPushMenu, menu.title)}; mouseleave: this.children[0].style.color='${dropdownMenus.titlesTextColor}'; this.children[1]?.classList.remove('animate-fade-in')`}>
+                <li class="relative group h-full" hx-on={`click: ${useScript(dataLayerPushMenu, menu.title.replace(/\s+/g, '-').toLowerCase())}; mouseleave: this.children[0].style.color='${dropdownMenus.titlesTextColor}'; this.children[1]?.classList.remove('animate-fade-in')`}>
                   <a
                     href={menu.titleLink}
                     class={`text-center flex gap-2 items-start ${!menu.titleLink && 'cursor-default'}`}
@@ -337,7 +337,7 @@ export default function Header2({ logo = {
                         <div
                           className="collapse-title font-semibold text-sm !min-h-0 !p-4 text-center flex justify-between"
                           style={{ background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor }}
-                          hx-on:click={useScript(dataLayerPushMenu, menu.title)}
+                          hx-on:click={useScript(dataLayerPushMenu, menu.title.replace(/\s+/g, '-').toLowerCase())}
                         >
                           <div />
                           {menu.title}

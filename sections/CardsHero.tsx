@@ -152,7 +152,7 @@ export function CardColumn({ cards = [], cardsMaxWidth, distanceBetweenCards }: 
 
                 <div class={`flex flex-wrap gap-7 ${card.contentPlacement != "bottom" ? 'mt-auto' : ''}`}>
                     {card.cta?.map(cta => (
-                        <CTA customEvent={"CardsHero"} customEventCategory={"loja-integrada:institucional"} customEventLabel={"comecar-sem-custos"} {...cta} />
+                        <CTA {...cta} />
                     ))}
                 </div>
 
@@ -220,7 +220,7 @@ export default function CardsHero({ hideSection, tag, distanceBetweenCards, dist
         </div>
         {bottomCta.length > 0 && <div class={`flex flex-wrap gap-4 justify-center mt-5 lg:mt-20`}>
             {bottomCta.map(cta => (
-                <CTA customEvent={"CardsHero"} customEventCategory={"loja-integrada:institucional"} customEventLabel={"comecar-sem-custos"} {...cta} />
+                <CTA {...cta} />
             ))}
         </div>}
     </div>

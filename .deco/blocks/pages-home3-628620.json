@@ -626,7 +626,10 @@
                 "borderColor": "#00363A",
                 "createStorePlanId": "172",
                 "showIcon": false,
-                "customIcon": {}
+                "customIcon": {},
+                "customEvent": "cardsHero",
+                "customEventCategory": "loja-integrada:institucional",
+                "customEventLabel": "comecar-sem-custos"
               }
             ],
             "captionTextProps": {
@@ -827,7 +830,10 @@
                 "borderColor": "#00363A",
                 "createStorePlanId": "172",
                 "showIcon": false,
-                "customIcon": {}
+                "customIcon": {},
+                "customEventCategory": "loja-integrada:institucional",
+                "customEvent": "cardsHero",
+                "customEventLabel": "comecar-sem-custos"
               }
             ],
             "captionTextProps": {
@@ -1051,7 +1057,10 @@
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
-                "createStorePlanId": "172"
+                "createStorePlanId": "172",
+                "customEventLabel": "criar-loja-gratis",
+                "customEventCategory": "loja-integrada:institucional",
+                "customEvent": "DetailedCarouselV2"
               }
             ],
             "createStoreCta": {
@@ -3831,7 +3840,10 @@
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
-                "createStorePlanId": "172"
+                "createStorePlanId": "172",
+                "customEventCategory": "loja-integrada:institucional",
+                "customEventLabel": "criar-loja-gratis",
+                "customEvent": "CarouselV2"
               }
             ],
             "title": {}
@@ -3938,7 +3950,10 @@
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
-                "createStorePlanId": "172"
+                "createStorePlanId": "172",
+                "customEventCategory": "loja-integrada:institucional",
+                "customEventLabel": "criar-loja-gratis",
+                "customEvent": "CarouselV2"
               }
             ]
           },
@@ -8994,7 +9009,10 @@
                 "backgroundColor": "#00363A",
                 "textColor": "#ffffff",
                 "borderColor": "#00363A",
-                "size": "Large"
+                "size": "Large",
+                "customEvent": "PlansV3",
+                "customEventCategory": "loja-integrada:institucional",
+                "customEventLabel": "compare-os-planos"
               }
             ],
             "hideSwitch": false

@@ -122,7 +122,6 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
         });
     }
 
-
     const handleSubmit = (e: any) => {
         e.preventDefault();
         if (validateForm()) {

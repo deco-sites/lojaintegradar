@@ -131,7 +131,6 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
             console.error("Erros de validação encontrados, o formulário não será enviado.");
         }
     };
-
     function handleKeyDown(e: any): void {
         if (e.keyCode === 13) {
             e.preventDefault();

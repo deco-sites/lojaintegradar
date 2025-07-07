@@ -137,7 +137,6 @@ const CreateStoreForm = ({ planoId, periodo, backgroundColor, buttonText, agreeT
             e.preventDefault();
         }
     }
-
     return (
         <div id="createStoreFormDiv" className="inset-0 bg-opacity-50 items-center justify-center z-5">
             <div

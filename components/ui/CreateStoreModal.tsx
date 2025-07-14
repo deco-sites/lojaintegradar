@@ -154,24 +154,24 @@ const CreateStoreModal = () => {
         return !hasError;
     };
 
-    const sendDataLayerEvent = () => {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-            'event': 'callback_cadastro_lead_institucional'
-        });
-    }
+    // const sendDataLayerEvent = () => {
+    //     window.dataLayer = window.dataLayer || [];
+    //     window.dataLayer.push({
+    //         'event': 'callback_cadastro_lead_institucional'
+    //     });
+    // }
 
-    const handleSubmit = async (e: any) => {
-        e.preventDefault();
-        if (validateForm()) {
-            await sendDataLayerEvent();
-            setTimeout(() => {
-                e.target.submit();
-            }, 300)
-        } else {
-            console.error("Erros de validação encontrados, o formulário não será enviado.");
-        }
-    };
+    // const handleSubmit = async (e: any) => {
+    //     e.preventDefault();
+    //     if (validateForm()) {
+    //         await sendDataLayerEvent();
+    //         setTimeout(() => {
+    //             e.target.submit();
+    //         }, 300)
+    //     } else {
+    //         console.error("Erros de validação encontrados, o formulário não será enviado.");
+    //     }
+    // };
 
     function handleKeyDown(e: any): void {
         if (e.keyCode === 13) {
@@ -195,7 +195,6 @@ const CreateStoreModal = () => {
                     data-gtm-form-interact-id="0"
                     method="POST"
                     className="w-full flex flex-col items-center justify-center"
-                    onSubmit={handleSubmit}
                     onKeyDown={handleKeyDown}
                 >
                     <input type="hidden" name="gcaptcha_site" value="6LdRdTErAAAAAJTiQW_hUzJxve5303X3lyy1UjA_"></input>
@@ -299,7 +298,15 @@ const CreateStoreModal = () => {
                             __html: `
                             function onSubmitModalForm(token) {
                                 console.log("recaptcha submited");
-                                document.getElementById('modal-no-check').submit();
+
+                                window.dataLayer = window.dataLayer || [];
+                                window.dataLayer.push({
+                                    'event': 'callback_cadastro_lead_institucional'
+                                });
+
+                                setTimeout(() => {
+                                    document.getElementById('modal-no-check').submit();
+                                }, 300)
                             }
                             `}}></script>
                         <button

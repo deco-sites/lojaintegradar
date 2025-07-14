@@ -154,9 +154,17 @@ const CreateStoreModal = () => {
         return !hasError;
     };
 
-    const handleSubmit = (e: any) => {
+    const sendDataLayerEvent = () => {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'callback_cadastro_lead_institucional'
+        });
+    }
+
+    const handleSubmit = async (e: any) => {
         e.preventDefault();
         if (validateForm()) {
+            await sendDataLayerEvent();
             e.target.submit();
         } else {
             console.error("Erros de validação encontrados, o formulário não será enviado.");
@@ -289,13 +297,8 @@ const CreateStoreModal = () => {
                             __html: `
                             function onSubmitModalForm(token) {
                                 console.log("recaptcha submited");
-                                        window.dataLayer = window.dataLayer || [];
-                                        window.dataLayer.push({
-                                         'event': 'callback_cadastro_lead_institucional'
-                                        });
                                 document.getElementById('modal-no-check').submit();
                             }
-
                             `}}></script>
                         <button
                             id="input-form-modal_no_check"

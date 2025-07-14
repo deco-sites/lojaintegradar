@@ -165,7 +165,9 @@ const CreateStoreModal = () => {
         e.preventDefault();
         if (validateForm()) {
             await sendDataLayerEvent();
-            e.target.submit();
+            setTimeout(() => {
+                e.target.submit();
+            }, 50)
         } else {
             console.error("Erros de validação encontrados, o formulário não será enviado.");
         }

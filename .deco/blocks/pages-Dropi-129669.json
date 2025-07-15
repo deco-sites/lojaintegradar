@@ -27,6 +27,13 @@
             "size": "Small",
             "createStorePlanId": "172",
             "openModal": "Create Store"
+          },
+          {
+            "size": "Small",
+            "text": "Painel da Loja",
+            "backgroundColor": "#ffffff",
+            "type": "Button",
+            "href": "https://app.lojaintegrada.com.br/painel/login"
           }
         ],
         "mobileButtons": [
@@ -314,7 +321,7 @@
         {
           "value": {
             "__resolveType": "site/sections/MainHero.tsx",
-            "title": "<p>Seu e-commerce sem estoque começa aqui</p>",
+            "title": "<p>Comece sem estoque com a Loja integrada + Dropi</p>",
             "backgroundColor": "",
             "backgroundImage": {
               "width": 1140,
@@ -365,7 +372,7 @@
             "titleColor": "#00363A",
             "captionColor": "#ffffff",
             "use": "image",
-            "captionAbove": "<p>Sem ideia do que vender?</p>",
+            "captionAbove": "<p>Dropshipping para quem não tem produto</p>",
             "captionLineHeight": "26px",
             "mediaPosition": "center"
           },

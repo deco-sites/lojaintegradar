@@ -130,7 +130,7 @@
               "width": 200
             },
             "initialButtons": [],
-            "backgroundColor": "#DFEEDD",
+            "backgroundColor": "#E4F3F3",
             "barsColor": "#003037",
             "asideMenuTopBackgroundColor": "#D0DAD9",
             "asideMenuBackgroundColor": "#ffffff",
@@ -282,7 +282,7 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p>Da vitrine ao checkout, sua<br>loja de moda mais inteligente<br>e pronta pra vender.</p>",
+              "text": "<p>Da vitrine ao checkout, sua<br>loja de moda mais inteligente<br>e<span style=\"color: #28c3c3\"> pronta pra vender.</span></p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
               "fontSize": "56px",
@@ -1478,7 +1478,7 @@
             "captionTextProps": {
               "color": ""
             },
-            "title": "<p><span>Moda é o nosso maior segmento + de 30 mil lojas criadas</span></p>"
+            "title": "<p>Moda é o nosso maior segmento <strong><span style=\"color: #28c3c3\">+ de 30 mil lojas criadas</span></strong></p>"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

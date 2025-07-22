@@ -313,7 +313,7 @@
               "use": "image",
               "placement": "right"
             },
-            "text": "<p><span style=\"color: #5f6e82\">Com IA, automações e ferramentas que fazem seu negócio crescer sem burocracia.</span></p>",
+            "text": "<p><span style=\"color: rgb(95, 110, 130)\">Com IA, automações e ferramentas que fazem seu negócio</span><br><span style=\"color: rgb(95, 110, 130)\">crescer sem burocracia.</span></p>",
             "container": {
               "marginTop": "0",
               "paddingBottom": "0",
@@ -321,10 +321,8 @@
               "marginBottom": "0"
             },
             "sectionBackground": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/148d9cbd-c57d-43de-95f9-ddc6194fdf9b/background-green-pattern.svg"
-              },
-              "use": "image"
+              "image": {},
+              "backgroundColor": "radial-gradient(121.8% 71.24% at 57.92% -9.27%, #28C3C3 0%, rgba(192, 237, 237, 0.29) 62.02%, rgba(255, 255, 255, 0.00) 87.93%);"
             },
             "lcp": true,
             "floatingImage": {
@@ -349,1032 +347,1072 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/CardsHero.tsx",
-            "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Vendas cada vez mais inteligentes</span><br><span style=\"color: rgb(0, 54, 58)\">e simplificadas</span></p>",
-              "letterSpacing": "-0.3px",
-              "font": "Lektorat Display var",
-              "fontSize": "32px",
-              "fontWeight": "750",
-              "lineHeight": "100%"
-            },
-            "leftColumn": {
-              "cards": [
-                {
-                  "cta": [],
-                  "title": "<p>“Leram meu<br>pensamento!”</p>",
-                  "titleFont": "Lektorat Display var",
-                  "text": "<p>Entenda o comportamento do cliente e transforme cada interação em uma chance<br>de conversão.</p>",
-                  "titleFontSize": "46px",
-                  "titleTag": {
-                    "text": "<p></p>"
-                  },
-                  "backgroundColor": "",
-                  "bulletPoints": {
-                    "items": [],
-                    "bulletPointsTextProps": {
-                      "color": ""
-                    }
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "172"
-                  },
-                  "useBackground": "image",
-                  "image": {
-                    "imagePlacement": "bottom"
-                  },
-                  "titleLetterSpacing": "-0.3px",
-                  "titleColor": "#FFFFFF",
-                  "backgroundImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/912f0cf9-6831-46db-819b-ef4dafe384db/leram-meu-pensamento-mobile.png",
-                    "height": 461,
-                    "width": 331
-                  },
-                  "spaceBetweenTitleAndText": "20px",
-                  "borderRadius": "20px",
-                  "padding": "10px",
-                  "textProps": {
-                    "fontFamily": "inter ",
-                    "fontSize": "16px",
-                    "color": "#00363A"
-                  },
-                  "titleFontWeight": "750",
-                  "titleLineHeight": "47px",
-                  "minHeight": "694px"
-                }
-              ],
-              "cardsMaxWidth": "597px"
-            },
-            "rightColumn": {
-              "cards": [
-                {
-                  "cta": [],
-                  "title": "<p><span>Ações automatizadas que</span></p><p><span>trabalham por você</span></p>",
-                  "text": "<p>Envie alertas de carrinho abandonado, personalize campanhas segmentadas e ajuste preços de forma inteligente.</p>",
-                  "titleFontSize": "18px",
-                  "backgroundColor": "",
-                  "borderRadius": "20px",
-                  "bulletPoints": {
-                    "items": []
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "172"
-                  },
-                  "image": {
-                    "width": 554,
-                    "height": 69
-                  },
-                  "useBackground": "image",
-                  "titleColor": "#00363A",
-                  "borderColor": "#F2F4F5",
-                  "titleFontWeight": "750",
-                  "minHeight": "0",
-                  "titleLineHeight": "20px",
-                  "padding": "37px 35px",
-                  "titleFont": "inter",
-                  "textProps": {
-                    "color": "#5F6E82",
-                    "fontFamily": "Inter",
-                    "fontSize": "16px"
-                  }
-                },
-                {
-                  "cta": [],
-                  "title": "<p><span>Se mostre relevante em</span></p><p><span>todos os contatos</span></p>",
-                  "text": "<p>Leve ofertas contextualizadas para seus clientes também via WhatsApp.</p>",
-                  "titleFontSize": "18px",
-                  "backgroundColor": "",
-                  "borderRadius": "20px",
-                  "bulletPoints": {
-                    "items": []
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "172"
-                  },
-                  "image": {
-                    "width": 554,
-                    "height": 69
-                  },
-                  "useBackground": "image",
-                  "titleColor": "#00363A",
-                  "borderColor": "#F2F4F5",
-                  "minHeight": "0",
-                  "titleLineHeight": "20px",
-                  "padding": "36px 35px",
-                  "titleFont": "Inter",
-                  "textProps": {
-                    "color": "#5F6E82",
-                    "fontFamily": "Inter",
-                    "fontSize": "16px"
-                  },
-                  "titleFontWeight": "750"
-                },
-                {
-                  "image": {
-                    "imagePlacement": "top"
-                  },
-                  "bulletPoints": {
-                    "items": []
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "172"
-                  },
-                  "cta": [],
-                  "useBackground": "image",
-                  "contentPlacement": "top",
-                  "backgroundImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/647c2084-1b00-49b3-b3ce-faa19013ea03/automacoes-marketing-LojaIntegrada.png",
-                    "height": 414,
-                    "width": 680
-                  },
-                  "borderRadius": "20px",
-                  "title": "<p><span>+ R$ 30</span></p><p><span>milhões</span></p>",
-                  "titleColor": " #00363A",
-                  "titleFont": "Lektorat Display var",
-                  "titleLineHeight": "42px",
-                  "titleLetterSpacing": "-1px",
-                  "padding": "87px 20px",
-                  "text": "<p><span style=\"color: #00363a\">de vendas recuperadas<br>em 2024 com ferramentas <br>de automação de marketing<br>da Loja Integrada.</span></p>",
-                  "titleFontSize": "42px",
-                  "textProps": {
-                    "color": "#00363A",
-                    "fontFamily": "Inter",
-                    "fontSize": "14px",
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/CardsHero.tsx",
+                  "title": {
+                    "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Vendas cada vez mais inteligentes</span><br><span style=\"color: rgb(0, 54, 58)\">e simplificadas</span></p>",
+                    "letterSpacing": "-0.3px",
+                    "font": "Lektorat Display var",
+                    "fontSize": "32px",
+                    "fontWeight": "750",
                     "lineHeight": "100%"
                   },
-                  "titleFontWeight": "750"
-                }
-              ],
-              "cardsMaxWidth": "597px"
-            },
-            "paddingBottom": "30px",
-            "paddingTop": "30px",
-            "caption": "<p style=\"text-align: center\">Alcance, engaje e recupere vendas de forma automatizada com soluções nativas já disponíveis<br>na plataforma</p>",
-            "distanceBetweenColums": "40",
-            "bottomCta": [
-              {
-                "type": "Button",
-                "size": "Medium",
-                "openModal": "Create Store",
-                "text": "Começar sem custos",
-                "textColor": "#FFFFFF",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "createStorePlanId": "172",
-                "showIcon": false,
-                "customIcon": {},
-                "customEvent": "cardsHero",
-                "customEventCategory": "loja-integrada:institucional",
-                "customEventLabel": "comecar-sem-custos"
-              }
-            ],
-            "captionTextProps": {
-              "color": "#5F6E82",
-              "fontFamily": "Inter",
-              "fontSize": "16px",
-              "lineHeight": "125%"
-            },
-            "tag": {
-              "textProps": {}
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/CardsHero.tsx",
-            "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Vendas cada vez mais inteligentes<br>e simplificadas</span></p>",
-              "letterSpacing": "-0.3px",
-              "font": "Lektorat Display var ",
-              "fontSize": "62px",
-              "fontWeight": "750",
-              "lineHeight": "100%"
-            },
-            "leftColumn": {
-              "cards": [
-                {
-                  "cta": [],
-                  "title": "<p>“Leram meu<br>pensamento!”</p>",
-                  "titleFont": "Lektorat Display var",
-                  "text": "<p>Entenda o comportamento do cliente e transforme<br>cada interação em uma chance de conversão.</p>",
-                  "titleFontSize": "46px",
-                  "titleTag": {
-                    "text": "<p></p>"
+                  "leftColumn": {
+                    "cards": [
+                      {
+                        "cta": [],
+                        "title": "<p>“Leram meu<br>pensamento!”</p>",
+                        "titleFont": "Lektorat Display var",
+                        "text": "<p>Entenda o comportamento do cliente e transforme cada interação em uma chance<br>de conversão.</p>",
+                        "titleFontSize": "46px",
+                        "titleTag": {
+                          "text": "<p></p>"
+                        },
+                        "backgroundColor": "",
+                        "bulletPoints": {
+                          "items": [],
+                          "bulletPointsTextProps": {
+                            "color": ""
+                          }
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "useBackground": "image",
+                        "image": {
+                          "imagePlacement": "bottom"
+                        },
+                        "titleLetterSpacing": "-0.3px",
+                        "titleColor": "#FFFFFF",
+                        "backgroundImage": {
+                          "src": "https://assets.decocache.com/lojaintegradar/912f0cf9-6831-46db-819b-ef4dafe384db/leram-meu-pensamento-mobile.png",
+                          "height": 461,
+                          "width": 331
+                        },
+                        "spaceBetweenTitleAndText": "20px",
+                        "borderRadius": "20px",
+                        "padding": "10px",
+                        "textProps": {
+                          "fontFamily": "inter ",
+                          "fontSize": "16px",
+                          "color": "#00363A"
+                        },
+                        "titleFontWeight": "750",
+                        "titleLineHeight": "47px",
+                        "minHeight": "694px"
+                      }
+                    ],
+                    "cardsMaxWidth": "597px"
                   },
-                  "backgroundColor": "",
-                  "bulletPoints": {
-                    "items": [],
-                    "bulletPointsTextProps": {
-                      "color": ""
+                  "rightColumn": {
+                    "cards": [
+                      {
+                        "cta": [],
+                        "title": "<p><span>Ações automatizadas que</span></p><p><span>trabalham por você</span></p>",
+                        "text": "<p>Envie alertas de carrinho abandonado, personalize campanhas segmentadas e ajuste preços de forma inteligente.</p>",
+                        "titleFontSize": "18px",
+                        "backgroundColor": "",
+                        "borderRadius": "20px",
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "image": {
+                          "width": 554,
+                          "height": 69
+                        },
+                        "useBackground": "image",
+                        "titleColor": "#00363A",
+                        "borderColor": "#F2F4F5",
+                        "titleFontWeight": "750",
+                        "minHeight": "0",
+                        "titleLineHeight": "20px",
+                        "padding": "37px 35px",
+                        "titleFont": "inter",
+                        "textProps": {
+                          "color": "#5F6E82",
+                          "fontFamily": "Inter",
+                          "fontSize": "16px"
+                        }
+                      },
+                      {
+                        "cta": [],
+                        "title": "<p><span>Se mostre relevante em</span></p><p><span>todos os contatos</span></p>",
+                        "text": "<p>Leve ofertas contextualizadas para seus clientes também via WhatsApp.</p>",
+                        "titleFontSize": "18px",
+                        "backgroundColor": "",
+                        "borderRadius": "20px",
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "image": {
+                          "width": 554,
+                          "height": 69
+                        },
+                        "useBackground": "image",
+                        "titleColor": "#00363A",
+                        "borderColor": "#F2F4F5",
+                        "minHeight": "0",
+                        "titleLineHeight": "20px",
+                        "padding": "36px 35px",
+                        "titleFont": "Inter",
+                        "textProps": {
+                          "color": "#5F6E82",
+                          "fontFamily": "Inter",
+                          "fontSize": "16px"
+                        },
+                        "titleFontWeight": "750"
+                      },
+                      {
+                        "image": {
+                          "imagePlacement": "top"
+                        },
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "cta": [],
+                        "useBackground": "image",
+                        "contentPlacement": "top",
+                        "backgroundImage": {
+                          "src": "https://assets.decocache.com/lojaintegradar/647c2084-1b00-49b3-b3ce-faa19013ea03/automacoes-marketing-LojaIntegrada.png",
+                          "height": 414,
+                          "width": 680
+                        },
+                        "borderRadius": "20px",
+                        "title": "<p><span>+ R$ 30</span></p><p><span>milhões</span></p>",
+                        "titleColor": " #00363A",
+                        "titleFont": "Lektorat Display var",
+                        "titleLineHeight": "42px",
+                        "titleLetterSpacing": "-1px",
+                        "padding": "87px 20px",
+                        "text": "<p><span style=\"color: #00363a\">de vendas recuperadas<br>em 2024 com ferramentas <br>de automação de marketing<br>da Loja Integrada.</span></p>",
+                        "titleFontSize": "42px",
+                        "textProps": {
+                          "color": "#00363A",
+                          "fontFamily": "Inter",
+                          "fontSize": "14px",
+                          "lineHeight": "100%"
+                        },
+                        "titleFontWeight": "750"
+                      }
+                    ],
+                    "cardsMaxWidth": "597px"
+                  },
+                  "paddingBottom": "30px",
+                  "paddingTop": "30px",
+                  "caption": "<p style=\"text-align: center\">Alcance, engaje e recupere vendas de forma automatizada com soluções nativas já disponíveis<br>na plataforma</p>",
+                  "distanceBetweenColums": "40",
+                  "bottomCta": [
+                    {
+                      "type": "Button",
+                      "size": "Medium",
+                      "openModal": "Create Store",
+                      "text": "Começar sem custos",
+                      "textColor": "#FFFFFF",
+                      "backgroundColor": "#00363A",
+                      "borderColor": "#00363A",
+                      "createStorePlanId": "172",
+                      "showIcon": false,
+                      "customIcon": {},
+                      "customEvent": "cardsHero",
+                      "customEventCategory": "loja-integrada:institucional",
+                      "customEventLabel": "comecar-sem-custos"
                     }
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "172"
-                  },
-                  "useBackground": "image",
-                  "image": {
-                    "imagePlacement": "bottom"
-                  },
-                  "titleLetterSpacing": "-0.3px",
-                  "titleColor": "#FFFFFF",
-                  "backgroundImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/b1e15422-356c-41f8-875d-4deb6f3e0238/leram-meu-pensamento-desktop.png",
-                    "height": 876,
-                    "width": 628
-                  },
-                  "spaceBetweenTitleAndText": "30px",
-                  "textProps": {
-                    "fontFamily": "inter ",
-                    "fontSize": "16px",
-                    "color": "#00363A"
-                  },
-                  "titleFontWeight": "750",
-                  "titleLineHeight": "47px",
-                  "borderRadius": "20px",
-                  "minHeight": "832px",
-                  "padding": "48px"
-                }
-              ],
-              "cardsMaxWidth": "597px"
-            },
-            "rightColumn": {
-              "cards": [
-                {
-                  "cta": [],
-                  "title": "<p><span>Ações automatizadas que</span></p><p><span>trabalham por você</span></p>",
-                  "text": "<p>Envie alertas de carrinho abandonado, personalize campanhas<br>segmentadas e ajuste preços de forma inteligente.</p>",
-                  "titleFontSize": "22px",
-                  "backgroundColor": "",
-                  "borderRadius": "20px",
-                  "bulletPoints": {
-                    "items": []
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "172"
-                  },
-                  "image": {
-                    "width": 554,
-                    "height": 69
-                  },
-                  "useBackground": "image",
-                  "titleColor": "#00363A",
-                  "borderColor": "#F2F4F5",
-                  "titleFontWeight": "500",
-                  "minHeight": "0",
-                  "titleLineHeight": "30px",
-                  "padding": "37px 35px",
-                  "titleFont": "inter",
-                  "textProps": {
+                  ],
+                  "captionTextProps": {
                     "color": "#5F6E82",
                     "fontFamily": "Inter",
                     "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "120%"
+                    "lineHeight": "125%"
+                  },
+                  "tag": {
+                    "textProps": {}
                   }
                 },
-                {
-                  "cta": [],
-                  "title": "<p><span>Se mostre relevante em</span></p><p><span>todos os contatos</span></p>",
-                  "text": "<p>Leve ofertas contextualizadas para seus clientes<br>também via WhatsApp.</p>",
-                  "titleFontSize": "22px",
-                  "backgroundColor": "",
-                  "borderRadius": "20px",
-                  "bulletPoints": {
-                    "items": []
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "172"
-                  },
-                  "image": {
-                    "width": 554,
-                    "height": 69
-                  },
-                  "useBackground": "image",
-                  "titleColor": "#00363A",
-                  "borderColor": "#F2F4F5",
-                  "minHeight": "0",
-                  "titleLineHeight": "30px",
-                  "padding": "36px 35px",
-                  "titleFont": "Inter",
-                  "textProps": {
-                    "color": "#5F6E82",
-                    "fontFamily": "Inter ",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "120%"
-                  },
-                  "titleFontWeight": "500"
-                },
-                {
-                  "image": {
-                    "imagePlacement": "top"
-                  },
-                  "bulletPoints": {
-                    "items": []
-                  },
-                  "createStoreCta": {
-                    "ctaStyle": "button",
-                    "planId": "172"
-                  },
-                  "cta": [],
-                  "useBackground": "image",
-                  "contentPlacement": "top",
-                  "backgroundImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/909ff33c-b69b-4145-8a45-6bc33534b9ba/30-milhoes-recuperados.png",
-                    "height": 414,
-                    "width": 680
-                  },
-                  "borderRadius": "20px",
-                  "title": "<p><span>+ R$ 30</span></p><p><span>milhões</span></p>",
-                  "titleColor": " #00363A",
-                  "titleFont": "Lektorat Display var",
-                  "titleLineHeight": "67px",
-                  "titleLetterSpacing": "-1px",
-                  "padding": "87px 35px",
-                  "text": "<p><span style=\"color: #00363a\">de vendas recuperadas<br>em 2024 com ferramentas <br>de automação de marketing<br>da Loja Integrada.</span></p>",
-                  "textProps": {
-                    "color": "#00363A",
-                    "fontFamily": "Inter",
-                    "fontSize": "16px",
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/CardsHero.tsx",
+                  "title": {
+                    "text": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 54, 58)\">Vendas cada vez mais inteligentes<br>e simplificadas</span></p>",
+                    "letterSpacing": "-0.3px",
+                    "font": "Lektorat Display var ",
+                    "fontSize": "62px",
+                    "fontWeight": "750",
                     "lineHeight": "100%"
                   },
-                  "titleFontSize": "60px",
-                  "titleFontWeight": "750"
-                }
-              ],
-              "cardsMaxWidth": "597px"
-            },
-            "paddingBottom": "120px",
-            "paddingTop": "120px",
-            "caption": "<p style=\"text-align: center\">Alcance, engaje e recupere vendas de forma automatizada com soluções<br>nativas já disponíveis na plataforma</p>",
-            "distanceBetweenColums": "56px",
-            "bottomCta": [
-              {
-                "type": "Button",
-                "size": "Large",
-                "openModal": "Create Store",
-                "text": "Começar sem custos",
-                "textColor": "#FFFFFF",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "createStorePlanId": "172",
-                "showIcon": false,
-                "customIcon": {},
-                "customEventCategory": "loja-integrada:institucional",
-                "customEvent": "cardsHero",
-                "customEventLabel": "comecar-sem-custos"
-              }
-            ],
-            "captionTextProps": {
-              "color": "#5F6E82",
-              "fontFamily": "Inter",
-              "fontSize": "16px",
-              "lineHeight": "100%",
-              "fontWeight": "500"
-            },
-            "tag": {
-              "textProps": {}
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/DetailedCarouselV2.tsx",
-            "title": {
-              "text": "<p style=\"text-align: center\">Plataforma com IA que<br>agiliza sua rotina.</p>",
-              "fontSize": "62px",
-              "font": "Lektorat Display var",
-              "lineHeight": "100%",
-              "fontWeight": "750",
-              "letterSpacing": "-0.3px",
-              "color": "#00363A"
-            },
-            "caption": {
-              "text": "<p></p>",
-              "color": "#00363A"
-            },
-            "paddingTop": "80px",
-            "paddingBottom": "80px",
-            "slides": [
-              {
-                "use": "image",
-                "bulletPoints": {
-                  "items": [],
-                  "textProps": {
-                    "color": ""
-                  }
-                },
-                "title": "Reengaje clientes com campanhas automáticas",
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/743ede52-527d-4d42-ad39-dc3c9b92f82c/detailed-carousel-image-1.svg",
-                  "width": 549,
-                  "height": 399
-                },
-                "contentTitle": {
-                  "text": "<p><span style=\"color: rgb(0, 54, 58)\">Reengaje clientes</span><br><span style=\"color: rgb(0, 54, 58)\">com campanhas</span><br><span style=\"color: rgb(0, 54, 58)\">automáticas</span></p>",
-                  "font": "Lektorat Display var",
-                  "fontSize": "28px",
-                  "color": "#00363A",
-                  "fontWeight": "750",
-                  "letterSpacing": "-0.3px",
-                  "lineHeight": "100%"
-                },
-                "caption": {
-                  "text": "<p style=\"text-align: justify\">Venda mais – e sem custo adicional, com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</p>",
-                  "color": "#00363A",
-                  "font": "Inter",
-                  "fontSize": "14px"
-                },
-                "video": {},
-                "media": {
-                  "video": {},
-                  "use": "image",
-                  "image": {
-                    "src": "https://assets.decocache.com/lojaintegradar/2d216dc4-6ebc-4ae9-a943-f786309d45e5/Reengaje--clientes.png"
-                  }
-                },
-                "textContainer": {
-                  "backgroundColor": "#FFE6A080"
-                },
-                "titleColor": "#c40e0e"
-              },
-              {
-                "use": "image",
-                "bulletPoints": {
-                  "items": [],
-                  "textProps": {
-                    "color": ""
-                  }
-                },
-                "title": "Anuncie produtos em diferentes canais",
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/743ede52-527d-4d42-ad39-dc3c9b92f82c/detailed-carousel-image-1.svg",
-                  "width": 549,
-                  "height": 399
-                },
-                "contentTitle": {
-                  "text": "<p><span style=\"color: rgb(0, 54, 58)\">Anuncie produtos</span><br><span style=\"color: rgb(0, 54, 58)\">em diferentes canais</span></p>",
-                  "font": "Lektorat Display var",
-                  "fontSize": "28px",
-                  "color": "#00363A",
-                  "fontWeight": "750",
-                  "letterSpacing": "-0.3px",
-                  "lineHeight": "100%"
-                },
-                "caption": {
-                  "text": "<p>Faturamento fácil e nas alturas: Cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</p>",
-                  "color": "#00363A",
-                  "font": "Inter",
-                  "fontSize": "16px"
-                },
-                "video": {},
-                "media": {
-                  "video": {},
-                  "use": "image",
-                  "image": {
-                    "src": "https://assets.decocache.com/lojaintegradar/1ec0ce15-e052-4efd-9e4c-d908bc86a710/anuncie-diferentes-canais.png"
-                  }
-                },
-                "textContainer": {
-                  "backgroundColor": "#FFE6A080"
-                },
-                "titleColor": "#c40e0e"
-              },
-              {
-                "use": "image",
-                "bulletPoints": {
-                  "items": [],
-                  "textProps": {
-                    "color": ""
-                  }
-                },
-                "title": "Frete e pagamento descomplicados",
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/743ede52-527d-4d42-ad39-dc3c9b92f82c/detailed-carousel-image-1.svg",
-                  "width": 549,
-                  "height": 399
-                },
-                "contentTitle": {
-                  "text": "<p><span style=\"color: rgb(0, 54, 58)\">Frete e pagamento</span><br><span style=\"color: rgb(0, 54, 58)\">descomplicados</span></p>",
-                  "color": "#00363A",
-                  "font": "Lektorat Display var",
-                  "fontSize": "28px",
-                  "fontWeight": "750",
-                  "letterSpacing": "-0.3px",
-                  "lineHeight": "100%"
-                },
-                "caption": {
-                  "text": "<p>Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</p>",
-                  "color": "#00363A",
-                  "font": "Inter",
-                  "fontSize": "16px"
-                },
-                "video": {},
-                "media": {
-                  "video": {},
-                  "use": "image",
-                  "image": {
-                    "src": "https://data.decoassets.com/lojaintegradar/de57108d-0951-4627-934c-70e6ff037fcd/frete-envios.png"
-                  }
-                },
-                "textContainer": {
-                  "backgroundColor": "#FFE6A080"
-                },
-                "titleColor": "#c40e0e"
-              },
-              {
-                "use": "image",
-                "bulletPoints": {
-                  "items": [],
-                  "textProps": {
-                    "color": ""
-                  }
-                },
-                "title": "Checkout rápido e aprimorado",
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/743ede52-527d-4d42-ad39-dc3c9b92f82c/detailed-carousel-image-1.svg",
-                  "width": 549,
-                  "height": 399
-                },
-                "contentTitle": {
-                  "text": "<p><span style=\"color: rgb(0, 54, 58)\">Checkout rápido</span><br><span style=\"color: rgb(0, 54, 58)\">e aprimorado</span></p>",
-                  "font": "Lektorat Display var",
-                  "fontSize": "28px",
-                  "color": "#00363A",
-                  "fontWeight": "750",
-                  "lineHeight": "100%",
-                  "letterSpacing": "-0.3px"
-                },
-                "caption": {
-                  "text": "<p>Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</p>",
-                  "color": "#00363A",
-                  "font": "Inter",
-                  "fontSize": "16px"
-                },
-                "video": {},
-                "media": {
-                  "video": {},
-                  "use": "image",
-                  "image": {
-                    "src": "https://assets.decocache.com/lojaintegradar/abe21874-0ff4-4e14-baf4-f91e8adfcf10/checkout-rapido-desktop.png"
-                  }
-                },
-                "textContainer": {
-                  "backgroundColor": "#FFE6A080"
-                },
-                "titleColor": "#c40e0e"
-              }
-            ],
-            "dots": true,
-            "dotsColor": "#56481D",
-            "interval": 30,
-            "dotsProgressBarBackgroundColor": "#75dae6",
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Large",
-                "openModal": "Create Store",
-                "text": "Criar loja grátis",
-                "textColor": "#ffffff",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "createStorePlanId": "172",
-                "customEventLabel": "criar-loja-gratis",
-                "customEventCategory": "loja-integrada:institucional",
-                "customEvent": "DetailedCarouselV2"
-              }
-            ],
-            "createStoreCta": {
-              "planId": "172",
-              "text": "Criar minha loja",
-              "textColor": "#003037",
-              "backgroundColor": "#FAFAF5",
-              "borderColor": "#FAFAF5",
-              "ctaStyle": "button"
-            },
-            "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))",
-            "dotsTextColor": "#00363A",
-            "arrows": false,
-            "arrowsColor": "#00363A"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "tablet": true,
-            "desktop": true
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/CarouselV2.tsx",
-            "paddingTop": "30px",
-            "paddingBottom": "30px",
-            "slides": [
-              {
-                "icon": {
-                  "placement": "Top left"
-                },
-                "use": "image",
-                "cta": [],
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/5b077fd3-a250-4725-940f-68403aacd3a9/img-reengaje-mobile.png"
-                },
-                "title": {
-                  "text": "<p>Reengaje clientes<br>com campanhas automáticas</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
-                },
-                "caption": "<p><span style=\"color: #5f6e82\">Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via Chat e WhatsApp.</span></p>",
-                "captionTextProps": {}
-              },
-              {
-                "icon": {
-                  "placement": "Top left"
-                },
-                "use": "image",
-                "cta": [],
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/47258e4c-ca39-4f7b-8921-619b6b22bda6/divulgue-em-diferentes-canais-mobile.png"
-                },
-                "title": {
-                  "text": "<p>Anuncie produtos em<br>diferentes canais</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
-                },
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Faturamento fácil e nas alturas: Cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
-                "captionTextProps": {}
-              },
-              {
-                "icon": {
-                  "placement": "Top left"
-                },
-                "use": "image",
-                "cta": [],
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/1ec0ce15-e052-4efd-9e4c-d908bc86a710/anuncie-diferentes-canais.png"
-                },
-                "title": {
-                  "text": "<p>Frete e pagamento<br>descomplicados</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
-                },
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
-                "captionTextProps": {}
-              },
-              {
-                "icon": {
-                  "placement": "Top left"
-                },
-                "use": "image",
-                "cta": [],
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/66517d71-6a14-42f4-a769-e01b5573b3bf/CHECKOUT.png"
-                },
-                "title": {
-                  "text": "<p>Checkout rápido<br>e aprimorado</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
-                },
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
-                "captionTextProps": {}
-              }
-            ],
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Medium",
-                "openModal": "Create Store",
-                "text": "Crie sua loja grátis",
-                "textColor": "#ffffff",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "createStorePlanId": "172"
-              }
-            ],
-            "title": {
-              "text": "<p style=\"text-align: center\">Plataforma com IA que<br>agiliza sua rotina.</p>",
-              "font": "Lektorat Display var",
-              "color": "#00363A",
-              "fontSize": "32px",
-              "letterSpacing": "-0.3px",
-              "fontWeight": "750",
-              "lineHeight": "100%"
-            },
-            "caption": "<p style=\"text-align: center\">Tudo que você precisa, em um só lugar</p>",
-            "captionTextProps": {
-              "color": "#5F6E82",
-              "fontSize": "16px",
-              "fontFamily": "Inter",
-              "lineHeight": "125%",
-              "fontWeight": "500"
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
-            "titleFont": "Lektorat Display var",
-            "titleColor": "#371E55",
-            "paddingTop": "30px",
-            "paddingBottom": "30px",
-            "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: #00363a\">lojistas</span></p>",
-            "caption": "<p style=\"text-align: center\">que escolheram a forma mais eficiente<br>de vender online</p>",
-            "slides": [
-              {
-                "content": {
-                  "description": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e comfácil integração à VTEX.</span></p>",
-                  "avatar": "https://assets.decocache.com/lojaintegradar/80fa3f6c-99a3-42e9-bf4a-61a9cd3fb7c9/m-camicado.png",
-                  "name": "<p><span style=\"color: rgb(0, 54, 58)\">M.Camicado</span></p>",
-                  "alt": "m camicado",
-                  "quoteIconColor": "",
-                  "nameIconColor": "#5F6E82",
-                  "nameBackgroundColor": "",
-                  "avaterBorderColor": "",
-                  "avatarWidth": 63,
-                  "backgroundColor": "",
-                  "avatarHeight": 63,
-                  "roundedAvatar": false,
-                  "nameCaption": "<p><span style=\"color: #5f6e82\">Loja no ar em cerca de 60 dias</span></p>",
-                  "borderColor": "#CBCBC1"
-                }
-              },
-              {
-                "content": {
-                  "description": "<p><span style=\"color: rgb(95, 110, 130)\">No primeiro mês pós-migração, minha taxa de conversão cresceu 60%. A plataforma é fácil de usar e o suporte é próximo e eficiente.</span></p>",
-                  "avatar": "https://assets.decocache.com/lojaintegradar/cb3f2aea-dc5a-4bfe-8218-c4291cf5c7c8/livraria-florence.png",
-                  "name": "<p><span style=\"color: rgb(0, 54, 58)\">Livraria Florence</span></p>",
-                  "alt": "livraria Florence",
-                  "quoteIconColor": "",
-                  "nameIconColor": "#5F6E82",
-                  "nameBackgroundColor": "",
-                  "avaterBorderColor": "",
-                  "avatarWidth": 63,
-                  "backgroundColor": "",
-                  "avatarHeight": 63,
-                  "roundedAvatar": false,
-                  "nameCaption": "<p><span style=\"color: rgb(95, 110, 130)\">Loja no ar em cerca de 30 dias</span></p>",
-                  "borderColor": "#CBCBC1"
-                }
-              }
-            ],
-            "arrows": true,
-            "dots": false,
-            "arrowsColor": "#00363A",
-            "bubbleImages": [],
-            "backgroundMedia": {
-              "image": {},
-              "use": "image"
-            },
-            "hubspotForm": {
-              "inputLabel": " ⚡ Ganhe 20% OFF na assinatura anual️",
-              "inputLabelColor": "#00363A",
-              "inputLabelBackgroundColor": "#B7FBDB",
-              "errorMessageColor": "#F57E77",
-              "buttonTextColor": "#ffffff",
-              "buttonColor": "#00363A",
-              "region": "na1",
-              "portalId": "7112881",
-              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
-              "show": true
-            },
-            "titleFontSize": "32px",
-            "titleLetterSpacing": "-0.3px",
-            "titleFontWeight": "750",
-            "titleLineHeight": "100%",
-            "captionFontSize": "16px",
-            "captionColor": "#5F6E82",
-            "captionFont": "500",
-            "captionLineHeight": "125%"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
-            "title": "<p style=\"text-align: center\">Junte-se a mais de 2,7<br>milhões de lojistas</p>",
-            "caption": "<p style=\"text-align: center\">Que escolheram a forma mais eficiente de vender online</p>",
-            "slides": [
-              {
-                "content": {
-                  "description": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e comfácil integração à VTEX.</span></p>",
-                  "avatar": "https://assets.decocache.com/lojaintegradar/80fa3f6c-99a3-42e9-bf4a-61a9cd3fb7c9/m-camicado.png",
-                  "name": "<p><span style=\"color: rgb(0, 54, 58)\">M.Camicado</span></p>",
-                  "alt": "m camicado",
-                  "quoteIconColor": "",
-                  "nameIconColor": "#5F6E82",
-                  "nameBackgroundColor": "",
-                  "avaterBorderColor": "",
-                  "avatarWidth": 63,
-                  "backgroundColor": "",
-                  "avatarHeight": 63,
-                  "roundedAvatar": false,
-                  "nameCaption": "<p><span style=\"color: #5f6e82\">Loja no ar em cerca de 60 dias</span></p>",
-                  "borderColor": "#F2F4F5",
-                  "descriptionTextProps": {
-                    "color": ""
+                  "leftColumn": {
+                    "cards": [
+                      {
+                        "cta": [],
+                        "title": "<p>“Leram meu<br>pensamento!”</p>",
+                        "titleFont": "Lektorat Display var",
+                        "text": "<p>Entenda o comportamento do cliente e transforme<br>cada interação em uma chance de conversão.</p>",
+                        "titleFontSize": "46px",
+                        "titleTag": {
+                          "text": "<p></p>"
+                        },
+                        "backgroundColor": "",
+                        "bulletPoints": {
+                          "items": [],
+                          "bulletPointsTextProps": {
+                            "color": ""
+                          }
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "useBackground": "image",
+                        "image": {
+                          "imagePlacement": "bottom"
+                        },
+                        "titleLetterSpacing": "-0.3px",
+                        "titleColor": "#FFFFFF",
+                        "backgroundImage": {
+                          "src": "https://assets.decocache.com/lojaintegradar/b1e15422-356c-41f8-875d-4deb6f3e0238/leram-meu-pensamento-desktop.png",
+                          "height": 876,
+                          "width": 628
+                        },
+                        "spaceBetweenTitleAndText": "30px",
+                        "textProps": {
+                          "fontFamily": "inter ",
+                          "fontSize": "16px",
+                          "color": "#00363A"
+                        },
+                        "titleFontWeight": "750",
+                        "titleLineHeight": "47px",
+                        "borderRadius": "20px",
+                        "minHeight": "832px",
+                        "padding": "48px"
+                      }
+                    ],
+                    "cardsMaxWidth": "597px"
                   },
-                  "nameTextProps": {},
-                  "nameCaptionTextProps": {}
-                }
-              },
-              {
-                "content": {
-                  "description": "<p><span style=\"color: rgb(95, 110, 130)\">No primeiro mês pós-migração, minha taxa de conversão cresceu 60%. A plataforma é fácil de usar e o suporte é próximo e eficiente.</span></p>",
-                  "avatar": "https://assets.decocache.com/lojaintegradar/cb3f2aea-dc5a-4bfe-8218-c4291cf5c7c8/livraria-florence.png",
-                  "name": "<p><span style=\"color: rgb(0, 54, 58)\">Livraria Florence</span></p>",
-                  "alt": "livraria florence",
-                  "quoteIconColor": "",
-                  "nameIconColor": "#5F6E82",
-                  "nameBackgroundColor": "",
-                  "avaterBorderColor": "",
-                  "avatarWidth": 63,
-                  "backgroundColor": "",
-                  "avatarHeight": 63,
-                  "roundedAvatar": false,
-                  "nameCaption": "<p><span style=\"color: rgb(95, 110, 130)\">Loja no ar em cerca de 30 dias</span></p>",
-                  "borderColor": "#F2F4F5"
+                  "rightColumn": {
+                    "cards": [
+                      {
+                        "cta": [],
+                        "title": "<p><span>Ações automatizadas que</span></p><p><span>trabalham por você</span></p>",
+                        "text": "<p>Envie alertas de carrinho abandonado, personalize campanhas<br>segmentadas e ajuste preços de forma inteligente.</p>",
+                        "titleFontSize": "22px",
+                        "backgroundColor": "",
+                        "borderRadius": "20px",
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "image": {
+                          "width": 554,
+                          "height": 69
+                        },
+                        "useBackground": "image",
+                        "titleColor": "#00363A",
+                        "borderColor": "#F2F4F5",
+                        "titleFontWeight": "500",
+                        "minHeight": "0",
+                        "titleLineHeight": "30px",
+                        "padding": "37px 35px",
+                        "titleFont": "inter",
+                        "textProps": {
+                          "color": "#5F6E82",
+                          "fontFamily": "Inter",
+                          "fontSize": "16px",
+                          "fontWeight": "500",
+                          "lineHeight": "120%"
+                        }
+                      },
+                      {
+                        "cta": [],
+                        "title": "<p><span>Se mostre relevante em</span></p><p><span>todos os contatos</span></p>",
+                        "text": "<p>Leve ofertas contextualizadas para seus clientes<br>também via WhatsApp.</p>",
+                        "titleFontSize": "22px",
+                        "backgroundColor": "",
+                        "borderRadius": "20px",
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "image": {
+                          "width": 554,
+                          "height": 69
+                        },
+                        "useBackground": "image",
+                        "titleColor": "#00363A",
+                        "borderColor": "#F2F4F5",
+                        "minHeight": "0",
+                        "titleLineHeight": "30px",
+                        "padding": "36px 35px",
+                        "titleFont": "Inter",
+                        "textProps": {
+                          "color": "#5F6E82",
+                          "fontFamily": "Inter ",
+                          "fontSize": "16px",
+                          "fontWeight": "500",
+                          "lineHeight": "120%"
+                        },
+                        "titleFontWeight": "500"
+                      },
+                      {
+                        "image": {
+                          "imagePlacement": "top"
+                        },
+                        "bulletPoints": {
+                          "items": []
+                        },
+                        "createStoreCta": {
+                          "ctaStyle": "button",
+                          "planId": "172"
+                        },
+                        "cta": [],
+                        "useBackground": "image",
+                        "contentPlacement": "top",
+                        "backgroundImage": {
+                          "src": "https://assets.decocache.com/lojaintegradar/909ff33c-b69b-4145-8a45-6bc33534b9ba/30-milhoes-recuperados.png",
+                          "height": 414,
+                          "width": 680
+                        },
+                        "borderRadius": "20px",
+                        "title": "<p><span>+ R$ 30</span></p><p><span>milhões</span></p>",
+                        "titleColor": " #00363A",
+                        "titleFont": "Lektorat Display var",
+                        "titleLineHeight": "67px",
+                        "titleLetterSpacing": "-1px",
+                        "padding": "87px 35px",
+                        "text": "<p><span style=\"color: #00363a\">de vendas recuperadas<br>em 2024 com ferramentas <br>de automação de marketing<br>da Loja Integrada.</span></p>",
+                        "textProps": {
+                          "color": "#00363A",
+                          "fontFamily": "Inter",
+                          "fontSize": "16px",
+                          "lineHeight": "100%"
+                        },
+                        "titleFontSize": "60px",
+                        "titleFontWeight": "750"
+                      }
+                    ],
+                    "cardsMaxWidth": "597px"
+                  },
+                  "paddingBottom": "120px",
+                  "paddingTop": "120px",
+                  "caption": "<p style=\"text-align: center\">Alcance, engaje e recupere vendas de forma automatizada com soluções<br>nativas já disponíveis na plataforma</p>",
+                  "distanceBetweenColums": "56px",
+                  "bottomCta": [
+                    {
+                      "type": "Button",
+                      "size": "Large",
+                      "openModal": "Create Store",
+                      "text": "Começar sem custos",
+                      "textColor": "#FFFFFF",
+                      "backgroundColor": "#00363A",
+                      "borderColor": "#00363A",
+                      "createStorePlanId": "172",
+                      "showIcon": false,
+                      "customIcon": {},
+                      "customEventCategory": "loja-integrada:institucional",
+                      "customEvent": "cardsHero",
+                      "customEventLabel": "comecar-sem-custos"
+                    }
+                  ],
+                  "captionTextProps": {
+                    "color": "#5F6E82",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "lineHeight": "100%",
+                    "fontWeight": "500"
+                  },
+                  "tag": {
+                    "textProps": {}
+                  }
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
                 }
               }
-            ],
-            "arrows": false,
-            "dots": false,
-            "paddingTop": "120px",
-            "paddingBottom": "80px",
-            "titleColor": "#00363A",
-            "titleFont": "Lektorat Display var",
-            "arrowsColor": "",
-            "bubbleImages": [
-              {
-                "src": "https://data.decoassets.com/lojaintegradar/1717b427-b185-4602-83a9-54a9e3c2c788/Frame-1000002565.png",
-                "horizontalPosition": "16%",
-                "verticalPosition": "5%",
-                "alt": "oldman on laptop",
-                "speed": "fast"
-              },
-              {
-                "src": "https://data.decoassets.com/lojaintegradar/0fb0a595-19da-46bc-aba5-fb34c636428f/fabrizzio.png",
-                "horizontalPosition": "2%",
-                "alt": "lady holding phone",
-                "comeFrom": "top left",
-                "speed": "slow",
-                "verticalPosition": "8%"
-              },
-              {
-                "comeFrom": "top left",
-                "speed": "normal",
-                "src": "https://data.decoassets.com/lojaintegradar/fe7cccc2-5a7b-4077-9e79-352ccddb1a33/Frame-1000002571.png",
-                "verticalPosition": "20%",
-                "horizontalPosition": "10%",
-                "alt": "man on opening laptop"
-              },
-              {
-                "comeFrom": "bottom left",
-                "speed": "fast",
-                "src": "https://data.decoassets.com/lojaintegradar/e887dafa-3ecf-436e-94be-cad88e3a8c17/Frame-1000002580.png",
-                "alt": "lady holding phone",
-                "verticalPosition": "34%",
-                "horizontalPosition": "13%"
-              },
-              {
-                "comeFrom": "bottom left",
-                "speed": "slow",
-                "src": "https://data.decoassets.com/lojaintegradar/eed7a6b5-2d47-42a4-8441-e4e28dac2819/Frame-1000002566.png",
-                "verticalPosition": "37%",
-                "horizontalPosition": "2%",
-                "alt": "man holding sheets"
-              },
-              {
-                "comeFrom": "bottom left",
-                "speed": "slow",
-                "src": "https://data.decoassets.com/lojaintegradar/25884396-baae-4687-8e0a-e133721c82d5/Frame-1000002568.png",
-                "alt": "man holding pencil",
-                "verticalPosition": "53%",
-                "horizontalPosition": "1%"
-              },
-              {
-                "comeFrom": "top right",
-                "speed": "slow",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e9719f1e-a26e-4006-b720-92b9a0ccf46c/bubble-image-7.jpg",
-                "alt": "woman on laptop",
-                "horizontalPosition": "92%",
-                "verticalPosition": "2%"
-              },
-              {
-                "comeFrom": "top right",
-                "speed": "fast",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e437c963-677d-417b-9530-414d819e9311/bubble-image-8.jpg",
-                "alt": "man with blue shirt",
-                "horizontalPosition": "77%",
-                "verticalPosition": "4%"
-              },
-              {
-                "comeFrom": "top right",
-                "speed": "fast",
-                "src": "https://data.decoassets.com/lojaintegradar/4db20f68-f1e0-48ad-b6fc-1c1dc33e00fa/Frame-1000002579.png",
-                "alt": "man holding tablet",
-                "horizontalPosition": "77%",
-                "verticalPosition": "23%"
-              },
-              {
-                "comeFrom": "bottom right",
-                "speed": "slow",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec9b56b2-a0eb-48ea-a418-73f63562182e/bubble-image-10.jpg",
-                "horizontalPosition": "90%",
-                "verticalPosition": "27%",
-                "alt": "man holding notebook"
-              },
-              {
-                "comeFrom": "bottom right",
-                "speed": "normal",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a39c4644-5ccf-4c81-8a93-ab765f68c65a/bubble-image-11.jpg",
-                "horizontalPosition": "83%",
-                "verticalPosition": "40%",
-                "alt": "man holding paper"
-              },
-              {
-                "comeFrom": "bottom right",
-                "speed": "slow",
-                "src": "https://data.decoassets.com/lojaintegradar/60c2bed2-16c0-4bba-b4b5-99dbddb387f5/2.png",
-                "horizontalPosition": "91%",
-                "verticalPosition": "54%",
-                "alt": "woman holding folder"
-              }
-            ],
-            "backgroundMedia": {
-              "image": {},
-              "use": "image"
-            },
-            "hubspotForm": {
-              "inputLabel": " ⚡ Ganhe 20% OFF na assinatura anual️",
-              "inputLabelColor": "#00363A",
-              "inputLabelBackgroundColor": "#B7FBDB",
-              "errorMessageColor": "#F57E77",
-              "buttonTextColor": "#ffffff",
-              "buttonColor": "#00363A",
-              "region": "na1",
-              "portalId": "7112881",
-              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
-              "show": true
-            },
-            "titleFontSize": "62px",
-            "titleFontWeight": "750",
-            "titleLineHeight": "100%",
-            "captionFontSize": "16px",
-            "captionColor": "#5F6E82",
-            "captionFont": "Inter",
-            "titleLetterSpacing": "-0.3px",
-            "captionFontWeight": "500",
-            "captionLineHeight": "100%"
+            ]
           },
           "rule": {
-            "__resolveType": "website/matchers/always.ts"
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/DetailedCarouselV2.tsx",
+                  "title": {
+                    "text": "<p style=\"text-align: center\">Plataforma com IA que<br>agiliza sua rotina.</p>",
+                    "fontSize": "62px",
+                    "font": "Lektorat Display var",
+                    "lineHeight": "100%",
+                    "fontWeight": "750",
+                    "letterSpacing": "-0.3px",
+                    "color": "#00363A"
+                  },
+                  "caption": {
+                    "text": "<p></p>",
+                    "color": "#00363A"
+                  },
+                  "paddingTop": "80px",
+                  "paddingBottom": "80px",
+                  "slides": [
+                    {
+                      "use": "image",
+                      "bulletPoints": {
+                        "items": [],
+                        "textProps": {
+                          "color": ""
+                        }
+                      },
+                      "title": "Reengaje clientes com campanhas automáticas",
+                      "image": {
+                        "src": "https://assets.decocache.com/lojaintegradar/743ede52-527d-4d42-ad39-dc3c9b92f82c/detailed-carousel-image-1.svg",
+                        "width": 549,
+                        "height": 399
+                      },
+                      "contentTitle": {
+                        "text": "<p><span style=\"color: rgb(0, 54, 58)\">Reengaje clientes</span><br><span style=\"color: rgb(0, 54, 58)\">com campanhas</span><br><span style=\"color: rgb(0, 54, 58)\">automáticas</span></p>",
+                        "font": "Lektorat Display var",
+                        "fontSize": "28px",
+                        "color": "#00363A",
+                        "fontWeight": "750",
+                        "letterSpacing": "-0.3px",
+                        "lineHeight": "100%"
+                      },
+                      "caption": {
+                        "text": "<p style=\"text-align: justify\">Venda mais – e sem custo adicional, com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</p>",
+                        "color": "#00363A",
+                        "font": "Inter",
+                        "fontSize": "14px"
+                      },
+                      "video": {},
+                      "media": {
+                        "video": {},
+                        "use": "image",
+                        "image": {
+                          "src": "https://assets.decocache.com/lojaintegradar/2d216dc4-6ebc-4ae9-a943-f786309d45e5/Reengaje--clientes.png"
+                        }
+                      },
+                      "textContainer": {
+                        "backgroundColor": "#FFE6A080"
+                      },
+                      "titleColor": "#c40e0e"
+                    },
+                    {
+                      "use": "image",
+                      "bulletPoints": {
+                        "items": [],
+                        "textProps": {
+                          "color": ""
+                        }
+                      },
+                      "title": "Anuncie produtos em diferentes canais",
+                      "image": {
+                        "src": "https://assets.decocache.com/lojaintegradar/743ede52-527d-4d42-ad39-dc3c9b92f82c/detailed-carousel-image-1.svg",
+                        "width": 549,
+                        "height": 399
+                      },
+                      "contentTitle": {
+                        "text": "<p><span style=\"color: rgb(0, 54, 58)\">Anuncie produtos</span><br><span style=\"color: rgb(0, 54, 58)\">em diferentes canais</span></p>",
+                        "font": "Lektorat Display var",
+                        "fontSize": "28px",
+                        "color": "#00363A",
+                        "fontWeight": "750",
+                        "letterSpacing": "-0.3px",
+                        "lineHeight": "100%"
+                      },
+                      "caption": {
+                        "text": "<p>Faturamento fácil e nas alturas: Cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</p>",
+                        "color": "#00363A",
+                        "font": "Inter",
+                        "fontSize": "16px"
+                      },
+                      "video": {},
+                      "media": {
+                        "video": {},
+                        "use": "image",
+                        "image": {
+                          "src": "https://assets.decocache.com/lojaintegradar/1ec0ce15-e052-4efd-9e4c-d908bc86a710/anuncie-diferentes-canais.png"
+                        }
+                      },
+                      "textContainer": {
+                        "backgroundColor": "#FFE6A080"
+                      },
+                      "titleColor": "#c40e0e"
+                    },
+                    {
+                      "use": "image",
+                      "bulletPoints": {
+                        "items": [],
+                        "textProps": {
+                          "color": ""
+                        }
+                      },
+                      "title": "Frete e pagamento descomplicados",
+                      "image": {
+                        "src": "https://assets.decocache.com/lojaintegradar/743ede52-527d-4d42-ad39-dc3c9b92f82c/detailed-carousel-image-1.svg",
+                        "width": 549,
+                        "height": 399
+                      },
+                      "contentTitle": {
+                        "text": "<p><span style=\"color: rgb(0, 54, 58)\">Frete e pagamento</span><br><span style=\"color: rgb(0, 54, 58)\">descomplicados</span></p>",
+                        "color": "#00363A",
+                        "font": "Lektorat Display var",
+                        "fontSize": "28px",
+                        "fontWeight": "750",
+                        "letterSpacing": "-0.3px",
+                        "lineHeight": "100%"
+                      },
+                      "caption": {
+                        "text": "<p>Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</p>",
+                        "color": "#00363A",
+                        "font": "Inter",
+                        "fontSize": "16px"
+                      },
+                      "video": {},
+                      "media": {
+                        "video": {},
+                        "use": "image",
+                        "image": {
+                          "src": "https://data.decoassets.com/lojaintegradar/de57108d-0951-4627-934c-70e6ff037fcd/frete-envios.png"
+                        }
+                      },
+                      "textContainer": {
+                        "backgroundColor": "#FFE6A080"
+                      },
+                      "titleColor": "#c40e0e"
+                    },
+                    {
+                      "use": "image",
+                      "bulletPoints": {
+                        "items": [],
+                        "textProps": {
+                          "color": ""
+                        }
+                      },
+                      "title": "Checkout rápido e aprimorado",
+                      "image": {
+                        "src": "https://assets.decocache.com/lojaintegradar/743ede52-527d-4d42-ad39-dc3c9b92f82c/detailed-carousel-image-1.svg",
+                        "width": 549,
+                        "height": 399
+                      },
+                      "contentTitle": {
+                        "text": "<p><span style=\"color: rgb(0, 54, 58)\">Checkout rápido</span><br><span style=\"color: rgb(0, 54, 58)\">e aprimorado</span></p>",
+                        "font": "Lektorat Display var",
+                        "fontSize": "28px",
+                        "color": "#00363A",
+                        "fontWeight": "750",
+                        "lineHeight": "100%",
+                        "letterSpacing": "-0.3px"
+                      },
+                      "caption": {
+                        "text": "<p>Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</p>",
+                        "color": "#00363A",
+                        "font": "Inter",
+                        "fontSize": "16px"
+                      },
+                      "video": {},
+                      "media": {
+                        "video": {},
+                        "use": "image",
+                        "image": {
+                          "src": "https://assets.decocache.com/lojaintegradar/abe21874-0ff4-4e14-baf4-f91e8adfcf10/checkout-rapido-desktop.png"
+                        }
+                      },
+                      "textContainer": {
+                        "backgroundColor": "#FFE6A080"
+                      },
+                      "titleColor": "#c40e0e"
+                    }
+                  ],
+                  "dots": true,
+                  "dotsColor": "#56481D",
+                  "interval": 30,
+                  "dotsProgressBarBackgroundColor": "#75dae6",
+                  "cta": [
+                    {
+                      "type": "Button",
+                      "size": "Large",
+                      "openModal": "Create Store",
+                      "text": "Criar loja grátis",
+                      "textColor": "#ffffff",
+                      "backgroundColor": "#00363A",
+                      "borderColor": "#00363A",
+                      "createStorePlanId": "172",
+                      "customEventLabel": "criar-loja-gratis",
+                      "customEventCategory": "loja-integrada:institucional",
+                      "customEvent": "DetailedCarouselV2"
+                    }
+                  ],
+                  "createStoreCta": {
+                    "planId": "172",
+                    "text": "Criar minha loja",
+                    "textColor": "#003037",
+                    "backgroundColor": "#FAFAF5",
+                    "borderColor": "#FAFAF5",
+                    "ctaStyle": "button"
+                  },
+                  "backgroundColor": "var(--Gradient-turquoise-neutral-yellow, linear-gradient(63deg, rgba(180, 170, 226, 0.00) 48.08%, var(--Color-primary-turquoise, rgba(0, 232, 223, 0.70)) 102.72%), linear-gradient(246deg, rgba(210, 210, 210, 0.60) 6.78%, #F6F6F5 34.13%, var(--Color-secondary-yellow-light, #FFE6A0) 107.29%))",
+                  "dotsTextColor": "#00363A",
+                  "arrows": false,
+                  "arrowsColor": "#00363A"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "tablet": true,
+                  "desktop": true
+                }
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/CarouselV2.tsx",
+                  "paddingTop": "30px",
+                  "paddingBottom": "30px",
+                  "slides": [
+                    {
+                      "icon": {
+                        "placement": "Top left"
+                      },
+                      "use": "image",
+                      "cta": [],
+                      "image": {
+                        "src": "https://assets.decocache.com/lojaintegradar/5b077fd3-a250-4725-940f-68403aacd3a9/img-reengaje-mobile.png"
+                      },
+                      "title": {
+                        "text": "<p>Reengaje clientes<br>com campanhas automáticas</p>",
+                        "font": "Inter",
+                        "fontWeight": "750",
+                        "color": "#00363A",
+                        "fontSize": "22px",
+                        "lineHeight": "26px"
+                      },
+                      "caption": "<p><span style=\"color: #5f6e82\">Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via Chat e WhatsApp.</span></p>",
+                      "captionTextProps": {}
+                    },
+                    {
+                      "icon": {
+                        "placement": "Top left"
+                      },
+                      "use": "image",
+                      "cta": [],
+                      "image": {
+                        "src": "https://assets.decocache.com/lojaintegradar/47258e4c-ca39-4f7b-8921-619b6b22bda6/divulgue-em-diferentes-canais-mobile.png"
+                      },
+                      "title": {
+                        "text": "<p>Anuncie produtos em<br>diferentes canais</p>",
+                        "font": "Inter",
+                        "fontWeight": "750",
+                        "color": "#00363A",
+                        "fontSize": "22px",
+                        "lineHeight": "26px"
+                      },
+                      "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Faturamento fácil e nas alturas: Cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
+                      "captionTextProps": {}
+                    },
+                    {
+                      "icon": {
+                        "placement": "Top left"
+                      },
+                      "use": "image",
+                      "cta": [],
+                      "image": {
+                        "src": "https://assets.decocache.com/lojaintegradar/1ec0ce15-e052-4efd-9e4c-d908bc86a710/anuncie-diferentes-canais.png"
+                      },
+                      "title": {
+                        "text": "<p>Frete e pagamento<br>descomplicados</p>",
+                        "font": "Inter",
+                        "fontWeight": "750",
+                        "color": "#00363A",
+                        "fontSize": "22px",
+                        "lineHeight": "26px"
+                      },
+                      "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
+                      "captionTextProps": {}
+                    },
+                    {
+                      "icon": {
+                        "placement": "Top left"
+                      },
+                      "use": "image",
+                      "cta": [],
+                      "image": {
+                        "src": "https://assets.decocache.com/lojaintegradar/66517d71-6a14-42f4-a769-e01b5573b3bf/CHECKOUT.png"
+                      },
+                      "title": {
+                        "text": "<p>Checkout rápido<br>e aprimorado</p>",
+                        "font": "Inter",
+                        "fontWeight": "750",
+                        "color": "#00363A",
+                        "fontSize": "22px",
+                        "lineHeight": "26px"
+                      },
+                      "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
+                      "captionTextProps": {}
+                    }
+                  ],
+                  "cta": [
+                    {
+                      "type": "Button",
+                      "size": "Medium",
+                      "openModal": "Create Store",
+                      "text": "Crie sua loja grátis",
+                      "textColor": "#ffffff",
+                      "backgroundColor": "#00363A",
+                      "borderColor": "#00363A",
+                      "createStorePlanId": "172"
+                    }
+                  ],
+                  "title": {
+                    "text": "<p style=\"text-align: center\">Plataforma com IA que<br>agiliza sua rotina.</p>",
+                    "font": "Lektorat Display var",
+                    "color": "#00363A",
+                    "fontSize": "32px",
+                    "letterSpacing": "-0.3px",
+                    "fontWeight": "750",
+                    "lineHeight": "100%"
+                  },
+                  "caption": "<p style=\"text-align: center\">Tudo que você precisa, em um só lugar</p>",
+                  "captionTextProps": {
+                    "color": "#5F6E82",
+                    "fontSize": "16px",
+                    "fontFamily": "Inter",
+                    "lineHeight": "125%",
+                    "fontWeight": "500"
+                  }
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
+                  "titleFont": "Lektorat Display var",
+                  "titleColor": "#371E55",
+                  "paddingTop": "30px",
+                  "paddingBottom": "30px",
+                  "title": "<p style=\"text-align: center\"><span style=\"color: rgb(0, 48, 55)\">Junte-se a mais de<br>2,7 milhões de </span><span style=\"color: #00363a\">lojistas</span></p>",
+                  "caption": "<p style=\"text-align: center\">que escolheram a forma mais eficiente<br>de vender online</p>",
+                  "slides": [
+                    {
+                      "content": {
+                        "description": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e comfácil integração à VTEX.</span></p>",
+                        "avatar": "https://assets.decocache.com/lojaintegradar/80fa3f6c-99a3-42e9-bf4a-61a9cd3fb7c9/m-camicado.png",
+                        "name": "<p><span style=\"color: rgb(0, 54, 58)\">M.Camicado</span></p>",
+                        "alt": "m camicado",
+                        "quoteIconColor": "",
+                        "nameIconColor": "#5F6E82",
+                        "nameBackgroundColor": "",
+                        "avaterBorderColor": "",
+                        "avatarWidth": 63,
+                        "backgroundColor": "",
+                        "avatarHeight": 63,
+                        "roundedAvatar": false,
+                        "nameCaption": "<p><span style=\"color: #5f6e82\">Loja no ar em cerca de 60 dias</span></p>",
+                        "borderColor": "#CBCBC1"
+                      }
+                    },
+                    {
+                      "content": {
+                        "description": "<p><span style=\"color: rgb(95, 110, 130)\">No primeiro mês pós-migração, minha taxa de conversão cresceu 60%. A plataforma é fácil de usar e o suporte é próximo e eficiente.</span></p>",
+                        "avatar": "https://assets.decocache.com/lojaintegradar/cb3f2aea-dc5a-4bfe-8218-c4291cf5c7c8/livraria-florence.png",
+                        "name": "<p><span style=\"color: rgb(0, 54, 58)\">Livraria Florence</span></p>",
+                        "alt": "livraria Florence",
+                        "quoteIconColor": "",
+                        "nameIconColor": "#5F6E82",
+                        "nameBackgroundColor": "",
+                        "avaterBorderColor": "",
+                        "avatarWidth": 63,
+                        "backgroundColor": "",
+                        "avatarHeight": 63,
+                        "roundedAvatar": false,
+                        "nameCaption": "<p><span style=\"color: rgb(95, 110, 130)\">Loja no ar em cerca de 30 dias</span></p>",
+                        "borderColor": "#CBCBC1"
+                      }
+                    }
+                  ],
+                  "arrows": true,
+                  "dots": false,
+                  "arrowsColor": "#00363A",
+                  "bubbleImages": [],
+                  "backgroundMedia": {
+                    "image": {},
+                    "use": "image"
+                  },
+                  "hubspotForm": {
+                    "inputLabel": " ⚡ Ganhe 20% OFF na assinatura anual️",
+                    "inputLabelColor": "#00363A",
+                    "inputLabelBackgroundColor": "#B7FBDB",
+                    "errorMessageColor": "#F57E77",
+                    "buttonTextColor": "#ffffff",
+                    "buttonColor": "#00363A",
+                    "region": "na1",
+                    "portalId": "7112881",
+                    "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
+                    "show": true
+                  },
+                  "titleFontSize": "32px",
+                  "titleLetterSpacing": "-0.3px",
+                  "titleFontWeight": "750",
+                  "titleLineHeight": "100%",
+                  "captionFontSize": "16px",
+                  "captionColor": "#5F6E82",
+                  "captionFont": "500",
+                  "captionLineHeight": "125%"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
+                  "title": "<p style=\"text-align: center\">Junte-se a mais de 2,7<br>milhões de lojistas</p>",
+                  "caption": "<p style=\"text-align: center\">Que escolheram a forma mais eficiente de vender online</p>",
+                  "slides": [
+                    {
+                      "content": {
+                        "description": "<p><span style=\"color: rgb(95, 110, 130);\" data-mce-style=\"color: rgb(95, 110, 130);\">Aumentamos nosso ticket médio em 15% e reduzimos custos em R$ 9 mil. A plataforma é intuitiva e comfácil integração à VTEX.</span></p>",
+                        "avatar": "https://assets.decocache.com/lojaintegradar/80fa3f6c-99a3-42e9-bf4a-61a9cd3fb7c9/m-camicado.png",
+                        "name": "<p><span style=\"color: rgb(0, 54, 58)\">M.Camicado</span></p>",
+                        "alt": "m camicado",
+                        "quoteIconColor": "",
+                        "nameIconColor": "#5F6E82",
+                        "nameBackgroundColor": "",
+                        "avaterBorderColor": "",
+                        "avatarWidth": 63,
+                        "backgroundColor": "",
+                        "avatarHeight": 63,
+                        "roundedAvatar": false,
+                        "nameCaption": "<p><span style=\"color: #5f6e82\">Loja no ar em cerca de 60 dias</span></p>",
+                        "borderColor": "#F2F4F5",
+                        "descriptionTextProps": {
+                          "color": ""
+                        },
+                        "nameTextProps": {},
+                        "nameCaptionTextProps": {}
+                      }
+                    },
+                    {
+                      "content": {
+                        "description": "<p><span style=\"color: rgb(95, 110, 130)\">No primeiro mês pós-migração, minha taxa de conversão cresceu 60%. A plataforma é fácil de usar e o suporte é próximo e eficiente.</span></p>",
+                        "avatar": "https://assets.decocache.com/lojaintegradar/cb3f2aea-dc5a-4bfe-8218-c4291cf5c7c8/livraria-florence.png",
+                        "name": "<p><span style=\"color: rgb(0, 54, 58)\">Livraria Florence</span></p>",
+                        "alt": "livraria florence",
+                        "quoteIconColor": "",
+                        "nameIconColor": "#5F6E82",
+                        "nameBackgroundColor": "",
+                        "avaterBorderColor": "",
+                        "avatarWidth": 63,
+                        "backgroundColor": "",
+                        "avatarHeight": 63,
+                        "roundedAvatar": false,
+                        "nameCaption": "<p><span style=\"color: rgb(95, 110, 130)\">Loja no ar em cerca de 30 dias</span></p>",
+                        "borderColor": "#F2F4F5"
+                      }
+                    }
+                  ],
+                  "arrows": false,
+                  "dots": false,
+                  "paddingTop": "120px",
+                  "paddingBottom": "80px",
+                  "titleColor": "#00363A",
+                  "titleFont": "Lektorat Display var",
+                  "arrowsColor": "",
+                  "bubbleImages": [
+                    {
+                      "src": "https://data.decoassets.com/lojaintegradar/1717b427-b185-4602-83a9-54a9e3c2c788/Frame-1000002565.png",
+                      "horizontalPosition": "16%",
+                      "verticalPosition": "5%",
+                      "alt": "oldman on laptop",
+                      "speed": "fast"
+                    },
+                    {
+                      "src": "https://data.decoassets.com/lojaintegradar/0fb0a595-19da-46bc-aba5-fb34c636428f/fabrizzio.png",
+                      "horizontalPosition": "2%",
+                      "alt": "lady holding phone",
+                      "comeFrom": "top left",
+                      "speed": "slow",
+                      "verticalPosition": "8%"
+                    },
+                    {
+                      "comeFrom": "top left",
+                      "speed": "normal",
+                      "src": "https://data.decoassets.com/lojaintegradar/fe7cccc2-5a7b-4077-9e79-352ccddb1a33/Frame-1000002571.png",
+                      "verticalPosition": "20%",
+                      "horizontalPosition": "10%",
+                      "alt": "man on opening laptop"
+                    },
+                    {
+                      "comeFrom": "bottom left",
+                      "speed": "fast",
+                      "src": "https://data.decoassets.com/lojaintegradar/e887dafa-3ecf-436e-94be-cad88e3a8c17/Frame-1000002580.png",
+                      "alt": "lady holding phone",
+                      "verticalPosition": "34%",
+                      "horizontalPosition": "13%"
+                    },
+                    {
+                      "comeFrom": "bottom left",
+                      "speed": "slow",
+                      "src": "https://data.decoassets.com/lojaintegradar/eed7a6b5-2d47-42a4-8441-e4e28dac2819/Frame-1000002566.png",
+                      "verticalPosition": "37%",
+                      "horizontalPosition": "2%",
+                      "alt": "man holding sheets"
+                    },
+                    {
+                      "comeFrom": "bottom left",
+                      "speed": "slow",
+                      "src": "https://data.decoassets.com/lojaintegradar/25884396-baae-4687-8e0a-e133721c82d5/Frame-1000002568.png",
+                      "alt": "man holding pencil",
+                      "verticalPosition": "53%",
+                      "horizontalPosition": "1%"
+                    },
+                    {
+                      "comeFrom": "top right",
+                      "speed": "slow",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e9719f1e-a26e-4006-b720-92b9a0ccf46c/bubble-image-7.jpg",
+                      "alt": "woman on laptop",
+                      "horizontalPosition": "92%",
+                      "verticalPosition": "2%"
+                    },
+                    {
+                      "comeFrom": "top right",
+                      "speed": "fast",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/e437c963-677d-417b-9530-414d819e9311/bubble-image-8.jpg",
+                      "alt": "man with blue shirt",
+                      "horizontalPosition": "77%",
+                      "verticalPosition": "4%"
+                    },
+                    {
+                      "comeFrom": "top right",
+                      "speed": "fast",
+                      "src": "https://data.decoassets.com/lojaintegradar/4db20f68-f1e0-48ad-b6fc-1c1dc33e00fa/Frame-1000002579.png",
+                      "alt": "man holding tablet",
+                      "horizontalPosition": "77%",
+                      "verticalPosition": "23%"
+                    },
+                    {
+                      "comeFrom": "bottom right",
+                      "speed": "slow",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec9b56b2-a0eb-48ea-a418-73f63562182e/bubble-image-10.jpg",
+                      "horizontalPosition": "90%",
+                      "verticalPosition": "27%",
+                      "alt": "man holding notebook"
+                    },
+                    {
+                      "comeFrom": "bottom right",
+                      "speed": "normal",
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a39c4644-5ccf-4c81-8a93-ab765f68c65a/bubble-image-11.jpg",
+                      "horizontalPosition": "83%",
+                      "verticalPosition": "40%",
+                      "alt": "man holding paper"
+                    },
+                    {
+                      "comeFrom": "bottom right",
+                      "speed": "slow",
+                      "src": "https://data.decoassets.com/lojaintegradar/60c2bed2-16c0-4bba-b4b5-99dbddb387f5/2.png",
+                      "horizontalPosition": "91%",
+                      "verticalPosition": "54%",
+                      "alt": "woman holding folder"
+                    }
+                  ],
+                  "backgroundMedia": {
+                    "image": {},
+                    "use": "image"
+                  },
+                  "hubspotForm": {
+                    "inputLabel": " ⚡ Ganhe 20% OFF na assinatura anual️",
+                    "inputLabelColor": "#00363A",
+                    "inputLabelBackgroundColor": "#B7FBDB",
+                    "errorMessageColor": "#F57E77",
+                    "buttonTextColor": "#ffffff",
+                    "buttonColor": "#00363A",
+                    "region": "na1",
+                    "portalId": "7112881",
+                    "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
+                    "show": true
+                  },
+                  "titleFontSize": "62px",
+                  "titleFontWeight": "750",
+                  "titleLineHeight": "100%",
+                  "captionFontSize": "16px",
+                  "captionColor": "#5F6E82",
+                  "captionFont": "Inter",
+                  "titleLetterSpacing": "-0.3px",
+                  "captionFontWeight": "500",
+                  "captionLineHeight": "100%"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
           }
         }
       ]
@@ -1431,10 +1469,16 @@
               }
             ],
             "blackAndWhiteLogos": true,
-            "titleTextProps": {},
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "color": "#5F6E82",
+              "fontSize": "18px",
+              "fontWeight": "500"
+            },
             "captionTextProps": {
               "color": ""
-            }
+            },
+            "title": "<p><span>Moda é o nosso maior segmento + de 30 mil lojas criadas</span></p>"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -3839,6 +3883,33 @@
                   "color": "#5F6E82",
                   "fontSize": "16px"
                 }
+              },
+              {
+                "icon": {
+                  "placement": "Top left",
+                  "src": "https://assets.decocache.com/lojaintegradar/f5503a4f-c3b3-4446-8dc0-b79a144e6373/3-green-dots.svg"
+                },
+                "use": "image",
+                "cta": [],
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/5f1c0115-6bc3-4c34-b663-7d86449ee38b/manutencao-economica.png",
+                  "height": "414px",
+                  "width": "331px"
+                },
+                "title": {
+                  "text": "<p><span>Manutenção econômica</span></p>",
+                  "font": "Inter",
+                  "fontWeight": "750",
+                  "color": "#00363A",
+                  "fontSize": "22px",
+                  "lineHeight": "36px"
+                },
+                "caption": "<p>Plataforma robusta e com baixo custo de manutenção. Você otimiza sua operação e foca no que realmente importa: vender mais.</p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "color": "#5F6E82",
+                  "fontSize": "16px"
+                }
               }
             ],
             "cta": [
@@ -3855,7 +3926,10 @@
                 "customEventLabel": "criar-loja-gratis",
                 "customEvent": "CarouselV2"
               }
-            ]
+            ],
+            "arrows": {
+              "show": true
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -8849,6 +8923,701 @@
                   "lineHeight": "100%"
                 },
                 "borderColor": "#F2F4F5"
+              },
+              {
+                "bulletPoints": {
+                  "items": [
+                    {
+                      "text": "<p><span>500 Produtos</span></p>",
+                      "marginTop": "26px"
+                    },
+                    {
+                      "text": "<p><span>50.000 visitas</span></p>"
+                    },
+                    {
+                      "text": "<p><span>Tudo do plano crescimento +</span></p>"
+                    },
+                    {
+                      "text": "<p><span>Enriquecimento de produtos com IA</span></p>"
+                    },
+                    {
+                      "text": "<p><span>Avaliação de produto com foto</span></p>"
+                    },
+                    {
+                      "text": "<p><span>3 usuários do painel</span></p>"
+                    },
+                    {
+                      "text": "<p><span>Edição de HTML</span></p>",
+                      "toolTipText": "tool tip text"
+                    }
+                  ],
+                  "bulletPointsIcon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                    "alt": "bullet points icon"
+                  },
+                  "itemsTextColor": "#5F6E82",
+                  "tooltipTextColor": "#5F6E82",
+                  "tooltipBackgroundColor": "#EAE7ED",
+                  "tooltipIconColor": "#7F7E77"
+                },
+                "titleColor": "#371E55",
+                "chooseCta": {
+                  "text": "Assinar",
+                  "href": "#"
+                },
+                "detailsCta": {
+                  "text": "Ver detalhes"
+                },
+                "tag": {
+                  "text": "Mais recomendado",
+                  "fontFamily": "Instrument Serif",
+                  "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
+                  "borderColor": "#B699D9",
+                  "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
+                  "onlyAnnual": false,
+                  "hideTag": true
+                },
+                "montlyFee": {
+                  "0": "<",
+                  "1": "p",
+                  "2": ">",
+                  "3": "<",
+                  "4": "s",
+                  "5": "p",
+                  "6": "a",
+                  "7": "n",
+                  "8": " ",
+                  "9": "s",
+                  "10": "t",
+                  "11": "y",
+                  "12": "l",
+                  "13": "e",
+                  "14": "=",
+                  "15": "\"",
+                  "16": "c",
+                  "17": "o",
+                  "18": "l",
+                  "19": "o",
+                  "20": "r",
+                  "21": ":",
+                  "22": " ",
+                  "23": "r",
+                  "24": "g",
+                  "25": "b",
+                  "26": "(",
+                  "27": "5",
+                  "28": "5",
+                  "29": ",",
+                  "30": " ",
+                  "31": "3",
+                  "32": "0",
+                  "33": ",",
+                  "34": " ",
+                  "35": "8",
+                  "36": "5",
+                  "37": ")",
+                  "38": ";",
+                  "39": "\"",
+                  "40": " ",
+                  "41": "d",
+                  "42": "a",
+                  "43": "t",
+                  "44": "a",
+                  "45": "-",
+                  "46": "m",
+                  "47": "c",
+                  "48": "e",
+                  "49": "-",
+                  "50": "s",
+                  "51": "t",
+                  "52": "y",
+                  "53": "l",
+                  "54": "e",
+                  "55": "=",
+                  "56": "\"",
+                  "57": "c",
+                  "58": "o",
+                  "59": "l",
+                  "60": "o",
+                  "61": "r",
+                  "62": ":",
+                  "63": " ",
+                  "64": "r",
+                  "65": "g",
+                  "66": "b",
+                  "67": "(",
+                  "68": "5",
+                  "69": "5",
+                  "70": ",",
+                  "71": " ",
+                  "72": "3",
+                  "73": "0",
+                  "74": ",",
+                  "75": " ",
+                  "76": "8",
+                  "77": "5",
+                  "78": ")",
+                  "79": ";",
+                  "80": "\"",
+                  "81": ">",
+                  "82": "<",
+                  "83": "s",
+                  "84": "p",
+                  "85": "a",
+                  "86": "n",
+                  "87": " ",
+                  "88": "s",
+                  "89": "t",
+                  "90": "y",
+                  "91": "l",
+                  "92": "e",
+                  "93": "=",
+                  "94": "\"",
+                  "95": "f",
+                  "96": "o",
+                  "97": "n",
+                  "98": "t",
+                  "99": "-",
+                  "100": "s",
+                  "101": "i",
+                  "102": "z",
+                  "103": "e",
+                  "104": ":",
+                  "105": " ",
+                  "106": "2",
+                  "107": "4",
+                  "108": "p",
+                  "109": "t",
+                  "110": ";",
+                  "111": "\"",
+                  "112": " ",
+                  "113": "d",
+                  "114": "a",
+                  "115": "t",
+                  "116": "a",
+                  "117": "-",
+                  "118": "m",
+                  "119": "c",
+                  "120": "e",
+                  "121": "-",
+                  "122": "s",
+                  "123": "t",
+                  "124": "y",
+                  "125": "l",
+                  "126": "e",
+                  "127": "=",
+                  "128": "\"",
+                  "129": "f",
+                  "130": "o",
+                  "131": "n",
+                  "132": "t",
+                  "133": "-",
+                  "134": "s",
+                  "135": "i",
+                  "136": "z",
+                  "137": "e",
+                  "138": ":",
+                  "139": " ",
+                  "140": "2",
+                  "141": "4",
+                  "142": "p",
+                  "143": "t",
+                  "144": ";",
+                  "145": "\"",
+                  "146": ">",
+                  "147": "R",
+                  "148": "$",
+                  "149": "<",
+                  "150": "/",
+                  "151": "s",
+                  "152": "p",
+                  "153": "a",
+                  "154": "n",
+                  "155": ">",
+                  "156": "&",
+                  "157": "n",
+                  "158": "b",
+                  "159": "s",
+                  "160": "p",
+                  "161": ";",
+                  "162": "<",
+                  "163": "s",
+                  "164": "p",
+                  "165": "a",
+                  "166": "n",
+                  "167": " ",
+                  "168": "s",
+                  "169": "t",
+                  "170": "y",
+                  "171": "l",
+                  "172": "e",
+                  "173": "=",
+                  "174": "\"",
+                  "175": "f",
+                  "176": "o",
+                  "177": "n",
+                  "178": "t",
+                  "179": "-",
+                  "180": "s",
+                  "181": "i",
+                  "182": "z",
+                  "183": "e",
+                  "184": ":",
+                  "185": " ",
+                  "186": "4",
+                  "187": "8",
+                  "188": "p",
+                  "189": "x",
+                  "190": ";",
+                  "191": "\"",
+                  "192": " ",
+                  "193": "d",
+                  "194": "a",
+                  "195": "t",
+                  "196": "a",
+                  "197": "-",
+                  "198": "m",
+                  "199": "c",
+                  "200": "e",
+                  "201": "-",
+                  "202": "s",
+                  "203": "t",
+                  "204": "y",
+                  "205": "l",
+                  "206": "e",
+                  "207": "=",
+                  "208": "\"",
+                  "209": "f",
+                  "210": "o",
+                  "211": "n",
+                  "212": "t",
+                  "213": "-",
+                  "214": "s",
+                  "215": "i",
+                  "216": "z",
+                  "217": "e",
+                  "218": ":",
+                  "219": " ",
+                  "220": "4",
+                  "221": "8",
+                  "222": "p",
+                  "223": "x",
+                  "224": ";",
+                  "225": "\"",
+                  "226": ">",
+                  "227": "<",
+                  "228": "s",
+                  "229": "t",
+                  "230": "r",
+                  "231": "o",
+                  "232": "n",
+                  "233": "g",
+                  "234": ">",
+                  "235": "2",
+                  "236": "3",
+                  "237": "9",
+                  "238": "<",
+                  "239": "/",
+                  "240": "s",
+                  "241": "t",
+                  "242": "r",
+                  "243": "o",
+                  "244": "n",
+                  "245": "g",
+                  "246": ">",
+                  "247": "<",
+                  "248": "/",
+                  "249": "s",
+                  "250": "p",
+                  "251": "a",
+                  "252": "n",
+                  "253": ">",
+                  "254": "<",
+                  "255": "s",
+                  "256": "p",
+                  "257": "a",
+                  "258": "n",
+                  "259": " ",
+                  "260": "s",
+                  "261": "t",
+                  "262": "y",
+                  "263": "l",
+                  "264": "e",
+                  "265": "=",
+                  "266": "\"",
+                  "267": "f",
+                  "268": "o",
+                  "269": "n",
+                  "270": "t",
+                  "271": "-",
+                  "272": "s",
+                  "273": "i",
+                  "274": "z",
+                  "275": "e",
+                  "276": ":",
+                  "277": " ",
+                  "278": "1",
+                  "279": "4",
+                  "280": "p",
+                  "281": "t",
+                  "282": ";",
+                  "283": "\"",
+                  "284": " ",
+                  "285": "d",
+                  "286": "a",
+                  "287": "t",
+                  "288": "a",
+                  "289": "-",
+                  "290": "m",
+                  "291": "c",
+                  "292": "e",
+                  "293": "-",
+                  "294": "s",
+                  "295": "t",
+                  "296": "y",
+                  "297": "l",
+                  "298": "e",
+                  "299": "=",
+                  "300": "\"",
+                  "301": "f",
+                  "302": "o",
+                  "303": "n",
+                  "304": "t",
+                  "305": "-",
+                  "306": "s",
+                  "307": "i",
+                  "308": "z",
+                  "309": "e",
+                  "310": ":",
+                  "311": " ",
+                  "312": "1",
+                  "313": "4",
+                  "314": "p",
+                  "315": "t",
+                  "316": ";",
+                  "317": "\"",
+                  "318": ">",
+                  "319": "/",
+                  "320": "m",
+                  "321": "ê",
+                  "322": "s",
+                  "323": "<",
+                  "324": "/",
+                  "325": "s",
+                  "326": "p",
+                  "327": "a",
+                  "328": "n",
+                  "329": ">",
+                  "330": "<",
+                  "331": "/",
+                  "332": "s",
+                  "333": "p",
+                  "334": "a",
+                  "335": "n",
+                  "336": ">",
+                  "337": "<",
+                  "338": "/",
+                  "339": "p",
+                  "340": ">",
+                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span><br><span style=\"font-size: 36pt\">R$99</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
+                  "color": "#00363A"
+                },
+                "annualMontlyFee": {
+                  "0": "<",
+                  "1": "p",
+                  "2": ">",
+                  "3": "<",
+                  "4": "s",
+                  "5": "p",
+                  "6": "a",
+                  "7": "n",
+                  "8": " ",
+                  "9": "s",
+                  "10": "t",
+                  "11": "y",
+                  "12": "l",
+                  "13": "e",
+                  "14": "=",
+                  "15": "\"",
+                  "16": "c",
+                  "17": "o",
+                  "18": "l",
+                  "19": "o",
+                  "20": "r",
+                  "21": ":",
+                  "22": " ",
+                  "23": "r",
+                  "24": "g",
+                  "25": "b",
+                  "26": "(",
+                  "27": "5",
+                  "28": "5",
+                  "29": ",",
+                  "30": " ",
+                  "31": "3",
+                  "32": "0",
+                  "33": ",",
+                  "34": " ",
+                  "35": "8",
+                  "36": "5",
+                  "37": ")",
+                  "38": ";",
+                  "39": " ",
+                  "40": "f",
+                  "41": "o",
+                  "42": "n",
+                  "43": "t",
+                  "44": "-",
+                  "45": "s",
+                  "46": "i",
+                  "47": "z",
+                  "48": "e",
+                  "49": ":",
+                  "50": " ",
+                  "51": "2",
+                  "52": "4",
+                  "53": "p",
+                  "54": "t",
+                  "55": "\"",
+                  "56": ">",
+                  "57": "R",
+                  "58": "$",
+                  "59": "<",
+                  "60": "/",
+                  "61": "s",
+                  "62": "p",
+                  "63": "a",
+                  "64": "n",
+                  "65": ">",
+                  "66": "<",
+                  "67": "s",
+                  "68": "p",
+                  "69": "a",
+                  "70": "n",
+                  "71": " ",
+                  "72": "s",
+                  "73": "t",
+                  "74": "y",
+                  "75": "l",
+                  "76": "e",
+                  "77": "=",
+                  "78": "\"",
+                  "79": "c",
+                  "80": "o",
+                  "81": "l",
+                  "82": "o",
+                  "83": "r",
+                  "84": ":",
+                  "85": " ",
+                  "86": "r",
+                  "87": "g",
+                  "88": "b",
+                  "89": "(",
+                  "90": "5",
+                  "91": "5",
+                  "92": ",",
+                  "93": " ",
+                  "94": "3",
+                  "95": "0",
+                  "96": ",",
+                  "97": " ",
+                  "98": "8",
+                  "99": "5",
+                  "100": ")",
+                  "101": "\"",
+                  "102": ">",
+                  "103": " ",
+                  "104": "<",
+                  "105": "/",
+                  "106": "s",
+                  "107": "p",
+                  "108": "a",
+                  "109": "n",
+                  "110": ">",
+                  "111": "<",
+                  "112": "s",
+                  "113": "t",
+                  "114": "r",
+                  "115": "o",
+                  "116": "n",
+                  "117": "g",
+                  "118": ">",
+                  "119": "<",
+                  "120": "s",
+                  "121": "p",
+                  "122": "a",
+                  "123": "n",
+                  "124": " ",
+                  "125": "s",
+                  "126": "t",
+                  "127": "y",
+                  "128": "l",
+                  "129": "e",
+                  "130": "=",
+                  "131": "\"",
+                  "132": "c",
+                  "133": "o",
+                  "134": "l",
+                  "135": "o",
+                  "136": "r",
+                  "137": ":",
+                  "138": " ",
+                  "139": "r",
+                  "140": "g",
+                  "141": "b",
+                  "142": "(",
+                  "143": "5",
+                  "144": "5",
+                  "145": ",",
+                  "146": " ",
+                  "147": "3",
+                  "148": "0",
+                  "149": ",",
+                  "150": " ",
+                  "151": "8",
+                  "152": "5",
+                  "153": ")",
+                  "154": ";",
+                  "155": " ",
+                  "156": "f",
+                  "157": "o",
+                  "158": "n",
+                  "159": "t",
+                  "160": "-",
+                  "161": "s",
+                  "162": "i",
+                  "163": "z",
+                  "164": "e",
+                  "165": ":",
+                  "166": " ",
+                  "167": "4",
+                  "168": "8",
+                  "169": "p",
+                  "170": "x",
+                  "171": "\"",
+                  "172": ">",
+                  "173": "1",
+                  "174": "9",
+                  "175": "1",
+                  "176": "<",
+                  "177": "/",
+                  "178": "s",
+                  "179": "p",
+                  "180": "a",
+                  "181": "n",
+                  "182": ">",
+                  "183": "<",
+                  "184": "/",
+                  "185": "s",
+                  "186": "t",
+                  "187": "r",
+                  "188": "o",
+                  "189": "n",
+                  "190": "g",
+                  "191": ">",
+                  "192": "<",
+                  "193": "s",
+                  "194": "p",
+                  "195": "a",
+                  "196": "n",
+                  "197": " ",
+                  "198": "s",
+                  "199": "t",
+                  "200": "y",
+                  "201": "l",
+                  "202": "e",
+                  "203": "=",
+                  "204": "\"",
+                  "205": "c",
+                  "206": "o",
+                  "207": "l",
+                  "208": "o",
+                  "209": "r",
+                  "210": ":",
+                  "211": " ",
+                  "212": "r",
+                  "213": "g",
+                  "214": "b",
+                  "215": "(",
+                  "216": "5",
+                  "217": "5",
+                  "218": ",",
+                  "219": " ",
+                  "220": "3",
+                  "221": "0",
+                  "222": ",",
+                  "223": " ",
+                  "224": "8",
+                  "225": "5",
+                  "226": ")",
+                  "227": ";",
+                  "228": " ",
+                  "229": "f",
+                  "230": "o",
+                  "231": "n",
+                  "232": "t",
+                  "233": "-",
+                  "234": "s",
+                  "235": "i",
+                  "236": "z",
+                  "237": "e",
+                  "238": ":",
+                  "239": " ",
+                  "240": "1",
+                  "241": "4",
+                  "242": "p",
+                  "243": "t",
+                  "244": "\"",
+                  "245": ">",
+                  "246": "/",
+                  "247": "m",
+                  "248": "ê",
+                  "249": "s",
+                  "250": "<",
+                  "251": "/",
+                  "252": "s",
+                  "253": "p",
+                  "254": "a",
+                  "255": "n",
+                  "256": ">",
+                  "257": "<",
+                  "258": "/",
+                  "259": "p",
+                  "260": ">",
+                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span></p><p><span style=\"font-size: 36pt\">R$79</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
+                  "color": "#00363A"
+                },
+                "annualSaving": {
+                  "text": "Economia de  R$ 576/ano",
+                  "fontFamily": "Instrument Serif",
+                  "textColor": "linear-gradient(90deg, #371E55 38.15%, rgba(55, 30, 85, 0.80) 124.69%)",
+                  "backgroundColor": "linear-gradient(90deg, rgb(191, 182, 213) 0.02%, rgb(245, 242, 248) 52.45%, rgb(255, 255, 255) 80.07%); ",
+                  "borderColor": "linear-gradient(90deg, #B699D9, transparent)"
+                },
+                "seeMoreButtonText": "Ver mais",
+                "cta": [],
+                "backgroundColor": "#ffffff",
+                "cutedMontlyFeeColor": "#371E55",
+                "createStoreWithPlanCta": {
+                  "planId": "174",
+                  "text": "Criar minha loja",
+                  "ctaStyle": "button",
+                  "backgroundColor": "#00363A",
+                  "textColor": "#FFFFFF",
+                  "borderColor": "#00363A"
+                },
+                "theme": "light",
+                "titleFont": "Instrument Serif",
+                "title": {
+                  "text": "<p>Aceleração</p>",
+                  "color": "#00363A",
+                  "font": "Lektorat Display var",
+                  "fontWeight": "750",
+                  "letterSpacing": "-0.3px",
+                  "fontSize": "42px",
+                  "lineHeight": "100%"
+                },
+                "borderColor": "#F2F4F5"
               }
             ],
             "annualLabel": "Anual",
@@ -8890,7 +9659,7 @@
             "arrowsColor": "#ca1616",
             "annualTagTextColor": "#7A2D0D",
             "annualTag": "- 2O% OFF",
-            "arrows": false,
+            "arrows": true,
             "annualTagPosition": "aside",
             "paddingTop": "120px",
             "switchBackgroundColor": "#DFE4E6",

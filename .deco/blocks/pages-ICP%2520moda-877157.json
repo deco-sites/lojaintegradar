@@ -1488,8 +1488,7 @@
     },
     {
       "__resolveType": "site/sections/Carousel.tsx",
-      "caption": "<p><span>Assine um plano e ative as ferramentas que vão te fazer vender em até 4 dias.</span></p>",
-      "title": "<p>Ganhe tempo e dinheiro com <span style=\"color: #28c3c3\">ferramentas inteligentes.</span></p>",
+      "title": "<p>Ganhe tempo e dinheiro com <span style=\"color: rgb(40, 195, 195)\">ferramentas inteligentes.</span><br><span style=\"font-size: 16px; font-family:Inter; font-weight:500;\">Assine um plano e ative as ferramentas que vão te fazer vender em até 4 dias.</span></p>",
       "slides": [
         {
           "textPlacement": "Bottom",
@@ -1498,8 +1497,8 @@
             "items": [],
             "bulletPointsIcon": {}
           },
-          "title": "Recupere vendas em todas as etapas",
-          "caption": "<p><span style=\"color: #5f6e82\">Envie mensagens no WhatsApp e  e-mails automáticos para quem abandonou o carrinho, saiu da página de produto ou não finalizou o pagamento — e recupere até 18% das vendas perdidas.</span></p>",
+          "title": "Recupere vendas em todasas etapas",
+          "caption": "<p><span style=\"color: #5f6e82\">Envie mensagens no WhatsApp e e-mails automáticos para quem abandonou o carrinho, saiu da página de produto ou não finalizou o pagamento — e recupere até 18% das vendas perdidas.</span></p>",
           "backgroundImage": {
             "src": "https://assets.decocache.com/lojaintegradar/95ee88e3-bc0c-4c88-bf5b-b244d42627f9/Recupere-vendas.png",
             "height": 484,
@@ -1556,8 +1555,8 @@
             "items": [],
             "bulletPointsIcon": {}
           },
-          "title": "Ative avaliações reais que ajudam a fechar a venda",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que suas clientes pensam  com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
+          "title": "Ative avaliações reais que ajudama fechar a venda",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que suas clientes pensam com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
           "backgroundImage": {
             "src": "https://assets.decocache.com/lojaintegradar/a8c85411-9c99-4964-97e3-d6a4e598844b/avaliacao-de-produto.png",
             "height": 484,
@@ -1585,8 +1584,8 @@
             "items": [],
             "bulletPointsIcon": {}
           },
-          "title": "Anuncie onde seus clientes estão",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte sua loja ao Meta, Google e TikTok e leve tráfego qualificado pros seus produtos</span></p>",
+          "title": "Anuncie onde seusclientes estão",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte sua loja ao Meta, Googlee TikTok e leve tráfego qualificadopros seus produtos</span></p>",
           "backgroundImage": {
             "src": "https://assets.decocache.com/lojaintegradar/1f452d4b-4d55-432f-9337-272b714cafa6/Anuncie-redes-sociais.png",
             "height": 484,
@@ -1615,7 +1614,7 @@
             "bulletPointsIcon": {}
           },
           "title": "Venda nos maiores marketplaces",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte-se ao Magalu com integração nativa da Loja Integrada e +100 marketplaces via parceiros oficiais.</span></p>",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte-se ao Magalu com integraçãonativa da Loja Integrada e +100 marketplaces via parceiros oficiais.</span></p>",
           "backgroundImage": {
             "src": "https://assets.decocache.com/lojaintegradar/7278706f-2281-42cd-bd0f-facef1c30cd3/venda-em-marketplace.png",
             "height": 484,
@@ -1709,7 +1708,8 @@
       "captionFont": "Inter",
       "captionTextProps": {
         "fontSize": "16px",
-        "fontWeight": "500"
+        "fontWeight": "500",
+        "lineHeight": "0px"
       },
       "arrowsColor": "#ffffff",
       "createStoreCta": {
@@ -1720,7 +1720,8 @@
         "borderColor": "#E4F3F3",
         "ctaStyle": "button"
       },
-      "cta": []
+      "cta": [],
+      "caption": "<p></p>"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

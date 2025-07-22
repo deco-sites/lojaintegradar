@@ -282,7 +282,7 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p>Da vitrine ao checkout, sua loja de moda mais inteligente<br>e pronta pra vender.</p>",
+              "text": "<p>Da vitrine ao checkout, sua<br>loja de moda mais inteligente<br>e pronta pra vender.</p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
               "fontSize": "56px",
@@ -1718,6 +1718,243 @@
         "showIcon": false,
         "textColor": "#00363A",
         "borderColor": "#E4F3F3",
+        "ctaStyle": "button"
+      },
+      "cta": [],
+      "caption": "<p></p>"
+    },
+    {
+      "__resolveType": "site/sections/Carousel.tsx",
+      "title": "<p>Ganhe tempo e dinheiro com <span style=\"color: rgb(40, 195, 195)\">ferramentas inteligentes.</span><br><span style=\"font-size: 16px; font-family:Inter; font-weight:500;\">Assine um plano e ative as ferramentas que vão te fazer vender em até 4 dias.</span></p>",
+      "slides": [
+        {
+          "textPlacement": "Bottom",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Recupere vendas em todasas etapas",
+          "caption": "<p><span style=\"color: #5f6e82\">Envie mensagens no WhatsApp e e-mails automáticos para quem abandonou o carrinho, saiu da página de produto ou não finalizou o pagamento — e recupere até 18% das vendas perdidas.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/95ee88e3-bc0c-4c88-bf5b-b244d42627f9/Recupere-vendas.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Top",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Cadastre produtos com IA",
+          "caption": "<p><span style=\"color: #5f6e82\">Descreva e publique itens em minutos com sugestões automáticas e estrutura otimizada.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/3526394d-d44a-4fc1-b168-6fafdd4bf59d/Cadastro-produtos-com-IA.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Bottom",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Ative avaliações reais que ajudama fechar a venda",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que suas clientes pensam com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/a8c85411-9c99-4964-97e3-d6a4e598844b/avaliacao-de-produto.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Top",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Anuncie onde seusclientes estão",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte sua loja ao Meta, Googlee TikTok e leve tráfego qualificadopros seus produtos</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/1f452d4b-4d55-432f-9337-272b714cafa6/Anuncie-redes-sociais.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Bottom",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Venda nos maiores marketplaces",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte-se ao Magalu com integraçãonativa da Loja Integrada e +100 marketplaces via parceiros oficiais.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/7278706f-2281-42cd-bd0f-facef1c30cd3/venda-em-marketplace.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Top",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Sua loja no topo do Google",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Robôs de indexação com IA e estrutura técnica pra sua loja aparecer no topo das buscas.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/a8c959ec-7c39-4b74-9855-c04df79d48fa/Sua-loja-no-topo-do-google.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Bottom",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Venda pelas redes sociais",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Crie links de carrinho com produto, desconto e frete e compartilhe direto no Whatsapp, Instagram e mais.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/c12087ce-e096-4a7e-91e8-364321dd9518/venda-pelas-redes-sociais.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        }
+      ],
+      "backgroundColor": "#FFFFF",
+      "paddingTop": "120px",
+      "paddingBottom": "60px",
+      "arrows": true,
+      "titleTextProps": {
+        "fontSize": "56px",
+        "fontWeight": "650"
+      },
+      "titleFont": "Lektorat",
+      "titleColor": "#00363A",
+      "captionColor": "#ffffff",
+      "captionFont": "Inter",
+      "captionTextProps": {
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "lineHeight": "0px"
+      },
+      "arrowsColor": "#00363A",
+      "createStoreCta": {
+        "text": "Criar minha loja profissional",
+        "backgroundColor": "#00363A",
+        "showIcon": false,
+        "textColor": "#ffffff",
+        "borderColor": "#00363A",
         "ctaStyle": "button"
       },
       "cta": [],
@@ -3990,257 +4227,6 @@
           },
           "rule": {
             "__resolveType": "website/matchers/never.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/CarouselV2.tsx",
-            "title": {},
-            "paddingTop": "30px",
-            "slides": [
-              {
-                "cta": [],
-                "title": {
-                  "text": "<p>Suporte facilitado</p>",
-                  "color": "#00363A",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "fontSize": "22px",
-                  "lineHeight": "100%"
-                },
-                "icon": {
-                  "placement": "Top left",
-                  "src": "https://assets.decocache.com/lojaintegradar/f5503a4f-c3b3-4446-8dc0-b79a144e6373/3-green-dots.svg"
-                },
-                "use": "image",
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/c8690a29-c1ec-4a3d-b22a-bdd95d33db3c/hand-holding-phone.svg",
-                  "height": 414,
-                  "width": 331
-                },
-                "caption": "<p>Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via Chat e WhatsApp.</p>",
-                "captionTextProps": {
-                  "fontFamily": "Inter",
-                  "fontSize": "14px",
-                  "color": "#5F6E82"
-                }
-              },
-              {
-                "cta": [],
-                "title": {
-                  "text": "<p><span>Ecossistema completo</span></p>",
-                  "color": "#00363A",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "fontSize": "22px",
-                  "lineHeight": "100%"
-                },
-                "icon": {
-                  "placement": "Top left",
-                  "src": "https://assets.decocache.com/lojaintegradar/f5503a4f-c3b3-4446-8dc0-b79a144e6373/3-green-dots.svg"
-                },
-                "use": "image",
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/e58570f0-e962-4b8d-be30-e4e1ea0670f7/ecossistema-completo.png",
-                  "height": 414,
-                  "width": 331
-                },
-                "caption": "<p>Soluções integradas com ERPs, canais de vendas, operação omnichannel, redes sociais, parceiros e agências — tudo em um só lugar.</p>",
-                "captionTextProps": {
-                  "color": "#5F6E82",
-                  "fontFamily": "Inter",
-                  "fontSize": "14px"
-                }
-              },
-              {
-                "cta": [],
-                "title": {
-                  "text": "<p><span>Manutenção econômica</span></p>",
-                  "color": "#00363A",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "fontSize": "22px",
-                  "lineHeight": "100%"
-                },
-                "icon": {
-                  "placement": "Top left",
-                  "src": "https://assets.decocache.com/lojaintegradar/f5503a4f-c3b3-4446-8dc0-b79a144e6373/3-green-dots.svg"
-                },
-                "use": "image",
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/5f1c0115-6bc3-4c34-b663-7d86449ee38b/manutencao-economica.png"
-                },
-                "caption": "<p>Plataforma robusta e com baixo custo de manutenção. Você otimiza sua operação e foca no que realmente importa: vender mais.</p>",
-                "captionTextProps": {
-                  "fontFamily": "Inter",
-                  "color": "#5F6E82",
-                  "fontSize": "14px"
-                }
-              }
-            ],
-            "paddingBottom": "30px",
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Medium",
-                "openModal": "Create Store",
-                "text": "Crie sua loja grátis",
-                "textColor": "#ffffff",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "createStorePlanId": "172",
-                "customEventCategory": "loja-integrada:institucional",
-                "customEventLabel": "criar-loja-gratis",
-                "customEvent": "CarouselV2"
-              }
-            ]
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/CarouselV2.tsx",
-            "slides": [
-              {
-                "cta": [],
-                "title": {
-                  "text": "<p><span>Suporte facilitado</span></p>",
-                  "color": "#00363A",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "fontSize": "22px",
-                  "lineHeight": "36px"
-                },
-                "icon": {
-                  "placement": "Top left",
-                  "src": "https://assets.decocache.com/lojaintegradar/f5503a4f-c3b3-4446-8dc0-b79a144e6373/3-green-dots.svg"
-                },
-                "use": "image",
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/c8690a29-c1ec-4a3d-b22a-bdd95d33db3c/hand-holding-phone.svg",
-                  "height": 414,
-                  "width": 331
-                },
-                "caption": "<p>Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via Chat e WhatsApp.</p>",
-                "captionTextProps": {
-                  "fontFamily": "Inter",
-                  "fontSize": "16px",
-                  "color": "#5F6E82"
-                }
-              },
-              {
-                "cta": [],
-                "title": {
-                  "text": "<p><span>Ecossistema completo</span></p>",
-                  "color": "#00363A",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "fontSize": "22px",
-                  "lineHeight": "36px"
-                },
-                "icon": {
-                  "placement": "Top left",
-                  "src": "https://assets.decocache.com/lojaintegradar/f5503a4f-c3b3-4446-8dc0-b79a144e6373/3-green-dots.svg"
-                },
-                "use": "image",
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/e58570f0-e962-4b8d-be30-e4e1ea0670f7/ecossistema-completo.png",
-                  "height": "414px",
-                  "width": "331px"
-                },
-                "caption": "<p>Soluções integradas com ERPs, canais de vendas, operação omnichannel, redes sociais, parceiros e agências — tudo em um só lugar.</p>",
-                "captionTextProps": {
-                  "color": "#5F6E82",
-                  "fontFamily": "Inter",
-                  "fontSize": "16px"
-                }
-              },
-              {
-                "cta": [],
-                "title": {
-                  "text": "<p><span>Manutenção econômica</span></p>",
-                  "color": "#00363A",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "fontSize": "22px",
-                  "lineHeight": "36px"
-                },
-                "icon": {
-                  "placement": "Top left",
-                  "src": "https://assets.decocache.com/lojaintegradar/f5503a4f-c3b3-4446-8dc0-b79a144e6373/3-green-dots.svg"
-                },
-                "use": "image",
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/5f1c0115-6bc3-4c34-b663-7d86449ee38b/manutencao-economica.png",
-                  "height": "414px",
-                  "width": "331px"
-                },
-                "caption": "<p>Plataforma robusta e com baixo custo de manutenção. Você otimiza sua operação e foca no que realmente importa: vender mais.</p>",
-                "captionTextProps": {
-                  "fontFamily": "Inter",
-                  "color": "#5F6E82",
-                  "fontSize": "16px"
-                }
-              },
-              {
-                "cta": [],
-                "title": {
-                  "text": "<p><span>Manutenção econômica</span></p>",
-                  "color": "#00363A",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "fontSize": "22px",
-                  "lineHeight": "36px"
-                },
-                "icon": {
-                  "placement": "Top left",
-                  "src": "https://assets.decocache.com/lojaintegradar/f5503a4f-c3b3-4446-8dc0-b79a144e6373/3-green-dots.svg"
-                },
-                "use": "image",
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/5f1c0115-6bc3-4c34-b663-7d86449ee38b/manutencao-economica.png",
-                  "height": "414px",
-                  "width": "331px"
-                },
-                "caption": "<p>Plataforma robusta e com baixo custo de manutenção. Você otimiza sua operação e foca no que realmente importa: vender mais.</p>",
-                "captionTextProps": {
-                  "fontFamily": "Inter",
-                  "color": "#5F6E82",
-                  "fontSize": "16px"
-                }
-              }
-            ],
-            "arrows": {
-              "show": true
-            },
-            "paddingTop": "120px",
-            "paddingBottom": "0",
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Large",
-                "openModal": "Create Store",
-                "text": "Crie sua loja grátis",
-                "textColor": "#ffffff",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "createStorePlanId": "172",
-                "customEventCategory": "loja-integrada:institucional",
-                "customEventLabel": "criar-loja-gratis",
-                "customEvent": "CarouselV2"
-              }
-            ]
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
           }
         }
       ]
@@ -6998,12 +6984,12 @@
               "217": "/",
               "218": "p",
               "219": ">",
-              "text": "<p style=\"text-align: center\">Planos que crescem<br>com o seu negócio</p>",
+              "text": "<p style=\"text-align: center\"><span style=\"color: #28c3c3\">Assine um plano </span>e comece<br>a vender em poucos dias.</p>",
               "color": "#00363A",
               "font": "Lektorat Display var",
               "letterSpacing": "-0.3px",
-              "fontWeight": "750",
-              "fontSize": "62px",
+              "fontWeight": "650",
+              "fontSize": "56px",
               "lineHeight": "100%"
             },
             "id": "plans",
@@ -7060,7 +7046,7 @@
               "49": "a",
               "50": "d",
               "51": "a",
-              "text": "<p style=\"text-align: center\"><span>Escolha a oferta ideal para a sua loja e comece a vender hoje mesmo</span></p>",
+              "text": "<p style=\"text-align: center\">Ative uma plataforma com IA, automações e ferramentas que trabalham por você desde o primeiro dia.</p>",
               "color": "#5F6E82",
               "font": "Inter",
               "fontSize": "16px",
@@ -7847,33 +7833,49 @@
                 "bulletPoints": {
                   "items": [
                     {
-                      "text": "<p><span>250 produtos</span></p>",
+                      "text": "<p><strong>Tudo do plano Grátis +</strong></p>"
+                    },
+                    {
+                      "text": "<p>250 produtos</p>",
                       "marginTop": "26px"
                     },
                     {
-                      "text": "<p><span>25.000 visitas</span></p>"
+                      "text": "<p>25.000 visitas</p>"
                     },
                     {
-                      "text": "<p><span>Tudo do plano grátis +</span></p>"
+                      "text": "<p>4 Temas Premium Grátis + 2.000 temas para compra</p>"
                     },
                     {
-                      "text": "<p><span>Checkout transparente</span></p>"
+                      "text": "<p>Integração com Provador Virtual</p>",
+                      "toolTipText": "Via parceiro"
                     },
                     {
-                      "text": "<p>Ferramenta de avaliação</p>"
+                      "text": "<p>Integração com Gestão de Afiliados e Influenciadores*</p>",
+                      "toolTipText": "Via parceiro"
                     },
                     {
-                      "text": "<p>Compre Junto</p>"
+                      "text": "<p>Integração com CashBack*</p>",
+                      "toolTipText": "Via parceiro"
                     },
                     {
-                      "text": "<p>Recuperação de carrinho abandonado e produto</p>"
+                      "text": "<p>Integração Stories nas Páginas</p>",
+                      "toolTipText": "Via parceiro"
+                    },
+                    {
+                      "text": "<p>Avaliação de Produtos</p>"
+                    },
+                    {
+                      "text": "<p>Vendas por MarketPlaces</p>"
+                    },
+                    {
+                      "text": "<p>Suporte por chat e e-mail</p>"
                     }
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
                     "alt": "bullet points icon"
                   },
-                  "itemsTextColor": "#5F6E82",
+                  "itemsTextColor": "#ffffff",
                   "tooltipTextColor": "#5F6E82",
                   "tooltipBackgroundColor": "#EAE7ED",
                   "tooltipIconColor": "#7F7E77"
@@ -7887,13 +7889,16 @@
                   "text": "Ver detalhes"
                 },
                 "tag": {
-                  "text": "Mais recomendado",
-                  "fontFamily": "Instrument Serif",
+                  "text": "<p>Mais recomendado</p>",
+                  "fontFamily": "Inter",
                   "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
                   "borderColor": "#B699D9",
                   "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
                   "onlyAnnual": false,
-                  "hideTag": true
+                  "hideTag": true,
+                  "textProps": {
+                    "fontSize": "12px"
+                  }
                 },
                 "montlyFee": {
                   "0": "<",
@@ -8237,8 +8242,8 @@
                   "338": "/",
                   "339": "p",
                   "340": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span><br><span style=\"font-size: 36pt\">R$54</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
-                  "color": "#00363A"
+                  "text": "<p><span style=\"color: #ffffff; font-size: 9pt\">Ideal para operações em expansão, que já tenham faturamento acima de R$15 mil/mês</span><span style=\"color: #ffffff\"><br></span><span style=\"color: #ffffff; font-size: 36pt\">R$54</span><span style=\"color: #ffffff\"> por mês</span></p>",
+                  "color": "#FFFFFF"
                 },
                 "annualMontlyFee": {
                   "0": "<",
@@ -8502,8 +8507,8 @@
                   "258": "/",
                   "259": "p",
                   "260": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span></p><p><span style=\"font-size: 36pt\">R$43</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ 132 ao ano</span></p>",
-                  "color": "#00363A"
+                  "text": "<p><span style=\"color: #ffffff; font-size: 9pt\">Ideal para operações em expansão, que já tenham faturamento acima de R$15 mil/mês</span><span style=\"color: #ffffff\"><br><br></span><span style=\"color: #ffffff; font-size: 9pt\">em até 12x de</span></p><p><span style=\"color: #ffffff; font-size: 36pt\">R$43</span><span style=\"color: #ffffff\"> </span><span style=\"color: #ffffff; font-size: 9pt\">por mês</span></p><p><span style=\"color: #ffffff; font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
+                  "color": "#FFFFFF"
                 },
                 "annualSaving": {
                   "text": "Economia de  R$ 576/ano",
@@ -8514,54 +8519,56 @@
                 },
                 "seeMoreButtonText": "Ver mais",
                 "cta": [],
-                "backgroundColor": "#ffffff",
+                "backgroundColor": "#00363A",
                 "cutedMontlyFeeColor": "#371E55",
                 "createStoreWithPlanCta": {
-                  "planId": "173",
+                  "planId": "174",
                   "text": "Criar minha loja",
                   "ctaStyle": "button",
-                  "backgroundColor": "#00363A",
-                  "textColor": "#FFFFF",
-                  "borderColor": "#00363A"
+                  "backgroundColor": "linear-gradient(135deg, #3aaedb, #6dd5ed, #3bd08f);",
+                  "textColor": "#FFFFFF",
+                  "borderColor": "linear-gradient(135deg, #3aaedb, #6dd5ed, #3bd08f);"
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
                 "title": {
                   "text": "<p>Crescimento</p>",
-                  "color": "#00363A",
+                  "color": "#FFFFFF",
                   "font": "Lektorat Display var",
                   "fontWeight": "750",
                   "fontSize": "42px",
                   "letterSpacing": "-0.3px",
                   "lineHeight": "100%"
                 },
-                "borderColor": "#F2F4F5"
+                "borderColor": "#00363A"
               },
               {
                 "bulletPoints": {
                   "items": [
                     {
-                      "text": "<p><span>500 Produtos</span></p>",
+                      "text": "<p><strong>Tudo do plano Crescimento +</strong></p>"
+                    },
+                    {
+                      "text": "<p>Produtos ilimitados</p>",
                       "marginTop": "26px"
                     },
                     {
-                      "text": "<p><span>50.000 visitas</span></p>"
+                      "text": "<p>300.000 visitas</p>"
                     },
                     {
-                      "text": "<p><span>Tudo do plano crescimento +</span></p>"
+                      "text": "<p>7 temas Premium Grátis</p>"
                     },
                     {
-                      "text": "<p><span>Enriquecimento de produtos com IA</span></p>"
+                      "text": "<p>Suporte por WhatsApp</p>"
                     },
                     {
-                      "text": "<p><span>Avaliação de produto com foto</span></p>"
+                      "text": "<p>Prioridade no atendimento</p>"
                     },
                     {
-                      "text": "<p><span>3 usuários do painel</span></p>"
+                      "text": "<p>10 Usuários com controle e permissão</p>"
                     },
                     {
-                      "text": "<p><span>Edição de HTML</span></p>",
-                      "toolTipText": "tool tip text"
+                      "text": "<p>Edição de produtos em massa</p>"
                     }
                   ],
                   "bulletPointsIcon": {
@@ -8932,7 +8939,7 @@
                   "338": "/",
                   "339": "p",
                   "340": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span><br><span style=\"font-size: 36pt\">R$99</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
+                  "text": "<p><span style=\"font-size: 9pt\">Ideal para operações em expansão, que já tenham faturamento acima de R$15 mil/mês</span><br><span style=\"font-size: 36pt\">R$239</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
                   "color": "#00363A"
                 },
                 "annualMontlyFee": {
@@ -9197,7 +9204,7 @@
                   "258": "/",
                   "259": "p",
                   "260": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span></p><p><span style=\"font-size: 36pt\">R$79</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
+                  "text": "<p><span style=\"font-size: 9pt\">Ideal para operações em expansão, que já tenham faturamento acima de R$15 mil/mês</span><br><br><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">em até 12x de</span></p><p><span style=\"font-size: 36pt\">R$191</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
                   "color": "#00363A"
                 },
                 "annualSaving": {
@@ -9222,702 +9229,7 @@
                 "theme": "light",
                 "titleFont": "Instrument Serif",
                 "title": {
-                  "text": "<p>Aceleração</p>",
-                  "color": "#00363A",
-                  "font": "Lektorat Display var",
-                  "fontWeight": "750",
-                  "letterSpacing": "-0.3px",
-                  "fontSize": "42px",
-                  "lineHeight": "100%"
-                },
-                "borderColor": "#F2F4F5"
-              },
-              {
-                "bulletPoints": {
-                  "items": [
-                    {
-                      "text": "<p><span>500 Produtos</span></p>",
-                      "marginTop": "26px"
-                    },
-                    {
-                      "text": "<p><span>50.000 visitas</span></p>"
-                    },
-                    {
-                      "text": "<p><span>Tudo do plano crescimento +</span></p>"
-                    },
-                    {
-                      "text": "<p><span>Enriquecimento de produtos com IA</span></p>"
-                    },
-                    {
-                      "text": "<p><span>Avaliação de produto com foto</span></p>"
-                    },
-                    {
-                      "text": "<p><span>3 usuários do painel</span></p>"
-                    },
-                    {
-                      "text": "<p><span>Edição de HTML</span></p>",
-                      "toolTipText": "tool tip text"
-                    }
-                  ],
-                  "bulletPointsIcon": {
-                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
-                    "alt": "bullet points icon"
-                  },
-                  "itemsTextColor": "#5F6E82",
-                  "tooltipTextColor": "#5F6E82",
-                  "tooltipBackgroundColor": "#EAE7ED",
-                  "tooltipIconColor": "#7F7E77"
-                },
-                "titleColor": "#371E55",
-                "chooseCta": {
-                  "text": "Assinar",
-                  "href": "#"
-                },
-                "detailsCta": {
-                  "text": "Ver detalhes"
-                },
-                "tag": {
-                  "text": "Mais recomendado",
-                  "fontFamily": "Instrument Serif",
-                  "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
-                  "borderColor": "#B699D9",
-                  "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
-                  "onlyAnnual": false,
-                  "hideTag": true
-                },
-                "montlyFee": {
-                  "0": "<",
-                  "1": "p",
-                  "2": ">",
-                  "3": "<",
-                  "4": "s",
-                  "5": "p",
-                  "6": "a",
-                  "7": "n",
-                  "8": " ",
-                  "9": "s",
-                  "10": "t",
-                  "11": "y",
-                  "12": "l",
-                  "13": "e",
-                  "14": "=",
-                  "15": "\"",
-                  "16": "c",
-                  "17": "o",
-                  "18": "l",
-                  "19": "o",
-                  "20": "r",
-                  "21": ":",
-                  "22": " ",
-                  "23": "r",
-                  "24": "g",
-                  "25": "b",
-                  "26": "(",
-                  "27": "5",
-                  "28": "5",
-                  "29": ",",
-                  "30": " ",
-                  "31": "3",
-                  "32": "0",
-                  "33": ",",
-                  "34": " ",
-                  "35": "8",
-                  "36": "5",
-                  "37": ")",
-                  "38": ";",
-                  "39": "\"",
-                  "40": " ",
-                  "41": "d",
-                  "42": "a",
-                  "43": "t",
-                  "44": "a",
-                  "45": "-",
-                  "46": "m",
-                  "47": "c",
-                  "48": "e",
-                  "49": "-",
-                  "50": "s",
-                  "51": "t",
-                  "52": "y",
-                  "53": "l",
-                  "54": "e",
-                  "55": "=",
-                  "56": "\"",
-                  "57": "c",
-                  "58": "o",
-                  "59": "l",
-                  "60": "o",
-                  "61": "r",
-                  "62": ":",
-                  "63": " ",
-                  "64": "r",
-                  "65": "g",
-                  "66": "b",
-                  "67": "(",
-                  "68": "5",
-                  "69": "5",
-                  "70": ",",
-                  "71": " ",
-                  "72": "3",
-                  "73": "0",
-                  "74": ",",
-                  "75": " ",
-                  "76": "8",
-                  "77": "5",
-                  "78": ")",
-                  "79": ";",
-                  "80": "\"",
-                  "81": ">",
-                  "82": "<",
-                  "83": "s",
-                  "84": "p",
-                  "85": "a",
-                  "86": "n",
-                  "87": " ",
-                  "88": "s",
-                  "89": "t",
-                  "90": "y",
-                  "91": "l",
-                  "92": "e",
-                  "93": "=",
-                  "94": "\"",
-                  "95": "f",
-                  "96": "o",
-                  "97": "n",
-                  "98": "t",
-                  "99": "-",
-                  "100": "s",
-                  "101": "i",
-                  "102": "z",
-                  "103": "e",
-                  "104": ":",
-                  "105": " ",
-                  "106": "2",
-                  "107": "4",
-                  "108": "p",
-                  "109": "t",
-                  "110": ";",
-                  "111": "\"",
-                  "112": " ",
-                  "113": "d",
-                  "114": "a",
-                  "115": "t",
-                  "116": "a",
-                  "117": "-",
-                  "118": "m",
-                  "119": "c",
-                  "120": "e",
-                  "121": "-",
-                  "122": "s",
-                  "123": "t",
-                  "124": "y",
-                  "125": "l",
-                  "126": "e",
-                  "127": "=",
-                  "128": "\"",
-                  "129": "f",
-                  "130": "o",
-                  "131": "n",
-                  "132": "t",
-                  "133": "-",
-                  "134": "s",
-                  "135": "i",
-                  "136": "z",
-                  "137": "e",
-                  "138": ":",
-                  "139": " ",
-                  "140": "2",
-                  "141": "4",
-                  "142": "p",
-                  "143": "t",
-                  "144": ";",
-                  "145": "\"",
-                  "146": ">",
-                  "147": "R",
-                  "148": "$",
-                  "149": "<",
-                  "150": "/",
-                  "151": "s",
-                  "152": "p",
-                  "153": "a",
-                  "154": "n",
-                  "155": ">",
-                  "156": "&",
-                  "157": "n",
-                  "158": "b",
-                  "159": "s",
-                  "160": "p",
-                  "161": ";",
-                  "162": "<",
-                  "163": "s",
-                  "164": "p",
-                  "165": "a",
-                  "166": "n",
-                  "167": " ",
-                  "168": "s",
-                  "169": "t",
-                  "170": "y",
-                  "171": "l",
-                  "172": "e",
-                  "173": "=",
-                  "174": "\"",
-                  "175": "f",
-                  "176": "o",
-                  "177": "n",
-                  "178": "t",
-                  "179": "-",
-                  "180": "s",
-                  "181": "i",
-                  "182": "z",
-                  "183": "e",
-                  "184": ":",
-                  "185": " ",
-                  "186": "4",
-                  "187": "8",
-                  "188": "p",
-                  "189": "x",
-                  "190": ";",
-                  "191": "\"",
-                  "192": " ",
-                  "193": "d",
-                  "194": "a",
-                  "195": "t",
-                  "196": "a",
-                  "197": "-",
-                  "198": "m",
-                  "199": "c",
-                  "200": "e",
-                  "201": "-",
-                  "202": "s",
-                  "203": "t",
-                  "204": "y",
-                  "205": "l",
-                  "206": "e",
-                  "207": "=",
-                  "208": "\"",
-                  "209": "f",
-                  "210": "o",
-                  "211": "n",
-                  "212": "t",
-                  "213": "-",
-                  "214": "s",
-                  "215": "i",
-                  "216": "z",
-                  "217": "e",
-                  "218": ":",
-                  "219": " ",
-                  "220": "4",
-                  "221": "8",
-                  "222": "p",
-                  "223": "x",
-                  "224": ";",
-                  "225": "\"",
-                  "226": ">",
-                  "227": "<",
-                  "228": "s",
-                  "229": "t",
-                  "230": "r",
-                  "231": "o",
-                  "232": "n",
-                  "233": "g",
-                  "234": ">",
-                  "235": "2",
-                  "236": "3",
-                  "237": "9",
-                  "238": "<",
-                  "239": "/",
-                  "240": "s",
-                  "241": "t",
-                  "242": "r",
-                  "243": "o",
-                  "244": "n",
-                  "245": "g",
-                  "246": ">",
-                  "247": "<",
-                  "248": "/",
-                  "249": "s",
-                  "250": "p",
-                  "251": "a",
-                  "252": "n",
-                  "253": ">",
-                  "254": "<",
-                  "255": "s",
-                  "256": "p",
-                  "257": "a",
-                  "258": "n",
-                  "259": " ",
-                  "260": "s",
-                  "261": "t",
-                  "262": "y",
-                  "263": "l",
-                  "264": "e",
-                  "265": "=",
-                  "266": "\"",
-                  "267": "f",
-                  "268": "o",
-                  "269": "n",
-                  "270": "t",
-                  "271": "-",
-                  "272": "s",
-                  "273": "i",
-                  "274": "z",
-                  "275": "e",
-                  "276": ":",
-                  "277": " ",
-                  "278": "1",
-                  "279": "4",
-                  "280": "p",
-                  "281": "t",
-                  "282": ";",
-                  "283": "\"",
-                  "284": " ",
-                  "285": "d",
-                  "286": "a",
-                  "287": "t",
-                  "288": "a",
-                  "289": "-",
-                  "290": "m",
-                  "291": "c",
-                  "292": "e",
-                  "293": "-",
-                  "294": "s",
-                  "295": "t",
-                  "296": "y",
-                  "297": "l",
-                  "298": "e",
-                  "299": "=",
-                  "300": "\"",
-                  "301": "f",
-                  "302": "o",
-                  "303": "n",
-                  "304": "t",
-                  "305": "-",
-                  "306": "s",
-                  "307": "i",
-                  "308": "z",
-                  "309": "e",
-                  "310": ":",
-                  "311": " ",
-                  "312": "1",
-                  "313": "4",
-                  "314": "p",
-                  "315": "t",
-                  "316": ";",
-                  "317": "\"",
-                  "318": ">",
-                  "319": "/",
-                  "320": "m",
-                  "321": "ê",
-                  "322": "s",
-                  "323": "<",
-                  "324": "/",
-                  "325": "s",
-                  "326": "p",
-                  "327": "a",
-                  "328": "n",
-                  "329": ">",
-                  "330": "<",
-                  "331": "/",
-                  "332": "s",
-                  "333": "p",
-                  "334": "a",
-                  "335": "n",
-                  "336": ">",
-                  "337": "<",
-                  "338": "/",
-                  "339": "p",
-                  "340": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span><br><span style=\"font-size: 36pt\">R$99</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
-                  "color": "#00363A"
-                },
-                "annualMontlyFee": {
-                  "0": "<",
-                  "1": "p",
-                  "2": ">",
-                  "3": "<",
-                  "4": "s",
-                  "5": "p",
-                  "6": "a",
-                  "7": "n",
-                  "8": " ",
-                  "9": "s",
-                  "10": "t",
-                  "11": "y",
-                  "12": "l",
-                  "13": "e",
-                  "14": "=",
-                  "15": "\"",
-                  "16": "c",
-                  "17": "o",
-                  "18": "l",
-                  "19": "o",
-                  "20": "r",
-                  "21": ":",
-                  "22": " ",
-                  "23": "r",
-                  "24": "g",
-                  "25": "b",
-                  "26": "(",
-                  "27": "5",
-                  "28": "5",
-                  "29": ",",
-                  "30": " ",
-                  "31": "3",
-                  "32": "0",
-                  "33": ",",
-                  "34": " ",
-                  "35": "8",
-                  "36": "5",
-                  "37": ")",
-                  "38": ";",
-                  "39": " ",
-                  "40": "f",
-                  "41": "o",
-                  "42": "n",
-                  "43": "t",
-                  "44": "-",
-                  "45": "s",
-                  "46": "i",
-                  "47": "z",
-                  "48": "e",
-                  "49": ":",
-                  "50": " ",
-                  "51": "2",
-                  "52": "4",
-                  "53": "p",
-                  "54": "t",
-                  "55": "\"",
-                  "56": ">",
-                  "57": "R",
-                  "58": "$",
-                  "59": "<",
-                  "60": "/",
-                  "61": "s",
-                  "62": "p",
-                  "63": "a",
-                  "64": "n",
-                  "65": ">",
-                  "66": "<",
-                  "67": "s",
-                  "68": "p",
-                  "69": "a",
-                  "70": "n",
-                  "71": " ",
-                  "72": "s",
-                  "73": "t",
-                  "74": "y",
-                  "75": "l",
-                  "76": "e",
-                  "77": "=",
-                  "78": "\"",
-                  "79": "c",
-                  "80": "o",
-                  "81": "l",
-                  "82": "o",
-                  "83": "r",
-                  "84": ":",
-                  "85": " ",
-                  "86": "r",
-                  "87": "g",
-                  "88": "b",
-                  "89": "(",
-                  "90": "5",
-                  "91": "5",
-                  "92": ",",
-                  "93": " ",
-                  "94": "3",
-                  "95": "0",
-                  "96": ",",
-                  "97": " ",
-                  "98": "8",
-                  "99": "5",
-                  "100": ")",
-                  "101": "\"",
-                  "102": ">",
-                  "103": " ",
-                  "104": "<",
-                  "105": "/",
-                  "106": "s",
-                  "107": "p",
-                  "108": "a",
-                  "109": "n",
-                  "110": ">",
-                  "111": "<",
-                  "112": "s",
-                  "113": "t",
-                  "114": "r",
-                  "115": "o",
-                  "116": "n",
-                  "117": "g",
-                  "118": ">",
-                  "119": "<",
-                  "120": "s",
-                  "121": "p",
-                  "122": "a",
-                  "123": "n",
-                  "124": " ",
-                  "125": "s",
-                  "126": "t",
-                  "127": "y",
-                  "128": "l",
-                  "129": "e",
-                  "130": "=",
-                  "131": "\"",
-                  "132": "c",
-                  "133": "o",
-                  "134": "l",
-                  "135": "o",
-                  "136": "r",
-                  "137": ":",
-                  "138": " ",
-                  "139": "r",
-                  "140": "g",
-                  "141": "b",
-                  "142": "(",
-                  "143": "5",
-                  "144": "5",
-                  "145": ",",
-                  "146": " ",
-                  "147": "3",
-                  "148": "0",
-                  "149": ",",
-                  "150": " ",
-                  "151": "8",
-                  "152": "5",
-                  "153": ")",
-                  "154": ";",
-                  "155": " ",
-                  "156": "f",
-                  "157": "o",
-                  "158": "n",
-                  "159": "t",
-                  "160": "-",
-                  "161": "s",
-                  "162": "i",
-                  "163": "z",
-                  "164": "e",
-                  "165": ":",
-                  "166": " ",
-                  "167": "4",
-                  "168": "8",
-                  "169": "p",
-                  "170": "x",
-                  "171": "\"",
-                  "172": ">",
-                  "173": "1",
-                  "174": "9",
-                  "175": "1",
-                  "176": "<",
-                  "177": "/",
-                  "178": "s",
-                  "179": "p",
-                  "180": "a",
-                  "181": "n",
-                  "182": ">",
-                  "183": "<",
-                  "184": "/",
-                  "185": "s",
-                  "186": "t",
-                  "187": "r",
-                  "188": "o",
-                  "189": "n",
-                  "190": "g",
-                  "191": ">",
-                  "192": "<",
-                  "193": "s",
-                  "194": "p",
-                  "195": "a",
-                  "196": "n",
-                  "197": " ",
-                  "198": "s",
-                  "199": "t",
-                  "200": "y",
-                  "201": "l",
-                  "202": "e",
-                  "203": "=",
-                  "204": "\"",
-                  "205": "c",
-                  "206": "o",
-                  "207": "l",
-                  "208": "o",
-                  "209": "r",
-                  "210": ":",
-                  "211": " ",
-                  "212": "r",
-                  "213": "g",
-                  "214": "b",
-                  "215": "(",
-                  "216": "5",
-                  "217": "5",
-                  "218": ",",
-                  "219": " ",
-                  "220": "3",
-                  "221": "0",
-                  "222": ",",
-                  "223": " ",
-                  "224": "8",
-                  "225": "5",
-                  "226": ")",
-                  "227": ";",
-                  "228": " ",
-                  "229": "f",
-                  "230": "o",
-                  "231": "n",
-                  "232": "t",
-                  "233": "-",
-                  "234": "s",
-                  "235": "i",
-                  "236": "z",
-                  "237": "e",
-                  "238": ":",
-                  "239": " ",
-                  "240": "1",
-                  "241": "4",
-                  "242": "p",
-                  "243": "t",
-                  "244": "\"",
-                  "245": ">",
-                  "246": "/",
-                  "247": "m",
-                  "248": "ê",
-                  "249": "s",
-                  "250": "<",
-                  "251": "/",
-                  "252": "s",
-                  "253": "p",
-                  "254": "a",
-                  "255": "n",
-                  "256": ">",
-                  "257": "<",
-                  "258": "/",
-                  "259": "p",
-                  "260": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span></p><p><span style=\"font-size: 36pt\">R$79</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
-                  "color": "#00363A"
-                },
-                "annualSaving": {
-                  "text": "Economia de  R$ 576/ano",
-                  "fontFamily": "Instrument Serif",
-                  "textColor": "linear-gradient(90deg, #371E55 38.15%, rgba(55, 30, 85, 0.80) 124.69%)",
-                  "backgroundColor": "linear-gradient(90deg, rgb(191, 182, 213) 0.02%, rgb(245, 242, 248) 52.45%, rgb(255, 255, 255) 80.07%); ",
-                  "borderColor": "linear-gradient(90deg, #B699D9, transparent)"
-                },
-                "seeMoreButtonText": "Ver mais",
-                "cta": [],
-                "backgroundColor": "#ffffff",
-                "cutedMontlyFeeColor": "#371E55",
-                "createStoreWithPlanCta": {
-                  "planId": "174",
-                  "text": "Criar minha loja",
-                  "ctaStyle": "button",
-                  "backgroundColor": "#00363A",
-                  "textColor": "#FFFFFF",
-                  "borderColor": "#00363A"
-                },
-                "theme": "light",
-                "titleFont": "Instrument Serif",
-                "title": {
-                  "text": "<p>Aceleração</p>",
+                  "text": "<p>Expansão</p>",
                   "color": "#00363A",
                   "font": "Lektorat Display var",
                   "fontWeight": "750",
@@ -9967,7 +9279,7 @@
             "arrowsColor": "#ca1616",
             "annualTagTextColor": "#7A2D0D",
             "annualTag": "- 2O% OFF",
-            "arrows": true,
+            "arrows": false,
             "annualTagPosition": "aside",
             "paddingTop": "120px",
             "switchBackgroundColor": "#DFE4E6",

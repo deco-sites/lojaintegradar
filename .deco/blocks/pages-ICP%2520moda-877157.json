@@ -1487,37 +1487,240 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Carousel.tsx",
-        "caption": "<p><span>Assine um plano e ative as ferramentas que vão te fazer vender em até 4 dias.</span></p>",
-        "title": "<p><span>Ganhe tempo e dinheiro com ferramentas inteligentes.</span></p>",
-        "slides": [
-          {
-            "textPlacement": "Top",
-            "icon": {
-              "placement": "Bottom right",
-              "width": "370px",
-              "height": "584px"
-            },
-            "useBackground": "image",
-            "bulletPoints": {
-              "items": []
-            },
-            "title": "Provador Virtual",
-            "caption": "<p><span>Reduza devoluções e dúvidas. Seu cliente visualiza o produto no corpo, direto da tela.</span></p>",
-            "backgroundImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/f118479b-7648-4fb1-a6ba-4bfd18ffa51f/provador-virtual.png",
-              "width": 370,
-              "height": "100%"
-            }
-          }
-        ],
-        "backgroundColor": "#00363A",
-        "paddingTop": "60px",
-        "paddingBottom": "60px",
-        "arrows": true
-      }
+      "__resolveType": "site/sections/Carousel.tsx",
+      "caption": "<p><span>Assine um plano e ative as ferramentas que vão te fazer vender em até 4 dias.</span></p>",
+      "title": "<p>Ganhe tempo e dinheiro com <span style=\"color: #28c3c3\">ferramentas inteligentes.</span></p>",
+      "slides": [
+        {
+          "textPlacement": "Bottom",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Recupere vendas em todas as etapas",
+          "caption": "<p><span style=\"color: #5f6e82\">Envie mensagens no WhatsApp e  e-mails automáticos para quem abandonou o carrinho, saiu da página de produto ou não finalizou o pagamento — e recupere até 18% das vendas perdidas.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/95ee88e3-bc0c-4c88-bf5b-b244d42627f9/Recupere-vendas.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Top",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Cadastre produtos com IA",
+          "caption": "<p><span style=\"color: #5f6e82\">Descreva e publique itens em minutos com sugestões automáticas e estrutura otimizada.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/3526394d-d44a-4fc1-b168-6fafdd4bf59d/Cadastro-produtos-com-IA.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Bottom",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Ative avaliações reais que ajudam a fechar a venda",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que suas clientes pensam  com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/a8c85411-9c99-4964-97e3-d6a4e598844b/avaliacao-de-produto.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Top",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Anuncie onde seus clientes estão",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte sua loja ao Meta, Google e TikTok e leve tráfego qualificado pros seus produtos</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/1f452d4b-4d55-432f-9337-272b714cafa6/Anuncie-redes-sociais.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Bottom",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Venda nos maiores marketplaces",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte-se ao Magalu com integração nativa da Loja Integrada e +100 marketplaces via parceiros oficiais.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/7278706f-2281-42cd-bd0f-facef1c30cd3/venda-em-marketplace.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Top",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Sua loja no topo do Google",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Robôs de indexação com IA e estrutura técnica pra sua loja aparecer no topo das buscas.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/a8c959ec-7c39-4b74-9855-c04df79d48fa/Sua-loja-no-topo-do-google.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        },
+        {
+          "textPlacement": "Bottom",
+          "icon": {},
+          "bulletPoints": {
+            "items": [],
+            "bulletPointsIcon": {}
+          },
+          "title": "Venda pelas redes sociais",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Crie links de carrinho com produto, desconto e frete e compartilhe direto no Whatsapp, Instagram e mais.</span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/c12087ce-e096-4a7e-91e8-364321dd9518/venda-pelas-redes-sociais.png",
+            "height": 484,
+            "width": 456
+          },
+          "textColor": "#00363A",
+          "titleTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "140%"
+          },
+          "captionTextProps": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "140%"
+          },
+          "useBackground": "image"
+        }
+      ],
+      "backgroundColor": "#00363A",
+      "paddingTop": "60px",
+      "paddingBottom": "60px",
+      "arrows": true,
+      "titleTextProps": {
+        "fontSize": "56px",
+        "fontWeight": "650"
+      },
+      "titleFont": "Lektorat",
+      "titleColor": "#ffffff",
+      "captionColor": "#ffffff",
+      "captionFont": "Inter",
+      "captionTextProps": {
+        "fontSize": "16px",
+        "fontWeight": "500"
+      },
+      "arrowsColor": "#ffffff",
+      "createStoreCta": {
+        "text": "Criar minha loja profissional",
+        "backgroundColor": "#E4F3F3",
+        "showIcon": false,
+        "textColor": "#00363A",
+        "borderColor": "#E4F3F3",
+        "ctaStyle": "button"
+      },
+      "cta": []
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

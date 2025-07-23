@@ -110,7 +110,7 @@ export interface MenuLink extends Link {
 }
 
 export interface Navigation {
-  links: Link[];
+  links?: Link[];
   /** @format color-input */
   linksBorderColor?: string;
   /** @format color-input */
@@ -118,9 +118,9 @@ export interface Navigation {
   /** @format color-input */
   textHoverColor?: string;
   linksTextProps?: MenuTitleTextProps;
-  buttons: CTAProps[];
-  mobileButtons: CTAProps[];
-  asideMenuButtons: CTAProps[];
+  buttons?: CTAProps[];
+  mobileButtons?: CTAProps[];
+  asideMenuButtons?: CTAProps[];
 }
 
 /** @title {{title}} */
@@ -174,43 +174,23 @@ export interface Nav {
   asideMenuBackgroundColor?: string;
   /** @format color-input */
   asideMenuCloseIconColor?: string;
+  headerWhiteSpace?: string;
   headerMessage?: HeaderMessage;
   campaignTimer?: CampaignTimer;
 }
-export default function Header2({ logo = {
+export default function Header({ logo = {
   src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
   alt: "Logo",
 },
-  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, noScrollBackgroundColor, backgroundColor, dropdownMenus = { menus: [] }, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
+  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, headerWhiteSpace = '0', noScrollBackgroundColor, backgroundColor, dropdownMenus = { menus: [] }, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
   navigation, asideMenuOnlyMobile, hideSection }: Nav) {
   if (hideSection) return <></>
-
-  const dataLayerPush = () => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      'event': 'clique',
-      'eventCategory': 'loja-integrada:institucional',
-      'eventAction': 'header',
-      'eventLabel': 'logo'
-    });
-  }
-
-  const dataLayerPushMenu = (eventLabel: string) => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      'event': 'clique',
-      'eventCategory': 'loja-integrada:institucional',
-      'eventAction': 'menu-superior',
-      'eventLabel': eventLabel
-    });
-  }
-
-
   return (
     <header>
       {headerMessage?.show && <div class="h-16" />}
       {campaignTimer?.show && <div class="h-[76px]" />}
-      <div id="headerContainer" class="fixed top-0 left-0 w-full z-50 justify-center transition-all duration-300 ease-in-out">
+      <div class="h-[92px] lg:h-28" style={{ height: headerWhiteSpace }} />
+      <div id="headerContainer" class="fixed top-0 left-0 w-full z-50 justify-center transition-all duration-500 ease-in-out">
 
         {headerMessage?.show && <div class="h-16 w-full bg-primary text-primary-content px-1 lg:px-11 py-2 flex items-center justify-center gap-1" style={{ background: headerMessage?.backgroundColor }}>
           <p class="text-xs lg:text-2xl text-center font-semibold leading-[120%] flex items-center justify-center">
@@ -232,17 +212,17 @@ export default function Header2({ logo = {
           <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
           {/* main content */}
-          <div class="drawer-content mx-auto w-full lg:px-0 px-4 py-0 flex gap-8 items-center justify-between max-w-[1305px]">
+          <div class="drawer-content mx-auto w-full lg:px-0 px-4 py-0 flex gap-8 items-center justify-between max-w-[1120px]">
 
             <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, noScrollBackgroundColor) }} />
 
-            <a hx-on:click={useScript(dataLayerPush)} href={logo.href || "/"} class="w-28 h-5 md:w-auto md:h-10 flex items-center">
+            <a hx-on:click={`window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'clique', custom_section: 'lp-komea', custom_type: 'header', custom_title: 'logotipo'});`} href={logo.href || "/"} class="flex items-center">
               <Image src={logo.src || ""} width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
             </a>
 
             <ul class="hidden lg:flex items-center gap-10 text-sm flex-wrap" style={{ color: dropdownMenus.titlesTextColor }}>
               {dropdownMenus.menus.map(menu => (
-                <li class="relative group h-full" hx-on={`click: ${useScript(dataLayerPushMenu, menu.title.replace(/\s+/g, '-').toLowerCase())}; mouseleave: this.children[0].style.color='${dropdownMenus.titlesTextColor}'; this.children[1]?.classList.remove('animate-fade-in')`}>
+                <li class="relative group h-full" hx-on={`mouseleave: this.children[0].style.color='${dropdownMenus.titlesTextColor}'; this.children[1]?.classList.remove('animate-fade-in')`}>
                   <a
                     href={menu.titleLink}
                     class={`text-center flex gap-2 items-start ${!menu.titleLink && 'cursor-default'}`}
@@ -279,21 +259,7 @@ export default function Header2({ logo = {
             </ul>
 
             <div class="items-center justify-between">
-              <ul class="flex md:hidden justify-end gap-4" >
-                <div class="flex items-center gap-4">
-                  {navigation?.mobileButtons?.map(cta => (
-                    <div class="flex items-center"><CTA {...cta} /></div>
-                  ))}
-                </div>
-                {!hideAsideMenu && <label htmlFor="mobile-drawer-nav" class={`btn btn-ghost drawer-button px-0`}>
-                  {/* <Icon id="Bars3" size={25} strokeWidth={0.1} class="text-primary fill-current" style={{color: barsColor}} /> */}
-                  <svg xmlns="http://www.w3.org/2000/svg" size={25} width={25} viewBox="0 0 20 20" class="fill-current" style={{ color: barsColor }}>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 5.00033C2.5 4.54009 2.8731 4.16699 3.33333 4.16699H16.6667C17.1269 4.16699 17.5 4.54009 17.5 5.00033C17.5 5.46056 17.1269 5.83366 16.6667 5.83366H3.33333C2.8731 5.83366 2.5 5.46056 2.5 5.00033ZM2.5 10.0003C2.5 9.54009 2.8731 9.16699 3.33333 9.16699H16.6667C17.1269 9.16699 17.5 9.54009 17.5 10.0003C17.5 10.4606 17.1269 10.8337 16.6667 10.8337H3.33333C2.8731 10.8337 2.5 10.4606 2.5 10.0003ZM2.5 15.0003C2.5 14.5401 2.8731 14.167 3.33333 14.167H16.6667C17.1269 14.167 17.5 14.5401 17.5 15.0003C17.5 15.4606 17.1269 15.8337 16.6667 15.8337H3.33333C2.8731 15.8337 2.5 15.4606 2.5 15.0003Z" />
-                  </svg>
-
-                </label>}
-              </ul>
-              <ul class="hidden md:flex justify-end gap-7 flex-wrap">
+              <ul class="flex justify-end gap-7 flex-wrap">
                 {navigation?.buttons?.map(cta => (
                   <div class="flex items-center"><CTA {...cta} /></div>
                 ))}
@@ -336,9 +302,7 @@ export default function Header2({ logo = {
                         <input type="checkbox" class="!min-h-0 !p-4" hx-on:change={useScript(onChange)} />
                         <div
                           className="collapse-title font-semibold text-sm !min-h-0 !p-4 text-center flex justify-between"
-                          style={{ background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor }}
-                          hx-on:click={useScript(dataLayerPushMenu, menu.title.replace(/\s+/g, '-').toLowerCase())}
-                        >
+                          style={{ background: dropdownMenus.menusBackgroundColor, color: dropdownMenus.menusTextColor }}>
                           <div />
                           {menu.title}
                           <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" class="fill-current mt-2 group-hover:rotate-180 transition-all duration-300 collapse-arrow">
@@ -355,7 +319,7 @@ export default function Header2({ logo = {
                       </div>
                     )
                   })}
-                  {navigation?.links.map((link) => (<li class="border-b border-neutral last:border-none" style={{ borderColor: navigation.linksBorderColor }} hx-on={`mouseleave: this.children[0].style.color='${navigation.textColor}'`} >
+                  {navigation?.links?.map((link) => (<li class="border-b border-neutral last:border-none" style={{ borderColor: navigation.linksBorderColor }} hx-on={`mouseleave: this.children[0].style.color='${navigation.textColor}'`} >
                     <a href={link.url} aria-label={link.label}
                       class="text-primary hover:text-accent hover:bg-transparent  text-base font-semibold flex justify-between py-6 rounded-none"
                       style={{ color: navigation.textColor, ...navigation.linksTextProps }}

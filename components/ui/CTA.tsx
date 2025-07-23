@@ -32,7 +32,7 @@ export interface Props {
   borderColor?: string;
   type?: 'Button' | 'Only text';
   size?: 'Large' | 'Medium' | 'Small';
-  openModal?: 'Talk to specialist' | 'Create Store' | 'Customer Advisory Board Modal';
+  openModal?: 'Komea wait list' | 'Talk to specialist' | 'Create Store' | 'Customer Advisory Board Modal';
   createStorePlanId?: string;
   showIcon?: boolean;
   customIcon?: IImage;
@@ -118,7 +118,15 @@ const openModalFunction = (modal: string, planId: string, customEvent: string, c
     const nameInput = customerAdvisoryBoardModal.querySelector('input[name="name"]') as HTMLInputElement;
     customerAdvisoryBoardModal.style.display = "flex";
     nameInput.focus();
+  } else if (modal == 'Komea wait list') {
+    const form = document.getElementById("waitlist-form") as HTMLElement;
+    form.classList.remove("hidden");
+
+    const komeaWaitListModal = document.getElementById("waitlist-form") as HTMLElement;
+    const nameInput = komeaWaitListModal.querySelector('input[name="name"]') as HTMLInputElement;
+    nameInput.focus();
   }
+
 
 };
 

@@ -133,6 +133,7 @@ export interface Props {
     captionColor?: string;
     captionTextProps?: TitleTextProps;
     slides?: CarouselItem[];
+    slidesHeight?: string;
     /**
      * @title Show arrows
      * @description show arrows to navigate through the images
@@ -150,9 +151,10 @@ export interface Props {
     paddingTop?: string;
     paddingBottom?: string;
 }
-function SliderItem({ slide, id }: {
+function SliderItem({ slide, id, slidesHeight }: {
     slide: CarouselItem;
     id: string;
+    slidesHeight?: string;
 }) {
     const { title, titleTextProps, caption, captionTextProps, textPlacement, textColor, icon, backgroundImage, bulletPoints, useBackground = 'image', backgroundVideo } = slide;
     const iconPosition = {
@@ -162,7 +164,7 @@ function SliderItem({ slide, id }: {
         'Bottom right': 'bottom-0 right-0',
     };
     console.log(icon?.width," ",icon?.height)
-    return (<div id={id} class={`relative w-full h-[400px] sm:h-[484px] rounded-[30px] overflow-y-auto p-6 md:p-8 'text-primary' `} style={{ color: textColor }}>
+    return (<div id={id} class={`relative w-full h-[400px] sm:h-[484px] rounded-[30px] overflow-y-auto p-6 md:p-8 'text-primary' `} style={{ color: textColor, height: slidesHeight }}>
 
         {useBackground == 'image' && backgroundImage?.src && <div class="absolute top-0 left-0 z-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "carousel item background image"} width={backgroundImage.width || 456} height={backgroundImage.height || 608} class="w-full h-full object-cover object-top" /></div>}
         {useBackground == 'video' && backgroundVideo && <video width="456" height="608" autoPlay playsInline muted loading="lazy" loop class="absolute top-0 left-0 z-0 h-full w-full object-cover object-top">
@@ -229,7 +231,7 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
 }
 function Carousel(props: Props) {
     if (props.hideSection) return <></>
-    const { id, title, titleFont, titleTextProps, titlePaddingBottom, caption, captionFont, captionTextProps, slides, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
+    const { id, title, titleFont, titleTextProps, titlePaddingBottom, caption, captionFont, captionTextProps, slides, slidesHeight, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
     const carouselId = useId();
     return (<div id={id} style={{background: backgroundColor, paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative pt-7 lg:pt-14">
         {/* <input type="text" value="0" /> */}
@@ -251,7 +253,7 @@ function Carousel(props: Props) {
                 </AnimateOnShow>
                 <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:px-9 max-w-[1480px] relative" rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider">
                     {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px]">
-                        <SliderItem slide={slide} id={`${carouselId}::${index}`} />
+                        <SliderItem slide={slide} id={`${carouselId}::${index}`} slidesHeight={slidesHeight}/>
                     </Slider.Item>))}
                     {/* <Slider.Item index={slides?.length || 0} class="carousel-item w-[1px] lg:w-[456px] sm:block" >
                         <div></div>

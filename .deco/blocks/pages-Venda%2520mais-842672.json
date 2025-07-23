@@ -6673,198 +6673,8 @@
         {
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
-            "title": "Aumente a aprovação das suas vendas",
-            "caption": "Taxas competitivas em relação ao mercado,maiores taxas de aprovação",
-            "bigNumbers": [
-              {
-                "text": "+ R$ 1,8 bilhão",
-                "caption": "transacionados",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 12 mil lojistas",
-                "caption": "ativos no Pagali",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              },
-              {
-                "text": "+ 8,6 milhões ",
-                "caption": "de transações pagas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              }
-            ],
-            "cta": [
-              {
-                "href": "#plans",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "textColor": "#ffffff",
-                "borderColor": "#371E55",
-                "ctaStyle": "button"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com especialista",
-                "textColor": "#371E55",
-                "href": "/talkToSpecialist",
-                "showIcon": true
-              }
-            ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja? ",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/06f5310e-1057-487a-8425-a02c83d3825c/hero-3-image-mobile.svg"
-            },
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "textBelowColor": "#5F6E82",
-            "description": "Venda mais com o Pagali, nosso meio de pagamento próprio. Reduza taxas, melhore sua taxa de aceitação e aprovação, e gerencie tudo no painel da sua loja de forma integrada.",
-            "placement": "right",
-            "bulletpoints": {
-              "bulletPointsIcon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-              },
-              "items": [
-                "Gestão financeira unificada",
-                "Sem tarifa adicional sobre transações feitas via Pagali;",
-                "Fácil de configurar"
-              ],
-              "itemsTextColor": "#5F6E82"
-            },
-            "descriptionColor": "#5F6E82",
-            "id": "pagali"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Aumente a aprovação das suas vendas",
-            "bigNumbers": [
-              {
-                "text": "+ R$ 1,8 bilhão",
-                "caption": "transacionados",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 12 mil lojistas",
-                "caption": "ativos no Pagali",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 8,6 milhões ",
-                "caption": "de transações pagas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              }
-            ],
-            "ctaTitle": "Disponível em todos os planos",
-            "cta": [
-              {
-                "href": "#plans",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "borderColor": "#371E55",
-                "textColor": "#ffffff",
-                "ctaStyle": "button"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": " Falar com especialista",
-                "textColor": "#371E55",
-                "showIcon": true,
-                "href": "/talkToSpecialist"
-              }
-            ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja? ",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a7020552-9bea-4573-a1c1-53f7a681e735/hero-3-image.svg"
-            },
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "textBelowColor": "#5F6E82",
-            "description": "Venda mais com o Pagali, nosso meio de pagamento próprio. Reduza taxas, melhore sua taxa de aceitação e aprovação, e gerencie tudo no painel da sua loja de forma integrada.",
-            "placement": "right",
-            "bulletpoints": {
-              "bulletPointsIcon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
-              },
-              "items": [
-                "Gestão financeira unificada ",
-                "Sem tarifa adicional sobre transações feitas via Pagali;",
-                "Fácil de configurar"
-              ],
-              "itemsTextColor": "#5F6E82"
-            },
-            "id": "pagali",
-            "descriptionColor": "#5F6E82",
-            "use": "image"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Hero.tsx",
             "title": "Reduza seus custos com frete e aumente suas vendas",
-            "titleColor": "#371E55",
             "caption": "Ofereça fretes mais competitivos com o Enviali",
-            "captionColor": "#371E55",
-            "cta": [
-              {
-                "href": "#plans",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "textColor": "#ffffff",
-                "borderColor": "#371E55",
-                "ctaStyle": "button"
-              },
-              {
-                "href": "/talkToSpecialist",
-                "textColor": "#371E55",
-                "underlineText": " Falar com especialista",
-                "ctaStyle": "link",
-                "showIcon": true
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/37ad2c84-9ed1-438c-bb7c-d0f1ac8eaed4/Ellipse-63.png",
-              "width": 430,
-              "height": 690
-            },
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/14a0d78a-9192-4fa1-8602-c9bbd427b019/hero-4-image-mobile.svg"
-            },
             "bigNumbers": [
               {
                 "text": "Fretes 70%  ",
@@ -6885,6 +6695,23 @@
                 "captionColor": "#5F6E82"
               }
             ],
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "underlineText": " Falar com especialista",
+                "textColor": "#371E55",
+                "href": "/talkToSpecialist",
+                "showIcon": true
+              }
+            ],
             "links": [
               {
                 "textBefore": "Já tem uma loja?",
@@ -6892,6 +6719,16 @@
                 "href": "#"
               }
             ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/14a0d78a-9192-4fa1-8602-c9bbd427b019/hero-4-image-mobile.svg"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/37ad2c84-9ed1-438c-bb7c-d0f1ac8eaed4/Ellipse-63.png",
+              "width": 430,
+              "height": 690
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
             "textBelowColor": "#5F6E82",
             "description": "Acesse as tabelas de frete mais vantajosas com Correios e Jadlog, negociadas pelo Enviali para maximizar suas conversões. Disponível em todos os planos."
           },
@@ -6904,34 +6741,6 @@
           "value": {
             "__resolveType": "site/sections/Hero.tsx",
             "title": "Reduza seus custos com frete",
-            "titleColor": "#371E55",
-            "caption": "Ofereça fretes mais competitivos com Enviali e aumente suas vendas",
-            "captionColor": "#371E55",
-            "cta": [
-              {
-                "href": "#plans",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
-                "textColor": "#ffffff",
-                "borderColor": "#371E55",
-                "ctaStyle": "button"
-              },
-              {
-                "textColor": "#371E55",
-                "underlineText": " Falar com especialista",
-                "ctaStyle": "link",
-                "showIcon": true,
-                "href": "/talkToSpecialist"
-              }
-            ],
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/21ead906-16be-442f-a3ca-814d04e5561a/Ellipse-67.png",
-              "width": 880,
-              "height": 1295
-            },
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02de4eda-2931-42b8-9fbc-cd8ddea17749/hero-4-image.svg"
-            },
             "bigNumbers": [
               {
                 "text": "Fretes 70%  ",
@@ -6953,6 +6762,23 @@
               }
             ],
             "ctaTitle": "Tenha acesso a tabelas de preço mais competitivas com os Correios e com a transportadora Jadlog e aumente sua conversão. Os melhores valores de frete já negociados pelo Enviali para você vender mais. Disponível em todos os planos",
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "underlineText": " Falar com especialista",
+                "textColor": "#371E55",
+                "showIcon": true,
+                "href": "/talkToSpecialist"
+              }
+            ],
             "links": [
               {
                 "textBefore": "Já tem uma loja?",
@@ -6960,8 +6786,19 @@
                 "href": "#"
               }
             ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/02de4eda-2931-42b8-9fbc-cd8ddea17749/hero-4-image.svg"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/21ead906-16be-442f-a3ca-814d04e5561a/Ellipse-67.png",
+              "width": 880,
+              "height": 1295
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
             "textBelowColor": "#5F6E82",
-            "use": "image"
+            "use": "image",
+            "caption": "Ofereça fretes mais competitivos com Enviali e aumente suas vendas"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6975,20 +6812,19 @@
         {
           "value": {
             "__resolveType": "site/sections/BigImageHero.tsx",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
-            },
             "title": "Encante seu cliente",
+            "titleColor": "#371E55",
             "caption": "Tenha um visual profissional em poucos cliques!",
+            "captionColor": "#371E55",
             "cta": [
               {
-                "ctaStyle": "button",
                 "href": "#plans",
-                "textColor": "#ffffff",
-                "showIcon": false,
                 "text": "Ver planos ",
                 "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button",
+                "showIcon": false
               },
               {
                 "href": "/talkToSpecialist",
@@ -7000,8 +6836,12 @@
                 "borderColor": ""
               }
             ],
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
+            },
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb8a0a0-826d-49a8-9c4f-87204f15ce0b/moda-tema-mobile-1.svg"
+            },
             "features": [
               {
                 "icon": {
@@ -7039,9 +6879,6 @@
                 "textColor": "#371E55"
               }
             ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6cb8a0a0-826d-49a8-9c4f-87204f15ce0b/moda-tema-mobile-1.svg"
-            },
             "use": "image",
             "bottomFloatingImage": {}
           },
@@ -7053,33 +6890,37 @@
         {
           "value": {
             "__resolveType": "site/sections/BigImageHero.tsx",
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
-            },
             "title": "Personalização e visuais",
+            "titleColor": "#371E55",
             "caption": "Uma loja de temas e serviços para seu negócio ficar incrível",
+            "captionColor": "#371E55",
             "cta": [
               {
-                "ctaStyle": "button",
                 "href": "#plans",
-                "textColor": "#ffffff",
-                "showIcon": false,
                 "text": "Ver planos ",
                 "backgroundColor": "#371E55",
-                "borderColor": "#371E55"
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button",
+                "showIcon": false
               },
               {
-                "backgroundColor": "",
                 "textColor": "#371E55",
-                "borderColor": "",
                 "underlineText": " Falar com especialista",
                 "ctaStyle": "link",
                 "showIcon": true,
-                "href": "/talkToSpecialist"
+                "href": "/talkToSpecialist",
+                "backgroundColor": "",
+                "borderColor": ""
               }
             ],
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7ae9555f-da2e-42dd-baf8-f73fdcc7ea2a/big-hero-background-image.svg"
+            },
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4db6d41b-a78e-45da-834d-1458bc900f19/big-image-hero-image.gif"
+            },
+            "use": "image",
             "features": [
               {
                 "icon": {
@@ -7117,10 +6958,6 @@
                 "textColor": "#371E55"
               }
             ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/4db6d41b-a78e-45da-834d-1458bc900f19/big-image-hero-image.gif"
-            },
-            "use": "image",
             "bottomFloatingImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/9c36230b-5d85-4f99-af96-67f513e7c7d8/floating-bottom-image.svg"
             }
@@ -7140,16 +6977,25 @@
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/d20efb42-545b-49e0-9acc-e12f5b6e0541/crescimento-background-mobile.svg"
             },
+            "title": "Comece pagando menos",
+            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "textColor": "#003037",
+                "showIcon": true,
+                "underlineText": "Falar com especialista"
+              }
+            ],
             "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/96963d3a-6c2e-4310-86bb-dcff7c4852de/video-dobra-crescimento-mobile.mp4",
             "useContent": "video",
-            "title": "Comece pagando menos",
             "planTag": {
               "text": "Plano Crescimento",
               "icon": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
               }
             },
-            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
             "showArrows": false,
             "slides": [
               {
@@ -7190,15 +7036,6 @@
               "title": "Mensal",
               "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 54</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>"
             },
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "textColor": "#003037",
-                "underlineText": "Falar com especialista",
-                "showIcon": true
-              }
-            ],
             "link": {
               "textBefore": "Já tem uma loja?",
               "text": " Ative agora",
@@ -7234,16 +7071,25 @@
             "backgroundImage": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f0ef7f54-f95f-4358-bf93-9882a6e34a4f/crescimento-background.svg"
             },
+            "title": "Comece pagando menos",
+            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
+            "cta": [
+              {
+                "ctaStyle": "link",
+                "href": "/talkToSpecialist",
+                "textColor": "#003037",
+                "showIcon": true,
+                "underlineText": "Falar com especialista"
+              }
+            ],
             "contentVideo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f68f0cae-2879-4a82-95a1-85fc54ef8b68/video-dobra-crescimento.webm",
             "useContent": "video",
-            "title": "Comece pagando menos",
             "planTag": {
               "text": "Plano Crescimento",
               "icon": {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1cbd8898-4fa0-4c83-a2e9-9df8e2d45506/foguete-roxo.svg"
               }
             },
-            "caption": "Quer começar pagando menos? Faça parte de todo ecossistema Loja Integrada por apenas R$54/mês e acompanhe o crescimento do seu negócio.",
             "showArrows": false,
             "slides": [
               {
@@ -7284,15 +7130,6 @@
               "title": "Mensal",
               "text": "<p><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\">R$ 54</span><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">/mês</span></p>"
             },
-            "cta": [
-              {
-                "ctaStyle": "link",
-                "href": "/talkToSpecialist",
-                "underlineText": "Falar com especialista",
-                "textColor": "#003037",
-                "showIcon": true
-              }
-            ],
             "link": {
               "textBefore": "Já tem uma loja?",
               "text": " Ative agora",
@@ -7322,6 +7159,9 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "conteudo-banner"
     },
     {
       "__resolveType": "Footer2 global"

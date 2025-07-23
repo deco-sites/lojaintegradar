@@ -6061,7 +6061,8 @@
         "bottomCaptionColor": "",
         "cta": [],
         "backgroundColor": "#E4F3F3",
-        "titleFont": "Lektorat"
+        "titleFont": "Lektorat",
+        "hideSection": false
       }
     },
     {
@@ -6076,7 +6077,7 @@
               "height": 400
             },
             "id": "ecossistemaconteudo",
-            "paddingTop": "0",
+            "paddingTop": "80px",
             "titleFont": "Instrument serif",
             "color1": "#371E55",
             "color2": "#FFFFFF",
@@ -6122,7 +6123,7 @@
             ],
             "color3": "#EBEBEB",
             "logo": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b5e42308-e3a7-4f5a-8aef-b7af2c3563bd/white-logo.svg"
             },
             "showForm": false,
             "emailForm": {
@@ -6165,12 +6166,8 @@
                 "text": "Central de ajuda"
               },
               {
-                "text": "Fale com especialista",
-                "href": "/talkToSpecialist"
-              },
-              {
-                "href": "https://lojaintegrada.com.br/termos-de-uso",
-                "text": "Termos de uso"
+                "text": "Termos de uso",
+                "href": "https://lojaintegrada.com.br/termos-de-uso"
               },
               {
                 "href": "https://lojaintegrada.com.br/privacidade",
@@ -6190,7 +6187,13 @@
             "logoPosition": "above",
             "cardsTextColor": "#00363A",
             "centralizeBottomLinks": true,
-            "bottomLinksColor": "#5F6E82"
+            "bottomLinksColor": "#ffffff",
+            "backgroundMedia": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/7925f251-21c1-49f5-aaf0-ac71d57b0364/hero-v3-background-2.svg"
+              },
+              "use": "image"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

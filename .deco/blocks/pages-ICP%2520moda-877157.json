@@ -5970,7 +5970,17 @@
       "cardWidth": "400px",
       "cardsWidth": "390px",
       "cardsMinHeight": "400px",
-      "id": "Depoimentos"
+      "id": "Depoimentos",
+      "titleTextProps": {
+        "fontFamily": "Lektorat display var",
+        "color": "#003037"
+      },
+      "leftTextProps": {
+        "fontFamily": "Lektorat display var"
+      },
+      "rightTextProps": {
+        "fontFamily": "Lektorat display var"
+      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

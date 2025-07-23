@@ -4580,6 +4580,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-6xl {
   max-width: 72rem;
 }
+.max-w-\[1024px\] {
+  max-width: 1024px;
+}
 .max-w-\[1070px\] {
   max-width: 1070px;
 }
@@ -6087,6 +6090,9 @@ details.collapse summary::-webkit-details-marker {
 .pb-4 {
   padding-bottom: 1rem;
 }
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -6221,6 +6227,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-5 {
   padding-top: 1.25rem;
+}
+.pt-6 {
+  padding-top: 1.5rem;
 }
 .pt-7 {
   padding-top: 1.75rem;

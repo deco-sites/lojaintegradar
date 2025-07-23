@@ -3,103 +3,33 @@
   "path": "/Agente-Bora-Varejo",
   "sections": [
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
+      "__resolveType": "site/sections/AI.tsx",
+      "backgroundMedia": {
+        "image": {
+          "src": "https://assets.decocache.com/lojaintegradar/067d6eea-5050-4266-9011-4ac668f60de1/AI-background.svg"
+        },
+        "use": "image"
+      },
+      "lcp": true,
+      "title": "<p><span>Fale com o </span><span style=\"color: #71dbd4\">agente IA</span></p><p><span>do Alfredo Soares</span></p>",
+      "titleTextProps": {
+        "fontFamily": "Lektorat Display var",
+        "color": "#ffffff",
+        "letterSpacing": "-0.3px"
+      },
+      "text": "<p><span>“Pedi ao time de engenheiros da Loja Integrada, que hoje estão</span></p><p><span>repensando o jeito de vender online com IA, para transformar</span></p><p><span>meus conteúdos e frameworks em um agente inteligente. </span></p><p><span>Agora, você pode tirar dúvidas direto com essa IA — feita com o</span></p><p><span>meu jeito de pensar negócio.” </span></p>",
+      "textProps": {
+        "color": "#ffffff"
+      },
+      "logos": [
         {
-          "value": {
-            "__resolveType": "site/sections/HeaderV3.tsx",
-            "campaignTimer": {},
-            "logo": {
-              "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
-              "width": 113,
-              "height": 38,
-              "href": "/app"
-            },
-            "hideAsideMenu": true,
-            "navigation": {
-              "buttons": [
-                {
-                  "type": "Button",
-                  "openModal": "Komea wait list",
-                  "text": "Seja um dos primeiros a testar",
-                  "textColor": "#002426",
-                  "backgroundColor": "#ECF488",
-                  "borderColor": "#ECF488",
-                  "customProps": {
-                    "borderRadius": "100px",
-                    "height": "48px",
-                    "fontSize": "12px",
-                    "letterSpacing": "-1px",
-                    "fontWeight": "600"
-                  },
-                  "glowColor1": "#ACB82E99",
-                  "glowColor2": "#EEFC5880",
-                  "size": "Small",
-                  "singleLine": true,
-                  "gtmProps": {
-                    "customTitle": "seja-um-dos-primeiros-a-testar",
-                    "customType": "header",
-                    "customSection": "lp-komea"
-                  }
-                }
-              ]
-            },
-            "backgroundColor": "#00363A",
-            "noScrollBackgroundColor": "#00363A",
-            "headerMessage": {
-              "show": false
-            },
-            "headerWhiteSpace": "80px"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
+          "src": "https://assets.decocache.com/lojaintegradar/e996ef8f-4f4c-463a-b6ef-e57907a33308/Group-21463198.svg",
+          "alt": "Logo da bora varejo"
         },
         {
-          "value": {
-            "__resolveType": "site/sections/HeaderV3.tsx",
-            "campaignTimer": {},
-            "logo": {
-              "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
-              "width": 180,
-              "height": 60,
-              "href": "/app"
-            },
-            "hideAsideMenu": true,
-            "navigation": {
-              "buttons": [
-                {
-                  "type": "Button",
-                  "text": "Seja um dos primeiros a testar",
-                  "textColor": "#002426",
-                  "backgroundColor": "#ECF488",
-                  "borderColor": "#ECF488",
-                  "customProps": {
-                    "borderRadius": "100px",
-                    "height": "48px"
-                  },
-                  "glowColor1": "#ACB82E99",
-                  "glowColor2": "#EEFC5880",
-                  "openModal": "Komea wait list",
-                  "gtmProps": {
-                    "customSection": "lp-komea",
-                    "customType": "header",
-                    "customTitle": "seja-um-dos-primeiros-a-testar"
-                  }
-                }
-              ]
-            },
-            "backgroundColor": "#00363A",
-            "noScrollBackgroundColor": "#00363A",
-            "headerMessage": {
-              "show": false
-            },
-            "headerWhiteSpace": "115px"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
+          "src": "https://assets.decocache.com/lojaintegradar/a07b7bc5-f8aa-40a5-b82d-c9ffb64c0219/logo-da-loja-integrada.svg",
+          "width": 228,
+          "height": 34
         }
       ]
     },
@@ -161,7 +91,7 @@
               "lineHeight": "125%",
               "fontSize": "14px"
             },
-            "lcp": true,
+            "lcp": false,
             "cta": [
               {
                 "type": "Button",
@@ -253,7 +183,7 @@
               "color": "#00363A",
               "lineHeight": "125%"
             },
-            "lcp": true,
+            "lcp": false,
             "cta": [
               {
                 "type": "Button",
@@ -1123,9 +1053,9 @@
                   "borderRadius": "100px"
                 },
                 "gtmProps": {
-                  "customSection": "lp-komea",
+                  "customTitle": "seja-um-dos-primeiros-a-testar",
                   "customType": "botao",
-                  "customTitle": "seja-um-dos-primeiros-a-testar"
+                  "customSection": "lp-komea"
                 }
               }
             ],

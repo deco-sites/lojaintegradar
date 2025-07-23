@@ -126,7 +126,7 @@
                 ]
               },
               "href": "/home",
-              "alt": "logo  ",
+              "alt": "logo ",
               "width": 200
             },
             "initialButtons": [],
@@ -375,7 +375,8 @@
               "color": "#5F6E82",
               "fontSize": "18px",
               "fontWeight": "500"
-            }
+            },
+            "paddingBottom": "120px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -388,77 +389,66 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Aumente a aprovação das suas vendas",
-            "caption": "Taxas competitivas em relação ao mercado,maiores taxas de aprovação",
-            "bigNumbers": [
-              {
-                "text": "+ R$ 1,8 bilhão",
-                "caption": "transacionados",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              },
-              {
-                "text": "+ 12 mil lojistas",
-                "caption": "ativos no Pagali",
-                "captionColor": "#5F6E82",
-                "textColor": "#371E55"
-              },
-              {
-                "text": "+ 8,6 milhões ",
-                "caption": "de transações pagas",
-                "textColor": "#371E55",
-                "captionColor": "#5F6E82"
-              }
-            ],
+            "__resolveType": "site/sections/HeroV3.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\">Chega de corre!<br>Encontre o seu ritmo<br>de venda.</p>",
+              "font": "Lektorat Display var",
+              "color": "#00363A",
+              "fontSize": "32px",
+              "letterSpacing": "-0.3px",
+              "titleMaxWidth": "874px",
+              "fontWeight": "750",
+              "lineHeight": "100%"
+            },
             "cta": [
               {
-                "href": "#plans",
-                "text": "Ver planos",
-                "backgroundColor": "#371E55",
+                "type": "Button",
+                "size": "Medium",
+                "openModal": "Create Store",
+                "text": "Abrir loja grátis",
                 "textColor": "#ffffff",
-                "borderColor": "#371E55",
-                "ctaStyle": "button"
-              },
-              {
-                "ctaStyle": "link",
-                "underlineText": "Falar com especialista",
-                "textColor": "#371E55",
-                "href": "/talkToSpecialist",
-                "showIcon": true
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "createStorePlanId": "172"
               }
             ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja? ",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/06f5310e-1057-487a-8425-a02c83d3825c/hero-3-image-mobile.svg"
-            },
-            "backgroundImage": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
-            },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
-            "textBelowColor": "#5F6E82",
-            "description": "Venda mais com o Pagali, nosso meio de pagamento próprio. Reduza taxas, melhore sua taxa de aceitação e aprovação, e gerencie tudo no painel da sua loja de forma integrada.",
-            "placement": "right",
-            "bulletpoints": {
-              "bulletPointsIcon": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/c2ad82b7-5157-46c5-b07f-2b02218e9800/img-hero-mobile.png",
+                "width": "100%"
               },
-              "items": [
-                "Gestão financeira unificada",
-                "Sem tarifa adicional sobre transações feitas via Pagali;",
-                "Fácil de configurar"
-              ],
-              "itemsTextColor": "#5F6E82"
+              "use": "image",
+              "placement": "bellow"
             },
-            "descriptionColor": "#5F6E82",
-            "id": "pagali"
+            "text": "<p style=\"text-align: center\">Da loja própria aos marketplaces, a plataforma de ecommerce impulsionada por IA que executa tarefas, sugere melhorias e faz seu negócio crescer<br> todos os dias.</p>",
+            "container": {
+              "marginTop": "0",
+              "paddingBottom": "0",
+              "paddingTop": "64px",
+              "marginBottom": "0",
+              "paddingLeft": "0",
+              "paddingRight": "0"
+            },
+            "sectionBackground": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/148d9cbd-c57d-43de-95f9-ddc6194fdf9b/background-green-pattern.svg"
+              },
+              "use": "image"
+            },
+            "lcp": true,
+            "floatingImage": {
+              "horizontalPosition": "38%",
+              "verticalPosition": "28%",
+              "width": 170
+            },
+            "distanceBetweenTitleAndText": "0",
+            "textProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "100%"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -467,51 +457,84 @@
         },
         {
           "value": {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "Personalize do seu jeito sem saber programar.",
-            "bigNumbers": [],
+            "__resolveType": "site/sections/HeroV3.tsx",
+            "title": {
+              "text": "<p><span style=\"color: rgb(40, 195, 195)\">Personalize do seu jeito</span><br>sem saber programar.</p>",
+              "font": "Lektorat Display var",
+              "color": "#00363A",
+              "fontSize": "46px",
+              "letterSpacing": "-2px",
+              "lineHeight": "100%",
+              "fontWeight": "650",
+              "titleMaxWidth": "513px"
+            },
             "cta": [
               {
-                "href": "#plans",
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Create Store",
                 "text": "Criar minha loja profissional",
+                "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
-                "textColor": "#ffffff",
-                "ctaStyle": "button"
+                "createStorePlanId": "172"
               }
             ],
-            "links": [
-              {
-                "textBefore": "Já tem uma loja? ",
-                "text": "Ative agora",
-                "href": "#"
-              }
-            ],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a7020552-9bea-4573-a1c1-53f7a681e735/hero-3-image.svg"
+            "ctaPlacement": "left",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/ddbe4d1e-deeb-4341-8e24-4be5c2b2dedd/personalize-sua-loja.png",
+                "width": 662,
+                "height": 381
+              },
+              "use": "image",
+              "placement": "left"
             },
-            "backgroundImage": {},
-            "titleColor": "#00363A",
-            "captionColor": "#00363A",
-            "textBelowColor": "#5F6E82",
-            "placement": "left",
-            "bulletpoints": {
+            "text": "<p></p>",
+            "container": {
+              "marginTop": "0",
+              "paddingTop": "0px",
+              "marginBottom": "0",
+              "paddingBottom": "120px"
+            },
+            "sectionBackground": {
+              "image": {},
+              "backgroundColor": ""
+            },
+            "lcp": true,
+            "floatingImage": {
+              "horizontalPosition": "46%",
+              "verticalPosition": "20%"
+            },
+            "textProps": {
+              "fontFamily": "Inter",
+              "fontSize": "16px",
+              "lineHeight": "100%",
+              "fontWeight": "500"
+            },
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "Escolha entre +2.000 temas prontos. "
+                },
+                {
+                  "text": "Edite tudo com menus visuais: cores, banners, vitrines e mais"
+                },
+                {
+                  "text": "Crie promoções: brindes, combos e cupons personalizados."
+                },
+                {
+                  "text": "Adicione provador virtual, Stories em página de produtos"
+                },
+                {
+                  "text": "Sua loja leve, rápida e linda no celular — onde seus clientes compram."
+                }
+              ],
               "bulletPointsIcon": {
                 "src": "https://assets.decocache.com/lojaintegradar/a1e36ffb-e68f-4fc7-9b5f-149d35939557/check.svg"
               },
-              "items": [
-                "Escolha entre +2.000 temas prontos. ",
-                "Edite tudo com menus visuais: cores, banners, vitrines e mais",
-                "Crie promoções: brindes, combos e cupons personalizados.",
-                "Adicione provador virtual, Stories em página de produtos",
-                "Sua loja leve, rápida e linda no celular — onde seus clientes compram."
-              ],
-              "itemsTextColor": "#5F6E82"
-            },
-            "id": "personalize",
-            "descriptionColor": "#5F6E82",
-            "use": "image",
-            "marginBottom": "80px"
+              "bulletPointsColor": "#5F6E82"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -534,6 +557,19 @@
               "fontWeight": "750",
               "lineHeight": "100%"
             },
+            "cta": [
+              {
+                "text": "Crie sua loja grátis",
+                "textColor": "#ffffff",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "type": "Button",
+                "size": "Medium",
+                "openModal": "Create Store",
+                "createStorePlanId": "172"
+              }
+            ],
+            "caption": "<p style=\"text-align: center\">Tudo que você precisa, em um só lugar</p>",
             "paddingBottom": "30px",
             "paddingTop": "30px",
             "captionTextProps": {
@@ -624,20 +660,7 @@
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
                 "captionTextProps": {}
               }
-            ],
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Medium",
-                "openModal": "Create Store",
-                "text": "Crie sua loja grátis",
-                "textColor": "#ffffff",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "createStorePlanId": "172"
-              }
-            ],
-            "caption": "<p style=\"text-align: center\">Tudo que você precisa, em um só lugar</p>"
+            ]
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -862,7 +885,7 @@
         "fontSize": "46px",
         "fontWeight": "650"
       },
-      "titleFont": "Lektorat",
+      "titleFont": "Lektorat Display var",
       "titleColor": "#ffffff",
       "captionColor": "#ffffff",
       "captionFont": "Inter",
@@ -1041,7 +1064,7 @@
         "fontSize": "46px",
         "fontWeight": "650"
       },
-      "titleFont": "Lektorat",
+      "titleFont": "Lektorat Display var",
       "titleColor": "#00363A",
       "captionColor": "#5F6E82",
       "captionFont": "Inter",
@@ -1060,7 +1083,8 @@
         "planId": "172"
       },
       "cta": [],
-      "caption": "<p>Com parceiros estratégicos, leve sua loja além do básico — com visual, conversão e fidelização.</p>"
+      "caption": "<p>Com parceiros estratégicos, leve sua loja além do básico — com visual, conversão e fidelização.</p>",
+      "titlePaddingBottom": "0px"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -6089,7 +6113,7 @@
       "cardsMinHeight": "400px",
       "id": "Depoimentos",
       "titleTextProps": {
-        "fontFamily": "Lektorat display var",
+        "fontFamily": "Lektorat Display var",
         "color": "#003037"
       },
       "leftTextProps": {
@@ -6102,6 +6126,7 @@
     {
       "__resolveType": "site/sections/Faq.tsx",
       "title": "<p style=\"color: #00363A; font-size:46px; font-weight: 650;  \" >Perguntas frequentes sobre<br>sua Loja de Moda Online</p>",
+      "cta": [],
       "titleColor": "#00363A",
       "captionColor": "#5F6E82",
       "questions": [
@@ -6190,7 +6215,6 @@
       "questionsDivisionLineColor": "#E1E1E1",
       "bottomTitleColor": "",
       "bottomCaptionColor": "",
-      "cta": [],
       "backgroundColor": "#E4F3F3",
       "titleFont": "Lektorat",
       "hideSection": false

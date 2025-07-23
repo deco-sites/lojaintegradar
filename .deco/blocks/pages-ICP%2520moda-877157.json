@@ -158,7 +158,7 @@
                 "color": ""
               }
             },
-            "hideAsideMenu": false,
+            "hideAsideMenu": true,
             "dropdownMenus": {
               "menus": [],
               "textColor": "#ebeaea",
@@ -172,7 +172,7 @@
               "menusShadowColor": "rgba(71, 193, 196, .50)",
               "titlesTextProps": {}
             },
-            "asideMenuOnlyMobile": true,
+            "asideMenuOnlyMobile": false,
             "noScrollBackgroundColor": ""
           },
           "rule": {
@@ -188,61 +188,52 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\">Chega de corre!<br>Encontre o seu ritmo<br>de venda.</p>",
+              "text": "<p>Da vitrine ao checkout, sua loja de moda mais inteligente e<span style=\"color: rgb(40, 195, 195)\"> pronta pra vender.</span></p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
-              "fontSize": "32px",
-              "letterSpacing": "-0.3px",
-              "titleMaxWidth": "874px",
-              "fontWeight": "750",
+              "fontSize": "30px",
+              "titleMaxWidth": "712px",
+              "fontWeight": "600",
               "lineHeight": "100%"
             },
             "cta": [
               {
                 "type": "Button",
-                "size": "Medium",
+                "size": "Large",
                 "openModal": "Create Store",
-                "text": "Abrir loja grátis",
+                "text": "Criar minha loja profissional",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
                 "createStorePlanId": "172"
               }
             ],
-            "ctaPlacement": "center",
+            "ctaPlacement": "left",
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/c2ad82b7-5157-46c5-b07f-2b02218e9800/img-hero-mobile.png",
-                "width": "100%"
+                "src": "https://assets.decocache.com/lojaintegradar/2ebd61bd-f983-4c92-bb85-1209a333c74b/ecommerce-de-moda-lojaintegrada.png",
+                "width": "100%",
+                "height": "100%"
               },
               "use": "image",
-              "placement": "bellow"
+              "placement": "right"
             },
-            "text": "<p style=\"text-align: center\">Da loja própria aos marketplaces, a plataforma de ecommerce impulsionada por IA que executa tarefas, sugere melhorias e faz seu negócio crescer<br> todos os dias.</p>",
+            "text": "<p><span style=\"color: rgb(95, 110, 130)\">Com IA, automações e ferramentas que fazem seu negócio crescer sem burocracia.</span></p>",
             "container": {
               "marginTop": "0",
               "paddingBottom": "0",
-              "paddingTop": "64px",
-              "marginBottom": "0",
-              "paddingLeft": "0",
-              "paddingRight": "0"
+              "paddingTop": "124px",
+              "marginBottom": "0"
             },
             "sectionBackground": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/148d9cbd-c57d-43de-95f9-ddc6194fdf9b/background-green-pattern.svg"
-              },
-              "use": "image"
+              "image": {},
+              "backgroundColor": "radial-gradient(121.8% 71.24% at 57.92% -9.27%, #28C3C3 0%, rgba(192, 237, 237, 0.29) 62.02%, rgba(255, 255, 255, 0.00) 87.93%);"
             },
             "lcp": true,
-            "floatingImage": {
-              "horizontalPosition": "38%",
-              "verticalPosition": "28%",
-              "width": 170
-            },
-            "distanceBetweenTitleAndText": "0",
+            "floatingImage": {},
             "textProps": {
               "fontFamily": "Inter",
-              "fontSize": "14px",
+              "fontSize": "16px",
               "fontWeight": "500",
               "lineHeight": "100%"
             }
@@ -322,7 +313,71 @@
         {
           "value": {
             "__resolveType": "site/sections/Logos.tsx",
-            "title": "<p>Moda é o nosso maior segmento <strong><span style=\"color: #28c3c3\">+ de 30 mil lojas criadas</span></strong></p>",
+            "title": "<p>Moda é o nosso maior segmento<br><strong><span style=\"color: rgb(40, 195, 195)\">+ de 30 mil lojas criadas</span></strong></p>",
+            "captionTextProps": {
+              "color": ""
+            },
+            "titleFont": "Instrument serif",
+            "titleColor": "#371E55",
+            "captionColor": "#5F6E82",
+            "logos": [
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
+                "altText": "Forbes logo"
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/51f719ff-aeef-4957-b78d-b019a4f0fdfe/image-2.png",
+                "altText": "Frutifica logo",
+                "width": 119,
+                "height": 34
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
+                "altText": "Rock in Rio Logo"
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
+                "altText": "PodPah logo",
+                "width": 157,
+                "height": 72
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
+                "altText": "Soldiers logo",
+                "width": 157,
+                "height": 72
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
+                "altText": "Gorila Shield logo",
+                "width": 157,
+                "height": 72
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
+                "altText": "+Mu logo",
+                "width": 157,
+                "height": 72
+              }
+            ],
+            "blackAndWhiteLogos": true,
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "color": "#5F6E82",
+              "fontSize": "18px",
+              "fontWeight": "500"
+            },
+            "paddingBottom": "0px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Logos.tsx",
+            "title": "<p>Moda é o nosso maior segmento <strong><span style=\"color: rgb(40, 195, 195)\">+ de 30 mil lojas criadas</span></strong></p>",
             "captionTextProps": {
               "color": ""
             },
@@ -391,63 +446,79 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\">Chega de corre!<br>Encontre o seu ritmo<br>de venda.</p>",
+              "text": "<p><span style=\"color: rgb(40, 195, 195)\">Personalize do seu jeito </span>sem saber programar.</p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
-              "fontSize": "32px",
-              "letterSpacing": "-0.3px",
-              "titleMaxWidth": "874px",
-              "fontWeight": "750",
+              "fontSize": "30px",
+              "fontWeight": "600",
               "lineHeight": "100%"
             },
             "cta": [
               {
                 "type": "Button",
-                "size": "Medium",
+                "size": "Large",
                 "openModal": "Create Store",
-                "text": "Abrir loja grátis",
+                "text": "Criar minha loja profissional",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
                 "createStorePlanId": "172"
               }
             ],
-            "ctaPlacement": "center",
+            "ctaPlacement": "left",
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/c2ad82b7-5157-46c5-b07f-2b02218e9800/img-hero-mobile.png",
-                "width": "100%"
+                "src": "https://assets.decocache.com/lojaintegradar/dd643b5b-6bfb-40ab-811a-f0f06990e69d/personalize-sua-loja-mobile.png",
+                "width": 674,
+                "height": 461
               },
               "use": "image",
-              "placement": "bellow"
+              "placement": "left"
             },
-            "text": "<p style=\"text-align: center\">Da loja própria aos marketplaces, a plataforma de ecommerce impulsionada por IA que executa tarefas, sugere melhorias e faz seu negócio crescer<br> todos os dias.</p>",
+            "text": "<p></p>",
             "container": {
               "marginTop": "0",
-              "paddingBottom": "0",
-              "paddingTop": "64px",
-              "marginBottom": "0",
-              "paddingLeft": "0",
-              "paddingRight": "0"
+              "paddingBottom": "60px",
+              "paddingTop": "0px",
+              "marginBottom": "0"
             },
             "sectionBackground": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/148d9cbd-c57d-43de-95f9-ddc6194fdf9b/background-green-pattern.svg"
-              },
-              "use": "image"
+              "image": {},
+              "backgroundColor": ""
             },
             "lcp": true,
             "floatingImage": {
-              "horizontalPosition": "38%",
-              "verticalPosition": "28%",
-              "width": 170
+              "horizontalPosition": "46%",
+              "verticalPosition": "20%"
             },
-            "distanceBetweenTitleAndText": "0",
             "textProps": {
               "fontFamily": "Inter",
-              "fontSize": "14px",
+              "fontSize": "16px",
               "fontWeight": "500",
               "lineHeight": "100%"
+            },
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "Escolha entre +2.000 temas prontos. "
+                },
+                {
+                  "text": "Edite tudo com menus visuais: cores, banners, vitrines e mais"
+                },
+                {
+                  "text": "Crie promoções: brindes, combos e cupons personalizados."
+                },
+                {
+                  "text": "Adicione provador virtual, Stories em página de produtos"
+                },
+                {
+                  "text": "Sua loja leve, rápida e linda no celular — onde seus clientes compram."
+                }
+              ],
+              "bulletPointsIcon": {
+                "src": "https://assets.decocache.com/lojaintegradar/a1e36ffb-e68f-4fc7-9b5f-149d35939557/check.svg"
+              },
+              "bulletPointsColor": "#5F6E82"
             }
           },
           "rule": {
@@ -547,544 +618,869 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/CarouselV2.tsx",
-            "title": {
-              "text": "<p style=\"text-align: center\">Plataforma com IA que<br>agiliza sua rotina.</p>",
-              "font": "Lektorat Display var",
-              "color": "#00363A",
-              "fontSize": "32px",
-              "letterSpacing": "-0.3px",
-              "fontWeight": "750",
-              "lineHeight": "100%"
-            },
-            "cta": [
-              {
-                "text": "Crie sua loja grátis",
-                "textColor": "#ffffff",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "type": "Button",
-                "size": "Medium",
-                "openModal": "Create Store",
-                "createStorePlanId": "172"
-              }
-            ],
-            "caption": "<p style=\"text-align: center\">Tudo que você precisa, em um só lugar</p>",
-            "paddingBottom": "30px",
-            "paddingTop": "30px",
-            "captionTextProps": {
-              "color": "#5F6E82",
-              "fontSize": "16px",
-              "fontFamily": "Inter",
-              "lineHeight": "125%",
-              "fontWeight": "500"
-            },
+            "__resolveType": "site/sections/Carousel.tsx",
+            "title": "<p>Ganhe tempo e dinheiro com<br><span style=\"color: rgb(40, 195, 195)\">ferramentas inteligentes.</span></p>",
             "slides": [
               {
-                "icon": {
-                  "placement": "Top left"
+                "textPlacement": "Bottom",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
                 },
-                "use": "image",
-                "cta": [],
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/5b077fd3-a250-4725-940f-68403aacd3a9/img-reengaje-mobile.png"
+                "title": "Recupere vendas em todasas etapas",
+                "caption": "<p><span style=\"color: #5f6e82\">Envie mensagens no WhatsApp e e-mails automáticos para quem abandonou o carrinho, saiu da página de produto ou não finalizou o pagamento — e recupere até 18% das vendas perdidas.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/95ee88e3-bc0c-4c88-bf5b-b244d42627f9/Recupere-vendas.png",
+                  "height": 484,
+                  "width": 456
                 },
-                "title": {
-                  "text": "<p>Reengaje clientes<br>com campanhas automáticas</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
                 },
-                "caption": "<p><span style=\"color: #5f6e82\">Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via Chat e WhatsApp.</span></p>",
-                "captionTextProps": {}
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
               },
               {
-                "icon": {
-                  "placement": "Top left"
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
                 },
-                "use": "image",
-                "cta": [],
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/47258e4c-ca39-4f7b-8921-619b6b22bda6/divulgue-em-diferentes-canais-mobile.png"
+                "title": "Cadastre produtos com IA",
+                "caption": "<p><span style=\"color: #5f6e82\">Descreva e publique itens em minutos com sugestões automáticas e estrutura otimizada.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/3526394d-d44a-4fc1-b168-6fafdd4bf59d/Cadastro-produtos-com-IA.png",
+                  "height": 484,
+                  "width": 456
                 },
-                "title": {
-                  "text": "<p>Anuncie produtos em<br>diferentes canais</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
                 },
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Faturamento fácil e nas alturas: Cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
-                "captionTextProps": {}
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
               },
               {
-                "icon": {
-                  "placement": "Top left"
+                "textPlacement": "Bottom",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
                 },
-                "use": "image",
-                "cta": [],
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/1ec0ce15-e052-4efd-9e4c-d908bc86a710/anuncie-diferentes-canais.png"
+                "title": "Ative avaliações reais que ajudama fechar a venda",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que suas clientes pensam com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/a8c85411-9c99-4964-97e3-d6a4e598844b/avaliacao-de-produto.png",
+                  "height": 484,
+                  "width": 456
                 },
-                "title": {
-                  "text": "<p>Frete e pagamento<br>descomplicados</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
                 },
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
-                "captionTextProps": {}
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
               },
               {
-                "icon": {
-                  "placement": "Top left"
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
                 },
-                "use": "image",
-                "cta": [],
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/66517d71-6a14-42f4-a769-e01b5573b3bf/CHECKOUT.png"
+                "title": "Anuncie onde seus clientes estão",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte sua loja ao Meta, Googlee TikTok e leve tráfego qualificadopros seus produtos</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/1f452d4b-4d55-432f-9337-272b714cafa6/Anuncie-redes-sociais.png",
+                  "height": 484,
+                  "width": 456
                 },
-                "title": {
-                  "text": "<p>Checkout rápido<br>e aprimorado</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
                 },
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
-                "captionTextProps": {}
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Bottom",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Venda nos maiores marketplaces",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte-se ao Magalu com integraçãonativa da Loja Integrada e +100 marketplaces via parceiros oficiais.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/7278706f-2281-42cd-bd0f-facef1c30cd3/venda-em-marketplace.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Sua loja no topo do Google",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Robôs de indexação com IA e estrutura técnica pra sua loja aparecer no topo das buscas.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/a8c959ec-7c39-4b74-9855-c04df79d48fa/Sua-loja-no-topo-do-google.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Bottom",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Venda pelas redes sociais",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Crie links de carrinho com produto, desconto e frete e compartilhe direto no Whatsapp, Instagram e mais.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/c12087ce-e096-4a7e-91e8-364321dd9518/venda-pelas-redes-sociais.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
               }
-            ]
+            ],
+            "backgroundColor": "#00363A",
+            "paddingTop": "80px",
+            "paddingBottom": "80px",
+            "arrows": true,
+            "titleTextProps": {
+              "fontSize": "30px",
+              "fontWeight": "600",
+              "lineHeight": "100%"
+            },
+            "titleFont": "Lektorat Display var",
+            "titleColor": "#ffffff",
+            "captionColor": "#ffffff",
+            "captionFont": "Inter",
+            "captionTextProps": {
+              "fontSize": "14px",
+              "fontWeight": "500"
+            },
+            "arrowsColor": "#ffffff",
+            "createStoreCta": {
+              "text": "Criar minha loja profissional",
+              "backgroundColor": "#E4F3F3",
+              "showIcon": false,
+              "textColor": "#00363A",
+              "borderColor": "#E4F3F3",
+              "ctaStyle": "button"
+            },
+            "cta": [],
+            "caption": "<p>Assine um plano e ative as ferramentas que vão te fazer vender em até 4 dias.</p>",
+            "titlePaddingBottom": "0px",
+            "slidesHeight": "588"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
             "mobile": true
           }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "title": "<p>Ganhe tempo e dinheiro com<br><span style=\"color: rgb(40, 195, 195)\">ferramentas inteligentes.</span></p>",
+            "slides": [
+              {
+                "textPlacement": "Bottom",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Recupere vendas em todasas etapas",
+                "caption": "<p><span style=\"color: #5f6e82\">Envie mensagens no WhatsApp e e-mails automáticos para quem abandonou o carrinho, saiu da página de produto ou não finalizou o pagamento — e recupere até 18% das vendas perdidas.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/95ee88e3-bc0c-4c88-bf5b-b244d42627f9/Recupere-vendas.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Cadastre produtos com IA",
+                "caption": "<p><span style=\"color: #5f6e82\">Descreva e publique itens em minutos com sugestões automáticas e estrutura otimizada.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/3526394d-d44a-4fc1-b168-6fafdd4bf59d/Cadastro-produtos-com-IA.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Bottom",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Ative avaliações reais que ajudama fechar a venda",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que suas clientes pensam com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/a8c85411-9c99-4964-97e3-d6a4e598844b/avaliacao-de-produto.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Anuncie onde seus clientes estão",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte sua loja ao Meta, Googlee TikTok e leve tráfego qualificadopros seus produtos</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/1f452d4b-4d55-432f-9337-272b714cafa6/Anuncie-redes-sociais.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Bottom",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Venda nos maiores marketplaces",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte-se ao Magalu com integraçãonativa da Loja Integrada e +100 marketplaces via parceiros oficiais.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/7278706f-2281-42cd-bd0f-facef1c30cd3/venda-em-marketplace.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Sua loja no topo do Google",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Robôs de indexação com IA e estrutura técnica pra sua loja aparecer no topo das buscas.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/a8c959ec-7c39-4b74-9855-c04df79d48fa/Sua-loja-no-topo-do-google.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Bottom",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Venda pelas redes sociais",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Crie links de carrinho com produto, desconto e frete e compartilhe direto no Whatsapp, Instagram e mais.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/c12087ce-e096-4a7e-91e8-364321dd9518/venda-pelas-redes-sociais.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              }
+            ],
+            "backgroundColor": "#00363A",
+            "paddingTop": "80px",
+            "paddingBottom": "80px",
+            "arrows": true,
+            "titleTextProps": {
+              "fontSize": "46px",
+              "fontWeight": "650"
+            },
+            "titleFont": "Lektorat Display var",
+            "titleColor": "#ffffff",
+            "captionColor": "#ffffff",
+            "captionFont": "Inter",
+            "captionTextProps": {
+              "fontSize": "16px",
+              "fontWeight": "500"
+            },
+            "arrowsColor": "#ffffff",
+            "createStoreCta": {
+              "text": "Criar minha loja profissional",
+              "backgroundColor": "#E4F3F3",
+              "showIcon": false,
+              "textColor": "#00363A",
+              "borderColor": "#E4F3F3",
+              "ctaStyle": "button"
+            },
+            "cta": [],
+            "caption": "<p>Assine um plano e ative as ferramentas que vão te fazer vender em até 4 dias.</p>",
+            "titlePaddingBottom": "0px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
         }
       ]
     },
     {
-      "__resolveType": "site/sections/Carousel.tsx",
-      "title": "<p>Ganhe tempo e dinheiro com<br><span style=\"color: rgb(40, 195, 195)\">ferramentas inteligentes.</span></p>",
-      "slides": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "textPlacement": "Bottom",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "title": "<p>Crie experiências de<br><span style=\"color: rgb(40, 195, 195)\">marca profissional.</span></p>",
+            "slides": [
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Provador Virtual",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Reduza devoluções e dúvidas. Seu cliente visualiza o produto no corpo, direto da tela.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/f50ed4fc-6126-4918-ac61-a8178f68dce2/provador-virtual.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Stories em páginas de produto",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Transforme sua loja em uma extensão do seu Instagram — com conteúdo visual e envolvente.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/5b918dd6-83f2-4902-8707-346fbe9b5815/stories-pagina-produto.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Cashback e indicações",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa.Mais recompra, mais visibilidade.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Monitore vendas de cada influenciadorcom precisão",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Acompanhe vendas e comissões em tempo real e escalesuas campanhas com segurança.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/7f1994c5-fd4d-4001-b375-e721f924f43d/afiliados.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Gerencie trocas e devoluçõescom inteligência",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Trocas e devoluções sem fricção: seu cliente faz tudo sozinho, você economiza tempo, reduz atrito e ainda ume nta a recompra.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/3ed5e9ab-89d3-4ace-a73f-c63885d35f8d/trocas-e-devolucoes.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              }
+            ],
+            "backgroundColor": "#FFFFF",
+            "paddingTop": "60px",
+            "paddingBottom": "60px",
+            "arrows": true,
+            "titleTextProps": {
+              "fontSize": "30px",
+              "fontWeight": "600",
+              "lineHeight": "100%"
+            },
+            "titleFont": "Lektorat Display var",
+            "titleColor": "#00363A",
+            "captionColor": "#5F6E82",
+            "captionFont": "Inter",
+            "captionTextProps": {
+              "fontSize": "14px",
+              "fontWeight": "500"
+            },
+            "arrowsColor": "#00363A",
+            "createStoreCta": {
+              "text": "Criar minha loja profissional",
+              "backgroundColor": "#00363A",
+              "showIcon": false,
+              "textColor": "#ffffff",
+              "borderColor": "#00363A",
+              "ctaStyle": "button",
+              "planId": "172"
+            },
+            "cta": [],
+            "caption": "<p>Integre sua loja a +80 ferramentas, leve sua loja além<br>do básico — com visual, conversão e fidelização.</p>",
+            "titlePaddingBottom": "0px"
           },
-          "title": "Recupere vendas em todasas etapas",
-          "caption": "<p><span style=\"color: #5f6e82\">Envie mensagens no WhatsApp e e-mails automáticos para quem abandonou o carrinho, saiu da página de produto ou não finalizou o pagamento — e recupere até 18% das vendas perdidas.</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/95ee88e3-bc0c-4c88-bf5b-b244d42627f9/Recupere-vendas.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
         },
         {
-          "textPlacement": "Top",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "title": "<p>Integre sua loja a +80 ferramentas que criam  <span style=\"color: rgb(40, 195, 195)\">experiências de marca profissional.</span></p>",
+            "slides": [
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Provador Virtual",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Reduza devoluções e dúvidas. Seu cliente visualiza o produto no corpo, direto da tela.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/f50ed4fc-6126-4918-ac61-a8178f68dce2/provador-virtual.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Stories em páginas de produto",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Transforme sua loja em uma extensão do seu Instagram — com conteúdo visual e envolvente.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/5b918dd6-83f2-4902-8707-346fbe9b5815/stories-pagina-produto.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Cashback e indicações",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa.Mais recompra, mais visibilidade.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Monitore vendas de cada influenciadorcom precisão",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Acompanhe vendas e comissões em tempo real e escalesuas campanhas com segurança.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/7f1994c5-fd4d-4001-b375-e721f924f43d/afiliados.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Gerencie trocas e devoluçõescom inteligência",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Trocas e devoluções sem fricção: seu cliente faz tudo sozinho, você economiza tempo, reduz atrito e ainda ume nta a recompra.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/3ed5e9ab-89d3-4ace-a73f-c63885d35f8d/trocas-e-devolucoes.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              }
+            ],
+            "backgroundColor": "#FFFFF",
+            "paddingTop": "120px",
+            "paddingBottom": "60px",
+            "arrows": true,
+            "titleTextProps": {
+              "fontSize": "46px",
+              "fontWeight": "650"
+            },
+            "titleFont": "Lektorat Display var",
+            "titleColor": "#00363A",
+            "captionColor": "#5F6E82",
+            "captionFont": "Inter",
+            "captionTextProps": {
+              "fontSize": "16px",
+              "fontWeight": "500"
+            },
+            "arrowsColor": "#00363A",
+            "createStoreCta": {
+              "text": "Criar minha loja profissional",
+              "backgroundColor": "#00363A",
+              "showIcon": false,
+              "textColor": "#ffffff",
+              "borderColor": "#00363A",
+              "ctaStyle": "button",
+              "planId": "172"
+            },
+            "cta": [],
+            "caption": "<p>Com parceiros estratégicos, leve sua loja além do básico — com visual, conversão e fidelização.</p>",
+            "titlePaddingBottom": "0px"
           },
-          "title": "Cadastre produtos com IA",
-          "caption": "<p><span style=\"color: #5f6e82\">Descreva e publique itens em minutos com sugestões automáticas e estrutura otimizada.</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/3526394d-d44a-4fc1-b168-6fafdd4bf59d/Cadastro-produtos-com-IA.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
-        },
-        {
-          "textPlacement": "Bottom",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
-          },
-          "title": "Ative avaliações reais que ajudama fechar a venda",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que suas clientes pensam com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/a8c85411-9c99-4964-97e3-d6a4e598844b/avaliacao-de-produto.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
-        },
-        {
-          "textPlacement": "Top",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
-          },
-          "title": "Anuncie onde seus clientes estão",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte sua loja ao Meta, Googlee TikTok e leve tráfego qualificadopros seus produtos</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/1f452d4b-4d55-432f-9337-272b714cafa6/Anuncie-redes-sociais.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
-        },
-        {
-          "textPlacement": "Bottom",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
-          },
-          "title": "Venda nos maiores marketplaces",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte-se ao Magalu com integraçãonativa da Loja Integrada e +100 marketplaces via parceiros oficiais.</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/7278706f-2281-42cd-bd0f-facef1c30cd3/venda-em-marketplace.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
-        },
-        {
-          "textPlacement": "Top",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
-          },
-          "title": "Sua loja no topo do Google",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Robôs de indexação com IA e estrutura técnica pra sua loja aparecer no topo das buscas.</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/a8c959ec-7c39-4b74-9855-c04df79d48fa/Sua-loja-no-topo-do-google.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
-        },
-        {
-          "textPlacement": "Bottom",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
-          },
-          "title": "Venda pelas redes sociais",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Crie links de carrinho com produto, desconto e frete e compartilhe direto no Whatsapp, Instagram e mais.</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/c12087ce-e096-4a7e-91e8-364321dd9518/venda-pelas-redes-sociais.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
         }
-      ],
-      "backgroundColor": "#00363A",
-      "paddingTop": "80px",
-      "paddingBottom": "80px",
-      "arrows": true,
-      "titleTextProps": {
-        "fontSize": "46px",
-        "fontWeight": "650"
-      },
-      "titleFont": "Lektorat Display var",
-      "titleColor": "#ffffff",
-      "captionColor": "#ffffff",
-      "captionFont": "Inter",
-      "captionTextProps": {
-        "fontSize": "16px",
-        "fontWeight": "500"
-      },
-      "arrowsColor": "#ffffff",
-      "createStoreCta": {
-        "text": "Criar minha loja profissional",
-        "backgroundColor": "#E4F3F3",
-        "showIcon": false,
-        "textColor": "#00363A",
-        "borderColor": "#E4F3F3",
-        "ctaStyle": "button"
-      },
-      "cta": [],
-      "caption": "<p>Assine um plano e ative as ferramentas que vão te fazer vender em até 4 dias.</p>",
-      "titlePaddingBottom": "0px"
-    },
-    {
-      "__resolveType": "site/sections/Carousel.tsx",
-      "title": "<p>Integre sua loja a +80 ferramentas que criam  <span style=\"color: rgb(40, 195, 195)\">experiências de marca profissional.</span></p>",
-      "slides": [
-        {
-          "textPlacement": "Top",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
-          },
-          "title": "Provador Virtual",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Reduza devoluções e dúvidas. Seu cliente visualiza o produto no corpo, direto da tela.</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/f50ed4fc-6126-4918-ac61-a8178f68dce2/provador-virtual.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
-        },
-        {
-          "textPlacement": "Top",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
-          },
-          "title": "Stories em páginas de produto",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Transforme sua loja em uma extensão do seu Instagram — com conteúdo visual e envolvente.</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/5b918dd6-83f2-4902-8707-346fbe9b5815/stories-pagina-produto.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
-        },
-        {
-          "textPlacement": "Top",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
-          },
-          "title": "Cashback e indicações",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa.Mais recompra, mais visibilidade.</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
-        },
-        {
-          "textPlacement": "Top",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
-          },
-          "title": "Monitore vendas de cada influenciadorcom precisão",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Acompanhe vendas e comissões em tempo real e escalesuas campanhas com segurança.</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/7f1994c5-fd4d-4001-b375-e721f924f43d/afiliados.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
-        },
-        {
-          "textPlacement": "Top",
-          "icon": {},
-          "bulletPoints": {
-            "items": [],
-            "bulletPointsIcon": {}
-          },
-          "title": "Gerencie trocas e devoluçõescom inteligência",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Trocas e devoluções sem fricção: seu cliente faz tudo sozinho, você economiza tempo, reduz atrito e ainda ume nta a recompra.</span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/3ed5e9ab-89d3-4ace-a73f-c63885d35f8d/trocas-e-devolucoes.png",
-            "height": 484,
-            "width": 456
-          },
-          "textColor": "#00363A",
-          "titleTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "18px",
-            "fontWeight": "700",
-            "lineHeight": "140%"
-          },
-          "captionTextProps": {
-            "fontFamily": "Inter",
-            "fontSize": "14px",
-            "fontWeight": "500",
-            "lineHeight": "140%"
-          },
-          "useBackground": "image"
-        }
-      ],
-      "backgroundColor": "#FFFFF",
-      "paddingTop": "120px",
-      "paddingBottom": "60px",
-      "arrows": true,
-      "titleTextProps": {
-        "fontSize": "46px",
-        "fontWeight": "650"
-      },
-      "titleFont": "Lektorat Display var",
-      "titleColor": "#00363A",
-      "captionColor": "#5F6E82",
-      "captionFont": "Inter",
-      "captionTextProps": {
-        "fontSize": "16px",
-        "fontWeight": "500"
-      },
-      "arrowsColor": "#00363A",
-      "createStoreCta": {
-        "text": "Criar minha loja profissional",
-        "backgroundColor": "#00363A",
-        "showIcon": false,
-        "textColor": "#ffffff",
-        "borderColor": "#00363A",
-        "ctaStyle": "button",
-        "planId": "172"
-      },
-      "cta": [],
-      "caption": "<p>Com parceiros estratégicos, leve sua loja além do básico — com visual, conversão e fidelização.</p>",
-      "titlePaddingBottom": "0px"
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -1313,20 +1709,20 @@
               "217": "/",
               "218": "p",
               "219": ">",
-              "text": "<p style=\"text-align: center\">Planos que crescem<br>com o seu negócio</p>",
+              "text": "<p style=\"text-align: center\"><span style=\"color: #28c3c3\">Assine um plano </span>e comece<br>a vender em poucos dias.</p>",
               "color": "#00363A",
               "font": "Lektorat Display var",
               "letterSpacing": "-0.3px",
-              "fontWeight": "750",
-              "fontSize": "32px",
+              "fontWeight": "600",
+              "fontSize": "30px",
               "lineHeight": "100%"
             },
             "backgroundImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/7b491429-e34e-41cb-83c3-be75d3ced3c7/plans-background-2.svg",
+              "src": "https://assets.decocache.com/lojaintegradar/83c316b8-0ab7-41d0-aab4-ccc9c18cecc9/line-background.png",
               "verticalPosition": "115px"
             },
             "id": "plans",
-            "paddingTop": "30px",
+            "paddingTop": "60px",
             "caption": {
               "0": "+",
               "1": "2",
@@ -1380,58 +1776,77 @@
               "49": "a",
               "50": "d",
               "51": "a",
-              "text": "<p style=\"text-align: center\">Escolha a oferta ideal para a sua loja e comece<br>a vender hoje mesmo</p>",
+              "text": "<p style=\"text-align: center\">Ative uma plataforma com IA, automações e ferramentas<br>que trabalham por você desde o primeiro dia.</p>",
               "color": "#5F6E82",
               "font": "Inter",
-              "fontSize": "16px",
-              "fontWeight": "500"
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "100%"
             },
             "slides": [
               {
                 "bulletPoints": {
                   "items": [
                     {
-                      "text": "<p><span>50 produtos</span></p>",
+                      "text": "<p><strong>Tudo do plano Grátis +</strong></p>"
+                    },
+                    {
+                      "text": "<p>250 produtos</p>",
                       "marginTop": "26px"
                     },
                     {
-                      "text": "<p><span>5.000 visitas</span></p>"
+                      "text": "<p>25.000 visitas</p>"
                     },
                     {
-                      "text": "<p><span>Loja completa</span></p>"
+                      "text": "<p>4 Temas Premium Grátis + 2.000 temas para compra</p>"
                     },
                     {
-                      "text": "<p><span>Meio de envio e pagamento</span></p>"
+                      "text": "<p>Integração com Provador Virtual</p>",
+                      "toolTipText": "Via parceiro"
                     },
                     {
-                      "text": "<p><span>Sem cobrança de tarifa por venda no Pagali</span></p>"
+                      "text": "<p>Integração com Gestão de Afiliados e Influenciadores*</p>",
+                      "toolTipText": "Via parceiro"
                     },
                     {
-                      "text": "<p><span>Recursos de marketing</span></p>",
-                      "toolTipText": "Exemplo tool tip"
+                      "text": "<p>Integração com CashBack*</p>",
+                      "toolTipText": "Via parceiro"
+                    },
+                    {
+                      "text": "<p>Integração Stories nas Páginas</p>",
+                      "toolTipText": "Via parceiro"
+                    },
+                    {
+                      "text": "<p>Avaliação de Produtos</p>"
+                    },
+                    {
+                      "text": "<p>Vendas por MarketPlaces</p>"
+                    },
+                    {
+                      "text": "<p>Suporte por chat e e-mail</p>"
                     }
                   ],
                   "bulletPointsIcon": {
-                    "src": "https://data.decoassets.com/lojaintegradar/f931979a-5b0c-422c-b1d1-d02ceae6715a/dark-green-check-icon.svg"
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                    "alt": "bullet points icon"
                   },
-                  "itemsTextColor": "#00363A",
-                  "tooltipTextColor": "#003037",
-                  "tooltipBackgroundColor": "#FAFAF5",
-                  "tooltipIconColor": "#B7FBDB"
+                  "itemsTextColor": "#ffffff",
+                  "tooltipTextColor": "#5F6E82",
+                  "tooltipBackgroundColor": "#EAE7ED",
+                  "tooltipIconColor": "#7F7E77"
                 },
-                "titleColor": "#ffffff",
+                "titleColor": "#371E55",
                 "tag": {
-                  "icon": {
-                    "alt": "crown icon"
-                  },
-                  "textColor1": "#ce2c2c",
-                  "textColor": "00363A",
-                  "backgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%);",
-                  "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
-                  "fontFamily": "Instrument Serif",
-                  "onlyAnnual": true,
+                  "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
+                  "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
+                  "borderColor": "#B699D9",
+                  "fontFamily": "Inter",
+                  "onlyAnnual": false,
                   "hideTag": true,
-                  "textProps": {}
+                  "text": "<p>Mais recomendado</p>",
+                  "textProps": {
+                    "fontSize": "12px"
+                  }
                 },
                 "montlyFee": {
                   "0": "<",
@@ -1461,321 +1876,329 @@
                   "24": "g",
                   "25": "b",
                   "26": "(",
-                  "27": "2",
+                  "27": "5",
                   "28": "5",
-                  "29": "0",
-                  "30": ",",
-                  "31": " ",
-                  "32": "2",
-                  "33": "5",
-                  "34": "0",
-                  "35": ",",
-                  "36": " ",
-                  "37": "2",
-                  "38": "4",
-                  "39": "5",
-                  "40": ")",
-                  "41": ";",
-                  "42": " ",
-                  "43": "f",
-                  "44": "o",
-                  "45": "n",
-                  "46": "t",
-                  "47": "-",
-                  "48": "s",
-                  "49": "i",
-                  "50": "z",
-                  "51": "e",
-                  "52": ":",
-                  "53": " ",
-                  "54": "2",
-                  "55": "4",
-                  "56": "p",
-                  "57": "t",
-                  "58": "\"",
-                  "59": ">",
-                  "60": "R",
-                  "61": "$",
-                  "62": "<",
-                  "63": "/",
-                  "64": "s",
-                  "65": "p",
-                  "66": "a",
-                  "67": "n",
-                  "68": ">",
-                  "69": "<",
-                  "70": "s",
-                  "71": "p",
-                  "72": "a",
-                  "73": "n",
-                  "74": " ",
-                  "75": "s",
-                  "76": "t",
-                  "77": "y",
-                  "78": "l",
-                  "79": "e",
-                  "80": "=",
-                  "81": "\"",
-                  "82": "c",
-                  "83": "o",
-                  "84": "l",
-                  "85": "o",
-                  "86": "r",
-                  "87": ":",
-                  "88": " ",
-                  "89": "r",
-                  "90": "g",
-                  "91": "b",
-                  "92": "(",
-                  "93": "2",
-                  "94": "5",
-                  "95": "0",
-                  "96": ",",
-                  "97": " ",
-                  "98": "2",
-                  "99": "5",
-                  "100": "0",
-                  "101": ",",
-                  "102": " ",
-                  "103": "2",
-                  "104": "4",
-                  "105": "5",
-                  "106": ")",
-                  "107": "\"",
-                  "108": ">",
-                  "109": "&",
-                  "110": "n",
-                  "111": "b",
-                  "112": "s",
-                  "113": "p",
-                  "114": ";",
-                  "115": "<",
-                  "116": "/",
-                  "117": "s",
-                  "118": "p",
-                  "119": "a",
-                  "120": "n",
-                  "121": ">",
-                  "122": "<",
-                  "123": "s",
-                  "124": "t",
-                  "125": "r",
-                  "126": "o",
-                  "127": "n",
-                  "128": "g",
-                  "129": ">",
-                  "130": "<",
-                  "131": "s",
-                  "132": "p",
-                  "133": "a",
-                  "134": "n",
-                  "135": " ",
-                  "136": "s",
-                  "137": "t",
-                  "138": "y",
-                  "139": "l",
-                  "140": "e",
-                  "141": "=",
-                  "142": "\"",
-                  "143": "c",
-                  "144": "o",
-                  "145": "l",
-                  "146": "o",
-                  "147": "r",
-                  "148": ":",
-                  "149": " ",
-                  "150": "r",
-                  "151": "g",
-                  "152": "b",
-                  "153": "(",
-                  "154": "2",
-                  "155": "5",
-                  "156": "0",
-                  "157": ",",
-                  "158": " ",
-                  "159": "2",
-                  "160": "5",
-                  "161": "0",
-                  "162": ",",
-                  "163": " ",
-                  "164": "2",
-                  "165": "4",
-                  "166": "5",
-                  "167": ")",
-                  "168": ";",
-                  "169": " ",
-                  "170": "f",
-                  "171": "o",
-                  "172": "n",
-                  "173": "t",
-                  "174": "-",
-                  "175": "s",
-                  "176": "i",
-                  "177": "z",
-                  "178": "e",
-                  "179": ":",
-                  "180": " ",
-                  "181": "3",
-                  "182": "6",
-                  "183": "p",
-                  "184": "t",
-                  "185": "\"",
-                  "186": ">",
-                  "187": "1",
-                  "188": "9",
-                  "189": "9",
-                  "190": "9",
-                  "191": "<",
-                  "192": "/",
-                  "193": "s",
-                  "194": "p",
-                  "195": "a",
-                  "196": "n",
-                  "197": ">",
-                  "198": "<",
-                  "199": "/",
-                  "200": "s",
-                  "201": "t",
-                  "202": "r",
-                  "203": "o",
-                  "204": "n",
-                  "205": "g",
-                  "206": ">",
-                  "207": "<",
-                  "208": "s",
-                  "209": "p",
-                  "210": "a",
+                  "29": ",",
+                  "30": " ",
+                  "31": "3",
+                  "32": "0",
+                  "33": ",",
+                  "34": " ",
+                  "35": "8",
+                  "36": "5",
+                  "37": ")",
+                  "38": ";",
+                  "39": "\"",
+                  "40": " ",
+                  "41": "d",
+                  "42": "a",
+                  "43": "t",
+                  "44": "a",
+                  "45": "-",
+                  "46": "m",
+                  "47": "c",
+                  "48": "e",
+                  "49": "-",
+                  "50": "s",
+                  "51": "t",
+                  "52": "y",
+                  "53": "l",
+                  "54": "e",
+                  "55": "=",
+                  "56": "\"",
+                  "57": "c",
+                  "58": "o",
+                  "59": "l",
+                  "60": "o",
+                  "61": "r",
+                  "62": ":",
+                  "63": " ",
+                  "64": "r",
+                  "65": "g",
+                  "66": "b",
+                  "67": "(",
+                  "68": "5",
+                  "69": "5",
+                  "70": ",",
+                  "71": " ",
+                  "72": "3",
+                  "73": "0",
+                  "74": ",",
+                  "75": " ",
+                  "76": "8",
+                  "77": "5",
+                  "78": ")",
+                  "79": ";",
+                  "80": "\"",
+                  "81": ">",
+                  "82": "<",
+                  "83": "s",
+                  "84": "p",
+                  "85": "a",
+                  "86": "n",
+                  "87": " ",
+                  "88": "s",
+                  "89": "t",
+                  "90": "y",
+                  "91": "l",
+                  "92": "e",
+                  "93": "=",
+                  "94": "\"",
+                  "95": "f",
+                  "96": "o",
+                  "97": "n",
+                  "98": "t",
+                  "99": "-",
+                  "100": "s",
+                  "101": "i",
+                  "102": "z",
+                  "103": "e",
+                  "104": ":",
+                  "105": " ",
+                  "106": "2",
+                  "107": "4",
+                  "108": "p",
+                  "109": "t",
+                  "110": ";",
+                  "111": "\"",
+                  "112": " ",
+                  "113": "d",
+                  "114": "a",
+                  "115": "t",
+                  "116": "a",
+                  "117": "-",
+                  "118": "m",
+                  "119": "c",
+                  "120": "e",
+                  "121": "-",
+                  "122": "s",
+                  "123": "t",
+                  "124": "y",
+                  "125": "l",
+                  "126": "e",
+                  "127": "=",
+                  "128": "\"",
+                  "129": "f",
+                  "130": "o",
+                  "131": "n",
+                  "132": "t",
+                  "133": "-",
+                  "134": "s",
+                  "135": "i",
+                  "136": "z",
+                  "137": "e",
+                  "138": ":",
+                  "139": " ",
+                  "140": "2",
+                  "141": "4",
+                  "142": "p",
+                  "143": "t",
+                  "144": ";",
+                  "145": "\"",
+                  "146": ">",
+                  "147": "R",
+                  "148": "$",
+                  "149": "<",
+                  "150": "/",
+                  "151": "s",
+                  "152": "p",
+                  "153": "a",
+                  "154": "n",
+                  "155": ">",
+                  "156": "&",
+                  "157": "n",
+                  "158": "b",
+                  "159": "s",
+                  "160": "p",
+                  "161": ";",
+                  "162": "<",
+                  "163": "s",
+                  "164": "p",
+                  "165": "a",
+                  "166": "n",
+                  "167": " ",
+                  "168": "s",
+                  "169": "t",
+                  "170": "y",
+                  "171": "l",
+                  "172": "e",
+                  "173": "=",
+                  "174": "\"",
+                  "175": "f",
+                  "176": "o",
+                  "177": "n",
+                  "178": "t",
+                  "179": "-",
+                  "180": "s",
+                  "181": "i",
+                  "182": "z",
+                  "183": "e",
+                  "184": ":",
+                  "185": " ",
+                  "186": "4",
+                  "187": "8",
+                  "188": "p",
+                  "189": "x",
+                  "190": ";",
+                  "191": "\"",
+                  "192": " ",
+                  "193": "d",
+                  "194": "a",
+                  "195": "t",
+                  "196": "a",
+                  "197": "-",
+                  "198": "m",
+                  "199": "c",
+                  "200": "e",
+                  "201": "-",
+                  "202": "s",
+                  "203": "t",
+                  "204": "y",
+                  "205": "l",
+                  "206": "e",
+                  "207": "=",
+                  "208": "\"",
+                  "209": "f",
+                  "210": "o",
                   "211": "n",
-                  "212": " ",
-                  "213": "s",
-                  "214": "t",
-                  "215": "y",
-                  "216": "l",
+                  "212": "t",
+                  "213": "-",
+                  "214": "s",
+                  "215": "i",
+                  "216": "z",
                   "217": "e",
-                  "218": "=",
-                  "219": "\"",
-                  "220": "c",
-                  "221": "o",
-                  "222": "l",
-                  "223": "o",
-                  "224": "r",
-                  "225": ":",
-                  "226": " ",
-                  "227": "r",
-                  "228": "g",
-                  "229": "b",
-                  "230": "(",
-                  "231": "2",
-                  "232": "5",
-                  "233": "0",
-                  "234": ",",
-                  "235": " ",
-                  "236": "2",
-                  "237": "5",
-                  "238": "0",
-                  "239": ",",
-                  "240": " ",
-                  "241": "2",
-                  "242": "4",
-                  "243": "5",
-                  "244": ")",
-                  "245": "\"",
+                  "218": ":",
+                  "219": " ",
+                  "220": "4",
+                  "221": "8",
+                  "222": "p",
+                  "223": "x",
+                  "224": ";",
+                  "225": "\"",
+                  "226": ">",
+                  "227": "<",
+                  "228": "s",
+                  "229": "t",
+                  "230": "r",
+                  "231": "o",
+                  "232": "n",
+                  "233": "g",
+                  "234": ">",
+                  "235": "2",
+                  "236": "3",
+                  "237": "9",
+                  "238": "<",
+                  "239": "/",
+                  "240": "s",
+                  "241": "t",
+                  "242": "r",
+                  "243": "o",
+                  "244": "n",
+                  "245": "g",
                   "246": ">",
-                  "247": "&",
-                  "248": "n",
-                  "249": "b",
-                  "250": "s",
-                  "251": "p",
-                  "252": ";",
-                  "253": "<",
-                  "254": "/",
+                  "247": "<",
+                  "248": "/",
+                  "249": "s",
+                  "250": "p",
+                  "251": "a",
+                  "252": "n",
+                  "253": ">",
+                  "254": "<",
                   "255": "s",
                   "256": "p",
                   "257": "a",
                   "258": "n",
-                  "259": ">",
-                  "260": "<",
-                  "261": "s",
-                  "262": "p",
-                  "263": "a",
-                  "264": "n",
-                  "265": " ",
-                  "266": "s",
-                  "267": "t",
-                  "268": "y",
-                  "269": "l",
-                  "270": "e",
-                  "271": "=",
-                  "272": "\"",
-                  "273": "c",
-                  "274": "o",
-                  "275": "l",
-                  "276": "o",
-                  "277": "r",
-                  "278": ":",
-                  "279": " ",
-                  "280": "r",
-                  "281": "g",
-                  "282": "b",
-                  "283": "(",
-                  "284": "2",
-                  "285": "5",
-                  "286": "0",
-                  "287": ",",
-                  "288": " ",
-                  "289": "2",
-                  "290": "5",
-                  "291": "0",
-                  "292": ",",
-                  "293": " ",
-                  "294": "2",
-                  "295": "4",
-                  "296": "5",
-                  "297": ")",
-                  "298": ";",
-                  "299": " ",
-                  "300": "f",
-                  "301": "o",
-                  "302": "n",
-                  "303": "t",
-                  "304": "-",
-                  "305": "s",
-                  "306": "i",
-                  "307": "z",
-                  "308": "e",
-                  "309": ":",
-                  "310": " ",
-                  "311": "1",
-                  "312": "4",
-                  "313": "p",
-                  "314": "t",
-                  "315": "\"",
-                  "316": ">",
-                  "317": "/",
-                  "318": "m",
-                  "319": "ê",
-                  "320": "s",
-                  "321": "<",
-                  "322": "/",
-                  "323": "s",
-                  "324": "p",
-                  "325": "a",
-                  "326": "n",
-                  "327": ">",
-                  "328": "<",
-                  "329": "/",
-                  "330": "p",
-                  "331": ">",
-                  "text": "<p>Para sentir o gostinho<br>que é vender online</p>",
-                  "color": "#00363A"
+                  "259": " ",
+                  "260": "s",
+                  "261": "t",
+                  "262": "y",
+                  "263": "l",
+                  "264": "e",
+                  "265": "=",
+                  "266": "\"",
+                  "267": "f",
+                  "268": "o",
+                  "269": "n",
+                  "270": "t",
+                  "271": "-",
+                  "272": "s",
+                  "273": "i",
+                  "274": "z",
+                  "275": "e",
+                  "276": ":",
+                  "277": " ",
+                  "278": "1",
+                  "279": "4",
+                  "280": "p",
+                  "281": "t",
+                  "282": ";",
+                  "283": "\"",
+                  "284": " ",
+                  "285": "d",
+                  "286": "a",
+                  "287": "t",
+                  "288": "a",
+                  "289": "-",
+                  "290": "m",
+                  "291": "c",
+                  "292": "e",
+                  "293": "-",
+                  "294": "s",
+                  "295": "t",
+                  "296": "y",
+                  "297": "l",
+                  "298": "e",
+                  "299": "=",
+                  "300": "\"",
+                  "301": "f",
+                  "302": "o",
+                  "303": "n",
+                  "304": "t",
+                  "305": "-",
+                  "306": "s",
+                  "307": "i",
+                  "308": "z",
+                  "309": "e",
+                  "310": ":",
+                  "311": " ",
+                  "312": "1",
+                  "313": "4",
+                  "314": "p",
+                  "315": "t",
+                  "316": ";",
+                  "317": "\"",
+                  "318": ">",
+                  "319": "/",
+                  "320": "m",
+                  "321": "ê",
+                  "322": "s",
+                  "323": "<",
+                  "324": "/",
+                  "325": "s",
+                  "326": "p",
+                  "327": "a",
+                  "328": "n",
+                  "329": ">",
+                  "330": "<",
+                  "331": "/",
+                  "332": "s",
+                  "333": "p",
+                  "334": "a",
+                  "335": "n",
+                  "336": ">",
+                  "337": "<",
+                  "338": "/",
+                  "339": "p",
+                  "340": ">",
+                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Recomendado para quem quer começar vendendo ou já fatura até R$ 15/mês.</span><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$54</span><span style=\"color: rgb(255, 255, 255)\"> por mês</span></p>",
+                  "color": "#FFFFFF"
                 },
                 "chooseCta": {
                   "text": "Assinar",
                   "href": "#"
                 },
                 "detailsCta": {
-                  "text": "Ver detalhes",
-                  "href": "#"
+                  "text": "Ver detalhes"
                 },
                 "annualMontlyFee": {
                   "0": "<",
@@ -1805,387 +2228,302 @@
                   "24": "g",
                   "25": "b",
                   "26": "(",
-                  "27": "2",
+                  "27": "5",
                   "28": "5",
-                  "29": "0",
-                  "30": ",",
-                  "31": " ",
-                  "32": "2",
-                  "33": "5",
-                  "34": "0",
-                  "35": ",",
-                  "36": " ",
-                  "37": "2",
-                  "38": "4",
-                  "39": "5",
-                  "40": ")",
-                  "41": ";",
-                  "42": " ",
-                  "43": "f",
-                  "44": "o",
-                  "45": "n",
-                  "46": "t",
-                  "47": "-",
-                  "48": "s",
-                  "49": "i",
-                  "50": "z",
-                  "51": "e",
-                  "52": ":",
-                  "53": " ",
-                  "54": "2",
-                  "55": "4",
-                  "56": "p",
-                  "57": "t",
-                  "58": "\"",
-                  "59": ">",
-                  "60": "R",
-                  "61": "$",
-                  "62": "<",
-                  "63": "/",
-                  "64": "s",
-                  "65": "p",
-                  "66": "a",
-                  "67": "n",
-                  "68": ">",
-                  "69": "<",
-                  "70": "s",
-                  "71": "p",
-                  "72": "a",
-                  "73": "n",
-                  "74": " ",
-                  "75": "s",
-                  "76": "t",
-                  "77": "y",
-                  "78": "l",
-                  "79": "e",
-                  "80": "=",
-                  "81": "\"",
-                  "82": "c",
-                  "83": "o",
-                  "84": "l",
-                  "85": "o",
+                  "29": ",",
+                  "30": " ",
+                  "31": "3",
+                  "32": "0",
+                  "33": ",",
+                  "34": " ",
+                  "35": "8",
+                  "36": "5",
+                  "37": ")",
+                  "38": ";",
+                  "39": " ",
+                  "40": "f",
+                  "41": "o",
+                  "42": "n",
+                  "43": "t",
+                  "44": "-",
+                  "45": "s",
+                  "46": "i",
+                  "47": "z",
+                  "48": "e",
+                  "49": ":",
+                  "50": " ",
+                  "51": "2",
+                  "52": "4",
+                  "53": "p",
+                  "54": "t",
+                  "55": "\"",
+                  "56": ">",
+                  "57": "R",
+                  "58": "$",
+                  "59": "<",
+                  "60": "/",
+                  "61": "s",
+                  "62": "p",
+                  "63": "a",
+                  "64": "n",
+                  "65": ">",
+                  "66": "<",
+                  "67": "s",
+                  "68": "p",
+                  "69": "a",
+                  "70": "n",
+                  "71": " ",
+                  "72": "s",
+                  "73": "t",
+                  "74": "y",
+                  "75": "l",
+                  "76": "e",
+                  "77": "=",
+                  "78": "\"",
+                  "79": "c",
+                  "80": "o",
+                  "81": "l",
+                  "82": "o",
+                  "83": "r",
+                  "84": ":",
+                  "85": " ",
                   "86": "r",
-                  "87": ":",
-                  "88": " ",
-                  "89": "r",
-                  "90": "g",
-                  "91": "b",
-                  "92": "(",
-                  "93": "2",
-                  "94": "5",
+                  "87": "g",
+                  "88": "b",
+                  "89": "(",
+                  "90": "5",
+                  "91": "5",
+                  "92": ",",
+                  "93": " ",
+                  "94": "3",
                   "95": "0",
                   "96": ",",
                   "97": " ",
-                  "98": "2",
+                  "98": "8",
                   "99": "5",
-                  "100": "0",
-                  "101": ",",
-                  "102": " ",
-                  "103": "2",
-                  "104": "4",
-                  "105": "5",
-                  "106": ")",
-                  "107": "\"",
-                  "108": ">",
-                  "109": "&",
-                  "110": "n",
-                  "111": "b",
+                  "100": ")",
+                  "101": "\"",
+                  "102": ">",
+                  "103": " ",
+                  "104": "<",
+                  "105": "/",
+                  "106": "s",
+                  "107": "p",
+                  "108": "a",
+                  "109": "n",
+                  "110": ">",
+                  "111": "<",
                   "112": "s",
-                  "113": "p",
-                  "114": ";",
-                  "115": "<",
-                  "116": "/",
-                  "117": "s",
-                  "118": "p",
-                  "119": "a",
-                  "120": "n",
-                  "121": ">",
-                  "122": "<",
-                  "123": "s",
-                  "124": "t",
-                  "125": "r",
-                  "126": "o",
-                  "127": "n",
-                  "128": "g",
-                  "129": ">",
-                  "130": "<",
-                  "131": "s",
-                  "132": "p",
-                  "133": "a",
-                  "134": "n",
-                  "135": " ",
-                  "136": "s",
-                  "137": "t",
-                  "138": "y",
-                  "139": "l",
-                  "140": "e",
-                  "141": "=",
-                  "142": "\"",
-                  "143": "c",
-                  "144": "o",
-                  "145": "l",
-                  "146": "o",
-                  "147": "r",
-                  "148": ":",
-                  "149": " ",
-                  "150": "r",
-                  "151": "g",
-                  "152": "b",
-                  "153": "(",
-                  "154": "2",
-                  "155": "5",
-                  "156": "0",
-                  "157": ",",
-                  "158": " ",
-                  "159": "2",
-                  "160": "5",
-                  "161": "0",
-                  "162": ",",
-                  "163": " ",
-                  "164": "2",
-                  "165": "4",
-                  "166": "5",
-                  "167": ")",
-                  "168": ";",
-                  "169": " ",
-                  "170": "f",
-                  "171": "o",
-                  "172": "n",
-                  "173": "t",
-                  "174": "-",
-                  "175": "s",
-                  "176": "i",
-                  "177": "z",
-                  "178": "e",
-                  "179": ":",
-                  "180": " ",
-                  "181": "3",
-                  "182": "6",
-                  "183": "p",
-                  "184": "t",
-                  "185": "\"",
-                  "186": ">",
-                  "187": "1",
-                  "188": ".",
-                  "189": "5",
-                  "190": "9",
-                  "191": "9",
+                  "113": "t",
+                  "114": "r",
+                  "115": "o",
+                  "116": "n",
+                  "117": "g",
+                  "118": ">",
+                  "119": "<",
+                  "120": "s",
+                  "121": "p",
+                  "122": "a",
+                  "123": "n",
+                  "124": " ",
+                  "125": "s",
+                  "126": "t",
+                  "127": "y",
+                  "128": "l",
+                  "129": "e",
+                  "130": "=",
+                  "131": "\"",
+                  "132": "c",
+                  "133": "o",
+                  "134": "l",
+                  "135": "o",
+                  "136": "r",
+                  "137": ":",
+                  "138": " ",
+                  "139": "r",
+                  "140": "g",
+                  "141": "b",
+                  "142": "(",
+                  "143": "5",
+                  "144": "5",
+                  "145": ",",
+                  "146": " ",
+                  "147": "3",
+                  "148": "0",
+                  "149": ",",
+                  "150": " ",
+                  "151": "8",
+                  "152": "5",
+                  "153": ")",
+                  "154": ";",
+                  "155": " ",
+                  "156": "f",
+                  "157": "o",
+                  "158": "n",
+                  "159": "t",
+                  "160": "-",
+                  "161": "s",
+                  "162": "i",
+                  "163": "z",
+                  "164": "e",
+                  "165": ":",
+                  "166": " ",
+                  "167": "4",
+                  "168": "8",
+                  "169": "p",
+                  "170": "x",
+                  "171": "\"",
+                  "172": ">",
+                  "173": "1",
+                  "174": "9",
+                  "175": "1",
+                  "176": "<",
+                  "177": "/",
+                  "178": "s",
+                  "179": "p",
+                  "180": "a",
+                  "181": "n",
+                  "182": ">",
+                  "183": "<",
+                  "184": "/",
+                  "185": "s",
+                  "186": "t",
+                  "187": "r",
+                  "188": "o",
+                  "189": "n",
+                  "190": "g",
+                  "191": ">",
                   "192": "<",
-                  "193": "/",
-                  "194": "s",
-                  "195": "p",
-                  "196": "a",
-                  "197": "n",
-                  "198": ">",
-                  "199": "<",
-                  "200": "/",
-                  "201": "s",
-                  "202": "t",
-                  "203": "r",
-                  "204": "o",
-                  "205": "n",
-                  "206": "g",
-                  "207": ">",
-                  "208": "<",
-                  "209": "s",
-                  "210": "p",
-                  "211": "a",
-                  "212": "n",
-                  "213": " ",
-                  "214": "s",
-                  "215": "t",
-                  "216": "y",
-                  "217": "l",
-                  "218": "e",
-                  "219": "=",
-                  "220": "\"",
-                  "221": "c",
-                  "222": "o",
-                  "223": "l",
-                  "224": "o",
-                  "225": "r",
-                  "226": ":",
-                  "227": " ",
-                  "228": "r",
-                  "229": "g",
-                  "230": "b",
-                  "231": "(",
-                  "232": "2",
-                  "233": "5",
-                  "234": "0",
-                  "235": ",",
-                  "236": " ",
-                  "237": "2",
-                  "238": "5",
-                  "239": "0",
-                  "240": ",",
-                  "241": " ",
-                  "242": "2",
-                  "243": "4",
-                  "244": "5",
-                  "245": ")",
-                  "246": "\"",
-                  "247": ">",
-                  "248": "&",
-                  "249": "n",
-                  "250": "b",
-                  "251": "s",
-                  "252": "p",
-                  "253": ";",
-                  "254": "<",
-                  "255": "/",
-                  "256": "s",
-                  "257": "p",
-                  "258": "a",
-                  "259": "n",
+                  "193": "s",
+                  "194": "p",
+                  "195": "a",
+                  "196": "n",
+                  "197": " ",
+                  "198": "s",
+                  "199": "t",
+                  "200": "y",
+                  "201": "l",
+                  "202": "e",
+                  "203": "=",
+                  "204": "\"",
+                  "205": "c",
+                  "206": "o",
+                  "207": "l",
+                  "208": "o",
+                  "209": "r",
+                  "210": ":",
+                  "211": " ",
+                  "212": "r",
+                  "213": "g",
+                  "214": "b",
+                  "215": "(",
+                  "216": "5",
+                  "217": "5",
+                  "218": ",",
+                  "219": " ",
+                  "220": "3",
+                  "221": "0",
+                  "222": ",",
+                  "223": " ",
+                  "224": "8",
+                  "225": "5",
+                  "226": ")",
+                  "227": ";",
+                  "228": " ",
+                  "229": "f",
+                  "230": "o",
+                  "231": "n",
+                  "232": "t",
+                  "233": "-",
+                  "234": "s",
+                  "235": "i",
+                  "236": "z",
+                  "237": "e",
+                  "238": ":",
+                  "239": " ",
+                  "240": "1",
+                  "241": "4",
+                  "242": "p",
+                  "243": "t",
+                  "244": "\"",
+                  "245": ">",
+                  "246": "/",
+                  "247": "m",
+                  "248": "ê",
+                  "249": "s",
+                  "250": "<",
+                  "251": "/",
+                  "252": "s",
+                  "253": "p",
+                  "254": "a",
+                  "255": "n",
+                  "256": ">",
+                  "257": "<",
+                  "258": "/",
+                  "259": "p",
                   "260": ">",
-                  "261": "<",
-                  "262": "s",
-                  "263": "p",
-                  "264": "a",
-                  "265": "n",
-                  "266": " ",
-                  "267": "s",
-                  "268": "t",
-                  "269": "y",
-                  "270": "l",
-                  "271": "e",
-                  "272": "=",
-                  "273": "\"",
-                  "274": "c",
-                  "275": "o",
-                  "276": "l",
-                  "277": "o",
-                  "278": "r",
-                  "279": ":",
-                  "280": " ",
-                  "281": "r",
-                  "282": "g",
-                  "283": "b",
-                  "284": "(",
-                  "285": "2",
-                  "286": "5",
-                  "287": "0",
-                  "288": ",",
-                  "289": " ",
-                  "290": "2",
-                  "291": "5",
-                  "292": "0",
-                  "293": ",",
-                  "294": " ",
-                  "295": "2",
-                  "296": "4",
-                  "297": "5",
-                  "298": ")",
-                  "299": ";",
-                  "300": " ",
-                  "301": "f",
-                  "302": "o",
-                  "303": "n",
-                  "304": "t",
-                  "305": "-",
-                  "306": "s",
-                  "307": "i",
-                  "308": "z",
-                  "309": "e",
-                  "310": ":",
-                  "311": " ",
-                  "312": "1",
-                  "313": "4",
-                  "314": "p",
-                  "315": "t",
-                  "316": "\"",
-                  "317": ">",
-                  "318": "/",
-                  "319": "m",
-                  "320": "ê",
-                  "321": "s",
-                  "322": "<",
-                  "323": "/",
-                  "324": "s",
-                  "325": "p",
-                  "326": "a",
-                  "327": "n",
-                  "328": ">",
-                  "329": "<",
-                  "330": "/",
-                  "331": "p",
-                  "332": ">",
-                  "text": "<p><span>Para sentir o gostinho<br>que é vender online</span></p>",
-                  "color": "#00363A"
+                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Recomendado para quem quer começar vendendo ou já fatura até R$ 15/mês.</span><br><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">em até 12x de</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$43</span><span style=\"color: rgb(255, 255, 255)\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">por mês</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
+                  "color": "#FFFFFF"
                 },
                 "annualSaving": {
-                  "text": "<p>Economia de R$ 4.800/ ano</p>",
-                  "backgroundColor": "#02393F",
-                  "borderColor": "linear-gradient(90deg, #71DBD4 0%, #204E53 100%);",
-                  "textColor": "linear-gradient(90deg, #71DBD4 0%, #ABEECF 100%)"
+                  "text": "Economia de  R$ 576/ano",
+                  "backgroundColor": "linear-gradient(90deg, rgb(191, 182, 213) 0.02%, rgb(245, 242, 248) 52.45%, rgb(255, 255, 255) 80.07%); ",
+                  "borderColor": "linear-gradient(90deg, #B699D9, transparent)",
+                  "textColor": "linear-gradient(90deg, #371E55 38.15%, rgba(55, 30, 85, 0.80) 124.69%)",
+                  "fontFamily": "Instrument Serif"
                 },
                 "seeMoreButtonText": "Ver mais",
-                "backgroundColor": "#B7FBDB",
-                "cutedMontlyFeeColor": "#FAFAF5",
-                "annualSavingColor": "#FAFAf5",
+                "backgroundColor": "#00363A",
+                "cutedMontlyFeeColor": "#371E55",
                 "cta": [],
                 "createStoreWithPlanCta": {
-                  "planId": "180",
-                  "text": "Teste agora",
-                  "backgroundColor": "#00363A",
-                  "textColor": "#ffffff",
-                  "borderColor": "#00363A",
-                  "ctaStyle": "button",
-                  "showIcon": false
+                  "planId": "174",
+                  "text": "Criar minha loja",
+                  "backgroundColor": "#28C3C3",
+                  "textColor": "#FFFFFF",
+                  "borderColor": "#28C3C3",
+                  "ctaStyle": "button"
                 },
-                "tagColor": "#371E55",
-                "tagBackgroundColor": "linear-gradient(90deg, #13393D 0%, #204E53 100%)",
                 "theme": "light",
-                "topImage": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/6519b530-0a95-43ae-8d4f-17e75c0c1fd6/elemento.png",
-                  "width": 239,
-                  "height": 134
-                },
-                "tagTextColor": {
-                  "color1": "#71DBD4 ",
-                  "color2": "#ABEECF "
-                },
                 "titleFont": "Instrument Serif",
                 "title": {
-                  "text": "<p><span>Comece<br>Grátis</span></p>",
-                  "color": "#00363A",
+                  "text": "<p>Crescimento</p>",
+                  "color": "#FFFFFF",
                   "font": "Lektorat Display var",
                   "fontWeight": "750",
-                  "fontSize": "48px",
+                  "fontSize": "42px",
                   "letterSpacing": "-0.3px",
                   "lineHeight": "100%"
                 },
-                "borderColor": "",
-                "backgroundImage": {
-                  "width": 298,
-                  "height": 548
-                }
+                "borderColor": "#00363A"
               },
               {
                 "bulletPoints": {
                   "items": [
                     {
-                      "text": "<p><span>250 produtos</span></p>",
+                      "text": "<p><strong>Tudo do plano Crescimento +</strong></p>"
+                    },
+                    {
+                      "text": "<p>Produtos ilimitados</p>",
                       "marginTop": "26px"
                     },
                     {
-                      "text": "<p><span>25.000 visitas</span></p>"
+                      "text": "<p>300.000 visitas</p>"
                     },
                     {
-                      "text": "<p><span>Tudo do plano grátis +</span></p>"
+                      "text": "<p>7 temas Premium Grátis</p>"
                     },
                     {
-                      "text": "<p><span>Checkout transparente</span></p>"
+                      "text": "<p>Suporte por WhatsApp</p>"
                     },
                     {
-                      "text": "<p>Ferramenta de avaliação</p>"
+                      "text": "<p>Prioridade no atendimento</p>"
                     },
                     {
-                      "text": "<p>Compre Junto</p>"
+                      "text": "<p>10 Usuários com controle e permissão</p>"
                     },
                     {
-                      "text": "<p>Recuperação de carrinho abandonado e produto</p>"
+                      "text": "<p>Edição de produtos em massa</p>"
                     }
                   ],
                   "bulletPointsIcon": {
@@ -2556,7 +2894,7 @@
                   "338": "/",
                   "339": "p",
                   "340": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span><br><span style=\"font-size: 36pt\">R$54</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
+                  "text": "<p><span style=\"font-size: 9pt\">Ideal para operações em expansão, que já tenham faturamento acima de R$15 mil/mês</span><br><span style=\"font-size: 36pt\">R$239</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
                   "color": "#00363A"
                 },
                 "annualMontlyFee": {
@@ -2821,7 +3159,7 @@
                   "258": "/",
                   "259": "p",
                   "260": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span></p><p><span style=\"font-size: 36pt\">R$43</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ 132 ao ano</span></p>",
+                  "text": "<p><span style=\"font-size: 9pt\">Ideal para operações em expansão, que já tenham faturamento acima de R$15 mil/mês</span><br><br><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">em até 12x de</span></p><p><span style=\"font-size: 36pt\">R$191</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
                   "color": "#00363A"
                 },
                 "annualSaving": {
@@ -2833,20 +3171,20 @@
                 },
                 "seeMoreButtonText": "Ver mais",
                 "cta": [],
-                "backgroundColor": "#ffffff",
+                "backgroundColor": "#FBFAF9",
                 "cutedMontlyFeeColor": "#371E55",
                 "createStoreWithPlanCta": {
-                  "planId": "173",
+                  "planId": "174",
                   "text": "Criar minha loja",
                   "ctaStyle": "button",
-                  "backgroundColor": "#00363A",
-                  "textColor": "#FFFFF",
-                  "borderColor": "#00363A"
+                  "backgroundColor": "#E4F3F3",
+                  "textColor": "#00363A",
+                  "borderColor": "#E4F3F3"
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
                 "title": {
-                  "text": "<p>Crescimento</p>",
+                  "text": "<p>Expansão</p>",
                   "color": "#00363A",
                   "font": "Lektorat Display var",
                   "fontWeight": "750",
@@ -2860,27 +3198,20 @@
                 "bulletPoints": {
                   "items": [
                     {
-                      "text": "<p><span>500 Produtos</span></p>",
+                      "text": "<p>50 produtos</p>",
                       "marginTop": "26px"
                     },
                     {
-                      "text": "<p><span>50.000 visitas</span></p>"
+                      "text": "<p>5.000 visitas</p>"
                     },
                     {
-                      "text": "<p><span>Tudo do plano crescimento +</span></p>"
+                      "text": "<p>Método de pagamento e envios nativos</p>"
                     },
                     {
-                      "text": "<p><span>Enriquecimento de produtos com IA</span></p>"
+                      "text": "<p>Relatórios de vendas</p>"
                     },
                     {
-                      "text": "<p><span>Avaliação de produto com foto</span></p>"
-                    },
-                    {
-                      "text": "<p><span>3 usuários do painel</span></p>"
-                    },
-                    {
-                      "text": "<p><span>Edição de HTML</span></p>",
-                      "toolTipText": "tool tip text"
+                      "text": "<p>Cupons de desconto e Frete grátis</p>"
                     }
                   ],
                   "bulletPointsIcon": {
@@ -3251,7 +3582,7 @@
                   "338": "/",
                   "339": "p",
                   "340": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span><br><span style=\"font-size: 36pt\">R$99</span><span style=\"color: rgb(127, 126, 119)\"> por mês</span></p>",
+                  "text": "<p><span style=\"font-size: 9pt\">Perfeito para quem quer começar com calma e ainda não tem faturamento.</span><br><span style=\"font-size: 36pt\">R$0</span></p>",
                   "color": "#00363A"
                 },
                 "annualMontlyFee": {
@@ -3516,7 +3847,7 @@
                   "258": "/",
                   "259": "p",
                   "260": ">",
-                  "text": "<p><span style=\"font-size: 9pt\">Seu negócio está crescendo e<br>a gente acompanha</span></p><p><span style=\"font-size: 36pt\">R$79</span><span style=\"color: rgb(127, 126, 119)\"> </span><span style=\"color: rgb(127, 126, 119); font-size: 9pt\">por mês</span></p><p><span style=\"font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
+                  "text": "<p><span style=\"font-size: 9pt\">Perfeito para quem quer começar com calma e ainda não tem faturamento.</span><br><br><br></p><p><span style=\"font-size: 36pt\">R$0</span><span style=\"color: rgb(127, 126, 119)\"> </span></p><p><br></p>",
                   "color": "#00363A"
                 },
                 "annualSaving": {
@@ -3528,20 +3859,20 @@
                 },
                 "seeMoreButtonText": "Ver mais",
                 "cta": [],
-                "backgroundColor": "#ffffff",
+                "backgroundColor": "#FBFAF9",
                 "cutedMontlyFeeColor": "#371E55",
                 "createStoreWithPlanCta": {
                   "planId": "174",
                   "text": "Criar minha loja",
                   "ctaStyle": "button",
-                  "backgroundColor": "#00363A",
-                  "textColor": "#FFFFFF",
-                  "borderColor": "#00363A"
+                  "backgroundColor": "#E4F3F3",
+                  "textColor": "#00363A",
+                  "borderColor": "#E4F3F3"
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
                 "title": {
-                  "text": "<p>Aceleração</p>",
+                  "text": "<p>Grátis</p>",
                   "color": "#00363A",
                   "font": "Lektorat Display var",
                   "fontWeight": "750",
@@ -3588,26 +3919,16 @@
               "ctaStyle": "button",
               "showIcon": false
             },
-            "arrowsColor": "#ca1616",
+            "arrowsColor": "#00363A",
             "annualTagTextColor": "#7A2D0D",
             "annualTag": "- 2O% OFF",
-            "arrows": false,
+            "arrows": true,
             "annualTagPosition": "aside",
             "switchBackgroundColor": "#DFE4E6",
             "switchBallColor": "#00363A",
             "hideSection": false,
-            "paddingBottom": "30px",
-            "bottomCta": [
-              {
-                "ctaStyle": "button",
-                "href": "https://lojaintegrada.com.br/planos",
-                "text": "Compare os planos",
-                "backgroundColor": "#00363A",
-                "textColor": "#ffffff",
-                "borderColor": "#00363A",
-                "size": "Medium"
-              }
-            ],
+            "paddingBottom": "0px",
+            "bottomCta": [],
             "hideSwitch": false
           },
           "rule": {
@@ -6068,156 +6389,341 @@
       ]
     },
     {
-      "__resolveType": "site/sections/ScrollableCards.tsx",
-      "title": {
-        "text": "<p><span style=\"color: #003037; font-size:245px; \">Resultados</span></p>",
-        "font": "Lektorat"
-      },
-      "cta": [],
-      "cards": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "title": {
-            "text": "<p><strong><span style=\"color: rgb(0, 48, 55); font-size: 22pt\">“A Loja Integrada tirou o nosso sonho do papel.”</span></strong></p>"
+          "value": {
+            "__resolveType": "site/sections/ScrollableCards.tsx",
+            "title": {
+              "text": "<p><span style=\"color: #003037; font-size:245px; \">Resultados</span></p>",
+              "font": "Lektorat"
+            },
+            "cta": [],
+            "cards": [
+              {
+                "title": {
+                  "text": "<p><strong><span style=\"color: rgb(0, 48, 55); font-size: 22pt\">“A Loja Integrada tirou o nosso sonho do papel.”</span></strong></p>"
+                },
+                "caption": "<p><span style=\"color: rgb(95, 110, 130); font-size: 18px;\">É uma plataforma que funciona de verdade e se preocupa com cada detalhe — até com a foto do produto. Crescemos muito com eles. Recomendamos de olhos fechados.</span></p>",
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/5e784135-e846-4315-a2a2-538457a74adf/suzi-use-hitzz.png"
+                },
+                "imageCaption": "<p><strong><span style=\"color: rgb(0, 48, 55)\">Suzi</span></strong></p><p><span style=\"color: rgb(95, 110, 130)\">da Use Hitzz</span></p>"
+              },
+              {
+                "title": {
+                  "text": "<p><strong><span style=\"color: rgb(0, 48, 55); font-size: 22pt\">\"Recomendo a Loja Integrada por ser uma plataforma robusta\"</span></strong></p>"
+                },
+                "caption": "<p><span style=\"color: rgb(95, 110, 130); font-size: 18px\">Os layouts personalizáveis e recursos completos ajudam o varejo de moda a vender com mais eficiência e acompanhar os resultados de forma clara e prática.</span></p>",
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/2fa235f7-30dc-4432-922e-db86dfe0b6d5/marcel-maretoa.png"
+                },
+                "imageCaption": "<p><strong><span style=\"color: rgb(0, 48, 55)\">Marcel</span></strong></p><p><span style=\"color: rgb(95, 110, 130)\">da Marétoa</span></p>"
+              }
+            ],
+            "leftText": "<p><span style=\"color: rgb(0, 48, 55)\">Que falam</span></p>",
+            "rightText": "<p><span style=\"color: rgb(0, 48, 55)\">por si</span></p>",
+            "createStoreCta": {
+              "planId": "172",
+              "order": 1,
+              "ctaStyle": "button",
+              "text": "Criar minha loja profissional",
+              "backgroundColor": "#00363A",
+              "borderColor": "#00363A",
+              "textColor": "#ffffff"
+            },
+            "ctaMargintop": "140px",
+            "cardWidth": "400px",
+            "cardsWidth": "390px",
+            "cardsMinHeight": "400px",
+            "id": "Depoimentos",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display var",
+              "color": "#003037"
+            },
+            "leftTextProps": {
+              "fontFamily": "Lektorat display var"
+            },
+            "rightTextProps": {
+              "fontFamily": "Lektorat display var"
+            },
+            "hideSection": true
           },
-          "caption": "<p><span style=\"color: rgb(95, 110, 130); font-size: 18px;\">É uma plataforma que funciona de verdade e se preocupa com cada detalhe — até com a foto do produto. Crescemos muito com eles. Recomendamos de olhos fechados.</span></p>",
-          "image": {
-            "src": "https://assets.decocache.com/lojaintegradar/5e784135-e846-4315-a2a2-538457a74adf/suzi-use-hitzz.png"
-          },
-          "imageCaption": "<p><strong><span style=\"color: rgb(0, 48, 55)\">Suzi</span></strong></p><p><span style=\"color: rgb(95, 110, 130)\">da Use Hitzz</span></p>"
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
         },
         {
-          "title": {
-            "text": "<p><strong><span style=\"color: rgb(0, 48, 55); font-size: 22pt\">\"Recomendo a Loja Integrada por ser uma plataforma robusta\"</span></strong></p>"
+          "value": {
+            "__resolveType": "site/sections/ScrollableCards.tsx",
+            "title": {
+              "text": "<p><span style=\"color: #003037; font-size:245px; \">Resultados</span></p>",
+              "font": "Lektorat"
+            },
+            "cta": [],
+            "cards": [
+              {
+                "title": {
+                  "text": "<p><strong><span style=\"color: rgb(0, 48, 55); font-size: 22pt\">“A Loja Integrada tirou o nosso sonho do papel.”</span></strong></p>"
+                },
+                "caption": "<p><span style=\"color: rgb(95, 110, 130); font-size: 18px;\">É uma plataforma que funciona de verdade e se preocupa com cada detalhe — até com a foto do produto. Crescemos muito com eles. Recomendamos de olhos fechados.</span></p>",
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/5e784135-e846-4315-a2a2-538457a74adf/suzi-use-hitzz.png"
+                },
+                "imageCaption": "<p><strong><span style=\"color: rgb(0, 48, 55)\">Suzi</span></strong></p><p><span style=\"color: rgb(95, 110, 130)\">da Use Hitzz</span></p>"
+              },
+              {
+                "title": {
+                  "text": "<p><strong><span style=\"color: rgb(0, 48, 55); font-size: 22pt\">\"Recomendo a Loja Integrada por ser uma plataforma robusta\"</span></strong></p>"
+                },
+                "caption": "<p><span style=\"color: rgb(95, 110, 130); font-size: 18px\">Os layouts personalizáveis e recursos completos ajudam o varejo de moda a vender com mais eficiência e acompanhar os resultados de forma clara e prática.</span></p>",
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/2fa235f7-30dc-4432-922e-db86dfe0b6d5/marcel-maretoa.png"
+                },
+                "imageCaption": "<p><strong><span style=\"color: rgb(0, 48, 55)\">Marcel</span></strong></p><p><span style=\"color: rgb(95, 110, 130)\">da Marétoa</span></p>"
+              }
+            ],
+            "leftText": "<p><span style=\"color: rgb(0, 48, 55)\">Que falam</span></p>",
+            "rightText": "<p><span style=\"color: rgb(0, 48, 55)\">por si</span></p>",
+            "createStoreCta": {
+              "planId": "172",
+              "order": 1,
+              "ctaStyle": "button",
+              "text": "Criar minha loja profissional",
+              "backgroundColor": "#00363A",
+              "borderColor": "#00363A",
+              "textColor": "#ffffff"
+            },
+            "ctaMargintop": "140px",
+            "cardWidth": "400px",
+            "cardsWidth": "390px",
+            "cardsMinHeight": "400px",
+            "id": "Depoimentos",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display var",
+              "color": "#003037"
+            },
+            "leftTextProps": {
+              "fontFamily": "Lektorat display var"
+            },
+            "rightTextProps": {
+              "fontFamily": "Lektorat display var"
+            }
           },
-          "caption": "<p><span style=\"color: rgb(95, 110, 130); font-size: 18px\">Os layouts personalizáveis e recursos completos ajudam o varejo de moda a vender com mais eficiência e acompanhar os resultados de forma clara e prática.</span></p>",
-          "image": {
-            "src": "https://assets.decocache.com/lojaintegradar/2fa235f7-30dc-4432-922e-db86dfe0b6d5/marcel-maretoa.png"
-          },
-          "imageCaption": "<p><strong><span style=\"color: rgb(0, 48, 55)\">Marcel</span></strong></p><p><span style=\"color: rgb(95, 110, 130)\">da Marétoa</span></p>"
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
         }
-      ],
-      "leftText": "<p><span style=\"color: rgb(0, 48, 55)\">Que falam</span></p>",
-      "rightText": "<p><span style=\"color: rgb(0, 48, 55)\">por si</span></p>",
-      "createStoreCta": {
-        "planId": "172",
-        "order": 1,
-        "ctaStyle": "button",
-        "text": "Criar minha loja profissional",
-        "backgroundColor": "#00363A",
-        "borderColor": "#00363A",
-        "textColor": "#ffffff"
-      },
-      "ctaMargintop": "140px",
-      "cardWidth": "400px",
-      "cardsWidth": "390px",
-      "cardsMinHeight": "400px",
-      "id": "Depoimentos",
-      "titleTextProps": {
-        "fontFamily": "Lektorat Display var",
-        "color": "#003037"
-      },
-      "leftTextProps": {
-        "fontFamily": "Lektorat display var"
-      },
-      "rightTextProps": {
-        "fontFamily": "Lektorat display var"
-      }
+      ]
     },
     {
-      "__resolveType": "site/sections/Faq.tsx",
-      "title": "<p style=\"color: #00363A; font-size:46px; font-weight: 650;  \" >Perguntas frequentes sobre<br>sua Loja de Moda Online</p>",
-      "cta": [],
-      "titleColor": "#00363A",
-      "captionColor": "#5F6E82",
-      "questions": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "question": "Como criar uma loja virtual de roupas do zero?",
-          "answear": "<p><span style=\"color: #5f6e82; font-size: 11pt\">Para criar uma loja virtual de roupas do zero, você pode usar a plataforma da Loja Integrada. Basta se cadastrar com nome, e-mail e telefone e, em menos de 3 minutos, sua loja estará ativa. Você poderá cadastrar produtos, configurar frete e pagamento, tudo com poucos cliques. Ideal para quem quer empreender no segmento de moda sem conhecimento técnico.</span></p>"
+          "value": {
+            "__resolveType": "site/sections/Faq.tsx",
+            "title": "<p style=\"color: #00363A; font-size: 30px; line-height: 100%; font-weight: 600; \">Perguntas frequentes sobre sua Loja de Moda Online</p>",
+            "cta": [],
+            "titleColor": "#00363A",
+            "captionColor": "#5F6E82",
+            "questions": [
+              {
+                "question": "Como criar uma loja virtual de roupas do zero?",
+                "answear": "<p><span style=\"color: #5f6e82; font-size: 11pt\">Para criar uma loja virtual de roupas do zero, você pode usar a plataforma da Loja Integrada. Basta se cadastrar com nome, e-mail e telefone e, em menos de 3 minutos, sua loja estará ativa. Você poderá cadastrar produtos, configurar frete e pagamento, tudo com poucos cliques. Ideal para quem quer empreender no segmento de moda sem conhecimento técnico.</span></p>"
+              },
+              {
+                "question": "Consigo personalizar o visual da minha loja de moda?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada oferece temas gratuitos e personalizáveis, pensados para lojas de moda. Você pode alterar cores, banners, fontes, menus e categorias para refletir a identidade da sua marca. Além disso, há temas profissionais exclusivos disponíveis para compra, com 20% de desconto para assinantes do Plano de Vendas Moda.</span></p>"
+              },
+              {
+                "question": "A loja é adaptada para celular (responsiva)?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Todos os temas da Loja Integrada são responsivos, ou seja, funcionam perfeitamente em smartphones e tablets. Isso é essencial para o setor de moda, já que a maior parte das compras hoje acontece via dispositivos móveis.</span></p>"
+              },
+              {
+                "question": "Quantos produtos posso cadastrar na minha loja de moda?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">No Plano Aceleração, você pode cadastrar até 500 produtos na sua loja virtual. Isso permite que você organize sua coleção com diferentes tamanhos, cores e categorias, ideal para o nicho de moda.</span></p>"
+              },
+              {
+                "question": "Posso criar uma identidade visual para minha loja de moda?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma permite a personalização completa da loja, com alteração de temas, logotipo, banners, paleta de cores e layout. Assim, você transmite profissionalismo e confiança desde o primeiro acesso do cliente.</span></p>"
+              },
+              {
+                "question": "Como vender roupas pelo Instagram com a Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada permite a integração com o Instagram Shopping, ativando a sacolinha nos seus posts e stories. Assim, você conecta seu catálogo de produtos diretamente ao perfil da loja, permitindo que clientes comprem sem sair da rede social.</span></p>"
+              },
+              {
+                "question": "É possível vender roupas pelo TikTok com a Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada oferece integração com TikTok Shopping. Você pode conectar sua conta do TikTok ao painel da loja e criar campanhas ou links de venda direto na rede social, aumentando o alcance com público jovem e engajado.</span></p>"
+              },
+              {
+                "question": "A Loja Integrada funciona com Google Shopping e PMax?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Você pode ativar campanhas de Performance Max (PMax) diretamente do painel. A Loja Integrada é reconhecida pelo Google como uma das plataformas com maior ROI da América Latina. Isso permite que suas campanhas sejam otimizadas automaticamente, com poucos cliques, aumentando o alcance nos canais do Google.</span></p>"
+              },
+              {
+                "question": "Quais ferramentas de marketing vêm inclusas?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você terá acesso a ferramentas como: e-mail marketing automatizado, recuperação de carrinho abandonado, cupons de desconto simples e avançados, botão de WhatsApp, avisos de estoque esgotado, descontos progressivos e integração com marketplaces e redes sociais.</span></p>"
+              },
+              {
+                "question": "Como funciona o link de carrinho para vendas no WhatsApp?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você pode montar um carrinho com produtos específicos, aplicar cupons e gerar um link de checkout. Esse link pode ser enviado diretamente pelo WhatsApp, permitindo que o cliente clique e finalize a compra em poucos segundos. Ideal para vendas via direct, status ou grupos.</span></p>"
+              },
+              {
+                "question": "Quais meios de pagamento posso oferecer na loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você poderá aceitar pagamentos via Pix, boleto bancário, cartão de crédito e débito. A Loja Integrada tem integração com o Pagali, que oferece checkout rápido sem senha, aumentando a conversão no momento da compra.</span></p>"
+              },
+              {
+                "question": "Consigo oferecer frete com desconto na loja de moda?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Com a integração da Loja Integrada com a Enviali, você tem até 70% de desconto nos Correios. Além disso, pode criar campanhas de frete grátis e configurar alertas de frete no carrinho para incentivar a conversão.</span></p>"
+              },
+              {
+                "question": "Posso trabalhar com dropshipping na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada possui integração com parceiros confiáveis de dropshipping, permitindo que você venda produtos sem estoque físico. Ideal para quem está começando no e-commerce de moda.</span></p>"
+              },
+              {
+                "question": "O frete é calculado automaticamente para o cliente?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A loja calcula o valor do frete automaticamente com base no CEP do cliente e nos serviços dos Correios ou transportadoras integradas. Isso oferece transparência e confiança no momento da compra.</span></p>"
+              },
+              {
+                "question": "É possível emitir nota fiscal pela plataforma?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma possui integração com ERPs e sistemas de gestão que permitem a emissão automática de notas fiscais, facilitando o controle contábil da sua loja de moda.</span></p>"
+              },
+              {
+                "question": "A Loja Integrada oferece SEO automático para moda?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Com a ferramenta Indexa AI, a Loja Integrada cria descrições otimizadas automaticamente para cada produto, melhorando o posicionamento no Google sem que você precise escrever manualmente.</span></p>"
+              },
+              {
+                "question": "Preciso contratar alguém para configurar minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não. A plataforma é intuitiva e feita para o lojista configurar sozinho. Além disso, você terá acesso a tutoriais, vídeos explicativos e suporte técnico humanizado sempre que precisar.</span></p>"
+              },
+              {
+                "question": "Como funciona o suporte da Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você terá atendimento via chat, WhatsApp e e-mail. A equipe de suporte é especializada em e-commerce e pronta para ajudar em todas as etapas do seu negócio.</span></p>"
+              },
+              {
+                "question": "A loja oferece relatórios de desempenho e vendas?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. O painel da Loja Integrada exibe relatórios completos com faturamento, número de visitas, produtos mais vendidos, origem do tráfego e dados por período, ajudando a tomar decisões estratégicas com base em dados reais.</span></p>"
+              },
+              {
+                "question": "Posso integrar a Loja Integrada com marketplaces como Mercado Livre e Shopee?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma tem integração com marketplaces por meio de parceiros. Isso permite que você centralize o estoque e aumente o alcance, vendendo em múltiplos canais de forma sincronizada.</span></p>"
+              }
+            ],
+            "questionsTitleColor": "#00363A",
+            "questionsDivisionLineColor": "#E1E1E1",
+            "bottomTitleColor": "",
+            "bottomCaptionColor": "",
+            "backgroundColor": "#E4F3F3",
+            "titleFont": "Lektorat Display var",
+            "hideSection": false
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
         },
         {
-          "question": "Consigo personalizar o visual da minha loja de moda?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada oferece temas gratuitos e personalizáveis, pensados para lojas de moda. Você pode alterar cores, banners, fontes, menus e categorias para refletir a identidade da sua marca. Além disso, há temas profissionais exclusivos disponíveis para compra, com 20% de desconto para assinantes do Plano de Vendas Moda.</span></p>"
-        },
-        {
-          "question": "A loja é adaptada para celular (responsiva)?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Todos os temas da Loja Integrada são responsivos, ou seja, funcionam perfeitamente em smartphones e tablets. Isso é essencial para o setor de moda, já que a maior parte das compras hoje acontece via dispositivos móveis.</span></p>"
-        },
-        {
-          "question": "Quantos produtos posso cadastrar na minha loja de moda?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">No Plano Aceleração, você pode cadastrar até 500 produtos na sua loja virtual. Isso permite que você organize sua coleção com diferentes tamanhos, cores e categorias, ideal para o nicho de moda.</span></p>"
-        },
-        {
-          "question": "Posso criar uma identidade visual para minha loja de moda?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma permite a personalização completa da loja, com alteração de temas, logotipo, banners, paleta de cores e layout. Assim, você transmite profissionalismo e confiança desde o primeiro acesso do cliente.</span></p>"
-        },
-        {
-          "question": "Como vender roupas pelo Instagram com a Loja Integrada?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada permite a integração com o Instagram Shopping, ativando a sacolinha nos seus posts e stories. Assim, você conecta seu catálogo de produtos diretamente ao perfil da loja, permitindo que clientes comprem sem sair da rede social.</span></p>"
-        },
-        {
-          "question": "É possível vender roupas pelo TikTok com a Loja Integrada?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada oferece integração com TikTok Shopping. Você pode conectar sua conta do TikTok ao painel da loja e criar campanhas ou links de venda direto na rede social, aumentando o alcance com público jovem e engajado.</span></p>"
-        },
-        {
-          "question": "A Loja Integrada funciona com Google Shopping e PMax?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Você pode ativar campanhas de Performance Max (PMax) diretamente do painel. A Loja Integrada é reconhecida pelo Google como uma das plataformas com maior ROI da América Latina. Isso permite que suas campanhas sejam otimizadas automaticamente, com poucos cliques, aumentando o alcance nos canais do Google.</span></p>"
-        },
-        {
-          "question": "Quais ferramentas de marketing vêm inclusas?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você terá acesso a ferramentas como: e-mail marketing automatizado, recuperação de carrinho abandonado, cupons de desconto simples e avançados, botão de WhatsApp, avisos de estoque esgotado, descontos progressivos e integração com marketplaces e redes sociais.</span></p>"
-        },
-        {
-          "question": "Como funciona o link de carrinho para vendas no WhatsApp?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você pode montar um carrinho com produtos específicos, aplicar cupons e gerar um link de checkout. Esse link pode ser enviado diretamente pelo WhatsApp, permitindo que o cliente clique e finalize a compra em poucos segundos. Ideal para vendas via direct, status ou grupos.</span></p>"
-        },
-        {
-          "question": "Quais meios de pagamento posso oferecer na loja?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você poderá aceitar pagamentos via Pix, boleto bancário, cartão de crédito e débito. A Loja Integrada tem integração com o Pagali, que oferece checkout rápido sem senha, aumentando a conversão no momento da compra.</span></p>"
-        },
-        {
-          "question": "Consigo oferecer frete com desconto na loja de moda?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Com a integração da Loja Integrada com a Enviali, você tem até 70% de desconto nos Correios. Além disso, pode criar campanhas de frete grátis e configurar alertas de frete no carrinho para incentivar a conversão.</span></p>"
-        },
-        {
-          "question": "Posso trabalhar com dropshipping na Loja Integrada?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada possui integração com parceiros confiáveis de dropshipping, permitindo que você venda produtos sem estoque físico. Ideal para quem está começando no e-commerce de moda.</span></p>"
-        },
-        {
-          "question": "O frete é calculado automaticamente para o cliente?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A loja calcula o valor do frete automaticamente com base no CEP do cliente e nos serviços dos Correios ou transportadoras integradas. Isso oferece transparência e confiança no momento da compra.</span></p>"
-        },
-        {
-          "question": "É possível emitir nota fiscal pela plataforma?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma possui integração com ERPs e sistemas de gestão que permitem a emissão automática de notas fiscais, facilitando o controle contábil da sua loja de moda.</span></p>"
-        },
-        {
-          "question": "A Loja Integrada oferece SEO automático para moda?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Com a ferramenta Indexa AI, a Loja Integrada cria descrições otimizadas automaticamente para cada produto, melhorando o posicionamento no Google sem que você precise escrever manualmente.</span></p>"
-        },
-        {
-          "question": "Preciso contratar alguém para configurar minha loja?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não. A plataforma é intuitiva e feita para o lojista configurar sozinho. Além disso, você terá acesso a tutoriais, vídeos explicativos e suporte técnico humanizado sempre que precisar.</span></p>"
-        },
-        {
-          "question": "Como funciona o suporte da Loja Integrada?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você terá atendimento via chat, WhatsApp e e-mail. A equipe de suporte é especializada em e-commerce e pronta para ajudar em todas as etapas do seu negócio.</span></p>"
-        },
-        {
-          "question": "A loja oferece relatórios de desempenho e vendas?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. O painel da Loja Integrada exibe relatórios completos com faturamento, número de visitas, produtos mais vendidos, origem do tráfego e dados por período, ajudando a tomar decisões estratégicas com base em dados reais.</span></p>"
-        },
-        {
-          "question": "Posso integrar a Loja Integrada com marketplaces como Mercado Livre e Shopee?",
-          "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma tem integração com marketplaces por meio de parceiros. Isso permite que você centralize o estoque e aumente o alcance, vendendo em múltiplos canais de forma sincronizada.</span></p>"
+          "value": {
+            "__resolveType": "site/sections/Faq.tsx",
+            "title": "<p><strong>Perguntas frequentes sobre<br>sua Loja de Moda Online</strong></p>",
+            "cta": [],
+            "titleColor": "#00363A",
+            "captionColor": "#5F6E82",
+            "questions": [
+              {
+                "question": "Como criar uma loja virtual de roupas do zero?",
+                "answear": "<p><span style=\"color: #5f6e82; font-size: 11pt\">Para criar uma loja virtual de roupas do zero, você pode usar a plataforma da Loja Integrada. Basta se cadastrar com nome, e-mail e telefone e, em menos de 3 minutos, sua loja estará ativa. Você poderá cadastrar produtos, configurar frete e pagamento, tudo com poucos cliques. Ideal para quem quer empreender no segmento de moda sem conhecimento técnico.</span></p>"
+              },
+              {
+                "question": "Consigo personalizar o visual da minha loja de moda?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada oferece temas gratuitos e personalizáveis, pensados para lojas de moda. Você pode alterar cores, banners, fontes, menus e categorias para refletir a identidade da sua marca. Além disso, há temas profissionais exclusivos disponíveis para compra, com 20% de desconto para assinantes do Plano de Vendas Moda.</span></p>"
+              },
+              {
+                "question": "A loja é adaptada para celular (responsiva)?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Todos os temas da Loja Integrada são responsivos, ou seja, funcionam perfeitamente em smartphones e tablets. Isso é essencial para o setor de moda, já que a maior parte das compras hoje acontece via dispositivos móveis.</span></p>"
+              },
+              {
+                "question": "Quantos produtos posso cadastrar na minha loja de moda?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">No Plano Aceleração, você pode cadastrar até 500 produtos na sua loja virtual. Isso permite que você organize sua coleção com diferentes tamanhos, cores e categorias, ideal para o nicho de moda.</span></p>"
+              },
+              {
+                "question": "Posso criar uma identidade visual para minha loja de moda?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma permite a personalização completa da loja, com alteração de temas, logotipo, banners, paleta de cores e layout. Assim, você transmite profissionalismo e confiança desde o primeiro acesso do cliente.</span></p>"
+              },
+              {
+                "question": "Como vender roupas pelo Instagram com a Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada permite a integração com o Instagram Shopping, ativando a sacolinha nos seus posts e stories. Assim, você conecta seu catálogo de produtos diretamente ao perfil da loja, permitindo que clientes comprem sem sair da rede social.</span></p>"
+              },
+              {
+                "question": "É possível vender roupas pelo TikTok com a Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada oferece integração com TikTok Shopping. Você pode conectar sua conta do TikTok ao painel da loja e criar campanhas ou links de venda direto na rede social, aumentando o alcance com público jovem e engajado.</span></p>"
+              },
+              {
+                "question": "A Loja Integrada funciona com Google Shopping e PMax?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Você pode ativar campanhas de Performance Max (PMax) diretamente do painel. A Loja Integrada é reconhecida pelo Google como uma das plataformas com maior ROI da América Latina. Isso permite que suas campanhas sejam otimizadas automaticamente, com poucos cliques, aumentando o alcance nos canais do Google.</span></p>"
+              },
+              {
+                "question": "Quais ferramentas de marketing vêm inclusas?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você terá acesso a ferramentas como: e-mail marketing automatizado, recuperação de carrinho abandonado, cupons de desconto simples e avançados, botão de WhatsApp, avisos de estoque esgotado, descontos progressivos e integração com marketplaces e redes sociais.</span></p>"
+              },
+              {
+                "question": "Como funciona o link de carrinho para vendas no WhatsApp?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você pode montar um carrinho com produtos específicos, aplicar cupons e gerar um link de checkout. Esse link pode ser enviado diretamente pelo WhatsApp, permitindo que o cliente clique e finalize a compra em poucos segundos. Ideal para vendas via direct, status ou grupos.</span></p>"
+              },
+              {
+                "question": "Quais meios de pagamento posso oferecer na loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você poderá aceitar pagamentos via Pix, boleto bancário, cartão de crédito e débito. A Loja Integrada tem integração com o Pagali, que oferece checkout rápido sem senha, aumentando a conversão no momento da compra.</span></p>"
+              },
+              {
+                "question": "Consigo oferecer frete com desconto na loja de moda?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Com a integração da Loja Integrada com a Enviali, você tem até 70% de desconto nos Correios. Além disso, pode criar campanhas de frete grátis e configurar alertas de frete no carrinho para incentivar a conversão.</span></p>"
+              },
+              {
+                "question": "Posso trabalhar com dropshipping na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada possui integração com parceiros confiáveis de dropshipping, permitindo que você venda produtos sem estoque físico. Ideal para quem está começando no e-commerce de moda.</span></p>"
+              },
+              {
+                "question": "O frete é calculado automaticamente para o cliente?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A loja calcula o valor do frete automaticamente com base no CEP do cliente e nos serviços dos Correios ou transportadoras integradas. Isso oferece transparência e confiança no momento da compra.</span></p>"
+              },
+              {
+                "question": "É possível emitir nota fiscal pela plataforma?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma possui integração com ERPs e sistemas de gestão que permitem a emissão automática de notas fiscais, facilitando o controle contábil da sua loja de moda.</span></p>"
+              },
+              {
+                "question": "A Loja Integrada oferece SEO automático para moda?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Com a ferramenta Indexa AI, a Loja Integrada cria descrições otimizadas automaticamente para cada produto, melhorando o posicionamento no Google sem que você precise escrever manualmente.</span></p>"
+              },
+              {
+                "question": "Preciso contratar alguém para configurar minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não. A plataforma é intuitiva e feita para o lojista configurar sozinho. Além disso, você terá acesso a tutoriais, vídeos explicativos e suporte técnico humanizado sempre que precisar.</span></p>"
+              },
+              {
+                "question": "Como funciona o suporte da Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você terá atendimento via chat, WhatsApp e e-mail. A equipe de suporte é especializada em e-commerce e pronta para ajudar em todas as etapas do seu negócio.</span></p>"
+              },
+              {
+                "question": "A loja oferece relatórios de desempenho e vendas?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. O painel da Loja Integrada exibe relatórios completos com faturamento, número de visitas, produtos mais vendidos, origem do tráfego e dados por período, ajudando a tomar decisões estratégicas com base em dados reais.</span></p>"
+              },
+              {
+                "question": "Posso integrar a Loja Integrada com marketplaces como Mercado Livre e Shopee?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma tem integração com marketplaces por meio de parceiros. Isso permite que você centralize o estoque e aumente o alcance, vendendo em múltiplos canais de forma sincronizada.</span></p>"
+              }
+            ],
+            "questionsTitleColor": "#00363A",
+            "questionsDivisionLineColor": "#E1E1E1",
+            "bottomTitleColor": "",
+            "bottomCaptionColor": "",
+            "backgroundColor": "#E4F3F3",
+            "titleFont": "Lektorat Display var",
+            "hideSection": false
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
         }
-      ],
-      "questionsTitleColor": "#00363A",
-      "questionsDivisionLineColor": "#E1E1E1",
-      "bottomTitleColor": "",
-      "bottomCaptionColor": "",
-      "backgroundColor": "#E4F3F3",
-      "titleFont": "Lektorat",
-      "hideSection": false
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

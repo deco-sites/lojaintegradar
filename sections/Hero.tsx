@@ -3,6 +3,14 @@ import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import Image from "apps/website/components/Image.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
+export interface TextProps {
+  fontFamily?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
 /** @title {{text}} {{underlineText}} */
 export interface CTA {
   href: string;
@@ -48,12 +56,15 @@ export interface Props {
   title?: string;
   /** @format color-input */
   titleColor?: string;
+  titleTextProps?: TextProps;
   caption?: string;
   /** @format color-input */
   captionColor?: string;
+  captionTextProps?: TextProps;
   description?: string;
   /** @format color-input */
   descriptionColor?: string;
+  descriptionTextProps?: TextProps;
   bulletpoints?: BulletPoints;
   bigNumbers?: BigNumber[];
   image?: IImage;
@@ -77,10 +88,13 @@ export default function Hero({
   id,
   title,
   titleColor,
+  titleTextProps,
   caption,
   captionColor,
+  captionTextProps,
   description,
   descriptionColor,
+  descriptionTextProps,
   bulletpoints,
   bigNumbers,
   image,
@@ -130,9 +144,9 @@ export default function Hero({
       </AnimateOnShow>
       <div class={`lg:w-1/2 flex px-7 justify-center ${placement == "left" ? 'lg:justify-start' : 'lg:justify-end'}`}>
         <div class="max-w-[555px]">
-          <AnimateOnShow divClass="text-5xl font-semibold hidden lg:block" animation="animate-fade-left" style={{ color: titleColor }}>{title}</AnimateOnShow>
-          <AnimateOnShow divClass="text-2xl mt-2.5 font-semibold hidden lg:block" delay={100} animation="animate-fade-left" style={{ color: captionColor }}>{caption}</AnimateOnShow>
-          <AnimateOnShow divClass="text-base font-normal leading-normal text-neutral-content mt-5" delay={200} animation="animate-fade-left" style={{ color: descriptionColor }}>{description}</AnimateOnShow>
+          <AnimateOnShow divClass="text-5xl font-semibold hidden lg:block" animation="animate-fade-left" style={{ color: titleColor, ...titleTextProps }}>{title}</AnimateOnShow>
+          <AnimateOnShow divClass="text-2xl mt-2.5 font-semibold hidden lg:block" delay={100} animation="animate-fade-left" style={{ color: captionColor, ...captionTextProps }}>{caption}</AnimateOnShow>
+          <AnimateOnShow divClass="text-base font-normal leading-normal text-neutral-content mt-5" delay={200} animation="animate-fade-left" style={{ color: descriptionColor, ...descriptionTextProps }}>{description}</AnimateOnShow>
           {bulletpoints && <AnimateOnShow divClass="mt-7 text-neutral-content text-base flex flex-col gap-2.5" animation="animate-fade-left" delay={300}>
             {bulletpoints.items?.map((item) => (
               <p class="flex gap-2.5" style={{ color: bulletpoints.itemsTextColor }}>

@@ -182,22 +182,6 @@
       ]
     },
     {
-      "__resolveType": "site/sections/FloatingButtons.tsx",
-      "buttons": [
-        {
-          "image": {
-            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
-            "alt": "Whatsapp icon"
-          },
-          "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero+saber+mais+informações+sobre+a+Loja+Integrada...&type=phone_number&app_absent=0",
-          "size": 57
-        }
-      ],
-      "distanceFromRightEnd": 34,
-      "distanceFromBottom": 180,
-      "distanceBetweenButtons": 20
-    },
-    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -416,8 +400,8 @@
               "fontWeight": "750",
               "lineHeight": "100%"
             },
-            "paddingTop": "30px",
             "paddingBottom": "30px",
+            "paddingTop": "30px",
             "captionTextProps": {
               "color": "#5F6E82",
               "fontSize": "16px",
@@ -5916,9 +5900,9 @@
               "src": "https://assets.decocache.com/lojaintegradar/7b491429-e34e-41cb-83c3-be75d3ced3c7/plans-background-2.svg",
               "verticalPosition": "115px"
             },
-            "paddingBottom": "120px",
             "bottomCta": [],
-            "hideSwitch": false
+            "hideSwitch": false,
+            "paddingBottom": "0px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6215,9 +6199,6 @@
       ]
     },
     {
-      "__resolveType": "site/sections/TalkToSpecialistModal.tsx"
-    },
-    {
       "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
     },
     {
@@ -6228,6 +6209,9 @@
     },
     {
       "__resolveType": "site/sections/VisualOptimizerScript.tsx"
+    },
+    {
+      "__resolveType": "site/sections/TalkToSpecialistModal.tsx"
     }
   ],
   "seo": {

@@ -5687,7 +5687,10 @@
             "captionColor": "#371E55",
             "descriptionColor": "#5F6E82",
             "htmlContent": "<p><br data-mce-bogus=\"1\"></p>",
-            "use": "image"
+            "use": "image",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display Var"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

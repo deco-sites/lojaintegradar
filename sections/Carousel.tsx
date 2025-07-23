@@ -126,6 +126,7 @@ export interface Props {
     /** @format color-input */
     titleColor?: string;
     titleTextProps?: TitleTextProps;
+    titlePaddingBottom?: string;
     caption?: RichText;
     captionFont?: string;
     /** @format color-input */
@@ -228,7 +229,7 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
 }
 function Carousel(props: Props) {
     if (props.hideSection) return <></>
-    const { id, title, titleFont, titleTextProps, caption, captionFont, captionTextProps, slides, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
+    const { id, title, titleFont, titleTextProps, titlePaddingBottom, caption, captionFont, captionTextProps, slides, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
     const carouselId = useId();
     return (<div id={id} style={{background: backgroundColor, paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative pt-7 lg:pt-14">
         {/* <input type="text" value="0" /> */}
@@ -238,7 +239,7 @@ function Carousel(props: Props) {
                 <AnimateOnShow animation="animate-fade-up" delay={200}>
                     {title && <div 
                         class="text-2xl md:text-5xl font-normal text-center text-primary leading-snug max-w-[942px] lg:pb-16" 
-                        style={{ color: titleColor, fontFamily: titleFont, ...titleTextProps }} 
+                        style={{ color: titleColor, fontFamily: titleFont, paddingBottom: titlePaddingBottom, ...titleTextProps }} 
                         dangerouslySetInnerHTML={{__html: title}} />}
 
                     {caption && <div 

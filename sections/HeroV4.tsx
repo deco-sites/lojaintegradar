@@ -14,7 +14,6 @@ const closeModal = (modalId: string) => {
   modal?.classList.add("hidden");
 };
 
-
 export interface TextProps {
   /** @format color-input */
   color?: string;

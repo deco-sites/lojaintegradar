@@ -323,8 +323,6 @@
           "value": {
             "__resolveType": "site/sections/Logos.tsx",
             "title": "<p>Moda é o nosso maior segmento <strong><span style=\"color: #28c3c3\">+ de 30 mil lojas criadas</span></strong></p>",
-            "paddingBottom": "120px",
-            "paddingTop": "0",
             "captionTextProps": {
               "color": ""
             },
@@ -378,6 +376,142 @@
               "fontSize": "18px",
               "fontWeight": "500"
             }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Hero.tsx",
+            "title": "Aumente a aprovação das suas vendas",
+            "caption": "Taxas competitivas em relação ao mercado,maiores taxas de aprovação",
+            "bigNumbers": [
+              {
+                "text": "+ R$ 1,8 bilhão",
+                "caption": "transacionados",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
+              },
+              {
+                "text": "+ 12 mil lojistas",
+                "caption": "ativos no Pagali",
+                "captionColor": "#5F6E82",
+                "textColor": "#371E55"
+              },
+              {
+                "text": "+ 8,6 milhões ",
+                "caption": "de transações pagas",
+                "textColor": "#371E55",
+                "captionColor": "#5F6E82"
+              }
+            ],
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos",
+                "backgroundColor": "#371E55",
+                "textColor": "#ffffff",
+                "borderColor": "#371E55",
+                "ctaStyle": "button"
+              },
+              {
+                "ctaStyle": "link",
+                "underlineText": "Falar com especialista",
+                "textColor": "#371E55",
+                "href": "/talkToSpecialist",
+                "showIcon": true
+              }
+            ],
+            "links": [
+              {
+                "textBefore": "Já tem uma loja? ",
+                "text": "Ative agora",
+                "href": "#"
+              }
+            ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/06f5310e-1057-487a-8425-a02c83d3825c/hero-3-image-mobile.svg"
+            },
+            "backgroundImage": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
+            },
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "textBelowColor": "#5F6E82",
+            "description": "Venda mais com o Pagali, nosso meio de pagamento próprio. Reduza taxas, melhore sua taxa de aceitação e aprovação, e gerencie tudo no painel da sua loja de forma integrada.",
+            "placement": "right",
+            "bulletpoints": {
+              "bulletPointsIcon": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+              },
+              "items": [
+                "Gestão financeira unificada",
+                "Sem tarifa adicional sobre transações feitas via Pagali;",
+                "Fácil de configurar"
+              ],
+              "itemsTextColor": "#5F6E82"
+            },
+            "descriptionColor": "#5F6E82",
+            "id": "pagali"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Hero.tsx",
+            "title": "Personalize do seu jeito sem saber programar.",
+            "bigNumbers": [],
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Criar minha loja profissional",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "textColor": "#ffffff",
+                "ctaStyle": "button"
+              }
+            ],
+            "links": [
+              {
+                "textBefore": "Já tem uma loja? ",
+                "text": "Ative agora",
+                "href": "#"
+              }
+            ],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a7020552-9bea-4573-a1c1-53f7a681e735/hero-3-image.svg"
+            },
+            "backgroundImage": {},
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "textBelowColor": "#5F6E82",
+            "placement": "left",
+            "bulletpoints": {
+              "bulletPointsIcon": {
+                "src": "https://assets.decocache.com/lojaintegradar/a1e36ffb-e68f-4fc7-9b5f-149d35939557/check.svg"
+              },
+              "items": [
+                "Escolha entre +2.000 temas prontos. ",
+                "Edite tudo com menus visuais: cores, banners, vitrines e mais",
+                "Crie promoções: brindes, combos e cupons personalizados.",
+                "Adicione provador virtual, Stories em página de produtos",
+                "Sua loja leve, rápida e linda no celular — onde seus clientes compram."
+              ],
+              "itemsTextColor": "#5F6E82"
+            },
+            "id": "personalize",
+            "descriptionColor": "#5F6E82",
+            "use": "image",
+            "marginBottom": "80px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -610,7 +744,7 @@
             "items": [],
             "bulletPointsIcon": {}
           },
-          "title": "Anuncie onde seusclientes estão",
+          "title": "Anuncie onde seus clientes estão",
           "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte sua loja ao Meta, Googlee TikTok e leve tráfego qualificadopros seus produtos</span></p>",
           "backgroundImage": {
             "src": "https://assets.decocache.com/lojaintegradar/1f452d4b-4d55-432f-9337-272b714cafa6/Anuncie-redes-sociais.png",
@@ -5912,6 +6046,11 @@
     },
     {
       "__resolveType": "site/sections/ScrollableCards.tsx",
+      "title": {
+        "text": "<p><span style=\"color: #003037; font-size:245px; \">Resultados</span></p>",
+        "font": "Lektorat"
+      },
+      "cta": [],
       "cards": [
         {
           "title": {
@@ -5934,13 +6073,8 @@
           "imageCaption": "<p><strong><span style=\"color: rgb(0, 48, 55)\">Marcel</span></strong></p><p><span style=\"color: rgb(95, 110, 130)\">da Marétoa</span></p>"
         }
       ],
-      "title": {
-        "text": "<p><span style=\"color: #003037; font-size:245px; \">Resultados</span></p>",
-        "font": "Lektorat"
-      },
       "leftText": "<p><span style=\"color: rgb(0, 48, 55)\">Que falam</span></p>",
       "rightText": "<p><span style=\"color: rgb(0, 48, 55)\">por si</span></p>",
-      "cta": [],
       "createStoreCta": {
         "planId": "172",
         "order": 1,

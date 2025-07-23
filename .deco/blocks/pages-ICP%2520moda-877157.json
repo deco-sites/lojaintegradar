@@ -1793,7 +1793,7 @@
             "bulletPointsIcon": {}
           },
           "title": "Cashback e indicações",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa. Mais recompra, mais visibilidade.</span></p>",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa.Mais recompra, mais visibilidade.</span></p>",
           "backgroundImage": {
             "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
             "height": 484,
@@ -1821,8 +1821,8 @@
             "items": [],
             "bulletPointsIcon": {}
           },
-          "title": "Monitore vendas de cada influenciador com precisão",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Acompanhe vendas e comissões em tempo real e escale suas campanhas com segurança.</span></p>",
+          "title": "Monitore vendas de cada influenciadorcom precisão",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Acompanhe vendas e comissões em tempo real e escalesuas campanhas com segurança.</span></p>",
           "backgroundImage": {
             "src": "https://assets.decocache.com/lojaintegradar/7f1994c5-fd4d-4001-b375-e721f924f43d/afiliados.png",
             "height": 484,
@@ -1850,8 +1850,8 @@
             "items": [],
             "bulletPointsIcon": {}
           },
-          "title": "Gerencie trocas e devoluções com inteligência",
-          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Trocas e devoluções sem fricção: seu cliente faz tudo sozinho, você economiza tempo, reduz atrito e ainda  ume nta a recompra.</span></p>",
+          "title": "Gerencie trocas e devoluçõescom inteligência",
+          "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Trocas e devoluções sem fricção: seu cliente faz tudo sozinho, você economiza tempo, reduz atrito e ainda ume nta a recompra.</span></p>",
           "backgroundImage": {
             "src": "https://assets.decocache.com/lojaintegradar/3ed5e9ab-89d3-4ace-a73f-c63885d35f8d/trocas-e-devolucoes.png",
             "height": 484,
@@ -6988,7 +6988,7 @@
               "49": "a",
               "50": "d",
               "51": "a",
-              "text": "<p style=\"text-align: center\">Ative uma plataforma com IA, automações e ferramentas que trabalham por você desde o primeiro dia.</p>",
+              "text": "<p style=\"text-align: center\">Ative uma plataforma com IA, automações e ferramentasque trabalham por você desde o primeiro dia.</p>",
               "color": "#5F6E82",
               "font": "Inter",
               "fontSize": "16px",
@@ -9153,6 +9153,52 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/ScrollableCards.tsx",
+      "cards": [
+        {
+          "title": {
+            "text": "<p><strong><span style=\"color: rgb(0, 48, 55); font-size: 22pt\">“A Loja Integrada tirou o nosso sonho do papel.”</span></strong></p>"
+          },
+          "caption": "<p><span style=\"color: rgb(95, 110, 130); font-size: 18px;\">É uma plataforma que funciona de verdade e se preocupa com cada detalhe — até com a foto do produto. Crescemos muito com eles. Recomendamos de olhos fechados.</span></p>",
+          "image": {
+            "src": "https://assets.decocache.com/lojaintegradar/5e784135-e846-4315-a2a2-538457a74adf/suzi-use-hitzz.png"
+          },
+          "imageCaption": "<p><strong><span style=\"color: rgb(0, 48, 55)\">Suzi</span></strong></p><p><span style=\"color: rgb(95, 110, 130)\">da Use Hitzz</span></p>"
+        },
+        {
+          "title": {
+            "text": "<p><strong><span style=\"color: rgb(0, 48, 55); font-size: 22pt\">\"Recomendo a Loja Integrada por ser uma plataforma robusta\"</span></strong></p>"
+          },
+          "caption": "<p><span style=\"color: rgb(95, 110, 130); font-size: 18px\">Os layouts personalizáveis e recursos completos ajudam o varejo de moda a vender com mais eficiência e acompanhar os resultados de forma clara e prática.</span></p>",
+          "image": {
+            "src": "https://assets.decocache.com/lojaintegradar/2fa235f7-30dc-4432-922e-db86dfe0b6d5/marcel-maretoa.png"
+          },
+          "imageCaption": "<p><strong><span style=\"color: rgb(0, 48, 55)\">Marcel</span></strong></p><p><span style=\"color: rgb(95, 110, 130)\">da Marétoa</span></p>"
+        }
+      ],
+      "title": {
+        "text": "<p><span style=\"color: #003037; font-size:245px; \">Resultados</span></p>",
+        "font": "Lektorat"
+      },
+      "leftText": "<p><span style=\"color: rgb(0, 48, 55)\">Que falam</span></p>",
+      "rightText": "<p><span style=\"color: rgb(0, 48, 55)\">por si</span></p>",
+      "cta": [],
+      "createStoreCta": {
+        "planId": "172",
+        "order": 1,
+        "ctaStyle": "button",
+        "text": "Criar minha loja profissional",
+        "backgroundColor": "#00363A",
+        "borderColor": "#00363A",
+        "textColor": "#ffffff"
+      },
+      "ctaMargintop": "140px",
+      "cardWidth": "400px",
+      "cardsWidth": "390px",
+      "cardsMinHeight": "400px",
+      "id": "Depoimentos"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

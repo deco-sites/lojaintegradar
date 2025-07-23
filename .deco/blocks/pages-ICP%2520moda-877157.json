@@ -939,7 +939,8 @@
         "showIcon": false,
         "textColor": "#ffffff",
         "borderColor": "#00363A",
-        "ctaStyle": "button"
+        "ctaStyle": "button",
+        "planId": "172"
       },
       "cta": [],
       "caption": "<p>Com parceiros estratégicos, leve sua loja além do básico — com visual, conversão e fidelização.</p>"
@@ -5969,7 +5970,17 @@
       "cardWidth": "400px",
       "cardsWidth": "390px",
       "cardsMinHeight": "400px",
-      "id": "Depoimentos"
+      "id": "Depoimentos",
+      "titleTextProps": {
+        "fontFamily": "Lektorat display var",
+        "color": "#003037"
+      },
+      "leftTextProps": {
+        "fontFamily": "Lektorat display var"
+      },
+      "rightTextProps": {
+        "fontFamily": "Lektorat display var"
+      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

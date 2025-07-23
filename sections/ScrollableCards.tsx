@@ -46,6 +46,16 @@ const onLoad = (rootId: string) => {
   };
 }
 
+export interface TextProps {
+  /** @format color-input */
+  color?: string;
+  fontFamily?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
 /** @title {{text}} {{underlineText}} */
 export interface CTA {
   href: string;
@@ -78,7 +88,6 @@ export interface CreateStoreWithPlanCTA {
 
 export interface Title {
   text?: RichText;
-  font?: string;
 }
 
 export interface IImage {
@@ -90,7 +99,9 @@ export interface IImage {
 
 export interface Card {
   title?: Title;
+  titleTextProps?: TextProps;
   caption?: RichText;
+  captionTextProps?: TextProps;
   image?: IImage;
   imageCaption?: RichText;
 }
@@ -99,8 +110,11 @@ export interface Props {
   hideSection?: boolean;
   id?: string;
   title?: Title;
+  titleTextProps?: TextProps;
   leftText?: RichText;
+  leftTextProps?: TextProps
   rightText?: RichText;
+  rightTextProps?: TextProps;
   cards?: Card[];
   cardsMarginTop?: string;
   cardsMinHeight?: string;
@@ -112,7 +126,7 @@ export interface Props {
   paddingBottom?: string;
 }
 
-export default function ScrollableCards({ hideSection, id, title, leftText, rightText, createStoreCta, cta = [], cards = [], ctaMargintop, cardsWidth, cardsMinHeight, cardsMarginTop, paddingBottom, paddingTop }: Props) {
+export default function ScrollableCards({ hideSection, id, title, titleTextProps, leftText, leftTextProps, rightText, rightTextProps, createStoreCta, cta = [], cards = [], ctaMargintop, cardsWidth, cardsMinHeight, cardsMarginTop, paddingBottom, paddingTop }: Props) {
   if (hideSection) return <></>
   const rootId = useId();
   const transitionClass = "transition-transform duration-50 ease-linear";
@@ -122,22 +136,22 @@ export default function ScrollableCards({ hideSection, id, title, leftText, righ
       dangerouslySetInnerHTML={{ __html: useScript(onLoad, rootId) }}
     />
     <div id={id} class="sticky top-0 min-h-[100vh] flex flex-col justify-center items-center pb-[91px] pt-[45px] lg:pt-0 overflow-hidden" style={{ paddingTop, paddingBottom }}>
-      <div class="text-[25vw] lg:text-[345px] -z-40" dangerouslySetInnerHTML={{ __html: title?.text || "" }} style={{ fontFamily: title?.font }} />
+      <div class="text-[25vw] lg:text-[345px] -z-40" dangerouslySetInnerHTML={{ __html: title?.text || "" }} style={{ ...titleTextProps }} />
       <div class="flex justify-center gap-1 mb-4 lg:hidden">
-        <div class="text-[6vw]" dangerouslySetInnerHTML={{ __html: leftText || "" }} style={{ fontFamily: title?.font }} />
-        <div class="text-[6vw]" dangerouslySetInnerHTML={{ __html: rightText || "" }} style={{ fontFamily: title?.font }} />
+        <div class="text-[6vw]" dangerouslySetInnerHTML={{ __html: leftText || "" }} style={{ ...leftTextProps }} />
+        <div class="text-[6vw]" dangerouslySetInnerHTML={{ __html: rightText || "" }} style={{ ...rightTextProps }} />
       </div>
       <div class="flex justify-center">
         <div class="cardsContainer relative min-h-[400px] w-[380px] lg:mt-[-180px]" style={{ marginTop: cardsMarginTop, minHeight: cardsMinHeight, width: cardsWidth }}>
-          <div class="text-[6vw] lg:text-[80px] whitespace-nowrap font-normal absolute right-full mt-[74px] mr-7 hidden lg:block" dangerouslySetInnerHTML={{ __html: leftText || "" }} style={{ fontFamily: title?.font }} />
-          <div class="text-[6vw] lg:text-[80px] whitespace-nowrap font-normal absolute left-full mt-[74px] ml-7 hidden lg:block" dangerouslySetInnerHTML={{ __html: rightText || "" }} style={{ fontFamily: title?.font }} />
+          <div class="text-[6vw] lg:text-[80px] whitespace-nowrap font-normal absolute right-full mt-[74px] mr-7 hidden lg:block" dangerouslySetInnerHTML={{ __html: leftText || "" }} style={{ ...leftTextProps }} />
+          <div class="text-[6vw] lg:text-[80px] whitespace-nowrap font-normal absolute left-full mt-[74px] ml-7 hidden lg:block" dangerouslySetInnerHTML={{ __html: rightText || "" }} style={{ ...rightTextProps }} />
           {cards.map((card, index) => (
             <div class={`scrollCard absolute ${transitionClass}`} style={{ zIndex: -(index) }}>
               <div
                 class={`min-h-[400px] w-[380px] rounded-[34px] shadow-spreaded2 p-10 ${transitionClass}`}
                 style={{ transform: `rotate(-${5 * index}deg)`, background: 'linear-gradient(176deg, rgba(255, 255, 255, 0.92) 3.61%, #FFF 50.32%)', minHeight: cardsMinHeight, width: cardsWidth }}>
-                <div class="" dangerouslySetInnerHTML={{ __html: card.title?.text || "" }} />
-                <div class="mt-3" dangerouslySetInnerHTML={{ __html: card.caption || "" }} />
+                <div class="" dangerouslySetInnerHTML={{ __html: card.title?.text || "" }} style={{...card.titleTextProps}} />
+                <div class="mt-3" dangerouslySetInnerHTML={{ __html: card.caption || "" }} style={{...card.captionTextProps}}/>
                 <div class="flex gap-4 mt-8">
                   {card.image?.src && <Image
                     src={card.image.src}

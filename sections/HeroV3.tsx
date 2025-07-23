@@ -11,7 +11,6 @@ export interface TextProps {
   lineHeight?: string;
 }
 
-
 export interface IImage {
   src?: ImageWidget;
   alt?: string;

@@ -15,17 +15,18 @@ const openTalkToSpecialist = () => {
             script1.setAttribute('type', 'text/javascript');
             script1.setAttribute('src', '//js.hsforms.net/forms/embed/v2.js');
             
+            script1.onload = () => {
             const script2 = document.createElement('script');
             script2.textContent = `
                 hbspt.forms.create({
-                    region: "na1",
-                    portalId: "7112881",
-                    formId: "06d3df52-7c37-4749-aa27-5c7744917d89"
+                region: "na1",
+                portalId: "7112881",
+                formId: "06d3df52-7c37-4749-aa27-5c7744917d89"
                 });
             `;
-            
-            container.appendChild(script1);
             container.appendChild(script2);
+            };
+            container.appendChild(script1);
         }
 };
 

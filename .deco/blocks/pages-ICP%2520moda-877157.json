@@ -6815,7 +6815,18 @@
                   "text": "Ver planos e assinar"
                 }
               ]
-            }
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "href": "#plans",
+                "text": "Ver planos e assinar",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A"
+              }
+            ]
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

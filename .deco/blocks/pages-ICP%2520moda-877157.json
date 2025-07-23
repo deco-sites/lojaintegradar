@@ -6735,8 +6735,93 @@
       "variants": [
         {
           "value": {
+            "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
+            "title": "<p style=\"text-align: center\">Resultados que<br>falam por sí</p>",
+            "titleColor": "#00363A",
+            "titleFont": "Lektorat Display var",
+            "titleFontSize": "32px",
+            "titleFontWeight": "600",
+            "arrowsColor": "#00363A",
+            "paddingBottom": "60px",
+            "slides": [
+              {
+                "content": {
+                  "description": "<p>“A Loja Integrada tirou o nosso sonho do papel. É uma plataforma que funciona de verdade e se preocupa com cada detalhe — até com a foto do produto. Crescemos muito com eles. Recomendamos de olhos fechados.\"</p>",
+                  "descriptionTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "100%"
+                  },
+                  "avatar": "https://assets.decocache.com/lojaintegradar/5e784135-e846-4315-a2a2-538457a74adf/suzi-use-hitzz.png",
+                  "avatarWidth": 40,
+                  "avatarHeight": 40,
+                  "name": "<p>Suzi</p>",
+                  "nameTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "100%"
+                  },
+                  "nameCaption": "<p>da Use Hitzz</p>",
+                  "nameCaptionTextProps": {
+                    "color": "#5F6E82",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500"
+                  }
+                }
+              },
+              {
+                "content": {
+                  "description": "<p>“Recomendo a Loja Integrada por ser uma plataforma robusta com gestão descomplicada. Os layouts personalizáveis e recursos completos ajudam o varejo de moda a vender com mais eficiência e acompanhar os resultados de forma clara e prática.”</p>",
+                  "descriptionTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "100%"
+                  },
+                  "avatar": "https://assets.decocache.com/lojaintegradar/2fa235f7-30dc-4432-922e-db86dfe0b6d5/marcel-maretoa.png",
+                  "avatarWidth": 40,
+                  "avatarHeight": 40,
+                  "name": "<p>Marcel</p>",
+                  "nameTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "100%"
+                  },
+                  "nameCaption": "<p>da Marétoa</p>",
+                  "nameCaptionTextProps": {
+                    "color": "#5F6E82",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500"
+                  }
+                }
+              }
+            ],
+            "arrows": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
             "__resolveType": "site/sections/Faq.tsx",
             "title": "<p style=\"color: #00363A; font-size: 30px; line-height: 100%; font-weight: 600; \">Perguntas frequentes sobre sua Loja de Moda Online.</p>",
+            "titleFont": "Lektorat Display var",
             "cta": [
               {
                 "ctaStyle": "button",
@@ -6836,7 +6921,6 @@
             "bottomTitleColor": "",
             "bottomCaptionColor": "",
             "backgroundColor": "#E4F3F3",
-            "titleFont": "Lektorat Display var",
             "hideSection": false
           },
           "rule": {

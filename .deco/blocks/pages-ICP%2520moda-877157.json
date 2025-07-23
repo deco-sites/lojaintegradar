@@ -348,7 +348,7 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p>Da vitrine ao checkout, sua loja de moda mais inteligente e<span style=\"color: rgb(40, 195, 195)\"> pronta pra vender.</span></p>",
+              "text": "<p style=\"text-align: center\">Da vitrine ao checkout, sua loja de moda mais inteligente e<span style=\"color: rgb(40, 195, 195)\"> pronta pra vender.</span></p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
               "fontSize": "30px",
@@ -360,14 +360,23 @@
                 "type": "Button",
                 "size": "Large",
                 "openModal": "Create Store",
-                "text": "Criar minha loja profissional",
+                "text": "Criar minha loja agora",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
                 "createStorePlanId": "172"
+              },
+              {
+                "type": "Button",
+                "size": "Large",
+                "textColor": "#00363A",
+                "backgroundColor": "",
+                "borderColor": "#00363A",
+                "text": "Ver planos disponíveis",
+                "href": "#plans"
               }
             ],
-            "ctaPlacement": "left",
+            "ctaPlacement": "center",
             "media": {
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/2ebd61bd-f983-4c92-bb85-1209a333c74b/ecommerce-de-moda-lojaintegrada.png",
@@ -377,7 +386,7 @@
               "use": "image",
               "placement": "right"
             },
-            "text": "<p><span style=\"color: rgb(95, 110, 130)\">Com IA, automações e ferramentas que fazem seu negócio crescer sem burocracia.</span></p>",
+            "text": "<p style=\"text-align: center\"><span style=\"color: rgb(95, 110, 130)\">Com IA, automações e ferramentas que fazem seu negócio crescer sem burocracia.</span></p>",
             "container": {
               "marginTop": "0",
               "paddingBottom": "0",
@@ -420,11 +429,19 @@
                 "type": "Button",
                 "size": "Large",
                 "openModal": "Create Store",
-                "text": "Criar minha loja profissional",
+                "text": "Criar minha loja agora",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
                 "createStorePlanId": "172"
+              },
+              {
+                "type": "Button",
+                "size": "Large",
+                "text": "Ver planos disponíveis",
+                "textColor": "#00363A",
+                "borderColor": "#00363A",
+                "href": "#plans"
               }
             ],
             "ctaPlacement": "left",
@@ -702,12 +719,11 @@
               {
                 "type": "Button",
                 "size": "Large",
-                "openModal": "Create Store",
-                "text": "Criar minha loja profissional",
+                "text": "Ver planos e assinar",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
-                "createStorePlanId": "172"
+                "href": "#plans"
               }
             ],
             "ctaPlacement": "left",

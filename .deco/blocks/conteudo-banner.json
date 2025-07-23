@@ -1,0 +1,163 @@
+{
+  "__resolveType": "website/flags/multivariate/section.ts",
+  "variants": [
+    {
+      "value": {
+        "__resolveType": "site/sections/Hero.tsx",
+        "title": "Aumente a aprovação das suas vendas",
+        "caption": "Taxas competitivas em relação ao mercado,maiores taxas de aprovação",
+        "bigNumbers": [
+          {
+            "text": "+ R$ 1,8 bilhão",
+            "caption": "transacionados",
+            "textColor": "#371E55",
+            "captionColor": "#5F6E82"
+          },
+          {
+            "text": "+ 12 mil lojistas",
+            "caption": "ativos no Pagali",
+            "captionColor": "#5F6E82",
+            "textColor": "#371E55"
+          },
+          {
+            "text": "+ 8,6 milhões ",
+            "caption": "de transações pagas",
+            "textColor": "#371E55",
+            "captionColor": "#5F6E82"
+          }
+        ],
+        "cta": [
+          {
+            "href": "#plans",
+            "text": "Ver planos",
+            "backgroundColor": "#371E55",
+            "textColor": "#ffffff",
+            "borderColor": "#371E55",
+            "ctaStyle": "button"
+          },
+          {
+            "ctaStyle": "link",
+            "underlineText": "Falar com especialista",
+            "textColor": "#371E55",
+            "href": "/talkToSpecialist",
+            "showIcon": true
+          }
+        ],
+        "links": [
+          {
+            "textBefore": "Já tem uma loja? ",
+            "text": "Ative agora",
+            "href": "#"
+          }
+        ],
+        "image": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/06f5310e-1057-487a-8425-a02c83d3825c/hero-3-image-mobile.svg"
+        },
+        "backgroundImage": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
+        },
+        "titleColor": "#371E55",
+        "captionColor": "#371E55",
+        "textBelowColor": "#5F6E82",
+        "description": "Venda mais com o Pagali, nosso meio de pagamento próprio. Reduza taxas, melhore sua taxa de aceitação e aprovação, e gerencie tudo no painel da sua loja de forma integrada.",
+        "placement": "right",
+        "bulletpoints": {
+          "bulletPointsIcon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+          },
+          "items": [
+            "Gestão financeira unificada",
+            "Sem tarifa adicional sobre transações feitas via Pagali;",
+            "Fácil de configurar"
+          ],
+          "itemsTextColor": "#5F6E82"
+        },
+        "descriptionColor": "#5F6E82",
+        "id": "pagali"
+      },
+      "rule": {
+        "__resolveType": "website/matchers/device.ts",
+        "mobile": true
+      }
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/Hero.tsx",
+        "title": "Aumente a aprovação das suas vendas",
+        "bigNumbers": [
+          {
+            "text": "+ R$ 1,8 bilhão",
+            "caption": "transacionados",
+            "textColor": "#371E55",
+            "captionColor": "#5F6E82"
+          },
+          {
+            "text": "+ 12 mil lojistas",
+            "caption": "ativos no Pagali",
+            "textColor": "#371E55",
+            "captionColor": "#5F6E82"
+          },
+          {
+            "text": "+ 8,6 milhões ",
+            "caption": "de transações pagas",
+            "textColor": "#371E55",
+            "captionColor": "#5F6E82"
+          }
+        ],
+        "ctaTitle": "Disponível em todos os planos",
+        "cta": [
+          {
+            "href": "#plans",
+            "text": "Ver planos",
+            "backgroundColor": "#371E55",
+            "borderColor": "#371E55",
+            "textColor": "#ffffff",
+            "ctaStyle": "button"
+          },
+          {
+            "ctaStyle": "link",
+            "underlineText": " Falar com especialista",
+            "textColor": "#371E55",
+            "showIcon": true,
+            "href": "/talkToSpecialist"
+          }
+        ],
+        "links": [
+          {
+            "textBefore": "Já tem uma loja? ",
+            "text": "Ative agora",
+            "href": "#"
+          }
+        ],
+        "image": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/a7020552-9bea-4573-a1c1-53f7a681e735/hero-3-image.svg"
+        },
+        "backgroundImage": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e96066ee-e1c9-4516-b5f7-60c3f8ec6391/Ellipse-62-(1).png"
+        },
+        "titleColor": "#371E55",
+        "captionColor": "#371E55",
+        "textBelowColor": "#5F6E82",
+        "description": "Venda mais com o Pagali, nosso meio de pagamento próprio. Reduza taxas, melhore sua taxa de aceitação e aprovação, e gerencie tudo no painel da sua loja de forma integrada.",
+        "placement": "right",
+        "bulletpoints": {
+          "bulletPointsIcon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+          },
+          "items": [
+            "Gestão financeira unificada ",
+            "Sem tarifa adicional sobre transações feitas via Pagali;",
+            "Fácil de configurar"
+          ],
+          "itemsTextColor": "#5F6E82"
+        },
+        "id": "pagali",
+        "descriptionColor": "#5F6E82",
+        "use": "image"
+      },
+      "rule": {
+        "__resolveType": "website/matchers/always.ts"
+      }
+    }
+  ]
+}

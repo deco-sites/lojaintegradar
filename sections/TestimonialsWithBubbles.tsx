@@ -5,6 +5,7 @@ import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { HeroMedia } from "site/sections/HeroV2.tsx";
+import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 
 const openModal = (modalId: string) => {
   event!.preventDefault();
@@ -236,6 +237,7 @@ export interface Props {
   arrows?: boolean;
   /** @format color-input */
   arrowsColor?: string;
+  cta?: CTAProps[];
   backgroundMedia?: BackgroundMedia;
   bubbleImages?: BubbleImage[];
   modal?: Modal;
@@ -367,10 +369,10 @@ function TestimonialsWithBubbles(props: Props) {
     const id = useId();
     const modalId = id + "modal";
     const hubspostFormId = id + "hubspotForm";
-    const { title, titleColor, slides, titleFont, caption, captionColor, captionFont, hubspotForm, bubbleImages = [], captionFontSize, captionFontWeight, captionLetterSpacing, captionLineHeight, backgroundMedia, modal, paddingBottom, paddingTop, titleLineHeight, titleFontSize, titleFontWeight, titleLetterSpacing } = { ...DEFAULT_PROPS, ...props };
+    const { title, titleColor, slides, titleFont, caption, cta = [], captionColor, captionFont, hubspotForm, bubbleImages = [], captionFontSize, captionFontWeight, captionLetterSpacing, captionLineHeight, backgroundMedia, modal, paddingBottom, paddingTop, titleLineHeight, titleFontSize, titleFontWeight, titleLetterSpacing } = { ...DEFAULT_PROPS, ...props };
     return (<div class="relative overflow-hidden" >
       <div id={id} class="min-h-min flex flex-col lg:container md:max-w-[1332px] lg:mx-auto pt-7 lg:pt-14" 
-        style={{paddingTop}}
+        style={{paddingTop, paddingBottom}}
         hx-on:click={useScript(refreshArrowsVisibility)} 
         hx-on:touchend={useScript(refreshArrowsVisibility)}>
         <script
@@ -408,7 +410,7 @@ function TestimonialsWithBubbles(props: Props) {
                         }}/>                                  
                     </label>}
 
-        <Slider class="carousel relative carousel-center w-full col-span-full row-span-full gap-8 mx-auto px-5 md:px-9 max-w-[1105px] py-9 md:py-20" rootId={id} interval={0 && 0 * 1e3} infinite style={{paddingBottom}}>
+        <Slider class="carousel relative carousel-center w-full col-span-full row-span-full gap-8 mx-auto px-5 md:px-9 max-w-[1105px] py-9 md:py-20" rootId={id} interval={0 && 0 * 1e3} infinite >
           {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item max-w-[510px] w-full">
             <SliderItem slide={slide} id={`${id}::${index}`}/>
           </Slider.Item>))}
@@ -418,6 +420,13 @@ function TestimonialsWithBubbles(props: Props) {
           {/* {props.dots && <Dots slides={slides} interval={interval}/>}{" "} */}
           {props.arrows && <Buttons arrowsColor={props.arrowsColor}/>}
         </div>
+
+        {cta.length > 0 && <div class={`flex flex-wrap gap-4 mt-auto pt-6 justify-center`}>
+          {cta.map(cta => (
+            <CTA {...cta} />
+          ))}
+        </div>}
+
         {bubbleImages.map((image) => (
           <Image 
             src={image.src || ""}

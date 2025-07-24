@@ -25,6 +25,11 @@ export default {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
         },
+        "pop-in": {
+          "0%": { transform: "scale(50%)"},
+          "60%": { transform: "scale(130%)" },
+          "100%": { transform: "scale(100%)" },
+        },
         "pop-up": {
           "0%": { transform: "scale(50%)", opacity: 0 },
           "100%": { transform: "scale(100%)", opacity: 1 },
@@ -80,6 +85,7 @@ export default {
         sliding: "sliding 30s linear infinite",
         slidingFast: "slidingFast 20s linear infinite",
         "fade-in": "fade-in 2s ease-in-out",
+        "pop-in": "pop-in 0.3s ease-in-out",
         "pop-up": "pop-up 1s ease-in-out",
         "fade-up": "fade-up 1s ease-in-out",
         "fade-down": "fade-down 1s ease-in-out",

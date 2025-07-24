@@ -1,6 +1,6 @@
 {
   "name": "ICP moda",
-  "path": "/icp-moda",
+  "path": "/plataforma-ecommerce-moda",
   "sections": [
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -285,7 +285,7 @@
                   }
                 ]
               },
-              "href": "/home",
+              "href": "/home ",
               "alt": "logo ",
               "width": 200
             },
@@ -489,7 +489,7 @@
         {
           "value": {
             "__resolveType": "site/sections/Logos.tsx",
-            "title": "<p>Moda é o nosso maior segmento<br><strong><span style=\"color: rgb(40, 195, 195)\">+ de 30 mil lojas criadas</span></strong></p>",
+            "title": "<p>Moda é o nosso maior segmento:<br><strong><span style=\"color: rgb(40, 195, 195)\">+ de 30 mil lojas criadas</span></strong></p>",
             "captionTextProps": {
               "color": ""
             },
@@ -553,7 +553,7 @@
         {
           "value": {
             "__resolveType": "site/sections/Logos.tsx",
-            "title": "<p>Moda é o nosso maior segmento <strong><span style=\"color: rgb(40, 195, 195)\">+ de 30 mil lojas criadas</span></strong></p>",
+            "title": "<p>Moda é o nosso maior segmento: <strong><span style=\"color: rgb(40, 195, 195)\">+ de 30 mil lojas criadas</span></strong></p>",
             "captionTextProps": {
               "color": ""
             },
@@ -561,6 +561,31 @@
             "titleColor": "#371E55",
             "captionColor": "#5F6E82",
             "logos": [
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/d8f400b1-885a-49dd-96e9-d3e0d9061844/c22242ddc1-agm7gun9cz-1.png",
+                "altText": "use hitzz"
+              },
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/63b39151-0828-4971-b809-e21655cd88e1/logo-maretoa.png",
+                "altText": "logo maretoa",
+                "width": 141,
+                "height": 42
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
+                "altText": "PodPah logo",
+                "width": 157,
+                "height": 72
+              },
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/3a005aa8-3610-4361-b35c-7edc40179b9f/dr-charme.png",
+                "altText": "dra charm",
+                "height": 52
+              },
+              {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
+                "altText": "Rock in Rio Logo"
+              },
               {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/86b5ac4e-c69d-42ae-9423-7d4f66b26e58/image-1.png",
                 "altText": "Forbes logo"
@@ -572,16 +597,6 @@
                 "height": 34
               },
               {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/e8fa465a-2113-497e-a5e9-c3c6f8bed643/image-3.png",
-                "altText": "Rock in Rio Logo"
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/0270daa3-6cdc-45be-af2a-614b02555cbb/image-4.png",
-                "altText": "PodPah logo",
-                "width": 157,
-                "height": 72
-              },
-              {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/6e2076d7-bb3a-41b6-a4c4-57857024d155/image-5.png",
                 "altText": "Soldiers logo",
                 "width": 157,
@@ -590,12 +605,6 @@
               {
                 "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/ce9551c3-a6fc-4238-9686-284db5680356/image-6.png",
                 "altText": "Gorila Shield logo",
-                "width": 157,
-                "height": 72
-              },
-              {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/loja-integrada/d393d421-8842-4d10-9a75-5357364c5ff6/image-7-(2).png",
-                "altText": "+Mu logo",
                 "width": 157,
                 "height": 72
               }
@@ -622,7 +631,7 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p><span style=\"color: rgb(40, 195, 195)\">Personalize do seu jeito </span>sem saber programar.</p>",
+              "text": "<p><span style=\"color: rgb(40, 195, 195)\">Personalize do seu jeito, </span>sem saber programar.</p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
               "fontSize": "30px",
@@ -633,12 +642,10 @@
               {
                 "type": "Button",
                 "size": "Large",
-                "openModal": "Create Store",
                 "text": "Ver planos e assinar",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
-                "createStorePlanId": "172",
                 "href": "#plans"
               }
             ],
@@ -677,19 +684,19 @@
             "bulletPoints": {
               "items": [
                 {
-                  "text": "Escolha entre +2.000 temas prontos. "
+                  "text": "Escolha entre +2.000 temas prontos;"
                 },
                 {
-                  "text": "Edite tudo com menus visuais: cores, banners, vitrines e mais"
+                  "text": "Edite tudo com menus visuais: cores, banners, vitrines e mais;"
                 },
                 {
-                  "text": "Crie promoções: brindes, combos e cupons personalizados."
+                  "text": "Crie promoções: brindes, combos e cupons personalizados;"
                 },
                 {
-                  "text": "Adicione provador virtual, Stories em página de produtos"
+                  "text": "Adicione provador virtual, Stories em página de produtos;"
                 },
                 {
-                  "text": "Sua loja leve, rápida e linda no celular — onde seusclientes compram."
+                  "text": "Sua loja leve, rápida e linda no celular — onde seus clientes compram."
                 }
               ],
               "bulletPointsIcon": {
@@ -707,7 +714,7 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p><span style=\"color: rgb(40, 195, 195)\">Personalize do seu jeito</span><br>sem saber programar.</p>",
+              "text": "<p><span style=\"color: rgb(40, 195, 195)\">Personalize do seu jeito,</span><br>sem saber programar.</p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
               "fontSize": "46px",
@@ -762,19 +769,19 @@
             "bulletPoints": {
               "items": [
                 {
-                  "text": "Escolha entre +2.000 temas prontos. "
+                  "text": "Escolha entre +2.000 temas prontos;"
                 },
                 {
-                  "text": "Edite tudo com menus visuais: cores, banners, vitrines e mais"
+                  "text": "Edite tudo com menus visuais: cores, banners, vitrines e mais;"
                 },
                 {
-                  "text": "Crie promoções: brindes, combos e cupons personalizados."
+                  "text": "Crie promoções: brindes, combos e cupons personalizados;"
                 },
                 {
-                  "text": "Adicione provador virtual, Stories em página de produtos"
+                  "text": "Adicione provador virtual, Stories em página de produtos;"
                 },
                 {
-                  "text": "Sua loja leve, rápida e linda no celular — onde seusclientes compram."
+                  "text": "Sua loja leve, rápida e linda no celular — onde seus clientes compram."
                 }
               ],
               "bulletPointsIcon": {
@@ -795,7 +802,17 @@
         {
           "value": {
             "__resolveType": "site/sections/Carousel.tsx",
-            "title": "<p>Ganhe tempo e dinheiro com<br><span style=\"color: rgb(40, 195, 195)\">ferramentas inteligentes.</span></p>",
+            "title": "<p>Ganhe tempo e dinheiro com <span style=\"color: rgb(40, 195, 195)\">ferramentas inteligentes.</span></p>",
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos e assinar",
+                "backgroundColor": "#E4F3F3",
+                "borderColor": "#E4F3F3",
+                "textColor": "#00363A",
+                "ctaStyle": "button"
+              }
+            ],
             "slides": [
               {
                 "textPlacement": "Bottom",
@@ -862,8 +879,8 @@
                   "items": [],
                   "bulletPointsIcon": {}
                 },
-                "title": "Ative avaliações reais que ajudama fechar a venda",
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que suas clientes pensam com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
+                "title": "Ative avaliações reais que ajudam a fechar a venda",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que seus clientes pensam com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
                 "backgroundImage": {
                   "src": "https://assets.decocache.com/lojaintegradar/a8c85411-9c99-4964-97e3-d6a4e598844b/avaliacao-de-produto.png",
                   "height": 484,
@@ -1026,17 +1043,7 @@
               "borderColor": "#E4F3F3",
               "ctaStyle": "button"
             },
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "href": "#plans",
-                "text": "Ver planos e assinar",
-                "backgroundColor": "#E4F3F3",
-                "borderColor": "#E4F3F3",
-                "textColor": "#00363A"
-              }
-            ],
-            "caption": "<p>Assine um plano e ative as ferramentas que vão te fazer vender em até 4 dias.</p>",
+            "caption": "<p>Assine um plano e ative os recursos que vão<br>te fazer vender em até 4 dias.</p>",
             "titlePaddingBottom": "10px",
             "slidesHeight": "588"
           },
@@ -1049,6 +1056,16 @@
           "value": {
             "__resolveType": "site/sections/Carousel.tsx",
             "title": "<p>Ganhe tempo e dinheiro com<br><span style=\"color: rgb(40, 195, 195)\">ferramentas inteligentes.</span></p>",
+            "cta": [
+              {
+                "textColor": "#00363A",
+                "backgroundColor": "#E4F3F3",
+                "borderColor": "#E4F3F3",
+                "text": "Ver planos e assinar",
+                "href": "#plans",
+                "ctaStyle": "button"
+              }
+            ],
             "slides": [
               {
                 "textPlacement": "Bottom",
@@ -1057,7 +1074,7 @@
                   "items": [],
                   "bulletPointsIcon": {}
                 },
-                "title": "Recupere vendas em todasas etapas",
+                "title": "Recupere vendas em todas as etapas",
                 "caption": "<p><span style=\"color: #5f6e82\">Envie mensagens no WhatsApp e e-mails automáticos para quem abandonou o carrinho, saiu da página de produto ou não finalizou o pagamento — e recupere até 18% das vendas perdidas.</span></p>",
                 "backgroundImage": {
                   "src": "https://assets.decocache.com/lojaintegradar/95ee88e3-bc0c-4c88-bf5b-b244d42627f9/Recupere-vendas.png",
@@ -1115,8 +1132,8 @@
                   "items": [],
                   "bulletPointsIcon": {}
                 },
-                "title": "Ative avaliações reais que ajudama fechar a venda",
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que suas clientes pensam com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
+                "title": "Ative avaliações reais que ajudam a fechar a venda",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que seus clientes pensam com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
                 "backgroundImage": {
                   "src": "https://assets.decocache.com/lojaintegradar/a8c85411-9c99-4964-97e3-d6a4e598844b/avaliacao-de-produto.png",
                   "height": 484,
@@ -1278,17 +1295,7 @@
               "borderColor": "#E4F3F3",
               "ctaStyle": "button"
             },
-            "cta": [
-              {
-                "ctaStyle": "button",
-                "textColor": "#00363A",
-                "backgroundColor": "#E4F3F3",
-                "borderColor": "#E4F3F3",
-                "text": "Ver planos e assinar",
-                "href": "#plans"
-              }
-            ],
-            "caption": "<p>Assine um plano e ative as ferramentas que vão te fazer vender em até 4 dias.</p>",
+            "caption": "<p>Assine um plano e ative os recursos que vão te fazer vender em até 4 dias.</p>",
             "titlePaddingBottom": "10px"
           },
           "rule": {
@@ -1344,7 +1351,7 @@
                 "title": "Stories em páginas de produto",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Transforme sua loja em uma extensão do seu Instagram — com conteúdo visual e envolvente.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/5b918dd6-83f2-4902-8707-346fbe9b5815/stories-pagina-produto.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/81955289-25d7-463a-b38f-c7c7d6911fcf/stories-pagina-produto-mobile.png",
                   "height": 484,
                   "width": 456
                 },
@@ -1371,7 +1378,7 @@
                   "bulletPointsIcon": {}
                 },
                 "title": "Cashback e indicações",
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa.Mais recompra, mais visibilidade.</span></p>",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa. Mais recompra, mais visibilidade.</span></p>",
                 "backgroundImage": {
                   "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
                   "height": 484,
@@ -1399,7 +1406,7 @@
                   "items": [],
                   "bulletPointsIcon": {}
                 },
-                "title": "Monitore vendas de cada influenciadorcom precisão",
+                "title": "Monitore vendas de cada influenciador ",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Acompanhe vendas e comissões em tempo real e escalesuas campanhas com segurança.</span></p>",
                 "backgroundImage": {
                   "src": "https://assets.decocache.com/lojaintegradar/7f1994c5-fd4d-4001-b375-e721f924f43d/afiliados.png",
@@ -1428,10 +1435,10 @@
                   "items": [],
                   "bulletPointsIcon": {}
                 },
-                "title": "Gerencie trocas e devoluçõescom inteligência",
+                "title": "Trocas e devoluções com inteligência",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Trocas e devoluções sem fricção: seu cliente faz tudo sozinho, você economiza tempo, reduz atrito e ainda ume nta a recompra.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/3ed5e9ab-89d3-4ace-a73f-c63885d35f8d/trocas-e-devolucoes.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/4f383594-c5c8-4688-acd4-dacf926166ae/trocas-e-devolucoes-mobile.png",
                   "height": 484,
                   "width": 456
                 },
@@ -1565,7 +1572,7 @@
                   "bulletPointsIcon": {}
                 },
                 "title": "Cashback e indicações",
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa.Mais recompra, mais visibilidade.</span></p>",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa. Mais recompra, mais visibilidade.</span></p>",
                 "backgroundImage": {
                   "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
                   "height": 484,
@@ -1593,7 +1600,7 @@
                   "items": [],
                   "bulletPointsIcon": {}
                 },
-                "title": "Monitore vendas de cada influenciadorcom precisão",
+                "title": "Monitore vendas de cada influenciador com precisão",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Acompanhe vendas e comissões em tempo real e escalesuas campanhas com segurança.</span></p>",
                 "backgroundImage": {
                   "src": "https://assets.decocache.com/lojaintegradar/7f1994c5-fd4d-4001-b375-e721f924f43d/afiliados.png",
@@ -1622,7 +1629,7 @@
                   "items": [],
                   "bulletPointsIcon": {}
                 },
-                "title": "Gerencie trocas e devoluçõescom inteligência",
+                "title": "Gerencie trocas e devoluções com inteligência",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Trocas e devoluções sem fricção: seu cliente faz tudo sozinho, você economiza tempo, reduz atrito e ainda ume nta a recompra.</span></p>",
                 "backgroundImage": {
                   "src": "https://assets.decocache.com/lojaintegradar/3ed5e9ab-89d3-4ace-a73f-c63885d35f8d/trocas-e-devolucoes.png",
@@ -1924,11 +1931,6 @@
               "fontSize": "30px",
               "lineHeight": "100%"
             },
-            "backgroundImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/83c316b8-0ab7-41d0-aab4-ccc9c18cecc9/line-background.png",
-              "verticalPosition": "115px"
-            },
-            "id": "plans",
             "paddingTop": "60px",
             "caption": {
               "0": "+",
@@ -1983,7 +1985,7 @@
               "49": "a",
               "50": "d",
               "51": "a",
-              "text": "<p style=\"text-align: center\">Ative uma plataforma com IA, automações e ferramentas<br>que trabalham por você desde o primeiro dia.</p>",
+              "text": "<p style=\"text-align: center\">Ative uma plataforma com IA, automações e<br>ferramentas que trabalham por você<br>desde o primeiro dia.</p>",
               "color": "#5F6E82",
               "font": "Inter",
               "fontSize": "14px",
@@ -2041,6 +2043,15 @@
                   "tooltipTextColor": "#5F6E82",
                   "tooltipBackgroundColor": "#EAE7ED",
                   "tooltipIconColor": "#7F7E77"
+                },
+                "title": {
+                  "text": "<p>Crescimento</p>",
+                  "color": "#FFFFFF",
+                  "font": "Lektorat Display var",
+                  "fontSize": "42px",
+                  "letterSpacing": "-0.3px",
+                  "lineHeight": "100%",
+                  "fontWeight": "600"
                 },
                 "titleColor": "#371E55",
                 "tag": {
@@ -2397,7 +2408,7 @@
                   "338": "/",
                   "339": "p",
                   "340": ">",
-                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Recomendado para quem quer começar vendendo ou já fatura até R$ 15/mês.</span><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$54</span><span style=\"color: rgb(255, 255, 255)\"> por mês</span></p>",
+                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Recomendado para quem quer começar vendendo ou já fatura até R$ 15 mil/mês.</span><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$54</span><span style=\"color: rgb(255, 255, 255)\"> por mês</span></p>",
                   "color": "#FFFFFF"
                 },
                 "chooseCta": {
@@ -2669,7 +2680,7 @@
                   "258": "/",
                   "259": "p",
                   "260": ">",
-                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Recomendado para quem quer começar vendendo ou já fatura até R$ 15/mês.</span><br><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">em até 12x de</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$43</span><span style=\"color: rgb(255, 255, 255)\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">por mês</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
+                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Recomendado para quem quer começar vendendo ou já fatura até R$15 mil/mês.</span><br><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">em até 12x de</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$43</span><span style=\"color: rgb(255, 255, 255)\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">por mês</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
                   "color": "#FFFFFF"
                 },
                 "annualSaving": {
@@ -2693,15 +2704,6 @@
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
-                "title": {
-                  "text": "<p>Crescimento</p>",
-                  "color": "#FFFFFF",
-                  "font": "Lektorat Display var",
-                  "fontSize": "42px",
-                  "letterSpacing": "-0.3px",
-                  "lineHeight": "100%",
-                  "fontWeight": "600"
-                },
                 "borderColor": "#00363A"
               },
               {
@@ -2741,6 +2743,15 @@
                   "tooltipTextColor": "#5F6E82",
                   "tooltipBackgroundColor": "#EAE7ED",
                   "tooltipIconColor": "#7F7E77"
+                },
+                "title": {
+                  "text": "<p>Expansão</p>",
+                  "color": "#00363A",
+                  "font": "Lektorat Display var",
+                  "fontWeight": "600",
+                  "letterSpacing": "-0.3px",
+                  "fontSize": "42px",
+                  "lineHeight": "100%"
                 },
                 "titleColor": "#371E55",
                 "chooseCta": {
@@ -3390,15 +3401,6 @@
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
-                "title": {
-                  "text": "<p>Expansão</p>",
-                  "color": "#00363A",
-                  "font": "Lektorat Display var",
-                  "fontWeight": "600",
-                  "letterSpacing": "-0.3px",
-                  "fontSize": "42px",
-                  "lineHeight": "100%"
-                },
                 "borderColor": "#F2F4F5"
               },
               {
@@ -3429,6 +3431,15 @@
                   "tooltipTextColor": "#5F6E82",
                   "tooltipBackgroundColor": "#EAE7ED",
                   "tooltipIconColor": "#7F7E77"
+                },
+                "title": {
+                  "text": "<p>Grátis</p>",
+                  "color": "#00363A",
+                  "font": "Lektorat Display var",
+                  "fontWeight": "600",
+                  "letterSpacing": "-0.3px",
+                  "fontSize": "42px",
+                  "lineHeight": "100%"
                 },
                 "titleColor": "#371E55",
                 "chooseCta": {
@@ -4078,18 +4089,19 @@
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
-                "title": {
-                  "text": "<p>Grátis</p>",
-                  "color": "#00363A",
-                  "font": "Lektorat Display var",
-                  "fontWeight": "600",
-                  "letterSpacing": "-0.3px",
-                  "fontSize": "42px",
-                  "lineHeight": "100%"
-                },
                 "borderColor": "#F2F4F5"
               }
             ],
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "arrowsColor": "#00363A",
+            "arrows": true,
+            "paddingBottom": "60px",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/83c316b8-0ab7-41d0-aab4-ccc9c18cecc9/line-background.png",
+              "verticalPosition": "115px"
+            },
+            "id": "plans",
             "annualLabel": "Anual",
             "montlyLabel": "Mensal",
             "dots": false,
@@ -4099,8 +4111,6 @@
               "text": "Começar no grátis",
               "href": "#"
             },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
             "labelColor": "#00363A",
             "disabledLabelColor": "#5F6E82",
             "annualTagColor": "#FFE6A0",
@@ -4126,15 +4136,12 @@
               "ctaStyle": "button",
               "showIcon": false
             },
-            "arrowsColor": "#00363A",
             "annualTagTextColor": "#7A2D0D",
             "annualTag": "- 2O% OFF",
-            "arrows": true,
             "annualTagPosition": "aside",
             "switchBackgroundColor": "#DFE4E6",
             "switchBallColor": "#00363A",
             "hideSection": false,
-            "paddingBottom": "60px",
             "bottomCta": [],
             "hideSwitch": false
           },
@@ -4375,7 +4382,6 @@
               "fontSize": "46px",
               "lineHeight": "100%"
             },
-            "id": "plans",
             "caption": {
               "0": "+",
               "1": "2",
@@ -4429,7 +4435,7 @@
               "49": "a",
               "50": "d",
               "51": "a",
-              "text": "<p style=\"text-align: center\">Ative uma plataforma com IA, automações e ferramentasque trabalham por você desde o primeiro dia.</p>",
+              "text": "<p style=\"text-align: center\">Ative uma plataforma com IA, automações e ferramentas que trabalham por você desde o primeiro dia.</p>",
               "color": "#5F6E82",
               "font": "Inter",
               "fontSize": "16px",
@@ -4465,6 +4471,15 @@
                   "tooltipTextColor": "#5F6E82",
                   "tooltipBackgroundColor": "#EAE7ED",
                   "tooltipIconColor": "#7F7E77"
+                },
+                "title": {
+                  "text": "<p>Grátis</p>",
+                  "color": "#00363A",
+                  "font": "Lektorat Display var",
+                  "fontWeight": "750",
+                  "fontSize": "42px",
+                  "letterSpacing": "-0.3px",
+                  "lineHeight": "100%"
                 },
                 "titleColor": "#371E55",
                 "tag": {
@@ -5114,15 +5129,6 @@
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
-                "title": {
-                  "text": "<p>Grátis</p>",
-                  "color": "#00363A",
-                  "font": "Lektorat Display var",
-                  "fontWeight": "750",
-                  "fontSize": "42px",
-                  "letterSpacing": "-0.3px",
-                  "lineHeight": "100%"
-                },
                 "borderColor": "#F2F4F5"
               },
               {
@@ -5175,6 +5181,15 @@
                   "tooltipTextColor": "#5F6E82",
                   "tooltipBackgroundColor": "#EAE7ED",
                   "tooltipIconColor": "#7F7E77"
+                },
+                "title": {
+                  "text": "<p>Crescimento</p>",
+                  "color": "#FFFFFF",
+                  "font": "Lektorat Display var",
+                  "fontWeight": "750",
+                  "fontSize": "42px",
+                  "letterSpacing": "-0.3px",
+                  "lineHeight": "100%"
                 },
                 "titleColor": "#371E55",
                 "chooseCta": {
@@ -5538,7 +5553,7 @@
                   "338": "/",
                   "339": "p",
                   "340": ">",
-                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Recomendado para quem quer começar vendendo ou já fatura até R$ 15/mês.</span><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$54</span><span style=\"color: rgb(255, 255, 255)\"> por mês</span></p>",
+                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Recomendado para quem quer começar vendendo ou já fatura até R$ 15 mil/mês.</span><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$54</span><span style=\"color: rgb(255, 255, 255)\"> por mês</span></p>",
                   "color": "#FFFFFF"
                 },
                 "annualMontlyFee": {
@@ -5803,7 +5818,7 @@
                   "258": "/",
                   "259": "p",
                   "260": ">",
-                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Recomendado para quem quer começar vendendo ou já fatura até R$ 15/mês.</span><br><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">em até 12x de</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$43</span><span style=\"color: rgb(255, 255, 255)\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">por mês</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
+                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Recomendado para quem quer começar vendendo ou já fatura até R$ 15 mil/mês.</span><br><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">em até 12x de</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$43</span><span style=\"color: rgb(255, 255, 255)\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">por mês</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Economia de R$ 240 ao ano</span></p>",
                   "color": "#FFFFFF"
                 },
                 "annualSaving": {
@@ -5827,15 +5842,6 @@
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
-                "title": {
-                  "text": "<p>Crescimento</p>",
-                  "color": "#FFFFFF",
-                  "font": "Lektorat Display var",
-                  "fontWeight": "750",
-                  "fontSize": "42px",
-                  "letterSpacing": "-0.3px",
-                  "lineHeight": "100%"
-                },
                 "borderColor": "#00363A"
               },
               {
@@ -5875,6 +5881,15 @@
                   "tooltipTextColor": "#5F6E82",
                   "tooltipBackgroundColor": "#EAE7ED",
                   "tooltipIconColor": "#7F7E77"
+                },
+                "title": {
+                  "text": "<p>Expansão</p>",
+                  "color": "#00363A",
+                  "font": "Lektorat Display var",
+                  "fontWeight": "750",
+                  "letterSpacing": "-0.3px",
+                  "fontSize": "42px",
+                  "lineHeight": "100%"
                 },
                 "titleColor": "#371E55",
                 "chooseCta": {
@@ -6524,18 +6539,16 @@
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
-                "title": {
-                  "text": "<p>Expansão</p>",
-                  "color": "#00363A",
-                  "font": "Lektorat Display var",
-                  "fontWeight": "750",
-                  "letterSpacing": "-0.3px",
-                  "fontSize": "42px",
-                  "lineHeight": "100%"
-                },
                 "borderColor": "#F2F4F5"
               }
             ],
+            "titleColor": "#371E55",
+            "captionColor": "#371E55",
+            "arrowsColor": "#ca1616",
+            "arrows": false,
+            "paddingTop": "120px",
+            "paddingBottom": "0px",
+            "id": "plans",
             "annualLabel": "Anual",
             "montlyLabel": "Mensal",
             "dots": false,
@@ -6545,8 +6558,6 @@
               "text": "Começar no grátis",
               "href": "#"
             },
-            "titleColor": "#371E55",
-            "captionColor": "#371E55",
             "labelColor": "#00363A",
             "disabledLabelColor": "#5F6E82",
             "annualTagColor": "#FFE6A0",
@@ -6572,12 +6583,9 @@
               "ctaStyle": "button",
               "showIcon": false
             },
-            "arrowsColor": "#ca1616",
             "annualTagTextColor": "#7A2D0D",
             "annualTag": "- 2O% OFF",
-            "arrows": false,
             "annualTagPosition": "aside",
-            "paddingTop": "120px",
             "switchBackgroundColor": "#DFE4E6",
             "switchBallColor": "#00363A",
             "hideSection": false,
@@ -6585,8 +6593,60 @@
               "src": "https://assets.decocache.com/lojaintegradar/83c316b8-0ab7-41d0-aab4-ccc9c18cecc9/line-background.png"
             },
             "bottomCta": [],
-            "hideSwitch": false,
-            "paddingBottom": "0px"
+            "hideSwitch": false
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Logos.tsx",
+            "title": "<p style=\"text-align: center\">*Os planos pagos liberam a integração com parceiros. Vale lembrar que cada integração possui um custo adicional à parte.</p>",
+            "titleColor": "#371E55",
+            "captionColor": "#5F6E82",
+            "captionTextProps": {
+              "color": ""
+            },
+            "titleFont": "Instrument serif",
+            "logos": [],
+            "blackAndWhiteLogos": true,
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "color": "#5F6E82",
+              "fontSize": "11px",
+              "fontWeight": "500",
+              "lineHeight": "100%"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Logos.tsx",
+            "title": "<p style=\"text-align: center\">*Os planos pagos liberam a integração com parceiros. Vale lembrar que cada integração possui um custo adicional à parte.</p>",
+            "titleColor": "#371E55",
+            "captionColor": "#5F6E82",
+            "captionTextProps": {
+              "color": ""
+            },
+            "titleFont": "Instrument serif",
+            "logos": [],
+            "blackAndWhiteLogos": true,
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "color": "#5F6E82",
+              "fontSize": "12px",
+              "fontWeight": "500"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6708,21 +6768,23 @@
               "borderColor": "#00363A",
               "textColor": "#ffffff"
             },
-            "ctaMargintop": "140px",
             "cardWidth": "400px",
             "cardsWidth": "390px",
             "cardsMinHeight": "400px",
             "id": "Depoimentos",
             "titleTextProps": {
               "fontFamily": "Lektorat Display var",
-              "color": "#003037"
+              "color": "#00363A"
             },
             "leftTextProps": {
-              "fontFamily": "Lektorat display var"
+              "fontFamily": "Lektorat display var",
+              "color": "#00363A"
             },
             "rightTextProps": {
               "fontFamily": "Lektorat display var"
-            }
+            },
+            "ctaMargintop": "140px",
+            "paddingBottom": "0px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6737,8 +6799,19 @@
           "value": {
             "__resolveType": "site/sections/TestimonialsWithBubbles.tsx",
             "title": "<p style=\"text-align: center\">Resultados que<br>falam por sí</p>",
-            "titleColor": "#00363A",
             "titleFont": "Lektorat Display var",
+            "cta": [
+              {
+                "href": "#plans",
+                "text": "Ver planos e assinar",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "textColor": "#FFFFFF",
+                "type": "Button",
+                "size": "Large"
+              }
+            ],
+            "titleColor": "#00363A",
             "titleFontSize": "32px",
             "titleFontWeight": "600",
             "arrowsColor": "#00363A",
@@ -6817,7 +6890,8 @@
                   "text": "Ver planos e assinar"
                 }
               ]
-            }
+            },
+            "paddingTop": "0px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -7082,7 +7156,8 @@
                   "textColor": "#00363A",
                   "type": "Button",
                   "size": "Medium",
-                  "borderColor": "#00363A"
+                  "borderColor": "#E4F3F3",
+                  "backgroundColor": "#E4F3F3"
                 },
                 "titleColor": "#00363A",
                 "textColor": "#5F6E82",
@@ -7103,7 +7178,8 @@
                   "size": "Medium",
                   "type": "Button",
                   "showIcon": true,
-                  "borderColor": "#00363A"
+                  "borderColor": "#E4F3F3",
+                  "backgroundColor": "#E4F3F3"
                 },
                 "titleColor": "#00363A",
                 "backgroundColor": "",

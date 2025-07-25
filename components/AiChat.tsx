@@ -1,14 +1,16 @@
 import { useScript } from "@deco/deco/hooks";
 import { useId } from "site/sdk/useId.ts";
 
-const onLoad = (sectionId: string, aiName: string, messageClass: string, aiNameClass: string) => {
-  const section = document.getElementById(sectionId) as HTMLElement;
-  const sendMessageButton = section.querySelector(".sendMessageButton") as HTMLButtonElement;
-  const containerPrimeiraMensagem = section.querySelector(".firstMessage") as HTMLElement;
-  const errorMessage = section.querySelector(".error") as HTMLElement;
-  const AiInput = section.querySelector(".AiInput") as HTMLInputElement;
-  const messagesParentContainer = section.querySelector(".messagesParentContainer") as HTMLElement;
-  const optionSelector = section.querySelector(".optionSelector") as HTMLElement;
+const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string, aiNameClass: string) => {
+  const AiChat = document.getElementById(AiChatComponentId) as HTMLElement;
+  const form = AiChat.querySelector("form") as HTMLElement;
+  const sendMessageButton = AiChat.querySelector(".sendMessageButton") as HTMLButtonElement;
+  const containerPrimeiraMensagem = AiChat.querySelector(".firstMessage") as HTMLElement;
+  const errorMessage = AiChat.querySelector(".error") as HTMLElement;
+  const AiInput = AiChat.querySelector(".AiInput") as HTMLInputElement;
+  const messagesParentContainer = AiChat.querySelector(".messagesParentContainer") as HTMLElement;
+  const optionSelector = AiChat.querySelector(".optionSelector") as HTMLElement;
+  const typingCircles = AiChat.querySelector(".typingCircles") as HTMLElement;
   const yesButton = optionSelector.querySelector(".yesButton") as HTMLButtonElement;
   const noButton = optionSelector.querySelector(".noButton") as HTMLButtonElement;
 
@@ -87,6 +89,12 @@ const onLoad = (sectionId: string, aiName: string, messageClass: string, aiNameC
         messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
       }
     } else if (currentButtonStatus == buttonStatus.gettingKnowingAbout) {
+      AiInput.disabled = false;
+      sendMessageButton.disabled = false;
+      AiInput.focus();
+      currentButtonStatus = buttonStatus.sendingMessages;
+      renderAiMessage("Boa! agora vamos começar, o que você gostaria de perguntar?");
+      messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
       const url =
                     `https://api.hsforms.com/submissions/v3/integration/submit/7112881/7eecb79c-fc2d-41c5-8f16-cb8e6e22cec9`;
 
@@ -99,7 +107,6 @@ const onLoad = (sectionId: string, aiName: string, messageClass: string, aiNameC
                         "value": entry[1],
                     })),
                 };
-
                 try {
                     const response = fetch(url, {
                         method: "POST",
@@ -112,18 +119,29 @@ const onLoad = (sectionId: string, aiName: string, messageClass: string, aiNameC
                       if (r.status == 'error') {
                         console.log('error', r);
                         alert("erro ao enviar dados" + r.status,)
-                      } else {
-                        alert("dados enviados")
-                      }
+                      } 
                     }));
                 } catch (error) {
                     console.log("ERROR: ", error);
                     return { "Error": error };
                 }
+    } else if (currentButtonStatus == buttonStatus.sendingMessages) {
+      if (AiInput.value.length > 0) {
+        renderUserMessage(AiInput.value);
+        AiInput.value = "";
+        AiInput.focus();
+        typingCircles.classList.remove("!hidden");
+        messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
+        sendMessage();
+      }
     }
   }
 
-  sendMessageButton.addEventListener("click", sendMessageButtonClick);
+  //sendMessageButton.addEventListener("click", sendMessageButtonClick);
+  form.addEventListener("submit", (e:SubmitEvent) => {
+    e.preventDefault();
+    sendMessageButtonClick();
+  })
 
   yesButton.addEventListener("click", (e) => {
     (e.currentTarget as HTMLElement).querySelector(".unchecked")?.classList.add("hidden");
@@ -143,9 +161,39 @@ const onLoad = (sectionId: string, aiName: string, messageClass: string, aiNameC
     sendMessageButtonClick();
   });
 
-  AiInput.addEventListener("keyup", () => {
+  AiInput.addEventListener("change", () => {
     errorMessage.classList.add("hidden");
   });
+
+  async function sendMessage() {
+    const url = 'https://www.lojaintegrada.com.br/li-rag/v1/chat';
+
+    const payload = {
+      history: [],
+      input: 'Como vender na Internet'
+    };
+
+    const headers = {
+      'Content-Type': 'application/json'
+    };
+
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(payload)
+      });
+
+      const data = await response.json();
+      console.log('Resposta da API:', data.output);
+      renderAiMessage(data.output);
+    } catch (error) {
+      console.error('Erro na requisição:', error);
+      renderAiMessage('Erro na requisição:' + error);
+    } finally {
+      typingCircles.classList.add("!hidden");
+    }
+  }
 
   function digitarMensagem(container: HTMLElement, mensagem: string) {
 
@@ -166,6 +214,7 @@ const onLoad = (sectionId: string, aiName: string, messageClass: string, aiNameC
             container.innerHTML += texto[j];
             j++;
             setTimeout(digitarLetra, 10);
+            messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
           } else {
             callback();
           }
@@ -210,7 +259,7 @@ export default function AiChat({ aiName = 'Agente Alfredo' }: Props) {
       <div class={"firstMessage " + messageClass}>
       </div>
 
-      <div class="bg-[#FBFAF9] rounded px-5 py-2.5 pb-7 self-start font-semibold text-[#5F6E82] leading-[140%] optionSelector hidden">
+      <div class="bg-[#FBFAF9] rounded px-5 py-2.5 pb-7 mb-7 self-start font-semibold text-[#5F6E82] leading-[140%] optionSelector hidden">
         <p class="text-sm "><span></span>, você conhece a Loja Integrada?</p>
         <p class="flex gap-1 items-center pb-3 mb-3 border-b border-[#f1f1f1]">
           <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -243,19 +292,27 @@ export default function AiChat({ aiName = 'Agente Alfredo' }: Props) {
       </div>
     </div>
 
+    <div class="relative">
+      <div class="typingCircles bottom-5 left-14 flex !hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
     <div  class="h-[58px] px-4 border-t border-[#EEEEEE]">
-      <div class="mt-5 flex">
+      <form class="mt-5 flex">
         <input 
           autoFocus 
           class="AiInput focus:outline-none focus:ring-0 flex-1 text-[#5F6E82]" 
           placeholder="Digite aqui seu nome para começar" />
-        <button class="sendMessageButton hover:scale-100 group">
+        <button type="submit" value="" class="sendMessageButton hover:scale-100 group">
           <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="18.5" cy="18.8655" r="17.5" class="text-[#00363A] fill-current group-hover:text-[#0C9898] group-disabled:text-[#D6D6D6]" />
             <path d="M17.7228 15.3079L13.9283 19.0166C13.7028 19.2422 13.4379 19.3503 13.1334 19.3408C12.8289 19.3312 12.564 19.2136 12.3385 18.9879C12.1128 18.7623 12 18.4973 12 18.1931C12 17.8886 12.1128 17.6235 12.3385 17.3979L18.0164 11.7037C18.242 11.4782 18.5124 11.3655 18.8276 11.3655C19.1427 11.3655 19.4131 11.4782 19.6388 11.7037L25.3166 17.3979C25.5423 17.6235 25.6551 17.8886 25.6551 18.1931C25.6551 18.4973 25.5423 18.7623 25.3166 18.9879C25.0912 19.2136 24.8262 19.3264 24.5217 19.3264C24.2173 19.3264 23.9523 19.2136 23.7268 18.9879L19.9896 15.2507V25.2321C19.9896 25.5554 19.8815 25.8252 19.6654 26.0413C19.4494 26.2574 19.1797 26.3655 18.8562 26.3655C18.5327 26.3655 18.2629 26.2574 18.047 26.0413C17.8309 25.8252 17.7228 25.5554 17.7228 25.2321V15.3079Z" fill="#FBFAF9" />
           </svg>
         </button>
-      </div>
+      </form>
       <p class="error text-[#F57E77] text-xs hidden"/>
     </div>      
 

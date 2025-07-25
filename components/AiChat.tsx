@@ -27,7 +27,7 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
     gettingKnowingAbout: 'gettingKnowingAbout',
     sendingMessages: 'sendingMessages'
   }
-  let currentButtonStatus = buttonStatus.sendingMessages;
+  let currentButtonStatus = buttonStatus.gettingName;
 
   // String recebida com HTML embutido
   const primeiraMensagem = `👋 E aí, tudo certo? Aqui é o Alfredo (versão Agente).<br/>

@@ -1,0 +1,118 @@
+{
+  "name": "Landing Page Moderna",
+  "path": "/landing-page-moderna",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Hero.tsx",
+      "title": "Transforme Sua Presença Digital",
+      "subtitle": "Soluções inovadoras para o seu negócio crescer online",
+      "description": "Oferecemos as melhores ferramentas e estratégias para levar sua empresa ao próximo nível no mundo digital.",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9",
+      "ctas": [
+        {
+          "text": "Começar Agora",
+          "href": "#contato",
+          "variant": "primary"
+        },
+        {
+          "text": "Saiba Mais",
+          "href": "#recursos",
+          "variant": "secondary"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Features.tsx",
+      "title": "Por Que Escolher Nossos Serviços?",
+      "subtitle": "Oferecemos soluções completas e personalizadas para o seu negócio",
+      "features": [
+        {
+          "title": "Tecnologia Avançada",
+          "description": "Utilizamos as mais modernas tecnologias para garantir performance e segurança.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+        },
+        {
+          "title": "Suporte 24/7",
+          "description": "Nossa equipe está sempre disponível para ajudar você quando precisar.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+        },
+        {
+          "title": "Resultados Garantidos",
+          "description": "Comprovamos nossos resultados com métricas claras e transparentes.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+        },
+        {
+          "title": "Escalabilidade",
+          "description": "Nossas soluções crescem junto com o seu negócio, sem limitações.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+        },
+        {
+          "title": "Integração Fácil",
+          "description": "Implementação rápida e sem complicações em sua infraestrutura atual.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+        },
+        {
+          "title": "ROI Comprovado",
+          "description": "Retorno sobre investimento mensurável e transparente para seu negócio.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "title": "O Que Nossos Clientes Dizem",
+      "subtitle": "Veja os depoimentos de quem já transformou seu negócio conosco",
+      "testimonials": [
+        {
+          "name": "Maria Silva",
+          "role": "CEO",
+          "company": "TechStart",
+          "content": "Excelente serviço! Nossa empresa cresceu 300% após implementar as soluções recomendadas. A equipe é extremamente profissional e sempre disponível.",
+          "rating": 5,
+          "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+        },
+        {
+          "name": "João Santos",
+          "role": "Diretor de Marketing",
+          "company": "Inovação Digital",
+          "content": "Profissionais extremamente competentes. Superaram todas as nossas expectativas e entregaram resultados acima do prometido.",
+          "rating": 5,
+          "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+        },
+        {
+          "name": "Ana Costa",
+          "role": "Fundadora",
+          "company": "E-commerce Plus",
+          "content": "Resultados incríveis em pouco tempo. Recomendo para qualquer empresa que queira crescer de forma sustentável e organizada.",
+          "rating": 5,
+          "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Contact.tsx",
+      "title": "Pronto Para Começar?",
+      "subtitle": "Entre em contato conosco e descubra como podemos ajudar seu negócio a crescer",
+      "ctaText": "Falar com Especialista",
+      "ctaHref": "https://wa.me/5511999999999",
+      "showForm": true,
+      "contactInfo": [
+        {
+          "label": "Email",
+          "value": "contato@lojaintegradar.com",
+          "icon": "📧"
+        },
+        {
+          "label": "WhatsApp",
+          "value": "(11) 99999-9999",
+          "icon": "📱"
+        },
+        {
+          "label": "Endereço",
+          "value": "São Paulo, SP",
+          "icon": "📍"
+        }
+      ]
+    }
+  ]
+}

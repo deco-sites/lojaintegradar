@@ -3528,6 +3528,9 @@ details.collapse summary::-webkit-details-marker {
 .left-0 {
   left: 0px;
 }
+.left-14 {
+  left: 3.5rem;
+}
 .left-2 {
   left: 0.5rem;
 }
@@ -4041,6 +4044,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .grid {
   display: grid;
+}
+.\!hidden {
+  display: none !important;
 }
 .hidden {
   display: none;

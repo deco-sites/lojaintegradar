@@ -13,6 +13,8 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
   const typingCircles = AiChat.querySelector(".typingCircles") as HTMLElement;
   const yesButton = optionSelector.querySelector(".yesButton") as HTMLButtonElement;
   const noButton = optionSelector.querySelector(".noButton") as HTMLButtonElement;
+  const suggestedQuestions = AiChat.querySelectorAll(".suggestedQuestions") as NodeListOf<HTMLButtonElement>;
+  const suggestedQuestionsContainer = AiChat.querySelector(".suggestedQuestionsContainer") as HTMLElement;
 
   const objToSendToHubspot = {
     firstname: "",
@@ -95,6 +97,7 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
       currentButtonStatus = buttonStatus.sendingMessages;
       renderAiMessage("Boa! agora vamos começar, o que você gostaria de perguntar?");
       messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
+      showSuggestedQuestions();
       const url =
                     `https://api.hsforms.com/submissions/v3/integration/submit/7112881/7eecb79c-fc2d-41c5-8f16-cb8e6e22cec9`;
 
@@ -107,34 +110,38 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
                         "value": entry[1],
                     })),
                 };
-                try {
-                    const response = fetch(url, {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify(formData2),
-                    }).then(r => r.json().then(r => {
-                      console.log('response: ',r)
-                      if (r.status == 'error') {
-                        console.log('error', r);
-                        alert("erro ao enviar dados" + r.status,)
-                      } 
-                    }));
-                } catch (error) {
-                    console.log("ERROR: ", error);
-                    return { "Error": error };
-                }
+                // try {
+                //     const response = fetch(url, {
+                //         method: "POST",
+                //         headers: {
+                //             "Content-Type": "application/json",
+                //         },
+                //         body: JSON.stringify(formData2),
+                //     }).then(r => r.json().then(r => {
+                //       console.log('response: ',r)
+                //       if (r.status == 'error') {
+                //         console.log('error', r);
+                //         alert("erro ao enviar dados" + r.status,)
+                //       } 
+                //     }));
+                // } catch (error) {
+                //     console.log("ERROR: ", error);
+                //     return { "Error": error };
+                // }
     } else if (currentButtonStatus == buttonStatus.sendingMessages) {
       if (AiInput.value.length > 0) {
-        renderUserMessage(AiInput.value);
-        typingCircles.classList.remove("!hidden");
-        messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
         sendMessage(AiInput.value);
-        AiInput.focus();
-        AiInput.value = "";
       }
     }
+  }
+
+  function sendMessage(message: string) {
+    renderUserMessage(message);
+    typingCircles.classList.remove("!hidden");
+    messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
+    sendMessageToApi(message);
+    AiInput.focus();
+    AiInput.value = "";
   }
 
   //sendMessageButton.addEventListener("click", sendMessageButtonClick);
@@ -165,7 +172,18 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
     errorMessage.classList.add("hidden");
   });
 
-  async function sendMessage(input: string) {
+  AiInput.addEventListener("keyup", () => {
+    hideSuggestedQuestions();
+  });
+
+  async function aiMock(): Promise<{ output: string }> {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve({ output: "Resposta de teste" });
+      }, 1000);
+    });
+  }
+  async function sendMessageToApi(input: string) {
     const url = 'https://www.lojaintegrada.com.br/li-rag/v1/chat';
 
     const payload = {
@@ -178,13 +196,14 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
     };
 
     try {
-      const response = await fetch(url, {
-        method: 'POST',
-        headers: headers,
-        body: JSON.stringify(payload)
-      });
+      // const response = await fetch(url, {
+      //   method: 'POST',
+      //   headers: headers,
+      //   body: JSON.stringify(payload)
+      // });
 
-      const data = await response.json();
+      // const data = await response.json();
+      const data = await aiMock();
       console.log('Resposta da API:', data.output);
       renderAiMessage(data.output);
     } catch (error) {
@@ -195,8 +214,20 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
     }
   }
 
-  function digitarMensagem(container: HTMLElement, mensagem: string) {
+  suggestedQuestions.forEach(question => question.addEventListener("click", (e: any) => {
+    sendMessage(e.currentTarget.innerText);
+    hideSuggestedQuestions();
+  }))
 
+  function hideSuggestedQuestions() {
+    suggestedQuestionsContainer.classList.add("absolute", "opacity-0", "pointer-events-none");
+  }
+
+  function showSuggestedQuestions() {
+    suggestedQuestionsContainer.classList.remove("absolute", "opacity-0", "pointer-events-none");
+  }
+
+  function digitarMensagem(container: HTMLElement, mensagem: string) {
     // Converte a string HTML para elementos reais
     const temp = document.createElement("div");
     temp.innerHTML = mensagem;
@@ -246,15 +277,16 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
 
 export interface Props {
   aiName?: string;
+  suggestedQuestions?: string[];
 }
 
-export default function AiChat({ aiName = 'Agente Alfredo' }: Props) {
+export default function AiChat({ aiName = 'Agente Alfredo', suggestedQuestions = [] }: Props) {
   const sectionId = useId();
   const aiNameClass = "text-sm text-[#5F6E82] font-medium mb-1";
   const messageClass = "text-base text-[#5F6E82] font-normal leading-[140%]";
 
-  return <div id={sectionId} class="rounded-2xl w-[826px] bg-white px-5 pb-8 flex flex-col justify-between">
-    <div class="messagesParentContainer min-h-[325px] max-h-[325px] h-[325px] overflow-y-auto overflow-x-hidden flex flex-col flex-1 px-4 mb-2.5 my-5">
+  return <div id={sectionId} class="rounded-2xl w-[826px] max-h-[445px] min-h-[445px] bg-white px-5 pb-8 flex flex-col justify-between">
+    <div class="messagesParentContainer overflow-y-auto overflow-x-hidden flex flex-col flex-1 px-4 mb-2.5 my-5">
       <p class={aiNameClass}>{aiName}</p>
       <div class={"firstMessage " + messageClass}>
       </div>
@@ -299,6 +331,19 @@ export default function AiChat({ aiName = 'Agente Alfredo' }: Props) {
         <span></span>
       </div>
     </div>
+
+    {suggestedQuestions.length > 0 && <div class="px-7 mb-7 relative">
+      <div class="bg-white bottom-full transition-opacity duration-1000 absolute opacity-0 pointer-events-none suggestedQuestionsContainer">
+        <p class="text-[#5F6E82] font-medium text-sm mb-2.5">Perguntas sugeridas:</p>
+        <div class="flex flex-wrap gap-x-1.5 gap-y-3">
+          {suggestedQuestions.map(question => (
+            <button class="suggestedQuestions border border-[#5F6E82] hover:border-[#0C9898] rounded-xl px-2.5 py-3 text-xs hover:text-[#0C9898] text-[#5F6E82] hover:scale-100 hover:font-normal">
+              {question}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>}
 
     <div  class="h-[58px] px-4 border-t border-[#EEEEEE]">
       <form class="mt-5 flex">

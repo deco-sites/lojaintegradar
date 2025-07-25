@@ -32,18 +32,24 @@ interface Text {
     textProps?: TextProps;
 }
 
+export interface AiChatProps {
+    suggestedQuestions?: string[];
+    aiName?: string;
+}
+
 export interface Props {
+    logos?: IImage[];
     title?: RichText;
     titleTextProps?: TextProps;
     texts?: Text[];
-    logos?: IImage[];
+    aiChatProps?: AiChatProps;
     backgroundMedia?: BackgroundMedia;
     lcp?: boolean;
     paddingTop?: string;
     paddingBottom?: string;
 }
 
-export default function AI({ title, titleTextProps, texts = [], logos = [], backgroundMedia, paddingTop, paddingBottom, lcp }: Props) {
+export default function AI({ title, titleTextProps, texts = [], aiChatProps, logos = [], backgroundMedia, paddingTop, paddingBottom, lcp }: Props) {
     return <div class="relative pt-16 pb-[120px]" style={{ paddingTop, paddingBottom, minHeight: '885px' }}>
         <div class="max-w-[1024px] mx-auto">
             {logos.length > 0 && <div class="flex gap-12 flex-wrap items-start mb-9">
@@ -62,7 +68,7 @@ export default function AI({ title, titleTextProps, texts = [], logos = [], back
                     <div dangerouslySetInnerHTML={{ __html: text.text || "" }} style={{ ...text.textProps }} class="font-medium mb-5" />
                 ))}
             </div>
-            <AiChat />
+            <AiChat {...aiChatProps} />
         </div>
         {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
             src={backgroundMedia.image.src}

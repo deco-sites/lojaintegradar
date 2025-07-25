@@ -46,7 +46,15 @@
             "color": "#ffffff"
           }
         }
-      ]
+      ],
+      "aiChatProps": {
+        "suggestedQuestions": [
+          "Quais principais tendências do mercado digital?",
+          "Quais os erros comuns ao começar um negócio online?",
+          "Como a IA pode otimizar vendas e marketing ?",
+          "Como achar oportunidades num mercado competitivo?"
+        ]
+      }
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

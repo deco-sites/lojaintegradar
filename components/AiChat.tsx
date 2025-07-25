@@ -27,7 +27,7 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
     gettingKnowingAbout: 'gettingKnowingAbout',
     sendingMessages: 'sendingMessages'
   }
-  let currentButtonStatus = buttonStatus.gettingName;
+  let currentButtonStatus = buttonStatus.sendingMessages;
 
   // String recebida com HTML embutido
   const primeiraMensagem = `👋 E aí, tudo certo? Aqui é o Alfredo (versão Agente).<br/>
@@ -128,11 +128,11 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
     } else if (currentButtonStatus == buttonStatus.sendingMessages) {
       if (AiInput.value.length > 0) {
         renderUserMessage(AiInput.value);
-        AiInput.value = "";
-        AiInput.focus();
         typingCircles.classList.remove("!hidden");
         messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
-        sendMessage();
+        sendMessage(AiInput.value);
+        AiInput.focus();
+        AiInput.value = "";
       }
     }
   }
@@ -165,12 +165,12 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
     errorMessage.classList.add("hidden");
   });
 
-  async function sendMessage() {
+  async function sendMessage(input: string) {
     const url = 'https://www.lojaintegrada.com.br/li-rag/v1/chat';
 
     const payload = {
       history: [],
-      input: 'Como vender na Internet'
+      input
     };
 
     const headers = {

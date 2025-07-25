@@ -29,7 +29,7 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
     gettingKnowingAbout: 'gettingKnowingAbout',
     sendingMessages: 'sendingMessages'
   }
-  let currentButtonStatus = buttonStatus.sendingMessages;
+  let currentButtonStatus = buttonStatus.gettingName;
 
   // String recebida com HTML embutido
   const primeiraMensagem = `👋 E aí, tudo certo? Aqui é o Alfredo (versão Agente).<br/>
@@ -110,24 +110,24 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
                         "value": entry[1],
                     })),
                 };
-                // try {
-                //     const response = fetch(url, {
-                //         method: "POST",
-                //         headers: {
-                //             "Content-Type": "application/json",
-                //         },
-                //         body: JSON.stringify(formData2),
-                //     }).then(r => r.json().then(r => {
-                //       console.log('response: ',r)
-                //       if (r.status == 'error') {
-                //         console.log('error', r);
-                //         alert("erro ao enviar dados" + r.status,)
-                //       } 
-                //     }));
-                // } catch (error) {
-                //     console.log("ERROR: ", error);
-                //     return { "Error": error };
-                // }
+                try {
+                    const response = fetch(url, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(formData2),
+                    }).then(r => r.json().then(r => {
+                      console.log('response: ',r)
+                      if (r.status == 'error') {
+                        console.log('error', r);
+                        alert("erro ao enviar dados" + r.status,)
+                      } 
+                    }));
+                } catch (error) {
+                    console.log("ERROR: ", error);
+                    return { "Error": error };
+                }
     } else if (currentButtonStatus == buttonStatus.sendingMessages) {
       if (AiInput.value.length > 0) {
         sendMessage(AiInput.value);
@@ -196,14 +196,14 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
     };
 
     try {
-      // const response = await fetch(url, {
-      //   method: 'POST',
-      //   headers: headers,
-      //   body: JSON.stringify(payload)
-      // });
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(payload)
+      });
 
-      // const data = await response.json();
-      const data = await aiMock();
+      const data = await response.json();
+      //const data = await aiMock();
       console.log('Resposta da API:', data.output);
       renderAiMessage(data.output);
     } catch (error) {

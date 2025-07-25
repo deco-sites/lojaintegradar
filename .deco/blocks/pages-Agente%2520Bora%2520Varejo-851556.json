@@ -61,277 +61,6 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {
-                "media": {
-                  "image": {},
-                  "use": "image"
-                }
-              },
-              "show": false,
-              "region": "na1",
-              "portalId": "7112881",
-              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
-              "buttonColor": "#EEFC58",
-              "buttonTextColor": "#002621",
-              "errorMessageColor": "#F57E77",
-              "inputLabelColor": "#FAFAF5",
-              "inputLabelBackgroundColor": "#44656A"
-            },
-            "title": {
-              "text": "<p style=\"text-align: center\">Agentes de IA operando</p><p style=\"text-align: center\">lado a lado com você</p>",
-              "color": "#00363A",
-              "font": "Lektorat Display var",
-              "fontWeight": "750",
-              "lineHeight": "110%",
-              "letterSpacing": "-1px",
-              "fontSize": "32px"
-            },
-            "media": {
-              "image": {
-                "width": 386,
-                "height": 545
-              },
-              "use": "image"
-            },
-            "text": "<p style=\"text-align: center\">A Komea é a primeira <strong>rede de agentes de IA do e-commerce. </strong>Criado pela Loja Integrada, ele automatiza tarefas, sugere melhorias e faz seu negócio crescer todos os dias.</p>",
-            "sectionBackground": {
-              "backgroundColor": "#D1CABD",
-              "image": {
-                "src": "https://assets.decocache.com/komea/d87cfe74-e80f-43f9-a29e-1ff13dc6e230/yellow-circles-mobile.svg",
-                "width": 1201,
-                "height": 773
-              },
-              "use": "image",
-              "bleeding": 15,
-              "customHeight": "105%",
-              "postition": "bottom"
-            },
-            "textProps": {
-              "fontWeight": "500",
-              "color": "#00363A",
-              "lineHeight": "125%",
-              "fontSize": "14px"
-            },
-            "lcp": false,
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Large",
-                "text": "Entre na lista de espera",
-                "textColor": "#ffffff",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "customProps": {
-                  "height": "48px",
-                  "borderRadius": "100px"
-                },
-                "openModal": "Komea wait list",
-                "gtmProps": {
-                  "customTitle": "entre-na-lista-de-espera",
-                  "customType": "botao",
-                  "customSection": "lp-komea"
-                }
-              }
-            ],
-            "ctaPlacement": "center",
-            "container": {
-              "marginTop": "20px",
-              "paddingBottom": "0",
-              "marginBottom": "40px",
-              "paddingTop": "60px"
-            },
-            "customTitle": "hero:agentes-de-ia"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {
-                "media": {
-                  "image": {},
-                  "use": "image"
-                }
-              },
-              "show": false,
-              "region": "na1",
-              "portalId": "7112881",
-              "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
-              "buttonColor": "#EEFC58",
-              "buttonTextColor": "#002621",
-              "errorMessageColor": "#F57E77",
-              "inputLabelColor": "#FAFAF5",
-              "inputLabelBackgroundColor": "#44656A"
-            },
-            "title": {
-              "text": "<p style=\"text-align: center\">Agentes de IA operando lado a lado com você</p>",
-              "color": "#00363A",
-              "font": "Lektorat Display var",
-              "fontWeight": "750",
-              "lineHeight": "110%",
-              "letterSpacing": "-1px",
-              "fontSize": "60px"
-            },
-            "media": {
-              "image": {
-                "src": "https://assets.decocache.com/komea/539b78ab-1f32-4b3e-80b9-576e55df18cd/img-hero.png",
-                "width": 565,
-                "height": 500
-              },
-              "use": "image",
-              "placement": "right",
-              "cornerImage": true
-            },
-            "text": "<p style=\"text-align: center\">A Komea é a primeira <strong>rede de agentes de IA do e-commerce.</strong></p><p style=\"text-align: center\">Criado pela Loja Integrada, ele automatiza tarefas, sugere</p><p style=\"text-align: center\">melhorias e faz seu negócio crescer todos os dias.</p>",
-            "sectionBackground": {
-              "backgroundColor": "#D1CABD",
-              "image": {
-                "src": "https://assets.decocache.com/komea/b2b6a516-84bd-430e-a262-c21bbbbff9be/bg-komea.svg",
-                "width": 1201,
-                "height": 773
-              },
-              "bleeding": 15,
-              "customHeight": "105%",
-              "postition": "bottom",
-              "use": "image"
-            },
-            "textProps": {
-              "fontWeight": "500",
-              "color": "#00363A",
-              "lineHeight": "125%"
-            },
-            "lcp": false,
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Small",
-                "openModal": "Komea wait list",
-                "text": "Entre na lista de espera",
-                "textColor": "#ffffff",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "customProps": {
-                  "height": "48px",
-                  "borderRadius": "100px",
-                  "fontSize": "14px"
-                },
-                "gtmProps": {
-                  "customSection": "lp-komea",
-                  "customType": "botao",
-                  "customTitle": "entre-na-lista-de-espera"
-                }
-              }
-            ],
-            "container": {
-              "paddingTop": "80px"
-            },
-            "ctaPlacement": "center",
-            "customTitle": "hero:agentes-de-ia"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/VideoSection.tsx",
-            "backgroundMedia": {
-              "color": "#D1CABD",
-              "image": {
-                "src": "https://assets.decocache.com/komea/e7b3a078-d7f7-4145-9aa1-ea26bacf8ff8/yellow-circles-mobile-2.svg",
-                "width": 1261,
-                "height": 777
-              },
-              "use": "image",
-              "postition": "top"
-            },
-            "video": {
-              "src": "https://www.youtube.com/embed/JVHpddoqZS0?si=LBV1XkYpqAb_Vpbc&amp;controls=0",
-              "use": "embed",
-              "width": "100%",
-              "height": "227px",
-              "thumbnailImage": {
-                "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
-              },
-              "playButton": {
-                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg",
-                "width": 40,
-                "height": 40
-              },
-              "gtmProps": {
-                "customType": "youtube:embbeded",
-                "customTitle": "Conheça a Komea",
-                "customSection": "lp-komea"
-              }
-            },
-            "sectionProps": {
-              "paddingTop": "60px",
-              "paddingBottom": "124px",
-              "marginTop": "-1px"
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/VideoSection.tsx",
-            "backgroundMedia": {
-              "color": "#D1CABD",
-              "image": {
-                "src": "https://assets.decocache.com/komea/8e0f9620-01b1-4c5d-a459-13bea541ff21/bg-komea2.svg",
-                "width": 1261,
-                "height": 777
-              },
-              "use": "image",
-              "postition": "top"
-            },
-            "video": {
-              "src": "https://www.youtube.com/embed/JVHpddoqZS0?si=LBV1XkYpqAb_Vpbc&amp;controls=0",
-              "use": "embed",
-              "width": "990px",
-              "height": "558px",
-              "thumbnailImage": {
-                "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
-              },
-              "playButton": {
-                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
-              },
-              "gtmProps": {
-                "customType": "youtube:embbeded",
-                "customSection": "lp-komea",
-                "customTitle": "Conheça a Komea"
-              }
-            },
-            "sectionProps": {
-              "paddingTop": "80px",
-              "paddingBottom": "124px"
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
             "__resolveType": "site/sections/RevealingText.tsx",
             "backgroundMedia": {
               "backgroundColor": "radial-gradient(79.77% 109.18% at 50% 0%, #001D1F 0%, #00363A 73.85%, #004D53 100%);"
@@ -394,7 +123,7 @@
             },
             "lines": [
               {
-                "text": "<p>Empreender não deveria ser sinônimo</p>",
+                "text": "<p><span>A </span><span style=\"color: #28c3c3\">Loja Integrada</span><span> inaugura um novo capítulo</span></p>",
                 "color": "#ffffff",
                 "textProps": {
                   "fontSize": "40px",
@@ -403,7 +132,7 @@
                 }
               },
               {
-                "text": "<p><span>de correria sem resultado.</span></p>",
+                "text": "<p><span>no E-commerce. Venha conhecer a </span><span style=\"color: #eefc58\">Komea</span></p>",
                 "color": "#ffffff",
                 "textProps": {
                   "fontSize": "40px",
@@ -411,20 +140,15 @@
                   "letterSpacing": "-1px",
                   "marginTop": "0"
                 }
-              },
-              {
-                "text": "<p style=\"text-align: center\">Em vez de painéis complexos, a Komea funciona como uma</p><p style=\"text-align: center\">conversa: o lojista diz o que precisa e os agentes fazem,</p><p style=\"text-align: center\">explicam e mostram prévias antes de publicar.</p>",
-                "textProps": {
-                  "fontWeight": "500",
-                  "fontSize": "16px",
-                  "marginTop": "22px",
-                  "letterSpacing": "-0.3px"
-                },
-                "color": "#ffffff",
-                "justReveal": true
               }
             ],
-            "scrollAmount": 100
+            "scrollAmount": 100,
+            "logos": [
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/1e71e799-4a20-4674-bf23-c6f085cfc813/loja-integrada-komea-logo.svg",
+                "alt": "Komea logo"
+              }
+            ]
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -543,8 +267,7 @@
               "paddingTop": "124px",
               "marginTop": "0px"
             },
-            "customTitle": "hero:multiplos-especialistas",
-            "sectionMarginTop": "-18vh"
+            "customTitle": "hero:multiplos-especialistas"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

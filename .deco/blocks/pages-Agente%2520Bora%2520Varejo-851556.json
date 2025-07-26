@@ -130,7 +130,7 @@
             },
             "image": {},
             "goToNextSectionButton": {
-              "text": "<p><span>Conheça</span></p><p><span>os outros </span></p><p><span>Agentes da LI</span></p>",
+              "text": "<p><span>Conheça</span></p><p><span>os outros</span></p><p><span>Agentes da LI</span></p>",
               "backgroundColor": "rgba(238, 252, 88, 0.82)",
               "href": "#komeainicio"
             }
@@ -152,7 +152,7 @@
             },
             "lines": [
               {
-                "text": "<p>Empreender não deveria</p>",
+                "text": "<p>A <span style=\"color: #28c3c3\">Loja Integrada</span> inaugura</p>",
                 "color": "#ffffff",
                 "textProps": {
                   "fontSize": "7.26vw",
@@ -161,18 +161,35 @@
                 }
               },
               {
-                "text": "<p><span>ser sinônimo de correria</span></p>",
+                "text": "<p><span>um novo capítulo no</span></p>",
                 "color": "#ffffff",
                 "textProps": {
                   "fontSize": "7.26vw",
                   "fontWeight": "600",
-                  "letterSpacing": "-1px",
-                  "marginTop": "0"
+                  "letterSpacing": "-1px"
+                }
+              },
+              {
+                "text": "<p><span>E-commerce. Venha</span></p>",
+                "color": "#ffffff",
+                "textProps": {
+                  "fontSize": "7.26vw",
+                  "fontWeight": "600",
+                  "letterSpacing": "-1px"
+                }
+              },
+              {
+                "text": "<p><span>conhecer a </span><span style=\"color: #eefc58\">Komea</span></p>",
+                "color": "#ffffff",
+                "textProps": {
+                  "fontSize": "7.26vw",
+                  "fontWeight": "600",
+                  "letterSpacing": "-1px"
                 }
               }
             ],
             "speed": 0.6,
-            "scrollAmount": 100,
+            "scrollAmount": 60,
             "logos": [
               {
                 "src": "https://assets.decocache.com/lojaintegradar/1e71e799-4a20-4674-bf23-c6f085cfc813/loja-integrada-komea-logo.svg",

@@ -67,7 +67,7 @@ export interface Props {
 }
 
 export default function AI({ title, titleTextProps, texts = [], image, aiChatProps, logos = [], backgroundMedia, goToNextSectionButton, paddingTop, paddingBottom, lcp }: Props) {
-    return <div class="relative pt-16 pb-8 px-5 lg:min-h-[885px]" style={{ paddingTop, paddingBottom }}>
+    return <div class="relative pt-16 pb-8 px-5 lg:min-h-[885px] overflow-hidden" style={{ paddingTop, paddingBottom }}>
         <div class="max-w-[1024px] mx-auto flex flex-col items-center lg:items-start">
             {logos.length > 0 && <div class="flex gap-12 flex-wrap items-start mb-9">
                 {logos.map(logo => (

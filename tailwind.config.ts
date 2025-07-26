@@ -71,6 +71,11 @@ export default {
           "50%": { opacity: 1 },
           "100%": { opacity: 0 },
         },
+        "bounceDown": {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(10px)" },
+          "100%": { transform: "translateY(0)" }
+        }
       },
       boxShadow: {
         "tinyspread": "0px 0px 10px rgba(204, 204, 204, 0.4)",
@@ -96,6 +101,7 @@ export default {
         "fade-down10": "fade-down10 0.3s ease-in-out",
         "progress": "progress 3s linear",
         "blink": " blink 0.5s linear infinite",
+        "bounce-down": "bounceDown 2s infinite ease-in-out"
       },
       fontFamily: {
         instrument: ["Instrument Serif", "sans-serif"],

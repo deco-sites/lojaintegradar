@@ -70,6 +70,7 @@ export interface Line {
 }
 
 export interface Props {
+  id?: string;
   logos?: IImage[];
   lines?: Line[];
   backgroundMedia?: BackgroundMedia
@@ -77,8 +78,8 @@ export interface Props {
   scrollAmount?: number;
 }
 
-export default function RevealingText({ lines = [], backgroundMedia, scrollAmount, logos=[] }: Props) {
-  const rootId = useId();
+export default function RevealingText({ id, lines = [], backgroundMedia, scrollAmount, logos=[] }: Props) {
+  const rootId = id || useId();
   return <div id={rootId} class="relative min-h-[120vh]" style={{ height: `${lines.length * (scrollAmount || 120)}vh` }} >
     <script
       type="module"
@@ -86,7 +87,7 @@ export default function RevealingText({ lines = [], backgroundMedia, scrollAmoun
     />
     <div class="absolute top-0 w-full" style={{ height: `${(lines.length * (scrollAmount || 120)) + 100}vh`, zIndex: -60 }}>
       <div class="h-[100vh] sticky top-0 flex flex-col items-center justify-center" style={{ background: backgroundMedia?.backgroundColor }}>
-        {logos.length > 0 && <div class="flex flex-warp justify-center gap-4 mb-9">
+        {logos.length > 0 && <div class="flex flex-warp justify-center gap-4 mb-9 items-center">
           {logos.map(logo => (
             <Image 
               src={logo.src || ""}

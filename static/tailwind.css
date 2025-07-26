@@ -892,6 +892,14 @@ html {
 .carousel-end .carousel-item {
   scroll-snap-align: end;
 }
+.chat {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .checkbox {
   flex-shrink: 0;
   --chkbg: var(--fallback-bc,oklch(var(--bc)/1));
@@ -3619,6 +3627,9 @@ details.collapse summary::-webkit-details-marker {
 .right-3 {
   right: 0.75rem;
 }
+.right-32 {
+  right: 8rem;
+}
 .right-4 {
   right: 1rem;
 }
@@ -4130,6 +4141,9 @@ details.collapse summary::-webkit-details-marker {
 .h-20 {
   height: 5rem;
 }
+.h-28 {
+  height: 7rem;
+}
 .h-3 {
   height: 0.75rem;
 }
@@ -4226,6 +4240,9 @@ details.collapse summary::-webkit-details-marker {
 .h-\[92px\] {
   height: 92px;
 }
+.h-\[calc\(100vh\+24px\)\] {
+  height: calc(100vh + 24px);
+}
 .h-auto {
   height: auto;
 }
@@ -4257,11 +4274,11 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[300px\] {
   max-height: 300px;
 }
+.max-h-\[313px\] {
+  max-height: 313px;
+}
 .max-h-\[382px\] {
   max-height: 382px;
-}
-.max-h-\[445px\] {
-  max-height: 445px;
 }
 .max-h-\[55px\] {
   max-height: 55px;
@@ -4274,6 +4291,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-h-\[92vh\] {
   max-height: 92vh;
+}
+.max-h-\[calc\(100\%\+24px\)\] {
+  max-height: calc(100% + 24px);
 }
 .max-h-screen {
   max-height: 100vh;
@@ -4347,6 +4367,9 @@ details.collapse summary::-webkit-details-marker {
 .min-h-\[310px\] {
   min-height: 310px;
 }
+.min-h-\[313px\] {
+  min-height: 313px;
+}
 .min-h-\[340px\] {
   min-height: 340px;
 }
@@ -4361,9 +4384,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-h-\[42px\] {
   min-height: 42px;
-}
-.min-h-\[445px\] {
-  min-height: 445px;
 }
 .min-h-\[550px\] {
   min-height: 550px;
@@ -4428,6 +4448,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-2 {
   width: 0.5rem;
+}
+.w-24 {
+  width: 6rem;
 }
 .w-28 {
   width: 7rem;
@@ -4545,9 +4568,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[80\%\] {
   width: 80%;
-}
-.w-\[826px\] {
-  width: 826px;
 }
 .w-\[84px\] {
   width: 84px;
@@ -5042,20 +5062,22 @@ details.collapse summary::-webkit-details-marker {
 .animate-blink {
   animation: blink 0.5s linear infinite;
 }
-@keyframes bounce {
+@keyframes bounceDown {
 
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  0% {
+    transform: translateY(0);
   }
 
   50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
-.animate-bounce {
-  animation: bounce 1s infinite;
+.animate-bounce-down {
+  animation: bounceDown 2s infinite ease-in-out;
 }
 @keyframes fade-down {
 
@@ -5458,11 +5480,17 @@ details.collapse summary::-webkit-details-marker {
 .overflow-x-auto {
   overflow-x: auto;
 }
+.\!overflow-y-auto {
+  overflow-y: auto !important;
+}
 .overflow-y-auto {
   overflow-y: auto;
 }
-.overflow-x-hidden {
-  overflow-x: hidden;
+.\!overflow-x-hidden {
+  overflow-x: hidden !important;
+}
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 .truncate {
   overflow: hidden;
@@ -6058,6 +6086,10 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
+.px-1\.5 {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -6311,9 +6343,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .pb-8 {
   padding-bottom: 2rem;
-}
-.pb-\[120px\] {
-  padding-bottom: 120px;
 }
 .pb-\[15px\] {
   padding-bottom: 15px;
@@ -7015,6 +7044,11 @@ details.collapse summary::-webkit-details-marker {
 }
 .backdrop-blur-\[2px\] {
   --tw-backdrop-blur: blur(2px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -7949,6 +7983,10 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 1.25rem;
   }
 
+  .lg\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
   .lg\:mb-8 {
     margin-bottom: 2rem;
   }
@@ -8105,6 +8143,10 @@ details.collapse summary::-webkit-details-marker {
     height: auto;
   }
 
+  .lg\:max-h-\[445px\] {
+    max-height: 445px;
+  }
+
   .lg\:max-h-\[600px\] {
     max-height: 600px;
   }
@@ -8125,6 +8167,10 @@ details.collapse summary::-webkit-details-marker {
     min-height: 284px;
   }
 
+  .lg\:min-h-\[445px\] {
+    min-height: 445px;
+  }
+
   .lg\:min-h-\[600px\] {
     min-height: 600px;
   }
@@ -8143,6 +8189,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:min-h-\[864px\] {
     min-height: 864px;
+  }
+
+  .lg\:min-h-\[885px\] {
+    min-height: 885px;
   }
 
   .lg\:w-1\/2 {
@@ -8211,6 +8261,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:w-\[606px\] {
     width: 606px;
+  }
+
+  .lg\:w-\[826px\] {
+    width: 826px;
   }
 
   .lg\:w-\[911px\] {
@@ -8449,6 +8503,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:overflow-visible {
     overflow: visible;
+  }
+
+  .lg\:overflow-x-hidden {
+    overflow-x: hidden;
   }
 
   .lg\:rounded-3xl {
@@ -8828,6 +8886,11 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 

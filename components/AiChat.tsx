@@ -40,7 +40,7 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
   function renderUserMessage(message: string) {
     const newUserMessage = document.createElement("p");
     newUserMessage.textContent = message;
-    newUserMessage.classList.add("text-[#5F6E82]", "bg-[#E4F3F380]", "px-5", "py-2.5", "rounded-full", "mt-12", "mb-7", "self-end", "animate-pop-in");
+    newUserMessage.classList.add("text-[#5F6E82]", "bg-[#E4F3F380]", "px-5", "py-2.5", "rounded-full", "mt-12", "mb-7", "self-end", "animate-pop-in", "text-sm", "lg:text-base");
     messagesParentContainer.appendChild(newUserMessage);
   }
   
@@ -203,7 +203,7 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
       });
 
       const data = await response.json();
-      //const data = await aiMock();
+      // const data = await aiMock();
       console.log('Resposta da API:', data.output);
       renderAiMessage(data.output);
     } catch (error) {
@@ -283,15 +283,15 @@ export interface Props {
 export default function AiChat({ aiName = 'Agente Alfredo', suggestedQuestions = [] }: Props) {
   const sectionId = useId();
   const aiNameClass = "text-sm text-[#5F6E82] font-medium mb-1";
-  const messageClass = "text-base text-[#5F6E82] font-normal leading-[140%]";
+  const messageClass = "text-sm lg:text-base text-[#5F6E82] font-normal leading-[140%]";
 
-  return <div id={sectionId} class="rounded-2xl w-[826px] max-h-[445px] min-h-[445px] bg-white px-5 pb-8 flex flex-col justify-between">
-    <div class="messagesParentContainer overflow-y-auto overflow-x-hidden flex flex-col flex-1 px-4 mb-2.5 my-5">
+  return <div id={sectionId} class="rounded-2xl w-full lg:w-[826px] max-h-[313px] min-h-[313px] lg:max-h-[445px] lg:min-h-[445px] bg-white px-5 pb-8 flex flex-col justify-between">
+    <div class="messagesParentContainer carousel !overflow-y-auto !overflow-x-hidden flex flex-col flex-1 px-4 mb-2.5 my-5">
       <p class={aiNameClass}>{aiName}</p>
       <div class={"firstMessage " + messageClass}>
       </div>
 
-      <div class="bg-[#FBFAF9] rounded px-5 py-2.5 pb-7 mb-7 self-start font-semibold text-[#5F6E82] leading-[140%] optionSelector hidden">
+      <div class="bg-[#FBFAF9] rounded px-5 py-2.5 pb-7 lg:mb-7 self-start font-semibold text-[#5F6E82] leading-[140%] optionSelector hidden">
         <p class="text-sm "><span></span>, você conhece a Loja Integrada?</p>
         <p class="flex gap-1 items-center pb-3 mb-3 border-b border-[#f1f1f1]">
           <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -335,9 +335,9 @@ export default function AiChat({ aiName = 'Agente Alfredo', suggestedQuestions =
     {suggestedQuestions.length > 0 && <div class="px-7 mb-7 relative">
       <div class="bg-white bottom-full transition-opacity duration-1000 absolute opacity-0 pointer-events-none suggestedQuestionsContainer">
         <p class="text-[#5F6E82] font-medium text-sm mb-2.5">Perguntas sugeridas:</p>
-        <div class="flex flex-wrap gap-x-1.5 gap-y-3">
+        <div class="flex lg:flex-wrap overflow-x-scroll lg:overflow-x-hidden gap-x-1.5 gap-y-3">
           {suggestedQuestions.map(question => (
-            <button class="suggestedQuestions border border-[#5F6E82] hover:border-[#0C9898] rounded-xl px-2.5 py-3 text-xs hover:text-[#0C9898] text-[#5F6E82] hover:scale-100 hover:font-normal">
+            <button class="suggestedQuestions whitespace-nowrap border border-[#5F6E82] hover:border-[#0C9898] rounded-xl px-2.5 py-3 text-xs hover:text-[#0C9898] text-[#5F6E82] hover:scale-100 hover:font-normal">
               {question}
             </button>
           ))}
@@ -348,8 +348,7 @@ export default function AiChat({ aiName = 'Agente Alfredo', suggestedQuestions =
     <div  class="h-[58px] px-4 border-t border-[#EEEEEE]">
       <form class="mt-5 flex">
         <input 
-          autoFocus 
-          class="AiInput focus:outline-none focus:ring-0 flex-1 text-[#5F6E82]" 
+          class="AiInput focus:outline-none focus:ring-0 flex-1 text-[#5F6E82] text-sm lg:text-base" 
           placeholder="Digite aqui seu nome para começar" />
         <button type="submit" value="" class="sendMessageButton hover:scale-100 group">
           <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -332,7 +332,7 @@ export default function AiChat({ aiName = 'Agente Alfredo', suggestedQuestions =
       </div>
     </div>
 
-    {suggestedQuestions.length > 0 && <div class="px-7 mb-7 relative">
+    {suggestedQuestions.length > 0 && <div class="px-7 lg:mb-7 relative">
       <div class="bg-white bottom-full transition-opacity duration-1000 absolute opacity-0 pointer-events-none suggestedQuestionsContainer">
         <p class="text-[#5F6E82] font-medium text-sm mb-2.5">Perguntas sugeridas:</p>
         <div class="flex lg:flex-wrap overflow-x-scroll lg:overflow-x-hidden gap-x-1.5 gap-y-3">

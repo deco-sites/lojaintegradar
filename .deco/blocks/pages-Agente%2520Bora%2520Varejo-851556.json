@@ -196,7 +196,8 @@
                 "width": 164,
                 "height": 55
               }
-            ]
+            ],
+            "disableAnimation": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -230,14 +231,15 @@
                 }
               }
             ],
-            "scrollAmount": 100,
+            "scrollAmount": 0,
             "logos": [
               {
                 "src": "https://assets.decocache.com/lojaintegradar/1e71e799-4a20-4674-bf23-c6f085cfc813/loja-integrada-komea-logo.svg",
                 "alt": "Komea logo"
               }
             ],
-            "id": "komeainicio"
+            "id": "komeainicio",
+            "disableAnimation": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

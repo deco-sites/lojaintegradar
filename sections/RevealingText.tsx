@@ -76,16 +76,17 @@ export interface Props {
   backgroundMedia?: BackgroundMedia
   /** @description deafult is 120 */
   scrollAmount?: number;
+  disableAnimation?: boolean;
 }
 
-export default function RevealingText({ id, lines = [], backgroundMedia, scrollAmount, logos=[] }: Props) {
+export default function RevealingText({ id, lines = [], backgroundMedia, scrollAmount, logos=[], disableAnimation }: Props) {
   const rootId = id || useId();
-  return <div id={rootId} class="relative min-h-[120vh]" style={{ height: `${lines.length * (scrollAmount || 120)}vh` }} >
-    <script
+  return <div id={rootId} class={`relative ${disableAnimation && 'min-h-screen' && 'min-h-[120vh]'}`} style={disableAnimation ? {} :{ height: `${lines.length * (scrollAmount || 120)}vh` }} >
+    {!disableAnimation && <script
       type="module"
       dangerouslySetInnerHTML={{ __html: useScript(onLoad, rootId, lines) }}
-    />
-    <div class="absolute top-0 w-full" style={{ height: `${(lines.length * (scrollAmount || 120)) + 100}vh`, zIndex: -60 }}>
+    />}
+    <div class="absolute top-0 w-full -z-[60]" style={disableAnimation ? {height: '200vh'} : { height: `${(lines.length * (scrollAmount || 120)) + 100}vh`}}>
       <div class="h-[100vh] sticky top-0 flex flex-col items-center justify-center" style={{ background: backgroundMedia?.backgroundColor }}>
         {logos.length > 0 && <div class="flex flex-warp justify-center gap-4 mb-9 items-center">
           {logos.map(logo => (

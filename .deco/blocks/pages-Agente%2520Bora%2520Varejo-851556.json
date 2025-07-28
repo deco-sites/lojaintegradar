@@ -130,9 +130,13 @@
             },
             "image": {},
             "goToNextSectionButton": {
-              "text": "<p><span>Conheça</span></p><p><span>os outros</span></p><p><span>Agentes da LI</span></p>",
+              "text": "<p style=\"text-align: center\">Conheça</p><p style=\"text-align: center\">os outros</p><p style=\"text-align: center\">Agentes da LI</p>",
               "backgroundColor": "rgba(238, 252, 88, 0.82)",
-              "href": "#komeainicio"
+              "href": "#komeainicio",
+              "floatingImage": {
+                "src": "https://assets.decocache.com/lojaintegradar/7da8ad37-846a-4847-b702-ec9dd433c5b2/bee.png",
+                "verticalPosition": "-30px"
+              }
             }
           },
           "rule": {

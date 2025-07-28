@@ -8177,6 +8177,10 @@ details.collapse summary::-webkit-details-marker {
     min-height: 3rem;
   }
 
+  .lg\:min-h-\[100vh\] {
+    min-height: 100vh;
+  }
+
   .lg\:min-h-\[138px\] {
     min-height: 138px;
   }
@@ -8207,10 +8211,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:min-h-\[864px\] {
     min-height: 864px;
-  }
-
-  .lg\:min-h-\[885px\] {
-    min-height: 885px;
   }
 
   .lg\:w-1\/2 {

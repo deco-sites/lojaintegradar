@@ -188,7 +188,7 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
   async function sendMessageToApi(input: string) {
     const url = 'https://www.lojaintegrada.com.br/li-rag/v1/chat';
 
-    if (history.length > 5) history.length = 0;
+    //if (history.length > 5) history.length = 0;
 
     const payload = {
       history,

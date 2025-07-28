@@ -5507,6 +5507,9 @@ details.collapse summary::-webkit-details-marker {
 .overflow-x-scroll {
   overflow-x: scroll;
 }
+.scroll-auto {
+  scroll-behavior: auto;
+}
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;

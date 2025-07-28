@@ -30,7 +30,7 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
     sendingMessages: 'sendingMessages'
   }
   let currentButtonStatus = buttonStatus.gettingName;
-
+  const history: { input: string; output: string; }[] = [];
   // String recebida com HTML embutido
   const primeiraMensagem = `👋 E aí, tudo certo? Aqui é o Alfredo (versão Agente).<br/>
     Bora bater um papo sobre varejo, marca, vendas e inteligência artificial?<br/><br/>
@@ -186,8 +186,10 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
   async function sendMessageToApi(input: string) {
     const url = 'https://www.lojaintegrada.com.br/li-rag/v1/chat';
 
+    if (history.length > 5) history.length = 0;
+
     const payload = {
-      history: [],
+      history,
       input
     };
 
@@ -203,12 +205,14 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
       });
 
       const data = await response.json();
-      // const data = await aiMock();
+      //const data = await aiMock();
       console.log('Resposta da API:', data.output);
       renderAiMessage(data.output);
+      history.push({input: payload.input, output: data.output});
     } catch (error) {
       console.error('Erro na requisição:', error);
       renderAiMessage('Erro na requisição:' + error);
+      history.push({input: payload.input, output: "error"+ error});
     } finally {
       typingCircles.classList.add("!hidden");
     }

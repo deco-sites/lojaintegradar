@@ -2,6 +2,8 @@ import { useScript } from "@deco/deco/hooks";
 import { useId } from "site/sdk/useId.ts";
 
 const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string, aiNameClass: string) => {
+  let autoScrolling = true;
+
   const AiChat = document.getElementById(AiChatComponentId) as HTMLElement;
   const form = AiChat.querySelector("form") as HTMLElement;
   const sendMessageButton = AiChat.querySelector(".sendMessageButton") as HTMLButtonElement;
@@ -231,6 +233,19 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
     suggestedQuestionsContainer.classList.remove("absolute", "opacity-0", "pointer-events-none");
   }
 
+  messagesParentContainer.addEventListener("scroll", () => {
+    const { scrollTop, scrollHeight, clientHeight } = messagesParentContainer;
+
+    const isAtBottom = scrollTop + clientHeight >= scrollHeight - 1;
+
+    if (isAtBottom) {
+      autoScrolling = true;
+    } else {
+      autoScrolling = false;
+    }
+  });
+
+
   function digitarMensagem(container: HTMLElement, mensagem: string) {
     // Converte a string HTML para elementos reais
     const temp = document.createElement("div");
@@ -248,8 +263,8 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
           if (j < texto.length) {
             container.innerHTML += texto[j];
             j++;
-            setTimeout(digitarLetra, 10);
-            messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
+            setTimeout(digitarLetra, 15);
+            if (autoScrolling) messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
           } else {
             callback();
           }
@@ -270,6 +285,8 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
           i++;
           processarProximoNode();
         });
+      } else {
+        autoScrolling = true;
       }
     }
 
@@ -290,7 +307,7 @@ export default function AiChat({ aiName = 'Agente Alfredo', suggestedQuestions =
   const messageClass = "text-sm lg:text-base text-[#5F6E82] font-normal leading-[140%]";
 
   return <div id={sectionId} class="rounded-2xl w-full lg:w-[826px] max-h-[313px] min-h-[313px] lg:max-h-[445px] lg:min-h-[445px] bg-white px-5 pb-8 flex flex-col justify-between">
-    <div class="messagesParentContainer carousel !overflow-y-auto !overflow-x-hidden flex flex-col flex-1 px-4 mb-2.5 my-5">
+    <div class="messagesParentContainer carousel !overflow-y-auto !overflow-x-hidden flex flex-col flex-1 px-4 mb-2.5 my-5 scroll-auto">
       <p class={aiNameClass}>{aiName}</p>
       <div class={"firstMessage " + messageClass}>
       </div>

@@ -3738,6 +3738,9 @@ details.collapse summary::-webkit-details-marker {
 .-z-50 {
   z-index: -50;
 }
+.-z-\[60\] {
+  z-index: -60;
+}
 .z-0 {
   z-index: 0;
 }
@@ -5503,6 +5506,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .overflow-x-scroll {
   overflow-x: scroll;
+}
+.scroll-auto {
+  scroll-behavior: auto;
 }
 .truncate {
   overflow: hidden;

@@ -209,7 +209,7 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
       const data = await response.json();
       //const data = await aiMock();
       console.log('Resposta da API:', data.output);
-      renderAiMessage(data.output);
+      renderAiMessage(data.output.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"));
       history.push({input: payload.input, output: data.output});
     } catch (error) {
       console.error('Erro na requisição:', error);

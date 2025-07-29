@@ -4274,11 +4274,11 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[300px\] {
   max-height: 300px;
 }
-.max-h-\[313px\] {
-  max-height: 313px;
-}
 .max-h-\[382px\] {
   max-height: 382px;
+}
+.max-h-\[445px\] {
+  max-height: 445px;
 }
 .max-h-\[55px\] {
   max-height: 55px;
@@ -4367,9 +4367,6 @@ details.collapse summary::-webkit-details-marker {
 .min-h-\[310px\] {
   min-height: 310px;
 }
-.min-h-\[313px\] {
-  min-height: 313px;
-}
 .min-h-\[340px\] {
   min-height: 340px;
 }
@@ -4384,6 +4381,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-h-\[42px\] {
   min-height: 42px;
+}
+.min-h-\[445px\] {
+  min-height: 445px;
 }
 .min-h-\[550px\] {
   min-height: 550px;
@@ -5503,9 +5503,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .\!overflow-x-hidden {
   overflow-x: hidden !important;
-}
-.overflow-x-scroll {
-  overflow-x: scroll;
 }
 .scroll-auto {
   scroll-behavior: auto;
@@ -8161,10 +8158,6 @@ details.collapse summary::-webkit-details-marker {
     height: auto;
   }
 
-  .lg\:max-h-\[445px\] {
-    max-height: 445px;
-  }
-
   .lg\:max-h-\[600px\] {
     max-height: 600px;
   }
@@ -8187,10 +8180,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:min-h-\[284px\] {
     min-height: 284px;
-  }
-
-  .lg\:min-h-\[445px\] {
-    min-height: 445px;
   }
 
   .lg\:min-h-\[600px\] {
@@ -8521,10 +8510,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:overflow-visible {
     overflow: visible;
-  }
-
-  .lg\:overflow-x-hidden {
-    overflow-x: hidden;
   }
 
   .lg\:rounded-3xl {

@@ -209,7 +209,9 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
       const data = await response.json();
       //const data = await aiMock();
       console.log('Resposta da API:', data.output);
-      renderAiMessage(data.output.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"));
+      renderAiMessage(data.output
+        .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+        .replace(/#+/g, ''));
       history.push({input: payload.input, output: data.output});
     } catch (error) {
       console.error('Erro na requisição:', error);
@@ -352,7 +354,7 @@ export default function AiChat({ aiName = 'Agente Alfredo', suggestedQuestions =
         <p class="text-[#5F6E82] font-medium text-sm mb-2.5">Perguntas sugeridas:</p>
         <div class="flex flex-wrap  gap-x-1.5 gap-y-3">
           {suggestedQuestions.map(question => (
-            <button class="suggestedQuestions border border-[#5F6E82] hover:border-[#0C9898] rounded-xl px-2.5 py-3 text-xs hover:text-[#0C9898] text-[#5F6E82] hover:scale-100 hover:font-normal">
+            <button class="suggestedQuestions border border-[#5F6E82] hover:border-[#0C9898] text-left rounded-xl px-2.5 py-3 text-xs hover:text-[#0C9898] text-[#5F6E82] hover:scale-100 hover:font-normal">
               {question}
             </button>
           ))}

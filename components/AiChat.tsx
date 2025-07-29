@@ -98,8 +98,8 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
       AiInput.focus();
       currentButtonStatus = buttonStatus.sendingMessages;
       renderAiMessage("Boa! agora vamos começar, o que você gostaria de perguntar?");
-      messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
       showSuggestedQuestions();
+      messagesParentContainer.scrollTop = messagesParentContainer.scrollHeight;
       const url =
                     `https://api.hsforms.com/submissions/v3/integration/submit/7112881/7eecb79c-fc2d-41c5-8f16-cb8e6e22cec9`;
 
@@ -226,11 +226,15 @@ const onLoad = (AiChatComponentId: string, aiName: string, messageClass: string,
   }))
 
   function hideSuggestedQuestions() {
-    suggestedQuestionsContainer.classList.add("absolute", "opacity-0", "pointer-events-none");
+    suggestedQuestionsContainer.classList.add("opacity-0", "pointer-events-none");
+    setTimeout(() => {
+      suggestedQuestionsContainer.classList.add("absolute");
+    }, 1000);
   }
 
   function showSuggestedQuestions() {
     suggestedQuestionsContainer.classList.remove("absolute", "opacity-0", "pointer-events-none");
+    messagesParentContainer.appendChild(suggestedQuestionsContainer);
   }
 
   messagesParentContainer.addEventListener("scroll", () => {
@@ -306,7 +310,7 @@ export default function AiChat({ aiName = 'Agente Alfredo', suggestedQuestions =
   const aiNameClass = "text-sm text-[#5F6E82] font-medium mb-1";
   const messageClass = "text-sm lg:text-base text-[#5F6E82] font-normal leading-[140%]";
 
-  return <div id={sectionId} class="rounded-2xl w-full lg:w-[826px] max-h-[313px] min-h-[313px] lg:max-h-[445px] lg:min-h-[445px] bg-white px-5 pb-8 flex flex-col justify-between">
+  return <div id={sectionId} class="rounded-2xl w-full lg:w-[826px] max-h-[445px] min-h-[445px] bg-white lg:px-5 pb-8 flex flex-col justify-between">
     <div class="messagesParentContainer carousel !overflow-y-auto !overflow-x-hidden flex flex-col flex-1 px-4 mb-2.5 my-5 scroll-auto">
       <p class={aiNameClass}>{aiName}</p>
       <div class={"firstMessage " + messageClass}>
@@ -343,6 +347,18 @@ export default function AiChat({ aiName = 'Agente Alfredo', suggestedQuestions =
           <span>Não</span>
         </button>
       </div>
+    {suggestedQuestions.length > 0 && <div class="lg:mb-7 relative">
+      <div class="bg-white bottom-full transition-opacity duration-1000 absolute opacity-0 pointer-events-none suggestedQuestionsContainer">
+        <p class="text-[#5F6E82] font-medium text-sm mb-2.5">Perguntas sugeridas:</p>
+        <div class="flex flex-wrap  gap-x-1.5 gap-y-3">
+          {suggestedQuestions.map(question => (
+            <button class="suggestedQuestions border border-[#5F6E82] hover:border-[#0C9898] rounded-xl px-2.5 py-3 text-xs hover:text-[#0C9898] text-[#5F6E82] hover:scale-100 hover:font-normal">
+              {question}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>}
     </div>
 
     <div class="relative">
@@ -353,18 +369,6 @@ export default function AiChat({ aiName = 'Agente Alfredo', suggestedQuestions =
       </div>
     </div>
 
-    {suggestedQuestions.length > 0 && <div class="px-7 lg:mb-7 relative">
-      <div class="bg-white bottom-full transition-opacity duration-1000 absolute opacity-0 pointer-events-none suggestedQuestionsContainer">
-        <p class="text-[#5F6E82] font-medium text-sm mb-2.5">Perguntas sugeridas:</p>
-        <div class="flex lg:flex-wrap overflow-x-scroll lg:overflow-x-hidden gap-x-1.5 gap-y-3">
-          {suggestedQuestions.map(question => (
-            <button class="suggestedQuestions whitespace-nowrap border border-[#5F6E82] hover:border-[#0C9898] rounded-xl px-2.5 py-3 text-xs hover:text-[#0C9898] text-[#5F6E82] hover:scale-100 hover:font-normal">
-              {question}
-            </button>
-          ))}
-        </div>
-      </div>
-    </div>}
 
     <div  class="h-[58px] px-4 border-t border-[#EEEEEE]">
       <form class="mt-5 flex">

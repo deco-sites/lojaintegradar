@@ -65,7 +65,9 @@
               ]
             },
             "image": {
-              "src": "https://assets.decocache.com/lojaintegradar/00b582e2-53af-49f7-bd67-ed6b5f6bbba8/ALFREDO_SOARES-44-1.png"
+              "src": "https://assets.decocache.com/lojaintegradar/0f680405-0437-4c4b-a2fe-56f7e8d06fff/Alfredo-mobile.png",
+              "width": 276,
+              "height": 398
             },
             "goToNextSectionButton": {}
           },
@@ -79,7 +81,7 @@
             "__resolveType": "site/sections/AI.tsx",
             "backgroundMedia": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/980ad350-4a4d-41dd-bd48-965e0cbe768d/AI-background.svg"
+                "src": "https://assets.decocache.com/lojaintegradar/8dce7bf8-aed9-4916-bb9d-0dc9d73b8820/bg-Alfredo-Soares.svg"
               },
               "use": "image"
             },
@@ -130,9 +132,13 @@
             },
             "image": {},
             "goToNextSectionButton": {
-              "text": "<p><span>Conheça</span></p><p><span>os outros </span></p><p><span>Agentes da LI</span></p>",
+              "text": "<p style=\"text-align: center\">Conheça</p><p style=\"text-align: center\">os outros</p><p style=\"text-align: center\">Agentes da LI</p>",
               "backgroundColor": "rgba(238, 252, 88, 0.82)",
-              "href": "#komeainicio"
+              "href": "#komeainicio",
+              "floatingImage": {
+                "src": "https://assets.decocache.com/lojaintegradar/7da8ad37-846a-4847-b702-ec9dd433c5b2/bee.png",
+                "verticalPosition": "-30px"
+              }
             }
           },
           "rule": {
@@ -231,7 +237,6 @@
                 }
               }
             ],
-            "scrollAmount": 0,
             "logos": [
               {
                 "src": "https://assets.decocache.com/lojaintegradar/1e71e799-4a20-4674-bf23-c6f085cfc813/loja-integrada-komea-logo.svg",
@@ -239,7 +244,7 @@
               }
             ],
             "id": "komeainicio",
-            "disableAnimation": true
+            "scrollAmount": 0
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

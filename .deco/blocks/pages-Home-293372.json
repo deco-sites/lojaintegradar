@@ -5,8 +5,8 @@
     "__resolveType": "website/flags/multivariate.ts",
     "variants": [
       {
-        "value": [
-          {
+        "value": {
+          "0": {
             "__resolveType": "site/sections/Header2.tsx",
             "navigation": {
               "links": [],
@@ -223,7 +223,7 @@
             },
             "asideMenuOnlyMobile": true
           },
-          {
+          "1": {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
@@ -357,7 +357,7 @@
               }
             ]
           },
-          {
+          "2": {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
@@ -396,7 +396,7 @@
               }
             ]
           },
-          {
+          "3": {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
@@ -553,7 +553,7 @@
               }
             ]
           },
-          {
+          "4": {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
@@ -617,7 +617,7 @@
               }
             ]
           },
-          {
+          "5": {
             "__resolveType": "site/sections/HeroWithTime.tsx",
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
@@ -951,7 +951,7 @@
             "tabsInterval": 30,
             "hideSection": false
           },
-          {
+          "6": {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
@@ -1343,7 +1343,7 @@
               }
             ]
           },
-          {
+          "7": {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
@@ -1447,7 +1447,7 @@
               }
             ]
           },
-          {
+          "8": {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
@@ -1566,7 +1566,7 @@
               }
             ]
           },
-          {
+          "9": {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
@@ -1807,7 +1807,7 @@
               }
             ]
           },
-          {
+          "10": {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
@@ -2551,7 +2551,7 @@
               }
             ]
           },
-          {
+          "11": {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
@@ -3201,7 +3201,7 @@
               }
             ]
           },
-          {
+          "12": {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
@@ -3424,10 +3424,10 @@
               }
             ]
           },
-          {
+          "13": {
             "__resolveType": "site/sections/TalkToSpecialistModal.tsx"
           },
-          {
+          "14": {
             "__resolveType": "site/sections/BackToTopButton.tsx",
             "text": "Voltar ao topo",
             "textColor": "#FAFAF5",
@@ -3439,13 +3439,13 @@
             },
             "size": 84
           },
-          {
+          "15": {
             "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
           },
-          {
+          "16": {
             "__resolveType": "site/sections/VisualOptimizerScript.tsx"
           }
-        ],
+        },
         "rule": {
           "__resolveType": "website/matchers/always.ts"
         }

@@ -23,46 +23,21 @@
                   "customEventLabel": "fazer-login",
                   "ctaStyle": "button",
                   "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "outline": true,
-                  "customProps": {}
+                  "outline": true
                 }
               ],
-              "mobileButtons": [
-                {
-                  "ctaStyle": "button",
-                  "text": "Fazer login",
-                  "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#00363A",
-                  "textColor": "#00363A",
-                  "size": "Small",
-                  "customEventLabel": "fazer-login"
-                }
-              ],
+              "mobileButtons": [],
               "asideMenuButtons": [
                 {
-                  "text": "Abrir loja grátis",
-                  "backgroundColor": "#003037",
-                  "textColor": "#ffffff",
-                  "borderColor": "#003037",
-                  "type": "Button",
-                  "size": "Small",
-                  "openModal": "Create Store",
-                  "createStorePlanId": "172",
-                  "customEvent": "header",
-                  "customEventCategory": "loja-integrada:institucional",
-                  "customEventLabel": "criar-loja-gratis"
-                },
-                {
                   "text": "Fazer Login",
-                  "textColor": "#003037",
                   "backgroundColor": "Transparent",
+                  "textColor": "#003037",
                   "borderColor": "#003037",
+                  "size": "Small",
+                  "customEventLabel": "fazer-login",
                   "href": "https://app.lojaintegrada.com.br/painel/login",
                   "ctaStyle": "button",
-                  "outline": true,
-                  "size": "Small",
-                  "customEventLabel": "fazer-login"
+                  "outline": true
                 }
               ],
               "sideMenuButtons": [],
@@ -121,7 +96,7 @@
               },
               "href": "/home ",
               "alt": "logo  ",
-              "width": 159
+              "width": 150
             },
             "initialButtons": [],
             "backgroundColor": "#DFEEDD",
@@ -252,7 +227,7 @@
               "menusShadowColor": "rgba(71, 193, 196, .50)",
               "titlesTextProps": {}
             },
-            "asideMenuOnlyMobile": false,
+            "asideMenuOnlyMobile": true,
             "noScrollBackgroundColor": ""
           },
           "rule": {
@@ -267,70 +242,42 @@
               "links": [],
               "buttons": [
                 {
-                  "text": "Criar loja grátis",
-                  "backgroundColor": "#00363A",
-                  "textColor": "#ffffff",
+                  "text": "Fazer login",
+                  "backgroundColor": "transparent",
+                  "textColor": "#00363A",
                   "borderColor": "#00363A",
                   "size": "Small",
                   "type": "Button",
-                  "openModal": "Create Store",
-                  "createStorePlanId": "172",
-                  "showIcon": false,
                   "customEvent": "header",
                   "customEventCategory": "loja-integrada:institucional",
-                  "customEventLabel": "criar-loja-gratis"
+                  "customEventLabel": "fazer-login",
+                  "ctaStyle": "button",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "outline": true
                 },
                 {
                   "type": "Button",
-                  "size": "Small",
-                  "text": "Fazer login",
-                  "textColor": "#00363A",
-                  "backgroundColor": "transparent",
+                  "size": "Medium",
+                  "openModal": "Komea wait list",
+                  "text": "Criar loja",
+                  "backgroundColor": "#00363A",
                   "borderColor": "#00363A",
-                  "ctaStyle": "button",
-                  "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "outline": true,
-                  "customEventCategory": "loja-integrada:institucional",
-                  "customEvent": "header",
-                  "customEventLabel": "fazer-login"
+                  "textColor": "#FFFFFF",
+                  "createStorePlanId": "172"
                 }
               ],
-              "mobileButtons": [
-                {
-                  "ctaStyle": "button",
-                  "text": "Fazer login",
-                  "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#00363A",
-                  "textColor": "#00363A",
-                  "size": "Small",
-                  "customEventLabel": "fazer-login"
-                }
-              ],
+              "mobileButtons": [],
               "asideMenuButtons": [
                 {
-                  "text": "Abrir loja grátis",
-                  "backgroundColor": "#003037",
-                  "textColor": "#ffffff",
-                  "borderColor": "#003037",
-                  "type": "Button",
-                  "size": "Small",
-                  "openModal": "Create Store",
-                  "createStorePlanId": "172",
-                  "customEvent": "header",
-                  "customEventCategory": "loja-integrada:institucional",
-                  "customEventLabel": "criar-loja-gratis"
-                },
-                {
                   "text": "Fazer Login",
-                  "textColor": "#003037",
                   "backgroundColor": "Transparent",
+                  "textColor": "#003037",
                   "borderColor": "#003037",
+                  "size": "Small",
+                  "customEventLabel": "fazer-login",
                   "href": "https://app.lojaintegrada.com.br/painel/login",
                   "ctaStyle": "button",
-                  "outline": true,
-                  "size": "Small",
-                  "customEventLabel": "fazer-login"
+                  "outline": true
                 }
               ],
               "sideMenuButtons": [],

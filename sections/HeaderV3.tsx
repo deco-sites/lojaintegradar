@@ -173,6 +173,7 @@ export interface Nav {
   /** @format color-input */
   asideMenuCloseIconColor?: string;
   headerWhiteSpace?: string;
+  centralizeHeaderContent?: boolean;
   headerMessage?: HeaderMessage;
   campaignTimer?: CampaignTimer;
 }
@@ -181,7 +182,7 @@ export default function Header({ logo = {
   alt: "Logo",
 },
   barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, headerWhiteSpace = '0', noScrollBackgroundColor, backgroundColor, dropdownMenus = { menus: [] }, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
-  navigation, hideSection }: Nav) {
+  navigation , hideSection, centralizeHeaderContent }: Nav) {
   if (hideSection) return <></>
   return (
     <header>
@@ -210,7 +211,7 @@ export default function Header({ logo = {
           <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
           {/* main content */}
-          <div class="drawer-content mx-auto w-full lg:px-0 px-4 py-0 flex gap-8 items-center justify-between max-w-[1120px]">
+          <div class={`drawer-content mx-auto w-full lg:px-0 px-4 py-0 flex gap-8 items-center ${centralizeHeaderContent ? 'justify-center' : 'justify-between'} max-w-[1120px]`}>
 
             <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, noScrollBackgroundColor) }} />
 
@@ -256,7 +257,7 @@ export default function Header({ logo = {
               ))}
             </ul>
 
-            <div class="items-center justify-between">
+            {!hideAsideMenu || (navigation?.buttons?.length ?? 0) > 0 && <div class="items-center justify-between">
               <ul class="flex justify-end gap-3 lg:gap-7">
                 {navigation?.buttons?.map(cta => (
                   <div class="flex items-center"><CTA {...cta} /></div>
@@ -268,7 +269,7 @@ export default function Header({ logo = {
                   </svg>
                 </label>}
               </ul>
-            </div>
+            </div>}
 
           </div>
 

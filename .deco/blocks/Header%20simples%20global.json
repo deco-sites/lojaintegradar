@@ -1,0 +1,339 @@
+{
+  "__resolveType": "website/flags/multivariate/section.ts",
+  "variants": [
+    {
+      "value": {
+        "__resolveType": "site/sections/HeaderV3.tsx",
+        "navigation": {
+          "links": [],
+          "buttons": [],
+          "mobileButtons": [
+            {
+              "ctaStyle": "button",
+              "text": "Fazer login",
+              "href": "https://app.lojaintegrada.com.br/painel/login",
+              "backgroundColor": "transparent",
+              "borderColor": "#00363A",
+              "textColor": "#00363A",
+              "size": "Small",
+              "customEventLabel": "fazer-login"
+            }
+          ],
+          "asideMenuButtons": [
+            {
+              "text": "Abrir loja grátis",
+              "backgroundColor": "#003037",
+              "textColor": "#ffffff",
+              "borderColor": "#003037",
+              "type": "Button",
+              "size": "Small",
+              "openModal": "Create Store",
+              "createStorePlanId": "172",
+              "customEvent": "header",
+              "customEventCategory": "loja-integrada:institucional",
+              "customEventLabel": "criar-loja-gratis"
+            },
+            {
+              "text": "Fazer Login",
+              "textColor": "#003037",
+              "backgroundColor": "Transparent",
+              "borderColor": "#003037",
+              "href": "https://app.lojaintegrada.com.br/painel/login",
+              "ctaStyle": "button",
+              "outline": true,
+              "size": "Small",
+              "customEventLabel": "fazer-login"
+            }
+          ],
+          "sideMenuButtons": [],
+          "linksBorderColor": "#D0DAD9",
+          "textHoverColor": "#D0DAD9",
+          "textColor": "#003037",
+          "mobileButtonsOnScrollColors": {
+            "textColor": "#ffffff",
+            "backgroundColor": "#371E55",
+            "borderColor": "#371E55"
+          },
+          "createStoreCta": {
+            "ctaStyle": "button",
+            "planId": "172",
+            "backgroundColor": "#ffffff",
+            "textColor": "#003037",
+            "borderColor": "#ffffff",
+            "showIcon": false
+          },
+          "createStoreCtaMobile": {
+            "ctaStyle": "button",
+            "planId": "172",
+            "backgroundColor": "rgba(255, 255, 255, 0.60)",
+            "textColor": "#003037",
+            "borderColor": "Transparent",
+            "showIcon": false
+          },
+          "createStoreCtaMobileOnScrollColors": {
+            "backgroundColor": "rgba(255, 255, 255, 0.60)",
+            "borderColor": "Transparent",
+            "textColor": "#003037"
+          },
+          "asideCreateStoreCta": {
+            "planId": "172",
+            "text": "Abrir loja grátis",
+            "ctaStyle": "button",
+            "backgroundColor": "#003037",
+            "borderColor": "#003037",
+            "textColor": "#ffffff",
+            "showIcon": false
+          },
+          "buttonsHeight": "32px",
+          "linksTextProps": {}
+        },
+        "logo": {
+          "src": {
+            "__resolveType": "website/flags/multivariate/image.ts",
+            "variants": [
+              {
+                "value": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
+          },
+          "href": "/home",
+          "alt": "logo ",
+          "width": 200
+        },
+        "initialButtons": [],
+        "backgroundColor": "#E4F3F3",
+        "barsColor": "#003037",
+        "asideMenuTopBackgroundColor": "#D0DAD9",
+        "asideMenuBackgroundColor": "#ffffff",
+        "asideMenuCloseIconColor": "#003037",
+        "headerMessage": {
+          "show": false,
+          "text": "<p>teste</p>",
+          "textColor": "#22454B",
+          "backgroundColor": "#D0DAD9",
+          "cta": [],
+          "font": "Instrument Serif",
+          "textProps": {
+            "color": ""
+          }
+        },
+        "campaignTimer": {
+          "text": "<p>Time left for a campaign to end</p>",
+          "show": false,
+          "labelsColor": "",
+          "numbersColor": "",
+          "noScrollBackgroundColor": "",
+          "backgroundColor": "",
+          "textProps": {
+            "font": "Galaxie Copernicus",
+            "color": ""
+          }
+        },
+        "hideAsideMenu": true,
+        "dropdownMenus": {
+          "menus": [],
+          "textColor": "#ebeaea",
+          "textHoverColor": "",
+          "menusBackgroundColor": "#ffffff",
+          "titlesTextColor": "#00363A",
+          "titlesTextHoverColor": "",
+          "menusTextColor": "#371E56",
+          "menusItemsHoverBackgroundColor": "#E9F9F9",
+          "menusItemsHoverLineColor": "#2bc4c3",
+          "menusShadowColor": "rgba(71, 193, 196, .50)",
+          "titlesTextProps": {}
+        },
+        "asideMenuOnlyMobile": false,
+        "noScrollBackgroundColor": ""
+      },
+      "rule": {
+        "__resolveType": "website/matchers/device.ts",
+        "mobile": true
+      }
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/HeaderV3.tsx",
+        "navigation": {
+          "links": [],
+          "buttons": [
+            {
+              "text": "Criar minha loja",
+              "backgroundColor": "transparent",
+              "textColor": "#00363A",
+              "borderColor": "#00363A",
+              "size": "Small",
+              "type": "Button",
+              "openModal": "Create Store",
+              "createStorePlanId": "172",
+              "showIcon": false,
+              "customEvent": "header",
+              "customEventCategory": "loja-integrada:institucional",
+              "customEventLabel": "criar-loja-gratis"
+            }
+          ],
+          "mobileButtons": [
+            {
+              "ctaStyle": "button",
+              "text": "Fazer login",
+              "href": "https://app.lojaintegrada.com.br/painel/login",
+              "backgroundColor": "transparent",
+              "borderColor": "#00363A",
+              "textColor": "#00363A",
+              "size": "Small",
+              "customEventLabel": "fazer-login"
+            }
+          ],
+          "asideMenuButtons": [
+            {
+              "text": "Abrir loja grátis",
+              "backgroundColor": "#003037",
+              "textColor": "#ffffff",
+              "borderColor": "#003037",
+              "type": "Button",
+              "size": "Small",
+              "openModal": "Create Store",
+              "createStorePlanId": "172",
+              "customEvent": "header",
+              "customEventCategory": "loja-integrada:institucional",
+              "customEventLabel": "criar-loja-gratis"
+            },
+            {
+              "text": "Fazer Login",
+              "textColor": "#003037",
+              "backgroundColor": "Transparent",
+              "borderColor": "#003037",
+              "href": "https://app.lojaintegrada.com.br/painel/login",
+              "ctaStyle": "button",
+              "outline": true,
+              "size": "Small",
+              "customEventLabel": "fazer-login"
+            }
+          ],
+          "sideMenuButtons": [],
+          "linksBorderColor": "#D0DAD9",
+          "textHoverColor": "#D0DAD9",
+          "textColor": "#003037",
+          "mobileButtonsOnScrollColors": {
+            "textColor": "#ffffff",
+            "backgroundColor": "#371E55",
+            "borderColor": "#371E55"
+          },
+          "createStoreCta": {
+            "ctaStyle": "button",
+            "planId": "172",
+            "backgroundColor": "#ffffff",
+            "textColor": "#003037",
+            "borderColor": "#ffffff",
+            "showIcon": false
+          },
+          "createStoreCtaMobile": {
+            "ctaStyle": "button",
+            "planId": "172",
+            "backgroundColor": "rgba(255, 255, 255, 0.60)",
+            "textColor": "#003037",
+            "borderColor": "Transparent",
+            "showIcon": false
+          },
+          "createStoreCtaMobileOnScrollColors": {
+            "backgroundColor": "rgba(255, 255, 255, 0.60)",
+            "borderColor": "Transparent",
+            "textColor": "#003037"
+          },
+          "asideCreateStoreCta": {
+            "planId": "172",
+            "text": "Abrir loja grátis",
+            "ctaStyle": "button",
+            "backgroundColor": "#003037",
+            "borderColor": "#003037",
+            "textColor": "#ffffff",
+            "showIcon": false
+          },
+          "buttonsHeight": "32px",
+          "linksTextProps": {}
+        },
+        "logo": {
+          "src": {
+            "__resolveType": "website/flags/multivariate/image.ts",
+            "variants": [
+              {
+                "value": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
+          },
+          "href": "/home ",
+          "alt": "logo ",
+          "width": 200
+        },
+        "initialButtons": [],
+        "backgroundColor": "#E4F3F3",
+        "barsColor": "#003037",
+        "asideMenuTopBackgroundColor": "#D0DAD9",
+        "asideMenuBackgroundColor": "#ffffff",
+        "asideMenuCloseIconColor": "#003037",
+        "headerMessage": {
+          "show": false,
+          "text": "<p>teste</p>",
+          "textColor": "#22454B",
+          "backgroundColor": "#D0DAD9",
+          "cta": [],
+          "font": "Instrument Serif",
+          "textProps": {
+            "color": ""
+          }
+        },
+        "campaignTimer": {
+          "text": "<p>Time left for a campaign to end</p>",
+          "show": false,
+          "labelsColor": "",
+          "numbersColor": "",
+          "noScrollBackgroundColor": "",
+          "backgroundColor": "",
+          "textProps": {
+            "font": "Galaxie Copernicus",
+            "color": ""
+          }
+        },
+        "hideAsideMenu": true,
+        "dropdownMenus": {
+          "menus": [],
+          "textColor": "#ebeaea",
+          "textHoverColor": "",
+          "menusBackgroundColor": "#ffffff",
+          "titlesTextColor": "#00363A",
+          "titlesTextHoverColor": "",
+          "menusTextColor": "#371E56",
+          "menusItemsHoverBackgroundColor": "#E9F9F9",
+          "menusItemsHoverLineColor": "#2bc4c3",
+          "menusShadowColor": "rgba(71, 193, 196, .50)",
+          "titlesTextProps": {}
+        },
+        "asideMenuOnlyMobile": false,
+        "noScrollBackgroundColor": ""
+      },
+      "rule": {
+        "__resolveType": "website/matchers/always.ts"
+      }
+    }
+  ]
+}

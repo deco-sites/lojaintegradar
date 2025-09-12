@@ -126,6 +126,8 @@ export interface Props {
   hubspotForm?: HubspotFormProps;
   container?: Container;
   sectionMarginTop?: string;
+  sectionPaddingLeft?: string;
+  sectionPaddingRight?: string;
   sectionBackground?: sectionBackgroundMedia;
   floatingImage?: FloatingImage;
   lcp?: boolean;
@@ -157,7 +159,7 @@ export function HeroMedia({ media }: { media?: Media }) {
   </>
 }
 
-export default function HeroV3({ hideSection, title, text, textProps, bulletPoints, cta = [], media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, sectionMarginTop, lcp, floatingImage }: Props) {
+export default function HeroV3({ hideSection, title, text, textProps, bulletPoints, cta = [], media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, sectionMarginTop, sectionPaddingLeft, sectionPaddingRight, lcp, floatingImage }: Props) {
   if (hideSection) return <></>;
   const placement = {
     "left": "justify-start",
@@ -176,9 +178,9 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
     "bottom": "object-bottom"
   }
 
-  return <div class=" relative py-12" style={{ paddingTop: container?.marginTop, paddingBottom: container?.marginBottom, marginTop: sectionMarginTop }}>
+  return <div class=" relative py-12" style={{ paddingTop: container?.marginTop, paddingBottom: container?.marginBottom, marginTop: sectionMarginTop, paddingLeft: sectionPaddingLeft, paddingRight: sectionPaddingRight }}>
     <div
-      class={`max-w-[1120px] relative z-10 mx-auto rounded-[20px] overflow-hidden px-3.5 lg:px-0 flex gap-5 gap-y-10 lg:gap-y-20 lg:flex-nowrap items-center justify-center ${mediaPlacement[media?.placement || "right"]}`}
+      class={`max-w-[1120px] relative z-10 mx-auto rounded-[20px] overflow-hidden px-3.5 lg:px-2 flex gap-5 gap-y-10 lg:gap-y-20 lg:flex-nowrap items-center justify-center ${mediaPlacement[media?.placement || "right"]}`}
       style={{ background: container?.backgroundColor, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight }}>
       <AnimateOnShow animation="animate-fade-up50" divClass={`${(media?.use && media.placement != "bellow" && media.placement != "above") && 'max-w-[656px]'} flex flex-grow flex-col gap-6`} style={{ animationDuration: '1s', maxWidth: title?.titleMaxWidth }}>
 

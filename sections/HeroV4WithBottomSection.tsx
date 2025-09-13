@@ -3,6 +3,7 @@ import Image from "apps/website/components/Image.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 import HubspotForm, { Props as HubspotFormProps } from "../components/HubspotForm.tsx";
+import { type Section } from "@deco/deco/blocks";
 
 const openModal = (modalId: string) => {
   event!.preventDefault();
@@ -79,6 +80,7 @@ export interface BulletPoints {
 export interface Media {
   image?: IImage;
   cornerImage?: boolean;
+  cornerImagePostion?: string;
   video?: IVideo;
   use?: "image" | "video" | "embed";
 }
@@ -143,6 +145,7 @@ export interface Props {
   sectionBackground?: sectionBackgroundMedia;
   floatingImage?: FloatingImage;
   lcp?: boolean;
+  bottomSection?: Section;
 }
 
 export function HeroMedia({ media }: { media?: Media }) {
@@ -171,7 +174,7 @@ export function HeroMedia({ media }: { media?: Media }) {
   </>
 }
 
-export default function HeroV3({ hideSection, title, text, textProps, bulletPoints, cta = [], ctaPosition = 'below text', tag, media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, sectionMarginTop, sectionPaddingLeft, sectionPaddingRight, lcp, floatingImage }: Props) {
+export default function HeroV3({ hideSection, title, bottomSection, text, textProps, bulletPoints, cta = [], ctaPosition = 'below text', tag, media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, sectionMarginTop, sectionPaddingLeft, sectionPaddingRight, lcp, floatingImage }: Props) {
   if (hideSection) return <></>;
   const placement = {
     "left": "justify-start",
@@ -267,6 +270,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
             <CTA {...cta} />
           ))}
         </div>}
+    {bottomSection && <bottomSection.Component {...bottomSection.props}/>}
     {sectionBackground?.backgroundColor && <div style={{ background: sectionBackground.backgroundColor }} class="absolute top-0 left-0 h-full w-full -z-40" />}
     {sectionBackground?.use == "image" && sectionBackground.image?.src && <Image
       src={sectionBackground.image.src}
@@ -283,7 +287,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
       <source src={sectionBackground.video} type="video/mp4" />
     </video>}
 
-    {media?.cornerImage && media.use == "image" && <div class={`absolute h-full ${media.placement == "left" ? "left-0" : "right-0"} top-0 flex items-center`}>
+    {media?.cornerImage && media.use == "image" && <div class={`absolute h-full ${media.placement == "left" ? "left-0" : "right-0"} top-0 flex items-start`} style={{top: media.cornerImagePostion}}>
       {media?.use == "image" && media.image?.src && <Image
         src={media.image.src}
         alt={media.image.alt || "image"}

@@ -5946,7 +5946,7 @@
               "fontWeight": "600"
             },
             "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #001D1F , #012b2e);"
+              "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
             },
             "text": "<p></p>",
             "textProps": {
@@ -5957,7 +5957,10 @@
             },
             "cta": [],
             "ctaPlacement": "center",
-            "customTitle": "hero:multiplos-especialistas"
+            "customTitle": "hero:multiplos-especialistas",
+            "container": {
+              "backgroundColor": ""
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5980,7 +5983,7 @@
               "fontSize": "52px"
             },
             "sectionBackground": {
-              "backgroundColor": "#00363A"
+              "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
             },
             "text": "<p></p>",
             "textProps": {
@@ -6021,7 +6024,7 @@
               "font": "Lektorat Display Var"
             },
             "sectionBackground": {
-              "backgroundColor": "#00363A"
+              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
             },
             "container": {},
             "text": "<p><span>Escolha entre dezenas de temas personalizados e ofereça uma experiência única no seu site próprio. Enquanto isso, a Loja Integrada trabalha por você: reengaja visitas, recomenda produtos e recupera carrinhos e pedidos sem pagamento — tudo automatizado, sem precisar criar campanhas manuais.</span></p>",
@@ -6055,9 +6058,11 @@
               "font": "Lektorat Display Var"
             },
             "sectionBackground": {
-              "backgroundColor": "#00363A"
+              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
             },
-            "container": {},
+            "container": {
+              "maxWidth": "1270px"
+            },
             "text": "<p><span>Escolha entre dezenas de temas personalizados e ofereça</span></p><p><span>uma experiência única no seu site próprio. Enquanto isso, a</span></p><p><span>Loja Integrada trabalha por você: reengaja visitas, recomenda</span></p><p><span>produtos e recupera carrinhos e pedidos sem pagamento — </span></p><p><span>tudo automatizado, sem precisar criar campanhas manuais.</span></p>",
             "textProps": {
               "color": "#ffffff"
@@ -6080,41 +6085,32 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/Carousel.tsx",
-            "slides": [
-              {
-                "textPlacement": "Top",
-                "icon": {
-                  "placement": "Top right"
-                },
-                "useBackground": "image",
-                "bulletPoints": {
-                  "items": []
-                },
-                "title": "1- Cadastre seu produto uma única vez e economize tempo",
-                "titleTextProps": {
-                  "fontFamily": "Lektorat Display var",
-                  "fontSize": "22px",
-                  "fontWeight": "600",
-                  "lineHeight": "100%",
-                  "letterSpacing": "-0.44px;"
-                },
-                "textColor": "#00363A",
-                "caption": "<p><span style=\"color: #5f6e82\">Otimize seu tempo e resultado com a nossa IA que completa os principais campos do seu produto e ajusta automaticamente de acordo pra sua loja e marketplaces</span></p>",
-                "captionTextProps": {
-                  "fontFamily": "Inter",
-                  "fontSize": "14px",
-                  "fontWeight": "500",
-                  "lineHeight": "140%"
-                },
-                "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/0e68f316-224d-478b-a28d-94740866d259/BackgroundShadow.png",
-                  "height": 409,
-                  "width": 410
-                }
-              }
-            ],
-            "hideSection": true
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p><span style=\"color: #ffffff\">Integrações com ferramentas</span></p><p><span style=\"color: #ffffff\">de </span><span>anúncios e criador</span></p><p><span>de promoções</span></p>",
+              "color": "#28C3C3",
+              "fontSize": "22px",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "font": "Lektorat Display Var"
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #01363a, #003135);"
+            },
+            "container": {},
+            "text": "<p><span>Atraia clientes antigos e conquiste novos. Quer vender ainda mais? Promova seus produtos com integrações como Google Ads, Instagram Ads e Facebook Ads. Crie promoções inteligentes e cupons personalizados para engajar, recuperar e fidelizar seus clientes.</span></p>",
+            "textProps": {
+              "color": "#ffffff"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png"
+              },
+              "use": "image"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6123,17 +6119,49 @@
         },
         {
           "value": {
-            "__resolveType": "site/sections/Carousel.tsx",
-            "title": "<p style=\"text-align: center\">Vários benefícios,<br>sem custos adicionais.</p>",
-            "createStoreCta": {
-              "planId": "172",
-              "text": "Comece a vender hoje mesmo",
-              "backgroundColor": "#FFFFFF",
-              "borderColor": "#00363A",
-              "textColor": "#00363A"
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
             },
-            "cta": [],
-            "paddingBottom": "120px",
+            "title": {
+              "text": "<p><span style=\"color: #ffffff\">Integrações com ferramentas</span></p><p><span style=\"color: #ffffff\">de </span><span>anúncios e criador</span></p><p><span>de promoções</span></p>",
+              "color": "#28C3C3",
+              "fontSize": "32px",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "font": "Lektorat Display Var"
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #01363a, #003135);"
+            },
+            "container": {
+              "maxWidth": "1270px",
+              "gap": "180px"
+            },
+            "text": "<p><span>Atraia clientes antigos e conquiste novos. Quer vender ainda</span></p><p><span>mais? Promova seus produtos com integrações como Google</span></p><p><span>Ads, Instagram Ads e Facebook Ads. Crie promoções</span></p><p><span>inteligentes e cupons personalizados para engajar, recuperar</span></p><p><span>e fidelizar seus clientes.</span></p>",
+            "textProps": {
+              "color": "#ffffff"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png"
+              },
+              "use": "image",
+              "placement": "left"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
             "slides": [
               {
                 "textPlacement": "Top",
@@ -6229,13 +6257,237 @@
                 }
               }
             ],
+            "title": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">Vários benefícios,</span><br>sem custos adicionais.</p>",
+            "createStoreCta": {
+              "planId": "172",
+              "backgroundColor": "#ffffff",
+              "borderColor": "#00363A",
+              "textColor": "#00363A"
+            },
+            "cta": [],
+            "paddingBottom": "30px",
             "titleFont": "Lektorat Display var",
-            "backgroundColor": "#00363A",
-            "titleColor": "#ffffff",
+            "backgroundColor": "linear-gradient(to bottom, #003135, #002123);",
+            "titleColor": "#28C3C3",
             "titleTextProps": {
               "fontWeight": "650",
               "fontSize": "50px",
               "letterSpacing": "-1px"
+            },
+            "arrows": true,
+            "arrowsColor": "#ffffff"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "slides": [
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "1- Cadastre seu produto uma única vez e economize tempo",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><span style=\"color: #5f6e82\">Otimize seu tempo e resultado com a nossa IA que completa os principais campos do seu produto e ajusta automaticamente de acordo pra sua loja e marketplaces</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/0e68f316-224d-478b-a28d-94740866d259/BackgroundShadow.png",
+                  "height": 409,
+                  "width": 410
+                }
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "2- O seu site personalizado e sua operação automatizada",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Crie sua loja com temas personalizados e tenha ferramentas automáticas que ajudam a vender mais, com menos esforço: recuperação de carrinho, produto e pedidos sem pagamento, promoções, cupons e brindes.</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/ae2ea5e5-f2a4-465d-b792-54232ee6e9d7/BackgroundShadow2.png",
+                  "height": 409,
+                  "width": 410
+                }
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "3- Alcance mais clientes no Marketplace e os fidelize na sua loja",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conquiste novos clientes anunciando seus produtos em marketplaces fortalecendo sua marca.</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/3cccfd0a-44cf-4956-8999-869d92b4c540/BackgroundShadow3.png",
+                  "height": 409,
+                  "width": 410
+                }
+              }
+            ],
+            "title": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">Vários benefícios,</span><br>sem custos adicionais.</p>",
+            "createStoreCta": {
+              "planId": "172",
+              "backgroundColor": "#ffffff",
+              "borderColor": "#00363A",
+              "textColor": "#00363A"
+            },
+            "cta": [],
+            "paddingBottom": "30px",
+            "titleFont": "Lektorat Display var",
+            "backgroundColor": "linear-gradient(to bottom, #003135, #002123);",
+            "titleColor": "#28C3C3",
+            "titleTextProps": {
+              "fontWeight": "650",
+              "fontSize": "50px",
+              "letterSpacing": "-1px"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Create Store",
+                "text": "Comece a vender hoje mesmo",
+                "createStorePlanId": "172",
+                "textColor": "#ffffff",
+                "borderColor": "Transparent",
+                "backgroundColor": "transparent",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/7ff80dd0-bc52-48c4-9f97-d3b125325a40/Button-linkout.svg"
+                },
+                "customIcon": {},
+                "customProps": {
+                  "width": "100%",
+                  "height": "48px",
+                  "borderRadius": "15px",
+                  "fontSize": "14px"
+                }
+              }
+            ],
+            "ctaPlacement": "center",
+            "title": {},
+            "container": {
+              "marginTop": "0",
+              "marginBottom": "0",
+              "paddingBottom": "80px"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Create Store",
+                "text": "Comece a vender hoje mesmo",
+                "createStorePlanId": "172",
+                "textColor": "#ffffff",
+                "borderColor": "Transparent",
+                "backgroundColor": "transparent",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/7ff80dd0-bc52-48c4-9f97-d3b125325a40/Button-linkout.svg"
+                },
+                "customIcon": {},
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "15px",
+                  "fontSize": "14px"
+                }
+              }
+            ],
+            "ctaPlacement": "center",
+            "title": {},
+            "container": {
+              "marginTop": "0",
+              "marginBottom": "0",
+              "paddingBottom": "80px",
+              "backgroundColor": ""
             }
           },
           "rule": {

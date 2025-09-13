@@ -39,6 +39,7 @@ export interface Props {
   iconGap?: string;
   singleLine?: boolean;
   customProps?: CustomProps;
+  backgroundImage?: IImage;
   /**
  * @description Caso queira mudar o "eventAction" enviado para o dataLayer.
  */
@@ -131,7 +132,7 @@ const openModalFunction = (modal: string, planId: string, customEvent: string, c
 };
 
 
-export default function CTA({ href = "", text, textColor, backgroundColor, iconGap, borderColor, size = "Medium", type = "Button", singleLine = false, showIcon = false, openModal, createStorePlanId, customIcon, customProps, customEvent, customEventCategory, customEventLabel }: Props) {
+export default function CTA({ href = "", text, textColor, backgroundColor, iconGap, borderColor, size = "Medium", type = "Button", singleLine = false, showIcon = false, openModal, createStorePlanId, customIcon, customProps, customEvent, customEventCategory, customEventLabel, backgroundImage }: Props) {
   const sizeClasses = {
     "Large": "py-4 px-8 text-base font-semibold border",
     "Medium": "py-2 px-8 text-sm font-semibold leading-[171%] border",
@@ -146,9 +147,9 @@ export default function CTA({ href = "", text, textColor, backgroundColor, iconG
 
   return <a
     hx-on:click={openModal ? useScript(openModalFunction, openModal, createStorePlanId || '172', customEvent || '', customEventCategory || '', customEventLabel || '') : useScript(notModalFunction, customEvent || '', customEventCategory || '', customEventLabel || '')}
-    class={`${sizeClasses[size]} rounded-lg hover:scale-110 transition-transform cursor-pointer flex justify-center items-center gap-2.5 text-center ${singleLine && 'whitespace-nowrap'}`}
+    class={`${sizeClasses[size]} rounded-lg !bg-center !bg-cover !bg-no-repeat hover:scale-110 transition-transform cursor-pointer flex justify-center items-center gap-2.5 text-center ${singleLine && 'whitespace-nowrap'}`}
     style={type == "Button"
-      ? { background: backgroundColor, color: textColor, borderColor, gap: iconGap, ...customProps }
+      ? { background: backgroundColor, color: textColor, borderColor, gap: iconGap, backgroundImage: `url('${backgroundImage?.src}')`, ...customProps }
       : { color: textColor, border: 'none', padding: 0, gap: iconGap, ...customProps }}
     href={openModal ? undefined : href}
     target={href.includes("http") ? "_blank" : "_self"}>

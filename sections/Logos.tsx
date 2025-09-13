@@ -45,15 +45,15 @@ export default function Logos({ hideSection, title, caption, logos = IMG_PLACEHO
       </div>);
     })}
   </div>);
-  return (<div class="lg:container md:max-w-[1260px] lg:mx-auto px-7 md:px-0 overflow-hidden" style={{ paddingTop: paddingTop, paddingBottom: paddingBottom }}>
-    <div class="flex flex-col gap-10">
+  return (<div class="lg:container md:max-w-[1260px] lg:mx-auto px-4 md:px-0 overflow-hidden" style={{ paddingTop: paddingTop, paddingBottom: paddingBottom }}>
+    <div class="flex flex-col">
       {title && <AnimateOnShow animation="animate-fade-up">
-        <div class="text-lg md:text-[32px] text-primary font-normal " dangerouslySetInnerHTML={{ __html: title }} style={{ ...titleTextProps }} />
+        <div class="text-lg md:text-[32px] text-primary font-normal leading-normal" dangerouslySetInnerHTML={{ __html: title }} style={{ ...titleTextProps }} />
       </AnimateOnShow>}
       {caption && <AnimateOnShow animation="animate-fade-up" delay={200}>
-        <div class="text-base md:text-2xl font-light mt-4" style={{ ...captionTextProps }} dangerouslySetInnerHTML={{ __html: caption }} />
+        <div class="text-base md:text-2xl font-light" style={{ ...captionTextProps }} dangerouslySetInnerHTML={{ __html: caption }} />
       </AnimateOnShow>}
-      <AnimateOnShow divClass="relative w-full overflow-hidden h-20" animation="animate-fade-up">
+      <AnimateOnShow divClass="relative w-full overflow-hidden h-20 mt-10" animation="animate-fade-up">
         <div class="animate-sliding absolute top-0 left-0 flex flex-nowrap h-full">
           {slideContent}
         </div>

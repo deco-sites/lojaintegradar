@@ -5967,6 +5967,9 @@ details.collapse summary::-webkit-details-marker {
 .to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
+.\!bg-cover {
+  background-size: cover !important;
+}
 .bg-cover {
   background-size: cover;
 }
@@ -5978,8 +5981,14 @@ details.collapse summary::-webkit-details-marker {
   -webkit-background-clip: text;
           background-clip: text;
 }
+.\!bg-center {
+  background-position: center !important;
+}
 .bg-center {
   background-position: center;
+}
+.\!bg-no-repeat {
+  background-repeat: no-repeat !important;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
@@ -8583,6 +8592,11 @@ details.collapse summary::-webkit-details-marker {
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .lg\:px-20 {

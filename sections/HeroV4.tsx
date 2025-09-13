@@ -115,15 +115,25 @@ export interface sectionBackgroundMedia extends BackgroundMedia {
   customHeight?: string;
 }
 
+export interface Tag {
+  text?: RichText;
+  textProps?: TextProps
+  /** @format color-input */
+  backgroundColor?: string;
+  tagPlacement?: 'left' | 'center' | 'right';
+}
+
 export interface Props {
   hideSection?: boolean;
   title?: Title;
   distanceBetweenTitleAndText?: string;
   text?: RichText;
   textProps?: TextProps;
+  tag?: Tag;
   bulletPoints?: BulletPoints;
   cta?: CTAProps[];
   ctaPlacement?: 'left' | 'center' | 'right';
+  ctaPosition?: 'below text' | 'section bottom';
   media?: MediaWithPlacement;
   hubspotForm?: HubspotFormProps;
   container?: Container;
@@ -161,7 +171,7 @@ export function HeroMedia({ media }: { media?: Media }) {
   </>
 }
 
-export default function HeroV3({ hideSection, title, text, textProps, bulletPoints, cta = [], media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, sectionMarginTop, sectionPaddingLeft, sectionPaddingRight, lcp, floatingImage }: Props) {
+export default function HeroV3({ hideSection, title, text, textProps, bulletPoints, cta = [], ctaPosition = 'below text', tag, media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, sectionMarginTop, sectionPaddingLeft, sectionPaddingRight, lcp, floatingImage }: Props) {
   if (hideSection) return <></>;
   const placement = {
     "left": "justify-start",
@@ -194,7 +204,12 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
           class="absolute z-10"
           style={{ top: floatingImage.verticalPosition, left: floatingImage.horizontalPosition }}
         />}
-
+        {tag?.text && <div class={`flex ${placement[tag.tagPlacement || 'left']}`}>
+            <div 
+              dangerouslySetInnerHTML={{ __html: tag.text}}
+              style={{background: tag.backgroundColor, ...tag.textProps}}
+              class="text-xs lg:text-sm font-semibold py-1 px-4 rounded-[20px]"/>
+          </div>}
         {title?.text && <div
           dangerouslySetInnerHTML={{ __html: title.text }}
           class={`w-full text-[32px] lg:text-[56px] lg:leading-[1.2] !text-transparent !bg-clip-text`}
@@ -218,7 +233,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
 
         {hubspotForm?.show && <HubspotForm {...hubspotForm} />}
 
-        {cta.length > 0 && <div class={`flex flex-wrap gap-4 mt-auto pt-2 ${placement[ctaPlacement || "left"]}`}>
+        {cta.length > 0 && ctaPosition == "below text" && <div class={`flex flex-wrap gap-4 mt-auto pt-2 ${placement[ctaPlacement || "left"]}`}>
           {cta.map(cta => (
             <CTA {...cta} />
           ))}
@@ -245,7 +260,13 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
         class={`object-cover absolute -z-30 top-0 left-0 h-full w-full ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}>
         <source src={container?.backgroundMedia.video} type="video/mp4" />
       </video>}
+
     </div>
+      {cta.length > 0 && ctaPosition == "section bottom" && <div class={`flex w-full flex-wrap gap-4 pt-2 max-w-[1120px] px-3.5 lg:px-2 ${placement[ctaPlacement || "left"]}`}>
+          {cta.map(cta => (
+            <CTA {...cta} />
+          ))}
+        </div>}
     {sectionBackground?.backgroundColor && <div style={{ background: sectionBackground.backgroundColor }} class="absolute top-0 left-0 h-full w-full -z-40" />}
     {sectionBackground?.use == "image" && sectionBackground.image?.src && <Image
       src={sectionBackground.image.src}

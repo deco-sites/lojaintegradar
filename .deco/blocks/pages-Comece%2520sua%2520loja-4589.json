@@ -6677,41 +6677,76 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/HeroV2.tsx",
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {
+                "media": {
+                  "image": {
+                    "width": 598,
+                    "height": 561
+                  }
+                }
+              }
+            },
             "title": {
               "text": "<p>A única plataforma que te ajuda a gerir seu negócio online em tempo real</p>",
-              "font": "Lektorat Display var"
+              "color": "rgba(0, 54, 58, 1)",
+              "font": "Lektorat Display Var",
+              "fontWeight": "650",
+              "letterSpacing": "-0.3px",
+              "fontSize": "32px",
+              "lineHeight": "100%"
             },
-            "cta": [],
-            "tag": {
-              "text": "Em breve para cliente LI",
-              "textColor": "#7A2D0D",
-              "backgroundColor": "#FFE6A0",
-              "placement": "center"
+            "text": "<p>Na LI você conta com a Komea, uma rede de agentes</p><p>de IA que analisa seu catálogo e suas vendas para sugerir promoções, evitar ruptura de estoque e indicar oportunidades de aumento de receita. Tudo para você agir no momento certo.</p>",
+            "textProps": {
+              "color": "rgba(0, 54, 58, 1)",
+              "fontSize": "14px"
             },
-            "caption": "<p>Na LI você conta com a Komea, uma rede de a gentes de IA que analisa seu catálogo e suas vendas para sugerir promoções, evitar ruptura de estoque e indicar oportunidades de aumento de receita. Tudo para você agir no momento certo.</p>",
-            "createStoreCta": {
-              "planId": "172",
-              "text": "Escolha o novo jeito de vender online",
-              "backgroundColor": "#00363A",
-              "borderColor": "#00363A",
-              "textColor": "#ffffff"
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Medium",
+                "openModal": "Komea wait list",
+                "text": "Escolha o novo jeito de vender online",
+                "textColor": "#ffffff",
+                "backgroundColor": "rgba(0, 54, 58, 1)",
+                "borderColor": "rgba(0, 54, 58, 1)",
+                "customProps": {
+                  "height": "48px",
+                  "width": "100%"
+                }
+              }
+            ],
+            "container": {
+              "maxWidth": "1270px",
+              "paddingRight": "0px",
+              "paddingBottom": "20px"
             },
-            "ctaDiv": {
-              "backgroundColor": "",
-              "contentPlacement": "left"
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);"
             },
             "media": {
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/2ded45d3-89f4-4f5a-8b55-1dee04dd324a/img-hero-komea.png",
-                "width": 879,
-                "height": 678
+                "width": 598,
+                "height": 461
               },
-              "use": "image"
+              "use": "image",
+              "video": {},
+              "cornerImage": false
             },
-            "paddingTop": "120px",
-            "paddingBottom": "120px",
-            "paddingLeft": "20px"
+            "tag": {
+              "text": "<p><span>Em breve para cliente LI</span></p>",
+              "textProps": {
+                "color": "#7A2D0D"
+              },
+              "backgroundColor": "#FFE6A0",
+              "tagPlacement": "center"
+            },
+            "ctaPlacement": "center",
+            "ctaPosition": "section bottom",
+            "sectionPaddingLeft": "0px",
+            "sectionPaddingRight": "0px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6720,91 +6755,74 @@
         },
         {
           "value": {
-            "__resolveType": "site/sections/HeroV2.tsx",
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {
+                "media": {
+                  "image": {
+                    "width": 598,
+                    "height": 561
+                  }
+                }
+              }
+            },
             "title": {
-              "text": "<p>A única plataforma que te ajuda a gerir seu negócio online em tempo real</p>",
-              "font": "Lektorat Display var"
+              "text": "<p><span>A única plataforma que te </span></p><p><span>ajuda a gerir seu negócio </span></p><p><span>online em tempo real</span></p>",
+              "color": "rgba(0, 54, 58, 1)",
+              "font": "Lektorat Display Var",
+              "fontWeight": "650",
+              "letterSpacing": "-0.3px",
+              "fontSize": "50px"
             },
-            "cta": [],
-            "createStoreCta": {
-              "planId": "172",
-              "text": "Escolha o novo jeito de vender online",
-              "backgroundColor": "#00363A",
-              "borderColor": "#00363A",
-              "textColor": "#ffffff"
+            "text": "<p><span>Na LI você conta com a Komea, uma rede de a gentes de IA que </span></p><p><span>analisa seu catálogo e suas vendas para sugerir promoções, </span></p><p><span>evitar ruptura de estoque e indicar oportunidades de aumento de </span></p><p><span>receita. Tudo para você agir no momento certo.</span></p>",
+            "textProps": {
+              "color": "rgba(0, 54, 58, 1)",
+              "fontSize": "16px"
             },
-            "paddingBottom": "120px",
-            "tag": {
-              "text": "Em breve para cliente LI",
-              "textColor": "#7A2D0D",
-              "backgroundColor": "#FFE6A0"
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Medium",
+                "openModal": "Komea wait list",
+                "text": "Escolha o novo jeito de vender online",
+                "textColor": "#ffffff",
+                "backgroundColor": "rgba(0, 54, 58, 1)",
+                "borderColor": "rgba(0, 54, 58, 1)",
+                "customProps": {
+                  "height": "48px"
+                }
+              }
+            ],
+            "container": {
+              "maxWidth": "1270px"
             },
-            "caption": "<p>Na LI você conta com a Komea, uma rede de a gentes de IA que analisa seu catálogo e suas vendas para sugerir promoções, evitar ruptura de estoque e indicar oportunidades de aumento de receita. Tudo para você agir no momento certo.</p>",
-            "ctaDiv": {
-              "backgroundColor": "",
-              "contentPlacement": "left"
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);"
             },
             "media": {
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/2ded45d3-89f4-4f5a-8b55-1dee04dd324a/img-hero-komea.png",
-                "width": 879,
-                "height": 678
+                "width": 598,
+                "height": 461
               },
-              "use": "image"
+              "use": "image",
+              "video": {},
+              "cornerImage": true
             },
-            "paddingTop": "120px"
+            "tag": {
+              "text": "<p><span>Em breve para cliente LI</span></p>",
+              "textProps": {
+                "color": "#7A2D0D"
+              },
+              "backgroundColor": "#FFE6A0",
+              "tagPlacement": "left"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
           }
         }
       ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/HeroV4.tsx",
-        "hubspotForm": {
-          "modal": {
-            "media": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/2ded45d3-89f4-4f5a-8b55-1dee04dd324a/img-hero-komea.png"
-              },
-              "use": "image"
-            }
-          }
-        },
-        "title": {
-          "text": "<p><span>A única plataforma que te </span></p><p><span>ajuda a gerir seu negócio </span></p><p><span>online em tempo real</span></p>",
-          "color": "rgba(0, 54, 58, 1)",
-          "font": "Lektorat Display Var",
-          "fontWeight": "650",
-          "letterSpacing": "-0.3px",
-          "fontSize": "50px"
-        },
-        "text": "<p><span>Na LI você conta com a Komea, uma rede de a gentes de IA que </span></p><p><span>analisa seu catálogo e suas vendas para sugerir promoções, </span></p><p><span>evitar ruptura de estoque e indicar oportunidades de aumento de </span></p><p><span>receita. Tudo para você agir no momento certo.</span></p>",
-        "textProps": {
-          "color": "rgba(0, 54, 58, 1)",
-          "fontSize": "16px"
-        },
-        "cta": [
-          {
-            "type": "Button",
-            "size": "Medium",
-            "openModal": "Komea wait list",
-            "text": "Escolha o novo jeito de vender online",
-            "textColor": "#ffffff",
-            "backgroundColor": "rgba(0, 54, 58, 1)",
-            "borderColor": "rgba(0, 54, 58, 1)",
-            "customProps": {
-              "height": "48px"
-            }
-          }
-        ],
-        "container": {
-          "maxWidth": "1270px"
-        }
-      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

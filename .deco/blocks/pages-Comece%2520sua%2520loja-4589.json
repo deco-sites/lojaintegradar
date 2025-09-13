@@ -6677,7 +6677,7 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
+            "__resolveType": "site/sections/HeroV4WithBottomSection.tsx",
             "hubspotForm": {
               "modal": {
                 "media": {
@@ -6746,7 +6746,114 @@
             "ctaPlacement": "center",
             "ctaPosition": "section bottom",
             "sectionPaddingLeft": "0px",
-            "sectionPaddingRight": "0px"
+            "sectionPaddingRight": "0px",
+            "bottomSection": {
+              "__resolveType": "site/sections/GridCards.tsx",
+              "title": {},
+              "cards": [
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
+                    "width": 44,
+                    "height": 44
+                  },
+                  "title": "<p>Receba insightdireto no app</p>",
+                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "140%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
+                    "width": 44,
+                    "height": 44
+                  },
+                  "title": "<p>Receba insightdireto no app</p>",
+                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "140%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
+                    "width": 44,
+                    "height": 44
+                  },
+                  "title": "<p>Receba insightdireto no app</p>",
+                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "140%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
+                    "width": 44,
+                    "height": 44
+                  },
+                  "title": "<p>Receba insightdireto no app</p>",
+                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "140%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                }
+              ],
+              "cardsBackgroundColor": " rgba(251, 250, 249, 0.40);",
+              "tag": {
+                "backgroundColor": "linear-gradient(218deg, #D1CABD 21.92%, #D8C186 76.48%);"
+              },
+              "paddingBottom": "120px"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6755,7 +6862,7 @@
         },
         {
           "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
+            "__resolveType": "site/sections/HeroV4WithBottomSection.tsx",
             "hubspotForm": {
               "modal": {
                 "media": {
@@ -6807,7 +6914,8 @@
               },
               "use": "image",
               "video": {},
-              "cornerImage": true
+              "cornerImage": true,
+              "cornerImagePostion": "40px"
             },
             "tag": {
               "text": "<p><span>Em breve para cliente LI</span></p>",
@@ -6816,6 +6924,113 @@
               },
               "backgroundColor": "#FFE6A0",
               "tagPlacement": "left"
+            },
+            "bottomSection": {
+              "__resolveType": "site/sections/GridCards.tsx",
+              "tag": {
+                "backgroundColor": "linear-gradient(218deg, #D1CABD 21.92%, #D8C186 76.48%);"
+              },
+              "title": {},
+              "cards": [
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
+                    "width": 44,
+                    "height": 44
+                  },
+                  "title": "<p>Receba insightdireto no app</p>",
+                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "140%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
+                    "width": 44,
+                    "height": 44
+                  },
+                  "title": "<p>Receba insightdireto no app</p>",
+                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "140%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
+                    "width": 44,
+                    "height": 44
+                  },
+                  "title": "<p>Receba insightdireto no app</p>",
+                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "140%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
+                    "width": 44,
+                    "height": 44
+                  },
+                  "title": "<p>Receba insightdireto no app</p>",
+                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "140%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                }
+              ],
+              "cardsBackgroundColor": " rgba(251, 250, 249, 0.40);",
+              "paddingBottom": "120px"
             }
           },
           "rule": {
@@ -6823,116 +7038,6 @@
           }
         }
       ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/GridCards.tsx",
-        "title": {},
-        "cards": [
-          {
-            "image": {
-              "position": "left",
-              "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-              "width": 44,
-              "height": 44
-            },
-            "title": "<p>Receba insightdireto no app</p>",
-            "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
-            "titleTextProps": {
-              "fontFamily": "Inter",
-              "fontSize": "16px",
-              "color": "#00363A",
-              "fontWeight": "600",
-              "lineHeight": "140%"
-            },
-            "textProps": {
-              "color": "#00363A",
-              "fontFamily": "Inter",
-              "fontSize": "14px",
-              "fontWeight": "500",
-              "lineHeight": "140%"
-            }
-          },
-          {
-            "image": {
-              "position": "left",
-              "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-              "width": 44,
-              "height": 44
-            },
-            "title": "<p>Receba insightdireto no app</p>",
-            "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
-            "titleTextProps": {
-              "fontFamily": "Inter",
-              "fontSize": "16px",
-              "color": "#00363A",
-              "fontWeight": "600",
-              "lineHeight": "140%"
-            },
-            "textProps": {
-              "color": "#00363A",
-              "fontFamily": "Inter",
-              "fontSize": "14px",
-              "fontWeight": "500",
-              "lineHeight": "140%"
-            }
-          },
-          {
-            "image": {
-              "position": "left",
-              "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-              "width": 44,
-              "height": 44
-            },
-            "title": "<p>Receba insightdireto no app</p>",
-            "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
-            "titleTextProps": {
-              "fontFamily": "Inter",
-              "fontSize": "16px",
-              "color": "#00363A",
-              "fontWeight": "600",
-              "lineHeight": "140%"
-            },
-            "textProps": {
-              "color": "#00363A",
-              "fontFamily": "Inter",
-              "fontSize": "14px",
-              "fontWeight": "500",
-              "lineHeight": "140%"
-            }
-          },
-          {
-            "image": {
-              "position": "left",
-              "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-              "width": 44,
-              "height": 44
-            },
-            "title": "<p>Receba insightdireto no app</p>",
-            "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
-            "titleTextProps": {
-              "fontFamily": "Inter",
-              "fontSize": "16px",
-              "color": "#00363A",
-              "fontWeight": "600",
-              "lineHeight": "140%"
-            },
-            "textProps": {
-              "color": "#00363A",
-              "fontFamily": "Inter",
-              "fontSize": "14px",
-              "fontWeight": "500",
-              "lineHeight": "140%"
-            }
-          }
-        ],
-        "cardsBackgroundColor": " rgba(251, 250, 249, 0.40);",
-        "tag": {
-          "backgroundColor": "linear-gradient(218deg, #D1CABD 21.92%, #D8C186 76.48%);"
-        },
-        "paddingBottom": "120px"
-      }
     },
     {
       "__resolveType": "Faq global"

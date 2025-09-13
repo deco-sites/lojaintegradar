@@ -148,6 +148,7 @@ export interface Props {
     backgroundColor?: string;
     backgroundImage?: IImage;
     // interval?: number;
+    marginTop?: string;
     paddingTop?: string;
     paddingBottom?: string;
 }
@@ -231,9 +232,9 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
 }
 function Carousel(props: Props) {
     if (props.hideSection) return <></>
-    const { id, title, titleFont, titleTextProps, titlePaddingBottom, caption, captionFont, captionTextProps, slides, slidesHeight, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
+    const { id, title, titleFont, titleTextProps, marginTop, titlePaddingBottom, caption, captionFont, captionTextProps, slides, slidesHeight, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
     const carouselId = useId();
-    return (<div id={id} style={{background: backgroundColor, paddingTop: paddingTop, paddingBottom: paddingBottom}} class="relative pt-7 lg:pt-14">
+    return (<div id={id} style={{background: backgroundColor, paddingTop: paddingTop, paddingBottom: paddingBottom, marginTop}} class="relative pt-7 lg:pt-14">
         {/* <input type="text" value="0" /> */}
             <div id={carouselId} class="min-h-min flex flex-col items-center w-full relative" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
                 {backgroundImage?.src && <div class="absolute hidden md:block -z-50 top-0 left-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "background image"} height={backgroundImage.height || 780} width={backgroundImage.width || 460} class="h-full object-contain" /></div>}

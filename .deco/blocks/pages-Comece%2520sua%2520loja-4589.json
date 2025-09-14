@@ -473,7 +473,8 @@
                 "src": "https://assets.decocache.com/lojaintegradar/3a8932cb-31ce-4419-b436-f99d0a59b5d3/background-alivie-o-corre-lojaIntegrada.png"
               },
               "use": "image"
-            }
+            },
+            "tag": {}
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -7051,40 +7052,8 @@
         {
           "value": {
             "__resolveType": "site/sections/FooterV4.tsx",
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Small",
-                "openModal": "Create Store",
-                "text": "Abra sua loja",
-                "textColor": "#ffffff",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "customProps": {
-                  "height": "48px",
-                  "borderRadius": "10px",
-                  "width": "160px"
-                },
-                "gtmProps": {
-                  "customSection": "lp-komea",
-                  "customType": "footer",
-                  "customTitle": "entre-na-lista-de-espera"
-                },
-                "singleLine": false,
-                "createStorePlanId": "172"
-              }
-            ],
+            "cta": [],
             "subscribe": {},
-            "title": {
-              "text": "<p style=\"text-align: center\">Alivie<br>o corre que<br>é vender online</p>",
-              "color": "#00363A",
-              "fontWeight": "650",
-              "font": "Lektorat Display var",
-              "letterSpacing": "-0.3px",
-              "lineHeight": "100%",
-              "fontSize": "7.26vw"
-            },
-            "text": "<p></p>",
             "textProps": {
               "color": "#00363A",
               "fontWeight": "500",
@@ -7133,6 +7102,9 @@
               "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
               "horizontalPosition": "-16px",
               "verticalPosition": "-20px"
+            },
+            "titleImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/d3a6f621-ced2-4cd9-90fb-81bbd554b624/Alivie-o-orre-que-e-vender-online.svg"
             }
           },
           "rule": {
@@ -7166,7 +7138,7 @@
             ],
             "subscribe": {},
             "title": {
-              "text": "<p style=\"text-align: center\">Alivie<br>o corre que é<br>vender online</p>",
+              "text": "<p></p>",
               "color": "#00363A",
               "fontWeight": "650",
               "font": "Lektorat Display var",
@@ -7221,6 +7193,9 @@
               "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
               "horizontalPosition": "-16px",
               "verticalPosition": "-20px"
+            },
+            "titleImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/d3a6f621-ced2-4cd9-90fb-81bbd554b624/Alivie-o-orre-que-e-vender-online.svg"
             }
           },
           "rule": {

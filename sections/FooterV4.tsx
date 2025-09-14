@@ -64,6 +64,7 @@ export interface SocialMedia {
 }
 
 export interface Props {
+  titleImage?: IImage;
   title?: Title;
   text?: RichText;
   textProps?: TextProps;
@@ -75,7 +76,7 @@ export interface Props {
   backgroundMedia?: BackgroundMedia;
 }
 
-export default function Footer({ title, text, textProps, cta = [], ctaPlacement, ctaFloatingImage, media, backgroundMedia, socialMedias = [] }: Props) {
+export default function Footer({ title, text, textProps, cta = [], ctaPlacement, ctaFloatingImage, media, backgroundMedia, socialMedias = [], titleImage }: Props) {
   const placement = {
     "left": "justify-start",
     "center": "justify-center",
@@ -84,14 +85,21 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
 
   return (
     <div class="relative pt-[60px] pb-8 lg:pt-[124px] lg:pb-8 px-5 lg:px-0">
-      <div class="max-w-[1120px] mx-auto">
+      <div class="max-w-[1120px] mx-auto flex flex-col items-center">
 
-        {title?.text && <div
+        {titleImage?.src && <Image
+          src={titleImage.src}
+          alt={titleImage.alt || "image"}
+          class="object-contain"
+          width={titleImage.width || 241}
+          height={titleImage.height || 99}
+        />}
+        {title?.text && title?.text.length > 7 && <div
           dangerouslySetInnerHTML={{ __html: title.text }}
           class={`w-full text-[32px] pb-1 lg:text-[62px] lg:leading-none !text-transparent !bg-clip-text`}
           style={{ fontSize: title.fontSize, fontFamily: title.font, fontWeight: title.fontWeight, letterSpacing: title.letterSpacing, background: title.color, lineHeight: title.lineHeight }} />}
 
-        {text && <div dangerouslySetInnerHTML={{ __html: text }} class="text-sm lg:text-base w-full mt-5 lg:mt-10" style={{ ...textProps }} />}
+        {text?.length && text.length > 7 && <div dangerouslySetInnerHTML={{ __html: text }} class="text-sm lg:text-base w-full mt-5 lg:mt-10" style={{ ...textProps }} />}
 
         {cta.length > 0 && <div class={`flex flex-wrap mt-10 ${placement[ctaPlacement || "left"]}`}>
           <div class="flex gap-4 relative">

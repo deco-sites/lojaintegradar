@@ -521,7 +521,8 @@
                 }
               }
             ],
-            "hideSection": true
+            "hideSection": true,
+            "paddingBottom": "0px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -743,7 +744,7 @@
               },
               "backgroundColor": "linear-gradient(179deg, #F5F9F8 49.54%, #28C3C3 107.47%);",
               "paddingTop": "20px",
-              "paddingBottom": "0"
+              "paddingBottom": "0px"
             },
             "sectionBackground": {
               "image": {},
@@ -7463,6 +7464,58 @@
       "emailConsentTextProps": {
         "fontSize": "12px",
         "color": "#5F6E82"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/FixedBottom.tsx",
+              "text": "<p>Monte sua loja com mais segurança e sem custo</p>",
+              "textProps": {
+                "color": "#FFFFFF",
+                "fontFamily": "Inter",
+                "fontSize": "12px"
+              },
+              "cta": [
+                {
+                  "type": "Button",
+                  "size": "Medium",
+                  "createStorePlanId": "172",
+                  "text": "Ver planos",
+                  "textColor": "#0000000",
+                  "backgroundColor": "#ffffff",
+                  "borderColor": "",
+                  "openModal": "Create Store"
+                },
+                {
+                  "type": "Button",
+                  "size": "Medium",
+                  "openModal": "Create Store",
+                  "text": "Abrir loja",
+                  "textColor": "#FFFFFF",
+                  "createStorePlanId": "172"
+                }
+              ],
+              "backgroundColor": "#F1F1F1"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/FixedBottom.tsx"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
+          }
+        ]
       }
     }
   ],

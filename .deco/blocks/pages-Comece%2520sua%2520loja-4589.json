@@ -5482,12 +5482,13 @@
               "modal": {}
             },
             "title": {
-              "text": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme </span>visitantes em compradores</p><p><span style=\"color: rgb(255, 255, 255)\">automaticamente</span></p>",
-              "color": "#28C3C3",
-              "font": "Lektorat Display Var",
+              "text": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme </span>visitantes em compradores <span style=\"color: rgb(255, 255, 255)\">automaticamente</span></p>",
+              "color": "#ffffff",
+              "font": "Inter",
               "letterSpacing": "-0.3px",
               "fontSize": "22px",
-              "fontWeight": "600"
+              "fontWeight": "600",
+              "lineHeight": "120%"
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
@@ -5496,13 +5497,16 @@
             "textProps": {
               "color": "#ffffff"
             },
-            "container": {},
+            "container": {
+              "marginTop": "0px"
+            },
             "media": {
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/4b3777f4-9774-45c6-a399-aebb4aa407e8/Crie-do-seu-jeito.svg"
               },
               "use": "image"
-            }
+            },
+            "sectionMarginTop": "0px"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5517,11 +5521,12 @@
             },
             "title": {
               "text": "<p><span style=\"color: #ffffff\">Transforme </span>visitantes</p><p>em compradores</p><p><span style=\"color: #ffffff\">automaticamente</span></p>",
-              "color": "#28C3C3",
-              "font": "Lektorat Display Var",
+              "color": "#FFFFFF",
+              "font": "Inter",
               "fontWeight": "600",
               "letterSpacing": "-0.3px",
-              "fontSize": "32px"
+              "fontSize": "22px",
+              "lineHeight": "120%"
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
@@ -5559,11 +5564,12 @@
             },
             "title": {
               "text": "<p><span style=\"color: #ffffff\">Integrações com ferramentas</span></p><p><span style=\"color: #ffffff\">de </span><span>anúncios e criador</span></p><p><span>de promoções</span></p>",
-              "color": "#28C3C3",
-              "font": "Lektorat Display Var",
+              "color": "#FFFFFF",
+              "font": "Inter",
               "letterSpacing": "-0.3px",
               "fontSize": "22px",
-              "fontWeight": "600"
+              "fontWeight": "600",
+              "lineHeight": "120%"
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #01363a, #003135);"
@@ -5739,9 +5745,10 @@
             "backgroundColor": "linear-gradient(to bottom, #003135, #002123);",
             "titleColor": "#28C3C3",
             "titleTextProps": {
-              "fontWeight": "650",
+              "fontWeight": "600",
               "fontSize": "32px",
-              "letterSpacing": "-1px"
+              "letterSpacing": "-0.64px",
+              "lineHeight": "100%"
             },
             "arrows": true,
             "arrowsColor": "#ffffff"

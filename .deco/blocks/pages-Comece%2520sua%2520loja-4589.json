@@ -5850,7 +5850,8 @@
             "container": {
               "paddingBottom": "20px",
               "maxWidth": "1270px",
-              "paddingRight": "0px"
+              "paddingRight": "0px",
+              "paddingTop": "30px"
             },
             "text": "<p>Na LI você conta com a Komea, uma rede de agentes</p><p>de IA que analisa seu catálogo e suas vendas para sugerir promoções, evitar ruptura de estoque e indicar oportunidades de aumento de receita. Tudo para você agir no momento certo.</p>",
             "textProps": {
@@ -5983,7 +5984,7 @@
               "tag": {
                 "backgroundColor": "linear-gradient(218deg, #D1CABD 21.92%, #D8C186 76.48%);"
               },
-              "paddingBottom": "120px"
+              "paddingBottom": "30px"
             }
           },
           "rule": {
@@ -6176,7 +6177,7 @@
         {
           "value": {
             "__resolveType": "site/sections/Faq.tsx",
-            "title": "<p style=\"color: #00363A; font-size: 30px; line-height: 100%; font-weight: 600; \">Perguntas frequentes sobre sua Loja de Moda Online.</p>",
+            "title": "<p>Tire suas dúvidas</p>",
             "cta": [
               {
                 "text": "Ver planos e assinar",
@@ -6277,7 +6278,8 @@
             "bottomTitleColor": "",
             "bottomCaptionColor": "",
             "backgroundColor": "#FBFAF9",
-            "hideSection": false
+            "hideSection": false,
+            "caption": "Respostas rápidas para quem está começando a vender com a gente!"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

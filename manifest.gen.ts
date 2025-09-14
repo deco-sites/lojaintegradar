@@ -89,8 +89,9 @@ import * as $$$$$$80 from "./sections/TestimonialsWithBubbles.tsx";
 import * as $$$$$$81 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$82 from "./sections/TimeLine.tsx";
 import * as $$$$$$83 from "./sections/TransitionSection.tsx";
-import * as $$$$$$84 from "./sections/VideoSection.tsx";
-import * as $$$$$$85 from "./sections/VisualOptimizerScript.tsx";
+import * as $$$$$$84 from "./sections/VerticalLines.tsx";
+import * as $$$$$$85 from "./sections/VideoSection.tsx";
+import * as $$$$$$86 from "./sections/VisualOptimizerScript.tsx";
 
 const manifest = {
   "sections": {
@@ -178,8 +179,9 @@ const manifest = {
     "site/sections/Theme/Theme.tsx": $$$$$$81,
     "site/sections/TimeLine.tsx": $$$$$$82,
     "site/sections/TransitionSection.tsx": $$$$$$83,
-    "site/sections/VideoSection.tsx": $$$$$$84,
-    "site/sections/VisualOptimizerScript.tsx": $$$$$$85,
+    "site/sections/VerticalLines.tsx": $$$$$$84,
+    "site/sections/VideoSection.tsx": $$$$$$85,
+    "site/sections/VisualOptimizerScript.tsx": $$$$$$86,
   },
   "actions": {
     "site/actions/sendTcoUserData.ts": $$$$$$$$$0,

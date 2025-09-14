@@ -3,6 +3,23 @@
   "path": "/campanha",
   "sections": [
     {
+      "__resolveType": "site/sections/VerticalLines.tsx",
+      "lineImage": {
+        "src": "https://assets.decocache.com/lojaintegradar/ad397507-a236-444d-bf8e-e4a703db8ae0/Line-158.svg"
+      },
+      "lines": [
+        {
+          "from": "left",
+          "distance": "12px"
+        },
+        {
+          "from": "right",
+          "distance": "12px"
+        }
+      ],
+      "linesSize": 8
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -419,6 +436,18 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Create Store",
+                "text": "Monte sua loja com mais segurança e sem custo",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "textColor": "#FFFFFF",
+                "createStorePlanId": "172"
+              }
+            ],
             "hubspotForm": {
               "modal": {}
             },
@@ -439,24 +468,12 @@
               "fontWeight": "500",
               "lineHeight": "140%"
             },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Large",
-                "openModal": "Create Store",
-                "text": "Monte sua loja com mais segurança e sem custo",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "textColor": "#FFFFFF",
-                "createStorePlanId": "172"
-              }
-            ],
             "ctaPlacement": "center",
             "media": {
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/03373149-98d5-4281-8c8c-bab5619e4195/painel-loja-integrada.png",
-                "width": "851px",
-                "height": "484px"
+                "width": 1784,
+                "height": 516
               },
               "use": "image",
               "placement": "bellow"
@@ -666,8 +683,8 @@
               },
               "backgroundColor": "linear-gradient(179deg, #F5F9F8 49.54%, #28C3C3 107.47%);",
               "paddingTop": "20px",
-              "paddingRight": "16px",
               "paddingBottom": "0",
+              "paddingRight": "16px",
               "marginBottom": "0"
             },
             "sectionBackground": {
@@ -6116,9 +6133,9 @@
               "color": "rgba(40, 195, 195, 1)",
               "font": "Lektorat Display Var",
               "letterSpacing": "-0.3px",
-              "lineHeight": "100%",
               "fontSize": "7.26vw",
-              "fontWeight": "600"
+              "fontWeight": "600",
+              "lineHeight": "100%"
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
@@ -6130,12 +6147,12 @@
               "letterSpacing": "-0.3px",
               "fontSize": "3.1vw"
             },
-            "cta": [],
-            "ctaPlacement": "center",
-            "customTitle": "hero:multiplos-especialistas",
             "container": {
               "backgroundColor": ""
-            }
+            },
+            "cta": [],
+            "ctaPlacement": "center",
+            "customTitle": "hero:multiplos-especialistas"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6154,8 +6171,8 @@
               "font": "Lektorat Display Var",
               "fontWeight": "650",
               "letterSpacing": "-1px",
-              "lineHeight": "100%",
-              "fontSize": "52px"
+              "fontSize": "52px",
+              "lineHeight": "100%"
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
@@ -6163,16 +6180,16 @@
             "text": "<p></p>",
             "textProps": {
               "color": "#ffffff",
+              "fontSize": "16px",
               "lineHeight": "125%",
-              "letterSpacing": "-0.3px",
-              "fontSize": "16px"
+              "letterSpacing": "-0.3px"
             },
-            "cta": [],
-            "ctaPlacement": "center",
             "container": {
               "paddingTop": "124px",
               "marginTop": "0px"
             },
+            "cta": [],
+            "ctaPlacement": "center",
             "customTitle": "hero:multiplos-especialistas"
           },
           "rule": {
@@ -6263,9 +6280,6 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {}
-            },
             "title": {
               "text": "<p><span style=\"color: #ffffff\">Integrações com ferramentas</span></p><p><span style=\"color: #ffffff\">de </span><span>anúncios e criador</span></p><p><span>de promoções</span></p>",
               "color": "#28C3C3",
@@ -6273,6 +6287,9 @@
               "letterSpacing": "-0.3px",
               "fontSize": "22px",
               "fontWeight": "600"
+            },
+            "hubspotForm": {
+              "modal": {}
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #01363a, #003135);"
@@ -6297,9 +6314,6 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {}
-            },
             "title": {
               "text": "<p><span style=\"color: #ffffff\">Integrações com ferramentas</span></p><p><span style=\"color: #ffffff\">de </span><span>anúncios e criador</span></p><p><span>de promoções</span></p>",
               "color": "#28C3C3",
@@ -6307,6 +6321,9 @@
               "fontWeight": "600",
               "letterSpacing": "-0.3px",
               "fontSize": "32px"
+            },
+            "hubspotForm": {
+              "modal": {}
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #01363a, #003135);"
@@ -6341,6 +6358,7 @@
           "value": {
             "__resolveType": "site/sections/Carousel.tsx",
             "title": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">Vários benefícios,</span><br>sem custos adicionais.</p>",
+            "cta": [],
             "slides": [
               {
                 "textPlacement": "Top",
@@ -6442,7 +6460,6 @@
               "borderColor": "#00363A",
               "textColor": "#00363A"
             },
-            "cta": [],
             "paddingBottom": "30px",
             "titleFont": "Lektorat Display var",
             "backgroundColor": "linear-gradient(to bottom, #003135, #002123);",
@@ -6464,6 +6481,7 @@
           "value": {
             "__resolveType": "site/sections/Carousel.tsx",
             "title": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">Vários benefícios,</span><br>sem custos adicionais.</p>",
+            "cta": [],
             "slides": [
               {
                 "textPlacement": "Top",
@@ -6565,7 +6583,6 @@
               "borderColor": "#00363A",
               "textColor": "#00363A"
             },
-            "cta": [],
             "paddingBottom": "30px",
             "titleFont": "Lektorat Display var",
             "backgroundColor": "linear-gradient(to bottom, #003135, #002123);",
@@ -6589,6 +6606,9 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
             "title": {},
             "cta": [
               {
@@ -6596,34 +6616,31 @@
                 "size": "Large",
                 "openModal": "Create Store",
                 "text": "Comece a vender hoje mesmo",
-                "createStorePlanId": "172",
                 "textColor": "#ffffff",
-                "borderColor": "Transparent",
                 "backgroundColor": "transparent",
+                "borderColor": "Transparent",
+                "customProps": {
+                  "height": "48px",
+                  "width": "100%",
+                  "borderRadius": "15px",
+                  "fontSize": "14px"
+                },
+                "createStorePlanId": "172",
                 "backgroundImage": {
                   "src": "https://assets.decocache.com/lojaintegradar/7ff80dd0-bc52-48c4-9f97-d3b125325a40/Button-linkout.svg"
                 },
-                "customIcon": {},
-                "customProps": {
-                  "width": "100%",
-                  "height": "48px",
-                  "borderRadius": "15px",
-                  "fontSize": "14px"
-                }
+                "customIcon": {}
               }
             ],
-            "hubspotForm": {
-              "modal": {}
+            "container": {
+              "paddingBottom": "80px",
+              "marginTop": "0",
+              "marginBottom": "0"
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
             },
-            "ctaPlacement": "center",
-            "container": {
-              "marginTop": "0",
-              "marginBottom": "0",
-              "paddingBottom": "80px"
-            }
+            "ctaPlacement": "center"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6633,6 +6650,9 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
             "title": {},
             "cta": [
               {
@@ -6640,34 +6660,31 @@
                 "size": "Large",
                 "openModal": "Create Store",
                 "text": "Comece a vender hoje mesmo",
-                "createStorePlanId": "172",
                 "textColor": "#ffffff",
-                "borderColor": "Transparent",
                 "backgroundColor": "transparent",
-                "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/7ff80dd0-bc52-48c4-9f97-d3b125325a40/Button-linkout.svg"
-                },
-                "customIcon": {},
+                "borderColor": "Transparent",
                 "customProps": {
                   "height": "48px",
                   "borderRadius": "15px",
                   "fontSize": "14px"
-                }
+                },
+                "createStorePlanId": "172",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/7ff80dd0-bc52-48c4-9f97-d3b125325a40/Button-linkout.svg"
+                },
+                "customIcon": {}
               }
             ],
-            "hubspotForm": {
-              "modal": {}
-            },
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
-            },
-            "ctaPlacement": "center",
             "container": {
               "marginTop": "0",
               "marginBottom": "0",
               "paddingBottom": "80px",
               "backgroundColor": ""
             },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
+            },
+            "ctaPlacement": "center",
             "sectionMarginTop": "-2px"
           },
           "rule": {
@@ -6682,6 +6699,30 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4WithBottomSection.tsx",
+            "title": {
+              "text": "<p>A única plataforma que te ajuda a gerir seu negócio online em tempo real</p>",
+              "color": "rgba(0, 54, 58, 1)",
+              "font": "Lektorat Display Var",
+              "fontWeight": "650",
+              "letterSpacing": "-0.3px",
+              "fontSize": "32px",
+              "lineHeight": "100%"
+            },
+            "cta": [
+              {
+                "text": "Escolha o novo jeito de vender online",
+                "backgroundColor": "rgba(0, 54, 58, 1)",
+                "borderColor": "rgba(0, 54, 58, 1)",
+                "textColor": "#ffffff",
+                "type": "Button",
+                "size": "Medium",
+                "openModal": "Komea wait list",
+                "customProps": {
+                  "height": "48px",
+                  "width": "100%"
+                }
+              }
+            ],
             "hubspotForm": {
               "modal": {
                 "media": {
@@ -6692,35 +6733,11 @@
                 }
               }
             },
-            "title": {
-              "text": "<p>A única plataforma que te ajuda a gerir seu negócio online em tempo real</p>",
-              "color": "rgba(0, 54, 58, 1)",
-              "font": "Lektorat Display Var",
-              "fontWeight": "650",
-              "letterSpacing": "-0.3px",
-              "fontSize": "32px",
-              "lineHeight": "100%"
-            },
             "text": "<p>Na LI você conta com a Komea, uma rede de agentes</p><p>de IA que analisa seu catálogo e suas vendas para sugerir promoções, evitar ruptura de estoque e indicar oportunidades de aumento de receita. Tudo para você agir no momento certo.</p>",
             "textProps": {
               "color": "rgba(0, 54, 58, 1)",
               "fontSize": "14px"
             },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Medium",
-                "openModal": "Komea wait list",
-                "text": "Escolha o novo jeito de vender online",
-                "textColor": "#ffffff",
-                "backgroundColor": "rgba(0, 54, 58, 1)",
-                "borderColor": "rgba(0, 54, 58, 1)",
-                "customProps": {
-                  "height": "48px",
-                  "width": "100%"
-                }
-              }
-            ],
             "container": {
               "maxWidth": "1270px",
               "paddingRight": "0px",
@@ -6867,6 +6884,28 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4WithBottomSection.tsx",
+            "title": {
+              "text": "<p><span>A única plataforma que te </span></p><p><span>ajuda a gerir seu negócio </span></p><p><span>online em tempo real</span></p>",
+              "color": "rgba(0, 54, 58, 1)",
+              "font": "Lektorat Display Var",
+              "fontWeight": "650",
+              "letterSpacing": "-0.3px",
+              "fontSize": "50px"
+            },
+            "cta": [
+              {
+                "text": "Escolha o novo jeito de vender online",
+                "backgroundColor": "rgba(0, 54, 58, 1)",
+                "borderColor": "rgba(0, 54, 58, 1)",
+                "textColor": "#ffffff",
+                "type": "Button",
+                "size": "Medium",
+                "openModal": "Komea wait list",
+                "customProps": {
+                  "height": "48px"
+                }
+              }
+            ],
             "hubspotForm": {
               "modal": {
                 "media": {
@@ -6877,33 +6916,11 @@
                 }
               }
             },
-            "title": {
-              "text": "<p><span>A única plataforma que te </span></p><p><span>ajuda a gerir seu negócio </span></p><p><span>online em tempo real</span></p>",
-              "color": "rgba(0, 54, 58, 1)",
-              "font": "Lektorat Display Var",
-              "fontWeight": "650",
-              "letterSpacing": "-0.3px",
-              "fontSize": "50px"
-            },
             "text": "<p><span>Na LI você conta com a Komea, uma rede de a gentes de IA que </span></p><p><span>analisa seu catálogo e suas vendas para sugerir promoções, </span></p><p><span>evitar ruptura de estoque e indicar oportunidades de aumento de </span></p><p><span>receita. Tudo para você agir no momento certo.</span></p>",
             "textProps": {
               "color": "rgba(0, 54, 58, 1)",
               "fontSize": "16px"
             },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Medium",
-                "openModal": "Komea wait list",
-                "text": "Escolha o novo jeito de vender online",
-                "textColor": "#ffffff",
-                "backgroundColor": "rgba(0, 54, 58, 1)",
-                "borderColor": "rgba(0, 54, 58, 1)",
-                "customProps": {
-                  "height": "48px"
-                }
-              }
-            ],
             "container": {
               "maxWidth": "1270px"
             },
@@ -7049,18 +7066,18 @@
         {
           "value": {
             "__resolveType": "site/sections/Faq.tsx",
-            "title": "<p style=\"color: #00363A; font-size: 30px; line-height: 100%; font-weight: 600; \">Perguntas frequentes sobre sua Loja de Moda Online.</p>",
-            "titleFont": "Lektorat Display var",
             "cta": [
               {
-                "ctaStyle": "button",
-                "href": "#plans",
                 "text": "Ver planos e assinar",
+                "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
-                "textColor": "#ffffff"
+                "ctaStyle": "button",
+                "href": "#plans"
               }
             ],
+            "title": "<p style=\"color: #00363A; font-size: 30px; line-height: 100%; font-weight: 600; \">Perguntas frequentes sobre sua Loja de Moda Online.</p>",
+            "titleFont": "Lektorat Display var",
             "titleColor": "#00363A",
             "captionColor": "#5F6E82",
             "questions": [
@@ -7160,17 +7177,17 @@
         {
           "value": {
             "__resolveType": "site/sections/Faq.tsx",
-            "title": "<p><strong>Perguntas frequentes sobre<br>sua Loja de Moda Online</strong></p>",
             "cta": [
               {
-                "ctaStyle": "button",
-                "href": "#plans",
                 "text": "Ver planos e assinar",
+                "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
-                "textColor": "#ffffff"
+                "ctaStyle": "button",
+                "href": "#plans"
               }
             ],
+            "title": "<p><strong>Perguntas frequentes sobre<br>sua Loja de Moda Online</strong></p>",
             "titleColor": "#00363A",
             "captionColor": "#5F6E82",
             "questions": [
@@ -7473,58 +7490,6 @@
       "emailConsentTextProps": {
         "fontSize": "12px",
         "color": "#5F6E82"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "website/flags/multivariate/section.ts",
-        "variants": [
-          {
-            "value": {
-              "__resolveType": "site/sections/FixedBottom.tsx",
-              "text": "<p>Monte sua loja com mais segurança e sem custo</p>",
-              "textProps": {
-                "color": "#FFFFFF",
-                "fontFamily": "Inter",
-                "fontSize": "12px"
-              },
-              "cta": [
-                {
-                  "type": "Button",
-                  "size": "Medium",
-                  "createStorePlanId": "172",
-                  "text": "Ver planos",
-                  "textColor": "#0000000",
-                  "backgroundColor": "#ffffff",
-                  "borderColor": "",
-                  "openModal": "Create Store"
-                },
-                {
-                  "type": "Button",
-                  "size": "Medium",
-                  "openModal": "Create Store",
-                  "text": "Abrir loja",
-                  "textColor": "#FFFFFF",
-                  "createStorePlanId": "172"
-                }
-              ],
-              "backgroundColor": "#F1F1F1"
-            },
-            "rule": {
-              "__resolveType": "website/matchers/device.ts",
-              "mobile": true
-            }
-          },
-          {
-            "value": {
-              "__resolveType": "site/sections/FixedBottom.tsx"
-            },
-            "rule": {
-              "__resolveType": "website/matchers/always.ts"
-            }
-          }
-        ]
       }
     }
   ],

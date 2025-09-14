@@ -466,7 +466,8 @@
                 "use": "image",
                 "image": {}
               },
-              "marginBottom": "0px"
+              "marginBottom": "0px",
+              "marginTop": "120px"
             },
             "sectionBackground": {
               "image": {
@@ -534,9 +535,7 @@
             "slides": [
               {
                 "textPlacement": "Top",
-                "icon": {
-                  "placement": "Top right"
-                },
+                "icon": {},
                 "useBackground": "image",
                 "bulletPoints": {
                   "items": []
@@ -6234,7 +6233,8 @@
             },
             "text": "<p><span>Escolha entre dezenas de temas personalizados e ofereça</span></p><p><span>uma experiência única no seu site próprio. Enquanto isso, a</span></p><p><span>Loja Integrada trabalha por você: reengaja visitas, recomenda</span></p><p><span>produtos e recupera carrinhos e pedidos sem pagamento — </span></p><p><span>tudo automatizado, sem precisar criar campanhas manuais.</span></p>",
             "textProps": {
-              "color": "#ffffff"
+              "color": "#ffffff",
+              "fontSize": "14px"
             },
             "container": {
               "maxWidth": "1270px"

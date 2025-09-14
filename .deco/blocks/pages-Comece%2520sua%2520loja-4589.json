@@ -5821,7 +5821,7 @@
               {
                 "type": "Button",
                 "size": "Medium",
-                "openModal": "Komea wait list",
+                "openModal": "Create Store",
                 "text": "Escolha o novo jeito de vender online",
                 "textColor": "#ffffff",
                 "borderColor": "rgba(0, 54, 58, 1)",
@@ -5829,7 +5829,8 @@
                 "customProps": {
                   "width": "100%",
                   "height": "48px"
-                }
+                },
+                "createStorePlanId": "172"
               }
             ],
             "hubspotForm": {
@@ -5872,7 +5873,7 @@
                 "color": "#7A2D0D"
               },
               "backgroundColor": "#FFE6A0",
-              "tagPlacement": "center"
+              "tagPlacement": "left"
             },
             "ctaPosition": "section bottom",
             "sectionPaddingLeft": "0px",
@@ -5884,18 +5885,18 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-                    "width": 44,
-                    "height": 44
+                    "src": "https://assets.decocache.com/lojaintegradar/e6442e76-b5be-4977-b189-0b1c98cbbae7/icon-receba-insight.png",
+                    "width": 54,
+                    "height": 54
                   },
-                  "title": "<p>Receba insightdireto no app</p>",
+                  "title": "<p>Receba insight direto no app</p>",
                   "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
                   "titleTextProps": {
                     "fontFamily": "Inter",
-                    "fontSize": "16px",
+                    "fontSize": "14px",
                     "color": "#00363A",
                     "fontWeight": "600",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   },
                   "textProps": {
                     "color": "#00363A",
@@ -5908,18 +5909,18 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-                    "width": 44,
-                    "height": 44
+                    "src": "https://assets.decocache.com/lojaintegradar/9cf6e6c9-5f20-4d3b-af9b-ab099f53642b/icon-crie-produtos-conversando.png",
+                    "width": 54,
+                    "height": 54
                   },
-                  "title": "<p>Receba insightdireto no app</p>",
-                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "title": "<p>Crie produtos conversando</p>",
+                  "text": "<p>Você fala o nome e mostra a imagem. A Komea sugere categoria, descrição com SEO e publica em diferentes canais.</p>",
                   "titleTextProps": {
                     "fontFamily": "Inter",
-                    "fontSize": "16px",
+                    "fontSize": "14px",
                     "color": "#00363A",
                     "fontWeight": "600",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   },
                   "textProps": {
                     "color": "#00363A",
@@ -5932,18 +5933,18 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-                    "width": 44,
-                    "height": 44
+                    "src": "https://assets.decocache.com/lojaintegradar/4766b176-7b82-4346-8445-f71ca510aef7/icon-crie-promocoes-sem-planilhas.png",
+                    "width": 54,
+                    "height": 54
                   },
-                  "title": "<p>Receba insightdireto no app</p>",
-                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "title": "<p>Crie promoções sem planilha</p>",
+                  "text": "<p>Diga “quero 15% de desconto até domingo” e o agente executa a ação com lógica e data.</p>",
                   "titleTextProps": {
                     "fontFamily": "Inter",
-                    "fontSize": "16px",
+                    "fontSize": "14px",
                     "color": "#00363A",
                     "fontWeight": "600",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   },
                   "textProps": {
                     "color": "#00363A",
@@ -5956,18 +5957,18 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-                    "width": 44,
-                    "height": 44
+                    "src": "https://assets.decocache.com/lojaintegradar/51e3706b-5052-437d-acae-bddfbf607040/icon-pergunte-sobre-vendas.png",
+                    "width": 54,
+                    "height": 54
                   },
-                  "title": "<p>Receba insightdireto no app</p>",
-                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "title": "<p>Pergunte sobre os dados das suas vendas</p>",
+                  "text": "<p>Consulte produtos mais vendidos, clientes fiéis e formas de pagamento usadas com o analista de vendas.</p>",
                   "titleTextProps": {
                     "fontFamily": "Inter",
-                    "fontSize": "16px",
+                    "fontSize": "14px",
                     "color": "#00363A",
                     "fontWeight": "600",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   },
                   "textProps": {
                     "color": "#00363A",

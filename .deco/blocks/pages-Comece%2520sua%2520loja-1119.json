@@ -7,6 +7,106 @@
       "variants": [
         {
           "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/5471942c-9e17-4889-b21c-1ff2b74c0ed9/mobile-green-dark-horizontal-line.svg"
+            },
+            "lines": [
+              {
+                "distance": "88px"
+              },
+              {
+                "distance": "185px"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/5471942c-9e17-4889-b21c-1ff2b74c0ed9/mobile-green-dark-horizontal-line.svg",
+              "width": 600
+            },
+            "lines": [
+              {
+                "distance": "120px"
+              },
+              {
+                "distance": "245px"
+              }
+            ],
+            "linesSize": 4
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/c8ffc48e-534c-496e-a0a4-8cd433ffa9c9/desktop-vertical-dark-green-line.svg",
+              "height": 636,
+              "width": 1
+            },
+            "linesSize": 6,
+            "lines": [
+              {
+                "from": "left",
+                "distance": "12px"
+              },
+              {
+                "from": "right",
+                "distance": "12px"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/c8ffc48e-534c-496e-a0a4-8cd433ffa9c9/desktop-vertical-dark-green-line.svg",
+              "height": 636,
+              "width": 1
+            },
+            "linesSize": 6,
+            "lines": [
+              {
+                "from": "center",
+                "distance": "-730px"
+              },
+              {
+                "from": "center",
+                "distance": "730px"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
             "__resolveType": "site/sections/HeaderV3.tsx",
             "navigation": {
               "links": [],
@@ -362,7 +462,7 @@
             "container": {
               "backgroundMedia": {
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/33d43e3c-547a-47f3-82c9-ca052bf0e70e/background-loja-integrada.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/6bc5b75f-9f3d-4d97-963c-e194e9233002/campanha-main-hero-background-mobile.svg",
                   "width": 375
                 },
                 "use": "image"
@@ -419,6 +519,18 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Create Store",
+                "text": "Monte sua loja com mais segurança e sem custo",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "textColor": "#FFFFFF",
+                "createStorePlanId": "172"
+              }
+            ],
             "hubspotForm": {
               "modal": {}
             },
@@ -439,18 +551,6 @@
               "fontWeight": "500",
               "lineHeight": "140%"
             },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Large",
-                "openModal": "Create Store",
-                "text": "Monte sua loja com mais segurança e sem custo",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "textColor": "#FFFFFF",
-                "createStorePlanId": "172"
-              }
-            ],
             "ctaPlacement": "center",
             "media": {
               "image": {
@@ -471,10 +571,11 @@
             },
             "sectionBackground": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/3a8932cb-31ce-4419-b436-f99d0a59b5d3/background-alivie-o-corre-lojaIntegrada.png"
+                "src": "https://assets.decocache.com/lojaintegradar/49cf6489-640b-46b8-8aa8-96c5da62f470/campanha-main-hero-background-desktop.svg"
               },
               "use": "image"
-            }
+            },
+            "tag": {}
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -624,6 +725,37 @@
                   "height": 409,
                   "width": 410
                 }
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "3- Alcance mais clientes no Marketplace e os fidelize na sua loja",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conquiste novos clientes anunciando seus produtos em marketplaces fortalecendo sua marca.</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/3cccfd0a-44cf-4956-8999-869d92b4c540/BackgroundShadow3.png",
+                  "height": 409,
+                  "width": 410
+                }
               }
             ],
             "createStoreCta": {
@@ -665,8 +797,8 @@
               },
               "backgroundColor": "linear-gradient(179deg, #F5F9F8 49.54%, #28C3C3 107.47%);",
               "paddingTop": "20px",
-              "paddingRight": "16px",
-              "marginBottom": "0px"
+              "marginBottom": "0px",
+              "paddingRight": "16px"
             },
             "sectionBackground": {
               "image": {},
@@ -4520,6 +4652,57 @@
       "variants": [
         {
           "value": {
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg"
+            },
+            "lines": [
+              {
+                "from": "left",
+                "distance": "12px"
+              },
+              {
+                "from": "right",
+                "distance": "12px"
+              }
+            ],
+            "maxHeight": "2300px",
+            "linesSize": 2
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg"
+            },
+            "lines": [
+              {
+                "from": "center",
+                "distance": "-730px"
+              },
+              {
+                "from": "center",
+                "distance": "730px"
+              }
+            ],
+            "linesSize": 5
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
             "__resolveType": "site/sections/StickyImage.tsx",
             "backgroundMedia": {
               "backgroundColor": "linear-gradient(180deg, #012b2e , #00363A , #00363A , #002E31 );"
@@ -4607,7 +4790,8 @@
               }
             ],
             "foldsHeight": "440px",
-            "bulletPoints": {}
+            "bulletPoints": {},
+            "hideSection": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -4695,18 +4879,65 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {}
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg"
             },
+            "lines": [
+              {
+                "distance": "45px"
+              },
+              {
+                "distance": "110px"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg",
+              "width": 600,
+              "height": 1
+            },
+            "lines": [
+              {
+                "distance": "115px"
+              },
+              {
+                "distance": "240px"
+              }
+            ],
+            "linesSize": 4
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
             "title": {
               "text": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 250)\">Crie do seu jeito,</span></p><p style=\"text-align: center\">sem saber programar</p>",
               "color": "rgba(40, 195, 195, 1)",
               "font": "Lektorat Display Var",
               "letterSpacing": "-0.3px",
-              "lineHeight": "100%",
               "fontSize": "7.26vw",
-              "fontWeight": "600"
+              "fontWeight": "600",
+              "lineHeight": "100%"
+            },
+            "hubspotForm": {
+              "modal": {}
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
@@ -4733,17 +4964,17 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {}
-            },
             "title": {
               "text": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255)\">Crie do seu jeito</span></p><p style=\"text-align: center\">sem saber programar</p>",
               "color": "#28C3C3",
               "font": "Lektorat Display Var",
               "fontWeight": "650",
               "letterSpacing": "-1px",
-              "lineHeight": "100%",
-              "fontSize": "50px"
+              "fontSize": "50px",
+              "lineHeight": "100%"
+            },
+            "hubspotForm": {
+              "modal": {}
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
@@ -4775,9 +5006,6 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {}
-            },
             "title": {
               "text": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme </span>visitantes em compradores <span style=\"color: rgb(255, 255, 255)\">automaticamente</span></p>",
               "color": "#ffffff",
@@ -4786,6 +5014,9 @@
               "fontSize": "22px",
               "fontWeight": "600",
               "lineHeight": "120%"
+            },
+            "hubspotForm": {
+              "modal": {}
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
@@ -4813,9 +5044,6 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {}
-            },
             "title": {
               "text": "<p><span style=\"color: #ffffff\">Transforme </span>visitantes</p><p>em compradores</p><p><span style=\"color: #ffffff\">automaticamente</span></p>",
               "color": "#FFFFFF",
@@ -4824,6 +5052,9 @@
               "letterSpacing": "-0.3px",
               "fontSize": "22px",
               "lineHeight": "120%"
+            },
+            "hubspotForm": {
+              "modal": {}
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
@@ -4921,6 +5152,52 @@
               "placement": "left"
             },
             "sectionMarginTop": "-1px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg"
+            },
+            "lines": [
+              {
+                "distance": "27px"
+              },
+              {
+                "distance": "92px"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg",
+              "width": 600
+            },
+            "lines": [
+              {
+                "distance": "40px"
+              },
+              {
+                "distance": "170px"
+              }
+            ],
+            "linesSize": 4
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -5185,23 +5462,15 @@
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
             "title": {},
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
-            },
-            "container": {
-              "paddingBottom": "80px",
-              "marginTop": "0",
-              "marginBottom": "0"
-            },
             "cta": [
               {
+                "text": "Comece a vender hoje mesmo",
+                "backgroundColor": "transparent",
+                "borderColor": "Transparent",
+                "textColor": "#ffffff",
                 "type": "Button",
                 "size": "Large",
                 "openModal": "Create Store",
-                "text": "Comece a vender hoje mesmo",
-                "textColor": "#ffffff",
-                "borderColor": "Transparent",
-                "backgroundColor": "transparent",
                 "customProps": {
                   "width": "100%",
                   "height": "48px",
@@ -5218,7 +5487,15 @@
             "hubspotForm": {
               "modal": {}
             },
-            "ctaPlacement": "center"
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
+            },
+            "ctaPlacement": "center",
+            "container": {
+              "paddingBottom": "80px",
+              "marginTop": "0",
+              "marginBottom": "0"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5229,27 +5506,15 @@
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
             "title": {},
-            "hubspotForm": {
-              "modal": {}
-            },
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
-            },
-            "container": {
-              "marginTop": "0",
-              "marginBottom": "0",
-              "paddingBottom": "80px",
-              "backgroundColor": ""
-            },
             "cta": [
               {
+                "text": "Comece a vender hoje mesmo",
+                "backgroundColor": "transparent",
+                "borderColor": "Transparent",
+                "textColor": "#ffffff",
                 "type": "Button",
                 "size": "Large",
                 "openModal": "Create Store",
-                "text": "Comece a vender hoje mesmo",
-                "textColor": "#ffffff",
-                "borderColor": "Transparent",
-                "backgroundColor": "transparent",
                 "customProps": {
                   "height": "48px",
                   "borderRadius": "15px",
@@ -5262,6 +5527,18 @@
                 "customIcon": {}
               }
             ],
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
+            },
+            "container": {
+              "marginTop": "0",
+              "marginBottom": "0",
+              "paddingBottom": "80px",
+              "backgroundColor": ""
+            },
             "ctaPlacement": "center",
             "sectionMarginTop": "-2px"
           },
@@ -5289,9 +5566,9 @@
             "cta": [
               {
                 "text": "Escolha o novo jeito de vender online",
-                "textColor": "#ffffff",
                 "backgroundColor": "rgba(0, 54, 58, 1)",
                 "borderColor": "rgba(0, 54, 58, 1)",
+                "textColor": "#ffffff",
                 "type": "Button",
                 "size": "Medium",
                 "openModal": "Create Store",
@@ -5476,9 +5753,9 @@
             "cta": [
               {
                 "text": "Escolha o novo jeito de vender online",
-                "textColor": "#ffffff",
                 "backgroundColor": "rgba(0, 54, 58, 1)",
                 "borderColor": "rgba(0, 54, 58, 1)",
+                "textColor": "#ffffff",
                 "type": "Button",
                 "size": "Medium",
                 "openModal": "Komea wait list",
@@ -5651,9 +5928,9 @@
             "cta": [
               {
                 "text": "Ver planos e assinar",
-                "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
+                "textColor": "#ffffff",
                 "ctaStyle": "button",
                 "href": "#plans"
               }
@@ -5759,17 +6036,17 @@
         {
           "value": {
             "__resolveType": "site/sections/Faq.tsx",
+            "title": "<p><strong>Perguntas frequentes sobre<br>sua Loja de Moda Online</strong></p>",
             "cta": [
               {
                 "text": "Ver planos e assinar",
-                "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
+                "textColor": "#ffffff",
                 "ctaStyle": "button",
                 "href": "#plans"
               }
             ],
-            "title": "<p><strong>Perguntas frequentes sobre<br>sua Loja de Moda Online</strong></p>",
             "titleColor": "#00363A",
             "captionColor": "#5F6E82",
             "questions": [
@@ -5875,7 +6152,7 @@
           "value": {
             "__resolveType": "site/sections/FooterV4.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\">Alivie<br>o corre que<br>é vender online</p>",
+              "text": "<p></p>",
               "color": "#00363A",
               "fontWeight": "650",
               "font": "Lektorat Display var",
@@ -5956,6 +6233,9 @@
               "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
               "horizontalPosition": "-16px",
               "verticalPosition": "-20px"
+            },
+            "titleImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/e6344500-983e-4196-8ebe-d301c83fe257/Alivie-o-orre-que-e-vender-online.svg"
             }
           },
           "rule": {
@@ -5967,7 +6247,7 @@
           "value": {
             "__resolveType": "site/sections/FooterV4.tsx",
             "title": {
-              "text": "<p style=\"text-align: center\">Alivie<br>o corre que é<br>vender online</p>",
+              "text": "<p></p>",
               "color": "#00363A",
               "fontWeight": "650",
               "font": "Lektorat Display var",
@@ -6044,6 +6324,9 @@
               "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
               "horizontalPosition": "-16px",
               "verticalPosition": "-20px"
+            },
+            "titleImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/e6344500-983e-4196-8ebe-d301c83fe257/Alivie-o-orre-que-e-vender-online.svg"
             }
           },
           "rule": {
@@ -6101,7 +6384,9 @@
                 "createStorePlanId": "172"
               }
             ],
-            "backgroundColor": "#00363A"
+            "backgroundColor": "#00363A",
+            "xButtonColor": "#ffffff",
+            "centerContent": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6110,7 +6395,8 @@
         },
         {
           "value": {
-            "__resolveType": "site/sections/FixedBottom.tsx"
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "hideSection": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

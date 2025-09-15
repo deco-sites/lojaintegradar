@@ -3752,6 +3752,9 @@ details.collapse summary::-webkit-details-marker {
 .z-\[-60\] {
   z-index: -60;
 }
+.z-\[1000\] {
+  z-index: 1000;
+}
 .z-\[1\] {
   z-index: 1;
 }
@@ -7801,6 +7804,14 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:pl-7 {
     padding-left: 1.75rem;
+  }
+
+  .md\:pl-\[27px\] {
+    padding-left: 27px;
+  }
+
+  .md\:pr-9 {
+    padding-right: 2.25rem;
   }
 
   .md\:pt-10 {

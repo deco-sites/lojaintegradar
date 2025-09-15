@@ -220,6 +220,8 @@ export interface Props {
     labelColor?: string;
     /** @format color-input */
     disabledLabelColor?: string;
+    switchPaddingTop?: string;
+    switchPaddingBottom?: string;
     /** @format color-input */
     switchBackgroundColor?: string;
     /** @format color-input */
@@ -408,7 +410,7 @@ function Plans(props: Props) {
     if (props.hideSection) return <></>
     const carouselId = useId();
     const id = props.id || carouselId;
-    const { title, caption, bottomCta = [], slides, centralizeSlides, hideSwitch = false, backgroundImage, montlyLabel, annualLabel, annualTagPosition = "below", annualTag, switchBackgroundColor, switchBallColor, annualTagTextColor, arrows, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, arrowsColor, paddingBottom, paddingTop } = props;
+    const { title, caption, bottomCta = [], slides, centralizeSlides, switchPaddingBottom, switchPaddingTop, hideSwitch = false, backgroundImage, montlyLabel, annualLabel, annualTagPosition = "below", annualTag, switchBackgroundColor, switchBallColor, annualTagTextColor, arrows, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, arrowsColor, paddingBottom, paddingTop } = props;
     return (<div id={id} class="relative">
         {backgroundImage?.src && <Image
             src={backgroundImage.src}
@@ -435,7 +437,7 @@ function Plans(props: Props) {
                 style={{ fontFamily: caption.font, fontSize: caption.fontSize, lineHeight: caption.lineHeight, fontWeight: caption.fontWeight, letterSpacing: caption.letterSpacing, background: caption.color || "black" }}
                 dangerouslySetInnerHTML={{ __html: caption.text }} />}
 
-            {!hideSwitch && <div className={`relative !pt-20 !pb-11 flex items-center ${annualTagPosition == "below" ? ' flex-col gap-4' : 'flex-row'}`}>
+            {!hideSwitch && <div className={`relative !pt-20 !pb-11 flex items-center ${annualTagPosition == "below" ? ' flex-col gap-4' : 'flex-row'}`} style={{paddingTop: switchPaddingTop + ' !important', paddingBottom: switchPaddingBottom + ' !important'}}>
                 <label className={`label cursor-pointer gap-5 !py-0 !px-2.5 `}>
                     {montlyLabel && <span className="text-lg text-primary font-normal leading-tight disabled:text-neutral-content" disabled style={{ color: disabledLabelColor }}>{montlyLabel}</span>}
                     <input type="checkbox" className={`hidden peer border-primary-content bg-primary-content hover:bg-primary-content `} defaultChecked hx-on:change={useScript(onChange, id, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, annualTagTextColor)} />

@@ -25,7 +25,7 @@ export default function HorizontalLines({lineImage, linesSize, lines}:Props) {
       <div class="w-full flex justify-center relative">
         {lines?.map(line => {
           return (
-            <div class={`absolute flex justify-center`} style={{top: line.distance}}>
+            <div class={`absolute flex justify-center w-full overflow-hidden`} style={{top: line.distance}}>
               {Array.from({ length: linesSize || 1 }).map((_, index) => (
                 <Image
                   key={index}

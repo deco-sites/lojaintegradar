@@ -3,6 +3,45 @@
   "path": "/campanha",
   "sections": [
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/HorizontalLines.tsx",
+        "lineImage": {
+          "src": "https://assets.decocache.com/lojaintegradar/5471942c-9e17-4889-b21c-1ff2b74c0ed9/mobile-green-dark-horizontal-line.svg"
+        },
+        "lines": [
+          {
+            "distance": "88px"
+          },
+          {
+            "distance": "185px"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/VerticalLines.tsx",
+        "lineImage": {
+          "src": "https://assets.decocache.com/lojaintegradar/b20256d0-0906-4f8c-9160-dae9fad28795/mobile-dark-green-vertical-line.svg",
+          "height": 1743,
+          "width": 2
+        },
+        "linesSize": 6,
+        "lines": [
+          {
+            "from": "left",
+            "distance": "12px"
+          },
+          {
+            "from": "right",
+            "distance": "12px"
+          }
+        ]
+      }
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -362,7 +401,7 @@
             "container": {
               "backgroundMedia": {
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/33d43e3c-547a-47f3-82c9-ca052bf0e70e/background-loja-integrada.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/6bc5b75f-9f3d-4d97-963c-e194e9233002/campanha-main-hero-background-mobile.svg",
                   "width": 375
                 },
                 "use": "image"
@@ -419,6 +458,18 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Create Store",
+                "text": "Monte sua loja com mais segurança e sem custo",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "textColor": "#FFFFFF",
+                "createStorePlanId": "172"
+              }
+            ],
             "hubspotForm": {
               "modal": {}
             },
@@ -439,18 +490,6 @@
               "fontWeight": "500",
               "lineHeight": "140%"
             },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Large",
-                "openModal": "Create Store",
-                "text": "Monte sua loja com mais segurança e sem custo",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "textColor": "#FFFFFF",
-                "createStorePlanId": "172"
-              }
-            ],
             "ctaPlacement": "center",
             "media": {
               "image": {
@@ -665,8 +704,8 @@
               },
               "backgroundColor": "linear-gradient(179deg, #F5F9F8 49.54%, #28C3C3 107.47%);",
               "paddingTop": "20px",
-              "paddingRight": "16px",
-              "marginBottom": "0px"
+              "marginBottom": "0px",
+              "paddingRight": "16px"
             },
             "sectionBackground": {
               "image": {},
@@ -4607,7 +4646,8 @@
               }
             ],
             "foldsHeight": "440px",
-            "bulletPoints": {}
+            "bulletPoints": {},
+            "hideSection": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -4691,22 +4731,60 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/VerticalLines.tsx",
+        "lineImage": {
+          "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg"
+        },
+        "lines": [
+          {
+            "from": "left",
+            "distance": "12px"
+          },
+          {
+            "from": "right",
+            "distance": "12px"
+          }
+        ],
+        "maxHeight": "2300px",
+        "linesSize": 2
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/HorizontalLines.tsx",
+        "lineImage": {
+          "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg"
+        },
+        "lines": [
+          {
+            "distance": "45px"
+          },
+          {
+            "distance": "110px"
+          }
+        ]
+      }
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {}
-            },
             "title": {
               "text": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 250)\">Crie do seu jeito,</span></p><p style=\"text-align: center\">sem saber programar</p>",
               "color": "rgba(40, 195, 195, 1)",
               "font": "Lektorat Display Var",
               "letterSpacing": "-0.3px",
-              "lineHeight": "100%",
               "fontSize": "7.26vw",
-              "fontWeight": "600"
+              "fontWeight": "600",
+              "lineHeight": "100%"
+            },
+            "hubspotForm": {
+              "modal": {}
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
@@ -4733,17 +4811,17 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {}
-            },
             "title": {
               "text": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255)\">Crie do seu jeito</span></p><p style=\"text-align: center\">sem saber programar</p>",
               "color": "#28C3C3",
               "font": "Lektorat Display Var",
               "fontWeight": "650",
               "letterSpacing": "-1px",
-              "lineHeight": "100%",
-              "fontSize": "50px"
+              "fontSize": "50px",
+              "lineHeight": "100%"
+            },
+            "hubspotForm": {
+              "modal": {}
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
@@ -4775,9 +4853,6 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {}
-            },
             "title": {
               "text": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme </span>visitantes em compradores <span style=\"color: rgb(255, 255, 255)\">automaticamente</span></p>",
               "color": "#ffffff",
@@ -4786,6 +4861,9 @@
               "fontSize": "22px",
               "fontWeight": "600",
               "lineHeight": "120%"
+            },
+            "hubspotForm": {
+              "modal": {}
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
@@ -4813,9 +4891,6 @@
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
-            "hubspotForm": {
-              "modal": {}
-            },
             "title": {
               "text": "<p><span style=\"color: #ffffff\">Transforme </span>visitantes</p><p>em compradores</p><p><span style=\"color: #ffffff\">automaticamente</span></p>",
               "color": "#FFFFFF",
@@ -4824,6 +4899,9 @@
               "letterSpacing": "-0.3px",
               "fontSize": "22px",
               "lineHeight": "120%"
+            },
+            "hubspotForm": {
+              "modal": {}
             },
             "sectionBackground": {
               "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
@@ -4927,6 +5005,23 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/HorizontalLines.tsx",
+        "lineImage": {
+          "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg"
+        },
+        "lines": [
+          {
+            "distance": "27px"
+          },
+          {
+            "distance": "92px"
+          }
+        ]
+      }
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -5185,23 +5280,15 @@
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
             "title": {},
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
-            },
-            "container": {
-              "paddingBottom": "80px",
-              "marginTop": "0",
-              "marginBottom": "0"
-            },
             "cta": [
               {
+                "text": "Comece a vender hoje mesmo",
+                "backgroundColor": "transparent",
+                "borderColor": "Transparent",
+                "textColor": "#ffffff",
                 "type": "Button",
                 "size": "Large",
                 "openModal": "Create Store",
-                "text": "Comece a vender hoje mesmo",
-                "textColor": "#ffffff",
-                "borderColor": "Transparent",
-                "backgroundColor": "transparent",
                 "customProps": {
                   "width": "100%",
                   "height": "48px",
@@ -5218,7 +5305,15 @@
             "hubspotForm": {
               "modal": {}
             },
-            "ctaPlacement": "center"
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
+            },
+            "ctaPlacement": "center",
+            "container": {
+              "paddingBottom": "80px",
+              "marginTop": "0",
+              "marginBottom": "0"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -5229,27 +5324,15 @@
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
             "title": {},
-            "hubspotForm": {
-              "modal": {}
-            },
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
-            },
-            "container": {
-              "marginTop": "0",
-              "marginBottom": "0",
-              "paddingBottom": "80px",
-              "backgroundColor": ""
-            },
             "cta": [
               {
+                "text": "Comece a vender hoje mesmo",
+                "backgroundColor": "transparent",
+                "borderColor": "Transparent",
+                "textColor": "#ffffff",
                 "type": "Button",
                 "size": "Large",
                 "openModal": "Create Store",
-                "text": "Comece a vender hoje mesmo",
-                "textColor": "#ffffff",
-                "borderColor": "Transparent",
-                "backgroundColor": "transparent",
                 "customProps": {
                   "height": "48px",
                   "borderRadius": "15px",
@@ -5262,6 +5345,18 @@
                 "customIcon": {}
               }
             ],
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
+            },
+            "container": {
+              "marginTop": "0",
+              "marginBottom": "0",
+              "paddingBottom": "80px",
+              "backgroundColor": ""
+            },
             "ctaPlacement": "center",
             "sectionMarginTop": "-2px"
           },
@@ -5289,9 +5384,9 @@
             "cta": [
               {
                 "text": "Escolha o novo jeito de vender online",
-                "textColor": "#ffffff",
                 "backgroundColor": "rgba(0, 54, 58, 1)",
                 "borderColor": "rgba(0, 54, 58, 1)",
+                "textColor": "#ffffff",
                 "type": "Button",
                 "size": "Medium",
                 "openModal": "Create Store",
@@ -5476,9 +5571,9 @@
             "cta": [
               {
                 "text": "Escolha o novo jeito de vender online",
-                "textColor": "#ffffff",
                 "backgroundColor": "rgba(0, 54, 58, 1)",
                 "borderColor": "rgba(0, 54, 58, 1)",
+                "textColor": "#ffffff",
                 "type": "Button",
                 "size": "Medium",
                 "openModal": "Komea wait list",
@@ -5651,9 +5746,9 @@
             "cta": [
               {
                 "text": "Ver planos e assinar",
-                "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
+                "textColor": "#ffffff",
                 "ctaStyle": "button",
                 "href": "#plans"
               }
@@ -5759,17 +5854,17 @@
         {
           "value": {
             "__resolveType": "site/sections/Faq.tsx",
+            "title": "<p><strong>Perguntas frequentes sobre<br>sua Loja de Moda Online</strong></p>",
             "cta": [
               {
                 "text": "Ver planos e assinar",
-                "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
+                "textColor": "#ffffff",
                 "ctaStyle": "button",
                 "href": "#plans"
               }
             ],
-            "title": "<p><strong>Perguntas frequentes sobre<br>sua Loja de Moda Online</strong></p>",
             "titleColor": "#00363A",
             "captionColor": "#5F6E82",
             "questions": [

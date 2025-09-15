@@ -1,6 +1,6 @@
 {
-  "name": "Comece sua loja",
-  "path": "/como-comecar-a-vender-online",
+  "name": "Comece sua loja -TESTE",
+  "path": "/example-path",
   "sections": [
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -52,17 +52,17 @@
               "height": 636,
               "width": 1
             },
-            "linesSize": 6,
             "lines": [
               {
-                "from": "left",
-                "distance": "12px"
+                "distance": "12px",
+                "from": "left"
               },
               {
-                "from": "right",
-                "distance": "12px"
+                "distance": "12px",
+                "from": "right"
               }
-            ]
+            ],
+            "linesSize": 6
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -74,8 +74,8 @@
             "__resolveType": "site/sections/VerticalLines.tsx",
             "lineImage": {
               "src": "https://assets.decocache.com/lojaintegradar/c8ffc48e-534c-496e-a0a4-8cd433ffa9c9/desktop-vertical-dark-green-line.svg",
-              "height": 636,
-              "width": 1
+              "width": 1,
+              "height": 636
             },
             "linesSize": 6,
             "lines": [
@@ -436,13 +436,37 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/CreateStoreHero.tsx",
+        "title": {
+          "text": "<p>Crie seu site na plataforma que<br>otimiza seu tempo</p>",
+          "font": "Lektorat Display var",
+          "color": "#00363A",
+          "fontSize": "60px",
+          "fontWeight": "650",
+          "lineHeight": "100%"
+        },
+        "backgroundMedia": {
+          "image": {
+            "src": "https://assets.decocache.com/lojaintegradar/9eea7642-7ff6-481e-a095-b75fbd03f481/bg-teste.png"
+          },
+          "use": "image"
+        },
+        "createStoreFormProps": {
+          "showForm": true
+        }
+      }
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "value": {
             "__resolveType": "site/sections/HeroV4.tsx",
             "hubspotForm": {
-              "modal": {}
+              "modal": {},
+              "show": true
             },
             "title": {
               "text": "<p style=\"text-align: center\">Crie seu site<br>na plataforma que<br><span style=\"color: #28c3c3\">otimiza seu tempo</span></p>",
@@ -1180,7 +1204,7 @@
                 "from": "center"
               }
             ],
-            "linesSize": 4
+            "linesSize": 5
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -2370,8 +2394,8 @@
               "text": "<p style=\"text-align: center\">Quer ter acesso a suporte, mais recurso de customização de loja?</p>",
               "color": "#00363A",
               "font": "Inter",
-              "letterSpacing": "-0.3px",
               "fontWeight": "600",
+              "letterSpacing": "-0.3px",
               "fontSize": "16px",
               "lineHeight": "140%"
             },
@@ -4115,8 +4139,8 @@
               "text": "<p style=\"text-align: center\">Quer ter acesso a suporte, mais recurso<br>de customização de loja?</p>",
               "color": "#00363A",
               "font": "Inter",
-              "letterSpacing": "-0.3px",
               "fontWeight": "600",
+              "letterSpacing": "-0.3px",
               "fontSize": "16px",
               "lineHeight": "140%"
             },

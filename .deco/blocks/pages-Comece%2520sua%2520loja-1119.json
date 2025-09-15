@@ -210,7 +210,7 @@
                   }
                 ]
               },
-              "href": "/home",
+              "href": "/",
               "alt": "logo ",
               "width": 200
             },
@@ -1149,89 +1149,6 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
-            "title": {
-              "text": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme </span>visitantes em compradores <span style=\"color: rgb(255, 255, 255)\">automaticamente</span></p>",
-              "color": "#ffffff",
-              "font": "Inter",
-              "letterSpacing": "-0.3px",
-              "fontWeight": "600",
-              "fontSize": "22px",
-              "lineHeight": "120%"
-            },
-            "hubspotForm": {
-              "modal": {}
-            },
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
-            },
-            "text": "<p><span>Escolha entre dezenas de temas personalizados e ofereça uma experiência única no seu site próprio. Enquanto isso, a Loja Integrada trabalha por você: reengaja visitas, recomenda produtos e recupera carrinhos e pedidos sem pagamento — tudo automatizado, sem precisar criar campanhas manuais.</span></p>",
-            "textProps": {
-              "color": "#ffffff"
-            },
-            "container": {
-              "marginTop": "0px"
-            },
-            "media": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/4b3777f4-9774-45c6-a399-aebb4aa407e8/Crie-do-seu-jeito.svg"
-              },
-              "use": "image"
-            },
-            "sectionMarginTop": "0px"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
-            "title": {
-              "text": "<p></p>",
-              "color": "#FFFFFF",
-              "font": "Inter",
-              "letterSpacing": "-0.3px",
-              "fontWeight": "600",
-              "fontSize": "22px",
-              "lineHeight": "120%"
-            },
-            "hideSection": true,
-            "hubspotForm": {
-              "modal": {}
-            },
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
-            },
-            "text": "<p></p>",
-            "textProps": {
-              "color": "#ffffff",
-              "fontSize": "14px"
-            },
-            "container": {
-              "maxWidth": "1270px"
-            },
-            "media": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/4b3777f4-9774-45c6-a399-aebb4aa407e8/Crie-do-seu-jeito.svg",
-                "width": "421px"
-              },
-              "use": "image"
-            },
-            "sectionMarginTop": "-2px"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
             "__resolveType": "site/sections/VerticalLines.tsx",
             "lineImage": {
               "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg"
@@ -1336,8 +1253,8 @@
               "color": "rgba(40, 195, 195, 1)",
               "font": "Lektorat Display Var",
               "letterSpacing": "-0.3px",
-              "fontSize": "7.26vw",
               "fontWeight": "600",
+              "fontSize": "7.26vw",
               "lineHeight": "100%"
             },
             "hubspotForm": {
@@ -1358,7 +1275,8 @@
             },
             "cta": [],
             "ctaPlacement": "center",
-            "customTitle": "hero:multiplos-especialistas"
+            "customTitle": "hero:multiplos-especialistas",
+            "tag": {}
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1372,8 +1290,8 @@
               "text": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255)\">Crie do seu jeito</span></p><p style=\"text-align: center\">sem saber programar</p>",
               "color": "#28C3C3",
               "font": "Lektorat Display Var",
-              "fontWeight": "650",
               "letterSpacing": "-1px",
+              "fontWeight": "650",
               "fontSize": "50px",
               "lineHeight": "100%"
             },
@@ -1402,6 +1320,173 @@
             "tag": {
               "backgroundColor": "#00363A"
             }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme </span>visitantes em compradores <span style=\"color: rgb(255, 255, 255)\">automaticamente</span></p>",
+              "color": "#ffffff",
+              "font": "Inter",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "fontSize": "22px",
+              "lineHeight": "120%"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
+            },
+            "text": "<p>Escolha entre dezenas de temas personalizados e ofereça uma experiência única no seu site próprio. Enquanto isso, a Loja Integrada trabalha por você: reengaja visitas, recomenda produtos e recupera carrinhos e pedidos sem pagamento — tudo automatizado, sem precisar criar campanhas manuais.</p>",
+            "textProps": {
+              "color": "#ffffff"
+            },
+            "container": {
+              "marginTop": "0px"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/86f76c02-6fb8-48d2-bce2-fbf59822474d/transforme-visitantes-em-compradores.png",
+                "width": 337,
+                "height": 305
+              },
+              "use": "image"
+            },
+            "sectionMarginTop": "0px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p></p>",
+              "color": "#FFFFFF",
+              "font": "Inter",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "fontSize": "22px",
+              "lineHeight": "120%"
+            },
+            "hideSection": true,
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
+            },
+            "text": "<p></p>",
+            "textProps": {
+              "color": "#ffffff",
+              "fontSize": "14px"
+            },
+            "container": {
+              "maxWidth": "1270px"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/4b3777f4-9774-45c6-a399-aebb4aa407e8/Crie-do-seu-jeito.svg",
+                "width": "421px"
+              },
+              "use": "image"
+            },
+            "sectionMarginTop": "-2px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p><span style=\"color: #ffffff\">Integrações com ferramentas</span></p><p><span style=\"color: #ffffff\">de </span><span>anúncios e criador</span></p><p><span>de promoções</span></p>",
+              "color": "#FFFFFF",
+              "font": "Inter",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "fontSize": "22px",
+              "lineHeight": "120%"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #01363a, #003135);"
+            },
+            "text": "<p><span>Atraia clientes antigos e conquiste novos. Quer vender ainda mais? Promova seus produtos com integrações como Google Ads, Instagram Ads e Facebook Ads. Crie promoções inteligentes e cupons personalizados para engajar, recuperar e fidelizar seus clientes.</span></p>",
+            "textProps": {
+              "color": "#ffffff"
+            },
+            "container": {},
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png",
+                "width": 337,
+                "height": 305
+              },
+              "use": "image"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p></p>",
+              "color": "#28C3C3",
+              "font": "Lektorat Display Var",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "fontSize": "32px"
+            },
+            "hideSection": true,
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #01363a, #003135);"
+            },
+            "text": "<p></p>",
+            "textProps": {
+              "color": "#ffffff"
+            },
+            "container": {
+              "maxWidth": "1270px",
+              "gap": "180px"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png",
+                "width": "421px"
+              },
+              "use": "image",
+              "placement": "left"
+            },
+            "sectionMarginTop": "-1px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1623,86 +1708,6 @@
               }
             ],
             "linesSize": 4
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
-            "title": {
-              "text": "<p><span style=\"color: #ffffff\">Integrações com ferramentas</span></p><p><span style=\"color: #ffffff\">de </span><span>anúncios e criador</span></p><p><span>de promoções</span></p>",
-              "color": "#FFFFFF",
-              "font": "Inter",
-              "letterSpacing": "-0.3px",
-              "fontSize": "22px",
-              "fontWeight": "600",
-              "lineHeight": "120%"
-            },
-            "hubspotForm": {
-              "modal": {}
-            },
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #01363a, #003135);"
-            },
-            "text": "<p><span>Atraia clientes antigos e conquiste novos. Quer vender ainda mais? Promova seus produtos com integrações como Google Ads, Instagram Ads e Facebook Ads. Crie promoções inteligentes e cupons personalizados para engajar, recuperar e fidelizar seus clientes.</span></p>",
-            "textProps": {
-              "color": "#ffffff"
-            },
-            "container": {},
-            "media": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png"
-              },
-              "use": "image"
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
-            "title": {
-              "text": "<p><span style=\"color: #ffffff\">Integrações com ferramentas</span></p><p><span style=\"color: #ffffff\">de </span><span>anúncios e criador</span></p><p><span>de promoções</span></p>",
-              "color": "#28C3C3",
-              "font": "Lektorat Display Var",
-              "fontWeight": "600",
-              "letterSpacing": "-0.3px",
-              "fontSize": "32px"
-            },
-            "hubspotForm": {
-              "modal": {}
-            },
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #01363a, #003135);"
-            },
-            "text": "<p><span>Atraia clientes antigos e conquiste novos. Quer vender ainda</span></p><p><span>mais? Promova seus produtos com integrações como Google</span></p><p><span>Ads, Instagram Ads e Facebook Ads. Crie promoções</span></p><p><span>inteligentes e cupons personalizados para engajar, recuperar</span></p><p><span>e fidelizar seus clientes.</span></p>",
-            "textProps": {
-              "color": "#ffffff"
-            },
-            "container": {
-              "maxWidth": "1270px",
-              "gap": "180px"
-            },
-            "media": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png",
-                "width": "421px"
-              },
-              "use": "image",
-              "placement": "left"
-            },
-            "sectionMarginTop": "-1px",
-            "hideSection": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -2040,8 +2045,8 @@
             "cta": [
               {
                 "text": "Comece a vender hoje mesmo",
-                "backgroundColor": "transparent",
-                "borderColor": "Transparent",
+                "backgroundColor": "#28C3C3",
+                "borderColor": "#28C3C3",
                 "textColor": "#ffffff",
                 "type": "Button",
                 "size": "Large",
@@ -2053,9 +2058,7 @@
                   "fontSize": "14px"
                 },
                 "createStorePlanId": "172",
-                "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/7ff80dd0-bc52-48c4-9f97-d3b125325a40/Button-linkout.svg"
-                },
+                "backgroundImage": {},
                 "customIcon": {}
               }
             ],
@@ -4858,7 +4861,7 @@
                 "cta": [],
                 "createStoreWithPlanCta": {
                   "planId": "173",
-                  "text": "Criar minha loja",
+                  "text": "Assinar plano",
                   "backgroundColor": "#28C3C3",
                   "textColor": "#FFFFFF",
                   "borderColor": "#28C3C3",
@@ -5542,19 +5545,19 @@
                 },
                 "seeMoreButtonText": "Ver mais",
                 "cta": [],
-                "backgroundColor": "#FBFAF9",
+                "backgroundColor": "#E4F3F3",
                 "cutedMontlyFeeColor": "#371E55",
                 "createStoreWithPlanCta": {
                   "planId": "172",
                   "text": "Criar minha loja",
                   "ctaStyle": "button",
-                  "backgroundColor": "#E4F3F3",
+                  "backgroundColor": "transparent",
                   "textColor": "#00363A",
-                  "borderColor": "#E4F3F3"
+                  "borderColor": "#00363A"
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
-                "borderColor": "#F2F4F5"
+                "borderColor": "#E4F3F3"
               }
             ],
             "titleColor": "#371E55",

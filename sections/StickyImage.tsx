@@ -76,12 +76,14 @@ export interface Fold {
 }
 
 export interface Props {
+  hideSection?: boolean;
   folds?: Fold[];
   backgroundMedia?: BackgroundMedia;
   foldsHeight?: string;
 }
 
-export default function StickyImage({ folds = [], backgroundMedia, foldsHeight }: Props) {
+export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, hideSection }: Props) {
+  if (hideSection) return <></>;
   const rootId = useId();
   return <div id={rootId} class="flex justify-center gap-6 lg:gap-20 px-7 lg:px-7" style={{ background: backgroundMedia?.backgroundColor }}>
     <script

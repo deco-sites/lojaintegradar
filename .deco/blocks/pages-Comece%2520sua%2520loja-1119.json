@@ -992,8 +992,8 @@
               "__resolveType": "site/sections/Logos.tsx",
               "blackAndWhiteLogos": false,
               "title": "<p style=\"text-align: center\">+30 mil lojas venderam no último mês.</p>",
-              "paddingTop": "60px",
-              "paddingBottom": "60px",
+              "paddingTop": "120px",
+              "paddingBottom": "120px",
               "caption": "<p style=\"text-align: center\">São 13 anos apoiando empreendedores como você</p>",
               "titleTextProps": {
                 "fontFamily": "Inter",
@@ -2084,8 +2084,8 @@
             "cta": [
               {
                 "text": "Comece a vender hoje mesmo",
-                "backgroundColor": "transparent",
-                "borderColor": "Transparent",
+                "backgroundColor": "#28C3C3",
+                "borderColor": "#28C3C3",
                 "textColor": "#ffffff",
                 "type": "Button",
                 "size": "Large",
@@ -2096,9 +2096,7 @@
                   "fontSize": "14px"
                 },
                 "createStorePlanId": "172",
-                "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/7ff80dd0-bc52-48c4-9f97-d3b125325a40/Button-linkout.svg"
-                },
+                "backgroundImage": {},
                 "customIcon": {}
               }
             ],
@@ -3097,20 +3095,20 @@
                   "fontFamily": "Instrument Serif"
                 },
                 "seeMoreButtonText": "Ver mais",
-                "backgroundColor": "#FBFAF9",
+                "backgroundColor": "#E4F3F3",
                 "cutedMontlyFeeColor": "#371E55",
                 "cta": [],
                 "createStoreWithPlanCta": {
                   "planId": "172",
                   "text": "Criar minha loja",
-                  "backgroundColor": "#E4F3F3",
+                  "backgroundColor": "Transparent",
                   "textColor": "#00363A",
-                  "borderColor": "#E4F3F3",
+                  "borderColor": "#00363A",
                   "ctaStyle": "button"
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
-                "borderColor": "#F2F4F5"
+                "borderColor": "#E4F3F3"
               },
               {
                 "bulletPoints": {
@@ -3802,11 +3800,11 @@
                 "cutedMontlyFeeColor": "#371E55",
                 "createStoreWithPlanCta": {
                   "planId": "173",
-                  "text": "Criar minha loja",
+                  "text": "Assinar plano",
                   "ctaStyle": "button",
                   "backgroundColor": "#28C3C3",
                   "textColor": "#FFFFFF",
-                  "borderColor": "#28C3C3"
+                  "borderColor": ""
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",

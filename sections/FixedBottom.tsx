@@ -27,6 +27,7 @@ export interface IImage {
 }
 
 export interface Props {
+  hideSection?: boolean;
   /** @format color-input */
   backgroundColor?: string;
   logo?: IImage;
@@ -35,18 +36,23 @@ export interface Props {
   cta?: CTAProps[];
   leftBackgroundImage?: IImage;
   rightBackgroundImage?: IImage;
+  /** @format color-input */
+  xButtonColor?: string;
+  hideXButton?: boolean;
+  centerContent?: boolean;
 }
 
-export default function FixedBottom({ backgroundColor, logo, text, textProps, leftBackgroundImage, rightBackgroundImage, cta = [] }: Props) {
+export default function FixedBottom({ hideSection, backgroundColor, logo, text, textProps, leftBackgroundImage, rightBackgroundImage, cta = [], xButtonColor, hideXButton, centerContent }: Props) {
+  if (hideSection) return <></>;
   const zIndex = 30;
   return <div
     class="fixed bottom-0 left-0 w-full"
     style={{ background: backgroundColor, zIndex }}>
     <div class="relative">
-      <button class="absolute top-2 right-2 p-2 z-40" hx-on:click={useScript(onClick)}>
+      {!hideXButton && <button class="absolute top-2 right-2 p-2 z-40" hx-on:click={useScript(onClick)} style={{color: xButtonColor}}>
         X
-      </button>
-      <div class="px-[46px] py-[18px] lg:py-[35px] lg:px-16 flex flex-wrap lg:flex-nowrap gap-16 gap-y-5 items-center justify-between relative peer-checked:hidden" style={{ zIndex: zIndex + 2 }}>
+      </button>}
+      <div class={`px-[46px] py-[18px] lg:py-[35px] lg:px-16 flex flex-wrap lg:flex-nowrap gap-16 gap-y-5 items-center ${centerContent ? 'justify-center' : 'justify-between'} relative peer-checked:hidden`} style={{ zIndex: zIndex + 2 }}>
         <div class="flex gap-5 justify-between">
           {logo?.src && <Image src={logo.src} width={logo.width || 271} height={logo.height || 50} alt={logo.alt || 'Logo'} />}
 
@@ -55,7 +61,7 @@ export default function FixedBottom({ backgroundColor, logo, text, textProps, le
 
         <div dangerouslySetInnerHTML={{ __html: text || "" }} style={{ ...textProps }} class="text-[22px] font-medium hidden lg:block" />
 
-        <div class={`flex flex-wrap lg:flex-nowrap gap-4 flex-grow lg:flex-grow-0`}>
+        <div class={`flex flex-wrap lg:flex-nowrap gap-4 flex-grow lg:flex-grow-0 ${centerContent && 'justify-center'}`}>
           {cta.map(cta => (
             <CTA {...cta} />
           ))}

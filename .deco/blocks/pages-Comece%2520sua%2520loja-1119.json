@@ -6196,7 +6196,9 @@
                 "createStorePlanId": "172"
               }
             ],
-            "backgroundColor": "#00363A"
+            "backgroundColor": "#00363A",
+            "xButtonColor": "#ffffff",
+            "centerContent": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6205,7 +6207,8 @@
         },
         {
           "value": {
-            "__resolveType": "site/sections/FixedBottom.tsx"
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "hideSection": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

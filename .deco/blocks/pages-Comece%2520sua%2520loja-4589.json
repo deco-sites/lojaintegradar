@@ -1248,6 +1248,7 @@
               "color": "#00363A",
               "font": "Lektorat Display var",
               "fontSize": "50px",
+              "fontSize": "50px",
               "fontWeight": "600",
               "lineHeight": "100%",
               "letterSpacing": "-0.64px;"
@@ -1258,31 +1259,40 @@
                   "items": [
                     {
                       "text": "<p>50 produtos</p>",
+                      "text": "<p>50 produtos</p>",
                       "marginTop": "26px"
                     },
                     {
                       "text": "<p>5.000 visitas</p>"
+                      "text": "<p>5.000 visitas</p>"
                     },
                     {
+                      "text": "<p>Método de pagamento e envios nativos</p>"
                       "text": "<p>Método de pagamento e envios nativos</p>"
                     },
                     {
                       "text": "<p>Relatórios de vendas</p>"
+                      "text": "<p>Relatórios de vendas</p>"
                     },
                     {
+                      "text": "<p>Cupons de desconto e Frete grátis</p>"
                       "text": "<p>Cupons de desconto e Frete grátis</p>"
                     }
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
                     "alt": "bullet points icon"
                   },
+                  "itemsTextColor": "#5F6E82",
                   "itemsTextColor": "#5F6E82",
                   "tooltipTextColor": "#5F6E82",
                   "tooltipBackgroundColor": "#EAE7ED",
                   "tooltipIconColor": "#7F7E77"
                 },
                 "title": {
+                  "text": "<p>Grátis</p>",
+                  "color": "#00363A",
                   "text": "<p>Grátis</p>",
                   "color": "#00363A",
                   "font": "Lektorat Display var",
@@ -1297,8 +1307,10 @@
                   "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
                   "borderColor": "#B699D9",
                   "fontFamily": "Instrument Serif",
+                  "fontFamily": "Instrument Serif",
                   "onlyAnnual": false,
                   "hideTag": true,
+                  "text": "Mais recomendado"
                   "text": "Mais recomendado"
                 },
                 "montlyFee": {
@@ -1927,11 +1939,16 @@
                 },
                 "seeMoreButtonText": "Ver mais",
                 "backgroundColor": "#FBFAF9",
+                "backgroundColor": "#FBFAF9",
                 "cutedMontlyFeeColor": "#371E55",
                 "cta": [],
                 "createStoreWithPlanCta": {
                   "planId": "172",
+                  "planId": "172",
                   "text": "Criar minha loja",
+                  "backgroundColor": "#E4F3F3",
+                  "textColor": "#00363A",
+                  "borderColor": "#E4F3F3",
                   "backgroundColor": "#E4F3F3",
                   "textColor": "#00363A",
                   "borderColor": "#E4F3F3",
@@ -1939,6 +1956,7 @@
                 },
                 "theme": "light",
                 "titleFont": "Instrument Serif",
+                "borderColor": "#F2F4F5"
                 "borderColor": "#F2F4F5"
               },
               {
@@ -1949,9 +1967,14 @@
                     },
                     {
                       "text": "<p>250 produtos</p>",
+                      "text": "<p><strong>Tudo do plano Grátis +</strong></p>"
+                    },
+                    {
+                      "text": "<p>250 produtos</p>",
                       "marginTop": "26px"
                     },
                     {
+                      "text": "<p>25.000 visitas</p>"
                       "text": "<p>25.000 visitas</p>"
                     },
                     {
@@ -1959,11 +1982,20 @@
                     },
                     {
                       "text": "<p>Suporte por chat e e-mail</p>"
+                      "text": "<p>Integação com ERP</p>"
+                    },
+                    {
+                      "text": "<p>Suporte por chat e e-mail</p>"
                     },
                     {
                       "text": "<p>Avaliação de Produtos por texto</p>"
+                      "text": "<p>Avaliação de Produtos por texto</p>"
                     },
                     {
+                      "text": "<p>Customização de loja</p>"
+                    },
+                    {
+                      "text": "<p>Vendas por MarketPlaces</p>"
                       "text": "<p>Customização de loja</p>"
                     },
                     {
@@ -1972,14 +2004,18 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://assets.decocache.com/lojaintegradar/a1e36ffb-e68f-4fc7-9b5f-149d35939557/check.svg",
+                    "src": "https://assets.decocache.com/lojaintegradar/a1e36ffb-e68f-4fc7-9b5f-149d35939557/check.svg",
                     "alt": "bullet points icon"
                   },
+                  "itemsTextColor": "#ffffff",
                   "itemsTextColor": "#ffffff",
                   "tooltipTextColor": "#5F6E82",
                   "tooltipBackgroundColor": "#EAE7ED",
                   "tooltipIconColor": "#7F7E77"
                 },
                 "title": {
+                  "text": "<p>Crescimento</p>",
+                  "color": "#FFFFFF",
                   "text": "<p>Crescimento</p>",
                   "color": "#FFFFFF",
                   "font": "Lektorat Display var",
@@ -1999,10 +2035,16 @@
                 "tag": {
                   "text": "<p>Mais recomendado</p>",
                   "fontFamily": "Inter",
+                  "text": "<p>Mais recomendado</p>",
+                  "fontFamily": "Inter",
                   "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
                   "borderColor": "#B699D9",
                   "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
                   "onlyAnnual": false,
+                  "hideTag": true,
+                  "textProps": {
+                    "fontSize": "12px"
+                  }
                   "hideTag": true,
                   "textProps": {
                     "fontSize": "12px"
@@ -2617,6 +2659,8 @@
                   "260": ">",
                   "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Ideal para quem está começando e ainda</span><br><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">fatura até R$ 15 mil/mês</span><br><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">em até 12x de</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$43</span><span style=\"color: rgb(255, 255, 255)\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">por mês</span></p><p><em><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Economia de R$ 240 ao ano</span></em></p>",
                   "color": "#FFFFFF"
+                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Ideal para quem está começando e ainda</span><br><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">fatura até R$ 15 mil/mês</span><br><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">em até 12x de</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$43</span><span style=\"color: rgb(255, 255, 255)\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">por mês</span></p><p><em><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Economia de R$ 240 ao ano</span></em></p>",
+                  "color": "#FFFFFF"
                 },
                 "annualSaving": {
                   "text": "Economia de  R$ 576/ano",
@@ -2628,11 +2672,16 @@
                 "seeMoreButtonText": "Ver mais",
                 "cta": [],
                 "backgroundColor": "#00363A",
+                "backgroundColor": "#00363A",
                 "cutedMontlyFeeColor": "#371E55",
                 "createStoreWithPlanCta": {
                   "planId": "173",
+                  "planId": "173",
                   "text": "Criar minha loja",
                   "ctaStyle": "button",
+                  "backgroundColor": "#28C3C3",
+                  "textColor": "#FFFFFF",
+                  "borderColor": "#28C3C3"
                   "backgroundColor": "#28C3C3",
                   "textColor": "#FFFFFF",
                   "borderColor": "#28C3C3"
@@ -2640,11 +2689,13 @@
                 "theme": "light",
                 "titleFont": "Instrument Serif",
                 "borderColor": "#00363A"
+                "borderColor": "#00363A"
               }
             ],
             "titleColor": "#371E55",
             "captionColor": "#371E55",
             "arrowsColor": "#00363A",
+            "arrows": false,
             "arrows": false,
             "paddingBottom": "60px",
             "backgroundImage": {
@@ -2695,9 +2746,12 @@
             "bottomCta": [],
             "hideSwitch": false,
             "centralizeSlides": true
+            "hideSwitch": false,
+            "centralizeSlides": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
+            "desktop": true
             "desktop": true
           }
         },
@@ -2928,11 +2982,18 @@
               "text": "<p style=\"text-align: center\">Quer ter acesso a suporte, mais recurso de customização de loja?</p>",
               "color": "#00363A",
               "font": "Inter",
+              "text": "<p style=\"text-align: center\">Quer ter acesso a suporte, mais recurso de customização de loja?</p>",
+              "color": "#00363A",
+              "font": "Inter",
               "letterSpacing": "-0.3px",
               "fontWeight": "600",
               "fontSize": "16px",
               "lineHeight": "140%"
+              "fontWeight": "600",
+              "fontSize": "16px",
+              "lineHeight": "140%"
             },
+            "paddingTop": "0px",
             "paddingTop": "0px",
             "caption": {
               "0": "+",
@@ -2996,6 +3057,15 @@
               "letterSpacing": "-0.64px;"
             },
             "slides": [
+              "text": "<p style=\"text-align: center\">Escolha um plano</p>",
+              "color": "#00363A",
+              "font": "Lektorat Display var",
+              "fontSize": "32px",
+              "fontWeight": "600",
+              "lineHeight": "100%",
+              "letterSpacing": "-0.64px;"
+            },
+            "slides": [
               {
                 "bulletPoints": {
                   "items": [
@@ -3011,14 +3081,18 @@
                     },
                     {
                       "text": "<p>Integação com ERP</p>"
+                      "text": "<p>Integação com ERP</p>"
                     },
                     {
+                      "text": "<p>Suporte por chat e e-mail</p>"
                       "text": "<p>Suporte por chat e e-mail</p>"
                     },
                     {
                       "text": "<p>Avaliação de Produtos por texto</p>"
+                      "text": "<p>Avaliação de Produtos por texto</p>"
                     },
                     {
+                      "text": "<p>Customização de loja</p>"
                       "text": "<p>Customização de loja</p>"
                     },
                     {
@@ -3039,18 +3113,24 @@
                   "color": "#FFFFFF",
                   "font": "Lektorat Display var",
                   "fontSize": "28px",
+                  "fontSize": "28px",
                   "letterSpacing": "-0.3px",
+                  "lineHeight": "100%",
+                  "fontWeight": "600"
                   "lineHeight": "100%",
                   "fontWeight": "600"
                 },
                 "titleColor": "#371E55",
                 "tag": {
                   "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
+                  "textColor": "linear-gradient(90deg, #E5D2EE 38.15%, rgba(229, 210, 238, 0.30) 124.69%)",
                   "backgroundColor": "linear-gradient(90deg, #371E55 0%, #512F79 100%)",
                   "borderColor": "#B699D9",
                   "fontFamily": "Inter",
+                  "fontFamily": "Inter",
                   "onlyAnnual": false,
                   "hideTag": true,
+                  "text": "<p>Mais recomendado</p>",
                   "text": "<p>Mais recomendado</p>",
                   "textProps": {
                     "fontSize": "12px"
@@ -3408,6 +3488,13 @@
                 "detailsCta": {
                   "text": "Ver detalhes"
                 },
+                "chooseCta": {
+                  "text": "Assinar",
+                  "href": "#"
+                },
+                "detailsCta": {
+                  "text": "Ver detalhes"
+                },
                 "annualMontlyFee": {
                   "0": "<",
                   "1": "p",
@@ -3671,6 +3758,7 @@
                   "259": "p",
                   "260": ">",
                   "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Ideal para quem está começando e ainda</span><br><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">fatura até R$ 15 mil/mês</span><br><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">em até 12x de</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$43</span><span style=\"color: rgb(255, 255, 255)\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">por mês</span></p><p><em><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Economia de R$ 240 ao ano</span></em></p>",
+                  "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Ideal para quem está começando e ainda</span><br><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">fatura até R$ 15 mil/mês</span><br><span style=\"color: rgb(255, 255, 255)\"><br></span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">em até 12x de</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 36pt\">R$43</span><span style=\"color: rgb(255, 255, 255)\"> </span><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">por mês</span></p><p><em><span style=\"color: rgb(255, 255, 255); font-size: 9pt\">Economia de R$ 240 ao ano</span></em></p>",
                   "color": "#FFFFFF"
                 },
                 "annualSaving": {
@@ -3679,16 +3767,22 @@
                   "borderColor": "linear-gradient(90deg, #B699D9, transparent)",
                   "textColor": "linear-gradient(90deg, #371E55 38.15%, rgba(55, 30, 85, 0.80) 124.69%)",
                   "fontFamily": "Instrument Serif"
+                  "borderColor": "linear-gradient(90deg, #B699D9, transparent)",
+                  "textColor": "linear-gradient(90deg, #371E55 38.15%, rgba(55, 30, 85, 0.80) 124.69%)",
+                  "fontFamily": "Instrument Serif"
                 },
                 "seeMoreButtonText": "Ver mais",
                 "backgroundColor": "#00363A",
                 "cutedMontlyFeeColor": "#371E55",
+                "cta": [],
                 "cta": [],
                 "createStoreWithPlanCta": {
                   "planId": "173",
                   "text": "Criar minha loja",
                   "backgroundColor": "#28C3C3",
                   "textColor": "#FFFFFF",
+                  "borderColor": "#28C3C3",
+                  "ctaStyle": "button"
                   "borderColor": "#28C3C3",
                   "ctaStyle": "button"
                 },
@@ -3701,18 +3795,23 @@
                   "items": [
                     {
                       "text": "<p>50 produtos</p>",
+                      "text": "<p>50 produtos</p>",
                       "marginTop": "26px"
                     },
                     {
                       "text": "<p>5.000 visitas</p>"
+                      "text": "<p>5.000 visitas</p>"
                     },
                     {
+                      "text": "<p>Método de pagamento e envios nativos</p>"
                       "text": "<p>Método de pagamento e envios nativos</p>"
                     },
                     {
                       "text": "<p>Relatórios de vendas</p>"
+                      "text": "<p>Relatórios de vendas</p>"
                     },
                     {
+                      "text": "<p>Cupons de desconto e Frete grátis</p>"
                       "text": "<p>Cupons de desconto e Frete grátis</p>"
                     }
                   ],
@@ -3727,10 +3826,13 @@
                 },
                 "title": {
                   "text": "<p>Grátis</p>",
+                  "text": "<p>Grátis</p>",
                   "color": "#00363A",
                   "font": "Lektorat Display var",
                   "fontWeight": "600",
+                  "fontWeight": "600",
                   "letterSpacing": "-0.3px",
+                  "fontSize": "28px",
                   "fontSize": "28px",
                   "lineHeight": "100%"
                 },
@@ -4374,6 +4476,7 @@
                 "cutedMontlyFeeColor": "#371E55",
                 "createStoreWithPlanCta": {
                   "planId": "172",
+                  "planId": "172",
                   "text": "Criar minha loja",
                   "ctaStyle": "button",
                   "backgroundColor": "#E4F3F3",
@@ -4387,6 +4490,13 @@
             ],
             "titleColor": "#371E55",
             "captionColor": "#371E55",
+            "arrowsColor": "#00363A",
+            "arrows": true,
+            "paddingBottom": "60px",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/83c316b8-0ab7-41d0-aab4-ccc9c18cecc9/line-background.png",
+              "verticalPosition": "115px"
+            },
             "arrowsColor": "#00363A",
             "arrows": true,
             "paddingBottom": "60px",
@@ -4439,6 +4549,8 @@
             "hideSwitch": false
           },
           "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
             "__resolveType": "website/matchers/device.ts",
             "mobile": true
           }
@@ -4743,6 +4855,7 @@
               "fontWeight": "650",
               "letterSpacing": "-1px",
               "lineHeight": "100%",
+              "fontSize": "50px"
               "fontSize": "50px"
             },
             "sectionBackground": {
@@ -5470,6 +5583,8 @@
               "font": "Lektorat Display Var",
               "fontWeight": "650",
               "letterSpacing": "-0.3px",
+              "fontSize": "50px",
+              "lineHeight": "100%"
               "fontSize": "50px",
               "lineHeight": "100%"
             },

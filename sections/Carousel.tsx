@@ -252,7 +252,7 @@ function Carousel(props: Props) {
                         />}
 
                 </AnimateOnShow>
-                <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:px-9 max-w-[1480px] relative" rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider">
+                <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:pr-9 md:pl-[27px] max-w-[1480px] relative" rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider" > 
                     {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px]">
                         <SliderItem slide={slide} id={`${carouselId}::${index}`} slidesHeight={slidesHeight}/>
                     </Slider.Item>))}

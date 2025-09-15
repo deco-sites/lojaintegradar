@@ -3065,6 +3065,7 @@
               "fontSize": "16px",
               "lineHeight": "140%"
             },
+            "hideSection": false,
             "paddingTop": "0px",
             "caption": {
               "0": "+",
@@ -4566,7 +4567,6 @@
             "annualTagPosition": "aside",
             "switchBackgroundColor": "#DFE4E6",
             "switchBallColor": "#00363A",
-            "hideSection": false,
             "bottomCta": [],
             "hideSwitch": false
           },
@@ -4578,74 +4578,87 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Carousel.tsx",
-      "title": "<p><span>Vários benefícios sem custo adicionais<br></span></p>",
-      "slides": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "textPlacement": "Top",
-          "icon": {
-            "placement": "Top right"
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme </span>visitantes em compradores <span style=\"color: rgb(255, 255, 255)\">automaticamente</span></p>",
+              "color": "#ffffff",
+              "font": "Inter",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "fontSize": "22px",
+              "lineHeight": "120%"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
+            },
+            "text": "<p><span>Escolha entre dezenas de temas personalizados e ofereça uma experiência única no seu site próprio. Enquanto isso, a Loja Integrada trabalha por você: reengaja visitas, recomenda produtos e recupera carrinhos e pedidos sem pagamento — tudo automatizado, sem precisar criar campanhas manuais.</span></p>",
+            "textProps": {
+              "color": "#ffffff"
+            },
+            "container": {
+              "marginTop": "0px"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/4b3777f4-9774-45c6-a399-aebb4aa407e8/Crie-do-seu-jeito.svg"
+              },
+              "use": "image"
+            },
+            "sectionMarginTop": "0px"
           },
-          "useBackground": "image",
-          "bulletPoints": {
-            "items": []
-          },
-          "title": "Cadastre produtos com IA",
-          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
           }
         },
         {
-          "textPlacement": "Top",
-          "icon": {
-            "placement": "Top right"
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p><span style=\"color: #ffffff\">Transforme </span>visitantes</p><p>em compradores</p><p><span style=\"color: #ffffff\">automaticamente</span></p>",
+              "color": "#FFFFFF",
+              "font": "Inter",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "fontSize": "22px",
+              "lineHeight": "120%"
+            },
+            "hideSection": true,
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
+            },
+            "text": "<p><span>Escolha entre dezenas de temas personalizados e ofereça</span></p><p><span>uma experiência única no seu site próprio. Enquanto isso, a</span></p><p><span>Loja Integrada trabalha por você: reengaja visitas, recomenda</span></p><p><span>produtos e recupera carrinhos e pedidos sem pagamento — </span></p><p><span>tudo automatizado, sem precisar criar campanhas manuais.</span></p>",
+            "textProps": {
+              "color": "#ffffff",
+              "fontSize": "14px"
+            },
+            "container": {
+              "maxWidth": "1270px"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/4b3777f4-9774-45c6-a399-aebb4aa407e8/Crie-do-seu-jeito.svg",
+                "width": "421px"
+              },
+              "use": "image"
+            },
+            "sectionMarginTop": "-2px"
           },
-          "useBackground": "image",
-          "bulletPoints": {
-            "items": []
-          },
-          "title": "Cadastre produtos com IA",
-          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
-          }
-        },
-        {
-          "textPlacement": "Top",
-          "icon": {
-            "placement": "Top right"
-          },
-          "useBackground": "image",
-          "bulletPoints": {
-            "items": []
-          },
-          "title": "Cadastre produtos com IA",
-          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
-          }
-        },
-        {
-          "textPlacement": "Top",
-          "icon": {
-            "placement": "Top right"
-          },
-          "useBackground": "image",
-          "bulletPoints": {
-            "items": []
-          },
-          "title": "Cadastre produtos com IA",
-          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
-          "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
         }
-      ],
-      "caption": "<p></p>",
-      "arrows": true,
-      "paddingBottom": "60px",
-      "hideSection": true
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -4658,12 +4671,12 @@
             },
             "lines": [
               {
-                "from": "left",
-                "distance": "12px"
+                "distance": "12px",
+                "from": "left"
               },
               {
-                "from": "right",
-                "distance": "12px"
+                "distance": "12px",
+                "from": "right"
               }
             ],
             "maxHeight": "2300px",
@@ -4682,15 +4695,145 @@
             },
             "lines": [
               {
-                "from": "center",
-                "distance": "-730px"
+                "distance": "-730px",
+                "from": "center"
               },
               {
-                "from": "center",
-                "distance": "730px"
+                "distance": "730px",
+                "from": "center"
               }
             ],
             "linesSize": 5
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg"
+            },
+            "lines": [
+              {
+                "distance": "45px"
+              },
+              {
+                "distance": "110px"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg",
+              "width": 600,
+              "height": 1
+            },
+            "lines": [
+              {
+                "distance": "115px"
+              },
+              {
+                "distance": "240px"
+              }
+            ],
+            "linesSize": 4
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 250)\">Crie do seu jeito,</span></p><p style=\"text-align: center\">sem saber programar</p>",
+              "color": "rgba(40, 195, 195, 1)",
+              "font": "Lektorat Display Var",
+              "letterSpacing": "-0.3px",
+              "fontSize": "7.26vw",
+              "fontWeight": "600",
+              "lineHeight": "100%"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
+            },
+            "text": "<p></p>",
+            "textProps": {
+              "color": "#ffffff",
+              "lineHeight": "125%",
+              "letterSpacing": "-0.3px",
+              "fontSize": "3.1vw"
+            },
+            "container": {
+              "backgroundColor": ""
+            },
+            "cta": [],
+            "ctaPlacement": "center",
+            "customTitle": "hero:multiplos-especialistas"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255)\">Crie do seu jeito</span></p><p style=\"text-align: center\">sem saber programar</p>",
+              "color": "#28C3C3",
+              "font": "Lektorat Display Var",
+              "fontWeight": "650",
+              "letterSpacing": "-1px",
+              "fontSize": "50px",
+              "lineHeight": "100%"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "#00363A"
+            },
+            "text": "<p></p>",
+            "textProps": {
+              "color": "#ffffff",
+              "fontSize": "16px",
+              "lineHeight": "125%",
+              "letterSpacing": "-0.3px"
+            },
+            "container": {
+              "paddingTop": "124px",
+              "marginTop": "0px",
+              "backgroundColor": "#00363A"
+            },
+            "cta": [],
+            "ctaPlacement": "center",
+            "customTitle": "hero:multiplos-especialistas",
+            "tag": {
+              "backgroundColor": "#00363A"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -4829,7 +4972,7 @@
                 },
                 "image": {
                   "src": "https://assets.decocache.com/lojaintegradar/4755b1b5-1fb4-4074-b446-8b9586a9d644/transforme-visitantes-em-compradores.png",
-                  "width": "611px",
+                  "width": "421px",
                   "height": 526
                 },
                 "use": "image",
@@ -4858,8 +5001,7 @@
                 },
                 "image": {
                   "src": "https://assets.decocache.com/lojaintegradar/6781d9c5-6b42-4ce3-baed-164011bb30ff/ferramentas-anuncios.png",
-                  "width": "611px",
-                  "height": 526
+                  "width": "421px"
                 },
                 "use": "image",
                 "video": {
@@ -4885,10 +5027,10 @@
             },
             "lines": [
               {
-                "distance": "45px"
+                "distance": "27px"
               },
               {
-                "distance": "110px"
+                "distance": "92px"
               }
             ]
           },
@@ -4902,178 +5044,17 @@
             "__resolveType": "site/sections/HorizontalLines.tsx",
             "lineImage": {
               "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg",
-              "width": 600,
-              "height": 1
+              "width": 600
             },
             "lines": [
               {
-                "distance": "115px"
+                "distance": "40px"
               },
               {
-                "distance": "240px"
+                "distance": "170px"
               }
             ],
             "linesSize": 4
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
-            "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 250)\">Crie do seu jeito,</span></p><p style=\"text-align: center\">sem saber programar</p>",
-              "color": "rgba(40, 195, 195, 1)",
-              "font": "Lektorat Display Var",
-              "letterSpacing": "-0.3px",
-              "fontSize": "7.26vw",
-              "fontWeight": "600",
-              "lineHeight": "100%"
-            },
-            "hubspotForm": {
-              "modal": {}
-            },
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
-            },
-            "text": "<p></p>",
-            "textProps": {
-              "color": "#ffffff",
-              "lineHeight": "125%",
-              "letterSpacing": "-0.3px",
-              "fontSize": "3.1vw"
-            },
-            "container": {
-              "backgroundColor": ""
-            },
-            "cta": [],
-            "ctaPlacement": "center",
-            "customTitle": "hero:multiplos-especialistas"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
-            "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255)\">Crie do seu jeito</span></p><p style=\"text-align: center\">sem saber programar</p>",
-              "color": "#28C3C3",
-              "font": "Lektorat Display Var",
-              "fontWeight": "650",
-              "letterSpacing": "-1px",
-              "fontSize": "50px",
-              "lineHeight": "100%"
-            },
-            "hubspotForm": {
-              "modal": {}
-            },
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
-            },
-            "text": "<p></p>",
-            "textProps": {
-              "color": "#ffffff",
-              "fontSize": "16px",
-              "lineHeight": "125%",
-              "letterSpacing": "-0.3px"
-            },
-            "container": {
-              "paddingTop": "124px",
-              "marginTop": "0px"
-            },
-            "cta": [],
-            "ctaPlacement": "center",
-            "customTitle": "hero:multiplos-especialistas"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
-            "title": {
-              "text": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme </span>visitantes em compradores <span style=\"color: rgb(255, 255, 255)\">automaticamente</span></p>",
-              "color": "#ffffff",
-              "font": "Inter",
-              "letterSpacing": "-0.3px",
-              "fontSize": "22px",
-              "fontWeight": "600",
-              "lineHeight": "120%"
-            },
-            "hubspotForm": {
-              "modal": {}
-            },
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
-            },
-            "text": "<p><span>Escolha entre dezenas de temas personalizados e ofereça uma experiência única no seu site próprio. Enquanto isso, a Loja Integrada trabalha por você: reengaja visitas, recomenda produtos e recupera carrinhos e pedidos sem pagamento — tudo automatizado, sem precisar criar campanhas manuais.</span></p>",
-            "textProps": {
-              "color": "#ffffff"
-            },
-            "container": {
-              "marginTop": "0px"
-            },
-            "media": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/4b3777f4-9774-45c6-a399-aebb4aa407e8/Crie-do-seu-jeito.svg"
-              },
-              "use": "image"
-            },
-            "sectionMarginTop": "0px"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/HeroV4.tsx",
-            "title": {
-              "text": "<p><span style=\"color: #ffffff\">Transforme </span>visitantes</p><p>em compradores</p><p><span style=\"color: #ffffff\">automaticamente</span></p>",
-              "color": "#FFFFFF",
-              "font": "Inter",
-              "fontWeight": "600",
-              "letterSpacing": "-0.3px",
-              "fontSize": "22px",
-              "lineHeight": "120%"
-            },
-            "hubspotForm": {
-              "modal": {}
-            },
-            "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
-            },
-            "text": "<p><span>Escolha entre dezenas de temas personalizados e ofereça</span></p><p><span>uma experiência única no seu site próprio. Enquanto isso, a</span></p><p><span>Loja Integrada trabalha por você: reengaja visitas, recomenda</span></p><p><span>produtos e recupera carrinhos e pedidos sem pagamento — </span></p><p><span>tudo automatizado, sem precisar criar campanhas manuais.</span></p>",
-            "textProps": {
-              "color": "#ffffff",
-              "fontSize": "14px"
-            },
-            "container": {
-              "maxWidth": "1270px"
-            },
-            "media": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/4b3777f4-9774-45c6-a399-aebb4aa407e8/Crie-do-seu-jeito.svg"
-              },
-              "use": "image"
-            },
-            "sectionMarginTop": "-2px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -5146,12 +5127,14 @@
             },
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png"
+                "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png",
+                "width": "421px"
               },
               "use": "image",
               "placement": "left"
             },
-            "sectionMarginTop": "-1px"
+            "sectionMarginTop": "-1px",
+            "hideSection": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -5160,50 +5143,74 @@
       ]
     },
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
+      "__resolveType": "site/sections/Carousel.tsx",
+      "title": "<p><span>Vários benefícios sem custo adicionais<br></span></p>",
+      "slides": [
         {
-          "value": {
-            "__resolveType": "site/sections/HorizontalLines.tsx",
-            "lineImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg"
-            },
-            "lines": [
-              {
-                "distance": "27px"
-              },
-              {
-                "distance": "92px"
-              }
-            ]
+          "textPlacement": "Top",
+          "icon": {
+            "placement": "Top right"
           },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
+          "useBackground": "image",
+          "bulletPoints": {
+            "items": []
+          },
+          "title": "Cadastre produtos com IA",
+          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
           }
         },
         {
-          "value": {
-            "__resolveType": "site/sections/HorizontalLines.tsx",
-            "lineImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg",
-              "width": 600
-            },
-            "lines": [
-              {
-                "distance": "40px"
-              },
-              {
-                "distance": "170px"
-              }
-            ],
-            "linesSize": 4
+          "textPlacement": "Top",
+          "icon": {
+            "placement": "Top right"
           },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
+          "useBackground": "image",
+          "bulletPoints": {
+            "items": []
+          },
+          "title": "Cadastre produtos com IA",
+          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
+          }
+        },
+        {
+          "textPlacement": "Top",
+          "icon": {
+            "placement": "Top right"
+          },
+          "useBackground": "image",
+          "bulletPoints": {
+            "items": []
+          },
+          "title": "Cadastre produtos com IA",
+          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
+          }
+        },
+        {
+          "textPlacement": "Top",
+          "icon": {
+            "placement": "Top right"
+          },
+          "useBackground": "image",
+          "bulletPoints": {
+            "items": []
+          },
+          "title": "Cadastre produtos com IA",
+          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
           }
         }
-      ]
+      ],
+      "caption": "<p></p>",
+      "arrows": true,
+      "paddingBottom": "60px",
+      "hideSection": true
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -5347,7 +5354,7 @@
                 "bulletPoints": {
                   "items": []
                 },
-                "title": "1- Cadastre seu produto uma única vez e economize tempo",
+                "title": "Sua loja no topo do Google",
                 "titleTextProps": {
                   "fontFamily": "Lektorat Display var",
                   "fontSize": "22px",
@@ -5356,7 +5363,7 @@
                   "letterSpacing": "-0.44px;"
                 },
                 "textColor": "#00363A",
-                "caption": "<p><span style=\"color: #5f6e82\">Otimize seu tempo e resultado com a nossa IA que completa os principais campos do seu produto e ajusta automaticamente de acordo pra sua loja e marketplaces</span></p>",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Robôs de indexação com IA e estrutura técnica</span><br><span style=\"color: rgb(95, 110, 130)\">pra sua loja aparecer no topo das buscas.</span></p>",
                 "captionTextProps": {
                   "fontFamily": "Inter",
                   "fontSize": "14px",
@@ -5364,7 +5371,7 @@
                   "lineHeight": "140%"
                 },
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/0e68f316-224d-478b-a28d-94740866d259/BackgroundShadow.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/d01e7a56-2950-4754-84e5-4f986f6e046b/sua-loja-no-topo-do-google.png",
                   "height": 409,
                   "width": 410
                 }
@@ -5378,7 +5385,7 @@
                 "bulletPoints": {
                   "items": []
                 },
-                "title": "2- O seu site personalizado e sua operação automatizada",
+                "title": "Venda pelas redes sociais",
                 "titleTextProps": {
                   "fontFamily": "Lektorat Display var",
                   "fontSize": "22px",
@@ -5387,7 +5394,7 @@
                   "letterSpacing": "-0.44px;"
                 },
                 "textColor": "#00363A",
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Crie sua loja com temas personalizados e tenha ferramentas automáticas que ajudam a vender mais, com menos esforço: recuperação de carrinho, produto e pedidos sem pagamento, promoções, cupons e brindes.</span></p>",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Crie links de carrinho com produto, desconto e frete e compartilhe direto no Whatsapp, Instagram e mais.</span></p>",
                 "captionTextProps": {
                   "fontFamily": "Inter",
                   "fontSize": "14px",
@@ -5395,7 +5402,7 @@
                   "lineHeight": "140%"
                 },
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/ae2ea5e5-f2a4-465d-b792-54232ee6e9d7/BackgroundShadow2.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/f534d5ae-3414-4eab-92b2-99f71c36810c/venda-pelas-redes-sociais.png",
                   "height": 409,
                   "width": 410
                 }
@@ -5409,7 +5416,7 @@
                 "bulletPoints": {
                   "items": []
                 },
-                "title": "3- Alcance mais clientes no Marketplace e os fidelize na sua loja",
+                "title": "Venda nos maiores marketplaces",
                 "titleTextProps": {
                   "fontFamily": "Lektorat Display var",
                   "fontSize": "22px",
@@ -5418,7 +5425,7 @@
                   "letterSpacing": "-0.44px;"
                 },
                 "textColor": "#00363A",
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conquiste novos clientes anunciando seus produtos em marketplaces fortalecendo sua marca.</span></p>",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte-se ao Magalu com integração nativa da Loja Integrada e +100 marketplaces via parceiros oficiais. </span></p>",
                 "captionTextProps": {
                   "fontFamily": "Inter",
                   "fontSize": "14px",
@@ -5440,7 +5447,7 @@
             },
             "paddingBottom": "30px",
             "titleFont": "Lektorat Display var",
-            "backgroundColor": "linear-gradient(to bottom, #003135, #002123);",
+            "backgroundColor": "#00363A",
             "titleColor": "#28C3C3",
             "titleTextProps": {
               "fontWeight": "650",
@@ -5531,7 +5538,7 @@
               "modal": {}
             },
             "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
+              "backgroundColor": "#00363A"
             },
             "container": {
               "marginTop": "0",
@@ -5540,7 +5547,10 @@
               "backgroundColor": ""
             },
             "ctaPlacement": "center",
-            "sectionMarginTop": "-2px"
+            "sectionMarginTop": "-2px",
+            "tag": {
+              "backgroundColor": "#00363A"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -5758,10 +5768,11 @@
                 "textColor": "#ffffff",
                 "type": "Button",
                 "size": "Medium",
-                "openModal": "Komea wait list",
+                "openModal": "Create Store",
                 "customProps": {
                   "height": "48px"
-                }
+                },
+                "createStorePlanId": "172"
               }
             ],
             "hubspotForm": {
@@ -5814,9 +5825,9 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-                    "width": 44,
-                    "height": 44
+                    "src": "https://assets.decocache.com/lojaintegradar/37b6d059-11be-4d5d-bb43-24ab30b7f9f3/icon-receba-insight.png",
+                    "width": 54,
+                    "height": 54
                   },
                   "title": "<p>Receba insightdireto no app</p>",
                   "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
@@ -5825,86 +5836,86 @@
                     "fontSize": "16px",
                     "color": "#00363A",
                     "fontWeight": "600",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   },
                   "textProps": {
                     "color": "#00363A",
                     "fontFamily": "Inter",
                     "fontSize": "14px",
                     "fontWeight": "500",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   }
                 },
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-                    "width": 44,
-                    "height": 44
+                    "src": "https://assets.decocache.com/lojaintegradar/9cf6e6c9-5f20-4d3b-af9b-ab099f53642b/icon-crie-produtos-conversando.png",
+                    "width": 54,
+                    "height": 54
                   },
-                  "title": "<p>Receba insightdireto no app</p>",
-                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "title": "<p>Crie produtos conversando</p>",
+                  "text": "<p>Você fala o nome e mostra a imagem. A Komea sugere categoria, descrição com SEO e publica em diferentes canais.</p>",
                   "titleTextProps": {
                     "fontFamily": "Inter",
                     "fontSize": "16px",
                     "color": "#00363A",
                     "fontWeight": "600",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   },
                   "textProps": {
                     "color": "#00363A",
                     "fontFamily": "Inter",
                     "fontSize": "14px",
                     "fontWeight": "500",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   }
                 },
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-                    "width": 44,
-                    "height": 44
+                    "src": "https://assets.decocache.com/lojaintegradar/4766b176-7b82-4346-8445-f71ca510aef7/icon-crie-promocoes-sem-planilhas.png",
+                    "width": 54,
+                    "height": 54
                   },
-                  "title": "<p>Receba insightdireto no app</p>",
-                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "title": "<p>Crie promoções  sem planilha</p>",
+                  "text": "<p>Diga “quero 15% de desconto até domingo” e o agente executa a ação com lógica e data.</p>",
                   "titleTextProps": {
                     "fontFamily": "Inter",
                     "fontSize": "16px",
                     "color": "#00363A",
                     "fontWeight": "600",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   },
                   "textProps": {
                     "color": "#00363A",
                     "fontFamily": "Inter",
                     "fontSize": "14px",
                     "fontWeight": "500",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   }
                 },
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/c205d494-f2d5-4072-a93e-63ee696f3878/icon-receba-insight.png",
-                    "width": 44,
-                    "height": 44
+                    "src": "https://assets.decocache.com/lojaintegradar/51e3706b-5052-437d-acae-bddfbf607040/icon-pergunte-sobre-vendas.png",
+                    "width": 54,
+                    "height": 54
                   },
-                  "title": "<p>Receba insightdireto no app</p>",
-                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "title": "<p>Pergunte sobre os dados das suas vendas</p>",
+                  "text": "<p>Consulte produtos mais vendidos, clientes fiéis e formas de pagamento usadas com o analista de vendas.</p>",
                   "titleTextProps": {
                     "fontFamily": "Inter",
                     "fontSize": "16px",
                     "color": "#00363A",
                     "fontWeight": "600",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   },
                   "textProps": {
                     "color": "#00363A",
                     "fontFamily": "Inter",
                     "fontSize": "14px",
                     "fontWeight": "500",
-                    "lineHeight": "140%"
+                    "lineHeight": "100%"
                   }
                 }
               ],

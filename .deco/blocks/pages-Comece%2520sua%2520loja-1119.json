@@ -528,7 +528,7 @@
               "modal": {}
             },
             "title": {
-              "text": "<p style=\"text-align: center\">Crie seu site na plataforma<br>que otimiza seu tempo</p>",
+              "text": "<p style=\"text-align: center\">Crie seu site na plataforma<br><span style=\"color: #28c3c3\">que otimiza seu tempo</span></p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
               "fontWeight": "650",
@@ -1617,7 +1617,7 @@
                   "lineHeight": "115%",
                   "fontWeight": "600",
                   "letterSpacing": "-1px",
-                  "fontSize": "40px"
+                  "fontSize": "32px"
                 },
                 "text": "<p>Escolha entre dezenas de temas personalizados e ofereça uma experiência única no seu site próprio. Enquanto isso, a Loja Integrada trabalha por você: reengaja visitas, recomenda produtos e recupera carrinhos e pedidos sem pagamento — tudo automatizado, sem precisar criar campanhas manuais.</p>",
                 "textProps": {
@@ -1646,7 +1646,7 @@
                   "lineHeight": "115%",
                   "fontWeight": "600",
                   "letterSpacing": "-1px",
-                  "fontSize": "40px"
+                  "fontSize": "32px"
                 },
                 "text": "<p>Atraia clientes antigos e conquiste novos. Quer vender ainda mais? Promova seus produtos com integrações como Google Ads, Instagram Ads e Facebook Ads. Crie promoções inteligentes e cupons personalizados para engajar, recuperar e fidelizar seus clientes.</p>",
                 "textProps": {
@@ -6027,84 +6027,116 @@
             "captionColor": "#5F6E82",
             "questions": [
               {
-                "question": "Como criar uma loja virtual de roupas do zero?",
-                "answear": "<p><span style=\"color: #5f6e82; font-size: 11pt\">Para criar uma loja virtual de roupas do zero, você pode usar a plataforma da Loja Integrada. Basta se cadastrar com nome, e-mail e telefone e, em menos de 3 minutos, sua loja estará ativa. Você poderá cadastrar produtos, configurar frete e pagamento, tudo com poucos cliques. Ideal para quem quer empreender no segmento de moda sem conhecimento técnico.</span></p>"
+                "question": "Preciso ter CNPJ para abrir minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não é obrigatório possuir um CNPJ para criar uma loja virtual na Loja Integrada. Você pode iniciar suas vendas como pessoa física, utilizando seu CPF. No entanto, formalizar seu negócio com um CNPJ pode transmitir mais credibilidade aos clientes e facilitar parcerias comerciais. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/892212-e-necessario-ter-um-cnpj-para-abrir-uma-loja-virtual\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a></p>"
               },
               {
-                "question": "Consigo personalizar o visual da minha loja de moda?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada oferece temas gratuitos e personalizáveis, pensados para lojas de moda. Você pode alterar cores, banners, fontes, menus e categorias para refletir a identidade da sua marca. Além disso, há temas profissionais exclusivos disponíveis para compra, com 20% de desconto para assinantes do Plano de Vendas Moda.</span></p>"
+                "question": "Por onde começo a configurar minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Siga o checklist oficial para lançar sua loja rapidamente:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Defina e crie categorias. Cadastre seus produtos.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Ative meios de envio.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Configure meios de pagamento.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Personalize o layout.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Conecte um domínio próprio, se quiser.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Esse fluxo ajuda a garantir uma experiência de compra fluida e funcional </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5948529-primeiros-passos-checklist\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre o checklist de configuração.</span><br></p>"
               },
               {
-                "question": "A loja é adaptada para celular (responsiva)?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Todos os temas da Loja Integrada são responsivos, ou seja, funcionam perfeitamente em smartphones e tablets. Isso é essencial para o setor de moda, já que a maior parte das compras hoje acontece via dispositivos móveis.</span></p>"
+                "question": "Como planejar e criar categorias para meus produtos?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Organize seu catálogo com lógica e clareza — por exemplo, Departamentos, categorias e subcategorias (ex: ‘Feminino &gt; Roupas &gt; Vestidos’). Assim, você facilita a navegação do cliente e evita retrabalho. Saiba mais sobre criação de categorias.</span></p>"
               },
               {
-                "question": "Quantos produtos posso cadastrar na minha loja de moda?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">No Plano Aceleração, você pode cadastrar até 500 produtos na sua loja virtual. Isso permite que você organize sua coleção com diferentes tamanhos, cores e categorias, ideal para o nicho de moda.</span></p>"
+                "question": "Como cadastrar meus primeiros produtos (com variações, descrição e SEO)?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">No painel, defina se o produto é “simples” ou “com variações” (essa escolha não pode ser alterada depois), escolha um título informativo, inclua descrição completa, fotos de qualidade (pelo menos 2 + outros ângulos), e configure SEO para melhorar visibilidade. Use planilhas se tiver muitos produtos. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5920454-primeiros-passos-cadastro-de-produto\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre cadastro de produtos.</span></p>"
               },
               {
-                "question": "Posso criar uma identidade visual para minha loja de moda?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma permite a personalização completa da loja, com alteração de temas, logotipo, banners, paleta de cores e layout. Assim, você transmite profissionalismo e confiança desde o primeiro acesso do cliente.</span></p>"
+                "question": "Posso vender produtos digitais?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Você cadastra o produto como digital (sem necessidade de estoque), configura uma forma de envio personalizada (com CEP e faixa de peso simbólica), e ajusta o checkout para o cliente informar e-mail ou instruções extra. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/3773309-como-vender-produtos-digitais-na-minha-loja-integrada\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais </span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">sobre venda de produtos digitais.</span></p>"
               },
               {
-                "question": "Como vender roupas pelo Instagram com a Loja Integrada?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada permite a integração com o Instagram Shopping, ativando a sacolinha nos seus posts e stories. Assim, você conecta seu catálogo de produtos diretamente ao perfil da loja, permitindo que clientes comprem sem sair da rede social.</span></p>"
+                "question": "Como testar a loja antes de ir ao ar?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Faça uma compra-teste para verificar o funcionamento do checkout, envio de e-mails, mudanças de status e notificações. É uma etapa essencial para garantir que seu cliente inicial tenha uma experiência impecável. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5948529-primeiros-passos-checklist\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> no checklist de primeiros passos.</span></p>"
               },
               {
-                "question": "É possível vender roupas pelo TikTok com a Loja Integrada?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada oferece integração com TikTok Shopping. Você pode conectar sua conta do TikTok ao painel da loja e criar campanhas ou links de venda direto na rede social, aumentando o alcance com público jovem e engajado.</span></p>"
+                "question": "Como funciona o pagamento do plano na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Se você deseja assinar um plano, pode optar por duas modalidades de assinatura:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Assinatura anual: Pagamento único, à vista ou parcelado em até 12 vezes sem juros no cartão de crédito. Essa opção oferece um desconto de 20% em relação à mensalidade.</span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5530543-vantagens-do-plano-anual\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Assinatura mensal: Cobrança recorrente mensal, com pagamento via boleto bancário ou cartão de crédito. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/3921748-como-pagar-a-mensalidade-da-minha-loja?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Entenda</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Para alterar a forma de pagamento ou cancelar a cobrança automática no cartão de crédito, acesse o painel da sua loja em Financeiro &gt; Dados para pagamento e selecione a opção desejada.</span></p>"
               },
               {
-                "question": "A Loja Integrada funciona com Google Shopping e PMax?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Você pode ativar campanhas de Performance Max (PMax) diretamente do painel. A Loja Integrada é reconhecida pelo Google como uma das plataformas com maior ROI da América Latina. Isso permite que suas campanhas sejam otimizadas automaticamente, com poucos cliques, aumentando o alcance nos canais do Google.</span></p>"
+                "question": "Quais meios de pagamento devo ativar primeiro?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">O Pagali, sistema nativo da plataforma, é o mais indicado para começar — ele já vem integrado e oferece Pix, boleto, cartão de crédito e link de pagamento de forma rápida e centralizada. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/3263112-pagali\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre o Pagali.</span></p>"
               },
               {
-                "question": "Quais ferramentas de marketing vêm inclusas?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você terá acesso a ferramentas como: e-mail marketing automatizado, recuperação de carrinho abandonado, cupons de desconto simples e avançados, botão de WhatsApp, avisos de estoque esgotado, descontos progressivos e integração com marketplaces e redes sociais.</span></p>"
+                "question": "Quais são as taxas do Pagali?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">As taxas do Pagali variam conforme o método de pagamento utilizado:</span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Cartão de Crédito: As taxas podem variar de acordo com o plano contratado e o prazo de repasse configurado.Grátis: 4,99%; Crescimento: 4,59%; Aceleração: 4,49%; Expansão: 4,29%; Elite: 3,59%. O repasse é feito em até 30 dias, mas você pode antecipar os recebimentos diretamente pelo painel do Pagali. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5985558-cartao-de-credito-do-pagali?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Boleto Bancário: A tarifa é fixa, no valor de R$2,39 por boleto aprovado. Não há cobrança caso o boleto seja emitido e não pago. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5822238-boleto-bancario-do-pagali?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pix: Disponível para todos os planos, com recebimento instantâneo. A taxa máxima é 1% e pode variar de acordo com o plano. Consulte diretamente no seu painel.</span></p>"
               },
               {
-                "question": "Como funciona o link de carrinho para vendas no WhatsApp?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você pode montar um carrinho com produtos específicos, aplicar cupons e gerar um link de checkout. Esse link pode ser enviado diretamente pelo WhatsApp, permitindo que o cliente clique e finalize a compra em poucos segundos. Ideal para vendas via direct, status ou grupos.</span></p>"
+                "question": "Quais são os meios de pagamento integrados?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada suporta a integração com </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40354-formas-de-pagamento?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">diversos intermediadores de pagamento</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, permitindo que você ofereça múltiplas opções aos seus clientes: </span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pagali: Solução própria da Loja Integrada, com suporte a Pix, boleto bancário, cartão de crédito e link de pagamento.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Mercado Pago, PagHiper, PagBank, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Pagar.me\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pagar.me</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, PayPal e AppMax: Plataformas amplamente utilizadas no mercado, oferecendo diversas funcionalidades e condições comerciais.</span></p>"
               },
               {
-                "question": "Quais meios de pagamento posso oferecer na loja?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você poderá aceitar pagamentos via Pix, boleto bancário, cartão de crédito e débito. A Loja Integrada tem integração com o Pagali, que oferece checkout rápido sem senha, aumentando a conversão no momento da compra.</span></p>"
+                "question": "Posso integrar outros meios de pagamento no plano gratuito?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não. A integração com outros intermediadores como Mercado Pago, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Pagar.me\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pagar.me</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, PayPal, entre outros, está disponível apenas nos planos pagos.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Se você estiver no plano gratuito, essa funcionalidade não é habilitada. E atenção: caso você migre para um plano pago, ative outros meios de pagamento e depois retorne ao plano gratuito, sua loja continuará com essas integrações ativas, mas será cobrada uma taxa de 2% sobre cada transação realizada fora do Pagali.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Essa regra garante flexibilidade para quem deseja testar outras formas de pagamento, mas valoriza os benefícios do plano gratuito.</span></p>"
               },
               {
-                "question": "Consigo oferecer frete com desconto na loja de moda?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Com a integração da Loja Integrada com a Enviali, você tem até 70% de desconto nos Correios. Além disso, pode criar campanhas de frete grátis e configurar alertas de frete no carrinho para incentivar a conversão.</span></p>"
+                "question": "Quem está isento de tarifas por vendas ao usar outros meios de pagamento?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Lojas com faturamento de até R$ 2.500,00 por mês têm isenção de tarifas nas transações feitas com outros meios de pagamento que não sejam o Pagali.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Além disso, há uma franquia mínima de R$ 25,00 por mês para que a isenção seja aplicada. Essa política pode sofrer ajustes ao longo do tempo, conforme os termos do seu contrato, então vale sempre consultar seu painel para verificar as condições vigentes.</span></p>"
               },
               {
-                "question": "Posso trabalhar com dropshipping na Loja Integrada?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A Loja Integrada possui integração com parceiros confiáveis de dropshipping, permitindo que você venda produtos sem estoque físico. Ideal para quem está começando no e-commerce de moda.</span></p>"
+                "question": "Quais são os métodos de envio disponíveis?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada oferece várias opções de frete para que você escolha a melhor forma de entrega para os seus produtos, desde soluções tradicionais até integrações personalizadas.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Métodos de envio disponíveis:</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Enviali: Use nossa solução nativa de envios como hub logístico para integrar transportadoras como Jadlog, entre outras. Ideal para lojas que buscam fretes competitivos e mais opções de entrega.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Correios: Integração direta com SEDEX, PAC e outros serviços dos Correios, com cálculo automático de frete e rastreamento.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Melhor Envio: plataforma parceira que permite cotar, gerar etiquetas, acompanhar rastreamento e automatizar o processo de envio com diversas transportadoras em um só lugar.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Formas de envio personalizadas: configure envios específicos como retirada na loja, motoboy, frete fixo por região ou frete grátis acima de determinado valor. Você também pode:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Subir uma planilha com as regras do seu transportador de confiança; Fazer uma integração via API para conectar qualquer sistema de entrega à sua loja. </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Essas opções oferecem total flexibilidade para adaptar o frete ao seu modelo de negócio, seja ele local, regional ou nacional. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40367-formas-de-envio\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Veja como configurar suas formas de envio.</span></a></p>"
               },
               {
-                "question": "O frete é calculado automaticamente para o cliente?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A loja calcula o valor do frete automaticamente com base no CEP do cliente e nos serviços dos Correios ou transportadoras integradas. Isso oferece transparência e confiança no momento da compra.</span></p>"
+                "question": "Posso vender por dropshipping na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim, a Loja Integrada oferece suporte completo para quem quer trabalhar com dropshipping, inclusive com uma estrutura pensada exclusivamente para esse modelo de negócio.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">O primeiro passo é criar uma loja exclusiva para esse fim, isso porque a forma de configurar o frete é diferente de uma loja tradicional (onde o próprio lojista faz o envio dos produtos).</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Depois, é só escolher um dos parceiros oficiais da plataforma, como o DSLite ou o Dropi. Esses aplicativos integram sua loja diretamente aos fornecedores, permitindo que você:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Importe produtos com poucos cliques;</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Atualize automaticamente preços e estoque;</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Tenha os pedidos enviados direto do fornecedor ao cliente final;</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Automatize boa parte da operação sem precisar manter estoque próprio. </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A configuração do frete também é feita dentro da Loja Integrada, de forma a garantir que os prazos e valores reflitam a entrega feita pelo fornecedor.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">O dropshipping é uma ótima forma de começar a empreender com baixo investimento, e a Loja Integrada tem tudo o que você precisa para estruturar essa operação com eficiência. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/3940179-dropshipping\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais sobre como ativar dropshipping na sua loja.</span></a></p>"
               },
               {
-                "question": "É possível emitir nota fiscal pela plataforma?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma possui integração com ERPs e sistemas de gestão que permitem a emissão automática de notas fiscais, facilitando o controle contábil da sua loja de moda.</span></p>"
+                "question": "Se já tenho um domínio, é necessário trocá-lo ao criar minha loja na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não, você pode continuar utilizando o seu domínio atual. Para isso, é necessário realizar o apontamento do domínio para a Loja Integrada, configurando os registros DNS conforme as instruções fornecidas pela plataforma. Caso deseje utilizar um novo domínio, é possível configurar redirecionamentos 301 para garantir que os visitantes do domínio antigo sejam automaticamente direcionados para o novo endereço, preservando o tráfego e o posicionamento nos mecanismos de busca. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/3337655-como-realizar-o-apontamento-do-meu-dominio-proprio?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span></p>"
               },
               {
-                "question": "A Loja Integrada oferece SEO automático para moda?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Com a ferramenta Indexa AI, a Loja Integrada cria descrições otimizadas automaticamente para cada produto, melhorando o posicionamento no Google sem que você precise escrever manualmente.</span></p>"
+                "question": "Como configurar um subdomínio na minha Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Se você já possui um site institucional e deseja criar uma loja virtual vinculada, é possível configurar um subdomínio (por exemplo, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://loja.seusite.com.br\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">loja.seusite.com.br</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">) para apontar para a Loja Integrada. Isso permite manter a identidade da sua marca e facilitar o acesso dos clientes à sua loja online. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/931038-como-configurar-um-subdominio-na-minha-loja-integrada?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
               },
               {
-                "question": "Preciso contratar alguém para configurar minha loja?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não. A plataforma é intuitiva e feita para o lojista configurar sozinho. Além disso, você terá acesso a tutoriais, vídeos explicativos e suporte técnico humanizado sempre que precisar.</span></p>"
+                "question": "Como migrar da minha plataforma atual para a Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A migração para a Loja Integrada pode ser realizada de três formas: Via planilha: Importando produtos e clientes através de planilhas no formato XLSX. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5945635-importando-dados-da-loja-antiga-produtos-clientes?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Integração com ERP: Utilizando sistemas de gestão empresarial compatíveis para transferir dados de forma automatizada.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Agências Parceiras: Contratando serviços especializados de agências parceiras da Loja Integrada que oferecem suporte completo durante o processo de migração. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/7156477-manual-de-migracao-para-a-loja-integrada?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
               },
               {
-                "question": "Como funciona o suporte da Loja Integrada?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você terá atendimento via chat, WhatsApp e e-mail. A equipe de suporte é especializada em e-commerce e pronta para ajudar em todas as etapas do seu negócio.</span></p>"
+                "question": "Quais são os ERPs integrados à Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada possui integração com sistemas de gestão empresarial (ERPs) que facilitam o controle de vendas, estoque, finanças e emissão de notas fiscais. Um exemplo é o Bling, que oferece funcionalidades completas para a gestão do seu negócio. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/2721349-erp\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
               },
               {
-                "question": "A loja oferece relatórios de desempenho e vendas?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. O painel da Loja Integrada exibe relatórios completos com faturamento, número de visitas, produtos mais vendidos, origem do tráfego e dados por período, ajudando a tomar decisões estratégicas com base em dados reais.</span></p>"
+                "question": "A Loja Integrada integra com marketplaces?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim! Hoje contamos com uma solução nativa de integração com marketplaces, começando pela integração direta com o Magalu, já disponível para lojistas da plataforma.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> Além disso, também é possível conectar sua loja a diversos outros marketplaces utilizando hubs de integração parceiros, como Anymarket, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Plugg.to\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Plugg.to</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, All Integra, entre outros.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> Com essas integrações, você pode:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Anunciar seus produtos em canais como Magalu, Mercado Livre, Amazon, Shopee e Americanas;</span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Receber os pedidos dos marketplaces diretamente no seu painel; </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Sincronizar automaticamente estoque, preços e status de pedidos. </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Essa estrutura multicanal ajuda você a ampliar seu alcance, aumentar as vendas e manter uma gestão centralizada e eficiente. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/924560-posso-integrar-minha-loja-com-marketplaces\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span></p>"
               },
               {
-                "question": "Posso integrar a Loja Integrada com marketplaces como Mercado Livre e Shopee?",
-                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. A plataforma tem integração com marketplaces por meio de parceiros. Isso permite que você centralize o estoque e aumente o alcance, vendendo em múltiplos canais de forma sincronizada.</span></p>"
+                "question": "Como criar uma loja B2B na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada permite a criação de lojas voltadas exclusivamente para vendas entre empresas (B2B). Você pode configurar sua loja para que apenas clientes com CNPJ possam se cadastrar e realizar compras, além de personalizar condições comerciais específicas para esse público.</span></p>"
+              },
+              {
+                "question": "Posso aceitar apenas clientes com CNPJ na minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim, é possível configurar sua loja para aceitar apenas cadastros de pessoas jurídicas. A Loja Integrada permite o gerenciamento manual dos cadastros, possibilitando que você aprove ou recuse clientes conforme o tipo de pessoa (física ou jurídica). </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/924547-posso-aceitar-so-clientes-com-cnpj-na-minha-loja?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "Como personalizar o layout e usar temas?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você pode usar temas gratuitos (dependendo do plano) ou adquirir temas pagos via Loja de Temas. Os temas oferecem facilidade de personalização (cores, banners, logo, conteúdo dinâmico) sem precisar de programação. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5929982-primeiros-passos-personalizacao-de-layout-e-tema\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre personalização de layout.</span></p>"
+              },
+              {
+                "question": "Quais páginas legais devo incluir (LGPD, trocas e devoluções)?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">É essencial criar e publicar a Política de Privacidade (incluindo cookies) e a Política de Trocas e Devoluções para estar em conformidade com a LGPD e o CDC.</span></p>"
+              },
+              {
+                "question": "Posso atender meus clientes via WhatsApp diretamente na loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim — você pode adicionar o botão flutuante do WhatsApp ou usar aplicativos de atendimento para centralizar conversas e agilizar o suporte. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40281-solucoes\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> na seção Soluções &gt; Atendimento.</span></p>"
+              },
+              {
+                "question": "Quais e-mails automáticos enviam ao cliente? É possível editar?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A cada atualização de status de pedido, o cliente recebe um e-mail transacional. Nos planos pagos, você pode editar os templates, incluir sua marca, além de ativar e-mails de carrinho abandonado.</span></p>"
+              },
+              {
+                "question": "Como ativar a autenticação em duas etapas na minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Para aumentar a segurança do acesso ao painel administrativo da sua loja, é recomendável ativar a autenticação em duas etapas. Isso adiciona uma camada extra de proteção, exigindo um código gerado por aplicativo de autenticação além da senha padrão. Para ativar, acesse o painel da sua loja, vá em Dados Cadastrais e siga as instruções na seção de autenticação em duas etapas. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/4816564-como-ativar-a-autenticacao-em-duas-etapas?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "Posso gerir minha loja pelo celular?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim! A Loja Integrada oferece o ConectaLI, o aplicativo oficial desenvolvido para simplificar a gestão da sua loja virtual diretamente pelo celular.</span></p>"
+              },
+              {
+                "question": "Onde encontro ajuda e canais oficiais da Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Na Central de Ajuda &gt; Conheça a Loja Integrada, você encontra tutoriais, FAQ, canais de atendimento, comunidade e comunicados oficiais. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40268-conheca-a-loja-integrada\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais sobre a Central de Ajuda.</span></a></p>"
               }
             ],
             "questionsTitleColor": "#00363A",
@@ -6113,7 +6145,7 @@
             "bottomCaptionColor": "",
             "backgroundColor": "#FBFAF9",
             "hideSection": false,
-            "caption": "Respostas essenciais para quem  quer começar a vender online"
+            "caption": "Quais são os meios de pagamento integrados?"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

@@ -38,6 +38,13 @@ export interface Question {
     answear: RichText;
 }
 
+interface textProps {
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
 export interface Props {
   hideSection?: boolean;
   /** @format color-input */
@@ -46,9 +53,12 @@ export interface Props {
     titleFont?: string;
     /** @format color-input */
     titleColor?: string;
+    titleTextProps?: textProps;
     caption?: string;
+    captionFont?: string;
     /** @format color-input */
     captionColor?: string;
+    captionTextProps?: textProps;
     questions?: Question[];
     /** @format color-input */
     questionsTitleColor?: string;
@@ -63,12 +73,12 @@ export interface Props {
     cta?: CTA[];
 }
 
-export default function Faq({ hideSection, title, titleColor, titleFont, backgroundColor, caption, captionColor, questions = [], bottomTitle, bottomCaption, cta = [], questionsDivisionLineColor, questionsTitleColor, bottomCaptionColor, bottomTitleColor}: Props) {
+export default function Faq({ hideSection, title, titleColor, titleFont, titleTextProps, backgroundColor, caption, captionFont, captionColor, captionTextProps, questions = [], bottomTitle, bottomCaption, cta = [], questionsDivisionLineColor, questionsTitleColor, bottomCaptionColor, bottomTitleColor}: Props) {
     if (hideSection) return <></>
     return <div style={{background: backgroundColor}}>
       <div class="max-w-[1220px] mx-auto py-12 lg:py-20 px-7" >
-          {title && <h2 class="text-2xl lg:text-5xl text-center leading-[120%] font-normal mb-6" style={{color: titleColor, fontFamily: titleFont}} dangerouslySetInnerHTML={{__html: title}}/>}
-          {caption && <p class="text-base lg:text-lg text-center font-normal leading-none " style={{color: captionColor}}>{caption}</p>}
+          {title && <h2 class="text-2xl lg:text-5xl text-center leading-[120%] font-normal mb-6" style={{color: titleColor, fontFamily: titleFont, ...titleTextProps}} dangerouslySetInnerHTML={{__html: title}}/>}
+          {caption && <p class="text-base lg:text-lg text-center font-normal leading-none " style={{color: captionColor, fontFamily: captionFont, ...captionTextProps}}>{caption}</p>}
           <div class="my-20 max-w-[768px] mx-auto">
               {questions.map((collapse) => (<div className="collapse rounded-none border-b border-base-200" style={{borderColor: questionsDivisionLineColor}}>
                   <input type="checkbox" hx-on:change={useScript(onChange)}/>

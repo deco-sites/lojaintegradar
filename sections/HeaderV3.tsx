@@ -174,6 +174,7 @@ export interface Nav {
   asideMenuCloseIconColor?: string;
   headerWhiteSpace?: string;
   centralizeHeaderContent?: boolean;
+  headerContainerMaxWidth?: string;
   headerMessage?: HeaderMessage;
   campaignTimer?: CampaignTimer;
 }
@@ -181,7 +182,7 @@ export default function Header({ logo = {
   src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
   alt: "Logo",
 },
-  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, headerWhiteSpace = '0', noScrollBackgroundColor, backgroundColor, dropdownMenus = { menus: [] }, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
+  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, headerWhiteSpace = '0', headerContainerMaxWidth, noScrollBackgroundColor, backgroundColor, dropdownMenus = { menus: [] }, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
   navigation , hideSection, centralizeHeaderContent }: Nav) {
   if (hideSection) return <></>
   return (
@@ -211,11 +212,11 @@ export default function Header({ logo = {
           <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
           {/* main content */}
-          <div class={`drawer-content mx-auto w-full lg:px-0 px-4 py-0 flex gap-8 items-center ${centralizeHeaderContent ? 'justify-center' : 'justify-between'} max-w-[1120px]`}>
+          <div class={`drawer-content mx-auto w-full lg:px-0 px-4 py-0 flex gap-8 items-center ${centralizeHeaderContent ? 'justify-center' : 'justify-between'} max-w-[1120px]`} style={{maxWidth: headerContainerMaxWidth}}>
 
             <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, noScrollBackgroundColor) }} />
 
-            <a hx-on:click={`window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'clique', custom_section: 'lp-komea', custom_type: 'header', custom_title: 'logotipo'});`} href={logo.href || "/"} class="flex items-center">
+            <a href={logo.href || "/"} class="flex items-center">
               <Image src={logo.src || ""} width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
             </a>
 

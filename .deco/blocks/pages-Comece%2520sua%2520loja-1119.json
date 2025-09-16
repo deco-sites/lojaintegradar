@@ -77,15 +77,15 @@
               "height": 636,
               "width": 1
             },
-            "linesSize": 6,
+            "linesSize": 3,
             "lines": [
               {
                 "from": "center",
-                "distance": "-730px"
+                "distance": "-640px"
               },
               {
                 "from": "center",
-                "distance": "730px"
+                "distance": "640px"
               }
             ]
           },
@@ -427,7 +427,8 @@
               "titlesTextProps": {}
             },
             "asideMenuOnlyMobile": false,
-            "noScrollBackgroundColor": ""
+            "noScrollBackgroundColor": "",
+            "headerContainerMaxWidth": "1275px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -727,7 +728,10 @@
               "text": "Comece a vender hoje mesmo",
               "textColor": "#FFFFF"
             },
-            "id": "Section 1 desktop"
+            "id": "Section 1 desktop",
+            "slidesWidth": "410px",
+            "containerWidth": "1270px",
+            "slidesGap": "20px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1172,15 +1176,16 @@
             },
             "lines": [
               {
-                "distance": "-730px",
+                "distance": "-640px",
                 "from": "center"
               },
               {
-                "distance": "730px",
+                "distance": "640px",
                 "from": "center"
               }
             ],
-            "linesSize": 4
+            "linesSize": 2,
+            "maxHeight": "2300px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1314,8 +1319,7 @@
             "container": {
               "paddingTop": "60px",
               "marginTop": "0px",
-              "backgroundColor": "#00363A",
-              "paddingBottom": "0px"
+              "backgroundColor": "#00363A"
             },
             "cta": [],
             "ctaPlacement": "center",
@@ -1664,7 +1668,9 @@
                   "mockup": false
                 }
               }
-            ]
+            ],
+            "foldsHeight": "500px",
+            "stickImageDistanceFromTop": "16vh"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -2040,7 +2046,10 @@
               "fontSize": "50px",
               "letterSpacing": "-1px"
             },
-            "marginTop": "-2px"
+            "marginTop": "-2px",
+            "slidesWidth": "410px",
+            "slidesGap": "20px",
+            "containerWidth": "1270px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -6145,7 +6154,8 @@
             "bottomCaptionColor": "",
             "backgroundColor": "#FBFAF9",
             "hideSection": false,
-            "caption": "Quais são os meios de pagamento integrados?"
+            "caption": "Quais são os meios de pagamento integrados?",
+            "titleTextProps": {}
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

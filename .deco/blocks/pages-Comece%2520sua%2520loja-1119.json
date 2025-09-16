@@ -77,7 +77,7 @@
               "height": 636,
               "width": 1
             },
-            "linesSize": 6,
+            "linesSize": 3,
             "lines": [
               {
                 "from": "center",
@@ -1184,7 +1184,8 @@
                 "from": "center"
               }
             ],
-            "linesSize": 4
+            "linesSize": 2,
+            "maxHeight": "2300px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1318,9 +1319,7 @@
             "container": {
               "paddingTop": "60px",
               "marginTop": "0px",
-              "backgroundColor": "#00363A",
-              "paddingBottom": "0px",
-              "marginBottom": "0"
+              "backgroundColor": "#00363A"
             },
             "cta": [],
             "ctaPlacement": "center",

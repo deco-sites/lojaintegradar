@@ -728,7 +728,10 @@
               "text": "Comece a vender hoje mesmo",
               "textColor": "#FFFFF"
             },
-            "id": "Section 1 desktop"
+            "id": "Section 1 desktop",
+            "slidesWidth": "410px",
+            "containerWidth": "1270px",
+            "slidesGap": "20px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -2044,7 +2047,10 @@
               "fontSize": "50px",
               "letterSpacing": "-1px"
             },
-            "marginTop": "-2px"
+            "marginTop": "-2px",
+            "slidesWidth": "410px",
+            "slidesGap": "20px",
+            "containerWidth": "1270px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

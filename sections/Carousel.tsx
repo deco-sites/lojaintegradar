@@ -134,6 +134,9 @@ export interface Props {
     captionTextProps?: TitleTextProps;
     slides?: CarouselItem[];
     slidesHeight?: string;
+    slidesWidth?: string;
+    slidesGap?: string;
+    containerWidth?: string;
     /**
      * @title Show arrows
      * @description show arrows to navigate through the images
@@ -232,7 +235,7 @@ function Buttons({ arrowsColor }: { arrowsColor?: string }) {
 }
 function Carousel(props: Props) {
     if (props.hideSection) return <></>
-    const { id, title, titleFont, titleTextProps, marginTop, titlePaddingBottom, caption, captionFont, captionTextProps, slides, slidesHeight, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
+    const { id, title, titleFont, titleTextProps, marginTop, titlePaddingBottom, caption, captionFont, captionTextProps, slides, slidesHeight, slidesGap, slidesWidth, containerWidth, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
     const carouselId = useId();
     return (<div id={id} style={{background: backgroundColor, paddingTop: paddingTop, paddingBottom: paddingBottom, marginTop}} class="relative pt-7 lg:pt-14">
         {/* <input type="text" value="0" /> */}
@@ -252,8 +255,8 @@ function Carousel(props: Props) {
                         />}
 
                 </AnimateOnShow>
-                <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:pr-9 md:pl-[27px] max-w-[1480px] relative" rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider" > 
-                    {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px]">
+                <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:px-0 max-w-[1480px] relative" style={{width: containerWidth, gap: slidesGap}} rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider" > 
+                    {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px]" style={{width: slidesWidth}}>
                         <SliderItem slide={slide} id={`${carouselId}::${index}`} slidesHeight={slidesHeight}/>
                     </Slider.Item>))}
                     {/* <Slider.Item index={slides?.length || 0} class="carousel-item w-[1px] lg:w-[456px] sm:block" >

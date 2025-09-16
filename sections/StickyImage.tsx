@@ -19,7 +19,7 @@ const onLoad = (rootId: string,) => {
     const parentHeight = parentRect.height - stickyRect.height;
 
     progressPercent = (distanceFromParentTop / parentHeight) * 100;
-
+    console.log(progressPercent);
     const currentImageIndex = Math.floor((distanceFromParentTop + (0.5 * stickyHeight)) / stickyHeight);
 
     stickyMedia.forEach((media, index) => index == currentImageIndex ? media.style.opacity = '1' : media.style.opacity = '0')
@@ -80,9 +80,10 @@ export interface Props {
   folds?: Fold[];
   backgroundMedia?: BackgroundMedia;
   foldsHeight?: string;
+  stickImageDistanceFromTop?: string;
 }
 
-export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, hideSection }: Props) {
+export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, hideSection, stickImageDistanceFromTop }: Props) {
   if (hideSection) return <></>;
   const rootId = useId();
   return <div id={rootId} class="flex justify-center gap-6 lg:gap-20 px-7 lg:px-7" style={{ background: backgroundMedia?.backgroundColor }}>
@@ -129,7 +130,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
     </div>
 
     <div class="hidden lg:block">
-      <div class="sticky h-screen top-0 flex items-center" style={{ height: foldsHeight }}>
+      <div class="sticky h-screen top-0 flex items-center" style={{ height: foldsHeight, top: stickImageDistanceFromTop }}>
         <div class="relative h-full flex items-center justify-center" style={{ width: folds[0].image?.width || 336 }}>
           {folds.map((fold, index) => {
             return <>

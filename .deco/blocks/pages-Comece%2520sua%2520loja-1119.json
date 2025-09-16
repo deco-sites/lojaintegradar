@@ -1315,7 +1315,8 @@
               "paddingTop": "60px",
               "marginTop": "0px",
               "backgroundColor": "#00363A",
-              "paddingBottom": "0px"
+              "paddingBottom": "0px",
+              "marginBottom": "0"
             },
             "cta": [],
             "ctaPlacement": "center",
@@ -1664,7 +1665,9 @@
                   "mockup": false
                 }
               }
-            ]
+            ],
+            "foldsHeight": "500px",
+            "stickImageDistanceFromTop": "16vh"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

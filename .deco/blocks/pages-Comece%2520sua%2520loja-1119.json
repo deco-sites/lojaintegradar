@@ -81,11 +81,11 @@
             "lines": [
               {
                 "from": "center",
-                "distance": "-730px"
+                "distance": "-640px"
               },
               {
                 "from": "center",
-                "distance": "730px"
+                "distance": "640px"
               }
             ]
           },
@@ -427,7 +427,8 @@
               "titlesTextProps": {}
             },
             "asideMenuOnlyMobile": false,
-            "noScrollBackgroundColor": ""
+            "noScrollBackgroundColor": "",
+            "headerContainerMaxWidth": "1275px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1172,11 +1173,11 @@
             },
             "lines": [
               {
-                "distance": "-730px",
+                "distance": "-640px",
                 "from": "center"
               },
               {
-                "distance": "730px",
+                "distance": "640px",
                 "from": "center"
               }
             ],

@@ -4339,6 +4339,9 @@ details.collapse summary::-webkit-details-marker {
 .min-h-\[191px\] {
   min-height: 191px;
 }
+.min-h-\[1px\] {
+  min-height: 1px;
+}
 .min-h-\[215px\] {
   min-height: 215px;
 }
@@ -5310,6 +5313,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-0 {
+  gap: 0px;
 }
 .gap-1 {
   gap: 0.25rem;

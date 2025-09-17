@@ -21,22 +21,21 @@ export interface Props {
 
 export default function HorizontalLines({lineImage, linesSize, lines}:Props) {
   return <div class="w-full relative">
-    <div class=" w-full absolute top-0 left-0 z-50 pointer-events-none">
-      <div class="w-full flex justify-center relative">
-        {lines?.map(line => {
-          return (
-            <div class={`absolute flex justify-center w-full overflow-hidden`} style={{top: line.distance}}>
-              {Array.from({ length: linesSize || 1 }).map((_, index) => (
-                <Image
-                  key={index}
-                  src={lineImage.src}
-                  width={lineImage.width || 400}
-                  height={lineImage.height || 1}
-                />
-              ))}
-            </div>
-        )})}
-      </div>
+    <div class="absolute top-0 left-0 w-full z-40">
+          {lines?.map(line => {
+            return (
+              <div class={`flex justify-center gap-0 min-h-[1px]`} style={{marginTop: line.distance, height: lineImage.height || 1}}>
+                {Array.from({ length: linesSize || 1 }).map((_, index) => (
+                  <Image
+                    key={index}
+                    src={lineImage.src}
+                    width={lineImage.width || 400}
+                    height={lineImage.height || 1}
+                    class='object-cover'
+                  />
+                ))}
+              </div>
+          )})}
     </div>
   </div>
 }

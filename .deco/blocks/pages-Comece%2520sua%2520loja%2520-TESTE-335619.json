@@ -438,24 +438,60 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/CreateStoreHero.tsx",
-        "title": {
-          "text": "<p>Crie seu site na plataforma que<br>otimiza seu tempo</p>",
-          "font": "Lektorat Display var",
-          "color": "#00363A",
-          "fontSize": "60px",
-          "fontWeight": "650",
-          "lineHeight": "100%"
-        },
-        "backgroundMedia": {
-          "image": {
-            "src": "https://assets.decocache.com/lojaintegradar/9eea7642-7ff6-481e-a095-b75fbd03f481/bg-teste.png"
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/CreateStoreHero.tsx",
+              "title": {
+                "text": "<p style=\"text-align: center\">Crie seu site<br>na plataforma que<br><span style=\"color: rgb(40, 195, 195)\">otimiza seu tempo</span></p>",
+                "font": "Lektorat Display var",
+                "color": "#00363A",
+                "fontSize": "32px",
+                "fontWeight": "650",
+                "lineHeight": "100%"
+              },
+              "backgroundMedia": {
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/9eea7642-7ff6-481e-a095-b75fbd03f481/bg-teste.png"
+                },
+                "use": "image"
+              },
+              "createStoreFormProps": {
+                "showForm": true
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
           },
-          "use": "image"
-        },
-        "createStoreFormProps": {
-          "showForm": true
-        }
+          {
+            "value": {
+              "__resolveType": "site/sections/CreateStoreHero.tsx",
+              "title": {
+                "text": "<p>Crie seu site na plataforma que<br>otimiza seu tempo</p>",
+                "font": "Lektorat Display var",
+                "color": "#00363A",
+                "fontSize": "60px",
+                "fontWeight": "650",
+                "lineHeight": "100%"
+              },
+              "backgroundMedia": {
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/9eea7642-7ff6-481e-a095-b75fbd03f481/bg-teste.png"
+                },
+                "use": "image"
+              },
+              "createStoreFormProps": {
+                "showForm": true
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
+          }
+        ]
       }
     },
     {
@@ -1217,54 +1253,45 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg"
+            },
+            "lines": [
               {
-                "value": {
-                  "__resolveType": "site/sections/HorizontalLines.tsx",
-                  "lineImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg"
-                  },
-                  "lines": [
-                    {
-                      "distance": "45px"
-                    },
-                    {
-                      "distance": "110px"
-                    }
-                  ]
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
+                "distance": "45px"
               },
               {
-                "value": {
-                  "__resolveType": "site/sections/HorizontalLines.tsx",
-                  "lineImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg",
-                    "width": 600,
-                    "height": 1
-                  },
-                  "lines": [
-                    {
-                      "distance": "115px"
-                    },
-                    {
-                      "distance": "240px"
-                    }
-                  ],
-                  "linesSize": 4
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
+                "distance": "110px"
               }
-            ]
+            ],
+            "linesSize": 0
           },
           "rule": {
-            "__resolveType": "website/matchers/never.ts"
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg",
+              "width": 600,
+              "height": 1
+            },
+            "lines": [
+              {
+                "distance": "60px"
+              },
+              {
+                "distance": "160px"
+              }
+            ],
+            "linesSize": 0
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
         }
       ]
@@ -1701,53 +1728,43 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg"
+            },
+            "lines": [
               {
-                "value": {
-                  "__resolveType": "site/sections/HorizontalLines.tsx",
-                  "lineImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg"
-                  },
-                  "lines": [
-                    {
-                      "distance": "27px"
-                    },
-                    {
-                      "distance": "92px"
-                    }
-                  ]
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
+                "distance": "27px"
               },
               {
-                "value": {
-                  "__resolveType": "site/sections/HorizontalLines.tsx",
-                  "lineImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg",
-                    "width": 600
-                  },
-                  "lines": [
-                    {
-                      "distance": "40px"
-                    },
-                    {
-                      "distance": "170px"
-                    }
-                  ],
-                  "linesSize": 4
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
+                "distance": "92px"
               }
             ]
           },
           "rule": {
-            "__resolveType": "website/matchers/never.ts"
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/44bdb779-f6fe-464b-9693-3cc13d6579e4/mobile-light-horizontal-line.svg",
+              "width": 600
+            },
+            "lines": [
+              {
+                "distance": "40px"
+              },
+              {
+                "distance": "170px"
+              }
+            ],
+            "linesSize": 4
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
         }
       ]

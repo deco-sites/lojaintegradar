@@ -498,7 +498,9 @@
                   "src": "https://assets.decocache.com/lojaintegradar/c3d9fba1-4a3b-4d47-aefa-d621b74984ad/HERO-DESKTOP.svg"
                 },
                 "use": "image"
-              }
+              },
+              "paddingRight": "0px",
+              "paddingLeft": "0px"
             },
             "rule": {
               "__resolveType": "website/matchers/device.ts",
@@ -1284,59 +1286,49 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg"
+            },
+            "lines": [
               {
-                "value": {
-                  "__resolveType": "site/sections/VerticalLines.tsx",
-                  "lineImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg"
-                  },
-                  "lines": [
-                    {
-                      "distance": "12px",
-                      "from": "left"
-                    },
-                    {
-                      "distance": "12px",
-                      "from": "right"
-                    }
-                  ],
-                  "maxHeight": "2300px",
-                  "linesSize": 2
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
+                "distance": "12px",
+                "from": "left"
               },
               {
-                "value": {
-                  "__resolveType": "site/sections/VerticalLines.tsx",
-                  "lineImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg"
-                  },
-                  "lines": [
-                    {
-                      "distance": "-640px",
-                      "from": "center"
-                    },
-                    {
-                      "distance": "640px",
-                      "from": "center"
-                    }
-                  ],
-                  "linesSize": 2,
-                  "maxHeight": "2300px"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
+                "distance": "12px",
+                "from": "right"
               }
-            ]
+            ],
+            "maxHeight": "2300px",
+            "linesSize": 2
           },
           "rule": {
-            "__resolveType": "website/matchers/never.ts"
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg"
+            },
+            "lines": [
+              {
+                "distance": "-640px",
+                "from": "center"
+              },
+              {
+                "distance": "640px",
+                "from": "center"
+              }
+            ],
+            "linesSize": 2,
+            "maxHeight": "2300px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
         }
       ]

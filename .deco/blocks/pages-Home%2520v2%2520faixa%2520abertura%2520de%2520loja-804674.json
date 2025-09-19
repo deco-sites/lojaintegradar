@@ -9481,7 +9481,9 @@
             ],
             "rightBackgroundImage": {},
             "centerContent": true,
-            "xButtonColor": "#ffffff"
+            "xButtonColor": "#ffffff",
+            "height": "90px",
+            "hideXButton": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

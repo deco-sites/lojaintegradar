@@ -36,13 +36,14 @@ export interface Props {
   cta?: CTAProps[];
   leftBackgroundImage?: IImage;
   rightBackgroundImage?: IImage;
+  height?: string;
   /** @format color-input */
   xButtonColor?: string;
   hideXButton?: boolean;
   centerContent?: boolean;
 }
 
-export default function FixedBottom({ hideSection, backgroundColor, logo, text, textProps, leftBackgroundImage, rightBackgroundImage, cta = [], xButtonColor, hideXButton, centerContent }: Props) {
+export default function FixedBottom({ hideSection, backgroundColor, logo, text, textProps, height, leftBackgroundImage, rightBackgroundImage, cta = [], xButtonColor, hideXButton, centerContent }: Props) {
   if (hideSection) return <></>;
   const zIndex = 30;
   return <div
@@ -52,7 +53,7 @@ export default function FixedBottom({ hideSection, backgroundColor, logo, text, 
       {!hideXButton && <button class="absolute top-2 right-2 p-2 z-40" hx-on:click={useScript(onClick)} style={{color: xButtonColor}}>
         X
       </button>}
-      <div class={`px-[46px] py-[18px] lg:py-[35px] lg:px-16 flex flex-wrap lg:flex-nowrap gap-16 gap-y-5 items-center ${centerContent ? 'justify-center' : 'justify-between'} relative peer-checked:hidden`} style={{ zIndex: zIndex + 2 }}>
+      <div class={`px-[46px] py-[18px] lg:py-[35px] lg:px-16 flex flex-wrap lg:flex-nowrap gap-16 gap-y-5 items-center ${centerContent ? 'justify-center' : 'justify-between'} relative peer-checked:hidden`} style={{ zIndex: zIndex + 2, height }}>
         <div class="flex gap-5 justify-between">
           {logo?.src && <Image src={logo.src} width={logo.width || 271} height={logo.height || 50} alt={logo.alt || 'Logo'} />}
 

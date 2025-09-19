@@ -90,9 +90,10 @@ import * as $$$$$$81 from "./sections/TestimonialsWithBubbles.tsx";
 import * as $$$$$$82 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$83 from "./sections/TimeLine.tsx";
 import * as $$$$$$84 from "./sections/TransitionSection.tsx";
-import * as $$$$$$85 from "./sections/VerticalLines.tsx";
-import * as $$$$$$86 from "./sections/VideoSection.tsx";
-import * as $$$$$$87 from "./sections/VisualOptimizerScript.tsx";
+import * as $$$$$$85 from "./sections/VarifyScript.tsx";
+import * as $$$$$$86 from "./sections/VerticalLines.tsx";
+import * as $$$$$$87 from "./sections/VideoSection.tsx";
+import * as $$$$$$88 from "./sections/VisualOptimizerScript.tsx";
 
 const manifest = {
   "sections": {
@@ -181,9 +182,10 @@ const manifest = {
     "site/sections/Theme/Theme.tsx": $$$$$$82,
     "site/sections/TimeLine.tsx": $$$$$$83,
     "site/sections/TransitionSection.tsx": $$$$$$84,
-    "site/sections/VerticalLines.tsx": $$$$$$85,
-    "site/sections/VideoSection.tsx": $$$$$$86,
-    "site/sections/VisualOptimizerScript.tsx": $$$$$$87,
+    "site/sections/VarifyScript.tsx": $$$$$$85,
+    "site/sections/VerticalLines.tsx": $$$$$$86,
+    "site/sections/VideoSection.tsx": $$$$$$87,
+    "site/sections/VisualOptimizerScript.tsx": $$$$$$88,
   },
   "actions": {
     "site/actions/sendTcoUserData.ts": $$$$$$$$$0,

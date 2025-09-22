@@ -502,135 +502,133 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "website/flags/multivariate/section.ts",
-        "variants": [
-          {
-            "value": {
-              "__resolveType": "site/sections/CreateStoreHero.tsx",
-              "title": {
-                "text": "<p style=\"text-align: center\">Alivie o corre que<br>é vender online</p>",
-                "font": "Lektorat Display var",
-                "color": "#00363A",
-                "fontSize": "42px",
-                "fontWeight": "700",
-                "lineHeight": "100%"
-              },
-              "caption": "<p style=\"text-align: center\">Da loja própria aos marketplaces, a plataforma de ecommerce impulsionada por IA que executa tarefas, sugere melhorias e faz seu negócio crescer<br>todos os dias.</p>",
-              "captionTextProps": {
-                "fontFamily": "Inter",
-                "color": "#00363A",
-                "fontSize": "14px",
-                "fontWeight": "500",
-                "lineHeight": "110%"
-              },
-              "backgroundMedia": {
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/9caef844-a92c-4cf7-a0f6-f0638124b2f8/line-background.png"
-                },
-                "use": "image"
-              },
-              "createStoreFormProps": {
-                "showForm": true,
-                "backgroundColor": "#E4F3F3",
-                "planoId": "172",
-                "periodo": "anual",
-                "nameCaption": "Nome",
-                "namePlaceholder": "Seu nome",
-                "emailCaption": "E-mail",
-                "emailPlaceholder": "Insira seu e-mail",
-                "passwordCaption": "Senha",
-                "passwordPlaceholder": "Insira sua senha",
-                "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
-                "confirmPasswordCaption": "Confirme sua senha",
-                "confirmPasswordPlaceholder": "Confirme sua senha",
-                "agreeText1": "Ao clicar, você concorda com os ",
-                "agreeLink1": {
-                  "text": " Termos de Uso ",
-                  "href": "https://lojaintegrada.com.br/termos-de-uso"
-                },
-                "agreeText2": "e a ",
-                "agreeLink2": {
-                  "text": "Política de Privacidade",
-                  "href": "https://lojaintegrada.com.br/privacidade/"
-                },
-                "buttonText": "Criar loja grátis",
-                "inputsLabelColor": "#00363A",
-                "inputsTextColor": "#00363A",
-                "inputsBorderColor": "#F2F4F5",
-                "inputsBellowTextColor": "#00363A"
-              }
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/CreateStoreHero.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\">Alivie o corre que<br>é vender online</p>",
+              "font": "Lektorat Display var",
+              "color": "#00363A",
+              "fontSize": "42px",
+              "fontWeight": "700",
+              "lineHeight": "100%"
             },
-            "rule": {
-              "__resolveType": "website/matchers/device.ts",
-              "mobile": true
+            "caption": "<p style=\"text-align: center\">Da loja própria aos marketplaces, a plataforma de ecommerce impulsionada por IA que executa tarefas, sugere melhorias e faz seu negócio crescer<br>todos os dias.</p>",
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "color": "#00363A",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "110%"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/9caef844-a92c-4cf7-a0f6-f0638124b2f8/line-background.png"
+              },
+              "use": "image"
+            },
+            "createStoreFormProps": {
+              "showForm": true,
+              "backgroundColor": "#E4F3F3",
+              "planoId": "172",
+              "periodo": "anual",
+              "nameCaption": "Nome",
+              "namePlaceholder": "Seu nome",
+              "emailCaption": "E-mail",
+              "emailPlaceholder": "Insira seu e-mail",
+              "passwordCaption": "Senha",
+              "passwordPlaceholder": "Insira sua senha",
+              "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
+              "confirmPasswordCaption": "Confirme sua senha",
+              "confirmPasswordPlaceholder": "Confirme sua senha",
+              "agreeText1": "Ao clicar, você concorda com os ",
+              "agreeLink1": {
+                "text": " Termos de Uso ",
+                "href": "https://lojaintegrada.com.br/termos-de-uso"
+              },
+              "agreeText2": "e a ",
+              "agreeLink2": {
+                "text": "Política de Privacidade",
+                "href": "https://lojaintegrada.com.br/privacidade/"
+              },
+              "buttonText": "Criar loja grátis",
+              "inputsLabelColor": "#00363A",
+              "inputsTextColor": "#00363A",
+              "inputsBorderColor": "#F2F4F5",
+              "inputsBellowTextColor": "#00363A"
             }
           },
-          {
-            "value": {
-              "__resolveType": "site/sections/CreateStoreHero.tsx",
-              "title": {
-                "text": "<p>Alivie o corre que<br>é vender online</p>",
-                "font": "Lektorat Display var",
-                "color": "#00363A",
-                "fontSize": "80px",
-                "fontWeight": "700",
-                "lineHeight": "100%"
-              },
-              "caption": "<p>Da loja própria aos marketplaces, a plataforma de ecommerce<br>impulsionada por IA que executa tarefas, sugere melhorias<br>e faz seu negócio crescer todos os dias.</p>",
-              "captionTextProps": {
-                "fontFamily": "Inter",
-                "color": "#00363A",
-                "fontSize": "16px",
-                "fontWeight": "500",
-                "lineHeight": "110%"
-              },
-              "backgroundMedia": {
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/9caef844-a92c-4cf7-a0f6-f0638124b2f8/line-background.png"
-                },
-                "use": "image"
-              },
-              "createStoreFormProps": {
-                "showForm": true,
-                "backgroundColor": "#E4F3F3",
-                "planoId": "172",
-                "periodo": "anual",
-                "nameCaption": "Nome",
-                "namePlaceholder": "Seu nome",
-                "emailCaption": "E-mail",
-                "emailPlaceholder": "Insira seu e-mail",
-                "passwordCaption": "Senha",
-                "passwordPlaceholder": "Insira sua senha",
-                "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
-                "confirmPasswordCaption": "Confirme sua senha",
-                "confirmPasswordPlaceholder": "Confirme sua senha",
-                "agreeText1": "Ao clicar, você concorda com os ",
-                "agreeLink1": {
-                  "text": " Termos de Uso ",
-                  "href": "https://lojaintegrada.com.br/termos-de-uso"
-                },
-                "agreeText2": "e a ",
-                "agreeLink2": {
-                  "text": "Política de Privacidade",
-                  "href": "https://lojaintegrada.com.br/privacidade/"
-                },
-                "buttonText": "Criar loja grátis",
-                "inputsLabelColor": "#00363A",
-                "inputsTextColor": "#00363A",
-                "inputsBorderColor": "#F2F4F5",
-                "inputsBellowTextColor": "#00363A"
-              }
-            },
-            "rule": {
-              "__resolveType": "website/matchers/device.ts",
-              "desktop": true,
-              "tablet": true
-            }
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
           }
-        ]
-      }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/CreateStoreHero.tsx",
+            "title": {
+              "text": "<p>Alivie o corre que<br>é vender online</p>",
+              "font": "Lektorat Display var",
+              "color": "#00363A",
+              "fontSize": "80px",
+              "fontWeight": "700",
+              "lineHeight": "100%"
+            },
+            "caption": "<p>Da loja própria aos marketplaces, a plataforma de ecommerce<br>impulsionada por IA que executa tarefas, sugere melhorias<br>e faz seu negócio crescer todos os dias.</p>",
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "color": "#00363A",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "lineHeight": "110%"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/9caef844-a92c-4cf7-a0f6-f0638124b2f8/line-background.png"
+              },
+              "use": "image"
+            },
+            "createStoreFormProps": {
+              "showForm": true,
+              "backgroundColor": "#E4F3F3",
+              "planoId": "172",
+              "periodo": "anual",
+              "nameCaption": "Nome",
+              "namePlaceholder": "Seu nome",
+              "emailCaption": "E-mail",
+              "emailPlaceholder": "Insira seu e-mail",
+              "passwordCaption": "Senha",
+              "passwordPlaceholder": "Insira sua senha",
+              "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
+              "confirmPasswordCaption": "Confirme sua senha",
+              "confirmPasswordPlaceholder": "Confirme sua senha",
+              "agreeText1": "Ao clicar, você concorda com os ",
+              "agreeLink1": {
+                "text": " Termos de Uso ",
+                "href": "https://lojaintegrada.com.br/termos-de-uso"
+              },
+              "agreeText2": "e a ",
+              "agreeLink2": {
+                "text": "Política de Privacidade",
+                "href": "https://lojaintegrada.com.br/privacidade/"
+              },
+              "buttonText": "Criar loja grátis",
+              "inputsLabelColor": "#00363A",
+              "inputsTextColor": "#00363A",
+              "inputsBorderColor": "#F2F4F5",
+              "inputsBellowTextColor": "#00363A"
+            },
+            "hideSection": false
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "desktop": true,
+            "tablet": true
+          }
+        }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

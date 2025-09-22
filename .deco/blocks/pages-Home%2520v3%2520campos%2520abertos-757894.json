@@ -624,7 +624,9 @@
               }
             },
             "rule": {
-              "__resolveType": "website/matchers/always.ts"
+              "__resolveType": "website/matchers/device.ts",
+              "desktop": true,
+              "tablet": true
             }
           }
         ]

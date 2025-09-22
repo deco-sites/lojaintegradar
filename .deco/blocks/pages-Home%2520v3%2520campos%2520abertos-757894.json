@@ -623,9 +623,7 @@
             "hideSection": false
           },
           "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "desktop": true,
-            "tablet": true
+            "__resolveType": "website/matchers/always.ts"
           }
         }
       ]

@@ -4,7 +4,7 @@ import { useId } from "site/sdk/useId.ts";
 
 
 
-const CreateStoreForm = ({ googleAccountBelowText,  planoId, periodo, backgroundColor, buttonText, agreeText1, agreeLink1, agreeLink2, agreeText2, agreeText3, nameCaption, namePlaceholder, passwordCaption, passwordPlaceholder, passwordText, confirmPasswordCaption, confirmPasswordPlaceholder, emailCaption, emailPlaceholder, inputsLabelColor, inputsTextColor, inputsBorderColor, inputsBellowTextColor, linksColor, buttonBackgroundColor, buttonTextColor }: CreateStoreFormProps) => {
+const CreateStoreForm = ({ googleAccountButton, googleAccountBelowText,  planoId, periodo, backgroundColor, buttonText, agreeText1, agreeLink1, agreeLink2, agreeText2, agreeText3, nameCaption, namePlaceholder, passwordCaption, passwordPlaceholder, passwordText, confirmPasswordCaption, confirmPasswordPlaceholder, emailCaption, emailPlaceholder, inputsLabelColor, inputsTextColor, inputsBorderColor, inputsBellowTextColor, linksColor, buttonBackgroundColor, buttonTextColor }: CreateStoreFormProps) => {
     const [formData, setFormData] = useState({
         nome: "",
         email: "",
@@ -144,30 +144,32 @@ const CreateStoreForm = ({ googleAccountBelowText,  planoId, periodo, background
                 id="createStoreFormContainer">
 
             <script src="https://accounts.google.com/gsi/client" async defer></script>
-            <div class="my-5 text-on-base-2 text-f7 leading-4 tracking-4 w-full">
-                <div
-                    id="g_id_onload"
-                    data-client_id="1091824353523-i8sdgbl0143713a07vvlpsdd5uoobi2p.apps.googleusercontent.com"
-                    data-context="signin"
-                    data-ux_mode="popup"
-                    data-login_uri="https://app.lojaintegrada.com.br/public/login/google"
-                    data-auto_prompt="false"
-                    data-state='{"source":"google_account_creation"}'
-                    data-key="app.lojaintegrada.com.br"
-                ></div>
-                <div
-                    class="g_id_signin"
-                    data-type="standard"
-                    data-shape="rectangular"
-                    data-theme="outline"
-                    data-text="continue_with"
-                    data-size="large"
-                    data-locale="pt-BR"
-                    data-click_listener="signWithGoogle"
-                    data-logo_alignment="center"
-                ></div>
-            </div>
-            <p class="w-full text-center text-sm">{googleAccountBelowText}</p>
+            {googleAccountButton && <>
+                <div class="my-5 text-on-base-2 text-f7 leading-4 tracking-4 w-full">
+                    <div
+                        id="g_id_onload"
+                        data-client_id="1091824353523-i8sdgbl0143713a07vvlpsdd5uoobi2p.apps.googleusercontent.com"
+                        data-context="signin"
+                        data-ux_mode="popup"
+                        data-login_uri="https://app.lojaintegrada.com.br/public/login/google"
+                        data-auto_prompt="false"
+                        data-state='{"source":"google_account_creation"}'
+                        data-key="app.lojaintegrada.com.br"
+                    ></div>
+                    <div
+                        class="g_id_signin"
+                        data-type="standard"
+                        data-shape="rectangular"
+                        data-theme="outline"
+                        data-text="continue_with"
+                        data-size="large"
+                        data-locale="pt-BR"
+                        data-click_listener="signWithGoogle"
+                        data-logo_alignment="center"
+                    ></div>
+                </div>
+                <p class="w-full text-center text-sm">{googleAccountBelowText}</p>
+            </>}
                 <form
                     action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${periodo || 'anual'}&plano_id=${planoId || '172'}`}
                     id="createStoreFormRecaptcha"

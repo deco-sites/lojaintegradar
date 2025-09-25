@@ -77,6 +77,7 @@ export interface createStoreFormLink {
 }
 
 export interface CreateStoreFormProps {
+  googleAccountButton?: boolean;
   googleAccountBelowText?: string;
   showForm?: boolean;
   planoId?: string;

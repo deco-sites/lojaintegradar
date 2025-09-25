@@ -1,0 +1,1249 @@
+{
+  "__resolveType": "website/pages/Page.tsx",
+  "name": "Guia pratico BF",
+  "path": "/guia-pratico-BF",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "sections": [
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeaderV3.tsx",
+            "navigation": {
+              "links": [],
+              "buttons": [
+                {
+                  "text": "Fazer login",
+                  "backgroundColor": "transparent",
+                  "textColor": "#00363A",
+                  "borderColor": "#00363A",
+                  "size": "Small",
+                  "type": "Button",
+                  "customEvent": "header",
+                  "customEventCategory": "loja-integrada:institucional",
+                  "customEventLabel": "fazer-login",
+                  "ctaStyle": "button",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "outline": true,
+                  "singleLine": true
+                }
+              ],
+              "mobileButtons": [],
+              "asideMenuButtons": [
+                {
+                  "text": "Fazer Login",
+                  "backgroundColor": "Transparent",
+                  "textColor": "#003037",
+                  "borderColor": "#003037",
+                  "size": "Small",
+                  "customEventLabel": "fazer-login",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "ctaStyle": "button",
+                  "outline": true
+                }
+              ],
+              "sideMenuButtons": [],
+              "linksBorderColor": "#D0DAD9",
+              "textHoverColor": "#D0DAD9",
+              "textColor": "#003037",
+              "mobileButtonsOnScrollColors": {
+                "textColor": "#ffffff",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55"
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172",
+                "backgroundColor": "#ffffff",
+                "textColor": "#003037",
+                "borderColor": "#ffffff",
+                "showIcon": false
+              },
+              "createStoreCtaMobile": {
+                "ctaStyle": "button",
+                "planId": "172",
+                "backgroundColor": "rgba(255, 255, 255, 0.60)",
+                "textColor": "#003037",
+                "borderColor": "Transparent",
+                "showIcon": false
+              },
+              "createStoreCtaMobileOnScrollColors": {
+                "backgroundColor": "rgba(255, 255, 255, 0.60)",
+                "borderColor": "Transparent",
+                "textColor": "#003037"
+              },
+              "asideCreateStoreCta": {
+                "planId": "172",
+                "text": "Abrir loja grátis",
+                "ctaStyle": "button",
+                "backgroundColor": "#003037",
+                "borderColor": "#003037",
+                "textColor": "#ffffff",
+                "showIcon": false
+              },
+              "buttonsHeight": "32px",
+              "linksTextProps": {}
+            },
+            "logo": {
+              "src": {
+                "__resolveType": "website/flags/multivariate/image.ts",
+                "variants": [
+                  {
+                    "value": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                    "rule": {
+                      "__resolveType": "website/matchers/always.ts"
+                    }
+                  }
+                ]
+              },
+              "alt": "logo  ",
+              "width": 150,
+              "href": "/homev2"
+            },
+            "initialButtons": [],
+            "backgroundColor": "#E4F3F3",
+            "barsColor": "#003037",
+            "asideMenuTopBackgroundColor": "#D0DAD9",
+            "asideMenuBackgroundColor": "#ffffff",
+            "asideMenuCloseIconColor": "#003037",
+            "headerMessage": {
+              "show": false,
+              "text": "<p>teste</p>",
+              "textColor": "#22454B",
+              "backgroundColor": "#D0DAD9",
+              "cta": [],
+              "font": "Instrument Serif",
+              "textProps": {
+                "color": ""
+              }
+            },
+            "campaignTimer": {
+              "text": "<p>Time left for a campaign to end</p>",
+              "show": false,
+              "labelsColor": "",
+              "numbersColor": "",
+              "noScrollBackgroundColor": "",
+              "backgroundColor": "",
+              "textProps": {
+                "font": "Galaxie Copernicus",
+                "color": ""
+              }
+            },
+            "hideAsideMenu": true,
+            "dropdownMenus": {
+              "menus": [
+                {
+                  "links": [
+                    {
+                      "label": "Dropshipping",
+                      "url": "https://www.lojaintegrada.com.br/dropi",
+                      "text": "Integre sua loja com fornecedores do Aliexpress e venda sem estoque.",
+                      "openIn": "current tab"
+                    },
+                    {
+                      "text": "Conheça as funcionalidades pra você ter e cuidar da sua própria loja virtual.",
+                      "label": "Recursos",
+                      "url": "https://www.lojaintegrada.com.br/recursos",
+                      "openIn": "current tab"
+                    },
+                    {
+                      "url": "https://www.lojaintegrada.com.br/cases",
+                      "label": "Casos de Sucesso",
+                      "text": "Descubra lojistas tipo você que tão mandando bem com a ferramenta.",
+                      "openIn": "current tab"
+                    },
+                    {
+                      "url": "https://www.lojaintegrada.com.br/migracao",
+                      "label": "Migre sua loja",
+                      "text": "Vem pra a plataforma que te oferece o melhor custo benefício.",
+                      "openIn": "current tab"
+                    },
+                    {
+                      "url": "https://lojaintegrada.com.br/hub/",
+                      "label": "Blog",
+                      "text": "Aprenda tudo que é coisa de ecommerce e marketing digital.",
+                      "openIn": "new tab"
+                    },
+                    {
+                      "url": "https://www.lojaintegrada.com.br/materiais-educativos",
+                      "label": "Materiais Educativos",
+                      "text": "Estude e amplie o potencial de vendas do seu negócio com conteúdos gratuitos.",
+                      "openIn": "current tab"
+                    }
+                  ],
+                  "title": "Soluções para você"
+                },
+                {
+                  "links": [
+                    {
+                      "label": "Pagali",
+                      "text": "A solução completa de pagamentos pra vender online. Menores taxas e maior velocidade.",
+                      "url": "https://www.pagali.com.br/",
+                      "openIn": "new tab"
+                    },
+                    {
+                      "label": "Enviali",
+                      "text": "A solução de gestão de fretes que oferece economia e facilidade pra sua loja e seus clientes.",
+                      "url": "https://www.lojaintegrada.com.br/loja-aplicativos",
+                      "openIn": "current tab"
+                    },
+                    {
+                      "label": "Aplicativos",
+                      "text": "Instale aplicativos multiplataforma pra incrementar sua loja virtual.",
+                      "url": "https://www.lojaintegrada.com.br/loja-aplicativos",
+                      "openIn": "current tab"
+                    },
+                    {
+                      "url": "https://www.lojaintegrada.com.br/loja-temas",
+                      "label": "Temas",
+                      "text": "Deixe sua loja com uma aparência de dar inveja.",
+                      "openIn": "current tab"
+                    },
+                    {
+                      "url": "https://www.lojaintegrada.com.br/servicos",
+                      "label": "Soluções e Serviços",
+                      "text": "Descubra serviços prontos e customizados pra você."
+                    },
+                    {
+                      "label": "Parceiros de Destaque",
+                      "text": "Conheça empresas parceiras que te ajudam e a gente recomenda.",
+                      "url": "https://www.lojaintegrada.com.br/agencias-parceiras"
+                    }
+                  ],
+                  "title": "Incremente sua loja"
+                },
+                {
+                  "links": [],
+                  "title": "Planos",
+                  "titleLink": "https://www.lojaintegrada.com.br/planos"
+                }
+              ],
+              "textColor": "#ebeaea",
+              "textHoverColor": "",
+              "menusBackgroundColor": "#ffffff",
+              "titlesTextColor": "#00363A",
+              "titlesTextHoverColor": "",
+              "menusTextColor": "#371E56",
+              "menusItemsHoverBackgroundColor": "#E9F9F9",
+              "menusItemsHoverLineColor": "#2bc4c3",
+              "menusShadowColor": "rgba(71, 193, 196, .50)",
+              "titlesTextProps": {}
+            },
+            "asideMenuOnlyMobile": true,
+            "noScrollBackgroundColor": ""
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeaderV3.tsx",
+            "navigation": {
+              "links": [],
+              "buttons": [],
+              "mobileButtons": [],
+              "asideMenuButtons": [
+                {
+                  "text": "Fazer Login",
+                  "backgroundColor": "Transparent",
+                  "textColor": "#003037",
+                  "borderColor": "#003037",
+                  "size": "Small",
+                  "customEventLabel": "fazer-login",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "ctaStyle": "button",
+                  "outline": true
+                }
+              ],
+              "sideMenuButtons": [],
+              "linksBorderColor": "#D0DAD9",
+              "textHoverColor": "#D0DAD9",
+              "textColor": "#003037",
+              "mobileButtonsOnScrollColors": {
+                "textColor": "#ffffff",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55"
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172",
+                "backgroundColor": "#ffffff",
+                "textColor": "#003037",
+                "borderColor": "#ffffff",
+                "showIcon": false
+              },
+              "createStoreCtaMobile": {
+                "ctaStyle": "button",
+                "planId": "172",
+                "backgroundColor": "rgba(255, 255, 255, 0.60)",
+                "textColor": "#003037",
+                "borderColor": "Transparent",
+                "showIcon": false
+              },
+              "createStoreCtaMobileOnScrollColors": {
+                "backgroundColor": "rgba(255, 255, 255, 0.60)",
+                "borderColor": "Transparent",
+                "textColor": "#003037"
+              },
+              "asideCreateStoreCta": {
+                "planId": "172",
+                "text": "Abrir loja grátis",
+                "ctaStyle": "button",
+                "backgroundColor": "#003037",
+                "borderColor": "#003037",
+                "textColor": "#ffffff",
+                "showIcon": false
+              },
+              "buttonsHeight": "32px",
+              "linksTextProps": {}
+            },
+            "logo": {
+              "src": {
+                "__resolveType": "website/flags/multivariate/image.ts",
+                "variants": [
+                  {
+                    "value": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg",
+                    "rule": {
+                      "__resolveType": "website/matchers/always.ts"
+                    }
+                  }
+                ]
+              },
+              "alt": "logo  ",
+              "width": 188,
+              "href": "/guia-pratico-BF",
+              "height": 28
+            },
+            "initialButtons": [],
+            "backgroundColor": "#212121",
+            "barsColor": "#003037",
+            "asideMenuTopBackgroundColor": "#D0DAD9",
+            "asideMenuBackgroundColor": "#ffffff",
+            "asideMenuCloseIconColor": "#003037",
+            "headerMessage": {
+              "show": false,
+              "text": "<p>teste</p>",
+              "textColor": "#22454B",
+              "backgroundColor": "#D0DAD9",
+              "cta": [],
+              "font": "Instrument Serif",
+              "textProps": {
+                "color": ""
+              }
+            },
+            "campaignTimer": {
+              "text": "<p>Time left for a campaign to end</p>",
+              "show": false,
+              "labelsColor": "",
+              "numbersColor": "",
+              "noScrollBackgroundColor": "",
+              "backgroundColor": "",
+              "textProps": {
+                "font": "Galaxie Copernicus",
+                "color": ""
+              }
+            },
+            "hideAsideMenu": true,
+            "dropdownMenus": {
+              "menus": [
+                {
+                  "links": [],
+                  "title": "Cenário 2025",
+                  "titleLink": "#"
+                },
+                {
+                  "links": [],
+                  "title": "Pontos de atenção",
+                  "titleLink": "#"
+                },
+                {
+                  "links": [],
+                  "title": "Pré Black Friday",
+                  "titleLink": "#"
+                },
+                {
+                  "links": [],
+                  "title": "Durante a Black Friday",
+                  "titleLink": "#"
+                },
+                {
+                  "links": [],
+                  "title": "Pós- Black Friday",
+                  "titleLink": "#"
+                },
+                {
+                  "links": [],
+                  "title": "Plano 30 dias",
+                  "titleLink": "#"
+                },
+                {
+                  "links": [],
+                  "title": "Conclusão",
+                  "titleLink": "#"
+                }
+              ],
+              "textColor": "#ebeaea",
+              "textHoverColor": "",
+              "menusBackgroundColor": "#ffffff",
+              "titlesTextColor": "#FBFAF9",
+              "titlesTextHoverColor": "#28C3C3",
+              "menusTextColor": "#371E56",
+              "menusItemsHoverBackgroundColor": "#E9F9F9",
+              "menusItemsHoverLineColor": "#2bc4c3",
+              "menusShadowColor": "rgba(71, 193, 196, .50)",
+              "titlesTextProps": {
+                "fontSize": "14px",
+                "letterSpacing": "-1px",
+                "fontWeight": "500"
+              }
+            },
+            "asideMenuOnlyMobile": true,
+            "noScrollBackgroundColor": ""
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/HeroV4.tsx",
+        "hubspotForm": {
+          "modal": {
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/75eb2b56-cbe4-4474-ab6d-7dfa59778fd3/black-friday-2025.png",
+                "width": 528,
+                "height": 464
+              },
+              "use": "image"
+            }
+          }
+        },
+        "tag": {
+          "text": "<p>Conteúdo exclusivo</p>",
+          "textProps": {
+            "color": "#00363A",
+            "fontFamily": "Inter"
+          },
+          "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);"
+        },
+        "title": {
+          "text": "<p>Guia Prático da<br><span style=\"color: #28c3c3\">Black Friday 2025</span></p>",
+          "color": "#FBFAF9",
+          "font": "Lektorat Display var",
+          "fontSize": "60px",
+          "fontWeight": "650",
+          "letterSpacing": "-1.2px",
+          "lineHeight": "100%",
+          "titleMaxWidth": "584px"
+        },
+        "text": "<p>Aprenda como preparar sua loja, evitar os erros mais comuns e aplicar estratégias inteligentes de vendas em múltiplos canais. Um guia direto, pensado para ajudar lojistas a começar hoje a preparação para uma Black Friday de sucesso.</p>",
+        "textProps": {
+          "color": "#FBFAF9",
+          "fontFamily": "Inter",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "lineHeight": "140%"
+        },
+        "container": {
+          "backgroundMedia": {
+            "image": {}
+          },
+          "paddingBottom": "60px",
+          "paddingTop": "120px"
+        },
+        "sectionBackground": {
+          "image": {
+            "src": "https://assets.decocache.com/lojaintegradar/eb29ea5d-536a-4851-a471-79b8a69b0166/hero-bf-bg.png",
+            "height": 649
+          },
+          "use": "image",
+          "customHeight": "649px"
+        },
+        "media": {
+          "use": "image",
+          "image": {
+            "src": "https://assets.decocache.com/lojaintegradar/75eb2b56-cbe4-4474-ab6d-7dfa59778fd3/black-friday-2025.png"
+          },
+          "cornerImage": false
+        }
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/FloatingButtons.tsx",
+            "buttons": [
+              {
+                "image": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
+                  "alt": "Whatsapp icon"
+                },
+                "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero+saber+mais+informações+sobre+a+Loja+Integrada...&type=phone_number&app_absent=0",
+                "size": 57
+              }
+            ],
+            "distanceFromRightEnd": 34,
+            "distanceFromBottom": 180,
+            "distanceBetweenButtons": 20
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/CarouselV2.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\">Plataforma com IA que<br>agiliza sua rotina.</p>",
+              "letterSpacing": "-0.3px",
+              "font": "Lektorat Display var",
+              "fontSize": "32px",
+              "fontWeight": "750",
+              "lineHeight": "100%",
+              "color": "#00363A"
+            },
+            "paddingBottom": "30px",
+            "paddingTop": "30px",
+            "caption": "<p style=\"text-align: center\">Tudo que você precisa, em um só lugar</p>",
+            "slides": [
+              {
+                "use": "image",
+                "title": {
+                  "text": "<p>Reengaje clientes<br>com campanhas automáticas</p>",
+                  "font": "Inter",
+                  "fontWeight": "750",
+                  "color": "#00363A",
+                  "fontSize": "22px",
+                  "lineHeight": "26px"
+                },
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/5b077fd3-a250-4725-940f-68403aacd3a9/img-reengaje-mobile.png"
+                },
+                "caption": "<p><span style=\"color: #5f6e82\">Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via Chat e WhatsApp.</span></p>",
+                "icon": {
+                  "placement": "Top left"
+                },
+                "cta": [],
+                "captionTextProps": {}
+              },
+              {
+                "use": "image",
+                "title": {
+                  "text": "<p>Anuncie produtos em<br>diferentes canais</p>",
+                  "font": "Inter",
+                  "fontWeight": "750",
+                  "color": "#00363A",
+                  "fontSize": "22px",
+                  "lineHeight": "26px"
+                },
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/47258e4c-ca39-4f7b-8921-619b6b22bda6/divulgue-em-diferentes-canais-mobile.png"
+                },
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Faturamento fácil e nas alturas: Cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
+                "icon": {
+                  "placement": "Top left"
+                },
+                "cta": [],
+                "captionTextProps": {}
+              },
+              {
+                "use": "image",
+                "title": {
+                  "text": "<p>Frete e pagamento<br>descomplicados</p>",
+                  "font": "Inter",
+                  "fontWeight": "750",
+                  "color": "#00363A",
+                  "fontSize": "22px",
+                  "lineHeight": "26px"
+                },
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/1ec0ce15-e052-4efd-9e4c-d908bc86a710/anuncie-diferentes-canais.png"
+                },
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
+                "icon": {
+                  "placement": "Top left"
+                },
+                "cta": [],
+                "captionTextProps": {}
+              },
+              {
+                "use": "image",
+                "title": {
+                  "text": "<p>Checkout rápido<br>e aprimorado</p>",
+                  "font": "Inter",
+                  "fontWeight": "750",
+                  "color": "#00363A",
+                  "fontSize": "22px",
+                  "lineHeight": "26px"
+                },
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/66517d71-6a14-42f4-a769-e01b5573b3bf/CHECKOUT.png"
+                },
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
+                "icon": {
+                  "placement": "Top left"
+                },
+                "cta": [],
+                "captionTextProps": {}
+              }
+            ],
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Medium",
+                "openModal": "Create Store",
+                "text": "Crie sua loja grátis",
+                "textColor": "#ffffff",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "createStorePlanId": "172"
+              }
+            ],
+            "captionTextProps": {
+              "color": "#5F6E82",
+              "fontSize": "16px",
+              "fontFamily": "Inter",
+              "lineHeight": "125%",
+              "fontWeight": "500"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroWithTimeV2.tsx",
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "title": {
+              "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
+              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
+              "text": "<p style=\"text-align: center\">Já vende em outra plataforma?</p>",
+              "font": "Lektorat Display var",
+              "lineHeight": "100%",
+              "fontSize": "32px",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "750",
+              "color": "#00363A"
+            },
+            "subTitle": {
+              "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
+              "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
+            },
+            "tabs": [
+              {
+                "icon": {
+                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Crescimento inteligente</p>",
+                  "color": "#00363A",
+                  "font": "inter",
+                  "fontSize": "18px",
+                  "fontWeight": "750"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</p>",
+                  "color": "#5F6E82",
+                  "font": "inter",
+                  "fontSize": "14px"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png"
+                },
+                "videoOn": false,
+                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4",
+                  "video": "https://data.decoassets.com/lojaintegradar/5d29881f-b20a-4a8a-a72e-02a12868eaaf/crescimento-inteligente(1mb).mp4"
+                },
+                "useTab": "video"
+              },
+              {
+                "icon": {
+                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p><span>Liberdade para personalizar</span></p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontWeight": "750",
+                  "fontSize": "18px"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Adicione banners, faixas e páginas para atrair e converter clientes com facilidade.</p>",
+                  "color": "#5F6E82",
+                  "font": "inter",
+                  "fontSize": "14px"
+                },
+                "tabImage": {
+                  "image": "https://data.decoassets.com/lojaintegradar/eb5d1729-9b6c-4627-bf62-9274c3009101/liberdade-para-personalizar.png"
+                },
+                "videoOn": false,
+                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "width": 664,
+                  "height": 520,
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p><span>Usabilidade simplificada</span></p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontWeight": "750",
+                  "fontSize": "18px"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>A melhor usabilidade para navegar e controlar seu e-commerce de forma simples e prática.</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/f6c8ca54-a8bb-4583-82e8-5902914ee39b/usabilidade--IA.png"
+                },
+                "videoOn": false,
+                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "width": 664,
+                  "height": 520,
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              }
+            ],
+            "background": {
+              "type": "gradient",
+              "gradient": {
+                "type": "linear",
+                "angle": 180,
+                "stops": [
+                  {
+                    "color": "#005F5F",
+                    "position": 2.19
+                  },
+                  {
+                    "color": "#003037",
+                    "position": 56.08
+                  }
+                ]
+              }
+            },
+            "finalButtons": [
+              {
+                "type": "createStoreForm",
+                "text": "Criar minha loja",
+                "planId": "172"
+              },
+              {
+                "type": "link",
+                "changeType": true,
+                "link": "#plans",
+                "text": "Ver planos"
+              }
+            ],
+            "bottomSection": {
+              "__resolveType": "site/sections/BlankSection.tsx"
+            },
+            "tabsInterval": 30,
+            "backgroundColor": "",
+            "caption": {
+              "text": "<p style=\"text-align: center\">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma segura,estável<br>e descomplicada</p>",
+              "fontSize": "16px",
+              "color": "#5F6E82",
+              "font": "Inter",
+              "lineHeight": "125%",
+              "fontWeight": "500"
+            },
+            "progressBarColor": "#030C0B ",
+            "progressBarBackgroundColor": "#A9CBD1",
+            "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
+            "cta": []
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroWithTimeV2.tsx",
+            "title": {
+              "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
+              "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
+              "text": "<p style=\"text-align: center\">2. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
+              "font": "Lektorat Display var",
+              "lineHeight": "100%",
+              "fontSize": "50px",
+              "letterSpacing": "-1px",
+              "fontWeight": "650",
+              "color": "#00363A"
+            },
+            "subTitle": {
+              "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
+              "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
+            },
+            "tabs": [
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Fique atento às mudanças</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio <br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado <br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
+                  "width": 664,
+                  "height": 520
+                },
+                "videoOn": false,
+                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "width": 664,
+                  "height": 520,
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4",
+                  "video": "https://data.decoassets.com/lojaintegradar/5d29881f-b20a-4a8a-a72e-02a12868eaaf/crescimento-inteligente(1mb).mp4"
+                },
+                "useTab": "video"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Organize sua operação</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio <br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado <br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
+                  "width": 664,
+                  "height": 520
+                },
+                "videoOn": false,
+                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "width": 664,
+                  "height": 520,
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4",
+                  "video": "https://data.decoassets.com/lojaintegradar/5d29881f-b20a-4a8a-a72e-02a12868eaaf/crescimento-inteligente(1mb).mp4"
+                },
+                "useTab": "video"
+              }
+            ],
+            "background": {
+              "type": "gradient",
+              "gradient": {
+                "type": "linear",
+                "angle": 180,
+                "stops": [
+                  {
+                    "color": "#005F5F",
+                    "position": 2.19
+                  },
+                  {
+                    "color": "#003037",
+                    "position": 56.08
+                  }
+                ]
+              }
+            },
+            "finalButtons": [
+              {
+                "type": "createStoreForm",
+                "text": "Criar minha loja",
+                "planId": "172"
+              },
+              {
+                "type": "link",
+                "changeType": true,
+                "link": "#plans",
+                "text": "Ver planos"
+              }
+            ],
+            "bottomSection": {
+              "__resolveType": "site/sections/BlankSection.tsx"
+            },
+            "tabsInterval": 30,
+            "backgroundColor": "",
+            "paddingTop": "0px",
+            "paddingBottom": "0",
+            "caption": {
+              "text": "<p style=\"text-align: center\">Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday.<br>Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
+              "fontSize": "16px",
+              "color": "#5F6E82",
+              "font": "inter ",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "progressBarColor": "#030C0B ",
+            "progressBarBackgroundColor": "#A9CBD1",
+            "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
+            "cta": []
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/FooterV3.tsx",
+            "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 32pt\">resultados que surpreendem.</span></em></p>",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/e1e18a14-b5a2-4e26-a84c-9a492ae0552a/bgfooterpng.png",
+              "height": 400
+            },
+            "id": "ecossistemaconteudo",
+            "paddingTop": "0",
+            "titleFont": "Instrument serif",
+            "color1": "#371E55",
+            "color2": "#FFFFFF",
+            "cards": [
+              {
+                "cardIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/1256a1f9-0bf0-45f8-afe2-9ce0eb6995dd/blog-1.svg"
+                },
+                "title": "Hub de conteúdo",
+                "text": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
+                "CTA": {
+                  "text": "Conhecer",
+                  "href": "https://lojaintegrada.com.br/hub/",
+                  "showIcon": true,
+                  "textColor": "#00363A",
+                  "type": "Only text",
+                  "size": "Medium"
+                },
+                "titleColor": "#00363A",
+                "textColor": "#5F6E82",
+                "textProps": {},
+                "titleTextProps": {}
+              },
+              {
+                "cardIcon": {
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/0843a60b-8d25-4bff-a3da-edd43c4b565d/youtube-green-icon.svg",
+                  "alt": "youtube green icon"
+                },
+                "title": "Canal no Youtube",
+                "text": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
+                "CTA": {
+                  "text": "Conhecer",
+                  "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual",
+                  "textColor": "#00363A",
+                  "size": "Medium",
+                  "type": "Only text",
+                  "showIcon": true
+                },
+                "titleColor": "#00363A",
+                "backgroundColor": "",
+                "textColor": "#5F6E82"
+              }
+            ],
+            "color3": "#EBEBEB",
+            "logo": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/f185cc41-8ef1-4510-b559-3190bcb44215/footer-logo.svg"
+            },
+            "showForm": false,
+            "emailForm": {
+              "inputName": "email",
+              "inputLabel": "Junte-se a mais de  2,7 milhões de lojistas",
+              "inputPlaceHolder": "Digite seu email aqui",
+              "submitText": "Fazer parte"
+            },
+            "socialLinks": [
+              {
+                "icon": {
+                  "src": "https://assets.decocache.com/lojaintegradar/f239d2bb-7a10-450d-a54e-2ba04fc663ca/linkedin-light-blue.svg",
+                  "alt": "linkein icon"
+                },
+                "href": "https://www.linkedin.com/company/lojaintegrada/"
+              },
+              {
+                "icon": {
+                  "src": "https://assets.decocache.com/lojaintegradar/0076ec04-11df-4e04-939c-2cdc3610becc/instagram-light-blue.svg",
+                  "alt": "instgram icon"
+                },
+                "href": "https://www.instagram.com/lojaintegrada/"
+              },
+              {
+                "icon": {
+                  "src": "https://assets.decocache.com/lojaintegradar/5df9b079-577c-47a2-a1e0-b58babc76038/tiktok-light-blue.svg",
+                  "alt": "tiktok icon"
+                },
+                "href": "https://www.tiktok.com/@lojaintegrada"
+              }
+            ],
+            "color4": "#d4d4d4",
+            "bottomLinks": [
+              {
+                "href": "https://comunidade.lojaintegrada.com.br/",
+                "text": "Conheça nossa comunidade"
+              },
+              {
+                "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
+                "text": "Central de ajuda"
+              },
+              {
+                "text": "Fale com especialista",
+                "href": "/talkToSpecialist"
+              },
+              {
+                "href": "https://lojaintegrada.com.br/termos-de-uso",
+                "text": "Termos de uso"
+              },
+              {
+                "href": "https://lojaintegrada.com.br/privacidade",
+                "text": "Privacidade"
+              },
+              {
+                "href": "https://app.lojaintegrada.com.br/public/assinar",
+                "text": "Comece pelo grátis"
+              }
+            ],
+            "bottomBackground": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/ec8e7fff-98d8-4b42-b3a4-9a36cecefdfc/footer-bottom-background.png"
+            },
+            "useBackground": "image",
+            "backgroundHeight": "400px",
+            "showLogo": true,
+            "logoPosition": "above",
+            "cardsTextColor": "#00363A",
+            "centralizeBottomLinks": true,
+            "bottomLinksColor": "#5F6E82"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/TalkToSpecialistModal.tsx"
+    },
+    {
+      "__resolveType": "site/sections/BackToTopButton.tsx",
+      "text": "Voltar ao topo",
+      "textColor": "#FAFAF5",
+      "backgroundColor": "#212121",
+      "appearAt": 1500,
+      "position": {
+        "distanceFromScreenBottom": 110,
+        "distanceFromScreenRightEnd": 20
+      },
+      "size": 60
+    },
+    {
+      "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "backgroundColor": "#00363A",
+            "logo": {
+              "width": 195,
+              "height": 36
+            },
+            "text": "<p style=\"text-align: center\">Crie seu site na plataforma que otimiza seu tempo</p>",
+            "textProps": {
+              "color": "#FFFFFF",
+              "fontFamily": "Inter",
+              "fontSize": "13px",
+              "lineHeight": "100%",
+              "fontWeight": "500"
+            },
+            "cta": [
+              {
+                "size": "Large",
+                "text": "Criar loja grátis",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#28C3C3",
+                "borderColor": "#28C3C3",
+                "customWidth": "280px",
+                "customProps": {
+                  "padding": "22px 14px",
+                  "letterSpacing": "-1px",
+                  "borderRadius": "10px",
+                  "height": "50px",
+                  "width": "100%"
+                },
+                "showIcon": false,
+                "singleLine": true,
+                "customIcon": {
+                  "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
+                  "width": 7
+                },
+                "iconGap": "2px",
+                "type": "Button",
+                "openModal": "Create Store",
+                "createStorePlanId": "172"
+              }
+            ],
+            "rightBackgroundImage": {},
+            "leftBackgroundImage": {},
+            "hideXButton": true,
+            "centerContent": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);",
+            "logo": {},
+            "text": "<p><span>Participe da Live 22/10: Estratégias inteligentes para vender mais em 2025 com especialista Thiago Franco</span></p>",
+            "textProps": {
+              "color": "#FFFFFF",
+              "letterSpacing": "-0.75px",
+              "fontSize": "16px",
+              "fontFamily": "Inter"
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "text": "Garantir minha vaga",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "customWidth": "280px",
+                "customProps": {
+                  "padding": "22px 32px",
+                  "letterSpacing": "-1px",
+                  "borderRadius": "10px",
+                  "height": "50px"
+                },
+                "showIcon": false,
+                "singleLine": true,
+                "customIcon": {
+                  "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
+                  "width": 7
+                },
+                "iconGap": "2px",
+                "openModal": "Customer Advisory Board Modal"
+              }
+            ],
+            "rightBackgroundImage": {},
+            "centerContent": true,
+            "xButtonColor": "#ffffff",
+            "height": "90px",
+            "hideXButton": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    }
+  ]
+}

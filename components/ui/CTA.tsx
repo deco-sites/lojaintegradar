@@ -32,7 +32,7 @@ export interface Props {
   borderColor?: string;
   type?: 'Button' | 'Only text';
   size?: 'Large' | 'Medium' | 'Small';
-  openModal?: 'Komea wait list' | 'Talk to specialist' | 'Create Store' | 'Customer Advisory Board Modal';
+  openModal?: 'Komea wait list' | 'Talk to specialist' | 'Create Store' | 'Customer Advisory Board Modal' | 'Black Friday Hubspot Form';
   createStorePlanId?: string;
   showIcon?: boolean;
   customIcon?: IImage;
@@ -126,6 +126,13 @@ const openModalFunction = (modal: string, planId: string, customEvent: string, c
     const komeaWaitListModal = document.getElementById("waitlist-form") as HTMLElement;
     const nameInput = komeaWaitListModal.querySelector('input[name="name"]') as HTMLInputElement;
     nameInput.focus();
+  } else if (modal == 'Black Friday Hubspot Form') {
+    const form = document.getElementById("blackFridayHubspotForm") as HTMLElement;
+    form.classList.remove("hidden");
+
+    const input = form.querySelector('input') as HTMLInputElement;
+    input.focus();
+    
   }
 
 

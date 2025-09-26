@@ -287,7 +287,7 @@ export default function BlackFridayHubspotForm({title, titleTextProps, text, tex
     const labelClass = "mb-2 text-transparent group-focus-within:text-[#28C3C3] transition-colors text-xs";
     const inputClass = "rounded-lg outline-none border py-2 px-4 text-[#5F6E82] placeholder:text-[#CBCBC1] border-[#5F6E82] focus:border-[#28C3C3] w-full mb-1.5";
     const selectOptionClass = "px-2.5 py-2 hover:bg-[#00B7B5] hover:text-white cursor-pointer";
-    return <div id="blackFridayHubspotForm" class="fixed z-[60] top-0 left-0 w-screen max-h-screen h-screen bg-black bg-opacity-50 flex justify-center items-center">
+    return <div id="blackFridayHubspotForm" class="fixed z-[60] top-0 left-0 w-screen max-h-screen h-screen bg-black bg-opacity-50 flex justify-center items-center hidden">
     <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad) }}/>
     <form class="max-w-[582px] w-full h-fit p-5 lg:px-20 flex flex-col justify-center bg-white max-h-screen overflow-auto rounded-[20px] animate-pop-up relative" style={{ animationDuration: "0.3s" }}>
 
@@ -303,7 +303,6 @@ export default function BlackFridayHubspotForm({title, titleTextProps, text, tex
 
         <div class="text-center text-[#5F6E82] text-sm leading-none mb-5" style={{...textProps}} dangerouslySetInnerHTML={{__html: text || ""}}/>
         
-      
         <label class="group nameField">
           <p class={labelClass}>Nome</p>
           <input type="text" name="name" placeholder="Nome" class={inputClass} hx-on:keyup={useScript(onKeyUp)}/>
@@ -370,10 +369,8 @@ export default function BlackFridayHubspotForm({title, titleTextProps, text, tex
           </div>
           <p class="error text-[#F57E77] text-xs hidden mt-1.5"/>
         </label> */}
-        
       </div>
 
-      
       <div class="page2 flex flex-col items-center hidden">
         <div class="font-bold text-[32px] text-[#00363A]  px-5 py-0 mb-6" style={{...successPage?.titleTextProps}} dangerouslySetInnerHTML={{__html: successPage?.title || ""}}/>
         <div class=" text-[#5F6E82] text-base font-normal mb-5 text-center leading-tight" style={{...successPage?.textProps}} dangerouslySetInnerHTML={{__html: successPage?.text || ""}}/>

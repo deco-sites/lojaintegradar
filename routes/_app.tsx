@@ -3,7 +3,6 @@ import { defineApp } from "$fresh/server.ts";
 import TalkModal from "site/components/ui/TalkModal.tsx";
 import Theme from "../sections/Theme/Theme.tsx";
 import { Context } from "@deco/deco";
-import CreateStoreModal from "site/islands/CreateStoreModal.tsx";
 import TimeModal from "site/components/ui/TimeModal.tsx";
 import SecondTimeModal from "site/components/ui/SecondTimeModal.tsx";
 export default defineApp(async (_req, ctx) => {
@@ -46,7 +45,6 @@ export default defineApp(async (_req, ctx) => {
     {/* Rest of Preact tree */}
     <ctx.Component />
     <TalkModal />
-    <CreateStoreModal />
     <TimeModal />
     <SecondTimeModal />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -72,5 +70,14 @@ export default defineApp(async (_req, ctx) => {
           }
         }, true);`}}>
     </script>
+    <script dangerouslySetInnerHTML={{__html: `
+      document.addEventListener("DOMContentLoaded", function () {
+      const script = document.createElement("script");
+      script.src = "https://accounts.google.com/gsi/client";
+      script.async = true;
+      script.defer = true;
+
+      document.head.appendChild(script);
+    });`}}/>
   </>);
 });

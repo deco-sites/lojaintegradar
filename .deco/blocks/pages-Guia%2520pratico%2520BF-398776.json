@@ -13,38 +13,15 @@
           "value": {
             "__resolveType": "site/sections/HeaderV3.tsx",
             "navigation": {
-              "links": [],
-              "buttons": [
+              "links": [
                 {
-                  "text": "Fazer login",
-                  "backgroundColor": "transparent",
-                  "textColor": "#00363A",
-                  "borderColor": "#00363A",
-                  "size": "Small",
-                  "type": "Button",
-                  "customEvent": "header",
-                  "customEventCategory": "loja-integrada:institucional",
-                  "customEventLabel": "fazer-login",
-                  "ctaStyle": "button",
-                  "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "outline": true,
-                  "singleLine": true
+                  "label": "Cenário 2025",
+                  "url": "$"
                 }
               ],
+              "buttons": [],
               "mobileButtons": [],
-              "asideMenuButtons": [
-                {
-                  "text": "Fazer Login",
-                  "backgroundColor": "Transparent",
-                  "textColor": "#003037",
-                  "borderColor": "#003037",
-                  "size": "Small",
-                  "customEventLabel": "fazer-login",
-                  "href": "https://app.lojaintegrada.com.br/painel/login",
-                  "ctaStyle": "button",
-                  "outline": true
-                }
-              ],
+              "asideMenuButtons": [],
               "sideMenuButtons": [],
               "linksBorderColor": "#D0DAD9",
               "textHoverColor": "#D0DAD9",
@@ -92,7 +69,7 @@
                 "__resolveType": "website/flags/multivariate/image.ts",
                 "variants": [
                   {
-                    "value": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                    "value": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg",
                     "rule": {
                       "__resolveType": "website/matchers/always.ts"
                     }
@@ -100,12 +77,13 @@
                 ]
               },
               "alt": "logo  ",
-              "width": 150,
-              "href": "/homev2"
+              "width": 188,
+              "href": "/guia-pratico-BF",
+              "height": 28
             },
             "initialButtons": [],
-            "backgroundColor": "#E4F3F3",
-            "barsColor": "#003037",
+            "backgroundColor": "#212121",
+            "barsColor": "#ffffff",
             "asideMenuTopBackgroundColor": "#D0DAD9",
             "asideMenuBackgroundColor": "#ffffff",
             "asideMenuCloseIconColor": "#003037",
@@ -132,105 +110,62 @@
                 "color": ""
               }
             },
-            "hideAsideMenu": true,
+            "hideAsideMenu": false,
             "dropdownMenus": {
               "menus": [
                 {
-                  "links": [
-                    {
-                      "label": "Dropshipping",
-                      "url": "https://www.lojaintegrada.com.br/dropi",
-                      "text": "Integre sua loja com fornecedores do Aliexpress e venda sem estoque.",
-                      "openIn": "current tab"
-                    },
-                    {
-                      "text": "Conheça as funcionalidades pra você ter e cuidar da sua própria loja virtual.",
-                      "label": "Recursos",
-                      "url": "https://www.lojaintegrada.com.br/recursos",
-                      "openIn": "current tab"
-                    },
-                    {
-                      "url": "https://www.lojaintegrada.com.br/cases",
-                      "label": "Casos de Sucesso",
-                      "text": "Descubra lojistas tipo você que tão mandando bem com a ferramenta.",
-                      "openIn": "current tab"
-                    },
-                    {
-                      "url": "https://www.lojaintegrada.com.br/migracao",
-                      "label": "Migre sua loja",
-                      "text": "Vem pra a plataforma que te oferece o melhor custo benefício.",
-                      "openIn": "current tab"
-                    },
-                    {
-                      "url": "https://lojaintegrada.com.br/hub/",
-                      "label": "Blog",
-                      "text": "Aprenda tudo que é coisa de ecommerce e marketing digital.",
-                      "openIn": "new tab"
-                    },
-                    {
-                      "url": "https://www.lojaintegrada.com.br/materiais-educativos",
-                      "label": "Materiais Educativos",
-                      "text": "Estude e amplie o potencial de vendas do seu negócio com conteúdos gratuitos.",
-                      "openIn": "current tab"
-                    }
-                  ],
-                  "title": "Soluções para você"
-                },
-                {
-                  "links": [
-                    {
-                      "label": "Pagali",
-                      "text": "A solução completa de pagamentos pra vender online. Menores taxas e maior velocidade.",
-                      "url": "https://www.pagali.com.br/",
-                      "openIn": "new tab"
-                    },
-                    {
-                      "label": "Enviali",
-                      "text": "A solução de gestão de fretes que oferece economia e facilidade pra sua loja e seus clientes.",
-                      "url": "https://www.lojaintegrada.com.br/loja-aplicativos",
-                      "openIn": "current tab"
-                    },
-                    {
-                      "label": "Aplicativos",
-                      "text": "Instale aplicativos multiplataforma pra incrementar sua loja virtual.",
-                      "url": "https://www.lojaintegrada.com.br/loja-aplicativos",
-                      "openIn": "current tab"
-                    },
-                    {
-                      "url": "https://www.lojaintegrada.com.br/loja-temas",
-                      "label": "Temas",
-                      "text": "Deixe sua loja com uma aparência de dar inveja.",
-                      "openIn": "current tab"
-                    },
-                    {
-                      "url": "https://www.lojaintegrada.com.br/servicos",
-                      "label": "Soluções e Serviços",
-                      "text": "Descubra serviços prontos e customizados pra você."
-                    },
-                    {
-                      "label": "Parceiros de Destaque",
-                      "text": "Conheça empresas parceiras que te ajudam e a gente recomenda.",
-                      "url": "https://www.lojaintegrada.com.br/agencias-parceiras"
-                    }
-                  ],
-                  "title": "Incremente sua loja"
+                  "links": [],
+                  "title": "Cenário 2025",
+                  "titleLink": "#"
                 },
                 {
                   "links": [],
-                  "title": "Planos",
-                  "titleLink": "https://www.lojaintegrada.com.br/planos"
+                  "title": "Pontos de atenção",
+                  "titleLink": "#"
+                },
+                {
+                  "links": [],
+                  "title": "Pré Black Friday",
+                  "titleLink": "#"
+                },
+                {
+                  "links": [],
+                  "title": "Durante a Black Friday",
+                  "titleLink": "#"
+                },
+                {
+                  "links": [],
+                  "title": "Pós- Black Friday",
+                  "titleLink": "#"
+                },
+                {
+                  "links": [],
+                  "title": "Plano 30 dias",
+                  "titleLink": "#"
+                },
+                {
+                  "links": [],
+                  "title": "Conclusão",
+                  "titleLink": "#"
+                },
+                {
+                  "links": []
                 }
               ],
               "textColor": "#ebeaea",
               "textHoverColor": "",
               "menusBackgroundColor": "#ffffff",
-              "titlesTextColor": "#00363A",
-              "titlesTextHoverColor": "",
+              "titlesTextColor": "#FBFAF9",
+              "titlesTextHoverColor": "#28C3C3",
               "menusTextColor": "#371E56",
               "menusItemsHoverBackgroundColor": "#E9F9F9",
               "menusItemsHoverLineColor": "#2bc4c3",
               "menusShadowColor": "rgba(71, 193, 196, .50)",
-              "titlesTextProps": {}
+              "titlesTextProps": {
+                "fontSize": "14px",
+                "letterSpacing": "-1px",
+                "fontWeight": "500"
+              }
             },
             "asideMenuOnlyMobile": true,
             "noScrollBackgroundColor": ""
@@ -414,221 +349,308 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/HeroV4.tsx",
-        "hubspotForm": {
-          "modal": {
-            "media": {
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/75eb2b56-cbe4-4474-ab6d-7dfa59778fd3/black-friday-2025.png",
-                "width": 528,
-                "height": 464
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/HeroV4.tsx",
+              "hubspotForm": {
+                "modal": {
+                  "media": {
+                    "image": {
+                      "src": "https://assets.decocache.com/lojaintegradar/75eb2b56-cbe4-4474-ab6d-7dfa59778fd3/black-friday-2025.png",
+                      "width": 528,
+                      "height": 464
+                    },
+                    "use": "image"
+                  }
+                }
               },
-              "use": "image"
+              "tag": {
+                "text": "<p>Conteúdo exclusivo</p>",
+                "textProps": {
+                  "color": "#00363A",
+                  "fontFamily": "Inter"
+                },
+                "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);"
+              },
+              "title": {
+                "text": "<p>Guia Prático da<br><span style=\"color: #28c3c3\">Black Friday 2025</span></p>",
+                "color": "#FBFAF9",
+                "font": "Lektorat Display var",
+                "fontSize": "60px",
+                "fontWeight": "650",
+                "letterSpacing": "-1.2px",
+                "lineHeight": "100%",
+                "titleMaxWidth": "584px"
+              },
+              "text": "<p>Aprenda como preparar sua loja, evitar os erros mais comuns e aplicar estratégias inteligentes de vendas em múltiplos canais. Um guia direto, pensado para ajudar lojistas a começar hoje a preparação para uma Black Friday de sucesso.</p>",
+              "textProps": {
+                "color": "#FBFAF9",
+                "fontFamily": "Inter",
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "lineHeight": "140%"
+              },
+              "container": {
+                "backgroundMedia": {
+                  "image": {}
+                },
+                "paddingBottom": "0px",
+                "paddingTop": "120px"
+              },
+              "sectionBackground": {
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/eb29ea5d-536a-4851-a471-79b8a69b0166/hero-bf-bg.png",
+                  "height": 649
+                },
+                "use": "image",
+                "customHeight": "649px"
+              },
+              "media": {
+                "use": "image",
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/75eb2b56-cbe4-4474-ab6d-7dfa59778fd3/black-friday-2025.png",
+                  "width": 343,
+                  "height": 302
+                },
+                "cornerImage": false
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/HeroV4.tsx",
+              "hubspotForm": {
+                "modal": {
+                  "media": {
+                    "image": {
+                      "src": "https://assets.decocache.com/lojaintegradar/75eb2b56-cbe4-4474-ab6d-7dfa59778fd3/black-friday-2025.png",
+                      "width": 528,
+                      "height": 464
+                    },
+                    "use": "image"
+                  }
+                }
+              },
+              "tag": {
+                "text": "<p>Conteúdo exclusivo</p>",
+                "textProps": {
+                  "color": "#00363A",
+                  "fontFamily": "Inter"
+                },
+                "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);"
+              },
+              "title": {
+                "text": "<p>Guia Prático da<br><span style=\"color: #28c3c3\">Black Friday 2025</span></p>",
+                "color": "#FBFAF9",
+                "font": "Lektorat Display var",
+                "fontSize": "60px",
+                "fontWeight": "650",
+                "letterSpacing": "-1.2px",
+                "lineHeight": "100%",
+                "titleMaxWidth": "584px"
+              },
+              "text": "<p>Aprenda como preparar sua loja, evitar os erros mais comuns e aplicar estratégias inteligentes de vendas em múltiplos canais. Um guia direto, pensado para ajudar lojistas a começar hoje a preparação para uma Black Friday de sucesso.</p>",
+              "textProps": {
+                "color": "#FBFAF9",
+                "fontFamily": "Inter",
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "lineHeight": "140%"
+              },
+              "container": {
+                "backgroundMedia": {
+                  "image": {}
+                },
+                "paddingBottom": "0px",
+                "paddingTop": "120px"
+              },
+              "sectionBackground": {
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/eb29ea5d-536a-4851-a471-79b8a69b0166/hero-bf-bg.png",
+                  "height": 649
+                },
+                "use": "image",
+                "customHeight": "649px"
+              },
+              "media": {
+                "use": "image",
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/75eb2b56-cbe4-4474-ab6d-7dfa59778fd3/black-friday-2025.png"
+                },
+                "cornerImage": false
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
             }
           }
-        },
-        "tag": {
-          "text": "<p>Conteúdo exclusivo</p>",
-          "textProps": {
-            "color": "#00363A",
-            "fontFamily": "Inter"
-          },
-          "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);"
-        },
-        "title": {
-          "text": "<p>Guia Prático da<br><span style=\"color: #28c3c3\">Black Friday 2025</span></p>",
-          "color": "#FBFAF9",
-          "font": "Lektorat Display var",
-          "fontSize": "60px",
-          "fontWeight": "650",
-          "letterSpacing": "-1.2px",
-          "lineHeight": "100%",
-          "titleMaxWidth": "584px"
-        },
-        "text": "<p>Aprenda como preparar sua loja, evitar os erros mais comuns e aplicar estratégias inteligentes de vendas em múltiplos canais. Um guia direto, pensado para ajudar lojistas a começar hoje a preparação para uma Black Friday de sucesso.</p>",
-        "textProps": {
-          "color": "#FBFAF9",
-          "fontFamily": "Inter",
-          "fontSize": "16px",
-          "fontWeight": "500",
-          "lineHeight": "140%"
-        },
-        "container": {
-          "backgroundMedia": {
-            "image": {}
-          },
-          "paddingBottom": "60px",
-          "paddingTop": "120px"
-        },
-        "sectionBackground": {
-          "image": {
-            "src": "https://assets.decocache.com/lojaintegradar/eb29ea5d-536a-4851-a471-79b8a69b0166/hero-bf-bg.png",
-            "height": 649
-          },
-          "use": "image",
-          "customHeight": "649px"
-        },
-        "media": {
-          "use": "image",
-          "image": {
-            "src": "https://assets.decocache.com/lojaintegradar/75eb2b56-cbe4-4474-ab6d-7dfa59778fd3/black-friday-2025.png"
-          },
-          "cornerImage": false
-        }
+        ]
       }
     },
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/FloatingButtons.tsx",
-            "buttons": [
-              {
-                "image": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/88e2f71c-bb2c-44a3-b81a-0315728aa65f/whatsapp-4.svg",
-                  "alt": "Whatsapp icon"
-                },
-                "href": "https://api.whatsapp.com/send/?phone=%2B5511912354638&text=Quero+saber+mais+informações+sobre+a+Loja+Integrada...&type=phone_number&app_absent=0",
-                "size": 57
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/HeroV3.tsx",
+              "title": {
+                "text": "<p><span style=\"color: rgb(0, 54, 74)\">É hora de se preparar para</span> Black Friday</p>",
+                "color": "#28C3C3",
+                "font": "Lektorat Display var",
+                "fontWeight": "650",
+                "fontSize": "32px",
+                "letterSpacing": "-1px;",
+                "lineHeight": "100%"
+              },
+              "text": "<p><span style=\"color: rgb(95, 110, 130)\">A Black Friday se transformou no maior evento de vendas do Brasil e representa uma janela de oportunidade crucial para qualquer negócio online. Mas este ano traz um cenário diferente e mais desafiador. </span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">Você que é lojista da Loja Integrada, vendendo a todo vapor ou ainda iniciando sua jornada (ou tentando se manter ativo em vendas), este ebook é para ajudar a trazer clareza do que são oportunidades e riscos para atuar não somente em sua loja própria, como em múltiplos canais como nas redes sociais e marketplaces. O que não pode ficar de fora e até estratégias para durante e pós Black Friday. </span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">O consumidor de hoje não está mais concentrado apenas na sua loja própria. Ele pesquisa no Google, vê produtos no Instagram, compara preços nos marketplaces e só depois decide onde comprar. Por isso, sua estratégia não pode mais se limitar a um único canal. É fundamental pensar em como estar presente em múltiplos pontos de contato com o cliente.</span></p>",
+              "media": {
+                "image": {}
+              },
+              "textProps": {
+                "fontSize": "14px",
+                "fontFamily": "Inter",
+                "fontWeight": "400",
+                "lineHeight": "140%"
+              },
+              "container": {
+                "paddingTop": "0px",
+                "paddingLeft": "0px",
+                "paddingRight": "0px",
+                "paddingBottom": "0px"
               }
-            ],
-            "distanceFromRightEnd": 34,
-            "distanceFromBottom": 180,
-            "distanceBetweenButtons": 20
-          },
-          "rule": {
-            "__resolveType": "website/matchers/never.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/CarouselV2.tsx",
-            "title": {
-              "text": "<p style=\"text-align: center\">Plataforma com IA que<br>agiliza sua rotina.</p>",
-              "letterSpacing": "-0.3px",
-              "font": "Lektorat Display var",
-              "fontSize": "32px",
-              "fontWeight": "750",
-              "lineHeight": "100%",
-              "color": "#00363A"
             },
-            "paddingBottom": "30px",
-            "paddingTop": "30px",
-            "caption": "<p style=\"text-align: center\">Tudo que você precisa, em um só lugar</p>",
-            "slides": [
-              {
-                "use": "image",
-                "title": {
-                  "text": "<p>Reengaje clientes<br>com campanhas automáticas</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
-                },
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/5b077fd3-a250-4725-940f-68403aacd3a9/img-reengaje-mobile.png"
-                },
-                "caption": "<p><span style=\"color: #5f6e82\">Atendimento personalizado antes, durante e depois da migração. Tire dúvidas e resolva tudo rápido com nossos especialistas via Chat e WhatsApp.</span></p>",
-                "icon": {
-                  "placement": "Top left"
-                },
-                "cta": [],
-                "captionTextProps": {}
-              },
-              {
-                "use": "image",
-                "title": {
-                  "text": "<p>Anuncie produtos em<br>diferentes canais</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
-                },
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/47258e4c-ca39-4f7b-8921-619b6b22bda6/divulgue-em-diferentes-canais-mobile.png"
-                },
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Faturamento fácil e nas alturas: Cadastro de produtos com IA e otimização em SEO, além de link de carrinho compartilhável para vender em qualquer canal.</span></p>",
-                "icon": {
-                  "placement": "Top left"
-                },
-                "cta": [],
-                "captionTextProps": {}
-              },
-              {
-                "use": "image",
-                "title": {
-                  "text": "<p>Frete e pagamento<br>descomplicados</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
-                },
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/1ec0ce15-e052-4efd-9e4c-d908bc86a710/anuncie-diferentes-canais.png"
-                },
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Soluções exclusivas de pagamento e logística: com Pagali, tarifa zero nas vendas gerais pela plataforma; com Enviali, fretes até 70% mais baratos e negociação facilitada com Correios e transportadoras.</span></p>",
-                "icon": {
-                  "placement": "Top left"
-                },
-                "cta": [],
-                "captionTextProps": {}
-              },
-              {
-                "use": "image",
-                "title": {
-                  "text": "<p>Checkout rápido<br>e aprimorado</p>",
-                  "font": "Inter",
-                  "fontWeight": "750",
-                  "color": "#00363A",
-                  "fontSize": "22px",
-                  "lineHeight": "26px"
-                },
-                "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/66517d71-6a14-42f4-a769-e01b5573b3bf/CHECKOUT.png"
-                },
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Checkout intuitivo e sem senha, baseado no SmartCheckout da VTEX, com tempo médio de fechamento de compra de apenas 1 minuto.</span></p>",
-                "icon": {
-                  "placement": "Top left"
-                },
-                "cta": [],
-                "captionTextProps": {}
-              }
-            ],
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Medium",
-                "openModal": "Create Store",
-                "text": "Crie sua loja grátis",
-                "textColor": "#ffffff",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "createStorePlanId": "172"
-              }
-            ],
-            "captionTextProps": {
-              "color": "#5F6E82",
-              "fontSize": "16px",
-              "fontFamily": "Inter",
-              "lineHeight": "125%",
-              "fontWeight": "500"
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
             }
           },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
+          {
+            "value": {
+              "__resolveType": "site/sections/HeroV3.tsx",
+              "title": {
+                "text": "<p style=\"text-align: center\"><br><span style=\"color: rgb(0, 54, 74)\">É hora de se preparar</span><br><span style=\"color: rgb(0, 54, 74)\">para</span> Black Friday</p>",
+                "color": "#28C3C3",
+                "font": "Lektorat Display var",
+                "fontWeight": "650",
+                "fontSize": "50px",
+                "letterSpacing": "-1px;",
+                "lineHeight": "100%"
+              },
+              "text": "<p><span style=\"color: rgb(95, 110, 130)\">A Black Friday se transformou no maior evento de vendas do Brasil e representa uma janela de oportunidade crucial para qualquer negócio online. Mas este ano traz um cenário diferente e mais desafiador. </span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">Você que é lojista da Loja Integrada, vendendo a todo vapor ou ainda iniciando sua jornada (ou tentando se manter ativo em vendas), este ebook é para ajudar a trazer clareza do que são oportunidades e riscos para atuar não somente em sua loja própria, como em múltiplos canais como nas redes sociais e marketplaces. O que não pode ficar de fora e até estratégias para durante e pós Black Friday. </span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">O consumidor de hoje não está mais concentrado apenas na sua loja própria. Ele pesquisa no Google, vê produtos no Instagram, compara preços nos marketplaces e só depois decide onde comprar. Por isso, sua estratégia não pode mais se limitar a um único canal. É fundamental pensar em como estar presente em múltiplos pontos de contato com o cliente.</span></p>",
+              "media": {
+                "image": {}
+              },
+              "textProps": {
+                "fontSize": "14px",
+                "fontFamily": "Inter",
+                "fontWeight": "400",
+                "lineHeight": "140%"
+              },
+              "container": {
+                "paddingTop": "0px",
+                "paddingLeft": "200px",
+                "paddingRight": "200px"
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
           }
-        }
-      ]
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/HeroV3.tsx",
+              "title": {
+                "text": "<p>1. O cenário de 2025:<br><span style=\"color: #00364a\">Hora de voltar ao básico</span></p>",
+                "color": "#28C3C3",
+                "font": "Lektorat Display var",
+                "fontWeight": "650",
+                "fontSize": "32px",
+                "letterSpacing": "-1px;",
+                "lineHeight": "100%",
+                "titleMaxWidth": "680px"
+              },
+              "text": "<p><span style=\"color: #5f6e82\">Apesar das projeções otimistas para a Black Friday 2025, com expectativa de faturamento recorde de R$ 13,6 bilhões (alta de 16,5% sobre 2024), o cenário econômico geral apresenta desafios. O FMI (Fundo Monetário Internacional, organização que monitora a economia mundial) reduziu as projeções de crescimento do Brasil para 2,0% em 2025, e o Ministério da Fazenda revisou para baixo o crescimento do PIB (Produto Interno Bruto, que mede toda a riqueza produzida no país), de 2,5% para 2,3%. </span><br><br></p><p><span style=\"color: #5f6e82\">Para colocar em perspectiva: o Brasil cresceu 2,9% em 2023 e 3,4% em 2024 (o maior crescimento desde 2021). Agora, as projeções para 2025 ficam entre 2,0% e 2,3%, ou seja, um crescimento menor que os anos anteriores. </span><br><br></p><p><span style=\"color: #5f6e82\">Isso significa um consumidor mais seletivo e consciente. Em um cenário onde o crescimento econômico desacelera, nesta Black Friday é hora de voltar ao básico: garantir que seus produtos vendedores estão bem precificados, que você está movimentando aqueles parados em estoque, que você não está queimando fichas demais em mídia, e que você está, principalmente, usando dessa janela para manter sua base de clientes atual engajada. </span><br><br></p><p><span style=\"color: #5f6e82\">O cenário atual exige inteligência estratégica, não apenas desconto agressivo. Quem planeja com antecedência e organiza estoque, preços, comunicação e operação está pronto para crescer mesmo em um ambiente mais competitivo.</span></p><p></p>",
+              "media": {
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/e9e6bea8-9817-4a08-83f9-0cf710be7384/planejamento-black-friday-2025-2.png",
+                  "width": 539,
+                  "height": 569
+                },
+                "use": "image"
+              },
+              "textProps": {
+                "fontSize": "14px",
+                "fontFamily": "Inter",
+                "fontWeight": "400",
+                "lineHeight": "140%"
+              },
+              "container": {
+                "paddingTop": "0px",
+                "paddingLeft": "0px",
+                "paddingRight": "0px"
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/HeroV3.tsx",
+              "title": {
+                "text": "<p>1. O cenário de 2025:<br><span style=\"color: #00364a\">Hora de voltar ao básico</span></p>",
+                "color": "#28C3C3",
+                "font": "Lektorat Display var",
+                "fontWeight": "650",
+                "fontSize": "50px",
+                "letterSpacing": "-1px;",
+                "lineHeight": "100%",
+                "titleMaxWidth": "680px"
+              },
+              "text": "<p><span style=\"color: #5f6e82\">Apesar das projeções otimistas para a Black Friday 2025, com expectativa de faturamento recorde de R$ 13,6 bilhões (alta de 16,5% sobre 2024), o cenário econômico geral apresenta desafios. O FMI (Fundo Monetário Internacional, organização que monitora a economia mundial) reduziu as projeções de crescimento do Brasil para 2,0% em 2025, e o Ministério da Fazenda revisou para baixo o crescimento do PIB (Produto Interno Bruto, que mede toda a riqueza produzida no país), de 2,5% para 2,3%. </span><br><br></p><p><span style=\"color: #5f6e82\">Para colocar em perspectiva: o Brasil cresceu 2,9% em 2023 e 3,4% em 2024 (o maior crescimento desde 2021). Agora, as projeções para 2025 ficam entre 2,0% e 2,3%, ou seja, um crescimento menor que os anos anteriores. </span><br><br></p><p><span style=\"color: #5f6e82\">Isso significa um consumidor mais seletivo e consciente. Em um cenário onde o crescimento econômico desacelera, nesta Black Friday é hora de voltar ao básico: garantir que seus produtos vendedores estão bem precificados, que você está movimentando aqueles parados em estoque, que você não está queimando fichas demais em mídia, e que você está, principalmente, usando dessa janela para manter sua base de clientes atual engajada. </span><br><br></p><p><span style=\"color: #5f6e82\">O cenário atual exige inteligência estratégica, não apenas desconto agressivo. Quem planeja com antecedência e organiza estoque, preços, comunicação e operação está pronto para crescer mesmo em um ambiente mais competitivo.</span></p><p></p>",
+              "media": {
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/e9e6bea8-9817-4a08-83f9-0cf710be7384/planejamento-black-friday-2025-2.png",
+                  "width": 539,
+                  "height": 569
+                },
+                "use": "image"
+              },
+              "textProps": {
+                "fontSize": "14px",
+                "fontFamily": "Inter",
+                "fontWeight": "400",
+                "lineHeight": "140%"
+              },
+              "container": {
+                "paddingTop": "0px",
+                "paddingLeft": "0px",
+                "paddingRight": "0px"
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
+          }
+        ]
+      }
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -637,18 +659,18 @@
           "value": {
             "__resolveType": "site/sections/HeroWithTimeV2.tsx",
             "paddingTop": "30px",
-            "paddingBottom": "30px",
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "text": "<p style=\"text-align: center\">Já vende em outra plataforma?</p>",
+              "text": "<p style=\"text-align: center\">2. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
               "font": "Lektorat Display var",
               "lineHeight": "100%",
               "fontSize": "32px",
-              "letterSpacing": "-0.3px",
-              "fontWeight": "750",
+              "letterSpacing": "-1px",
+              "fontWeight": "650",
               "color": "#00363A"
             },
+            "paddingBottom": "30px",
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -656,75 +678,38 @@
             "tabs": [
               {
                 "icon": {
-                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
                   "alt": "Tab icon"
                 },
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Crescimento inteligente</p>",
-                  "color": "#00363A",
-                  "font": "inter",
-                  "fontSize": "18px",
-                  "fontWeight": "750"
-                },
-                "textContent": {
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p>Aumente suas vendas em até 31% com automações como recuperação de carrinho e vendas adicionais, sem gastar mais com anúncios.</p>",
-                  "color": "#5F6E82",
-                  "font": "inter",
-                  "fontSize": "14px"
-                },
-                "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png"
-                },
-                "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
-                "button": {},
-                "videoText": "Ver demo",
-                "tags": [],
-                "tabVideo": {
-                  "widthDesktop": 620,
-                  "heightDesktop": 409,
-                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4",
-                  "video": "https://data.decoassets.com/lojaintegradar/5d29881f-b20a-4a8a-a72e-02a12868eaaf/crescimento-inteligente(1mb).mp4"
-                },
-                "useTab": "video"
-              },
-              {
-                "icon": {
-                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
-                  "alt": "Tab icon"
-                },
-                "title": {
-                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p><span>Liberdade para personalizar</span></p>",
+                  "text": "<p>Fique atento às mudanças</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontWeight": "750",
-                  "fontSize": "18px"
+                  "fontSize": "18px",
+                  "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p>Adicione banners, faixas e páginas para atrair e converter clientes com facilidade.</p>",
+                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio <br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado <br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
                   "color": "#5F6E82",
-                  "font": "inter",
-                  "fontSize": "14px"
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://data.decoassets.com/lojaintegradar/eb5d1729-9b6c-4627-bf62-9274c3009101/liberdade-para-personalizar.png"
+                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
+                  "width": 641,
+                  "height": 333
                 },
                 "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
                 "button": {},
                 "videoText": "Ver demo",
                 "tags": [],
                 "tabVideo": {
-                  "width": 664,
-                  "height": 520,
                   "widthDesktop": 620,
                   "heightDesktop": 409,
                   "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
@@ -733,37 +718,38 @@
               },
               {
                 "icon": {
-                  "image": "https://assets.decocache.com/lojaintegradar/74b03fa3-a4a4-4b59-b9d2-f3c65bd7b598/lime-check-icon.svg",
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
                   "alt": "Tab icon"
                 },
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p><span>Usabilidade simplificada</span></p>",
+                  "text": "<p>Fique atento às mudanças</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontWeight": "750",
+                  "fontWeight": "600",
                   "fontSize": "18px"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p>A melhor usabilidade para navegar e controlar seu e-commerce de forma simples e prática.</p>",
+                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio <br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado <br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
-                  "fontSize": "14px"
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/f6c8ca54-a8bb-4583-82e8-5902914ee39b/usabilidade--IA.png"
+                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
+                  "width": 641,
+                  "height": 333
                 },
                 "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
                 "button": {},
                 "videoText": "Ver demo",
                 "tags": [],
                 "tabVideo": {
-                  "width": 664,
-                  "height": 520,
                   "widthDesktop": 620,
                   "heightDesktop": 409,
                   "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
@@ -805,13 +791,13 @@
               "__resolveType": "site/sections/BlankSection.tsx"
             },
             "tabsInterval": 30,
-            "backgroundColor": "",
+            "backgroundColor": "#F2F2F2",
             "caption": {
-              "text": "<p style=\"text-align: center\">Migre para a Loja Integrada e aproveite os benefícios de uma plataforma segura,estável<br>e descomplicada</p>",
+              "text": "<p>Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
               "fontSize": "16px",
               "color": "#5F6E82",
-              "font": "Inter",
-              "lineHeight": "125%",
+              "font": "inter ",
+              "lineHeight": "140%",
               "fontWeight": "500"
             },
             "progressBarColor": "#030C0B ",
@@ -868,24 +854,20 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
-                  "width": 664,
-                  "height": 520
+                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
+                  "width": 641,
+                  "height": 333
                 },
                 "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
                 "button": {},
                 "videoText": "Ver demo",
                 "tags": [],
                 "tabVideo": {
-                  "width": 664,
-                  "height": 520,
                   "widthDesktop": 620,
                   "heightDesktop": 409,
-                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4",
-                  "video": "https://data.decoassets.com/lojaintegradar/5d29881f-b20a-4a8a-a72e-02a12868eaaf/crescimento-inteligente(1mb).mp4"
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
                 },
-                "useTab": "video"
+                "useTab": "image"
               },
               {
                 "icon": {
@@ -895,7 +877,7 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Organize sua operação</p>",
+                  "text": "<p>Fique atento às mudanças</p>",
                   "color": "#00363A",
                   "font": "Inter",
                   "fontSize": "18px",
@@ -912,24 +894,20 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/39d69fda-31ca-4a58-841d-3794149075a6/hero-with-time-image-1.png",
-                  "width": 664,
-                  "height": 520
+                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
+                  "width": 641,
+                  "height": 333
                 },
                 "videoOn": false,
-                "videoUrl": "https://www.youtube.com/embed/DXXbMOvAElQ?si=niFMpp-tbTtPVvie",
                 "button": {},
                 "videoText": "Ver demo",
                 "tags": [],
                 "tabVideo": {
-                  "width": 664,
-                  "height": 520,
                   "widthDesktop": 620,
                   "heightDesktop": 409,
-                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4",
-                  "video": "https://data.decoassets.com/lojaintegradar/5d29881f-b20a-4a8a-a72e-02a12868eaaf/crescimento-inteligente(1mb).mp4"
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
                 },
-                "useTab": "video"
+                "useTab": "image"
               }
             ],
             "background": {
@@ -966,9 +944,9 @@
               "__resolveType": "site/sections/BlankSection.tsx"
             },
             "tabsInterval": 30,
-            "backgroundColor": "",
-            "paddingTop": "0px",
-            "paddingBottom": "0",
+            "backgroundColor": "#F2F2F2",
+            "paddingTop": "120px",
+            "paddingBottom": "120px",
             "caption": {
               "text": "<p style=\"text-align: center\">Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday.<br>Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
               "fontSize": "16px",
@@ -995,12 +973,12 @@
           "value": {
             "__resolveType": "site/sections/FooterV3.tsx",
             "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 32pt\">resultados que surpreendem.</span></em></p>",
+            "paddingTop": "0",
             "backgroundImage": {
               "src": "https://assets.decocache.com/lojaintegradar/e1e18a14-b5a2-4e26-a84c-9a492ae0552a/bgfooterpng.png",
               "height": 400
             },
             "id": "ecossistemaconteudo",
-            "paddingTop": "0",
             "titleFont": "Instrument serif",
             "color1": "#371E55",
             "color2": "#FFFFFF",
@@ -1146,33 +1124,27 @@
         {
           "value": {
             "__resolveType": "site/sections/FixedBottom.tsx",
-            "backgroundColor": "#00363A",
-            "logo": {
-              "width": 195,
-              "height": 36
-            },
-            "text": "<p style=\"text-align: center\">Crie seu site na plataforma que otimiza seu tempo</p>",
+            "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);",
+            "logo": {},
+            "text": "<p style=\"text-align: center\">Participe da Live 22/10: Estratégias inteligentes para vender mais em 2025 com especialista Thiago Franco</p>",
             "textProps": {
               "color": "#FFFFFF",
               "fontFamily": "Inter",
-              "fontSize": "13px",
-              "lineHeight": "100%",
-              "fontWeight": "500"
+              "fontSize": "12px"
             },
             "cta": [
               {
-                "size": "Large",
-                "text": "Criar loja grátis",
+                "size": "Small",
+                "text": "Garantir minha vaga",
                 "textColor": "#FFFFFF",
-                "backgroundColor": "#28C3C3",
-                "borderColor": "#28C3C3",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
                 "customWidth": "280px",
                 "customProps": {
-                  "padding": "22px 14px",
+                  "padding": "22px 32px",
                   "letterSpacing": "-1px",
                   "borderRadius": "10px",
-                  "height": "50px",
-                  "width": "100%"
+                  "height": "50px"
                 },
                 "showIcon": false,
                 "singleLine": true,
@@ -1182,14 +1154,13 @@
                 },
                 "iconGap": "2px",
                 "type": "Button",
-                "openModal": "Create Store",
-                "createStorePlanId": "172"
+                "openModal": "Customer Advisory Board Modal"
               }
             ],
             "rightBackgroundImage": {},
-            "leftBackgroundImage": {},
             "hideXButton": true,
-            "centerContent": true
+            "centerContent": true,
+            "xButtonColor": "#ffffff"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

@@ -5772,6 +5772,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: rgb(12 152 152 / var(--tw-bg-opacity));
 }
+.bg-\[\#28C3C3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 195 195 / var(--tw-bg-opacity));
+}
 .bg-\[\#371E55\] {
   --tw-bg-opacity: 1;
   background-color: rgb(55 30 85 / var(--tw-bg-opacity));
@@ -7277,6 +7281,11 @@ details.collapse summary::-webkit-details-marker {
   --tw-scale-y: 1 !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
+.hover\:\!scale-105:hover {
+  --tw-scale-x: 1.05 !important;
+  --tw-scale-y: 1.05 !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
 .hover\:scale-100:hover {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
@@ -7370,6 +7379,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-border-opacity: 1;
   border-color: rgb(0 183 181 / var(--tw-border-opacity));
 }
+.focus\:border-\[\#28C3C3\]:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(40 195 195 / var(--tw-border-opacity));
+}
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -7432,6 +7445,10 @@ details.collapse summary::-webkit-details-marker {
 .group:focus-within .group-focus-within\:text-\[\#00B7B5\] {
   --tw-text-opacity: 1;
   color: rgb(0 183 181 / var(--tw-text-opacity));
+}
+.group:focus-within .group-focus-within\:text-\[\#28C3C3\] {
+  --tw-text-opacity: 1;
+  color: rgb(40 195 195 / var(--tw-text-opacity));
 }
 .group:hover .group-hover\:visible {
   visibility: visible;

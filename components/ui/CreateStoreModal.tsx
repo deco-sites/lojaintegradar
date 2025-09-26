@@ -189,7 +189,7 @@ const CreateStoreModal = () => {
                     X
                 </button>
                 <script src="https://accounts.google.com/gsi/client" async defer></script>
-            <div class="my-5 text-on-base-2 text-f7 leading-4 tracking-4 w-full">
+            {/* <div class="my-5 text-on-base-2 text-f7 leading-4 tracking-4 w-full">
                 <div
                     id="g_id_onload"
                     data-client_id="1091824353523-i8sdgbl0143713a07vvlpsdd5uoobi2p.apps.googleusercontent.com"
@@ -212,7 +212,7 @@ const CreateStoreModal = () => {
                     data-logo_alignment="center"
                 ></div>
             </div>
-            <p class="w-full text-center text-sm">Ou crie com seu E-mail</p>
+            <p class="w-full text-center text-sm">Ou crie com seu E-mail</p> */}
                 <form
                     action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${getPeriod}&plano_id=${getPlanId}${getCoupon && `&cupom=${getCoupon}`}`}
                     id="modal-no-check"

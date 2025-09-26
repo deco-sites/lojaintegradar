@@ -107,6 +107,8 @@ export interface Props {
     paddingTop?: string;
     paddingBottom?: string;
     bottomSection?: Section;
+    disableImageAnimations?: boolean;
+    disableImageShadow?: boolean;
 }
 function HeroWithTimer(props: Props) {
     if (props.hideSection)

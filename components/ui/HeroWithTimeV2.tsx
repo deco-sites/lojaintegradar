@@ -65,12 +65,15 @@ function closeModal(rootId: string) {
     modal.classList.add("hidden");
     modal.classList.remove("flex");
 }
-function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressBarColor, progressBarBackgroundColor, disabledProgressBarBackgroundColor }: Props) {
+function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressBarColor, progressBarBackgroundColor, disabledProgressBarBackgroundColor, disableImageAnimations, disableImageShadow }: Props) {
     const rootId = tabs ? tabs[0].tabImage?.image || tabs[0].tabVideo?.video : "HeroWithTime";
     const activeTab = 0;
     const progress = 50;
     const isModalOpen = false;
     const currentVideoUrl = "";
+
+    const imageAnimation = disableImageAnimations ? '' : 'animate-fade-up50';
+    const imageShadow = disableImageShadow ? '' : 'shadow-md';
     // const [activeTab, setActiveTab] = useState(0);
     // const [progress, setProgress] = useState(0);
     // const [isModalOpen, setIsModalOpen] = useState(false);
@@ -145,11 +148,11 @@ function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressB
                                     <>
                                         {tabs[index].useTab == "video"
                 ? <div>
-                                                <video width={tabs[index].tabVideo?.width || 337} height={tabs[index].tabVideo?.height || 351} autoPlay playsInline muted loading="lazy" loop class="object-cover lg:hidden shadow-md pb-[24px] lg:pb-0 rounded-2xl" style={{ width: tabs[index].tabVideo?.width + "px" || "337px", height: tabs[index].tabVideo?.height + "px" || "351px", animationDuration: '300ms' }}>
+                                                <video width={tabs[index].tabVideo?.width || 337} height={tabs[index].tabVideo?.height || 351} autoPlay playsInline muted loading="lazy" loop class={`object-cover lg:hidden ${imageShadow} pb-[24px] lg:pb-0 rounded-2xl`} style={{ width: tabs[index].tabVideo?.width + "px" || "337px", height: tabs[index].tabVideo?.height + "px" || "351px", animationDuration: '300ms' }}>
                                                     <source src={tabs[index].tabVideo?.video} type="video/mp4"/>
                                                 </video>
                                             </div>
-                : <Image src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 351} width={tab.tabImage?.width || 337} class="lg:hidden shadow-md pb-[24px] lg:pb-0 rounded-2xl"/>}
+                : <Image src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 351} width={tab.tabImage?.width || 337} class={`lg:hidden ${imageShadow} pb-[24px] lg:pb-0 rounded-2xl`}/>}
 
                                         <div className="w-full h-0.5 background-bar overflow-hidden" style={{ background: progressBarBackgroundColor }}>
                                             <div className="h-full bg-[#D9D9D9] transition-all ease-linear progressBar w-0 relative" style={{ animationDuration: `${tabsInterval}s`, background: progressBarColor }}>
@@ -162,10 +165,10 @@ function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressB
                     </ul>
                     {tabs.map((tab, index) => (<div class={`${index && 'hidden'} mediaContainer`}>
                             {tab.useTab == "video"
-                ? <video width={tab.tabVideo?.width || 606} height={tab.tabVideo?.height || 627} autoPlay playsInline muted loading="lazy" loop class={"object-cover hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage rounded-2xl " + tab.tabVideo} style={{ width: (tab.tabVideo?.width || 606) + "px", height: (tab.tabVideo?.height || 627) + "px", animationDuration: '300ms' }}>
+                ? <video width={tab.tabVideo?.width || 606} height={tab.tabVideo?.height || 627} autoPlay playsInline muted loading="lazy" loop class={`object-cover hidden lg:block hoverScale ${imageShadow} ${imageAnimation} desktopImage rounded-2xl ` + tab.tabVideo} style={{ width: (tab.tabVideo?.width || 606) + "px", height: (tab.tabVideo?.height || 627) + "px", animationDuration: '300ms' }}>
                                     <source src={tab.tabVideo?.video} type="video/mp4"/>
                                 </video>
-                : <Image src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 665} width={tab.tabImage?.width || 606} className="hidden lg:block hoverScale shadow-md animate-fade-up50 rounded-2xl desktopImage" style={{ animationDuration: '300ms' }}/>}
+                : <Image src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 665} width={tab.tabImage?.width || 606} className={`hidden lg:block hoverScale ${imageShadow} ${imageAnimation} rounded-2xl desktopImage`} style={{ animationDuration: '300ms' }}/>}
                         </div>))}
 
                     

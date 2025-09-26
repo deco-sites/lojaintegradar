@@ -956,7 +956,9 @@
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
             "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "cta": [],
+            "disableImageAnimations": true,
+            "disableImageShadow": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

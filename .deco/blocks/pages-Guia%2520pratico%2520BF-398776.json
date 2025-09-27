@@ -413,7 +413,8 @@
                 "height": 302
               },
               "cornerImage": false
-            }
+            },
+            "lcp": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -483,7 +484,8 @@
               },
               "cornerImage": false
             },
-            "cta": []
+            "cta": [],
+            "lcp": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

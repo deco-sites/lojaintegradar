@@ -115,8 +115,8 @@ function HeroWithTimer(props: Props) {
         return <></>;
     const { paddingBottom, paddingTop, title, caption, backgroundColor } = props;
     return (<div id="heroTimeSection" style={{ background: backgroundColor, paddingBottom, paddingTop }} className="px-[10px] py-[60px] lg:py-[160px]">
-        <AnimateOnShow animation="animate-fade-up">
-
+        <AnimateOnShow animation="animate-fade-up" divClass="max-w-[1310px] mx-auto">
+        
             {title?.text && <div class="text-3xl lg:text-[46px] leading-[110%] font-normal" style={{ fontFamily: title.font, fontSize: title.fontSize, lineHeight: title.lineHeight, fontWeight: title.fontWeight, letterSpacing: title.letterSpacing, color: title.color }} dangerouslySetInnerHTML={{ __html: title.text }} />}
 
             {caption?.text && <div class="text-lg lg:text-[22px] leading-[120%] font-medium mt-5" style={{ fontFamily: caption.font, fontSize: caption.fontSize, lineHeight: caption.lineHeight, fontWeight: caption.fontWeight, letterSpacing: caption.letterSpacing, color: caption.color }} dangerouslySetInnerHTML={{ __html: caption.text }} />}

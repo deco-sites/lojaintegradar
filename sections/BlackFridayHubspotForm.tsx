@@ -328,7 +328,7 @@ export default function BlackFridayHubspotForm({title, titleTextProps, text, tex
           <p class="error text-[#F57E77] text-xs hidden"/>
         </label> */}
 
-        <p class="mb-2 text-base text-[#5F6E82] font-normal">É lojista da Loja Integrada?</p>
+        <p class="mb-2 mt-6 text-base text-[#5F6E82] font-normal">É lojista da Loja Integrada?</p>
         <div class="mb-5">
           <div class="flex gap-5" hx-on:click={useScript(onKeyUp)}>
             <label class="flex gap-2">

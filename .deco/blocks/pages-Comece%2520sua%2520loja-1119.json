@@ -352,13 +352,26 @@
             "asideMenuCloseIconColor": "#003037",
             "headerMessage": {
               "show": false,
-              "text": "<p>teste</p>",
+              "text": "<p>Assine um plano até sexta 12h e ganhe uma aula exclusiva com especialista 🚀  </p>",
               "textColor": "#22454B",
-              "backgroundColor": "#D0DAD9",
-              "cta": [],
+              "backgroundColor": "#00363A",
+              "cta": [
+                {
+                  "type": "Only text",
+                  "size": "Small",
+                  "href": "#plans",
+                  "text": "Saiba mais",
+                  "textColor": "#28C3C3",
+                  "showIcon": false,
+                  "singleLine": true
+                }
+              ],
               "font": "Instrument Serif",
               "textProps": {
-                "color": ""
+                "color": "",
+                "fontSize": "14px",
+                "fontFamily": "Inter",
+                "fontWeight": "500"
               }
             },
             "campaignTimer": {
@@ -367,7 +380,7 @@
               "labelsColor": "",
               "numbersColor": "",
               "noScrollBackgroundColor": "",
-              "backgroundColor": "",
+              "backgroundColor": "#000000",
               "textProps": {
                 "font": "Galaxie Copernicus",
                 "color": ""
@@ -2520,7 +2533,7 @@
               "fontSize": "16px",
               "lineHeight": "140%"
             },
-            "paddingTop": "60px",
+            "paddingTop": "0px",
             "caption": {
               "0": "+",
               "1": "2",
@@ -6686,7 +6699,8 @@
             "backgroundColor": "#00363A",
             "xButtonColor": "#ffffff",
             "centerContent": true,
-            "hideXButton": true
+            "hideXButton": true,
+            "hideSection": false
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -6705,42 +6719,147 @@
       ]
     },
     {
-      "__resolveType": "site/sections/BlackFridayHubspotForm.tsx",
-      "title": "<p><span>Preencha seus dados para se inscrever</span></p>",
-      "titleTextProps": {
-        "fontSize": "22px"
-      },
-      "submitButton": {
-        "text": "Quero minha vaga gratuita na Live",
-        "backgroundColor": "",
-        "textColor": ""
-      },
-      "successPage": {
-        "title": "<p><span>Inscrição confirmada!</span></p>",
-        "titleTextProps": {
-          "fontSize": "22px"
-        },
-        "text": "<p><span>Você já está confirmado para a Live exclusiva dia 22 de Outubro ao vivo no Youtube da loja Integrada, enviaremos os detalhes por e-mail. prepare-se para aprender com Thiago Franco estratégias para vender mais na Black Friday.</span></p>",
-        "text2": "<p><span>Enquanto isso, não espere até Outubro:  Acesse agora o Guia Prático de Preparação para a Black Friday e comece a aplicar as estratégias hoje mesmo.</span></p>",
-        "text2Props": {
-          "color": "#00363A",
-          "fontWeight": "600"
-        },
-        "closeButton": {
-          "text": "Voltar a navegação",
-          "backgroundColor": "",
-          "borderColor": "",
-          "textColor": ""
-        },
-        "cta": [
-          {
-            "text": "Acessar guia prático",
-            "textColor": "#ffffff",
-            "borderColor": "#28C3C3",
-            "backgroundColor": "#28C3C3"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/FixedBottom.tsx",
+                  "text": "<p style=\"text-align: center\">Assine até sexta 12h e ganhe uma aula exclusiva com especialista 🚀</p>",
+                  "textProps": {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Inter",
+                    "fontSize": "12px",
+                    "fontWeight": "600"
+                  },
+                  "cta": [
+                    {
+                      "type": "Button",
+                      "size": "Medium",
+                      "text": "Ver planos",
+                      "textColor": "#0000000",
+                      "backgroundColor": "#ffffff",
+                      "borderColor": "",
+                      "href": "#plans",
+                      "singleLine": false
+                    },
+                    {
+                      "type": "Button",
+                      "size": "Medium",
+                      "text": "saiba mais",
+                      "textColor": "#FFFFFF"
+                    }
+                  ],
+                  "backgroundColor": "#00363A",
+                  "xButtonColor": "#ffffff",
+                  "centerContent": true,
+                  "hideXButton": true,
+                  "hideSection": false,
+                  "height": "90px"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "tablet": true,
+                  "desktop": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/FixedBottom.tsx",
+                  "hideSection": false,
+                  "text": "<p style=\"text-align: center\">Assine até sexta 12h e ganhe uma aula exclusiva com especialista 🚀</p>",
+                  "textProps": {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Inter",
+                    "fontSize": "12px",
+                    "fontWeight": "600"
+                  },
+                  "cta": [
+                    {
+                      "type": "Button",
+                      "size": "Medium",
+                      "text": "Ver planos",
+                      "textColor": "#0000000",
+                      "backgroundColor": "#ffffff",
+                      "borderColor": "",
+                      "href": "#plans",
+                      "singleLine": false
+                    },
+                    {
+                      "type": "Button",
+                      "size": "Medium",
+                      "text": "Saiba mais",
+                      "textColor": "#FFFFFF"
+                    }
+                  ],
+                  "backgroundColor": "#00363A",
+                  "xButtonColor": "#ffffff",
+                  "centerContent": true,
+                  "hideXButton": true
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
           }
-        ]
-      }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/BlackFridayHubspotForm.tsx",
+            "title": "<p><span>Preencha seus dados para se inscrever</span></p>",
+            "titleTextProps": {
+              "fontSize": "22px"
+            },
+            "submitButton": {
+              "text": "Quero minha vaga gratuita na Live",
+              "backgroundColor": "",
+              "textColor": ""
+            },
+            "successPage": {
+              "title": "<p><span>Inscrição confirmada!</span></p>",
+              "titleTextProps": {
+                "fontSize": "22px"
+              },
+              "text": "<p><span>Você já está confirmado para a Live exclusiva dia 22 de Outubro ao vivo no Youtube da loja Integrada, enviaremos os detalhes por e-mail. prepare-se para aprender com Thiago Franco estratégias para vender mais na Black Friday.</span></p>",
+              "text2": "<p><span>Enquanto isso, não espere até Outubro:  Acesse agora o Guia Prático de Preparação para a Black Friday e comece a aplicar as estratégias hoje mesmo.</span></p>",
+              "text2Props": {
+                "color": "#00363A",
+                "fontWeight": "600"
+              },
+              "closeButton": {
+                "text": "Voltar a navegação",
+                "backgroundColor": "",
+                "borderColor": "",
+                "textColor": ""
+              },
+              "cta": [
+                {
+                  "text": "Acessar guia prático",
+                  "textColor": "#ffffff",
+                  "borderColor": "#28C3C3",
+                  "backgroundColor": "#28C3C3"
+                }
+              ]
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     }
   ],
   "seo": {

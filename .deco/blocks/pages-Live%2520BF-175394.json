@@ -1,0 +1,592 @@
+{
+  "name": "Live BF",
+  "path": "/esquenta-blackfriday",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/HeaderV3.tsx",
+        "campaignTimer": {},
+        "logo": {
+          "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg"
+        },
+        "centralizeHeaderContent": true,
+        "backgroundColor": "#212121",
+        "noScrollBackgroundColor": ""
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Komea wait list",
+                "text": "Seja um dos primeiros a testar",
+                "textColor": "#00363A",
+                "backgroundColor": "#ECF488",
+                "borderColor": "#ECF488",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                },
+                "gtmProps": {
+                  "customSection": "lp-komea",
+                  "customType": "botao",
+                  "customTitle": "seja-um-dos-primeiros-a-testar"
+                },
+                "glowColor1": "#ACB82E99",
+                "glowColor2": "#EEFC5880"
+              }
+            ],
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #001D1F , #012b2e);"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">São múltiplos especialistas</span></p><p style=\"text-align: center\">no seu bolso</p>",
+              "color": "#EEFC58",
+              "font": "Lektorat Display var",
+              "fontWeight": "750",
+              "letterSpacing": "-0.3px",
+              "lineHeight": "100%",
+              "fontSize": "7.26vw"
+            },
+            "text": "<p style=\"text-align: center\"><span>Com a Komea, você tem agentes de IA especializados em<br>cuidar das tarefas chatas e repetitivas do seu negócio.</span></p>",
+            "textProps": {
+              "color": "#ffffff",
+              "lineHeight": "125%",
+              "letterSpacing": "-0.3px",
+              "fontSize": "3.1vw"
+            },
+            "ctaPlacement": "center",
+            "customTitle": "hero:multiplos-especialistas"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Black Friday Hubspot Form",
+                "text": "Quero minha vaga gratuita na Live",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "5px"
+                },
+                "gtmProps": {
+                  "customTitle": "seja-um-dos-primeiros-a-testar",
+                  "customType": "botao",
+                  "customSection": "lp-komea"
+                },
+                "glowColor1": "#ACB82E99",
+                "glowColor2": "#EEFC5880",
+                "customIcon": {},
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/8f9eb3d6-51f2-4c3c-af40-dbd23670c23e/cta.png"
+                }
+              }
+            ],
+            "bulletPoints": {
+              "bulletPointsIcon": {}
+            },
+            "container": {
+              "paddingTop": "124px",
+              "marginTop": "0px"
+            },
+            "sectionBackground": {
+              "backgroundColor": "#212121"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p style=\"text-align: center\"><span style=\"color: #cecece\">A Black Friday começa agora:</span><span style=\"color: #cecece\"><br></span><span style=\"color: #28c3c3\">estratégias inteligentes para</span><span style=\"color: #28c3c3\"><br></span><span style=\"color: #28c3c3\">vender mais em 2025</span></p>",
+              "color": "#CECECE",
+              "font": "Lektorat Display var",
+              "fontWeight": "650",
+              "letterSpacing": "-1.2px",
+              "lineHeight": "110%",
+              "fontSize": "60px"
+            },
+            "text": "<p style=\"text-align: center\">Participe da live exclusiva com Carlos Lourenço e aprenda, ao vivo, como usar multicanais,</p><p style=\"text-align: center\">IA e automações para preparar sua loja e evitar erros que custam vendas.</p>",
+            "textProps": {
+              "color": "#CECECE",
+              "lineHeight": "140%",
+              "letterSpacing": "-0.3px",
+              "fontSize": "16px",
+              "fontFamily": "Inter"
+            },
+            "ctaPlacement": "center",
+            "customTitle": "hero:multiplos-especialistas",
+            "media": {
+              "placement": "above",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/f18d4eeb-8b0b-4f61-b42d-4c689d8fa187/live-blackfriday.png",
+                "width": "442px",
+                "height": "56px"
+              },
+              "use": "image",
+              "cornerImage": false
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Komea wait list",
+                "text": "Seja um dos primeiros a testar",
+                "textColor": "#00363A",
+                "backgroundColor": "#ECF488",
+                "borderColor": "#ECF488",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                },
+                "gtmProps": {
+                  "customSection": "lp-komea",
+                  "customType": "botao",
+                  "customTitle": "seja-um-dos-primeiros-a-testar"
+                },
+                "glowColor1": "#ACB82E99",
+                "glowColor2": "#EEFC5880"
+              }
+            ],
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #001D1F , #012b2e);"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">São múltiplos especialistas</span></p><p style=\"text-align: center\">no seu bolso</p>",
+              "color": "#EEFC58",
+              "font": "Lektorat Display var",
+              "fontWeight": "750",
+              "letterSpacing": "-0.3px",
+              "lineHeight": "100%",
+              "fontSize": "7.26vw"
+            },
+            "text": "<p style=\"text-align: center\"><span>Com a Komea, você tem agentes de IA especializados em<br>cuidar das tarefas chatas e repetitivas do seu negócio.</span></p>",
+            "textProps": {
+              "color": "#ffffff",
+              "lineHeight": "125%",
+              "letterSpacing": "-0.3px",
+              "fontSize": "3.1vw"
+            },
+            "ctaPlacement": "center",
+            "customTitle": "hero:multiplos-especialistas"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "text": "Quero minha vaga gratuita na Live",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "5px"
+                },
+                "gtmProps": {
+                  "customTitle": "seja-um-dos-primeiros-a-testar",
+                  "customType": "botao",
+                  "customSection": "lp-komea"
+                },
+                "glowColor1": "#ACB82E99",
+                "glowColor2": "#EEFC5880",
+                "openModal": "Black Friday Hubspot Form",
+                "customIcon": {},
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/8f9eb3d6-51f2-4c3c-af40-dbd23670c23e/cta.png"
+                }
+              }
+            ],
+            "bulletPoints": {
+              "bulletPointsIcon": {}
+            },
+            "container": {
+              "paddingTop": "124px",
+              "marginTop": "0px"
+            },
+            "sectionBackground": {
+              "backgroundColor": "#212121"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p style=\"text-align: justify\"><span style=\"color: rgb(206, 206, 206)\">Carlos Lourenço</span></p>",
+              "color": "#CECECE",
+              "font": "Lektorat Display var",
+              "fontWeight": "650",
+              "letterSpacing": "-1.2px",
+              "lineHeight": "110%",
+              "fontSize": "60px",
+              "titleMaxWidth": "552px"
+            },
+            "text": "<p>Carlos Lourenço é especialista em gestão estratégica, marketing, vendas e aceleração de negócios. Atua na tração e escala de operações, gerando crescimento sustentável e previsível. Com estratégias de marketing, growth, estruturação de processos e uma jornada de compras bem estruturada, Carlos gerou resultados de alto impacto com faturamentos milionários para empresas no Brasil e na Europa, por meio do seu programa de consultoria. Além disso, mantém uma sólida rede de relacionamento com empresários, gestores e líderes de diversos setores em todo o país.</p>",
+            "textProps": {
+              "color": "#CECECE",
+              "lineHeight": "140%",
+              "letterSpacing": "-0.3px",
+              "fontSize": "16px",
+              "fontFamily": "Inter"
+            },
+            "ctaPlacement": "left",
+            "customTitle": "hero:multiplos-especialistas",
+            "media": {
+              "placement": "left",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/bbb12b37-8d52-4c3c-b0c0-56494d550218/palestrante-carlos-lourenco.png",
+                "width": 477,
+                "height": 465
+              },
+              "use": "image",
+              "cornerImage": false
+            },
+            "tag": {
+              "text": "<p><span>Sobre o especialista</span></p>",
+              "textProps": {
+                "color": "#212121",
+                "fontFamily": "Inter",
+                "fontSize": "14px"
+              },
+              "backgroundColor": "#FFE6A0"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/BulletPointsHeroV2.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Komea wait list",
+                "text": "Seja um dos primeiros a testar",
+                "textColor": "#00363A",
+                "backgroundColor": "#EEFC58",
+                "borderColor": "#EEFC58",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                },
+                "gtmProps": {
+                  "customSection": "lp-komea",
+                  "customType": "botao",
+                  "customTitle": "seja-um-dos-primeiros-a-testar"
+                }
+              }
+            ],
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #012224, #001D1F)",
+              "image": {}
+            },
+            "texts": [
+              {
+                "text": "<p><span>Um time de agentes</span></p>",
+                "textProps": {
+                  "fontWeight": "750",
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "7.26vw",
+                  "letterSpacing": "-0.3px",
+                  "color": "#00363A",
+                  "lineHeight": "100%"
+                }
+              },
+              {
+                "text": "<p><span>que evolui com você</span></p>",
+                "textProps": {
+                  "fontWeight": "750",
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "7.26vw",
+                  "letterSpacing": "-0.3px",
+                  "color": "#00363A",
+                  "lineHeight": "100%"
+                },
+                "markdownColor": "#EEFC58",
+                "markdownHorizontalScale": "105%",
+                "markdownHorizontalPosition": "1.5%",
+                "markdownVerticalScale": "120%",
+                "markdownVerticalPosition": "8%"
+              }
+            ],
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "Aprendem com o seu negócio"
+                },
+                {
+                  "text": "Tomam iniciativa para sugerir melhorias"
+                },
+                {
+                  "text": "Executam ações com base em dados reais"
+                },
+                {
+                  "text": "Escalam com você — sem exigir equipe ou conhecimento técnico"
+                }
+              ],
+              "textProps": {
+                "color": "#00363A",
+                "fontWeight": "500",
+                "letterSpacing": "-0.3px",
+                "fontSize": "16px"
+              },
+              "bulletPointsIcon": {
+                "src": "https://assets.decocache.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
+              }
+            },
+            "container": {
+              "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);",
+              "backgroundMedia": {
+                "image": {}
+              }
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/BulletPointsHeroV2.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "text": "Acessar guia prático",
+                "textColor": "#ffffff",
+                "backgroundColor": "#28C3C3",
+                "borderColor": "#28C3C3",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "10px"
+                },
+                "gtmProps": {
+                  "customTitle": "seja-um-dos-primeiros-a-testar",
+                  "customType": "botao",
+                  "customSection": "lp-komea"
+                },
+                "href": "http://landing.lojaintegrada.com.br/guia-pratico-BF"
+              }
+            ],
+            "bulletPoints": {
+              "bulletPointsIcon": {
+                "src": "https://assets.decocache.com/lojaintegradar/40d0625d-4e33-4cbf-93b2-b537481b6bad/icone.svg"
+              },
+              "items": [
+                {
+                  "text": "Visão clara do cenário de 2025"
+                },
+                {
+                  "text": "Checklist completo de preparação"
+                },
+                {
+                  "text": "Estratégias multicanal inteligentes"
+                },
+                {
+                  "text": "Plano de ação em 30 dias e muito mais"
+                }
+              ],
+              "textProps": {
+                "color": "#FBFAF9",
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "letterSpacing": "-0.3px"
+              }
+            },
+            "container": {
+              "backgroundColor": "#212121",
+              "backgroundMedia": {
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/df6f9fba-4d53-4352-9e68-2b94a564bc53/bg-guia.png",
+                  "width": 1120,
+                  "height": 418
+                },
+                "use": "image"
+              }
+            },
+            "sectionBackground": {
+              "backgroundColor": "#212121",
+              "image": {}
+            },
+            "texts": [
+              {
+                "text": "<p>Comece hoje a se preparar<br><span style=\"color: #28c3c3\">para a Black Friday</span></p>",
+                "textProps": {
+                  "fontWeight": "650",
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "50px",
+                  "letterSpacing": "-0.3px",
+                  "color": "#CECECE",
+                  "lineHeight": "100%"
+                }
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Footer2.tsx",
+        "backgroundImage": {},
+        "color1": "#FFFFFF",
+        "color2": "#FFFFFF",
+        "cards": [],
+        "color3": "rgba(255, 255, 255, 0.10);  Colors Color format Hex Border colors  #FFFFFF · 10%",
+        "title": "<p></p>",
+        "logo": {
+          "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg",
+          "width": 586,
+          "height": 87
+        },
+        "showForm": true,
+        "emailForm": {
+          "inputName": "email",
+          "inputLabel": "Junte-se a mais de  2,5 milhões de lojistas",
+          "inputPlaceHolder": "Digite seu email aqui",
+          "submitText": "Fazer parte"
+        },
+        "socialLinks": [
+          {
+            "icon": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cfaa40f5-cd48-4097-9df8-cdd335e7460c/white-linkedin-logo.svg",
+              "alt": "linkein icon"
+            },
+            "href": "http://linkedin.com"
+          },
+          {
+            "icon": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a6a3290d-621b-4089-9199-fd14f91e5220/instagram.svg",
+              "alt": "instgram icon"
+            },
+            "href": "https://instagram.com"
+          },
+          {
+            "icon": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5aedbb42-d276-49e7-93c4-d2f45d5c63a1/white-tik-tok-logo.svg"
+            },
+            "href": "https://tiktok.com"
+          }
+        ],
+        "color4": "rgba(255, 255, 255, 0.10);  Colors Color format Hex Border colors  #FFFFFF · 10%",
+        "bottomLinks": [
+          {
+            "href": "https://comunidade.lojaintegrada.com.br/",
+            "text": "Conheça nossa comunidade"
+          },
+          {
+            "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
+            "text": "Central de ajuda"
+          },
+          {
+            "href": "https://lojaintegrada.com.br/termos-de-uso",
+            "text": "Termos de uso"
+          },
+          {
+            "href": "https://lojaintegrada.com.br/privacidade",
+            "text": "Privacidade"
+          }
+        ],
+        "bottomBackground": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b335c46e-8e5d-46af-adeb-fd1b36f71e2d/footer-v2-background.png"
+        },
+        "showLogo": true,
+        "logoPosition": "above",
+        "useBackground": "image",
+        "backgroundHeight": "446px"
+      }
+    },
+    {
+      "__resolveType": "site/sections/KomeaWaitListFormModal.tsx",
+      "title": "<p>Preencha o formulário para</p><p>entrar na lista de espera</p>",
+      "titleTextProps": {
+        "letterSpacing": "-0.3px",
+        "fontFamily": "Lektorat Display var",
+        "fontWeight": "700",
+        "color": ""
+      },
+      "text": "<p> <span style=\"color: rgb(95, 110, 130); font-size: 14px\">🐝</span>Importante:</p><p>Para testar o KOMEA, é preciso ter uma loja ativa na Loja Integrada. Não tem ainda? A gente te ajuda a criar!</p>",
+      "emailConsent": "<p>Aceito receber comunicações da Loja Integrada.</p>",
+      "emailConsentTextProps": {
+        "fontSize": "12px",
+        "color": "#5F6E82"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/GridCards.tsx",
+        "title": {},
+        "cards": [
+          {
+            "image": {
+              "position": "left"
+            },
+            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
+            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
+          }
+        ],
+        "tag": {
+          "backgroundColor": "#373737",
+          "text": "<p></p>"
+        }
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

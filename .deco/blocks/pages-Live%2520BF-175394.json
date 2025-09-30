@@ -260,12 +260,11 @@
         "cardsWidth": "249px",
         "cardsContainerWidth": "1280px",
         "cardsGap": "8px",
-        "paddingTop": "30px",
+        "paddingTop": "0",
         "paddingBottom": "30px",
         "backgroundMedia": {
           "backgroundColor": "#373737"
-        },
-        "paddingTop": "0"
+        }
       }
     },
     {
@@ -684,7 +683,24 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/FixedBottom.tsx"
+        "__resolveType": "site/sections/FixedBottom.tsx",
+        "text": "<p><span>🎁  Acesse agora o Guia prático para começar a preparar sua loja para a Black Friday</span></p>",
+        "hideXButton": true,
+        "centerContent": true,
+        "backgroundColor": "#E4F3F3",
+        "textProps": {
+          "color": "#00363A",
+          "fontFamily": "Inter",
+          "fontSize": "16px",
+          "fontWeight": "600"
+        },
+        "cta": [
+          {
+            "type": "Button",
+            "size": "Large",
+            "openModal": "Komea wait list"
+          }
+        ]
       }
     },
     {

@@ -3,17 +3,14 @@
   "path": "/esquenta-blackfriday",
   "sections": [
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/HeaderV3.tsx",
-        "campaignTimer": {},
-        "logo": {
-          "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg"
-        },
-        "centralizeHeaderContent": true,
-        "backgroundColor": "#212121",
-        "noScrollBackgroundColor": ""
-      }
+      "__resolveType": "site/sections/HeaderV3.tsx",
+      "campaignTimer": {},
+      "logo": {
+        "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg"
+      },
+      "centralizeHeaderContent": true,
+      "backgroundColor": "#212121",
+      "noScrollBackgroundColor": ""
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

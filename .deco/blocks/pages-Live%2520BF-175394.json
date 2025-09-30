@@ -104,7 +104,8 @@
             },
             "container": {
               "paddingTop": "124px",
-              "marginTop": "0px"
+              "marginTop": "0px",
+              "paddingBottom": "60px"
             },
             "sectionBackground": {
               "backgroundColor": "#212121"
@@ -153,7 +154,12 @@
       "section": {
         "__resolveType": "site/sections/GridCards.tsx",
         "title": {
-          "text": "<p>Programação da live<br>Dia 22/10, ao vivo</p>"
+          "text": "<p style=\"text-align: center\">Programação da live<br>Dia 22/10, ao vivo</p>",
+          "font": "Lektorat Display var",
+          "fontSize": "50px",
+          "letterSpacing": "-1px",
+          "lineHeight": "100%",
+          "color": "#CECECE"
         },
         "cards": [
           {
@@ -178,29 +184,73 @@
             "image": {
               "position": "left"
             },
-            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
-            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
+            "title": "<p><span style=\"color: rgb(40, 195, 195)\">20 min</span><br>Estratégia Multicanal Inteligente<br></p>",
+            "text": "<p>Como usar Magalu, Instagram e outros canais para multiplicar vendas.</p>",
+            "titleTextProps": {
+              "color": "#CECECE",
+              "fontFamily": "inter",
+              "fontSize": "16px"
+            },
+            "textProps": {
+              "color": "#CECECE",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "lineHeight": "140%"
+            }
           },
           {
             "image": {
               "position": "left"
             },
-            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
-            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
+            "title": "<p><span style=\"color: rgb(40, 195, 195)\">10 min</span><br>Ferramentas que fazem a diferença<br></p>",
+            "text": "<p>IA e automações que trabalham 24h para sua loja vender mais.</p>",
+            "titleTextProps": {
+              "color": "#CECECE",
+              "fontFamily": "inter",
+              "fontSize": "16px"
+            },
+            "textProps": {
+              "color": "#CECECE",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "lineHeight": "140%"
+            }
           },
           {
             "image": {
               "position": "left"
             },
-            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
-            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
+            "title": "<p><span style=\"color: rgb(40, 195, 195)\">10 min</span><br>Preparação prática para a Black Friday<br></p>",
+            "text": "<p>Os erros mais comuns que custam vendas — e como evitá-los.</p>",
+            "titleTextProps": {
+              "color": "#CECECE",
+              "fontFamily": "inter",
+              "fontSize": "16px"
+            },
+            "textProps": {
+              "color": "#CECECE",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "lineHeight": "140%"
+            }
           },
           {
             "image": {
               "position": "left"
             },
-            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
-            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
+            "title": "<p><span style=\"color: rgb(40, 195, 195)\">10 min</span><br>Sessão de Perguntas e Respostas<br></p>",
+            "text": "<p>Tire suas dúvidas ao vivo com Carlos Lourenço e a equipe da Loja Integrada.</p>",
+            "titleTextProps": {
+              "color": "#CECECE",
+              "fontFamily": "inter",
+              "fontSize": "16px"
+            },
+            "textProps": {
+              "color": "#CECECE",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "lineHeight": "140%"
+            }
           }
         ],
         "tag": {
@@ -211,7 +261,7 @@
         "cardsContainerWidth": "1280px",
         "cardsGap": "8px",
         "paddingTop": "0px",
-        "paddingBottom": "120px",
+        "paddingBottom": "30px",
         "backgroundMedia": {
           "backgroundColor": "#373737"
         }

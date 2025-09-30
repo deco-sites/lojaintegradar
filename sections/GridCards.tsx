@@ -86,8 +86,8 @@ export default function GridCards({ hideSection, tag, title, cards = [], cardsCo
 
   const cardsClass = `GridCards-${useId()}`;
 
-  return <div style={{ paddingBottom, paddingTop, background: backgroundMedia?.backgroundColor }} class="relative">
-    <div class="max-w-[1282px] mx-auto pt-16 lg:pt-28 relative z-10" style={{width: cardsContainerWidth}}>
+  return <div style={{ background: backgroundMedia?.backgroundColor }} class="relative">
+    <div class="max-w-[1282px] mx-auto pt-16 lg:pt-28 relative z-10" style={{width: cardsContainerWidth, paddingBottom, paddingTop }}>
 
       <AnimateOnShow animation="animate-fade-up50">
         {tag?.text && <div

@@ -3,17 +3,14 @@
   "path": "/esquenta-blackfriday",
   "sections": [
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/HeaderV3.tsx",
-        "campaignTimer": {},
-        "logo": {
-          "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg"
-        },
-        "centralizeHeaderContent": true,
-        "backgroundColor": "#212121",
-        "noScrollBackgroundColor": ""
-      }
+      "__resolveType": "site/sections/HeaderV3.tsx",
+      "campaignTimer": {},
+      "logo": {
+        "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg"
+      },
+      "centralizeHeaderContent": true,
+      "backgroundColor": "#212121",
+      "noScrollBackgroundColor": ""
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -155,7 +152,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/GridCards.tsx",
-        "title": {},
+        "title": {
+          "text": "<p><span>Programação da live</span><br><span>Dia 22/10, ao vivo, no Youtube da Loja Integrada</span></p>"
+        },
         "cards": [
           {
             "image": {
@@ -197,8 +196,13 @@
           "backgroundColor": "",
           "text": "<p></p>"
         },
+        "cardsWidth": "249px",
+        "cardsContainerWidth": "1280px",
+        "cardsGap": "8px",
+        "paddingTop": "0px",
+        "paddingBottom": "120px",
         "backgroundMedia": {
-          "backgroundColor": ""
+          "backgroundColor": "#373737"
         }
       }
     },
@@ -501,7 +505,8 @@
                   "height": 418
                 },
                 "use": "image"
-              }
+              },
+              "paddingBottom": "60px"
             },
             "sectionBackground": {
               "backgroundColor": "#212121",
@@ -594,7 +599,8 @@
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b335c46e-8e5d-46af-adeb-fd1b36f71e2d/footer-v2-background.png"
         },
         "showLogo": true,
-        "logoPosition": "above"
+        "logoPosition": "above",
+        "backgroundHeight": "0"
       }
     },
     {

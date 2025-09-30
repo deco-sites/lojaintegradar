@@ -13,15 +13,22 @@
           "value": {
             "__resolveType": "site/sections/HeaderV3.tsx",
             "navigation": {
-              "links": [
-                {
-                  "label": "Cenário 2025",
-                  "url": "$"
-                }
-              ],
+              "links": [],
               "buttons": [],
               "mobileButtons": [],
-              "asideMenuButtons": [],
+              "asideMenuButtons": [
+                {
+                  "text": "Fazer Login",
+                  "backgroundColor": "Transparent",
+                  "textColor": "#003037",
+                  "borderColor": "#003037",
+                  "size": "Small",
+                  "customEventLabel": "fazer-login",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "ctaStyle": "button",
+                  "outline": true
+                }
+              ],
               "sideMenuButtons": [],
               "linksBorderColor": "#D0DAD9",
               "textHoverColor": "#D0DAD9",
@@ -76,14 +83,14 @@
                   }
                 ]
               },
-              "alt": "logo  ",
+              "alt": "logo",
               "width": 188,
               "href": "/guia-pratico-BF",
               "height": 28
             },
             "initialButtons": [],
             "backgroundColor": "#212121",
-            "barsColor": "#ffffff",
+            "barsColor": "#003037",
             "asideMenuTopBackgroundColor": "#D0DAD9",
             "asideMenuBackgroundColor": "#ffffff",
             "asideMenuCloseIconColor": "#003037",
@@ -147,9 +154,6 @@
                   "links": [],
                   "title": "Conclusão",
                   "titleLink": "#"
-                },
-                {
-                  "links": []
                 }
               ],
               "textColor": "#ebeaea",
@@ -355,22 +359,19 @@
             "hubspotForm": {
               "modal": {
                 "media": {
-                  "image": {
-                    "src": "https://assets.decocache.com/lojaintegradar/75eb2b56-cbe4-4474-ab6d-7dfa59778fd3/black-friday-2025.png",
-                    "width": 528,
-                    "height": 464
-                  },
+                  "image": {},
                   "use": "image"
                 }
               }
             },
             "tag": {
-              "text": "<p>Conteúdo exclusivo</p>",
+              "text": "<p>15 min de leitura</p>",
               "textProps": {
-                "color": "#00363A",
-                "fontFamily": "Inter"
+                "color": "#FFFFFF",
+                "fontFamily": "Inter",
+                "fontSize": "16px"
               },
-              "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);"
+              "backgroundColor": ""
             },
             "title": {
               "text": "<p>Guia Prático da<br><span style=\"color: #28c3c3\">Black Friday 2025</span></p>",
@@ -395,25 +396,26 @@
                 "image": {}
               },
               "paddingBottom": "0px",
-              "paddingTop": "120px"
+              "paddingTop": "100px"
             },
             "sectionBackground": {
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/eb29ea5d-536a-4851-a471-79b8a69b0166/hero-bf-bg.png",
                 "height": 649
               },
-              "use": "image",
-              "customHeight": "649px"
+              "use": "image"
             },
             "media": {
               "use": "image",
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/75eb2b56-cbe4-4474-ab6d-7dfa59778fd3/black-friday-2025.png",
-                "width": 343,
-                "height": 302
+                "src": "https://assets.decocache.com/lojaintegradar/15fba70c-8743-4f5d-96dd-3fa7d7d3b4fb/img-hero-2.png",
+                "width": "483px",
+                "height": "509px"
               },
-              "cornerImage": false
+              "cornerImage": false,
+              "placement": "right"
             },
+            "cta": [],
             "lcp": true
           },
           "rule": {
@@ -500,7 +502,7 @@
             "value": {
               "__resolveType": "site/sections/HeroV3.tsx",
               "title": {
-                "text": "<p><span style=\"color: rgb(0, 54, 74)\">É hora de se preparar para</span> Black Friday</p>",
+                "text": "<p><span style=\"color: rgb(0, 54, 74)\">É hora de se preparar</span><br><span style=\"color: rgb(0, 54, 74)\">para</span> Black Friday</p>",
                 "color": "#28C3C3",
                 "font": "Lektorat Display var",
                 "fontWeight": "650",
@@ -508,7 +510,7 @@
                 "letterSpacing": "-1px;",
                 "lineHeight": "100%"
               },
-              "text": "<p><span style=\"color: rgb(95, 110, 130)\">A Black Friday se transformou no maior evento de vendas do Brasil e representa uma janela de oportunidade crucial para qualquer negócio online. Mas este ano traz um cenário diferente e mais desafiador.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">Você que é lojista da Loja Integrada, vendendo a todo vapor ou ainda iniciando sua jornada (ou tentando se manter ativo em vendas), este ebook é para ajudar a trazer clareza do que são oportunidades e riscos para atuar não somente em sua loja própria, como em múltiplos canais como nas redes sociais e marketplaces. O que não pode ficar de fora eaté estratégias para durante e pós Black Friday.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">O consumidor de hoje não está mais concentrado apenas na sua loja própria. Ele pesquisa no Google, vê produtos no Instagram, compara preços nos marketplaces e só depois decide onde comprar. Por isso, sua estratégia não pode maisse limitar a um único canal. É fundamental pensar em como estar presente em múltiplos pontos de contato com o cliente.</span></p>",
+              "text": "<p><span style=\"color: rgb(95, 110, 130)\">A Black Friday se transformou no maior evento de vendas do Brasil e representa uma janela de oportunidade crucial para qualquer negócio online. Mas este ano traz um cenário diferente e mais desafiador.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">Você que é lojista da Loja Integrada, vendendo a todo vapor ou ainda iniciando sua jornada (ou tentando se manter ativo em vendas), este guia é para ajudar a trazer clareza do que são oportunidades e riscos para atuar não somente em sua loja própria, como em múltiplos canais como nas redes sociais e marketplaces. O que não pode ficar de fora eaté estratégias para durante e pós Black Friday.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">O consumidor de hoje não está mais concentrado apenas na sua loja própria. Ele pesquisa no Google, vê produtos no Instagram, compara preços nos marketplaces e só depois decide onde comprar. Por isso, sua estratégia não pode maisse limitar a um único canal. É fundamental pensar em como estar presente em múltiplos pontos de contato com o cliente.</span></p>",
               "media": {
                 "image": {}
               },
@@ -519,10 +521,12 @@
                 "lineHeight": "140%"
               },
               "container": {
-                "paddingTop": "0px",
-                "paddingLeft": "0px",
-                "paddingRight": "0px",
-                "paddingBottom": "0px"
+                "paddingTop": "10px",
+                "paddingLeft": "10px",
+                "paddingRight": "0px"
+              },
+              "sectionBackground": {
+                "backgroundColor": "#F2F2F2"
               }
             },
             "rule": {
@@ -584,14 +588,14 @@
                 "fontSize": "32px",
                 "letterSpacing": "-1px;",
                 "lineHeight": "100%",
-                "titleMaxWidth": "680px"
+                "titleMaxWidth": "600px"
               },
               "text": "<p><span style=\"color: #5f6e82\">Apesar das projeções otimistas para a Black Friday 2025, com expectativa de faturamento recorde de R$ 13,6 bilhões (alta de 16,5% sobre 2024), o cenário econômico geral apresenta desafios. O FMI (Fundo Monetário Internacional, organização que monitora a economia mundial) reduziu as projeções de crescimento do Brasil para 2,0% em 2025, e o Ministério da Fazenda revisou para baixo o crescimento do PIB (Produto Interno Bruto, que mede toda a riqueza produzida no país), de 2,5% para 2,3%.</span><br><br></p><p><span style=\"color: #5f6e82\">Para colocar em perspectiva: o Brasil cresceu 2,9% em 2023 e 3,4% em 2024 (o maior crescimento desde 2021). Agora, as projeções para 2025 ficam entre 2,0% e 2,3%, ou seja, um crescimento menor que os anos anteriores.</span><br><br></p><p><span style=\"color: #5f6e82\">Isso significa um consumidor mais seletivo e consciente. Em um cenário onde o crescimento econômico desacelera, nesta Black Friday é hora de voltar ao básico: garantir que seus produtos vendedores estão bem precificados, que você está movimentando aqueles parados em estoque, que você não está queimando fichas demais em mídia, e que você está, principalmente, usando dessa janela para manter sua base de clientes atual engajada.</span><br><br></p><p><span style=\"color: #5f6e82\">O cenário atual exige inteligência estratégica, não apenas desconto agressivo. Quem planeja com antecedência e organiza estoque, preços, comunicação e operação está pronto para crescer mesmo em um ambiente mais competitivo.</span></p><p></p>",
               "media": {
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/e9e6bea8-9817-4a08-83f9-0cf710be7384/planejamento-black-friday-2025-2.png",
-                  "width": 539,
-                  "height": 569
+                  "src": "https://assets.decocache.com/lojaintegradar/98f6b67c-f451-46b8-8290-a7b5969ff630/planejamento-black-friday-2025.png",
+                  "width": 626,
+                  "height": 509
                 },
                 "use": "image"
               },
@@ -603,8 +607,9 @@
               },
               "container": {
                 "paddingTop": "0px",
-                "paddingLeft": "0px",
-                "paddingRight": "0px"
+                "paddingLeft": "10px",
+                "paddingRight": "0px",
+                "paddingBottom": "60px"
               }
             },
             "rule": {
@@ -657,33 +662,80 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Faq.tsx",
-        "backgroundColor": "#373737",
-        "title": "<p><span style=\"color: #28c3c3\">2. Pontos de atenção para uma</span><br><span>Black Friday sem surpresas</span></p>",
-        "titleFont": "Lektorat Display var",
-        "titleTextProps": {
-          "fontSize": "50px",
-          "fontWeight": "650",
-          "letterSpacing": "-1px;"
-        },
-        "titleColor": "#FBFAF9",
-        "caption": "Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:",
-        "captionColor": "#FBFAF9",
-        "captionTextProps": {
-          "fontSize": "Inter",
-          "fontWeight": "500",
-          "lineHeight": "140%"
-        },
-        "questionsTitleColor": "#FBFAF9",
-        "questionsDivisionLineColor": "#FBFAF9",
-        "questions": [
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
           {
-            "question": "Fique atento às mudanças",
-            "answear": "<p><strong><span style=\"color: #fbfaf9\">Novidades fiscais:</span></strong><span style=\"color: #fbfaf9\"> A DCE (Declaração de Conteúdo Eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio.<br><br></span><strong><span style=\"color: #fbfaf9\">Custos de mídia:</span></strong><span style=\"color: #fbfaf9\"> Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado.<br><br></span><strong><span style=\"color: #fbfaf9\">Regras dos canais:</span></strong><span style=\"color: #fbfaf9\"> Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende.</span></p>"
+            "value": {
+              "__resolveType": "site/sections/Faq.tsx",
+              "backgroundColor": "#373737",
+              "title": "<p><span style=\"color: rgb(40, 195, 195)\">2. Pontos de atenção para uma </span>Black Friday sem surpresas</p>",
+              "titleFont": "Lektorat Display var",
+              "titleTextProps": {
+                "fontSize": "32px",
+                "fontWeight": "650",
+                "letterSpacing": "-1px;"
+              },
+              "titleColor": "#FBFAF9",
+              "caption": "Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:",
+              "captionColor": "#FBFAF9",
+              "captionTextProps": {
+                "fontSize": "Inter",
+                "fontWeight": "500",
+                "lineHeight": "140%"
+              },
+              "questionsTitleColor": "#FBFAF9",
+              "questionsDivisionLineColor": "#FBFAF9",
+              "questions": [
+                {
+                  "question": "Fique atento às mudanças",
+                  "answear": "<p><strong><span style=\"color: #fbfaf9\">Novidades fiscais:</span></strong><span style=\"color: #fbfaf9\"> A DCE (Declaração de Conteúdo Eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio.<br><br></span><strong><span style=\"color: #fbfaf9\">Custos de mídia:</span></strong><span style=\"color: #fbfaf9\"> Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado.<br><br></span><strong><span style=\"color: #fbfaf9\">Regras dos canais:</span></strong><span style=\"color: #fbfaf9\"> Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende.</span></p>"
+                },
+                {
+                  "question": "Organize sua operação",
+                  "answear": "<p><strong><span style=\"color: rgb(251, 250, 249)\">Estoque seguro: </span></strong><span style=\"color: rgb(251, 250, 249)\">Reserve uma quantidade mínima nos marketplaces para não correr o risco de ficar sem produto no meio da campanha.</span><br><br><strong><span style=\"color: rgb(251, 250, 249)\">Caixa para operação: </span></strong><span style=\"color: rgb(251, 250, 249)\">Black Friday aumenta gastos com embalagens, frete e às vezes mão de obra extra, então organize-se financeiramente.</span><br><br><strong><span style=\"color: rgb(251, 250, 249)\">Fornecedores: </span></strong><span style=\"color: rgb(251, 250, 249)\">Tenha contato de fornecedores alternativos caso precise repor estoque rapidamente. Estes pontos não devem te assustar, mas sim te ajudar a se preparar melhor. Vamos ver agora como construir uma estratégia sólida para sua Black Friday.</span><br><br><span style=\"color: rgb(251, 250, 249)\">Estes pontos não devem te assustar, mas sim te ajudar a se preparar melhor. Vamos ver agora como construir uma estratégia sólida para sua Black Friday.</span><br><br></p>"
+                }
+              ]
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
           },
           {
-            "question": "Organize sua operação",
-            "answear": "<p><strong><span style=\"color: rgb(251, 250, 249)\">Estoque seguro: </span></strong><span style=\"color: rgb(251, 250, 249)\">Reserve uma quantidade mínima nos marketplaces para não correr o risco de ficar sem produto no meio da campanha.</span><br><br><strong><span style=\"color: rgb(251, 250, 249)\">Caixa para operação: </span></strong><span style=\"color: rgb(251, 250, 249)\">Black Friday aumenta gastos com embalagens, frete e às vezes mão de obra extra, então organize-se financeiramente.</span><br><br><strong><span style=\"color: rgb(251, 250, 249)\">Fornecedores: </span></strong><span style=\"color: rgb(251, 250, 249)\">Tenha contato de fornecedores alternativos caso precise repor estoque rapidamente. Estes pontos não devem te assustar, mas sim te ajudar a se preparar melhor. Vamos ver agora como construir uma estratégia sólida para sua Black Friday.</span><br><br><span style=\"color: rgb(251, 250, 249)\">Estes pontos não devem te assustar, mas sim te ajudar a se preparar melhor. Vamos ver agora como construir uma estratégia sólida para sua Black Friday.</span><br><br></p>"
+            "value": {
+              "__resolveType": "site/sections/Faq.tsx",
+              "backgroundColor": "#373737",
+              "title": "<p><span style=\"color: #28c3c3\">2. Pontos de atenção para uma</span><br><span>Black Friday sem surpresas</span></p>",
+              "titleFont": "Lektorat Display var",
+              "titleTextProps": {
+                "fontSize": "50px",
+                "fontWeight": "650",
+                "letterSpacing": "-1px;"
+              },
+              "titleColor": "#FBFAF9",
+              "caption": "Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:",
+              "captionColor": "#FBFAF9",
+              "captionTextProps": {
+                "fontSize": "Inter",
+                "fontWeight": "500",
+                "lineHeight": "140%"
+              },
+              "questionsTitleColor": "#FBFAF9",
+              "questionsDivisionLineColor": "#FBFAF9",
+              "questions": [
+                {
+                  "question": "Fique atento às mudanças",
+                  "answear": "<p><strong><span style=\"color: #fbfaf9\">Novidades fiscais:</span></strong><span style=\"color: #fbfaf9\"> A DCE (Declaração de Conteúdo Eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio.<br><br></span><strong><span style=\"color: #fbfaf9\">Custos de mídia:</span></strong><span style=\"color: #fbfaf9\"> Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado.<br><br></span><strong><span style=\"color: #fbfaf9\">Regras dos canais:</span></strong><span style=\"color: #fbfaf9\"> Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende.</span></p>"
+                },
+                {
+                  "question": "Organize sua operação",
+                  "answear": "<p><strong><span style=\"color: rgb(251, 250, 249)\">Estoque seguro: </span></strong><span style=\"color: rgb(251, 250, 249)\">Reserve uma quantidade mínima nos marketplaces para não correr o risco de ficar sem produto no meio da campanha.</span><br><br><strong><span style=\"color: rgb(251, 250, 249)\">Caixa para operação: </span></strong><span style=\"color: rgb(251, 250, 249)\">Black Friday aumenta gastos com embalagens, frete e às vezes mão de obra extra, então organize-se financeiramente.</span><br><br><strong><span style=\"color: rgb(251, 250, 249)\">Fornecedores: </span></strong><span style=\"color: rgb(251, 250, 249)\">Tenha contato de fornecedores alternativos caso precise repor estoque rapidamente. Estes pontos não devem te assustar, mas sim te ajudar a se preparar melhor. Vamos ver agora como construir uma estratégia sólida para sua Black Friday.</span><br><br><span style=\"color: rgb(251, 250, 249)\">Estes pontos não devem te assustar, mas sim te ajudar a se preparar melhor. Vamos ver agora como construir uma estratégia sólida para sua Black Friday.</span><br><br></p>"
+                }
+              ]
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
           }
         ]
       }
@@ -697,16 +749,14 @@
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "text": "<p style=\"text-align: center\">2. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
-              "font": "Lektorat Display var",
+              "text": "<p><span style=\"color: rgb(40, 195, 195)\">3. Pré-Black Friday: </span>Construindo as bases certas</p>",
               "lineHeight": "100%",
               "fontSize": "32px",
               "letterSpacing": "-1px",
               "fontWeight": "650",
-              "color": "#00363A"
+              "color": "#00363A",
+              "font": "Lektorat Display var"
             },
-            "paddingTop": "30px",
-            "paddingBottom": "30px",
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -720,16 +770,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>O consumidor não está apenas em um lugar</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontSize": "18px",
+                  "fontSize": "16px",
                   "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>O comportamento do consumidor mudou drasticamente. Ele pesquisa no Google, vê produtos no Instagram, compara preços nos marketplaces, lê avaliações, volta para sua loja, às vezes compra pelo WhatsApp. Sua estratégia de venda precisa acompanhar essa jornada.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -737,9 +787,9 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/06c275af-1a65-4f70-8b80-56d372098670/estrategias-de-canais.png",
+                  "width": 627,
+                  "height": 573
                 },
                 "videoOn": false,
                 "button": {},
@@ -760,16 +810,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Por que você precisa estar nos marketplaces</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontWeight": "600",
-                  "fontSize": "18px"
+                  "fontSize": "16px",
+                  "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>O consumidor brasileiro mudou. Hoje, 73% das compras online começam nos marketplaces, não nas lojas próprias. É como ter uma loja excelente numa rua sem movimento, enquanto os clientes estão todos concentrados nos grandes centros de compra.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -777,9 +827,87 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/06c275af-1a65-4f70-8b80-56d372098670/estrategias-de-canais.png",
+                  "width": 627,
+                  "height": 573
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>A analogia do shopping e do bairro:</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<ul><li><p><strong>Sua loja própria é como uma loja de bairro: </strong>relacionamento próximo, clientes fiéis, mas movimento limitado.<br><br></p></li><li><p><strong>Marketplaces são como shoppings: tráfego intenso,</strong> descoberta de novos clientes, mas com \"aluguel\" (comissões).<br><br>Os marketplaces oferecem tráfego qualificado, credibilidade instantânea e infraestrutura pronta, mas é fundamental vender de forma consciente.</p></li></ul>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/06c275af-1a65-4f70-8b80-56d372098670/estrategias-de-canais.png",
+                  "width": 627,
+                  "height": 573
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Como se destacar nos marketplaces</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Para ter sucesso em qualquer marketplace, você precisa dominar 4 pilares fundamentais: reputação impecável, logística eficiente, atendimento ágil e preços competitivos. <br><br>Mantenha sua reputação sempre em alta respondendo todas as avaliações (especialmente as negativas) e cumprindo prazos de entrega. Use a logística do próprio marketplace quando disponível para ganhar destaque nas promoções. No atendimento, responda perguntas em no máximo 2 horas com clareza e educação. E nos preços, esteja sempre entre os mais competitivos. Nos marketplaces, o consumidor compara facilmente, então você precisa estar bem posicionado para aparecer nas primeiras posições e converter vendas.</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/06c275af-1a65-4f70-8b80-56d372098670/estrategias-de-canais.png"
                 },
                 "videoOn": false,
                 "button": {},
@@ -827,19 +955,23 @@
               "__resolveType": "site/sections/BlankSection.tsx"
             },
             "tabsInterval": 30,
-            "backgroundColor": "#F2F2F2",
+            "backgroundColor": "#ffffff",
+            "paddingTop": "60px",
+            "paddingBottom": "60px",
             "caption": {
-              "text": "<p>Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
-              "fontSize": "16px",
-              "color": "#5F6E82",
+              "text": "<p><strong><span style=\"color: #28c3c3\">Passo 1:</span></strong><span style=\"color: #28c3c3\"> </span>Defina sua estratégia de canais</p>",
+              "fontSize": "18px",
+              "color": "#00363A",
               "font": "inter ",
-              "lineHeight": "140%",
-              "fontWeight": "500"
+              "fontWeight": "500",
+              "lineHeight": "140%"
             },
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
             "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "cta": [],
+            "disableImageAnimations": true,
+            "disableImageShadow": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -852,7 +984,7 @@
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "text": "<p style=\"text-align: justify\">3. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
+              "text": "<p style=\"text-align: justify\"><span style=\"color: #28c3c3\">3. Pré-Black Friday: </span>Construindo as bases certas</p>",
               "lineHeight": "100%",
               "fontSize": "50px",
               "letterSpacing": "-1px",
@@ -1093,16 +1225,14 @@
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "text": "<p style=\"text-align: center\">2. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
-              "font": "Lektorat Display var",
+              "text": "<p><strong><span style=\"color: rgb(40, 195, 195)\">Passo 2:</span></strong><span style=\"color: rgb(40, 195, 195)\"> </span>Configure sua integração<br>com o Magalu</p>",
               "lineHeight": "100%",
-              "fontSize": "32px",
+              "fontSize": "18px",
               "letterSpacing": "-1px",
-              "fontWeight": "650",
-              "color": "#00363A"
+              "fontWeight": "600",
+              "color": "#00363A",
+              "font": "Inter"
             },
-            "paddingTop": "30px",
-            "paddingBottom": "30px",
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -1116,16 +1246,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Integração automática com o Magalu</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontSize": "18px",
+                  "fontSize": "16px",
                   "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>Desenvolvemos uma inteligência artificial exclusiva que adapta automaticamente seu catálogo para o marketplace:<br><br><strong>Tempo de cadastro muito menor: </strong>O que levaria horas adaptando, nossa IA faz em minutos.<br><br><strong>Mais produtos aprovados:</strong> IA identifica e corrige de acordo com as regras antes mesmo de enviar.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -1133,9 +1263,9 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/5c19be4e-edf5-494a-ab2f-0affdc9221ce/Integracao-automatica-magalu.png",
+                  "width": 627,
+                  "height": 468
                 },
                 "videoOn": false,
                 "button": {},
@@ -1156,16 +1286,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Por que configurar agora é estratégico para a Black Friday:</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontWeight": "600",
-                  "fontSize": "18px"
+                  "fontSize": "16px",
+                  "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>A integração oferece duas vantagens principais no momento que mais importa: agilidade e centralização. Na agilidade, você pode enviar produtos de forma simples e rápida, com a IA corrigindo automaticamente problemas de catalogação, resultando em mais produtos aprovados e mais oportunidades de venda. Na centralização estratégica, você gerencia ambos os canais em um painel único, com estoque sincronizado automaticamente, economizando tempo durante a alta demanda.<br><br></p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -1173,9 +1303,9 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/2aa740bd-6ba6-46cd-bf23-8e7f9d63ef36/Integracao-automatica-magalu.png",
+                  "width": 627,
+                  "height": 468
                 },
                 "videoOn": false,
                 "button": {},
@@ -1186,7 +1316,8 @@
                   "heightDesktop": 409,
                   "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
                 },
-                "useTab": "image"
+                "useTab": "image",
+                "buttons": []
               }
             ],
             "background": {
@@ -1224,18 +1355,22 @@
             },
             "tabsInterval": 30,
             "backgroundColor": "#F2F2F2",
+            "paddingTop": "60px",
+            "paddingBottom": "60px",
             "caption": {
-              "text": "<p>Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
-              "fontSize": "16px",
+              "text": "<p>Lançamos nossa integração com o Magalu, e este é o momento perfeito para você ser um dos pioneiros nesta oportunidade. O marketplace cresce 30% ao ano e se tornou o segundo maior e-commerce do Brasil</p>",
+              "fontSize": "14px",
               "color": "#5F6E82",
               "font": "inter ",
-              "lineHeight": "140%",
-              "fontWeight": "500"
+              "fontWeight": "500",
+              "lineHeight": "140%"
             },
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
             "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "cta": [],
+            "disableImageAnimations": true,
+            "disableImageShadow": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1410,15 +1545,15 @@
             "value": {
               "__resolveType": "site/sections/HeroV3.tsx",
               "title": {
-                "text": "<p><span style=\"color: rgb(0, 54, 74)\">É hora de se preparar para</span> Black Friday</p>",
-                "color": "#28C3C3",
-                "font": "Lektorat Display var",
-                "fontWeight": "650",
-                "fontSize": "32px",
+                "text": "<p style=\"text-align: center\">Se você ainda não ativou a integração com o Magalu</p>",
+                "color": "#00363A",
+                "font": "Inter",
+                "fontWeight": "500",
+                "fontSize": "22px",
                 "letterSpacing": "-1px;",
                 "lineHeight": "100%"
               },
-              "text": "<p><span style=\"color: rgb(95, 110, 130)\">A Black Friday se transformou no maior evento de vendas do Brasil e representa uma janela de oportunidade crucial para qualquer negócio online. Mas este ano traz um cenário diferente e mais desafiador.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">Você que é lojista da Loja Integrada, vendendo a todo vapor ou ainda iniciando sua jornada (ou tentando se manter ativo em vendas), este ebook é para ajudar a trazer clareza do que são oportunidades e riscos para atuar não somente em sua loja própria, como em múltiplos canais como nas redes sociais e marketplaces. O que não pode ficar de fora eaté estratégias para durante e pós Black Friday.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">O consumidor de hoje não está mais concentrado apenas na sua loja própria. Ele pesquisa no Google, vê produtos no Instagram, compara preços nos marketplaces e só depois decide onde comprar. Por isso, sua estratégia não pode maisse limitar a um único canal. É fundamental pensar em como estar presente em múltiplos pontos de contato com o cliente.</span></p>",
+              "text": "<p></p>",
               "media": {
                 "image": {}
               },
@@ -1430,10 +1565,25 @@
               },
               "container": {
                 "paddingTop": "0px",
-                "paddingLeft": "0px",
-                "paddingRight": "0px",
-                "paddingBottom": "0px"
-              }
+                "marginBottom": "0px",
+                "paddingBottom": "60px"
+              },
+              "sectionBackground": {
+                "backgroundColor": ""
+              },
+              "cta": [
+                {
+                  "type": "Button",
+                  "size": "Large",
+                  "href": "#",
+                  "text": " Clique aqui para conectar agora",
+                  "backgroundColor": "#00363A",
+                  "borderColor": "#00363A",
+                  "textColor": "#FFFFFF"
+                }
+              ],
+              "ctaPlacement": "center",
+              "distanceBetweenTitleAndText": "0px"
             },
             "rule": {
               "__resolveType": "website/matchers/device.ts",
@@ -1500,16 +1650,16 @@
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "text": "<p style=\"text-align: center\">2. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
-              "font": "Lektorat Display var",
+              "text": "<p><strong><span style=\"color: rgb(40, 195, 195)\">Passo 3:</span></strong><span style=\"color: rgb(40, 195, 195)\"> </span>Defina sua estratégia de precificação por canal</p>",
+              "font": "Inter",
               "lineHeight": "100%",
-              "fontSize": "32px",
+              "fontSize": "18px",
               "letterSpacing": "-1px",
-              "fontWeight": "650",
+              "fontWeight": "500",
               "color": "#00363A"
             },
-            "paddingTop": "30px",
-            "paddingBottom": "30px",
+            "paddingTop": "60px",
+            "paddingBottom": "60px",
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -1523,16 +1673,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Diretrizes para precificação eficiente:</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontSize": "18px",
+                  "fontSize": "16px",
                   "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>Tenha clareza das suas estratégias: Calcule o preço de custo, custos operacionais e margem de lucro para cada item.<br><br><strong>Negocie com fornecedores:</strong> Comprando mais barato, você consegue vender com valor mais competitivo.<br><br><strong>Monitore a concorrência: </strong>Use ferramentas para acompanhar preços em tempo real, incluindo soluções de IA que automatizam esse processo.<br><br><strong>Aproveite insights de IA:</strong> Ferramentas de inteligência artificial podem analisar histórico de vendas, sazonalidade e sugerir preços otimizados para cada canal.<br><br><strong>Ofereça descontos reais:</strong> Trabalhe apenas com ofertas genuínas dentro das suas possibilidades.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -1540,9 +1690,9 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/3314c4f4-2610-4063-a40d-cdca22b62d94/precificacao-por-canal.png",
+                  "width": 627,
+                  "height": 573
                 },
                 "videoOn": false,
                 "button": {},
@@ -1563,16 +1713,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Como a IA pode potencializar sua precificação:</p>",
                   "color": "#00363A",
                   "font": "Inter",
                   "fontWeight": "600",
-                  "fontSize": "18px"
+                  "fontSize": "16px"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>A inteligência artificial já está disponível para auxiliar na gestão de preços de forma inteligente. Além de monitorar automaticamente a concorrência, a IA pode analisar o comportamento do consumidor, identificar padrões de sazonalidade específicos da Black Friday e sugerir a precificação ideal considerando as diferentes comissões por canal.<br><br>Isso elimina muito do trabalho manual de pesquisa e comparação, permitindo que você foque na estratégia geral enquanto a tecnologia cuida dos ajustes precisos baseados em dados reais do mercado.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -1580,9 +1730,49 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/3314c4f4-2610-4063-a40d-cdca22b62d94/precificacao-por-canal.png",
+                  "width": 627,
+                  "height": 573
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Diferenciação por canal:</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p><strong>Marketplaces (como Magalu): </strong>Precifique considerando as comissões variáveis (taxa que o marketplace cobra sobre cada venda, normalmente entre 5-20% dependendo da categoria).<br><br><strong>Loja própria (seu site direto):</strong> Na precificação, na sua loja você tem menos taxas, mas precisa investir em mídia para trazer o cliente. Mesmo assim, muitas vezes a margem é maior e faz parte da estratégia ter um preço mais atrativo que no marketplace justamente para gerar a oportunidade de ter o cliente cadastrado em sua base para futuras ações. Ofereça condições exclusivas como cupons de 5-10% extra e frete grátis.</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/3314c4f4-2610-4063-a40d-cdca22b62d94/precificacao-por-canal.png",
+                  "width": 627,
+                  "height": 573
                 },
                 "videoOn": false,
                 "button": {},
@@ -1632,8 +1822,8 @@
             "tabsInterval": 30,
             "backgroundColor": "#F2F2F2",
             "caption": {
-              "text": "<p>Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
-              "fontSize": "16px",
+              "text": "<p>A precificação é uma das escolhas mais estratégicas da Black Friday. Se você vende barato demais,<br>pode comprometer a margem e até ter prejuízo. Se vende caro demais, afasta o consumidor.</p>",
+              "fontSize": "14px",
               "color": "#5F6E82",
               "font": "inter ",
               "lineHeight": "140%",
@@ -1642,7 +1832,9 @@
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
             "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "cta": [],
+            "disableImageAnimations": true,
+            "disableImageShadow": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -1856,16 +2048,16 @@
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "text": "<p style=\"text-align: center\">2. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
-              "font": "Lektorat Display var",
+              "text": "<p><strong><span style=\"color: rgb(40, 195, 195)\">Passo 4:</span></strong><span style=\"color: rgb(40, 195, 195)\"> </span>Configure suas automações</p>",
+              "font": "Inter",
               "lineHeight": "100%",
-              "fontSize": "32px",
+              "fontSize": "18px",
               "letterSpacing": "-1px",
-              "fontWeight": "650",
+              "fontWeight": "500",
               "color": "#00363A"
             },
-            "paddingTop": "30px",
-            "paddingBottom": "30px",
+            "paddingTop": "60px",
+            "paddingBottom": "0px",
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -1879,16 +2071,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Carrinho abandonado: sua segunda chance de venda</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontSize": "18px",
+                  "fontSize": "16px",
                   "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>O carrinho abandonado é um clássico: aquele cliente que colocou produtos no carrinho mas não finalizou a compra. Com automação ativa, um e-mail é enviado automaticamente lembrando sobre os itens esquecidos. O diferencial está na personalização: além de mostrar os produtos abandonados, o sistema sugere automaticamente produtos similares, aumentando as chances de conversão. Você ainda pode configurar diferentes abordagens (repiques) para ser mais persuasivo sem ser invasivo.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -1896,9 +2088,9 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/8e54bd42-a4de-4c94-a84f-0ba3d287d3c3/configure-automacoes.png",
+                  "width": 627,
+                  "height": 573
                 },
                 "videoOn": false,
                 "button": {},
@@ -1919,16 +2111,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Produto abandonado: interesse que não pode ser desperdiçado</p>",
                   "color": "#00363A",
                   "font": "Inter",
                   "fontWeight": "600",
-                  "fontSize": "18px"
+                  "fontSize": "16px"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>Quando um cliente navega por um produto específico mas não o adiciona ao carrinho, essa informação é valiosa. A automação de produto abandonado resgata esse interesse, enviando uma mensagem personalizada mostrando o item visitado.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -1936,9 +2128,89 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/8e54bd42-a4de-4c94-a84f-0ba3d287d3c3/configure-automacoes.png",
+                  "width": 627,
+                  "height": 573
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Recuperação de pedido cancelado: transforme \"não\" em \"sim\"</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Nem todo cancelamento é definitivo. A automação de pedido cancelado envia um lembrete estratégico oferecendo uma segunda oportunidade, muitas vezes com um pequeno incentivo para finalizar a compra.</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/8e54bd42-a4de-4c94-a84f-0ba3d287d3c3/configure-automacoes.png",
+                  "width": 627,
+                  "height": 573
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Avise-me: nunca mais perca uma venda por falta de estoque</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Quando um produto esgota, o cliente pode se cadastrar para ser avisado quando voltar. No momento que o item retorna ao estoque, o cliente interessado recebe uma notificação imediata.</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/8e54bd42-a4de-4c94-a84f-0ba3d287d3c3/configure-automacoes.png",
+                  "width": 627,
+                  "height": 573
                 },
                 "videoOn": false,
                 "button": {},
@@ -1986,10 +2258,10 @@
               "__resolveType": "site/sections/BlankSection.tsx"
             },
             "tabsInterval": 30,
-            "backgroundColor": "#F2F2F2",
+            "backgroundColor": "#ffffff",
             "caption": {
-              "text": "<p>Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
-              "fontSize": "16px",
+              "text": "<p>Na Black Friday, cada minuto conta. Muitas vendas se perdem nos detalhes: um cliente que desistiu no carrinho, um produto que estava esgotado e voltou, um pedido que foi cancelado. As automações cuidam desses momentos invisíveis para que você não perca vendas sem perceber.</p>",
+              "fontSize": "14px",
               "color": "#5F6E82",
               "font": "inter ",
               "lineHeight": "140%",
@@ -1998,7 +2270,9 @@
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
             "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "cta": [],
+            "disableImageAnimations": true,
+            "disableImageShadow": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -2252,15 +2526,15 @@
             "value": {
               "__resolveType": "site/sections/HeroV3.tsx",
               "title": {
-                "text": "<p><span style=\"color: rgb(0, 54, 74)\">É hora de se preparar para</span> Black Friday</p>",
-                "color": "#28C3C3",
-                "font": "Lektorat Display var",
-                "fontWeight": "650",
-                "fontSize": "32px",
+                "text": "<p style=\"text-align: center\">Se você ainda não configurou suas automações</p>",
+                "color": "#00363A",
+                "font": "Inter",
+                "fontWeight": "500",
+                "fontSize": "22px",
                 "letterSpacing": "-1px;",
                 "lineHeight": "100%"
               },
-              "text": "<p><span style=\"color: rgb(95, 110, 130)\">A Black Friday se transformou no maior evento de vendas do Brasil e representa uma janela de oportunidade crucial para qualquer negócio online. Mas este ano traz um cenário diferente e mais desafiador.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">Você que é lojista da Loja Integrada, vendendo a todo vapor ou ainda iniciando sua jornada (ou tentando se manter ativo em vendas), este ebook é para ajudar a trazer clareza do que são oportunidades e riscos para atuar não somente em sua loja própria, como em múltiplos canais como nas redes sociais e marketplaces. O que não pode ficar de fora eaté estratégias para durante e pós Black Friday.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">O consumidor de hoje não está mais concentrado apenas na sua loja própria. Ele pesquisa no Google, vê produtos no Instagram, compara preços nos marketplaces e só depois decide onde comprar. Por isso, sua estratégia não pode maisse limitar a um único canal. É fundamental pensar em como estar presente em múltiplos pontos de contato com o cliente.</span></p>",
+              "text": "<p></p>",
               "media": {
                 "image": {}
               },
@@ -2272,10 +2546,24 @@
               },
               "container": {
                 "paddingTop": "0px",
-                "paddingLeft": "0px",
-                "paddingRight": "0px",
-                "paddingBottom": "0px"
-              }
+                "marginBottom": "30px"
+              },
+              "sectionBackground": {
+                "backgroundColor": ""
+              },
+              "cta": [
+                {
+                  "type": "Button",
+                  "size": "Large",
+                  "href": "#",
+                  "text": "Ative agora clicando aqui",
+                  "backgroundColor": "#00363A",
+                  "borderColor": "#00363A",
+                  "textColor": "#FFFFFF"
+                }
+              ],
+              "ctaPlacement": "center",
+              "distanceBetweenTitleAndText": "0px"
             },
             "rule": {
               "__resolveType": "website/matchers/device.ts",
@@ -2341,16 +2629,16 @@
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "text": "<p style=\"text-align: center\">2. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
-              "font": "Lektorat Display var",
+              "text": "<p><strong><span style=\"color: rgb(40, 195, 195)\">Passo 5:</span></strong><span style=\"color: rgb(40, 195, 195)\"> </span>Prepare suas promoções</p>",
+              "font": "Inter",
               "lineHeight": "100%",
-              "fontSize": "32px",
+              "fontSize": "18px",
               "letterSpacing": "-1px",
-              "fontWeight": "650",
+              "fontWeight": "500",
               "color": "#00363A"
             },
-            "paddingTop": "30px",
-            "paddingBottom": "30px",
+            "paddingTop": "60px",
+            "paddingBottom": "0px",
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -2364,16 +2652,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Desconto Progressivo: incentive compras maiores</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontSize": "18px",
+                  "fontSize": "16px",
                   "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>O desconto progressivo é uma das estratégias mais eficazes para aumentar o ticket médio. Funciona assim: quanto mais o cliente compra, maior o desconto que ele recebe. Por exemplo: \"Compre 2 produtos e ganhe 10% de desconto, compre 3 e ganhe 15%\".</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -2381,9 +2669,9 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/5fa8c8f8-95ea-43c6-b1f2-35ef95de904d/prepare-suas-promocoes.png",
+                  "width": 627,
+                  "height": 378
                 },
                 "videoOn": false,
                 "button": {},
@@ -2404,16 +2692,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Sistema de brindes inteligente</p>",
                   "color": "#00363A",
                   "font": "Inter",
                   "fontWeight": "600",
-                  "fontSize": "18px"
+                  "fontSize": "16px"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>O aplicativo de brindes permite que você ofereça produtos gratuitos baseados em regras específicas: valor mínimo do pedido, quantidade de itens, ou categorias específicas. É uma excelente forma de usar produtos parados como incentivo.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -2421,9 +2709,49 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/5fa8c8f8-95ea-43c6-b1f2-35ef95de904d/prepare-suas-promocoes.png",
+                  "width": 627,
+                  "height": 378
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Promoções flexíveis e combinadas</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>O sistema de promoções permite criar regras complexas e inteligentes: combine produtos específicos com descontos especiais, configure promoções por categoria ou marca, estabeleça regras de quantidade (leve 3, pague 2).</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/5fa8c8f8-95ea-43c6-b1f2-35ef95de904d/prepare-suas-promocoes.png",
+                  "width": 627,
+                  "height": 378
                 },
                 "videoOn": false,
                 "button": {},
@@ -2471,10 +2799,10 @@
               "__resolveType": "site/sections/BlankSection.tsx"
             },
             "tabsInterval": 30,
-            "backgroundColor": "#F2F2F2",
+            "backgroundColor": "#ffffff",
             "caption": {
-              "text": "<p>Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
-              "fontSize": "16px",
+              "text": "<p>Descubra como criar promoções inteligentes que aumentam o ticket médio, movimentam produtos parados e conquistam novos clientes sem comprometer sua margem de lucro.</p>",
+              "fontSize": "14px",
               "color": "#5F6E82",
               "font": "inter ",
               "lineHeight": "140%",
@@ -2483,7 +2811,9 @@
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
             "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "cta": [],
+            "disableImageAnimations": true,
+            "disableImageShadow": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -2697,15 +3027,15 @@
             "value": {
               "__resolveType": "site/sections/HeroV3.tsx",
               "title": {
-                "text": "<p><span style=\"color: rgb(0, 54, 74)\">É hora de se preparar para</span> Black Friday</p>",
-                "color": "#28C3C3",
-                "font": "Lektorat Display var",
-                "fontWeight": "650",
-                "fontSize": "32px",
+                "text": "<p style=\"text-align: center\">Se você ainda não tem promoções ativas</p>",
+                "color": "#00363A",
+                "font": "Inter",
+                "fontWeight": "500",
+                "fontSize": "22px",
                 "letterSpacing": "-1px;",
                 "lineHeight": "100%"
               },
-              "text": "<p><span style=\"color: rgb(95, 110, 130)\">A Black Friday se transformou no maior evento de vendas do Brasil e representa uma janela de oportunidade crucial para qualquer negócio online. Mas este ano traz um cenário diferente e mais desafiador.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">Você que é lojista da Loja Integrada, vendendo a todo vapor ou ainda iniciando sua jornada (ou tentando se manter ativo em vendas), este ebook é para ajudar a trazer clareza do que são oportunidades e riscos para atuar não somente em sua loja própria, como em múltiplos canais como nas redes sociais e marketplaces. O que não pode ficar de fora eaté estratégias para durante e pós Black Friday.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">O consumidor de hoje não está mais concentrado apenas na sua loja própria. Ele pesquisa no Google, vê produtos no Instagram, compara preços nos marketplaces e só depois decide onde comprar. Por isso, sua estratégia não pode maisse limitar a um único canal. É fundamental pensar em como estar presente em múltiplos pontos de contato com o cliente.</span></p>",
+              "text": "<p></p>",
               "media": {
                 "image": {}
               },
@@ -2717,10 +3047,25 @@
               },
               "container": {
                 "paddingTop": "0px",
-                "paddingLeft": "0px",
-                "paddingRight": "0px",
-                "paddingBottom": "0px"
-              }
+                "marginBottom": "0px",
+                "paddingBottom": "60px"
+              },
+              "sectionBackground": {
+                "backgroundColor": ""
+              },
+              "cta": [
+                {
+                  "type": "Button",
+                  "size": "Large",
+                  "href": "#",
+                  "text": "Configure agora clicando aqui",
+                  "backgroundColor": "#00363A",
+                  "borderColor": "#00363A",
+                  "textColor": "#FFFFFF"
+                }
+              ],
+              "ctaPlacement": "center",
+              "distanceBetweenTitleAndText": "0px"
             },
             "rule": {
               "__resolveType": "website/matchers/device.ts",
@@ -2786,16 +3131,16 @@
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "text": "<p style=\"text-align: center\">2. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
-              "font": "Lektorat Display var",
+              "text": "<p><strong><span style=\"color: rgb(40, 195, 195)\">Passo 6:</span></strong><span style=\"color: rgb(40, 195, 195)\"> </span>Configure Instagram Shopping</p>",
+              "font": "Inter",
               "lineHeight": "100%",
-              "fontSize": "32px",
+              "fontSize": "18px",
               "letterSpacing": "-1px",
-              "fontWeight": "650",
+              "fontWeight": "500",
               "color": "#00363A"
             },
-            "paddingTop": "30px",
-            "paddingBottom": "30px",
+            "paddingTop": "60px",
+            "paddingBottom": "0px",
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -2809,16 +3154,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Por que o Instagram Shopping é estratégico:</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontSize": "18px",
+                  "fontSize": "16px",
                   "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>O Instagram Shopping permite que seus produtos apareçam diretamente no feed e stories dos usuários. Quando alguém vê seu produto e se interessa, pode comprar diretamente através da sacolinha integrada, sem sair do Instagram para o WhatsApp ou outras formas de contato.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -2826,9 +3171,9 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/522c39dd-00d7-4fd8-a339-3bcb5a2a033e/sacolinha-do-instagram.png",
+                  "width": 627,
+                  "height": 497
                 },
                 "videoOn": false,
                 "button": {},
@@ -2849,16 +3194,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>A importância da integração da sacolinha:</p>",
                   "color": "#00363A",
                   "font": "Inter",
                   "fontWeight": "600",
-                  "fontSize": "18px"
+                  "fontSize": "16px"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>A integração da sacolinha é fundamental para ganhar agilidade e levar o cliente diretamente para sua loja própria. Em vez de gerar conversas no Instagram (que podem se perder), a compra acontece no seu ambiente, onde você pode fidelizar o cliente, aplicar suas automações e construir relacionamento duradouro.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -2866,9 +3211,89 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/522c39dd-00d7-4fd8-a339-3bcb5a2a033e/sacolinha-do-instagram.png",
+                  "width": 627,
+                  "height": 497
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Como funciona:</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Quando você ativa o Instagram Shopping, seus produtos ficam disponíveis para marcação em posts e stories. O cliente pode tocar no produto, ver detalhes, preço e, com a sacolinha integrada, finalizar a compra diretamente na sua loja. É um processo muito mais fluido que redirecionar para mensagens.</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/522c39dd-00d7-4fd8-a339-3bcb5a2a033e/sacolinha-do-instagram.png",
+                  "width": 627,
+                  "height": 497
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Instagram como ponto de contato estratégico:</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>É importante estar atento ao Instagram não apenas como canal de venda, mas como ponto de contato importante. Muitos clientes descobrem produtos lá, mesmo que finalizem a compra em outros canais. Manter presença ativa com conteúdo relevante e produtos sempre atualizados é essencial para sua estratégia multicanal.</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/522c39dd-00d7-4fd8-a339-3bcb5a2a033e/sacolinha-do-instagram.png",
+                  "width": 627,
+                  "height": 497
                 },
                 "videoOn": false,
                 "button": {},
@@ -2918,8 +3343,8 @@
             "tabsInterval": 30,
             "backgroundColor": "#F2F2F2",
             "caption": {
-              "text": "<p>Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
-              "fontSize": "16px",
+              "text": "<p>O Instagram se tornou uma das principais vitrines digitais para descoberta de produtos. Com mais de 100 milhões de brasileiros na plataforma, é fundamental estar presente onde seu cliente já está navegando.</p>",
+              "fontSize": "14px",
               "color": "#5F6E82",
               "font": "inter ",
               "lineHeight": "140%",
@@ -2928,7 +3353,9 @@
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
             "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "cta": [],
+            "disableImageAnimations": true,
+            "disableImageShadow": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -3182,15 +3609,15 @@
             "value": {
               "__resolveType": "site/sections/HeroV3.tsx",
               "title": {
-                "text": "<p><span style=\"color: rgb(0, 54, 74)\">É hora de se preparar para</span> Black Friday</p>",
-                "color": "#28C3C3",
-                "font": "Lektorat Display var",
-                "fontWeight": "650",
-                "fontSize": "32px",
+                "text": "<p style=\"text-align: center\">Se você ainda não ativou o Instagram Shopping</p>",
+                "color": "#00363A",
+                "font": "Inter",
+                "fontWeight": "500",
+                "fontSize": "22px",
                 "letterSpacing": "-1px;",
                 "lineHeight": "100%"
               },
-              "text": "<p><span style=\"color: rgb(95, 110, 130)\">A Black Friday se transformou no maior evento de vendas do Brasil e representa uma janela de oportunidade crucial para qualquer negócio online. Mas este ano traz um cenário diferente e mais desafiador.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">Você que é lojista da Loja Integrada, vendendo a todo vapor ou ainda iniciando sua jornada (ou tentando se manter ativo em vendas), este ebook é para ajudar a trazer clareza do que são oportunidades e riscos para atuar não somente em sua loja própria, como em múltiplos canais como nas redes sociais e marketplaces. O que não pode ficar de fora eaté estratégias para durante e pós Black Friday.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">O consumidor de hoje não está mais concentrado apenas na sua loja própria. Ele pesquisa no Google, vê produtos no Instagram, compara preços nos marketplaces e só depois decide onde comprar. Por isso, sua estratégia não pode maisse limitar a um único canal. É fundamental pensar em como estar presente em múltiplos pontos de contato com o cliente.</span></p>",
+              "text": "<p></p>",
               "media": {
                 "image": {}
               },
@@ -3202,10 +3629,25 @@
               },
               "container": {
                 "paddingTop": "0px",
-                "paddingLeft": "0px",
-                "paddingRight": "0px",
-                "paddingBottom": "0px"
-              }
+                "paddingBottom": "60px",
+                "marginBottom": "0px"
+              },
+              "sectionBackground": {
+                "backgroundColor": "#F2F2F2"
+              },
+              "cta": [
+                {
+                  "type": "Button",
+                  "size": "Large",
+                  "href": "#",
+                  "text": "Configure agora clicando aqui",
+                  "backgroundColor": "#00363A",
+                  "borderColor": "#00363A",
+                  "textColor": "#FFFFFF"
+                }
+              ],
+              "ctaPlacement": "center",
+              "distanceBetweenTitleAndText": "0px"
             },
             "rule": {
               "__resolveType": "website/matchers/device.ts",
@@ -3272,16 +3714,16 @@
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "text": "<p style=\"text-align: center\">2. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
-              "font": "Lektorat Display var",
+              "text": "<p><strong><span style=\"color: rgb(40, 195, 195)\">Passo 7:</span></strong><span style=\"color: rgb(40, 195, 195)\"> </span>Organize estoque e logística</p>",
+              "font": "Inter",
               "lineHeight": "100%",
-              "fontSize": "32px",
+              "fontSize": "18px",
               "letterSpacing": "-1px",
-              "fontWeight": "650",
+              "fontWeight": "500",
               "color": "#00363A"
             },
-            "paddingTop": "30px",
-            "paddingBottom": "30px",
+            "paddingTop": "60px",
+            "paddingBottom": "60px",
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -3295,16 +3737,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Gestão de estoque estratégica:</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontSize": "18px",
+                  "fontSize": "16px",
                   "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p><strong>Giro A (produtos que vendem rápido): </strong>Mantenha 40% acima do estoque normal.<br><br><strong>Giro B (produtos parados/que vendem devagar):</strong> Use desconto de 20-35% para desovar.<br><br><strong>Giro C (produtos encalhados):</strong> Considere combos para acelerar saída.<br><br><strong>Lançamentos:</strong> Reserve 10% do estoque para testar mercado.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -3312,9 +3754,9 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/bc7bf5b3-f9dd-44c1-8703-0bce0811d833/Estoque-e-logistica.png",
+                  "width": 627,
+                  "height": 442
                 },
                 "videoOn": false,
                 "button": {},
@@ -3335,16 +3777,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Segurança operacional:</p>",
                   "color": "#00363A",
                   "font": "Inter",
                   "fontWeight": "600",
-                  "fontSize": "18px"
+                  "fontSize": "16px"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p><strong>Estoque sincronizado: </strong>Certifique-se de que seu estoque está atualizado em tempo real entre sua loja e os marketplaces.<br><br><strong>Defina estoque mínimo: </strong>Configure uma quantidade de segurança que não será compartilhada com os canais de venda para evitar ruptura.<br><br><strong>Fornecedores de backup: </strong>Tenha contatos alternativos para reposição rápida quando necessário.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -3352,9 +3794,49 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/bc7bf5b3-f9dd-44c1-8703-0bce0811d833/Estoque-e-logistica.png",
+                  "width": 627,
+                  "height": 442
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Logística preparada:</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>Adicione 2-3 dias extras ao seu prazo normal de entrega. <br><br>Use hubs de transportadoras como Enviali para reforço logístico na Black Friday. Com poucos cliques você pode contratar etiquetas pontuais, economizar no frete e ter mais opções de entrega.<br><br>Considere reforçar a equipe de atendimento e operação durante o período.</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/bc7bf5b3-f9dd-44c1-8703-0bce0811d833/Estoque-e-logistica.png",
+                  "width": 627,
+                  "height": 442
                 },
                 "videoOn": false,
                 "button": {},
@@ -3402,10 +3884,10 @@
               "__resolveType": "site/sections/BlankSection.tsx"
             },
             "tabsInterval": 30,
-            "backgroundColor": "#F2F2F2",
+            "backgroundColor": "#ffffff",
             "caption": {
-              "text": "<p>Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
-              "fontSize": "16px",
+              "text": "<p>O Instagram se tornou uma das principais vitrines digitais para descoberta de produtos. Com mais de 100 milhões de brasileiros na plataforma, é fundamental estar presente onde seu cliente já está navegando.</p>",
+              "fontSize": "14px",
               "color": "#5F6E82",
               "font": "inter ",
               "lineHeight": "140%",
@@ -3414,7 +3896,9 @@
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
             "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "cta": [],
+            "disableImageAnimations": true,
+            "disableImageShadow": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -3628,21 +4112,21 @@
             "value": {
               "__resolveType": "site/sections/HeroV3.tsx",
               "title": {
-                "text": "<p>1. O cenário de 2025:<br><span style=\"color: #00364a\">Hora de voltar ao básico</span></p>",
+                "text": "<p>Passo 8: <span style=\"color: rgb(0, 54, 74)\">Prepare o seu atendimento</span></p>",
                 "color": "#28C3C3",
-                "font": "Lektorat Display var",
-                "fontWeight": "650",
-                "fontSize": "32px",
+                "font": "Inter",
+                "fontWeight": "600",
+                "fontSize": "18px",
                 "letterSpacing": "-1px;",
-                "lineHeight": "100%",
-                "titleMaxWidth": "680px"
+                "lineHeight": "120%",
+                "titleMaxWidth": "550px"
               },
-              "text": "<p><span style=\"color: #5f6e82\">Apesar das projeções otimistas para a Black Friday 2025, com expectativa de faturamento recorde de R$ 13,6 bilhões (alta de 16,5% sobre 2024), o cenário econômico geral apresenta desafios. O FMI (Fundo Monetário Internacional, organização que monitora a economia mundial) reduziu as projeções de crescimento do Brasil para 2,0% em 2025, e o Ministério da Fazenda revisou para baixo o crescimento do PIB (Produto Interno Bruto, que mede toda a riqueza produzida no país), de 2,5% para 2,3%.</span><br><br></p><p><span style=\"color: #5f6e82\">Para colocar em perspectiva: o Brasil cresceu 2,9% em 2023 e 3,4% em 2024 (o maior crescimento desde 2021). Agora, as projeções para 2025 ficam entre 2,0% e 2,3%, ou seja, um crescimento menor que os anos anteriores.</span><br><br></p><p><span style=\"color: #5f6e82\">Isso significa um consumidor mais seletivo e consciente. Em um cenário onde o crescimento econômico desacelera, nesta Black Friday é hora de voltar ao básico: garantir que seus produtos vendedores estão bem precificados, que você está movimentando aqueles parados em estoque, que você não está queimando fichas demais em mídia, e que você está, principalmente, usando dessa janela para manter sua base de clientes atual engajada.</span><br><br></p><p><span style=\"color: #5f6e82\">O cenário atual exige inteligência estratégica, não apenas desconto agressivo. Quem planeja com antecedência e organiza estoque, preços, comunicação e operação está pronto para crescer mesmo em um ambiente mais competitivo.</span></p><p></p>",
+              "text": "<p><span style=\"color: rgb(95, 110, 130)\">Durante a Black Friday, o volume de dúvidas aumenta exponencialmente. Clientes querem saber sobre prazos de entrega, formas de pagamento, disponibilidade de produtos e detalhes das promoções. Quem responde rápido e com qualidade ganha a venda.</span><br><br><span style=\"color: rgb(95, 110, 130)\">A estratégia mais eficiente é automatizar as respostas para as perguntas mais comuns. Crie um FAQ completo que cubra cerca de 80% das dúvidas típicas. Configure seu WhatsApp Business com respostas rápidas pré-definidas para as situações mais frequentes. Se possível, implemente um chat com IA para fazer a triagem inicial.</span></p>",
               "media": {
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/e9e6bea8-9817-4a08-83f9-0cf710be7384/planejamento-black-friday-2025-2.png",
-                  "width": 539,
-                  "height": 569
+                  "src": "https://assets.decocache.com/lojaintegradar/81afa62f-2d9c-42fc-bc5d-392d5f4e419e/prepare-seu-atendimento.png",
+                  "width": 626,
+                  "height": 307
                 },
                 "use": "image"
               },
@@ -3653,9 +4137,13 @@
                 "lineHeight": "140%"
               },
               "container": {
-                "paddingTop": "0px",
+                "paddingTop": "30px",
                 "paddingLeft": "0px",
-                "paddingRight": "0px"
+                "paddingRight": "0px",
+                "paddingBottom": "30px"
+              },
+              "sectionBackground": {
+                "backgroundColor": "#F2F2F2"
               }
             },
             "rule": {
@@ -3711,37 +4199,88 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Faq.tsx",
-        "backgroundColor": "#373737",
-        "title": "<p><span style=\"color: rgb(40, 195, 195)\">2.Durante a Black Friday:</span><br>Execução Inteligente</p>",
-        "titleFont": "Lektorat Display var",
-        "titleTextProps": {
-          "fontSize": "50px",
-          "fontWeight": "650",
-          "letterSpacing": "-1px;"
-        },
-        "titleColor": "#FBFAF9",
-        "caption": "Agora é hora de colocar sua estratégia em prática. Não é momento de improvisar, mas sim de executar com foco.",
-        "captionColor": "#FBFAF9",
-        "captionTextProps": {
-          "fontSize": "Inter",
-          "fontWeight": "500",
-          "lineHeight": "140%"
-        },
-        "questionsTitleColor": "#FBFAF9",
-        "questionsDivisionLineColor": "#FBFAF9",
-        "questions": [
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
           {
-            "question": "Ative suas promoções",
-            "answear": "<p><span style=\"color: rgb(251, 250, 249)\">Chegou a hora de colocar no ar suas promoções. As estratégias que funcionam melhor são:<br><br></span><strong><span style=\"color: rgb(251, 250, 249)\">Para produtos parados:</span></strong><br><strong><span style=\"color: rgb(251, 250, 249)\">- </span></strong><span style=\"color: rgb(251, 250, 249)\">Ative os combos inteligentes: produto parado + produto em alta;</span><br><span style=\"color: rgb(251, 250, 249)\">- Use descontos progressivos para produtos de giro lento; </span><br><span style=\"color: rgb(251, 250, 249)\">- Libere brindes estratégicos para compras acima de valores específicos.</span><br><br><strong><span style=\"color: rgb(251, 250, 249)\">Para produtos vendedores:</span></strong><br><span style=\"color: rgb(251, 250, 249)\">- Mantenha margem saudável (máximo 15-20% desconto); </span><br><span style=\"color: rgb(251, 250, 249)\">- Use como produto principal em kits promocionais;</span><br><span style=\"color: rgb(251, 250, 249)\">- Ofereça em combos voluntários com desconto atrativo.</span></p>"
+            "value": {
+              "__resolveType": "site/sections/Faq.tsx",
+              "backgroundColor": "#373737",
+              "title": "<p><span style=\"color: rgb(40, 195, 195)\">4.Durante a Black Friday:</span><br>Execução Inteligente</p>",
+              "titleFont": "Lektorat Display var",
+              "titleTextProps": {
+                "fontSize": "32px",
+                "fontWeight": "650",
+                "letterSpacing": "-1px;"
+              },
+              "titleColor": "#FBFAF9",
+              "caption": "Agora é hora de colocar sua estratégia em prática. Não é momento de improvisar, mas sim de executar com foco.",
+              "captionColor": "#FBFAF9",
+              "captionTextProps": {
+                "fontSize": "Inter",
+                "fontWeight": "500",
+                "lineHeight": "140%"
+              },
+              "questionsTitleColor": "#FBFAF9",
+              "questionsDivisionLineColor": "#FBFAF9",
+              "questions": [
+                {
+                  "question": "Ative suas promoções",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">Chegou a hora de colocar no ar suas promoções. As estratégias que funcionam melhor são:<br><br></span><strong><span style=\"color: rgb(251, 250, 249)\">Para produtos parados:</span></strong><br><strong><span style=\"color: rgb(251, 250, 249)\">- </span></strong><span style=\"color: rgb(251, 250, 249)\">Ative os combos inteligentes: produto parado + produto em alta;</span><br><span style=\"color: rgb(251, 250, 249)\">- Use descontos progressivos para produtos de giro lento; </span><br><span style=\"color: rgb(251, 250, 249)\">- Libere brindes estratégicos para compras acima de valores específicos.</span><br><br><strong><span style=\"color: rgb(251, 250, 249)\">Para produtos vendedores:</span></strong><br><span style=\"color: rgb(251, 250, 249)\">- Mantenha margem saudável (máximo 15-20% desconto); </span><br><span style=\"color: rgb(251, 250, 249)\">- Use como produto principal em kits promocionais;</span><br><span style=\"color: rgb(251, 250, 249)\">- Ofereça em combos voluntários com desconto atrativo.</span></p>"
+                },
+                {
+                  "question": "Execute sua estratégia de mídia",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">Com custos de mídia em alta, priorize os canais mais eficientes:<br><br></span><strong><span style=\"color: rgb(251, 250, 249)\">- Vitrine marketplace </span></strong><span style=\"color: rgb(251, 250, 249)\">(orgânico): seus produtos já estão otimizados no Magalu;</span><br><strong><span style=\"color: rgb(251, 250, 249)\">- Redes sociais próprias:</span></strong><span style=\"color: rgb(251, 250, 249)\"> conteúdo orgânico + impulsionamento pontual;</span><br><strong><span style=\"color: rgb(251, 250, 249)\">- E-mail automático: </span></strong><span style=\"color: rgb(251, 250, 249)\">as automações estão trabalhando; </span><br><strong><span style=\"color: rgb(251, 250, 249)\">- WhatsApp Business: </span></strong><span style=\"color: rgb(251, 250, 249)\">comunicação direta; E-mail campanhas: newsletters específicas para Black Friday.</span></p>"
+                },
+                {
+                  "question": "Monitore e ajuste",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">Durante o evento, acompanhe as métricas importantes:<br><br>-Quais promoções estão performando melhor;</span><br><span style=\"color: rgb(251, 250, 249)\">- Como está a performance no Magalu versus loja própria;</span><br><span style=\"color: rgb(251, 250, 249)\">- Quais automações estão gerando mais recuperação de vendas;</span><br><span style=\"color: rgb(251, 250, 249)\">-Se precisa ajustar prazos de entrega.</span><br><br><span style=\"color: rgb(251, 250, 249)\">Use o atendimento estruturado para responder rapidamente às dúvidas. A velocidade de resposta pode ser o fator decisivo entre ganhar ou perder uma venda.</span></p>"
+                }
+              ]
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
           },
           {
-            "question": "Execute sua estratégia de mídia",
-            "answear": "<p><span style=\"color: rgb(251, 250, 249)\">Com custos de mídia em alta, priorize os canais mais eficientes:<br><br></span><strong><span style=\"color: rgb(251, 250, 249)\">- Vitrine marketplace </span></strong><span style=\"color: rgb(251, 250, 249)\">(orgânico): seus produtos já estão otimizados no Magalu;</span><br><strong><span style=\"color: rgb(251, 250, 249)\">- Redes sociais próprias:</span></strong><span style=\"color: rgb(251, 250, 249)\"> conteúdo orgânico + impulsionamento pontual;</span><br><strong><span style=\"color: rgb(251, 250, 249)\">- E-mail automático: </span></strong><span style=\"color: rgb(251, 250, 249)\">as automações estão trabalhando; </span><br><strong><span style=\"color: rgb(251, 250, 249)\">- WhatsApp Business: </span></strong><span style=\"color: rgb(251, 250, 249)\">comunicação direta; E-mail campanhas: newsletters específicas para Black Friday.</span></p>"
-          },
-          {
-            "question": "Monitore e ajuste",
-            "answear": "<p><span style=\"color: rgb(251, 250, 249)\">Durante o evento, acompanhe as métricas importantes:<br><br>-Quais promoções estão performando melhor;</span><br><span style=\"color: rgb(251, 250, 249)\">- Como está a performance no Magalu versus loja própria;</span><br><span style=\"color: rgb(251, 250, 249)\">- Quais automações estão gerando mais recuperação de vendas;</span><br><span style=\"color: rgb(251, 250, 249)\">-Se precisa ajustar prazos de entrega.</span><br><br><span style=\"color: rgb(251, 250, 249)\">Use o atendimento estruturado para responder rapidamente às dúvidas. A velocidade de resposta pode ser o fator decisivo entre ganhar ou perder uma venda.</span></p>"
+            "value": {
+              "__resolveType": "site/sections/Faq.tsx",
+              "backgroundColor": "#373737",
+              "title": "<p><span style=\"color: rgb(40, 195, 195)\">4.Durante a Black Friday:</span><br>Execução Inteligente</p>",
+              "titleFont": "Lektorat Display var",
+              "titleTextProps": {
+                "fontSize": "50px",
+                "fontWeight": "650",
+                "letterSpacing": "-1px;"
+              },
+              "titleColor": "#FBFAF9",
+              "caption": "Agora é hora de colocar sua estratégia em prática. Não é momento de improvisar, mas sim de executar com foco.",
+              "captionColor": "#FBFAF9",
+              "captionTextProps": {
+                "fontSize": "Inter",
+                "fontWeight": "500",
+                "lineHeight": "140%"
+              },
+              "questionsTitleColor": "#FBFAF9",
+              "questionsDivisionLineColor": "#FBFAF9",
+              "questions": [
+                {
+                  "question": "Ative suas promoções",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">Chegou a hora de colocar no ar suas promoções. As estratégias que funcionam melhor são:<br><br></span><strong><span style=\"color: rgb(251, 250, 249)\">Para produtos parados:</span></strong><br><strong><span style=\"color: rgb(251, 250, 249)\">- </span></strong><span style=\"color: rgb(251, 250, 249)\">Ative os combos inteligentes: produto parado + produto em alta;</span><br><span style=\"color: rgb(251, 250, 249)\">- Use descontos progressivos para produtos de giro lento; </span><br><span style=\"color: rgb(251, 250, 249)\">- Libere brindes estratégicos para compras acima de valores específicos.</span><br><br><strong><span style=\"color: rgb(251, 250, 249)\">Para produtos vendedores:</span></strong><br><span style=\"color: rgb(251, 250, 249)\">- Mantenha margem saudável (máximo 15-20% desconto); </span><br><span style=\"color: rgb(251, 250, 249)\">- Use como produto principal em kits promocionais;</span><br><span style=\"color: rgb(251, 250, 249)\">- Ofereça em combos voluntários com desconto atrativo.</span></p>"
+                },
+                {
+                  "question": "Execute sua estratégia de mídia",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">Com custos de mídia em alta, priorize os canais mais eficientes:<br><br></span><strong><span style=\"color: rgb(251, 250, 249)\">- Vitrine marketplace </span></strong><span style=\"color: rgb(251, 250, 249)\">(orgânico): seus produtos já estão otimizados no Magalu;</span><br><strong><span style=\"color: rgb(251, 250, 249)\">- Redes sociais próprias:</span></strong><span style=\"color: rgb(251, 250, 249)\"> conteúdo orgânico + impulsionamento pontual;</span><br><strong><span style=\"color: rgb(251, 250, 249)\">- E-mail automático: </span></strong><span style=\"color: rgb(251, 250, 249)\">as automações estão trabalhando; </span><br><strong><span style=\"color: rgb(251, 250, 249)\">- WhatsApp Business: </span></strong><span style=\"color: rgb(251, 250, 249)\">comunicação direta; E-mail campanhas: newsletters específicas para Black Friday.</span></p>"
+                },
+                {
+                  "question": "Monitore e ajuste",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">Durante o evento, acompanhe as métricas importantes:<br><br>-Quais promoções estão performando melhor;</span><br><span style=\"color: rgb(251, 250, 249)\">- Como está a performance no Magalu versus loja própria;</span><br><span style=\"color: rgb(251, 250, 249)\">- Quais automações estão gerando mais recuperação de vendas;</span><br><span style=\"color: rgb(251, 250, 249)\">-Se precisa ajustar prazos de entrega.</span><br><br><span style=\"color: rgb(251, 250, 249)\">Use o atendimento estruturado para responder rapidamente às dúvidas. A velocidade de resposta pode ser o fator decisivo entre ganhar ou perder uma venda.</span></p>"
+                }
+              ]
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
           }
         ]
       }
@@ -3755,7 +4294,7 @@
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "text": "<p style=\"text-align: center\">2. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
+              "text": "<p><span style=\"color: rgb(40, 195, 195)\">5. Pós Black Friday: </span>Transformando<br>Vendas em relacionamento</p>",
               "font": "Lektorat Display var",
               "lineHeight": "100%",
               "fontSize": "32px",
@@ -3763,8 +4302,8 @@
               "fontWeight": "650",
               "color": "#00363A"
             },
-            "paddingTop": "30px",
-            "paddingBottom": "30px",
+            "paddingTop": "120px",
+            "paddingBottom": "120px",
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -3778,16 +4317,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Performance das promoções:</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontSize": "18px",
+                  "fontSize": "16px",
                   "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>-Quais tipos de promoções funcionaram melhor;<br>- Se os brindes movimentaram os produtos parados conforme esperado;<br>- Margem real por categoria versus suas expectativas.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -3795,9 +4334,9 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/37956400-e521-4a52-9f4c-3641ae0482e3/transformando-vendas-em-relacionamentos.png",
+                  "width": 627,
+                  "height": 350
                 },
                 "videoOn": false,
                 "button": {},
@@ -3818,16 +4357,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Eficiência dos canais:</p>",
                   "color": "#00363A",
                   "font": "Inter",
                   "fontWeight": "600",
-                  "fontSize": "18px"
+                  "fontSize": "16px"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>- Performance dos marketplaces versus suas expectativas; - Retorno da sua loja própria com preços diferenciados; <br>- Qual canal trouxe clientes de maior valor.<br></p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -3835,9 +4374,49 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/37956400-e521-4a52-9f4c-3641ae0482e3/transformando-vendas-em-relacionamentos.png",
+                  "width": 627,
+                  "height": 350
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Eficácia das automações:</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>- Evolução da taxa de recuperação de carrinho abandonado;<br>- Quantos produtos voltaram ao estoque e geraram vendas via \"avise-me\".<br></p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/37956400-e521-4a52-9f4c-3641ae0482e3/transformando-vendas-em-relacionamentos.png",
+                  "width": 627,
+                  "height": 350
                 },
                 "videoOn": false,
                 "button": {},
@@ -3885,10 +4464,10 @@
               "__resolveType": "site/sections/BlankSection.tsx"
             },
             "tabsInterval": 30,
-            "backgroundColor": "#F2F2F2",
+            "backgroundColor": "#ffffff",
             "caption": {
-              "text": "<p>Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
-              "fontSize": "16px",
+              "text": "<p>A maioria dos lojistas relaxa quando a Black Friday acaba. É justamente aqui que você pode se diferenciar e usar os dados coletados para construir um negócio sustentável. Analise os resultados, use a Black Friday como laboratório de aprendizado</p>",
+              "fontSize": "14px",
               "color": "#5F6E82",
               "font": "inter ",
               "lineHeight": "140%",
@@ -3897,7 +4476,9 @@
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
             "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "cta": [],
+            "disableImageAnimations": true,
+            "disableImageShadow": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -4111,7 +4692,7 @@
             "value": {
               "__resolveType": "site/sections/HeroV3.tsx",
               "title": {
-                "text": "<p><span style=\"color: rgb(0, 54, 74)\">É hora de se preparar para</span> Black Friday</p>",
+                "text": "<p><span style=\"color: rgb(0, 54, 74)\">Construa relacionamento</span><br><span style=\"color: rgb(0, 54, 74)\">com os</span> novos clientes</p>",
                 "color": "#28C3C3",
                 "font": "Lektorat Display var",
                 "fontWeight": "650",
@@ -4119,7 +4700,7 @@
                 "letterSpacing": "-1px;",
                 "lineHeight": "100%"
               },
-              "text": "<p><span style=\"color: rgb(95, 110, 130)\">A Black Friday se transformou no maior evento de vendas do Brasil e representa uma janela de oportunidade crucial para qualquer negócio online. Mas este ano traz um cenário diferente e mais desafiador.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">Você que é lojista da Loja Integrada, vendendo a todo vapor ou ainda iniciando sua jornada (ou tentando se manter ativo em vendas), este ebook é para ajudar a trazer clareza do que são oportunidades e riscos para atuar não somente em sua loja própria, como em múltiplos canais como nas redes sociais e marketplaces. O que não pode ficar de fora eaté estratégias para durante e pós Black Friday.</span><br><br></p><p><span style=\"color: rgb(95, 110, 130)\">O consumidor de hoje não está mais concentrado apenas na sua loja própria. Ele pesquisa no Google, vê produtos no Instagram, compara preços nos marketplaces e só depois decide onde comprar. Por isso, sua estratégia não pode maisse limitar a um único canal. É fundamental pensar em como estar presente em múltiplos pontos de contato com o cliente.</span></p>",
+              "text": "<p><span style=\"color: rgb(95, 110, 130)\">Agora você tem dados valiosos sobre quem comprou, onde e o quê. Use isso estrategicamente:</span><br><br><span style=\"color: rgb(95, 110, 130)\"> Comece com um e-mail de agradecimento personalizado. Durante a entrega, acompanhe o envio e garanta que seu parceiro logístico ofereça tracking completo. Se seu produto tiver funcionalidades específicas, envie conteúdo educacional sobre o produto comprado.</span><br><br><span style=\"color: rgb(95, 110, 130)\">Após alguns dias da entrega, envie uma pesquisa de satisfação inicial. Use essas respostas para melhorar continuamente e para identificar clientes super satisfeitos que podem virar promotores da marca.</span><br><br><span style=\"color: rgb(95, 110, 130)\">Uma estratégia poderosa é oferecer um cupom de desconto para a próxima compra (10-15%) mas com prazo de validade inteligente. Isso cria um motivo concreto para o cliente voltar.</span><br><br><span style=\"color: rgb(95, 110, 130)\">Considere também que pós-Black Friday ainda temos Cyber Monday e na sequência o Natal. Os clientes conquistados na Black Friday podem comprar novamente se tiverem uma experiência positiva. Uma boa jornada pós-compra não é apenas sobre fidelização, é sobre multiplicar suas oportunidades de venda nos próximos eventos do ano.</span><br><br><strong><span style=\"color: rgb(95, 110, 130)\">Prepare-se para o próximo ciclo</span></strong><br><strong><span style=\"color: rgb(95, 110, 130)\">Cyber Monday:</span></strong><span style=\"color: rgb(95, 110, 130)\"> Use os clientes que compraram na Black Friday para ofertas específicas;</span><br><strong><span style=\"color: rgb(95, 110, 130)\">Natal:</span></strong><span style=\"color: rgb(95, 110, 130)\"> Segmente baseado no perfil de compra da Black Friday;</span><br><strong><span style=\"color: rgb(95, 110, 130)\">2026: </span></strong><span style=\"color: rgb(95, 110, 130)\">Use todos os dados coletados para um planejamento ainda melhor.</span></p>",
               "media": {
                 "image": {}
               },
@@ -4130,10 +4711,13 @@
                 "lineHeight": "140%"
               },
               "container": {
-                "paddingTop": "0px",
+                "paddingTop": "30px",
                 "paddingLeft": "0px",
                 "paddingRight": "0px",
-                "paddingBottom": "0px"
+                "paddingBottom": "30px"
+              },
+              "sectionBackground": {
+                "backgroundColor": "#F2F2F2"
               }
             },
             "rule": {
@@ -4183,36 +4767,86 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Faq.tsx",
-        "backgroundColor": "#373737",
-        "title": "<p><span style=\"color: rgb(40, 195, 195)\">6.Plano de ação </span>para<br>os próximos 30 dias</p>",
-        "titleFont": "Lektorat Display var",
-        "titleTextProps": {
-          "fontSize": "50px",
-          "fontWeight": "650",
-          "letterSpacing": "-1px;"
-        },
-        "titleColor": "#FBFAF9",
-        "captionColor": "#FBFAF9",
-        "captionTextProps": {
-          "fontSize": "Inter",
-          "fontWeight": "500",
-          "lineHeight": "140%"
-        },
-        "questionsTitleColor": "#FBFAF9",
-        "questionsDivisionLineColor": "#FBFAF9",
-        "questions": [
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
           {
-            "question": "Semana 1-2: Fundação estratégica",
-            "answear": "<p><span style=\"color: rgb(251, 250, 249)\">-Ative a integração com Magalu se ainda não tiver</span><br><span style=\"color: rgb(251, 250, 249)\">- Configure todas as automações (carrinho abandonado, produto abandonado, avise-me, pedido cancelado)</span><br><span style=\"color: rgb(251, 250, 249)\">- Defina estratégia de precificação por canal</span><br><span style=\"color: rgb(251, 250, 249)\">- Analise estoque e identifique produtos parados versus vendedores</span></p>"
+            "value": {
+              "__resolveType": "site/sections/Faq.tsx",
+              "backgroundColor": "#373737",
+              "title": "<p><span style=\"color: rgb(40, 195, 195)\">6.Plano de ação </span>para<br>os próximos 30 dias</p>",
+              "titleFont": "Lektorat Display var",
+              "titleTextProps": {
+                "fontSize": "32px",
+                "fontWeight": "650",
+                "letterSpacing": "-1px;"
+              },
+              "titleColor": "#FBFAF9",
+              "captionColor": "#FBFAF9",
+              "captionTextProps": {
+                "fontSize": "Inter",
+                "fontWeight": "500",
+                "lineHeight": "140%"
+              },
+              "questionsTitleColor": "#FBFAF9",
+              "questionsDivisionLineColor": "#FBFAF9",
+              "questions": [
+                {
+                  "question": "Semana 1-2: Fundação estratégica",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">-Ative a integração com Magalu se ainda não tiver</span><br><span style=\"color: rgb(251, 250, 249)\">- Configure todas as automações (carrinho abandonado, produto abandonado, avise-me, pedido cancelado)</span><br><span style=\"color: rgb(251, 250, 249)\">- Defina estratégia de precificação por canal</span><br><span style=\"color: rgb(251, 250, 249)\">- Analise estoque e identifique produtos parados versus vendedores</span></p>"
+                },
+                {
+                  "question": "Semana 3: Configuração tática",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">-Configure todas as promoções (desconto progressivo, brindes, combos)</span><br><span style=\"color: rgb(251, 250, 249)\">- Prepare FAQ e templates de atendimento</span><br><span style=\"color: rgb(251, 250, 249)\">- Organize logística e fornecedores de backup</span><br><span style=\"color: rgb(251, 250, 249)\">- Crie conteúdo para redes sociais</span></p>"
+                },
+                {
+                  "question": "Semana 4: Ativação e monitoramento",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">-Ative todas as promoções nos canais escolhidos</span><br><span style=\"color: rgb(251, 250, 249)\">- Execute estratégia de mídia planejada</span><br><span style=\"color: rgb(251, 250, 249)\">- Monitore métricas definidas no planejamento</span><br><span style=\"color: rgb(251, 250, 249)\">- Prepare jornada pós-compra para fidelização</span></p>"
+                }
+              ]
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
           },
           {
-            "question": "Semana 3: Configuração tática",
-            "answear": "<p><span style=\"color: rgb(251, 250, 249)\">-Configure todas as promoções (desconto progressivo, brindes, combos)</span><br><span style=\"color: rgb(251, 250, 249)\">- Prepare FAQ e templates de atendimento</span><br><span style=\"color: rgb(251, 250, 249)\">- Organize logística e fornecedores de backup</span><br><span style=\"color: rgb(251, 250, 249)\">- Crie conteúdo para redes sociais</span></p>"
-          },
-          {
-            "question": "Semana 4: Ativação e monitoramento",
-            "answear": "<p><span style=\"color: rgb(251, 250, 249)\">-Ative todas as promoções nos canais escolhidos</span><br><span style=\"color: rgb(251, 250, 249)\">- Execute estratégia de mídia planejada</span><br><span style=\"color: rgb(251, 250, 249)\">- Monitore métricas definidas no planejamento</span><br><span style=\"color: rgb(251, 250, 249)\">- Prepare jornada pós-compra para fidelização</span></p>"
+            "value": {
+              "__resolveType": "site/sections/Faq.tsx",
+              "backgroundColor": "#373737",
+              "title": "<p><span style=\"color: rgb(40, 195, 195)\">6.Plano de ação </span>para<br>os próximos 30 dias</p>",
+              "titleFont": "Lektorat Display var",
+              "titleTextProps": {
+                "fontSize": "50px",
+                "fontWeight": "650",
+                "letterSpacing": "-1px;"
+              },
+              "titleColor": "#FBFAF9",
+              "captionColor": "#FBFAF9",
+              "captionTextProps": {
+                "fontSize": "Inter",
+                "fontWeight": "500",
+                "lineHeight": "140%"
+              },
+              "questionsTitleColor": "#FBFAF9",
+              "questionsDivisionLineColor": "#FBFAF9",
+              "questions": [
+                {
+                  "question": "Semana 1-2: Fundação estratégica",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">-Ative a integração com Magalu se ainda não tiver</span><br><span style=\"color: rgb(251, 250, 249)\">- Configure todas as automações (carrinho abandonado, produto abandonado, avise-me, pedido cancelado)</span><br><span style=\"color: rgb(251, 250, 249)\">- Defina estratégia de precificação por canal</span><br><span style=\"color: rgb(251, 250, 249)\">- Analise estoque e identifique produtos parados versus vendedores</span></p>"
+                },
+                {
+                  "question": "Semana 3: Configuração tática",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">-Configure todas as promoções (desconto progressivo, brindes, combos)</span><br><span style=\"color: rgb(251, 250, 249)\">- Prepare FAQ e templates de atendimento</span><br><span style=\"color: rgb(251, 250, 249)\">- Organize logística e fornecedores de backup</span><br><span style=\"color: rgb(251, 250, 249)\">- Crie conteúdo para redes sociais</span></p>"
+                },
+                {
+                  "question": "Semana 4: Ativação e monitoramento",
+                  "answear": "<p><span style=\"color: rgb(251, 250, 249)\">-Ative todas as promoções nos canais escolhidos</span><br><span style=\"color: rgb(251, 250, 249)\">- Execute estratégia de mídia planejada</span><br><span style=\"color: rgb(251, 250, 249)\">- Monitore métricas definidas no planejamento</span><br><span style=\"color: rgb(251, 250, 249)\">- Prepare jornada pós-compra para fidelização</span></p>"
+                }
+              ]
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
           }
         ]
       }
@@ -4226,7 +4860,7 @@
             "title": {
               "desktop": "<p style=\"text-align: center; line-height: 1.2;\"><em><span style=\"color: rgb(113, 219, 212); font-size: 52pt; font-family: 'Instrument serif';\">Fature enquanto eles trabalham.</span></em><br><span style=\"color: rgb(255, 255, 255); font-size: 52pt; font-family: 'Instrument serif';\">Automatize formas de ganhar dinheiro.</span></p>",
               "mobile": "<p style=\"text-align: center; color:#71DBD4; font-size:24px; font-style: italic; font-family: 'Instrument serif'; \">Fature enquanto eles trabalham.</p>",
-              "text": "<p style=\"text-align: center\">2. Pontos de atenção para uma<br>Black Friday sem surpresas</p>",
+              "text": "<p><span style=\"color: rgb(40, 195, 195)\">5. Conclusão: </span>Crescimento sustentável em 2025</p>",
               "font": "Lektorat Display var",
               "lineHeight": "100%",
               "fontSize": "32px",
@@ -4234,8 +4868,8 @@
               "fontWeight": "650",
               "color": "#00363A"
             },
-            "paddingTop": "30px",
-            "paddingBottom": "30px",
+            "paddingTop": "60px",
+            "paddingBottom": "60px",
             "subTitle": {
               "mobile": "<p><span style=\"text-align: center; line-height:1; color: rgb(255, 255, 255); font-size: 32pt\">Automatize formas de ganhar dinheiro.</p>",
               "desktop": "<p style=\"text-align: center; line-height: 120%;\"><span style=\"color: rgb(255, 255, 255); font-weight:100; font-size: 24px; font-family: 'Inter'; line-height:120%;\">Em poucos cliques, recupere vendas, otimize sua presença em marketplaces e aumente<br>a retenção de clientes com a tecnologia que trabalha por você.</span></p>"
@@ -4249,16 +4883,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Se você já vende online:</p>",
                   "color": "#00363A",
                   "font": "Inter",
-                  "fontSize": "18px",
+                  "fontSize": "16px",
                   "fontWeight": "600"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>-Sua loja virtual já está funcionando;<br>- Você tem experiência de vendas para aplicar;<br>- Pode usar dados históricos para tomar decisões.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -4266,9 +4900,9 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/24e934e6-f66f-437e-9fbf-64bf60dbb2f9/crescimento-sustentavel.png",
+                  "width": 627,
+                  "height": 442
                 },
                 "videoOn": false,
                 "button": {},
@@ -4289,16 +4923,16 @@
                 "title": {
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
-                  "text": "<p>Fique atento às mudanças</p>",
+                  "text": "<p>Se você está começando ou retomando:</p>",
                   "color": "#00363A",
                   "font": "Inter",
                   "fontWeight": "600",
-                  "fontSize": "18px"
+                  "fontSize": "16px"
                 },
                 "textContent": {
                   "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
                   "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
-                  "text": "<p><strong>Novidades fiscais:</strong> A DCE (Declaração de Conteúdo eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio<br><br></p><p><strong>Custos de mídia: </strong>Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado<br><br></p><p><strong>Regras dos canais: </strong>Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende</p>",
+                  "text": "<p>-Sua loja está pronta para receber clientes;<br>- Esta é uma oportunidade de construir sua primeira base de clientes;<br>-Pode começar do zero aplicando as melhores práticas.</p>",
                   "color": "#5F6E82",
                   "font": "Inter",
                   "fontSize": "14px",
@@ -4306,9 +4940,89 @@
                   "fontWeight": "400"
                 },
                 "tabImage": {
-                  "image": "https://assets.decocache.com/lojaintegradar/57de06a0-a4d1-4e5b-a752-dd812792e0ab/pontos-atencao.png",
-                  "width": 641,
-                  "height": 333
+                  "image": "https://assets.decocache.com/lojaintegradar/24e934e6-f66f-437e-9fbf-64bf60dbb2f9/crescimento-sustentavel.png",
+                  "width": 627,
+                  "height": 442
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Para ambos, o próximo passo é transformar isso em vantagem competitiva:</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>-Precificação baseada em inteligência de mercado;<br>-Estoque estrategicamente distribuído entre canais; <br>-Automações que trabalham por você 24/7;<br>-Relacionamento que vai além da transação;</p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/24e934e6-f66f-437e-9fbf-64bf60dbb2f9/crescimento-sustentavel.png",
+                  "width": 627,
+                  "height": 442
+                },
+                "videoOn": false,
+                "button": {},
+                "videoText": "Ver demo",
+                "tags": [],
+                "tabVideo": {
+                  "widthDesktop": 620,
+                  "heightDesktop": 409,
+                  "videoDesktop": "https://assets.decocache.com/lojaintegradar/c230a52c-d64b-4f01-97e7-9e419ab4ef18/reengaje-clientes-(250kb).mp4"
+                },
+                "useTab": "image"
+              },
+              {
+                "icon": {
+                  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
+                  "alt": "Tab icon"
+                },
+                "title": {
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255); font-size: 18pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255); font-size: 13pt\">Reengaje clientes com campanhas automáticas</span></p>",
+                  "text": "<p>Gestão que garante sustentabilidade</p>",
+                  "color": "#00363A",
+                  "font": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "600"
+                },
+                "textContent": {
+                  "mobile": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais..</span></p>",
+                  "desktop": "<p><span style=\"color: rgb(255, 255, 255)\">Venda mais – e sem custo adicional – com ferramentas</span><br><span style=\"color: rgb(255, 255, 255)\">estratégicas: Carrinho e Produto Abandonado, Desconto Progressivo; Compre Junto; e muito mais...</span></p>",
+                  "text": "<p>A Black Friday não é sobre queimar estoque a qualquer preço. É sobre usar uma janela de oportunidade para fortalecer seu negócio, movimentar produtos estratégicos e, principalmente, construir ou consolidar o relacionamento com seus clientes.<br><br>Em 2025, quem cresce é quem combina estratégia, execução e relacionamento. O momento de começar a preparação é agora. O sucesso da sua Black Friday está sendo construído hoje, tijolo por tijolo, decisão por decisão. <br><strong><br>A escolha é sua: participar ou se destacar.</strong></p>",
+                  "color": "#5F6E82",
+                  "font": "Inter",
+                  "fontSize": "14px",
+                  "lineHeight": "140%",
+                  "fontWeight": "400"
+                },
+                "tabImage": {
+                  "image": "https://assets.decocache.com/lojaintegradar/24e934e6-f66f-437e-9fbf-64bf60dbb2f9/crescimento-sustentavel.png",
+                  "width": 627,
+                  "height": 442
                 },
                 "videoOn": false,
                 "button": {},
@@ -4356,10 +5070,10 @@
               "__resolveType": "site/sections/BlankSection.tsx"
             },
             "tabsInterval": 30,
-            "backgroundColor": "#F2F2F2",
+            "backgroundColor": "#ffffff",
             "caption": {
-              "text": "<p>Antes de entrarmos nas estratégias, é importante estar ciente de alguns pontos que podem impactar sua Black Friday. Não são \"riscos críticos\", mas sim situações para ficar de olho e se preparar adequadamente:</p>",
-              "fontSize": "16px",
+              "text": "<p>A Black Friday 2025 será marcada pela diferença entre quem se preparou estrategicamente e quem apenas seguiu a multidão. Em um cenário de crescimento mais moderado, com custos de mídia elevados e consumidores mais seletivos,<br>o preparo inteligente é o que garantirá não apenas sobrevivência, mas crescimento real.</p>",
+              "fontSize": "14px",
               "color": "#5F6E82",
               "font": "inter ",
               "lineHeight": "140%",
@@ -4368,7 +5082,9 @@
             "progressBarColor": "#030C0B ",
             "progressBarBackgroundColor": "#A9CBD1",
             "disabledProgressBarBackgroundColor": "rgba(36, 111, 108, 0.20)",
-            "cta": []
+            "cta": [],
+            "disableImageAnimations": true,
+            "disableImageShadow": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -4671,7 +5387,9 @@
             ],
             "color3": "#EBEBEB",
             "logo": {
-              "src": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg"
+              "src": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+              "width": 510,
+              "height": 76
             },
             "showForm": false,
             "emailForm": {
@@ -4683,24 +5401,24 @@
             "socialLinks": [
               {
                 "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cfaa40f5-cd48-4097-9df8-cdd335e7460c/white-linkedin-logo.svg",
-                  "alt": "linkein icon"
+                  "src": "https://assets.decocache.com/lojaintegradar/bea10ba3-a937-4144-8fb3-593826a79aa6/tiktok-logo-fill.svg",
+                  "alt": "tik tok icon"
                 },
-                "href": "https://www.linkedin.com/company/lojaintegrada/"
+                "href": "https://www.tiktok.com/@lojaintegrada"
               },
               {
                 "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a6a3290d-621b-4089-9199-fd14f91e5220/instagram.svg",
+                  "src": "https://assets.decocache.com/lojaintegradar/b4026805-7f8e-4e2f-949b-27845c562fe7/instagram-logo-fill.svg",
                   "alt": "instgram icon"
                 },
                 "href": "https://www.instagram.com/lojaintegrada/"
               },
               {
                 "icon": {
-                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5aedbb42-d276-49e7-93c4-d2f45d5c63a1/white-tik-tok-logo.svg",
-                  "alt": "tiktok icon"
+                  "src": "https://assets.decocache.com/lojaintegradar/e5196560-0d7f-4379-8703-0bb3b0eef02e/youtube-logo-fill.svg",
+                  "alt": "youtube icon"
                 },
-                "href": "https://www.tiktok.com/@lojaintegrada"
+                "href": "https://www.youtube.com/c/LojaIntegradaBR-loja-virtual"
               }
             ],
             "color4": "#d4d4d4",
@@ -4772,7 +5490,7 @@
             "__resolveType": "site/sections/FixedBottom.tsx",
             "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);",
             "logo": {},
-            "text": "<p style=\"text-align: center\">Participe da Live 22/10: Estratégias inteligentes para vender mais em 2025 com especialista Thiago Franco</p>",
+            "text": "<p style=\"text-align: center\">Participe da Live 22/10 às 18h: Estratégias inteligentes para Black Friday com especialista Carlos Lourenço</p>",
             "textProps": {
               "color": "#FFFFFF",
               "fontFamily": "Inter",
@@ -4788,7 +5506,6 @@
                 "customWidth": "280px",
                 "customProps": {
                   "padding": "22px 32px",
-                  "letterSpacing": "-1px",
                   "borderRadius": "10px",
                   "height": "50px"
                 },
@@ -4818,7 +5535,7 @@
             "__resolveType": "site/sections/FixedBottom.tsx",
             "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);",
             "logo": {},
-            "text": "<p><span>Participe da Live 22/10: Estratégias inteligentes para vender mais em 2025 com especialista Thiago Franco</span></p>",
+            "text": "<p>Participe da Live 22/10: Estratégias inteligentes para vender mais em 2025 com especialista Carlos Lourenço</p>",
             "textProps": {
               "color": "#FFFFFF",
               "letterSpacing": "-0.75px",

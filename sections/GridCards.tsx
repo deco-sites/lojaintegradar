@@ -1,4 +1,4 @@
-import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
+import type { ImageWidget, RichText, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useId } from "../sdk/useId.ts";
@@ -47,11 +47,20 @@ export interface Card {
   textProps?: TextProps;
 }
 
+export interface BackgroundMedia {
+  image?: IImage;
+  video?: VideoWidget;
+  use?: "image" | "video";
+}
+
 export interface Props {
   hideSection?: boolean;
   tag?: Tag;
   title?: Title;
   cards?: Card[];
+  cardsWidth?: string;
+  cardsGap?: string;
+  cardsContainerWidth?: string;
   /** @format color-input */
   cardsBackgroundColor?: string;
   /** @format color-input */
@@ -60,11 +69,12 @@ export interface Props {
   cardsIconBackgroundColor?: string;
   /** @format color-input */
   cardsHoverIconBackgroundColor?: string;
+  backgroundMedia?: BackgroundMedia
   paddingTop?: string;
   paddingBottom?: string;
 }
 
-export default function GridCards({ hideSection, tag, title, cards = [], paddingBottom, paddingTop, cardsBackgroundColor, cardsHoverBackgroundColor, cardsHoverIconBackgroundColor, cardsIconBackgroundColor }: Props) {
+export default function GridCards({ hideSection, tag, title, cards = [], cardsContainerWidth, cardsGap, cardsWidth, paddingBottom, paddingTop, cardsBackgroundColor, backgroundMedia, cardsHoverBackgroundColor, cardsHoverIconBackgroundColor, cardsIconBackgroundColor }: Props) {
   if (hideSection) return <></>
   const position = {
     "left": "justify-start",
@@ -74,8 +84,8 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
 
   const cardsClass = `GridCards-${useId()}`;
 
-  return <div style={{ paddingBottom, paddingTop }}>
-    <div class="max-w-[1282px] mx-auto pt-16 lg:pt-28 relative z-10" >
+  return <div style={{ paddingBottom, paddingTop }} class="relative">
+    <div class="max-w-[1282px] mx-auto pt-16 lg:pt-28 relative z-10" style={{width: cardsContainerWidth}}>
 
       <AnimateOnShow animation="animate-fade-up50">
         {tag?.text && <div
@@ -92,12 +102,13 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
       </AnimateOnShow>
 
 
-      <div class="w-full flex flex-wrap gap-2 lg:gap-12 gap-y-12 justify-center lg:justify-start">
+      <div class="w-full flex flex-wrap gap-2 lg:gap-12 gap-y-12 justify-center lg:justify-start" style={{gap: cardsGap}}>
         {cards.map((card, index) => (
           <AnimateOnShow
             divClass={`rounded-[20px] max-w-[43.1vw] lg:min-w-[284px] lg:max-w-[284px] p-5 ${cardsClass} transition-colors`}
             delay={index * 100}
             animation="animate-fade-up"
+            style={{minWidth: cardsWidth, width: cardsWidth}}
           >
             {card.image?.src && <div class={`flex mb-[17px] lg:mb-8 ${position[card.image?.position || "left"]}`}>
               <div class="p-2.5 lg:p-5 cardIcon rounded-[10px]">
@@ -132,5 +143,18 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
       .${cardsClass}:hover .cardIcon {
         background: ${cardsHoverIconBackgroundColor};
       `}} />
+
+      {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
+      src={backgroundMedia.image.src}
+      alt={backgroundMedia.image.alt || "background image"}
+      width={backgroundMedia.image.width || 1280}
+      height={backgroundMedia.image.height || 720}
+      class={`absolute -z-40 top-0 left-0 h-full w-full object-cover`}
+      loading="lazy"
+    />}
+    {backgroundMedia?.use == "video" && backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading="lazy" loop
+      class={`object-cover absolute -z-40 top-0 left-0 h-full w-full`}>
+      <source src={backgroundMedia.video} type="video/mp4" />
+    </video>}
   </div>
 }

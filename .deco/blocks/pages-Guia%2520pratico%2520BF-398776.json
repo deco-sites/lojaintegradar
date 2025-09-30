@@ -655,18 +655,6 @@
       }
     },
     {
-      "__resolveType": "site/sections/BackToTopButton.tsx",
-      "text": "Voltar ao topo",
-      "textColor": "#FAFAF5",
-      "backgroundColor": "#212121",
-      "appearAt": 1500,
-      "position": {
-        "distanceFromScreenBottom": 110,
-        "distanceFromScreenRightEnd": 20
-      },
-      "size": 60
-    },
-    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Faq.tsx",
@@ -4756,6 +4744,18 @@
     },
     {
       "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
+    },
+    {
+      "__resolveType": "site/sections/BackToTopButton.tsx",
+      "text": "Voltar ao topo",
+      "textColor": "#FAFAF5",
+      "backgroundColor": "#212121",
+      "appearAt": 1500,
+      "position": {
+        "distanceFromScreenBottom": 110,
+        "distanceFromScreenRightEnd": 20
+      },
+      "size": 60
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

@@ -155,7 +155,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/GridCards.tsx",
-        "title": {},
+        "title": {
+          "text": "<p><span>Programação da live</span><br><span>Dia 22/10, ao vivo, no Youtube da Loja Integrada</span></p>"
+        },
         "cards": [
           {
             "image": {
@@ -196,7 +198,12 @@
         "tag": {
           "backgroundColor": "",
           "text": "<p></p>"
-        }
+        },
+        "cardsWidth": "249px",
+        "cardsContainerWidth": "1280px",
+        "cardsGap": "8px",
+        "paddingTop": "0px",
+        "paddingBottom": "120px"
       }
     },
     {

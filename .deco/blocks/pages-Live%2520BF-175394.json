@@ -152,6 +152,54 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/GridCards.tsx",
+        "title": {},
+        "cards": [
+          {
+            "image": {
+              "position": "left"
+            },
+            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
+            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
+          },
+          {
+            "image": {
+              "position": "left"
+            },
+            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
+            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
+          },
+          {
+            "image": {
+              "position": "left"
+            },
+            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
+            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
+          },
+          {
+            "image": {
+              "position": "left"
+            },
+            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
+            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
+          },
+          {
+            "image": {
+              "position": "left"
+            },
+            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
+            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
+          }
+        ],
+        "tag": {
+          "backgroundColor": "",
+          "text": "<p></p>"
+        }
+      }
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -543,8 +591,7 @@
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b335c46e-8e5d-46af-adeb-fd1b36f71e2d/footer-v2-background.png"
         },
         "showLogo": true,
-        "logoPosition": "above",
-        "useBackground": "image"
+        "logoPosition": "above"
       }
     },
     {
@@ -561,26 +608,6 @@
       "emailConsentTextProps": {
         "fontSize": "12px",
         "color": "#5F6E82"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/GridCards.tsx",
-        "title": {},
-        "cards": [
-          {
-            "image": {
-              "position": "left"
-            },
-            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
-            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
-          }
-        ],
-        "tag": {
-          "backgroundColor": "#373737",
-          "text": "<p></p>"
-        }
       }
     }
   ],

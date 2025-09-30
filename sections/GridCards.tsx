@@ -1,4 +1,4 @@
-import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
+import type { ImageWidget, RichText, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useId } from "../sdk/useId.ts";
@@ -47,6 +47,12 @@ export interface Card {
   textProps?: TextProps;
 }
 
+export interface BackgroundMedia {
+  image?: IImage;
+  video?: VideoWidget;
+  use?: "image" | "video";
+}
+
 export interface Props {
   hideSection?: boolean;
   tag?: Tag;
@@ -60,11 +66,12 @@ export interface Props {
   cardsIconBackgroundColor?: string;
   /** @format color-input */
   cardsHoverIconBackgroundColor?: string;
+  backgroundMedia?: BackgroundMedia
   paddingTop?: string;
   paddingBottom?: string;
 }
 
-export default function GridCards({ hideSection, tag, title, cards = [], paddingBottom, paddingTop, cardsBackgroundColor, cardsHoverBackgroundColor, cardsHoverIconBackgroundColor, cardsIconBackgroundColor }: Props) {
+export default function GridCards({ hideSection, tag, title, cards = [], paddingBottom, paddingTop, cardsBackgroundColor, backgroundMedia, cardsHoverBackgroundColor, cardsHoverIconBackgroundColor, cardsIconBackgroundColor }: Props) {
   if (hideSection) return <></>
   const position = {
     "left": "justify-start",
@@ -74,7 +81,7 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
 
   const cardsClass = `GridCards-${useId()}`;
 
-  return <div style={{ paddingBottom, paddingTop }}>
+  return <div style={{ paddingBottom, paddingTop }} class="relative">
     <div class="max-w-[1282px] mx-auto pt-16 lg:pt-28 relative z-10" >
 
       <AnimateOnShow animation="animate-fade-up50">
@@ -132,5 +139,18 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
       .${cardsClass}:hover .cardIcon {
         background: ${cardsHoverIconBackgroundColor};
       `}} />
+
+      {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
+      src={backgroundMedia.image.src}
+      alt={backgroundMedia.image.alt || "background image"}
+      width={backgroundMedia.image.width || 1280}
+      height={backgroundMedia.image.height || 720}
+      class={`absolute -z-40 top-0 left-0 h-full w-full object-cover`}
+      loading="lazy"
+    />}
+    {backgroundMedia?.use == "video" && backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading="lazy" loop
+      class={`object-cover absolute -z-40 top-0 left-0 h-full w-full`}>
+      <source src={backgroundMedia.video} type="video/mp4" />
+    </video>}
   </div>
 }

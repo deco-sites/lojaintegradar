@@ -430,7 +430,10 @@
             "cardsBackgroundColor": "#ffffff",
             "cardsHoverBackgroundColor": "#B7FBDB",
             "cardsIconBackgroundColor": "#F2F4F5",
-            "cardsHoverIconBackgroundColor": "#27E58F"
+            "cardsHoverIconBackgroundColor": "#27E58F",
+            "backgroundMedia": {
+              "image": {}
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

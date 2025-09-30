@@ -153,7 +153,7 @@
       "section": {
         "__resolveType": "site/sections/GridCards.tsx",
         "title": {
-          "text": "<p><span>Programação da live</span><br><span>Dia 22/10, ao vivo, no Youtube da Loja Integrada</span></p>"
+          "text": "<p>Programação da live<br>Dia 22/10, ao vivo</p>"
         },
         "cards": [
           {
@@ -161,7 +161,18 @@
               "position": "left"
             },
             "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
-            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>"
+            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>",
+            "titleTextProps": {
+              "color": "#CECECE",
+              "fontFamily": "inter",
+              "fontSize": "16px"
+            },
+            "textProps": {
+              "color": "#CECECE",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "lineHeight": "140%"
+            }
           },
           {
             "image": {

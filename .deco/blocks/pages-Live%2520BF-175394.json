@@ -3,14 +3,42 @@
   "path": "/live-esquenta-blackfriday",
   "sections": [
     {
-      "__resolveType": "site/sections/HeaderV3.tsx",
-      "campaignTimer": {},
-      "logo": {
-        "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg"
-      },
-      "centralizeHeaderContent": true,
-      "backgroundColor": "#212121",
-      "noScrollBackgroundColor": ""
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeaderV3.tsx",
+            "campaignTimer": {},
+            "logo": {
+              "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg",
+              "height": 30,
+              "width": 195
+            },
+            "centralizeHeaderContent": true,
+            "backgroundColor": "#212121",
+            "noScrollBackgroundColor": ""
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeaderV3.tsx",
+            "campaignTimer": {},
+            "logo": {
+              "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg"
+            },
+            "centralizeHeaderContent": true,
+            "backgroundColor": "#212121",
+            "noScrollBackgroundColor": ""
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -22,14 +50,14 @@
               {
                 "type": "Button",
                 "size": "Large",
-                "openModal": "Komea wait list",
-                "text": "Seja um dos primeiros a testar",
-                "textColor": "#00363A",
-                "backgroundColor": "#ECF488",
-                "borderColor": "#ECF488",
+                "openModal": "Black Friday Hubspot Form",
+                "text": "Quero minha vaga gratuita na Live",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
                 "customProps": {
                   "height": "48px",
-                  "borderRadius": "100px"
+                  "borderRadius": "5px"
                 },
                 "gtmProps": {
                   "customSection": "lp-komea",
@@ -37,33 +65,56 @@
                   "customTitle": "seja-um-dos-primeiros-a-testar"
                 },
                 "glowColor1": "#ACB82E99",
-                "glowColor2": "#EEFC5880"
+                "glowColor2": "#EEFC5880",
+                "customIcon": {},
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/8f9eb3d6-51f2-4c3c-af40-dbd23670c23e/cta.png"
+                }
               }
             ],
             "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #001D1F , #012b2e);"
+              "backgroundColor": "#212121"
             },
             "hubspotForm": {
               "modal": {}
             },
             "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">São múltiplos especialistas</span></p><p style=\"text-align: center\">no seu bolso</p>",
-              "color": "#EEFC58",
+              "text": "<p style=\"text-align: center\"><span style=\"color: #cecece\">A Black Friday começa agora:</span><span style=\"color: #cecece\"><br></span><span style=\"color: #28c3c3\">estratégias inteligentes para</span><span style=\"color: #28c3c3\"><br></span><span style=\"color: #28c3c3\">vender mais em 2025</span></p>",
+              "color": "#CECECE",
               "font": "Lektorat Display var",
-              "fontWeight": "750",
-              "letterSpacing": "-0.3px",
-              "lineHeight": "100%",
-              "fontSize": "7.26vw"
+              "fontWeight": "650",
+              "letterSpacing": "-1.2px",
+              "lineHeight": "110%",
+              "fontSize": "32px"
             },
-            "text": "<p style=\"text-align: center\"><span>Com a Komea, você tem agentes de IA especializados em<br>cuidar das tarefas chatas e repetitivas do seu negócio.</span></p>",
+            "text": "<p style=\"text-align: center\">Participe da live exclusiva com Carlos Lourenço e aprenda, ao vivo, como usar multicanais, IA e automações para preparar sua loja e evitar erros que custam vendas.</p>",
             "textProps": {
-              "color": "#ffffff",
-              "lineHeight": "125%",
+              "color": "#CECECE",
+              "lineHeight": "140%",
               "letterSpacing": "-0.3px",
-              "fontSize": "3.1vw"
+              "fontSize": "14px",
+              "fontFamily": "Inter"
             },
             "ctaPlacement": "center",
-            "customTitle": "hero:multiplos-especialistas"
+            "customTitle": "hero:multiplos-especialistas",
+            "bulletPoints": {
+              "bulletPointsIcon": {}
+            },
+            "container": {
+              "paddingTop": "124px",
+              "marginTop": "0px",
+              "paddingBottom": "60px"
+            },
+            "media": {
+              "placement": "left",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/f18d4eeb-8b0b-4f61-b42d-4c689d8fa187/live-blackfriday.png",
+                "width": "442px",
+                "height": "56px"
+              },
+              "use": "image",
+              "cornerImage": false
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -152,119 +203,251 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/GridCards.tsx",
-        "title": {
-          "text": "<p style=\"text-align: center\">Programação da live<br>Dia 22/10, ao vivo</p>",
-          "font": "Lektorat Display var",
-          "fontSize": "50px",
-          "letterSpacing": "-1px",
-          "lineHeight": "100%",
-          "color": "#CECECE"
-        },
-        "cards": [
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
           {
-            "image": {
-              "position": "left"
+            "value": {
+              "__resolveType": "site/sections/GridCards.tsx",
+              "title": {
+                "text": "<p style=\"text-align: center\">Programação da live<br>Dia 22/10, ao vivo</p>",
+                "font": "Lektorat Display var",
+                "fontSize": "32px",
+                "letterSpacing": "-1px",
+                "lineHeight": "110%",
+                "color": "#CECECE",
+                "fontWeight": "650"
+              },
+              "cards": [
+                {
+                  "image": {
+                    "position": "left"
+                  },
+                  "title": "<p><strong><span style=\"color: rgb(40, 195, 195)\">10 min</span></strong><br>O que esperar da Black Friday 2025<br></p>",
+                  "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>",
+                  "titleTextProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "inter",
+                    "fontSize": "16px"
+                  },
+                  "textProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left"
+                  },
+                  "title": "<p><strong><span style=\"color: rgb(40, 195, 195)\">20 min</span></strong><br>Estratégia Multicanal Inteligente<br></p>",
+                  "text": "<p>Como usar Magalu, Instagram e outros canais para multiplicar vendas.</p>",
+                  "titleTextProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "inter",
+                    "fontSize": "16px"
+                  },
+                  "textProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left"
+                  },
+                  "title": "<p><strong><span style=\"color: rgb(40, 195, 195)\">10 min</span></strong><br>Ferramentas que fazem a diferença<br></p>",
+                  "text": "<p>IA e automações que trabalham 24h para sua loja vender mais.</p>",
+                  "titleTextProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "inter",
+                    "fontSize": "16px"
+                  },
+                  "textProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left"
+                  },
+                  "title": "<p><strong><span style=\"color: rgb(40, 195, 195)\">10 min</span></strong><br>Preparação prática para a Black Friday<br></p>",
+                  "text": "<p>Os erros mais comuns que custam vendas — e como evitá-los.</p>",
+                  "titleTextProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "inter",
+                    "fontSize": "16px"
+                  },
+                  "textProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left"
+                  },
+                  "title": "<p><strong><span style=\"color: rgb(40, 195, 195)\">10 min</span></strong><br>Sessão de Perguntas e Respostas<br></p>",
+                  "text": "<p>Tire suas dúvidas ao vivo com Carlos Lourenço e a equipe da Loja Integrada.</p>",
+                  "titleTextProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "inter",
+                    "fontSize": "16px"
+                  },
+                  "textProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                }
+              ],
+              "tag": {
+                "backgroundColor": "",
+                "text": "<p></p>"
+              },
+              "cardsWidth": "375px",
+              "cardsGap": "2px",
+              "paddingTop": "30px",
+              "paddingBottom": "30px",
+              "backgroundMedia": {
+                "backgroundColor": "#373737"
+              }
             },
-            "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
-            "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>",
-            "titleTextProps": {
-              "color": "#CECECE",
-              "fontFamily": "inter",
-              "fontSize": "16px"
-            },
-            "textProps": {
-              "color": "#CECECE",
-              "fontFamily": "Inter",
-              "fontSize": "14px",
-              "lineHeight": "140%"
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
             }
           },
           {
-            "image": {
-              "position": "left"
+            "value": {
+              "__resolveType": "site/sections/GridCards.tsx",
+              "title": {
+                "text": "<p style=\"text-align: center\">Programação da live<br>Dia 22/10, ao vivo</p>",
+                "font": "Lektorat Display var",
+                "fontSize": "50px",
+                "letterSpacing": "-1px",
+                "lineHeight": "110%",
+                "color": "#CECECE",
+                "fontWeight": "650"
+              },
+              "cards": [
+                {
+                  "image": {
+                    "position": "left"
+                  },
+                  "title": "<p><span style=\"color: #28c3c3\">10 min</span><br>O que esperar da Black Friday 2025<br></p>",
+                  "text": "<p>Tendências do mercado e como se destacar mesmo em tempos desafiadores.</p>",
+                  "titleTextProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "inter",
+                    "fontSize": "16px"
+                  },
+                  "textProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left"
+                  },
+                  "title": "<p><span style=\"color: rgb(40, 195, 195)\">20 min</span><br>Estratégia Multicanal Inteligente<br></p>",
+                  "text": "<p>Como usar Magalu, Instagram e outros canais para multiplicar vendas.</p>",
+                  "titleTextProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "inter",
+                    "fontSize": "16px"
+                  },
+                  "textProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left"
+                  },
+                  "title": "<p><span style=\"color: rgb(40, 195, 195)\">10 min</span><br>Ferramentas que fazem a diferença<br></p>",
+                  "text": "<p>IA e automações que trabalham 24h para sua loja vender mais.</p>",
+                  "titleTextProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "inter",
+                    "fontSize": "16px"
+                  },
+                  "textProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left"
+                  },
+                  "title": "<p><span style=\"color: rgb(40, 195, 195)\">10 min</span><br>Preparação prática para a Black Friday<br></p>",
+                  "text": "<p>Os erros mais comuns que custam vendas — e como evitá-los.</p>",
+                  "titleTextProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "inter",
+                    "fontSize": "16px"
+                  },
+                  "textProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left"
+                  },
+                  "title": "<p><span style=\"color: rgb(40, 195, 195)\">10 min</span><br>Sessão de Perguntas e Respostas<br></p>",
+                  "text": "<p>Tire suas dúvidas ao vivo com Carlos Lourenço e a equipe da Loja Integrada.</p>",
+                  "titleTextProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "inter",
+                    "fontSize": "16px"
+                  },
+                  "textProps": {
+                    "color": "#CECECE",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                }
+              ],
+              "tag": {
+                "backgroundColor": "",
+                "text": "<p></p>"
+              },
+              "cardsWidth": "249px",
+              "cardsContainerWidth": "1280px",
+              "cardsGap": "8px",
+              "paddingTop": "30px",
+              "paddingBottom": "30px",
+              "backgroundMedia": {
+                "backgroundColor": "#373737"
+              }
             },
-            "title": "<p><span style=\"color: rgb(40, 195, 195)\">20 min</span><br>Estratégia Multicanal Inteligente<br></p>",
-            "text": "<p>Como usar Magalu, Instagram e outros canais para multiplicar vendas.</p>",
-            "titleTextProps": {
-              "color": "#CECECE",
-              "fontFamily": "inter",
-              "fontSize": "16px"
-            },
-            "textProps": {
-              "color": "#CECECE",
-              "fontFamily": "Inter",
-              "fontSize": "14px",
-              "lineHeight": "140%"
-            }
-          },
-          {
-            "image": {
-              "position": "left"
-            },
-            "title": "<p><span style=\"color: rgb(40, 195, 195)\">10 min</span><br>Ferramentas que fazem a diferença<br></p>",
-            "text": "<p>IA e automações que trabalham 24h para sua loja vender mais.</p>",
-            "titleTextProps": {
-              "color": "#CECECE",
-              "fontFamily": "inter",
-              "fontSize": "16px"
-            },
-            "textProps": {
-              "color": "#CECECE",
-              "fontFamily": "Inter",
-              "fontSize": "14px",
-              "lineHeight": "140%"
-            }
-          },
-          {
-            "image": {
-              "position": "left"
-            },
-            "title": "<p><span style=\"color: rgb(40, 195, 195)\">10 min</span><br>Preparação prática para a Black Friday<br></p>",
-            "text": "<p>Os erros mais comuns que custam vendas — e como evitá-los.</p>",
-            "titleTextProps": {
-              "color": "#CECECE",
-              "fontFamily": "inter",
-              "fontSize": "16px"
-            },
-            "textProps": {
-              "color": "#CECECE",
-              "fontFamily": "Inter",
-              "fontSize": "14px",
-              "lineHeight": "140%"
-            }
-          },
-          {
-            "image": {
-              "position": "left"
-            },
-            "title": "<p><span style=\"color: rgb(40, 195, 195)\">10 min</span><br>Sessão de Perguntas e Respostas<br></p>",
-            "text": "<p>Tire suas dúvidas ao vivo com Carlos Lourenço e a equipe da Loja Integrada.</p>",
-            "titleTextProps": {
-              "color": "#CECECE",
-              "fontFamily": "inter",
-              "fontSize": "16px"
-            },
-            "textProps": {
-              "color": "#CECECE",
-              "fontFamily": "Inter",
-              "fontSize": "14px",
-              "lineHeight": "140%"
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
             }
           }
-        ],
-        "tag": {
-          "backgroundColor": "",
-          "text": "<p></p>"
-        },
-        "cardsWidth": "249px",
-        "cardsContainerWidth": "1280px",
-        "cardsGap": "8px",
-        "paddingTop": "30px",
-        "paddingBottom": "30px",
-        "backgroundMedia": {
-          "backgroundColor": "#373737"
-        }
+        ]
       }
     },
     {
@@ -277,14 +460,14 @@
               {
                 "type": "Button",
                 "size": "Large",
-                "openModal": "Komea wait list",
-                "text": "Seja um dos primeiros a testar",
-                "textColor": "#00363A",
-                "backgroundColor": "#ECF488",
-                "borderColor": "#ECF488",
+                "openModal": "Black Friday Hubspot Form",
+                "text": "Quero minha vaga gratuita na Live",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
                 "customProps": {
                   "height": "48px",
-                  "borderRadius": "100px"
+                  "borderRadius": "5px"
                 },
                 "gtmProps": {
                   "customSection": "lp-komea",
@@ -292,33 +475,66 @@
                   "customTitle": "seja-um-dos-primeiros-a-testar"
                 },
                 "glowColor1": "#ACB82E99",
-                "glowColor2": "#EEFC5880"
+                "glowColor2": "#EEFC5880",
+                "customIcon": {},
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/8f9eb3d6-51f2-4c3c-af40-dbd23670c23e/cta.png"
+                }
               }
             ],
             "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #001D1F , #012b2e);"
+              "backgroundColor": "#212121"
             },
             "hubspotForm": {
               "modal": {}
             },
             "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">São múltiplos especialistas</span></p><p style=\"text-align: center\">no seu bolso</p>",
-              "color": "#EEFC58",
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(206, 206, 206)\">Carlos Lourenço</span></p>",
+              "color": "#CECECE",
               "font": "Lektorat Display var",
-              "fontWeight": "750",
-              "letterSpacing": "-0.3px",
-              "lineHeight": "100%",
-              "fontSize": "7.26vw"
+              "fontWeight": "650",
+              "letterSpacing": "-1.2px",
+              "lineHeight": "110%",
+              "fontSize": "42px",
+              "titleMaxWidth": "552px"
             },
-            "text": "<p style=\"text-align: center\"><span>Com a Komea, você tem agentes de IA especializados em<br>cuidar das tarefas chatas e repetitivas do seu negócio.</span></p>",
+            "text": "<p>Carlos Lourenço é especialista em gestão estratégica, marketing, vendas e aceleração de negócios. Atua na tração e escala de operações, gerando crescimento sustentável e previsível. Com estratégias de marketing, growth, estruturação de processos e uma jornada de compras bem estruturada, Carlos gerou resultados de alto impacto com faturamentos milionários para empresas no Brasil e na Europa, por meio do seu programa de consultoria. Além disso, mantém uma sólida rede de relacionamento com empresários, gestores e líderes de diversos setores em todo o país.</p>",
             "textProps": {
-              "color": "#ffffff",
-              "lineHeight": "125%",
+              "color": "#CECECE",
+              "lineHeight": "140%",
               "letterSpacing": "-0.3px",
-              "fontSize": "3.1vw"
+              "fontSize": "16px",
+              "fontFamily": "Inter"
             },
             "ctaPlacement": "center",
-            "customTitle": "hero:multiplos-especialistas"
+            "customTitle": "hero:multiplos-especialistas",
+            "bulletPoints": {
+              "bulletPointsIcon": {}
+            },
+            "container": {
+              "paddingTop": "60px",
+              "marginTop": "0px"
+            },
+            "media": {
+              "placement": "left",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/fbda2068-5a02-4cc3-b1a1-f8a26bec59bf/Frame-2147224046.png",
+                "width": 391,
+                "height": 381
+              },
+              "use": "image",
+              "cornerImage": false
+            },
+            "tag": {
+              "text": "<p><span>Sobre o especialista</span></p>",
+              "textProps": {
+                "color": "#212121",
+                "fontFamily": "Inter",
+                "fontSize": "14px"
+              },
+              "backgroundColor": "#FFE6A0",
+              "tagPlacement": "center"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -390,7 +606,7 @@
             "media": {
               "placement": "left",
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/bbb12b37-8d52-4c3c-b0c0-56494d550218/palestrante-carlos-lourenco.png",
+                "src": "https://assets.decocache.com/lojaintegradar/fbda2068-5a02-4cc3-b1a1-f8a26bec59bf/Frame-2147224046.png",
                 "width": 477,
                 "height": 465
               },
@@ -423,91 +639,78 @@
               {
                 "type": "Button",
                 "size": "Small",
-                "openModal": "Komea wait list",
-                "text": "Seja um dos primeiros a testar",
-                "textColor": "#00363A",
-                "backgroundColor": "#EEFC58",
-                "borderColor": "#EEFC58",
+                "text": "Acessar guia prático de Black Friday",
+                "textColor": "#ffffff",
+                "backgroundColor": "#28C3C3",
+                "borderColor": "#28C3C3",
                 "customProps": {
                   "height": "48px",
-                  "borderRadius": "100px"
+                  "borderRadius": "10px"
                 },
                 "gtmProps": {
                   "customSection": "lp-komea",
                   "customType": "botao",
                   "customTitle": "seja-um-dos-primeiros-a-testar"
-                }
+                },
+                "href": "https://landing.lojaintegrada.com.br/guia-pratico-black-friday"
               }
             ],
             "sectionBackground": {
-              "backgroundColor": "linear-gradient(to bottom, #012224, #001D1F)",
+              "backgroundColor": "#212121",
               "image": {}
             },
             "texts": [
               {
-                "text": "<p><span>Um time de agentes</span></p>",
+                "text": "<p>Comece hoje a se preparar<br><span style=\"color: #28c3c3\">para a Black Friday</span></p>",
                 "textProps": {
-                  "fontWeight": "750",
+                  "fontWeight": "650",
                   "fontFamily": "Lektorat Display var",
-                  "fontSize": "7.26vw",
+                  "fontSize": "50px",
                   "letterSpacing": "-0.3px",
-                  "color": "#00363A",
+                  "color": "#CECECE",
                   "lineHeight": "100%"
                 }
-              },
-              {
-                "text": "<p><span>que evolui com você</span></p>",
-                "textProps": {
-                  "fontWeight": "750",
-                  "fontFamily": "Lektorat Display var",
-                  "fontSize": "7.26vw",
-                  "letterSpacing": "-0.3px",
-                  "color": "#00363A",
-                  "lineHeight": "100%"
-                },
-                "markdownColor": "#EEFC58",
-                "markdownHorizontalScale": "105%",
-                "markdownHorizontalPosition": "1.5%",
-                "markdownVerticalScale": "120%",
-                "markdownVerticalPosition": "8%"
               }
             ],
             "bulletPoints": {
               "items": [
                 {
-                  "text": "Aprendem com o seu negócio"
+                  "text": "Visão clara do cenário de 2025"
                 },
                 {
-                  "text": "Tomam iniciativa para sugerir melhorias"
+                  "text": "Checklist completo de preparação"
                 },
                 {
-                  "text": "Executam ações com base em dados reais"
+                  "text": "Estratégias multicanal inteligentes"
                 },
                 {
-                  "text": "Escalam com você — sem exigir equipe ou conhecimento técnico"
+                  "text": "Plano de ação em 30 dias e muito mais"
                 }
               ],
               "textProps": {
-                "color": "#00363A",
+                "color": "#FBFAF9",
                 "fontWeight": "500",
                 "letterSpacing": "-0.3px",
                 "fontSize": "16px"
               },
               "bulletPointsIcon": {
-                "src": "https://assets.decocache.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
+                "src": "https://assets.decocache.com/lojaintegradar/40d0625d-4e33-4cbf-93b2-b537481b6bad/icone.svg"
               }
             },
             "container": {
-              "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);",
+              "backgroundColor": "#212121",
               "backgroundMedia": {
-                "image": {}
-              }
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/df6f9fba-4d53-4352-9e68-2b94a564bc53/bg-guia.png",
+                  "width": 1120,
+                  "height": 418
+                },
+                "use": "image"
+              },
+              "paddingBottom": "60px"
             }
           },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
+          "rule": null
         },
         {
           "value": {
@@ -561,7 +764,7 @@
               "backgroundColor": "#212121",
               "backgroundMedia": {
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/df6f9fba-4d53-4352-9e68-2b94a564bc53/bg-guia.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/dc2e4a71-d7f7-4bbe-9090-9996edeb45c6/bg-guia.png",
                   "width": 1120,
                   "height": 418
                 },
@@ -683,29 +886,70 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/FixedBottom.tsx",
-        "text": "<p><span>🎁  Acesse agora o Guia prático para começar a preparar sua loja para a Black Friday</span></p>",
-        "hideXButton": true,
-        "centerContent": true,
-        "backgroundColor": "#E4F3F3",
-        "textProps": {
-          "color": "#00363A",
-          "fontFamily": "Inter",
-          "fontSize": "16px",
-          "fontWeight": "600"
-        },
-        "cta": [
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
           {
-            "type": "Button",
-            "size": "Medium",
-            "href": "https://landing.lojaintegrada.com.br/guia-pratico-black-friday",
-            "text": "Acessar o guia prático",
-            "backgroundColor": "#00363A",
-            "borderColor": "#00363A",
-            "textColor": "#ffffff"
+            "value": {
+              "__resolveType": "site/sections/FixedBottom.tsx",
+              "text": "<p style=\"text-align: center\">🎁 Acesse o guia prático para Black Friday 2025</p>",
+              "hideXButton": true,
+              "centerContent": true,
+              "backgroundColor": "#E4F3F3",
+              "textProps": {
+                "color": "#00363A",
+                "fontFamily": "Inter",
+                "fontSize": "13px",
+                "fontWeight": "600"
+              },
+              "cta": [
+                {
+                  "type": "Button",
+                  "size": "Medium",
+                  "href": "https://landing.lojaintegrada.com.br/guia-pratico-black-friday",
+                  "text": "Acessar o guia prático",
+                  "backgroundColor": "#00363A",
+                  "borderColor": "#00363A",
+                  "textColor": "#ffffff"
+                }
+              ],
+              "height": "120px"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/FixedBottom.tsx",
+              "text": "<p><span>🎁  Acesse agora o Guia prático para começar a preparar sua loja para a Black Friday</span></p>",
+              "hideXButton": true,
+              "centerContent": true,
+              "backgroundColor": "#E4F3F3",
+              "textProps": {
+                "color": "#00363A",
+                "fontFamily": "Inter",
+                "fontSize": "16px",
+                "fontWeight": "600"
+              },
+              "cta": [
+                {
+                  "type": "Button",
+                  "size": "Medium",
+                  "href": "https://landing.lojaintegrada.com.br/guia-pratico-black-friday",
+                  "text": "Acessar o guia prático",
+                  "backgroundColor": "#00363A",
+                  "borderColor": "#00363A",
+                  "textColor": "#ffffff"
+                }
+              ],
+              "height": "70px"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
           }
-        ],
-        "height": "70px"
+        ]
       }
     },
     {

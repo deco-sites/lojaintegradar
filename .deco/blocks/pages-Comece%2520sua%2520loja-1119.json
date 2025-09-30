@@ -2299,20 +2299,30 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Banner.tsx",
-        "image": {
-          "src": "https://assets.decocache.com/lojaintegradar/78506ea9-1b2a-4659-89bb-2a7d7c596a03/banner-marterclass-site.png",
-          "width": 1220,
-          "height": 315
-        },
-        "containerWidth": "1280px",
-        "paddingTop": "30px",
-        "link": {
-          "href": "#plans"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Banner.tsx",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/78506ea9-1b2a-4659-89bb-2a7d7c596a03/banner-marterclass-site.png",
+                "width": 1220,
+                "height": 315
+              },
+              "containerWidth": "1280px",
+              "paddingTop": "30px",
+              "link": {
+                "href": "#plans"
+              }
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
         }
-      }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

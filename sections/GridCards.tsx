@@ -58,6 +58,9 @@ export interface Props {
   tag?: Tag;
   title?: Title;
   cards?: Card[];
+  cardsWidth?: string;
+  cardsGap?: string;
+  cardsContainerWidth?: string;
   /** @format color-input */
   cardsBackgroundColor?: string;
   /** @format color-input */
@@ -71,7 +74,7 @@ export interface Props {
   paddingBottom?: string;
 }
 
-export default function GridCards({ hideSection, tag, title, cards = [], paddingBottom, paddingTop, cardsBackgroundColor, backgroundMedia, cardsHoverBackgroundColor, cardsHoverIconBackgroundColor, cardsIconBackgroundColor }: Props) {
+export default function GridCards({ hideSection, tag, title, cards = [], cardsContainerWidth, cardsGap, cardsWidth, paddingBottom, paddingTop, cardsBackgroundColor, backgroundMedia, cardsHoverBackgroundColor, cardsHoverIconBackgroundColor, cardsIconBackgroundColor }: Props) {
   if (hideSection) return <></>
   const position = {
     "left": "justify-start",
@@ -82,7 +85,7 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
   const cardsClass = `GridCards-${useId()}`;
 
   return <div style={{ paddingBottom, paddingTop }} class="relative">
-    <div class="max-w-[1282px] mx-auto pt-16 lg:pt-28 relative z-10" >
+    <div class="max-w-[1282px] mx-auto pt-16 lg:pt-28 relative z-10" style={{width: cardsContainerWidth}}>
 
       <AnimateOnShow animation="animate-fade-up50">
         {tag?.text && <div
@@ -99,12 +102,13 @@ export default function GridCards({ hideSection, tag, title, cards = [], padding
       </AnimateOnShow>
 
 
-      <div class="w-full flex flex-wrap gap-2 lg:gap-12 gap-y-12 justify-center lg:justify-start">
+      <div class="w-full flex flex-wrap gap-2 lg:gap-12 gap-y-12 justify-center lg:justify-start" style={{gap: cardsGap}}>
         {cards.map((card, index) => (
           <AnimateOnShow
             divClass={`rounded-[20px] max-w-[43.1vw] lg:min-w-[284px] lg:max-w-[284px] p-5 ${cardsClass} transition-colors`}
             delay={index * 100}
             animation="animate-fade-up"
+            style={{minWidth: cardsWidth, width: cardsWidth}}
           >
             {card.image?.src && <div class={`flex mb-[17px] lg:mb-8 ${position[card.image?.position || "left"]}`}>
               <div class="p-2.5 lg:p-5 cardIcon rounded-[10px]">

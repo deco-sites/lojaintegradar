@@ -116,6 +116,17 @@ export interface MontlyValues {
     titleColor?:string;
     text?: RichText;
 }
+
+export interface TextProps {
+  fontFamily?: string;
+  /** @format color-input */
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
 /** @title {{title}} */
 export interface Slide {
     title?: string;
@@ -139,9 +150,10 @@ export interface Props {
     id?: string;
     backgroundImage?: IImage;
     title: RichText;
-    titleFont?: string;
+    titleTextProps?: TextProps;
     /** @title Timer Tabs */
     tabs?: TimeTabsProps;
+    hideValues?: boolean;
     valuesTag?: ValuesTag;
     annualValues?: AnnualValues;
     montlyValues?: MontlyValues;
@@ -232,19 +244,19 @@ function Buttons({ buttonColor }: {
             </div>
         </div>);
 }
-export default function PlanDetails2({ hideSection, id, title, titleFont, marginBottom, marginTop, imageTextFont, tabs, arrowsColor, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta }: Props) {
+export default function PlanDetails2({ hideSection, id, title, titleTextProps, hideValues, marginBottom, marginTop, imageTextFont, tabs, arrowsColor, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta }: Props) {
     if (hideSection) return <></>
     const carouselId = useId();
     return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-20 text-primary" style={{marginBottom, marginTop}}>
         {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 950} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top absolute h-full w-full top-0 left-0 -z-50"/>}
         <AnimateOnShow divClass="mt-4 lg:mt-0 text-[32px] lg:text-[56px] font-normal leading-[120%] px-6 lg:px-0 max-w-[1244px] mx-auto" animation="animate-fade-down">
-            {title && <div dangerouslySetInnerHTML={{__html: title}} style={{fontFamily: titleFont}}/>}
+            {title && <div dangerouslySetInnerHTML={{__html: title}} style={{...titleTextProps}}/>}
         </AnimateOnShow>
         <div class="max-w-[1244px] mx-auto flex flex-col-reverse lg:flex-row flex-wrap lg:flex-nowrap justify-between gap-[18px]  py-[60px]">
             <div class="lg:w-[606px] max-w-[606px] w-full" > 
                 <div class="px-7 lg:px-0">
                     <TimeTabs {...tabs}/>
-                    <AnimateOnShow divClass="inline-flex flex-wrap justify-center lg:justify-start mt-11 p-7 gap-5 rounded-bl-[20px] rounded-br-[20px] lg:rounded-[20px] relative" animation="animate-fade-up" delay={300} style={{background: valuesBackgroundColor}}>
+                    {!hideValues && <AnimateOnShow divClass="inline-flex flex-wrap justify-center lg:justify-start mt-11 p-7 gap-5 rounded-bl-[20px] rounded-br-[20px] lg:rounded-[20px] relative" animation="animate-fade-up" delay={300} style={{background: valuesBackgroundColor}}>
                         {valuesTag?.text && <div 
                             class="absolute left-0 top-[-45px] h-16 p-3.5 -z-40 rounded-tr-xl rounded-tl-xl lg:rounded-tl-none w-full lg:w-auto"
                             style={{color: valuesTag.textColor, background: valuesTag.backgroundColor}}
@@ -276,7 +288,7 @@ export default function PlanDetails2({ hideSection, id, title, titleFont, margin
                             <h3 class="text-2xl font-semibold" style={{color: montlyValues.titleColor}}>{montlyValues.title}</h3>
                             {montlyValues.text && <div class="mt-3" dangerouslySetInnerHTML={{ __html: montlyValues.text }}/>}
                         </div>}
-                    </AnimateOnShow>
+                    </AnimateOnShow>}
                 </div>
                 <AnimateOnShow divClass="mt-7 flex flex-wrap justify-center lg:justify-start lg:flex-nowrap items-start lg:items-center gap-5 px-6 lg:px-0" animation="animate-fade-up" delay={400}>
                     {createStoreCta?.text && <CreateStoreCta period="anual" text={createStoreCta.text} planId={createStoreCta.planId} showIcon={createStoreCta.showIcon} underlineText={createStoreCta.underlineText} ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`} style={createStoreCta.ctaStyle == "button" ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor } : { color: createStoreCta.textColor }}/>}

@@ -2299,15 +2299,35 @@
       ]
     },
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
               "__resolveType": "site/sections/Banner.tsx",
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/78506ea9-1b2a-4659-89bb-2a7d7c596a03/banner-marterclass-site.png",
+                "src": "https://assets.decocache.com/lojaintegradar/ce703c5e-d2fc-46eb-9b4b-28f61a47061b/banner-marterclass-site-mobile.png",
+                "width": 375,
+                "height": 426
+              },
+              "paddingTop": "30px",
+              "link": {
+                "href": "#plans"
+              },
+              "containerWidth": "375",
+              "containerHeight": "426"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/Banner.tsx",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/133e53b5-c498-4019-ad90-48243bf8b43f/banner-marterclass-site.png",
                 "width": 1220,
                 "height": 315
               },
@@ -2316,13 +2336,13 @@
               "link": {
                 "href": "#plans"
               }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
             }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/never.ts"
           }
-        }
-      ]
+        ]
+      }
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -6749,92 +6769,83 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "text": "<p style=\"text-align: center\"><strong>Bônus de boas-vindas:</strong> assine até sexta, 12h e tire dúvidas ao vivo com um especialista.</p>",
+            "textProps": {
+              "color": "#FFFFFF",
+              "fontFamily": "Inter",
+              "fontSize": "12px",
+              "fontWeight": "600"
+            },
+            "cta": [
               {
-                "value": {
-                  "__resolveType": "site/sections/FixedBottom.tsx",
-                  "text": "<p style=\"text-align: center\">Assine até sexta 12h e ganhe uma aula exclusiva com especialista 🚀</p>",
-                  "textProps": {
-                    "color": "#FFFFFF",
-                    "fontFamily": "Inter",
-                    "fontSize": "12px",
-                    "fontWeight": "600"
-                  },
-                  "cta": [
-                    {
-                      "type": "Button",
-                      "size": "Medium",
-                      "text": "Ver planos",
-                      "textColor": "#0000000",
-                      "backgroundColor": "#ffffff",
-                      "borderColor": "",
-                      "href": "#plans",
-                      "singleLine": false
-                    },
-                    {
-                      "type": "Button",
-                      "size": "Medium",
-                      "text": "saiba mais",
-                      "textColor": "#FFFFFF"
-                    }
-                  ],
-                  "backgroundColor": "#00363A",
-                  "xButtonColor": "#ffffff",
-                  "centerContent": true,
-                  "hideXButton": true,
-                  "hideSection": false,
-                  "height": "90px"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "tablet": true,
-                  "desktop": true
-                }
+                "type": "Button",
+                "size": "Medium",
+                "text": "Ver planos",
+                "textColor": "#0000000",
+                "backgroundColor": "#ffffff",
+                "borderColor": "",
+                "href": "#plans",
+                "singleLine": false
               },
               {
-                "value": {
-                  "__resolveType": "site/sections/FixedBottom.tsx",
-                  "hideSection": false,
-                  "text": "<p style=\"text-align: center\">Assine até sexta 12h e ganhe uma aula exclusiva com especialista 🚀</p>",
-                  "textProps": {
-                    "color": "#FFFFFF",
-                    "fontFamily": "Inter",
-                    "fontSize": "12px",
-                    "fontWeight": "600"
-                  },
-                  "cta": [
-                    {
-                      "type": "Button",
-                      "size": "Medium",
-                      "text": "Ver planos",
-                      "textColor": "#0000000",
-                      "backgroundColor": "#ffffff",
-                      "borderColor": "",
-                      "href": "#plans",
-                      "singleLine": false
-                    },
-                    {
-                      "type": "Button",
-                      "size": "Medium",
-                      "text": "Saiba mais",
-                      "textColor": "#FFFFFF"
-                    }
-                  ],
-                  "backgroundColor": "#00363A",
-                  "xButtonColor": "#ffffff",
-                  "centerContent": true,
-                  "hideXButton": true
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/device.ts",
-                  "mobile": true
-                }
+                "type": "Button",
+                "size": "Medium",
+                "text": "Saiba mais",
+                "textColor": "#FFFFFF",
+                "href": "#2070672828-0"
               }
-            ]
+            ],
+            "backgroundColor": "#00363A",
+            "xButtonColor": "#ffffff",
+            "centerContent": true,
+            "hideXButton": true,
+            "hideSection": false,
+            "height": "90px"
           },
           "rule": {
-            "__resolveType": "website/matchers/never.ts"
+            "__resolveType": "website/matchers/device.ts",
+            "tablet": true,
+            "desktop": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "hideSection": false,
+            "text": "<p style=\"text-align: center\">Assine até sexta 12h e ganhe uma aula exclusiva com especialista 🚀</p>",
+            "textProps": {
+              "color": "#FFFFFF",
+              "fontFamily": "Inter",
+              "fontSize": "12px",
+              "fontWeight": "600"
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Medium",
+                "text": "Ver planos",
+                "textColor": "#0000000",
+                "backgroundColor": "#ffffff",
+                "borderColor": "",
+                "href": "#plans",
+                "singleLine": false
+              },
+              {
+                "type": "Button",
+                "size": "Medium",
+                "text": "Saiba mais",
+                "textColor": "#FFFFFF"
+              }
+            ],
+            "backgroundColor": "#00363A",
+            "xButtonColor": "#ffffff",
+            "centerContent": true,
+            "hideXButton": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
           }
         }
       ]

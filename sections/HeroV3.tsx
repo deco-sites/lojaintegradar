@@ -145,7 +145,7 @@ export default function HeroV3({ title, text, textProps, bulletPoints, cta = [],
     "right": "lg:justify-between flex-row flex-wrap",
     "bellow": "flex-row flex-wrap lg:flex-col"
   }
-  return <div class="px-5 lg:px-0 relative py-12" style={{ background: sectionBackground?.backgroundColor, paddintTop: container?.marginTop, paddingBottom: container?.marginBottom }}>
+  return <div class="px-5 lg:px-0 relative py-12 overflow-hidden" style={{ background: sectionBackground?.backgroundColor, paddintTop: container?.marginTop, paddingBottom: container?.marginBottom }}>
     <div
       class={`max-w-[1288px] relative z-10 mx-auto rounded-[20px] overflow-hidden p-[30px] lg:p-12 flex gap-5 lg:gap-y-9 lg:flex-nowrap items-center justify-center ${mediaPlacement[media?.placement || "right"]}`}
       style={{ background: container?.backgroundColor, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight }}>

@@ -106,14 +106,25 @@
             "asideMenuBackgroundColor": "#ffffff",
             "asideMenuCloseIconColor": "#003037",
             "headerMessage": {
-              "show": false,
-              "text": "<p>teste</p>",
+              "show": true,
+              "text": "<p><span style=\"color: #00363a; font-size: 11px\">Assine um plano e ganhe aula com especialista</span></p>",
               "textColor": "#22454B",
               "backgroundColor": "#D0DAD9",
-              "cta": [],
+              "cta": [
+                {
+                  "type": "Only text",
+                  "size": "Small",
+                  "href": "#Masterclass",
+                  "text": "Saiba mais",
+                  "textColor": "#00363A"
+                }
+              ],
               "font": "Instrument Serif",
               "textProps": {
-                "color": ""
+                "color": "#00363A",
+                "fontFamily": "Inter",
+                "fontSize": "14px",
+                "fontWeight": "500"
               }
             },
             "campaignTimer": {
@@ -346,14 +357,26 @@
             "asideMenuBackgroundColor": "#ffffff",
             "asideMenuCloseIconColor": "#003037",
             "headerMessage": {
-              "show": false,
-              "text": "<p>teste</p>",
+              "show": true,
+              "text": "<p><strong>Bônus de boas-vindas:</strong> assine até sexta, 12h e tire dúvidas ao vivo com um especialista. </p>",
               "textColor": "#22454B",
               "backgroundColor": "#D0DAD9",
-              "cta": [],
+              "cta": [
+                {
+                  "type": "Only text",
+                  "size": "Medium",
+                  "href": "#Masterclass",
+                  "text": "Saiba mais",
+                  "textColor": "#00363A",
+                  "backgroundColor": "#00363A",
+                  "borderColor": "#00363A"
+                }
+              ],
               "font": "Instrument Serif",
               "textProps": {
-                "color": ""
+                "color": "#00363A",
+                "fontFamily": "Inter",
+                "fontSize": "14px"
               }
             },
             "campaignTimer": {
@@ -4158,6 +4181,54 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/Banner.tsx",
+              "sectionId": "Masterclass",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/6786e2ad-d575-40d3-b4e7-e9c061a8ab81/banner-marterclass-site-mobile.png",
+                "width": 330,
+                "height": 330
+              },
+              "link": {
+                "href": "#plans"
+              },
+              "containerWidth": "330",
+              "containerHeight": "330",
+              "paddingTop": "30px"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/Banner.tsx",
+              "sectionId": "Masterclass",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/539e20ad-0406-46b4-904c-266004e7305a/banner-marterclass-site.png",
+                "width": 1220,
+                "height": 315
+              },
+              "link": {
+                "href": "#plans"
+              },
+              "containerWidth": "1280px",
+              "paddingTop": "30px"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
+          }
+        ]
+      }
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

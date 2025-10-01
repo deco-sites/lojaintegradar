@@ -16,7 +16,8 @@
             },
             "centralizeHeaderContent": true,
             "backgroundColor": "#212121",
-            "noScrollBackgroundColor": ""
+            "noScrollBackgroundColor": "",
+            "hideAsideMenu": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -79,7 +80,7 @@
               "modal": {}
             },
             "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(206, 206, 206)\">A Black Friday começa agora:<br>Live exclusiva com estratégias </span><span style=\"color: rgb(40, 195, 195)\">para vender mais em 2025</span></p>",
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(206, 206, 206)\">A Black Friday começa agora:<br></span><span style=\"color: #28c3c3\">Live com estratégias inteligentes para vender mais em 2025</span></p>",
               "color": "#CECECE",
               "font": "Lektorat Display var",
               "fontWeight": "650",
@@ -163,7 +164,7 @@
               "modal": {}
             },
             "title": {
-              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(206, 206, 206)\">A Black Friday começa agora:<br>Live exclusiva </span><span style=\"color: rgb(40, 195, 195)\">com estratégias para<br>vender mais em 2025</span></p>",
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(206, 206, 206)\">A Black Friday começa agora:</span><br><span style=\"color: #28c3c3\">live com estratégias inteligentes</span><span style=\"color: #28c3c3\"><br></span><span style=\"color: #28c3c3\">para vender mais em 2025</span></p>",
               "color": "#CECECE",
               "font": "Lektorat Display var",
               "fontWeight": "650",

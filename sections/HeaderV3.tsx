@@ -258,7 +258,7 @@ export default function Header({ logo = {
               ))}
             </ul>
 
-            {!hideAsideMenu || (navigation?.buttons?.length ?? 0) > 0 && <div class="items-center justify-between">
+            {!hideAsideMenu && <div class="items-center justify-between">
               <ul class="flex justify-end gap-3 lg:gap-7">
                 {navigation?.buttons?.map(cta => (
                   <div class="flex items-center"><CTA {...cta} /></div>

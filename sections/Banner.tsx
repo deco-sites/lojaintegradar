@@ -77,6 +77,7 @@ interface Link {
 }
 
 interface Props {
+  sectionId?: string;
   image: IImage;
   link?: Link;
   containerWidth?: string;
@@ -85,8 +86,8 @@ interface Props {
   paddingBottom?: string;
 }
 
-export default function Banner({image, link, containerHeight, containerWidth, paddingBottom, paddingTop}: Props) {
-  return <div class="flex justify-center" style={{paddingTop, paddingBottom}}>
+export default function Banner({sectionId, image, link, containerHeight, containerWidth, paddingBottom, paddingTop}: Props) {
+  return <div id={sectionId} class="flex justify-center" style={{paddingTop, paddingBottom}}>
     <a style={{width: containerWidth, height: containerHeight}}
       hx-on:click={link?.openModal ? useScript(openModalFunction, link?.openModal, link?.createStorePlanId || '172' || '') : ''}
       href={link?.openModal ? undefined : link?.href}

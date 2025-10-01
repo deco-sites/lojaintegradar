@@ -796,72 +796,156 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Footer2.tsx",
-        "backgroundImage": {},
-        "color1": "#FFFFFF",
-        "color2": "#FFFFFF",
-        "cards": [],
-        "color3": "rgba(255, 255, 255, 0.10);  Colors Color format Hex Border colors  #FFFFFF · 10%",
-        "title": "<p></p>",
-        "logo": {
-          "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg",
-          "width": 586,
-          "height": 87
-        },
-        "showForm": true,
-        "emailForm": {
-          "inputName": "email",
-          "inputLabel": "Junte-se a mais de  2,5 milhões de lojistas",
-          "inputPlaceHolder": "Digite seu email aqui",
-          "submitText": "Fazer parte"
-        },
-        "socialLinks": [
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
           {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cfaa40f5-cd48-4097-9df8-cdd335e7460c/white-linkedin-logo.svg",
-              "alt": "linkein icon"
+            "value": {
+              "__resolveType": "site/sections/Footer2.tsx",
+              "backgroundImage": {},
+              "color1": "#FFFFFF",
+              "color2": "#FFFFFF",
+              "cards": [],
+              "color3": "rgba(255, 255, 255, 0.10);  Colors Color format Hex Border colors  #FFFFFF · 10%",
+              "title": "<p></p>",
+              "logo": {
+                "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg",
+                "width": 586,
+                "height": 87
+              },
+              "showForm": true,
+              "emailForm": {
+                "inputName": "email",
+                "inputLabel": "Junte-se a mais de  2,5 milhões de lojistas",
+                "inputPlaceHolder": "Digite seu email aqui",
+                "submitText": "Fazer parte"
+              },
+              "socialLinks": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cfaa40f5-cd48-4097-9df8-cdd335e7460c/white-linkedin-logo.svg",
+                    "alt": "linkein icon"
+                  },
+                  "href": "http://linkedin.com"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a6a3290d-621b-4089-9199-fd14f91e5220/instagram.svg",
+                    "alt": "instgram icon"
+                  },
+                  "href": "https://instagram.com"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5aedbb42-d276-49e7-93c4-d2f45d5c63a1/white-tik-tok-logo.svg"
+                  },
+                  "href": "https://tiktok.com"
+                }
+              ],
+              "color4": "rgba(255, 255, 255, 0.10);  Colors Color format Hex Border colors  #FFFFFF · 10%",
+              "bottomLinks": [
+                {
+                  "href": "https://comunidade.lojaintegrada.com.br/",
+                  "text": "Conheça nossa comunidade"
+                },
+                {
+                  "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
+                  "text": "Central de ajuda"
+                },
+                {
+                  "href": "https://lojaintegrada.com.br/termos-de-uso",
+                  "text": "Termos de uso"
+                },
+                {
+                  "href": "https://lojaintegrada.com.br/privacidade",
+                  "text": "Privacidade"
+                }
+              ],
+              "bottomBackground": {
+                "src": "https://assets.decocache.com/lojaintegradar/5521b9d4-d3bd-4a0b-9109-a199f4972a0f/footer-mobile.png"
+              },
+              "showLogo": true,
+              "logoPosition": "above",
+              "backgroundHeight": "0"
             },
-            "href": "http://linkedin.com"
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
           },
           {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a6a3290d-621b-4089-9199-fd14f91e5220/instagram.svg",
-              "alt": "instgram icon"
+            "value": {
+              "__resolveType": "site/sections/Footer2.tsx",
+              "backgroundImage": {},
+              "color1": "#FFFFFF",
+              "color2": "#FFFFFF",
+              "cards": [],
+              "color3": "rgba(255, 255, 255, 0.10);  Colors Color format Hex Border colors  #FFFFFF · 10%",
+              "title": "<p></p>",
+              "logo": {
+                "src": "https://assets.decocache.com/lojaintegradar/130610a2-24ef-4660-beed-07aebeafa553/logo-loja-integrada.svg",
+                "width": 586,
+                "height": 87
+              },
+              "showForm": true,
+              "emailForm": {
+                "inputName": "email",
+                "inputLabel": "Junte-se a mais de  2,5 milhões de lojistas",
+                "inputPlaceHolder": "Digite seu email aqui",
+                "submitText": "Fazer parte"
+              },
+              "socialLinks": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/cfaa40f5-cd48-4097-9df8-cdd335e7460c/white-linkedin-logo.svg",
+                    "alt": "linkein icon"
+                  },
+                  "href": "http://linkedin.com"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/a6a3290d-621b-4089-9199-fd14f91e5220/instagram.svg",
+                    "alt": "instgram icon"
+                  },
+                  "href": "https://instagram.com"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5aedbb42-d276-49e7-93c4-d2f45d5c63a1/white-tik-tok-logo.svg"
+                  },
+                  "href": "https://tiktok.com"
+                }
+              ],
+              "color4": "rgba(255, 255, 255, 0.10);  Colors Color format Hex Border colors  #FFFFFF · 10%",
+              "bottomLinks": [
+                {
+                  "href": "https://comunidade.lojaintegrada.com.br/",
+                  "text": "Conheça nossa comunidade"
+                },
+                {
+                  "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
+                  "text": "Central de ajuda"
+                },
+                {
+                  "href": "https://lojaintegrada.com.br/termos-de-uso",
+                  "text": "Termos de uso"
+                },
+                {
+                  "href": "https://lojaintegrada.com.br/privacidade",
+                  "text": "Privacidade"
+                }
+              ],
+              "bottomBackground": {
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b335c46e-8e5d-46af-adeb-fd1b36f71e2d/footer-v2-background.png"
+              },
+              "showLogo": true,
+              "logoPosition": "above",
+              "backgroundHeight": "0"
             },
-            "href": "https://instagram.com"
-          },
-          {
-            "icon": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/5aedbb42-d276-49e7-93c4-d2f45d5c63a1/white-tik-tok-logo.svg"
-            },
-            "href": "https://tiktok.com"
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
           }
-        ],
-        "color4": "rgba(255, 255, 255, 0.10);  Colors Color format Hex Border colors  #FFFFFF · 10%",
-        "bottomLinks": [
-          {
-            "href": "https://comunidade.lojaintegrada.com.br/",
-            "text": "Conheça nossa comunidade"
-          },
-          {
-            "href": "https://ajuda.lojaintegrada.com.br/pt-BR/",
-            "text": "Central de ajuda"
-          },
-          {
-            "href": "https://lojaintegrada.com.br/termos-de-uso",
-            "text": "Termos de uso"
-          },
-          {
-            "href": "https://lojaintegrada.com.br/privacidade",
-            "text": "Privacidade"
-          }
-        ],
-        "bottomBackground": {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/b335c46e-8e5d-46af-adeb-fd1b36f71e2d/footer-v2-background.png"
-        },
-        "showLogo": true,
-        "logoPosition": "above",
-        "backgroundHeight": "0"
+        ]
       }
     },
     {

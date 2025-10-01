@@ -1437,6 +1437,52 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/Banner.tsx",
+              "sectionId": "#Masterclass",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/6786e2ad-d575-40d3-b4e7-e9c061a8ab81/banner-marterclass-site-mobile.png",
+                "width": 330,
+                "height": 330
+              },
+              "link": {
+                "href": "#plans"
+              },
+              "paddingTop": "30px"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/Banner.tsx",
+              "sectionId": "#Masterclass",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/539e20ad-0406-46b4-904c-266004e7305a/banner-marterclass-site.png",
+                "width": 1220,
+                "height": 315
+              },
+              "link": {
+                "href": "#plans"
+              },
+              "containerWidth": "1280px",
+              "paddingTop": "30px"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
+          }
+        ]
+      }
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -6695,7 +6741,7 @@
       "section": {
         "__resolveType": "site/sections/FixedBottom.tsx",
         "backgroundColor": "#00363A",
-        "text": "<p style=\"text-align: center\">Venda mais com o Plano Crescimento<br><em>anual em até 12x de R$ 43</em></p>",
+        "text": "<p style=\"text-align: center\"><strong>Bônus de boas-vindas:</strong> assine até sexta, 12h e tire dúvidas ao vivo com um especialista.</p>",
         "textProps": {
           "color": "#FFFFFF",
           "fontFamily": "Inter",
@@ -6707,12 +6753,11 @@
           {
             "type": "Button",
             "size": "Small",
-            "openModal": "Create Store",
             "textColor": "#ffffff",
             "backgroundColor": "#28C3C3",
             "borderColor": "#28C3C3",
-            "text": "Criar loja",
-            "createStorePlanId": "173"
+            "text": "Ver planos",
+            "href": "#plans"
           },
           {
             "type": "Button",
@@ -6721,10 +6766,56 @@
             "textColor": "#ffffff",
             "backgroundColor": "transparent",
             "borderColor": "#ffffff",
-            "href": "#plans"
+            "href": "#Masterclass"
           }
         ]
       }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/FixedBottom.tsx",
+              "backgroundColor": "#00363A",
+              "text": "<p style=\"text-align: center\">Venda mais com o Plano Crescimento<br><em>anual em até 12x de R$ 43</em></p>",
+              "textProps": {
+                "color": "#FFFFFF",
+                "fontFamily": "Inter",
+                "fontSize": "12px"
+              },
+              "centerContent": true,
+              "hideXButton": true,
+              "cta": [
+                {
+                  "type": "Button",
+                  "size": "Small",
+                  "openModal": "Create Store",
+                  "textColor": "#ffffff",
+                  "backgroundColor": "#28C3C3",
+                  "borderColor": "#28C3C3",
+                  "text": "Criar loja",
+                  "createStorePlanId": "173"
+                },
+                {
+                  "type": "Button",
+                  "size": "Small",
+                  "text": "ver mais",
+                  "textColor": "#ffffff",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#ffffff",
+                  "href": "#plans"
+                }
+              ]
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     }
   ],
   "seo": {

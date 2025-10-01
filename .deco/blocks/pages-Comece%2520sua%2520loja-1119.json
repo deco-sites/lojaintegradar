@@ -2307,7 +2307,7 @@
             "value": {
               "__resolveType": "site/sections/Banner.tsx",
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/ce703c5e-d2fc-46eb-9b4b-28f61a47061b/banner-marterclass-site-mobile.png",
+                "src": "https://assets.decocache.com/lojaintegradar/6786e2ad-d575-40d3-b4e7-e9c061a8ab81/banner-marterclass-site-mobile.png",
                 "width": 375,
                 "height": 426
               },
@@ -2316,7 +2316,8 @@
                 "href": "#plans"
               },
               "containerWidth": "375",
-              "containerHeight": "426"
+              "containerHeight": "426",
+              "sectionId": "Masterclass"
             },
             "rule": {
               "__resolveType": "website/matchers/device.ts",
@@ -2327,7 +2328,7 @@
             "value": {
               "__resolveType": "site/sections/Banner.tsx",
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/133e53b5-c498-4019-ad90-48243bf8b43f/banner-marterclass-site.png",
+                "src": "https://assets.decocache.com/lojaintegradar/539e20ad-0406-46b4-904c-266004e7305a/banner-marterclass-site.png",
                 "width": 1220,
                 "height": 315
               },
@@ -2335,7 +2336,8 @@
               "paddingTop": "30px",
               "link": {
                 "href": "#plans"
-              }
+              },
+              "sectionId": "Masterclass"
             },
             "rule": {
               "__resolveType": "website/matchers/always.ts"
@@ -6793,7 +6795,7 @@
                 "size": "Medium",
                 "text": "Saiba mais",
                 "textColor": "#FFFFFF",
-                "href": "#2070672828-0"
+                "href": "#masterclass"
               }
             ],
             "backgroundColor": "#00363A",
@@ -6835,7 +6837,8 @@
                 "type": "Button",
                 "size": "Medium",
                 "text": "Saiba mais",
-                "textColor": "#FFFFFF"
+                "textColor": "#FFFFFF",
+                "href": "#masterclass"
               }
             ],
             "backgroundColor": "#00363A",

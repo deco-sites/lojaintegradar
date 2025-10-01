@@ -61,10 +61,22 @@ export interface IImage {
     height?: number;
 }
 
+export interface TextProps {
+  fontFamily?: string;
+  /** @format color-input */
+  color?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
 export interface Tab {
     icon?: IImage;
     title?: RichText;
+    titleTextProps?: TextProps;
     contentText?: RichText;
+    contentTextProps?: TextProps;
 }
 
 export interface Props {
@@ -90,10 +102,10 @@ export default function TimeTabs({ tabs, interval = 5, progressBarColor, progres
                     height={tab.icon.height || 24}
                     class="self-start"
                 />}
-                <div class="text-xl" dangerouslySetInnerHTML={{ __html: tab.title || "" }} />
+                <div class="text-xl" dangerouslySetInnerHTML={{ __html: tab.title || "" }} style={{...tab.titleTextProps}}/>
             </div>
             <div className="collapse-content px-0">
-                <div class="text-base pt-4" dangerouslySetInnerHTML={{ __html: tab.contentText || "" }} />
+                <div class="text-base pt-4" dangerouslySetInnerHTML={{ __html: tab.contentText || "" }} style={{...tab.contentTextProps}}/>
             </div>
             <div class="bg-secondary mt-6" style={{ background: progressBarBackgroundColor }}>
                 <div class="h-[1px] w-0 bg-primary tabProgressBar" style={{ animationDuration: interval + 's', background: progressBarColor }} />

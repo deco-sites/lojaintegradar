@@ -162,6 +162,7 @@ export interface Props {
     contentVideo?: VideoWidget;
     contentImage?: IImage;
     useContent?: 'video' | 'image';
+    hideContentShadow?: boolean;
     planTag?: PlanTag;
     imageText?: RichText;
     imageTextFont?: string;
@@ -244,7 +245,7 @@ function Buttons({ buttonColor }: {
             </div>
         </div>);
 }
-export default function PlanDetails2({ hideSection, id, title, titleTextProps, hideValues, marginBottom, marginTop, imageTextFont, tabs, arrowsColor, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta }: Props) {
+export default function PlanDetails2({ hideSection, id, title, titleTextProps, hideContentShadow, hideValues, marginBottom, marginTop, imageTextFont, tabs, arrowsColor, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta }: Props) {
     if (hideSection) return <></>
     const carouselId = useId();
     return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-20 text-primary" style={{marginBottom, marginTop}}>
@@ -305,7 +306,8 @@ export default function PlanDetails2({ hideSection, id, title, titleTextProps, h
                 </AnimateOnShow>
             </div>
             <AnimateOnShow animation="animate-fade-left" divClass="w-auto px-6 lg:px-0">
-                <div class="w-full lg:min-w-[606px] lg:w-[606px] h-[62vw] lg:h-[687px] overflow-hidden rounded-[30px] lg:rounded-[40px] px-5 lg:px-11 py-6 lg:pt-7 lg:pb-10 flex flex-col justify-between relative" style={{boxShadow: "0px 4px 64px 0px rgba(17, 26, 26, 0.40)"}}>
+                <div class="w-full lg:min-w-[606px] lg:w-[606px] h-[62vw] lg:h-[687px] overflow-hidden rounded-[30px] lg:rounded-[40px] px-5 lg:px-11 py-6 lg:pt-7 lg:pb-10 flex flex-col justify-between relative" 
+                    style={{boxShadow: !hideContentShadow ? "0px 4px 64px 0px rgba(17, 26, 26, 0.40)" : "", height: `${contentImage?.height}px`, width: `${contentImage?.width}px`, minWidth: `${contentImage?.width}px` }}>
                     {useContent == "video" && contentVideo && <video width="532" height="747" autoPlay playsInline muted loading="lazy" loop class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10">
                         <source src={contentVideo} type="video/mp4"/>
                     </video>}

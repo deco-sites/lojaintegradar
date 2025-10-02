@@ -90,7 +90,7 @@ export interface Props {
 
 export default function TimeTabs({ tabs, interval = 5, progressBarColor, progressBarBackgroundColor }: Props) {
     const id = useId();
-    return <div id={id} class="mb-14">
+    return <div id={id} class="">
         {tabs?.map((tab) => (<div
             className=" text-primary-content open collapse focus:outline-none rounded-none opacity-60"
         >

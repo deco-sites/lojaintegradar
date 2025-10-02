@@ -255,11 +255,11 @@ export default function PlanDetails2({ hideSection, id, title, titleTextProps, c
     const carouselId = useId();
     return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-20 text-primary" style={{marginBottom, marginTop, paddingTop, paddingBottom}}>
         {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 950} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top absolute h-full w-full top-0 left-0 -z-50"/>}
-        <AnimateOnShow divClass="mt-4 lg:mt-0 text-[32px] lg:text-[56px] font-normal leading-[120%] px-6 lg:px-0 max-w-[1244px] mx-auto" animation="animate-fade-down">
+        <AnimateOnShow divClass="lg:mt-0 text-[32px] lg:text-[56px] font-normal leading-[120%] px-6 lg:px-0 max-w-[1244px] mx-auto" animation="animate-fade-down">
             {title && <div dangerouslySetInnerHTML={{__html: title}} style={{...titleTextProps}}/>}
             {text && <div dangerouslySetInnerHTML={{__html: text}} style={{...textProps}}/>}
         </AnimateOnShow>
-        <div class="max-w-[1244px] mx-auto flex flex-col-reverse lg:flex-row flex-wrap lg:flex-nowrap justify-between gap-[18px]  py-[60px]">
+        <div class="max-w-[1244px] mx-auto flex flex-col-reverse lg:flex-row flex-wrap lg:flex-nowrap justify-between gap-[18px]  pt-[60px]">
             <div class="lg:w-[606px] max-w-[606px] w-full" > 
                 <div class="px-7 lg:px-0">
                     <TimeTabs {...tabs}/>
@@ -297,7 +297,7 @@ export default function PlanDetails2({ hideSection, id, title, titleTextProps, c
                         </div>}
                     </AnimateOnShow>}
                 </div>
-                <AnimateOnShow divClass="mt-7 flex flex-wrap justify-center lg:justify-start lg:flex-nowrap items-start lg:items-center gap-5 px-6 lg:px-0" animation="animate-fade-up" delay={400}>
+                {cta.length > 1 && <AnimateOnShow divClass="mt-7 flex flex-wrap justify-center lg:justify-start lg:flex-nowrap items-start lg:items-center gap-5 px-6 lg:px-0" animation="animate-fade-up" delay={400}>
                     {createStoreCta?.text && <CreateStoreCta period="anual" text={createStoreCta.text} planId={createStoreCta.planId} showIcon={createStoreCta.showIcon} underlineText={createStoreCta.underlineText} ctaClass={`${createStoreCta.ctaStyle != "link" && 'btn btn-primary px-7'} flex items-center gap-1 border-primary font-bold hover:scale-110 transition-transform text-lg cursor-pointer`} style={createStoreCta.ctaStyle == "button" ? { backgroundColor: createStoreCta.backgroundColor, color: createStoreCta.textColor, borderColor: createStoreCta.borderColor } : { color: createStoreCta.textColor }}/>}
                     {cta.map((button) => {
                         if (button.href == '/talkToSpecialist')
@@ -309,7 +309,7 @@ export default function PlanDetails2({ hideSection, id, title, titleTextProps, c
                                         </svg>}
                                     </a>;
                     })}
-                </AnimateOnShow>
+                </AnimateOnShow>}
             </div>
             <AnimateOnShow animation="animate-fade-left" divClass="w-auto px-6 lg:px-0">
                 <div class="w-full lg:min-w-[606px] lg:w-[606px] h-[62vw] lg:h-[687px] overflow-hidden rounded-[30px] lg:rounded-[40px] px-5 lg:px-11 py-6 lg:pt-7 lg:pb-10 flex flex-col justify-between relative" 

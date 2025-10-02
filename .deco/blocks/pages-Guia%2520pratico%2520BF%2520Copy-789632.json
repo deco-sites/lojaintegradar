@@ -1,7 +1,7 @@
 {
   "__resolveType": "website/pages/Page.tsx",
   "name": "Guia pratico BF Copy",
-  "path": "/guia-v2",
+  "path": "/guia-pratico-black-friday",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
@@ -3578,6 +3578,52 @@
               "lineHeight": "180%"
             },
             "contentBorderRadius": "2"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Banner.tsx",
+            "image": {
+              "src": "https://assets.decocache.com/lojaintegradar/940c0f81-7409-4e85-b3ee-65123b78abef/banner-live-mobile.png",
+              "width": 409,
+              "height": 465
+            },
+            "link": {
+              "openModal": "Black Friday Hubspot Form"
+            },
+            "containerWidth": "409px",
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "containerHeight": "465px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Banner.tsx",
+            "image": {
+              "src": "https://assets.decocache.com/lojaintegradar/285d88dd-e224-4b45-8d4b-850ae1ee251b/banner-horizontal-live.png",
+              "width": 1280,
+              "height": 573
+            },
+            "link": {
+              "openModal": "Black Friday Hubspot Form"
+            },
+            "containerWidth": "1280px",
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "containerHeight": "573px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

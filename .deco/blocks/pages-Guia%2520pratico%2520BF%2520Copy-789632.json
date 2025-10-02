@@ -2940,6 +2940,114 @@
         {
           "value": {
             "__resolveType": "site/sections/PlanDetailsV3.tsx",
+            "title": "<p><span style=\"color: rgb(40, 195, 195)\">5. Pós-Black Friday: </span>transformando vendas em relacionamento</p>",
+            "tabs": {
+              "tabs": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Performance das promoções:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>-Quais tipos de promoções funcionaram melhor;<br><br>-Se os brindes movimentaram os produtos parados conforme esperado;<br><br>-Margem real por categoria versus suas expectativas.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Eficiência dos canais:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>-Performance dos marketplaces versus suas expectativas;<br><br>-Retorno da sua loja própria com preços diferenciados;<br><br>-Qual canal trouxe clientes de maior valor.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Eficácia das automações:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>-Evolução da taxa de recuperação de carrinho abandonado;<br><br>-Quantos produtos voltaram ao estoque e geraram vendas via \"avise-me\".<br><br></p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                }
+              ],
+              "interval": 30,
+              "progressBarBackgroundColor": "#A9CBD1",
+              "progressBarColor": "#030C0B "
+            },
+            "paddingTop": "120px",
+            "paddingBottom": "120px",
+            "cta": [],
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display var",
+              "fontSize": "32px",
+              "fontWeight": "650",
+              "letterSpacing": "-1px",
+              "lineHeight": "100%",
+              "color": "#00363A"
+            },
+            "hideValues": true,
+            "contentImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/bb61ff85-54ec-484c-ad45-e24b903c6a05/vendas-relacionamento.png",
+              "width": 370,
+              "height": 229
+            },
+            "useContent": "image",
+            "annualValues": {
+              "text": "<p></p>"
+            },
+            "montlyValues": {},
+            "hideContentShadow": true,
+            "text": "<p>A maioria dos lojistas relaxa quando a Black Friday acaba. É justamente aqui que você pode se diferenciar e usar os dados coletados para construir um negócio sustentável.</p>",
+            "textProps": {
+              "color": "#5F6E82",
+              "fontFamily": "inter ",
+              "fontSize": "16px",
+              "lineHeight": "140%"
+            },
+            "contentBorderRadius": "0"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetailsV3.tsx",
             "title": "<p><span style=\"color: rgb(40, 195, 195)\">5. Pós-Black Friday: </span>transformando vendas<br>em relacionamento</p>",
             "tabs": {
               "tabs": [
@@ -3031,7 +3139,6 @@
             },
             "montlyValues": {},
             "hideContentShadow": true,
-            "id": "pre-black",
             "text": "<p>A maioria dos lojistas relaxa quando a Black Friday acaba. É justamente aqui que você pode se diferenciar<br>e usar os dados coletados para construir um negócio sustentável.</p>",
             "textProps": {
               "color": "#5F6E82",
@@ -3445,11 +3552,11 @@
             "__resolveType": "site/sections/FooterV3.tsx",
             "title": "<p><span style=\"color: rgb(250, 250, 245); font-size: 32pt\">Dados que guiam, automação que simplifica,</span><br><em><span style=\"color: #71dbd4; font-size: 32pt\">resultados que surpreendem.</span></em></p>",
             "paddingTop": "120px",
+            "id": "ecossistemaconteudo",
             "backgroundImage": {
               "src": "https://assets.decocache.com/lojaintegradar/e1e18a14-b5a2-4e26-a84c-9a492ae0552a/bgfooterpng.png",
               "height": 400
             },
-            "id": "ecossistemaconteudo",
             "titleFont": "Instrument serif",
             "color1": "#371E55",
             "color2": "#FFFFFF",

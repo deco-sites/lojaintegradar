@@ -655,8 +655,8 @@
           {
             "value": {
               "__resolveType": "site/sections/Faq.tsx",
-              "backgroundColor": "#373737",
               "title": "<p><span style=\"color: rgb(40, 195, 195)\">2. Pontos de atenção para uma </span>Black Friday sem surpresas</p>",
+              "backgroundColor": "#373737",
               "titleFont": "Lektorat Display var",
               "titleTextProps": {
                 "fontSize": "32px",
@@ -692,8 +692,8 @@
           {
             "value": {
               "__resolveType": "site/sections/Faq.tsx",
-              "backgroundColor": "#373737",
               "title": "<p><span style=\"color: #28c3c3\">2. Pontos de atenção para uma</span><br><span>Black Friday sem surpresas</span></p>",
+              "backgroundColor": "#373737",
               "titleFont": "Lektorat Display var",
               "titleTextProps": {
                 "fontSize": "50px",
@@ -822,8 +822,8 @@
               "progressBarBackgroundColor": "#A9CBD1",
               "progressBarColor": "#030C0B "
             },
-            "paddingTop": "120px",
-            "paddingBottom": "120px",
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
             "cta": [],
             "titleTextProps": {
               "fontFamily": "Lektorat Display var",
@@ -851,7 +851,8 @@
               "color": "#00363A",
               "fontFamily": "inter ",
               "fontSize": "18px",
-              "lineHeight": "180%"
+              "lineHeight": "180%",
+              "fontWeight": "600"
             },
             "contentBorderRadius": "0"
           },
@@ -980,6 +981,185 @@
               "color": "#00363A",
               "fontFamily": "inter ",
               "fontSize": "22px",
+              "lineHeight": "180%",
+              "fontWeight": "600"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetailsV3.tsx",
+            "title": "<p><strong><span style=\"color: rgb(40, 195, 195)\">Passo 2:</span></strong><span style=\"color: rgb(40, 195, 195)\"> </span>Configure sua integração com o Magalu</p>",
+            "tabs": {
+              "tabs": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Integração automática com o Magalu</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>Desenvolvemos uma inteligência artificial exclusiva que adapta automaticamente seu catálogo para o marketplace:<br><br><strong>- Tempo de cadastro muito menor: </strong>O que levaria horas adaptando, nossa IA faz em minutos.<br><br><strong>-Mais produtos aprovados: </strong>IA identifica e corrige de acordo com as regras antes mesmo de enviar.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Por que configurar agora é estratégico para a Black Friday:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>A integração oferece duas vantagens principais no momento que mais importa: agilidade e centralização. Na agilidade, você pode enviar produtos de forma simples e rápida, com a IA corrigindo automaticamente problemas de catalogação, resultando em mais produtos aprovados e mais oportunidades de venda. Na centralização estratégica, você gerencia ambos os canais em um painel único, com estoque sincronizado automaticamente, economizando tempo durante a alta demanda.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                }
+              ],
+              "interval": 30,
+              "progressBarBackgroundColor": "#A9CBD1",
+              "progressBarColor": "#030C0B "
+            },
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "cta": [],
+            "titleTextProps": {
+              "fontFamily": "inter ",
+              "fontSize": "22px",
+              "lineHeight": "180%",
+              "color": "#00363A",
+              "fontWeight": "600"
+            },
+            "hideValues": true,
+            "contentImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/1230dd36-6c59-4401-916c-a9a305c7f7b9/integre-com-magalu.png",
+              "width": 370,
+              "height": 229
+            },
+            "useContent": "image",
+            "annualValues": {
+              "text": "<p></p>"
+            },
+            "montlyValues": {},
+            "hideContentShadow": true,
+            "id": "pre-black",
+            "text": "<p>Lançamos nossa integração com o Magalu, e este é o momento perfeito para você ser um dos pioneiros nesta oportunidade. O marketplace cresce 30% ao ano e se tornou o segundo maior e-commerce do Brasil.</p>",
+            "textProps": {
+              "color": "#5F6E82",
+              "fontFamily": "inter ",
+              "fontSize": "16px",
+              "lineHeight": "180%"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetailsV3.tsx",
+            "title": "<p><strong><span style=\"color: rgb(40, 195, 195)\">Passo 2:</span></strong><span style=\"color: rgb(40, 195, 195)\"> </span>Configure sua integração com o Magalu</p>",
+            "tabs": {
+              "tabs": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Integração automática com o Magalu</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>Desenvolvemos uma inteligência artificial exclusiva que adapta automaticamente seu catálogo para o marketplace:<br><br><strong>- Tempo de cadastro muito menor: </strong>O que levaria horas adaptando, nossa IA faz em minutos.<br><br><strong>-Mais produtos aprovados: </strong>IA identifica e corrige de acordo com as regras antes mesmo de enviar.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Por que configurar agora é estratégico para a Black Friday:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>A integração oferece duas vantagens principais no momento que mais importa: agilidade e centralização. Na agilidade, você pode enviar produtos de forma simples e rápida, com a IA corrigindo automaticamente problemas de catalogação, resultando em mais produtos aprovados e mais oportunidades de venda. Na centralização estratégica, você gerencia ambos os canais em um painel único, com estoque sincronizado automaticamente, economizando tempo durante a alta demanda.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                }
+              ],
+              "interval": 30,
+              "progressBarBackgroundColor": "#A9CBD1",
+              "progressBarColor": "#030C0B "
+            },
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "cta": [],
+            "titleTextProps": {
+              "fontFamily": "inter ",
+              "fontSize": "22px",
+              "lineHeight": "180%",
+              "color": "#00363A",
+              "fontWeight": "600"
+            },
+            "hideValues": true,
+            "contentImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/2aa740bd-6ba6-46cd-bf23-8e7f9d63ef36/Integracao-automatica-magalu.png",
+              "width": 537,
+              "height": 401
+            },
+            "useContent": "image",
+            "annualValues": {
+              "text": "<p></p>"
+            },
+            "montlyValues": {},
+            "hideContentShadow": true,
+            "id": "pre-black",
+            "text": "<p>Lançamos nossa integração com o Magalu, e este é o momento perfeito para você ser um dos pioneiros<br>nesta oportunidade. O marketplace cresce 30% ao ano e se tornou o segundo maior e-commerce do Brasil.</p>",
+            "textProps": {
+              "color": "#5F6E82",
+              "fontFamily": "inter ",
+              "fontSize": "16px",
               "lineHeight": "180%"
             }
           },
@@ -1028,7 +1208,7 @@
                 {
                   "type": "Button",
                   "size": "Large",
-                  "href": "#",
+                  "href": "https://app.lojaintegrada.com.br/painel/canais/listar",
                   "text": " Clique aqui para conectar agora",
                   "backgroundColor": "#00363A",
                   "borderColor": "#00363A",
@@ -1077,7 +1257,7 @@
                 {
                   "type": "Button",
                   "size": "Large",
-                  "href": "#",
+                  "href": "https://app.lojaintegrada.com.br/painel/canais/listar",
                   "text": " Clique aqui para conectar agora",
                   "backgroundColor": "#00363A",
                   "borderColor": "#00363A",
@@ -1226,8 +1406,8 @@
               },
               "container": {
                 "paddingTop": "0px",
-                "marginBottom": "0px",
-                "paddingBottom": "60px"
+                "paddingBottom": "60px",
+                "marginBottom": "0px"
               },
               "sectionBackground": {
                 "backgroundColor": ""
@@ -1379,8 +1559,8 @@
               },
               "container": {
                 "paddingTop": "0px",
-                "marginBottom": "0px",
-                "paddingBottom": "120px"
+                "paddingBottom": "120px",
+                "marginBottom": "0px"
               },
               "sectionBackground": {
                 "backgroundColor": "#F2F2F2"

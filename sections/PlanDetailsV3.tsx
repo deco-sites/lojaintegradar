@@ -261,11 +261,11 @@ export default function PlanDetails2({ hideSection, id, title, backgroundColor, 
             {title && <div dangerouslySetInnerHTML={{__html: title}} style={{...titleTextProps}}/>}
             {text && <div dangerouslySetInnerHTML={{__html: text}} style={{...textProps}}/>}
         </AnimateOnShow>
-        <div class="max-w-[1244px] mx-auto flex flex-col-reverse lg:flex-row flex-wrap lg:flex-nowrap justify-between gap-[18px]  pt-[60px]">
+        <div class="max-w-[1244px] mx-auto flex flex-col-reverse lg:flex-row flex-wrap lg:flex-nowrap justify-between gap-[18px] pt-[60px]">
             <div class="lg:w-[606px] max-w-[606px] w-full" > 
                 <div class="px-7 lg:px-0">
                     <TimeTabs {...tabs}/>
-                    {!hideValues && <AnimateOnShow divClass="inline-flex flex-wrap justify-center lg:justify-start mt-11 p-7 gap-5 rounded-bl-[20px] rounded-br-[20px] lg:rounded-[20px] relative" animation="animate-fade-up" delay={300} style={{background: valuesBackgroundColor}}>
+                    {!hideValues && <AnimateOnShow divClass="mt-10 inline-flex flex-wrap justify-center lg:justify-start mt-20 p-7 gap-5 rounded-bl-[20px] rounded-br-[20px] lg:rounded-[20px] relative" animation="animate-fade-up" delay={300} style={{background: valuesBackgroundColor}}>
                         {valuesTag?.text && <div 
                             class="absolute left-0 top-[-45px] h-16 p-3.5 -z-40 rounded-tr-xl rounded-tl-xl lg:rounded-tl-none w-full lg:w-auto"
                             style={{color: valuesTag.textColor, background: valuesTag.backgroundColor}}

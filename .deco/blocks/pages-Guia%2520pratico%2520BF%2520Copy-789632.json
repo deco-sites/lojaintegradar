@@ -2172,6 +2172,263 @@
       }
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetailsV3.tsx",
+            "title": "<p><strong><span style=\"color: rgb(40, 195, 195)\">Passo 6:</span></strong><span style=\"color: rgb(40, 195, 195)\"> </span>Configure Instagram Shopping</p>",
+            "tabs": {
+              "tabs": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Por que o Instagram Shopping é estratégico:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>O Instagram Shopping permite que seus produtos apareçam diretamente no feed e stories dos usuários. Quando alguém vê seu produto e se interessa, pode comprar diretamente através da sacolinha integrada, sem sair do Instagram para o WhatsApp ou outras formas de contato.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>A importância da integração da sacolinha:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>A integração da sacolinha é fundamental para ganhar agilidade e levar o cliente diretamente para sua loja própria. Em vez de gerar conversas no Instagram (que podem se perder), a compra acontece no seu ambiente, onde você pode fidelizar o cliente, aplicar suas automações e construir relacionamento duradouro.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Como funciona:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>Quando você ativa o Instagram Shopping, seus produtos ficam disponíveis para marcação em posts e stories. O cliente pode tocar no produto, ver detalhes, preço e, com a sacolinha integrada, finalizar a compra diretamente na sua loja. É um processo muito mais fluido que redirecionar para mensagens.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Instagram como ponto de contato estratégico:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>É importante estar atento ao Instagram não apenas como canal de venda, mas como ponto de contato importante. Muitos clientes descobrem produtos lá, mesmo que finalizem a compra em outros canais. Manter presença ativa com conteúdo relevante e produtos sempre atualizados é essencial para sua estratégia multicanal.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                }
+              ],
+              "interval": 30,
+              "progressBarBackgroundColor": "#A9CBD1",
+              "progressBarColor": "#030C0B "
+            },
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "cta": [],
+            "titleTextProps": {
+              "fontFamily": "inter ",
+              "fontSize": "22px",
+              "lineHeight": "140%",
+              "color": "#00363A",
+              "fontWeight": "600"
+            },
+            "hideValues": true,
+            "contentImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/cce8f6a1-ec50-410f-95e9-35efd2446594/instagram.png",
+              "width": 370,
+              "height": 229
+            },
+            "useContent": "image",
+            "annualValues": {
+              "text": "<p></p>"
+            },
+            "montlyValues": {},
+            "hideContentShadow": true,
+            "text": "<p>O Instagram se tornou uma das principais vitrines digitais para descoberta de produtos. Com mais de 100 milhões de brasileiros na plataforma, é fundamental estar presente onde seu cliente já está navegando.</p>",
+            "textProps": {
+              "color": "#5F6E82",
+              "fontFamily": "inter ",
+              "fontSize": "16px",
+              "lineHeight": "180%"
+            },
+            "contentBorderRadius": "0"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetailsV3.tsx",
+            "title": "<p><strong><span style=\"color: rgb(40, 195, 195)\">Passo 6:</span></strong><span style=\"color: rgb(40, 195, 195)\"> </span>Configure Instagram Shopping</p>",
+            "tabs": {
+              "tabs": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Por que o Instagram Shopping é estratégico:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>O Instagram Shopping permite que seus produtos apareçam diretamente no feed e stories dos usuários. Quando alguém vê seu produto e se interessa, pode comprar diretamente através da sacolinha integrada, sem sair do Instagram para o WhatsApp ou outras formas de contato.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>A importância da integração da sacolinha:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>A integração da sacolinha é fundamental para ganhar agilidade e levar o cliente diretamente para sua loja própria. Em vez de gerar conversas no Instagram (que podem se perder), a compra acontece no seu ambiente, onde você pode fidelizar o cliente, aplicar suas automações e construir relacionamento duradouro.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Como funciona:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>Quando você ativa o Instagram Shopping, seus produtos ficam disponíveis para marcação em posts e stories. O cliente pode tocar no produto, ver detalhes, preço e, com a sacolinha integrada, finalizar a compra diretamente na sua loja. É um processo muito mais fluido que redirecionar para mensagens.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Instagram como ponto de contato estratégico:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>É importante estar atento ao Instagram não apenas como canal de venda, mas como ponto de contato importante. Muitos clientes descobrem produtos lá, mesmo que finalizem a compra em outros canais. Manter presença ativa com conteúdo relevante e produtos sempre atualizados é essencial para sua estratégia multicanal.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                }
+              ],
+              "interval": 30,
+              "progressBarBackgroundColor": "#A9CBD1",
+              "progressBarColor": "#030C0B "
+            },
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "cta": [],
+            "titleTextProps": {
+              "fontFamily": "inter ",
+              "fontSize": "22px",
+              "lineHeight": "180%",
+              "color": "#00363A",
+              "fontWeight": "600"
+            },
+            "hideValues": true,
+            "contentImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/522c39dd-00d7-4fd8-a339-3bcb5a2a033e/sacolinha-do-instagram.png",
+              "width": 537,
+              "height": 473
+            },
+            "useContent": "image",
+            "annualValues": {
+              "text": "<p></p>"
+            },
+            "montlyValues": {},
+            "hideContentShadow": true,
+            "text": "<p>O Instagram se tornou uma das principais vitrines digitais para descoberta de produtos. Com mais de 100<br> milhões de brasileiros na plataforma, é fundamental estar presente onde seu cliente já está navegando.</p>",
+            "textProps": {
+              "color": "#5F6E82",
+              "fontFamily": "inter ",
+              "fontSize": "16px",
+              "lineHeight": "180%"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "website/flags/multivariate/section.ts",
@@ -2210,8 +2467,8 @@
                 {
                   "type": "Button",
                   "size": "Large",
-                  "href": "#",
-                  "text": "Configure agora clicando aqui",
+                  "href": "https://ajuda.lojaintegrada.com.br/pt-BR/articles/1719504-como-ativar-o-instagram-shopping",
+                  "text": "Saiba configurar aqui",
                   "backgroundColor": "#00363A",
                   "borderColor": "#00363A",
                   "textColor": "#FFFFFF"
@@ -2259,8 +2516,8 @@
                 {
                   "type": "Button",
                   "size": "Large",
-                  "href": "#",
-                  "text": "Configure agora clicando aqui",
+                  "href": "https://ajuda.lojaintegrada.com.br/pt-BR/articles/1719504-como-ativar-o-instagram-shopping",
+                  "text": "Saiba como configurar aqui",
                   "backgroundColor": "#00363A",
                   "borderColor": "#00363A",
                   "textColor": "#FFFFFF"
@@ -2275,6 +2532,136 @@
           }
         ]
       }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/PlanDetailsV3.tsx",
+            "title": "<p><strong><span style=\"color: rgb(40, 195, 195)\">Passo 7:</span></strong><span style=\"color: rgb(40, 195, 195)\"> </span>Organize estoque e logística</p>",
+            "tabs": {
+              "tabs": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Gestão de estoque estratégica:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p><strong>Giro A (produtos que vendem rápido): </strong>Mantenha 40% acima do estoque normal.<br><br><strong>Giro B (produtos parados/que vendem devagar):</strong> Use desconto de 20-35% para desovar. <br><br><strong>Giro C (produtos encalhados): </strong>Considere combos para acelerar saída.<br><br><strong>Lançamentos: </strong>Reserve 10% do estoque para testar mercado.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Segurança operacional:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p><strong>Estoque sincronizado: </strong>Certifique-se de que seu estoque está atualizado em tempo real entre sua loja e os marketplaces.<br><br><strong>Defina estoque mínimo:</strong> Configure uma quantidade de segurança que não será compartilhada com os canais de venda para evitar ruptura.<br><br><strong>Fornecedores de backup:</strong> Tenha contatos alternativos para reposição rápida quando necessário.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Logística preparada:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>-Adicione 2-3 dias extras ao seu prazo normal de entrega. <br><br>-Use hubs de transportadoras como Enviali para reforço logístico na Black Friday. Com poucos cliques você pode contratar etiquetas pontuais, economizar no frete e ter mais opções de entrega.<br><br>-Considere reforçar a equipe de atendimento e operação durante o período.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Instagram como ponto de contato estratégico:</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>É importante estar atento ao Instagram não apenas como canal de venda, mas como ponto de contato importante. Muitos clientes descobrem produtos lá, mesmo que finalizem a compra em outros canais. Manter presença ativa com conteúdo relevante e produtos sempre atualizados é essencial para sua estratégia multicanal.</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                }
+              ],
+              "interval": 30,
+              "progressBarBackgroundColor": "#A9CBD1",
+              "progressBarColor": "#030C0B "
+            },
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "cta": [],
+            "titleTextProps": {
+              "fontFamily": "inter ",
+              "fontSize": "22px",
+              "lineHeight": "180%",
+              "color": "#00363A",
+              "fontWeight": "600"
+            },
+            "hideValues": true,
+            "contentImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/522c39dd-00d7-4fd8-a339-3bcb5a2a033e/sacolinha-do-instagram.png",
+              "width": 537,
+              "height": 473
+            },
+            "useContent": "image",
+            "annualValues": {
+              "text": "<p></p>"
+            },
+            "montlyValues": {},
+            "hideContentShadow": true,
+            "text": "<p>Estoque bem planejado e logística eficiente garantem que sua loja atenda a alta demanda<br>da Black Friday sem rupturas, atrasos ou perda de vendas.</p>",
+            "textProps": {
+              "color": "#5F6E82",
+              "fontFamily": "inter ",
+              "fontSize": "16px",
+              "lineHeight": "180%"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

@@ -148,6 +148,8 @@ export interface ValuesTag {
 export interface Props {
     hideSection?: boolean;
     id?: string;
+    /** @format color-input */
+    backgroundColor?: string;
     backgroundImage?: IImage;
     title: RichText;
     titleTextProps?: TextProps;
@@ -250,10 +252,10 @@ function Buttons({ buttonColor }: {
             </div>
         </div>);
 }
-export default function PlanDetails2({ hideSection, id, title, titleTextProps, contentBorderRadius, text, textProps, hideContentShadow, hideValues, marginBottom, marginTop, imageTextFont, tabs, arrowsColor, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta, paddingBottom, paddingTop }: Props) {
+export default function PlanDetails2({ hideSection, id, title, backgroundColor, titleTextProps, contentBorderRadius, text, textProps, hideContentShadow, hideValues, marginBottom, marginTop, imageTextFont, tabs, arrowsColor, valuesTag, useContent, cta = [], backgroundImage, planTag, imageText, contentImage, contentVideo, slides, showArrows, annualValues, montlyValues, valuesBackgroundColor, createStoreCta, paddingBottom, paddingTop }: Props) {
     if (hideSection) return <></>
     const carouselId = useId();
-    return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-20 text-primary" style={{marginBottom, marginTop, paddingTop, paddingBottom}}>
+    return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-20 text-primary" style={{marginBottom, marginTop, paddingTop, paddingBottom, background: backgroundColor}}>
         {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 950} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top absolute h-full w-full top-0 left-0 -z-50"/>}
         <AnimateOnShow divClass="lg:mt-0 text-[32px] lg:text-[56px] font-normal leading-[120%] px-6 lg:px-0 max-w-[1244px] mx-auto" animation="animate-fade-down">
             {title && <div dangerouslySetInnerHTML={{__html: title}} style={{...titleTextProps}}/>}
@@ -314,17 +316,17 @@ export default function PlanDetails2({ hideSection, id, title, titleTextProps, c
             <AnimateOnShow animation="animate-fade-left" divClass="w-auto px-6 lg:px-0">
                 <div class="w-full lg:min-w-[606px] lg:w-[606px] h-[62vw] lg:h-[687px] overflow-hidden rounded-[30px] lg:rounded-[40px] px-5 lg:px-11 py-6 lg:pt-7 lg:pb-10 flex flex-col justify-between relative" 
                     style={{boxShadow: !hideContentShadow ? "0px 4px 64px 0px rgba(17, 26, 26, 0.40)" : "", height: `${contentImage?.height}px`, width: `${contentImage?.width}px`, minWidth: `${contentImage?.width}px`, borderRadius: contentBorderRadius }}>
-                    {useContent == "video" && contentVideo && <video width="532" height="747" autoPlay playsInline muted loading="lazy" loop class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10">
+                    {useContent == "video" && contentVideo && <video width="532" height="747" autoPlay playsInline muted loading="lazy" loop class="object-cover object-top w-full h-full absolute top-0 left-0 ">
                         <source src={contentVideo} type="video/mp4"/>
                     </video>}
-                    {useContent == "image" && contentImage?.src && <Image width={contentImage.width || 532} height={contentImage.height || 747} src={contentImage.src} alt={contentImage.alt || "content background image"} class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10"/>}
+                    {useContent == "image" && contentImage?.src && <Image width={contentImage.width || 532} height={contentImage.height || 747} src={contentImage.src} alt={contentImage.alt || "content background image"} class="object-cover object-top w-full h-full absolute top-0 left-0"/>}
                     <div>
-                        {planTag?.text && <div class="inline-flex gap-2 px-3 lg:px-4 py-1 lg:py-1.5 rounded-[20px] items-center bg-primary-content text-primary text-xs lg:text-sm font-semibold" >
+                        {planTag?.text && <div class="relative z-10 inline-flex gap-2 px-3 lg:px-4 py-1 lg:py-1.5 rounded-[20px] items-center bg-primary-content text-primary text-xs lg:text-sm font-semibold" >
                             {planTag?.icon?.src && <Image width={planTag.icon.width || 18} height={planTag.icon.height || 18} src={planTag.icon.src} alt={planTag.icon.alt || "plan tag icon"} class="h-[18px] w-[18px] object-contain inline-block"/>}
                             {planTag?.text && <p class="inline-block">{planTag.text}</p>}
                         </div>}
                     </div>
-                    <div class="text-primary text-2xl lg:text-[35px] leading-[120%] font-normal" dangerouslySetInnerHTML={{ __html: imageText || "" }} style={{fontFamily: imageTextFont}}/>
+                    <div class="relative z-10 text-primary text-2xl lg:text-[35px] leading-[120%] font-normal" dangerouslySetInnerHTML={{ __html: imageText || "" }} style={{fontFamily: imageTextFont}}/>
                 </div>
             </AnimateOnShow>
         </div>

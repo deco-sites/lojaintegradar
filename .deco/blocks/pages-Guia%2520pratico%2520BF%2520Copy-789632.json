@@ -676,7 +676,7 @@
               "questions": [
                 {
                   "question": "Fique atento às mudanças",
-                  "answear": "<p><strong><span style=\"color: #fbfaf9\">Novidades fiscais:</span></strong><span style=\"color: #fbfaf9\"> A DCE (Declaração de Conteúdo Eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio.<br><br></span><strong><span style=\"color: #fbfaf9\">Custos de mídia:</span></strong><span style=\"color: #fbfaf9\"> Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado.<br><br></span><strong><span style=\"color: #fbfaf9\">Regras dos canais:</span></strong><span style=\"color: #fbfaf9\"> Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende.</span></p>"
+                  "answear": "<p><strong><span style=\"color: rgb(251, 250, 249)\">Custos de mídia:</span></strong><span style=\"color: rgb(251, 250, 249)\"> Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado.<br><br></span><strong><span style=\"color: rgb(251, 250, 249)\">Regras dos canais:</span></strong><span style=\"color: rgb(251, 250, 249)\"> Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende.</span></p>"
                 },
                 {
                   "question": "Organize sua operação",
@@ -713,7 +713,7 @@
               "questions": [
                 {
                   "question": "Fique atento às mudanças",
-                  "answear": "<p><strong><span style=\"color: #fbfaf9\">Novidades fiscais:</span></strong><span style=\"color: #fbfaf9\"> A DCE (Declaração de Conteúdo Eletrônica) será obrigatória a partir de outubro de 2025 para alguns tipos de envio.<br><br></span><strong><span style=\"color: #fbfaf9\">Custos de mídia:</span></strong><span style=\"color: #fbfaf9\"> Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado.<br><br></span><strong><span style=\"color: #fbfaf9\">Regras dos canais:</span></strong><span style=\"color: #fbfaf9\"> Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende.</span></p>"
+                  "answear": "<p><strong><span style=\"color: rgb(251, 250, 249)\">Custos de mídia:</span></strong><span style=\"color: rgb(251, 250, 249)\"> Durante a Black Friday, o custo dos anúncios pode aumentar bastante, então planeje seu orçamento com cuidado.<br><br></span><strong><span style=\"color: rgb(251, 250, 249)\">Regras dos canais:</span></strong><span style=\"color: rgb(251, 250, 249)\"> Fique atento a mudanças em políticas e comissões dos marketplaces onde você vende.</span></p>"
                 },
                 {
                   "question": "Organize sua operação",
@@ -987,7 +987,7 @@
               "fontWeight": "600"
             },
             "contentBorderRadius": "2",
-            "backgroundColor": ""
+            "valuesBackgroundColor": ""
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -3329,21 +3329,21 @@
         {
           "value": {
             "__resolveType": "site/sections/PlanDetailsV3.tsx",
-            "title": "<p><span style=\"color: rgb(40, 195, 195)\">5. Pós-Black Friday: </span>transformando vendas em relacionamento</p>",
+            "title": "<p><span style=\"color: rgb(40, 195, 195)\">7.  Conclusão: </span>Crescimento sustentável em 2025</p>",
             "tabs": {
               "tabs": [
                 {
                   "icon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
                   },
-                  "title": "<p>Performance das promoções:</p>",
+                  "title": "<p>Se você já vende online:</p>",
                   "titleTextProps": {
                     "color": "#00363A",
                     "fontFamily": "Inter",
                     "fontSize": "16px",
                     "fontWeight": "600"
                   },
-                  "contentText": "<p>-Quais tipos de promoções funcionaram melhor;<br><br>-Se os brindes movimentaram os produtos parados conforme esperado;<br><br>-Margem real por categoria versus suas expectativas.</p>",
+                  "contentText": "<p>-Sua loja virtual já está funcionando; <br><br>-Você tem experiência de vendas para aplicar; <br><br>-Pode usar dados históricos para tomar decisões.</p>",
                   "contentTextProps": {
                     "fontFamily": "Inter",
                     "color": "#5F6E82",
@@ -3356,14 +3356,14 @@
                   "icon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
                   },
-                  "title": "<p>Eficiência dos canais:</p>",
+                  "title": "<p>Se você está começando ou retomando:</p>",
                   "titleTextProps": {
                     "color": "#00363A",
                     "fontFamily": "Inter",
                     "fontSize": "16px",
                     "fontWeight": "600"
                   },
-                  "contentText": "<p>-Performance dos marketplaces versus suas expectativas;<br><br>-Retorno da sua loja própria com preços diferenciados;<br><br>-Qual canal trouxe clientes de maior valor.</p>",
+                  "contentText": "<p>-Sua loja está pronta para receber clientes; <br><br>-Esta é uma oportunidade de construir sua primeira base de clientes;<br><br>-Pode começar do zero aplicando as melhores práticas.</p>",
                   "contentTextProps": {
                     "fontFamily": "Inter",
                     "color": "#5F6E82",
@@ -3376,14 +3376,34 @@
                   "icon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
                   },
-                  "title": "<p>Eficácia das automações:</p>",
+                  "title": "<p>Para ambos, o próximo passo é transformar isso em vantagem competitiva:</p>",
                   "titleTextProps": {
                     "color": "#00363A",
                     "fontFamily": "Inter",
                     "fontSize": "16px",
                     "fontWeight": "600"
                   },
-                  "contentText": "<p>-Evolução da taxa de recuperação de carrinho abandonado;<br><br>-Quantos produtos voltaram ao estoque e geraram vendas via \"avise-me\".<br><br></p>",
+                  "contentText": "<p>-Precificação baseada em inteligência de mercado;<br><br>-Estoque estrategicamente distribuído entre canais;<br><br>-Automações que trabalham por você 24/7;<br><br>-Relacionamento que vai além da transação;</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Gestão que garante sustentabilidade</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>A Black Friday não é sobre queimar estoque a qualquer preço. É sobre usar uma janela de oportunidade para fortalecer seu negócio, movimentar produtos estratégicos e, principalmente, construir ou consolidar o relacionamento com seus clientes.<br><br>Em 2025, quem cresce é quem combina estratégia, execução e relacionamento. O momento de começar a preparação é agora.<br><br>O sucesso da sua Black Friday está sendo construído hoje, tijolo por tijolo, decisão por decisão.<br><br><strong>A escolha é sua: participar ou se destacar.</strong></p>",
                   "contentTextProps": {
                     "fontFamily": "Inter",
                     "color": "#5F6E82",
@@ -3410,7 +3430,7 @@
             },
             "hideValues": true,
             "contentImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/bb61ff85-54ec-484c-ad45-e24b903c6a05/vendas-relacionamento.png",
+              "src": "https://assets.decocache.com/lojaintegradar/4214e4cc-bcd9-4051-856e-ed0295812815/crescimento.png",
               "width": 370,
               "height": 229
             },
@@ -3420,8 +3440,7 @@
             },
             "montlyValues": {},
             "hideContentShadow": true,
-            "id": "pre-black",
-            "text": "<p>A maioria dos lojistas relaxa quando a Black Friday acaba. É justamente aqui que você pode se diferenciar e usar os dados coletados para construir um negócio sustentável.</p>",
+            "text": "<p>A Black Friday 2025 será marcada pela diferença entre quem se preparou estrategicamente e quem apenas seguiu a multidão. Em um cenário de crescimento mais moderado, com custos de mídia elevados e consumidores mais seletivos, o preparo inteligente é o que garantirá não apenas sobrevivência, mas crescimento real.</p>",
             "textProps": {
               "color": "#5F6E82",
               "fontFamily": "inter ",
@@ -3438,21 +3457,21 @@
         {
           "value": {
             "__resolveType": "site/sections/PlanDetailsV3.tsx",
-            "title": "<p><span style=\"color: rgb(40, 195, 195)\">5. Pós-Black Friday: </span>transformando vendas<br>em relacionamento</p>",
+            "title": "<p><span style=\"color: rgb(40, 195, 195)\">7.  Conclusão: </span>Crescimento sustentável em 2025</p>",
             "tabs": {
               "tabs": [
                 {
                   "icon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
                   },
-                  "title": "<p>Performance das promoções:</p>",
+                  "title": "<p>Se você já vende online:</p>",
                   "titleTextProps": {
                     "color": "#00363A",
                     "fontFamily": "Inter",
                     "fontSize": "16px",
                     "fontWeight": "600"
                   },
-                  "contentText": "<p>-Quais tipos de promoções funcionaram melhor;<br><br>-Se os brindes movimentaram os produtos parados conforme esperado;<br><br>-Margem real por categoria versus suas expectativas.</p>",
+                  "contentText": "<p>-Sua loja virtual já está funcionando; <br><br>-Você tem experiência de vendas para aplicar; <br><br>-Pode usar dados históricos para tomar decisões.</p>",
                   "contentTextProps": {
                     "fontFamily": "Inter",
                     "color": "#5F6E82",
@@ -3465,14 +3484,14 @@
                   "icon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
                   },
-                  "title": "<p>Eficiência dos canais:</p>",
+                  "title": "<p>Se você está começando ou retomando:</p>",
                   "titleTextProps": {
                     "color": "#00363A",
                     "fontFamily": "Inter",
                     "fontSize": "16px",
                     "fontWeight": "600"
                   },
-                  "contentText": "<p>-Performance dos marketplaces versus suas expectativas;<br><br>-Retorno da sua loja própria com preços diferenciados;<br><br>-Qual canal trouxe clientes de maior valor.</p>",
+                  "contentText": "<p>-Sua loja está pronta para receber clientes; <br><br>-Esta é uma oportunidade de construir sua primeira base de clientes;<br><br>-Pode começar do zero aplicando as melhores práticas.</p>",
                   "contentTextProps": {
                     "fontFamily": "Inter",
                     "color": "#5F6E82",
@@ -3485,14 +3504,34 @@
                   "icon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
                   },
-                  "title": "<p>Eficácia das automações:</p>",
+                  "title": "<p>Para ambos, o próximo passo é transformar isso em vantagem competitiva:</p>",
                   "titleTextProps": {
                     "color": "#00363A",
                     "fontFamily": "Inter",
                     "fontSize": "16px",
                     "fontWeight": "600"
                   },
-                  "contentText": "<p>-Evolução da taxa de recuperação de carrinho abandonado;<br><br>-Quantos produtos voltaram ao estoque e geraram vendas via \"avise-me\".<br><br></p>",
+                  "contentText": "<p>-Precificação baseada em inteligência de mercado;<br><br>-Estoque estrategicamente distribuído entre canais;<br><br>-Automações que trabalham por você 24/7;<br><br>-Relacionamento que vai além da transação;</p>",
+                  "contentTextProps": {
+                    "fontFamily": "Inter",
+                    "color": "#5F6E82",
+                    "fontWeight": "400",
+                    "fontSize": "14px",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg"
+                  },
+                  "title": "<p>Gestão que garante sustentabilidade</p>",
+                  "titleTextProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "fontWeight": "600"
+                  },
+                  "contentText": "<p>A Black Friday não é sobre queimar estoque a qualquer preço. É sobre usar uma janela de oportunidade para fortalecer seu negócio, movimentar produtos estratégicos e, principalmente, construir ou consolidar o relacionamento com seus clientes.<br><br>Em 2025, quem cresce é quem combina estratégia, execução e relacionamento. O momento de começar a preparação é agora.<br><br>O sucesso da sua Black Friday está sendo construído hoje, tijolo por tijolo, decisão por decisão.<br><br><strong>A escolha é sua: participar ou se destacar.</strong></p>",
                   "contentTextProps": {
                     "fontFamily": "Inter",
                     "color": "#5F6E82",
@@ -3519,9 +3558,9 @@
             },
             "hideValues": true,
             "contentImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/37956400-e521-4a52-9f4c-3641ae0482e3/transformando-vendas-em-relacionamentos.png",
+              "src": "https://assets.decocache.com/lojaintegradar/24e934e6-f66f-437e-9fbf-64bf60dbb2f9/crescimento-sustentavel.png",
               "width": 537,
-              "height": 300
+              "height": 473
             },
             "useContent": "image",
             "annualValues": {
@@ -3529,8 +3568,7 @@
             },
             "montlyValues": {},
             "hideContentShadow": true,
-            "id": "pre-black",
-            "text": "<p>A maioria dos lojistas relaxa quando a Black Friday acaba. É justamente aqui que você pode se diferenciar<br>e usar os dados coletados para construir um negócio sustentável.</p>",
+            "text": "<p>A Black Friday 2025 será marcada pela diferença entre quem se preparou estrategicamente e quem apenas seguiu a multidão.<br>Em um cenário de crescimento mais moderado, com custos de mídia elevados e consumidores mais seletivos,<br>o preparo inteligente é o que garantirá não apenas sobrevivência, mas crescimento real.</p>",
             "textProps": {
               "color": "#5F6E82",
               "fontFamily": "inter ",

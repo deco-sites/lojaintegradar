@@ -69,7 +69,7 @@
           "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "title": {
-              "text": "<p><span style=\"color: rgb(0, 54, 58)\">Da vitrine ao checkout, sua<br>loja de moda mais inteligente<br>e</span><span style=\"color: rgb(40, 195, 195)\"> pronta pra vender.</span></p>",
+              "text": "<h1><span style=\"color: rgb(0, 54, 58)\">Da vitrine ao checkout, sua<br>loja de moda mais inteligente<br>e</span><span style=\"color: rgb(40, 195, 195)\"> pronta pra vender.</span></h1>",
               "font": "Lektorat Display var",
               "color": "",
               "fontSize": "56px",
@@ -6819,7 +6819,11 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Plataforma de Ecommerce de Moda - Loja Integrada",
+    "description": "A melhor plataforma de ecommerce para moda é a Loja Integrada! Planos para iniciantes grátis e planos profissionais a preços acessíveis! Acesse e confira!",
+    "canonical": "https://landing.lojaintegrada.com.br/plataforma-ecommerce-moda",
+    "type": "website"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

@@ -483,11 +483,11 @@
                 "fontWeight": "650",
                 "lineHeight": "100%"
               },
-              "caption": "<p style=\"text-align: center\"><strong>Oferta exclusiva para Feira do Empreendedor:</strong><br>De<s> R$ 54,90</s> por <strong>R$ 19,90/mês</strong>  nos 3 primeiros meses. Só essa semana.</p>",
+              "caption": "<p style=\"text-align: center\"><strong>Oferta exclusiva para Feira do Empreendedor:</strong><br>De<s> R$ 54,90</s> por <strong>R$ 19,90/mês</strong>  nos <br>3 primeiros meses. Só essa semana.</p>",
               "captionTextProps": {
                 "color": "#00363A",
                 "fontFamily": "Inter",
-                "fontSize": "14px",
+                "fontSize": "16px",
                 "fontWeight": "500"
               },
               "createStoreCta": {},
@@ -6792,7 +6792,7 @@
           "value": {
             "__resolveType": "site/sections/FixedBottom.tsx",
             "hideSection": false,
-            "text": "<p style=\"text-align: center\"><strong>Oferta exclusiva: </strong>3 meses de Plano Crescimento por R$19,90/mês!</p>",
+            "text": "<p style=\"text-align: center\"><strong>Oferta exclusiva: </strong>3 meses de Plano Crescimento<br>por R$19,90/mês!</p>",
             "textProps": {
               "color": "#FFFFFF",
               "fontFamily": "Inter",
@@ -6807,7 +6807,6 @@
                 "textColor": "#0000000",
                 "backgroundColor": "#ffffff",
                 "borderColor": "",
-                "href": "#plans",
                 "singleLine": false,
                 "openModal": "Create Store",
                 "createStorePlanId": "181"

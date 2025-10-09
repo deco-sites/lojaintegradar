@@ -488,47 +488,44 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "website/flags/multivariate/section.ts",
-        "variants": [
-          {
-            "value": {
-              "__resolveType": "site/sections/Banner.tsx",
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/09861d08-a909-49e4-9cd7-ab4a2c0269f5/faixa-site-mobile.png",
-                "width": 576,
-                "height": 173
-              },
-              "link": {
-                "openModal": "Create Store",
-                "createStorePlanId": "181"
-              }
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Banner.tsx",
+            "image": {
+              "src": "https://assets.decocache.com/lojaintegradar/09861d08-a909-49e4-9cd7-ab4a2c0269f5/faixa-site-mobile.png",
+              "width": 576,
+              "height": 173
             },
-            "rule": {
-              "__resolveType": "website/matchers/device.ts",
-              "mobile": true
+            "link": {
+              "openModal": "Create Store",
+              "createStorePlanId": "181"
             }
           },
-          {
-            "value": {
-              "__resolveType": "site/sections/Banner.tsx",
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/63fa0cd8-f982-4ca4-9eb8-12dfcd83486c/faixa-site.png",
-                "width": 2000,
-                "height": 188
-              },
-              "link": {
-                "openModal": "Create Store",
-                "createStorePlanId": "181"
-              }
-            },
-            "rule": {
-              "__resolveType": "website/matchers/always.ts"
-            }
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
           }
-        ]
-      }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Banner.tsx",
+            "image": {
+              "src": "https://assets.decocache.com/lojaintegradar/63fa0cd8-f982-4ca4-9eb8-12dfcd83486c/faixa-site.png",
+              "width": 2000,
+              "height": 188
+            },
+            "link": {
+              "openModal": "Create Store",
+              "createStorePlanId": "181"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

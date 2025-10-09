@@ -1,61 +1,7 @@
 {
-  "name": "Oferta feira do empreendedor_old",
-  "path": "/oferta-feiradoempreendedor_old",
+  "name": "Oferta feira do empreendedor 2",
+  "path": "/feira2",
   "sections": [
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/VerticalLines.tsx",
-            "lineImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/c8ffc48e-534c-496e-a0a4-8cd433ffa9c9/desktop-vertical-dark-green-line.svg",
-              "height": 636,
-              "width": 1
-            },
-            "lines": [
-              {
-                "distance": "12px",
-                "from": "left"
-              },
-              {
-                "distance": "12px",
-                "from": "right"
-              }
-            ],
-            "linesSize": 6
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/VerticalLines.tsx",
-            "lineImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/c8ffc48e-534c-496e-a0a4-8cd433ffa9c9/desktop-vertical-dark-green-line.svg",
-              "width": 1,
-              "height": 636
-            },
-            "lines": [
-              {
-                "from": "center",
-                "distance": "-640px"
-              },
-              {
-                "from": "center",
-                "distance": "640px"
-              }
-            ],
-            "linesSize": 3
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
@@ -403,20 +349,21 @@
           "value": {
             "__resolveType": "site/sections/CreateStoreHero.tsx",
             "title": {
-              "text": "<p>Sua loja equipada para <span style=\"color: rgb(40, 195, 195)\">vender mais</span></p>",
+              "text": "<p>Sua loja equipada<br>para vender mais</p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
               "fontSize": "70px",
-              "fontWeight": "700",
+              "fontWeight": "650",
               "lineHeight": "100%"
             },
-            "caption": "<p>Oferta exclusiva para<strong> Feira do Empreendedor:</strong> De <s>R$ 54,90</s> por<br><strong>R$ 19,90/mês </strong> nos 3 primeiros meses. <strong>Só essa semana.</strong></p>",
+            "caption": "<p><strong>Oferta exclusiva para Feira do Empreendedor:</strong> Plano Crescimento de <s>R$ 54,90</s><br>por <strong>R$ 19,90/mês</strong> nos 3 primeiros meses. Só essa semana.</p>",
             "captionTextProps": {
               "color": "#00363A",
-              "fontFamily": "Inter",
-              "fontSize": "18px",
+              "fontSize": "16px",
               "fontWeight": "500",
-              "lineHeight": "110%"
+              "lineHeight": "110%",
+              "letterSpacing": "-1px",
+              "fontFamily": "Inter"
             },
             "createStoreCta": {
               "planId": "181"
@@ -462,7 +409,10 @@
               "use": "image"
             },
             "paddingRight": "0px",
-            "paddingLeft": "0px"
+            "paddingLeft": "0px",
+            "paddingTop": "10px",
+            "paddingBottom": "20px",
+            "id": "hero"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -527,11 +477,109 @@
                 "src": "https://assets.decocache.com/lojaintegradar/4bf45f59-4597-49b5-8b81-0144e27445ce/gero-mobile.svg"
               },
               "use": "image"
-            }
+            },
+            "id": "hero"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
             "mobile": true
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/Banner.tsx",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/09861d08-a909-49e4-9cd7-ab4a2c0269f5/faixa-site-mobile.png",
+                "width": 576,
+                "height": 173
+              },
+              "link": {
+                "openModal": "Create Store",
+                "createStorePlanId": "181"
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/Banner.tsx",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/63fa0cd8-f982-4ca4-9eb8-12dfcd83486c/faixa-site.png",
+                "width": 2000,
+                "height": 188
+              },
+              "link": {
+                "openModal": "Create Store",
+                "createStorePlanId": "181"
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/c8ffc48e-534c-496e-a0a4-8cd433ffa9c9/desktop-vertical-dark-green-line.svg",
+              "height": 636,
+              "width": 1
+            },
+            "lines": [
+              {
+                "distance": "12px",
+                "from": "left"
+              },
+              {
+                "distance": "12px",
+                "from": "right"
+              }
+            ],
+            "linesSize": 6
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/c8ffc48e-534c-496e-a0a4-8cd433ffa9c9/desktop-vertical-dark-green-line.svg",
+              "width": 1,
+              "height": 636
+            },
+            "lines": [
+              {
+                "from": "center",
+                "distance": "-640px"
+              },
+              {
+                "from": "center",
+                "distance": "640px"
+              }
+            ],
+            "linesSize": 3
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
         }
       ]
@@ -1612,6 +1660,7 @@
               "fontWeight": "600",
               "fontSize": "32px"
             },
+            "hideSection": true,
             "hubspotForm": {
               "modal": {}
             },
@@ -1626,7 +1675,6 @@
               "maxWidth": "1270px",
               "gap": "180px"
             },
-            "hideSection": true,
             "media": {
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png",
@@ -6697,7 +6745,7 @@
         {
           "value": {
             "__resolveType": "site/sections/FixedBottom.tsx",
-            "text": "<p style=\"text-align: center\">Monte sua loja com mais segurança e sem custo</p>",
+            "text": "<p>3 meses do plano Crescimento por R$ 19,90/mês</p>",
             "textProps": {
               "color": "#FFFFFF",
               "fontFamily": "Inter",
@@ -6707,21 +6755,13 @@
             "cta": [
               {
                 "type": "Button",
-                "size": "Medium",
-                "text": "Ver planos",
-                "textColor": "#0000000",
-                "backgroundColor": "#ffffff",
-                "borderColor": "",
-                "singleLine": false,
-                "href": "#plans"
-              },
-              {
-                "type": "Button",
-                "size": "Medium",
+                "size": "Small",
+                "text": "Aproveitar a oferta",
+                "textColor": "#00363A",
                 "openModal": "Create Store",
-                "text": "Abrir loja",
-                "textColor": "#FFFFFF",
-                "createStorePlanId": "172"
+                "createStorePlanId": "181",
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#FFFFFF"
               }
             ],
             "backgroundColor": "#00363A",
@@ -6751,72 +6791,82 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/FixedBottom.tsx",
-            "text": "<p style=\"text-align: center\"><strong>Oferta exclusiva:</strong> 3 meses de Plano Crescimento por R$19,90/mês!</p>",
-            "textProps": {
-              "color": "#FFFFFF",
-              "fontFamily": "Inter",
-              "fontSize": "14px",
-              "fontWeight": "600"
-            },
-            "cta": [
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
               {
-                "type": "Button",
-                "size": "Medium",
-                "text": "Assinar plano",
-                "textColor": "#0000000",
-                "backgroundColor": "#ffffff",
-                "borderColor": "",
-                "singleLine": false,
-                "createStorePlanId": "181",
-                "openModal": "Create Store"
+                "value": {
+                  "__resolveType": "site/sections/FixedBottom.tsx",
+                  "text": "<p style=\"text-align: center\"><strong>Oferta exclusiva:</strong> 3 meses de Plano Crescimento por R$19,90/mês!</p>",
+                  "textProps": {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "600"
+                  },
+                  "cta": [
+                    {
+                      "type": "Button",
+                      "size": "Medium",
+                      "text": "Assinar plano",
+                      "textColor": "#0000000",
+                      "backgroundColor": "#ffffff",
+                      "borderColor": "",
+                      "singleLine": false,
+                      "createStorePlanId": "181",
+                      "openModal": "Create Store"
+                    }
+                  ],
+                  "backgroundColor": "#00363A",
+                  "xButtonColor": "#ffffff",
+                  "centerContent": true,
+                  "hideXButton": true,
+                  "hideSection": false,
+                  "height": "90px"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "tablet": true,
+                  "desktop": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/FixedBottom.tsx",
+                  "hideSection": false,
+                  "text": "<p style=\"text-align: center\"><strong>Oferta exclusiva: </strong>3 meses de Plano Crescimento<br>por R$19,90/mês!</p>",
+                  "textProps": {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Inter",
+                    "fontSize": "12px",
+                    "fontWeight": "600"
+                  },
+                  "cta": [
+                    {
+                      "type": "Button",
+                      "size": "Medium",
+                      "text": "Assinar plano",
+                      "textColor": "#0000000",
+                      "backgroundColor": "#ffffff",
+                      "borderColor": "",
+                      "singleLine": false,
+                      "openModal": "Create Store",
+                      "createStorePlanId": "181"
+                    }
+                  ],
+                  "backgroundColor": "#00363A",
+                  "xButtonColor": "#ffffff",
+                  "centerContent": true,
+                  "hideXButton": true
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
               }
-            ],
-            "backgroundColor": "#00363A",
-            "xButtonColor": "#ffffff",
-            "centerContent": true,
-            "hideXButton": true,
-            "hideSection": false,
-            "height": "90px"
+            ]
           },
           "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "tablet": true,
-            "desktop": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/FixedBottom.tsx",
-            "hideSection": false,
-            "text": "<p style=\"text-align: center\"><strong>Oferta exclusiva: </strong>3 meses de Plano Crescimento<br>por R$19,90/mês!</p>",
-            "textProps": {
-              "color": "#FFFFFF",
-              "fontFamily": "Inter",
-              "fontSize": "12px",
-              "fontWeight": "600"
-            },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Medium",
-                "text": "Assinar plano",
-                "textColor": "#0000000",
-                "backgroundColor": "#ffffff",
-                "borderColor": "",
-                "singleLine": false,
-                "openModal": "Create Store",
-                "createStorePlanId": "181"
-              }
-            ],
-            "backgroundColor": "#00363A",
-            "xButtonColor": "#ffffff",
-            "centerContent": true,
-            "hideXButton": true
-          },
-          "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
+            "__resolveType": "website/matchers/never.ts"
           }
         }
       ]

@@ -8,17 +8,37 @@
         "__resolveType": "site/sections/HeroV4.tsx",
         "title": {
           "text": "<p>Sera que isso vira negócio?</p>",
-          "color": "#28c3c3"
+          "color": "#28c3c3",
+          "font": "Lektorat Display var",
+          "fontWeight": "650",
+          "fontSize": "60px"
         },
         "text": "<p>Um passo a passo, em 5 dias, para descobrir, se sua ideia tem futuro — antes de gastar um real. Em quatro missões rápidas, você vai usar a IA para testar o interesse do público e validar se sua ideia para de pé.</p>",
         "hubspotForm": {
-          "modal": {},
+          "modal": {
+            "cta": []
+          },
           "show": true,
-          "region": "7112881",
-          "portalId": "5ba259c2-eb7d-409a-a76e-435fdde1700a",
-          "formId": "na1"
+          "region": "na1",
+          "portalId": "7112881",
+          "formId": "5ba259c2-eb7d-409a-a76e-435fdde1700a",
+          "buttonColor": "#28c3c3",
+          "buttonWidth": "min",
+          "buttonTextColor": "#28c3c3",
+          "inputLabel": "Receba o passo a passo",
+          "inputLabelColor": "#000000",
+          "inputLabelBackgroundColor": "#28c3c3",
+          "inputLabelWidth": "full",
+          "buttonIcon": false
         },
-        "hideSection": true
+        "hideSection": false,
+        "container": {
+          "backgroundColor": "#fffff"
+        },
+        "lcp": false,
+        "sectionBackground": {
+          "backgroundColor": ""
+        }
       }
     },
     {

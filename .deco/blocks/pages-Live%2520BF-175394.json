@@ -213,7 +213,8 @@
                   "fontSize": "28px",
                   "fontWeight": "650"
                 }
-              }
+              },
+              "show": false
             },
             "title": {
               "text": "<p style=\"text-align: center\"><span style=\"color: rgb(206, 206, 206)\">A Black Friday começa agora:</span><br><span style=\"color: #28c3c3\">live com estratégias inteligentes</span><span style=\"color: #28c3c3\"><br></span><span style=\"color: #28c3c3\">para vender mais em 2025</span></p>",
@@ -1087,10 +1088,7 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "BlackFridayHubspotForm"
-      }
+      "__resolveType": "BlackFridayHubspotForm"
     }
   ],
   "seo": {

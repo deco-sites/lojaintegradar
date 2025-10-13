@@ -78,7 +78,23 @@
               "backgroundColor": "#212121"
             },
             "hubspotForm": {
-              "modal": {}
+              "modal": {
+                "title": "<p>Inscrição confirmada!</p>",
+                "titleTextProps": {
+                  "color": "#00363A",
+                  "fontFamily": "Inter",
+                  "fontSize": "22px",
+                  "fontWeight": "650"
+                },
+                "text": "<p><span>Você garantiu sua vaga para a live exclusiva de 22 de outubro. Fique atento(a), em breve enviaremos os detalhes com o link de acesso por e-mail.</span><br><br><strong><span>Enquanto isso, acesse agora o guia prático de preparação para a Black Friday e comece a aplicar as estratégias hoje mesmo.</span></strong></p>",
+                "textProps": {
+                  "color": "#5F6E82",
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "110%"
+                }
+              }
             },
             "title": {
               "text": "<p style=\"text-align: center\"><span style=\"color: rgb(206, 206, 206)\">A Black Friday começa agora:<br></span><span style=\"color: #28c3c3\">Live com estratégias inteligentes para vender mais em 2025</span></p>",
@@ -162,7 +178,42 @@
               "backgroundColor": "#212121"
             },
             "hubspotForm": {
-              "modal": {}
+              "modal": {
+                "text": "<p><span>Você garantiu sua vaga para a live exclusiva de 22 de outubro. Fique atento(a), em breve enviaremos os detalhes com o link de acesso por e-mail.</span><br><strong><br><span>Enquanto isso, acesse agora o guia prático de preparação para a Black Friday e comece a aplicar as estratégias hoje mesmo.</span></strong></p>",
+                "title": "<p>Inscrição confirmada!</p>",
+                "textProps": {
+                  "color": "#5F6E82",
+                  "fontFamily": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "500",
+                  "lineHeight": "110%"
+                },
+                "cta": [
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "href": "https://landing.lojaintegrada.com.br/guia-pratico-black-friday",
+                    "text": "Acessar Guia Prático",
+                    "textColor": "#ffffff",
+                    "backgroundColor": "#28C3C3",
+                    "borderColor": "#28C3C3"
+                  },
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "text": "Retomar a navegação",
+                    "href": "https://landing.lojaintegrada.com.br/live-esquenta-blackfriday",
+                    "textColor": "#00363A",
+                    "borderColor": "#00363A"
+                  }
+                ],
+                "titleTextProps": {
+                  "color": "#00363A",
+                  "fontFamily": "Inter",
+                  "fontSize": "28px",
+                  "fontWeight": "650"
+                }
+              }
             },
             "title": {
               "text": "<p style=\"text-align: center\"><span style=\"color: rgb(206, 206, 206)\">A Black Friday começa agora:</span><br><span style=\"color: #28c3c3\">live com estratégias inteligentes</span><span style=\"color: #28c3c3\"><br></span><span style=\"color: #28c3c3\">para vender mais em 2025</span></p>",

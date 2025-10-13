@@ -1088,7 +1088,43 @@
       }
     },
     {
-      "__resolveType": "BlackFridayHubspotForm"
+      "__resolveType": "site/sections/BlackFridayHubspotForm.tsx",
+      "title": "<p><span>Preencha seus dados para se inscrever</span></p>",
+      "titleTextProps": {
+        "fontSize": "22px"
+      },
+      "submitButton": {
+        "text": "Quero minha vaga gratuita na Live",
+        "backgroundColor": "",
+        "textColor": ""
+      },
+      "successPage": {
+        "title": "<p><span>Inscrição confirmada!</span></p>",
+        "titleTextProps": {
+          "fontSize": "22px"
+        },
+        "text": "<p>Você garantiu sua vaga para a live exclusiva de 22 de outubro. Fique atento(a), em breve enviaremos os detalhes com o link de acesso por e-mail.</p>",
+        "text2": "<p>Enquanto isso, acesse agora o guia prático de preparação para a Black Friday e comece a aplicar as estratégias hoje mesmo.</p>",
+        "text2Props": {
+          "color": "#00363A",
+          "fontWeight": "600"
+        },
+        "closeButton": {
+          "text": "Voltar a navegação",
+          "backgroundColor": "",
+          "borderColor": "",
+          "textColor": ""
+        },
+        "cta": [
+          {
+            "text": "Acessar guia prático",
+            "textColor": "#ffffff",
+            "borderColor": "#28C3C3",
+            "backgroundColor": "#28C3C3",
+            "href": "https://landing.lojaintegrada.com.br/guia-pratico-black-friday"
+          }
+        ]
+      }
     }
   ],
   "seo": {

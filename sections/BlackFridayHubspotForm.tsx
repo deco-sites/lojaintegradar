@@ -113,13 +113,13 @@ const onLoad = () => {
                 validated = false;
             }
 
-            if (urlInput.value == "") {
-                const errorMessage = urlInput.parentElement?.querySelector(".error") as HTMLElement;
-                errorMessage.classList.remove("hidden");
-                errorMessage.innerText = "Preencha esse campo obrigatório";
-                urlInput.style.borderColor = "#F57E77";
-                validated = false;
-            }
+            // if (urlInput.value == "") {
+            //     const errorMessage = urlInput.parentElement?.querySelector(".error") as HTMLElement;
+            //     errorMessage.classList.remove("hidden");
+            //     errorMessage.innerText = "Preencha esse campo obrigatório";
+            //     urlInput.style.borderColor = "#F57E77";
+            //     validated = false;
+            // }
 
             // if (dddInput.value.length < 2 || telefoneInput.value.length < 8) {
             //     const errorMessage = dddInput.parentElement?.parentElement?.querySelector(".error") as HTMLElement;
@@ -380,7 +380,7 @@ export default function BlackFridayHubspotForm({title, titleTextProps, text, tex
           {successPage?.cta?.map((cta) => (
             <a href={cta.href} target="_blank"
             style={{letterSpacing: '-0.3px', background: cta.backgroundColor, color: cta.textColor, borderColor: cta.borderColor}} 
-            class="block py-[14px] w-full mb-5 px-5 text-center text-sm bg-transparent cursor-pointer rounded-md font-semibold text-[#00363A] border border-[#00363A] hover:!scale-105 transition-all listaEsperaSucessButton">
+            class="block py-[14px] w-full mb-5 px-5 text-center text-sm bg-transparent cursor-pointer rounded-md font-semibold text-[#00363A] border border-[#00363A] hover:!scale-105 transition-all">
               {cta.text}
           </a>
           ))}

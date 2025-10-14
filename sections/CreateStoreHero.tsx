@@ -198,8 +198,8 @@ export default function CreateStoreHero({ hideSection, id, title, caption, capti
     {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
       src={backgroundMedia.image.src}
       alt={backgroundMedia.image.alt || "background image"}
-      width={backgroundMedia.image.width || 1440}
-      height={backgroundMedia.image.height || 960}
+      width="100%"
+      height="100%"
       loading={"eager"}
       preload={true}
       class="absolute -z-50 top-0 left-0 h-full w-full object-cover"

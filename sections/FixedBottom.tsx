@@ -57,10 +57,10 @@ export default function FixedBottom({ hideSection, backgroundColor, logo, text, 
         <div class="flex gap-5 justify-between">
           {logo?.src && <Image src={logo.src} loading="lazy" decoding="async" fetchPriority="low" width={logo.width || 271} height={logo.height || 50} alt={logo.alt || 'Logo'} />}
 
-          <div dangerouslySetInnerHTML={{ __html: text || "" }} style={{ ...textProps }} class="text-[22px] font-medium lg:hidden" />
+          <div width="100%" dangerouslySetInnerHTML={{ __html: text || "" }} style={{ ...textProps }} class="text-[22px] font-medium lg:hidden" />
         </div>
 
-        <div dangerouslySetInnerHTML={{ __html: text || "" }} style={{ ...textProps }} class="text-[22px] font-medium hidden lg:block" />
+        <div width="100%" dangerouslySetInnerHTML={{ __html: text || "" }} style={{ ...textProps }} class="text-[22px] font-medium hidden lg:block" />
 
         <div class={`flex flex-wrap lg:flex-nowrap gap-4 flex-grow lg:flex-grow-0 ${centerContent && 'justify-center'}`}>
           {cta.map(cta => (

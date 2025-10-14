@@ -13,10 +13,12 @@
               "campaignTimer": {},
               "hideAsideMenu": true,
               "logo": {
-                "src": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                "src": "https://assets.decocache.com/lojaintegradar/b152d440-6855-4a11-ad95-2e904da2ae08/logo-da-loja-integrada.svg",
                 "width": 220
               },
-              "centralizeHeaderContent": true
+              "centralizeHeaderContent": false,
+              "noScrollBackgroundColor": "transparent",
+              "backgroundColor": "#F5F9F8"
             },
             "rule": {
               "__resolveType": "website/matchers/device.ts",
@@ -29,9 +31,9 @@
               "campaignTimer": {},
               "hideAsideMenu": true,
               "logo": {
-                "src": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg"
+                "src": "https://assets.decocache.com/lojaintegradar/b152d440-6855-4a11-ad95-2e904da2ae08/logo-da-loja-integrada.svg"
               },
-              "centralizeHeaderContent": true
+              "centralizeHeaderContent": false
             },
             "rule": {
               "__resolveType": "website/matchers/always.ts"

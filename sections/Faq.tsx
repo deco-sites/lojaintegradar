@@ -80,19 +80,28 @@ export default function Faq({ hideSection, title, titleColor, titleFont, titleTe
           {title && <h2 class="text-2xl lg:text-5xl text-center leading-[120%] font-normal mb-6" style={{color: titleColor, fontFamily: titleFont, ...titleTextProps}} dangerouslySetInnerHTML={{__html: title}}/>}
           {caption && <p class="text-base lg:text-lg text-center font-normal leading-none " style={{color: captionColor, fontFamily: captionFont, ...captionTextProps}}>{caption}</p>}
           <div class="my-20 max-w-[768px] mx-auto">
-              {questions.map((collapse) => (<div className="collapse rounded-none border-b border-base-200" style={{borderColor: questionsDivisionLineColor}}>
-                  <input type="checkbox" hx-on:change={useScript(onChange)}/>
-                  <div className="collapse-title text-base lg:text-lg font-semibold flex pl-0 pr-9 py-6" style={{color: questionsTitleColor}}>
+          {questions.map((collapse, index) => (
+              <div className="collapse rounded-none border-b border-base-200" style={{ borderColor: questionsDivisionLineColor }} key={index}>
+                  <input 
+                      type="checkbox" 
+                      id={`question-${index}`} 
+                      hx-on:change={useScript(onChange)} 
+                  />
+                  <label 
+                      htmlFor={`question-${index}`} 
+                      className="collapse-title text-base lg:text-lg font-semibold flex pl-0 pr-9 py-6" 
+                      style={{ color: questionsTitleColor }}
+                  >
                       {collapse.question}
                       <div class="absolute top-7 right-4 transition-all duration-300 collapse-arrow ">
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="fill-current" style={{stroke: questionsTitleColor}} xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8.17674 11.5303L8.17676 11.5303L8.5303 11.1767C8.53031 11.1767 8.53031 11.1767 8.53032 11.1767C8.62794 11.0791 8.78621 11.0791 8.88385 11.1767C8.88385 11.1767 8.88385 11.1767 8.88385 11.1767L15.6464 17.9393L16 18.2929L16.3535 17.9393L23.1161 11.1767C23.2138 11.0791 23.372 11.0791 23.4696 11.1767L23.8232 11.5303C23.9208 11.628 23.9208 11.7862 23.8232 11.8838L16.1767 19.5303C16.0791 19.628 15.9209 19.628 15.8232 19.5303L8.17674 11.8838C8.17674 11.8838 8.17674 11.8838 8.17674 11.8838C8.07911 11.7862 8.07911 11.628 8.17674 11.5303Z" />
-                      </svg>
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="fill-current" style={{ stroke: questionsTitleColor }} xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.17674 11.5303L8.17676 11.5303L8.5303 11.1767C8.53031 11.1767 8.53031 11.1767 8.53032 11.1767C8.62794 11.0791 8.78621 11.0791 8.88385 11.1767C8.88385 11.1767 8.88385 11.1767 8.88385 11.1767L15.6464 17.9393L16 18.2929L16.3535 17.9393L23.1161 11.1767C23.2138 11.0791 23.372 11.0791 23.4696 11.1767L23.8232 11.5303C23.9208 11.628 23.9208 11.7862 23.8232 11.8838L16.1767 19.5303C16.0791 19.628 15.9209 19.628 15.8232 19.5303L8.17674 11.8838C8.17674 11.8838 8.17674 11.8838 8.17674 11.8838C8.07911 11.7862 8.07911 11.628 8.17674 11.5303Z" />
+                          </svg>
                       </div>
-
-                  </div>
-                  <div className="collapse-content px-0" dangerouslySetInnerHTML={{__html: collapse.answear}} />
-              </div>))}
+                  </label>
+                  <div className="collapse-content px-0" dangerouslySetInnerHTML={{ __html: collapse.answear }} />
+              </div>
+          ))}
           </div>
           {bottomTitle && <p class="text-center text-2xl lg:text-[32px] leading-[130%] font-semibold" style={{color: bottomTitleColor}}>{bottomTitle}</p>}
           {bottomCaption && <p class="text-center text-base lg:text-lg font-normal leading-normal mt-3" style={{color: bottomCaptionColor}}>{bottomCaption}</p>}

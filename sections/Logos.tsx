@@ -41,7 +41,7 @@ export default function Logos({ hideSection, title, caption, logos = IMG_PLACEHO
   const slideContent = (<div id="logosSliderContent" class="flex items-center gap-7 md:gap-16">
     {logos?.map((logo) => {
       return (<div class="w-28 md:w-[156px]">
-        <Image src={logo.src || ""} alt={logo.altText || ""} width={logo.width || 300} height={logo.height || 100} class={`${blackAndWhiteLogos && 'grayscale opacity-60'} h-full w-full object-contain`} />
+        <Image src={logo.src || ""} alt={logo.altText || "Logo"} width={logo.width || 300} height={logo.height || 100} class={`${blackAndWhiteLogos && 'grayscale opacity-60'} h-full w-full object-contain`} />
       </div>);
     })}
   </div>);

@@ -315,7 +315,7 @@ export default function HeroV3({ hideSection, title, bottomSection, text, textPr
         class="object-contain"
         width={media.image.width || 534}
         height={media.image.height || 534}
-        style={{ width: media.image.width + 'px' }}
+        style={{ width: media.image.width + '%' }}
       />}
     </div>}
   </div>

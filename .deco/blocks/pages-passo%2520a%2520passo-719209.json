@@ -3,17 +3,30 @@
   "path": "/passo",
   "sections": [
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/HeaderV3.tsx",
+        "campaignTimer": {},
+        "hideAsideMenu": true,
+        "logo": {
+          "src": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg"
+        },
+        "centralizeHeaderContent": true
+      }
+    },
+    {
       "__resolveType": "site/sections/HeroV4.tsx",
       "title": {
-        "text": "<p style=\"text-align: center\">Será que isso<br>vira negócio?</p>",
+        "text": "<p style=\"text-align: justify\">Será que isso<br>vira negócio?</p>",
         "color": "#00363A",
         "font": "Lektorat Display var",
         "fontWeight": "650",
         "fontSize": "70px",
         "letterSpacing": "-2px",
-        "lineHeight": "100%"
+        "lineHeight": "100%",
+        "titleMaxWidth": "680px"
       },
-      "text": "<p style=\"text-align: center\"><strong>Um passo a passo de 5 dias</strong> para descobrir se sua ideia tem futuro — antes de gastar um real.<br><strong>Em quatro missões rápidas</strong>, você vai usar IA para testar o interesse do público e validar se sua ideia para de pé.</p>",
+      "text": "<p><strong>Um passo a passo de 5 dias</strong> para descobrir se sua ideia<br>tem futuro — antes de gastar um real.<br><strong>Em quatro missões rápidas</strong>, você vai usar IA para testar<br>o interesse do público e validar se sua ideia para de pé.</p>",
       "hubspotForm": {
         "modal": {
           "cta": [
@@ -42,15 +55,15 @@
               }
             }
           ],
-          "title": "<p>Pronto! Agora é hora de tirar sua ideia do papel</p>",
+          "title": "<p style=\"text-align: center\">Pronto! Agora é hora de<br>tirar sua ideia do papel</p>",
           "titleTextProps": {
             "color": "#00363A",
             "fontFamily": "Inter",
             "fontSize": "28px",
-            "fontWeight": "600",
+            "fontWeight": "650",
             "lineHeight": "110%"
           },
-          "text": "<p>Clique abaixo para acessar o passo a passo no Notion e começar sua primeira missão.<br>Se quiser trocar ideia com outras pessoas que também estão validando negócios, junte-se ao grupo no WhatsApp 👇</p>",
+          "text": "<p style=\"text-align: center\">Clique abaixo para acessar o passo a passo no Notion e começar sua primeira missão.<br><br>Se quiser trocar ideia com outras pessoas que também estão validando negócios,<br>junte-se ao grupo no WhatsApp!</p>",
           "textProps": {
             "color": "#5F6E82",
             "fontFamily": "Inter",
@@ -75,15 +88,19 @@
       "hideSection": false,
       "container": {
         "backgroundColor": "#fffff",
-        "paddingTop": "80px"
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "marginBottom": "0px"
       },
-      "lcp": true,
+      "lcp": false,
       "sectionBackground": {
         "backgroundColor": "",
         "image": {
-          "src": "https://assets.decocache.com/lojaintegradar/4dc2b2b2-dca9-4660-b21c-5c67a353756b/bg-footer.png"
+          "src": "https://assets.decocache.com/lojaintegradar/480bb6ff-d235-497b-9bea-50c596395768/bg.png",
+          "height": "648px"
         },
-        "use": "image"
+        "use": "image",
+        "customHeight": "648px"
       },
       "tag": {},
       "textProps": {
@@ -92,25 +109,22 @@
         "fontWeight": "500",
         "color": "#00363A"
       },
-      "floatingImage": {}
+      "floatingImage": {},
+      "media": {
+        "image": {
+          "src": "https://assets.decocache.com/lojaintegradar/69d2572c-d909-468d-a8a0-a6fff1b330a5/sua-loja.png",
+          "height": 600
+        },
+        "placement": "right",
+        "use": "image",
+        "cornerImage": false
+      }
     },
     {
       "__resolveType": "site/sections/TalkToSpecialistModal.tsx"
     },
     {
       "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/HeaderV3.tsx",
-        "campaignTimer": {},
-        "logo": {
-          "src": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg"
-        },
-        "centralizeHeaderContent": true,
-        "hideAsideMenu": true
-      }
     }
   ],
   "seo": {

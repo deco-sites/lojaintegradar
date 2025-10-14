@@ -5,120 +5,392 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/HeaderV3.tsx",
-        "campaignTimer": {},
-        "hideAsideMenu": true,
-        "logo": {
-          "src": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg"
-        },
-        "centralizeHeaderContent": true
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/HeaderV3.tsx",
+              "campaignTimer": {},
+              "hideAsideMenu": true,
+              "logo": {
+                "src": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                "width": 220
+              },
+              "centralizeHeaderContent": true
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/HeaderV3.tsx",
+              "campaignTimer": {},
+              "hideAsideMenu": true,
+              "logo": {
+                "src": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg"
+              },
+              "centralizeHeaderContent": true
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
+          }
+        ]
       }
     },
     {
-      "__resolveType": "site/sections/HeroV4.tsx",
-      "title": {
-        "text": "<p style=\"text-align: justify\">Será que isso<br>vira negócio?</p>",
-        "color": "#00363A",
-        "font": "Lektorat Display var",
-        "fontWeight": "650",
-        "fontSize": "70px",
-        "letterSpacing": "-2px",
-        "lineHeight": "100%",
-        "titleMaxWidth": "680px"
-      },
-      "text": "<p><strong>Um passo a passo de 5 dias</strong> para descobrir se sua ideia<br>tem futuro — antes de gastar um real.<br><strong>Em quatro missões rápidas</strong>, você vai usar IA para testar<br>o interesse do público e validar se sua ideia para de pé.</p>",
-      "hubspotForm": {
-        "modal": {
-          "cta": [
-            {
-              "type": "Button",
-              "size": "Large",
-              "textColor": "#ffffff",
-              "href": "https://loja-integrada.notion.site/",
-              "text": "Acessar material",
-              "customProps": {
-                "borderRadius": "5px"
-              },
-              "backgroundColor": "#00363A",
-              "borderColor": "#00363A"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p style=\"text-align: justify\">Será que isso<br>vira negócio?</p>",
+              "color": "#00363A",
+              "font": "Lektorat Display var",
+              "fontWeight": "650",
+              "fontSize": "54px",
+              "letterSpacing": "-1px",
+              "lineHeight": "100%",
+              "titleMaxWidth": "680px"
             },
-            {
-              "type": "Button",
-              "size": "Large",
-              "textColor": "#00363A",
-              "backgroundColor": "TRANSPARENT",
-              "borderColor": "#00363A",
-              "text": "Entrar no grupo",
-              "href": "#",
-              "customProps": {
-                "borderRadius": "5px"
-              }
+            "text": "<p><strong>Um passo a passo de 5 dias</strong> para descobrir se sua ideia tem futuro — antes de gastar um real.<br><br><strong>Em quatro missões rápidas</strong>, você vai usar IA para testar o interesse do público e validar se sua ideia para de pé.</p>",
+            "hubspotForm": {
+              "modal": {
+                "cta": [
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "textColor": "#ffffff",
+                    "href": "https://loja-integrada.notion.site/",
+                    "text": "Acessar material",
+                    "customProps": {
+                      "borderRadius": "5px"
+                    },
+                    "backgroundColor": "#00363A",
+                    "borderColor": "#00363A"
+                  },
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "textColor": "#00363A",
+                    "backgroundColor": "TRANSPARENT",
+                    "borderColor": "#00363A",
+                    "text": "Entrar no grupo",
+                    "href": "#",
+                    "customProps": {
+                      "borderRadius": "5px"
+                    }
+                  }
+                ],
+                "title": "<p style=\"text-align: center\">Pronto! Agora é hora de<br>tirar sua ideia do papel</p>",
+                "titleTextProps": {
+                  "color": "#00363A",
+                  "fontFamily": "Inter",
+                  "fontSize": "28px",
+                  "fontWeight": "650",
+                  "lineHeight": "110%"
+                },
+                "text": "<p style=\"text-align: center\">Clique abaixo para acessar o passo a passo no Notion e começar sua primeira missão.<br><br>Se quiser trocar ideia com outras pessoas que também estão validando negócios,<br>junte-se ao grupo no WhatsApp!</p>",
+                "textProps": {
+                  "color": "#5F6E82",
+                  "fontFamily": "Inter",
+                  "fontSize": "16px",
+                  "letterSpacing": "500",
+                  "lineHeight": "110%"
+                }
+              },
+              "show": true,
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "5ba259c2-eb7d-409a-a76e-435fdde1700a",
+              "buttonColor": "#00363A",
+              "buttonWidth": "min",
+              "buttonTextColor": "#ffffff",
+              "inputLabel": "Acesse o passo a passo e teste antes de apostar",
+              "inputLabelColor": "#00363A",
+              "inputLabelBackgroundColor": "rgba(251, 250, 249, 0.40);",
+              "inputLabelWidth": "full",
+              "buttonIcon": false
+            },
+            "hideSection": false,
+            "container": {
+              "backgroundColor": "#fffff",
+              "paddingTop": "100px",
+              "marginBottom": "0",
+              "minHeight": "100vh",
+              "marginTop": "0",
+              "paddingBottom": "0px"
+            },
+            "lcp": false,
+            "sectionBackground": {
+              "backgroundColor": "",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/480bb6ff-d235-497b-9bea-50c596395768/bg.png",
+                "height": "648px"
+              },
+              "use": "image",
+              "customHeight": "100vh "
+            },
+            "tag": {},
+            "textProps": {
+              "fontFamily": "Inter",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "color": "#00363A"
+            },
+            "floatingImage": {},
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/68dec83d-4e3b-47e1-9495-a91eb57279c0/loja-integrada-1.png",
+                "width": 548,
+                "height": 368
+              },
+              "placement": "right",
+              "use": "image",
+              "cornerImage": false
             }
-          ],
-          "title": "<p style=\"text-align: center\">Pronto! Agora é hora de<br>tirar sua ideia do papel</p>",
-          "titleTextProps": {
-            "color": "#00363A",
-            "fontFamily": "Inter",
-            "fontSize": "28px",
-            "fontWeight": "650",
-            "lineHeight": "110%"
           },
-          "text": "<p style=\"text-align: center\">Clique abaixo para acessar o passo a passo no Notion e começar sua primeira missão.<br><br>Se quiser trocar ideia com outras pessoas que também estão validando negócios,<br>junte-se ao grupo no WhatsApp!</p>",
-          "textProps": {
-            "color": "#5F6E82",
-            "fontFamily": "Inter",
-            "fontSize": "16px",
-            "letterSpacing": "500",
-            "lineHeight": "110%"
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
           }
         },
-        "show": true,
-        "region": "na1",
-        "portalId": "7112881",
-        "formId": "5ba259c2-eb7d-409a-a76e-435fdde1700a",
-        "buttonColor": "#00363A",
-        "buttonWidth": "min",
-        "buttonTextColor": "#ffffff",
-        "inputLabel": "Acesse o passo a passo e teste antes de apostar",
-        "inputLabelColor": "#00363A",
-        "inputLabelBackgroundColor": "rgba(251, 250, 249, 0.40);",
-        "inputLabelWidth": "full",
-        "buttonIcon": false
-      },
-      "hideSection": false,
-      "container": {
-        "backgroundColor": "#fffff",
-        "paddingTop": "0px",
-        "paddingBottom": "0px",
-        "marginBottom": "0"
-      },
-      "lcp": false,
-      "sectionBackground": {
-        "backgroundColor": "",
-        "image": {
-          "src": "https://assets.decocache.com/lojaintegradar/480bb6ff-d235-497b-9bea-50c596395768/bg.png",
-          "height": "648px"
-        },
-        "use": "image",
-        "customHeight": "648px"
-      },
-      "tag": {},
-      "textProps": {
-        "fontFamily": "Inter",
-        "fontSize": "16px",
-        "fontWeight": "500",
-        "color": "#00363A"
-      },
-      "floatingImage": {},
-      "media": {
-        "image": {
-          "src": "https://assets.decocache.com/lojaintegradar/69d2572c-d909-468d-a8a0-a6fff1b330a5/sua-loja.png",
-          "height": 600
-        },
-        "placement": "right",
-        "use": "image",
-        "cornerImage": false
-      }
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p style=\"text-align: justify\">Será que isso<br>vira negócio?</p>",
+              "color": "#00363A",
+              "font": "Lektorat Display var",
+              "fontWeight": "650",
+              "fontSize": "70px",
+              "letterSpacing": "-2px",
+              "lineHeight": "100%",
+              "titleMaxWidth": "680px"
+            },
+            "text": "<p><strong>Um passo a passo de 5 dias</strong> para descobrir se sua ideia<br>tem futuro — antes de gastar um real.<br><strong>Em quatro missões rápidas</strong>, você vai usar IA para testar<br>o interesse do público e validar se sua ideia para de pé.</p>",
+            "hubspotForm": {
+              "modal": {
+                "cta": [
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "textColor": "#ffffff",
+                    "href": "https://loja-integrada.notion.site/",
+                    "text": "Acessar material",
+                    "customProps": {
+                      "borderRadius": "5px"
+                    },
+                    "backgroundColor": "#00363A",
+                    "borderColor": "#00363A"
+                  },
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "textColor": "#00363A",
+                    "backgroundColor": "TRANSPARENT",
+                    "borderColor": "#00363A",
+                    "text": "Entrar no grupo",
+                    "href": "#",
+                    "customProps": {
+                      "borderRadius": "5px"
+                    }
+                  }
+                ],
+                "title": "<p style=\"text-align: center\">Pronto! Agora é hora de<br>tirar sua ideia do papel</p>",
+                "titleTextProps": {
+                  "color": "#00363A",
+                  "fontFamily": "Inter",
+                  "fontSize": "28px",
+                  "fontWeight": "650",
+                  "lineHeight": "110%"
+                },
+                "text": "<p style=\"text-align: center\">Clique abaixo para acessar o passo a passo no Notion e começar sua primeira missão.<br><br>Se quiser trocar ideia com outras pessoas que também estão validando negócios,<br>junte-se ao grupo no WhatsApp!</p>",
+                "textProps": {
+                  "color": "#5F6E82",
+                  "fontFamily": "Inter",
+                  "fontSize": "16px",
+                  "letterSpacing": "500",
+                  "lineHeight": "110%"
+                }
+              },
+              "show": true,
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "5ba259c2-eb7d-409a-a76e-435fdde1700a",
+              "buttonColor": "#00363A",
+              "buttonWidth": "min",
+              "buttonTextColor": "#ffffff",
+              "inputLabel": "Acesse o passo a passo e teste antes de apostar",
+              "inputLabelColor": "#00363A",
+              "inputLabelBackgroundColor": "rgba(251, 250, 249, 0.40);",
+              "inputLabelWidth": "full",
+              "buttonIcon": false
+            },
+            "hideSection": false,
+            "container": {
+              "backgroundColor": "#fffff",
+              "paddingTop": "0px",
+              "marginBottom": "0",
+              "minHeight": "100vh",
+              "marginTop": "0",
+              "paddingBottom": "0px"
+            },
+            "lcp": false,
+            "sectionBackground": {
+              "backgroundColor": "",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/480bb6ff-d235-497b-9bea-50c596395768/bg.png",
+                "height": "648px"
+              },
+              "use": "image",
+              "customHeight": "100vh "
+            },
+            "tag": {},
+            "textProps": {
+              "fontFamily": "Inter",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "color": "#00363A"
+            },
+            "floatingImage": {},
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/68dec83d-4e3b-47e1-9495-a91eb57279c0/loja-integrada-1.png",
+                "width": 548,
+                "height": 368
+              },
+              "placement": "right",
+              "use": "image",
+              "cornerImage": false
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\">Será que isso vira negócio?</p>",
+              "color": "#00363A",
+              "font": "Lektorat Display var",
+              "fontWeight": "650",
+              "fontSize": "60px",
+              "letterSpacing": "-2px",
+              "lineHeight": "100%",
+              "titleMaxWidth": "1020px"
+            },
+            "text": "<p style=\"text-align: center\"><strong>Um passo a passo de 5 dias</strong> para descobrir se sua ideia tem futuro — antes de gastar um real.<br><br><strong>Em quatro missões rápidas</strong>, você vai usar IA para testar<br>o interesse do público e validar se sua ideia para de pé.</p>",
+            "hubspotForm": {
+              "modal": {
+                "cta": [
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "textColor": "#ffffff",
+                    "href": "https://loja-integrada.notion.site/",
+                    "text": "Acessar material",
+                    "customProps": {
+                      "borderRadius": "5px"
+                    },
+                    "backgroundColor": "#00363A",
+                    "borderColor": "#00363A"
+                  },
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "textColor": "#00363A",
+                    "backgroundColor": "TRANSPARENT",
+                    "borderColor": "#00363A",
+                    "text": "Entrar no grupo",
+                    "href": "#",
+                    "customProps": {
+                      "borderRadius": "5px"
+                    }
+                  }
+                ],
+                "title": "<p style=\"text-align: center\">Pronto! Agora é hora de<br>tirar sua ideia do papel</p>",
+                "titleTextProps": {
+                  "color": "#00363A",
+                  "fontFamily": "Inter",
+                  "fontSize": "28px",
+                  "fontWeight": "650",
+                  "lineHeight": "110%"
+                },
+                "text": "<p style=\"text-align: center\">Clique abaixo para acessar o passo a passo no Notion e começar sua primeira missão.<br><br>Se quiser trocar ideia com outras pessoas que também estão validando negócios,<br>junte-se ao grupo no WhatsApp!</p>",
+                "textProps": {
+                  "color": "#5F6E82",
+                  "fontFamily": "Inter",
+                  "fontSize": "16px",
+                  "letterSpacing": "500",
+                  "lineHeight": "110%"
+                }
+              },
+              "show": true,
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "5ba259c2-eb7d-409a-a76e-435fdde1700a",
+              "buttonColor": "#00363A",
+              "buttonWidth": "min",
+              "buttonTextColor": "#ffffff",
+              "inputLabel": "Acesse o passo a passo e teste antes de apostar",
+              "inputLabelColor": "#00363A",
+              "inputLabelBackgroundColor": "rgba(251, 250, 249, 0.40);",
+              "inputLabelWidth": "full",
+              "buttonIcon": false
+            },
+            "hideSection": false,
+            "container": {
+              "backgroundColor": "#fffff",
+              "paddingTop": "120px",
+              "marginBottom": "0",
+              "minHeight": "100vh",
+              "marginTop": "0",
+              "paddingBottom": "0px"
+            },
+            "lcp": false,
+            "sectionBackground": {
+              "backgroundColor": "",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/2a56f7a2-cf8a-4fed-b6fa-366b0d02ead5/bg.png"
+              },
+              "use": "image",
+              "customHeight": "100vh "
+            },
+            "tag": {},
+            "textProps": {
+              "fontFamily": "Inter",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "color": "#00363A"
+            },
+            "floatingImage": {},
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/69d2572c-d909-468d-a8a0-a6fff1b330a5/sua-loja.png",
+                "width": 479,
+                "height": 423
+              },
+              "placement": "bellow",
+              "use": "image",
+              "cornerImage": false
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/TalkToSpecialistModal.tsx"

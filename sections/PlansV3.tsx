@@ -283,6 +283,9 @@ function SliderItem({ slide, id }: {
                 alt={backgroundImage.alt || "plan background image"}
                 width={backgroundImage.width || 300}
                 height={backgroundImage.height || 617}
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                 class="absolute -z-40 w-full h-full top-0 left-0 object-cover rounded-[20px]"
             />}
             <div class={`relative flex flex-col justify-between z-10 h-full w-full py-10 px-[17px]`}>
@@ -292,7 +295,7 @@ function SliderItem({ slide, id }: {
                             <div class="inline-block rounded-[5px]" style={{ background: tag.backgroundColor }}>
                                 <div class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `}
                                     style={{ background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent', fontFamily: tag.fontFamily, ...tag.textProps }}>
-                                    {tag?.icon?.src && <Image width={tag.icon.width || 20} height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.alt || "tag icon"}
+                                    {tag?.icon?.src && <Image width={tag.icon.width || 20} loading="lazy" decoding="async" fetchPriority="low" height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.alt || "tag icon"}
                                         class="h-5 w-5 object-contain" />}
                                     <div dangerouslySetInnerHTML={{ __html: tag.text }} />
                                 </div>
@@ -372,6 +375,9 @@ function SliderItem({ slide, id }: {
                             {(item.icon?.src || bulletPoints.bulletPointsIcon?.src) && <Image
                                 width={item.icon?.width || bulletPoints.bulletPointsIcon?.width || 18}
                                 height={item.icon?.height || bulletPoints.bulletPointsIcon?.height || 18}
+                                loading="lazy"
+                                decoding="async"
+                                fetchPriority="low"                                
                                 class="object-contain" src={item.icon?.src || bulletPoints.bulletPointsIcon?.src || ""}
                                 alt={item.icon?.alt || bulletPoints.bulletPointsIcon?.alt || "bullet points icon"} />}
                             <div class="flex w-full gap-2.5">
@@ -416,6 +422,9 @@ function Plans(props: Props) {
             src={backgroundImage.src}
             alt={backgroundImage.alt || "plan background image"}
             width={backgroundImage.width || 1440}
+            loading="lazy"
+            decoding="async"
+            fetchPriority="low"            
             height={backgroundImage.height || 1093}
             class="absolute -z-50 w-full h-full top-0 left-0 object-cover"
             style={{ top: backgroundImage.verticalPosition }}

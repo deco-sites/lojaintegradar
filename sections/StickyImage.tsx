@@ -97,7 +97,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
         <div class="h-screen flex flex-col justify-center items-center" style={{ height: foldsHeight }}>
           {fold.textPosition == "Left" && <div>
             <div class="flex flex-col gap-3">
-              {fold.icon?.src && <Image src={fold.icon.src} alt={fold.icon.alt || 'icon'} width={fold.icon.width || 60} height={fold.icon.height || 60} />}
+              {fold.icon?.src && <Image loading="lazy" decoding="async" fetchPriority="low" src={fold.icon.src} alt={fold.icon.alt || 'icon'} width={fold.icon.width || 60} height={fold.icon.height || 60} />}
               <div dangerouslySetInnerHTML={{ __html: fold.title || "" }} style={{ ...fold.titleTextProps }} class="text-[26px] lg:text-[40px]" />
               <div dangerouslySetInnerHTML={{ __html: fold.text || "" }} style={{ ...fold.textProps }} class="text-[14px] lg:text-base" />
             </div>
@@ -110,11 +110,17 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
               alt={fold.image.alt || "Sticky image"}
               width={fold.image.width || 179}
               height={fold.image.height || 367}
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
             />}
             {fold.use == 'video' && fold.video?.src && <div class="relative" style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px" }}>
               {fold.video.mockup && fold.image?.src && <div class="absolute z-10 flex items-center w-full h-full" style={{ transform: `scale(${fold.video.mockupScale})` }}>
                 <Image
                   src={fold.image.src}
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"                  
                   alt={fold.image.alt || "Sticky image"}
                   width={fold.image.width || 179}
                   height={fold.image.height || 367} />
@@ -140,6 +146,9 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
                   alt={fold.image.alt || "Sticky image"}
                   width={fold.image.width || 336}
                   height={fold.image.height || 690}
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"                  
                   class={`absolute z-10 transition-opacity duration-500 stickyMedia`}
                   style={{ opacity: index == 0 ? 1 : 0 }}
                 />
@@ -152,6 +161,9 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
                     alt={fold.image.alt || "Sticky image"}
                     width={fold.image.width || 336}
                     height={fold.image.height || 690}
+                    loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"                    
                     class={`absolute z-10 `} />
                 </div>}
                 <video width={fold.video.width || 336} height={fold.video.height || 336} autoPlay playsInline muted loading="lazy" loop
@@ -184,6 +196,9 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
               src={fold.image.src}
               alt={fold.image.alt || "Sticky image"}
               width={fold.image.width || 179}
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"              
               height={fold.image.height || 367}
             />}
             {fold.use == 'video' && fold.video?.src && <div class="relative" style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px" }}>
@@ -191,6 +206,9 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
                 <Image
                   src={fold.image.src}
                   alt={fold.image.alt || "Sticky image"}
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"                  
                   width={fold.image.width || 179}
                   height={fold.image.height || 367} />
               </div>}

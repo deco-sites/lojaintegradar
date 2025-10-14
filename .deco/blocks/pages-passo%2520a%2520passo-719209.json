@@ -1,6 +1,6 @@
 {
-  "name": "passo a passo",
-  "path": "/passo",
+  "name": "Valide seu negocio",
+  "path": "/valide-seu-negocio",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -89,7 +89,8 @@
       "container": {
         "backgroundColor": "#fffff",
         "paddingTop": "0px",
-        "paddingBottom": "0px"
+        "paddingBottom": "0px",
+        "marginBottom": "0"
       },
       "lcp": false,
       "sectionBackground": {

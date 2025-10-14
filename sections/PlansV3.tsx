@@ -283,9 +283,6 @@ function SliderItem({ slide, id }: {
                 alt={backgroundImage.alt || "plan background image"}
                 width={backgroundImage.width || 300}
                 height={backgroundImage.height || 617}
-                loading="lazy"
-                decoding="async"
-                fetchPriority="low"
                 class="absolute -z-40 w-full h-full top-0 left-0 object-cover rounded-[20px]"
             />}
             <div class={`relative flex flex-col justify-between z-10 h-full w-full py-10 px-[17px]`}>

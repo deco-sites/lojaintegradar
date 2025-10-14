@@ -38,9 +38,6 @@ export default function VerticalLines({lineImage, linesSize, lines, maxHeight}:P
                   width={lineImage.width || 1}
                   height={lineImage.height || 474}
                   alt={lineImage.alt || "Vertical line"}
-                  loading="lazy"
-                  decoding="async"
-                  fetchPriority="low"
                 />
               ))}
             </div>

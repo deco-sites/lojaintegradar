@@ -4183,52 +4183,49 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "website/flags/multivariate/section.ts",
-        "variants": [
-          {
-            "value": {
-              "__resolveType": "site/sections/Banner.tsx",
-              "sectionId": "Masterclass",
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/6786e2ad-d575-40d3-b4e7-e9c061a8ab81/banner-marterclass-site-mobile.png",
-                "width": 330,
-                "height": 330
-              },
-              "link": {
-                "href": "#plans"
-              },
-              "containerWidth": "330",
-              "containerHeight": "330",
-              "paddingTop": "30px"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Banner.tsx",
+            "sectionId": "Masterclass",
+            "image": {
+              "src": "https://assets.decocache.com/lojaintegradar/6786e2ad-d575-40d3-b4e7-e9c061a8ab81/banner-marterclass-site-mobile.png",
+              "width": 330,
+              "height": 330
             },
-            "rule": {
-              "__resolveType": "website/matchers/device.ts",
-              "mobile": true
-            }
+            "link": {
+              "href": "#plans"
+            },
+            "containerWidth": "330",
+            "containerHeight": "330",
+            "paddingTop": "30px"
           },
-          {
-            "value": {
-              "__resolveType": "site/sections/Banner.tsx",
-              "sectionId": "Masterclass",
-              "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/539e20ad-0406-46b4-904c-266004e7305a/banner-marterclass-site.png",
-                "width": 1220,
-                "height": 315
-              },
-              "link": {
-                "href": "#plans"
-              },
-              "containerWidth": "1280px",
-              "paddingTop": "30px"
-            },
-            "rule": {
-              "__resolveType": "website/matchers/always.ts"
-            }
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
           }
-        ]
-      }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Banner.tsx",
+            "sectionId": "Masterclass",
+            "image": {
+              "src": "https://assets.decocache.com/lojaintegradar/539e20ad-0406-46b4-904c-266004e7305a/banner-marterclass-site.png",
+              "width": 1220,
+              "height": 315
+            },
+            "link": {
+              "href": "#plans"
+            },
+            "containerWidth": "1280px",
+            "paddingTop": "30px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

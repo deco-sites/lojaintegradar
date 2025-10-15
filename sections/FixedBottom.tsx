@@ -62,7 +62,7 @@ export default function FixedBottom({ hideSection, backgroundColor, logo, text, 
 
         <div width="100%" dangerouslySetInnerHTML={{ __html: text || "" }} style={{ ...textProps }} class="text-[22px] font-medium hidden lg:block" />
 
-        <div class={`flex flex-wrap lg:flex-nowrap gap-4 flex-grow lg:flex-grow-0 ${centerContent && 'justify-center'}`}>
+        <div class={`flex flex-wrap lg:flex-nowrap gap-4 flex-grow lg:flex-grow-0 ${centerContent && 'justify-center'}`} width="294" height="42">
           {cta.map(cta => (
             <CTA {...cta} />
           ))}

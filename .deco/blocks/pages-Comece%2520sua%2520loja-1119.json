@@ -471,7 +471,7 @@
               },
               "backgroundMedia": {
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/ede32e50-51f1-419e-b388-ceebaf5cd893/HERO-DESKTOP-NEW.jpg",
+                  "src": "https://assets.decocache.com/lojaintegradar/4acfd20b-bd2c-4a92-a991-65b1b3a47093/teste-banner.webp",
                   "width": 1440,
                   "height": 960,
                   "preload": true,
@@ -1127,78 +1127,75 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Logos.tsx",
-              "blackAndWhiteLogos": false,
-              "title": "<p style=\"text-align: center\">+30 mil lojas venderam no último mês.</p>",
-              "paddingTop": "120px",
-              "paddingBottom": "60px",
-              "caption": "<p style=\"text-align: center\">São 13 anos apoiando empreendedores como você</p>",
-              "titleTextProps": {
-                "fontFamily": "Inter",
-                "color": "#00363A",
-                "fontSize": "18px",
-                "fontWeight": "600",
-                "lineHeight": "100%"
+            "__resolveType": "site/sections/Logos.tsx",
+            "blackAndWhiteLogos": false,
+            "title": "<p style=\"text-align: center\">+30 mil lojas venderam no último mês.</p>",
+            "paddingTop": "120px",
+            "paddingBottom": "60px",
+            "caption": "<p style=\"text-align: center\">São 13 anos apoiando empreendedores como você</p>",
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "color": "#00363A",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "100%"
+            },
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px"
+            },
+            "logos": [
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/e55d65ff-6e54-4012-bf11-533a9c25abd8/logo-Forbes.png",
+                "width": 113,
+                "height": 29
               },
-              "captionTextProps": {
-                "fontFamily": "Inter",
-                "fontSize": "14px"
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/7ff219a3-dabf-4dd2-a83e-6859868a34ee/logo-rock-in-rio.png",
+                "width": 113,
+                "height": 29
               },
-              "logos": [
-                {
-                  "src": "https://assets.decocache.com/lojaintegradar/e55d65ff-6e54-4012-bf11-533a9c25abd8/logo-Forbes.png",
-                  "width": 113,
-                  "height": 29
-                },
-                {
-                  "src": "https://assets.decocache.com/lojaintegradar/7ff219a3-dabf-4dd2-a83e-6859868a34ee/logo-rock-in-rio.png",
-                  "width": 113,
-                  "height": 29
-                },
-                {
-                  "src": "https://assets.decocache.com/lojaintegradar/7cd7bd23-e4bd-4281-b196-4e708b570a07/Next10.png",
-                  "width": 131,
-                  "height": 29
-                },
-                {
-                  "src": "https://assets.decocache.com/lojaintegradar/19d51174-fcde-4755-ad53-c596a79e8efc/logo-frutifica.png",
-                  "width": 131,
-                  "height": 29
-                },
-                {
-                  "src": "https://assets.decocache.com/lojaintegradar/3183da6d-7e11-445c-90e3-61cbe56991dc/logo-soldiers.png",
-                  "width": 131,
-                  "height": 29
-                },
-                {
-                  "src": "https://assets.decocache.com/lojaintegradar/907904b0-2c72-4b99-968f-086bf30e2b05/logo-gorila-shield.png",
-                  "width": 113,
-                  "height": 29
-                },
-                {
-                  "src": "https://assets.decocache.com/lojaintegradar/9e4ff102-b0e0-4523-a429-220dd2ec2801/logo-mais-pura.png",
-                  "width": 113,
-                  "height": 29
-                },
-                {
-                  "src": "https://assets.decocache.com/lojaintegradar/02af44cf-506e-4586-9cce-343dc8202585/logo-Carola-cosmeticos.png",
-                  "width": 113,
-                  "height": 29
-                },
-                {
-                  "src": "https://assets.decocache.com/lojaintegradar/99f42daa-7d8b-4f02-af91-1bc0a6888250/dr-charn.png",
-                  "width": 131,
-                  "height": 29
-                },
-                {
-                  "src": "https://assets.decocache.com/lojaintegradar/e359cdc3-92e0-4d0b-85bb-b48a695fa01e/maretoa.png",
-                  "width": 113,
-                  "height": 29
-                }
-              ]
-            }
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/7cd7bd23-e4bd-4281-b196-4e708b570a07/Next10.png",
+                "width": 131,
+                "height": 29
+              },
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/19d51174-fcde-4755-ad53-c596a79e8efc/logo-frutifica.png",
+                "width": 131,
+                "height": 29
+              },
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/3183da6d-7e11-445c-90e3-61cbe56991dc/logo-soldiers.png",
+                "width": 131,
+                "height": 29
+              },
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/907904b0-2c72-4b99-968f-086bf30e2b05/logo-gorila-shield.png",
+                "width": 113,
+                "height": 29
+              },
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/9e4ff102-b0e0-4523-a429-220dd2ec2801/logo-mais-pura.png",
+                "width": 113,
+                "height": 29
+              },
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/02af44cf-506e-4586-9cce-343dc8202585/logo-Carola-cosmeticos.png",
+                "width": 113,
+                "height": 29
+              },
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/99f42daa-7d8b-4f02-af91-1bc0a6888250/dr-charn.png",
+                "width": 131,
+                "height": 29
+              },
+              {
+                "src": "https://assets.decocache.com/lojaintegradar/e359cdc3-92e0-4d0b-85bb-b48a695fa01e/maretoa.png",
+                "width": 113,
+                "height": 29
+              }
+            ]
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

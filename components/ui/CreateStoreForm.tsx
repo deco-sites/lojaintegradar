@@ -5,6 +5,8 @@ import { useId } from "site/sdk/useId.ts";
 
 
 const CreateStoreForm = ({ googleAccountButton, googleAccountBelowText,  planoId, periodo, backgroundColor, buttonText, agreeText1, agreeLink1, agreeLink2, agreeText2, agreeText3, nameCaption, namePlaceholder, passwordCaption, passwordPlaceholder, passwordText, confirmPasswordCaption, confirmPasswordPlaceholder, emailCaption, emailPlaceholder, inputsLabelColor, inputsTextColor, inputsBorderColor, inputsBellowTextColor, linksColor, buttonBackgroundColor, buttonTextColor }: CreateStoreFormProps) => {
+    const [getUtms, setUtms] = useState('');
+
     const [formData, setFormData] = useState({
         nome: "",
         email: "",
@@ -31,6 +33,24 @@ const CreateStoreForm = ({ googleAccountButton, googleAccountBelowText,  planoId
         if (errors.confirmacao_senha != "") return setValidated(false);
         setValidated(true);
     }, [errors]);
+
+    useEffect(( () => {
+        
+        function getUTMQueryString(): string {
+            const params = new URLSearchParams(window.location.search);
+            const utmParams = new URLSearchParams();
+
+            params.forEach((value, key) => {
+                if (key.startsWith('utm_')) {
+                utmParams.append(key, value);
+                }
+            });
+
+            return utmParams.toString();
+        }
+
+        setUtms(getUTMQueryString());
+    }), [])
 
     const handleInputChange = (e: any) => {
         const { name, value } = e.target;
@@ -171,7 +191,7 @@ const CreateStoreForm = ({ googleAccountButton, googleAccountBelowText,  planoId
                 <p class="w-full text-center text-sm">{googleAccountBelowText}</p>
             </>}
                 <form
-                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${periodo || 'anual'}&plano_id=${planoId || '172'}`}
+                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${periodo || 'anual'}&plano_id=${planoId || '172'}${getUtms && `&${getUtms}`}`}
                     id="createStoreFormRecaptcha"
                     method="POST"
                     className="w-full flex flex-col items-center justify-center"

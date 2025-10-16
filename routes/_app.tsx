@@ -53,7 +53,33 @@ export default defineApp(async (_req, ctx) => {
       AOS.init({startEvent: 'load'});
       `}}>
     </script>
+    
+    <script defer dangerouslySetInnerHTML={{__html: `
 
+          
+      const params = new URLSearchParams(window.location.search);
+      const utms = {};
+      // Captura todos os parâmetros que começam com "utm_"
+      for (const [key, value] of params.entries()) {
+        if (key.startsWith('utm_')) {
+          utms[key] = value;
+        }
+      }
+      // Adiciona os utm ao href de todos os links
+      document.querySelectorAll('a').forEach(link => {
+        if (link.href) {
+          const url = new URL(link.href, window.location.origin);
+          Object.entries(utms).forEach(([key, value]) => {
+            url.searchParams.set(key, value);
+          });
+          link.href = url.toString();
+        }
+      });
+
+
+      
+    `}}/>
+    
     <script defer dangerouslySetInnerHTML={{
       __html: `
         var fired = false;

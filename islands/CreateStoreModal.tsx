@@ -22,6 +22,8 @@ export interface Props {
 }
 
 const CreateStoreModal = ({googleAccountButton}: Props) => {
+    const [getUtms, setUtms] = useState('');
+
     const [getPlanId, setGetPlanId] = useState('');
     const [getPeriod, setGetPeriod] = useState('');
     const [getCoupon, setGetCoupon] = useState('');
@@ -52,6 +54,26 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
         if (errors.confirmacao_senha != "") return setValidated(false);
         setValidated(true);
     }, [errors]);
+
+
+    useEffect(( () => {
+        
+        function getUTMQueryString(): string {
+            const params = new URLSearchParams(window.location.search);
+            const utmParams = new URLSearchParams();
+
+            params.forEach((value, key) => {
+                if (key.startsWith('utm_')) {
+                utmParams.append(key, value);
+                }
+            });
+
+            return utmParams.toString();
+        }
+
+        setUtms(getUTMQueryString());
+    }), [])
+
 
     const handleInputChange = (e: any) => {
         const { name, value } = e.target;
@@ -182,6 +204,7 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
         }
     }
 
+    
     return (
         <div id="createStoreModal" className="hidden fixed z-[60] inset-0 bg-black bg-opacity-50 items-center justify-center z-5">
             <div className="relative mx-[10px] flex flex-col items-center p-6 w-full max-w-[550px] lg:mx-auto bg-white rounded-xl shadow-md overflow-hidden animate-pop-up" style={{ animationDuration: '0.3s' }}>
@@ -216,7 +239,7 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
             </div>
             <p class="w-full text-center text-sm">Ou crie com seu E-mail</p> </>}
                 <form
-                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${getPeriod}&plano_id=${getPlanId}${getCoupon && `&cupom=${getCoupon}`}`}
+                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${getPeriod}&plano_id=${getPlanId}${getCoupon && `&cupom=${getCoupon}`}${getUtms && `&${getUtms}`}`}
                     id="modal-no-check"
                     data-gtm-form-interact-id="0"
                     method="POST"

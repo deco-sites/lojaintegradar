@@ -67,11 +67,13 @@ export default defineApp(async (_req, ctx) => {
       }
       // Adiciona os utm ao href de todos os links
       document.querySelectorAll('a').forEach(link => {
-        const url = new URL(link.href, window.location.origin);
-        Object.entries(utms).forEach(([key, value]) => {
-          url.searchParams.set(key, value);
-        });
-        link.href = url.toString();
+        if (link.href) {
+          const url = new URL(link.href, window.location.origin);
+          Object.entries(utms).forEach(([key, value]) => {
+            url.searchParams.set(key, value);
+          });
+          link.href = url.toString();
+        }
       });
 
 

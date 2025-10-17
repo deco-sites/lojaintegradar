@@ -164,8 +164,6 @@ export function HeroMedia({ media }: { media?: Media }) {
       <source src={media.video.src} type="video/mp4" />
     </video>}
     {media?.use == "embed" && <iframe
-      width={"420"}
-      height={"400"}
       src={media.video?.src}
       frameborder="0"
       loading="lazy"

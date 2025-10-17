@@ -256,7 +256,7 @@ function Carousel(props: Props) {
 
                 </AnimateOnShow>
                 <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:px-0 max-w-[1480px] relative" style={{width: containerWidth, gap: slidesGap}} rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider" > 
-                    {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px]" style={{width: slidesWidth}}>
+                    {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px] sm:min-w-[385px]" style={{width: slidesWidth}}>
                         <SliderItem slide={slide} id={`${carouselId}::${index}`} slidesHeight={slidesHeight}/>
                     </Slider.Item>))}
                     {/* <Slider.Item index={slides?.length || 0} class="carousel-item w-[1px] lg:w-[456px] sm:block" >

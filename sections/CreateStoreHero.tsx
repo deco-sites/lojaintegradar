@@ -201,6 +201,7 @@ export default function CreateStoreHero({ hideSection, id, title, caption, capti
       width={backgroundMedia.image.width || 1440}
       height={backgroundMedia.image.height || 836}
       loading={"eager"}
+      fetchpriority="high"
       preload={true}
       class="absolute -z-50 top-0 left-0 h-full w-full object-cover"
     />}

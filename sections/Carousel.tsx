@@ -237,7 +237,7 @@ function Carousel(props: Props) {
     if (props.hideSection) return <></>
     const { id, title, titleFont, titleTextProps, marginTop, titlePaddingBottom, caption, captionFont, captionTextProps, slides, slidesHeight, slidesGap, slidesWidth, containerWidth, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
     const carouselId = useId();
-    return (<div id={id} style={{background: backgroundColor, paddingTop: paddingTop, paddingBottom: paddingBottom, marginTop}} style="min-height: 400px;" class="relative pt-7 lg:pt-14">
+    return (<div id={id} style={{background: backgroundColor, paddingTop: paddingTop, paddingBottom: paddingBottom, marginTop}} style="min-height: 400px;min-width: 630px" class="relative pt-7 lg:pt-14">
         {/* <input type="text" value="0" /> */}
             <div id={carouselId} class="min-h-min flex flex-col items-center w-full relative" width="100%" height="100%" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
                 {backgroundImage?.src && <div class="absolute hidden md:block -z-50 top-0 left-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "background image"} height={backgroundImage.height || 780} width={backgroundImage.width || 460} class="h-full object-contain" /></div>}

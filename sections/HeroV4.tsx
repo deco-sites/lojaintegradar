@@ -269,7 +269,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
         fetchPriority="low"
         class={`absolute -z-30 top-0 left-0 h-full w-full object-cover rounded-[20px] overflow-hidden ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}
       />}
-      {container?.backgroundMedia?.use == "video" && container?.backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading="lazy" loop
+      {container?.backgroundMedia?.use == "video" && container?.backgroundMedia.video && <video autoPlay playsInline muted loading="lazy" loop
         class={`object-cover absolute -z-30 top-0 left-0 h-full w-full rounded-[20px] overflow-hidden ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}>
         <source src={container?.backgroundMedia.video} type="video/mp4" />
       </video>}
@@ -293,7 +293,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
       style={{ height: sectionBackground.customHeight }}
       loading={lcp ? "eager" : "lazy"}
     />}
-    {sectionBackground?.use == "video" && sectionBackground.video && <video width={1280} height={720} autoPlay playsInline muted loading={lcp ? "eager" : "lazy"} loop
+    {sectionBackground?.use == "video" && sectionBackground.video && <video autoPlay playsInline muted loading={lcp ? "eager" : "lazy"} loop
       class={`object-cover absolute -z-40 top-0 left-0 h-full w-full ${backgroundMediaPlacement[sectionBackground.postition || "center"]}`}
       style={{ height: sectionBackground.customHeight }}>
       <source src={sectionBackground.video} type="video/mp4" />

@@ -196,7 +196,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
     "bottom": "object-bottom"
   }
 
-  return <div class=" relative py-12" style={{ paddingTop: container?.marginTop, paddingBottom: container?.marginBottom, marginTop: sectionMarginTop, paddingLeft: sectionPaddingLeft, paddingRight: sectionPaddingRight }}>
+  return <div class=" relative py-12" loading="lazy" style={{ paddingTop: container?.marginTop, paddingBottom: container?.marginBottom, marginTop: sectionMarginTop, paddingLeft: sectionPaddingLeft, paddingRight: sectionPaddingRight, aspectRatio: "400 / 485", height: "auto", width: "100%" }}>
     <div
       class={`max-w-[1120px] relative z-10 mx-auto rounded-[20px] px-3.5 lg:px-2 flex gap-5 gap-y-10 lg:gap-y-20 lg:flex-nowrap items-center justify-center ${mediaPlacement[media?.placement || "right"]}`}
       style={{ background: container?.backgroundColor, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight, maxWidth: container?.maxWidth, gap: container?.gap }}>

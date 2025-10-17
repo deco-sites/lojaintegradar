@@ -164,6 +164,8 @@ export function HeroMedia({ media }: { media?: Media }) {
       <source src={media.video.src} type="video/mp4" />
     </video>}
     {media?.use == "embed" && <iframe
+      width={"100%"}
+      height={"100%"}
       src={media.video?.src}
       frameborder="0"
       loading="lazy"
@@ -194,11 +196,11 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
     "bottom": "object-bottom"
   }
 
-  return <div class=" relative py-12" style={{ paddingTop: container?.marginTop, paddingBottom: container?.marginBottom, marginTop: sectionMarginTop, paddingLeft: sectionPaddingLeft, paddingRight: sectionPaddingRight }}>
+  return <div class=" relative py-12" width="400" height="485" style={{ paddingTop: container?.marginTop, paddingBottom: container?.marginBottom, marginTop: sectionMarginTop, paddingLeft: sectionPaddingLeft, paddingRight: sectionPaddingRight }}>
     <div
       class={`max-w-[1120px] relative z-10 mx-auto rounded-[20px] px-3.5 lg:px-2 flex gap-5 gap-y-10 lg:gap-y-20 lg:flex-nowrap items-center justify-center ${mediaPlacement[media?.placement || "right"]}`}
       style={{ background: container?.backgroundColor, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight, maxWidth: container?.maxWidth, gap: container?.gap }}>
-      <AnimateOnShow width={floatingImage.width || 378} height={floatingImage.height || 168} animation="animate-fade-up50" divClass={`${(media?.use && media.placement != "bellow" && media.placement != "above") && 'max-w-[656px]'} flex flex-grow flex-col gap-6`} style={{ animationDuration: '1s', maxWidth: title?.titleMaxWidth }}>
+      <AnimateOnShow width={floatingImage?.width || 378} height={floatingImage?.height || 168} animation="animate-fade-up50" divClass={`${(media?.use && media.placement != "bellow" && media.placement != "above") && 'max-w-[656px]'} flex flex-grow flex-col gap-6`} style={{ animationDuration: '1s', maxWidth: title?.titleMaxWidth }}>
 
         {floatingImage?.src && <Image
           src={floatingImage.src}
@@ -269,7 +271,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
         fetchPriority="low"
         class={`absolute -z-30 top-0 left-0 h-full w-full object-cover rounded-[20px] overflow-hidden ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}
       />}
-      {container?.backgroundMedia?.use == "video" && container?.backgroundMedia.video && <video autoPlay playsInline muted loading="lazy" loop
+      {container?.backgroundMedia?.use == "video" && container?.backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading="lazy" loop
         class={`object-cover absolute -z-30 top-0 left-0 h-full w-full rounded-[20px] overflow-hidden ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}>
         <source src={container?.backgroundMedia.video} type="video/mp4" />
       </video>}
@@ -293,7 +295,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
       style={{ height: sectionBackground.customHeight }}
       loading={lcp ? "eager" : "lazy"}
     />}
-    {sectionBackground?.use == "video" && sectionBackground.video && <video autoPlay playsInline muted loading={lcp ? "eager" : "lazy"} loop
+    {sectionBackground?.use == "video" && sectionBackground.video && <video width={1280} height={720} autoPlay playsInline muted loading={lcp ? "eager" : "lazy"} loop
       class={`object-cover absolute -z-40 top-0 left-0 h-full w-full ${backgroundMediaPlacement[sectionBackground.postition || "center"]}`}
       style={{ height: sectionBackground.customHeight }}>
       <source src={sectionBackground.video} type="video/mp4" />

@@ -154,6 +154,9 @@ export function HeroMedia({ media }: { media?: Media }) {
       src={media.image.src}
       alt={media.image.alt || "image"}
       class="object-contain"
+      loading="lazy"
+      decoding="async"
+      fetchPriority="low"
       width={media.image.width || 534}
       height={media.image.height || 534}
       style={{ width: media.image.width + 'px' }}
@@ -167,6 +170,9 @@ export function HeroMedia({ media }: { media?: Media }) {
       width={"100%"}
       height={"100%"}
       src={media.video?.src}
+      loading="lazy"
+      decoding="async"
+      fetchPriority="low"      
       frameborder="0"
       style={{ width: media.video?.width || 854, height: media.video?.height || 480 }}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
@@ -203,6 +209,9 @@ export default function HeroV3({ hideSection, title, bottomSection, text, textPr
           src={floatingImage.src}
           alt={floatingImage.alt || "floating image"}
           width={floatingImage.width || 378}
+          loading="lazy"
+          decoding="async"
+          fetchPriority="low"          
           height={floatingImage.height || 168}
           class="absolute z-10"
           style={{ top: floatingImage.verticalPosition, left: floatingImage.horizontalPosition }}
@@ -226,6 +235,9 @@ export default function HeroV3({ hideSection, title, bottomSection, text, textPr
               {bulletPoints?.bulletPointsIcon?.src && <Image
                 height={bulletPoints?.bulletPointsIcon?.height || 15}
                 width={bulletPoints?.bulletPointsIcon?.width || 15}
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"                
                 src={bulletPoints?.bulletPointsIcon?.src}
                 alt={bulletPoints?.bulletPointsIcon.alt || "bullet point icon"}
               />}
@@ -255,6 +267,9 @@ export default function HeroV3({ hideSection, title, bottomSection, text, textPr
       {container?.backgroundMedia?.use == "image" && container?.backgroundMedia.image?.src && <Image
         src={container?.backgroundMedia.image.src}
         alt={container?.backgroundMedia.image.alt || "background image"}
+        loading="lazy"
+        decoding="async"
+        fetchPriority="low"        
         width={container?.backgroundMedia.image.width || 1277}
         height={container?.backgroundMedia.image.height || 630}
         class={`absolute -z-30 top-0 left-0 h-full w-full object-cover ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}
@@ -277,6 +292,9 @@ export default function HeroV3({ hideSection, title, bottomSection, text, textPr
       alt={sectionBackground.image.alt || "background image"}
       width={sectionBackground.image.width || 1277}
       height={sectionBackground.image.height || 630}
+      loading="lazy"
+      decoding="async"
+      fetchPriority="low"
       class={`absolute -z-40 top-0 left-0 h-full w-full object-cover ${backgroundMediaPlacement[sectionBackground.postition || "center"]}`}
       style={{ height: sectionBackground.customHeight }}
       loading={lcp ? "eager" : "lazy"}
@@ -291,6 +309,9 @@ export default function HeroV3({ hideSection, title, bottomSection, text, textPr
       {media?.use == "image" && media.image?.src && <Image
         src={media.image.src}
         alt={media.image.alt || "image"}
+        loading="lazy"
+        decoding="async"
+        fetchPriority="low"
         class="object-contain"
         width={media.image.width || 534}
         height={media.image.height || 534}

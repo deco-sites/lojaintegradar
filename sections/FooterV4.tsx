@@ -91,6 +91,9 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
           src={titleImage.src}
           alt={titleImage.alt || "image"}
           class="object-contain"
+          loading="lazy"
+          decoding="async"
+          fetchPriority="low"
           width={titleImage.width || 241}
           height={titleImage.height || 99}
         />}
@@ -110,6 +113,9 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
               src={ctaFloatingImage.src}
               width={ctaFloatingImage.width || 47}
               height={ctaFloatingImage.height || 47}
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
               alt={ctaFloatingImage.alt || "floating image around the buttons"}
               class="absolute z-10 pointer-events-none top-0 left-0"
               style={{ top: ctaFloatingImage.verticalPosition, left: ctaFloatingImage.horizontalPosition }}
@@ -120,7 +126,7 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
         {socialMedias.length > 0 && <div class="flex gap-4 justify-center items-center mt-[60px] lg:mt-[40px]">
           {socialMedias.map((social, index) => (
             <a hx-on:click={`window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'clique', custom_section: 'lp-komea', custom_type: 'footer', custom_title: '${social.logo?.alt || `Social ${index + 1}`}'});`} target={social.href?.includes("http") ? "_blank" : "_self"} href={social.href}>
-              <Image src={social.logo?.src || ""} width={social.logo?.width || 26} height={social.logo?.height || 26} alt={social.logo?.alt || "social media logo"} />
+              <Image src={social.logo?.src || ""} loading="lazy" decoding="async" fetchPriority="low" width={social.logo?.width || 26} height={social.logo?.height || 26} alt={social.logo?.alt || "social media logo"} />
             </a>
           ))}
         </div>}
@@ -137,7 +143,9 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
         width={backgroundMedia.image.width || 1277}
         height={backgroundMedia.image.height || 630}
         class={`absolute -z-40 top-0 left-0 h-full w-full object-cover`}
-        loading={"lazy"}
+        loading="lazy"
+        decoding="async"
+        fetchPriority="low"
       />}
       {backgroundMedia?.use == "video" && backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading={"lazy"} loop
         class={`object-cover absolute -z-40 top-0 left-0 h-full w-full`}>

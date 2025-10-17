@@ -152,7 +152,7 @@ export default function CreateStoreHero({ hideSection, id, title, caption, capti
         {caption && <AnimateOnShow
           animation="animate-fade-up50"
           divClass="text-base lg:text-2xl font-light leading-normal mb-4">
-          <div dangerouslySetInnerHTML={{ __html: caption }} style={{ ...captionTextProps }} />
+          <div width="100%" dangerouslySetInnerHTML={{ __html: caption }} style={{ ...captionTextProps }} />
         </AnimateOnShow>}
         <AnimateOnShow
           divClass={`relative flex flex-col rounded-xl lg:rounded-3xl`}
@@ -199,8 +199,9 @@ export default function CreateStoreHero({ hideSection, id, title, caption, capti
       src={backgroundMedia.image.src}
       alt={backgroundMedia.image.alt || "background image"}
       width={backgroundMedia.image.width || 1440}
-      height={backgroundMedia.image.height || 960}
+      height={backgroundMedia.image.height || 836}
       loading={"eager"}
+      fetchpriority="high"
       preload={true}
       class="absolute -z-50 top-0 left-0 h-full w-full object-cover"
     />}

@@ -31,6 +31,10 @@ export default function HorizontalLines({lineImage, linesSize, lines}:Props) {
                     src={lineImage.src}
                     width={lineImage.width || 400}
                     height={lineImage.height || 1}
+                    alt={lineImage.alt || "Horizontal line"}
+                    loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"                    
                     class='object-cover'
                   />
                 ))}

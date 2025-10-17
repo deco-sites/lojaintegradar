@@ -116,7 +116,10 @@ export default function GridCards({ hideSection, tag, title, cards = [], cardsCo
               <div class="p-2.5 lg:p-5 cardIcon rounded-[10px]">
                 <Image
                   src={card.image.src}
-                  alt={card.image.alt || ""}
+                  alt={card.image.alt || "card image"}
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"    
                   width={card.image.width || 20}
                   height={card.image.height || 20} />
               </div>
@@ -153,6 +156,8 @@ export default function GridCards({ hideSection, tag, title, cards = [], cardsCo
       height={backgroundMedia.image.height || 720}
       class={`absolute -z-40 top-0 left-0 h-full w-full object-cover`}
       loading="lazy"
+      decoding="async"
+      fetchPriority="low" 
     />}
     {backgroundMedia?.use == "video" && backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading="lazy" loop
       class={`object-cover absolute -z-40 top-0 left-0 h-full w-full`}>

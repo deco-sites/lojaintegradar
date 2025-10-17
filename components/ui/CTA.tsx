@@ -159,6 +159,8 @@ export default function CTA({ href = "", text, textColor, backgroundColor, iconG
       ? { background: backgroundColor, color: textColor, borderColor, gap: iconGap, backgroundImage: `url('${backgroundImage?.src}')`, ...customProps }
       : { color: textColor, border: 'none', padding: 0, gap: iconGap, ...customProps }}
     href={openModal ? undefined : href}
+    width="100%"
+    height="100%"
     target={href.includes("http") ? "_blank" : "_self"}>
     {text}
     {showIcon && (customIcon?.src

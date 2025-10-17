@@ -154,6 +154,9 @@ export function HeroMedia({ media }: { media?: Media }) {
       width={media.image.width || 534}
       height={media.image.height || 534}
       style={{ width: media.image.width + 'px' }}
+      loading="lazy"
+      decoding="async"
+      fetchPriority="low"
     />}
     {media?.use == "video" && media.video?.src && <video width={media.video.width || 1280} height={media.video.height || 720} autoPlay playsInline muted loading="lazy" loop
       class="object-cover"
@@ -165,6 +168,9 @@ export function HeroMedia({ media }: { media?: Media }) {
       height={"100%"}
       src={media.video?.src}
       frameborder="0"
+      loading="lazy"
+      decoding="async"
+      fetchPriority="low"
       style={{ width: media.video?.width || 854, height: media.video?.height || 480 }}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
     />}
@@ -190,17 +196,20 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
     "bottom": "object-bottom"
   }
 
-  return <div class=" relative py-12" style={{ paddingTop: container?.marginTop, paddingBottom: container?.marginBottom, marginTop: sectionMarginTop, paddingLeft: sectionPaddingLeft, paddingRight: sectionPaddingRight }}>
+  return <div class=" relative py-12" loading="lazy" style={{ minHeight: "auto", minWidth: "100%", paddingTop: container?.marginTop, paddingBottom: container?.marginBottom, marginTop: sectionMarginTop, paddingLeft: sectionPaddingLeft, paddingRight: sectionPaddingRight }}>
     <div
       class={`max-w-[1120px] relative z-10 mx-auto rounded-[20px] px-3.5 lg:px-2 flex gap-5 gap-y-10 lg:gap-y-20 lg:flex-nowrap items-center justify-center ${mediaPlacement[media?.placement || "right"]}`}
       style={{ background: container?.backgroundColor, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight, maxWidth: container?.maxWidth, gap: container?.gap }}>
-      <AnimateOnShow animation="animate-fade-up50" divClass={`${(media?.use && media.placement != "bellow" && media.placement != "above") && 'max-w-[656px]'} flex flex-grow flex-col gap-6`} style={{ animationDuration: '1s', maxWidth: title?.titleMaxWidth }}>
+      <AnimateOnShow width={floatingImage?.width || 378} height={floatingImage?.height || 168} animation="animate-fade-up50" divClass={`${(media?.use && media.placement != "bellow" && media.placement != "above") && 'max-w-[656px]'} flex flex-grow flex-col gap-6`} style={{ animationDuration: '1s', maxWidth: title?.titleMaxWidth }}>
 
         {floatingImage?.src && <Image
           src={floatingImage.src}
           alt={floatingImage.alt || "floating image"}
           width={floatingImage.width || 378}
           height={floatingImage.height || 168}
+          loading="lazy"
+          decoding="async"
+          fetchPriority="low"
           class="absolute z-10"
           style={{ top: floatingImage.verticalPosition, left: floatingImage.horizontalPosition }}
         />}
@@ -224,6 +233,9 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
                 height={bulletPoints?.bulletPointsIcon?.height || 15}
                 width={bulletPoints?.bulletPointsIcon?.width || 15}
                 src={bulletPoints?.bulletPointsIcon?.src}
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                 alt={bulletPoints?.bulletPointsIcon.alt || "bullet point icon"}
               />}
               {item.text}
@@ -254,6 +266,9 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
         alt={container?.backgroundMedia.image.alt || "background image"}
         width={container?.backgroundMedia.image.width || 1277}
         height={container?.backgroundMedia.image.height || 630}
+        loading="lazy"
+        decoding="async"
+        fetchPriority="low"
         class={`absolute -z-30 top-0 left-0 h-full w-full object-cover rounded-[20px] overflow-hidden ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}
       />}
       {container?.backgroundMedia?.use == "video" && container?.backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading="lazy" loop
@@ -273,6 +288,9 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
       alt={sectionBackground.image.alt || "background image"}
       width={sectionBackground.image.width || 1277}
       height={sectionBackground.image.height || 630}
+      loading="lazy"
+      decoding="async"
+      fetchPriority="low"      
       class={`absolute -z-40 top-0 left-0 h-full w-full object-cover ${backgroundMediaPlacement[sectionBackground.postition || "center"]}`}
       style={{ height: sectionBackground.customHeight }}
       loading={lcp ? "eager" : "lazy"}
@@ -290,6 +308,9 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
         class="object-contain"
         width={media.image.width || 534}
         height={media.image.height || 534}
+        loading="lazy"
+        decoding="async"
+        fetchPriority="low"        
         style={{ width: media.image.width + 'px' }}
       />}
     </div>}

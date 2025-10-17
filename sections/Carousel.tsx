@@ -237,7 +237,7 @@ function Carousel(props: Props) {
     if (props.hideSection) return <></>
     const { id, title, titleFont, titleTextProps, marginTop, titlePaddingBottom, caption, captionFont, captionTextProps, slides, slidesHeight, slidesGap, slidesWidth, containerWidth, backgroundImage, createStoreCta, cta, titleColor, captionColor, arrowsColor, paddingBottom, paddingTop, backgroundColor } = { ...props };
     const carouselId = useId();
-    return (<div id={id} style={{background: backgroundColor, paddingTop: paddingTop, paddingBottom: paddingBottom, marginTop, minHeight: "400px", minWidth: "630px"}} class="relative pt-7 lg:pt-14">
+    return (<div id={id} style={{background: backgroundColor, paddingTop: paddingTop, paddingBottom: paddingBottom, marginTop}} class="relative pt-7 lg:pt-14">
         {/* <input type="text" value="0" /> */}
             <div id={carouselId} class="min-h-min flex flex-col items-center w-full relative" width="100%" height="100%" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
                 {backgroundImage?.src && <div class="absolute hidden md:block -z-10 top-0 left-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "background image"} height={backgroundImage.height || 780} width={backgroundImage.width || 460} class="h-full w-full object-contain" /></div>}
@@ -256,7 +256,7 @@ function Carousel(props: Props) {
 
                 </AnimateOnShow>
                 <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:px-0 max-w-[1480px] relative" style={{width: containerWidth, gap: slidesGap}} rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider" > 
-                    {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px] min-w-[385px]" style={{width: slidesWidth}}>
+                    {slides?.map((slide, index) => (<Slider.Item index={index} class="carousel-item w-full xl:w-1/3 sm:max-w-[456px]" style={{width: slidesWidth}}>
                         <SliderItem slide={slide} id={`${carouselId}::${index}`} slidesHeight={slidesHeight}/>
                     </Slider.Item>))}
                     {/* <Slider.Item index={slides?.length || 0} class="carousel-item w-[1px] lg:w-[456px] sm:block" >

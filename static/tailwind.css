@@ -3523,8 +3523,6 @@ html {
   height: 4rem;
 }.h-2 {
   height: 0.5rem;
-}.h-20 {
-  height: 5rem;
 }.h-28 {
   height: 7rem;
 }.h-3 {
@@ -4084,6 +4082,8 @@ html {
   flex: 1 1 0%;
 }.flex-shrink {
   flex-shrink: 1;
+}.flex-shrink-0 {
+  flex-shrink: 0;
 }.shrink-0 {
   flex-shrink: 0;
 }.flex-grow {

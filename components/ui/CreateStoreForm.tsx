@@ -160,7 +160,7 @@ const CreateStoreForm = ({ googleAccountButton, googleAccountBelowText,  planoId
         <div id="createStoreFormDiv" className="inset-0 bg-opacity-50 items-center justify-center z-5">
             <div
                 className="relative flex flex-col items-center p-12 w-full max-w-[460px] lg:mx-auto bg-white rounded-2xl shadow-md overflow-hidden text-[#371e56]"
-                style={{ background: backgroundColor, color: inputsLabelColor }}
+                style={{ background: backgroundColor, color: inputsLabelColor, minHeight: "580px" }}
                 id="createStoreFormContainer">
 
             <script src="https://accounts.google.com/gsi/client" async defer></script>

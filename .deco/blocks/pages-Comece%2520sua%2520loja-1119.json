@@ -1873,7 +1873,10 @@
             "folds": [
               {
                 "textPosition": "Left",
-                "icon": {},
+                "icon": {
+                  "width": 495,
+                  "height": 440
+                },
                 "title": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme visitantes em compradores</span></p><p>automaticamente</p>",
                 "titleTextProps": {
                   "color": "#28C3C3",
@@ -1892,8 +1895,8 @@
                 },
                 "image": {
                   "src": "https://assets.decocache.com/lojaintegradar/8adb162d-751f-46e5-a96a-e6d5690fccc8/ImageContainer-new.webp",
-                  "height": 526,
-                  "width": 580,
+                  "height": 440,
+                  "width": 495,
                   "loading": "lazy",
                   "fetchPriority": "low"
                 },
@@ -1923,9 +1926,10 @@
                 },
                 "image": {
                   "src": "https://assets.decocache.com/lojaintegradar/9233df78-0d8f-43cc-8d6d-333e58896601/ImageContainer-new2.webp",
-                  "width": 580,
+                  "width": 495,
                   "loading": "lazy",
-                  "fetchPriority": "low"
+                  "fetchPriority": "low",
+                  "height": 440
                 },
                 "use": "image",
                 "video": {

@@ -7,10 +7,12 @@ import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 
+
 const refreshArrowsVisibility = () => {
     const currentTarget = event!.currentTarget as HTMLElement;
     
     refresh(0);
+
 
     function refresh (firstItemLastPosition: number) {
         setTimeout(() => {
@@ -38,15 +40,18 @@ const refreshArrowsVisibility = () => {
                     }
                 }
 
+
                 if(carouselItems[0].getBoundingClientRect().left != firstItemLastPosition) refresh(carouselItems[0].getBoundingClientRect().left);
             }
         }, 200);
     }
 };
 
+
 export interface TextProps extends TitleTextProps {
     fontFamily?: string;
 }
+
 
 export interface TitleTextProps {
     fontSize?: string;
@@ -54,6 +59,7 @@ export interface TitleTextProps {
     letterSpacing?: string;
     lineHeight?: string;
   }
+
 
 export interface CarouselIcon {
     src?: ImageWidget;
@@ -103,6 +109,7 @@ export interface CTA {
     showIcon?: boolean;
 }
 
+
 export interface CreateStoreWithPlanCTA {
     planId: string;
     text?: string;
@@ -117,6 +124,7 @@ export interface CreateStoreWithPlanCTA {
     showIcon?: boolean;
     order?: number;
 }
+
 
 export interface Props {
     hideSection?: boolean;
@@ -170,7 +178,19 @@ function SliderItem({ slide, id, slidesHeight }: {
     console.log(icon?.width," ",icon?.height)
     return (<div id={id} class={`relative w-full h-[400px] sm:h-[484px] rounded-[30px] overflow-y-auto p-6 md:p-8 'text-primary' `} style={{ color: textColor, height: slidesHeight }}>
 
-        {useBackground == 'image' && backgroundImage?.src && <div class="absolute top-0 left-0 z-0 h-full w-full"><Image src={backgroundImage.src} loading="lazy" decoding="async" fetchPriority="low" alt={backgroundImage.alt || "carousel item background image"} width={backgroundImage.width || 456} height={backgroundImage.height || 608} class="w-full h-full object-cover object-top" /></div>}
+
+        {useBackground == 'image' && backgroundImage?.src && <div class="absolute top-0 left-0 z-0 h-full w-full">
+            <Image 
+                src={backgroundImage.src} 
+                loading="lazy" 
+                decoding="async" 
+                fetchPriority="low" 
+                alt={backgroundImage.alt || "carousel item background image"} 
+                width={backgroundImage.width || 456} 
+                height={backgroundImage.height || 608} 
+                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 456px"
+                class="w-full h-full object-cover object-top" />
+        </div>}
         {useBackground == 'video' && backgroundVideo && <video width="456" height="608" autoPlay playsInline muted loading="lazy" loop class="absolute top-0 left-0 z-0 h-full w-full object-cover object-top">
             <source src={backgroundVideo} type="video/mp4" />
             <object data="" width="320" height="240">
@@ -178,7 +198,16 @@ function SliderItem({ slide, id, slidesHeight }: {
             </object>
         </video>}
         <div class={`relative w-full h-full flex justify-between ${textPlacement == 'Top' ? 'flex-col' : 'flex-col-reverse'}`}>
-            {icon?.src && <Image loading="lazy" decoding="async" fetchPriority="low" src={icon.src} alt={icon.alt || "carousel item background image"} width={icon.width || 32} height={icon.width || 32} class={` object-contain absolute h-8 w-8 ${iconPosition[icon.placement || 'Top right']}`} />}
+            {icon?.src && <Image 
+                loading="lazy" 
+                decoding="async" 
+                fetchPriority="low" 
+                src={icon.src} 
+                alt={icon.alt || "carousel item icon"} 
+                width={icon.width || 32} 
+                height={icon.height || 32} 
+                sizes="32px"
+                class={` object-contain absolute h-8 w-8 ${iconPosition[icon.placement || 'Top right']}`} />}
             <div>
                 {title && <h2 class="text-lg md:text-2xl pr-12 md:mb-5" style={{...titleTextProps}}>{title}</h2>}
                 <div class="text-xs md:text-sm " dangerouslySetInnerHTML={{ __html: caption }} style={{...captionTextProps}}/>
@@ -186,7 +215,16 @@ function SliderItem({ slide, id, slidesHeight }: {
             <div>
                 {bulletPoints?.bulletPointsTitle && <p class="text-sm">{bulletPoints.bulletPointsTitle}</p>}
                 {bulletPoints?.items?.map((bulletPoint) => (<div class="flex gap-2 mt-[10px]">
-                    {bulletPoints.bulletPointsIcon?.src && <Image loading="lazy" decoding="async" fetchPriority="low" src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain" />}
+                    {bulletPoints.bulletPointsIcon?.src && <Image 
+                        loading="lazy" 
+                        decoding="async" 
+                        fetchPriority="low" 
+                        src={bulletPoints.bulletPointsIcon.src} 
+                        alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} 
+                        width={bulletPoints.bulletPointsIcon.width || 20} 
+                        height={bulletPoints.bulletPointsIcon.height || 20} 
+                        sizes="20px"
+                        class="object-contain" />}
                     <p class="text-sm">{bulletPoint}</p>
                 </div>))}
             </div>
@@ -240,7 +278,16 @@ function Carousel(props: Props) {
     return (<div id={id} style={{background: backgroundColor, paddingTop: paddingTop, paddingBottom: paddingBottom, marginTop}} class="relative pt-7 lg:pt-14">
         {/* <input type="text" value="0" /> */}
             <div id={carouselId} class="min-h-min flex flex-col items-center w-full relative" width="100%" height="100%" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
-                {backgroundImage?.src && <div class="absolute hidden md:block -z-10 top-0 left-0 h-full w-full"><Image src={backgroundImage.src} alt={backgroundImage.alt || "background image"} height={backgroundImage.height || 780} width={backgroundImage.width || 460} class="h-full w-full object-contain" /></div>}
+                {backgroundImage?.src && <div class="absolute hidden md:block -z-10 top-0 left-0 h-full w-full">
+                    <Image 
+                        src={backgroundImage.src} 
+                        alt={backgroundImage.alt || "background image"} 
+                        height={backgroundImage.height || 780} 
+                        width={backgroundImage.width || 460} 
+                        sizes="(max-width: 768px) 0px, 100vw"
+                        class="h-full w-full object-contain" />
+                </div>}
+
 
                 <AnimateOnShow animation="animate-fade-up" delay={200}>
                     {title && <div 
@@ -248,11 +295,13 @@ function Carousel(props: Props) {
                         style={{ color: titleColor, fontFamily: titleFont, paddingBottom: titlePaddingBottom, ...titleTextProps }} 
                         dangerouslySetInnerHTML={{__html: title}} />}
 
+
                     {caption && <div 
                         class="text-xl md:text-2xl font-semibold text-center text-primary leading-snug max-w-[942px]" 
                         style={{ color: captionColor, fontFamily: captionFont, ...captionTextProps }}
                         dangerouslySetInnerHTML={{__html: caption}}
                         />}
+
 
                 </AnimateOnShow>
                 <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-[30px] pl-[30px] pr-[22px] py-9 md:px-0 max-w-[1480px] relative" style={{width: containerWidth, gap: slidesGap}} rootId={carouselId} interval={0 && 0 * 1e3} infinite id="carouselSlider" > 
@@ -263,6 +312,7 @@ function Carousel(props: Props) {
                         <div></div>
                     </Slider.Item> */}
                 </Slider>
+
 
                 <AnimateOnShow animation="animate-fade-up" divClass="flex justify-end pr-[22px] lg:px-9 w-full max-w-[1332px] mx-auto">
                     {/* {props.dots && <Dots slides={slides} interval={interval} />}{" "} */}

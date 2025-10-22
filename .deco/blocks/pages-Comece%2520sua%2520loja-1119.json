@@ -228,8 +228,8 @@
               "buttons": [
                 {
                   "text": "Criar loja Grátis",
-                  "backgroundColor": "transparent",
-                  "textColor": "#00363A",
+                  "backgroundColor": "#00363A",
+                  "textColor": "#FFFFFF",
                   "borderColor": "#00363A",
                   "size": "Small",
                   "type": "Button",
@@ -239,6 +239,15 @@
                   "customEvent": "header",
                   "customEventCategory": "loja-integrada:institucional",
                   "customEventLabel": "criar-loja-gratis"
+                },
+                {
+                  "type": "Button",
+                  "size": "Small",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "text": "Fazer login",
+                  "backgroundColor": "TRANSPARENT",
+                  "borderColor": "#00363A",
+                  "textColor": "#00363A"
                 }
               ],
               "mobileButtons": [

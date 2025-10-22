@@ -23,6 +23,15 @@
   }
 }
 
+.g_id_signin {
+  display: flex;
+  justify-content: center;
+}
+
+.g_id_signin * {
+  border: none;
+}
+
 
 @keyframes blink {
   0% {

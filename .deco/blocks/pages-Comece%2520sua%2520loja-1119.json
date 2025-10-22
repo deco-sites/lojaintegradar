@@ -64,7 +64,17 @@
             "__resolveType": "site/sections/HeaderV3.tsx",
             "navigation": {
               "links": [],
-              "buttons": [],
+              "buttons": [
+                {
+                  "type": "Button",
+                  "size": "Small",
+                  "href": " https://app.lojaintegrada.com.br/painel/login",
+                  "text": "Fazer login",
+                  "textColor": "#00363A",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#00363A"
+                }
+              ],
               "mobileButtons": [
                 {
                   "ctaStyle": "button",

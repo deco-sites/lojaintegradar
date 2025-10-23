@@ -103,11 +103,11 @@ export default defineApp(async (_req, ctx) => {
       script.async = true;
       script.defer = true;
 
-      document.head.appendChild(script);
       script.onload = function () {
   
         document.querySelector(".nsm7Bb-HzV7m-LgbsSe").style.border = "none";
       };
+      document.head.appendChild(script);
 
     });`}}/>
   </>);

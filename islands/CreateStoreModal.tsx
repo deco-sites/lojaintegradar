@@ -229,7 +229,7 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
                     class="g_id_signin"
                     data-type="standard"
                     data-shape="rectangular"
-                    data-theme="outline"
+                    data-theme="filled_white"
                     data-text="continue_with"
                     data-size="large"
                     data-locale="pt-BR"

@@ -104,6 +104,7 @@ export default defineApp(async (_req, ctx) => {
       script.defer = true;
 
       document.head.appendChild(script);
+      document.querySelector(".nsm7Bb-HzV7m-LgbsSe").style.border = "none";
     });`}}/>
   </>);
 });

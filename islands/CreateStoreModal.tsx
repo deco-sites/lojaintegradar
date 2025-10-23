@@ -239,7 +239,6 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
                     data-locale="pt-BR"
                     data-click_listener="signWithGoogle"
                     data-logo_alignment="center"
-                    data-width="260"
                 ></div>
             </div>
             <p class="w-full text-center text-sm">Ou crie com seu E-mail</p> </>}

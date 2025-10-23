@@ -186,7 +186,7 @@ const CreateStoreForm = ({ googleAccountButton, googleAccountBelowText,  planoId
                         data-locale="pt-BR"
                         data-click_listener="signWithGoogle"
                         data-logo_alignment="center"
-                        data-width="100%"
+                        data-width="400"
                     ></div>
                 </div>
                 <p class="w-full text-center text-sm">{googleAccountBelowText}</p>

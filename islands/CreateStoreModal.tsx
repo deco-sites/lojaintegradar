@@ -214,7 +214,11 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
                 >
                     X
                 </button>
-            {googleAccountButton && <><div class="my-5 text-on-base-2 text-f7 leading-4 tracking-4 w-full">
+            {googleAccountButton && <><div class="my-5 relative text-on-base-2 text-f7 leading-4 tracking-4 w-full">
+                <div class="absolute w-full h-[2px] bg-white z-10"></div>
+                <div class="absolute w-full h-[2px] bg-white z-10 bottom-0"></div>
+                <div class="absolute w-[2px] h-full bg-white z-10"></div>
+                <div class="absolute w-[2px] h-full bg-white z-10 right-0"></div>
                 <div
                     id="g_id_onload"
                     data-client_id="1091824353523-i8sdgbl0143713a07vvlpsdd5uoobi2p.apps.googleusercontent.com"

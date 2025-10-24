@@ -63,7 +63,7 @@ export default function Logos({
     <div id="logosSliderContent" class="flex items-center gap-7 md:gap-16">
       {logos?.map((logo, index) => {
         return (
-          <div class="w-28 md:w-[156px] flex-shrink-0" key={index}>
+          <div class="w-28 md:w-[156px] md:h-[29px] flex-shrink-0" key={index}>
             <Image 
               src={logo.src || ""} 
               alt={logo.altText || "Logo"} 

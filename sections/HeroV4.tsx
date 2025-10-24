@@ -4,16 +4,6 @@ import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 import HubspotForm, { Props as HubspotFormProps } from "../components/HubspotForm.tsx";
 
-// Funções auxiliares - caso precise usar modals no futuro
-// const openModal = (modalId: string) => {
-//   event!.preventDefault();
-//   const modal = document.getElementById(modalId) as HTMLElement;
-//   modal?.classList.remove("hidden");
-// };
-// const closeModal = (modalId: string) => {
-//   const modal = document.getElementById(modalId) as HTMLElement;
-//   modal?.classList.add("hidden");
-// };
 
 export interface TextProps {
   /** @format color-input */
@@ -25,6 +15,7 @@ export interface TextProps {
   lineHeight?: string;
 }
 
+
 export interface IImage {
   src?: ImageWidget;
   alt?: string;
@@ -32,10 +23,12 @@ export interface IImage {
   height?: number;
 }
 
+
 export interface FloatingImage extends IImage {
   horizontalPosition?: string;
   verticalPosition?: string;
 }
+
 
 export interface Title {
   text?: RichText;
@@ -49,16 +42,19 @@ export interface Title {
   titleMaxWidth?: string;
 }
 
+
 export interface IVideo {
   src?: VideoWidget;
   width?: string;
   height?: string;
 }
 
+
 /** @title {{text}} */
 export interface BulletPointsItem {
   text: string;
 }
+
 
 export interface BulletPoints {
   items?: BulletPointsItem[];
@@ -68,6 +64,7 @@ export interface BulletPoints {
   bulletPointsIcon?: IImage;
 }
 
+
 export interface Media {
   image?: IImage;
   cornerImage?: boolean;
@@ -75,9 +72,11 @@ export interface Media {
   use?: "image" | "video" | "embed";
 }
 
+
 export interface MediaWithPlacement extends Media {
   placement?: "right" | "left" | "bellow" | "above";
 }
+
 
 export interface BackgroundMedia {
   image?: IImage;
@@ -85,6 +84,7 @@ export interface BackgroundMedia {
   use?: "image" | "video";
   postition?: "top" | "bottom";
 }
+
 
 export interface Container {
   /** @format color-input */
@@ -101,11 +101,13 @@ export interface Container {
   gap?: string;
 }
 
+
 export interface sectionBackgroundMedia extends BackgroundMedia {
   /** @format color-input */
   backgroundColor?: string;
   customHeight?: string;
 }
+
 
 export interface Tag {
   text?: RichText;
@@ -114,6 +116,7 @@ export interface Tag {
   backgroundColor?: string;
   tagPlacement?: 'left' | 'center' | 'right';
 }
+
 
 export interface Props {
   hideSection?: boolean;
@@ -137,15 +140,16 @@ export interface Props {
   lcp?: boolean;
 }
 
+
 export function HeroMedia({ media, lcp = false }: { media?: Media; lcp?: boolean }) {
   return <>
     {media?.use == "image" && media.image?.src && <Image
       src={media.image.src}
       alt={media.image.alt || "image"}
-      class="object-contain"
+      class="object-contain w-full h-auto"
       width={media.image.width || 534}
       height={media.image.height || 534}
-      style={{ width: media.image.width + 'px' }}
+      style={{ maxWidth: media.image.width ? `${media.image.width}px` : '534px' }}
       preload={lcp}
       loading={lcp ? "eager" : "lazy"}
       decoding="async"
@@ -159,8 +163,8 @@ export function HeroMedia({ media, lcp = false }: { media?: Media; lcp?: boolean
       muted 
       loop
       preload={lcp ? "auto" : "none"}
-      class="object-cover"
-      style={{ width: media.video.width + "px" || "1280px", height: media.video.height + "px" || "720px" }}>
+      class="object-cover w-full h-auto"
+      style={{ maxWidth: media.video.width || "1280px", maxHeight: media.video.height || "720px" }}>
       <source src={media.video.src} type="video/mp4" />
     </video>}
     {media?.use == "embed" && <iframe
@@ -174,6 +178,7 @@ export function HeroMedia({ media, lcp = false }: { media?: Media; lcp?: boolean
     />}
   </>
 }
+
 
 export default function HeroV3({ 
   hideSection, 
@@ -217,6 +222,7 @@ export default function HeroV3({
     "bottom": "object-bottom"
   }
 
+
   return <div 
     class="relative py-12" 
     style={{ 
@@ -247,6 +253,7 @@ export default function HeroV3({
         divClass={`${(media?.use && media.placement != "bellow" && media.placement != "above") && 'max-w-[656px]'} flex flex-grow flex-col gap-6`} 
         style={{ animationDuration: '1s', maxWidth: title?.titleMaxWidth }}>
 
+
         {floatingImage?.src && <Image
           src={floatingImage.src}
           alt={floatingImage.alt || "floating image"}
@@ -256,7 +263,11 @@ export default function HeroV3({
           decoding="async"
           fetchPriority={lcp ? "high" : "low"}
           class="absolute z-10"
-          style={{ top: floatingImage.verticalPosition, left: floatingImage.horizontalPosition }}
+          style={{ 
+            top: floatingImage.verticalPosition, 
+            left: floatingImage.horizontalPosition,
+            maxWidth: floatingImage.width ? `${floatingImage.width}px` : '378px'
+          }}
         />}
         
         {tag?.text && <div class={`flex ${placement[tag.tagPlacement || 'left']}`}>
@@ -279,10 +290,12 @@ export default function HeroV3({
             marginBottom: distanceBetweenTitleAndText 
           }} />}
 
+
         {text && <div 
           dangerouslySetInnerHTML={{ __html: text }} 
           class="text-sm lg:text-lg w-full" 
           style={{ ...textProps }} />}
+
 
         {bulletPoints?.items && <div class="flex flex-col gap-4">
           {bulletPoints?.items?.map((item) => (
@@ -294,6 +307,11 @@ export default function HeroV3({
                 loading={lcp ? "eager" : "lazy"}
                 decoding="async"
                 fetchPriority={lcp ? "high" : "low"}
+                class="flex-shrink-0"
+                style={{ 
+                  maxWidth: bulletPoints?.bulletPointsIcon?.width ? `${bulletPoints.bulletPointsIcon.width}px` : '15px',
+                  maxHeight: bulletPoints?.bulletPointsIcon?.height ? `${bulletPoints.bulletPointsIcon.height}px` : '15px'
+                }}
                 alt={bulletPoints?.bulletPointsIcon.alt || "bullet point icon"}
               />}
               {item.text}
@@ -301,7 +319,9 @@ export default function HeroV3({
           ))}
         </div>}
 
+
         {hubspotForm?.show && <HubspotForm {...hubspotForm} />}
+
 
         {cta.length > 0 && ctaPosition == "below text" && <div class={`flex flex-wrap gap-4 mt-auto pt-2 ${placement[ctaPlacement || "left"]}`}>
           {cta.map(cta => (
@@ -309,6 +329,7 @@ export default function HeroV3({
           ))}
         </div>}
       </AnimateOnShow>
+
 
       {media?.use && <AnimateOnShow
         delay={200}
@@ -318,6 +339,7 @@ export default function HeroV3({
           <HeroMedia media={media} lcp={lcp} />
         </div>
       </AnimateOnShow>}
+
 
       {container?.backgroundMedia?.use == "image" && container?.backgroundMedia.image?.src && <Image
         src={container?.backgroundMedia.image.src}
@@ -341,6 +363,7 @@ export default function HeroV3({
         class={`object-cover absolute -z-30 top-0 left-0 h-full w-full rounded-[20px] overflow-hidden ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}>
         <source src={container?.backgroundMedia.video} type="video/mp4" />
       </video>}
+
 
     </div>
     
@@ -380,17 +403,18 @@ export default function HeroV3({
       <source src={sectionBackground.video} type="video/mp4" />
     </video>}
 
+
     {media?.cornerImage && media.use == "image" && <div class={`absolute h-full ${media.placement == "left" ? "left-0" : "right-0"} top-0 flex items-center`}>
       {media?.use == "image" && media.image?.src && <Image
         src={media.image.src}
         alt={media.image.alt || "image"}
-        class="object-contain"
+        class="object-contain w-full h-auto"
         width={media.image.width || 534}
         height={media.image.height || 534}
         loading={lcp ? "eager" : "lazy"}
         decoding="async"
         fetchPriority={lcp ? "high" : "low"}        
-        style={{ width: media.image.width + 'px' }}
+        style={{ maxWidth: media.image.width ? `${media.image.width}px` : '534px' }}
       />}
     </div>}
   </div>

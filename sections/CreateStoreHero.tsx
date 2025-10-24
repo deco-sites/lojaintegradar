@@ -287,8 +287,8 @@ export default function CreateStoreHero({
           alt={backgroundMedia.image.alt || "background image"}
           width={backgroundMedia.image.width || 1440}
           height={backgroundMedia.image.height || 836}
-          loading="lazy"
-          fetchPriority="low"
+          loading="eager"
+          fetchPriority="high"
           preload={false}
           class="absolute -z-50 top-0 left-0 h-full w-full object-cover"
         />

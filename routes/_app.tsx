@@ -80,7 +80,7 @@ export default defineApp(async (_req, ctx) => {
             src: url('https://lojaintegradar.deco.site/fonts/GalaxieCopernicus/GalaxieCopernicus-Bold.woff2') format('woff2');
             font-weight: 700;
             font-style: normal;
-            font-display: swap;
+            font-display: optional;
           }
 
           @font-face {
@@ -88,7 +88,7 @@ export default defineApp(async (_req, ctx) => {
             src: url('https://lojaintegradar.deco.site/fonts/GalaxieCopernicus/GalaxieCopernicus-Book.woff2') format('woff2');
             font-weight: 400;
             font-style: normal;
-            font-display: swap;
+            font-display: optional;
           }
 
           @font-face {
@@ -96,13 +96,14 @@ export default defineApp(async (_req, ctx) => {
             src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Lektorat-CompressedRegular.woff2') format('woff2');
             font-weight: 400;
             font-style: normal;
-            font-display: swap;
+            font-display: optional;
           }
 
           @font-face {
-            font-family: "Lektorat Display var";
-            src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Variable/LektoratDisplayVar.woff2') format('woff2');
-            font-display: swap;
+              font-display: optional;
+              font-family: 'Lektorat Oblique var';
+              src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Variable/LektoratTextVar-Oblique.ttf') format('truetype');
+              font-style: oblique;
           }
 
           /* Additional CSS (anteriormente em arquivo separado) */

@@ -269,7 +269,7 @@
               "fontSize": "18px",
               "fontWeight": "500"
             },
-            "paddingBottom": "120px"
+            "paddingBottom": "0px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -737,7 +737,7 @@
               }
             ],
             "backgroundColor": "#FFFFF",
-            "paddingTop": "120px",
+            "paddingTop": "60px",
             "paddingBottom": "60px",
             "arrows": true,
             "titleTextProps": {
@@ -762,7 +762,8 @@
               "planId": "172"
             },
             "caption": "<p>Com parceiros estratégicos, leve sua loja além do básico — com visual, conversão e fidelização.</p>",
-            "titlePaddingBottom": "10px"
+            "titlePaddingBottom": "10px",
+            "containerWidth": "1200px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -1428,7 +1429,8 @@
               "ctaStyle": "button"
             },
             "caption": "<p>Assine um plano e ative os recursos que vão te fazer vender em até 4 dias.</p>",
-            "titlePaddingBottom": "10px"
+            "titlePaddingBottom": "10px",
+            "containerWidth": "1200px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

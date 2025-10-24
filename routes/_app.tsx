@@ -117,7 +117,35 @@ export default defineApp(async (_req, ctx) => {
       });
     `}}/>
     
-    {/* OTIMIZAÇÃO: Carrega scripts do Google na primeira interação do usuário */}
-    <script dangerouslySetInnerHTML={{ __html: loadOnInteraction }} />
+    <script defer dangerouslySetInnerHTML={{
+      __html: `
+        var fired = false;
+        window.addEventListener('DOMContentLoaded', function () {
+          
+          if (fired === false) {
+            var recaptchaScript = document.createElement('script');
+            recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=6LdRdTErAAAAAJTiQW_hUzJxve5303X3lyy1UjA_';
+            recaptchaScript.defer = true;
+            document.body.appendChild(recaptchaScript);
+            fired = true;
+           
+            console.log('On scroll fired');
+          }
+        }, true);`}}>
+    </script>
+    <script dangerouslySetInnerHTML={{__html: `
+      document.addEventListener("DOMContentLoaded", function () {
+      const script = document.createElement("script");
+      script.src = "https://accounts.google.com/gsi/client";
+      script.async = true;
+      script.defer = true;
+
+      script.onload = function () {
+  
+        document.querySelector(".nsm7Bb-HzV7m-LgbsSe").style.border = "none";
+      };
+      document.head.appendChild(script);
+
+    });`}}/>
   </>);
 });

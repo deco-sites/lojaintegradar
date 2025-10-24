@@ -3789,95 +3789,105 @@
       "variants": [
         {
           "value": {
-            "__resolveType": "site/sections/FixedBottom.tsx",
-            "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);",
-            "logo": {},
-            "text": "<p style=\"text-align: center\">Participe da Live 22/10 às 18h: Estratégias inteligentes para Black Friday com especialista Carlos Lourenço</p>",
-            "textProps": {
-              "color": "#FFFFFF",
-              "fontFamily": "Inter",
-              "fontSize": "12px"
-            },
-            "cta": [
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
               {
-                "size": "Small",
-                "text": "Garantir minha vaga",
-                "textColor": "#FFFFFF",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "customWidth": "280px",
-                "customProps": {
-                  "padding": "22px 32px",
-                  "borderRadius": "10px",
-                  "height": "50px"
+                "value": {
+                  "__resolveType": "site/sections/FixedBottom.tsx",
+                  "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);",
+                  "logo": {},
+                  "text": "<p style=\"text-align: center\">Participe da Live 22/10 às 18h: Estratégias inteligentes para Black Friday com especialista Carlos Lourenço</p>",
+                  "textProps": {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Inter",
+                    "fontSize": "12px"
+                  },
+                  "cta": [
+                    {
+                      "size": "Small",
+                      "text": "Garantir minha vaga",
+                      "textColor": "#FFFFFF",
+                      "backgroundColor": "#00363A",
+                      "borderColor": "#00363A",
+                      "customWidth": "280px",
+                      "customProps": {
+                        "padding": "22px 32px",
+                        "borderRadius": "10px",
+                        "height": "50px"
+                      },
+                      "showIcon": false,
+                      "singleLine": true,
+                      "customIcon": {
+                        "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
+                        "width": 7
+                      },
+                      "iconGap": "2px",
+                      "type": "Button",
+                      "openModal": "Black Friday Hubspot Form"
+                    }
+                  ],
+                  "rightBackgroundImage": {},
+                  "hideXButton": true,
+                  "centerContent": true,
+                  "xButtonColor": "#ffffff",
+                  "height": "130px"
                 },
-                "showIcon": false,
-                "singleLine": true,
-                "customIcon": {
-                  "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
-                  "width": 7
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/FixedBottom.tsx",
+                  "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);",
+                  "logo": {},
+                  "text": "<p>Participe da Live 22/10 ás 18h: Estratégias inteligentes para vender mais em 2025 com especialista Carlos Lourenço</p>",
+                  "textProps": {
+                    "color": "#FFFFFF",
+                    "letterSpacing": "-0.75px",
+                    "fontSize": "16px",
+                    "fontFamily": "Inter"
+                  },
+                  "cta": [
+                    {
+                      "type": "Button",
+                      "size": "Large",
+                      "text": "Garantir minha vaga",
+                      "textColor": "#FFFFFF",
+                      "backgroundColor": "#00363A",
+                      "borderColor": "#00363A",
+                      "customWidth": "280px",
+                      "customProps": {
+                        "padding": "22px 32px",
+                        "letterSpacing": "-1px",
+                        "borderRadius": "10px",
+                        "height": "50px"
+                      },
+                      "showIcon": false,
+                      "singleLine": true,
+                      "customIcon": {
+                        "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
+                        "width": 7
+                      },
+                      "iconGap": "2px",
+                      "openModal": "Black Friday Hubspot Form"
+                    }
+                  ],
+                  "rightBackgroundImage": {},
+                  "centerContent": true,
+                  "xButtonColor": "#ffffff",
+                  "height": "90px",
+                  "hideXButton": true
                 },
-                "iconGap": "2px",
-                "type": "Button",
-                "openModal": "Black Friday Hubspot Form"
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
               }
-            ],
-            "rightBackgroundImage": {},
-            "hideXButton": true,
-            "centerContent": true,
-            "xButtonColor": "#ffffff",
-            "height": "130px"
+            ]
           },
           "rule": {
-            "__resolveType": "website/matchers/device.ts",
-            "mobile": true
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/FixedBottom.tsx",
-            "backgroundColor": "linear-gradient(221deg, #0EEEFF -24.09%, #28C3C3 46.95%, #FFE6A0 107.29%);",
-            "logo": {},
-            "text": "<p>Participe da Live 22/10 ás 18h: Estratégias inteligentes para vender mais em 2025 com especialista Carlos Lourenço</p>",
-            "textProps": {
-              "color": "#FFFFFF",
-              "letterSpacing": "-0.75px",
-              "fontSize": "16px",
-              "fontFamily": "Inter"
-            },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Large",
-                "text": "Garantir minha vaga",
-                "textColor": "#FFFFFF",
-                "backgroundColor": "#00363A",
-                "borderColor": "#00363A",
-                "customWidth": "280px",
-                "customProps": {
-                  "padding": "22px 32px",
-                  "letterSpacing": "-1px",
-                  "borderRadius": "10px",
-                  "height": "50px"
-                },
-                "showIcon": false,
-                "singleLine": true,
-                "customIcon": {
-                  "src": "https://assets.decocache.com/lojaintegradar/ceb2c98b-2495-4032-acd8-a195b9e3559d/tiny-green-arrow.svg",
-                  "width": 7
-                },
-                "iconGap": "2px",
-                "openModal": "Black Friday Hubspot Form"
-              }
-            ],
-            "rightBackgroundImage": {},
-            "centerContent": true,
-            "xButtonColor": "#ffffff",
-            "height": "90px",
-            "hideXButton": true
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
+            "__resolveType": "website/matchers/never.ts"
           }
         }
       ]

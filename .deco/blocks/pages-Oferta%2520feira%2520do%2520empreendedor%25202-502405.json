@@ -10,7 +10,17 @@
             "__resolveType": "site/sections/HeaderV3.tsx",
             "navigation": {
               "links": [],
-              "buttons": [],
+              "buttons": [
+                {
+                  "type": "Button",
+                  "size": "Small",
+                  "href": "https://app.lojaintegrada.com.br/painel/faturamento/plano/181/assinar",
+                  "textColor": "#00363A",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#00363A",
+                  "text": "Fazer login"
+                }
+              ],
               "mobileButtons": [
                 {
                   "ctaStyle": "button",
@@ -132,15 +142,24 @@
               }
             },
             "campaignTimer": {
-              "text": "<p>Time left for a campaign to end</p>",
-              "show": false,
+              "text": "<p>Oferta pro tempo limitado</p>",
+              "show": true,
               "labelsColor": "",
               "numbersColor": "",
               "noScrollBackgroundColor": "",
-              "backgroundColor": "",
+              "backgroundColor": "#00363A",
               "textProps": {
                 "font": "Galaxie Copernicus",
-                "color": ""
+                "color": "#fffffff",
+                "fontFamily": "Inter",
+                "fontSize": "13px"
+              },
+              "expiresAt": "2025-10-25T02:59:00.000Z",
+              "labels": {
+                "days": "dias",
+                "hours": "horas",
+                "minutes": "minutos",
+                "seconds": "segundos"
               }
             },
             "hideAsideMenu": true,
@@ -159,7 +178,7 @@
             },
             "asideMenuOnlyMobile": false,
             "noScrollBackgroundColor": "",
-            "centralizeHeaderContent": true
+            "centralizeHeaderContent": false
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -171,7 +190,17 @@
             "__resolveType": "site/sections/HeaderV3.tsx",
             "navigation": {
               "links": [],
-              "buttons": [],
+              "buttons": [
+                {
+                  "type": "Button",
+                  "size": "Small",
+                  "href": "https://app.lojaintegrada.com.br/painel/faturamento/plano/181/assinar",
+                  "text": "Já tem loja? Faça o login",
+                  "textColor": "#00363A",
+                  "backgroundColor": "TRANSPARENT",
+                  "borderColor": "#00363A"
+                }
+              ],
               "mobileButtons": [
                 {
                   "ctaStyle": "button",
@@ -306,16 +335,24 @@
               }
             },
             "campaignTimer": {
-              "text": "<p>Time left for a campaign to end</p>",
-              "show": false,
-              "labelsColor": "",
-              "numbersColor": "",
+              "text": "<p>Oferta por tempo limitada</p>",
+              "show": true,
+              "labelsColor": "#ffffff",
+              "numbersColor": "#fffffff",
               "noScrollBackgroundColor": "",
-              "backgroundColor": "#000000",
+              "backgroundColor": "#00363A",
               "textProps": {
                 "font": "Galaxie Copernicus",
-                "color": ""
-              }
+                "color": "",
+                "fontFamily": "Inter"
+              },
+              "labels": {
+                "days": "dias",
+                "hours": "horas",
+                "minutes": "minutos",
+                "seconds": "segundos"
+              },
+              "expiresAt": "2025-10-25T02:59:00.000Z"
             },
             "hideAsideMenu": true,
             "dropdownMenus": {
@@ -349,7 +386,7 @@
           "value": {
             "__resolveType": "site/sections/CreateStoreHero.tsx",
             "title": {
-              "text": "<p>Sua loja equipada<br>para vender mais</p>",
+              "text": "<p><span style=\"font-size: 12pt\">Prorrogado até 24/10</span><br>Sua loja equipada<br>para vender mais</p>",
               "font": "Lektorat Display var",
               "color": "#00363A",
               "fontSize": "70px",
@@ -410,7 +447,7 @@
             },
             "paddingRight": "0px",
             "paddingLeft": "0px",
-            "paddingTop": "10px",
+            "paddingTop": "100px",
             "paddingBottom": "20px",
             "id": "hero"
           },
@@ -494,7 +531,7 @@
           "value": {
             "__resolveType": "site/sections/Banner.tsx",
             "image": {
-              "src": "https://assets.decocache.com/lojaintegradar/09861d08-a909-49e4-9cd7-ab4a2c0269f5/faixa-site-mobile.png",
+              "src": "https://assets.decocache.com/lojaintegradar/b01c1438-05ca-4c01-a4cc-42a1bbc6873e/faixa-site-mobile.png",
               "width": 576,
               "height": 173
             },
@@ -512,7 +549,7 @@
           "value": {
             "__resolveType": "site/sections/Banner.tsx",
             "image": {
-              "src": "https://assets.decocache.com/lojaintegradar/63fa0cd8-f982-4ca4-9eb8-12dfcd83486c/faixa-site.png",
+              "src": "https://assets.decocache.com/lojaintegradar/150152a5-7cb6-404d-a2e4-d8f2f2bddd49/faixa-site.png",
               "width": 2000,
               "height": 188
             },

@@ -101,9 +101,8 @@ export default defineApp(async (_req, ctx) => {
 
           @font-face {
               font-display: optional;
-              font-family: 'Lektorat Oblique var';
-              src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Variable/LektoratTextVar-Oblique.ttf') format('truetype');
-              font-style: oblique;
+              font-family: 'Lektorat Display var';
+              src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Variable/LektoratDisplayVar.ttf') format('truetype');
           }
 
           /* Additional CSS (anteriormente em arquivo separado) */

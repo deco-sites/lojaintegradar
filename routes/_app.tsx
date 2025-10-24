@@ -102,7 +102,7 @@ export default defineApp(async (_req, ctx) => {
           @font-face {
               font-display: optional;
               font-family: 'Lektorat Display var';
-              src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Variable/LektoratDisplayVar.ttf') format('truetype');
+              src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Variable/LektoratDisplayVar.woff2') format('woff2');
           }
 
           /* Additional CSS (anteriormente em arquivo separado) */

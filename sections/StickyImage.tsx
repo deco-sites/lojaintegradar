@@ -3,34 +3,43 @@ import Image from "apps/website/components/Image.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { useId } from "../sdk/useId.ts";
 
+
 const onLoad = (rootId: string,) => {
   const parent = document.getElementById(rootId) as HTMLElement;
   const sticky = parent.querySelector('.sticky') as HTMLElement;
   const stickyHeight = sticky.offsetHeight;
   const stickyMedia: NodeListOf<HTMLElement> = parent.querySelectorAll('.stickyMedia');
 
+
   let progressPercent = 0;
+
 
   const handleScroll = () => {
     const parentRect = parent.getBoundingClientRect();
     const stickyRect = sticky.getBoundingClientRect();
 
+
     const distanceFromParentTop = stickyRect.top - parentRect.top;
     const parentHeight = parentRect.height - stickyRect.height;
+
 
     progressPercent = (distanceFromParentTop / parentHeight) * 100;
     console.log(progressPercent);
     const currentImageIndex = Math.floor((distanceFromParentTop + (0.5 * stickyHeight)) / stickyHeight);
 
+
     stickyMedia.forEach((media, index) => index == currentImageIndex ? media.style.opacity = '1' : media.style.opacity = '0')
   };
 
+
   globalThis.addEventListener('scroll', handleScroll);
+
 
   return () => {
     globalThis.removeEventListener('scroll', handleScroll);
   };
 }
+
 
 export interface IImage {
   src?: ImageWidget;
@@ -38,6 +47,7 @@ export interface IImage {
   width?: number;
   height?: number;
 }
+
 
 export interface IVideo {
   src?: VideoWidget;
@@ -47,6 +57,7 @@ export interface IVideo {
   mockup?: boolean;
   mockupScale?: string;
 }
+
 
 export interface TextProps {
   /** @format color-input */
@@ -58,10 +69,12 @@ export interface TextProps {
   lineHeight?: string;
 }
 
+
 export interface BackgroundMedia {
   /** @format color-input */
   backgroundColor?: string;
 }
+
 
 export interface Fold {
   icon?: IImage;
@@ -75,6 +88,7 @@ export interface Fold {
   use?: 'image' | 'video';
 }
 
+
 export interface Props {
   hideSection?: boolean;
   folds?: Fold[];
@@ -82,6 +96,7 @@ export interface Props {
   foldsHeight?: string;
   stickImageDistanceFromTop?: string;
 }
+
 
 export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, hideSection, stickImageDistanceFromTop }: Props) {
   if (hideSection) return <></>;
@@ -92,16 +107,27 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
       dangerouslySetInnerHTML={{ __html: useScript(onLoad, rootId) }}
     />
 
+
     <div class="lg:w-[312px]">
       {folds.map(fold => (
         <div class="h-screen flex flex-col justify-center items-center" style={{ height: foldsHeight }}>
           {fold.textPosition == "Left" && <div>
             <div class="flex flex-col gap-3">
-              {fold.icon?.src && <Image src={fold.icon.src} alt={fold.icon.alt || 'icon'} width={fold.icon.width || 60} height={fold.icon.height || 60} />}
+              {fold.icon?.src && <Image 
+                loading="lazy" 
+                decoding="async" 
+                fetchPriority="low" 
+                src={fold.icon.src} 
+                alt={fold.icon.alt || 'icon'} 
+                width={fold.icon.width || 60} 
+                height={fold.icon.height || 60}
+                sizes="60px"
+              />}
               <div dangerouslySetInnerHTML={{ __html: fold.title || "" }} style={{ ...fold.titleTextProps }} class="text-[26px] lg:text-[40px]" />
               <div dangerouslySetInnerHTML={{ __html: fold.text || "" }} style={{ ...fold.textProps }} class="text-[14px] lg:text-base" />
             </div>
           </div>}
+
 
           {/*mobile media */}
           {fold.textPosition == "Right" && <div class="lg:hidden">
@@ -110,14 +136,23 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
               alt={fold.image.alt || "Sticky image"}
               width={fold.image.width || 179}
               height={fold.image.height || 367}
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
+              sizes="(max-width: 1024px) 100vw, 0px"
             />}
             {fold.use == 'video' && fold.video?.src && <div class="relative" style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px" }}>
               {fold.video.mockup && fold.image?.src && <div class="absolute z-10 flex items-center w-full h-full" style={{ transform: `scale(${fold.video.mockupScale})` }}>
                 <Image
                   src={fold.image.src}
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"                  
                   alt={fold.image.alt || "Sticky image"}
                   width={fold.image.width || 179}
-                  height={fold.image.height || 367} />
+                  height={fold.image.height || 367}
+                  sizes="(max-width: 1024px) 100vw, 0px"
+                />
               </div>}
               <video width={fold.video.width || 336} height={fold.video.height || 336} autoPlay playsInline muted loading="lazy" loop class="absolute"
                 style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px", borderRadius: fold.video.borderRadius }}>
@@ -128,6 +163,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
         </div>
       ))}
     </div>
+
 
     <div class="hidden lg:block">
       <div class="sticky h-screen top-0 flex items-center" style={{ height: foldsHeight, top: stickImageDistanceFromTop }}>
@@ -140,11 +176,16 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
                   alt={fold.image.alt || "Sticky image"}
                   width={fold.image.width || 336}
                   height={fold.image.height || 690}
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
+                  sizes="(max-width: 1024px) 0px, 336px"
                   class={`absolute z-10 transition-opacity duration-500 stickyMedia`}
                   style={{ opacity: index == 0 ? 1 : 0 }}
                 />
               }
               {fold.use == 'video' && fold.video?.src && <div class="absolute h-full w-full flex items-center justify-center transition-opacity duration-500 stickyMedia" style={{ opacity: index == 0 ? 1 : 0 }}>
+
 
                 {fold.video.mockup && fold.image?.src && <div class="absolute z-10 flex items-center w-full h-full" style={{ transform: `scale(${fold.video.mockupScale})` }}>
                   <Image
@@ -152,6 +193,10 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
                     alt={fold.image.alt || "Sticky image"}
                     width={fold.image.width || 336}
                     height={fold.image.height || 690}
+                    loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"
+                    sizes="(max-width: 1024px) 0px, 336px"
                     class={`absolute z-10 `} />
                 </div>}
                 <video width={fold.video.width || 336} height={fold.video.height || 336} autoPlay playsInline muted loading="lazy" loop
@@ -167,16 +212,24 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
       </div>
     </div>
 
+
     <div class="lg:w-[312px]">
       {folds?.map(fold => (
         <div class="h-screen flex flex-col justify-center" style={{ height: foldsHeight }}>
           {fold.textPosition == "Right" && <div>
             <div class="flex flex-col gap-3">
-              {fold.icon?.src && <Image src={fold.icon.src} alt={fold.icon.alt || 'icon'} width={fold.icon.width || 60} height={fold.icon.height || 60} />}
+              {fold.icon?.src && <Image 
+                src={fold.icon.src} 
+                alt={fold.icon.alt || 'icon'} 
+                width={fold.icon.width || 60} 
+                height={fold.icon.height || 60}
+                sizes="60px"
+              />}
               <div dangerouslySetInnerHTML={{ __html: fold.title || "" }} style={{ ...fold.titleTextProps }} class="text-[26px] lg:text-[40px]" />
               <div dangerouslySetInnerHTML={{ __html: fold.text || "" }} style={{ ...fold.textProps }} class="text-[14px] lg:text-base" />
             </div>
           </div>}
+
 
           {/*mobile media */}
           {fold.textPosition == "Left" && <div class="lg:hidden ">
@@ -184,6 +237,10 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
               src={fold.image.src}
               alt={fold.image.alt || "Sticky image"}
               width={fold.image.width || 179}
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
+              sizes="(max-width: 1024px) 100vw, 0px"
               height={fold.image.height || 367}
             />}
             {fold.use == 'video' && fold.video?.src && <div class="relative" style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px" }}>
@@ -191,6 +248,10 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
                 <Image
                   src={fold.image.src}
                   alt={fold.image.alt || "Sticky image"}
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
+                  sizes="(max-width: 1024px) 100vw, 0px"
                   width={fold.image.width || 179}
                   height={fold.image.height || 367} />
               </div>}
@@ -199,6 +260,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
                 <source src={fold.video.src} type="video/mp4" />
               </video>
             </div>}
+
 
           </div>}
         </div>

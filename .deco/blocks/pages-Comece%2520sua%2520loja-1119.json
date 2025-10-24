@@ -11,7 +11,9 @@
             "lineImage": {
               "src": "https://assets.decocache.com/lojaintegradar/c8ffc48e-534c-496e-a0a4-8cd433ffa9c9/desktop-vertical-dark-green-line.svg",
               "height": 636,
-              "width": 1
+              "width": 1,
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "lines": [
               {
@@ -36,7 +38,9 @@
             "lineImage": {
               "src": "https://assets.decocache.com/lojaintegradar/c8ffc48e-534c-496e-a0a4-8cd433ffa9c9/desktop-vertical-dark-green-line.svg",
               "width": 1,
-              "height": 636
+              "height": 636,
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "lines": [
               {
@@ -453,9 +457,7 @@
                 "fontWeight": "500",
                 "lineHeight": "100%"
               },
-              "createStoreCta": {
-                "planId": "172"
-              },
+              "createStoreCta": {},
               "createStoreFormProps": {
                 "planoId": "172",
                 "showForm": true,
@@ -488,7 +490,7 @@
                 "buttonBackgroundColor": "#00363A",
                 "buttonTextColor": "#fffffff",
                 "googleAccountBelowText": "Ou crie com seu E-mail",
-                "googleAccountButton": true
+                "googleAccountButton": false
               },
               "backgroundMedia": {
                 "image": {
@@ -555,8 +557,7 @@
                 "inputsBellowTextColor": "#00363A",
                 "buttonBackgroundColor": "#00363A",
                 "buttonTextColor": "#fffffff",
-                "googleAccountBelowText": "Ou crie com seu E-mail",
-                "googleAccountButton": true
+                "googleAccountBelowText": "Ou crie com seu E-mail"
               },
               "backgroundMedia": {
                 "image": {
@@ -594,7 +595,9 @@
               "backgroundMedia": {
                 "image": {
                   "src": "https://assets.decocache.com/lojaintegradar/6bc5b75f-9f3d-4d97-963c-e194e9233002/campanha-main-hero-background-mobile.svg",
-                  "width": 375
+                  "width": 375,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "use": "image"
               },
@@ -635,7 +638,9 @@
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/72b2d6f2-d9f6-454c-809d-1397b24a5c38/painel-loja-integrada.png",
                 "width": 341,
-                "height": 128
+                "height": 128,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "cornerImage": false,
               "use": "image",
@@ -688,7 +693,9 @@
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/03373149-98d5-4281-8c8c-bab5619e4195/painel-loja-integrada.png",
                 "width": "851px",
-                "height": "484px"
+                "height": "484px",
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "use": "image",
               "placement": "bellow"
@@ -703,7 +710,9 @@
             },
             "sectionBackground": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/49cf6489-640b-46b8-8aa8-96c5da62f470/campanha-main-hero-background-desktop.svg"
+                "src": "https://assets.decocache.com/lojaintegradar/49cf6489-640b-46b8-8aa8-96c5da62f470/campanha-main-hero-background-desktop.svg",
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "use": "image"
             },
@@ -752,7 +761,9 @@
                 "backgroundImage": {
                   "src": "https://assets.decocache.com/lojaintegradar/0e68f316-224d-478b-a28d-94740866d259/BackgroundShadow.png",
                   "height": 409,
-                  "width": 410
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 }
               }
             ],
@@ -792,9 +803,11 @@
                   "lineHeight": "140%"
                 },
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/0e68f316-224d-478b-a28d-94740866d259/BackgroundShadow.png",
-                  "height": 409,
-                  "width": 410
+                  "src": "https://assets.decocache.com/lojaintegradar/86458cde-0a17-46f6-abbc-518f69d20b97/BackgroundShadowNew6.webp",
+                  "height": 550,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 }
               },
               {
@@ -823,9 +836,11 @@
                   "lineHeight": "140%"
                 },
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/ae2ea5e5-f2a4-465d-b792-54232ee6e9d7/BackgroundShadow2.png",
-                  "height": 409,
-                  "width": 410
+                  "src": "https://assets.decocache.com/lojaintegradar/8359f3dd-9a4a-4298-bd24-8b439e8757e9/BackgroundShadowNew5.webp",
+                  "height": 550,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 }
               },
               {
@@ -854,9 +869,11 @@
                   "lineHeight": "140%"
                 },
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/4d9cc6de-fec5-4ae0-912a-3948b37c6dd5/integre-com-marketplaces-nativo.png",
-                  "height": 409,
-                  "width": 410
+                  "src": "https://assets.decocache.com/lojaintegradar/08b6ee1c-09e2-400e-b07b-f1a414ce511a/integre-com-marketplaces-nativo-new.webp",
+                  "height": 550,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 }
               }
             ],
@@ -923,7 +940,9 @@
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/b76eaca7-3afb-454b-8423-477e48e03ee2/Cadastre-produto-com-IA.png",
                 "width": 329,
-                "height": 225
+                "height": 225,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "cornerImage": false,
               "use": "image",
@@ -1003,7 +1022,9 @@
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/5c17034f-30b8-4702-83b6-a5272efb3b98/seu-site-personalizado.png",
                 "width": 329,
-                "height": 225
+                "height": 225,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "cornerImage": false,
               "use": "image",
@@ -1083,7 +1104,9 @@
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/8f96ea25-22db-4af6-aa43-9dfc9c23389d/integre-com-marketplaces-nativo-mobile.png",
                 "width": 329,
-                "height": 239
+                "height": 239,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "cornerImage": false,
               "use": "image",
@@ -1146,52 +1169,72 @@
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/e55d65ff-6e54-4012-bf11-533a9c25abd8/logo-Forbes.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/7ff219a3-dabf-4dd2-a83e-6859868a34ee/logo-rock-in-rio.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/7cd7bd23-e4bd-4281-b196-4e708b570a07/Next10.png",
                   "width": 131,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/19d51174-fcde-4755-ad53-c596a79e8efc/logo-frutifica.png",
                   "width": 131,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/3183da6d-7e11-445c-90e3-61cbe56991dc/logo-soldiers.png",
                   "width": 131,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/907904b0-2c72-4b99-968f-086bf30e2b05/logo-gorila-shield.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/9e4ff102-b0e0-4523-a429-220dd2ec2801/logo-mais-pura.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/02af44cf-506e-4586-9cce-343dc8202585/logo-Carola-cosmeticos.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/99f42daa-7d8b-4f02-af91-1bc0a6888250/dr-charn.png",
                   "width": 131,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/e359cdc3-92e0-4d0b-85bb-b48a695fa01e/maretoa.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 }
               ]
             },
@@ -1223,52 +1266,72 @@
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/7cd7bd23-e4bd-4281-b196-4e708b570a07/Next10.png",
                   "width": 131,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/7ff219a3-dabf-4dd2-a83e-6859868a34ee/logo-rock-in-rio.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/e55d65ff-6e54-4012-bf11-533a9c25abd8/logo-Forbes.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/99f42daa-7d8b-4f02-af91-1bc0a6888250/dr-charn.png",
                   "width": 131,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/3183da6d-7e11-445c-90e3-61cbe56991dc/logo-soldiers.png",
                   "width": 131,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/02af44cf-506e-4586-9cce-343dc8202585/logo-Carola-cosmeticos.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/19d51174-fcde-4755-ad53-c596a79e8efc/logo-frutifica.png",
                   "width": 131,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/907904b0-2c72-4b99-968f-086bf30e2b05/logo-gorila-shield.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/9e4ff102-b0e0-4523-a429-220dd2ec2801/logo-mais-pura.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 {
                   "src": "https://assets.decocache.com/lojaintegradar/e359cdc3-92e0-4d0b-85bb-b48a695fa01e/maretoa.png",
                   "width": 113,
-                  "height": 29
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 }
               ]
             },
@@ -1287,7 +1350,9 @@
           "value": {
             "__resolveType": "site/sections/VerticalLines.tsx",
             "lineImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg"
+              "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "lines": [
               {
@@ -1311,7 +1376,9 @@
           "value": {
             "__resolveType": "site/sections/VerticalLines.tsx",
             "lineImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg"
+              "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "lines": [
               {
@@ -1343,7 +1410,9 @@
                 "value": {
                   "__resolveType": "site/sections/HorizontalLines.tsx",
                   "lineImage": {
-                    "src": "https://assets.decocache.com/lojaintegradar/80c86817-0723-4cf3-9336-41a2115cd689/horizontal-line-mobile.svg"
+                    "src": "https://assets.decocache.com/lojaintegradar/80c86817-0723-4cf3-9336-41a2115cd689/horizontal-line-mobile.svg",
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "lines": [
                     {
@@ -1364,7 +1433,9 @@
                   "__resolveType": "site/sections/HorizontalLines.tsx",
                   "lineImage": {
                     "src": "https://assets.decocache.com/lojaintegradar/5471942c-9e17-4889-b21c-1ff2b74c0ed9/mobile-green-dark-horizontal-line.svg",
-                    "width": 600
+                    "width": 600,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "lines": [],
                   "linesSize": 4
@@ -1390,7 +1461,9 @@
             "lineImage": {
               "src": "https://assets.decocache.com/lojaintegradar/9f25f2eb-820b-410e-9007-dc7850bdfd7f/long-line-light-green.svg",
               "height": 1,
-              "width": 2880
+              "width": 2880,
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "lines": [
               {
@@ -1412,7 +1485,9 @@
             "lineImage": {
               "src": "https://assets.decocache.com/lojaintegradar/9f25f2eb-820b-410e-9007-dc7850bdfd7f/long-line-light-green.svg",
               "height": 1,
-              "width": 2880
+              "width": 2880,
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "lines": [
               {
@@ -1545,7 +1620,9 @@
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/86f76c02-6fb8-48d2-bce2-fbf59822474d/transforme-visitantes-em-compradores.png",
                 "width": 337,
-                "height": 305
+                "height": 305,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "use": "image"
             },
@@ -1586,7 +1663,9 @@
             "media": {
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/4b3777f4-9774-45c6-a399-aebb4aa407e8/Crie-do-seu-jeito.svg",
-                "width": "421px"
+                "width": "421px",
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "use": "image"
             },
@@ -1628,7 +1707,9 @@
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png",
                 "width": 337,
-                "height": 305
+                "height": 305,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "use": "image"
             }
@@ -1667,7 +1748,9 @@
             "media": {
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png",
-                "width": "421px"
+                "width": "421px",
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "use": "image",
               "placement": "left"
@@ -1690,14 +1773,18 @@
               "backgroundColor": "linear-gradient(180deg, #012b2e , #00363A , #00363A , #002E31 );"
             },
             "image": {
-              "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
+              "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "folds": [
               {
                 "icon": {
                   "src": "https://assets.decocache.com/komea/d7146eb7-3c79-498e-b7d0-011bcb0e1535/icon-crie-produto.png",
                   "width": 40,
-                  "height": 40
+                  "height": 40,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "title": "<p><span style=\"color: #ffffff\">Crie produtos</span></p><p><span>conversando</span></p>",
                 "titleTextProps": {
@@ -1719,7 +1806,9 @@
                 "image": {
                   "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
                   "width": 181,
-                  "height": 370
+                  "height": 370,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "video": {
                   "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
@@ -1736,7 +1825,9 @@
                 "icon": {
                   "src": "https://assets.decocache.com/komea/f9ec2bef-6a39-4942-bc39-b1a7d23740d9/statistics-icon.png",
                   "width": 40,
-                  "height": 40
+                  "height": 40,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "title": "<p><span>Receba insight </span></p><p><span style=\"color: #ffffff\">direto no app</span></p>",
                 "titleTextProps": {
@@ -1758,7 +1849,9 @@
                 "image": {
                   "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
                   "width": 181,
-                  "height": 370
+                  "height": 370,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "video": {
                   "src": "https://assets.decocache.com/komea/21203775-63d2-4103-8142-7d43c2fd8b65/Receba-insight-.mp4",
@@ -1787,12 +1880,17 @@
               "backgroundColor": "#00363A"
             },
             "image": {
-              "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
+              "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "folds": [
               {
                 "textPosition": "Left",
-                "icon": {},
+                "icon": {
+                  "width": 495,
+                  "height": 440
+                },
                 "title": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme visitantes em compradores</span></p><p>automaticamente</p>",
                 "titleTextProps": {
                   "color": "#28C3C3",
@@ -1810,9 +1908,11 @@
                   "lineHeight": "125%"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/86f76c02-6fb8-48d2-bce2-fbf59822474d/transforme-visitantes-em-compradores.png",
-                  "width": "421px",
-                  "height": 526
+                  "src": "https://assets.decocache.com/lojaintegradar/8adb162d-751f-46e5-a96a-e6d5690fccc8/ImageContainer-new.webp",
+                  "height": 440,
+                  "width": 495,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "use": "image",
                 "video": {
@@ -1839,8 +1939,11 @@
                   "lineHeight": "125%"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/lojaintegradar/6781d9c5-6b42-4ce3-baed-164011bb30ff/ferramentas-anuncios.png",
-                  "width": "421px"
+                  "src": "https://assets.decocache.com/lojaintegradar/9233df78-0d8f-43cc-8d6d-333e58896601/ImageContainer-new2.webp",
+                  "width": 495,
+                  "loading": "lazy",
+                  "fetchPriority": "low",
+                  "height": 440
                 },
                 "use": "image",
                 "video": {
@@ -1866,7 +1969,9 @@
             "lineImage": {
               "src": "https://assets.decocache.com/lojaintegradar/9f25f2eb-820b-410e-9007-dc7850bdfd7f/long-line-light-green.svg",
               "width": 2880,
-              "height": 1
+              "height": 1,
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "lines": [
               {
@@ -1888,7 +1993,9 @@
             "lineImage": {
               "src": "https://assets.decocache.com/lojaintegradar/9f25f2eb-820b-410e-9007-dc7850bdfd7f/long-line-light-green.svg",
               "width": 2880,
-              "height": 1
+              "height": 1,
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "lines": [
               {
@@ -1921,7 +2028,9 @@
           "title": "Cadastre produtos com IA",
           "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
           "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
+            "loading": "lazy",
+            "fetchPriority": "low"
           }
         },
         {
@@ -1936,7 +2045,9 @@
           "title": "Cadastre produtos com IA",
           "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
           "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
+            "loading": "lazy",
+            "fetchPriority": "low"
           }
         },
         {
@@ -1951,7 +2062,9 @@
           "title": "Cadastre produtos com IA",
           "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
           "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
+            "loading": "lazy",
+            "fetchPriority": "low"
           }
         },
         {
@@ -1966,7 +2079,9 @@
           "title": "Cadastre produtos com IA",
           "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
           "backgroundImage": {
-            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png"
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
+            "loading": "lazy",
+            "fetchPriority": "low"
           }
         }
       ],
@@ -2010,9 +2125,11 @@
                   "lineHeight": "140%"
                 },
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/d01e7a56-2950-4754-84e5-4f986f6e046b/sua-loja-no-topo-do-google.png",
-                  "height": 409,
-                  "width": 410
+                  "src": "https://assets.decocache.com/lojaintegradar/37e2e473-379f-42ce-83b4-3db73ad7ee43/BackgroundShadow-mb.webp",
+                  "loading": "lazy",
+                  "fetchPriority": "low",
+                  "width": 410,
+                  "height": 409
                 }
               },
               {
@@ -2041,9 +2158,11 @@
                   "lineHeight": "140%"
                 },
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/f534d5ae-3414-4eab-92b2-99f71c36810c/venda-pelas-redes-sociais.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/bee46869-5f8f-44ed-b0de-b29fdb487506/BackgroundShadow-mb2.webp",
                   "height": 409,
-                  "width": 410
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 }
               },
               {
@@ -2074,7 +2193,9 @@
                 "backgroundImage": {
                   "src": "https://assets.decocache.com/lojaintegradar/3cccfd0a-44cf-4956-8999-869d92b4c540/BackgroundShadow3.png",
                   "height": 409,
-                  "width": 410
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 }
               }
             ],
@@ -2134,9 +2255,11 @@
                   "lineHeight": "140%"
                 },
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/d01e7a56-2950-4754-84e5-4f986f6e046b/sua-loja-no-topo-do-google.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/591ee334-fee3-4b1b-9006-e4c870ec9d7e/sua-loja-no-topo-do-google-new.webp",
                   "height": 409,
-                  "width": 410
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 }
               },
               {
@@ -2165,9 +2288,11 @@
                   "lineHeight": "140%"
                 },
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/f534d5ae-3414-4eab-92b2-99f71c36810c/venda-pelas-redes-sociais.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/42b16011-3714-4ffa-8370-b13df57e5107/venda-pelas-redes-sociais-new.webp",
                   "height": 409,
-                  "width": 410
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 }
               },
               {
@@ -2196,9 +2321,11 @@
                   "lineHeight": "140%"
                 },
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/3cccfd0a-44cf-4956-8999-869d92b4c540/BackgroundShadow3.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/aaf82fd4-a776-49e7-aeea-03c11339c344/BackgroundShadowNew7.webp",
                   "height": 409,
-                  "width": 410
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 }
               }
             ],
@@ -2266,7 +2393,8 @@
               "paddingBottom": "80px",
               "marginTop": "0",
               "marginBottom": "0"
-            }
+            },
+            "tag": {}
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -2331,7 +2459,9 @@
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/6786e2ad-d575-40d3-b4e7-e9c061a8ab81/banner-marterclass-site-mobile.png",
                 "width": 330,
-                "height": 330
+                "height": 330,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "paddingTop": "30px",
               "link": {
@@ -2352,7 +2482,9 @@
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/539e20ad-0406-46b4-904c-266004e7305a/banner-marterclass-site.png",
                 "width": 1220,
-                "height": 315
+                "height": 315,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "containerWidth": "1280px",
               "paddingTop": "30px",
@@ -2688,7 +2820,9 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
-                    "alt": "bullet points icon"
+                    "alt": "bullet points icon",
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "itemsTextColor": "#5F6E82",
                   "tooltipTextColor": "#5F6E82",
@@ -3385,7 +3519,9 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://assets.decocache.com/lojaintegradar/a1e36ffb-e68f-4fc7-9b5f-149d35939557/check.svg",
-                    "alt": "bullet points icon"
+                    "alt": "bullet points icon",
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "itemsTextColor": "#ffffff",
                   "tooltipTextColor": "#5F6E82",
@@ -4062,7 +4198,9 @@
             "paddingBottom": "60px",
             "backgroundImage": {
               "src": "https://assets.decocache.com/lojaintegradar/83c316b8-0ab7-41d0-aab4-ccc9c18cecc9/line-background.png",
-              "verticalPosition": "115px"
+              "verticalPosition": "115px",
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "id": "plans",
             "annualLabel": "Anual",
@@ -4443,7 +4581,9 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://assets.decocache.com/lojaintegradar/a1e36ffb-e68f-4fc7-9b5f-149d35939557/check.svg",
-                    "alt": "bullet points icon"
+                    "alt": "bullet points icon",
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "itemsTextColor": "#ffffff",
                   "tooltipTextColor": "#5F6E82",
@@ -5134,7 +5274,9 @@
                   ],
                   "bulletPointsIcon": {
                     "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/7d231325-bafa-4cae-b65a-34f216610b02/check.svg",
-                    "alt": "bullet points icon"
+                    "alt": "bullet points icon",
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "itemsTextColor": "#5F6E82",
                   "tooltipTextColor": "#5F6E82",
@@ -5808,7 +5950,9 @@
             "paddingBottom": "60px",
             "backgroundImage": {
               "src": "https://assets.decocache.com/lojaintegradar/83c316b8-0ab7-41d0-aab4-ccc9c18cecc9/line-background.png",
-              "verticalPosition": "115px"
+              "verticalPosition": "115px",
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "id": "plans",
             "annualLabel": "Anual",
@@ -5920,9 +6064,11 @@
             },
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/2ded45d3-89f4-4f5a-8b55-1dee04dd324a/img-hero-komea.png",
+                "src": "https://assets.decocache.com/lojaintegradar/88d7fd4d-9858-4d4d-a050-bc6d6db6d27e/img-hero-new-mb.webp",
                 "height": 461,
-                "width": 560
+                "width": 560,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "use": "image",
               "video": {},
@@ -5946,9 +6092,11 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/e6442e76-b5be-4977-b189-0b1c98cbbae7/icon-receba-insight.png",
+                    "src": "https://assets.decocache.com/lojaintegradar/eefa478d-7746-47a2-832d-25dbc7a61b75/icon-new.webp",
                     "width": 54,
-                    "height": 54
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "title": "<p>Receba insight direto no app</p>",
                   "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
@@ -5970,9 +6118,11 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/9cf6e6c9-5f20-4d3b-af9b-ab099f53642b/icon-crie-produtos-conversando.png",
+                    "src": "https://assets.decocache.com/lojaintegradar/9437d8e6-8037-4dce-a25e-bcb63761f8b7/icon-new2.webp",
                     "width": 54,
-                    "height": 54
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "title": "<p>Crie produtos conversando</p>",
                   "text": "<p>Você fala o nome e mostra a imagem. A Komea sugere categoria, descrição com SEO e publica em diferentes canais.</p>",
@@ -5994,9 +6144,11 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/4766b176-7b82-4346-8445-f71ca510aef7/icon-crie-promocoes-sem-planilhas.png",
+                    "src": "https://assets.decocache.com/lojaintegradar/f62faa6b-3841-4b58-b545-122c44717e05/icon-new3.webp",
                     "width": 54,
-                    "height": 54
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "title": "<p>Crie promoçõessem planilha</p>",
                   "text": "<p>Diga “quero 15% de desconto até domingo” e o agente executa a ação com lógica e data.</p>",
@@ -6018,9 +6170,11 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/51e3706b-5052-437d-acae-bddfbf607040/icon-pergunte-sobre-vendas.png",
+                    "src": "https://assets.decocache.com/lojaintegradar/b93a6aee-c682-4211-ad67-ade892357783/icon-new4.webp",
                     "width": 54,
-                    "height": 54
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "title": "<p>Pergunte sobre os dados das suas vendas</p>",
                   "text": "<p>Consulte produtos mais vendidos, clientes fiéis e formas de pagamento usadas com o analista de vendas.</p>",
@@ -6102,9 +6256,11 @@
             },
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/2ded45d3-89f4-4f5a-8b55-1dee04dd324a/img-hero-komea.png",
+                "src": "https://assets.decocache.com/lojaintegradar/79718b01-2b89-4874-9878-8804869ca4a5/img-hero-new.webp",
                 "width": 598,
-                "height": 461
+                "height": 461,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "use": "image",
               "video": {},
@@ -6129,9 +6285,11 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/37b6d059-11be-4d5d-bb43-24ab30b7f9f3/icon-receba-insight.png",
+                    "src": "https://assets.decocache.com/lojaintegradar/eefa478d-7746-47a2-832d-25dbc7a61b75/icon-new.webp",
                     "width": 54,
-                    "height": 54
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "title": "<p>Receba insightdireto no app</p>",
                   "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
@@ -6153,9 +6311,11 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/9cf6e6c9-5f20-4d3b-af9b-ab099f53642b/icon-crie-produtos-conversando.png",
+                    "src": "https://assets.decocache.com/lojaintegradar/9437d8e6-8037-4dce-a25e-bcb63761f8b7/icon-new2.webp",
                     "width": 54,
-                    "height": 54
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "title": "<p>Crie produtosconversando</p>",
                   "text": "<p>Você fala o nome e mostra a imagem. A Komea sugere categoria, descrição com SEO e publica em diferentes canais.</p>",
@@ -6177,9 +6337,11 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/4766b176-7b82-4346-8445-f71ca510aef7/icon-crie-promocoes-sem-planilhas.png",
+                    "src": "https://assets.decocache.com/lojaintegradar/f62faa6b-3841-4b58-b545-122c44717e05/icon-new3.webp",
                     "width": 54,
-                    "height": 54
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "title": "<p>Crie promoções sem planilha</p>",
                   "text": "<p>Diga “quero 15% de desconto até domingo” e o agente executa a ação com lógica e data.</p>",
@@ -6201,9 +6363,11 @@
                 {
                   "image": {
                     "position": "left",
-                    "src": "https://assets.decocache.com/lojaintegradar/51e3706b-5052-437d-acae-bddfbf607040/icon-pergunte-sobre-vendas.png",
+                    "src": "https://assets.decocache.com/lojaintegradar/b93a6aee-c682-4211-ad67-ade892357783/icon-new4.webp",
                     "width": 54,
-                    "height": 54
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
                   },
                   "title": "<p>Pergunte sobre os dados das suas vendas</p>",
                   "text": "<p>Consulte produtos mais vendidos, clientes fiéis e formas de pagamento usadas com o analista de vendas.</p>",
@@ -6577,13 +6741,17 @@
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/c4f693bf-3e89-4fd5-8c4f-f3b72ea49307/Logo-lojaintegrada.png",
                 "width": 337,
-                "height": 50
+                "height": 50,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "use": "image"
             },
             "backgroundMedia": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/6345d6ff-6c7f-469f-aa9b-e92fb76be915/background-loja-integrada.png"
+                "src": "https://assets.decocache.com/lojaintegradar/6345d6ff-6c7f-469f-aa9b-e92fb76be915/background-loja-integrada.png",
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "backgroundColor": "linear-gradient(113.01deg, #E4F808 -20.04%, #BAFFFE 54.12%, #F1F987 95.81%)",
               "use": "image"
@@ -6592,21 +6760,27 @@
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
-                  "alt": "Instagram"
+                  "alt": "Instagram",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "href": "https://www.instagram.com/lojaintegrada/"
               },
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
-                  "alt": "youtube"
+                  "alt": "youtube",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "href": "https://www.youtube.com/@LojaIntegrada"
               },
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
-                  "alt": "tik tok"
+                  "alt": "tik tok",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "href": "https://www.tiktok.com/@lojaintegrada"
               }
@@ -6614,10 +6788,14 @@
             "ctaFloatingImage": {
               "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
               "horizontalPosition": "-16px",
-              "verticalPosition": "-20px"
+              "verticalPosition": "-20px",
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "titleImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/e6344500-983e-4196-8ebe-d301c83fe257/Alivie-o-orre-que-e-vender-online.svg"
+              "src": "https://assets.decocache.com/lojaintegradar/e6344500-983e-4196-8ebe-d301c83fe257/Alivie-o-orre-que-e-vender-online.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
             }
           },
           "rule": {
@@ -6668,13 +6846,17 @@
               "image": {
                 "src": "https://assets.decocache.com/lojaintegradar/c3e7cbc4-dd2f-4b0f-9aac-1fc0ca08dd16/Logo-lojaintegrada-rodape.png",
                 "height": 50,
-                "width": 337
+                "width": 337,
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "use": "image"
             },
             "backgroundMedia": {
               "image": {
-                "src": "https://assets.decocache.com/lojaintegradar/0076e886-7d2f-4410-9480-51c86baa1737/background-footer-lojaintegrada.png"
+                "src": "https://assets.decocache.com/lojaintegradar/3a3d34ba-57c5-4322-8fb1-9bc8988139dc/bg-footer.webp",
+                "loading": "lazy",
+                "fetchPriority": "low"
               },
               "backgroundColor": "",
               "use": "image"
@@ -6683,21 +6865,27 @@
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
-                  "alt": "Instagram"
+                  "alt": "Instagram",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "href": "https://www.instagram.com/lojaintegrada/"
               },
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
-                  "alt": "youtube"
+                  "alt": "youtube",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "href": "https://www.youtube.com/@LojaIntegrada"
               },
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
-                  "alt": "tik tok"
+                  "alt": "tik tok",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
                 },
                 "href": "https://www.tiktok.com/@lojaintegrada"
               }
@@ -6705,10 +6893,14 @@
             "ctaFloatingImage": {
               "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
               "horizontalPosition": "-16px",
-              "verticalPosition": "-20px"
+              "verticalPosition": "-20px",
+              "loading": "lazy",
+              "fetchPriority": "low"
             },
             "titleImage": {
-              "src": "https://assets.decocache.com/lojaintegradar/e6344500-983e-4196-8ebe-d301c83fe257/Alivie-o-orre-que-e-vender-online.svg"
+              "src": "https://assets.decocache.com/lojaintegradar/e6344500-983e-4196-8ebe-d301c83fe257/Alivie-o-orre-que-e-vender-online.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
             }
           },
           "rule": {

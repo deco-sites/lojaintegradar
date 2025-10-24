@@ -190,7 +190,7 @@ export default function Header({ logo = {
       {headerMessage?.show && <div class="h-16" />}
       {campaignTimer?.show && <div class="h-[76px]" />}
       <div class="h-[92px] lg:h-28" style={{ height: headerWhiteSpace }} />
-      <div id="headerContainer" class="fixed top-0 left-0 w-full z-50 justify-center transition-all duration-500 ease-in-out">
+      <div id="headerContainer" class="fixed top-0 left-0 w-full z-50 justify-center transition-all duration-500 ease-in-out" width="100%" height="80px">
 
         {headerMessage?.show && <div class="h-16 w-full bg-primary text-primary-content px-1 lg:px-11 py-2 flex items-center justify-center gap-1" style={{ background: headerMessage?.backgroundColor }}>
           <p class="text-xs lg:text-2xl text-center font-semibold leading-[120%] flex items-center justify-center">
@@ -217,7 +217,7 @@ export default function Header({ logo = {
             <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, noScrollBackgroundColor) }} />
 
             <a href={logo.href || "/"} class="flex items-center">
-              <Image src={logo.src || ""} width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
+              <Image src={logo.src || ""} loading="lazy" decoding="async" fetchPriority="low" width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
             </a>
 
             <ul class="hidden lg:flex items-center gap-10 text-sm flex-wrap" style={{ color: dropdownMenus.titlesTextColor }}>
@@ -258,7 +258,7 @@ export default function Header({ logo = {
               ))}
             </ul>
 
-            {(!hideAsideMenu || (navigation?.buttons?.length ?? 0) > 0) && <div class="items-center justify-between">
+            {(!hideAsideMenu || (navigation?.buttons?.length ?? 0) > 0) && <div class="items-center justify-between" style="min-height: 34px; min-width: 140px;">
               <ul class="flex justify-end gap-3 lg:gap-7">
                 {navigation?.buttons?.map(cta => (
                   <div class="flex items-center"><CTA {...cta} /></div>

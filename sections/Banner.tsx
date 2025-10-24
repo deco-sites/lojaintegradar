@@ -91,12 +91,14 @@ export default function Banner({sectionId, image, link, containerHeight, contain
     <a style={{width: containerWidth, height: containerHeight}}
       hx-on:click={link?.openModal ? useScript(openModalFunction, link?.openModal, link?.createStorePlanId || '172' || '') : ''}
       href={link?.openModal ? undefined : link?.href}
+      aria-label="Banner"
       target={link?.href?.includes("http") ? "_blank" : "_self"}
       class="cursor-pointer">
       <Image
         width={image.width || 1440}
         height={image.height || 449}
         src={image.src}
+        alt={image.alt || "Banner"}
         class="h-full w-full object-cover"/>
     </a>
   </div>

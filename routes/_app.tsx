@@ -1,5 +1,6 @@
 import { asset, Head } from "$fresh/runtime.ts";
 import { defineApp } from "$fresh/server.ts";
+import { useScript } from "deco/hooks/useScript.ts";
 import TalkModal from "site/components/ui/TalkModal.tsx";
 import Theme from "../sections/Theme/Theme.tsx";
 import { Context } from "@deco/deco";
@@ -10,30 +11,30 @@ export default defineApp(async (_req, ctx) => {
   const revision = await Context.active().release?.revision();
   
   return (<>
-    {/* Include default fonts and css vars */}
     <Theme colorScheme="any" />
 
-    {/* Include Icons and manifest */}
     <Head>
-      {/* Enable View Transitions API */}
       <meta name="view-transition" content="same-origin" />
       <meta charSet="UTF-8"/>
 
-      {/* --- OTIMIZAÇÕES CRÍTICAS DE PERFORMANCE --- */}
-      {/* Preconnect aos domínios externos ANTES de qualquer CSS */}
-      <link rel="preconnect" href="https://lojaintegradar.deco.site" />
-      <link rel="preconnect" href="https://assets.decocache.com" />
-      <link rel="preconnect" href="https://sites-lojaintegradar--szzpho.decocdn.com" />
-      <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+      {/* === OTIMIZAÇÕES CRÍTICAS DE PERFORMANCE === */}
+      {/* DNS Prefetch para domínios de assets (mais leve que preconnect) */}
+      <link rel="dns-prefetch" href="https://lojaintegradar.deco.site" />
+      <link rel="dns-prefetch" href="https://assets.decocache.com" />
+      <link rel="dns-prefetch" href="https://sites-lojaintegradar--szzpho.decocdn.com" />
       <link rel="dns-prefetch" href="https://unpkg.com" />
-      <link rel="dns-prefetch" href="https://www.google.com" />
-      <link rel="dns-prefetch" href="https://accounts.google.com" />
-      {/* --- FIM OTIMIZAÇÕES CRÍTICAS --- */}
+      
+      {/* Preconnect APENAS para recursos críticos acima da dobra */}
+      <link rel="preconnect" href="https://lojaintegradar.deco.site" crossOrigin="anonymous" />
+      
+      {/* CSS Crítico com cache busting */}
+      <link 
+        href={asset(`/styles.css?revision=${revision}`)} 
+        rel="stylesheet"
+      />
 
-      {/* CSS Crítico: styles.css (necessário para renderização inicial) */}
-      <link href={asset(`/styles.css?revision=${revision}`)} rel="stylesheet" />
-
-      {/* ✅ PRELOAD APENAS DAS FONTES CRÍTICAS (usadas above-the-fold) */}
+      {/* === FONTES OTIMIZADAS === */}
+      {/* Preload apenas das fontes críticas (above-the-fold) */}
       <link 
         rel="preload" 
         href="https://lojaintegradar.deco.site/fonts/GalaxieCopernicus/GalaxieCopernicus-Bold.woff2" 
@@ -48,18 +49,10 @@ export default defineApp(async (_req, ctx) => {
         type="font/woff2" 
         crossOrigin="anonymous" 
       />
-      <link 
-        rel="preload" 
-        href="https://lojaintegradar.deco.site/fonts/Lektorat/Lektorat-CompressedRegular.woff2" 
-        as="font" 
-        type="font/woff2" 
-        crossOrigin="anonymous" 
-      />
 
-      {/* ✅ CSS DE FONTES E ADICIONAL INLINED (Eliminando bloqueio de renderização) */}
+      {/* CSS Inline Crítico */}
       <style dangerouslySetInnerHTML={{
         __html: `
-          /* Font Smoothing */
           html {
             -moz-osx-font-smoothing: grayscale;
             -webkit-font-smoothing: antialiased;
@@ -74,13 +67,13 @@ export default defineApp(async (_req, ctx) => {
             margin: 0;
           }
 
-          /* ✅ APENAS FONTES CRÍTICAS (Bold, Book/Normal, Regular) */
+          /* Apenas fontes CRÍTICAS inline */
           @font-face {
             font-family: 'Galaxie Copernicus';
             src: url('https://lojaintegradar.deco.site/fonts/GalaxieCopernicus/GalaxieCopernicus-Bold.woff2') format('woff2');
             font-weight: 700;
             font-style: normal;
-            font-display: optional;
+            font-display: swap;
           }
 
           @font-face {
@@ -88,24 +81,10 @@ export default defineApp(async (_req, ctx) => {
             src: url('https://lojaintegradar.deco.site/fonts/GalaxieCopernicus/GalaxieCopernicus-Book.woff2') format('woff2');
             font-weight: 400;
             font-style: normal;
-            font-display: optional;
+            font-display: swap;
           }
 
-          @font-face {
-            font-family: 'Lektorat';
-            src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Lektorat-CompressedRegular.woff2') format('woff2');
-            font-weight: 400;
-            font-style: normal;
-            font-display: optional;
-          }
-
-          @font-face {
-              font-display: optional;
-              font-family: 'Lektorat Display var';
-              src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Variable/LektoratDisplayVar.woff2') format('woff2');
-          }
-
-          /* Additional CSS (anteriormente em arquivo separado) */
+          /* CSS Adicional Crítico */
           .typingCircles {
             position: relative;
             gap: 5px;
@@ -152,18 +131,18 @@ export default defineApp(async (_req, ctx) => {
         `
       }} />
 
-      {/* ✅ FONTES SECUNDÁRIAS CARREGADAS DE FORMA ASSÍNCRONA */}
+      {/* Fontes secundárias: lazy load com media="print" trick */}
       <link 
         rel="stylesheet" 
         href={asset("/fontStyles-extended.css")} 
         media="print" 
-        onLoad="this.media='all'" 
+        onLoad="this.media='all';this.onload=null;" 
       />
       <noscript>
         <link rel="stylesheet" href={asset("/fontStyles-extended.css")} />
       </noscript>
 
-      {/* Preload LCP Image com fetchPriority high */}
+      {/* Preload da imagem LCP (hero) */}
       <link 
         rel="preload" 
         as="image" 
@@ -172,107 +151,154 @@ export default defineApp(async (_req, ctx) => {
         fetchPriority="high"
       />
 
-      {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
-      
-      {/* AOS CSS carregado com baixa prioridade (mantido como estava) */}
-      <link 
-        rel="preload" 
-        href="https://unpkg.com/aos@2.3.1/dist/aos.css" 
-        as="style" 
-        onLoad="this.onload=null;this.rel='stylesheet'" 
-      />
-      <noscript>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-      </noscript>
     </Head>
 
-    {/* Rest of Preact tree */}
     <ctx.Component />
     <TalkModal />
     <TimeModal />
     <SecondTimeModal />
     
-    {/* AOS Library - Carregado depois do conteúdo principal */}
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer dangerouslySetInnerHTML={{
-      __html: `
-      window.addEventListener('load', function() {
-        if (typeof AOS !== 'undefined') {
-          AOS.init({startEvent: 'load'});
-        }
-      });
-      `}}>
-    </script>
+    {/* === SCRIPTS OTIMIZADOS === */}
+    
+    {/* AOS Library: Lazy load após interação */}
+    <script 
+      type="module"
+      dangerouslySetInnerHTML={{
+        __html: `
+          (function() {
+            let loaded = false;
+            const loadAOS = () => {
+              if (loaded) return;
+              loaded = true;
+              
+              // Carrega CSS do AOS
+              const link = document.createElement('link');
+              link.rel = 'stylesheet';
+              link.href = 'https://unpkg.com/aos@2.3.1/dist/aos.css';
+              document.head.appendChild(link);
+              
+              // Carrega JS do AOS
+              const script = document.createElement('script');
+              script.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+              script.onload = () => {
+                if (typeof AOS !== 'undefined') {
+                  AOS.init({ startEvent: 'load' });
+                }
+              };
+              document.body.appendChild(script);
+              
+              // Remove listeners
+              ['scroll', 'mousemove', 'touchstart'].forEach(e => 
+                window.removeEventListener(e, loadAOS)
+              );
+            };
+            
+            // Carrega após interação ou 4 segundos
+            ['scroll', 'mousemove', 'touchstart'].forEach(e => 
+              window.addEventListener(e, loadAOS, { once: true, passive: true })
+            );
+            setTimeout(loadAOS, 4000);
+          })();
+        `
+      }}
+    />
     
     {/* Propagação de UTMs - Otimizado */}
-    <script defer dangerouslySetInnerHTML={{__html: `
-      (function() {
-        const params = new URLSearchParams(window.location.search);
-        const utms = {};
-        for (const [key, value] of params.entries()) {
-          if (key.startsWith('utm_')) {
-            utms[key] = value;
+    <script 
+      type="module"
+      dangerouslySetInnerHTML={{
+        __html: useScript(() => {
+          const params = new URLSearchParams(window.location.search);
+          const utms: Record<string, string> = {};
+          
+          for (const [key, value] of params.entries()) {
+            if (key.startsWith('utm_')) {
+              utms[key] = value;
+            }
           }
-        }
-        if (Object.keys(utms).length > 0) {
-          document.addEventListener('DOMContentLoaded', function() {
+          
+          if (Object.keys(utms).length === 0) return;
+          
+          const updateLinks = () => {
             document.querySelectorAll('a').forEach(link => {
-              if (link.href && link.hostname === window.location.hostname) {
-                const url = new URL(link.href);
-                Object.entries(utms).forEach(([key, value]) => {
-                  url.searchParams.set(key, value);
-                });
-                link.href = url.toString();
+              try {
+                if (link.href && new URL(link.href).hostname === window.location.hostname) {
+                  const url = new URL(link.href);
+                  Object.entries(utms).forEach(([key, value]) => {
+                    url.searchParams.set(key, value);
+                  });
+                  link.href = url.toString();
+                }
+              } catch (e) {
+                // Ignora links inválidos
               }
             });
-          });
-        }
-      })();
-    `}}/>
-    
-    {/* reCAPTCHA v3 e Google Sign-In - Carregamento sob demanda (lazy load) */}
-    <script defer dangerouslySetInnerHTML={{
-      __html: `
-        (function() {
-          let loaded = false;
-          const loadScripts = function() {
-            if (loaded) return;
-            loaded = true;
-            
-            // reCAPTCHA
-            const recaptcha = document.createElement('script');
-            recaptcha.src = 'https://www.google.com/recaptcha/api.js?render=6LdRdTErAAAAAJTiQW_hUzJxve5303X3lyy1UjA_';
-            recaptcha.defer = true;
-            document.head.appendChild(recaptcha);
-            
-            // Google Sign-In
-            const gsi = document.createElement('script');
-            gsi.src = 'https://accounts.google.com/gsi/client';
-            gsi.defer = true;
-            gsi.onload = function() {
-              const btn = document.querySelector('.nsm7Bb-HzV7m-LgbsSe');
-              if (btn) btn.style.border = 'none';
-            };
-            document.head.appendChild(gsi);
-            
-            // Remove listeners
-            window.removeEventListener('scroll', loadScripts);
-            window.removeEventListener('mousemove', loadScripts);
-            window.removeEventListener('touchstart', loadScripts);
-            window.removeEventListener('click', loadScripts);
           };
           
-          // Carrega ao primeiro sinal de interação do usuário
-          const events = ['scroll', 'mousemove', 'touchstart', 'click'];
-          events.forEach(event => {
-            window.addEventListener(event, loadScripts, { once: true, passive: true });
-          });
-          
-          // Fallback: carrega após 5 segundos caso não haja interação
-          setTimeout(loadScripts, 5000);
-        })();
-      `}}>
-    </script>
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updateLinks);
+          } else {
+            updateLinks();
+          }
+        })
+      }}
+    />
+    
+    {/* reCAPTCHA v3 e Google Sign-In: Lazy load otimizado */}
+    <script 
+      type="module"
+      dangerouslySetInnerHTML={{
+        __html: `
+          (function() {
+            let loaded = false;
+            const loadGoogleScripts = () => {
+              if (loaded) return;
+              loaded = true;
+              
+              // DNS Prefetch dinâmico
+              const prefetch1 = document.createElement('link');
+              prefetch1.rel = 'dns-prefetch';
+              prefetch1.href = 'https://www.google.com';
+              document.head.appendChild(prefetch1);
+              
+              const prefetch2 = document.createElement('link');
+              prefetch2.rel = 'dns-prefetch';
+              prefetch2.href = 'https://accounts.google.com';
+              document.head.appendChild(prefetch2);
+              
+              // reCAPTCHA
+              const recaptcha = document.createElement('script');
+              recaptcha.src = 'https://www.google.com/recaptcha/api.js?render=6LdRdTErAAAAAJTiQW_hUzJxve5303X3lyy1UjA_';
+              recaptcha.defer = true;
+              document.head.appendChild(recaptcha);
+              
+              // Google Sign-In
+              const gsi = document.createElement('script');
+              gsi.src = 'https://accounts.google.com/gsi/client';
+              gsi.defer = true;
+              gsi.onload = () => {
+                const btn = document.querySelector('.nsm7Bb-HzV7m-LgbsSe');
+                if (btn) btn.style.border = 'none';
+              };
+              document.head.appendChild(gsi);
+              
+              // Limpa listeners
+              ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => 
+                window.removeEventListener(e, loadGoogleScripts)
+              );
+            };
+            
+            // Carrega ao primeiro sinal de interação
+            ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => {
+              window.addEventListener(e, loadGoogleScripts, { once: true, passive: true });
+            });
+            
+            // Fallback: 5 segundos
+            setTimeout(loadGoogleScripts, 5000);
+          })();
+        `
+      }}
+    />
   </>);
 });

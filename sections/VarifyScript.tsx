@@ -1,17 +1,50 @@
 import { Head } from "$fresh/runtime.ts";
+import { useScript } from "deco/hooks/useScript.ts";
 
 export default function VarifyScript() {
-  return <>
-    <Head>
-      {/* OTIMIZAÇÃO: Pré-conecta ao domínio do Varify para acelerar o carregamento do script */}
-      <link rel="preconnect" href="https://app.varify.io" />
+  // Função inline para carregar Varify sob demanda
+  const loadVarify = (iid: number) => {
+    if (window.varify?.loaded) return;
+    
+    window.varify = window.varify || {};
+    window.varify.iid = iid;
+    window.varify.loaded = true;
+    
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://app.varify.io/varify.js';
+    document.head.appendChild(script);
+  };
 
-      <script dangerouslySetInnerHTML={{__html: `
-        window.varify = window.varify || {};
-        window.varify.iid = 4357;`}}/>
+  return (
+    <>
+      <Head>
+        {/* DNS Prefetch em vez de preconnect */}
+        <link rel="dns-prefetch" href="https://app.varify.io" />
+      </Head>
 
-      {/* OTIMIZAÇÃO: "async" e "defer" carregam o script em segundo plano sem bloquear a página */}
-      <script async defer src="https://app.varify.io/varify.js"></script>
-    </Head>
-  </>
+      {/* Lazy load Varify: carrega após interação ou timeout */}
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              const loadVarifyOnce = () => {
+                ${useScript(loadVarify, 4357)}
+                ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => 
+                  window.removeEventListener(e, loadVarifyOnce)
+                );
+              };
+              
+              ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => 
+                window.addEventListener(e, loadVarifyOnce, { once: true, passive: true })
+              );
+              
+              setTimeout(loadVarifyOnce, 4000);
+            })();
+          `
+        }}
+      />
+    </>
+  );
 }

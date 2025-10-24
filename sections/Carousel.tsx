@@ -176,7 +176,7 @@ function SliderItem({ slide, id, slidesHeight }: {
         'Bottom right': 'bottom-0 right-0',
     };
     console.log(icon?.width," ",icon?.height)
-    return (<div id={id} class={`relative w-full h-[400px] sm:h-[484px] rounded-[30px] overflow-y-auto p-6 md:p-8 'text-primary' `} style={{ color: textColor, height: slidesHeight }}>
+    return (<div id={id} class={`relative w-full h-[400px] sm:h-[544px] rounded-[30px] overflow-y-auto p-6 md:p-8 'text-primary' `} style={{ color: textColor, height: slidesHeight }}>
 
 
         {useBackground == 'image' && backgroundImage?.src && <div class="absolute top-0 left-0 z-0 h-full w-full">

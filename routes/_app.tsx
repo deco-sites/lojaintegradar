@@ -101,9 +101,7 @@ export default defineApp(async (_req, ctx) => {
 
           @font-face {
             font-family: 'Lektorat Display var';
-            src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Lektorat-CompressedBold.woff2') format('woff2');
-            font-weight: 400;
-            font-style: normal;
+            src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Variable/LektoratDisplayVar.woff2') format('woff2');
             font-display: swap;
           }
 

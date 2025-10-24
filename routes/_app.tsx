@@ -8,6 +8,7 @@ import SecondTimeModal from "site/components/ui/SecondTimeModal.tsx";
 
 export default defineApp(async (_req, ctx) => {
   const revision = await Context.active().release?.revision();
+  
   return (<>
     {/* Include default fonts and css vars */}
     <Theme colorScheme="any" />
@@ -20,19 +21,149 @@ export default defineApp(async (_req, ctx) => {
 
       {/* --- OTIMIZAÇÕES CRÍTICAS DE PERFORMANCE --- */}
       {/* Preconnect aos domínios externos ANTES de qualquer CSS */}
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-      <link rel="preconnect" href="https://unpkg.com" />
-      <link rel="preconnect" href="https://www.google.com" />
-      <link rel="preconnect" href="https://accounts.google.com" />
+      <link rel="preconnect" href="https://lojaintegradar.deco.site" />
       <link rel="preconnect" href="https://assets.decocache.com" />
       <link rel="preconnect" href="https://sites-lojaintegradar--szzpho.decocdn.com" />
+      <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+      <link rel="dns-prefetch" href="https://unpkg.com" />
+      <link rel="dns-prefetch" href="https://www.google.com" />
+      <link rel="dns-prefetch" href="https://accounts.google.com" />
       {/* --- FIM OTIMIZAÇÕES CRÍTICAS --- */}
 
-      {/* CSS files */}
+      {/* CSS Crítico: styles.css (necessário para renderização inicial) */}
       <link href={asset(`/styles.css?revision=${revision}`)} rel="stylesheet" />
-      <link rel="stylesheet" href={asset("/fontStyles.css")} />
-      <link rel="stylesheet" href={asset("/aditionalCss.css")} />
+
+      {/* ✅ PRELOAD APENAS DAS FONTES CRÍTICAS (usadas above-the-fold) */}
+      <link 
+        rel="preload" 
+        href="https://lojaintegradar.deco.site/fonts/GalaxieCopernicus/GalaxieCopernicus-Bold.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossOrigin="anonymous" 
+      />
+      <link 
+        rel="preload" 
+        href="https://lojaintegradar.deco.site/fonts/GalaxieCopernicus/GalaxieCopernicus-Book.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossOrigin="anonymous" 
+      />
+      <link 
+        rel="preload" 
+        href="https://lojaintegradar.deco.site/fonts/Lektorat/Lektorat-CompressedRegular.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossOrigin="anonymous" 
+      />
+
+      {/* ✅ CSS DE FONTES E ADICIONAL INLINED (Eliminando bloqueio de renderização) */}
+      <style dangerouslySetInnerHTML={{
+        __html: `
+          /* Font Smoothing */
+          html {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            font-synthesis: none;
+            scroll-behavior: smooth;
+            height: 100%;
+            margin: 0;
+          }
+          
+          body {
+            height: 100%;
+            margin: 0;
+          }
+
+          /* ✅ APENAS FONTES CRÍTICAS (Bold, Book/Normal, Regular) */
+          @font-face {
+            font-family: 'Galaxie Copernicus';
+            src: url('https://lojaintegradar.deco.site/fonts/GalaxieCopernicus/GalaxieCopernicus-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+          }
+
+          @font-face {
+            font-family: 'Galaxie Copernicus';
+            src: url('https://lojaintegradar.deco.site/fonts/GalaxieCopernicus/GalaxieCopernicus-Book.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+          }
+
+          @font-face {
+            font-family: 'Lektorat';
+            src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Lektorat-CompressedRegular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+          }
+
+          @font-face {
+            font-family: 'Lektorat';
+            src: url('https://lojaintegradar.deco.site/fonts/Lektorat/Lektorat-CompressedBold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+          }
+
+          /* Additional CSS (anteriormente em arquivo separado) */
+          .typingCircles {
+            position: relative;
+            gap: 5px;
+          }
+          
+          .typingCircles span {
+            content: '';
+            animation: blink 1.5s infinite;
+            animation-fill-mode: both;
+            height: 10px;
+            width: 10px;
+            background: #3b5998;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+          }
+          
+          .typingCircles span:nth-child(2) {
+            animation-delay: .2s;
+          }
+          
+          .typingCircles span:nth-child(3) {
+            animation-delay: .4s;
+          }
+
+          @keyframes blink {
+            0% { opacity: .1; }
+            20% { opacity: 1; }
+            100% { opacity: .1; }
+          }
+
+          .g_id_signin {
+            display: flex;
+            justify-content: center;
+          }
+
+          .nsm7Bb-HzV7m-LgbsSe {
+            border: none !important;
+          }
+
+          .grecaptcha-badge {
+            visibility: hidden;
+          }
+        `
+      }} />
+
+      {/* ✅ FONTES SECUNDÁRIAS CARREGADAS DE FORMA ASSÍNCRONA */}
+      <link 
+        rel="stylesheet" 
+        href={asset("/fontStyles-extended.css")} 
+        media="print" 
+        onLoad="this.media='all'" 
+      />
+      <noscript>
+        <link rel="stylesheet" href={asset("/fontStyles-extended.css")} />
+      </noscript>
 
       {/* Preload LCP Image com fetchPriority high */}
       <link 
@@ -46,23 +177,16 @@ export default defineApp(async (_req, ctx) => {
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
       
-      {/* AOS CSS carregado com baixa prioridade */}
-      <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onLoad="this.onload=null;this.rel='stylesheet'" />
-      <noscript><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /></noscript>
-      
-      <style dangerouslySetInnerHTML={{
-        __html: `
-        html {
-          scroll-behavior: smooth;
-        }
-        html, body {
-          height: 100%;
-          margin: 0;
-        }
-        .grecaptcha-badge {
-          visibility: hidden;
-        }
-      `}} />
+      {/* AOS CSS carregado com baixa prioridade (mantido como estava) */}
+      <link 
+        rel="preload" 
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css" 
+        as="style" 
+        onLoad="this.onload=null;this.rel='stylesheet'" 
+      />
+      <noscript>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      </noscript>
     </Head>
 
     {/* Rest of Preact tree */}

@@ -1231,7 +1231,10 @@
               },
               {
                 "textPlacement": "Top",
-                "icon": {},
+                "icon": {
+                  "width": 386,
+                  "height": 477
+                },
                 "bulletPoints": {
                   "items": [],
                   "bulletPointsIcon": {}
@@ -1239,9 +1242,7 @@
                 "title": "Cadastre produtos com IA",
                 "caption": "<p><span style=\"color: #5f6e82\">Descreva e publique itens em minutos com sugestões automáticas e estrutura otimizada.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/3526394d-d44a-4fc1-b168-6fafdd4bf59d/Cadastro-produtos-com-IA.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/3526394d-d44a-4fc1-b168-6fafdd4bf59d/Cadastro-produtos-com-IA.png"
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -1430,7 +1431,9 @@
             },
             "caption": "<p>Assine um plano e ative os recursos que vão te fazer vender em até 4 dias.</p>",
             "titlePaddingBottom": "10px",
-            "containerWidth": "1200px"
+            "containerWidth": "1200px",
+            "slidesWidth": "386px",
+            "slidesGap": "10px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

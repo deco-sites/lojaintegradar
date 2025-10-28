@@ -151,9 +151,9 @@ export function HeroMedia({ media, lcp = false }: { media?: Media; lcp?: boolean
       height={media.image.height || 534}
       style={{ maxWidth: media.image.width ? `${media.image.width}px` : '534px' }}
       preload={lcp}
-      loading={lcp ? "eager" : "lazy"}
+      loading="lazy"
       decoding="async"
-      fetchPriority={lcp ? "high" : "low"}
+      fetchPriority="high"
     />}
     {media?.use == "video" && media.video?.src && <video 
       width={media.video.width || 1280} 
@@ -172,7 +172,7 @@ export function HeroMedia({ media, lcp = false }: { media?: Media; lcp?: boolean
       height={"100%"}
       src={media.video?.src}
       class="border-0"
-      loading={lcp ? "eager" : "lazy"}
+      loading="lazy"
       style={{ width: media.video?.width || 854, height: media.video?.height || 480 }}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
     />}
@@ -259,7 +259,7 @@ export default function HeroV3({
           alt={floatingImage.alt || "floating image"}
           width={floatingImage.width || 378}
           height={floatingImage.height || 168}
-          loading={lcp ? "eager" : "lazy"}
+          loading="lazy"
           decoding="async"
           fetchPriority="high"
           class="absolute z-10"
@@ -304,7 +304,7 @@ export default function HeroV3({
                 height={bulletPoints?.bulletPointsIcon?.height || 15}
                 width={bulletPoints?.bulletPointsIcon?.width || 15}
                 src={bulletPoints?.bulletPointsIcon?.src}
-                loading={lcp ? "eager" : "lazy"}
+                loading="lazy"
                 decoding="async"
                 fetchPriority="high"
                 class="flex-shrink-0"
@@ -346,7 +346,7 @@ export default function HeroV3({
         alt={container?.backgroundMedia.image.alt || "background image"}
         width={container?.backgroundMedia.image.width || 1277}
         height={container?.backgroundMedia.image.height || 630}
-        loading={lcp ? "eager" : "lazy"}
+        loading="lazy"
         decoding="async"
         fetchPriority="high"
         class={`absolute -z-30 top-0 left-0 h-full w-full object-cover rounded-[20px] overflow-hidden ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}
@@ -383,7 +383,7 @@ export default function HeroV3({
       width={sectionBackground.image.width || 1277}
       height={sectionBackground.image.height || 630}
       preload={lcp}
-      loading={lcp ? "eager" : "lazy"}
+      loading="lazy"
       decoding="async"
       fetchPriority="high"      
       class={`absolute -z-40 top-0 left-0 h-full w-full object-cover ${backgroundMediaPlacement[sectionBackground.postition || "center"]}`}
@@ -411,7 +411,7 @@ export default function HeroV3({
         class="object-contain w-full h-auto"
         width={media.image.width || 534}
         height={media.image.height || 534}
-        loading={lcp ? "eager" : "lazy"}
+        loading="lazy"
         decoding="async"
         fetchPriority="high"       
         style={{ maxWidth: media.image.width ? `${media.image.width}px` : '534px' }}

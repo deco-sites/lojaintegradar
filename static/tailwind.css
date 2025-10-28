@@ -1464,6 +1464,27 @@ html {
   justify-self: end !important;
 }:where(.menu li) .badge {
   justify-self: end;
+}.\!modal {
+  pointer-events: none !important;
+  position: fixed !important;
+  inset: 0px !important;
+  margin: 0px !important;
+  display: grid !important;
+  height: 100% !important;
+  max-height: none !important;
+  width: 100% !important;
+  max-width: none !important;
+  justify-items: center !important;
+  padding: 0px !important;
+  opacity: 0 !important;
+  overscroll-behavior: contain !important;
+  z-index: 999 !important;
+  background-color: transparent !important;
+  color: inherit !important;
+  transition-duration: 200ms !important;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1) !important;
+  transition-property: transform, opacity, visibility !important;
+  overflow-y: hidden !important;
 }.modal {
   pointer-events: none;
   position: fixed;
@@ -1485,8 +1506,17 @@ html {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-property: transform, opacity, visibility;
   overflow-y: hidden;
+}:where(.\!modal) {
+  align-items: center !important;
 }:where(.modal) {
   align-items: center;
+}
+.\!modal:target,
+.modal-toggle:checked + .\!modal,
+.\!modal[open] {
+  pointer-events: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }.modal-open,
 .modal:target,
 .modal-toggle:checked + .modal,
@@ -1494,8 +1524,19 @@ html {
   pointer-events: auto;
   visibility: visible;
   opacity: 1;
+}
+.\!modal:target,
+.modal-toggle:checked + .\!modal,
+.\!modal[open] {
+  pointer-events: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}:root:has(:is(.modal-open, .\!modal:target, .modal-toggle:checked + .\!modal, .\!modal[open])) {
+  overflow: hidden !important;
 }:root:has(:is(.modal-open, .modal:target, .modal-toggle:checked + .modal, .modal[open])) {
   overflow: hidden;
+}:root:has(:is(.modal-open, .\!modal:target, .modal-toggle:checked + .\!modal, .\!modal[open])) {
+  overflow: hidden !important;
 }.progress {
   position: relative;
   width: 100%;
@@ -2439,10 +2480,26 @@ html {
   border-width: 1px;
   border-color: currentColor;
   opacity: 0.6;
+}.\!modal:not(dialog:not(.modal-open)),
+  .\!modal::backdrop {
+  background-color: #0006 !important;
+  animation: modal-pop 0.2s ease-out !important;
 }.modal:not(dialog:not(.modal-open)),
   .modal::backdrop {
   background-color: #0006;
   animation: modal-pop 0.2s ease-out;
+}.\!modal:not(dialog:not(.modal-open)),
+  .\!modal::backdrop {
+  background-color: #0006 !important;
+  animation: modal-pop 0.2s ease-out !important;
+}
+.modal-toggle:checked + .\!modal .modal-box,
+.\!modal:target .modal-box,
+.\!modal[open] .modal-box {
+  --tw-translate-y: 0px !important;
+  --tw-scale-x: 1 !important;
+  --tw-scale-y: 1 !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }.modal-open .modal-box,
 .modal-toggle:checked + .modal .modal-box,
 .modal:target .modal-box,
@@ -2451,6 +2508,14 @@ html {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.modal-toggle:checked + .\!modal .modal-box,
+.\!modal:target .modal-box,
+.\!modal[open] .modal-box {
+  --tw-translate-y: 0px !important;
+  --tw-scale-x: 1 !important;
+  --tw-scale-y: 1 !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }@keyframes modal-pop {
 
   0% {
@@ -4333,6 +4398,8 @@ html {
   animation: sliding 30s linear infinite;
 }.cursor-default {
   cursor: default;
+}.cursor-not-allowed {
+  cursor: not-allowed;
 }.cursor-pointer {
   cursor: pointer;
 }.list-inside {
@@ -5665,6 +5732,8 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }.ease-linear {
   transition-timing-function: linear;
+}.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }.customContainer {max-width: 1256px;margin: 0 auto;}.background-df {background-color: rgba(255, 255, 255, 0.1);}.background-df2 {background-color: rgba(255, 255, 255, 0.4);}.backgroundHeroTimeButton {background-color: rgba(235, 235, 235, 0.32);}.background-bar {background-color: rgba(217, 217, 217, 0.1);}.border-bar {border-bottom: 1px solid rgba(217, 217, 217, 0.1);}.colorFooterBorder {border-color: rgba(255, 255, 255, 0.1);}.videoHeaderBorder {border: 1px solid rgba(255, 255, 255, 0.16);}.hoverScale {transition: transform 0.2s;}.hoverScale:hover {transform: scale(1.1);}.heightParagraph p {min-height: 10px;}.\[--tglbg\:purple\] {
   --tglbg: purple;
 }@media (min-width: 640px) {

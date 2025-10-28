@@ -600,9 +600,9 @@
                 "title": "Provador Virtual",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Reduza devoluções e dúvidas. Seu cliente visualiza o produto no corpo, direto da tela.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/f50ed4fc-6126-4918-ac61-a8178f68dce2/provador-virtual.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/0ac32c29-9b51-4217-a5da-0753caa16f21/Provador-virtual.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -629,9 +629,9 @@
                 "title": "Stories em páginas de produto",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Transforme sua loja em uma extensão do seu Instagram — com conteúdo visual e envolvente.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/5b918dd6-83f2-4902-8707-346fbe9b5815/stories-pagina-produto.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/92ebd838-a09e-47e0-bfdc-982381522b16/stories-na-pagina.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -658,9 +658,9 @@
                 "title": "Cashback e indicações",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa. Mais recompra, mais visibilidade.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/4f02fb01-dc40-4c78-9732-2c32ce044268/cashback.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -687,9 +687,9 @@
                 "title": "Monitore vendas de cada influenciador com precisão",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Acompanhe vendas e comissões em tempo real e escalesuas campanhas com segurança.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/7f1994c5-fd4d-4001-b375-e721f924f43d/afiliados.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/de44fdc3-4041-4823-835f-d3b71711a254/influenciadores.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -716,9 +716,9 @@
                 "title": "Gerencie trocas e devoluções com inteligência",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Trocas e devoluções sem fricção: seu cliente faz tudo sozinho, você economiza tempo, reduz atrito e ainda ume nta a recompra.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/3ed5e9ab-89d3-4ace-a73f-c63885d35f8d/trocas-e-devolucoes.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/e7be734a-e74f-45e8-bef4-d26e29feedaa/troca-produto.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -763,7 +763,10 @@
             },
             "caption": "<p>Com parceiros estratégicos, leve sua loja além do básico — com visual, conversão e fidelização.</p>",
             "titlePaddingBottom": "10px",
-            "containerWidth": "1200px"
+            "containerWidth": "1270px",
+            "slidesGap": "20px",
+            "slidesWidth": "410px",
+            "slidesHeight": "550px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -948,6 +951,35 @@
             ],
             "slides": [
               {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Sua loja no topo do Google e do ChatGPT",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Com a ajuda da nossa inteligência artificial, mais clientes encontram sua loja sem esforço.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/a8c959ec-7c39-4b74-9855-c04df79d48fa/Sua-loja-no-topo-do-google.png",
+                  "height": 484,
+                  "width": 456
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
                 "textPlacement": "Bottom",
                 "icon": {},
                 "bulletPoints": {
@@ -1093,35 +1125,6 @@
                 "useBackground": "image"
               },
               {
-                "textPlacement": "Top",
-                "icon": {},
-                "bulletPoints": {
-                  "items": [],
-                  "bulletPointsIcon": {}
-                },
-                "title": "Sua loja no topo do Google",
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Robôs de indexação com IA e estrutura técnica pra sua loja aparecer no topo das buscas.</span></p>",
-                "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/a8c959ec-7c39-4b74-9855-c04df79d48fa/Sua-loja-no-topo-do-google.png",
-                  "height": 484,
-                  "width": 456
-                },
-                "textColor": "#00363A",
-                "titleTextProps": {
-                  "fontFamily": "Inter",
-                  "fontSize": "18px",
-                  "fontWeight": "700",
-                  "lineHeight": "140%"
-                },
-                "captionTextProps": {
-                  "fontFamily": "Inter",
-                  "fontSize": "14px",
-                  "fontWeight": "500",
-                  "lineHeight": "140%"
-                },
-                "useBackground": "image"
-              },
-              {
                 "textPlacement": "Bottom",
                 "icon": {},
                 "bulletPoints": {
@@ -1201,6 +1204,35 @@
             ],
             "slides": [
               {
+                "textPlacement": "Top",
+                "icon": {},
+                "bulletPoints": {
+                  "items": [],
+                  "bulletPointsIcon": {}
+                },
+                "title": "Sua loja no topo do Google e do ChatGPT",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Com a ajuda da nossa inteligência artificial, mais clientes encontram sua loja sem esforço.</span></p>",
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/d2c39811-f42c-462e-8bd2-19da8aa695fa/Sua-loja-no-topo-do-google.webp",
+                  "height": 550,
+                  "width": 410
+                },
+                "textColor": "#00363A",
+                "titleTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "700",
+                  "lineHeight": "140%"
+                },
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "useBackground": "image"
+              },
+              {
                 "textPlacement": "Bottom",
                 "icon": {},
                 "bulletPoints": {
@@ -1210,9 +1242,9 @@
                 "title": "Recupere vendas em todas as etapas",
                 "caption": "<p><span style=\"color: #5f6e82\">Envie mensagens no WhatsApp e e-mails automáticos para quem abandonou o carrinho, saiu da página de produto ou não finalizou o pagamento — e recupere até 18% das vendas perdidas.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/95ee88e3-bc0c-4c88-bf5b-b244d42627f9/Recupere-vendas.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/ae8a1482-402a-40c4-9a6d-0693c5d5099a/recupere-vendas.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -1242,7 +1274,9 @@
                 "title": "Cadastre produtos com IA",
                 "caption": "<p><span style=\"color: #5f6e82\">Descreva e publique itens em minutos com sugestões automáticas e estrutura otimizada.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/3526394d-d44a-4fc1-b168-6fafdd4bf59d/Cadastro-produtos-com-IA.png"
+                  "src": "https://assets.decocache.com/lojaintegradar/d887e377-b2c1-421e-b260-e67d0bc522f3/cadastre-produto-ia.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -1269,9 +1303,9 @@
                 "title": "Ative avaliações reais que ajudam a fechar a venda",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Mostre o que seus clientes pensam com comentários, estrelas e fotos que aumentam a confiança na hora da compra.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/a8c85411-9c99-4964-97e3-d6a4e598844b/avaliacao-de-produto.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/fafbf627-b084-4897-a831-3ffda77f8d99/avaliacao-de-produto.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -1298,9 +1332,9 @@
                 "title": "Anuncie onde seus clientes estão",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte sua loja ao Meta, Googlee TikTok e leve tráfego qualificadopros seus produtos</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/1f452d4b-4d55-432f-9337-272b714cafa6/Anuncie-redes-sociais.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/bbae53d0-bc4d-4a93-8a12-06d1f3d80cd0/Anuncie-redes-sociais.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -1327,38 +1361,9 @@
                 "title": "Venda nos maiores marketplaces",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte-se ao Magalu com integraçãonativa da Loja Integrada e +100 marketplaces via parceiros oficiais.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/7278706f-2281-42cd-bd0f-facef1c30cd3/venda-em-marketplace.png",
-                  "height": 484,
-                  "width": 456
-                },
-                "textColor": "#00363A",
-                "titleTextProps": {
-                  "fontFamily": "Inter",
-                  "fontSize": "18px",
-                  "fontWeight": "700",
-                  "lineHeight": "140%"
-                },
-                "captionTextProps": {
-                  "fontFamily": "Inter",
-                  "fontSize": "14px",
-                  "fontWeight": "500",
-                  "lineHeight": "140%"
-                },
-                "useBackground": "image"
-              },
-              {
-                "textPlacement": "Top",
-                "icon": {},
-                "bulletPoints": {
-                  "items": [],
-                  "bulletPointsIcon": {}
-                },
-                "title": "Sua loja no topo do Google",
-                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Robôs de indexação com IA e estrutura técnica pra sua loja aparecer no topo das buscas.</span></p>",
-                "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/a8c959ec-7c39-4b74-9855-c04df79d48fa/Sua-loja-no-topo-do-google.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/83b2c994-4a79-43ee-8cf1-530462bde665/venda-em-marketplace.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -1385,9 +1390,9 @@
                 "title": "Venda pelas redes sociais",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Crie links de carrinho com produto, desconto e frete e compartilhe direto no Whatsapp, Instagram e mais.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/c12087ce-e096-4a7e-91e8-364321dd9518/venda-pelas-redes-sociais.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/f36c8f3d-5a7e-49c2-a147-1d4a70822e46/venda-pelas-redes-sociais.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -1431,9 +1436,10 @@
             },
             "caption": "<p>Assine um plano e ative os recursos que vão te fazer vender em até 4 dias.</p>",
             "titlePaddingBottom": "10px",
-            "containerWidth": "1200px",
-            "slidesWidth": "386px",
-            "slidesGap": "10px"
+            "slidesWidth": "410px",
+            "slidesGap": "20px",
+            "slidesHeight": "550px",
+            "containerWidth": "1270px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

@@ -261,7 +261,7 @@ export default function HeroV3({
           height={floatingImage.height || 168}
           loading={lcp ? "eager" : "lazy"}
           decoding="async"
-          fetchPriority={lcp ? "high" : "low"}
+          fetchPriority="high"
           class="absolute z-10"
           style={{ 
             top: floatingImage.verticalPosition, 
@@ -306,7 +306,7 @@ export default function HeroV3({
                 src={bulletPoints?.bulletPointsIcon?.src}
                 loading={lcp ? "eager" : "lazy"}
                 decoding="async"
-                fetchPriority={lcp ? "high" : "low"}
+                fetchPriority="high"
                 class="flex-shrink-0"
                 style={{ 
                   maxWidth: bulletPoints?.bulletPointsIcon?.width ? `${bulletPoints.bulletPointsIcon.width}px` : '15px',
@@ -348,7 +348,7 @@ export default function HeroV3({
         height={container?.backgroundMedia.image.height || 630}
         loading={lcp ? "eager" : "lazy"}
         decoding="async"
-        fetchPriority={lcp ? "high" : "low"}
+        fetchPriority="high"
         class={`absolute -z-30 top-0 left-0 h-full w-full object-cover rounded-[20px] overflow-hidden ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}
       />}
       
@@ -385,7 +385,7 @@ export default function HeroV3({
       preload={lcp}
       loading={lcp ? "eager" : "lazy"}
       decoding="async"
-      fetchPriority={lcp ? "high" : "low"}      
+      fetchPriority="high"      
       class={`absolute -z-40 top-0 left-0 h-full w-full object-cover ${backgroundMediaPlacement[sectionBackground.postition || "center"]}`}
       style={{ height: sectionBackground.customHeight }}
     />}
@@ -413,7 +413,7 @@ export default function HeroV3({
         height={media.image.height || 534}
         loading={lcp ? "eager" : "lazy"}
         decoding="async"
-        fetchPriority={lcp ? "high" : "low"}        
+        fetchPriority="high"       
         style={{ maxWidth: media.image.width ? `${media.image.width}px` : '534px' }}
       />}
     </div>}

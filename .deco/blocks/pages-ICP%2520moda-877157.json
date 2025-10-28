@@ -600,9 +600,9 @@
                 "title": "Provador Virtual",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Reduza devoluções e dúvidas. Seu cliente visualiza o produto no corpo, direto da tela.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/f50ed4fc-6126-4918-ac61-a8178f68dce2/provador-virtual.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/0ac32c29-9b51-4217-a5da-0753caa16f21/Provador-virtual.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -629,9 +629,9 @@
                 "title": "Stories em páginas de produto",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Transforme sua loja em uma extensão do seu Instagram — com conteúdo visual e envolvente.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/5b918dd6-83f2-4902-8707-346fbe9b5815/stories-pagina-produto.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/92ebd838-a09e-47e0-bfdc-982381522b16/stories-na-pagina.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -658,9 +658,9 @@
                 "title": "Cashback e indicações",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa. Mais recompra, mais visibilidade.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/4f02fb01-dc40-4c78-9732-2c32ce044268/cashback.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -687,9 +687,9 @@
                 "title": "Monitore vendas de cada influenciador com precisão",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Acompanhe vendas e comissões em tempo real e escalesuas campanhas com segurança.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/7f1994c5-fd4d-4001-b375-e721f924f43d/afiliados.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/de44fdc3-4041-4823-835f-d3b71711a254/influenciadores.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -716,9 +716,9 @@
                 "title": "Gerencie trocas e devoluções com inteligência",
                 "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Trocas e devoluções sem fricção: seu cliente faz tudo sozinho, você economiza tempo, reduz atrito e ainda ume nta a recompra.</span></p>",
                 "backgroundImage": {
-                  "src": "https://assets.decocache.com/lojaintegradar/3ed5e9ab-89d3-4ace-a73f-c63885d35f8d/trocas-e-devolucoes.png",
-                  "height": 484,
-                  "width": 456
+                  "src": "https://assets.decocache.com/lojaintegradar/e7be734a-e74f-45e8-bef4-d26e29feedaa/troca-produto.webp",
+                  "height": 550,
+                  "width": 410
                 },
                 "textColor": "#00363A",
                 "titleTextProps": {
@@ -763,7 +763,10 @@
             },
             "caption": "<p>Com parceiros estratégicos, leve sua loja além do básico — com visual, conversão e fidelização.</p>",
             "titlePaddingBottom": "10px",
-            "containerWidth": "1200px"
+            "containerWidth": "1270px",
+            "slidesGap": "20px",
+            "slidesWidth": "410px",
+            "slidesHeight": "550px"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

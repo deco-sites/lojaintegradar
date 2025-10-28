@@ -184,7 +184,7 @@ function SliderItem({ slide, id, slidesHeight }: {
                 src={backgroundImage.src} 
                 loading="lazy" 
                 decoding="async" 
-                fetchPriority="low" 
+                fetchPriority="high" 
                 alt={backgroundImage.alt || "carousel item background image"} 
                 width={backgroundImage.width || 456} 
                 height={backgroundImage.height || 608} 
@@ -201,7 +201,7 @@ function SliderItem({ slide, id, slidesHeight }: {
             {icon?.src && <Image 
                 loading="lazy" 
                 decoding="async" 
-                fetchPriority="low" 
+                fetchPriority="high" 
                 src={icon.src} 
                 alt={icon.alt || "carousel item icon"} 
                 width={icon.width || 32} 
@@ -218,7 +218,7 @@ function SliderItem({ slide, id, slidesHeight }: {
                     {bulletPoints.bulletPointsIcon?.src && <Image 
                         loading="lazy" 
                         decoding="async" 
-                        fetchPriority="low" 
+                        fetchPriority="high" 
                         src={bulletPoints.bulletPointsIcon.src} 
                         alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} 
                         width={bulletPoints.bulletPointsIcon.width || 20} 

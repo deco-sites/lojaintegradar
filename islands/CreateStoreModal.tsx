@@ -1,7 +1,24 @@
-import { useState, useEffect, useCallback } from "preact/hooks";
+import { useState, useEffect, useCallback, useMemo } from "preact/hooks";
 
-const useMutationObserver = (domNodeSelector: string, observerOptions: MutationObserverInit, cb: MutationCallback) => {
+// Utilitário de debounce para validações
+const debounce = (func: Function, wait: number) => {
+    let timeout: number;
+    return (...args: any[]) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func(...args), wait);
+    };
+};
+
+// Hook otimizado do MutationObserver com controle de ativação
+const useMutationObserver = (
+    domNodeSelector: string,
+    observerOptions: MutationObserverInit,
+    cb: MutationCallback,
+    enabled: boolean = true
+) => {
     useEffect(() => {
+        if (!enabled) return;
+
         const targetNode = document.querySelector(domNodeSelector);
         if (!targetNode) {
             console.error(`Element with selector "${domNodeSelector}" not found`);
@@ -14,20 +31,23 @@ const useMutationObserver = (domNodeSelector: string, observerOptions: MutationO
         return () => {
             observer.disconnect();
         };
-    }, [domNodeSelector, observerOptions, cb]);
+    }, [domNodeSelector, observerOptions, cb, enabled]);
 };
 
 export interface Props {
     googleAccountButton?: boolean;
 }
 
-const CreateStoreModal = ({googleAccountButton}: Props) => {
-    const [getUtms, setUtms] = useState('');
+const CreateStoreModal = ({ googleAccountButton }: Props) => {
+    // Estado de controle do modal otimizado
+    const [isOpen, setIsOpen] = useState(false);
 
+    // Estados de dados do plano
     const [getPlanId, setGetPlanId] = useState('');
     const [getPeriod, setGetPeriod] = useState('');
     const [getCoupon, setGetCoupon] = useState('');
 
+    // Estados do formulário
     const [formData, setFormData] = useState({
         nome: "",
         email: "",
@@ -44,101 +64,140 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
         termos: "",
     });
 
-    const [validated, setValidated] = useState(false);
-    useEffect(() => {
-        if (formData.termos == false || formData.nome == "" || formData.email == "" || formData.senha == "" || formData.confirmacao_senha == "") return setValidated(false);
-        if (errors.termos != "") return setValidated(false);
-        if (errors.nome != "") return setValidated(false);
-        if (errors.email != "") return setValidated(false);
-        if (errors.senha != "") return setValidated(false);
-        if (errors.confirmacao_senha != "") return setValidated(false);
-        setValidated(true);
-    }, [errors]);
+    // Captura UTMs de forma otimizada (useMemo em vez de useEffect)
+    const getUtms = useMemo(() => {
+        if (typeof window === 'undefined') return '';
 
+        const params = new URLSearchParams(window.location.search);
+        const utmParams = new URLSearchParams();
 
-    useEffect(( () => {
-        
-        function getUTMQueryString(): string {
-            const params = new URLSearchParams(window.location.search);
-            const utmParams = new URLSearchParams();
-
-            params.forEach((value, key) => {
-                if (key.startsWith('utm_')) {
+        params.forEach((value, key) => {
+            if (key.startsWith('utm_')) {
                 utmParams.append(key, value);
-                }
-            });
+            }
+        });
 
-            return utmParams.toString();
+        return utmParams.toString();
+    }, []);
+
+    // Validação otimizada com useMemo em vez de useEffect
+    const validated = useMemo(() => {
+        if (!formData.termos || !formData.nome || !formData.email ||
+            !formData.senha || !formData.confirmacao_senha) return false;
+
+        return !Object.values(errors).some(error => error !== "");
+    }, [formData, errors]);
+
+    // Carrega scripts externos apenas quando modal está aberto
+    useEffect(() => {
+        if (!isOpen) return;
+
+        // Carrega reCAPTCHA dinamicamente
+        const recaptchaScript = document.createElement('script');
+        recaptchaScript.src = 'https://www.google.com/recaptcha/api.js';
+        recaptchaScript.async = true;
+        recaptchaScript.id = 'recaptcha-script';
+        
+        if (!document.getElementById('recaptcha-script')) {
+            document.body.appendChild(recaptchaScript);
         }
 
-        setUtms(getUTMQueryString());
-    }), [])
+        // Carrega Google Sign-In apenas se necessário
+        if (googleAccountButton) {
+            const gsiScript = document.createElement('script');
+            gsiScript.src = 'https://accounts.google.com/gsi/client';
+            gsiScript.async = true;
+            gsiScript.id = 'gsi-script';
+            
+            if (!document.getElementById('gsi-script')) {
+                document.body.appendChild(gsiScript);
+            }
+        }
+    }, [isOpen, googleAccountButton]);
 
+    // Função de validação com debounce
+    const validateField = useCallback(
+        debounce((name: string, value: any) => {
+            const newErrors = { ...errors };
+
+            if (name === "nome") {
+                newErrors.nome = value.length < 3 ? "Seu nome precisa ser maior que 2 caracteres" : "";
+            }
+
+            if (name === "email") {
+                newErrors.email = !/\S+@\S+\.\S+/.test(value) ? "Preencha um e-mail válido" : "";
+            }
+
+            if (name === 'senha') {
+                const hasMinLength = value.length >= 8;
+                const hasUpperCase = /[A-Z]/.test(value);
+                const hasLowerCase = /[a-z]/.test(value);
+                const hasNumber = /\d/.test(value);
+
+                if (!hasMinLength || !hasUpperCase || !hasLowerCase || !hasNumber) {
+                    newErrors.senha = 'A senha deve ter pelo menos 8 caracteres, incluindo um número, uma letra maiúscula e uma letra minúscula.';
+                } else {
+                    newErrors.senha = '';
+                }
+
+                if (value !== formData.confirmacao_senha && formData.confirmacao_senha) {
+                    newErrors.confirmacao_senha = "As senhas não coincidem";
+                } else if (value === formData.confirmacao_senha) {
+                    newErrors.confirmacao_senha = "";
+                }
+            }
+
+            if (name === "confirmacao_senha") {
+                newErrors.confirmacao_senha = value !== formData.senha ? "As senhas não coincidem" : "";
+            }
+
+            setErrors(newErrors);
+        }, 300),
+        [errors, formData.senha, formData.confirmacao_senha]
+    );
 
     const handleInputChange = (e: any) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-
-        // Validações
-        if (name === "nome" && value.length < 3) {
-            setErrors({
-                ...errors,
-                nome: "Seu nome precisa ser maior que 2 caracteres",
-            });
-        } else if (name === "nome") {
-            setErrors({ ...errors, nome: "" });
-        }
-
-        if (name === "email" && !/\S+@\S+\.\S+/.test(value)) {
-            setErrors({ ...errors, email: "Preencha um e-mail válido" });
-        } else if (name === "email") {
-            setErrors({ ...errors, email: "" });
-        }
-
-        if (name === 'senha') {
-            const hasMinLength = value.length >= 8;
-            const hasUpperCase = /[A-Z]/.test(value);
-            const hasLowerCase = /[a-z]/.test(value);
-            const hasNumber = /\d/.test(value);
-
-            let senha_erro = '';
-            let confirmacao_senha_erro = '';
-
-            if (!hasMinLength || !hasUpperCase || !hasLowerCase || !hasNumber)
-                senha_erro = 'A senha deve ter pelo menos 8 caracteres, incluindo um número, uma letra maiúscula e uma letra minúscula.';
-            if (value !== formData.confirmacao_senha)
-                confirmacao_senha_erro = "As senhas não coincidem";
-
-            setErrors({ ...errors, confirmacao_senha: confirmacao_senha_erro, senha: senha_erro })
-        }
-
-        if (name === "confirmacao_senha" && value !== formData.senha) {
-            setErrors({ ...errors, confirmacao_senha: "As senhas não coincidem" });
-        } else if (name === "confirmacao_senha") {
-            setErrors({ ...errors, confirmacao_senha: "" });
-        }
+        setFormData(prev => ({ ...prev, [name]: value }));
+        validateField(name, value);
     };
 
     const handleCheckboxChange = (e: any) => {
         setFormData(prev => {
-            if (prev.termos == true) setErrors(prev => ({ ...prev, termos: "Você precisa concordar com os termos" }));
-            else setErrors(prev => ({ ...prev, termos: "" }));
-            return { ...prev, termos: !prev.termos }
+            const newTermos = !prev.termos;
+            setErrors(prevErrors => ({
+                ...prevErrors,
+                termos: newTermos ? "" : "Você precisa concordar com os termos"
+            }));
+            return { ...prev, termos: newTermos };
         });
-    }
+    };
 
-    const handleClose = () => {
-        const getModal = document.getElementById("createStoreModal");
-        if (getModal) {
-            getModal.classList.add("hidden");
-            getModal.classList.remove("flex");
-        }
-    }
+    // Controle de abertura/fechamento otimizado sem manipulação DOM direta
+    const handleClose = useCallback(() => {
+        setIsOpen(false);
+    }, []);
 
+    // Detecta abertura do modal
+    useEffect(() => {
+        const checkModalVisibility = () => {
+            const modal = document.getElementById("createStoreModal");
+            if (modal && !modal.classList.contains('hidden')) {
+                setIsOpen(true);
+            }
+        };
+
+        checkModalVisibility();
+        const interval = setInterval(checkModalVisibility, 500);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    // Handler do MutationObserver otimizado
     const handler = useCallback((mutationsList: MutationRecord[]) => {
         for (const mutation of mutationsList) {
             if (mutation.type === 'attributes' && mutation.attributeName === 'data-planid') {
-                const modal = document.getElementById("createStoreModal");
+                const modal = mutation.target as HTMLElement;
                 const newPlanId = modal?.getAttribute("data-planid") || '';
                 const newPeriod = modal?.getAttribute("data-period") || 'anual';
                 const newCoupon = modal?.getAttribute("data-coupon") || '';
@@ -150,107 +209,92 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
         }
     }, []);
 
-    useMutationObserver('#createStoreModal', { attributes: true, attributeFilter: ['data-planid'] }, handler);
+    // MutationObserver ativo apenas quando modal está aberto
+    useMutationObserver('#createStoreModal', { attributes: true, attributeFilter: ['data-planid'] }, handler, isOpen);
 
-    const validateForm = () => {
-        const { nome, email, senha, confirmacao_senha } = formData;
-        let hasError = false;
-
-        if (nome.length < 3) {
-            setErrors(prev => ({ ...prev, nome: "Seu nome precisa ser maior que 2 caracteres" }));
-            hasError = true;
-        }
-
-        if (!/\S+@\S+\.\S+/.test(email)) {
-            setErrors(prev => ({ ...prev, email: "Preencha um e-mail válido" }));
-            hasError = true;
-        }
-
-        if (senha.length < 8 || !/[A-Z]/.test(senha) || !/[a-z]/.test(senha) || !/\d/.test(senha)) {
-            setErrors(prev => ({ ...prev, senha: 'A senha deve ter pelo menos 8 caracteres, incluindo um número, uma letra maiúscula e uma letra minúscula.' }));
-            hasError = true;
-        }
-
-        if (confirmacao_senha !== senha) {
-            setErrors(prev => ({ ...prev, confirmacao_senha: "As senhas não coincidem" }));
-            hasError = true;
-        }
-
-        return !hasError;
-    };
-
-    // const sendDataLayerEvent = () => {
-    //     window.dataLayer = window.dataLayer || [];
-    //     window.dataLayer.push({
-    //         'event': 'callback_cadastro_lead_institucional'
-    //     });
-    // }
-
-    // const handleSubmit = async (e: any) => {
-    //     e.preventDefault();
-    //     if (validateForm()) {
-    //         await sendDataLayerEvent();
-    //         setTimeout(() => {
-    //             e.target.submit();
-    //         }, 300)
-    //     } else {
-    //         console.error("Erros de validação encontrados, o formulário não será enviado.");
-    //     }
-    // };
-
-    function handleKeyDown(e: any): void {
+    const handleKeyDown = useCallback((e: any) => {
         if (e.keyCode === 13) {
             e.preventDefault();
         }
-    }
+    }, []);
 
-    
+    // URL do formulário otimizada
+    const formAction = useMemo(() => {
+        const baseUrl = 'https://app.lojaintegrada.com.br/public/assinar';
+        const params = new URLSearchParams({
+            periodo: getPeriod,
+            plano_id: getPlanId,
+        });
+
+        if (getCoupon) params.append('cupom', getCoupon);
+        if (getUtms) {
+            const utmEntries = new URLSearchParams(getUtms);
+            utmEntries.forEach((value, key) => params.append(key, value));
+        }
+
+        return `${baseUrl}?${params.toString()}`;
+    }, [getPeriod, getPlanId, getCoupon, getUtms]);
+
     return (
-        <div id="createStoreModal" className="hidden fixed z-[60] inset-0 bg-black bg-opacity-50 items-center justify-center z-5">
-            <div className="relative mx-[10px] flex flex-col items-center p-6 w-full max-w-[550px] lg:mx-auto bg-white rounded-xl shadow-md overflow-hidden animate-pop-up" style={{ animationDuration: '0.3s' }}>
+        <div
+            id="createStoreModal"
+            className={`${isOpen ? 'flex' : 'hidden'} fixed z-[60] inset-0 bg-black bg-opacity-50 items-center justify-center`}
+            style={{ transition: 'opacity 0.3s ease-in-out' }}
+        >
+            <div
+                className="relative mx-[10px] flex flex-col items-center p-6 w-full max-w-[550px] lg:mx-auto bg-white rounded-xl shadow-md overflow-hidden"
+                style={{ animation: 'pop-up 0.3s ease-out' }}
+            >
                 <button
-                    className="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
+                    className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition-colors"
                     onClick={handleClose}
+                    aria-label="Fechar modal"
                 >
-                    X
+                    ✕
                 </button>
-            {googleAccountButton && <><div class="my-5 relative text-on-base-2 text-f7 leading-4 tracking-4 w-full">
-                <div class="absolute w-full h-[2px] bg-white z-10"></div>
-                    <div class="absolute w-full h-[2px] bg-white z-10 bottom-0"></div>
-                    <div class="absolute w-[5px] h-full bg-white z-10 left-[calc(50%+105px)]"></div>
-                    <div class="absolute w-[5px] h-full bg-white z-10 right-[calc(50%+106px)]"></div>
-                <div
-                    id="g_id_onload"
-                    data-client_id="1091824353523-i8sdgbl0143713a07vvlpsdd5uoobi2p.apps.googleusercontent.com"
-                    data-context="signin"
-                    data-ux_mode="popup"
-                    data-login_uri="https://app.lojaintegrada.com.br/public/login/google"
-                    data-auto_prompt="false"
-                    data-state='{"source":"google_account_creation"}'
-                    data-key="app.lojaintegrada.com.br"
-                ></div>
-                <div
-                    class="g_id_signin"
-                    data-type="standard"
-                    data-shape="rectangular"
-                    data-theme="filled_white"
-                    data-text="continue_with"
-                    data-size="large"
-                    data-locale="pt-BR"
-                    data-click_listener="signWithGoogle"
-                    data-logo_alignment="center"
-                ></div>
-            </div>
-            <p class="w-full text-center text-sm">Ou crie com seu E-mail</p> </>}
+
+                {googleAccountButton && isOpen && (
+                    <>
+                        <div className="my-5 relative text-on-base-2 text-f7 leading-4 tracking-4 w-full">
+                            <div className="absolute w-full h-[2px] bg-white z-10"></div>
+                            <div className="absolute w-full h-[2px] bg-white z-10 bottom-0"></div>
+                            <div className="absolute w-[5px] h-full bg-white z-10 left-[calc(50%+105px)]"></div>
+                            <div className="absolute w-[5px] h-full bg-white z-10 right-[calc(50%+106px)]"></div>
+                            <div
+                                id="g_id_onload"
+                                data-client_id="1091824353523-i8sdgbl0143713a07vvlpsdd5uoobi2p.apps.googleusercontent.com"
+                                data-context="signin"
+                                data-ux_mode="popup"
+                                data-login_uri="https://app.lojaintegrada.com.br/public/login/google"
+                                data-auto_prompt="false"
+                                data-state='{"source":"google_account_creation"}'
+                                data-key="app.lojaintegrada.com.br"
+                            ></div>
+                            <div
+                                className="g_id_signin"
+                                data-type="standard"
+                                data-shape="rectangular"
+                                data-theme="filled_white"
+                                data-text="continue_with"
+                                data-size="large"
+                                data-locale="pt-BR"
+                                data-click_listener="signWithGoogle"
+                                data-logo_alignment="center"
+                            ></div>
+                        </div>
+                        <p className="w-full text-center text-sm">Ou crie com seu E-mail</p>
+                    </>
+                )}
+
                 <form
-                    action={`https://app.lojaintegrada.com.br/public/assinar?periodo=${getPeriod}&plano_id=${getPlanId}${getCoupon && `&cupom=${getCoupon}`}${getUtms && `&${getUtms}`}`}
+                    action={formAction}
                     id="modal-no-check"
-                    data-gtm-form-interact-id="0"
                     method="POST"
                     className="w-full flex flex-col items-center justify-center"
                     onKeyDown={handleKeyDown}
                 >
-                    <input type="hidden" name="gcaptcha_site" value="6LdRdTErAAAAAJTiQW_hUzJxve5303X3lyy1UjA_"></input>
+                    <input type="hidden" name="gcaptcha_site" value="6LdRdTErAAAAAJTiQW_hUzJxve5303X3lyy1UjA_" />
+
                     <div className="mt-4 w-full max-w-[450px]">
                         <label className="block text-sm font-semibold text-[#371e56]">
                             Nome
@@ -260,8 +304,7 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
                             value={formData.nome}
                             onInput={handleInputChange}
                             type="text"
-                            className={`mt-1 w-full p-2 border ${errors.nome ? "border-red-500" : "border-gray-300"
-                                } rounded-[80px]`}
+                            className={`mt-1 w-full p-2 border ${errors.nome ? "border-red-500" : "border-gray-300"} rounded-[80px] transition-colors`}
                             placeholder="Seu nome"
                             required
                         />
@@ -279,8 +322,7 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
                             value={formData.email}
                             onInput={handleInputChange}
                             type="email"
-                            className={`mt-1 w-full p-2 border ${errors.email ? "border-red-500" : "border-gray-300"
-                                } rounded-[80px]`}
+                            className={`mt-1 w-full p-2 border ${errors.email ? "border-red-500" : "border-gray-300"} rounded-[80px] transition-colors`}
                             placeholder="Seu e-mail"
                             required
                         />
@@ -298,13 +340,12 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
                             value={formData.senha}
                             onInput={handleInputChange}
                             type="password"
-                            className="mt-1 w-full p-2 border border-gray-300 rounded-[80px]"
+                            className="mt-1 w-full p-2 border border-gray-300 rounded-[80px] transition-colors"
                             placeholder="Senha"
                             required
                         />
-                        <p className={`text-gray-500 text-xs mt-1 ${errors.senha && "text-red-500"}`}>
-                            Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e
-                            uma letra minúscula
+                        <p className={`text-gray-500 text-xs mt-1 transition-colors ${errors.senha && "text-red-500"}`}>
+                            Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula
                         </p>
                     </div>
 
@@ -317,7 +358,7 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
                             value={formData.confirmacao_senha}
                             onInput={handleInputChange}
                             type="password"
-                            className="mt-1 w-full p-2 border border-gray-300 rounded-[80px]"
+                            className="mt-1 w-full p-2 border border-gray-300 rounded-[80px] transition-colors"
                             placeholder="Confirme sua senha"
                             required
                         />
@@ -330,14 +371,21 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
 
                     <div className="mt-4 w-full max-w-[450px]">
                         <label className="flex items-center">
-                            <input type="checkbox" className="form-checkbox" name="termos" onChange={handleCheckboxChange} required />
+                            <input
+                                type="checkbox"
+                                className="form-checkbox"
+                                name="termos"
+                                checked={formData.termos}
+                                onChange={handleCheckboxChange}
+                                required
+                            />
                             <span className="ml-2 text-xs text-gray-600">
                                 Ao clicar, você concorda com os{" "}
-                                <a href="https://lojaintegrada.com.br/termos-de-uso" target="_blank" className="text-[#0C9898] font-bold">
+                                <a href="https://lojaintegrada.com.br/termos-de-uso" target="_blank" rel="noopener noreferrer" className="text-[#0C9898] font-bold">
                                     Termos de Uso
                                 </a>{" "}
                                 e a{" "}
-                                <a href="https://lojaintegrada.com.br/privacidade/" target="_blank" className="text-[#0C9898] font-bold">
+                                <a href="https://lojaintegrada.com.br/privacidade/" target="_blank" rel="noopener noreferrer" className="text-[#0C9898] font-bold">
                                     Política de Privacidade
                                 </a>
                                 .
@@ -346,28 +394,29 @@ const CreateStoreModal = ({googleAccountButton}: Props) => {
                     </div>
 
                     <div className="w-full max-w-[450px] mt-6">
-
-                        <script dangerouslySetInnerHTML={{
-                            __html: `
-                            function onSubmitModalForm(token) {
-                                console.log("recaptcha submited");
-
-                                window.dataLayer = window.dataLayer || [];
-                                window.dataLayer.push({
-                                    'event': 'callback_cadastro_lead_institucional'
-                                });
-
-                                setTimeout(() => {
-                                    document.getElementById('modal-no-check').submit();
-                                }, 300)
-                            }
-                            `}}></script>
+                        <script
+                            dangerouslySetInnerHTML={{
+                                __html: `
+                                function onSubmitModalForm(token) {
+                                    console.log("recaptcha submited");
+                                    window.dataLayer = window.dataLayer || [];
+                                    window.dataLayer.push({
+                                        'event': 'callback_cadastro_lead_institucional'
+                                    });
+                                    setTimeout(() => {
+                                        document.getElementById('modal-no-check').submit();
+                                    }, 300);
+                                }
+                                `
+                            }}
+                        />
                         <button
                             id="input-form-modal_no_check"
-                            className={`w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha relative ${!validated && 'pointer-events-none'}`}
+                            className={`w-full py-3 bg-[#0c9898] text-white font-bold rounded-md g-recaptcha btn-captcha transition-all ${!validated && 'opacity-50 cursor-not-allowed pointer-events-none'}`}
                             type="submit"
                             data-sitekey="6LdRdTErAAAAAJTiQW_hUzJxve5303X3lyy1UjA_"
                             data-callback="onSubmitModalForm"
+                            disabled={!validated}
                         >
                             Abrir minha loja agora
                         </button>

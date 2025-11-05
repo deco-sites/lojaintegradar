@@ -115,6 +115,8 @@ export default defineApp(async (_req, ctx) => {
       />
 
       <link rel="manifest" href={asset("/site.webmanifest")} />
+
+
     </Head>
 
     <ctx.Component />
@@ -226,5 +228,15 @@ export default defineApp(async (_req, ctx) => {
         })
       }}
     />
+
+    <script dangerouslySetInnerHTML={{__html: `
+      document.addEventListener("DOMContentLoaded", function () {
+      const script = document.createElement("script");
+      script.src = "https://accounts.google.com/gsi/client";
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+
+    });`}}/>
   </>);
 });

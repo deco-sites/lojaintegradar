@@ -1,0 +1,3555 @@
+{
+  "name": "Comece sua loja v2",
+  "path": "/como-comecar-a-vender-online-v2",
+  "sections": [
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/c8ffc48e-534c-496e-a0a4-8cd433ffa9c9/desktop-vertical-dark-green-line.svg",
+              "height": 636,
+              "width": 1,
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "lines": [
+              {
+                "distance": "12px",
+                "from": "left"
+              },
+              {
+                "distance": "12px",
+                "from": "right"
+              }
+            ],
+            "linesSize": 6
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/c8ffc48e-534c-496e-a0a4-8cd433ffa9c9/desktop-vertical-dark-green-line.svg",
+              "width": 1,
+              "height": 636,
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "lines": [
+              {
+                "from": "center",
+                "distance": "-640px"
+              },
+              {
+                "from": "center",
+                "distance": "640px"
+              }
+            ],
+            "linesSize": 3
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeaderV3.tsx",
+            "navigation": {
+              "links": [],
+              "buttons": [
+                {
+                  "type": "Button",
+                  "size": "Small",
+                  "href": " https://app.lojaintegrada.com.br/painel/login",
+                  "text": "Fazer login",
+                  "textColor": "#00363A",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#00363A"
+                }
+              ],
+              "mobileButtons": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Fazer login",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#00363A",
+                  "textColor": "#00363A",
+                  "size": "Small",
+                  "customEventLabel": "fazer-login"
+                }
+              ],
+              "asideMenuButtons": [
+                {
+                  "text": "Abrir loja grátis",
+                  "backgroundColor": "#003037",
+                  "textColor": "#ffffff",
+                  "borderColor": "#003037",
+                  "type": "Button",
+                  "size": "Small",
+                  "openModal": "Create Store",
+                  "createStorePlanId": "172",
+                  "customEvent": "header",
+                  "customEventCategory": "loja-integrada:institucional",
+                  "customEventLabel": "criar-loja-gratis"
+                },
+                {
+                  "text": "Fazer Login",
+                  "textColor": "#003037",
+                  "backgroundColor": "Transparent",
+                  "borderColor": "#003037",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "ctaStyle": "button",
+                  "outline": true,
+                  "size": "Small",
+                  "customEventLabel": "fazer-login"
+                }
+              ],
+              "sideMenuButtons": [],
+              "linksBorderColor": "#D0DAD9",
+              "textHoverColor": "#D0DAD9",
+              "textColor": "#003037",
+              "mobileButtonsOnScrollColors": {
+                "textColor": "#ffffff",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55"
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172",
+                "backgroundColor": "#ffffff",
+                "textColor": "#003037",
+                "borderColor": "#ffffff",
+                "showIcon": false
+              },
+              "createStoreCtaMobile": {
+                "ctaStyle": "button",
+                "planId": "172",
+                "backgroundColor": "rgba(255, 255, 255, 0.60)",
+                "textColor": "#003037",
+                "borderColor": "Transparent",
+                "showIcon": false
+              },
+              "createStoreCtaMobileOnScrollColors": {
+                "backgroundColor": "rgba(255, 255, 255, 0.60)",
+                "borderColor": "Transparent",
+                "textColor": "#003037"
+              },
+              "asideCreateStoreCta": {
+                "planId": "172",
+                "text": "Abrir loja grátis",
+                "ctaStyle": "button",
+                "backgroundColor": "#003037",
+                "borderColor": "#003037",
+                "textColor": "#ffffff",
+                "showIcon": false
+              },
+              "buttonsHeight": "32px",
+              "linksTextProps": {}
+            },
+            "logo": {
+              "src": {
+                "__resolveType": "website/flags/multivariate/image.ts",
+                "variants": [
+                  {
+                    "value": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                    "rule": {
+                      "__resolveType": "website/matchers/device.ts",
+                      "mobile": true
+                    }
+                  },
+                  {
+                    "value": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                    "rule": {
+                      "__resolveType": "website/matchers/always.ts"
+                    }
+                  }
+                ]
+              },
+              "href": "/",
+              "alt": "logo ",
+              "width": 200
+            },
+            "initialButtons": [],
+            "backgroundColor": "#E4F3F3",
+            "barsColor": "#003037",
+            "asideMenuTopBackgroundColor": "#D0DAD9",
+            "asideMenuBackgroundColor": "#ffffff",
+            "asideMenuCloseIconColor": "#003037",
+            "headerMessage": {
+              "show": false,
+              "text": "<p>teste</p>",
+              "textColor": "#22454B",
+              "backgroundColor": "#D0DAD9",
+              "cta": [],
+              "font": "Instrument Serif",
+              "textProps": {
+                "color": ""
+              }
+            },
+            "campaignTimer": {
+              "text": "<p>Time left for a campaign to end</p>",
+              "show": false,
+              "labelsColor": "",
+              "numbersColor": "",
+              "noScrollBackgroundColor": "",
+              "backgroundColor": "",
+              "textProps": {
+                "font": "Galaxie Copernicus",
+                "color": ""
+              }
+            },
+            "hideAsideMenu": true,
+            "dropdownMenus": {
+              "menus": [],
+              "textColor": "#ebeaea",
+              "textHoverColor": "",
+              "menusBackgroundColor": "#ffffff",
+              "titlesTextColor": "#00363A",
+              "titlesTextHoverColor": "",
+              "menusTextColor": "#371E56",
+              "menusItemsHoverBackgroundColor": "#E9F9F9",
+              "menusItemsHoverLineColor": "#2bc4c3",
+              "menusShadowColor": "rgba(71, 193, 196, .50)",
+              "titlesTextProps": {}
+            },
+            "asideMenuOnlyMobile": false,
+            "noScrollBackgroundColor": "",
+            "centralizeHeaderContent": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeaderV3.tsx",
+            "navigation": {
+              "links": [],
+              "buttons": [
+                {
+                  "text": "Criar loja Grátis",
+                  "backgroundColor": "#00363A",
+                  "textColor": "#FFFFFF",
+                  "borderColor": "#00363A",
+                  "size": "Small",
+                  "type": "Button",
+                  "openModal": "Create Store",
+                  "createStorePlanId": "172",
+                  "showIcon": false,
+                  "customEvent": "header",
+                  "customEventCategory": "loja-integrada:institucional",
+                  "customEventLabel": "criar-loja-gratis"
+                },
+                {
+                  "type": "Button",
+                  "size": "Small",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "text": "Fazer login",
+                  "backgroundColor": "TRANSPARENT",
+                  "borderColor": "#00363A",
+                  "textColor": "#00363A"
+                }
+              ],
+              "mobileButtons": [
+                {
+                  "ctaStyle": "button",
+                  "text": "Fazer login",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#00363A",
+                  "textColor": "#00363A",
+                  "size": "Small",
+                  "customEventLabel": "fazer-login"
+                }
+              ],
+              "asideMenuButtons": [
+                {
+                  "text": "Abrir loja grátis",
+                  "backgroundColor": "#003037",
+                  "textColor": "#ffffff",
+                  "borderColor": "#003037",
+                  "type": "Button",
+                  "size": "Small",
+                  "openModal": "Create Store",
+                  "createStorePlanId": "172",
+                  "customEvent": "header",
+                  "customEventCategory": "loja-integrada:institucional",
+                  "customEventLabel": "criar-loja-gratis"
+                },
+                {
+                  "text": "Fazer Login",
+                  "textColor": "#003037",
+                  "backgroundColor": "Transparent",
+                  "borderColor": "#003037",
+                  "href": "https://app.lojaintegrada.com.br/painel/login",
+                  "ctaStyle": "button",
+                  "outline": true,
+                  "size": "Small",
+                  "customEventLabel": "fazer-login"
+                }
+              ],
+              "sideMenuButtons": [],
+              "linksBorderColor": "#D0DAD9",
+              "textHoverColor": "#D0DAD9",
+              "textColor": "#003037",
+              "mobileButtonsOnScrollColors": {
+                "textColor": "#ffffff",
+                "backgroundColor": "#371E55",
+                "borderColor": "#371E55"
+              },
+              "createStoreCta": {
+                "ctaStyle": "button",
+                "planId": "172",
+                "backgroundColor": "#ffffff",
+                "textColor": "#003037",
+                "borderColor": "#ffffff",
+                "showIcon": false
+              },
+              "createStoreCtaMobile": {
+                "ctaStyle": "button",
+                "planId": "172",
+                "backgroundColor": "rgba(255, 255, 255, 0.60)",
+                "textColor": "#003037",
+                "borderColor": "Transparent",
+                "showIcon": false
+              },
+              "createStoreCtaMobileOnScrollColors": {
+                "backgroundColor": "rgba(255, 255, 255, 0.60)",
+                "borderColor": "Transparent",
+                "textColor": "#003037"
+              },
+              "asideCreateStoreCta": {
+                "planId": "172",
+                "text": "Abrir loja grátis",
+                "ctaStyle": "button",
+                "backgroundColor": "#003037",
+                "borderColor": "#003037",
+                "textColor": "#ffffff",
+                "showIcon": false
+              },
+              "buttonsHeight": "32px",
+              "linksTextProps": {}
+            },
+            "logo": {
+              "src": {
+                "__resolveType": "website/flags/multivariate/image.ts",
+                "variants": [
+                  {
+                    "value": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                    "rule": {
+                      "__resolveType": "website/matchers/device.ts",
+                      "mobile": true
+                    }
+                  },
+                  {
+                    "value": "https://assets.decocache.com/lojaintegradar/9bb1518b-4212-44eb-b492-947e7d311568/logo-li.svg",
+                    "rule": {
+                      "__resolveType": "website/matchers/always.ts"
+                    }
+                  }
+                ]
+              },
+              "href": "/home",
+              "alt": "logo ",
+              "width": 200
+            },
+            "initialButtons": [],
+            "backgroundColor": "#E4F3F3",
+            "barsColor": "#003037",
+            "asideMenuTopBackgroundColor": "#D0DAD9",
+            "asideMenuBackgroundColor": "#ffffff",
+            "asideMenuCloseIconColor": "#003037",
+            "headerMessage": {
+              "show": false,
+              "text": "<p>Assine um plano até sexta 12h e ganhe uma aula exclusiva com especialista 🚀  </p>",
+              "textColor": "#22454B",
+              "backgroundColor": "#00363A",
+              "cta": [
+                {
+                  "type": "Only text",
+                  "size": "Small",
+                  "href": "#plans",
+                  "text": "Saiba mais",
+                  "textColor": "#28C3C3",
+                  "showIcon": false,
+                  "singleLine": true
+                }
+              ],
+              "font": "Instrument Serif",
+              "textProps": {
+                "color": "",
+                "fontSize": "14px",
+                "fontFamily": "Inter",
+                "fontWeight": "500"
+              }
+            },
+            "campaignTimer": {
+              "text": "<p>Time left for a campaign to end</p>",
+              "show": false,
+              "labelsColor": "",
+              "numbersColor": "",
+              "noScrollBackgroundColor": "",
+              "backgroundColor": "#000000",
+              "textProps": {
+                "font": "Galaxie Copernicus",
+                "color": ""
+              }
+            },
+            "hideAsideMenu": true,
+            "dropdownMenus": {
+              "menus": [],
+              "textColor": "#ebeaea",
+              "textHoverColor": "",
+              "menusBackgroundColor": "#ffffff",
+              "titlesTextColor": "#00363A",
+              "titlesTextHoverColor": "",
+              "menusTextColor": "#371E56",
+              "menusItemsHoverBackgroundColor": "#E9F9F9",
+              "menusItemsHoverLineColor": "#2bc4c3",
+              "menusShadowColor": "rgba(71, 193, 196, .50)",
+              "titlesTextProps": {}
+            },
+            "asideMenuOnlyMobile": false,
+            "noScrollBackgroundColor": "",
+            "headerContainerMaxWidth": "1275px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/CreateStoreHero.tsx",
+            "title": {
+              "text": "<p style=\"text-align: justify\">Crie seu site<br>na plataforma que<br><span style=\"color: rgb(40, 195, 195)\">otimiza seu tempo</span></p>",
+              "font": "Lektorat Display var",
+              "color": "#00363A",
+              "fontSize": "70px",
+              "fontWeight": "700",
+              "lineHeight": "100%"
+            },
+            "caption": "<p style=\"text-align: justify\">Do cadastro à conversão em vendas, com a Loja Integrada você conta com uma solução impulsionada por IA que facilita a operação do ecommerce e reduz a dependência de quem clica nos botões</p>",
+            "captionTextProps": {
+              "color": "#00363A",
+              "fontFamily": "Inter",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "lineHeight": "100%"
+            },
+            "createStoreCta": {},
+            "createStoreFormProps": {
+              "planoId": "172",
+              "showForm": true,
+              "periodo": "anual",
+              "nameCaption": "Nome",
+              "namePlaceholder": "Seu nome",
+              "emailCaption": "E-mail",
+              "emailPlaceholder": "Insira seu e-mail",
+              "passwordCaption": "Senha",
+              "passwordPlaceholder": "Insira sua senha",
+              "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
+              "confirmPasswordCaption": "Confirme sua senha",
+              "confirmPasswordPlaceholder": "Confirme sua senha",
+              "agreeText1": "Ao clicar, você concorda com os ",
+              "agreeLink1": {
+                "text": " Termos de Uso ",
+                "href": "https://lojaintegrada.com.br/termos-de-uso"
+              },
+              "agreeText2": "e a ",
+              "agreeLink2": {
+                "text": "Política de Privacidade",
+                "href": "https://lojaintegrada.com.br/privacidade/"
+              },
+              "buttonText": "Criar loja grátis",
+              "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
+              "inputsLabelColor": "#00363A",
+              "inputsTextColor": "#00363A",
+              "inputsBorderColor": "#F2F4F5",
+              "inputsBellowTextColor": "#00363A",
+              "buttonBackgroundColor": "#00363A",
+              "buttonTextColor": "#fffffff",
+              "googleAccountBelowText": "Ou crie com seu E-mail",
+              "googleAccountButton": true
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/c3d9fba1-4a3b-4d47-aefa-d621b74984ad/HERO-DESKTOP.svg"
+              },
+              "use": "image"
+            },
+            "paddingRight": "0px",
+            "paddingLeft": "0px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "tablet": true,
+            "desktop": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/CreateStoreHero.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\">Crie seu site<br>na plataforma que<br><span style=\"color: rgb(40, 195, 195)\">otimiza seu tempo</span></p>",
+              "font": "Lektorat Display var",
+              "color": "#00363A",
+              "fontSize": "32px",
+              "fontWeight": "600",
+              "lineHeight": "100%"
+            },
+            "caption": "<p style=\"text-align: center\">Do cadastro à conversão em vendas, com a Loja Integrada você conta com uma solução impulsionada por IA que facilita a operação do ecommerce e reduz a dependência de quem clica nos botões</p>",
+            "captionTextProps": {
+              "color": "#00363A",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500"
+            },
+            "createStoreCta": {},
+            "createStoreFormProps": {
+              "planoId": "172",
+              "showForm": true,
+              "periodo": "anual",
+              "nameCaption": "Nome",
+              "namePlaceholder": "Seu nome",
+              "emailCaption": "E-mail",
+              "emailPlaceholder": "Insira seu e-mail",
+              "passwordCaption": "Senha",
+              "passwordPlaceholder": "Insira sua senha",
+              "passwordText": "Mínimo de 8 caracteres, contendo um número, uma letra maiúscula e uma letra minúscula",
+              "confirmPasswordCaption": "Confirme sua senha",
+              "confirmPasswordPlaceholder": "Confirme sua senha",
+              "agreeText1": "Ao clicar, você concorda com os ",
+              "agreeLink1": {
+                "text": " Termos de Uso ",
+                "href": "https://lojaintegrada.com.br/termos-de-uso"
+              },
+              "agreeText2": "e a ",
+              "agreeLink2": {
+                "text": "Política de Privacidade",
+                "href": "https://lojaintegrada.com.br/privacidade/"
+              },
+              "buttonText": "Criar loja grátis",
+              "backgroundColor": "linear-gradient(166deg, rgba(130, 220, 220, 0.00) -53.93%, rgba(242, 242, 242, 0.60) 76.14%)",
+              "inputsLabelColor": "#00363A",
+              "inputsTextColor": "#00363A",
+              "inputsBorderColor": "#F2F4F5",
+              "inputsBellowTextColor": "#00363A",
+              "buttonBackgroundColor": "#00363A",
+              "buttonTextColor": "#fffffff",
+              "googleAccountBelowText": "Ou crie com seu E-mail",
+              "googleAccountButton": true
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/4bf45f59-4597-49b5-8b81-0144e27445ce/gero-mobile.svg"
+              },
+              "use": "image"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p style=\"text-align: center\">Crie seu site<br>na plataforma que<br><span style=\"color: rgb(40, 195, 195)\">otimiza seu tempo</span></p>",
+              "font": "Lektorat Display var",
+              "color": "#00363A",
+              "fontWeight": "600",
+              "lineHeight": "100%",
+              "fontSize": "32px"
+            },
+            "container": {
+              "backgroundMedia": {
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/6bc5b75f-9f3d-4d97-963c-e194e9233002/campanha-main-hero-background-mobile.svg",
+                  "width": 375,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "use": "image"
+              },
+              "marginBottom": "0",
+              "minHeight": "494px",
+              "paddingTop": "40px",
+              "backgroundColor": ""
+            },
+            "sectionBackground": {
+              "image": {
+                "width": 410
+              },
+              "use": "image",
+              "postition": "top",
+              "customHeight": "594"
+            },
+            "text": "<p style=\"text-align: center\">Do cadastro à conversão em vendas, com a Loja Integrada você conta com uma solução impulsionada por IA que facilita a operação do ecommerce e reduz a dependência de quem clica nos botões</p>",
+            "textProps": {
+              "color": "#00363A",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500"
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Create Store",
+                "text": "Monte sua loja sem custo",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "textColor": "#FFFFFF",
+                "createStorePlanId": "172"
+              }
+            ],
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/72b2d6f2-d9f6-454c-809d-1397b24a5c38/painel-loja-integrada.png",
+                "width": 341,
+                "height": 128,
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "cornerImage": false,
+              "use": "image",
+              "placement": "bellow"
+            },
+            "hideSection": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Create Store",
+                "text": "Monte sua loja com mais segurança e sem custo",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "textColor": "#FFFFFF",
+                "createStorePlanId": "172"
+              }
+            ],
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p style=\"text-align: center\">Crie seu site na plataforma<br><span style=\"color: #28c3c3\">que otimiza seu tempo</span></p>",
+              "font": "Lektorat Display var",
+              "color": "#00363A",
+              "fontWeight": "650",
+              "lineHeight": "100%",
+              "fontSize": "60px",
+              "letterSpacing": "-1.2px;"
+            },
+            "text": "<p style=\"text-align: center\"> Do cadastro à conversão em vendas, com a Loja Integrada você conta<br>com uma solução impulsionada por IA que facilita a operação do<br>ecommerce e reduz a dependência de quem clica nos botões</p>",
+            "textProps": {
+              "color": "#00363A",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/03373149-98d5-4281-8c8c-bab5619e4195/painel-loja-integrada.png",
+                "width": "851px",
+                "height": "484px",
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "use": "image",
+              "placement": "bellow"
+            },
+            "container": {
+              "backgroundMedia": {
+                "use": "image",
+                "image": {}
+              },
+              "marginBottom": "0px",
+              "marginTop": "120px"
+            },
+            "sectionBackground": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/49cf6489-640b-46b8-8aa8-96c5da62f470/campanha-main-hero-background-desktop.svg",
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "use": "image"
+            },
+            "tag": {},
+            "hideSection": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "hideSection": true,
+            "slides": [
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "1- Cadastre seu produto uma única vez e economize tempo",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><span style=\"color: #5f6e82\">Otimize seu tempo e resultado com a nossa IA que completa os principais campos do seu produto e ajusta automaticamente de acordo pra sua loja e marketplaces</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/0e68f316-224d-478b-a28d-94740866d259/BackgroundShadow.png",
+                  "height": 409,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                }
+              }
+            ],
+            "paddingBottom": "0px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "cta": [],
+            "slides": [
+              {
+                "textPlacement": "Top",
+                "icon": {},
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "1- Cadastre seu produto uma única vez e economize tempo",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><span style=\"color: #5f6e82\">Otimize seu tempo e resultado com a nossa IA que completa os principais campos do seu produto e ajusta automaticamente de acordo pra sua loja e marketplaces</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/d887e377-b2c1-421e-b260-e67d0bc522f3/cadastre-produto-ia.webp",
+                  "height": 550,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                }
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "2- O seu site personalizado e sua operação automatizada",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Crie sua loja com temas personalizados e tenha ferramentas automáticas que ajudam a vender mais, com menos esforço: recuperação de carrinho, produto e pedidos sem pagamento, promoções, cupons e brindes.</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/64b8fcdb-7904-43a2-b4be-4aca5b86619e/site-personalizado-automatizado.webp",
+                  "height": 550,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                }
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "3- Integre seu catálogo de forma automatizada em marketplaces",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Assine um plano e ative de forma nativa a integração com o Magalu, com catálogo automatizado de acordo com as regras do marketplace — e em breve também com Mercado Livre e outros principais canais.</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/6944b012-8e3f-4883-9330-5e354de6f49a/venda-em-marketplace.webp",
+                  "height": 550,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                }
+              }
+            ],
+            "createStoreCta": {
+              "backgroundColor": "#00363A",
+              "borderColor": "#00363A",
+              "planId": "172",
+              "text": "Comece a vender hoje mesmo",
+              "textColor": "#FFFFF"
+            },
+            "id": "Section 1 desktop",
+            "slidesWidth": "410px",
+            "containerWidth": "1270px",
+            "slidesGap": "20px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p style=\"text-align: justify\">1- Cadastre seu produto uma<br>única vez e economize tempo</p>",
+              "font": "Lektorat Display var",
+              "color": "#00363A",
+              "fontWeight": "600",
+              "fontSize": "22px",
+              "lineHeight": "100%"
+            },
+            "container": {
+              "backgroundMedia": {
+                "image": {},
+                "use": "image"
+              },
+              "backgroundColor": "linear-gradient(179deg, #F5F9F8 49.54%, #28C3C3 107.47%);",
+              "paddingTop": "20px",
+              "marginBottom": "0px",
+              "paddingRight": "16px"
+            },
+            "sectionBackground": {
+              "image": {},
+              "postition": "top",
+              "customHeight": "594"
+            },
+            "text": "<p>Otimize seu tempo e resultado com a nossa IA que completa os principais campos do seu produto e ajusta automaticamente de acordo pra sua loja e marketplaces</p>",
+            "textProps": {
+              "color": "#5F6E82",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500"
+            },
+            "cta": [],
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/eb0ce47f-274f-461b-bca6-a54c4b85e9e2/Cadastre-produto-com-IA-new2.webp",
+                "width": 329,
+                "height": 225,
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "cornerImage": false,
+              "use": "image",
+              "placement": "bellow"
+            },
+            "sectionPaddingLeft": "16px",
+            "sectionPaddingRight": "16px",
+            "tag": {}
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p></p>",
+              "font": "Lektorat Display var",
+              "color": "#28C3C3",
+              "fontWeight": "600",
+              "lineHeight": "100%"
+            },
+            "hideSection": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p style=\"text-align: justify\">2- O seu site personalizado e<br>sua operação automatizada</p>",
+              "font": "Lektorat Display var",
+              "color": "#00363A",
+              "fontWeight": "600",
+              "fontSize": "22px",
+              "lineHeight": "100%"
+            },
+            "container": {
+              "backgroundMedia": {
+                "image": {},
+                "use": "image"
+              },
+              "backgroundColor": "linear-gradient(179deg, #F5F9F8 49.54%, #28C3C3 107.47%);",
+              "paddingTop": "20px",
+              "marginBottom": "0px",
+              "paddingBottom": "0px"
+            },
+            "sectionBackground": {
+              "image": {},
+              "postition": "top",
+              "customHeight": "594"
+            },
+            "text": "<p>Crie sua loja com temas personalizados e tenha ferramentas automáticas que ajudam a vender mais, com menos esforço: recuperação de carrinho, produto e pedidos sem pagamento, promoções, cupons e brindes</p>",
+            "textProps": {
+              "color": "#5F6E82",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500"
+            },
+            "cta": [],
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/1e411bcf-8d37-4842-9b20-c30a17ecdb11/seu-site-personalizado-new2.webp",
+                "width": 329,
+                "height": 225,
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "cornerImage": false,
+              "use": "image",
+              "placement": "bellow"
+            },
+            "sectionPaddingLeft": "16px",
+            "sectionPaddingRight": "16px",
+            "tag": {}
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p></p>",
+              "font": "Lektorat Display var",
+              "color": "#28C3C3",
+              "fontWeight": "600",
+              "lineHeight": "100%"
+            },
+            "hideSection": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p>3- Integre seu catálogo de forma automatizada em marketplaces</p>",
+              "font": "Lektorat Display var",
+              "color": "#00363A",
+              "fontWeight": "600",
+              "fontSize": "22px",
+              "lineHeight": "100%"
+            },
+            "container": {
+              "backgroundMedia": {
+                "image": {},
+                "use": "image"
+              },
+              "backgroundColor": "linear-gradient(179deg, #F5F9F8 49.54%, #28C3C3 107.47%);",
+              "paddingTop": "20px",
+              "marginBottom": "0px",
+              "paddingBottom": "0"
+            },
+            "sectionBackground": {
+              "image": {},
+              "postition": "top",
+              "customHeight": "594"
+            },
+            "text": "<p>Assine um plano e ative de forma nativa a integração com o Magalu, com catálogo automatizado de acordo com as regras do marketplace — e em breve também com Mercado Livre e outros principais canais.</p>",
+            "textProps": {
+              "color": "#5F6E82",
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500"
+            },
+            "cta": [],
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/b689d750-aada-401f-852e-db1ec678d9a1/integre-com-marketplaces-nativo-mobile-new2.webp",
+                "width": 329,
+                "height": 239,
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "cornerImage": false,
+              "use": "image",
+              "placement": "bellow"
+            },
+            "sectionPaddingLeft": "16px",
+            "sectionPaddingRight": "16px",
+            "tag": {}
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "hubspotForm": {
+              "modal": {}
+            },
+            "title": {
+              "text": "<p></p>",
+              "font": "Lektorat Display var",
+              "color": "#28C3C3",
+              "fontWeight": "600",
+              "lineHeight": "100%"
+            },
+            "hideSection": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/Logos.tsx",
+              "blackAndWhiteLogos": false,
+              "title": "<p style=\"text-align: center\">+30 mil lojas venderam no último mês.</p>",
+              "paddingTop": "120px",
+              "paddingBottom": "60px",
+              "caption": "<p style=\"text-align: center\">São 13 anos apoiando empreendedores como você</p>",
+              "titleTextProps": {
+                "fontFamily": "Inter",
+                "color": "#00363A",
+                "fontSize": "18px",
+                "fontWeight": "600",
+                "lineHeight": "100%"
+              },
+              "captionTextProps": {
+                "fontFamily": "Inter",
+                "fontSize": "14px"
+              },
+              "logos": [
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/90394d1f-1f22-42ac-bd54-c76c354b9012/logo-Forbes-new.webp",
+                  "width": 113,
+                  "loading": "lazy",
+                  "fetchPriority": "low",
+                  "height": 29
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/21e24d2b-6b1e-439c-8dd8-d275dbe7c4fb/logo-rock-in-rio-new.webp",
+                  "width": 113,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/4f76078f-89f9-4d2b-86f5-9e36ba5d500f/Next10-new.webp",
+                  "width": 131,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/45cbbed1-35aa-4a89-8f7f-900cd5bcb07e/logo-frutifica-new.webp",
+                  "width": 131,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/e558aad3-b7c3-4dd5-b785-414c7d507201/logo-soldiers-new.webp",
+                  "width": 131,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/dc1dfe95-a130-47c3-81f5-d6ef90416e21/logo-gorila-shield-new.webp",
+                  "width": 113,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/d6aa10c8-59c6-498a-86e1-648115dad028/logo-mais-pura-new.webp",
+                  "width": 113,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/138d6925-9e24-4e71-853b-9bb0dd3020c2/logo-Carola-cosmeticos-new.webp",
+                  "width": 113,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/81457162-8c93-42ec-a67d-7a408dc91d35/dr-charn-new.webp",
+                  "width": 131,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/c3f3839e-a713-4c02-a2d3-6119dfc253c7/maretoa-new.webp",
+                  "width": 113,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                }
+              ]
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "desktop": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/Logos.tsx",
+              "blackAndWhiteLogos": false,
+              "title": "<p>+30 mil lojas venderam no último mês.</p>",
+              "paddingTop": "60px",
+              "paddingBottom": "60px",
+              "caption": "<p>São 13 anos apoiando empreendedores como você</p>",
+              "titleTextProps": {
+                "fontFamily": "Inter",
+                "color": "#00363A",
+                "fontSize": "18px",
+                "fontWeight": "600",
+                "lineHeight": "100%"
+              },
+              "captionTextProps": {
+                "fontFamily": "Inter",
+                "fontSize": "14px"
+              },
+              "logos": [
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/4f76078f-89f9-4d2b-86f5-9e36ba5d500f/Next10-new.webp",
+                  "width": 131,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/21e24d2b-6b1e-439c-8dd8-d275dbe7c4fb/logo-rock-in-rio-new.webp",
+                  "width": 113,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/90394d1f-1f22-42ac-bd54-c76c354b9012/logo-Forbes-new.webp",
+                  "width": 113,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/81457162-8c93-42ec-a67d-7a408dc91d35/dr-charn-new.webp",
+                  "width": 131,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/e558aad3-b7c3-4dd5-b785-414c7d507201/logo-soldiers-new.webp",
+                  "width": 131,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/138d6925-9e24-4e71-853b-9bb0dd3020c2/logo-Carola-cosmeticos-new.webp",
+                  "width": 113,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/45cbbed1-35aa-4a89-8f7f-900cd5bcb07e/logo-frutifica-new.webp",
+                  "width": 131,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/dc1dfe95-a130-47c3-81f5-d6ef90416e21/logo-gorila-shield-new.webp",
+                  "width": 113,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/d6aa10c8-59c6-498a-86e1-648115dad028/logo-mais-pura-new.webp",
+                  "width": 113,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                {
+                  "src": "https://assets.decocache.com/lojaintegradar/c3f3839e-a713-4c02-a2d3-6119dfc253c7/maretoa-new.webp",
+                  "width": 113,
+                  "height": 29,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                }
+              ]
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "lines": [
+              {
+                "distance": "12px",
+                "from": "left"
+              },
+              {
+                "distance": "12px",
+                "from": "right"
+              }
+            ],
+            "maxHeight": "2300px",
+            "linesSize": 2
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/VerticalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/f7327842-1e30-4db4-87bb-e04a9f376546/long-mobile-line.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "lines": [
+              {
+                "distance": "-640px",
+                "from": "center"
+              },
+              {
+                "distance": "640px",
+                "from": "center"
+              }
+            ],
+            "linesSize": 2,
+            "maxHeight": "2300px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/HorizontalLines.tsx",
+                  "lineImage": {
+                    "src": "https://assets.decocache.com/lojaintegradar/80c86817-0723-4cf3-9336-41a2115cd689/horizontal-line-mobile.svg",
+                    "loading": "lazy",
+                    "fetchPriority": "low"
+                  },
+                  "lines": [
+                    {
+                      "distance": "88px"
+                    },
+                    {
+                      "distance": "185px"
+                    }
+                  ]
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/device.ts",
+                  "mobile": true
+                }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/HorizontalLines.tsx",
+                  "lineImage": {
+                    "src": "https://assets.decocache.com/lojaintegradar/5471942c-9e17-4889-b21c-1ff2b74c0ed9/mobile-green-dark-horizontal-line.svg",
+                    "width": 600,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
+                  },
+                  "lines": [],
+                  "linesSize": 4
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/9f25f2eb-820b-410e-9007-dc7850bdfd7f/long-line-light-green.svg",
+              "height": 1,
+              "width": 2880,
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "lines": [
+              {
+                "distance": "40px"
+              },
+              {
+                "distance": "75px"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/9f25f2eb-820b-410e-9007-dc7850bdfd7f/long-line-light-green.svg",
+              "height": 1,
+              "width": 2880,
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "lines": [
+              {
+                "distance": "50px"
+              },
+              {
+                "distance": "120px"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(250, 250, 250)\">Crie do seu jeito,</span></p><p style=\"text-align: center\">sem saber programar</p>",
+              "color": "rgba(40, 195, 195, 1)",
+              "font": "Lektorat Display Var",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "fontSize": "7.26vw",
+              "lineHeight": "100%"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #001d20, #012426);"
+            },
+            "text": "<p></p>",
+            "textProps": {
+              "color": "#ffffff",
+              "lineHeight": "125%",
+              "letterSpacing": "-0.3px",
+              "fontSize": "3.1vw"
+            },
+            "container": {
+              "backgroundColor": ""
+            },
+            "cta": [],
+            "ctaPlacement": "center",
+            "customTitle": "hero:multiplos-especialistas",
+            "tag": {}
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255)\">Crie do seu jeito</span></p><p style=\"text-align: center\">sem saber programar</p>",
+              "color": "#28C3C3",
+              "font": "Lektorat Display Var",
+              "letterSpacing": "-1px",
+              "fontWeight": "650",
+              "fontSize": "50px",
+              "lineHeight": "100%"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "#00363A"
+            },
+            "text": "<p></p>",
+            "textProps": {
+              "color": "#ffffff",
+              "fontSize": "16px",
+              "lineHeight": "125%",
+              "letterSpacing": "-0.3px"
+            },
+            "container": {
+              "paddingTop": "60px",
+              "marginTop": "0px",
+              "backgroundColor": "#00363A"
+            },
+            "cta": [],
+            "ctaPlacement": "center",
+            "customTitle": "hero:multiplos-especialistas",
+            "tag": {
+              "backgroundColor": "#00363A"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme </span>visitantes em compradores <span style=\"color: rgb(255, 255, 255)\">automaticamente</span></p>",
+              "color": "#ffffff",
+              "font": "Inter",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "fontSize": "22px",
+              "lineHeight": "120%"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
+            },
+            "text": "<p>Escolha entre dezenas de temas personalizados e ofereça uma experiência única no seu site próprio. Enquanto isso, a Loja Integrada trabalha por você: reengaja visitas, recomenda produtos e recupera carrinhos e pedidos sem pagamento — tudo automatizado, sem precisar criar campanhas manuais.</p>",
+            "textProps": {
+              "color": "#ffffff"
+            },
+            "container": {
+              "marginTop": "0px"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/91a558e9-7597-438c-806f-f3709fab8577/transforme-visitantes-em-compradores-new3.webp",
+                "width": 337,
+                "height": 305,
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "use": "image"
+            },
+            "sectionMarginTop": "0px",
+            "tag": {}
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p></p>",
+              "color": "#FFFFFF",
+              "font": "Inter",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "fontSize": "22px",
+              "lineHeight": "120%"
+            },
+            "hideSection": true,
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #012426, #01363a);"
+            },
+            "text": "<p></p>",
+            "textProps": {
+              "color": "#ffffff",
+              "fontSize": "14px"
+            },
+            "container": {
+              "maxWidth": "1270px"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/4b3777f4-9774-45c6-a399-aebb4aa407e8/Crie-do-seu-jeito.svg",
+                "width": "421px",
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "use": "image"
+            },
+            "sectionMarginTop": "-2px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p><span style=\"color: #ffffff\">Integrações com ferramentas</span></p><p><span style=\"color: #ffffff\">de </span><span>anúncios e criador</span></p><p><span>de promoções</span></p>",
+              "color": "#FFFFFF",
+              "font": "Inter",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "fontSize": "22px",
+              "lineHeight": "120%"
+            },
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #01363a, #003135);"
+            },
+            "text": "<p><span>Atraia clientes antigos e conquiste novos. Quer vender ainda mais? Promova seus produtos com integrações como Google Ads, Instagram Ads e Facebook Ads. Crie promoções inteligentes e cupons personalizados para engajar, recuperar e fidelizar seus clientes.</span></p>",
+            "textProps": {
+              "color": "#ffffff"
+            },
+            "container": {},
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/88bd6ec2-338a-4b8d-a5f6-89887a84900e/crie-do-seu-jeito-2-new3.webp",
+                "width": 337,
+                "height": 305,
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "use": "image"
+            },
+            "tag": {}
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p></p>",
+              "color": "#28C3C3",
+              "font": "Lektorat Display Var",
+              "letterSpacing": "-0.3px",
+              "fontWeight": "600",
+              "fontSize": "32px"
+            },
+            "hideSection": true,
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #01363a, #003135);"
+            },
+            "text": "<p></p>",
+            "textProps": {
+              "color": "#ffffff"
+            },
+            "container": {
+              "maxWidth": "1270px",
+              "gap": "180px"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/09b49ab5-6164-42c7-b212-92dce3cf7516/crie-do-seu-jeito-2.png",
+                "width": "421px",
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "use": "image",
+              "placement": "left"
+            },
+            "sectionMarginTop": "-1px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/StickyImage.tsx",
+            "backgroundMedia": {
+              "backgroundColor": "linear-gradient(180deg, #012b2e , #00363A , #00363A , #002E31 );"
+            },
+            "image": {
+              "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "folds": [
+              {
+                "icon": {
+                  "src": "https://assets.decocache.com/komea/d7146eb7-3c79-498e-b7d0-011bcb0e1535/icon-crie-produto.png",
+                  "width": 40,
+                  "height": 40,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "title": "<p><span style=\"color: #ffffff\">Crie produtos</span></p><p><span>conversando</span></p>",
+                "titleTextProps": {
+                  "color": "#EEFC58",
+                  "fontFamily": "Lektorat Display var",
+                  "lineHeight": "115%",
+                  "fontWeight": "750",
+                  "letterSpacing": "-1px",
+                  "fontSize": "26px"
+                },
+                "text": "<p>Você fala o nome e</p><p>mostra a imagem.</p><p>A Komea sugere</p><p>categoria, descrição</p><p>com SEO e publica em</p><p>diferentes canais.</p>",
+                "textProps": {
+                  "color": "#9F9F9F",
+                  "fontWeight": "500",
+                  "letterSpacing": "-0.5px",
+                  "lineHeight": "125%",
+                  "fontSize": "14px"
+                },
+                "image": {
+                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
+                  "width": 181,
+                  "height": 370,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "video": {
+                  "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
+                  "mockup": true,
+                  "height": "370",
+                  "borderRadius": "20px",
+                  "width": "181",
+                  "mockupScale": "1.04"
+                },
+                "use": "video"
+              },
+              {
+                "textPosition": "Left",
+                "icon": {
+                  "src": "https://assets.decocache.com/komea/f9ec2bef-6a39-4942-bc39-b1a7d23740d9/statistics-icon.png",
+                  "width": 40,
+                  "height": 40,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "title": "<p><span>Receba insight </span></p><p><span style=\"color: #ffffff\">direto no app</span></p>",
+                "titleTextProps": {
+                  "color": "#EEFC58",
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "26px",
+                  "lineHeight": "115%",
+                  "fontWeight": "750",
+                  "letterSpacing": "-1px"
+                },
+                "text": "<p><span>Aplique promoções em</span></p><p><span>produtos com estoque</span></p><p><span>reduzido apenas</span></p><p><span>arrastando um botão</span></p><p><span>para o lado.</span></p>",
+                "textProps": {
+                  "color": "#9F9F9F",
+                  "fontWeight": "500",
+                  "letterSpacing": "-0.5px",
+                  "lineHeight": "125%",
+                  "fontSize": "14px"
+                },
+                "image": {
+                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
+                  "width": 181,
+                  "height": 370,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "video": {
+                  "src": "https://assets.decocache.com/komea/21203775-63d2-4103-8142-7d43c2fd8b65/Receba-insight-.mp4",
+                  "width": "172",
+                  "height": "352",
+                  "mockup": true,
+                  "mockupScale": "1.04",
+                  "borderRadius": "20px"
+                },
+                "use": "video"
+              }
+            ],
+            "foldsHeight": "440px",
+            "bulletPoints": {},
+            "hideSection": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/StickyImage.tsx",
+            "backgroundMedia": {
+              "backgroundColor": "#00363A"
+            },
+            "image": {
+              "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "folds": [
+              {
+                "textPosition": "Left",
+                "icon": {
+                  "width": 495,
+                  "height": 440
+                },
+                "title": "<p><span style=\"color: rgb(255, 255, 255)\">Transforme visitantes em compradores</span></p><p>automaticamente</p>",
+                "titleTextProps": {
+                  "color": "#28C3C3",
+                  "fontFamily": "Lektorat Display var",
+                  "lineHeight": "115%",
+                  "fontWeight": "600",
+                  "letterSpacing": "-1px",
+                  "fontSize": "32px"
+                },
+                "text": "<p>Escolha entre dezenas de temas personalizados e ofereça uma experiência única no seu site próprio. Enquanto isso, a Loja Integrada trabalha por você: reengaja visitas, recomenda produtos e recupera carrinhos e pedidos sem pagamento — tudo automatizado, sem precisar criar campanhas manuais.</p>",
+                "textProps": {
+                  "color": "#FFFFFF",
+                  "fontWeight": "500",
+                  "letterSpacing": "-0.5px",
+                  "lineHeight": "125%"
+                },
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/8adb162d-751f-46e5-a96a-e6d5690fccc8/ImageContainer-new.webp",
+                  "height": 440,
+                  "width": 495,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "use": "image",
+                "video": {
+                  "mockup": false
+                }
+              },
+              {
+                "textPosition": "Right",
+                "icon": {},
+                "title": "<p><span style=\"color: rgb(255, 255, 255)\">Integrações com ferramentas de anúncios</span></p><p>e criador de promoções</p>",
+                "titleTextProps": {
+                  "color": "#28C3C3",
+                  "fontFamily": "Lektorat Display var",
+                  "lineHeight": "115%",
+                  "fontWeight": "600",
+                  "letterSpacing": "-1px",
+                  "fontSize": "32px"
+                },
+                "text": "<p>Atraia clientes antigos e conquiste novos. Quer vender ainda mais? Promova seus produtos com integrações como Google Ads, Instagram Ads e Facebook Ads. Crie promoções inteligentes e cupons personalizados para engajar, recuperar e fidelizar seus clientes.</p>",
+                "textProps": {
+                  "color": "#FFFFFF",
+                  "fontWeight": "500",
+                  "letterSpacing": "-0.5px",
+                  "lineHeight": "125%"
+                },
+                "image": {
+                  "src": "https://assets.decocache.com/lojaintegradar/9233df78-0d8f-43cc-8d6d-333e58896601/ImageContainer-new2.webp",
+                  "width": 495,
+                  "loading": "lazy",
+                  "fetchPriority": "low",
+                  "height": 440
+                },
+                "use": "image",
+                "video": {
+                  "mockup": false
+                }
+              }
+            ],
+            "foldsHeight": "500px",
+            "stickImageDistanceFromTop": "16vh"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/9f25f2eb-820b-410e-9007-dc7850bdfd7f/long-line-light-green.svg",
+              "width": 2880,
+              "height": 1,
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "lines": [
+              {
+                "distance": "25px"
+              },
+              {
+                "distance": "70px"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HorizontalLines.tsx",
+            "lineImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/9f25f2eb-820b-410e-9007-dc7850bdfd7f/long-line-light-green.svg",
+              "width": 2880,
+              "height": 1,
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "lines": [
+              {
+                "distance": "45px"
+              },
+              {
+                "distance": "115px"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Carousel.tsx",
+      "title": "<p><span>Vários benefícios sem custo adicionais<br></span></p>",
+      "slides": [
+        {
+          "textPlacement": "Top",
+          "icon": {
+            "placement": "Top right"
+          },
+          "useBackground": "image",
+          "bulletPoints": {
+            "items": []
+          },
+          "title": "Cadastre produtos com IA",
+          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
+            "loading": "lazy",
+            "fetchPriority": "low"
+          }
+        },
+        {
+          "textPlacement": "Top",
+          "icon": {
+            "placement": "Top right"
+          },
+          "useBackground": "image",
+          "bulletPoints": {
+            "items": []
+          },
+          "title": "Cadastre produtos com IA",
+          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
+            "loading": "lazy",
+            "fetchPriority": "low"
+          }
+        },
+        {
+          "textPlacement": "Top",
+          "icon": {
+            "placement": "Top right"
+          },
+          "useBackground": "image",
+          "bulletPoints": {
+            "items": []
+          },
+          "title": "Cadastre produtos com IA",
+          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
+            "loading": "lazy",
+            "fetchPriority": "low"
+          }
+        },
+        {
+          "textPlacement": "Top",
+          "icon": {
+            "placement": "Top right"
+          },
+          "useBackground": "image",
+          "bulletPoints": {
+            "items": []
+          },
+          "title": "Cadastre produtos com IA",
+          "caption": "<p><span>Com mais de xx temas personalizados, a sua loja na LI já reengaja visitas e recomenda produtos e converte clientes que visualizaram sua loja e abandonaram carrinhos e pedidos sem pagamento sem precisar gastar horas em campanhas manuais.<br></span></p>",
+          "backgroundImage": {
+            "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
+            "loading": "lazy",
+            "fetchPriority": "low"
+          }
+        }
+      ],
+      "caption": "<p></p>",
+      "arrows": true,
+      "paddingBottom": "60px",
+      "hideSection": true
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "title": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">Vários benefícios,</span><br>sem custos adicionais.</p>",
+            "cta": [],
+            "slides": [
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Sua loja no topo do Google",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><br><span style=\"color: rgb(95, 110, 130)\">Robôs de indexação com IA e estrutura técnica pra sua loja aparecer no topo das buscas.</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/37e2e473-379f-42ce-83b4-3db73ad7ee43/BackgroundShadow-mb.webp",
+                  "loading": "lazy",
+                  "fetchPriority": "low",
+                  "width": 410,
+                  "height": 409
+                }
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Venda pelas redes sociais",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><br><span style=\"color: rgb(95, 110, 130)\">Crie links de carrinho com produto, desconto e frete e compartilhe direto no Whatsapp, Instagram e mais.</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/bee46869-5f8f-44ed-b0de-b29fdb487506/BackgroundShadow-mb2.webp",
+                  "height": 409,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                }
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Venda nos maiores marketplaces",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><br><span style=\"color: rgb(95, 110, 130)\">Conecte-se ao Magalu com integração nativa da Loja Integrada e +100 marketplaces via parceiros oficiais.</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/3cccfd0a-44cf-4956-8999-869d92b4c540/BackgroundShadow3.png",
+                  "height": 409,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                }
+              }
+            ],
+            "createStoreCta": {
+              "planId": "172",
+              "backgroundColor": "#ffffff",
+              "borderColor": "#00363A",
+              "textColor": "#00363A"
+            },
+            "paddingBottom": "30px",
+            "titleFont": "Lektorat Display var",
+            "backgroundColor": "linear-gradient(to bottom, #003135, #002123);",
+            "titleColor": "#28C3C3",
+            "titleTextProps": {
+              "fontWeight": "600",
+              "fontSize": "32px",
+              "letterSpacing": "-0.64px",
+              "lineHeight": "100%"
+            },
+            "arrows": true,
+            "arrowsColor": "#ffffff",
+            "containerWidth": "1270px",
+            "slidesGap": "20"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Carousel.tsx",
+            "title": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">Vários benefícios,</span><br>sem custos adicionais.</p>",
+            "cta": [],
+            "slides": [
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Sua loja no topo do Google",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Robôs de indexação com IA e estrutura técnica</span><br><span style=\"color: rgb(95, 110, 130)\">pra sua loja aparecer no topo das buscas.</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/d7b6915c-796c-49fc-bd63-fb823f7a13bb/sua-loja-topo-google.webp",
+                  "height": 550,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                }
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Venda pelas redes sociais",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Crie links de carrinho com produto, desconto e frete e compartilhe direto no Whatsapp, Instagram e mais.</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/ceef9934-a543-493d-8cd7-065564464208/link-de-carinho-abandonado.webp",
+                  "height": 550,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                }
+              },
+              {
+                "textPlacement": "Top",
+                "icon": {
+                  "placement": "Top right"
+                },
+                "useBackground": "image",
+                "bulletPoints": {
+                  "items": []
+                },
+                "title": "Venda nos maiores marketplaces",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display var",
+                  "fontSize": "22px",
+                  "fontWeight": "600",
+                  "lineHeight": "100%",
+                  "letterSpacing": "-0.44px;"
+                },
+                "textColor": "#00363A",
+                "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Conecte-se ao Magalu com integração nativa da Loja Integrada e +100 marketplaces via parceiros oficiais.</span></p>",
+                "captionTextProps": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "140%"
+                },
+                "backgroundImage": {
+                  "src": "https://assets.decocache.com/lojaintegradar/78f08eba-a752-4dc1-82cb-34d600cae783/venda-nos-maiores-marketplaces.webp",
+                  "height": 550,
+                  "width": 410,
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                }
+              }
+            ],
+            "createStoreCta": {
+              "planId": "172",
+              "backgroundColor": "#ffffff",
+              "borderColor": "#00363A",
+              "textColor": "#00363A"
+            },
+            "paddingBottom": "30px",
+            "titleFont": "Lektorat Display var",
+            "backgroundColor": "#00363A",
+            "titleColor": "#28C3C3",
+            "titleTextProps": {
+              "fontWeight": "650",
+              "fontSize": "50px",
+              "letterSpacing": "-1px"
+            },
+            "marginTop": "-2px",
+            "slidesWidth": "410px",
+            "slidesGap": "20px",
+            "containerWidth": "1270px",
+            "slidesHeight": "550px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {},
+            "cta": [
+              {
+                "text": "Crie sua loja grátis",
+                "backgroundColor": "#28C3C3",
+                "borderColor": "#28C3C3",
+                "textColor": "#ffffff",
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Create Store",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "15px",
+                  "fontSize": "14px"
+                },
+                "createStorePlanId": "172",
+                "backgroundImage": {},
+                "customIcon": {}
+              }
+            ],
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "#00363A"
+            },
+            "ctaPlacement": "center",
+            "container": {
+              "paddingBottom": "80px",
+              "marginTop": "0",
+              "marginBottom": "0",
+              "backgroundColor": ""
+            },
+            "tag": {
+              "backgroundColor": "#00363A"
+            },
+            "sectionMarginTop": "-2px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {},
+            "cta": [
+              {
+                "text": "Crie sua loja grátis",
+                "backgroundColor": "#28C3C3",
+                "borderColor": "#28C3C3",
+                "textColor": "#ffffff",
+                "type": "Button",
+                "size": "Large",
+                "openModal": "Create Store",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "15px",
+                  "fontSize": "14px",
+                  "width": "100%"
+                },
+                "createStorePlanId": "172",
+                "backgroundImage": {},
+                "customIcon": {}
+              }
+            ],
+            "hubspotForm": {
+              "modal": {}
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(to bottom, #002123, #001d20);"
+            },
+            "container": {
+              "marginTop": "0",
+              "marginBottom": "0",
+              "paddingBottom": "80px"
+            },
+            "ctaPlacement": "center",
+            "tag": {}
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4WithBottomSection.tsx",
+            "title": {
+              "text": "<p>A única plataforma que te ajuda a gerir seu negócio online em tempo real</p>",
+              "color": "rgba(0, 54, 58, 1)",
+              "font": "Lektorat Display Var",
+              "fontWeight": "650",
+              "letterSpacing": "-0.3px",
+              "fontSize": "32px",
+              "lineHeight": "100%"
+            },
+            "cta": [
+              {
+                "text": "Escolha o novo jeito de vender online",
+                "backgroundColor": "rgba(0, 54, 58, 1)",
+                "borderColor": "rgba(0, 54, 58, 1)",
+                "textColor": "#ffffff",
+                "type": "Button",
+                "size": "Medium",
+                "openModal": "Create Store",
+                "customProps": {
+                  "width": "100%",
+                  "height": "48px"
+                },
+                "createStorePlanId": "172"
+              }
+            ],
+            "hubspotForm": {
+              "modal": {
+                "media": {
+                  "image": {
+                    "width": 598,
+                    "height": 561
+                  }
+                }
+              }
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);"
+            },
+            "ctaPlacement": "center",
+            "container": {
+              "paddingBottom": "20px",
+              "maxWidth": "1270px",
+              "paddingRight": "0px",
+              "paddingTop": "30px"
+            },
+            "text": "<p>Na LI você conta com a Komea, uma rede de agentes</p><p>de IA que analisa seu catálogo e suas vendas para sugerir promoções, evitar ruptura de estoque e indicar oportunidades de aumento de receita. Tudo para você agir no momento certo.</p>",
+            "textProps": {
+              "color": "rgba(0, 54, 58, 1)",
+              "fontSize": "14px"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/88d7fd4d-9858-4d4d-a050-bc6d6db6d27e/img-hero-new-mb.webp",
+                "height": 461,
+                "width": 560,
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "use": "image",
+              "video": {},
+              "cornerImage": false
+            },
+            "tag": {
+              "text": "<p><span>Em breve para cliente LI</span></p>",
+              "textProps": {
+                "color": "#7A2D0D"
+              },
+              "backgroundColor": "#FFE6A0",
+              "tagPlacement": "left"
+            },
+            "ctaPosition": "section bottom",
+            "sectionPaddingLeft": "0px",
+            "sectionPaddingRight": "0px",
+            "bottomSection": {
+              "__resolveType": "site/sections/GridCards.tsx",
+              "title": {},
+              "cards": [
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/eefa478d-7746-47a2-832d-25dbc7a61b75/icon-new.webp",
+                    "width": 54,
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
+                  },
+                  "title": "<p>Receba insight direto no app</p>",
+                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "100%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/9437d8e6-8037-4dce-a25e-bcb63761f8b7/icon-new2.webp",
+                    "width": 54,
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
+                  },
+                  "title": "<p>Crie produtos conversando</p>",
+                  "text": "<p>Você fala o nome e mostra a imagem. A Komea sugere categoria, descrição com SEO e publica em diferentes canais.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "100%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/f62faa6b-3841-4b58-b545-122c44717e05/icon-new3.webp",
+                    "width": 54,
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
+                  },
+                  "title": "<p>Crie promoçõessem planilha</p>",
+                  "text": "<p>Diga “quero 15% de desconto até domingo” e o agente executa a ação com lógica e data.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "100%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/b93a6aee-c682-4211-ad67-ade892357783/icon-new4.webp",
+                    "width": 54,
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
+                  },
+                  "title": "<p>Pergunte sobre os dados das suas vendas</p>",
+                  "text": "<p>Consulte produtos mais vendidos, clientes fiéis e formas de pagamento usadas com o analista de vendas.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "100%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "140%"
+                  }
+                }
+              ],
+              "cardsBackgroundColor": " rgba(251, 250, 249, 0.40);",
+              "tag": {
+                "backgroundColor": "linear-gradient(218deg, #D1CABD 21.92%, #D8C186 76.48%);"
+              },
+              "paddingBottom": "30px"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4WithBottomSection.tsx",
+            "title": {
+              "text": "<p><span>A única plataforma que te </span></p><p><span>ajuda a gerir seu negócio </span></p><p><span>online em tempo real</span></p>",
+              "color": "rgba(0, 54, 58, 1)",
+              "font": "Lektorat Display Var",
+              "fontWeight": "650",
+              "letterSpacing": "-0.3px",
+              "fontSize": "50px",
+              "lineHeight": "100%"
+            },
+            "cta": [
+              {
+                "text": "Escolha o novo jeito de vender online",
+                "backgroundColor": "rgba(0, 54, 58, 1)",
+                "borderColor": "rgba(0, 54, 58, 1)",
+                "textColor": "#ffffff",
+                "type": "Button",
+                "size": "Medium",
+                "openModal": "Create Store",
+                "customProps": {
+                  "height": "48px"
+                },
+                "createStorePlanId": "172"
+              }
+            ],
+            "hubspotForm": {
+              "modal": {
+                "media": {
+                  "image": {
+                    "width": 598,
+                    "height": 561
+                  }
+                }
+              }
+            },
+            "sectionBackground": {
+              "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);"
+            },
+            "container": {
+              "maxWidth": "1270px"
+            },
+            "text": "<p><span>Na LI você conta com a Komea, uma rede de a gentes de IA que </span></p><p><span>analisa seu catálogo e suas vendas para sugerir promoções, </span></p><p><span>evitar ruptura de estoque e indicar oportunidades de aumento de </span></p><p><span>receita. Tudo para você agir no momento certo.</span></p>",
+            "textProps": {
+              "color": "rgba(0, 54, 58, 1)",
+              "fontSize": "16px"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/79718b01-2b89-4874-9878-8804869ca4a5/img-hero-new.webp",
+                "width": 598,
+                "height": 461,
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "use": "image",
+              "video": {},
+              "cornerImage": true,
+              "cornerImagePostion": "40px"
+            },
+            "tag": {
+              "text": "<p><span>Em breve para cliente LI</span></p>",
+              "textProps": {
+                "color": "#7A2D0D"
+              },
+              "backgroundColor": "#FFE6A0",
+              "tagPlacement": "left"
+            },
+            "bottomSection": {
+              "__resolveType": "site/sections/GridCards.tsx",
+              "tag": {
+                "backgroundColor": "linear-gradient(218deg, #D1CABD 21.92%, #D8C186 76.48%);"
+              },
+              "title": {},
+              "cards": [
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/eefa478d-7746-47a2-832d-25dbc7a61b75/icon-new.webp",
+                    "width": 54,
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
+                  },
+                  "title": "<p>Receba insightdireto no app</p>",
+                  "text": "<p>Aplique promoções em produtos com estoque reduzido apenas arrastando um botão para o lado.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "100%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "100%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/9437d8e6-8037-4dce-a25e-bcb63761f8b7/icon-new2.webp",
+                    "width": 54,
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
+                  },
+                  "title": "<p>Crie produtosconversando</p>",
+                  "text": "<p>Você fala o nome e mostra a imagem. A Komea sugere categoria, descrição com SEO e publica em diferentes canais.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "100%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "100%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/f62faa6b-3841-4b58-b545-122c44717e05/icon-new3.webp",
+                    "width": 54,
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
+                  },
+                  "title": "<p>Crie promoções sem planilha</p>",
+                  "text": "<p>Diga “quero 15% de desconto até domingo” e o agente executa a ação com lógica e data.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "100%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "100%"
+                  }
+                },
+                {
+                  "image": {
+                    "position": "left",
+                    "src": "https://assets.decocache.com/lojaintegradar/b93a6aee-c682-4211-ad67-ade892357783/icon-new4.webp",
+                    "width": 54,
+                    "height": 54,
+                    "loading": "lazy",
+                    "fetchPriority": "low"
+                  },
+                  "title": "<p>Pergunte sobre os dados das suas vendas</p>",
+                  "text": "<p>Consulte produtos mais vendidos, clientes fiéis e formas de pagamento usadas com o analista de vendas.</p>",
+                  "titleTextProps": {
+                    "fontFamily": "Inter",
+                    "fontSize": "16px",
+                    "color": "#00363A",
+                    "fontWeight": "600",
+                    "lineHeight": "100%"
+                  },
+                  "textProps": {
+                    "color": "#00363A",
+                    "fontFamily": "Inter",
+                    "fontSize": "14px",
+                    "fontWeight": "500",
+                    "lineHeight": "100%"
+                  }
+                }
+              ],
+              "cardsBackgroundColor": " rgba(251, 250, 249, 0.40);",
+              "paddingBottom": "120px"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Faq.tsx",
+            "title": "<p><span style=\"font-size:50px; font-weight: 600;\">Tire suas dúvidas</span></p>",
+            "cta": [],
+            "titleFont": "Lektorat Display var",
+            "titleColor": "#00363A",
+            "captionColor": "#5F6E82",
+            "questions": [
+              {
+                "question": "Preciso ter CNPJ para abrir minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não é obrigatório possuir um CNPJ para criar uma loja virtual na Loja Integrada. Você pode iniciar suas vendas como pessoa física, utilizando seu CPF. No entanto, formalizar seu negócio com um CNPJ pode transmitir mais credibilidade aos clientes e facilitar parcerias comerciais. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/892212-e-necessario-ter-um-cnpj-para-abrir-uma-loja-virtual\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a></p>"
+              },
+              {
+                "question": "Por onde começo a configurar minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Siga o checklist oficial para lançar sua loja rapidamente:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Defina e crie categorias. Cadastre seus produtos.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Ative meios de envio.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Configure meios de pagamento.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Personalize o layout.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Conecte um domínio próprio, se quiser.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Esse fluxo ajuda a garantir uma experiência de compra fluida e funcional </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5948529-primeiros-passos-checklist\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre o checklist de configuração.</span><br></p>"
+              },
+              {
+                "question": "Como planejar e criar categorias para meus produtos?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Organize seu catálogo com lógica e clareza — por exemplo, Departamentos, categorias e subcategorias (ex: ‘Feminino &gt; Roupas &gt; Vestidos’). Assim, você facilita a navegação do cliente e evita retrabalho. Saiba mais sobre criação de categorias.</span></p>"
+              },
+              {
+                "question": "Como cadastrar meus primeiros produtos (com variações, descrição e SEO)?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">No painel, defina se o produto é “simples” ou “com variações” (essa escolha não pode ser alterada depois), escolha um título informativo, inclua descrição completa, fotos de qualidade (pelo menos 2 + outros ângulos), e configure SEO para melhorar visibilidade. Use planilhas se tiver muitos produtos. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5920454-primeiros-passos-cadastro-de-produto\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre cadastro de produtos.</span></p>"
+              },
+              {
+                "question": "Posso vender produtos digitais?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Você cadastra o produto como digital (sem necessidade de estoque), configura uma forma de envio personalizada (com CEP e faixa de peso simbólica), e ajusta o checkout para o cliente informar e-mail ou instruções extra. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/3773309-como-vender-produtos-digitais-na-minha-loja-integrada\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais </span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">sobre venda de produtos digitais.</span></p>"
+              },
+              {
+                "question": "Como testar a loja antes de ir ao ar?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Faça uma compra-teste para verificar o funcionamento do checkout, envio de e-mails, mudanças de status e notificações. É uma etapa essencial para garantir que seu cliente inicial tenha uma experiência impecável. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5948529-primeiros-passos-checklist\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> no checklist de primeiros passos.</span></p>"
+              },
+              {
+                "question": "Como funciona o pagamento do plano na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Se você deseja assinar um plano, pode optar por duas modalidades de assinatura:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Assinatura anual: Pagamento único, à vista ou parcelado em até 12 vezes sem juros no cartão de crédito. Essa opção oferece um desconto de 20% em relação à mensalidade.</span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5530543-vantagens-do-plano-anual\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Assinatura mensal: Cobrança recorrente mensal, com pagamento via boleto bancário ou cartão de crédito. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/3921748-como-pagar-a-mensalidade-da-minha-loja?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Entenda</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Para alterar a forma de pagamento ou cancelar a cobrança automática no cartão de crédito, acesse o painel da sua loja em Financeiro &gt; Dados para pagamento e selecione a opção desejada.</span></p>"
+              },
+              {
+                "question": "Quais meios de pagamento devo ativar primeiro?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">O Pagali, sistema nativo da plataforma, é o mais indicado para começar — ele já vem integrado e oferece Pix, boleto, cartão de crédito e link de pagamento de forma rápida e centralizada. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/3263112-pagali\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre o Pagali.</span></p>"
+              },
+              {
+                "question": "Quais são as taxas do Pagali?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">As taxas do Pagali variam conforme o método de pagamento utilizado:</span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Cartão de Crédito: As taxas podem variar de acordo com o plano contratado e o prazo de repasse configurado.Grátis: 4,99%; Crescimento: 4,59%; Aceleração: 4,49%; Expansão: 4,29%; Elite: 3,59%. O repasse é feito em até 30 dias, mas você pode antecipar os recebimentos diretamente pelo painel do Pagali. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5985558-cartao-de-credito-do-pagali?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Boleto Bancário: A tarifa é fixa, no valor de R$2,39 por boleto aprovado. Não há cobrança caso o boleto seja emitido e não pago. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5822238-boleto-bancario-do-pagali?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pix: Disponível para todos os planos, com recebimento instantâneo. A taxa máxima é 1% e pode variar de acordo com o plano. Consulte diretamente no seu painel.</span></p>"
+              },
+              {
+                "question": "Quais são os meios de pagamento integrados?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada suporta a integração com </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40354-formas-de-pagamento?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">diversos intermediadores de pagamento</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, permitindo que você ofereça múltiplas opções aos seus clientes: </span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pagali: Solução própria da Loja Integrada, com suporte a Pix, boleto bancário, cartão de crédito e link de pagamento.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Mercado Pago, PagHiper, PagBank, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Pagar.me\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pagar.me</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, PayPal e AppMax: Plataformas amplamente utilizadas no mercado, oferecendo diversas funcionalidades e condições comerciais.</span></p>"
+              },
+              {
+                "question": "Posso integrar outros meios de pagamento no plano gratuito?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não. A integração com outros intermediadores como Mercado Pago, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Pagar.me\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pagar.me</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, PayPal, entre outros, está disponível apenas nos planos pagos.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Se você estiver no plano gratuito, essa funcionalidade não é habilitada. E atenção: caso você migre para um plano pago, ative outros meios de pagamento e depois retorne ao plano gratuito, sua loja continuará com essas integrações ativas, mas será cobrada uma taxa de 2% sobre cada transação realizada fora do Pagali.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Essa regra garante flexibilidade para quem deseja testar outras formas de pagamento, mas valoriza os benefícios do plano gratuito.</span></p>"
+              },
+              {
+                "question": "Quem está isento de tarifas por vendas ao usar outros meios de pagamento?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Lojas com faturamento de até R$ 2.500,00 por mês têm isenção de tarifas nas transações feitas com outros meios de pagamento que não sejam o Pagali.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Além disso, há uma franquia mínima de R$ 25,00 por mês para que a isenção seja aplicada. Essa política pode sofrer ajustes ao longo do tempo, conforme os termos do seu contrato, então vale sempre consultar seu painel para verificar as condições vigentes.</span></p>"
+              },
+              {
+                "question": "Quais são os métodos de envio disponíveis?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada oferece várias opções de frete para que você escolha a melhor forma de entrega para os seus produtos, desde soluções tradicionais até integrações personalizadas.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Métodos de envio disponíveis:</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Enviali: Use nossa solução nativa de envios como hub logístico para integrar transportadoras como Jadlog, entre outras. Ideal para lojas que buscam fretes competitivos e mais opções de entrega.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Correios: Integração direta com SEDEX, PAC e outros serviços dos Correios, com cálculo automático de frete e rastreamento.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Melhor Envio: plataforma parceira que permite cotar, gerar etiquetas, acompanhar rastreamento e automatizar o processo de envio com diversas transportadoras em um só lugar.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Formas de envio personalizadas: configure envios específicos como retirada na loja, motoboy, frete fixo por região ou frete grátis acima de determinado valor. Você também pode:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Subir uma planilha com as regras do seu transportador de confiança; Fazer uma integração via API para conectar qualquer sistema de entrega à sua loja. </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Essas opções oferecem total flexibilidade para adaptar o frete ao seu modelo de negócio, seja ele local, regional ou nacional. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40367-formas-de-envio\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Veja como configurar suas formas de envio.</span></a></p>"
+              },
+              {
+                "question": "Posso vender por dropshipping na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim, a Loja Integrada oferece suporte completo para quem quer trabalhar com dropshipping, inclusive com uma estrutura pensada exclusivamente para esse modelo de negócio.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">O primeiro passo é criar uma loja exclusiva para esse fim, isso porque a forma de configurar o frete é diferente de uma loja tradicional (onde o próprio lojista faz o envio dos produtos).</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Depois, é só escolher um dos parceiros oficiais da plataforma, como o DSLite ou o Dropi. Esses aplicativos integram sua loja diretamente aos fornecedores, permitindo que você:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Importe produtos com poucos cliques;</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Atualize automaticamente preços e estoque;</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Tenha os pedidos enviados direto do fornecedor ao cliente final;</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Automatize boa parte da operação sem precisar manter estoque próprio. </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A configuração do frete também é feita dentro da Loja Integrada, de forma a garantir que os prazos e valores reflitam a entrega feita pelo fornecedor.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">O dropshipping é uma ótima forma de começar a empreender com baixo investimento, e a Loja Integrada tem tudo o que você precisa para estruturar essa operação com eficiência. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/3940179-dropshipping\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais sobre como ativar dropshipping na sua loja.</span></a></p>"
+              },
+              {
+                "question": "Se já tenho um domínio, é necessário trocá-lo ao criar minha loja na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não, você pode continuar utilizando o seu domínio atual. Para isso, é necessário realizar o apontamento do domínio para a Loja Integrada, configurando os registros DNS conforme as instruções fornecidas pela plataforma. Caso deseje utilizar um novo domínio, é possível configurar redirecionamentos 301 para garantir que os visitantes do domínio antigo sejam automaticamente direcionados para o novo endereço, preservando o tráfego e o posicionamento nos mecanismos de busca. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/3337655-como-realizar-o-apontamento-do-meu-dominio-proprio?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span></p>"
+              },
+              {
+                "question": "Como configurar um subdomínio na minha Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Se você já possui um site institucional e deseja criar uma loja virtual vinculada, é possível configurar um subdomínio (por exemplo, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://loja.seusite.com.br\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">loja.seusite.com.br</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">) para apontar para a Loja Integrada. Isso permite manter a identidade da sua marca e facilitar o acesso dos clientes à sua loja online. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/931038-como-configurar-um-subdominio-na-minha-loja-integrada?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "Como migrar da minha plataforma atual para a Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A migração para a Loja Integrada pode ser realizada de três formas: Via planilha: Importando produtos e clientes através de planilhas no formato XLSX. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5945635-importando-dados-da-loja-antiga-produtos-clientes?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Integração com ERP: Utilizando sistemas de gestão empresarial compatíveis para transferir dados de forma automatizada.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Agências Parceiras: Contratando serviços especializados de agências parceiras da Loja Integrada que oferecem suporte completo durante o processo de migração. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/7156477-manual-de-migracao-para-a-loja-integrada?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "Quais são os ERPs integrados à Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada possui integração com sistemas de gestão empresarial (ERPs) que facilitam o controle de vendas, estoque, finanças e emissão de notas fiscais. Um exemplo é o Bling, que oferece funcionalidades completas para a gestão do seu negócio. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/2721349-erp\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "A Loja Integrada integra com marketplaces?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim! Hoje contamos com uma solução nativa de integração com marketplaces, começando pela integração direta com o Magalu, já disponível para lojistas da plataforma.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> Além disso, também é possível conectar sua loja a diversos outros marketplaces utilizando hubs de integração parceiros, como Anymarket, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Plugg.to\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Plugg.to</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, All Integra, entre outros.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> Com essas integrações, você pode:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Anunciar seus produtos em canais como Magalu, Mercado Livre, Amazon, Shopee e Americanas;</span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Receber os pedidos dos marketplaces diretamente no seu painel; </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Sincronizar automaticamente estoque, preços e status de pedidos. </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Essa estrutura multicanal ajuda você a ampliar seu alcance, aumentar as vendas e manter uma gestão centralizada e eficiente. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/924560-posso-integrar-minha-loja-com-marketplaces\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span></p>"
+              },
+              {
+                "question": "Como criar uma loja B2B na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada permite a criação de lojas voltadas exclusivamente para vendas entre empresas (B2B). Você pode configurar sua loja para que apenas clientes com CNPJ possam se cadastrar e realizar compras, além de personalizar condições comerciais específicas para esse público.</span></p>"
+              },
+              {
+                "question": "Posso aceitar apenas clientes com CNPJ na minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim, é possível configurar sua loja para aceitar apenas cadastros de pessoas jurídicas. A Loja Integrada permite o gerenciamento manual dos cadastros, possibilitando que você aprove ou recuse clientes conforme o tipo de pessoa (física ou jurídica). </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/924547-posso-aceitar-so-clientes-com-cnpj-na-minha-loja?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "Como personalizar o layout e usar temas?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você pode usar temas gratuitos (dependendo do plano) ou adquirir temas pagos via Loja de Temas. Os temas oferecem facilidade de personalização (cores, banners, logo, conteúdo dinâmico) sem precisar de programação. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5929982-primeiros-passos-personalizacao-de-layout-e-tema\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre personalização de layout.</span></p>"
+              },
+              {
+                "question": "Quais páginas legais devo incluir (LGPD, trocas e devoluções)?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">É essencial criar e publicar a Política de Privacidade (incluindo cookies) e a Política de Trocas e Devoluções para estar em conformidade com a LGPD e o CDC.</span></p>"
+              },
+              {
+                "question": "Posso atender meus clientes via WhatsApp diretamente na loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim — você pode adicionar o botão flutuante do WhatsApp ou usar aplicativos de atendimento para centralizar conversas e agilizar o suporte. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40281-solucoes\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> na seção Soluções &gt; Atendimento.</span></p>"
+              },
+              {
+                "question": "Quais e-mails automáticos enviam ao cliente? É possível editar?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A cada atualização de status de pedido, o cliente recebe um e-mail transacional. Nos planos pagos, você pode editar os templates, incluir sua marca, além de ativar e-mails de carrinho abandonado.</span></p>"
+              },
+              {
+                "question": "Como ativar a autenticação em duas etapas na minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Para aumentar a segurança do acesso ao painel administrativo da sua loja, é recomendável ativar a autenticação em duas etapas. Isso adiciona uma camada extra de proteção, exigindo um código gerado por aplicativo de autenticação além da senha padrão. Para ativar, acesse o painel da sua loja, vá em Dados Cadastrais e siga as instruções na seção de autenticação em duas etapas. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/4816564-como-ativar-a-autenticacao-em-duas-etapas?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "Posso gerir minha loja pelo celular?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim! A Loja Integrada oferece o ConectaLI, o aplicativo oficial desenvolvido para simplificar a gestão da sua loja virtual diretamente pelo celular.</span></p>"
+              },
+              {
+                "question": "Onde encontro ajuda e canais oficiais da Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Na Central de Ajuda &gt; Conheça a Loja Integrada, você encontra tutoriais, FAQ, canais de atendimento, comunidade e comunicados oficiais. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40268-conheca-a-loja-integrada\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais sobre a Central de Ajuda.</span></a></p>"
+              }
+            ],
+            "questionsTitleColor": "#00363A",
+            "questionsDivisionLineColor": "#E1E1E1",
+            "bottomTitleColor": "",
+            "bottomCaptionColor": "",
+            "backgroundColor": "#FBFAF9",
+            "hideSection": false,
+            "caption": "Quais são os meios de pagamento integrados?",
+            "titleTextProps": {}
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "desktop": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Faq.tsx",
+            "title": "<p><span style=\"font-size:32px; font-weight: 600;\">Tire suas dúvidas</span></p>",
+            "cta": [
+              {
+                "text": "Ver planos e assinar",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "textColor": "#ffffff",
+                "ctaStyle": "button",
+                "href": "#plans"
+              }
+            ],
+            "titleFont": "Lektorat Display var",
+            "titleColor": "#00363A",
+            "captionColor": "#5F6E82",
+            "questions": [
+              {
+                "question": "Preciso ter CNPJ para abrir minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não é obrigatório possuir um CNPJ para criar uma loja virtual na Loja Integrada. Você pode iniciar suas vendas como pessoa física, utilizando seu CPF. No entanto, formalizar seu negócio com um CNPJ pode transmitir mais credibilidade aos clientes e facilitar parcerias comerciais. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/892212-e-necessario-ter-um-cnpj-para-abrir-uma-loja-virtual\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a></p>"
+              },
+              {
+                "question": "Por onde começo a configurar minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Siga o checklist oficial para lançar sua loja rapidamente:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Defina e crie categorias. Cadastre seus produtos.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Ative meios de envio.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Configure meios de pagamento.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Personalize o layout.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Conecte um domínio próprio, se quiser.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Esse fluxo ajuda a garantir uma experiência de compra fluida e funcional </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5948529-primeiros-passos-checklist\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre o checklist de configuração.</span><br></p>"
+              },
+              {
+                "question": "Como planejar e criar categorias para meus produtos?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Organize seu catálogo com lógica e clareza — por exemplo, Departamentos, categorias e subcategorias (ex: ‘Feminino &gt; Roupas &gt; Vestidos’). Assim, você facilita a navegação do cliente e evita retrabalho. Saiba mais sobre criação de categorias.</span></p>"
+              },
+              {
+                "question": "Como cadastrar meus primeiros produtos (com variações, descrição e SEO)?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">No painel, defina se o produto é “simples” ou “com variações” (essa escolha não pode ser alterada depois), escolha um título informativo, inclua descrição completa, fotos de qualidade (pelo menos 2 + outros ângulos), e configure SEO para melhorar visibilidade. Use planilhas se tiver muitos produtos. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5920454-primeiros-passos-cadastro-de-produto\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre cadastro de produtos.</span></p>"
+              },
+              {
+                "question": "Posso vender produtos digitais?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim. Você cadastra o produto como digital (sem necessidade de estoque), configura uma forma de envio personalizada (com CEP e faixa de peso simbólica), e ajusta o checkout para o cliente informar e-mail ou instruções extra. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/3773309-como-vender-produtos-digitais-na-minha-loja-integrada\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais </span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">sobre venda de produtos digitais.</span></p>"
+              },
+              {
+                "question": "Como testar a loja antes de ir ao ar?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Faça uma compra-teste para verificar o funcionamento do checkout, envio de e-mails, mudanças de status e notificações. É uma etapa essencial para garantir que seu cliente inicial tenha uma experiência impecável. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5948529-primeiros-passos-checklist\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> no checklist de primeiros passos.</span></p>"
+              },
+              {
+                "question": "Como funciona o pagamento do plano na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Se você deseja assinar um plano, pode optar por duas modalidades de assinatura:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Assinatura anual: Pagamento único, à vista ou parcelado em até 12 vezes sem juros no cartão de crédito. Essa opção oferece um desconto de 20% em relação à mensalidade.</span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5530543-vantagens-do-plano-anual\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Assinatura mensal: Cobrança recorrente mensal, com pagamento via boleto bancário ou cartão de crédito. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/3921748-como-pagar-a-mensalidade-da-minha-loja?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Entenda</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Para alterar a forma de pagamento ou cancelar a cobrança automática no cartão de crédito, acesse o painel da sua loja em Financeiro &gt; Dados para pagamento e selecione a opção desejada.</span></p>"
+              },
+              {
+                "question": "Quais meios de pagamento devo ativar primeiro?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">O Pagali, sistema nativo da plataforma, é o mais indicado para começar — ele já vem integrado e oferece Pix, boleto, cartão de crédito e link de pagamento de forma rápida e centralizada. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/3263112-pagali\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre o Pagali.</span></p>"
+              },
+              {
+                "question": "Quais são as taxas do Pagali?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">As taxas do Pagali variam conforme o método de pagamento utilizado:</span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Cartão de Crédito: As taxas podem variar de acordo com o plano contratado e o prazo de repasse configurado.Grátis: 4,99%; Crescimento: 4,59%; Aceleração: 4,49%; Expansão: 4,29%; Elite: 3,59%. O repasse é feito em até 30 dias, mas você pode antecipar os recebimentos diretamente pelo painel do Pagali. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5985558-cartao-de-credito-do-pagali?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Boleto Bancário: A tarifa é fixa, no valor de R$2,39 por boleto aprovado. Não há cobrança caso o boleto seja emitido e não pago. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5822238-boleto-bancario-do-pagali?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pix: Disponível para todos os planos, com recebimento instantâneo. A taxa máxima é 1% e pode variar de acordo com o plano. Consulte diretamente no seu painel.</span></p>"
+              },
+              {
+                "question": "Quais são os meios de pagamento integrados?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada suporta a integração com </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40354-formas-de-pagamento?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">diversos intermediadores de pagamento</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, permitindo que você ofereça múltiplas opções aos seus clientes: </span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pagali: Solução própria da Loja Integrada, com suporte a Pix, boleto bancário, cartão de crédito e link de pagamento.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Mercado Pago, PagHiper, PagBank, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Pagar.me\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pagar.me</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, PayPal e AppMax: Plataformas amplamente utilizadas no mercado, oferecendo diversas funcionalidades e condições comerciais.</span></p>"
+              },
+              {
+                "question": "Posso integrar outros meios de pagamento no plano gratuito?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não. A integração com outros intermediadores como Mercado Pago, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Pagar.me\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Pagar.me</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, PayPal, entre outros, está disponível apenas nos planos pagos.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Se você estiver no plano gratuito, essa funcionalidade não é habilitada. E atenção: caso você migre para um plano pago, ative outros meios de pagamento e depois retorne ao plano gratuito, sua loja continuará com essas integrações ativas, mas será cobrada uma taxa de 2% sobre cada transação realizada fora do Pagali.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Essa regra garante flexibilidade para quem deseja testar outras formas de pagamento, mas valoriza os benefícios do plano gratuito.</span></p>"
+              },
+              {
+                "question": "Quem está isento de tarifas por vendas ao usar outros meios de pagamento?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Lojas com faturamento de até R$ 2.500,00 por mês têm isenção de tarifas nas transações feitas com outros meios de pagamento que não sejam o Pagali.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Além disso, há uma franquia mínima de R$ 25,00 por mês para que a isenção seja aplicada. Essa política pode sofrer ajustes ao longo do tempo, conforme os termos do seu contrato, então vale sempre consultar seu painel para verificar as condições vigentes.</span></p>"
+              },
+              {
+                "question": "Quais são os métodos de envio disponíveis?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada oferece várias opções de frete para que você escolha a melhor forma de entrega para os seus produtos, desde soluções tradicionais até integrações personalizadas.</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Métodos de envio disponíveis:</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Enviali: Use nossa solução nativa de envios como hub logístico para integrar transportadoras como Jadlog, entre outras. Ideal para lojas que buscam fretes competitivos e mais opções de entrega.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Correios: Integração direta com SEDEX, PAC e outros serviços dos Correios, com cálculo automático de frete e rastreamento.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Melhor Envio: plataforma parceira que permite cotar, gerar etiquetas, acompanhar rastreamento e automatizar o processo de envio com diversas transportadoras em um só lugar.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Formas de envio personalizadas: configure envios específicos como retirada na loja, motoboy, frete fixo por região ou frete grátis acima de determinado valor. Você também pode:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Subir uma planilha com as regras do seu transportador de confiança; Fazer uma integração via API para conectar qualquer sistema de entrega à sua loja. </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Essas opções oferecem total flexibilidade para adaptar o frete ao seu modelo de negócio, seja ele local, regional ou nacional. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40367-formas-de-envio\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Veja como configurar suas formas de envio.</span></a></p>"
+              },
+              {
+                "question": "Posso vender por dropshipping na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim, a Loja Integrada oferece suporte completo para quem quer trabalhar com dropshipping, inclusive com uma estrutura pensada exclusivamente para esse modelo de negócio.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">O primeiro passo é criar uma loja exclusiva para esse fim, isso porque a forma de configurar o frete é diferente de uma loja tradicional (onde o próprio lojista faz o envio dos produtos).</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Depois, é só escolher um dos parceiros oficiais da plataforma, como o DSLite ou o Dropi. Esses aplicativos integram sua loja diretamente aos fornecedores, permitindo que você:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Importe produtos com poucos cliques;</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Atualize automaticamente preços e estoque;</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Tenha os pedidos enviados direto do fornecedor ao cliente final;</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Automatize boa parte da operação sem precisar manter estoque próprio. </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A configuração do frete também é feita dentro da Loja Integrada, de forma a garantir que os prazos e valores reflitam a entrega feita pelo fornecedor.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">O dropshipping é uma ótima forma de começar a empreender com baixo investimento, e a Loja Integrada tem tudo o que você precisa para estruturar essa operação com eficiência. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/3940179-dropshipping\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais sobre como ativar dropshipping na sua loja.</span></a></p>"
+              },
+              {
+                "question": "Se já tenho um domínio, é necessário trocá-lo ao criar minha loja na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Não, você pode continuar utilizando o seu domínio atual. Para isso, é necessário realizar o apontamento do domínio para a Loja Integrada, configurando os registros DNS conforme as instruções fornecidas pela plataforma. Caso deseje utilizar um novo domínio, é possível configurar redirecionamentos 301 para garantir que os visitantes do domínio antigo sejam automaticamente direcionados para o novo endereço, preservando o tráfego e o posicionamento nos mecanismos de busca. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/3337655-como-realizar-o-apontamento-do-meu-dominio-proprio?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span></p>"
+              },
+              {
+                "question": "Como configurar um subdomínio na minha Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Se você já possui um site institucional e deseja criar uma loja virtual vinculada, é possível configurar um subdomínio (por exemplo, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://loja.seusite.com.br\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">loja.seusite.com.br</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">) para apontar para a Loja Integrada. Isso permite manter a identidade da sua marca e facilitar o acesso dos clientes à sua loja online. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/931038-como-configurar-um-subdominio-na-minha-loja-integrada?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "Como migrar da minha plataforma atual para a Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A migração para a Loja Integrada pode ser realizada de três formas: Via planilha: Importando produtos e clientes através de planilhas no formato XLSX. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5945635-importando-dados-da-loja-antiga-produtos-clientes?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Integração com ERP: Utilizando sistemas de gestão empresarial compatíveis para transferir dados de forma automatizada.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Agências Parceiras: Contratando serviços especializados de agências parceiras da Loja Integrada que oferecem suporte completo durante o processo de migração. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/7156477-manual-de-migracao-para-a-loja-integrada?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "Quais são os ERPs integrados à Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada possui integração com sistemas de gestão empresarial (ERPs) que facilitam o controle de vendas, estoque, finanças e emissão de notas fiscais. Um exemplo é o Bling, que oferece funcionalidades completas para a gestão do seu negócio. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/2721349-erp\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "A Loja Integrada integra com marketplaces?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim! Hoje contamos com uma solução nativa de integração com marketplaces, começando pela integração direta com o Magalu, já disponível para lojistas da plataforma.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> Além disso, também é possível conectar sua loja a diversos outros marketplaces utilizando hubs de integração parceiros, como Anymarket, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Plugg.to\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Plugg.to</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">, All Integra, entre outros.</span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> Com essas integrações, você pode:</span><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Anunciar seus produtos em canais como Magalu, Mercado Livre, Amazon, Shopee e Americanas;</span><br><br>- <span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Receber os pedidos dos marketplaces diretamente no seu painel; </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">- Sincronizar automaticamente estoque, preços e status de pedidos. </span><br><br><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Essa estrutura multicanal ajuda você a ampliar seu alcance, aumentar as vendas e manter uma gestão centralizada e eficiente. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/924560-posso-integrar-minha-loja-com-marketplaces\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">.</span></p>"
+              },
+              {
+                "question": "Como criar uma loja B2B na Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A Loja Integrada permite a criação de lojas voltadas exclusivamente para vendas entre empresas (B2B). Você pode configurar sua loja para que apenas clientes com CNPJ possam se cadastrar e realizar compras, além de personalizar condições comerciais específicas para esse público.</span></p>"
+              },
+              {
+                "question": "Posso aceitar apenas clientes com CNPJ na minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim, é possível configurar sua loja para aceitar apenas cadastros de pessoas jurídicas. A Loja Integrada permite o gerenciamento manual dos cadastros, possibilitando que você aprove ou recuse clientes conforme o tipo de pessoa (física ou jurídica). </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/924547-posso-aceitar-so-clientes-com-cnpj-na-minha-loja?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "Como personalizar o layout e usar temas?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Você pode usar temas gratuitos (dependendo do plano) ou adquirir temas pagos via Loja de Temas. Os temas oferecem facilidade de personalização (cores, banners, logo, conteúdo dinâmico) sem precisar de programação. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/5929982-primeiros-passos-personalizacao-de-layout-e-tema\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> sobre personalização de layout.</span></p>"
+              },
+              {
+                "question": "Quais páginas legais devo incluir (LGPD, trocas e devoluções)?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">É essencial criar e publicar a Política de Privacidade (incluindo cookies) e a Política de Trocas e Devoluções para estar em conformidade com a LGPD e o CDC.</span></p>"
+              },
+              {
+                "question": "Posso atender meus clientes via WhatsApp diretamente na loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim — você pode adicionar o botão flutuante do WhatsApp ou usar aplicativos de atendimento para centralizar conversas e agilizar o suporte. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40281-solucoes\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais</span></a><span style=\"color: rgb(95, 110, 130); font-size: 11pt\"> na seção Soluções &gt; Atendimento.</span></p>"
+              },
+              {
+                "question": "Quais e-mails automáticos enviam ao cliente? É possível editar?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">A cada atualização de status de pedido, o cliente recebe um e-mail transacional. Nos planos pagos, você pode editar os templates, incluir sua marca, além de ativar e-mails de carrinho abandonado.</span></p>"
+              },
+              {
+                "question": "Como ativar a autenticação em duas etapas na minha loja?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Para aumentar a segurança do acesso ao painel administrativo da sua loja, é recomendável ativar a autenticação em duas etapas. Isso adiciona uma camada extra de proteção, exigindo um código gerado por aplicativo de autenticação além da senha padrão. Para ativar, acesse o painel da sua loja, vá em Dados Cadastrais e siga as instruções na seção de autenticação em duas etapas. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/articles/4816564-como-ativar-a-autenticacao-em-duas-etapas?utm_source=chatgpt.com\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais.</span></a></p>"
+              },
+              {
+                "question": "Posso gerir minha loja pelo celular?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Sim! A Loja Integrada oferece o ConectaLI, o aplicativo oficial desenvolvido para simplificar a gestão da sua loja virtual diretamente pelo celular.</span></p>"
+              },
+              {
+                "question": "Onde encontro ajuda e canais oficiais da Loja Integrada?",
+                "answear": "<p><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Na Central de Ajuda &gt; Conheça a Loja Integrada, você encontra tutoriais, FAQ, canais de atendimento, comunidade e comunicados oficiais. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://ajuda.lojaintegrada.com.br/pt-BR/collections/40268-conheca-a-loja-integrada\"><span style=\"color: rgb(95, 110, 130); font-size: 11pt\">Saiba mais sobre a Central de Ajuda.</span></a></p>"
+              }
+            ],
+            "questionsTitleColor": "#00363A",
+            "questionsDivisionLineColor": "#E1E1E1",
+            "bottomTitleColor": "",
+            "bottomCaptionColor": "",
+            "backgroundColor": "#FBFAF9",
+            "hideSection": false,
+            "caption": "Quais são os meios de pagamento integrados?"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/FooterV4.tsx",
+            "title": {
+              "text": "<p></p>",
+              "color": "#00363A",
+              "fontWeight": "650",
+              "font": "Lektorat Display var",
+              "letterSpacing": "-0.3px",
+              "lineHeight": "100%",
+              "fontSize": "7.26vw"
+            },
+            "cta": [
+              {
+                "text": "Crie sua loja grátis",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "textColor": "#ffffff",
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Create Store",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "10px",
+                  "width": "160px"
+                },
+                "gtmProps": {
+                  "customSection": "lp-komea",
+                  "customType": "footer",
+                  "customTitle": "entre-na-lista-de-espera"
+                },
+                "singleLine": false,
+                "createStorePlanId": "172"
+              }
+            ],
+            "subscribe": {},
+            "text": "<p></p>",
+            "textProps": {
+              "color": "#00363A",
+              "fontWeight": "500",
+              "fontSize": "3.02vw"
+            },
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/c4f693bf-3e89-4fd5-8c4f-f3b72ea49307/Logo-lojaintegrada.png",
+                "width": 337,
+                "height": 50,
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/6345d6ff-6c7f-469f-aa9b-e92fb76be915/background-loja-integrada.png",
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "backgroundColor": "linear-gradient(113.01deg, #E4F808 -20.04%, #BAFFFE 54.12%, #F1F987 95.81%)",
+              "use": "image"
+            },
+            "socialMedias": [
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
+                  "alt": "Instagram",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "href": "https://www.instagram.com/lojaintegrada/"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
+                  "alt": "youtube",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "href": "https://www.youtube.com/@LojaIntegrada"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
+                  "alt": "tik tok",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "href": "https://www.tiktok.com/@lojaintegrada"
+              }
+            ],
+            "ctaFloatingImage": {
+              "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
+              "horizontalPosition": "-16px",
+              "verticalPosition": "-20px",
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "titleImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/e6344500-983e-4196-8ebe-d301c83fe257/Alivie-o-orre-que-e-vender-online.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/FooterV4.tsx",
+            "title": {
+              "text": "<p></p>",
+              "color": "#00363A",
+              "fontWeight": "650",
+              "font": "Lektorat Display var",
+              "letterSpacing": "-0.3px",
+              "lineHeight": "100%"
+            },
+            "cta": [
+              {
+                "text": "Crie sua loja grátis",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "textColor": "#ffffff",
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Create Store",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "15px"
+                },
+                "gtmProps": {
+                  "customTitle": "entre-na-lista-de-espera",
+                  "customType": "footer",
+                  "customSection": "lp-komea"
+                },
+                "createStorePlanId": "172"
+              }
+            ],
+            "subscribe": {},
+            "text": "<p></p>",
+            "textProps": {
+              "color": "#00363A",
+              "fontWeight": "500"
+            },
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/c3e7cbc4-dd2f-4b0f-9aac-1fc0ca08dd16/Logo-lojaintegrada-rodape.png",
+                "height": 50,
+                "width": 337,
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/3a3d34ba-57c5-4322-8fb1-9bc8988139dc/bg-footer.webp",
+                "loading": "lazy",
+                "fetchPriority": "low"
+              },
+              "backgroundColor": "",
+              "use": "image"
+            },
+            "socialMedias": [
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
+                  "alt": "Instagram",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "href": "https://www.instagram.com/lojaintegrada/"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
+                  "alt": "youtube",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "href": "https://www.youtube.com/@LojaIntegrada"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
+                  "alt": "tik tok",
+                  "loading": "lazy",
+                  "fetchPriority": "low"
+                },
+                "href": "https://www.tiktok.com/@lojaintegrada"
+              }
+            ],
+            "ctaFloatingImage": {
+              "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
+              "horizontalPosition": "-16px",
+              "verticalPosition": "-20px",
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "titleImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/e6344500-983e-4196-8ebe-d301c83fe257/Alivie-o-orre-que-e-vender-online.svg",
+              "loading": "lazy",
+              "fetchPriority": "low"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/KomeaWaitListFormModal.tsx",
+      "title": "<p>Preencha o formulário para</p><p>entrar na lista de espera</p>",
+      "titleTextProps": {
+        "letterSpacing": "-0.3px",
+        "fontFamily": "Lektorat Display var",
+        "fontWeight": "700",
+        "color": ""
+      },
+      "text": "<p> <span style=\"color: rgb(95, 110, 130); font-size: 14px\">🐝</span>Importante:</p><p>Para testar o KOMEA, é preciso ter uma loja ativa na Loja Integrada. Não tem ainda? A gente te ajuda a criar!</p>",
+      "emailConsent": "<p>Aceito receber comunicações da Loja Integrada.</p>",
+      "emailConsentTextProps": {
+        "fontSize": "12px",
+        "color": "#5F6E82"
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "text": "<p style=\"text-align: center\">Monte sua loja com mais segurança e sem custo</p>",
+            "textProps": {
+              "color": "#FFFFFF",
+              "fontFamily": "Inter",
+              "fontSize": "12px",
+              "fontWeight": "600"
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Medium",
+                "text": "Ver planos",
+                "textColor": "#0000000",
+                "backgroundColor": "#ffffff",
+                "borderColor": "",
+                "href": "#plans",
+                "singleLine": false
+              },
+              {
+                "type": "Button",
+                "size": "Medium",
+                "openModal": "Create Store",
+                "text": "Abrir loja",
+                "textColor": "#FFFFFF",
+                "createStorePlanId": "172"
+              }
+            ],
+            "backgroundColor": "#00363A",
+            "xButtonColor": "#ffffff",
+            "centerContent": true,
+            "hideXButton": true,
+            "hideSection": false
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "hideSection": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "text": "<p></p>",
+            "textProps": {
+              "color": "#FFFFFF",
+              "fontFamily": "Inter",
+              "fontSize": "12px",
+              "fontWeight": "600"
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Medium",
+                "text": "Crie sua loja grátis",
+                "textColor": "#0000000",
+                "backgroundColor": "#ffffff",
+                "borderColor": "",
+                "singleLine": false,
+                "showIcon": false
+              }
+            ],
+            "backgroundColor": "#00363A",
+            "xButtonColor": "#ffffff",
+            "centerContent": true,
+            "hideXButton": true,
+            "hideSection": true,
+            "height": "80px"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "tablet": true,
+            "desktop": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/FixedBottom.tsx",
+            "hideSection": false,
+            "text": "<p style=\"text-align: center\"><strong>Bônus de boas-vindas: </strong>assine até sexta, 12h e tire dúvidas ao vivo com um especialista. 🚀</p>",
+            "textProps": {
+              "color": "#FFFFFF",
+              "fontFamily": "Inter",
+              "fontSize": "12px",
+              "fontWeight": "600"
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Medium",
+                "text": "Ver planos",
+                "textColor": "#0000000",
+                "backgroundColor": "#ffffff",
+                "borderColor": "",
+                "href": "#plans",
+                "singleLine": false
+              },
+              {
+                "type": "Button",
+                "size": "Medium",
+                "text": "Saiba mais",
+                "textColor": "#FFFFFF",
+                "href": "#Masterclass"
+              }
+            ],
+            "backgroundColor": "#00363A",
+            "xButtonColor": "#ffffff",
+            "centerContent": true,
+            "hideXButton": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/BlackFridayHubspotForm.tsx",
+            "title": "<p><span>Preencha seus dados para se inscrever</span></p>",
+            "titleTextProps": {
+              "fontSize": "22px"
+            },
+            "submitButton": {
+              "text": "Quero minha vaga gratuita na Live",
+              "backgroundColor": "",
+              "textColor": ""
+            },
+            "successPage": {
+              "title": "<p><span>Inscrição confirmada!</span></p>",
+              "titleTextProps": {
+                "fontSize": "22px"
+              },
+              "text": "<p><span>Você já está confirmado para a Live exclusiva dia 22de Outubro ao vivo no Youtube da loja Integrada, enviaremos os detalhes por e-mail. prepare-se para aprender com Thiago Franco estratégias para vender mais na Black Friday.</span></p>",
+              "text2": "<p><span>Enquanto isso, não espere até Outubro: Acesse agora o Guia Prático de Preparação para a Black Friday e comece a aplicar as estratégias hoje mesmo.</span></p>",
+              "text2Props": {
+                "color": "#00363A",
+                "fontWeight": "600"
+              },
+              "closeButton": {
+                "text": "Voltar a navegação",
+                "backgroundColor": "",
+                "borderColor": "",
+                "textColor": ""
+              },
+              "cta": [
+                {
+                  "text": "Acessar guia prático",
+                  "textColor": "#ffffff",
+                  "borderColor": "#28C3C3",
+                  "backgroundColor": "#28C3C3"
+                }
+              ]
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

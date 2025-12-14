@@ -1,0 +1,373 @@
+{
+  "name": "Valide seu negocio v2",
+  "path": "/valide-seu-negocio-v2",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/HeaderV3.tsx",
+              "campaignTimer": {},
+              "hideAsideMenu": true,
+              "logo": {
+                "src": "https://assets.decocache.com/lojaintegradar/b152d440-6855-4a11-ad95-2e904da2ae08/logo-da-loja-integrada.svg",
+                "width": 220
+              },
+              "centralizeHeaderContent": false,
+              "noScrollBackgroundColor": "transparent",
+              "backgroundColor": "#F5F9F8"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/device.ts",
+              "mobile": true
+            }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/HeaderV3.tsx",
+              "campaignTimer": {},
+              "hideAsideMenu": true,
+              "logo": {
+                "src": "https://assets.decocache.com/lojaintegradar/b152d440-6855-4a11-ad95-2e904da2ae08/logo-da-loja-integrada.svg"
+              },
+              "centralizeHeaderContent": false,
+              "headerMessage": {}
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p style=\"text-align: justify\">Será que isso<br>vira negócio?</p>",
+              "color": "#00363A",
+              "font": "Lektorat Display var",
+              "fontWeight": "650",
+              "fontSize": "54px",
+              "letterSpacing": "-1px",
+              "lineHeight": "100%",
+              "titleMaxWidth": "680px"
+            },
+            "text": "<p><strong>Um passo a passo de 5 dias</strong> para descobrir se sua ideia tem futuro — antes de gastar um real.<br><br><strong>Em quatro missões rápidas</strong>, você vai usar IA para testar o interesse do público e validar se sua ideia para de pé.</p>",
+            "hubspotForm": {
+              "modal": {
+                "cta": [
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "textColor": "#ffffff",
+                    "href": "https://loja-integrada.notion.site/",
+                    "text": "Acessar material",
+                    "customProps": {
+                      "borderRadius": "5px"
+                    },
+                    "backgroundColor": "#00363A",
+                    "borderColor": "#00363A"
+                  }
+                ],
+                "title": "<p style=\"text-align: center\">Pronto! Agora é hora de<br>tirar sua ideia do papel</p>",
+                "titleTextProps": {
+                  "color": "#00363A",
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "650",
+                  "lineHeight": "110%"
+                },
+                "text": "<p style=\"text-align: center\">Clique abaixo para acessar o passo a passo no Notion e começar sua primeira missão.<br><br>Se quiser trocar ideia com outras pessoas que também estão validando negócios, junte-se ao grupo no WhatsApp!</p>",
+                "textProps": {
+                  "color": "#5F6E82",
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "letterSpacing": "500",
+                  "lineHeight": "110%"
+                }
+              },
+              "show": true,
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "5ba259c2-eb7d-409a-a76e-435fdde1700a",
+              "buttonColor": "#00363A",
+              "buttonWidth": "min",
+              "buttonTextColor": "#ffffff",
+              "inputLabel": "Acesse o passo a passo e teste antes de apostar",
+              "inputLabelColor": "#00363A",
+              "inputLabelBackgroundColor": "rgba(251, 250, 249, 0.40);",
+              "inputLabelWidth": "full",
+              "buttonIcon": false
+            },
+            "hideSection": false,
+            "container": {
+              "backgroundColor": "#fffff",
+              "paddingTop": "100px",
+              "marginBottom": "0",
+              "minHeight": "100vh",
+              "marginTop": "0",
+              "paddingBottom": "0px"
+            },
+            "lcp": false,
+            "sectionBackground": {
+              "backgroundColor": "",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/480bb6ff-d235-497b-9bea-50c596395768/bg.png",
+                "height": "648px"
+              },
+              "use": "image",
+              "customHeight": "100vh "
+            },
+            "tag": {},
+            "textProps": {
+              "fontFamily": "Inter",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "color": "#00363A"
+            },
+            "floatingImage": {},
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/68dec83d-4e3b-47e1-9495-a91eb57279c0/loja-integrada-1.png",
+                "width": 548,
+                "height": 368
+              },
+              "placement": "right",
+              "use": "image",
+              "cornerImage": false
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<h1>Será que a sua ideia vira um negócio de verdade em 2026?</h1>",
+              "color": "#00363A",
+              "font": "Lektorat Display var",
+              "fontWeight": "650",
+              "fontSize": "48px",
+              "letterSpacing": "-2px",
+              "lineHeight": "100%",
+              "titleMaxWidth": "500px"
+            },
+            "text": "<p>Antes de gastar com estoque, anúncio ou plataforma, valide se existe interesse real de compra e se a conta fecha. Siga um passo a passo simples para decidir se vale insistir, ajustar ou mudar de rota e comece o ano com mais clareza.</p>",
+            "hubspotForm": {
+              "modal": {
+                "cta": [
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "textColor": "#ffffff",
+                    "href": "https://loja-integrada.notion.site/",
+                    "text": "Acessar material",
+                    "customProps": {
+                      "borderRadius": "5px"
+                    },
+                    "backgroundColor": "#00363A",
+                    "borderColor": "#00363A"
+                  }
+                ],
+                "title": "<p style=\"text-align: center\">Pronto! Agora é hora de<br>tirar sua ideia do papel</p>",
+                "titleTextProps": {
+                  "color": "#00363A",
+                  "fontFamily": "Inter",
+                  "fontSize": "28px",
+                  "fontWeight": "650",
+                  "lineHeight": "110%"
+                },
+                "text": "<p style=\"text-align: center\">Clique abaixo para acessar o passo a passo no Notion e começar sua primeira missão.<br><br>Se quiser trocar ideia com outras pessoas que também estão validando negócios,<br>junte-se ao grupo no WhatsApp!</p>",
+                "textProps": {
+                  "color": "#5F6E82",
+                  "fontFamily": "Inter",
+                  "fontSize": "16px",
+                  "letterSpacing": "500",
+                  "lineHeight": "110%"
+                }
+              },
+              "show": true,
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "5ba259c2-eb7d-409a-a76e-435fdde1700a",
+              "buttonColor": "#00363A",
+              "buttonWidth": "min",
+              "buttonTextColor": "#ffffff",
+              "inputLabel": "Preencha seu e-mail e tenha acesso",
+              "inputLabelColor": "#00363A",
+              "inputLabelBackgroundColor": "rgba(251, 250, 249, 0.40);",
+              "inputLabelWidth": "full",
+              "buttonIcon": false
+            },
+            "hideSection": false,
+            "container": {
+              "backgroundColor": "#fffff",
+              "paddingTop": "0px",
+              "marginBottom": "0",
+              "minHeight": "100vh",
+              "marginTop": "0",
+              "paddingBottom": "0px"
+            },
+            "lcp": false,
+            "sectionBackground": {
+              "backgroundColor": "",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/480bb6ff-d235-497b-9bea-50c596395768/bg.png",
+                "height": "648px"
+              },
+              "use": "image",
+              "customHeight": "100vh "
+            },
+            "tag": {
+              "text": "<p>Guia prático gratuito</p>",
+              "backgroundColor": "#FFE6A0",
+              "tagPlacement": "left",
+              "textProps": {
+                "color": "#00363A"
+              }
+            },
+            "textProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "color": "#00363A",
+              "lineHeight": "110%"
+            },
+            "floatingImage": {},
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/68dec83d-4e3b-47e1-9495-a91eb57279c0/loja-integrada-1.png",
+                "width": 548,
+                "height": 368
+              },
+              "placement": "right",
+              "use": "image",
+              "cornerImage": false
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/GridCards.tsx",
+        "tag": {
+          "text": "<h2 style=\"text-align: center\"><span style=\"font-size: 32pt\">Você não precisa</span><br><span style=\"font-size: 32pt\">empreender </span><span style=\"color: #28c3c3; font-size: 32pt\">“no escuro”</span></h2>",
+          "textProps": {
+            "fontFamily": "Lektorat Display var",
+            "color": "#00363A",
+            "fontSize": "Lektorat Display var",
+            "fontWeight": "650",
+            "lineHeight": "200%"
+          }
+        },
+        "title": {
+          "text": "<p style=\"text-align: center\">Se você já vem tentando vender online, talvez reconheça alguns desses sinais e se você se identificou,<br>é sinal de que o seu negócio ainda não foi, de fato, validado.</p>",
+          "color": "#7B7462",
+          "font": "Inter",
+          "fontSize": "16px",
+          "letterSpacing": "-1px;",
+          "fontWeight": "500"
+        },
+        "cards": [
+          {
+            "image": {
+              "position": "center",
+              "src": "https://assets.decocache.com/lojaintegradar/ed5d9ce3-a94c-4ac6-931b-4d9a882fcfe4/svgexport-13.svg",
+              "width": 64,
+              "height": 64
+            },
+            "title": "<p style=\"text-align: center\"><span style=\"color: #7b7462; font-size: 11pt\">Você posta, posta… e as vendas não acompanham.</span></p>",
+            "titleTextProps": {
+              "color": "#7B7462",
+              "fontFamily": "inter",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "lineHeight": "100%"
+            }
+          },
+          {
+            "image": {
+              "position": "center",
+              "src": "https://assets.decocache.com/lojaintegradar/ed5d9ce3-a94c-4ac6-931b-4d9a882fcfe4/svgexport-13.svg",
+              "width": 64,
+              "height": 64
+            },
+            "title": "<p style=\"text-align: center\"><span style=\"color: #7b7462; font-size: 11pt\">Já comprou produto ou matéria-prima “no chute” e morre de medo de ficar com tudo encalhado.</span></p>",
+            "titleTextProps": {
+              "color": "#5F6E82",
+              "fontFamily": "inter",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "lineHeight": "100%"
+            }
+          },
+          {
+            "image": {
+              "position": "center",
+              "src": "https://assets.decocache.com/lojaintegradar/ed5d9ce3-a94c-4ac6-931b-4d9a882fcfe4/svgexport-13.svg",
+              "width": 64,
+              "height": 64
+            },
+            "title": "<p style=\"text-align: center\"><span style=\"color: #7b7462; font-size: 11pt\">Trabalha muito e não sabe se o negócio realmente se paga.</span></p>",
+            "titleTextProps": {
+              "color": "#5F6E82",
+              "fontFamily": "inter",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "lineHeight": "100%"
+            }
+          },
+          {
+            "image": {
+              "position": "center",
+              "src": "https://assets.decocache.com/lojaintegradar/ed5d9ce3-a94c-4ac6-931b-4d9a882fcfe4/svgexport-13.svg",
+              "width": 64,
+              "height": 64
+            },
+            "title": "<p style=\"text-align: center\"><span style=\"color: #7b7462; font-size: 11pt\">Vive pulando de nicho em nicho, sem um plano claro do que testar primeiro.</span></p>",
+            "titleTextProps": {
+              "color": "#5F6E82",
+              "fontFamily": "inter",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "lineHeight": "100%"
+            }
+          }
+        ],
+        "cardsBackgroundColor": "#E4F3F3",
+        "cardsGap": "20px",
+        "cardsContainerWidth": "1200px",
+        "paddingTop": "60px",
+        "cardsHoverBackgroundColor": "#EEFFFF",
+        "paddingBottom": "60px"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "image": "",
+    "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojaintegradar/92453a09-1a8b-4ba4-8861-b84939dde7d3/favicon-li.png",
+    "type": "website",
+    "title": "Venda mais com soluções Inteligentes para a sua loja virtual",
+    "description": "Venda mais com a Loja Integrada! Nossa plataforma oferece IA, automação e análise de dados para criar lojas virtuais personalizadas e eficientes."
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

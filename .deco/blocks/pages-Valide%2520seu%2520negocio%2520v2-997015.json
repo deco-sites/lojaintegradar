@@ -262,9 +262,6 @@
       ]
     },
     {
-      "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
-    },
-    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/GridCards.tsx",
@@ -357,8 +354,32 @@
         "cardsContainerWidth": "1200px",
         "paddingTop": "60px",
         "cardsHoverBackgroundColor": "#EEFFFF",
-        "paddingBottom": "60px"
+        "paddingBottom": "120px"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/FixedBottom.tsx",
+        "hideXButton": true,
+        "centerContent": true,
+        "cta": [
+          {
+            "type": "Button",
+            "size": "Medium",
+            "text": "Valide seu negócio",
+            "href": "#2877259357-0",
+            "textColor": "#ffffff",
+            "backgroundColor": "#00363A",
+            "borderColor": "#00363A"
+          }
+        ],
+        "backgroundColor": "rgba(255, 255, 255, 0.50);",
+        "height": "40px"
+      }
+    },
+    {
+      "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
     }
   ],
   "seo": {

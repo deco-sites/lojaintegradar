@@ -605,7 +605,7 @@
             },
             "lcp": false,
             "sectionBackground": {
-              "backgroundColor": "linear-gradient(188deg, #F7F6F2 28.44%, #28C3C3 190.56%);",
+              "backgroundColor": "linear-gradient(188deg, rgba(247, 246, 242, 0.83) 28.42%, #28C3C3 122.2%);",
               "image": {},
               "use": "image"
             },
@@ -969,7 +969,7 @@
               {
                 "type": "Button",
                 "size": "Small",
-                "text": "Comece hoje mesmo",
+                "text": "Valide hoje mesmo",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
                 "borderColor": "#00363A",
@@ -1007,7 +1007,7 @@
                   "color": "#00363A",
                   "lineHeight": "100%"
                 },
-                "markdownColor": "#28c3c3",
+                "markdownColor": "#fffff",
                 "markdownHorizontalPosition": "-0.5%",
                 "markdownVerticalScale": "50%",
                 "markdownVerticalPosition": "20%"
@@ -1035,14 +1035,14 @@
                 "letterSpacing": "-0.3px"
               },
               "bulletPointsIcon": {
-                "src": "https://assets.decocache.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
+                "src": "https://assets.decocache.com/lojaintegradar/195cf9cf-31a2-4168-9e31-eb1c1b9d6996/check.svg"
               }
             },
             "container": {
               "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);",
               "backgroundMedia": {
                 "image": {
-                  "src": "https://assets.decocache.com/komea/00a0328e-ec60-431b-ae6c-eec57e579fe7/bg-um-time-de-agentes.png",
+                  "src": "https://assets.decocache.com/lojaintegradar/2ddaee6f-2f84-4a67-88cd-cb1a5e482c9e/bg-card.png",
                   "width": 1200,
                   "height": 418
                 },
@@ -1168,6 +1168,219 @@
       "variants": [
         {
           "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<p style=\"text-align: justify\">Será que isso<br>vira negócio?</p>",
+              "color": "#00363A",
+              "font": "Lektorat Display var",
+              "fontWeight": "650",
+              "fontSize": "54px",
+              "letterSpacing": "-1px",
+              "lineHeight": "100%",
+              "titleMaxWidth": "680px"
+            },
+            "text": "<p><strong>Um passo a passo de 5 dias</strong> para descobrir se sua ideia tem futuro — antes de gastar um real.<br><br><strong>Em quatro missões rápidas</strong>, você vai usar IA para testar o interesse do público e validar se sua ideia para de pé.</p>",
+            "hubspotForm": {
+              "modal": {
+                "cta": [
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "textColor": "#ffffff",
+                    "href": "https://loja-integrada.notion.site/",
+                    "text": "Acessar material",
+                    "customProps": {
+                      "borderRadius": "5px"
+                    },
+                    "backgroundColor": "#00363A",
+                    "borderColor": "#00363A"
+                  }
+                ],
+                "title": "<p style=\"text-align: center\">Pronto! Agora é hora de<br>tirar sua ideia do papel</p>",
+                "titleTextProps": {
+                  "color": "#00363A",
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "650",
+                  "lineHeight": "110%"
+                },
+                "text": "<p style=\"text-align: center\">Clique abaixo para acessar o passo a passo no Notion e começar sua primeira missão.<br><br>Se quiser trocar ideia com outras pessoas que também estão validando negócios, junte-se ao grupo no WhatsApp!</p>",
+                "textProps": {
+                  "color": "#5F6E82",
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "letterSpacing": "500",
+                  "lineHeight": "110%"
+                }
+              },
+              "show": true,
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "5ba259c2-eb7d-409a-a76e-435fdde1700a",
+              "buttonColor": "#00363A",
+              "buttonWidth": "min",
+              "buttonTextColor": "#ffffff",
+              "inputLabel": "Acesse o passo a passo e teste antes de apostar",
+              "inputLabelColor": "#00363A",
+              "inputLabelBackgroundColor": "rgba(251, 250, 249, 0.40);",
+              "inputLabelWidth": "full",
+              "buttonIcon": false
+            },
+            "hideSection": false,
+            "container": {
+              "backgroundColor": "#fffff",
+              "paddingTop": "100px",
+              "marginBottom": "0",
+              "minHeight": "100vh",
+              "marginTop": "0",
+              "paddingBottom": "0px"
+            },
+            "lcp": false,
+            "sectionBackground": {
+              "backgroundColor": "",
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/480bb6ff-d235-497b-9bea-50c596395768/bg.png",
+                "height": "648px"
+              },
+              "use": "image",
+              "customHeight": "100vh "
+            },
+            "tag": {},
+            "textProps": {
+              "fontFamily": "Inter",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "color": "#00363A"
+            },
+            "floatingImage": {},
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/68dec83d-4e3b-47e1-9495-a91eb57279c0/loja-integrada-1.png",
+                "width": 548,
+                "height": 368
+              },
+              "placement": "right",
+              "use": "image",
+              "cornerImage": false
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV4.tsx",
+            "title": {
+              "text": "<h2>Quem está por trás<br>dessa metodologia</h2>",
+              "color": "#00363A",
+              "font": "Lektorat Display var",
+              "fontWeight": "650",
+              "fontSize": "48px",
+              "letterSpacing": "-2px",
+              "lineHeight": "100%",
+              "titleMaxWidth": "500px"
+            },
+            "text": "<p>Lucas Bacic é CEO da Loja Integrada, onde acompanha há anos a jornada de milhares de pequenos negócios online. Designer e líder de produto, cofundou a agência Savia (adquirida pela VTEX em 2019) e liderou o posicionamento da VTEX no IPO de 2021.</p>",
+            "hubspotForm": {
+              "modal": {
+                "cta": [
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "textColor": "#ffffff",
+                    "href": "https://loja-integrada.notion.site/",
+                    "text": "Acessar material",
+                    "customProps": {
+                      "borderRadius": "5px"
+                    },
+                    "backgroundColor": "#00363A",
+                    "borderColor": "#00363A"
+                  }
+                ],
+                "title": "<p style=\"text-align: center\">Pronto! Agora é hora de<br>tirar sua ideia do papel</p>",
+                "titleTextProps": {
+                  "color": "#00363A",
+                  "fontFamily": "Inter",
+                  "fontSize": "28px",
+                  "fontWeight": "650",
+                  "lineHeight": "110%"
+                },
+                "text": "<p style=\"text-align: center\">Clique abaixo para acessar o passo a passo no Notion e começar sua primeira missão.<br><br>Se quiser trocar ideia com outras pessoas que também estão validando negócios,<br>junte-se ao grupo no WhatsApp!</p>",
+                "textProps": {
+                  "color": "#5F6E82",
+                  "fontFamily": "Inter",
+                  "fontSize": "16px",
+                  "letterSpacing": "500",
+                  "lineHeight": "110%"
+                }
+              },
+              "show": true,
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "5ba259c2-eb7d-409a-a76e-435fdde1700a",
+              "buttonColor": "#00363A",
+              "buttonWidth": "min",
+              "buttonTextColor": "#ffffff",
+              "inputLabel": "Preencha seu e-mail e tenha acesso",
+              "inputLabelColor": "#00363A",
+              "inputLabelBackgroundColor": "rgba(251, 250, 249, 0.40);",
+              "inputLabelWidth": "full",
+              "buttonIcon": false
+            },
+            "hideSection": false,
+            "container": {
+              "backgroundColor": "#fffff",
+              "paddingTop": "0px",
+              "marginBottom": "0",
+              "marginTop": "0",
+              "paddingBottom": "0px"
+            },
+            "lcp": false,
+            "sectionBackground": {
+              "backgroundColor": "",
+              "image": {},
+              "use": "image"
+            },
+            "tag": {
+              "text": "<p>Guia prático gratuito</p>",
+              "backgroundColor": "#FFE6A0",
+              "tagPlacement": "left",
+              "textProps": {
+                "color": "#00363A"
+              }
+            },
+            "textProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "color": "#00363A",
+              "lineHeight": "110%"
+            },
+            "floatingImage": {},
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/69eeb41e-c245-4cfe-9cce-10b50b72d9be/Lucas-Bacic-Ceo-lojaIntegrada.svg",
+                "width": 548,
+                "height": 368
+              },
+              "placement": "left",
+              "use": "image",
+              "cornerImage": false
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/FixedBottom.tsx",
@@ -1196,41 +1409,6 @@
     },
     {
       "__resolveType": "site/sections/ScrollOnLoadScript.tsx"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/BigImageHeroV2.tsx",
-        "title": "<p style=\"text-align: center\">Você não precisa empreender “no escuro”</p>",
-        "caption": "<p style=\"text-align: center\">Se você já vem tentando vender online, talvez reconheça alguns desses sinais e se você se identificou, é sinal de que o seu negócio ainda não foi, de fato, validado.</p>",
-        "features": [
-          {
-            "text": "Você posta, posta… e as vendas não acompanham.",
-            "icon": {
-              "src": "https://assets.decocache.com/lojaintegradar/ed5d9ce3-a94c-4ac6-931b-4d9a882fcfe4/svgexport-13.svg",
-              "width": 60
-            }
-          },
-          {
-            "text": "Você posta, posta… e as vendas não acompanham.",
-            "icon": {
-              "src": "https://assets.decocache.com/lojaintegradar/ed5d9ce3-a94c-4ac6-931b-4d9a882fcfe4/svgexport-13.svg"
-            }
-          },
-          {
-            "text": "Você posta, posta… e as vendas não acompanham.",
-            "icon": {
-              "src": "https://assets.decocache.com/lojaintegradar/ed5d9ce3-a94c-4ac6-931b-4d9a882fcfe4/svgexport-13.svg"
-            }
-          },
-          {
-            "text": "Você posta, posta… e as vendas não acompanham.",
-            "icon": {
-              "src": "https://assets.decocache.com/lojaintegradar/ed5d9ce3-a94c-4ac6-931b-4d9a882fcfe4/svgexport-13.svg"
-            }
-          }
-        ]
-      }
     }
   ],
   "seo": {

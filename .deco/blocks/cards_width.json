@@ -1,0 +1,387 @@
+{
+  "__resolveType": "website/flags/multivariate/section.ts",
+  "variants": [
+    {
+      "value": {
+        "__resolveType": "site/sections/Carousel.tsx",
+        "title": "<p>Crie experiências de<br><span style=\"color: rgb(40, 195, 195)\">marca profissional.</span></p>",
+        "cta": [],
+        "slides": [
+          {
+            "textPlacement": "Top",
+            "icon": {},
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {}
+            },
+            "title": "Provador Virtual",
+            "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Reduza devoluções e dúvidas. Seu cliente visualiza o produto no corpo, direto da tela.</span></p>",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/f50ed4fc-6126-4918-ac61-a8178f68dce2/provador-virtual.png",
+              "height": 484,
+              "width": 456
+            },
+            "textColor": "#00363A",
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "140%"
+            },
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "useBackground": "image"
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {},
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {}
+            },
+            "title": "Stories em páginas de produto",
+            "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Transforme sua loja em uma extensão do seu Instagram — com conteúdo visual e envolvente.</span></p>",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/81955289-25d7-463a-b38f-c7c7d6911fcf/stories-pagina-produto-mobile.png",
+              "height": 484,
+              "width": 456
+            },
+            "textColor": "#00363A",
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "140%"
+            },
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "useBackground": "image"
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {},
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {}
+            },
+            "title": "Cashback e indicações",
+            "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa. Mais recompra, mais visibilidade.</span></p>",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/bef2b1d4-ed96-4bc9-9f3b-056335034269/cashback.png",
+              "height": 484,
+              "width": 456
+            },
+            "textColor": "#00363A",
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "140%"
+            },
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "useBackground": "image"
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {},
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {}
+            },
+            "title": "Monitore vendas de cada influenciador ",
+            "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Acompanhe vendas e comissões em tempo real e escalesuas campanhas com segurança.</span></p>",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/7f1994c5-fd4d-4001-b375-e721f924f43d/afiliados.png",
+              "height": 484,
+              "width": 456
+            },
+            "textColor": "#00363A",
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "140%"
+            },
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "useBackground": "image"
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {},
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {}
+            },
+            "title": "Trocas e devoluções com inteligência",
+            "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Trocas e devoluções sem fricção: seu cliente faz tudo sozinho, você economiza tempo, reduz atrito e ainda ume nta a recompra.</span></p>",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/4f383594-c5c8-4688-acd4-dacf926166ae/trocas-e-devolucoes-mobile.png",
+              "height": 484,
+              "width": 456
+            },
+            "textColor": "#00363A",
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "140%"
+            },
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "useBackground": "image"
+          }
+        ],
+        "backgroundColor": "#FFFFF",
+        "paddingTop": "60px",
+        "paddingBottom": "0px",
+        "arrows": true,
+        "titleTextProps": {
+          "fontSize": "30px",
+          "fontWeight": "600",
+          "lineHeight": "100%"
+        },
+        "titleFont": "Lektorat Display var",
+        "titleColor": "#00363A",
+        "captionColor": "#5F6E82",
+        "captionFont": "Inter",
+        "captionTextProps": {
+          "fontSize": "14px",
+          "fontWeight": "500"
+        },
+        "arrowsColor": "#00363A",
+        "createStoreCta": {
+          "backgroundColor": "#00363A",
+          "showIcon": false,
+          "textColor": "#ffffff",
+          "borderColor": "#00363A",
+          "ctaStyle": "button"
+        },
+        "caption": "<p>Integre sua loja a +80 ferramentas, leve sua loja além<br>do básico — com visual, conversão e fidelização.</p>",
+        "titlePaddingBottom": "10px"
+      },
+      "rule": {
+        "__resolveType": "website/matchers/device.ts",
+        "mobile": true
+      }
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/Carousel.tsx",
+        "title": "<p>Integre sua loja a +80 ferramentas que criam  <span style=\"color: rgb(40, 195, 195)\">experiências de marca profissional.</span></p>",
+        "cta": [
+          {
+            "textColor": "#ffffff",
+            "backgroundColor": "#00363A",
+            "borderColor": "#00363A",
+            "text": "Ver planos e assinar",
+            "href": "#plans",
+            "ctaStyle": "button"
+          }
+        ],
+        "slides": [
+          {
+            "textPlacement": "Top",
+            "icon": {},
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {}
+            },
+            "title": "Provador Virtual",
+            "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Reduza devoluções e dúvidas. Seu cliente visualiza o produto no corpo, direto da tela.</span></p>",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/0ac32c29-9b51-4217-a5da-0753caa16f21/Provador-virtual.webp",
+              "height": 550,
+              "width": 410
+            },
+            "textColor": "#00363A",
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "140%"
+            },
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "useBackground": "image"
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {},
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {}
+            },
+            "title": "Stories em páginas de produto",
+            "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Transforme sua loja em uma extensão do seu Instagram — com conteúdo visual e envolvente.</span></p>",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/92ebd838-a09e-47e0-bfdc-982381522b16/stories-na-pagina.webp",
+              "height": 550,
+              "width": 410
+            },
+            "textColor": "#00363A",
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "140%"
+            },
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "useBackground": "image"
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {},
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {}
+            },
+            "title": "Cashback e indicações",
+            "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Fidelize clientes com programas de recompensa. Mais recompra, mais visibilidade.</span></p>",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/4f02fb01-dc40-4c78-9732-2c32ce044268/cashback.webp",
+              "height": 550,
+              "width": 410
+            },
+            "textColor": "#00363A",
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "140%"
+            },
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "useBackground": "image"
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {},
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {}
+            },
+            "title": "Monitore vendas de cada influenciador com precisão",
+            "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Acompanhe vendas e comissões em tempo real e escalesuas campanhas com segurança.</span></p>",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/de44fdc3-4041-4823-835f-d3b71711a254/influenciadores.webp",
+              "height": 550,
+              "width": 410
+            },
+            "textColor": "#00363A",
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "140%"
+            },
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "useBackground": "image"
+          },
+          {
+            "textPlacement": "Top",
+            "icon": {},
+            "bulletPoints": {
+              "items": [],
+              "bulletPointsIcon": {}
+            },
+            "title": "Gerencie trocas e devoluções com inteligência",
+            "caption": "<p><span style=\"color: rgb(95, 110, 130)\">Trocas e devoluções sem fricção: seu cliente faz tudo sozinho, você economiza tempo, reduz atrito e ainda ume nta a recompra.</span></p>",
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/lojaintegradar/e7be734a-e74f-45e8-bef4-d26e29feedaa/troca-produto.webp",
+              "height": 550,
+              "width": 410
+            },
+            "textColor": "#00363A",
+            "titleTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "140%"
+            },
+            "captionTextProps": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "500",
+              "lineHeight": "140%"
+            },
+            "useBackground": "image"
+          }
+        ],
+        "backgroundColor": "#FFFFF",
+        "paddingTop": "60px",
+        "paddingBottom": "60px",
+        "arrows": true,
+        "titleTextProps": {
+          "fontSize": "46px",
+          "fontWeight": "650"
+        },
+        "titleFont": "Lektorat Display var",
+        "titleColor": "#00363A",
+        "captionColor": "#5F6E82",
+        "captionFont": "Inter",
+        "captionTextProps": {
+          "fontSize": "16px",
+          "fontWeight": "500"
+        },
+        "arrowsColor": "#00363A",
+        "createStoreCta": {
+          "backgroundColor": "",
+          "showIcon": false,
+          "textColor": "",
+          "borderColor": "",
+          "ctaStyle": "button",
+          "planId": "172"
+        },
+        "caption": "<p>Com parceiros estratégicos, leve sua loja além do básico — com visual, conversão e fidelização.</p>",
+        "titlePaddingBottom": "10px",
+        "containerWidth": "1270px",
+        "slidesGap": "20px",
+        "slidesWidth": "410px",
+        "slidesHeight": "550px"
+      },
+      "rule": {
+        "__resolveType": "website/matchers/always.ts"
+      }
+    }
+  ]
+}

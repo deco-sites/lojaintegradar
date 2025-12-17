@@ -206,7 +206,7 @@
               "buttonColor": "#00363A",
               "buttonWidth": "min",
               "buttonTextColor": "#ffffff",
-              "inputLabel": "Preencha seu e-mail e tenha acesso",
+              "inputLabel": "Acessar com e-mail",
               "inputLabelColor": "#00363A",
               "inputLabelBackgroundColor": "rgba(251, 250, 249, 0.40);",
               "inputLabelWidth": "full",
@@ -391,12 +391,12 @@
                 }
               }
             ],
-            "backgroundColor": "#FFFFF",
+            "backgroundColor": "#F8F7F5",
             "paddingTop": "120px",
-            "paddingBottom": "120px",
+            "paddingBottom": "32px",
             "arrows": false,
             "titleTextProps": {
-              "fontSize": "32px",
+              "fontSize": "42px",
               "fontWeight": "650"
             },
             "titleFont": "Lektorat Display var",
@@ -589,7 +589,7 @@
               "buttonColor": "#00363A",
               "buttonWidth": "min",
               "buttonTextColor": "#ffffff",
-              "inputLabel": "Preencha seu e-mail e tenha acesso",
+              "inputLabel": "Acessar com e-mail",
               "inputLabelColor": "#00363A",
               "inputLabelBackgroundColor": "rgba(255, 255, 255, 0.3) ",
               "inputLabelWidth": "full",
@@ -853,12 +853,12 @@
       "section": {
         "__resolveType": "site/sections/Banner.tsx",
         "image": {
-          "src": "https://assets.decocache.com/lojaintegradar/9f412dd9-afa8-4321-a6dd-1950660b33ea/linha-tempo-passo-a-passo.svg",
+          "src": "https://assets.decocache.com/lojaintegradar/e87bc96f-4af7-4249-a9a8-c25b9050b2ab/linha-tempo-passo-a-passo.png",
           "width": 1120,
-          "height": 278
+          "height": 664
         },
         "containerWidth": "1120px",
-        "containerHeight": "278px",
+        "containerHeight": "664px",
         "link": {
           "href": "#2877259357-0"
         },
@@ -1323,9 +1323,9 @@
               "buttonColor": "#00363A",
               "buttonWidth": "min",
               "buttonTextColor": "#ffffff",
-              "inputLabel": "Preencha seu e-mail e tenha acesso",
+              "inputLabel": "Acessar com e-mail",
               "inputLabelColor": "#00363A",
-              "inputLabelBackgroundColor": "rgba(251, 250, 249, 0.40);",
+              "inputLabelBackgroundColor": "linear-gradient(188deg, rgba(247, 246, 242, 0.83) 28.42%, #28C3C3 122.2%);  Colors Color format Hex Background colors",
               "inputLabelWidth": "full",
               "buttonIcon": false
             },
@@ -1335,7 +1335,7 @@
               "paddingTop": "0px",
               "marginBottom": "0",
               "marginTop": "0",
-              "paddingBottom": "0px"
+              "paddingBottom": "120px"
             },
             "lcp": false,
             "sectionBackground": {
@@ -1344,19 +1344,19 @@
               "use": "image"
             },
             "tag": {
-              "text": "<p>Guia prático gratuito</p>",
-              "backgroundColor": "#FFE6A0",
+              "text": "<p>Criado por quem vive o e-commerce</p>",
+              "backgroundColor": "#F5EBFF",
               "tagPlacement": "left",
               "textProps": {
-                "color": "#00363A"
+                "color": "#371E55"
               }
             },
             "textProps": {
               "fontFamily": "Inter",
-              "fontSize": "14px",
+              "fontSize": "16px",
               "fontWeight": "500",
-              "color": "#00363A",
-              "lineHeight": "110%"
+              "color": "#7B7462",
+              "lineHeight": "120%"
             },
             "floatingImage": {},
             "media": {
@@ -1368,6 +1368,180 @@
               "placement": "left",
               "use": "image",
               "cornerImage": false
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/FooterV4.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Komea wait list",
+                "text": "Entre na lista de espera",
+                "textColor": "#00363A",
+                "backgroundColor": "#EEFC58",
+                "borderColor": "#EEFC58",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                },
+                "gtmProps": {
+                  "customSection": "lp-komea",
+                  "customType": "footer",
+                  "customTitle": "entre-na-lista-de-espera"
+                }
+              }
+            ],
+            "subscribe": {},
+            "title": {
+              "text": "<p style=\"text-align: center\"><span>Use todo potencial da Loja</span></p><p style=\"text-align: center\"><span>Integrada com Komea</span></p>",
+              "color": "#00363A",
+              "fontWeight": "750",
+              "font": "Lektorat Display var",
+              "letterSpacing": "-0.3px",
+              "lineHeight": "100%",
+              "fontSize": "7.26vw"
+            },
+            "text": "<p style=\"text-align: center\">A Komea é um <strong>lançamento exclusivo para clientes da</strong></p><p style=\"text-align: center\"><strong>Loja Integrada. </strong>Se você já tem sua loja, entre na lista </p><p style=\"text-align: center\">de espera e ative seus agentes de IA.</p>",
+            "textProps": {
+              "color": "#00363A",
+              "fontWeight": "500",
+              "fontSize": "3.02vw"
+            },
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/komea/f69a3164-25fe-4b1c-9e22-bf112ec11f1c/Big-Komea-logo.svg",
+                "width": 1120,
+                "height": 213
+              },
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {},
+              "backgroundColor": "linear-gradient(113.01deg, #E4F808 -20.04%, #BAFFFE 54.12%, #F1F987 95.81%)"
+            },
+            "socialMedias": [
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
+                  "alt": "Instagram"
+                },
+                "href": "https://www.instagram.com/lojaintegrada/"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
+                  "alt": "youtube"
+                },
+                "href": "https://www.youtube.com/@LojaIntegrada"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
+                  "alt": "tik tok"
+                },
+                "href": "https://www.tiktok.com/@lojaintegrada"
+              }
+            ],
+            "ctaFloatingImage": {
+              "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
+              "horizontalPosition": "-16px",
+              "verticalPosition": "-20px"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/FooterV4.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Komea wait list",
+                "text": "Valide agora",
+                "textColor": "#00363A",
+                "backgroundColor": "#EEFC58",
+                "borderColor": "#EEFC58",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                },
+                "gtmProps": {
+                  "customTitle": "entre-na-lista-de-espera",
+                  "customType": "footer",
+                  "customSection": "lp-komea"
+                }
+              }
+            ],
+            "subscribe": {},
+            "title": {
+              "text": "<p style=\"text-align: center\">Quando o risco cai,<br>a clareza aumenta.</p>",
+              "color": "#00363A",
+              "fontWeight": "750",
+              "font": "Lektorat Display var",
+              "letterSpacing": "-0.3px",
+              "lineHeight": "100%"
+            },
+            "text": "<p style=\"text-align: center\">Material gratuito, pensado para empreendedores(as) iniciantes, MEIs e pequenos negócios.<br>Um roteiro rápido para testar se existe demanda, se o preço faz sentido e se essa ideia<br>tem chance de virar um negócio de verdade no novo ano.</p>",
+            "textProps": {
+              "color": "#00363A",
+              "fontWeight": "500"
+            },
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/lojaintegradar/b182ede9-f264-45b1-9935-ed752f2ffa89/logo.svg",
+                "width": 1120,
+                "height": 213
+              },
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {},
+              "backgroundColor": "linear-gradient(113.01deg, #E4F808 -20.04%, #BAFFFE 54.12%, #F1F987 95.81%)"
+            },
+            "socialMedias": [
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
+                  "alt": "Instagram"
+                },
+                "href": "https://www.instagram.com/lojaintegrada/"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
+                  "alt": "youtube"
+                },
+                "href": "https://www.youtube.com/@LojaIntegrada"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
+                  "alt": "tik tok"
+                },
+                "href": "https://www.tiktok.com/@lojaintegrada"
+              }
+            ],
+            "ctaFloatingImage": {
+              "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
+              "horizontalPosition": "-16px",
+              "verticalPosition": "-20px"
             }
           },
           "rule": {

@@ -110,7 +110,21 @@
               "inputLabelColor": "#00363A",
               "inputLabelBackgroundColor": "rgba(251, 250, 249, 0.40);",
               "inputLabelWidth": "full",
-              "buttonIcon": false
+              "buttonIcon": false,
+              "taguing": {
+                "input": {
+                  "custom_section": "valide-seu-negocio",
+                  "custom_title": "email",
+                  "custom_type": "campo",
+                  "event": "interacao"
+                },
+                "button": {
+                  "custom_section": "Callck_email_especialista_lpconv",
+                  "custom_title": "valide-seu-negocio",
+                  "custom_type": "botao",
+                  "event": "clique"
+                }
+              }
             },
             "hideSection": false,
             "container": {
@@ -218,7 +232,19 @@
                 "event": "clique",
                 "custom_section": "Callck_email_especialista_lpconv",
                 "custom_title": "first_section",
-                "custom_type": "botao"
+                "custom_type": "botao",
+                "button": {
+                  "custom_section": "Callck_email_especialista_lpconv",
+                  "custom_title": "valide-seu-negocio",
+                  "custom_type": "botao",
+                  "event": "clique"
+                },
+                "input": {
+                  "custom_section": "valide-seu-negocio",
+                  "custom_title": "email",
+                  "custom_type": "campo",
+                  "event": "interacao"
+                }
               }
             },
             "hideSection": false,

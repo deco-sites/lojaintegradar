@@ -53,12 +53,29 @@ export interface TextProps {
   lineHeight?: string;
 }
 
+export interface TaguingProps {
+  /** @description Eventos de tagueamento que são enviados quando o botão é clicado */
+  button?: {
+    custom_section?: string;
+    custom_title?: string;
+    custom_type?: string;
+    event?: string;
+  }
+  /** @description Eventos de tagueamento que são enviados quando interagido com o input */
+  input?: {
+    custom_section?: string;
+    custom_title?: string;
+    custom_type?: string;
+    event?: string;
+  }
+}
 
 export interface Props {
   show?: boolean;
   region?: string;
   portalId?: string;
   formId?: string;
+  taguing?: TaguingProps;
   /** @format color-input */
   buttonColor?: string;
   /** @format color-input */
@@ -107,7 +124,7 @@ export default function HubspotForm(hubspotForm: Props) {
   const modalId = id + "modal";
   const hubspostFormId = id + "hubspotForm";
 
-  return <div id="hubsportForm" class="max-w-[792px] w-full mx-auto">
+  return <div id={`hubsportForm-${id}`} class="max-w-[792px] w-full mx-auto">
     <label >
       {hubspotForm?.inputLabel && <p
         class={`bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 pl-2.5 lg:pl-4 text-sm lg:text-base text-primary inline-block ${hubspotForm?.inputLabelWidth == 'full' ? "w-full text-center px-1" : "pr-12"}`}
@@ -155,7 +172,7 @@ export default function HubspotForm(hubspotForm: Props) {
     <script defer dangerouslySetInnerHTML={{
       __html: `
     const intervalHubspotForm = setInterval(() => {
-      const getHubspotForm = document.getElementById("hubsportForm");
+      const getHubspotForm = document.getElementById("hubsportForm-${id}");
       if (getHubspotForm) {
         const getHubspotFormButton = getHubspotForm.querySelector(".hs-submit .actions input");
         const getHubspotFormInput = getHubspotForm.querySelector(".hs-email");
@@ -165,10 +182,10 @@ export default function HubspotForm(hubspotForm: Props) {
           getHubspotFormButton.addEventListener('click', function () {  
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
-              'event': 'clique',
-              'custom_section': "lp-komea-inicio:modal-email-confirmado",
-              'custom_type': "botao",
-              'custom_title': "receber-o-jornal"
+              'event': '${hubspotForm.taguing?.button?.event ? hubspotForm.taguing.button.event : 'clique'}',
+              'custom_section': "${hubspotForm.taguing?.button?.custom_section ? hubspotForm.taguing.button.custom_section : 'lp-komea-inicio:modal-email-confirmado'}",
+              'custom_type': "${hubspotForm.taguing?.button?.custom_type ? hubspotForm.taguing.button.custom_type : 'botao'}",
+              'custom_title': "${hubspotForm.taguing?.button?.custom_title ? hubspotForm.taguing.button.custom_title : 'receber-o-jornal'}"
             });
           });
         }
@@ -177,10 +194,10 @@ export default function HubspotForm(hubspotForm: Props) {
           getHubspotFormInput.addEventListener('click', function () {
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
-              'event': 'interacao',
-              'custom_section': "lp-komea-inicio",
-              'custom_type': "campo",
-              'custom_title': "email"
+              'event': '${hubspotForm.taguing?.input?.event ? hubspotForm.taguing.input.event : 'interacao'}',
+              'custom_section': "${hubspotForm.taguing?.input?.custom_section ? hubspotForm.taguing.input.custom_section : 'lp-komea-inicio'}",
+              'custom_type': "${hubspotForm.taguing?.input?.custom_type ? hubspotForm.taguing.input.custom_type : 'campo'}",
+              'custom_title': "${hubspotForm.taguing?.input?.custom_title ? hubspotForm.taguing.input.custom_title : 'email'}"
             });
           });
         }

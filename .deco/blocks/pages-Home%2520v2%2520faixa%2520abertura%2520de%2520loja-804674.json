@@ -4085,8 +4085,8 @@
                 "cta": [],
                 "image": {
                   "src": "https://assets.decocache.com/lojaintegradar/c8690a29-c1ec-4a3d-b22a-bdd95d33db3c/hand-holding-phone.svg",
-                  "height": 414,
-                  "width": 331
+                  "height": "414px",
+                  "width": "331px"
                 },
                 "title": {
                   "text": "<p><span>Suporte facilitado</span></p>",
@@ -4172,7 +4172,8 @@
                 "customEventLabel": "criar-loja-gratis",
                 "customEvent": "CarouselV2"
               }
-            ]
+            ],
+            "title": {}
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

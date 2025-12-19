@@ -189,7 +189,7 @@ function SliderItem({ slide, id, slidesHeight }: {
                 width={backgroundImage.width || 456} 
                 height={backgroundImage.height || 608} 
                 sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 456px"
-                class="w-full h-full object-cover object-top" />
+                class="w-full h-full object-cover" />
         </div>}
         {useBackground == 'video' && backgroundVideo && <video width="456" height="608" autoPlay playsInline muted loading="lazy" loop class="absolute top-0 left-0 z-0 h-full w-full object-cover object-top">
             <source src={backgroundVideo} type="video/mp4" />

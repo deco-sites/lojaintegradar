@@ -1,5 +1,5 @@
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 import { Button } from "site/types/types.ts";
 import Icon from "site/components/ui/Icon.tsx";

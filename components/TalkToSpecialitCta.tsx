@@ -1,6 +1,6 @@
 import { JSX } from 'preact';
 import { useScript } from "@deco/deco/hooks";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 
 const openTalkToSpecialist = () => {

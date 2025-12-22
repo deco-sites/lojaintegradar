@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import extend from "apps/vtex/loaders/product/extend.ts";
 import AiChat from "site/components/AiChat.tsx";
 

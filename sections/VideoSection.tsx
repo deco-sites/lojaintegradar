@@ -1,6 +1,6 @@
 import type { ImageWidget, VideoWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { Head } from "$fresh/runtime.ts";
 

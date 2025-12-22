@@ -1,5 +1,5 @@
 import { useState, useEffect } from "preact/hooks";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import type { Props, Buttons } from "../../sections/HeroTab.tsx";
 import FlexibleButton from "site/islands/FlexibleButtons.tsx";
 

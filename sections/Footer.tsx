@@ -1,5 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import Icon from "site/components/ui/Icon.tsx";
 import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
 

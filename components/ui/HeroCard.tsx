@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import type { Props } from "../../sections/HeroCard.tsx";
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 

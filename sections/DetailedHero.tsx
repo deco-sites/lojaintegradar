@@ -1,6 +1,6 @@
 import type { ImageWidget, VideoWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
 /** @title {{text}} {{underlineText}} */

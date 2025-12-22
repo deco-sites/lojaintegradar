@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import { useId } from "site/sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
 import { HeroMedia } from "site/sections/HeroV2.tsx";

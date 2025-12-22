@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import { useState, useEffect } from "preact/hooks";
 import Icon from "site/components/ui/Icon.tsx";
 import type { Props } from "../../sections/HeroWithTimeV2.tsx";

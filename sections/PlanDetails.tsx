@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useId } from "site/sdk/useId.ts";
 import Slider from "../components/ui/Slider2.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
@@ -196,7 +196,7 @@ function SliderItem({ slide, id }: {
             <h3 class="text-xl font-semibold" style={{ color: bulletPoints.textColor }}>{title}</h3>
             <div class="mt-2.5 text-sm font-normal flex flex-col gap-2.5">
                 {bulletPoints.items && bulletPoints.items.length > 0 && bulletPoints.items.map((item) => (<div class="flex gap-2 items-center">
-                    {bulletPoints.bulletPointsIcon?.src && <Image width={bulletPoints.bulletPointsIcon.width || 12} height={bulletPoints.bulletPointsIcon.height || 12} src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bulletpoint icon"} />}
+                    {bulletPoints.bulletPointsIcon?.src && <img width={bulletPoints.bulletPointsIcon.width || 12} height={bulletPoints.bulletPointsIcon.height || 12} src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bulletpoint icon"} />}
                     <p class="text-[13px] font-normal leading-normal" style={{ color: bulletPoints.textColor }}>{item}</p>
                 </div>))}
             </div>
@@ -254,7 +254,7 @@ export default function PlanDetails({ hideSection, id, title, titleColor, titleT
             {planTag?.text && <div class="absolute w-full top-0 left-0">
                 <div class="w-full max-w-[1200px] mx-auto mt-">
                     <AnimateOnShow divClass="py-2 px-4 ml-7 mt-20 lg:mt-24 bg-primary rounded-[20px] inline-flex gap-2.5" animation="animate-pop-up" style={{ color: planTag.textColor, background: planTag.backgroundColor }}>
-                        {planTag.icon?.src && <Image width={planTag.icon.width || 20} height={planTag.icon.height || 20} src={planTag.icon.src} alt={planTag.icon.alt || "plan tag icon"} />}
+                        {planTag.icon?.src && <img width={planTag.icon.width || 20} height={planTag.icon.height || 20} src={planTag.icon.src} alt={planTag.icon.alt || "plan tag icon"} />}
                         {planTag.text}
                     </AnimateOnShow>
                 </div>
@@ -274,7 +274,7 @@ export default function PlanDetails({ hideSection, id, title, titleColor, titleT
                     <embed width="1440" height="618" src={backgroundVideo} />
                 </object>
             </video>}
-            {useBackground == "image" && backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 618} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top w-full absolute top-0 left-0 -z-10" />}
+            {useBackground == "image" && backgroundImage?.src && <img width={backgroundImage.width || 1440} height={backgroundImage.height || 618} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top w-full absolute top-0 left-0 -z-10" />}
             <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, carouselId, titleTyping, wordDelay || 3000, letterDelay || 100) }} />
             <AnimateOnShow animation="animate-fade-down" divClass="text-2xl lg:text-5xl px-7 lg:px-0 text-center font-semibold max-w-[870px] leading-[120%]">
                 <span style={{ color: titleColor }}>{title}</span>
@@ -286,12 +286,12 @@ export default function PlanDetails({ hideSection, id, title, titleColor, titleT
         </div>
         <div class="h-[-20px] lg:h-[130px] mt-[-20px] lg:mt-[-130px]" />
         <div class={`${!bottomBackground?.src && 'bg-primary'} min-h-[340px] relative`}>
-            {bottomBackground?.src && <Image width={bottomBackground.width || 1440} height={bottomBackground.height || 340} src={bottomBackground.src} alt={bottomBackground.alt || "bottom background image"} class="absolute w-full h-full mt-[-1px] object-cover object-right -z-20" />}
+            {bottomBackground?.src && <img width={bottomBackground.width || 1440} height={bottomBackground.height || 340} src={bottomBackground.src} alt={bottomBackground.alt || "bottom background image"} class="absolute w-full h-full mt-[-1px] object-cover object-right -z-20" />}
             <div class="max-w-[1200px] s1800:max-w-[1365px] mx-auto pb-[72px]">
                 <AnimateOnShow animation="animate-fade-up50" divClass="flex flex-wrap xl:flex-nowrap items-start xl:items-end" delay={300}>
                     <div id={carouselId} class="min-h-min flex flex-col w-full lg:w-[600px] mt-[-20px] lg:mt-[-130px] relative" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
                         <div class="mb-6 hidden lg:flex gap-7">
-                            {slidesTitleIcon && slidesTitleIcon.src && <Image width={slidesTitleIcon.width || 36} height={slidesTitleIcon.height || 24} src={slidesTitleIcon.src} alt={slidesTitleIcon.alt || "slides title icon"} class="object-contain" />}
+                            {slidesTitleIcon && slidesTitleIcon.src && <img width={slidesTitleIcon.width || 36} height={slidesTitleIcon.height || 24} src={slidesTitleIcon.src} alt={slidesTitleIcon.alt || "slides title icon"} class="object-contain" />}
                             {slidesTitle && <h2 class="text-lg font-semibold" style={{ color: slidesTitleColor }}>{slidesTitle}</h2>}
                         </div>
                         <Slider class="carousel carousel-center w-full col-span-full row-span-full" rootId={carouselId} interval={0 && 0 * 1e3} infinite>

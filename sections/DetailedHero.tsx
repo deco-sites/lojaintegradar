@@ -1,6 +1,6 @@
 import type { ImageWidget, VideoWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
-import Image from "apps/website/components/Image.tsx";
+
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
 /** @title {{text}} {{underlineText}} */
@@ -61,7 +61,7 @@ export default function DetailedHero({ hideSection, backgroundColor, title, capt
                 <div class="flex overflow-auto lg:overflow-visible lg:flex-wrap gap-14 gap-y-9">
                     {cards?.map((card, index) => (
                         <AnimateOnShow divClass="min-w-[60vw] lg:min-w-[0] w-[60vw] lg:w-auto lg:max-w-[342px] flex-grow flex flex-col gap-5 mt-4" delay={index * 50} animation="animate-fade-up">
-                            {card.icon?.src && <Image
+                            {card.icon?.src && <img
                                 width={card.icon.width || 39}
                                 height={card.icon.height || 39}
                                 src={card.icon.src}
@@ -74,7 +74,7 @@ export default function DetailedHero({ hideSection, backgroundColor, title, capt
                 </div>
             </div>
             <div class="flex items-center">
-                {image?.src && <Image
+                {image?.src && <img
                     src={image.src}
                     alt={image.alt || "right image"}
                     width={image.width || 515}

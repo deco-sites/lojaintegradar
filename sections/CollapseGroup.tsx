@@ -1,5 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useScript } from "@deco/deco/hooks";
 const onChange = () => {
     const element = event!.currentTarget as HTMLInputElement;
@@ -81,8 +81,8 @@ export default function CollapseGroup({ hideSection, caption, title, collapses, 
                 {collapse.rows.map((row) => (<div class="flex px-7 border-t border-t-base-200" style={{borderColor: collapsesBorderColor}}>
                     {row.items.map((rowItem) => (<div class="px-1 py-7 break-words flex flex-col items-center justify-center" style={{ width: `${100 / row.items.length}%` }}>
                         {rowItem.topCaption && <p class={`text-xs lg:text-sm font-normal w-full ${rowItem.textPosition == "center" && 'text-center'} ${rowItem.textPosition == "right" && 'text-right'} `}>{rowItem.topCaption}</p>}
-                        {rowItem.use == 'check icon' && collapse.checkIcon && collapse.checkIcon.src && <Image height={18} width={18} src={collapse.checkIcon.src} alt={collapse.checkIcon.alt || "check icon"} loading={"lazy"}/>}
-                        {rowItem.use == 'cross icon' && collapse.crossIcon && collapse.crossIcon.src && <Image height={18} width={18} src={collapse.crossIcon.src} alt={collapse.crossIcon.alt || "cross icon"} loading={"lazy"}/>}
+                        {rowItem.use == 'check icon' && collapse.checkIcon && collapse.checkIcon.src && <img height={18} width={18} src={collapse.checkIcon.src} alt={collapse.checkIcon.alt || "check icon"} loading={"lazy"}/>}
+                        {rowItem.use == 'cross icon' && collapse.crossIcon && collapse.crossIcon.src && <img height={18} width={18} src={collapse.crossIcon.src} alt={collapse.crossIcon.alt || "cross icon"} loading={"lazy"}/>}
                         {rowItem.text && <a class={`text-sm lg:text-base font-semibold w-full ${rowItem.textPosition == "center" && 'text-center'} ${rowItem.textPosition == "right" && 'text-right'} ${rowItem.href && 'underline'} `} href={rowItem.href} target="_blank">{rowItem.text}</a>}
                         {rowItem.caption && <p class={`text-xs lg:text-sm font-normal w-full ${!rowItem.text && 'mt-4'} ${rowItem.textPosition == "center" && 'text-center'} ${rowItem.textPosition == "right" && 'text-right'} `}>{rowItem.caption}</p>}
                     </div>))}

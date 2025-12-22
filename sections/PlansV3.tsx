@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
@@ -278,7 +278,7 @@ function SliderItem({ slide, id }: {
 
     return (<div id={id} class={`px-1 lg:px-[28px] w-full `}>
         <div class={`relative w-full h-full rounded-[20px] text-primary-content ${borderColor && 'border'}`} style={{ background: backgroundColor, borderColor: borderColor }}>
-            {backgroundImage?.src && <Image
+            {backgroundImage?.src && <img
                 src={backgroundImage.src}
                 alt={backgroundImage.alt || "plan background image"}
                 width={backgroundImage.width || 300}
@@ -292,7 +292,7 @@ function SliderItem({ slide, id }: {
                             <div class="inline-block rounded-[5px]" style={{ background: tag.backgroundColor }}>
                                 <div class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `}
                                     style={{ background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent', fontFamily: tag.fontFamily, ...tag.textProps }}>
-                                    {tag?.icon?.src && <Image width={tag.icon.width || 20} loading="lazy" decoding="async" fetchPriority="low" height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.alt || "tag icon"}
+                                    {tag?.icon?.src && <img width={tag.icon.width || 20} loading="lazy" decoding="async" fetchPriority="low" height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.alt || "tag icon"}
                                         class="h-5 w-5 object-contain" />}
                                     <div dangerouslySetInnerHTML={{ __html: tag.text }} />
                                 </div>
@@ -369,7 +369,7 @@ function SliderItem({ slide, id }: {
                         </div>
 
                         {bulletPoints?.items?.map((item) => (<div class="flex gap-2.5 text-primary" style={{ marginTop: item.marginTop || "16px" }}>
-                            {(item.icon?.src || bulletPoints.bulletPointsIcon?.src) && <Image
+                            {(item.icon?.src || bulletPoints.bulletPointsIcon?.src) && <img
                                 width={item.icon?.width || bulletPoints.bulletPointsIcon?.width || 18}
                                 height={item.icon?.height || bulletPoints.bulletPointsIcon?.height || 18}
                                 loading="lazy"
@@ -415,7 +415,7 @@ function Plans(props: Props) {
     const id = props.id || carouselId;
     const { title, caption, bottomCta = [], slides, centralizeSlides, switchPaddingBottom, switchPaddingTop, hideSwitch = false, backgroundImage, montlyLabel, annualLabel, annualTagPosition = "below", annualTag, switchBackgroundColor, switchBallColor, annualTagTextColor, arrows, labelColor, disabledLabelColor, annualTagColor, annualTagDisabledColor, arrowsColor, paddingBottom, paddingTop } = props;
     return (<div id={id} class="relative">
-        {backgroundImage?.src && <Image
+        {backgroundImage?.src && <img
             src={backgroundImage.src}
             alt={backgroundImage.alt || "plan background image"}
             width={backgroundImage.width || 1440}

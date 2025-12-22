@@ -1,5 +1,5 @@
 import type { ImageWidget, RichText, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import { useId } from "../sdk/useId.ts";
 
@@ -114,7 +114,7 @@ export default function GridCards({ hideSection, tag, title, cards = [], cardsCo
           >
             {card.image?.src && <div class={`flex mb-[17px] lg:mb-8 ${position[card.image?.position || "left"]}`}>
               <div class="p-2.5 lg:p-5 cardIcon rounded-[10px]">
-                <Image
+                <img
                   src={card.image.src}
                   alt={card.image.alt || "card image"}
                   loading="lazy"
@@ -149,7 +149,7 @@ export default function GridCards({ hideSection, tag, title, cards = [], cardsCo
         background: ${cardsHoverIconBackgroundColor};
       `}} />
 
-      {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
+      {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <img
       src={backgroundMedia.image.src}
       alt={backgroundMedia.image.alt || "background image"}
       width={backgroundMedia.image.width || 1280}

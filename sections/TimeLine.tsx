@@ -1,6 +1,6 @@
 import { HTMLWidget, ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
-import Image from "apps/website/components/Image.tsx";
+
 
 export interface IImage {
     src?: ImageWidget;
@@ -41,7 +41,7 @@ export interface Props {
 export default function TimeLine({ hideSection, caption, title, TimelineItems = [], backgroundImage, backgroundVideo, useBackground = "image", firstAndLastItemDotColor, itemsDotColor, dotedLineColor }: Props) {
     if (hideSection) return <></>
     return <div class="relative min-h-[666px] px-7 pt-11 lg:pt-[92px]">
-        {useBackground == "image" && backgroundImage?.src && <Image
+        {useBackground == "image" && backgroundImage?.src && <img
             src={backgroundImage.src}
             alt={backgroundImage.alt || "background image"}
             width={backgroundImage.width || 1439}

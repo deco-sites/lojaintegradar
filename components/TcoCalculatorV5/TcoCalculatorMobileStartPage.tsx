@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+
 import {Benefit, IImage } from "./TcoCalculatorPage1.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { HTMLWidget, RichText } from "apps/admin/widgets.ts";
@@ -28,12 +28,12 @@ export default function TcoCalculatorMobileStartPage({ page1, rootId, benefits }
 }) {
     const { mobileStartBannerText,mobileStartBannerTitleFont, mobileStartBannerTitle, mobileStartBanner, mobileStartButtonText, asideTextColor, asideBottomText, mobileStartButtonTextColor } = page1;
     return <div class="lg:hidden relative text-sm text-primary-content font-normal py-10 px-4 w-full min-h-[971px] " style={{color: asideTextColor}}>
-        {mobileStartBanner.src && <Image width={mobileStartBanner.width || 430} height={mobileStartBanner.height || 755} alt={mobileStartBanner.alt || "background image"} src={mobileStartBanner.src} class="absolute w-full h-full top-0 left-0 object-cover object-top -z-10"/>}
+        {mobileStartBanner.src && <img width={mobileStartBanner.width || 430} height={mobileStartBanner.height || 755} alt={mobileStartBanner.alt || "background image"} src={mobileStartBanner.src} class="absolute w-full h-full top-0 left-0 object-cover object-top -z-10"/>}
         {mobileStartBannerTitle && <div class="text-[32px] normal leading-[110%]" dangerouslySetInnerHTML={{__html: mobileStartBannerTitle}} style={{fontFamily: mobileStartBannerTitleFont}}/>}
         {mobileStartBannerText && <div class="text-base font-normal leading-normal mt-7" dangerouslySetInnerHTML={{__html: mobileStartBannerText}}/>}
         <div class="mt-7 flex gap-5 overflow-auto">
                         {benefits && benefits.map((benefit) => (<div class="w-[214px] min-w-[214px]">
-                            {benefit.icon?.src && <Image height={benefit.icon.height || 17} width={benefit.icon.width || 17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} />}
+                            {benefit.icon?.src && <img height={benefit.icon.height || 17} width={benefit.icon.width || 17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} />}
                             <p class="mt-2.5" style={{ color: benefit.titleColor }}>{benefit.title}</p>
                             <p class="mt-2.5 text-sm" style={{ color: benefit.captionColor }}>{benefit.caption}</p>
                         </div>))}

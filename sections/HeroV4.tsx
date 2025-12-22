@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 import HubspotForm, { Props as HubspotFormProps } from "../components/HubspotForm.tsx";
@@ -143,7 +143,7 @@ export interface Props {
 
 export function HeroMedia({ media, lcp = false }: { media?: Media; lcp?: boolean }) {
   return <>
-    {media?.use == "image" && media.image?.src && <Image
+    {media?.use == "image" && media.image?.src && <img
       src={media.image.src}
       alt={media.image.alt || "image"}
       class="object-contain w-full h-auto"
@@ -254,7 +254,7 @@ export default function HeroV3({
         style={{ animationDuration: '1s', maxWidth: title?.titleMaxWidth }}>
 
 
-        {floatingImage?.src && <Image
+        {floatingImage?.src && <img
           src={floatingImage.src}
           alt={floatingImage.alt || "floating image"}
           width={floatingImage.width || 378}
@@ -300,7 +300,7 @@ export default function HeroV3({
         {bulletPoints?.items && <div class="flex flex-col gap-4">
           {bulletPoints?.items?.map((item) => (
             <p class="flex gap-2 text-sm font-normal" style={{ color: bulletPoints?.bulletPointsColor, ...bulletPoints.textProps }}>
-              {bulletPoints?.bulletPointsIcon?.src && <Image
+              {bulletPoints?.bulletPointsIcon?.src && <img
                 height={bulletPoints?.bulletPointsIcon?.height || 15}
                 width={bulletPoints?.bulletPointsIcon?.width || 15}
                 src={bulletPoints?.bulletPointsIcon?.src}
@@ -341,7 +341,7 @@ export default function HeroV3({
       </AnimateOnShow>}
 
 
-      {container?.backgroundMedia?.use == "image" && container?.backgroundMedia.image?.src && <Image
+      {container?.backgroundMedia?.use == "image" && container?.backgroundMedia.image?.src && <img
         src={container?.backgroundMedia.image.src}
         alt={container?.backgroundMedia.image.alt || "background image"}
         width={container?.backgroundMedia.image.width || 1277}
@@ -377,7 +377,7 @@ export default function HeroV3({
       style={{ background: sectionBackground.backgroundColor }} 
       class="absolute top-0 left-0 h-full w-full -z-40" />}
     
-    {sectionBackground?.use == "image" && sectionBackground.image?.src && <Image
+    {sectionBackground?.use == "image" && sectionBackground.image?.src && <img
       src={sectionBackground.image.src}
       alt={sectionBackground.image.alt || "background image"}
       width={sectionBackground.image.width || 1277}
@@ -405,7 +405,7 @@ export default function HeroV3({
 
 
     {media?.cornerImage && media.use == "image" && <div class={`absolute h-full ${media.placement == "left" ? "left-0" : "right-0"} top-0 flex items-center`}>
-      {media?.use == "image" && media.image?.src && <Image
+      {media?.use == "image" && media.image?.src && <img
         src={media.image.src}
         alt={media.image.alt || "image"}
         class="object-contain w-full h-auto"

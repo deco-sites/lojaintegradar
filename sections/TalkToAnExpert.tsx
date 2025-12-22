@@ -1,5 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
 /** @title {{text}} {{underlineText}} */
@@ -93,7 +93,7 @@ export default function TalkToAnExpert({
       <div class="-z-50 absolute top-0 left-0 h-full w-full" style={{ background: backgroundColor }} />
       <div class="container flex flex-col justify-center-center md:justify-center p-8 relative min-h-[310px]">
         {leftImage?.src && (
-          <Image
+          <img
             src={leftImage.src}
             alt={leftImage.alt}
             width={leftImage.width || 389}
@@ -131,7 +131,7 @@ export default function TalkToAnExpert({
           })}
         </div>
         {rightImage?.src && (
-          <Image
+          <img
             src={rightImage.src}
             alt={rightImage.alt}
             width={rightImage.width || 315}

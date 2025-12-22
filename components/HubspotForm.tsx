@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 import { useId } from "site/sdk/useId.ts";
@@ -96,7 +96,7 @@ export interface Props {
 
 export function HeroMedia({ media }: { media?: Media }) {
   return <>
-    {media?.use == "image" && media.image?.src && <Image
+    {media?.use == "image" && media.image?.src && <img
       src={media.image.src}
       alt={media.image.alt || "image"}
       class="object-contain"

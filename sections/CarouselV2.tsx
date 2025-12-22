@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
@@ -164,7 +164,7 @@ function SliderItem({ slide, id }: {
     }
     return (<div id={id} class={`relative w-full rounded-[20px] shadow-spreaded4 flex flex-col group overflow-hidden z-10 lg:min-h-[600px]`} style={{background: backgroundColor}}>
         <div class="overflow-hidden relative ">
-            {use == "image" && image?.src && <Image 
+            {use == "image" && image?.src && <img 
                 src={image.src}
                 alt={image.alt}
                 width={image.width || 414}
@@ -178,7 +178,7 @@ function SliderItem({ slide, id }: {
                     <embed width="320" height="240" src={video} />
                 </object>
             </video>}
-            {icon?.src && <Image 
+            {icon?.src && <img 
                 src={icon.src}
                 alt={icon.alt || "floating icon"}
                 width={icon.width || 40}

@@ -1,6 +1,6 @@
 import { useScript } from "@deco/deco/hooks";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 
 export interface IImage {
   src?: ImageWidget;
@@ -164,7 +164,7 @@ export default function CTA({ href = "", text, textColor, backgroundColor, iconG
     target={href.includes("http") ? "_blank" : "_self"}>
     {text}
     {showIcon && (customIcon?.src
-      ? <Image src={customIcon.src} width={customIcon.width || 20} height={customIcon.height || 20} alt={customIcon.alt || "button icon"} />
+      ? <img src={customIcon.src} width={customIcon.width || 20} height={customIcon.height || 20} alt={customIcon.alt || "button icon"} />
       : <svg xmlns="http://www.w3.org/2000/svg" width={iconSizes[size]} height={iconSizes[size]} viewBox="0 0 24 25" fill="none" class="inline-block">
         <path d="M9 17.9028L15 11.9028L9 5.90283" stroke={textColor} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>)}

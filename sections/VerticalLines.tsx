@@ -1,5 +1,5 @@
 import type { ImageWidget} from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 
 export interface IImage {
   src: ImageWidget;
@@ -32,7 +32,7 @@ export default function VerticalLines({lineImage, linesSize, lines, maxHeight}:P
           return (
             <div class={`absolute top-0 overflow-hidden `} style={{maxHeight, ...styleClass}}>
               {Array.from({ length: linesSize || 1 }).map((_, index) => (
-                <Image
+                <img
                   key={index}
                   src={lineImage.src}
                   width={lineImage.width || 1}

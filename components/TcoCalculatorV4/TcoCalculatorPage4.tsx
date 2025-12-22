@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useScript } from "@deco/deco/hooks";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 import { Plan } from "../../sections/TcoCalculatorV2.tsx";
@@ -234,15 +234,15 @@ function TcoCalculatorPage4({ page1, rootId, page4, plans }: {
     const inputClass = "bg-transparent min-h-[38px] w-full rounded-lg border border-neutral-content px-4 mt-1";
     return (<div class="relative flex flex-wrap xl:flex-nowrap w-full min-h-[971px] xl:rounded-[10px] overflow-hidden hidden">
         <div class={`relative w-full xl:max-w-[437px] pt-[70px] px-7 pb-16 xl:pb-0 bg-warning text-primary order-last xl:order-none`} style={{backgroundColor: asideContentBackgroundColor}}>
-                {asideTopIcon?.src && <Image id={rootId + "negativeScreenAsideTopIcon"} width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10 hidden"/>}
+                {asideTopIcon?.src && <img id={rootId + "negativeScreenAsideTopIcon"} width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10 hidden"/>}
                 <div id={rootId + "savingDiv"} class="px-7 py-[14px] relative max-w-[242px]" style={{color: saving.textColor}}>
                     <div class="relative z-10">
                         <p class="text-xl font-semibold pr-9">{saving.textBefore}</p>
                         <p id={rootId + "savingAside"} class="bg-transparent text-[40px] font-semibold"/>
                         <p class="text-xl font-semibold">{saving.textAfter} <span id={rootId + "indicatedPlanName"}/></p>
                     </div>
-                    {saving.background.src && <Image width={saving.background.width || 242} height={saving.background.height || 125} src={saving.background.src} alt={saving.background.alt || "background"} class="w-full h-full absolute top-0 left-0 object-fill"/>}
-                    {asideTopIcon?.src && <Image width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-[-30px] right-[-60px] w-[133px] h-[119px] object-contain z-10"/>}
+                    {saving.background.src && <img width={saving.background.width || 242} height={saving.background.height || 125} src={saving.background.src} alt={saving.background.alt || "background"} class="w-full h-full absolute top-0 left-0 object-fill"/>}
+                    {asideTopIcon?.src && <img width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-[-30px] right-[-60px] w-[133px] h-[119px] object-contain z-10"/>}
                 </div>
 
                 <p id={rootId + "negativeScreenAsideTitle"} class="text-2xl font-semibold hidden">{negativeScreenAsideTitle}</p>
@@ -274,7 +274,7 @@ function TcoCalculatorPage4({ page1, rootId, page4, plans }: {
                             </label>
                             <div>
                                 <a id={whasappCta.id} hx-on:click={useScript(sendWhatsapp, rootId)} target={whasappCta?.href.includes("http") ? "_blank" : "_self"} class={`btn btn-primary font-bold px-5 hover:scale-110 text-lg h-auto w-auto`} style={{color: whasappCta.textColor, backgroundColor: whasappCta.backgroundColor, borderColor: whasappCta.borderColor}}>
-                                    {whasappCta.icon?.src && <Image width={whasappCta.icon.width || 20} height={whasappCta.icon.height || 20} src={whasappCta.icon.src} class="h-5 w-5"/>}
+                                    {whasappCta.icon?.src && <img width={whasappCta.icon.width || 20} height={whasappCta.icon.height || 20} src={whasappCta.icon.src} class="h-5 w-5"/>}
                                     {whasappCta?.text}
                                 </a>
                             </div>
@@ -284,21 +284,21 @@ function TcoCalculatorPage4({ page1, rootId, page4, plans }: {
                         <div class="flex flex-col gap-y-5">
                             <div id={rootId + "negativeScreenExtraBenefit1"} class="relative max-w-[226px] min-h-[125px] px-2 py-5 hidden">
                                 <p class="text-center text-sm font-semibold relative z-10" style={{color: negativeScreenExtraBenefit1.textColor}}>{negativeScreenExtraBenefit1.text}</p>
-                                {negativeScreenExtraBenefit1.image?.src && <Image src={negativeScreenExtraBenefit1.image.src} alt={negativeScreenExtraBenefit1.image.alt || "background"} width={negativeScreenExtraBenefit1.image.width || 226} height={negativeScreenExtraBenefit1.image.height || 125} class="h-full w-full object-fill absolute top-0 left-0"/>}
+                                {negativeScreenExtraBenefit1.image?.src && <img src={negativeScreenExtraBenefit1.image.src} alt={negativeScreenExtraBenefit1.image.alt || "background"} width={negativeScreenExtraBenefit1.image.width || 226} height={negativeScreenExtraBenefit1.image.height || 125} class="h-full w-full object-fill absolute top-0 left-0"/>}
                             </div>
                             <div class="relative max-w-[226px] min-h-[238px] px-2 py-5">
                                 <p class="text-center text-sm font-semibold relative z-10" style={{color: benefit1.textColor}}>{benefit1.text}</p>
-                                {benefit1.image?.src && <Image src={benefit1.image.src} alt={benefit1.image.alt || "background"} width={benefit1.image.width || 226} height={benefit1.image.height || 238} class="h-full w-full object-fill absolute top-0 left-0"/>}
+                                {benefit1.image?.src && <img src={benefit1.image.src} alt={benefit1.image.alt || "background"} width={benefit1.image.width || 226} height={benefit1.image.height || 238} class="h-full w-full object-fill absolute top-0 left-0"/>}
                             </div>
                         </div>
                         <div class="flex flex-col justify-end gap-y-5">
                             <div class="relative max-w-[140px] min-h-[163px] px-2 py-5">
                                 <p class="text-center text-sm font-semibold relative z-10" style={{color: benefit2.textColor}}>{benefit2.text}</p>
-                                {benefit2.image?.src && <Image src={benefit2.image.src} alt={benefit2.image.alt || "background"} width={benefit2.image.width || 140} height={benefit2.image.height || 163} class="h-full w-full object-fill absolute top-0 left-0"/>}
+                                {benefit2.image?.src && <img src={benefit2.image.src} alt={benefit2.image.alt || "background"} width={benefit2.image.width || 140} height={benefit2.image.height || 163} class="h-full w-full object-fill absolute top-0 left-0"/>}
                             </div>
                             <div id={rootId + "negativeScreenExtraBenefit2"} class="relative max-w-[140px] min-h-[191px] h-full px-2 py-5 hidden">
                                 <p class="text-center text-sm font-semibold relative z-10" style={{color: negativeScreenExtraBenefit2.textColor}}>{negativeScreenExtraBenefit2.text}</p>
-                                {negativeScreenExtraBenefit2.image?.src && <Image src={negativeScreenExtraBenefit2.image.src} alt={negativeScreenExtraBenefit2.image.alt || "background"} width={negativeScreenExtraBenefit2.image.width || 140} height={negativeScreenExtraBenefit2.image.height || 191} class="h-full w-full object-fill absolute top-0 left-0"/>}
+                                {negativeScreenExtraBenefit2.image?.src && <img src={negativeScreenExtraBenefit2.image.src} alt={negativeScreenExtraBenefit2.image.alt || "background"} width={negativeScreenExtraBenefit2.image.width || 140} height={negativeScreenExtraBenefit2.image.height || 191} class="h-full w-full object-fill absolute top-0 left-0"/>}
                             </div>
                         </div>
                     </div>
@@ -306,18 +306,18 @@ function TcoCalculatorPage4({ page1, rootId, page4, plans }: {
             </div>
 
         <div class="xl:hidden relative text-2xl text-secondary-content font-semibold py-10 px-4 w-full min-h-[155px]" style={{ color: asideTextColor }}>
-            {mobileTopBanner.src && <Image width={mobileTopBanner.width || 430} height={mobileTopBanner.height || 155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10" />}
+            {mobileTopBanner.src && <img width={mobileTopBanner.width || 430} height={mobileTopBanner.height || 155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10" />}
             <p>{title}</p>
         </div>
 
         <div class="py-14 px-3.5 xl:px-28 relative w-full">
-            {contentBackground?.src && <Image width={contentBackground.width || 813} height={contentBackground.height || 971} src={contentBackground.src} alt={contentBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover" />}
+            {contentBackground?.src && <img width={contentBackground.width || 813} height={contentBackground.height || 971} src={contentBackground.src} alt={contentBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover" />}
             <div class="flex gap-2">
-                {contentTitleIcon?.src && <Image src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={contentTitleIcon.width || 14} height={contentTitleIcon.height || 14} />}
+                {contentTitleIcon?.src && <img src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={contentTitleIcon.width || 14} height={contentTitleIcon.height || 14} />}
                 <div dangerouslySetInnerHTML={{ __html: contentTitle }} />
             </div>
             {contentCaption && <p class="mt-2.5" style={{ color: contentCaptionColor }}>{contentCaption}</p>}
-            {progressImage?.src && <div class="mt-7"><Image width={progressImage.width || 590} height={progressImage.height || 70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left" /></div>}
+            {progressImage?.src && <div class="mt-7"><img width={progressImage.width || 590} height={progressImage.height || 70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left" /></div>}
 
             <div class="flex gap-2.5 text-sm mt-[54px]">
                 <div class="w-[68%] 2xl:w-auto">

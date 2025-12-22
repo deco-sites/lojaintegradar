@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+
 import { useState, useEffect } from "preact/hooks";
 import Icon from "site/components/ui/Icon.tsx";
 import type { Props } from "../../sections/HeroWithTimeV2.tsx";
@@ -104,7 +104,7 @@ function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressB
                         {tabs?.map((tab, index) => (<li key={index} className={`heroWithTimeTab flex flex-col max-w-[550px] ${index ? "border-bar pb-6" : "active"}`} style={{ borderColor: disabledProgressBarBackgroundColor }}>
                                 <div>
                                     <div class="flex items-center gap-4 cursor-pointer">
-                                        <Image src={tab.icon?.image || ""} alt={tab.icon?.alt || ""} height={tab.icon?.height || 20} width={tab.icon?.width || 20}/>
+                                        <img src={tab.icon?.image || ""} alt={tab.icon?.alt || ""} height={tab.icon?.height || 20} width={tab.icon?.width || 20}/>
 
                                         <div class="flex flex-col-reverse">
                                             {tab.title?.text && (<span class={`desktopTitle text-[32px] ${index ? "opacity-50" : ""}`} dangerouslySetInnerHTML={{
@@ -152,7 +152,7 @@ function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressB
                                                     <source src={tabs[index].tabVideo?.video} type="video/mp4"/>
                                                 </video>
                                             </div>
-                : <Image src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 351} width={tab.tabImage?.width || 337} class={`lg:hidden ${imageShadow} pb-[24px] lg:pb-0 rounded-2xl`}/>}
+                : <img src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 351} width={tab.tabImage?.width || 337} class={`lg:hidden ${imageShadow} pb-[24px] lg:pb-0 rounded-2xl`}/>}
 
                                         <div className="w-full h-0.5 background-bar overflow-hidden" style={{ background: progressBarBackgroundColor }}>
                                             <div className="h-full bg-[#D9D9D9] transition-all ease-linear progressBar w-0 relative" style={{ animationDuration: `${tabsInterval}s`, background: progressBarColor }}>
@@ -168,7 +168,7 @@ function HeroWithTime({ title, tabs = [], cta = [], tabsInterval = 10, progressB
                 ? <video width={tab.tabVideo?.width || 606} height={tab.tabVideo?.height || 627} autoPlay playsInline muted loading="lazy" loop class={`object-cover hidden lg:block hoverScale ${imageShadow} ${imageAnimation} desktopImage rounded-2xl ` + tab.tabVideo} style={{ width: (tab.tabVideo?.width || 606) + "px", height: (tab.tabVideo?.height || 627) + "px", animationDuration: '300ms' }}>
                                     <source src={tab.tabVideo?.video} type="video/mp4"/>
                                 </video>
-                : <Image src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 665} width={tab.tabImage?.width || 606} className={`hidden lg:block hoverScale ${imageShadow} ${imageAnimation} rounded-2xl desktopImage`} style={{ animationDuration: '300ms' }}/>}
+                : <img src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 665} width={tab.tabImage?.width || 606} className={`hidden lg:block hoverScale ${imageShadow} ${imageAnimation} rounded-2xl desktopImage`} style={{ animationDuration: '300ms' }}/>}
                         </div>))}
 
                     

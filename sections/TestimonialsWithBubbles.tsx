@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, RichText, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
@@ -312,7 +312,7 @@ function SliderItem({ slide, id }: {
       </div>
       <div class="flex gap-4 md:gap-5 px-7 pb-7">
         <div class={`${content?.roundedAvatar && "rounded-full"} overflow-hidden ${content?.avaterBorderColor && 'border'}`} style={{ borderColor: content?.avaterBorderColor }}>
-          <Image class="object-contain h-full" alt={content?.alt} src={content?.avatar || ""} width={content?.avatarWidth || 68} height={content?.avatarHeight || 68}/>
+          <img class="object-contain h-full" alt={content?.alt} src={content?.avatar || ""} width={content?.avatarWidth || 68} height={content?.avatarHeight || 68}/>
         </div>
         <div class="flex flex-col justify-center gap-1">
           <div class="font-normal text-sm md:text-base" dangerouslySetInnerHTML={{ __html: content?.name || "" }} style={{...content?.nameTextProps}}/>
@@ -428,7 +428,7 @@ function TestimonialsWithBubbles(props: Props) {
         </div>}
 
         {bubbleImages.map((image) => (
-          <Image 
+          <img 
             src={image.src || ""}
             width={image.width || 95}
             height={image.height || 95}
@@ -438,7 +438,7 @@ function TestimonialsWithBubbles(props: Props) {
           />
         ))}
       </div>
-      {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
+      {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <img
             src={backgroundMedia.image.src}
             alt={backgroundMedia.image.alt || "background image"}
             width={backgroundMedia.image.width || 1440}

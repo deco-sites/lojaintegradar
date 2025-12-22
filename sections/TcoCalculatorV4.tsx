@@ -1,5 +1,5 @@
 import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useId } from "../sdk/useId.ts";
 import TcoCalculatorPage1 from "site/components/TcoCalculatorV4/TcoCalculatorPage1.tsx";
 import TcoCalculatorPage2 from "site/components/TcoCalculatorV4/TcoCalculatorPage2.tsx";
@@ -78,7 +78,7 @@ function TcoCalculator(props: Props) {
                     {captionText && <div class="text-base text-normal mt-2.5" dangerouslySetInnerHTML={{ __html: captionText }} />}
                     <div class="mt-7 flex justify-between">
                         {benefits && benefits.map((benefit) => (<div class="max-w-[364px]">
-                            {benefit.icon?.src && <Image height={benefit.icon.height || 17} width={benefit.icon.width || 17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} />}
+                            {benefit.icon?.src && <img height={benefit.icon.height || 17} width={benefit.icon.width || 17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} />}
                             <p class="mt-2.5" style={{ color: benefit.titleColor }}>{benefit.title}</p>
                             <p class="mt-2.5 text-sm" style={{ color: benefit.captionColor }}>{benefit.caption}</p>
                         </div>))}

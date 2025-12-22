@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
@@ -133,7 +133,7 @@ export interface Props {
 
 export function HeroMedia({ media }: { media?: Media }) {
   return <>
-    {media?.use == "image" && media.image?.src && <Image
+    {media?.use == "image" && media.image?.src && <img
       src={media.image.src}
       alt={media.image.alt || "image"}
       class="object-contain rounded-md"
@@ -172,7 +172,7 @@ function SliderItem({ slide, id }: {
                     style={{fontFamily: caption.font, fontSize: caption.fontSize, lineHeight: caption.lineHeight, letterSpacing: caption?.letterSpacing, fontWeight: caption?.fontWeight}}/>}
                 <div>
                     {bulletPoints?.items?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] md:w-auto">
-                        {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
+                        {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><img src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
                         <p class="text-sm md:text-lg font-semibold" style={{ ...slide.bulletPoints?.textProps }}>{bulletPoint}</p>
                     </div>))}
                 </div>
@@ -238,7 +238,7 @@ function Carousel(props: Props) {
     const rootId = useId();
     const { id, title, caption, slides, backgroundImage, cta = [], arrowsColor, dotsTextColor, backgroundColor, dotsColor, dotsProgressBarPlacement, paddingBottom, paddingTop } = { ...props };
     return (<div id={id} class="relative" style={{background: backgroundColor}}>
-        {backgroundImage?.src && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={backgroundImage.width || 1440} height={backgroundImage.height || 1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-cover"/></div>}
+        {backgroundImage?.src && <div class="absolute w-full h-full top-0 left-0 -z-50"><img width={backgroundImage.width || 1440} height={backgroundImage.height || 1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-cover"/></div>}
         <div id={rootId} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1066px] px-5 lg:px-0 lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)} style={{paddingBottom, paddingTop}}>
             {title?.text && <AnimateOnShow
                         animation="animate-fade-up50"

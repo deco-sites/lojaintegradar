@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
@@ -110,7 +110,7 @@ export default function BigHeroImageV2({ hideSection, title, createStoreCta, tit
                         return (
                             <AnimateOnShow divClass="min-w-[251px] w-[251px]" animation="animate-fade-up" delay={index * 100}>
                                 <div class="flex gap-2.5">
-                                    {feature.icon?.src && <Image
+                                    {feature.icon?.src && <img
                                         width={feature.icon.width || 20}
                                         height={feature.icon.height || 20}
                                         src={feature.icon.src}
@@ -131,7 +131,7 @@ export default function BigHeroImageV2({ hideSection, title, createStoreCta, tit
                 </div>
             </div>
             <AnimateOnShow animation="animate-pop-up" delay={300}>
-                {use == "image" && image?.src && <Image
+                {use == "image" && image?.src && <img
                     src={image.src}
                     alt={image.alt || "big image"}
                     width={image.width || 1700}

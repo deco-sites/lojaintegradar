@@ -1,5 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Icon from "site/components/ui/Icon.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
@@ -149,7 +149,7 @@ export default function Migrate({
         {features.map((feature, index) => (
           <li key={index} class="bg-white rounded-lg">
             {feature.image.src && (
-              <Image
+              <img
                 src={feature.image.src}
                 alt={feature.image.alt}
                 width={feature.image.width}

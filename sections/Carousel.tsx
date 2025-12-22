@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
@@ -180,7 +180,7 @@ function SliderItem({ slide, id, slidesHeight }: {
 
 
         {useBackground == 'image' && backgroundImage?.src && <div class="absolute top-0 left-0 z-0 h-full w-full">
-            <Image 
+            <img 
                 src={backgroundImage.src} 
                 loading="lazy" 
                 decoding="async" 
@@ -198,7 +198,7 @@ function SliderItem({ slide, id, slidesHeight }: {
             </object>
         </video>}
         <div class={`relative w-full h-full flex justify-between ${textPlacement == 'Top' ? 'flex-col' : 'flex-col-reverse'}`}>
-            {icon?.src && <Image 
+            {icon?.src && <img 
                 loading="lazy" 
                 decoding="async" 
                 fetchPriority="high" 
@@ -215,7 +215,7 @@ function SliderItem({ slide, id, slidesHeight }: {
             <div>
                 {bulletPoints?.bulletPointsTitle && <p class="text-sm">{bulletPoints.bulletPointsTitle}</p>}
                 {bulletPoints?.items?.map((bulletPoint) => (<div class="flex gap-2 mt-[10px]">
-                    {bulletPoints.bulletPointsIcon?.src && <Image 
+                    {bulletPoints.bulletPointsIcon?.src && <img 
                         loading="lazy" 
                         decoding="async" 
                         fetchPriority="high" 
@@ -279,7 +279,7 @@ function Carousel(props: Props) {
         {/* <input type="text" value="0" /> */}
             <div id={carouselId} class="min-h-min flex flex-col items-center w-full relative" width="100%" height="100%" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)}>
                 {backgroundImage?.src && <div class="absolute hidden md:block -z-10 top-0 left-0 h-full w-full">
-                    <Image 
+                    <img 
                         src={backgroundImage.src} 
                         alt={backgroundImage.alt || "background image"} 
                         height={backgroundImage.height || 780} 

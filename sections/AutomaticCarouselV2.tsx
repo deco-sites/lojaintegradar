@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useId } from "../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
@@ -119,7 +119,7 @@ export default function AutomaticCarousel({ hideSection, backgroundColor, title,
             <div
               class="relative p-7 rounded-xl lg:rounded-[30px] overflow-hidden w-full h-[167vw] lg:min-w-[49.45vh] lg:w-[49.45vh] lg:h-[83vh] group"
             >
-              {item.media?.use == "image" && <Image
+              {item.media?.use == "image" && <img
                 src={item.media.image?.src || ""}
                 alt={item.media.image?.alt || "Carousel image"}
                 width={item.media?.image?.width || 942}

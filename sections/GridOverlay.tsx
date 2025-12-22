@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+
 import { isWindows } from "std/_util/os.ts";
 import { useScript } from "@deco/deco/hooks";
 const onLoad = () => {

@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 
 export interface IImage {
     src?: ImageWidget;
@@ -27,7 +27,7 @@ export interface Props {
 export default function Division({ hideSection, divisionColor, divisionHeight, divisionImage, divisionVideo, useDivision }: Props) {
     if (hideSection) return <></>
     return <div class="h-16" style={{ height: divisionHeight, background: divisionColor }}>
-        {useDivision == "image" && divisionImage?.src && <Image
+        {useDivision == "image" && divisionImage?.src && <img
             src={divisionImage.src}
             width={divisionImage.width || 1456}
             height={divisionImage.height || 70}

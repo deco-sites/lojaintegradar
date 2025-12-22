@@ -1,5 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Icon from "site/components/ui/Icon.tsx";
 import AnimateOnShow from "site/components/ui/AnimateOnShow.tsx";
 
@@ -85,7 +85,7 @@ function Footer({ hideSection, cards, logoImage, newsletter, socials, policies }
               <div class="flex items-center gap-[10px]">
                 {" "}
                 {card.icon?.image && (
-                  <Image
+                  <img
                     src={card.icon?.image}
                     alt="Card footer icon"
                     height={card.icon?.height}
@@ -163,7 +163,7 @@ function Footer({ hideSection, cards, logoImage, newsletter, socials, policies }
 
           <div class="flex flex-col gap-[15px] mb-[30px] lg:mb-0 lg:order-1">
             {logoImage?.image && (
-              <Image
+              <img
                 src={logoImage?.image}
                 alt="Footer Logo Image"
                 height={logoImage?.height}
@@ -187,7 +187,7 @@ function Footer({ hideSection, cards, logoImage, newsletter, socials, policies }
                 <a href={item.image?.link}>
                   {" "}
                   {item.image?.image && (
-                    <Image
+                    <img
                       src={item.image?.image}
                       alt="Footer Logo Image"
                       height={item.image?.height || 26}

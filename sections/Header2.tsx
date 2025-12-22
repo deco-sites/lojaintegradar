@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Icon from "../components/ui/Icon.tsx";
 import { useScript } from "@deco/deco/hooks";
 import CampaignTimer from "../components/CampaignTimerHeader.tsx";
@@ -261,7 +261,7 @@ export default function Header2({ logo = {
           <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, navigation, noScrollBackgroundColor) }} />
 
           <a href={logo.href || "/"} class="w-28 h-5 md:w-auto md:h-10 flex items-center">
-            <Image src={logo.src || ""} width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
+            <img src={logo.src || ""} width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
           </a>
           
           <ul class="hidden lg:flex items-center gap-10 text-sm flex-wrap" style={{color: dropdownMenus.titlesTextColor}}>

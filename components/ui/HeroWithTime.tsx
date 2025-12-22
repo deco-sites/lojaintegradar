@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+
 import { useState, useEffect } from "preact/hooks";
 import Icon from "site/components/ui/Icon.tsx";
 import type { Props } from "../../sections/HeroWithTime.tsx";
@@ -101,8 +101,8 @@ function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], backgroun
                         {tabs?.map((tab, index) => (<li key={index} className={`heroWithTimeTab flex flex-col max-w-[550px] ${index ? "border-bar pb-6" : "active"}`}>
                                 <div>
                                     <div class="flex items-center gap-4 cursor-pointer">
-                                        <Image src={tab.icon?.image || ""} alt={tab.icon?.alt || ""} height={32} width={32} class="lg:hidden"/>
-                                        <Image src={tab.icon?.image || ""} alt={tab.icon?.alt || ""} height={52} width={52} class="hidden lg:block"/>
+                                        <img src={tab.icon?.image || ""} alt={tab.icon?.alt || ""} height={32} width={32} class="lg:hidden"/>
+                                        <img src={tab.icon?.image || ""} alt={tab.icon?.alt || ""} height={52} width={52} class="hidden lg:block"/>
 
                                         <div class="flex flex-col-reverse">
                                             {tab.title?.desktop && (<span class={`hidden lg:block desktopTitle ${index ? "opacity-50" : ""}`} dangerouslySetInnerHTML={{
@@ -157,7 +157,7 @@ function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], backgroun
                                                     <source src={tabs[index].tabVideo?.videoDesktop} type="video/mp4"/>
                                                 </video>
                                             </div>
-                : <Image src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 351} width={tab.tabImage?.width || 337} style={{ minHeight: tab.tabImage?.height || 351 }} class="lg:hidden shadow-md pb-[24px] lg:pb-0"/>}
+                : <img src={tab.tabImage?.image || ""} alt={tab.tabImage?.alt || ""} height={tab.tabImage?.height || 351} width={tab.tabImage?.width || 337} style={{ minHeight: tab.tabImage?.height || 351 }} class="lg:hidden shadow-md pb-[24px] lg:pb-0"/>}
 
                                         <div className="w-full h-[1px] background-bar">
                                             <div className="h-full bg-[#D9D9D9] transition-all ease-linear progressBar w-0" style={{ animationDuration: `${tabsInterval}s` }}></div>
@@ -171,7 +171,7 @@ function HeroWithTime({ title, subTitle, tabs = [], finalButtons = [], backgroun
                 ? <video width={tab.tabVideo?.widthDesktop || 606} height={tab.tabVideo?.heightDesktop || 627} autoPlay playsInline muted loading="lazy" loop class={"object-cover hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage " + tab.tabVideo} style={{ width: tab.tabVideo?.widthDesktop + "px" || "606px", height: tab.tabVideo?.heightDesktop + "px" || "627px", animationDuration: '300ms' }}>
                                     <source src={tab.tabVideo?.videoDesktop} type="video/mp4"/>
                                 </video>
-                : <Image src={tab.tabImage?.imageDesktop || ""} alt={tab.tabImage?.altDesktop || ""} height={tab.tabImage?.heightDesktop || 665} width={tab.tabImage?.widthDesktop || 606} className="hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage" style={{ animationDuration: '300ms' }}/>}
+                : <img src={tab.tabImage?.imageDesktop || ""} alt={tab.tabImage?.altDesktop || ""} height={tab.tabImage?.heightDesktop || 665} width={tab.tabImage?.widthDesktop || 606} className="hidden lg:block hoverScale shadow-md animate-fade-up50 desktopImage" style={{ animationDuration: '300ms' }}/>}
                         </div>))}
 
                     

@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
@@ -157,7 +157,7 @@ function SliderItem({ slide, id }: {
     const rightColumnBulletPoints = bulletPoints?.items?.filter((_item, index) => index % 2 != 0);
     return (<AnimateOnShow animation="animate-fade-in" delay={150}>
         <div id={id} class="relative flex flex-col md:flex-row gap-[84px] md:gap-10 w-full min-h-[292px]">
-                {use == 'image' && image && <Image width={image.width || 730} height={image.height || 553} src={image.src} alt={image.alt || ""}/>}
+                {use == 'image' && image && <img width={image.width || 730} height={image.height || 553} src={image.src} alt={image.alt || ""}/>}
                 {use == 'video' && video?.src && <video width={video.width?.toString() || "730"} height={video.height?.toString() || "553"} autoPlay playsInline muted loading="lazy" loop class="object-cover object-top" style={{width: `${video.width}px`, height: `${video.height}px`}}>
                     <source src={video.src} type="video/mp4"/>
                     {/* <object data="" width="730" height="553">
@@ -174,13 +174,13 @@ function SliderItem({ slide, id }: {
                 <div class="flex gap-1 justify-between lg:hidden">
                     <div class="flex flex-col  w-5/12 lg:w-auto">
                         {leftColumnBulletPoints?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] w-full">
-                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
+                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><img src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
                             <p class="text-sm md:text-lg font-normal" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
                         </div>))}
                     </div>
                     <div class="flex flex-col  w-5/12 lg:w-auto">
                         {rightColumnBulletPoints?.map((bulletPoint) => (<div class="flex gap-[15px] md:gap-5 mt-[10px] w-full">
-                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
+                            {bulletPoints?.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5 flex items-center"><img src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
                             <p class="text-sm md:text-lg font-normal" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
                         </div>))}
                     </div>
@@ -188,7 +188,7 @@ function SliderItem({ slide, id }: {
                 {/* desktop bullet points div */}
                 <div>
                     {bulletPoints?.items?.map((bulletPoint) => (<div class="hidden lg:flex gap-[15px] md:gap-5 mt-[10px] w-5/12 md:w-auto">
-                        {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><Image src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
+                        {bulletPoints.bulletPointsIcon && <div class="min-w-[15px] w-[15px] md:w-5 md:min-w-5"><img src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet point icon"} width={bulletPoints.bulletPointsIcon.width || 20} height={bulletPoints.bulletPointsIcon.height || 20} class="object-contain"/></div>}
                         <p class="text-sm md:text-lg font-semibold" style={{ color: slide.bulletPoints?.textColor }}>{bulletPoint}</p>
                     </div>))}
                 </div>
@@ -252,7 +252,7 @@ function Carousel(props: Props) {
     const rootId = useId();
     const { id, title, caption, slides, interval, backgroundImage, createStoreCta, cta = [], arrowsColor, backgroundColor, dotsColor, dotsProgressBarPlacement, dotsProgressBarBackgroundColor, paddingBottom, paddingTop } = { ...props };
     return (<div id={id} class="relative" style={{background: backgroundColor}}>
-        {backgroundImage?.src && <div class="absolute w-full h-full top-0 left-0 -z-50"><Image width={backgroundImage.width || 1440} height={backgroundImage.height || 1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-cover"/></div>}
+        {backgroundImage?.src && <div class="absolute w-full h-full top-0 left-0 -z-50"><img width={backgroundImage.width || 1440} height={backgroundImage.height || 1104} src={backgroundImage.src} alt={backgroundImage.alt || "carousel background"} class="h-full w-full object-cover"/></div>}
         <div id={rootId} class="min-h-min flex items-center flex-col lg:container relative md:max-w-[1220px] lg:mx-auto pt-16 pb-24 lg:pt-24" hx-on:click={useScript(refreshArrowsVisibility)} hx-on:touchend={useScript(refreshArrowsVisibility)} style={{paddingBottom, paddingTop}}>
             {title?.text && <AnimateOnShow
                         animation="animate-fade-up50"

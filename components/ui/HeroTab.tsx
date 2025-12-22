@@ -1,5 +1,5 @@
 import { useState, useEffect } from "preact/hooks";
-import Image from "apps/website/components/Image.tsx";
+
 import type { Props, Buttons } from "../../sections/HeroTab.tsx";
 import FlexibleButton from "site/islands/FlexibleButtons.tsx";
 
@@ -114,14 +114,14 @@ function HeroTab({ title, subTitle, buttons, finalButtons }: Props) {
                         <div className="relative flex justify-end mr-[-22px] lg:block lg:mr-0">
                             {activeButton.image && activeButton.imageMobile && (
                                 <>
-                                    <Image
+                                    <img
                                         src={activeButton.image}
                                         alt="Imagem seção hero tab"
                                         height={585}
                                         width={1192}
                                         className="w-full relative z-[5] top-[5%] left-2/4 translate-x-[-50%] max-w-[930px] hidden lg:block rounded-lg"
                                     />
-                                    <Image
+                                    <img
                                         src={activeButton.imageMobile}
                                         alt="Imagem seção hero tab"
                                         height={320}

@@ -1,5 +1,5 @@
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { CSS } from "../static/css.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import FlexibleButton from "site/islands/FlexibleButtons.tsx";
@@ -79,7 +79,7 @@ function Header({
             <>
                 {backgroundType === "image" && (
                     <>
-                        <Image
+                        <img
                             src={backgroundImage?.mobile || ""}
                             alt={alt || ""}
                             height={backgroundImage?.mobileHeight || 460}
@@ -87,7 +87,7 @@ function Header({
                             class="headerMinHeight w-full absolute top-0 left-0 lg:hidden"
                             loading={"eager"}
                         />
-                        <Image
+                        <img
                             src={backgroundImage?.desktop || ""}
                             alt={alt || ""}
                             height={backgroundImage?.desktopHeight || 800}
@@ -134,7 +134,7 @@ function Header({
                             />
                         </video>
                         {backgroundVideo?.disableOnMobile &&
-                            <Image
+                            <img
                                 src={backgroundImage?.mobile || ""}
                                 alt={alt || ""}
                                 height={height || 460}
@@ -149,7 +149,7 @@ function Header({
             <div class="w-full justify-center lg:justify-between hidden lg:flex relative z-10">
                 {" "}
                 {image && (
-                    <Image
+                    <img
                         src={image || ""}
                         alt={alt || ""}
                         height={height || 40}
@@ -167,7 +167,7 @@ function Header({
                 <div class="w-full flex justify-center lg:justify-between lg:hidden">
                     {" "}
                     {image && (
-                        <Image
+                        <img
                             src={image || ""}
                             alt={alt || ""}
                             height={height || 40}

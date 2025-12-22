@@ -1,5 +1,5 @@
 import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 import { Button } from "site/types/types.ts";
 import Icon from "site/components/ui/Icon.tsx";
@@ -93,7 +93,7 @@ function HeroInfo({ hideSection, title, cards }: Props) {
                 <ul class="flex flex-col lg:flex-row gap-10 mt-10">
                     {cards?.map((card) => (
                         <li class="flex flex-col lg:w-[50%]">
-                            <Image
+                            <img
                                 data-aos="fade-up"
                                 src={card.image?.image || ""}
                                 alt={card.image?.alt || ""}
@@ -101,7 +101,7 @@ function HeroInfo({ hideSection, title, cards }: Props) {
                                 width={card.image?.width || 606}
                                 class="mb-[30px]"
                             />
-                            <Image
+                            <img
                                 data-aos="fade-up"
                                 src={card.icon?.image || ""}
                                 alt={"Ícone do card de mais lançamentos"}

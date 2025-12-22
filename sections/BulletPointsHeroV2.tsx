@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 
 export interface IImage {
@@ -102,7 +102,7 @@ export default function BulletPointsHero({ texts, bulletPoints, cta = [], contai
         <div class="flex flex-wrap gap-8 mt-7 lg:mt-16">
           {bulletPoints?.items?.map((item) => (
             <p class="flex gap-4 items-center text-sm font-normal w-full lg:w-[280px]" style={{ ...bulletPoints.textProps }}>
-              {bulletPoints?.bulletPointsIcon?.src && <Image
+              {bulletPoints?.bulletPointsIcon?.src && <img
                 height={bulletPoints?.bulletPointsIcon?.height || 22}
                 width={bulletPoints?.bulletPointsIcon?.width || 22}
                 src={bulletPoints?.bulletPointsIcon?.src}
@@ -121,7 +121,7 @@ export default function BulletPointsHero({ texts, bulletPoints, cta = [], contai
       </div>
 
       {container?.backgroundColor && <div style={{ background: container.backgroundColor }} class="absolute top-0 left-0 h-full w-full -z-40" />}
-      {container?.backgroundMedia?.use == "image" && container?.backgroundMedia.image?.src && <Image
+      {container?.backgroundMedia?.use == "image" && container?.backgroundMedia.image?.src && <img
         src={container?.backgroundMedia.image.src}
         alt={container?.backgroundMedia.image.alt || "background image"}
         width={container?.backgroundMedia.image.width || 1277}
@@ -135,7 +135,7 @@ export default function BulletPointsHero({ texts, bulletPoints, cta = [], contai
     </div>
 
     {sectionBackground?.backgroundColor && <div style={{ background: sectionBackground.backgroundColor }} class="absolute top-0 left-0 h-full w-full -z-50" />}
-    {sectionBackground?.use == "image" && sectionBackground.image?.src && <Image
+    {sectionBackground?.use == "image" && sectionBackground.image?.src && <img
       src={sectionBackground.image.src}
       alt={sectionBackground.image.alt || "background image"}
       width={sectionBackground.image.width || 1277}

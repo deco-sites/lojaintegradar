@@ -1,5 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 
 interface ImageProps {
@@ -134,7 +134,7 @@ export default function CalculateYourCosts({
     >
       <div class="container 2xl:max-w-[1536px] mx-auto relative">
         {decorativeImage?.src && (
-          <Image
+          <img
             src={decorativeImage.src}
             width={decorativeImage.width || 232}
             height={decorativeImage.height || 208}
@@ -156,7 +156,7 @@ export default function CalculateYourCosts({
             return (
               <div>
                 {card.icon.src && (
-                  <Image
+                  <img
                     src={card.icon.src}
                     width={card.icon.width || 17}
                     height={card.icon.height || 25}

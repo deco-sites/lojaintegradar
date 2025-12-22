@@ -1,5 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 
 export interface IImage {
     src: ImageWidget;
@@ -32,7 +32,7 @@ export default function FloatingButtons({ hideSection, buttons = [], distanceFro
             class="h-14 w-14"
             style={{ height: button.size, width: button.size }}
         >
-            <Image
+            <img
                 width={button.image.width || 56}
                 height={button.image.height || 56}
                 src={button.image.src}

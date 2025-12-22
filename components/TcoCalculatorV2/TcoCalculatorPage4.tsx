@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useScript } from "@deco/deco/hooks";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 import { Plan } from "../../sections/TcoCalculatorV2.tsx";
@@ -184,16 +184,16 @@ function TcoCalculatorPage4({ page1, rootId, page4, plans }: {
     const inputClass = "bg-transparent min-h-[38px] w-full rounded-lg border border-neutral-content px-4 mt-1";
     return (<div class="relative flex flex-wrap xl:flex-nowrap w-full min-h-[971px] xl:rounded-[30px] overflow-hidden hidden">
         <div class={`relative w-full xl:max-w-[437px] min-h-[971px] pt-[70px] px-7 pb-16 xl:pb-0 text-primary order-last xl:order-none`} style={{ backgroundColor: asideContentBackgroundColor }}>
-            {asideTopIcon?.src && <Image id={rootId + "negativeScreenAsideTopIcon"} width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10 hidden" />}
-            {asideBackground?.src && <Image width={asideBackground.width || 813} height={asideBackground.height || 971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover object-top" />}
+            {asideTopIcon?.src && <img id={rootId + "negativeScreenAsideTopIcon"} width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10 hidden" />}
+            {asideBackground?.src && <img width={asideBackground.width || 813} height={asideBackground.height || 971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover object-top" />}
             <div id={rootId + "savingDiv"} class="px-7 py-[14px] relative max-w-[242px]" style={{ color: saving.textColor }}>
                 <div class="relative z-10">
                     <p class="text-xl font-semibold text-center">{saving.textBefore}</p>
                     <p id={rootId + "savingAside"} class="bg-transparent text-[40px] font-semibold" />
                     {/* <p class="text-xl font-semibold">{saving.textAfter} <span id={rootId + "indicatedPlanName"} /></p> */}
                 </div>
-                {saving.background.src && <Image width={saving.background.width || 242} height={saving.background.height || 125} src={saving.background.src} alt={saving.background.alt || "background"} class="w-full h-full absolute top-0 left-0 object-fill" />}
-                {asideTopIcon?.src && <Image width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-[-30px] right-[-60px] w-[133px] h-[119px] object-contain z-10" />}
+                {saving.background.src && <img width={saving.background.width || 242} height={saving.background.height || 125} src={saving.background.src} alt={saving.background.alt || "background"} class="w-full h-full absolute top-0 left-0 object-fill" />}
+                {asideTopIcon?.src && <img width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-[-30px] right-[-60px] w-[133px] h-[119px] object-contain z-10" />}
             </div>
             <div id={rootId + "topSellerFeedback"} class="hidden">
                 {topSellerFeedback.text && <div class="text-[42px] leading-[120%] font-instrument font-normal mt-7" style={{ color: saving.textColor }} dangerouslySetInnerHTML={{ __html: topSellerFeedback.text }} />}
@@ -251,18 +251,18 @@ function TcoCalculatorPage4({ page1, rootId, page4, plans }: {
         </div>
 
         <div class="xl:hidden relative text-2xl text-secondary-content font-semibold py-10 px-4 w-full min-h-[155px]" style={{ color: asideTextColor }}>
-            {mobileTopBanner.src && <Image width={mobileTopBanner.width || 430} height={mobileTopBanner.height || 155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10" />}
+            {mobileTopBanner.src && <img width={mobileTopBanner.width || 430} height={mobileTopBanner.height || 155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10" />}
             <p>{title}</p>
         </div>
 
         <div class="py-14 px-3.5 xl:px-28 relative w-full">
-            {contentBackground?.src && <Image width={contentBackground.width || 813} height={contentBackground.height || 971} src={contentBackground.src} alt={contentBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover" />}
+            {contentBackground?.src && <img width={contentBackground.width || 813} height={contentBackground.height || 971} src={contentBackground.src} alt={contentBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover" />}
             <div class="flex gap-2">
-                {contentTitleIcon?.src && <Image src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={contentTitleIcon.width || 14} height={contentTitleIcon.height || 14} />}
+                {contentTitleIcon?.src && <img src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={contentTitleIcon.width || 14} height={contentTitleIcon.height || 14} />}
                 <div dangerouslySetInnerHTML={{ __html: contentTitle }} />
             </div>
             {contentCaption && <p class="mt-2.5" style={{ color: contentCaptionColor }}>{contentCaption}</p>}
-            {progressImage?.src && <div class="mt-7"><Image width={progressImage.width || 590} height={progressImage.height || 70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left" /></div>}
+            {progressImage?.src && <div class="mt-7"><img width={progressImage.width || 590} height={progressImage.height || 70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left" /></div>}
 
             <div class="flex gap-2.5 text-sm mt-[54px]">
                 <div class="w-[68%] 2xl:w-auto">

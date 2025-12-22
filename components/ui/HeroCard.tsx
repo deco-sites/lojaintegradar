@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+
 import type { Props } from "../../sections/HeroCard.tsx";
 import FlexibleButtons from "site/islands/FlexibleButtons.tsx";
 
@@ -17,7 +17,7 @@ function HeroCard({
             <div data-aos="fade-up" class="customContainer">
                 <div class="w-full relative max-w-[637px] lg:max-w-[1256px] mx-auto px-[10px]">
                     {cardBackgroundImage?.desktop && (
-                        <Image
+                        <img
                             src={cardBackgroundImage?.desktop}
                             alt={"gradient background"}
                             height={cardBackgroundImage.heightDesktop || 579}
@@ -27,7 +27,7 @@ function HeroCard({
                         />
                     )}
                     {cardBackgroundImage?.mobile && (
-                        <Image
+                        <img
                             src={cardBackgroundImage?.mobile}
                             alt={"card background"}
                             height={cardBackgroundImage.heightMobile || 637}
@@ -38,7 +38,7 @@ function HeroCard({
                     )}
 
                     {secondImage?.desktop && (
-                        <Image
+                        <img
                             src={secondImage?.desktop}
                             alt={"gradient background"}
                             height={secondImage.heightDesktop || 680}
@@ -47,7 +47,7 @@ function HeroCard({
                         />
                     )}
                     {secondImage?.mobile && (
-                        <Image
+                        <img
                             src={secondImage?.mobile}
                             alt={"card background"}
                             height={secondImage.heightMobile || 226}

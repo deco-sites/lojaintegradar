@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 
@@ -56,14 +56,14 @@ export interface Props {
 export default function BigHeroImage({ hideSection, title, titleColor, caption, captionColor, image, video, use, features, cta = [], backgroundImage, bottomFloatingImage }: Props) {
     if (hideSection) return <></>
     return <div class={`relative text-primary ${bottomFloatingImage?.src && 'mb-[157px]'} mt-[110px] px-7 lg:px-0`}>
-        {backgroundImage?.src && <Image
+        {backgroundImage?.src && <img
             width={backgroundImage.width || 1440}
             height={backgroundImage.height || 960}
             src={backgroundImage.src}
             alt={backgroundImage.alt || ""}
             class="absolute top-0 left-0 w-full h-full object-cover -z-50"
         />}
-        {use == "image" && image?.src && <Image
+        {use == "image" && image?.src && <img
             width={image.width || 1154}
             height={image.height || 1000}
             src={image.src}
@@ -93,7 +93,7 @@ export default function BigHeroImage({ hideSection, title, titleColor, caption, 
                 {features?.map((feature, index) => (
                     <AnimateOnShow divClass="min-w-[239px] w-[239px]" animation="animate-fade-right" delay={index * 100}>
                         <div class="flex gap-2.5">
-                            {feature.icon?.src && <Image
+                            {feature.icon?.src && <img
                                 width={feature.icon.width || 20}
                                 height={feature.icon.height || 20}
                                 src={feature.icon.src}
@@ -134,7 +134,7 @@ export default function BigHeroImage({ hideSection, title, titleColor, caption, 
                 })}
             </AnimateOnShow>
         </div>
-        {use == "image" && image?.src && <Image
+        {use == "image" && image?.src && <img
             width={image.width || 428}
             height={image.height || 308}
             src={image.src}
@@ -158,7 +158,7 @@ export default function BigHeroImage({ hideSection, title, titleColor, caption, 
         </video>}
         <div class="absolute w-full -bottom-28 left-0">
             <div class="max-w-[1250px] flex justify-center lg:justify-start mx-auto">
-                {bottomFloatingImage?.src && <Image
+                {bottomFloatingImage?.src && <img
                     width={bottomFloatingImage.width || 476}
                     height={bottomFloatingImage.height || 155}
                     src={bottomFloatingImage.src}

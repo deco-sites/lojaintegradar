@@ -1,6 +1,6 @@
 import { useScript } from "@deco/deco/hooks";
 import { ImageWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useId } from "site/sdk/useId.ts";
 
 
@@ -95,7 +95,7 @@ export default function TimeTabs({ tabs, interval = 5, progressBarColor, progres
             className=" text-primary-content open collapse focus:outline-none rounded-none opacity-60"
         >
             <div className="collapse-title px-0 pb-0 min-h-0 flex gap-4" id="collapseElement" >
-                {tab.icon?.src && <Image
+                {tab.icon?.src && <img
                     src={tab.icon.src}
                     alt={tab.icon.alt || "tab icon"}
                     width={tab.icon.width || 24}

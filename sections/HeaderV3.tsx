@@ -1,5 +1,5 @@
 import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useScript } from "@deco/deco/hooks";
 import CampaignTimer from "../components/CampaignTimerHeader.tsx";
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
@@ -217,7 +217,7 @@ export default function Header({ logo = {
             <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, noScrollBackgroundColor) }} />
 
             <a href={logo.href || "/"} class="flex items-center">
-              <Image src={logo.src || ""} loading="lazy" decoding="async" fetchPriority="low" width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
+              <img src={logo.src || ""} loading="lazy" decoding="async" fetchPriority="low" width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
             </a>
 
             <ul class="hidden lg:flex items-center gap-10 text-sm flex-wrap" style={{ color: dropdownMenus.titlesTextColor }}>

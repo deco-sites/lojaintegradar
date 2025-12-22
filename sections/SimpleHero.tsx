@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
@@ -55,7 +55,7 @@ export interface Props {
 export default function FloatingImagesHero({ hideSection, text, cta = [], createStoreCta, backgroundImage, backgroundVideo, sectionHeight, useBackground }: Props) {
     if (hideSection) return <></>
     return <div class="relative flex flex-col gap-5 lg:gap-10 lg:justify-center items-center overflow-hidden py-[38px] px-7" style={{ height: sectionHeight || "auto" }}>
-        {useBackground == "image" && backgroundImage?.src && <Image
+        {useBackground == "image" && backgroundImage?.src && <img
             src={backgroundImage.src}
             alt={backgroundImage.alt || "background image"}
             width={backgroundImage.width || 1439}

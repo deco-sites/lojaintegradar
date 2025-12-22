@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 
 export interface IImage {
@@ -26,7 +26,7 @@ export interface Props {
 export default function Quote({ hideSection, title, titleColor, quote, image, imageCaption, backgroundImage, backgroundVideo, useBackground, sectionHeight }: Props) {
     if (hideSection) return <></>
     return <div class="relative py-20 px-16 flex flex-col items-center gap-8" style={{ height: sectionHeight || "auto" }}>
-        {useBackground == "image" && backgroundImage?.src && <Image
+        {useBackground == "image" && backgroundImage?.src && <img
             src={backgroundImage.src}
             alt={backgroundImage.alt || "background image"}
             width={backgroundImage.width || 1439}
@@ -50,7 +50,7 @@ export default function Quote({ hideSection, title, titleColor, quote, image, im
             {quote && <div class="text-lg lg:text-[40px] text-center font-normal lg:font-medium leading-none lg:leading-[120%] max-w-[858px]" dangerouslySetInnerHTML={{ __html: quote }} />}
         </AnimateOnShow>
         <AnimateOnShow divClass="flex flex-col gap-4 items-center">
-            {image?.src && <Image src={image.src} alt={image.alt || "quoted person picture"} width={image.width || 56} height={image.height || 56} />}
+            {image?.src && <img src={image.src} alt={image.alt || "quoted person picture"} width={image.width || 56} height={image.height || 56} />}
             {imageCaption && <div class="text-base font-normal leading-normal" dangerouslySetInnerHTML={{ __html: imageCaption }} />}
         </AnimateOnShow>
     </div>

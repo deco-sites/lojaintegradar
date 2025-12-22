@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
@@ -221,11 +221,11 @@ function SliderItem({ slide, id }: {
     return (<div id={id} class={`px-1 lg:px-4 w-full ${!topImage?.src && 'pt-[73px]'}`}>
             <div class={`relative w-full h-full lg:min-h-[864px] rounded-3xl shadow-spreaded3 overflow-hidden bg-primary text-primary-content`} style={{background: backgroundColor}}>
                 
-                {topImage?.src && <Image width={topImage.width || 200} height={topImage.height || 226} src={topImage.src} alt={topImage.alt || "background top image"} class="w-[200px] h-[226px] object-contain absolute top-0 right-0"/>}
+                {topImage?.src && <img width={topImage.width || 200} height={topImage.height || 226} src={topImage.src} alt={topImage.alt || "background top image"} class="w-[200px] h-[226px] object-contain absolute top-0 right-0"/>}
                 <div class={`relative z-10 h-full w-full py-9 px-6 ${topImage?.src && 'pt-[109px]'}`}>
                     <div class="h-9">
                         {tag?.text && <p class={`inline-flex gap-2.5 items-center h-full py-[7px] px-4 bg-primary-content text-primary-content font-semibold bg-opacity-20 rounded-[20px]`} style={{color: tagColor, background: tagBackgroundColor}}>
-                            {tag?.icon?.src && <Image width={tag.icon.width || 20} height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.src || "tag icon"} class="h-5 w-5 object-contain"/>}
+                            {tag?.icon?.src && <img width={tag.icon.width || 20} height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.src || "tag icon"} class="h-5 w-5 object-contain"/>}
                             {tag.text}
                         </p>}
                     </div>
@@ -285,7 +285,7 @@ function SliderItem({ slide, id }: {
 
                     <div id={id + "fullBulletPoints"} class={`mt-7 ${bulletPoints?.items && bulletPoints?.items.length > 4 ? "hidden lg:flex" : "flex"} flex-col gap-[30px]`}>
                         {bulletPoints?.items?.map((item) => (<div class="flex gap-3.5 text-pri">
-                            {bulletPoints.bulletPointsIcon?.src && <Image width={bulletPoints.bulletPointsIcon.width || 18} height={bulletPoints.bulletPointsIcon.height || 18} class="h-[18px] w-[18px] object-contain" src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet points icon"}/>}
+                            {bulletPoints.bulletPointsIcon?.src && <img width={bulletPoints.bulletPointsIcon.width || 18} height={bulletPoints.bulletPointsIcon.height || 18} class="h-[18px] w-[18px] object-contain" src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet points icon"}/>}
                             <div class="flex w-full justify-between">
                                 <p class="text-lg font-normal leading-none" style={{color: bulletPoints.itemsTextColor}} >{item.text}</p>
                                 {item.toolTipText && <div class={`tooltip tooltip-left h-4`} data-tip={item.toolTipText} style={`--tooltip-text-color: ${bulletPoints.tooltipTextColor}; --tooltip-color: ${bulletPoints.tooltipBackgroundColor};`}>
@@ -296,7 +296,7 @@ function SliderItem({ slide, id }: {
                     </div>
                     <div id={id + "firstBulletPoints"} class={`${bulletPoints?.items && bulletPoints?.items.length <= 4 && 'hidden'} mt-7 flex lg:hidden flex-col gap-[30px]`}>
                         {bulletPoints?.items?.slice(0, 4).map((item) => (<div class="flex gap-3.5 text-pri">
-                            {bulletPoints.bulletPointsIcon?.src && <Image width={bulletPoints.bulletPointsIcon.width || 18} height={bulletPoints.bulletPointsIcon.height || 18} class="h-[18px] w-[18px] object-contain" src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet points icon"}/>}
+                            {bulletPoints.bulletPointsIcon?.src && <img width={bulletPoints.bulletPointsIcon.width || 18} height={bulletPoints.bulletPointsIcon.height || 18} class="h-[18px] w-[18px] object-contain" src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bullet points icon"}/>}
                             <div class="flex w-full justify-between">
                                 <p class="text-lg font-normal leading-none" style={{color: bulletPoints.itemsTextColor}}>{item.text}</p>
                                 {item.toolTipText && <div class={`tooltip tooltip-left h-4`} data-tip={item.toolTipText} style={`--tooltip-text-color: ${bulletPoints.tooltipTextColor}; --tooltip-color: ${bulletPoints.tooltipBackgroundColor};`}>

@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+
 import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 
@@ -64,7 +64,7 @@ export default function Logos({
       {logos?.map((logo, index) => {
         return (
           <div class="w-28 md:w-[156px] md:h-[29px] flex-shrink-0" key={index}>
-            <Image 
+            <img 
               src={logo.src || ""} 
               alt={logo.altText || "Logo"} 
               width={logo.width || 300} 

@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useId } from "site/sdk/useId.ts";
 import Slider from "../components/ui/Slider2.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
@@ -189,7 +189,7 @@ function SliderItem({ slide, id }: {
     const { title, titleColor, bulletPoints = { items: [] }, backgroundImage, text } = slide;
     return (<div id={id} class="relative w-full px-2.5 py-7 text-primary">
         <div class={`relative text-primary min-h-[187px] rounded-3xl py-5 px-8 h-full overflow-hidden ${!backgroundImage?.src && 'bg-primary-content'}`} style={{boxShadow: '0px 3.49px 26.176px 0px rgba(0, 0, 0, 0.10)'}}>
-            {backgroundImage?.src && <Image 
+            {backgroundImage?.src && <img 
                 src={backgroundImage.src}
                 alt={backgroundImage.alt || "slide background image"}
                 width={backgroundImage.width || 398}
@@ -200,7 +200,7 @@ function SliderItem({ slide, id }: {
             {text && <div class="text-sm" dangerouslySetInnerHTML={{__html: text}}/>}
             <div class="text-sm font-normal flex flex-col gap-2.5" style={{color: bulletPoints.textColor}}>
                 {bulletPoints.items && bulletPoints.items.length > 0 && bulletPoints.items.map((item) => (<div class="flex gap-2 items-center">
-                        {bulletPoints.bulletPointsIcon?.src && <Image width={bulletPoints.bulletPointsIcon.width || 12} height={bulletPoints.bulletPointsIcon.height || 12} src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bulletpoint icon"}/>}
+                        {bulletPoints.bulletPointsIcon?.src && <img width={bulletPoints.bulletPointsIcon.width || 12} height={bulletPoints.bulletPointsIcon.height || 12} src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bulletpoint icon"}/>}
                         {item}
                     </div>))}
                 </div>
@@ -256,7 +256,7 @@ export default function PlanDetails2({ hideSection, id, title, backgroundColor, 
     if (hideSection) return <></>
     const carouselId = useId();
     return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-20 text-primary" style={{marginBottom, marginTop, paddingTop, paddingBottom, background: backgroundColor}}>
-        {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 950} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top absolute h-full w-full top-0 left-0 -z-50"/>}
+        {backgroundImage?.src && <img width={backgroundImage.width || 1440} height={backgroundImage.height || 950} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top absolute h-full w-full top-0 left-0 -z-50"/>}
         <AnimateOnShow divClass="lg:mt-0 text-[32px] lg:text-[56px] font-normal leading-[120%] px-6 lg:px-0 max-w-[1244px] mx-auto" animation="animate-fade-down">
             {title && <div dangerouslySetInnerHTML={{__html: title}} style={{...titleTextProps}}/>}
             {text && <div dangerouslySetInnerHTML={{__html: text}} style={{...textProps}}/>}
@@ -286,7 +286,7 @@ export default function PlanDetails2({ hideSection, id, title, backgroundColor, 
                             {annualValues.promoTag?.text && <div class="inline-block rounded-[5px] overflow-hidden p-[1px] mt-3.5" style={{background: annualValues.promoTag.borderColor}}>
                                 <div class="inline-block rounded-[5px]" style={{background: annualValues.promoTag.backgroundColor}}>
                                     <p class={`flex gap-2.5 items-center h-full py-[7px] text-sm px-4 bg-primary-content text-primary-content font-semibold `} style={{background: annualValues.promoTag.textColor, backgroundClip: "text", color: annualValues.promoTag.textColor && 'transparent', fontFamily: annualValues.promoTag.fontFamily}}>
-                                        {annualValues.promoTag?.icon?.src && <Image width={annualValues.promoTag.icon.width || 20} height={annualValues.promoTag.icon.height || 20} src={annualValues.promoTag.icon.src} alt={annualValues.promoTag.icon.alt || "annualValues.promoTag icon"} class="h-5 w-5 object-contain"/>}
+                                        {annualValues.promoTag?.icon?.src && <img width={annualValues.promoTag.icon.width || 20} height={annualValues.promoTag.icon.height || 20} src={annualValues.promoTag.icon.src} alt={annualValues.promoTag.icon.alt || "annualValues.promoTag icon"} class="h-5 w-5 object-contain"/>}
                                         {annualValues.promoTag.text}
                                     </p>
                                 </div>
@@ -319,10 +319,10 @@ export default function PlanDetails2({ hideSection, id, title, backgroundColor, 
                     {useContent == "video" && contentVideo && <video width="532" height="747" autoPlay playsInline muted loading="lazy" loop class="object-cover object-top w-full h-full absolute top-0 left-0 ">
                         <source src={contentVideo} type="video/mp4"/>
                     </video>}
-                    {useContent == "image" && contentImage?.src && <Image width={contentImage.width || 532} height={contentImage.height || 747} src={contentImage.src} alt={contentImage.alt || "content background image"} class="object-cover object-top w-full h-full absolute top-0 left-0"/>}
+                    {useContent == "image" && contentImage?.src && <img width={contentImage.width || 532} height={contentImage.height || 747} src={contentImage.src} alt={contentImage.alt || "content background image"} class="object-cover object-top w-full h-full absolute top-0 left-0"/>}
                     <div>
                         {planTag?.text && <div class="relative z-10 inline-flex gap-2 px-3 lg:px-4 py-1 lg:py-1.5 rounded-[20px] items-center bg-primary-content text-primary text-xs lg:text-sm font-semibold" >
-                            {planTag?.icon?.src && <Image width={planTag.icon.width || 18} height={planTag.icon.height || 18} src={planTag.icon.src} alt={planTag.icon.alt || "plan tag icon"} class="h-[18px] w-[18px] object-contain inline-block"/>}
+                            {planTag?.icon?.src && <img width={planTag.icon.width || 18} height={planTag.icon.height || 18} src={planTag.icon.src} alt={planTag.icon.alt || "plan tag icon"} class="h-[18px] w-[18px] object-contain inline-block"/>}
                             {planTag?.text && <p class="inline-block">{planTag.text}</p>}
                         </div>}
                     </div>

@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useId } from "site/sdk/useId.ts";
 import Slider from "../components/ui/Slider2.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
@@ -139,7 +139,7 @@ function SliderItem({ slide, id, backgroundColor, textColor }: {
                 <h3 class="text-xl font-semibold">{title}</h3>
                 <div class="mt-2.5 text-sm font-normal flex flex-col gap-2.5">
                     {bulletPoints.items && bulletPoints.items.length > 0 && bulletPoints.items.map((item) => (<div class="flex gap-2 items-center">
-                            {bulletPoints.bulletPointsIcon?.src && <Image width={bulletPoints.bulletPointsIcon.width || 12} height={bulletPoints.bulletPointsIcon.height || 12} src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bulletpoint icon"}/>}
+                            {bulletPoints.bulletPointsIcon?.src && <img width={bulletPoints.bulletPointsIcon.width || 12} height={bulletPoints.bulletPointsIcon.height || 12} src={bulletPoints.bulletPointsIcon.src} alt={bulletPoints.bulletPointsIcon.alt || "bulletpoint icon"}/>}
                             {item}
                         </div>))}
                 </div>
@@ -197,17 +197,17 @@ export default function PlanDetails2({ hideSection, id, color1, color2, color3, 
     const contentBackgroundColor = useContent ? "transparent" : color1;
     const carouselId = useId();
     return <div id={id} class="relative pt-10 mt-12 lg:mt-0 pb-12 lg:py-[118px] text-primary" style={{ backgroundColor, color: color2 }}>
-        {backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 950} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top absolute h-full w-full top-0 left-0 -z-50"/>}
+        {backgroundImage?.src && <img width={backgroundImage.width || 1440} height={backgroundImage.height || 950} src={backgroundImage.src} alt={backgroundImage.alt || "background image"} class="object-cover object-top absolute h-full w-full top-0 left-0 -z-50"/>}
         <div class="max-w-[1244px] mx-auto flex flex-wrap lg:flex-nowrap justify-center gap-[18px] lg:gap-[100px]">
             <AnimateOnShow animation="animate-fade-right" divClass="w-full xl:w-auto px-6 lg:px-0">
                 <div class="w-full xl:min-w-[532px] xl:w-[532px] h-[62vw] lg:h-[747px] overflow-hidden rounded-[30px] lg:rounded-[40px] px-5 lg:px-11 py-6 lg:pt-7 lg:pb-10 flex flex-col justify-between relative" style={{ backgroundColor: contentBackgroundColor }}>
                     {useContent == "video" && contentVideo && <video width="532" height="747" autoPlay playsInline muted loading="lazy" loop class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10">
                         <source src={contentVideo} type="video/mp4"/>
                     </video>}
-                    {useContent == "image" && contentImage?.src && <Image width={contentImage.width || 532} height={contentImage.height || 747} src={contentImage.src} alt={contentImage.alt || "content background image"} class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10"/>}
+                    {useContent == "image" && contentImage?.src && <img width={contentImage.width || 532} height={contentImage.height || 747} src={contentImage.src} alt={contentImage.alt || "content background image"} class="object-cover object-top w-full h-full absolute top-0 left-0 -z-10"/>}
                     <div>
                         {planTag?.text && <div class="inline-flex gap-2 px-3 lg:px-4 py-1 lg:py-1.5 rounded-[20px] items-center bg-primary-content text-primary text-xs lg:text-sm font-semibold" style={{ backgroundColor: color2, color: color3 }}>
-                            {planTag?.icon?.src && <Image width={planTag.icon.width || 18} height={planTag.icon.height || 18} src={planTag.icon.src} alt={planTag.icon.alt || "plan tag icon"} class="h-[18px] w-[18px] object-contain inline-block"/>}
+                            {planTag?.icon?.src && <img width={planTag.icon.width || 18} height={planTag.icon.height || 18} src={planTag.icon.src} alt={planTag.icon.alt || "plan tag icon"} class="h-[18px] w-[18px] object-contain inline-block"/>}
                             {planTag?.text && <p class="inline-block">{planTag.text}</p>}
                         </div>}
                     </div>

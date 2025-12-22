@@ -1,5 +1,5 @@
 import type { ImageWidget} from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 
 export interface IImage {
   src: ImageWidget;
@@ -26,7 +26,7 @@ export default function HorizontalLines({lineImage, linesSize, lines}:Props) {
             return (
               <div class={`flex justify-center gap-0 min-h-[1px]`} style={{marginTop: line.distance, height: lineImage.height || 1}}>
                 {Array.from({ length: linesSize || 1 }).map((_, index) => (
-                  <Image
+                  <img
                     key={index}
                     src={lineImage.src}
                     width={lineImage.width || 400}

@@ -1,6 +1,6 @@
 import type { ImageWidget, VideoWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
-import Image from "apps/website/components/Image.tsx";
+
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import CampaignTimer from "../components/CampaignTimer.tsx";
 
@@ -92,7 +92,7 @@ export default function CampaignTimerHero({ hideSection, campaignTimer, title, t
         </div>
 
         <AnimateOnShow animation="animate-fade-left" divClass="max-w-[610px]">
-            {use == "image" && image?.src && <Image
+            {use == "image" && image?.src && <img
                 src={image.src}
                 alt={image.alt || "figure"}
                 width={image.width || 607}
@@ -113,7 +113,7 @@ export default function CampaignTimerHero({ hideSection, campaignTimer, title, t
             </video>}
         </AnimateOnShow>
 
-        {backgroundImage?.src && <Image
+        {backgroundImage?.src && <img
             src={backgroundImage.src}
             alt={backgroundImage.alt || "background image"}
             width={backgroundImage.width || 1440}

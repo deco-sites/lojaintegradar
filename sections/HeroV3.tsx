@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx"
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 
@@ -111,7 +111,7 @@ export interface Props {
 
 export function HeroMedia({ media }: { media?: Media }) {
   return <>
-    {media?.use == "image" && media.image?.src && <Image
+    {media?.use == "image" && media.image?.src && <img
       src={media.image.src}
       alt={media.image.alt || "image"}
       class="object-contain"
@@ -151,7 +151,7 @@ export default function HeroV3({ title, text, textProps, bulletPoints, cta = [],
       style={{ background: container?.backgroundColor, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight }}>
       <AnimateOnShow animation="animate-fade-up50" divClass={`${(media?.use && media.placement != "bellow") && 'max-w-[448px]'} w-full flex flex-col gap-6`} style={{ animationDuration: '1s', maxWidth: title?.titleMaxWidth }}>
 
-        {floatingImage?.src && <Image
+        {floatingImage?.src && <img
           src={floatingImage.src}
           alt={floatingImage.alt || "floating image"}
           width={floatingImage.width || 378}
@@ -170,7 +170,7 @@ export default function HeroV3({ title, text, textProps, bulletPoints, cta = [],
         {bulletPoints?.items && <div class="flex flex-col gap-4">
           {bulletPoints?.items?.map((item) => (
             <p class="flex gap-2 text-sm font-normal" style={{ color: bulletPoints?.bulletPointsColor, ...bulletPoints.textProps }}>
-              {bulletPoints?.bulletPointsIcon?.src && <Image
+              {bulletPoints?.bulletPointsIcon?.src && <img
                 height={bulletPoints?.bulletPointsIcon?.height || 15}
                 width={bulletPoints?.bulletPointsIcon?.width || 15}
                 src={bulletPoints?.bulletPointsIcon?.src}
@@ -197,7 +197,7 @@ export default function HeroV3({ title, text, textProps, bulletPoints, cta = [],
       </AnimateOnShow>}
 
 
-      {container?.backgroundMedia?.use == "image" && container?.backgroundMedia.image?.src && <Image
+      {container?.backgroundMedia?.use == "image" && container?.backgroundMedia.image?.src && <img
         src={container?.backgroundMedia.image.src}
         alt={container?.backgroundMedia.image.alt || "background image"}
         width={container?.backgroundMedia.image.width || 1277}
@@ -209,7 +209,7 @@ export default function HeroV3({ title, text, textProps, bulletPoints, cta = [],
         <source src={container?.backgroundMedia.video} type="video/mp4" />
       </video>}
     </div>
-    {sectionBackground?.use == "image" && sectionBackground.image?.src && <Image
+    {sectionBackground?.use == "image" && sectionBackground.image?.src && <img
       src={sectionBackground.image.src}
       alt={sectionBackground.image.alt || "background image"}
       width={sectionBackground.image.width || 1277}

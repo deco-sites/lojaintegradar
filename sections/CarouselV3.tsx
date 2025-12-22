@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
@@ -167,7 +167,7 @@ function SliderItem({ slide, id }: {
     const { title, caption, captionTextProps, image, video, use = "image", cta = [], icon, backgroundColor } = slide;
     return (<div id={id} class={`relative w-full rounded-md lg:rounded-lg flex flex-col group overflow-hidden z-10 `} >
         <div class="p-6 lg:p-8 flex flex-col gap-2.5 lg:gap-3 min-h-[282px]" style={{background: backgroundColor}}>
-            {icon?.src && <Image 
+            {icon?.src && <img 
                 src={icon.src}
                 alt={icon.alt || "icon"}
                 width={icon.width || 40}
@@ -187,7 +187,7 @@ function SliderItem({ slide, id }: {
         </div>
 
         <div class="overflow-hidden relative h-full">
-            {use == "image" && image?.src && <Image 
+            {use == "image" && image?.src && <img 
                 src={image.src}
                 alt={image.alt}
                 width={image.width || 414}
@@ -288,7 +288,7 @@ function Carousel(props: Props) {
                     <CTA {...cta} />
                 ))}
             </AnimateOnShow>
-        {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
+        {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <img
         src={backgroundMedia.image.src}
         alt={backgroundMedia.image.alt || "background image"}
         width={backgroundMedia.image.width || 1277}

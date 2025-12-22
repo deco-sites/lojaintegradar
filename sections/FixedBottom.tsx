@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useScript } from "@deco/deco/hooks";
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 
@@ -55,7 +55,7 @@ export default function FixedBottom({ hideSection, backgroundColor, logo, text, 
       </button>}
       <div class={`px-[46px] py-[18px] lg:py-[35px] lg:px-16 flex flex-wrap lg:flex-nowrap gap-16 gap-y-5 items-center ${centerContent ? 'justify-center' : 'justify-between'} relative peer-checked:hidden`} style={{ zIndex: zIndex + 2, height }}>
         <div class="flex gap-5 justify-between">
-          {logo?.src && <Image src={logo.src} loading="lazy" decoding="async" fetchPriority="low" width={logo.width || 271} height={logo.height || 50} alt={logo.alt || 'Logo'} />}
+          {logo?.src && <img src={logo.src} loading="lazy" decoding="async" fetchPriority="low" width={logo.width || 271} height={logo.height || 50} alt={logo.alt || 'Logo'} />}
 
           <div width="100%" dangerouslySetInnerHTML={{ __html: text || "" }} style={{ ...textProps }} class="text-[22px] font-medium lg:hidden" />
         </div>
@@ -69,7 +69,7 @@ export default function FixedBottom({ hideSection, backgroundColor, logo, text, 
         </div>
 
       </div>
-      {rightBackgroundImage?.src && <Image
+      {rightBackgroundImage?.src && <img
         src={rightBackgroundImage.src}
         width={rightBackgroundImage.width || 442}
         loading="lazy"
@@ -81,7 +81,7 @@ export default function FixedBottom({ hideSection, backgroundColor, logo, text, 
         style={{ zIndex: zIndex + 1 }}
       />}
 
-      {leftBackgroundImage?.src && <Image
+      {leftBackgroundImage?.src && <img
         src={leftBackgroundImage.src}
         width={leftBackgroundImage.width || 442}
         loading="lazy"

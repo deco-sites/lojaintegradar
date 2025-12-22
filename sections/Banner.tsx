@@ -1,5 +1,5 @@
 import type { ImageWidget} from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { Props as LinkProps } from "site/components/ui/CTA.tsx";
 import { useScript } from "@deco/deco/hooks";
 
@@ -94,7 +94,7 @@ export default function Banner({sectionId, image, link, containerHeight, contain
       aria-label="Banner"
       target={link?.href?.includes("http") ? "_blank" : "_self"}
       class="cursor-pointer">
-      <Image
+      <img
         width={image.width || 1440}
         height={image.height || 449}
         src={image.src}

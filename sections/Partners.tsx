@@ -1,5 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 
 interface Props {
     hideSection?: boolean;
@@ -34,7 +34,7 @@ function Partners({ hideSection, title, images, imagesDesktop }: Props) {
                 <span data-aos="fade-down" class="text-2xl text-primary-content font-light text-left">{title}</span>
                 <div data-aos="fade-down" class="flex flex-wrap gap-7">
                     {images?.map((img) => (
-                        <Image
+                        <img
                             src={img.image || ""}
                             alt={img.alt || ""}
                             height={img.height || 25}
@@ -43,7 +43,7 @@ function Partners({ hideSection, title, images, imagesDesktop }: Props) {
                         />
                     ))}
                     {imagesDesktop?.map((img) => (
-                        <Image
+                        <img
                             src={img.image || ""}
                             alt={img.alt || ""}
                             height={img.height || 25}

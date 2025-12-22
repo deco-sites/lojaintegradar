@@ -1,5 +1,5 @@
 import type { ImageWidget, RichText, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useScript } from "@deco/deco/hooks";
 import { useId } from "../sdk/useId.ts";
 
@@ -113,7 +113,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
         <div class="h-screen flex flex-col justify-center items-center" style={{ height: foldsHeight }}>
           {fold.textPosition == "Left" && <div>
             <div class="flex flex-col gap-3">
-              {fold.icon?.src && <Image 
+              {fold.icon?.src && <img 
                 loading="lazy" 
                 decoding="async" 
                 fetchPriority="low" 
@@ -131,7 +131,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
 
           {/*mobile media */}
           {fold.textPosition == "Right" && <div class="lg:hidden">
-            {fold.use != 'video' && fold.image?.src && <Image
+            {fold.use != 'video' && fold.image?.src && <img
               src={fold.image.src}
               alt={fold.image.alt || "Sticky image"}
               width={fold.image.width || 179}
@@ -143,7 +143,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
             />}
             {fold.use == 'video' && fold.video?.src && <div class="relative" style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px" }}>
               {fold.video.mockup && fold.image?.src && <div class="absolute z-10 flex items-center w-full h-full" style={{ transform: `scale(${fold.video.mockupScale})` }}>
-                <Image
+                <img
                   src={fold.image.src}
                   loading="lazy"
                   decoding="async"
@@ -171,7 +171,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
           {folds.map((fold, index) => {
             return <>
               {fold.use != 'video' && fold.image?.src &&
-                <Image
+                <img
                   src={fold.image.src}
                   alt={fold.image.alt || "Sticky image"}
                   width={fold.image.width || 336}
@@ -188,7 +188,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
 
 
                 {fold.video.mockup && fold.image?.src && <div class="absolute z-10 flex items-center w-full h-full" style={{ transform: `scale(${fold.video.mockupScale})` }}>
-                  <Image
+                  <img
                     src={fold.image.src}
                     alt={fold.image.alt || "Sticky image"}
                     width={fold.image.width || 336}
@@ -218,7 +218,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
         <div class="h-screen flex flex-col justify-center" style={{ height: foldsHeight }}>
           {fold.textPosition == "Right" && <div>
             <div class="flex flex-col gap-3">
-              {fold.icon?.src && <Image 
+              {fold.icon?.src && <img 
                 src={fold.icon.src} 
                 alt={fold.icon.alt || 'icon'} 
                 width={fold.icon.width || 60} 
@@ -233,7 +233,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
 
           {/*mobile media */}
           {fold.textPosition == "Left" && <div class="lg:hidden ">
-            {fold.use != 'video' && fold.image?.src && <Image
+            {fold.use != 'video' && fold.image?.src && <img
               src={fold.image.src}
               alt={fold.image.alt || "Sticky image"}
               width={fold.image.width || 179}
@@ -245,7 +245,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight, 
             />}
             {fold.use == 'video' && fold.video?.src && <div class="relative" style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px" }}>
               {fold.video.mockup && fold.image?.src && <div class="absolute z-10 flex items-center w-full h-full" style={{ transform: `scale(${fold.video.mockupScale})` }}>
-                <Image
+                <img
                   src={fold.image.src}
                   alt={fold.image.alt || "Sticky image"}
                   loading="lazy"

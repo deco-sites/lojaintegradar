@@ -1,6 +1,6 @@
 import type { ImageWidget, VideoWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
-import Image from "apps/website/components/Image.tsx";
+
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 
 export interface IImage {
@@ -113,7 +113,7 @@ export function CardColumn({ cards = [], cardsMaxWidth, distanceBetweenCards }: 
                 delay={100 * index}>
 
                 {card.image?.src && card.image.imagePlacement !== "bottom" && <div class="flex w-full justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Image
+                    <img
                         src={card.image.src}
                         alt={card.image.alt}
                         width={card.image.width || 539}
@@ -139,7 +139,7 @@ export function CardColumn({ cards = [], cardsMaxWidth, distanceBetweenCards }: 
                 {card.bulletPoints?.items && card.bulletPoints.items.length > 0 && <div class="flex flex-col gap-4 mt-5">
                     {card.bulletPoints?.items?.map((item) => (
                         <p class="flex gap-2 text-sm font-normal" style={{ ...card.bulletPoints?.bulletPointsTextProps }}>
-                            {card.bulletPoints?.bulletPointsIcon?.src && <Image
+                            {card.bulletPoints?.bulletPointsIcon?.src && <img
                                 height={card.bulletPoints?.bulletPointsIcon?.height || 15}
                                 width={card.bulletPoints?.bulletPointsIcon?.width || 15}
                                 src={card.bulletPoints?.bulletPointsIcon?.src}
@@ -157,7 +157,7 @@ export function CardColumn({ cards = [], cardsMaxWidth, distanceBetweenCards }: 
                 </div>
 
                 {card.image?.src && card.image.imagePlacement === "bottom" && <div class="flex w-full justify-center mb-4">
-                    <Image
+                    <img
                         src={card.image.src}
                         alt={card.image.alt}
                         width={card.image.width || 539}
@@ -165,7 +165,7 @@ export function CardColumn({ cards = [], cardsMaxWidth, distanceBetweenCards }: 
                     />
                 </div>}
 
-                {card.useBackground == "image" && card.backgroundImage?.src && <Image
+                {card.useBackground == "image" && card.backgroundImage?.src && <img
                     width={card.backgroundImage.width || 597}
                     height={card.backgroundImage.height || 211}
                     src={card.backgroundImage.src}

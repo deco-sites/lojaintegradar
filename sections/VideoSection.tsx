@@ -1,6 +1,6 @@
 import type { ImageWidget, VideoWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
-import Image from "apps/website/components/Image.tsx";
+
 import { useScript } from "@deco/deco/hooks";
 import { Head } from "$fresh/runtime.ts";
 
@@ -210,7 +210,7 @@ export default function ({ hideSection = false, title, titleTextProps, video, se
         </div>
         }
 
-        {video?.thumbnailImage?.src && <Image
+        {video?.thumbnailImage?.src && <img
           src={video.thumbnailImage.src}
           alt={video.thumbnailImage.alt || "Video thumbnail"}
           width={video.thumbnailImage.width || 972}
@@ -219,7 +219,7 @@ export default function ({ hideSection = false, title, titleTextProps, video, se
         />}
 
         {video?.playButton?.src && <div class="absolute z-20 w-full h-full top-0 left-0 flex items-center justify-center overlayDiv">
-          <Image
+          <img
             src={video.playButton.src}
             alt={video.playButton.alt || "Play Button"}
             width={video.playButton.width || 130}
@@ -229,7 +229,7 @@ export default function ({ hideSection = false, title, titleTextProps, video, se
         </div>}
       </div>
 
-      {bottomImage?.src && <Image
+      {bottomImage?.src && <img
         src={bottomImage.src}
         width={bottomImage.width || 260}
         height={bottomImage.height || 88}
@@ -241,7 +241,7 @@ export default function ({ hideSection = false, title, titleTextProps, video, se
     </div>
 
     {backgroundMedia?.color && <div style={{ background: backgroundMedia.color }} class="absolute top-0 left-0 h-full w-full -z-50" />}
-    {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
+    {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <img
       src={backgroundMedia.image.src}
       alt={backgroundMedia.image.alt || "background image"}
       width={backgroundMedia.image.width || 1277}

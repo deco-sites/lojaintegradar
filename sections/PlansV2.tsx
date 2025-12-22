@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import Slider from "../components/ui/Slider2.tsx";
 import { useId } from "../sdk/useId.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
@@ -236,14 +236,14 @@ function SliderItem({ slide, id }: {
     return (<div id={id} class={`px-1 lg:px-4 w-full `}>
             <div class={`relative w-full h-full lg:min-h-[864px] rounded-3xl shadow-spreaded3 overflow-hidden bg-primary text-primary-content`} style={{background: backgroundColor}}>
                 
-                {topImage?.src && <Image width={topImage.width || 200} height={topImage.height || 226} src={topImage.src} alt={topImage.alt || "background top image"} class="object-contain object-right-top absolute top-0 right-0"/>}
+                {topImage?.src && <img width={topImage.width || 200} height={topImage.height || 226} src={topImage.src} alt={topImage.alt || "background top image"} class="object-contain object-right-top absolute top-0 right-0"/>}
                 <div class={`relative flex flex-col justify-between z-10 h-full w-full py-9 px-6`}>
                     <div>
                         {!tag?.hideTag && <div class="h-9">
                             {tag?.text && <div class={`inline-block rounded-[5px] overflow-hidden p-[1px] ${tag.onlyAnnual && 'annualTag'}`} style={{background: tag.borderColor}}>
                                 <div class="inline-block rounded-[5px]" style={{background: tag.backgroundColor}}>
                                     <div class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `} style={{background: tag.textColor, backgroundClip: "text", color: tag.textColor && 'transparent', fontFamily: tag.fontFamily}}>
-                                        {tag?.icon?.src && <Image width={tag.icon.width || 20} height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.alt || "tag icon"} class="h-5 w-5 object-contain"/>}
+                                        {tag?.icon?.src && <img width={tag.icon.width || 20} height={tag.icon.height || 20} src={tag.icon.src} alt={tag.icon.alt || "tag icon"} class="h-5 w-5 object-contain"/>}
                                         <div dangerouslySetInnerHTML={{__html: tag.text}}/>
                                     </div>
                                 </div>
@@ -253,7 +253,7 @@ function SliderItem({ slide, id }: {
 
                         <div class={`mt-7 flex flex-col`}>
                             {bulletPoints?.items?.map((item) => (<div class="flex gap-3.5 text-primary" style={{marginTop: item.marginTop || "20px"}}>
-                                {(item.icon?.src || bulletPoints.bulletPointsIcon?.src) && <Image 
+                                {(item.icon?.src || bulletPoints.bulletPointsIcon?.src) && <img 
                                     width={item.icon?.width || bulletPoints.bulletPointsIcon?.width || 18} 
                                     height={item.icon?.height || bulletPoints.bulletPointsIcon?.height || 18} 
                                     class="object-contain" src={item.icon?.src || bulletPoints.bulletPointsIcon?.src || ""} 
@@ -279,7 +279,7 @@ function SliderItem({ slide, id }: {
                             {annualSaving?.text && <div class="inline-block rounded-[5px] overflow-hidden p-[1px]" style={{background: annualSaving.borderColor}}>
                                 <div class="inline-block rounded-[5px]" style={{background: annualSaving.backgroundColor}}>
                                     <div class={`flex gap-2.5 items-center h-full py-[7px] text-xl px-4 bg-primary-content text-primary-content font-normal `} style={{background: annualSaving.textColor, backgroundClip: "text", color: annualSaving.textColor && 'transparent', fontFamily: annualSaving.fontFamily}}>
-                                        {annualSaving?.icon?.src && <Image width={annualSaving.icon.width || 20} height={annualSaving.icon.height || 20} src={annualSaving.icon.src} alt={annualSaving.icon.alt || "annualSaving icon"} class="h-5 w-5 object-contain"/>}
+                                        {annualSaving?.icon?.src && <img width={annualSaving.icon.width || 20} height={annualSaving.icon.height || 20} src={annualSaving.icon.src} alt={annualSaving.icon.alt || "annualSaving icon"} class="h-5 w-5 object-contain"/>}
                                         <div dangerouslySetInnerHTML={{__html: annualSaving.text}} />
                                     </div>
                                 </div>

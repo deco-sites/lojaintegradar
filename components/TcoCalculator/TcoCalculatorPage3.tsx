@@ -1,6 +1,6 @@
 import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import { invoke } from "../../runtime.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { HtmlEscaped } from "@hono/hono/utils/html";
 import { Plan } from "site/sections/TcoCalculator.tsx";
 import { useScript } from "@deco/deco/hooks";
@@ -280,14 +280,14 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
     const inputClass = "bg-transparent min-h-[38px] w-full rounded-lg border border-primary px-4 mt-2.5";
     return (<div class="relative flex flex-wrap lg:flex-nowrap w-full min-h-[971px] lg:rounded-[30px] overflow-hidden hidden">
             <div class={`relative w-full lg:max-w-[437px] pt-[121px] px-11 ${!asideBackground && 'bg-primary'} text-primary-content hidden lg:block`} style={{color: asideTextColor}}>
-                {asideTopIcon?.src && <Image width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10"/>}
-                {asideBackground?.src && <Image width={asideBackground.width || 813} height={asideBackground.height || 971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
+                {asideTopIcon?.src && <img width={asideTopIcon.width || 133} height={asideTopIcon.height || 119} src={asideTopIcon.src} alt={asideTopIcon.alt || "content background"} class="absolute top-4 right-[-30px] w-[133px] h-[119px] object-contain z-10"/>}
+                {asideBackground?.src && <img width={asideBackground.width || 813} height={asideBackground.height || 971} src={asideBackground.src} alt={asideBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
                 <h2 class="text-[32px] leading-[130%]">{title}</h2>
                 <p class="text-sm mt-5 leading-[120%]">{caption}</p>
                 <div class="mt-[60px]">
                     {benefits && benefits.map((benefit) => (<div class="mt-[30px]">
                         <div class="flex">
-                                {benefit.icon.src && <Image height={benefit.icon.height || 17} width={17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} class="mr-2.5"/>}
+                                {benefit.icon.src && <img height={benefit.icon.height || 17} width={17} src={benefit.icon.src} alt={benefit.icon.alt || "benefit icon"} class="mr-2.5"/>}
                                 <p style={{color: benefit.titleColor}}>{benefit.title}</p>
                             </div>
                             <p class="mt-2.5 text-sm" style={{color: benefit.captionColor}}>{benefit.caption}</p>
@@ -296,18 +296,18 @@ function TcoCalculatorPage3({ page1, rootId, page3, plans }: {
             </div>
 
             <div class="lg:hidden relative text-2xl text-secondary-content font-semibold py-10 px-4 w-full min-h-[155px]" style={{color: asideTextColor}}>
-                    {mobileTopBanner.src && <Image width={mobileTopBanner.width || 430} height={mobileTopBanner.height || 155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10"/>}
+                    {mobileTopBanner.src && <img width={mobileTopBanner.width || 430} height={mobileTopBanner.height || 155} alt={mobileTopBanner.alt || "background image"} src={mobileTopBanner.src} class="absolute w-full h-full top-0 left-0 object-cover -z-10"/>}
                     <p>{title}</p>
             </div>
 
             <div class="py-14 px-3.5 lg:px-28 relative w-full">
-                {contentBackground?.src && <Image width={contentBackground.width || 813} height={contentBackground.height || 971} src={contentBackground.src} alt={contentBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
+                {contentBackground?.src && <img width={contentBackground.width || 813} height={contentBackground.height || 971} src={contentBackground.src} alt={contentBackground.alt || "content background"} class="absolute top-0 left-0 -z-50 w-full h-full object-cover"/>}
                 <div class="flex gap-2">
-                    {contentTitleIcon?.src && <Image src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={contentTitleIcon.width || 14} height={contentTitleIcon.height || 14}/>}
+                    {contentTitleIcon?.src && <img src={contentTitleIcon.src} alt={contentTitleIcon.alt || "icon"} width={contentTitleIcon.width || 14} height={contentTitleIcon.height || 14}/>}
                     <div dangerouslySetInnerHTML={{ __html: contentTitle }}/>
                 </div>
                 {contentCaption && <p class="mt-2.5" style={{color: contentCaptionColor}}>{contentCaption}</p>}
-                {progressImage?.src && <div class="mt-7"><Image width={progressImage.width || 590} height={progressImage.height || 70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left"/></div>}
+                {progressImage?.src && <div class="mt-7"><img width={progressImage.width || 590} height={progressImage.height || 70} src={progressImage.src} alt={progressImage.alt || "progress image"} class="max-h-[67px] object-contain object-left"/></div>}
 
                 <form class="flex flex-wrap gap-[38px] mt-14 w-full page3form">
                     <label class={labeClass} style={{ animationDuration: "0.3s" }}> 

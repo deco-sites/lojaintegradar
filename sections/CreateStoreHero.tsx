@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import CreateStoreForm from "../islands/CreateStoreForm.tsx";
@@ -282,7 +282,7 @@ export default function CreateStoreHero({
 
       {/* Background Image - Otimizado para não competir com LCP */}
       {backgroundMedia?.use == "image" && backgroundMedia.image?.src && (
-        <Image
+        <img
           src={backgroundMedia.image.src}
           alt={backgroundMedia.image.alt || "background image"}
           width={backgroundMedia.image.width || 1440}

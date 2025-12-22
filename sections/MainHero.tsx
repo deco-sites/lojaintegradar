@@ -1,5 +1,5 @@
 import type { ImageWidget, HTMLWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { useId } from "site/sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
 import { HeroMedia } from "site/sections/HeroV2.tsx";
@@ -151,7 +151,7 @@ export default function MainHero({ hideSection, mediaPosition = "right", caption
     return <div class="relative overflow-hidden">
         <div id={id} class={`flex flex-wrap gap-y-7 lg:flex-nowrap min-h-96 pt-[92px] lg:pt-40 overflow-hidden ${!bulletPoints?.show && 'pb-12'}`} style={{minHeight: sectionMinHeight, paddingBottom, paddingTop}}>
             
-            {useBackground == "image" && backgroundImage?.src && <Image width={backgroundImage.width || 1440} height={backgroundImage.height || 926} 
+            {useBackground == "image" && backgroundImage?.src && <img width={backgroundImage.width || 1440} height={backgroundImage.height || 926} 
                 class={`w-full h-full absolute object-cover top-0 left-0 -z-40 object-right-top ${backgroundAnimation && 'animate-background-animation'}` }
                 alt={backgroundImage?.alt || "background image"} src={backgroundImage.src} loading={lcp ? "eager" : "lazy"} preload={true}
                 style={{animationDuration: '7s'}}
@@ -203,7 +203,7 @@ export default function MainHero({ hideSection, mediaPosition = "right", caption
 
             <div class={`md:flex-grow md:flex flex-col justify-end ${position[mediaPosition]} ${(use == "image" || use == "video") && "lg:w-1/2"}`}>
                 {htmlContent && <div class="px-7 flex justify-center w-[98vw] md:w-auto" dangerouslySetInnerHTML={{ __html: htmlContent }}/>}
-                {use == "image" && image?.src && <Image width={image.width || 697} height={image.height || 592} src={image.src} alt={image.src || ""} class=" object-contain hidden md:block"/>}
+                {use == "image" && image?.src && <img width={image.width || 697} height={image.height || 592} src={image.src} alt={image.src || ""} class=" object-contain hidden md:block"/>}
                 {use == "video" && video && <video width="697" height="592" autoPlay playsInline muted loading="lazy" loop class="w-full xl:w-auto max-w-[809px] object-contain hidden md:block">
                     <source src={video} type="video/mp4"/>
                 </video>}
@@ -365,7 +365,7 @@ export default function MainHero({ hideSection, mediaPosition = "right", caption
                 <div class="flex overflow-auto lg:overflow-visible gap-7 lg:gap-[88px] mt-7 pb-4">
                     {bulletPoints?.items?.map((item) => (
                         <div class="flex gap-3.5 min-w-[210px] lg:min-w-0">
-                            {bulletPoints?.bulletPointsIcon?.src && <Image 
+                            {bulletPoints?.bulletPointsIcon?.src && <img 
                                 src={bulletPoints?.bulletPointsIcon?.src}
                                 alt={bulletPoints?.bulletPointsIcon.alt}
                                 width={bulletPoints?.bulletPointsIcon.width || 18}

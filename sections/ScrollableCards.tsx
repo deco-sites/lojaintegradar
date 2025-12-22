@@ -1,7 +1,7 @@
 import { RichText, ImageWidget } from "apps/admin/widgets.ts";
 import { useId } from "../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
-import Image from "apps/website/components/Image.tsx";
+
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
@@ -153,7 +153,7 @@ export default function ScrollableCards({ hideSection, id, title, titleTextProps
                 <div class="" dangerouslySetInnerHTML={{ __html: card.title?.text || "" }} style={{...card.titleTextProps}} />
                 <div class="mt-3" dangerouslySetInnerHTML={{ __html: card.caption || "" }} style={{...card.captionTextProps}}/>
                 <div class="flex gap-4 mt-8">
-                  {card.image?.src && <Image
+                  {card.image?.src && <img
                     src={card.image.src}
                     alt={card.image.alt || "card image"}
                     width={card.image.width || 75}

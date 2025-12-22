@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 import { HeroMedia } from "../sections/HeroV3.tsx";
 
@@ -87,7 +87,7 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
     <div class="relative pt-[60px] pb-8 lg:pt-[124px] lg:pb-8 px-5 lg:px-0">
       <div class="max-w-[1120px] mx-auto flex flex-col items-center">
 
-        {titleImage?.src && <Image
+        {titleImage?.src && <img
           src={titleImage.src}
           alt={titleImage.alt || "image"}
           class="object-contain"
@@ -109,7 +109,7 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
             {cta.map(cta => (
               <CTA {...cta} />
             ))}
-            {ctaFloatingImage?.src && <Image
+            {ctaFloatingImage?.src && <img
               src={ctaFloatingImage.src}
               width={ctaFloatingImage.width || 47}
               height={ctaFloatingImage.height || 47}
@@ -126,7 +126,7 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
         {socialMedias.length > 0 && <div class="flex gap-4 justify-center items-center mt-[60px] lg:mt-[40px]">
           {socialMedias.map((social, index) => (
             <a hx-on:click={`window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'clique', custom_section: 'lp-komea', custom_type: 'footer', custom_title: '${social.logo?.alt || `Social ${index + 1}`}'});`} target={social.href?.includes("http") ? "_blank" : "_self"} href={social.href}>
-              <Image src={social.logo?.src || ""} loading="lazy" decoding="async" fetchPriority="low" width={social.logo?.width || 26} height={social.logo?.height || 26} alt={social.logo?.alt || "social media logo"} />
+              <img src={social.logo?.src || ""} loading="lazy" decoding="async" fetchPriority="low" width={social.logo?.width || 26} height={social.logo?.height || 26} alt={social.logo?.alt || "social media logo"} />
             </a>
           ))}
         </div>}
@@ -137,7 +137,7 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
       </div>
 
       {backgroundMedia?.backgroundColor && <div style={{ background: backgroundMedia.backgroundColor }} class="absolute top-0 left-0 h-full w-full -z-50" />}
-      {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
+      {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <img
         src={backgroundMedia.image.src}
         alt={backgroundMedia.image.alt || "background image"}
         width={backgroundMedia.image.width || 1277}

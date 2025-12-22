@@ -1,7 +1,7 @@
 import { RichText, ImageWidget } from "apps/admin/widgets.ts";
 import { useId } from "../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
-import Image from "apps/website/components/Image.tsx";
+
 
 const onLoad = (rootId: string, lines: Line[]) => {
   const parent = document.getElementById(rootId) as HTMLElement;
@@ -90,7 +90,7 @@ export default function RevealingText({ id, lines = [], backgroundMedia, scrollA
       <div class="h-[100vh] sticky top-0 flex flex-col items-center justify-center" style={{ background: backgroundMedia?.backgroundColor }}>
         {logos.length > 0 && <div class="flex flex-warp justify-center gap-4 mb-9 items-center">
           {logos.map(logo => (
-            <Image 
+            <img 
               src={logo.src || ""}
               width={logo.width || 220}
               height={logo.height || 74}

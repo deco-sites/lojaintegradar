@@ -1,5 +1,5 @@
 import type { ImageWidget, RichText, VideoWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 
@@ -80,7 +80,7 @@ export default function Footer2({ hideSection, id, title, titleFont, backgroundI
                     <embed width="1440" height="611" src={backgroundVideo} />
                 </object>
             </video>}
-            {useBackground == "image" && backgroundImage?.src && <Image
+            {useBackground == "image" && backgroundImage?.src && <img
                 width={backgroundImage.width || 1440}
                 height={backgroundImage.height || 611}
                 src={backgroundImage.src}
@@ -96,7 +96,7 @@ export default function Footer2({ hideSection, id, title, titleFont, backgroundI
             </AnimateOnShow>
         </div>
         <div class="relative pb-32">
-            {bottomBackground?.src && <Image
+            {bottomBackground?.src && <img
                 width={bottomBackground.width || 1440}
                 height={bottomBackground.height || 420}
                 src={bottomBackground.src}
@@ -107,7 +107,7 @@ export default function Footer2({ hideSection, id, title, titleFont, backgroundI
                 {cards.length > 0 && cards.map((card) => (
                     <div class="flex-grow min-w-[78vw] lg:min-w-0 lg:max-w-[500px] rounded-[30px] bg-primary-content py-7 lg:py-10 px-12 lg:px-14 shadow-spreaded3" style={{ backgroundColor: color2 }}>
                         <div class="flex gap-2.5 lg:gap-5 items-center">
-                            {card.cardIcon?.src && <Image
+                            {card.cardIcon?.src && <img
                                 width={card.cardIcon.width || 40}
                                 height={card.cardIcon.height || 40}
                                 src={card.cardIcon.src}
@@ -135,7 +135,7 @@ export default function Footer2({ hideSection, id, title, titleFont, backgroundI
             <div class="max-w-[1240px] mx-auto flex flex-col lg:flex-row flex-wrap gap-x-4 lg:gap-x-20 gap-y-4 justify-center items-center mt-9 lg:mt-20">
                 {showLogo && <AnimateOnShow divClass={`w-full ${logoPosition == "below" && 'max-w-[193px]'} order-1 lg:-order-none`} animation="animate-fade-up" delay={100}>
                     <div class="max-w-[193px] mx-auto">
-                        {logo?.src && <Image
+                        {logo?.src && <img
                             width={logo.width || 193}
                             height={logo.height || 31}
                             src={logo.src}
@@ -150,7 +150,7 @@ export default function Footer2({ hideSection, id, title, titleFont, backgroundI
                     {socialLinksCaption && <div class="text-2xl" dangerouslySetInnerHTML={{ __html: socialLinksCaption }} />}
                     {socialLinks?.map((link) => (
                         <a href={link.href} target="_blank" class="flex">
-                            <Image width={link.icon.width || 21} height={link.icon.height || 21} src={link.icon.src || ""} alt={link.icon.alt || "social media icon"} class="object-contain" />
+                            <img width={link.icon.width || 21} height={link.icon.height || 21} src={link.icon.src || ""} alt={link.icon.alt || "social media icon"} class="object-contain" />
                         </a>
                     ))}
                 </AnimateOnShow>

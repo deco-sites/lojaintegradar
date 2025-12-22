@@ -2,7 +2,7 @@ import { useId } from "../sdk/useId.ts";
 import Slider from "../components/ui/Slider.tsx";
 import Icon from "../components/ui/Icon.tsx";
 import { clx } from "../sdk/clx.ts";
-import Image from "apps/website/components/Image.tsx";
+
 import { ImageWidget } from "apps/admin/widgets.ts";
 import PricesButtons from "site/islands/PricesButtons.tsx";
 import { Button } from "site/types/types.ts";
@@ -81,7 +81,7 @@ function Prices({
             class="relative z-[5] bg-base-300 py-6 lg:pb-20 lg:pt-[72px]"
         >
             {backgroundImage?.firstBackground && (
-                <Image
+                <img
                     src={backgroundImage?.firstBackground}
                     alt={"gradient background"}
                     height={806}
@@ -90,7 +90,7 @@ function Prices({
                 />
             )}
             {backgroundImage?.secondBackground && (
-                <Image
+                <img
                     src={backgroundImage?.secondBackground}
                     alt={"gradient background"}
                     height={806}

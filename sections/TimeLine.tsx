@@ -1,6 +1,6 @@
 import { HTMLWidget, ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 
 export interface IImage {
     src?: ImageWidget;

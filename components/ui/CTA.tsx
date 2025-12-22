@@ -1,6 +1,6 @@
 import { useScript } from "@deco/deco/hooks";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 
 export interface IImage {
   src?: ImageWidget;

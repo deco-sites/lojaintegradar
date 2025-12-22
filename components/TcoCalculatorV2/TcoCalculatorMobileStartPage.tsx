@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import {Benefit, IImage } from "./TcoCalculatorPage1.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { HTMLWidget } from "apps/admin/widgets.ts";

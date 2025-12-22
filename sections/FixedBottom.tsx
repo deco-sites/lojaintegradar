@@ -1,5 +1,5 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import { useScript } from "@deco/deco/hooks";
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 

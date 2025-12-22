@@ -1,7 +1,7 @@
 import { RichText, ImageWidget } from "apps/admin/widgets.ts";
 import { useId } from "../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import TalkToSpecialistCta from "site/components/TalkToSpecialitCta.tsx";
 import CreateStoreCta from "site/components/CreateStoreCta.tsx";
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";

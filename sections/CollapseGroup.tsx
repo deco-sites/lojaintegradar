@@ -1,5 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import { useScript } from "@deco/deco/hooks";
 const onChange = () => {
     const element = event!.currentTarget as HTMLInputElement;

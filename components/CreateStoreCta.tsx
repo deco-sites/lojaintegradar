@@ -1,6 +1,6 @@
 // import { AnalyticsItem } from "apps/commerce/types.ts";
 import { JSX } from 'preact';
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { ImageWidget } from "apps/admin/widgets.ts";
 // import { useSendEvent } from "site/sdk/useSendEvent.ts";

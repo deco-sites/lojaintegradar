@@ -1,6 +1,6 @@
 import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import { invoke } from "../../runtime.ts";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import { HtmlEscaped } from "@hono/hono/utils/html";
 import { Plan } from "site/sections/TcoCalculator.tsx";
 import { useScript } from "@deco/deco/hooks";

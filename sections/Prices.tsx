@@ -2,7 +2,7 @@ import { useId } from "../sdk/useId.ts";
 import Slider from "../components/ui/Slider.tsx";
 import Icon from "../components/ui/Icon.tsx";
 import { clx } from "../sdk/clx.ts";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import PricesButtons from "site/islands/PricesButtons.tsx";
 import { Button } from "site/types/types.ts";

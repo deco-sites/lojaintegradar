@@ -1,5 +1,5 @@
 import type { ImageWidget} from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import { Props as LinkProps } from "site/components/ui/CTA.tsx";
 import { useScript } from "@deco/deco/hooks";
 

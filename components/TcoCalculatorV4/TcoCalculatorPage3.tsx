@@ -1,6 +1,6 @@
 import type { ImageWidget, HTMLWidget, RichText } from "apps/admin/widgets.ts";
 import { invoke } from "../../runtime.ts";
-import Image from "apps/website/components/Image.tsx";
+import Image from "site/components/ui/SmartImage.tsx";
 import { Plan } from "site/sections/TcoCalculatorV2.tsx";
 import { Benefit } from "./TcoCalculatorPage1.tsx";
 import { useScript } from "@deco/deco/hooks";

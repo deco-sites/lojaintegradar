@@ -1,33 +1,27 @@
 import { Head } from "$fresh/runtime.ts";
-import { useScript } from "deco/hooks/useScript.ts";
-
+import { useScript } from "@deco/deco/hooks";
 export default function VarifyScript() {
-  // Função inline para carregar Varify sob demanda
-  const loadVarify = (iid: number) => {
-    if (window.varify?.loaded) return;
-    
-    window.varify = window.varify || {};
-    window.varify.iid = iid;
-    window.varify.loaded = true;
-    
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://app.varify.io/varify.js';
-    document.head.appendChild(script);
-  };
-
-  return (
-    <>
+    // Função inline para carregar Varify sob demanda
+    const loadVarify = (iid: number) => {
+        if (window.varify?.loaded)
+            return;
+        window.varify = window.varify || {};
+        window.varify.iid = iid;
+        window.varify.loaded = true;
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://app.varify.io/varify.js';
+        document.head.appendChild(script);
+    };
+    return (<>
       <Head>
         {/* DNS Prefetch em vez de preconnect */}
-        <link rel="dns-prefetch" href="https://app.varify.io" />
+        <link rel="dns-prefetch" href="https://app.varify.io"/>
       </Head>
 
       {/* Lazy load Varify: carrega após interação ou timeout */}
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{
-          __html: `
+      <script type="module" dangerouslySetInnerHTML={{
+            __html: `
             (function() {
               const loadVarifyOnce = () => {
                 ${useScript(loadVarify, 4357)}
@@ -43,8 +37,6 @@ export default function VarifyScript() {
               setTimeout(loadVarifyOnce, 4000);
             })();
           `
-        }}
-      />
-    </>
-  );
+        }}/>
+    </>);
 }
